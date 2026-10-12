@@ -1,0 +1,118 @@
+{
+  "tick": 6,
+  "simulation_time": "Saturday, November 14, 11:30 AM",
+  "weather": "Sunny, 79°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "town_hall",
+    "rosa": "town_square"
+  },
+  "story": "At 11:30 on a sunny Saturday in Sumter Oaks, Donna is on pickleball court 1 at the Rec Center, handing Gary a spare paddle and starting a gentle rally to show him the basics, while Gary, nervous but game, stands behind the kitchen line trying to keep the ball in play. Hal, feeling satisfied, has headed over to the Town Square, and Rosa, determined as ever, is making her way down Magnolia Loop.",
+  "events": [
+    "Gary (pickleball court 1): Take the spare paddle, stand behind the kitchen line, and try keeping the ball in play",
+    "Donna (pickleball court 1): Hand Gary the spare paddle, step onto court 1, and start a gentle rally to teach him the basics",
+    "Hal headed to Town Square.",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just welcomed me to Court 1 and handed over a spare paddle, and I already passed along Rosa's dinner message last tick, so no need to repeat anything. I told her I've never held a paddle, but she's been kind about it and I don't want to leave her standing there. Linda's gone, and being useful matters to me, but showing up for a friend matters too. I'll take the court, give it an honest try, and see if I can keep the ball in like she said. The cart lights and speaker can wait until this hour is done.",
+      "emotional_state": "nervous, game",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Take the spare paddle, stand behind the kitchen line, and try keeping the ball in play"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary showed up, admitted he's never held a paddle, and delivered Rosa's dinner message. I already told him court 1 is ours and the spare paddle is ready, so repeating the invite would be silly. Time to act on it: hand him the paddle and get him started with a quick lesson. A hard-working beginner with quick hands is exactly what my ladder ranking needs, and I should keep it fun so he agrees to be my partner.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Hand Gary the spare paddle, step onto court 1, and start a gentle rally to teach him the basics"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Both filings are logged and double-checked: Kowalski's cart lights under L-01, Donna's flamingos under L-02. That's the job done, and nobody's here to talk to. The only thing left is the cloud over Magnolia Loop swelling up like someone topped it off. Odd, and it's not in the code, so it isn't my business unless it turns out to be a violation. Standing around Town Hall with nothing to do is how a man talks himself out of a good report. I'll head back to the Square and see how things stand on the street.",
+      "emotional_state": "satisfied",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_square",
+          "content": "Filings are logged. Heading back to the Square to see what's going on with the street and that cloud."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I looked at the parade signup sheet last tick, so there's no need to hover over it again. Gary is confirmed for dinner and I've invited Hal. Donna is the one I haven't directly nailed down, and she's at the rec center with Gary, a short walk away. Nobody is around in the square right now, and the cloud over Magnolia Loop swelling is odd, but it's not my business yet. The best way to move my dinner goal forward is to head to Donna instead of idling here. Magnolia Loop connects from here and is probably the way toward the rec center, but I only know my connections as magnolia_loop and town_hall, so I'll go through Magnolia Loop, which also lets me see what's up with that cloud.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading toward the rec center to pin Donna down for the welcome dinner, and I'll see what's going on with that cloud on the way."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03066,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9207,
+        "output_tokens": 1213,
+        "usd": 0.03054
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 386,
+        "output_tokens": 156,
+        "usd": 0.00012
+      }
+    }
+  }
+}

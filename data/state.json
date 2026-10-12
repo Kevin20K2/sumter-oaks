@@ -1,26 +1,24 @@
 {
-  "tick": 6,
-  "time": "2026-11-14T11:30",
+  "tick": 7,
+  "time": "2026-11-14T12:00",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
-    "hal": "town_hall",
-    "rosa": "town_square"
+    "hal": "town_square",
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “There he is! Court 1 is ours for the hour, Gary, and the spare paddle's right here. Stand behind the kitchen line and just keep the ball in, you'll be a natural by noon.”",
-      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+      "Donna (pickleball court 1): Hand Gary the spare paddle, step onto court 1, and start a gentle rally to teach him the basics"
     ],
     "donna": [
-      "Gary said to Donna: “Morning, Donna. I'm here, but fair warning, I've never held a paddle in my life. Oh, and Rosa says dinner's at six tonight at her place, she wanted me to tell you.”",
-      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+      "Gary (pickleball court 1): Take the spare paddle, stand behind the kitchen line, and try keeping the ball in play"
     ],
     "hal": [
-      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+      "You arrived at Town Square."
     ],
     "rosa": [
-      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+      "You arrived at Magnolia Loop (the street)."
     ]
   },
   "memories": {
@@ -109,6 +107,16 @@
         "tick": 5,
         "text": "Donna said to Gary: “There he is! Court 1 is ours for the hour, Gary, and the spare paddle's right here. Stand behind the kitchen line and just keep the ball in, you'll be a natural by noon.”",
         "importance": 4
+      },
+      {
+        "tick": 6,
+        "text": "I (pickleball court 1): Take the spare paddle, stand behind the kitchen line, and try keeping the ball in play",
+        "importance": 4
+      },
+      {
+        "tick": 6,
+        "text": "Donna (pickleball court 1): Hand Gary the spare paddle, step onto court 1, and start a gentle rally to teach him the basics",
+        "importance": 4
       }
     ],
     "donna": [
@@ -191,6 +199,16 @@
         "tick": 5,
         "text": "Gary said to Donna: “Morning, Donna. I'm here, but fair warning, I've never held a paddle in my life. Oh, and Rosa says dinner's at six tonight at her place, she wanted me to tell you.”",
         "importance": 6
+      },
+      {
+        "tick": 6,
+        "text": "I (pickleball court 1): Hand Gary the spare paddle, step onto court 1, and start a gentle rally to teach him the basics",
+        "importance": 6
+      },
+      {
+        "tick": 6,
+        "text": "Gary (pickleball court 1): Take the spare paddle, stand behind the kitchen line, and try keeping the ball in play",
+        "importance": 6
       }
     ],
     "hal": [
@@ -258,6 +276,16 @@
         "tick": 5,
         "text": "I (architectural review desk): Double-check both filings are logged with dates and violation codes L-01 and L-02",
         "importance": 4
+      },
+      {
+        "tick": 6,
+        "text": "I headed to Town Square.",
+        "importance": 3
+      },
+      {
+        "tick": 6,
+        "text": "You arrived at Town Square.",
+        "importance": 3
       }
     ],
     "rosa": [
@@ -340,6 +368,16 @@
         "tick": 5,
         "text": "I (parade signup table): Look over the parade signup sheet to see who's entered what and what the fuss is about",
         "importance": 4
+      },
+      {
+        "tick": 6,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 6,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       }
     ]
   },
@@ -362,10 +400,10 @@
     ]
   },
   "emotions": {
-    "gary": "nervous but game",
+    "gary": "nervous, game",
     "donna": "optimistic",
-    "hal": "dutiful",
-    "rosa": "curious"
+    "hal": "satisfied",
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -423,20 +461,27 @@
         "Gary said to Donna: “Morning, Donna. I'm here, but fair warning, I've never held a paddle in my life. Oh, and Rosa says dinner's at six tonight at her place, she wanted me to tell you.”",
         "Donna said to Gary: “There he is! Court 1 is ours for the hour, Gary, and the spare paddle's right here. Stand behind the kitchen line and just keep the ball in, you'll be a natural by noon.”"
       ]
+    },
+    {
+      "tick": 6,
+      "time": "Saturday, November 14, 11:30 AM",
+      "story": "At 11:30 on a sunny Saturday in Sumter Oaks, Donna is on pickleball court 1 at the Rec Center, handing Gary a spare paddle and starting a gentle rally to show him the basics, while Gary, nervous but game, stands behind the kitchen line trying to keep the ball in play. Hal, feeling satisfied, has headed over to the Town Square, and Rosa, determined as ever, is making her way down Magnolia Loop.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 0.0998,
+    "total_usd": 0.13046,
     "by_day": {
       "2026-10-12": {
-        "ticks": 3,
-        "usd": 0.0998
+        "ticks": 4,
+        "usd": 0.13046
       }
     }
   },
   "recent_tick_costs": [
     0.03034,
-    0.03069
+    0.03069,
+    0.03066
   ],
   "fund": {
     "gross_usd": 10.0,
