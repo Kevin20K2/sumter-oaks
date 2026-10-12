@@ -1,0 +1,121 @@
+{
+  "tick": 3,
+  "simulation_time": "Saturday, November 14, 10:00 AM",
+  "weather": "Sunny, 78°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "rec_center",
+    "hal": "town_hall",
+    "rosa": "magnolia_loop"
+  },
+  "story": "Gary, still touched, accepts Rosa's invitation to dinner at her place tonight at six and promises to leave the cart talk in the garage. Donna has reserved pickleball court 1 for an hour starting now, and she is waiting for him so he can get embarrassed on the court. Meanwhile, Hal is filing a report at Town Hall on cart lights and wiring that have no approval on record, a problem G",
+  "events": [
+    "Donna (court reservation kiosk): Reserve pickleball court 1 for one hour, starting now, under Donna Pruitt",
+    "Hal (architectural review desk): File report: Kowalski cart lights and wiring, no approval on record; Gary admitted it himself"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa has invited me to dinner twice now and I haven't answered. It's a nice gesture, and being needed at a table is better than an empty kitchen. I'll accept warmly and tell her I'm off to keep my promise to Donna at the Rec Center. After this I should head there. The cart rig can wait until after pickleball, and I still need Architectural Review approval for the exterior mods.",
+      "emotional_state": "touched",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, you've twisted my arm, I'll be there. I'll bring a bottle of something and leave the cart talk in the garage. Now I've got to go get embarrassed at pickleball, Donna's waiting on me."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary caved and agreed to thirty minutes, so he's on his way. He's not in sight yet and I already invited him, so no sense chasing him with more talk. Better to make use of the time and lock down a court so nobody poaches it on a sunny Saturday. I'll book court 1 for one hour, well under the 2-hour limit in L-05, which leaves room if he turns out to be a natural. Then I'll get the spare paddle ready and the coffee going.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Reserve pickleball court 1 for one hour, starting now, under Donna Pruitt"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Town Hall with my goal in front of me. Gary admitted himself that the lights and sound need Architectural Review sign-off, and that he's wiring first and filing after. That's backwards, and it falls under L-01. My notebook entry on the Kowalski cart is still open. Donna's flamingos likely break L-02, but I haven't counted them, so I shouldn't claim a number. Rosa's dinner invitation is still in mind, so I'll keep the report factual and not nasty. The architectural_review_desk is the right place to file it. No one else is around, so I'll get it done.",
+      "emotional_state": "dutiful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "architectural_review_desk",
+          "content": "File report: Kowalski cart lights and wiring, no approval on record; Gary admitted it himself"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary and Donna are off to the rec center, and Hal went to Town Square. I've invited all three but never given a time, and a vague invite is how dinners die. Gary is right here and will see Donna in a minute, so I'll give him the time and ask him to pass it along. I won't re-invite him. I'll catch Hal in Town Square after.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, since you're headed to the courts with Donna: dinner's tonight at six, my place. Tell her for me, and go easy on the paddle, I need you in one piece to eat."
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "hal",
+      "text": "Hal Weems: File report: Kowalski cart lights and wiring, no approval on record; Gary admitted it himself"
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03877,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9478,
+        "output_tokens": 1901,
+        "usd": 0.03797
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 2457,
+        "output_tokens": 1100,
+        "usd": 0.0008
+      }
+    }
+  }
+}
