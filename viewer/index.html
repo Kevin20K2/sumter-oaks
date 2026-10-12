@@ -14,6 +14,10 @@
   --line: #d7dfd8;
   --lawn: #d9e8d2;
   --lawn-2: #cddfc4;
+  --sky: #e2eef2;
+  --cloud: #ffffff;
+  --cloud-grey: #aeb8bd;
+  --cloud-dark: #7c878d;
   --road: #b9c3bc;
   --road-mark: #f3f6f1;
   --roof: #8e5b45;
@@ -35,7 +39,7 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #121a16; --surface: #1a241f; --ink: #e6ede8; --muted: #9aa9a0; --line: #2c3a33;
-    --lawn: #1c2e22; --lawn-2: #203528; --road: #3a4840; --road-mark: #8c9a91; --roof: #a06a52; --wall: #d9d3c6;
+    --sky: #16232a; --cloud: #e9eef0; --cloud-grey: #8d989e; --cloud-dark: #5d686e; --lawn: #1c2e22; --lawn-2: #203528; --road: #3a4840; --road-mark: #8c9a91; --roof: #a06a52; --wall: #d9d3c6;
     --palm: #4f9c62; --trunk: #8a6d4a; --accent: #3fb8b4; --accent-ink: #0c1512;
     --bubble: #f4f7f4; --bubble-ink: #15201a;
     --gary: #e8b14a; --donna: #ef77a8; --hal: #7f9fdb; --rosa: #b68ae0;
@@ -44,13 +48,14 @@
 }
 :root[data-theme="dark"] {
   --bg: #121a16; --surface: #1a241f; --ink: #e6ede8; --muted: #9aa9a0; --line: #2c3a33;
-  --lawn: #1c2e22; --lawn-2: #203528; --road: #3a4840; --road-mark: #8c9a91; --roof: #a06a52; --wall: #d9d3c6;
+  --sky: #16232a; --cloud: #e9eef0; --cloud-grey: #8d989e; --cloud-dark: #5d686e; --lawn: #1c2e22; --lawn-2: #203528; --road: #3a4840; --road-mark: #8c9a91; --roof: #a06a52; --wall: #d9d3c6;
   --palm: #4f9c62; --trunk: #8a6d4a; --accent: #3fb8b4; --accent-ink: #0c1512;
   --bubble: #f4f7f4; --bubble-ink: #15201a;
   --gary: #e8b14a; --donna: #ef77a8; --hal: #7f9fdb; --rosa: #b68ae0;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55; }
 .wrap { max-width: 1120px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 48px; display: grid; gap: 24px; }
 h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.15; }
@@ -143,6 +148,26 @@ button:disabled { opacity: 0.4; cursor: default; }
 .imp i { width: 6px; height: 6px; border-radius: 50%; background: var(--line); }
 .imp i.on { background: var(--c); }
 
+/* The data-center cloud and support */
+#cloud-bob { animation: bob 6s ease-in-out infinite; }
+@keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
+@media (prefers-reduced-motion: reduce) { #cloud-bob { animation: none; } }
+#cloud a:focus-visible { outline: 2px solid var(--accent); }
+.thanks { background: var(--surface); border: 2px solid var(--accent); border-radius: 12px; padding: 12px 16px; font-size: 1rem; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.support { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px 28px; align-items: center; }
+@media (max-width: 760px) { .support { grid-template-columns: 1fr; } }
+.support h2 { margin: 0 0 4px; }
+.sup-status { margin: 0; font-size: 1.02rem; max-width: 60ch; }
+.sup-note { margin: 4px 0 0; font-size: 0.86rem; color: var(--muted); max-width: 60ch; }
+.sup-options { display: grid; gap: 10px; justify-items: start; }
+.sup-group { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.sup-label { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); width: 5.5em; }
+.give { font-family: var(--font-display); font-weight: 700; font-size: 1rem; text-decoration: none; color: var(--accent-ink); background: var(--accent); border-radius: 999px; padding: 8px 16px; min-width: 44px; text-align: center; }
+.give.monthly { background: var(--surface); color: var(--accent); border: 2px solid var(--accent); padding: 6px 14px; }
+.give:hover { filter: brightness(1.08); }
+.give:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.test-badge { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); border: 1px dashed var(--line); border-radius: 6px; padding: 2px 8px; }
+
 /* Story + board */
 .lower { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 28px; }
 @media (max-width: 760px) { .lower { grid-template-columns: 1fr; } }
@@ -170,6 +195,11 @@ button:disabled { opacity: 0.4; cursor: default; }
     </div>
     <div class="sample" id="sample">Preview with sample ticks. Live ticks will appear here once the simulation starts.</div>
   </header>
+
+  <div class="thanks" id="thanks" role="status" hidden>
+    <span>Thank you! Your gift reaches the cloud at the next hourly tick. Watch it puff up.</span>
+    <button type="button" id="thanks-close" aria-label="Dismiss">✕</button>
+  </div>
 
   <section class="previously" id="previously" aria-label="Previously on Sumter Oaks" hidden>
     <div class="prev-head">
@@ -207,12 +237,25 @@ button:disabled { opacity: 0.4; cursor: default; }
 
   <div class="stage">
     <section class="scene" id="scene" aria-label="Street scene">
-      <svg id="map" viewBox="0 0 480 380" role="img" aria-label="Magnolia Loop with the four houses, the Rec Center, Town Square and Town Hall"></svg>
+      <svg id="map" viewBox="0 -64 480 444" role="img" aria-label="Magnolia Loop with the four houses, the Rec Center, Town Square and Town Hall, under the data-center cloud"></svg>
       <div class="layer" id="avatars"></div>
       <div class="layer" id="bubbles" aria-live="polite"></div>
     </section>
     <aside class="people" id="people" aria-label="Residents"></aside>
   </div>
+
+  <section class="support" id="support" aria-labelledby="support-h">
+    <div>
+      <h2 id="support-h">Keep the lights on</h2>
+      <p class="sup-status" id="sup-status"></p>
+      <p class="sup-note" id="sup-note"></p>
+    </div>
+    <div class="sup-options">
+      <div class="sup-group"><span class="sup-label">One time</span><span class="sup-group" id="sup-once"></span></div>
+      <div class="sup-group"><span class="sup-label">Monthly</span><span class="sup-group" id="sup-monthly"></span></div>
+      <span class="test-badge" id="sup-test" hidden>Test mode · no real charges</span>
+    </div>
+  </section>
 
   <div class="lower">
     <section class="story" aria-label="Story">
@@ -355,10 +398,10 @@ async function loadData() {
     const [w, index] = await Promise.all([getJSON("world.json"), getJSON("data/ticks/index.json")]);
     const ticks = await loadTicks(index.ticks);
     if (!ticks.length) throw new Error("no ticks yet");
-    const episodes = await loadEpisodes();
-    return { world: mergeWorld(w), ticks, names: index.ticks, episodes, sample: false, live: true };
+    const [episodes, fund] = await Promise.all([loadEpisodes(), loadFund()]);
+    return { world: mergeWorld(w), ticks, names: index.ticks, episodes, fund, sample: false, live: true };
   } catch (e) {
-    return { world: WORLD, ticks: TICKS, episodes: SAMPLE_EPISODES, sample: true, live: false };
+    return { world: WORLD, ticks: TICKS, episodes: SAMPLE_EPISODES, fund: SAMPLE_FUND, sample: true, live: false };
   }
 }
 
@@ -366,6 +409,89 @@ function setCollapsed(on) {
   $("previously").classList.toggle("collapsed", on);
   $("prev-toggle").textContent = on ? "Read recap" : "Hide recap";
   $("prev-toggle").setAttribute("aria-expanded", String(!on));
+}
+
+const SAMPLE_FUND = {
+  level: "fair", days_left: 3.4, balance_usd: 2.04, supporters: 1, monthly_supporters: 0, avg_tick_usd: 0.025, test_mode: true,
+  options: [
+    { plan: "once_5", amount: 5, recurring: false, url: "https://buy.stripe.com/test_14AfZh1ioeuo47s37cb7y00" },
+    { plan: "once_10", amount: 10, recurring: false, url: "https://buy.stripe.com/test_9B600j3qw2LGgUegY2b7y01" },
+    { plan: "once_20", amount: 20, recurring: false, url: "https://buy.stripe.com/test_dRm7sLe5a5XS7jEazEb7y02" },
+    { plan: "monthly_5", amount: 5, recurring: true, url: "https://buy.stripe.com/test_4gM6oHgdieuo6fAazEb7y03" },
+    { plan: "monthly_10", amount: 10, recurring: true, url: "https://buy.stripe.com/test_4gMcN56CI9a4eM6cHMb7y04" },
+    { plan: "monthly_20", amount: 20, recurring: true, url: "https://buy.stripe.com/test_cNi7sL7GM1HCavQ6job7y05" }
+  ]
+};
+
+async function loadFund() {
+  try { return await getJSON("data/ticks/fund.json"); } catch (e) { return null; }
+}
+
+function powerLeft(f) {
+  if (!f || f.balance_usd <= 0) return "no power left";
+  if (f.days_left < 1) { const h = Math.max(1, Math.round(f.days_left * 24)); return `about ${h} hour${h === 1 ? "" : "s"} of power`; }
+  if (f.days_left >= 60) return "power for months";
+  return `about ${Math.round(f.days_left)} day${Math.round(f.days_left) === 1 ? "" : "s"} of power`;
+}
+
+// The cloud floats in the sky strip; its size and colour follow the fund level.
+const CLOUD_LOOK = {
+  bright: { scale: 1.15, fill: "var(--cloud)", rain: false },
+  fair:   { scale: 1.0,  fill: "var(--cloud)", rain: false },
+  low:    { scale: 0.82, fill: "var(--cloud-grey)", rain: false },
+  empty:  { scale: 0.68, fill: "var(--cloud-dark)", rain: true },
+};
+function drawCloud(f) {
+  const host = $("cloud");
+  if (!host) return;
+  host.replaceChildren();
+  if (!f) return;
+  const look = CLOUD_LOOK[f.level] || CLOUD_LOOK.fair;
+  const link = el("a", { href: "#support", "aria-label": `The data-center cloud: ${powerLeft(f)}. Keep the lights on.` });
+  const bob = el("g", { id: "cloud-bob" });
+  const shape = el("g", { transform: `translate(196 -30) scale(${look.scale})` });
+  if (look.rain) {
+    for (const dx of [-22, -8, 6, 20]) shape.append(el("path", { d: `M${dx} 16 l-3 9`, stroke: "var(--cloud-dark)", "stroke-width": 2, "stroke-linecap": "round" }));
+  }
+  for (const [cx, cy, r] of [[-28, 4, 13], [-12, -6, 17], [8, -10, 19], [27, 1, 14], [0, 6, 15]]) {
+    shape.append(el("circle", { cx, cy, r, fill: look.fill }));
+  }
+  shape.append(el("rect", { x: -40, y: 2, width: 80, height: 15, rx: 7.5, fill: look.fill }));
+  bob.append(shape);
+  link.append(bob);
+  link.append(el("text", { x: 250, y: -40, "font-size": 8, "letter-spacing": 2, fill: "var(--muted)" }, "THE CLOUD"));
+  link.append(el("text", { x: 250, y: -26, "font-size": 10.5, fill: "var(--ink)" }, powerLeft(f)));
+  host.append(link);
+}
+
+function renderSupport(f) {
+  const sec = $("support");
+  if (!f) { sec.hidden = true; return; }
+  sec.hidden = false;
+  const lead = {
+    bright: "The cloud is full. Sumter Oaks has " + powerLeft(f) + ".",
+    fair: "Sumter Oaks has " + powerLeft(f) + " left in the cloud.",
+    low: "The cloud is running thin: " + powerLeft(f) + " left.",
+    empty: "The cloud is empty. The neighbors are waiting for someone to top it up.",
+  }[f.level] || "";
+  $("sup-status").textContent = lead;
+  const cents = Math.max(1, Math.round((f.avg_tick_usd || 0.025) * 100));
+  const who = f.supporters ? ` Thanks to ${f.supporters} supporter${f.supporters === 1 ? "" : "s"}${f.monthly_supporters ? ` (${f.monthly_supporters} monthly)` : ""}.` : "";
+  $("sup-note").textContent = `Every hour of town life costs about ${cents}¢ in AI time.${who} Gifts pay running costs and aren't tax-deductible.`;
+  const make = (o) => {
+    const a = document.createElement("a");
+    a.className = "give" + (o.recurring ? " monthly" : "");
+    a.href = o.url; a.target = "_blank"; a.rel = "noopener";
+    a.textContent = `$${o.amount}${o.recurring ? "/mo" : ""}`;
+    a.setAttribute("aria-label", o.recurring ? `Give $${o.amount} every month` : `Give $${o.amount} once`);
+    return a;
+  };
+  const opts = (f.options || []).slice().sort((a, b) => a.amount - b.amount);
+  $("sup-once").replaceChildren(...opts.filter(o => !o.recurring).map(make));
+  $("sup-monthly").replaceChildren(...opts.filter(o => o.recurring).map(make));
+  $("sup-once").parentElement.hidden = !opts.some(o => !o.recurring);
+  $("sup-monthly").parentElement.hidden = !opts.some(o => o.recurring);
+  $("sup-test").hidden = !f.test_mode;
 }
 
 async function loadEpisodes() {
@@ -421,6 +547,8 @@ async function poll() {
     if (!fresh.length) return;
     data.episodes = await loadEpisodes();
     renderPrevious();
+    data.fund = await loadFund() || data.fund;
+    drawCloud(data.fund); renderSupport(data.fund);
     const atEnd = idx === data.ticks.length - 1;
     data.ticks.push(...await loadTicks(fresh));
     data.names.push(...fresh);
@@ -470,7 +598,7 @@ function avatarSVG(id) {
 
 // ---- Scene ----
 const NS = "http://www.w3.org/2000/svg";
-const VB = { w: 480, h: 380 };
+const VB = { y: -64, w: 480, h: 444 };   // the sky strip sits above y = 0
 const $ = id => document.getElementById(id);
 let data, idx = 0, timer = null, firstPaint = true;
 
@@ -493,7 +621,9 @@ function palm(svg, x, y, s = 1) {
 function drawScene(world) {
   const svg = $("map");
   svg.replaceChildren();
-  svg.append(el("rect", { x: 0, y: 0, width: VB.w, height: VB.h, fill: "var(--lawn)" }));
+  svg.append(el("rect", { x: 0, y: VB.y, width: VB.w, height: -VB.y + 4, fill: "var(--sky)" }));
+  svg.append(el("rect", { x: 0, y: 0, width: VB.w, height: 380, fill: "var(--lawn)" }));
+  svg.append(el("g", { id: "cloud" }));
   svg.append(el("rect", { x: 0, y: 248, width: VB.w, height: 132, fill: "var(--lawn-2)" }));
 
   // Roads: Magnolia Loop, side roads to the Rec Center and Town Square, and the path to Town Hall.
@@ -581,7 +711,7 @@ function placeAvatars(pts) {
   for (const [id, p] of Object.entries(pts)) {
     const a = $("av-" + id);
     a.style.left = (p.x / VB.w * 100) + "%";
-    a.style.top = (p.y / VB.h * 100) + "%";
+    a.style.top = ((p.y - VB.y) / VB.h * 100) + "%";
   }
 }
 
@@ -608,7 +738,7 @@ function layoutBubbles(world, t, animate) {
   layer.append(stems);
 
   const people = Object.entries(pts).map(([id, p]) => {
-    const x = p.x / VB.w * W, y = p.y / VB.h * H;
+    const x = p.x / VB.w * W, y = (p.y - VB.y) / VB.h * H;
     return { id, x, head: y - avH, feet: y + tagH, box: { left: x - avW / 2, top: y - avH, w: avW, h: avH + tagH } };
   });
   const byId = Object.fromEntries(people.map(p => [p.id, p]));
@@ -786,6 +916,13 @@ loadData().then(d => {
   drawScene(d.world);
   buildAvatars(d.world);
   renderPrevious();
+  drawCloud(d.fund);
+  renderSupport(d.fund);
+  if (/[?&]thanks=1\b/.test(location.search)) {
+    $("thanks").hidden = false;
+    try { history.replaceState(null, "", location.pathname + location.hash); } catch (e) {}
+  }
+  $("thanks-close").onclick = () => { $("thanks").hidden = true; };
   $("prev-toggle").onclick = () => setCollapsed(!$("previously").classList.contains("collapsed"));
   $("prev").onclick = () => go(idx - 1);
   $("next").onclick = () => go(idx + 1);

@@ -35,6 +35,7 @@ jobs:
 
       - name: Run the town
         env:
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python sim.py --ticks "${{ inputs.ticks || '1' }}"
 
