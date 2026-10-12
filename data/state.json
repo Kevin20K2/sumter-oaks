@@ -1,33 +1,28 @@
 {
-  "tick": 2,
-  "time": "2026-11-14T09:30",
+  "tick": 3,
+  "time": "2026-11-14T10:00",
   "positions": {
     "gary": "magnolia_loop",
-    "donna": "magnolia_loop",
-    "hal": "town_square",
+    "donna": "rec_center",
+    "hal": "town_hall",
     "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, that speaker has great timing, and so do you. Come hit a few balls with me at the rec center this morning. I've got a spare paddle, it's thirty minutes, and coffee's on me.”",
-      "Hal headed to Town Square.",
-      "Rosa said to Hal: “Morning, Hal. Thanks for the recycling tip, you were right. I'm hosting a welcome dinner at my place and I'd like you, Gary, and Donna all at the table. Come hungry, and leave the cart and flamingo opinions at the door.”"
+      "Donna headed to Rec Center.",
+      "Rosa said to Gary: “Gary, before you two run off: I'm hosting a welcome dinner at my place, and you, Donna, and Hal are all invited. It's the least I can do after the disposal, and I'm not taking no for an answer.”"
     ],
     "donna": [
-      "Gary said to Hal: “Morning, Hal. Sorry about the Buffett, just testing the speaker and it's down now. I know the lights and sound need Architectural Review sign-off before the parade, so I'm wiring it in the garage first and filing the paperwork after.”",
-      "Hal headed to Town Square.",
-      "Rosa said to Hal: “Morning, Hal. Thanks for the recycling tip, you were right. I'm hosting a welcome dinner at my place and I'd like you, Gary, and Donna all at the table. Come hungry, and leave the cart and flamingo opinions at the door.”"
+      "Gary said to Donna: “Alright, Donna, you win. Thirty minutes and I'm holding you to the coffee, but I'm warning you, I'll be terrible at it.”",
+      "Rosa said to Gary: “Gary, before you two run off: I'm hosting a welcome dinner at my place, and you, Donna, and Hal are all invited. It's the least I can do after the disposal, and I'm not taking no for an answer.”",
+      "You arrived at Rec Center."
     ],
     "hal": [
-      "Gary said to Hal: “Morning, Hal. Sorry about the Buffett, just testing the speaker and it's down now. I know the lights and sound need Architectural Review sign-off before the parade, so I'm wiring it in the garage first and filing the paperwork after.”",
-      "Donna said to Gary: “Gary, that speaker has great timing, and so do you. Come hit a few balls with me at the rec center this morning. I've got a spare paddle, it's thirty minutes, and coffee's on me.”",
-      "Rosa said to Hal: “Morning, Hal. Thanks for the recycling tip, you were right. I'm hosting a welcome dinner at my place and I'd like you, Gary, and Donna all at the table. Come hungry, and leave the cart and flamingo opinions at the door.”",
-      "You arrived at Town Square."
+      "You arrived at Town Hall."
     ],
     "rosa": [
-      "Gary said to Hal: “Morning, Hal. Sorry about the Buffett, just testing the speaker and it's down now. I know the lights and sound need Architectural Review sign-off before the parade, so I'm wiring it in the garage first and filing the paperwork after.”",
-      "Donna said to Gary: “Gary, that speaker has great timing, and so do you. Come hit a few balls with me at the rec center this morning. I've got a spare paddle, it's thirty minutes, and coffee's on me.”",
-      "Hal headed to Town Square."
+      "Gary said to Donna: “Alright, Donna, you win. Thirty minutes and I'm holding you to the coffee, but I'm warning you, I'll be terrible at it.”",
+      "Donna headed to Rec Center."
     ]
   },
   "memories": {
@@ -66,6 +61,21 @@
         "tick": 1,
         "text": "Rosa said to Hal: “Morning, Hal. Thanks for the recycling tip, you were right. I'm hosting a welcome dinner at my place and I'd like you, Gary, and Donna all at the table. Come hungry, and leave the cart and flamingo opinions at the door.”",
         "importance": 5
+      },
+      {
+        "tick": 2,
+        "text": "I said to Donna: “Alright, Donna, you win. Thirty minutes and I'm holding you to the coffee, but I'm warning you, I'll be terrible at it.”",
+        "importance": 5
+      },
+      {
+        "tick": 2,
+        "text": "Donna headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 2,
+        "text": "Rosa said to Gary: “Gary, before you two run off: I'm hosting a welcome dinner at my place, and you, Donna, and Hal are all invited. It's the least I can do after the disposal, and I'm not taking no for an answer.”",
+        "importance": 5
       }
     ],
     "donna": [
@@ -103,6 +113,26 @@
         "tick": 1,
         "text": "Rosa said to Hal: “Morning, Hal. Thanks for the recycling tip, you were right. I'm hosting a welcome dinner at my place and I'd like you, Gary, and Donna all at the table. Come hungry, and leave the cart and flamingo opinions at the door.”",
         "importance": 7
+      },
+      {
+        "tick": 2,
+        "text": "I headed to Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 2,
+        "text": "Gary said to Donna: “Alright, Donna, you win. Thirty minutes and I'm holding you to the coffee, but I'm warning you, I'll be terrible at it.”",
+        "importance": 6
+      },
+      {
+        "tick": 2,
+        "text": "Rosa said to Gary: “Gary, before you two run off: I'm hosting a welcome dinner at my place, and you, Donna, and Hal are all invited. It's the least I can do after the disposal, and I'm not taking no for an answer.”",
+        "importance": 6
+      },
+      {
+        "tick": 2,
+        "text": "You arrived at Rec Center.",
+        "importance": 6
       }
     ],
     "hal": [
@@ -145,6 +175,16 @@
         "tick": 1,
         "text": "You arrived at Town Square.",
         "importance": 6
+      },
+      {
+        "tick": 2,
+        "text": "I headed to Town Hall.",
+        "importance": 6
+      },
+      {
+        "tick": 2,
+        "text": "You arrived at Town Hall.",
+        "importance": 6
       }
     ],
     "rosa": [
@@ -182,6 +222,21 @@
         "tick": 1,
         "text": "Hal headed to Town Square.",
         "importance": 7
+      },
+      {
+        "tick": 2,
+        "text": "I said to Gary: “Gary, before you two run off: I'm hosting a welcome dinner at my place, and you, Donna, and Hal are all invited. It's the least I can do after the disposal, and I'm not taking no for an answer.”",
+        "importance": 7
+      },
+      {
+        "tick": 2,
+        "text": "Gary said to Donna: “Alright, Donna, you win. Thirty minutes and I'm holding you to the coffee, but I'm warning you, I'll be terrible at it.”",
+        "importance": 7
+      },
+      {
+        "tick": 2,
+        "text": "Donna headed to Rec Center.",
+        "importance": 7
       }
     ]
   },
@@ -207,7 +262,7 @@
     "gary": "hopeful",
     "donna": "determined",
     "hal": "resolute",
-    "rosa": "hopeful"
+    "rosa": "determined"
   },
   "laws": [
     {

@@ -1,0 +1,99 @@
+{
+  "tick": 2,
+  "simulation_time": "Saturday, November 14, 9:30 AM",
+  "weather": "Sunny, 78°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "town_square",
+    "rosa": "magnolia_loop"
+  },
+  "story": "It's a sunny Saturday morning in Sumter Oaks, and Gary, hopeful but warning that he'll be terrible at it, agrees to thirty minutes of coffee with Donna on Magnolia Loop. Donna heads off to the Rec Center with her usual determination, while Hal makes his resolute way to Town Hall. Before they scatter, Rosa invites Gary, Donna, and Hal to a welcome dinner at her place, insisting it's the least she can do after the disposal.",
+  "events": [
+    "Donna headed to Rec Center.",
+    "Hal headed to Town Hall."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna asked me to the rec center and I haven't answered yet. I dodged the pickleball question before, but she's offering thirty minutes and coffee, and the garage will still be there afterward. The wiring can wait a bit, and I'd rather not spend the whole morning alone with a soldering iron. I'll say yes, then head to the rec center. The cart paperwork for Architectural Review is still on my list, since I shouldn't install anything visible before approval.",
+      "emotional_state": "hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Alright, Donna, you win. Thirty minutes and I'm holding you to the coffee, but I'm warning you, I'll be terrible at it."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I already pitched Gary at Tick 1 and he hasn't answered yet, so asking again would be nagging. He's busy with his speaker and Hal. The best move is to go to the rec center, grab a court (within the 2-hour limit) and have the spare paddle ready so it's easy for him to say yes. I'll catch Rosa about her dinner later. I'll also bring good gossip.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center to grab a pickleball court and set out the spare paddle for Gary, since coffee's already on me."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Nobody in sight, so no one to talk to. Gary admitted out loud he's wiring the lights and sound before getting sign-off, which is backwards under L-01. Donna's five flamingos break the three-ornament limit in L-02. My notebook has both entries. Rosa asked us to leave the cart and flamingo opinions at the door, and I'll respect that at her table. But a dinner invitation doesn't repeal the ordinance, and the committee is the proper place for this, not the dinner table. I'll head to Town Hall and file it by the book. Then I'll go to dinner hungry.",
+      "emotional_state": "resolute",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_hall",
+          "content": "Taking my notebook to Town Hall to file the cart-modification and flamingo-count reports with the review committee, the proper way."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've only invited Hal so far. Gary and Donna are both here, and Donna is about to pull Gary off to the rec center. I'll catch them now while they're together. Gary fixed my disposal for free, so I'll start with him and name Donna and Hal so everyone knows who else is coming. Donna should hear it too, since she's standing right there.",
+      "emotional_state": "determined",
+      "importance_rating": 7,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, before you two run off: I'm hosting a welcome dinner at my place, and you, Donna, and Hal are all invited. It's the least I can do after the disposal, and I'm not taking no for an answer."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ]
+}
