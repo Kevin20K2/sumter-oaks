@@ -84,6 +84,140 @@ def new_state(world, seed, cfg):
     return state
 
 
+# ---------------------------------------------------------------- the data-center cloud (donations vs spending)
+
+def stripe_list(path, params, key):
+    """GET a Stripe list endpoint, following pagination. Read-only."""
+    import urllib.parse
+    import urllib.request
+    out, params = [], dict(params, limit=100)
+    while True:
+        url = f"https://api.stripe.com/v1/{path}?{urllib.parse.urlencode(params)}"
+        req = urllib.request.Request(url, headers={"Authorization": f"Bearer {key}"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            page = json.loads(r.read().decode("utf-8"))
+        out += page.get("data", [])
+        if not page.get("has_more") or not page.get("data"):
+            return out
+        params["starting_after"] = page["data"][-1]["id"]
+
+
+def plan_option(plan, url):
+    """'monthly_10' -> {'amount': 10, 'recurring': True, ...}"""
+    kind, _, amt = str(plan).partition("_")
+    try:
+        amount = float(amt)
+    except ValueError:
+        return None
+    return {"plan": plan, "amount": amount, "recurring": kind == "monthly", "url": url}
+
+
+def fetch_donations(cfg):
+    """Total what supporters have given through this project's Stripe Payment Links.
+    One-time gifts count once; monthly gifts count every paid invoice, so renewals add up.
+    Needs STRIPE_SECRET_KEY (a restricted, read-only key). Returns None when it can't check."""
+    key = os.environ.get("STRIPE_SECRET_KEY", "").strip()
+    sup = cfg.get("support", {})
+    if os.environ.get("FAKE_DONATIONS_USD"):  # for local testing
+        return {"gross_usd": float(os.environ["FAKE_DONATIONS_USD"]), "payments": 1, "supporters": 1,
+                "monthly_supporters": 0, "options": [], "test_mode": True}
+    if not key:
+        return None
+    tag = sup.get("stripe_project_tag", "sumter-oaks")
+    links = [l for l in stripe_list("payment_links", {}, key) if (l.get("metadata") or {}).get("project") == tag]
+    options = [o for o in (plan_option((l.get("metadata") or {}).get("plan", ""), l["url"])
+                           for l in links if l.get("active")) if o]
+    link_ids = {l["id"] for l in links}
+    gross, payments, supporters, monthly = 0, 0, 0, 0
+    for s in stripe_list("checkout/sessions", {"status": "complete"}, key):
+        if s.get("payment_link") not in link_ids and (s.get("metadata") or {}).get("project") != tag:
+            continue
+        supporters += 1
+        if s.get("mode") == "subscription" and s.get("subscription"):
+            monthly += 1
+            for inv in stripe_list("invoices", {"subscription": s["subscription"], "status": "paid"}, key):
+                gross += inv.get("amount_paid", 0)
+                payments += 1
+        elif s.get("payment_status") == "paid":
+            gross += s.get("amount_total") or 0
+            payments += 1
+    return {"gross_usd": gross / 100, "payments": payments, "supporters": supporters,
+            "monthly_supporters": monthly, "options": sorted(options, key=lambda o: (o["recurring"], o["amount"])),
+            "test_mode": key.startswith(("sk_test", "rk_test"))}
+
+
+CLOUD_LINES = {
+    "bright": "The big cloud over Sumter Oaks puffs up, bright white and full.",
+    "fair": "The cloud over Sumter Oaks looks ordinary today. Nothing to write home about.",
+    "low": "The cloud over Sumter Oaks has gone thin and grey. It looks worn out.",
+    "empty": "The cloud over Sumter Oaks is down to a few grey wisps, drizzling on Magnolia Loop.",
+}
+
+
+def update_fund(cfg, state, fetched=None):
+    """Recompute the cloud: balance = seed + donations (after card fees) - what the town has spent."""
+    sup = cfg.get("support", {})
+    fund = state.setdefault("fund", {})
+    d = fetched if fetched is not None else fetch_donations_safe(cfg)
+    if d is None:  # couldn't reach Stripe: keep the last numbers we had
+        d = {k: fund.get(k, 0) for k in ("gross_usd", "payments", "supporters", "monthly_supporters")}
+        d.update(options=fund.get("options") or sup.get("links", []), test_mode=fund.get("test_mode", True),
+                 source="cached" if fund else "config")
+    else:
+        d.setdefault("source", "stripe")
+        if not d.get("options"):
+            d["options"] = sup.get("links", [])
+    fees = d["gross_usd"] * sup.get("fee_percent", 2.9) / 100 + d["payments"] * sup.get("fee_fixed_usd", 0.30)
+    donated = max(0.0, d["gross_usd"] - fees)
+    spent = state.get("spend", {}).get("total_usd", 0.0)
+    balance = sup.get("seed_usd", 0.0) + donated - spent
+    recent = state.get("recent_tick_costs") or [0.025]
+    per_tick = max(sum(recent) / len(recent), 0.001)
+    ticks_left = max(0.0, balance / per_tick)
+    days_left = ticks_left / sup.get("ticks_per_day", 24)
+    level = ("empty" if balance <= 0 else "low" if days_left < sup.get("days_fair", 2)
+             else "fair" if days_left < sup.get("days_bright", 7) else "bright")
+    prev_level, prev_gross = fund.get("level"), fund.get("gross_usd", 0)
+    fund.update(gross_usd=round(d["gross_usd"], 2), payments=d["payments"], supporters=d["supporters"],
+                monthly_supporters=d["monthly_supporters"], options=d["options"], test_mode=d["test_mode"],
+                level=level)
+    doc = {
+        "updated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+        "source": d.get("source", "stripe"),
+        "test_mode": d["test_mode"],
+        "seed_usd": round(sup.get("seed_usd", 0.0), 2),
+        "donated_usd": round(donated, 2),
+        "supporters": d["supporters"],
+        "monthly_supporters": d["monthly_supporters"],
+        "spent_usd": round(spent, 2),
+        "balance_usd": round(balance, 2),
+        "avg_tick_usd": round(per_tick, 4),
+        "ticks_left": int(ticks_left),
+        "days_left": round(days_left, 1),
+        "level": level,
+        "options": d["options"],
+    }
+    save_json(TICKS / "fund.json", doc)
+    # The residents notice the sky.
+    news = None
+    if prev_gross is not None and d["gross_usd"] > (prev_gross or 0) and prev_level is not None:
+        news = "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+    elif prev_level is not None and level != prev_level:
+        news = CLOUD_LINES[level]
+    if news:
+        for a in state.get("perceptions", {}):
+            state["perceptions"][a].append(news)
+    return doc
+
+
+def fetch_donations_safe(cfg):
+    try:
+        return fetch_donations(cfg)
+    except Exception as e:
+        print(f"  ! Couldn't check donations: {e}")
+        return None
+
+
 # ---------------------------------------------------------------- time and weather
 
 def parse_hhmm(s):
@@ -172,6 +306,7 @@ class Brain:
     def __init__(self, cfg, test=False, mock=False):
         self.cfg, self.mock = cfg, mock
         self.usage = {}
+        self.no_thinking_param = set()
         self.resident_model = cfg["models"]["test"] if test else cfg["models"]["resident"]
         self.story_model = cfg["models"]["test"] if test else cfg["models"]["story"]
         self.client = None
@@ -214,12 +349,29 @@ class Brain:
         print("API check passed.")
 
     def _ask(self, model, system, user, max_tokens):
-        r = self.client.messages.create(
-            model=model, max_tokens=max_tokens, system=system,
-            messages=[{"role": "user", "content": user}],
-        )
+        # These models think before answering by default, and thinking counts toward max_tokens.
+        # config.json "thinking" turns up-front thinking off per model; if the API refuses that
+        # setting, retry once without it and stop sending it for this run.
+        kwargs = dict(model=model, max_tokens=max_tokens, system=system,
+                      messages=[{"role": "user", "content": user}])
+        thinking = self.cfg.get("thinking", {}).get(model)
+        if thinking and model not in self.no_thinking_param:
+            kwargs["thinking"] = thinking
+        try:
+            r = self.client.messages.create(**kwargs)
+        except Exception as e:
+            if "thinking" in kwargs and "thinking" in str(e).lower():
+                print(f"  ! {model} refused thinking={thinking}; continuing without it")
+                self.no_thinking_param.add(model)
+                kwargs.pop("thinking")
+                r = self.client.messages.create(**kwargs)
+            else:
+                raise
         self._record(model, getattr(r, "usage", None))
-        return "".join(b.text for b in r.content if b.type == "text")
+        if getattr(r, "stop_reason", None) == "max_tokens":
+            print(f"  ! A {model} reply hit its length limit ({max_tokens} tokens) and was cut off. "
+                  f"Raise max_tokens in config.json.")
+        return "".join(b.text for b in r.content if getattr(b, "type", "") == "text")
 
     # Token and dollar tracking, reset at the start of every tick.
     def reset_usage(self):
@@ -293,9 +445,15 @@ class Brain:
             "\"standings\": {\"<resident id>\": \"one short line on where they stand\", ...}, "
             "\"next_time\": [\"question\", \"question\"]}"
         )
-        raw = self._ask(self.story_model, system, json.dumps(material, ensure_ascii=False),
-                        self.cfg["max_tokens"].get("recap", 700))
-        return extract_json(raw)
+        user = json.dumps(material, ensure_ascii=False)
+        limit = self.cfg["max_tokens"].get("recap", 1500)
+        raw = self._ask(self.story_model, system, user, limit)
+        try:
+            return extract_json(raw)
+        except (ValueError, json.JSONDecodeError):
+            print(f"  ! Recap reply wasn't JSON, asking once more. It began: {raw[:160]!r}")
+            raw = self._ask(self.story_model, system + "\nYour last reply was not valid JSON. Reply with the JSON object only.", user, limit)
+            return extract_json(raw)
 
     def reflect(self, agent, memories):
         if self.mock:
@@ -624,6 +782,8 @@ def run_tick(world, state, cfg, template, brain):
     day = spend["by_day"].setdefault(today, {"ticks": 0, "usd": 0.0})
     day["ticks"] += 1
     day["usd"] = round(day["usd"] + cost["usd"], 5)
+    if cost["usd"] > 0:
+        state["recent_tick_costs"] = (state.get("recent_tick_costs", []) + [cost["usd"]])[-24:]
 
     # 6. write the tick for the viewer
     tick_doc = {
@@ -659,6 +819,8 @@ def run_tick(world, state, cfg, template, brain):
             state["perceptions"][a] = [f"A new morning in {world['town_name']}. You're at home."]
     state["time"] = nxt.isoformat(timespec="minutes")
     state["tick"] = tick + 1
+    fund = update_fund(cfg, state)
+    print(f"  Cloud: {fund['level']} · balance ${fund['balance_usd']:.2f} · about {fund['days_left']} days left")
     save_json(STATE_FILE, state)
     return tick_doc
 
@@ -686,6 +848,14 @@ def main():
     print(f"Sumter Oaks: running {args.ticks} tick(s) from tick {state['tick']} [{mode}]")
     if not args.mock:
         print(f"Key loaded from: {key_source}")
+
+    # When the cloud is empty and pausing is on, the town sleeps until someone chips in.
+    if cfg.get("support", {}).get("pause_when_empty") and not args.mock:
+        fund = update_fund(cfg, state)
+        save_json(STATE_FILE, state)
+        if fund["level"] == "empty":
+            print(f"The cloud is empty (balance ${fund['balance_usd']:.2f}), so the town is paused. No ticks run.")
+            return
     brain.preflight()
 
     for _ in range(args.ticks):
