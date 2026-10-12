@@ -4,6 +4,10 @@
     "story": "claude-haiku-5-5",
     "test": "claude-haiku-5-5"
   },
+  "prices_per_mtok": {
+    "claude-sonnet-5-5": { "input": 2.00, "output": 10.00 },
+    "claude-haiku-5-5": { "input": 0.10, "output": 0.50 }
+  },
   "max_tokens": {
     "resident": 800,
     "story": 400
