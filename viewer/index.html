@@ -64,6 +64,35 @@ header.top { display: flex; flex-wrap: wrap; justify-content: space-between; ali
 header.top .title { display: grid; gap: 4px; }
 .sample { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); border: 1px dashed var(--line); border-radius: 6px; padding: 6px 10px; max-width: 44ch; }
 
+/* Previously on Sumter Oaks: the soap-opera recap */
+.previously { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px 16px; display: grid; gap: 12px; position: relative; overflow: hidden; }
+.previously::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--gary) 0 25%, var(--donna) 25% 50%, var(--hal) 50% 75%, var(--rosa) 75%); }
+.prev-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; }
+.prev-kicker { font-family: var(--font-body); font-style: italic; font-size: 1.05rem; color: var(--donna); }
+.prev-meta { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.prev-title { font-family: var(--font-display); font-size: clamp(1.4rem, 3.6vw, 1.9rem); font-weight: 700; letter-spacing: -0.015em; margin: 0; }
+.prev-title::before { content: "“"; color: var(--muted); }
+.prev-title::after { content: "”"; color: var(--muted); }
+.prev-titlerow { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; }
+.prev-toggle { font-size: 0.78rem; padding: 4px 10px; }
+.previously.collapsed .prev-recap, .previously.collapsed .standings, .previously.collapsed .next-time, .previously.collapsed .archive { display: none; }
+.prev-recap { margin: 0; max-width: 68ch; font-size: 1.06rem; line-height: 1.6; }
+.standings { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px 16px; }
+.standings li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; align-items: center; font-size: 0.93rem; line-height: 1.35; }
+.standings .face { width: 34px; height: 34px; border-radius: 50%; background: var(--lawn); border: 2px solid var(--c); overflow: hidden; display: grid; place-items: end center; }
+.standings .face svg { width: 26px; height: auto; margin-bottom: -12px; }
+.standings b { font-family: var(--font-display); color: var(--c); margin-right: 4px; }
+.next-time { border-top: 1px dashed var(--line); padding-top: 10px; display: grid; gap: 4px; }
+.nt-label { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
+.next-time ul { margin: 0; padding-left: 1.1em; display: grid; gap: 2px; font-style: italic; }
+.archive summary { cursor: pointer; font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); width: fit-content; }
+.archive summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ep-list { margin: 10px 0 0; padding-left: 1.6em; display: grid; gap: 12px; max-height: 420px; overflow-y: auto; }
+.ep-list li::marker { font-family: var(--font-mono); color: var(--muted); }
+.ep-list .ep-t { font-family: var(--font-display); font-weight: 700; }
+.ep-list .ep-m { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); margin-left: 6px; }
+.ep-list p { margin: 2px 0 0; font-size: 0.95rem; color: var(--muted); max-width: 68ch; }
+
 /* Tick controls */
 .controls { display: grid; gap: 8px; }
 .tickline { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
@@ -141,6 +170,27 @@ button:disabled { opacity: 0.4; cursor: default; }
     </div>
     <div class="sample" id="sample">Preview with sample ticks. Live ticks will appear here once the simulation starts.</div>
   </header>
+
+  <section class="previously" id="previously" aria-label="Previously on Sumter Oaks" hidden>
+    <div class="prev-head">
+      <span class="prev-kicker">Previously on Sumter Oaks…</span>
+      <span class="prev-meta" id="prev-meta"></span>
+    </div>
+    <div class="prev-titlerow">
+      <h2 class="prev-title" id="prev-title"></h2>
+      <button type="button" class="prev-toggle" id="prev-toggle" aria-expanded="true" aria-controls="previously">Hide recap</button>
+    </div>
+    <p class="prev-recap" id="prev-recap"></p>
+    <ul class="standings" id="standings"></ul>
+    <div class="next-time" id="next-time">
+      <span class="nt-label">Next time on Sumter Oaks</span>
+      <ul id="next-list"></ul>
+    </div>
+    <details class="archive" id="archive">
+      <summary>All episodes <span id="ep-count"></span></summary>
+      <ol class="ep-list" id="ep-list" reversed></ol>
+    </details>
+  </section>
 
   <section class="controls" aria-label="Tick controls">
     <div class="tickline">
@@ -272,6 +322,19 @@ const TICKS = [
   }
 ];
 
+const SAMPLE_EPISODES = [{
+  number: 1, from_tick: 1, through_tick: 3, simulation_time: "Saturday, November 14, 9:30 AM",
+  title: "The Speaker, the Flamingos, and the Invitation",
+  recap: "It was supposed to be an ordinary Saturday on Magnolia Loop. Then Gary's new parade speaker let loose a few bars of Jimmy Buffett, and Hal's notebook came out. Donna, never one to waste a crisis, claimed Gary as her pickleball partner, quick hands and all, while Rosa went door to door with dinner invitations, determined to get these three at one table. And at Town Hall, Hal has filed not one complaint, but two.",
+  standings: {
+    gary: "Wiring lights for the parade, unaware he's officially on file.",
+    donna: "Has her doubles partner. Has seven flamingos. Has a problem.",
+    hal: "Two complaints filed. One dinner invitation, still unanswered.",
+    rosa: "Planning a menu for six, just in case."
+  },
+  next_time: ["Will Gary's quick hands survive court 2?", "Can Rosa seat Hal and the flamingo owner at the same table?"]
+}];
+
 // When served next to the simulation (python -m http.server, or Vercel), read the real files.
 // Anywhere else (like the Claude artifact), fall back to the built-in sample ticks.
 const BASE = "../";
@@ -292,10 +355,62 @@ async function loadData() {
     const [w, index] = await Promise.all([getJSON("world.json"), getJSON("data/ticks/index.json")]);
     const ticks = await loadTicks(index.ticks);
     if (!ticks.length) throw new Error("no ticks yet");
-    return { world: mergeWorld(w), ticks, names: index.ticks, sample: false, live: true };
+    const episodes = await loadEpisodes();
+    return { world: mergeWorld(w), ticks, names: index.ticks, episodes, sample: false, live: true };
   } catch (e) {
-    return { world: WORLD, ticks: TICKS, sample: true, live: false };
+    return { world: WORLD, ticks: TICKS, episodes: SAMPLE_EPISODES, sample: true, live: false };
   }
+}
+
+function setCollapsed(on) {
+  $("previously").classList.toggle("collapsed", on);
+  $("prev-toggle").textContent = on ? "Read recap" : "Hide recap";
+  $("prev-toggle").setAttribute("aria-expanded", String(!on));
+}
+
+async function loadEpisodes() {
+  try { return (await getJSON("data/ticks/episodes.json")).episodes || []; } catch (e) { return []; }
+}
+
+function renderPrevious() {
+  const eps = data.episodes || [];
+  const box = $("previously");
+  box.hidden = !eps.length;
+  if (!eps.length) return;
+  const ep = eps[eps.length - 1];
+  // Open a new episode fully; once this viewer has seen it, start it collapsed to the title.
+  if (data.shownEp !== ep.number) {
+    let seen = 0;
+    try { seen = +localStorage.getItem("so-seen-episode") || 0; } catch (e) {}
+    setCollapsed(!data.sample && seen >= ep.number);
+    try { localStorage.setItem("so-seen-episode", String(ep.number)); } catch (e) {}
+    data.shownEp = ep.number;
+  }
+  $("prev-meta").textContent = `Episode ${ep.number} · through tick ${ep.through_tick}`;
+  $("prev-title").textContent = ep.title;
+  $("prev-recap").textContent = ep.recap;
+  $("standings").replaceChildren(...Object.keys(data.world.agents).filter(id => ep.standings?.[id]).map(id => {
+    const li = document.createElement("li");
+    li.style.setProperty("--c", `var(--${id})`);
+    li.innerHTML = `<span class="face">${avatarSVG(id)}</span><span><b></b><span class="s"></span></span>`;
+    li.querySelector("b").textContent = first(data.world, id);
+    li.querySelector(".s").textContent = ep.standings[id];
+    return li;
+  }));
+  const qs = ep.next_time || [];
+  $("next-time").hidden = !qs.length;
+  $("next-list").replaceChildren(...qs.map(q => { const li = document.createElement("li"); li.textContent = q; return li; }));
+  $("ep-count").textContent = `(${eps.length})`;
+  $("archive").hidden = eps.length < 2;
+  $("ep-list").replaceChildren(...eps.slice().reverse().map(e => {
+    const li = document.createElement("li");
+    li.value = e.number;
+    li.innerHTML = `<span class="ep-t"></span><span class="ep-m"></span><p></p>`;
+    li.querySelector(".ep-t").textContent = e.title;
+    li.querySelector(".ep-m").textContent = `ticks ${e.from_tick}–${e.through_tick}`;
+    li.querySelector("p").textContent = e.recap;
+    return li;
+  }));
 }
 
 // Check for new ticks once a minute; follow along if the viewer is on the latest tick.
@@ -304,6 +419,8 @@ async function poll() {
     const index = await getJSON("data/ticks/index.json");
     const fresh = index.ticks.filter(n => !data.names.includes(n));
     if (!fresh.length) return;
+    data.episodes = await loadEpisodes();
+    renderPrevious();
     const atEnd = idx === data.ticks.length - 1;
     data.ticks.push(...await loadTicks(fresh));
     data.names.push(...fresh);
@@ -668,6 +785,8 @@ loadData().then(d => {
   $("slider").max = d.ticks.length - 1;
   drawScene(d.world);
   buildAvatars(d.world);
+  renderPrevious();
+  $("prev-toggle").onclick = () => setCollapsed(!$("previously").classList.contains("collapsed"));
   $("prev").onclick = () => go(idx - 1);
   $("next").onclick = () => go(idx + 1);
   $("slider").oninput = e => go(+e.target.value);

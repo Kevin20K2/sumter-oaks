@@ -10,7 +10,8 @@
   },
   "max_tokens": {
     "resident": 800,
-    "story": 400
+    "story": 400,
+    "recap": 700
   },
   "start_time": "2026-11-14T09:00",
   "minutes_per_tick": 30,
@@ -18,5 +19,6 @@
   "day_end": "22:00",
   "memories_per_prompt": 8,
   "reflect_every_ticks": 8,
+  "recap_every_ticks": 6,
   "proposal_open_ticks": 6
 }

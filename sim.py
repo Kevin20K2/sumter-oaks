@@ -31,6 +31,7 @@ DATA = ROOT / "data"
 TICKS = DATA / "ticks"
 LOGS = DATA / "logs"
 STATE_FILE = DATA / "state.json"
+EPISODES = TICKS / "episodes.json"   # lives beside the ticks so the GitHub job already commits it
 
 
 # ---------------------------------------------------------------- setup
@@ -164,9 +165,13 @@ def extract_json(text):
     return json.loads(text[start:end + 1])
 
 
+USAGE_LOCK = __import__("threading").Lock()
+
+
 class Brain:
     def __init__(self, cfg, test=False, mock=False):
         self.cfg, self.mock = cfg, mock
+        self.usage = {}
         self.resident_model = cfg["models"]["test"] if test else cfg["models"]["resident"]
         self.story_model = cfg["models"]["test"] if test else cfg["models"]["story"]
         self.client = None
@@ -213,7 +218,30 @@ class Brain:
             model=model, max_tokens=max_tokens, system=system,
             messages=[{"role": "user", "content": user}],
         )
+        self._record(model, getattr(r, "usage", None))
         return "".join(b.text for b in r.content if b.type == "text")
+
+    # Token and dollar tracking, reset at the start of every tick.
+    def reset_usage(self):
+        self.usage = {}
+
+    def _record(self, model, usage):
+        if usage is None:
+            return
+        with USAGE_LOCK:
+            u = self.usage.setdefault(model, {"calls": 0, "input_tokens": 0, "output_tokens": 0})
+            u["calls"] += 1
+            u["input_tokens"] += getattr(usage, "input_tokens", 0) or 0
+            u["output_tokens"] += getattr(usage, "output_tokens", 0) or 0
+
+    def cost_report(self):
+        prices = self.cfg.get("prices_per_mtok", {})
+        total = 0.0
+        for model, u in self.usage.items():
+            p = prices.get(model)
+            u["usd"] = round((u["input_tokens"] * p["input"] + u["output_tokens"] * p["output"]) / 1e6, 5) if p else None
+            total += u["usd"] or 0
+        return {"usd": round(total, 5), "by_model": self.usage}
 
     def decide(self, prompt, agent_id, world, state, rng):
         if self.mock:
@@ -236,6 +264,38 @@ class Brain:
                   "for readers following along. Use first names. No headings, no lists, no quotation of every line.")
         return self._ask(self.story_model, system, json.dumps(summary, ensure_ascii=False),
                          self.cfg["max_tokens"]["story"]).strip()
+
+    def recap(self, material):
+        """Write the next 'Previously on Sumter Oaks' episode from the last recap plus what happened since."""
+        if self.mock:
+            last = material["new_ticks"][-1]
+            return {
+                "title": f"The Saga Continues ({len(material['new_ticks'])} ticks)",
+                "recap": " ".join(t["story"] for t in material["new_ticks"][-2:])[:600],
+                "standings": {a: f"Last seen at {r['where']}, feeling {r['mood']}." for a, r in material["residents"].items()},
+                "next_time": [f"What happens after {last['time']}?"],
+            }
+        system = (
+            "You are the narrator of \"Sumter Oaks\", a warm, gently comic daytime soap opera about four AI "
+            "neighbors in a Florida 55+ golf-cart community. Write the \"Previously on Sumter Oaks\" recap that "
+            "catches up a brand-new viewer on the whole story so far.\n"
+            "Voice: a classic soap announcer: dramatic, a little breathless, affectionate, never mean. Small stakes "
+            "told as grand drama is the joke.\n"
+            "Rules:\n"
+            "- Use only what is in the material. Never invent events, relationships, secrets or facts. You may "
+            "dramatize tone, not content.\n"
+            "- Fold the previous recap into this one so it covers everything, but lead with what's newest.\n"
+            "- next_time items are open questions about unresolved threads, never predictions.\n"
+            "- Use first names. Keep it family-friendly.\n"
+            "Reply with JSON only, no code fences:\n"
+            "{\"title\": \"episode title, 3-7 words, no episode number\", "
+            "\"recap\": \"4-6 sentences, under 120 words\", "
+            "\"standings\": {\"<resident id>\": \"one short line on where they stand\", ...}, "
+            "\"next_time\": [\"question\", \"question\"]}"
+        )
+        raw = self._ask(self.story_model, system, json.dumps(material, ensure_ascii=False),
+                        self.cfg["max_tokens"].get("recap", 700))
+        return extract_json(raw)
 
     def reflect(self, agent, memories):
         if self.mock:
@@ -386,12 +446,46 @@ def describe(world, a, act):
     return f"{n} waited: {p['content']}"
 
 
+def write_episode(world, state, episodes, pending, brain, results):
+    """Ask the narrator for the next episode and append it to data/ticks/episodes.json."""
+    agents = list(world["agents"])
+    prev = episodes["episodes"][-1] if episodes["episodes"] else None
+    material = {
+        "episode_number": len(episodes["episodes"]) + 1,
+        "previous_recap": {k: prev[k] for k in ("title", "recap", "standings")} if prev else None,
+        "new_ticks": pending,
+        "residents": {a: {"name": world["agents"][a]["name"], "goal": world["agents"][a]["current_goal"],
+                          "mood": results[a]["emotional_state"],
+                          "where": world["zones"][state["positions"][a]]["name"]} for a in agents},
+        "open_town_hall_matters": [m["text"] for m in state["matters"][-6:]],
+    }
+    ep = brain.recap(material)
+    standings = ep.get("standings") or {}
+    episode = {
+        "number": material["episode_number"],
+        "title": str(ep.get("title", "")).strip() or f"Episode {material['episode_number']}",
+        "recap": str(ep.get("recap", "")).strip(),
+        "standings": {a: str(standings.get(a, "")).strip() for a in agents},
+        "next_time": [str(q).strip() for q in (ep.get("next_time") or []) if str(q).strip()][:3],
+        "through_tick": pending[-1]["tick"],
+        "from_tick": pending[0]["tick"],
+        "simulation_time": pending[-1]["time"],
+    }
+    if not episode["recap"]:
+        raise ValueError("narrator returned an empty recap")
+    episodes["episodes"].append(episode)
+    save_json(EPISODES, episodes)
+    print(f"  Episode {episode['number']}: {episode['title']}")
+
+
 def run_tick(world, state, cfg, template, brain):
     tick = state["tick"]
     now = dt.datetime.fromisoformat(state["time"])
     rng = random.Random(tick * 7919)
     agents = list(world["agents"])
     start_pos = dict(state["positions"])
+
+    brain.reset_usage()
 
     # 1-2. prompts and decisions, in parallel
     prompts = {a: build_prompt(template, world, state, cfg, a) for a in agents}
@@ -491,6 +585,46 @@ def run_tick(world, state, cfg, template, brain):
 
     state["matters"] += new_matters
 
+    # every few ticks, a new "Previously on Sumter Oaks" episode
+    tick_summary = {"tick": tick, "time": fmt_time(now), "story": story,
+                    "dialogue": [describe(world, a, results[a]["action"]) for a in agents
+                                 if results[a]["action"]["type"] == "SPEAK"]}
+    pending = state.setdefault("recap_pending", [])
+    pending.append(tick_summary)
+    episodes = load_json(EPISODES) if EPISODES.exists() else {"episodes": []}
+    every = cfg.get("recap_every_ticks", 6)
+    if not episodes["episodes"] and len(pending) == 1:
+        # First episode on a town that's already running: catch up from the saved ticks.
+        earlier = []
+        for f in sorted(TICKS.glob("tick_*.json"))[-12:]:
+            t = load_json(f)
+            if t["tick"] < tick:
+                earlier.append({"tick": t["tick"], "time": t["simulation_time"], "story": t.get("story", ""),
+                                "dialogue": [describe(world, a, r["action"]) for a, r in t.get("results", {}).items()
+                                             if r["action"]["type"] == "SPEAK"]})
+        pending[:0] = earlier
+    if every and (len(pending) >= every or not episodes["episodes"]):
+        try:
+            write_episode(world, state, episodes, pending, brain, results)
+            state["recap_pending"] = []
+        except Exception as e:  # keep the material and try again next tick
+            log.append({"agent": "recap", "raw": f"RECAP ERROR: {e}"})
+            print(f"  ! Recap skipped this tick: {e}")
+
+    # what this tick cost, plus running totals by day and overall
+    cost = brain.cost_report()
+    spend = state.setdefault("spend", {"total_usd": 0.0, "by_day": {}})
+    try:
+        from zoneinfo import ZoneInfo
+        tz = ZoneInfo(cfg.get("timezone", "America/New_York"))
+    except Exception:  # Windows without tzdata: fall back to UTC days
+        tz = dt.timezone.utc
+    today = dt.datetime.now(tz).strftime("%Y-%m-%d")
+    spend["total_usd"] = round(spend["total_usd"] + cost["usd"], 5)
+    day = spend["by_day"].setdefault(today, {"ticks": 0, "usd": 0.0})
+    day["ticks"] += 1
+    day["usd"] = round(day["usd"] + cost["usd"], 5)
+
     # 6. write the tick for the viewer
     tick_doc = {
         "tick": tick,
@@ -502,6 +636,7 @@ def run_tick(world, state, cfg, template, brain):
         "results": results,
         "matters": new_matters,
         "laws": state["laws"],
+        "cost": cost,
     }
     name = f"tick_{tick:04d}.json"
     save_json(TICKS / name, tick_doc)
@@ -562,6 +697,12 @@ def main():
             print(f"  {first(world, a):6} [{r['emotional_state']}] {act['type']} {act['parameters'].get('target')}: "
                   f"{act['parameters'].get('content', '')}{extra}")
         print(f"  Story: {doc['story']}")
+        print(f"  Cost: ${doc['cost']['usd']:.4f}")
+    spend = state.get("spend", {})
+    if spend:
+        print(f"\nSpend so far: ${spend['total_usd']:.4f} total")
+        for day, d in sorted(spend["by_day"].items())[-3:]:
+            print(f"  {day}: {d['ticks']} ticks, ${d['usd']:.4f}")
     print(f"\nSaved to {TICKS}")
 
 
