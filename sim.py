@@ -220,6 +220,29 @@ def fetch_donations_safe(cfg):
 
 # ---------------------------------------------------------------- time and weather
 
+def town_tz(cfg):
+    try:
+        from zoneinfo import ZoneInfo
+        return ZoneInfo(cfg.get("timezone", "America/New_York"))
+    except Exception:  # no time-zone data installed: fall back to UTC
+        return dt.timezone.utc
+
+
+def real_clock(cfg):
+    return cfg.get("clock", "town") == "real"
+
+
+def town_now(cfg, state):
+    """Real Florida time when "clock" is "real"; otherwise the town's own calendar."""
+    if real_clock(cfg):
+        return dt.datetime.now(town_tz(cfg)).replace(second=0, microsecond=0, tzinfo=None)
+    return dt.datetime.fromisoformat(state["time"])
+
+
+def awake(cfg, now):
+    return parse_hhmm(cfg["day_start"]) <= now.time() < parse_hhmm(cfg["day_end"])
+
+
 def parse_hhmm(s):
     h, m = s.split(":")
     return dt.time(int(h), int(m))
@@ -638,9 +661,17 @@ def write_episode(world, state, episodes, pending, brain, results):
 
 def run_tick(world, state, cfg, template, brain):
     tick = state["tick"]
-    now = dt.datetime.fromisoformat(state["time"])
+    now = town_now(cfg, state)
     rng = random.Random(tick * 7919)
     agents = list(world["agents"])
+    if real_clock(cfg):
+        # First tick of a new real day: everyone wakes up at home.
+        last = state.get("last_tick_date")
+        if last and last != now.date().isoformat():
+            for a in agents:
+                state["positions"][a] = world["agents"][a]["home"]
+                state["perceptions"][a] = [f"A new morning in {world['town_name']}. You're at home."]
+        state["time"] = now.isoformat(timespec="minutes")
     start_pos = dict(state["positions"])
 
     brain.reset_usage()
@@ -809,15 +840,18 @@ def run_tick(world, state, cfg, template, brain):
     LOGS.mkdir(parents=True, exist_ok=True)
     (LOGS / f"tick_{tick:04d}.json").write_text(json.dumps({"prompts": prompts, "replies": log}, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    # advance the clock; overnight, everyone goes home
-    nxt = now + dt.timedelta(minutes=cfg["minutes_per_tick"])
-    if nxt.time() >= parse_hhmm(cfg["day_end"]) or nxt.date() != now.date():
-        day = (now + dt.timedelta(days=1)).date()
-        nxt = dt.datetime.combine(day, parse_hhmm(cfg["day_start"]))
-        for a in agents:
-            state["positions"][a] = world["agents"][a]["home"]
-            state["perceptions"][a] = [f"A new morning in {world['town_name']}. You're at home."]
-    state["time"] = nxt.isoformat(timespec="minutes")
+    if real_clock(cfg):
+        state["last_tick_date"] = now.date().isoformat()
+    else:
+        # town calendar: advance the clock; overnight, everyone goes home
+        nxt = now + dt.timedelta(minutes=cfg["minutes_per_tick"])
+        if nxt.time() >= parse_hhmm(cfg["day_end"]) or nxt.date() != now.date():
+            day = (now + dt.timedelta(days=1)).date()
+            nxt = dt.datetime.combine(day, parse_hhmm(cfg["day_start"]))
+            for a in agents:
+                state["positions"][a] = world["agents"][a]["home"]
+                state["perceptions"][a] = [f"A new morning in {world['town_name']}. You're at home."]
+        state["time"] = nxt.isoformat(timespec="minutes")
     state["tick"] = tick + 1
     fund = update_fund(cfg, state)
     print(f"  Cloud: {fund['level']} · balance ${fund['balance_usd']:.2f} · about {fund['days_left']} days left")
@@ -833,6 +867,7 @@ def main():
     ap.add_argument("--test", action="store_true", help="use the cheap test model for everything")
     ap.add_argument("--mock", action="store_true", help="no API calls; canned actions")
     ap.add_argument("--reset", action="store_true", help="delete data/ and start from seed.json")
+    ap.add_argument("--force", action="store_true", help="run even while the town is asleep (testing)")
     args = ap.parse_args()
 
     key_source = load_env()
@@ -848,6 +883,14 @@ def main():
     print(f"Sumter Oaks: running {args.ticks} tick(s) from tick {state['tick']} [{mode}]")
     if not args.mock:
         print(f"Key loaded from: {key_source}")
+
+    # On the real clock, the town sleeps outside day hours.
+    if real_clock(cfg) and not args.force:
+        now = town_now(cfg, state)
+        if not awake(cfg, now):
+            print(f"It's {now:%I:%M %p} in {world['town_name']}; everyone's asleep until "
+                  f"{cfg['day_start']}. No tick run. (Use --force to run anyway.)")
+            return
 
     # When the cloud is empty and pausing is on, the town sleeps until someone chips in.
     if cfg.get("support", {}).get("pause_when_empty") and not args.mock:
