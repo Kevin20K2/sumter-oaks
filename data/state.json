@@ -1,20 +1,24 @@
 {
-  "tick": 4,
-  "time": "2026-11-14T10:30",
+  "tick": 5,
+  "time": "2026-11-14T11:00",
   "positions": {
-    "gary": "magnolia_loop",
+    "gary": "rec_center",
     "donna": "rec_center",
     "hal": "town_hall",
-    "rosa": "magnolia_loop"
+    "rosa": "town_square"
   },
   "perceptions": {
     "gary": [
-      "Rosa said to Gary: “Gary, since you're headed to the courts with Donna: dinner's tonight at six, my place. Tell her for me, and go easy on the paddle, I need you in one piece to eat.”"
+      "Rosa headed to Town Square.",
+      "You arrived at Rec Center."
     ],
-    "donna": [],
+    "donna": [
+      "Gary just arrived."
+    ],
     "hal": [],
     "rosa": [
-      "Gary said to Rosa: “Rosa, you've twisted my arm, I'll be there. I'll bring a bottle of something and leave the cart talk in the garage. Now I've got to go get embarrassed at pickleball, Donna's waiting on me.”"
+      "Gary headed to Rec Center.",
+      "You arrived at Town Square."
     ]
   },
   "memories": {
@@ -78,6 +82,21 @@
         "tick": 3,
         "text": "Rosa said to Gary: “Gary, since you're headed to the courts with Donna: dinner's tonight at six, my place. Tell her for me, and go easy on the paddle, I need you in one piece to eat.”",
         "importance": 5
+      },
+      {
+        "tick": 4,
+        "text": "I headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 4,
+        "text": "Rosa headed to Town Square.",
+        "importance": 4
+      },
+      {
+        "tick": 4,
+        "text": "You arrived at Rec Center.",
+        "importance": 4
       }
     ],
     "donna": [
@@ -140,6 +159,16 @@
         "tick": 3,
         "text": "I (court reservation kiosk): Reserve pickleball court 1 for one hour, starting now, under Donna Pruitt",
         "importance": 5
+      },
+      {
+        "tick": 4,
+        "text": "I (ladder standings board): Check the ladder standings and see where I rank and who's ahead of me",
+        "importance": 4
+      },
+      {
+        "tick": 4,
+        "text": "Gary just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
@@ -197,6 +226,11 @@
         "tick": 3,
         "text": "I (architectural review desk): File report: Kowalski cart lights and wiring, no approval on record; Gary admitted it himself",
         "importance": 6
+      },
+      {
+        "tick": 4,
+        "text": "I (architectural review desk): File complaint: Donna's flamingo collection, over three visible ornaments, violation of L-02",
+        "importance": 5
       }
     ],
     "rosa": [
@@ -259,6 +293,21 @@
         "tick": 3,
         "text": "Gary said to Rosa: “Rosa, you've twisted my arm, I'll be there. I'll bring a bottle of something and leave the cart talk in the garage. Now I've got to go get embarrassed at pickleball, Donna's waiting on me.”",
         "importance": 6
+      },
+      {
+        "tick": 4,
+        "text": "I headed to Town Square.",
+        "importance": 6
+      },
+      {
+        "tick": 4,
+        "text": "Gary headed to Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 4,
+        "text": "You arrived at Town Square.",
+        "importance": 6
       }
     ]
   },
@@ -281,7 +330,7 @@
     ]
   },
   "emotions": {
-    "gary": "touched",
+    "gary": "warm, slightly nervous",
     "donna": "optimistic",
     "hal": "dutiful",
     "rosa": "determined"
@@ -323,45 +372,69 @@
     {
       "by": "hal",
       "text": "Hal Weems: File report: Kowalski cart lights and wiring, no approval on record; Gary admitted it himself"
-    }
-  ],
-  "recap_pending": [
-    {
-      "tick": 1,
-      "time": "Saturday, November 14, 9:00 AM",
-      "story": "On Saturday morning in sunny Sumter Oaks, Gary apologizes to Hal for knocking out the Buffett speaker while he tests the wiring in his garage, though he admits the lights and sound still need Architectural Review sign-off before the parade. Donna, determined as ever, lures Gary to the rec center for a half hour of paddle practice with a spare paddle and free coffee. Hal, resolute, heads off toward Town Square, while Rosa, hopeful, thanks him for the recycling tip and",
-      "dialogue": [
-        "Gary said to Hal: “Morning, Hal. Sorry about the Buffett, just testing the speaker and it's down now. I know the lights and sound need Architectural Review sign-off before the parade, so I'm wiring it in the garage first and filing the paperwork after.”",
-        "Donna said to Gary: “Gary, that speaker has great timing, and so do you. Come hit a few balls with me at the rec center this morning. I've got a spare paddle, it's thirty minutes, and coffee's on me.”",
-        "Rosa said to Hal: “Morning, Hal. Thanks for the recycling tip, you were right. I'm hosting a welcome dinner at my place and I'd like you, Gary, and Donna all at the table. Come hungry, and leave the cart and flamingo opinions at the door.”"
-      ]
     },
     {
-      "tick": 2,
-      "time": "Saturday, November 14, 9:30 AM",
-      "story": "It's a sunny Saturday morning in Sumter Oaks, and Gary, hopeful but warning that he'll be terrible at it, agrees to thirty minutes of coffee with Donna on Magnolia Loop. Donna heads off to the Rec Center with her usual determination, while Hal makes his resolute way to Town Hall. Before they scatter, Rosa invites Gary, Donna, and Hal to a welcome dinner at her place, insisting it's the least she can do after the disposal.",
-      "dialogue": [
-        "Gary said to Donna: “Alright, Donna, you win. Thirty minutes and I'm holding you to the coffee, but I'm warning you, I'll be terrible at it.”",
-        "Rosa said to Gary: “Gary, before you two run off: I'm hosting a welcome dinner at my place, and you, Donna, and Hal are all invited. It's the least I can do after the disposal, and I'm not taking no for an answer.”"
-      ]
-    },
-    {
-      "tick": 3,
-      "time": "Saturday, November 14, 10:00 AM",
-      "story": "Gary, still touched, accepts Rosa's invitation to dinner at her place tonight at six and promises to leave the cart talk in the garage. Donna has reserved pickleball court 1 for an hour starting now, and she is waiting for him so he can get embarrassed on the court. Meanwhile, Hal is filing a report at Town Hall on cart lights and wiring that have no approval on record, a problem G",
-      "dialogue": [
-        "Gary said to Rosa: “Rosa, you've twisted my arm, I'll be there. I'll bring a bottle of something and leave the cart talk in the garage. Now I've got to go get embarrassed at pickleball, Donna's waiting on me.”",
-        "Rosa said to Gary: “Gary, since you're headed to the courts with Donna: dinner's tonight at six, my place. Tell her for me, and go easy on the paddle, I need you in one piece to eat.”"
-      ]
+      "by": "hal",
+      "text": "Hal Weems: File complaint: Donna's flamingo collection, over three visible ornaments, violation of L-02"
     }
   ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 0.03877,
+    "total_usd": 0.06911,
     "by_day": {
       "2026-10-12": {
-        "ticks": 1,
-        "usd": 0.03877
+        "ticks": 2,
+        "usd": 0.06911
       }
     }
+  },
+  "recent_tick_costs": [
+    0.03034
+  ],
+  "fund": {
+    "gross_usd": 5.0,
+    "payments": 1,
+    "supporters": 1,
+    "monthly_supporters": 0,
+    "options": [
+      {
+        "plan": "once_5",
+        "amount": 5.0,
+        "recurring": false,
+        "url": "https://buy.stripe.com/test_14AfZh1ioeuo47s37cb7y00"
+      },
+      {
+        "plan": "once_10",
+        "amount": 10.0,
+        "recurring": false,
+        "url": "https://buy.stripe.com/test_9B600j3qw2LGgUegY2b7y01"
+      },
+      {
+        "plan": "once_20",
+        "amount": 20.0,
+        "recurring": false,
+        "url": "https://buy.stripe.com/test_dRm7sLe5a5XS7jEazEb7y02"
+      },
+      {
+        "plan": "monthly_5",
+        "amount": 5.0,
+        "recurring": true,
+        "url": "https://buy.stripe.com/test_4gM6oHgdieuo6fAazEb7y03"
+      },
+      {
+        "plan": "monthly_10",
+        "amount": 10.0,
+        "recurring": true,
+        "url": "https://buy.stripe.com/test_4gMcN56CI9a4eM6cHMb7y04"
+      },
+      {
+        "plan": "monthly_20",
+        "amount": 20.0,
+        "recurring": true,
+        "url": "https://buy.stripe.com/test_cNi7sL7GM1HCavQ6job7y05"
+      }
+    ],
+    "test_mode": true,
+    "level": "fair"
   }
 }

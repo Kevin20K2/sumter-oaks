@@ -1,0 +1,123 @@
+{
+  "tick": 4,
+  "simulation_time": "Saturday, November 14, 10:30 AM",
+  "weather": "Sunny, 79°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "rec_center",
+    "hal": "town_hall",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On a sunny Saturday morning in Sumter Oaks, Gary is walking toward the Rec Center with a warm but slightly nervous step, while Rosa is heading to Town Square with quiet determination. Donna, optimistic as ever, is at the Rec Center checking where she stands on the ladder standings board, and Hal, dutifully at Town Hall, is filing a complaint that her flamingo collection breaks the three-ornament limit under rule L-02.",
+  "events": [
+    "Gary headed to Rec Center.",
+    "Donna (ladder standings board): Check the ladder standings and see where I rank and who's ahead of me",
+    "Hal (architectural review desk): File complaint: Donna's flamingo collection, over three visible ornaments, violation of L-02",
+    "Rosa headed to Town Square."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa just told me dinner is at six tonight, her place, and asked me to pass that to Donna. I already said yes, so no need to keep chatting here. Donna's waiting at the Rec Center and I promised her thirty minutes of pickleball. I'll head over, tell her about dinner there, and get embarrassed on the court. The cart parade rig can wait until after.",
+      "emotional_state": "warm, slightly nervous",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the courts to meet Donna for that pickleball game, and I'll pass along Rosa's dinner invite."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I got Court 1 reserved for an hour, Gary said yes to thirty minutes and coffee, and I'm at the rec center. He's not here yet, and nobody's in line of sight. No sense asking him again, he already agreed. The best use of this half hour is to check the ladder standings board so I know exactly where we'd start once I get him on court. A little intel makes the pitch to him sound more exciting, and I can warm up while I wait.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Check the ladder standings and see where I rank and who's ahead of me"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Town Hall and nobody's around. My memory says I already filed the Kowalski cart report at the review desk last tick, so I shouldn't file it twice. Donna's flamingo collection is still unreported, and L-02 caps visible ornaments at three. I'll use the review desk to log that complaint properly, by the book. Rosa's dinner invitation can wait; I can be civil at the table and still keep the record straight.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "architectural_review_desk",
+          "content": "File complaint: Donna's flamingo collection, over three visible ornaments, violation of L-02"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal and Gary are both invited, and Gary has said yes. Donna got the invite through Gary and heard it at the rec center, but nobody has told her directly, and I shouldn't ask Gary again. Hal said yes in Tick 1. If I want all three at the table tonight at six, I should deal with the food. I'm an ER nurse used to long shifts, so I can handle cooking for four, but I need groceries and time. Best move is to stop chatting and get moving. The town square likely has what I need, so I'll head there to shop, then circle back to the rec center to confirm with Donna in person.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_square",
+          "content": "Guests are confirmed, so I'm heading to the square to pick up groceries for tonight's dinner."
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "hal",
+      "text": "Hal Weems: File complaint: Donna's flamingo collection, over three visible ornaments, violation of L-02"
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03034,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9426,
+        "output_tokens": 1092,
+        "usd": 0.02977
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 2545,
+        "output_tokens": 627,
+        "usd": 0.00057
+      }
+    }
+  }
+}
