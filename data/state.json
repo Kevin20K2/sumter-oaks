@@ -1,6 +1,6 @@
 {
-  "tick": 7,
-  "time": "2026-11-14T12:00",
+  "tick": 8,
+  "time": "2026-10-12T19:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,17 +9,13 @@
   },
   "perceptions": {
     "gary": [
-      "Donna (pickleball court 1): Hand Gary the spare paddle, step onto court 1, and start a gentle rally to teach him the basics"
+      "Donna said to Gary: “Gary, look at you, you're a natural! Go on to Rosa's before she sends out a search party, but I'm putting us down as doubles partners on the ladder board, Saturday at eight. Don't you dare say no.”"
     ],
     "donna": [
-      "Gary (pickleball court 1): Take the spare paddle, stand behind the kitchen line, and try keeping the ball in play"
+      "Gary said to Donna: “Well, I got three in a row over the net, so I'm calling myself a natural. Another few and I'll head home to my garage, though. That cart won't wire itself for the parade.”"
     ],
-    "hal": [
-      "You arrived at Town Square."
-    ],
-    "rosa": [
-      "You arrived at Magnolia Loop (the street)."
-    ]
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
@@ -117,6 +113,16 @@
         "tick": 6,
         "text": "Donna (pickleball court 1): Hand Gary the spare paddle, step onto court 1, and start a gentle rally to teach him the basics",
         "importance": 4
+      },
+      {
+        "tick": 7,
+        "text": "I said to Donna: “Well, I got three in a row over the net, so I'm calling myself a natural. Another few and I'll head home to my garage, though. That cart won't wire itself for the parade.”",
+        "importance": 4
+      },
+      {
+        "tick": 7,
+        "text": "Donna said to Gary: “Gary, look at you, you're a natural! Go on to Rosa's before she sends out a search party, but I'm putting us down as doubles partners on the ladder board, Saturday at eight. Don't you dare say no.”",
+        "importance": 4
       }
     ],
     "donna": [
@@ -209,6 +215,16 @@
         "tick": 6,
         "text": "Gary (pickleball court 1): Take the spare paddle, stand behind the kitchen line, and try keeping the ball in play",
         "importance": 6
+      },
+      {
+        "tick": 7,
+        "text": "I said to Gary: “Gary, look at you, you're a natural! Go on to Rosa's before she sends out a search party, but I'm putting us down as doubles partners on the ladder board, Saturday at eight. Don't you dare say no.”",
+        "importance": 6
+      },
+      {
+        "tick": 7,
+        "text": "Gary said to Donna: “Well, I got three in a row over the net, so I'm calling myself a natural. Another few and I'll head home to my garage, though. That cart won't wire itself for the parade.”",
+        "importance": 6
       }
     ],
     "hal": [
@@ -286,6 +302,11 @@
         "tick": 6,
         "text": "You arrived at Town Square.",
         "importance": 3
+      },
+      {
+        "tick": 7,
+        "text": "I (parade signup table): Read the sign-up sheet to see whether Gary's cart is entered in the parade",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -378,6 +399,11 @@
         "tick": 6,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 7,
+        "text": "I (street bulletin board): Pin up a handwritten welcome dinner invitation for Gary, Donna, and Hal at my place, with food and no cart or flamingo debates",
+        "importance": 6
       }
     ]
   },
@@ -400,9 +426,9 @@
     ]
   },
   "emotions": {
-    "gary": "nervous, game",
-    "donna": "optimistic",
-    "hal": "satisfied",
+    "gary": "content",
+    "donna": "triumphant",
+    "hal": "dutiful",
     "rosa": "determined"
   },
   "laws": [
@@ -467,21 +493,31 @@
       "time": "Saturday, November 14, 11:30 AM",
       "story": "At 11:30 on a sunny Saturday in Sumter Oaks, Donna is on pickleball court 1 at the Rec Center, handing Gary a spare paddle and starting a gentle rally to show him the basics, while Gary, nervous but game, stands behind the kitchen line trying to keep the ball in play. Hal, feeling satisfied, has headed over to the Town Square, and Rosa, determined as ever, is making her way down Magnolia Loop.",
       "dialogue": []
+    },
+    {
+      "tick": 7,
+      "time": "Monday, October 12, 7:17 PM",
+      "story": "On Monday evening in Sumter Oaks, the humid October air hangs hazy and warm at 75 degrees as the town settles in. Gary, content after a few lucky rounds of pickleball, is still at the Rec Center, where Donna, triumphant and already penciling him in as her doubles partner on the ladder board for Saturday, is cheerfully refusing to let him leave. Over at Town Square, Hal is dutifully checking the parade sign-up sheet to see whether Gary's cart made the cut, while Rosa, determined to keep the neighborhood fed and friendly, pins a handwritten dinner invitation to the Magnolia Loop bulletin board.",
+      "dialogue": [
+        "Gary said to Donna: “Well, I got three in a row over the net, so I'm calling myself a natural. Another few and I'll head home to my garage, though. That cart won't wire itself for the parade.”",
+        "Donna said to Gary: “Gary, look at you, you're a natural! Go on to Rosa's before she sends out a search party, but I'm putting us down as doubles partners on the ladder board, Saturday at eight. Don't you dare say no.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 0.13046,
+    "total_usd": 0.1616,
     "by_day": {
       "2026-10-12": {
-        "ticks": 4,
-        "usd": 0.13046
+        "ticks": 5,
+        "usd": 0.1616
       }
     }
   },
   "recent_tick_costs": [
     0.03034,
     0.03069,
-    0.03066
+    0.03066,
+    0.03114
   ],
   "fund": {
     "gross_usd": 10.0,
@@ -528,5 +564,6 @@
     ],
     "test_mode": true,
     "level": "bright"
-  }
+  },
+  "last_tick_date": "2026-10-12"
 }
