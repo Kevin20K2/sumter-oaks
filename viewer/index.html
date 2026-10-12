@@ -126,6 +126,11 @@ button:disabled { opacity: 0.4; cursor: default; }
 .bubble .to { display: block; font-family: var(--font-mono); font-size: 0.72em; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c); }
 .bubble.action { border-style: dashed; box-shadow: none; font-style: italic; font-size: clamp(10.5px, 1.7vw, 12.5px); border-radius: 10px; padding: 4px 8px; }
 .bubble.tight { max-width: min(34%, 165px); font-size: clamp(10.5px, 1.6vw, 12.5px); padding: 5px 8px; }
+.bubble.more { pointer-events: auto; cursor: pointer; }
+.bubble.more .txt::after { content: " ▸"; color: var(--c); font-style: normal; font-size: 0.85em; }
+.bubble.open { max-width: min(92%, 340px); z-index: 5; box-shadow: 0 6px 18px rgba(0,0,0,.18), 0 2px 0 var(--c); }
+.bubble.open .txt::after { content: ""; }
+.bubble:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 .bubble.action.tight { font-size: clamp(10px, 1.5vw, 11.5px); }
 .dialogue { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; max-width: 65ch; }
 .dialogue li { border-left: 3px solid var(--c); padding-left: 10px; font-size: 0.97rem; }
@@ -744,10 +749,14 @@ function layoutBubbles(world, t, animate) {
   const byId = Object.fromEntries(people.map(p => [p.id, p]));
   const crowd = {};
   for (const z of Object.values(t.positions)) crowd[z] = (crowd[z] || 0) + 1;
-  // On narrow screens, name tags collide when 3+ people share a house; colours and bubbles still say who's who.
+  // When two or more people share a spot on a smaller screen, name tags shrink to initials so they don't overlap.
+  const narrow = W < 560;
   for (const [id, z] of Object.entries(t.positions)) {
     const tag = document.querySelector(`#av-${id} .tag`);
-    if (tag) tag.hidden = W < 560 && crowd[z] >= 3 && z !== "magnolia_loop";
+    if (!tag) continue;
+    const name = first(world, id);
+    tag.textContent = (W < 700 && crowd[z] >= 2 && z !== "magnolia_loop") ? name[0] : name;
+    tag.title = name;
   }
 
   const items = Object.entries(t.results || {}).map(([id, r]) => ({ id, r, speak: r.action.type === "SPEAK" }))
@@ -768,12 +777,15 @@ function layoutBubbles(world, t, animate) {
       full = `“${P.content}”`;
       b.innerHTML = `<span class="to"></span><span class="txt"></span>`;
       b.querySelector(".to").textContent = `${first(world, it.id)} → ${targetName(world, P.target)}`;
-      b.querySelector(".txt").textContent = crowded ? clip(full, 95) : clip(full, 170);
+      b.querySelector(".txt").textContent = clip(full, narrow ? 80 : crowded ? 95 : 170);
     } else {
       full = it.r.action.type === "MOVE" ? `Off to ${targetName(world, P.target)}` : (P.content || it.r.action.type.toLowerCase());
-      b.textContent = clip(full, crowded ? 40 : 60);
+      b.innerHTML = `<span class="txt"></span>`;
+      b.querySelector(".txt").textContent = clip(full, narrow ? 32 : crowded ? 40 : 60);
     }
     b.title = full;
+    const short = b.querySelector(".txt").textContent;
+    if (short !== full) makeExpandable(b, short, full, W, H);
     layer.append(b);
     const bw = b.offsetWidth, bh = b.offsetHeight;
     const shifts = [0, -0.55, 0.55, -1.05, 1.05].map(f => f * bw);
@@ -810,6 +822,35 @@ function layoutBubbles(world, t, animate) {
     stems.append(line);
   }
 }
+// A shortened bubble opens to the full line on tap (or Enter), and closes on a second tap.
+function makeExpandable(b, short, full, W, H) {
+  b.classList.add("more");
+  b.tabIndex = 0;
+  b.setAttribute("role", "button");
+  b.setAttribute("aria-expanded", "false");
+  const toggle = () => {
+    const open = !b.classList.contains("open");
+    document.querySelectorAll(".bubble.open").forEach(o => { if (o !== b) o._close && o._close(); });
+    if (!open) return b._close();
+    b._home = { left: b.style.left, top: b.style.top };
+    b.classList.add("open");
+    b.setAttribute("aria-expanded", "true");
+    b.querySelector(".txt").textContent = full;
+    // keep the opened bubble inside the scene
+    const bw = b.offsetWidth, bh = b.offsetHeight;
+    b.style.left = Math.min(Math.max(parseFloat(b.style.left), 4), W - bw - 4) + "px";
+    b.style.top = Math.min(Math.max(parseFloat(b.style.top), 4), Math.max(4, H - bh - 4)) + "px";
+  };
+  b._close = () => {
+    b.classList.remove("open");
+    b.setAttribute("aria-expanded", "false");
+    b.querySelector(".txt").textContent = short;
+    if (b._home) { b.style.left = b._home.left; b.style.top = b._home.top; }
+  };
+  b.addEventListener("click", (e) => { e.stopPropagation(); toggle(); });
+  b.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } });
+}
+
 function first(world, id) { return world.agents[id].name.split(" ")[0]; }
 
 // ---- Panels ----
@@ -923,6 +964,7 @@ loadData().then(d => {
     try { history.replaceState(null, "", location.pathname + location.hash); } catch (e) {}
   }
   $("thanks-close").onclick = () => { $("thanks").hidden = true; };
+  document.addEventListener("click", () => document.querySelectorAll(".bubble.open").forEach(o => o._close && o._close()));
   $("prev-toggle").onclick = () => setCollapsed(!$("previously").classList.contains("collapsed"));
   $("prev").onclick = () => go(idx - 1);
   $("next").onclick = () => go(idx + 1);
