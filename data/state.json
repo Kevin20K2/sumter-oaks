@@ -1,6 +1,6 @@
 {
-  "tick": 5,
-  "time": "2026-11-14T11:00",
+  "tick": 6,
+  "time": "2026-11-14T11:30",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,16 +9,18 @@
   },
   "perceptions": {
     "gary": [
-      "Rosa headed to Town Square.",
-      "You arrived at Rec Center."
+      "Donna said to Gary: “There he is! Court 1 is ours for the hour, Gary, and the spare paddle's right here. Stand behind the kitchen line and just keep the ball in, you'll be a natural by noon.”",
+      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
     ],
     "donna": [
-      "Gary just arrived."
+      "Gary said to Donna: “Morning, Donna. I'm here, but fair warning, I've never held a paddle in my life. Oh, and Rosa says dinner's at six tonight at her place, she wanted me to tell you.”",
+      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
     ],
-    "hal": [],
+    "hal": [
+      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+    ],
     "rosa": [
-      "Gary headed to Rec Center.",
-      "You arrived at Town Square."
+      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
     ]
   },
   "memories": {
@@ -97,6 +99,16 @@
         "tick": 4,
         "text": "You arrived at Rec Center.",
         "importance": 4
+      },
+      {
+        "tick": 5,
+        "text": "I said to Donna: “Morning, Donna. I'm here, but fair warning, I've never held a paddle in my life. Oh, and Rosa says dinner's at six tonight at her place, she wanted me to tell you.”",
+        "importance": 4
+      },
+      {
+        "tick": 5,
+        "text": "Donna said to Gary: “There he is! Court 1 is ours for the hour, Gary, and the spare paddle's right here. Stand behind the kitchen line and just keep the ball in, you'll be a natural by noon.”",
+        "importance": 4
       }
     ],
     "donna": [
@@ -169,6 +181,16 @@
         "tick": 4,
         "text": "Gary just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 5,
+        "text": "I said to Gary: “There he is! Court 1 is ours for the hour, Gary, and the spare paddle's right here. Stand behind the kitchen line and just keep the ball in, you'll be a natural by noon.”",
+        "importance": 6
+      },
+      {
+        "tick": 5,
+        "text": "Gary said to Donna: “Morning, Donna. I'm here, but fair warning, I've never held a paddle in my life. Oh, and Rosa says dinner's at six tonight at her place, she wanted me to tell you.”",
+        "importance": 6
       }
     ],
     "hal": [
@@ -231,6 +253,11 @@
         "tick": 4,
         "text": "I (architectural review desk): File complaint: Donna's flamingo collection, over three visible ornaments, violation of L-02",
         "importance": 5
+      },
+      {
+        "tick": 5,
+        "text": "I (architectural review desk): Double-check both filings are logged with dates and violation codes L-01 and L-02",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -308,6 +335,11 @@
         "tick": 4,
         "text": "You arrived at Town Square.",
         "importance": 6
+      },
+      {
+        "tick": 5,
+        "text": "I (parade signup table): Look over the parade signup sheet to see who's entered what and what the fuss is about",
+        "importance": 4
       }
     ]
   },
@@ -330,10 +362,10 @@
     ]
   },
   "emotions": {
-    "gary": "warm, slightly nervous",
+    "gary": "nervous but game",
     "donna": "optimistic",
     "hal": "dutiful",
-    "rosa": "determined"
+    "rosa": "curious"
   },
   "laws": [
     {
@@ -376,25 +408,40 @@
     {
       "by": "hal",
       "text": "Hal Weems: File complaint: Donna's flamingo collection, over three visible ornaments, violation of L-02"
+    },
+    {
+      "by": "hal",
+      "text": "Hal Weems: Double-check both filings are logged with dates and violation codes L-01 and L-02"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 5,
+      "time": "Saturday, November 14, 11:00 AM",
+      "story": "At 11:00 on a sunny Saturday in Sumter Oaks, Gary is at the Rec Center feeling nervous but game, admitting to Donna that he has never held a paddle before. Donna, optimistic as ever, hands him the spare and promises he'll be a natural by noon once they take Court 1 for the hour. Meanwhile Hal is dutifully logging two architectural filings at Town Hall, double-checking their dates and violation codes L-01 and L-02, while Rosa, curious as ever, is at the Town Square parade table looking over who has signed up for what.",
+      "dialogue": [
+        "Gary said to Donna: “Morning, Donna. I'm here, but fair warning, I've never held a paddle in my life. Oh, and Rosa says dinner's at six tonight at her place, she wanted me to tell you.”",
+        "Donna said to Gary: “There he is! Court 1 is ours for the hour, Gary, and the spare paddle's right here. Stand behind the kitchen line and just keep the ball in, you'll be a natural by noon.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 0.06911,
+    "total_usd": 0.0998,
     "by_day": {
       "2026-10-12": {
-        "ticks": 2,
-        "usd": 0.06911
+        "ticks": 3,
+        "usd": 0.0998
       }
     }
   },
   "recent_tick_costs": [
-    0.03034
+    0.03034,
+    0.03069
   ],
   "fund": {
-    "gross_usd": 5.0,
-    "payments": 1,
-    "supporters": 1,
+    "gross_usd": 10.0,
+    "payments": 2,
+    "supporters": 2,
     "monthly_supporters": 0,
     "options": [
       {
@@ -435,6 +482,6 @@
       }
     ],
     "test_mode": true,
-    "level": "fair"
+    "level": "bright"
   }
 }

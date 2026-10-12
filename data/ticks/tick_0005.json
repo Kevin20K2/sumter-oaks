@@ -1,0 +1,121 @@
+{
+  "tick": 5,
+  "simulation_time": "Saturday, November 14, 11:00 AM",
+  "weather": "Sunny, 79°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "town_hall",
+    "rosa": "town_square"
+  },
+  "story": "At 11:00 on a sunny Saturday in Sumter Oaks, Gary is at the Rec Center feeling nervous but game, admitting to Donna that he has never held a paddle before. Donna, optimistic as ever, hands him the spare and promises he'll be a natural by noon once they take Court 1 for the hour. Meanwhile Hal is dutifully logging two architectural filings at Town Hall, double-checking their dates and violation codes L-01 and L-02, while Rosa, curious as ever, is at the Town Square parade table looking over who has signed up for what.",
+  "events": [
+    "Hal (architectural review desk): Double-check both filings are logged with dates and violation codes L-01 and L-02",
+    "Rosa (parade signup table): Look over the parade signup sheet to see who's entered what and what the fuss is about"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I told Rosa I'd come meet Donna at the courts, and here I am. Donna's right in line-of-sight, so no need to wander off. Rosa asked me to pass along the dinner invite, six tonight at her place, and I haven't delivered it yet. Doing that is useful, which is what I like best. I also dodged Donna's pickleball question last time, so I should be upfront that I've never held a paddle. Keep it short and friendly, and get to the actual playing after.",
+      "emotional_state": "nervous but game",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Morning, Donna. I'm here, but fair warning, I've never held a paddle in my life. Oh, and Rosa says dinner's at six tonight at her place, she wanted me to tell you."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just walked in, which means he took me up on the coffee-and-paddle offer, or at least he's curious. I already reserved court 1 for an hour and checked the ladder, so I shouldn't ask him again, just get him started. Keep it light, hand him the spare paddle, and promise he'll pick it up fast. If he's hitting balls by 11:30, I've got my partner.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "There he is! Court 1 is ours for the hour, Gary, and the spare paddle's right here. Stand behind the kitchen line and just keep the ball in, you'll be a natural by noon."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Both reports are on file: Gary's cart lights, Donna's flamingos. I'm at Town Hall with nobody around. Reports on the desk are only half the job; a proper watchdog logs the grievance and follows through. But Gary did own up to it himself, and he said he'd file paperwork after, which is backwards order but at least honest. The drop box and voting terminal are here too. No point lingering. I should confirm the filings went through the review desk properly, make sure the record is complete, and then get back out to see whether the cart lights and flamingos are still in violation. Rules exist so neighbors don't have to argue, and a clean paper trail keeps it that way.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "architectural_review_desk",
+          "content": "Double-check both filings are logged with dates and violation codes L-01 and L-02"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've invited Hal and Gary, and Gary has said yes and is on his way to the rec center with Donna. I told Gary to pass the invite on to Donna, but I haven't heard her say yes, and I don't want to count on a message relayed through a pickleball game. I'm in the Town Square with nobody in line of sight, so there's no one to speak to. The ice cream stand is right here and I could use a small treat while I wait, but the better use of this tick is to loosen things up a bit. Eating dinner with three people who have history means I should know what's going on in town. The parade signup table might tell me what everyone's fighting about, and that's the sort of thing a good host should understand before the soup hits the table. I'll check it out.",
+      "emotional_state": "curious",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "parade_signup_table",
+          "content": "Look over the parade signup sheet to see who's entered what and what the fuss is about"
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "hal",
+      "text": "Hal Weems: Double-check both filings are logged with dates and violation codes L-01 and L-02"
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03069,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 8939,
+        "output_tokens": 1266,
+        "usd": 0.03054
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 490,
+        "output_tokens": 192,
+        "usd": 0.00015
+      }
+    }
+  }
+}
