@@ -1,0 +1,49 @@
+# Runs one Sumter Oaks tick every hour and saves it to the repo.
+# Each push makes Vercel republish the site, so followers see the new tick.
+# To pause the town: Actions tab > "Sumter Oaks tick" > ... menu > Disable workflow.
+name: Sumter Oaks tick
+
+on:
+  schedule:
+    - cron: "17 * * * *"        # every hour at :17 (UTC). Edit to change the pace.
+  workflow_dispatch:            # adds a "Run workflow" button in the Actions tab
+    inputs:
+      ticks:
+        description: "How many ticks to run"
+        default: "1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sumter-oaks-sim        # never run two ticks at once
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Run the town
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python sim.py --ticks "${{ inputs.ticks || '1' }}"
+
+      - name: Save the new tick
+        run: |
+          git config user.name "sumter-oaks-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ticks data/state.json
+          if git diff --cached --quiet; then echo "Nothing new to save."; exit 0; fi
+          LAST=$(python -c "import json; print(json.load(open('data/state.json'))['tick'] - 1)")
+          git commit -m "Tick $LAST"
+          git push

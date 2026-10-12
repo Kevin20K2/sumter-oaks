@@ -1,0 +1,18 @@
+{
+  "models": {
+    "resident": "claude-sonnet-5-5",
+    "story": "claude-haiku-5-5",
+    "test": "claude-haiku-5-5"
+  },
+  "max_tokens": {
+    "resident": 800,
+    "story": 400
+  },
+  "start_time": "2026-11-14T09:00",
+  "minutes_per_tick": 30,
+  "day_start": "07:00",
+  "day_end": "22:00",
+  "memories_per_prompt": 8,
+  "reflect_every_ticks": 8,
+  "proposal_open_ticks": 6
+}

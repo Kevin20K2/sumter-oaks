@@ -1,0 +1,92 @@
+{
+  "town_name": "Sumter Oaks",
+  "setting": "A present-day 55+ golf cart community in central Florida. Tone: warm, comic, realistic.",
+  "zones": {
+    "garys_house": {
+      "name": "Gary's House",
+      "connects_to": ["magnolia_loop"],
+      "objects": ["gary_workbench", "gary_golf_cart", "gary_toolbox", "gary_fridge"]
+    },
+    "donnas_house": {
+      "name": "Donna's House",
+      "connects_to": ["magnolia_loop"],
+      "objects": ["donna_club_calendar", "donna_pickleball_bag", "donna_phone"]
+    },
+    "hals_house": {
+      "name": "Hal's House",
+      "connects_to": ["magnolia_loop"],
+      "objects": ["hal_porch_chair", "hal_binoculars", "hal_violation_notebook"]
+    },
+    "rosas_house": {
+      "name": "Rosa's House",
+      "connects_to": ["magnolia_loop"],
+      "objects": ["rosa_kitchen", "rosa_dining_table", "rosa_shift_schedule"]
+    },
+    "magnolia_loop": {
+      "name": "Magnolia Loop (the street)",
+      "connects_to": ["garys_house", "donnas_house", "hals_house", "rosas_house", "rec_center", "town_square"],
+      "objects": ["mailbox_kiosk", "donna_flamingo_flock", "street_bulletin_board"]
+    },
+    "rec_center": {
+      "name": "Rec Center",
+      "connects_to": ["magnolia_loop"],
+      "objects": ["pickleball_court_1", "pickleball_court_2", "court_reservation_kiosk", "ladder_standings_board"]
+    },
+    "town_square": {
+      "name": "Town Square",
+      "connects_to": ["magnolia_loop", "town_hall"],
+      "objects": ["bandstand", "parade_signup_table", "ice_cream_stand", "square_benches"]
+    },
+    "town_hall": {
+      "name": "Town Hall",
+      "connects_to": ["town_square"],
+      "objects": ["proposal_drop_box", "architectural_review_desk", "voting_terminal"]
+    }
+  },
+  "laws": [
+    {"id": "L-01", "title": "Cart Modifications", "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."},
+    {"id": "L-02", "title": "Lawn Ornaments", "text": "No more than 3 decorative ornaments may be visible from the street."},
+    {"id": "L-03", "title": "Quiet Hours", "text": "No amplified sound from 10 PM to 7 AM."},
+    {"id": "L-04", "title": "Holiday Decor", "text": "Holiday lighting is permitted from Thanksgiving through January 15."},
+    {"id": "L-05", "title": "Court Reservations", "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."},
+    {"id": "L-06", "title": "Parking", "text": "No parking on the grass. Carts and cars stay on driveways or the street."}
+  ],
+  "agents": {
+    "gary": {
+      "name": "Gary Kowalski",
+      "age": 71,
+      "home": "garys_house",
+      "profession": "Retired HVAC engineer from Toledo; the street's unofficial fix-it guy",
+      "traits": "Helpful to a fault, stubborn, chatty, tinkerer, quietly lonely (widowed two years ago)",
+      "core_motivations": "Feeling useful and needed",
+      "current_goal": "Rig his golf cart with lights and a sound system for the Holiday Golf Cart Parade"
+    },
+    "donna": {
+      "name": "Donna Pruitt",
+      "age": 68,
+      "home": "donnas_house",
+      "profession": "Retired real estate agent from New Jersey; social chair of three clubs",
+      "traits": "Outgoing, competitive, gossipy, organized, generous",
+      "core_motivations": "Being at the center of the social scene",
+      "current_goal": "Climb the pickleball ladder by recruiting Gary as her doubles partner, even though he has never played"
+    },
+    "hal": {
+      "name": "Hal Weems",
+      "age": 76,
+      "home": "hals_house",
+      "profession": "Retired Army supply sergeant; self-appointed deed-restriction watchdog",
+      "traits": "By-the-book, grumpy, dry wit, observant, secretly soft-hearted",
+      "core_motivations": "Order and respect",
+      "current_goal": "Report Gary's unauthorized cart modifications and Donna's flamingo collection to the architectural review committee"
+    },
+    "rosa": {
+      "name": "Rosa Delgado",
+      "age": 63,
+      "home": "rosas_house",
+      "profession": "ER nurse from Miami, recently semi-retired; still picks up per-diem shifts",
+      "traits": "Practical, warm, blunt, curious, overcommitted",
+      "core_motivations": "Building a real community after an uprooting move",
+      "current_goal": "Host a welcome dinner and get all three neighbors at the same table"
+    }
+  }
+}

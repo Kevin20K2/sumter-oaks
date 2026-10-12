@@ -1,0 +1,569 @@
+"""Sumter Oaks simulation loop.
+
+Run one or more ticks of the town. Each tick:
+  1. builds every resident's prompt from world.json, the saved state, and their memories
+  2. asks the model for each resident's action (in parallel)
+  3. checks each action against the map and the rules (bad actions become WAIT)
+  4. updates positions, what everyone saw, memories, proposals and Town Hall matters
+  5. asks the story model for a short paragraph about the tick
+  6. writes data/ticks/tick_NNNN.json for the viewer, and saves data/state.json
+
+Usage:
+  python sim.py                 run 1 tick with the real models (needs ANTHROPIC_API_KEY)
+  python sim.py --ticks 4       run 4 ticks
+  python sim.py --test          use the cheap test model for everything
+  python sim.py --mock          no API calls at all; canned actions, for checking the plumbing
+  python sim.py --reset         start over from seed.json (deletes data/)
+"""
+import argparse
+import concurrent.futures as cf
+import datetime as dt
+import json
+import os
+import random
+import re
+import shutil
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).parent
+DATA = ROOT / "data"
+TICKS = DATA / "ticks"
+LOGS = DATA / "logs"
+STATE_FILE = DATA / "state.json"
+
+
+# ---------------------------------------------------------------- setup
+
+def load_json(path):
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+
+
+def save_json(path, obj):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(obj, indent=2, ensure_ascii=False), encoding="utf-8")
+    tmp.replace(path)
+
+
+def load_env():
+    """Read KEY=value lines from .env into the environment (no extra package needed).
+    Values in .env win over anything already set in Windows, so there is one place to look."""
+    env = ROOT / ".env"
+    if not env.exists():
+        return "Windows environment" if os.environ.get("ANTHROPIC_API_KEY") else None
+    for line in env.read_text(encoding="utf-8-sig").splitlines():
+        line = line.strip()
+        if line and not line.startswith("#") and "=" in line:
+            k, v = line.split("=", 1)
+            os.environ[k.strip()] = v.strip().strip('"').strip("'")
+    return ".env file"
+
+
+def new_state(world, seed, cfg):
+    agents = list(world["agents"])
+    state = {
+        "tick": seed.get("tick", 1),
+        "time": cfg["start_time"],
+        "positions": dict(seed["positions"]),
+        "perceptions": {a: list(seed.get("events", [])) for a in agents},
+        "memories": {a: [] for a in agents},
+        "reflections": {a: list(seed["memory"].get(a, {}).get("reflections", [])) for a in agents},
+        "emotions": {a: "neutral" for a in agents},
+        "laws": list(world["laws"]),
+        "proposals": [],
+        "matters": [],
+    }
+    for a in agents:
+        for text in seed["memory"].get(a, {}).get("memories", []):
+            m = re.match(r"\[Tick (-?\d+)\]\s*(.*)", text)
+            tick, body = (int(m.group(1)), m.group(2)) if m else (0, text)
+            state["memories"][a].append({"tick": tick, "text": body, "importance": 5})
+    return state
+
+
+# ---------------------------------------------------------------- time and weather
+
+def parse_hhmm(s):
+    h, m = s.split(":")
+    return dt.time(int(h), int(m))
+
+
+def fmt_time(t):
+    return t.strftime("%A, %B %d, %I:%M %p").replace(" 0", " ")
+
+
+def weather_for(t, tick):
+    rng = random.Random(t.strftime("%Y%m%d"))
+    sky = rng.choice(["Sunny", "Sunny", "Partly cloudy", "Humid and hazy", "Breezy and clear"])
+    shower = rng.random() < 0.25 and 14 <= t.hour <= 17
+    base = rng.randint(72, 80)
+    temp = base + round(6 * max(0, 1 - abs(t.hour + t.minute / 60 - 15) / 8))
+    return f"{'Afternoon shower' if shower else sky}, {temp}°F"
+
+
+# ---------------------------------------------------------------- prompts
+
+def bullets(items):
+    items = list(items)
+    return "\n".join(f"  - {i}" for i in items) if items else "  - (none)"
+
+
+def retrieve_memories(mems, n):
+    """Most recent memories plus the most important older ones, in time order."""
+    recent = mems[-(n // 2 + 1):]
+    rest = [m for m in mems if m not in recent]
+    important = sorted(rest, key=lambda m: m["importance"], reverse=True)[: n - len(recent)]
+    picked = sorted(recent + important, key=lambda m: m["tick"])
+    return [f"[Tick {m['tick']}] {m['text']}" for m in picked]
+
+
+def build_prompt(template, world, state, cfg, agent_id):
+    a = world["agents"][agent_id]
+    zid = state["positions"][agent_id]
+    zone = world["zones"][zid]
+    nearby = [f"{o} ({world['agents'][o]['name']})" for o, z in state["positions"].items() if z == zid and o != agent_id]
+    laws = [f"{l['id']} {l['title']}: {l['text']}" for l in state["laws"]]
+    open_props = [p for p in state["proposals"] if p["status"] == "open"]
+    if open_props:
+        laws.append("Open proposals awaiting votes at Town Hall: " + "; ".join(
+            f"{p['id']} \"{p['title']}\" ({p['text']})" for p in open_props))
+    now = dt.datetime.fromisoformat(state["time"])
+    values = {
+        "agent_name": a["name"],
+        "town_name": world["town_name"],
+        "agent_age": str(a["age"]),
+        "agent_profession": a["profession"],
+        "agent_traits": a["traits"],
+        "agent_core_motivations": a["core_motivations"],
+        "agent_current_goal": a["current_goal"],
+        "current_zone": f"{zone['name']} [{zid}] (connects to: {', '.join(zone['connects_to'])})",
+        "active_municipal_laws": bullets(laws),
+        "retrieved_reflections": bullets(state["reflections"][agent_id][-4:]),
+        "retrieved_memories": bullets(retrieve_memories(state["memories"][agent_id], cfg["memories_per_prompt"])),
+        "current_tick": str(state["tick"]),
+        "simulation_time": fmt_time(now),
+        "weather_condition": weather_for(now, state["tick"]),
+        "nearby_agents_list": ", ".join(nearby) or "none",
+        "interactive_objects_list": ", ".join(zone["objects"]) or "none",
+        "recent_observations_log": bullets(state["perceptions"].get(agent_id) or ["Nothing notable."]),
+        "minutes_per_tick": str(cfg["minutes_per_tick"]),
+    }
+    return re.sub(r"\{\{(\w+)\}\}", lambda m: values[m.group(1)], template)
+
+
+# ---------------------------------------------------------------- model calls
+
+def extract_json(text):
+    text = text.strip()
+    text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text)
+    start, end = text.find("{"), text.rfind("}")
+    if start == -1 or end == -1:
+        raise ValueError("no JSON object in reply")
+    return json.loads(text[start:end + 1])
+
+
+class Brain:
+    def __init__(self, cfg, test=False, mock=False):
+        self.cfg, self.mock = cfg, mock
+        self.resident_model = cfg["models"]["test"] if test else cfg["models"]["resident"]
+        self.story_model = cfg["models"]["test"] if test else cfg["models"]["story"]
+        self.client = None
+        if not mock:
+            try:
+                import anthropic
+            except ImportError:
+                sys.exit("The anthropic package isn't installed. Run:  pip install -r requirements.txt")
+            key = os.environ.get("ANTHROPIC_API_KEY", "")
+            if not key or "your-key-here" in key:
+                sys.exit("ANTHROPIC_API_KEY isn't set. Put it in a .env file next to sim.py (see .env.example).")
+            print(f"API key: {key[:13]}... ({len(key)} characters)")
+            if not key.startswith("sk-ant-api"):
+                print("  Warning: API keys from Console > Settings > API keys normally start with sk-ant-api.")
+            self.client = anthropic.Anthropic()
+            self.anthropic = anthropic
+
+    def preflight(self):
+        """One tiny call before running ticks, so a bad key or model fails loudly instead of silently."""
+        if self.mock:
+            return
+        a = self.anthropic
+        for model in sorted({self.resident_model, self.story_model}):
+            try:
+                self._ask(model, "Reply with OK.", "ping", 5)
+            except a.AuthenticationError:
+                sys.exit("Anthropic rejected the API key (401). Create a new key at platform.claude.com under "
+                         "Settings > API keys, paste it into .env, and try again.")
+            except a.PermissionDeniedError as e:
+                sys.exit(f"This key isn't allowed to use {model} (403): {e}")
+            except a.NotFoundError:
+                sys.exit(f"Model {model!r} wasn't found (404). Check the model names in config.json.")
+            except a.BadRequestError as e:
+                msg = str(e)
+                if "credit" in msg.lower():
+                    sys.exit("Your API account is out of credits. Add credits under Billing in the Console.")
+                sys.exit(f"The API refused the request (400): {msg}")
+            except a.APIConnectionError:
+                sys.exit("Couldn't reach the Anthropic API. Check your internet connection.")
+        print("API check passed.")
+
+    def _ask(self, model, system, user, max_tokens):
+        r = self.client.messages.create(
+            model=model, max_tokens=max_tokens, system=system,
+            messages=[{"role": "user", "content": user}],
+        )
+        return "".join(b.text for b in r.content if b.type == "text")
+
+    def decide(self, prompt, agent_id, world, state, rng):
+        if self.mock:
+            return mock_decision(agent_id, world, state, rng), "(mock)"
+        ask = "Decide your one action for this tick. Reply with the JSON object only."
+        raw = self._ask(self.resident_model, prompt, ask, self.cfg["max_tokens"]["resident"])
+        try:
+            return extract_json(raw), raw
+        except (ValueError, json.JSONDecodeError):
+            raw = self._ask(self.resident_model, prompt,
+                            ask + " Your previous reply was not valid JSON; send only the JSON object.",
+                            self.cfg["max_tokens"]["resident"])
+            return extract_json(raw), raw
+
+    def story(self, summary):
+        if self.mock:
+            return " ".join(summary["lines"][:4])
+        system = ("You narrate a warm, gently comic, realistic town simulation set in Sumter Oaks, a Florida "
+                  "55+ golf cart community. Write 2-4 plain sentences in present tense summarizing this moment "
+                  "for readers following along. Use first names. No headings, no lists, no quotation of every line.")
+        return self._ask(self.story_model, system, json.dumps(summary, ensure_ascii=False),
+                         self.cfg["max_tokens"]["story"]).strip()
+
+    def reflect(self, agent, memories):
+        if self.mock:
+            return []
+        system = ("You help a simulated resident form beliefs. Given their recent memories, write 2 short "
+                  "first-person reflections (one sentence each) about people, relationships or their goal. "
+                  "Reply as a JSON array of strings only.")
+        raw = self._ask(self.story_model, system,
+                        json.dumps({"resident": agent, "memories": memories}, ensure_ascii=False),
+                        self.cfg["max_tokens"]["story"])
+        try:
+            out = json.loads(re.sub(r"^```(?:json)?\s*|\s*```$", "", raw.strip()))
+            return [s for s in out if isinstance(s, str)][:2]
+        except json.JSONDecodeError:
+            return []
+
+
+# ---------------------------------------------------------------- mock residents (no API)
+
+MOCK_LINES = {
+    "gary": ["You ever wire a marine speaker to a golf cart? Me neither, until Tuesday.",
+             "If your disposal acts up again, just holler.", "One game of pickleball. One."],
+    "donna": ["Court 2, Saturday, 8 AM. Bring water.", "Did you hear about the mailbox complaint?",
+              "Seven is a flock, not a collection."],
+    "hal": ["That cart needs approval. Rules are rules.", "Quiet hours start at ten. Just a reminder.",
+            "Your recycling bin is facing the right way now. Good."],
+    "rosa": ["Dinner Friday at six. I'm not taking no.", "Has anyone actually eaten today?",
+             "You two should sit together at dinner."],
+}
+
+
+def mock_decision(agent_id, world, state, rng):
+    zid = state["positions"][agent_id]
+    zone = world["zones"][zid]
+    others = [o for o, z in state["positions"].items() if z == zid and o != agent_id]
+    roll = rng.random()
+    if others and roll < 0.45:
+        act = {"type": "SPEAK", "parameters": {"target": rng.choice(others), "content": rng.choice(MOCK_LINES[agent_id])}}
+    elif roll < 0.75:
+        act = {"type": "MOVE", "parameters": {"target": rng.choice(zone["connects_to"]), "content": "errand"}}
+    elif zone["objects"]:
+        act = {"type": "INTERACT", "parameters": {"target": rng.choice(zone["objects"]), "content": "checks on it"}}
+    else:
+        act = {"type": "WAIT", "parameters": {"target": "none", "content": "people-watching"}}
+    if zid == "town_hall" and agent_id == "hal" and not state["proposals"]:
+        act = {"type": "DRAFT_LAW", "parameters": {"target": "Flamingo Fairness Act",
+                                                   "content": "Lawn flamingos count as one ornament per flock."}}
+    open_props = [p for p in state["proposals"] if p["status"] == "open" and agent_id not in p["votes"]]
+    if zid == "town_hall" and open_props:
+        act = {"type": "VOTE", "parameters": {"target": open_props[0]["id"], "content": rng.choice(["YES", "NO"])}}
+    return {"thought_process": "(mock)", "emotional_state": rng.choice(["cheerful", "curious", "grumpy", "hopeful"]),
+            "importance_rating": rng.randint(3, 7), "action": act}
+
+
+# ---------------------------------------------------------------- validation
+
+def norm(s):
+    return re.sub(r"[^a-z0-9]+", "_", str(s or "").strip().lower()).strip("_")
+
+
+def match_id(raw, candidates, names=None):
+    """Find raw among candidate ids, also accepting display names or first names."""
+    key = norm(raw)
+    for c in candidates:
+        if key == c:
+            return c
+    for c in candidates:
+        n = norm((names or {}).get(c, ""))
+        if n and (key == n or key == n.split("_")[0]):
+            return c
+    return None
+
+
+def validate(result, agent_id, world, state):
+    """Return (clean_result, note). Anything out of reach becomes WAIT with a note."""
+    zid = state["positions"][agent_id]
+    zone = world["zones"][zid]
+    act = result.get("action") or {}
+    typ = str(act.get("type", "WAIT")).upper().strip()
+    p = act.get("parameters") or {}
+    target, content = p.get("target"), str(p.get("content") or "").strip()
+    note = None
+
+    def wait(reason):
+        return {"type": "WAIT", "parameters": {"target": "none", "content": content or reason}}, reason
+
+    if typ == "MOVE":
+        zone_names = {z: world["zones"][z]["name"] for z in zone["connects_to"]}
+        dest = match_id(target, zone["connects_to"], zone_names)
+        act, note = ({"type": "MOVE", "parameters": {"target": dest, "content": content}}, None) if dest else \
+            wait(f"tried to go to {target!r}, which isn't connected to {zid}")
+    elif typ == "SPEAK":
+        here = [o for o, z in state["positions"].items() if z == zid and o != agent_id]
+        who = match_id(target, here, {o: world["agents"][o]["name"] for o in here})
+        act, note = ({"type": "SPEAK", "parameters": {"target": who, "content": content}}, None) if who and content else \
+            wait(f"tried to speak to {target!r}, who isn't here")
+    elif typ == "INTERACT":
+        obj = match_id(target, zone["objects"])
+        act, note = ({"type": "INTERACT", "parameters": {"target": obj, "content": content}}, None) if obj else \
+            wait(f"tried to use {target!r}, which isn't in {zid}")
+    elif typ == "DRAFT_LAW":
+        act, note = ({"type": "DRAFT_LAW", "parameters": {"target": str(target).strip(), "content": content}}, None) \
+            if zid == "town_hall" and target and content else wait("tried to draft a law away from Town Hall")
+    elif typ == "VOTE":
+        ids = [p_["id"] for p_ in state["proposals"] if p_["status"] == "open"]
+        pid = str(target or "").upper().strip()
+        vote = content.upper()
+        act, note = ({"type": "VOTE", "parameters": {"target": pid, "content": vote}}, None) \
+            if zid == "town_hall" and pid in ids and vote in ("YES", "NO") else wait(f"tried to vote on {target!r}")
+    else:
+        act = {"type": "WAIT", "parameters": {"target": "none", "content": content or "watching the street"}}
+
+    try:
+        imp = max(1, min(10, int(result.get("importance_rating", 5))))
+    except (TypeError, ValueError):
+        imp = 5
+    clean = {
+        "thought_process": str(result.get("thought_process", "")),
+        "emotional_state": str(result.get("emotional_state", "neutral"))[:40],
+        "importance_rating": imp,
+        "action": act,
+    }
+    if note:
+        clean["engine_note"] = note
+    return clean, note
+
+
+# ---------------------------------------------------------------- one tick
+
+def first(world, a):
+    return world["agents"][a]["name"].split()[0]
+
+
+def describe(world, a, act):
+    """Public, third-person description of an action."""
+    p, n = act["parameters"], first(world, a)
+    t = act["type"]
+    if t == "SPEAK":
+        return f"{n} said to {first(world, p['target'])}: “{p['content']}”"
+    if t == "MOVE":
+        return f"{n} headed to {world['zones'][p['target']]['name']}."
+    if t == "INTERACT":
+        return f"{n} ({p['target'].replace('_', ' ')}): {p['content']}"
+    if t == "DRAFT_LAW":
+        return f"{n} filed a proposed law: “{p['target']}”."
+    if t == "VOTE":
+        return f"{n} cast a vote on {p['target']}."
+    return f"{n} waited: {p['content']}"
+
+
+def run_tick(world, state, cfg, template, brain):
+    tick = state["tick"]
+    now = dt.datetime.fromisoformat(state["time"])
+    rng = random.Random(tick * 7919)
+    agents = list(world["agents"])
+    start_pos = dict(state["positions"])
+
+    # 1-2. prompts and decisions, in parallel
+    prompts = {a: build_prompt(template, world, state, cfg, a) for a in agents}
+    raws, results, log = {}, {}, []
+    with cf.ThreadPoolExecutor(max_workers=len(agents)) as pool:
+        futs = {a: pool.submit(brain.decide, prompts[a], a, world, state, random.Random(rng.random())) for a in agents}
+        for a, f in futs.items():
+            try:
+                decision, raws[a] = f.result()
+            except Exception as e:  # network error, bad JSON twice, etc.
+                decision, raws[a] = {"action": {"type": "WAIT", "parameters": {"content": "lost in thought"}}}, f"ERROR: {e}"
+            results[a], note = validate(decision, a, world, state)
+            log.append({"agent": a, "raw": raws[a], "note": note})
+            if str(raws[a]).startswith("ERROR"):
+                print(f"  ! {first(world, a)}: {raws[a][:300]}")
+    if all(str(raws[a]).startswith("ERROR") for a in agents):
+        sys.exit("Every resident's API call failed, so this tick was not saved. See the errors above.")
+
+    # 3-4. apply actions
+    zone_events = {}          # zone -> list of public descriptions
+    public_lines, new_matters = [], []
+    for a in agents:
+        act = results[a]["action"]
+        line = describe(world, a, act)
+        zone_events.setdefault(start_pos[a], []).append((a, line))
+        public_lines.append(line)
+        p = act["parameters"]
+        if act["type"] == "MOVE":
+            state["positions"][a] = p["target"]
+        elif act["type"] == "INTERACT" and start_pos[a] == "town_hall" and p["target"] in (
+                "architectural_review_desk", "proposal_drop_box"):
+            new_matters.append({"by": a, "text": f"{world['agents'][a]['name']}: {p['content']}"})
+        elif act["type"] == "DRAFT_LAW":
+            pid = f"P-{len(state['proposals']) + 1:03d}"
+            state["proposals"].append({"id": pid, "title": p["target"], "text": p["content"], "by": a,
+                                       "opened": tick, "votes": {}, "status": "open"})
+            new_matters.append({"by": a, "text": f"{pid} proposed by {first(world, a)}: {p['target']}. {p['content']}"})
+        elif act["type"] == "VOTE":
+            for pr in state["proposals"]:
+                if pr["id"] == p["target"]:
+                    pr["votes"][a] = p["content"]
+        state["emotions"][a] = results[a]["emotional_state"]
+
+    # proposals close when everyone has voted or time runs out
+    town_news = []
+    for pr in state["proposals"]:
+        if pr["status"] != "open":
+            continue
+        if len(pr["votes"]) == len(agents) or tick - pr["opened"] >= cfg["proposal_open_ticks"]:
+            yes = sum(v == "YES" for v in pr["votes"].values())
+            no = sum(v == "NO" for v in pr["votes"].values())
+            passed = yes > no
+            pr["status"] = "passed" if passed else "failed"
+            if passed:
+                state["laws"].append({"id": f"L-{len(state['laws']) + 1:02d}", "title": pr["title"], "text": pr["text"]})
+            msg = f"{pr['id']} “{pr['title']}” {pr['status']} {yes}-{no}."
+            new_matters.append({"by": pr["by"], "text": msg})
+            town_news.append(f"Town Hall notice: {msg}")
+
+    # what each resident perceives next tick, and what they remember
+    for a in agents:
+        seen = [line for (who, line) in zone_events.get(start_pos[a], []) if who != a]
+        if state["positions"][a] != start_pos[a]:
+            seen.append(f"You arrived at {world['zones'][state['positions'][a]]['name']}.")
+        for o in agents:
+            if o != a and state["positions"][o] == state["positions"][a] and start_pos[o] != state["positions"][a]:
+                seen.append(f"{first(world, o)} just arrived.")
+        seen += town_news
+        state["perceptions"][a] = seen
+        imp = results[a]["importance_rating"]
+        own = describe(world, a, results[a]["action"]).replace(first(world, a), "I", 1)
+        state["memories"][a].append({"tick": tick, "text": own, "importance": imp})
+        for s in seen:
+            state["memories"][a].append({"tick": tick, "text": s, "importance": imp})
+        state["memories"][a] = state["memories"][a][-200:]
+
+    # 5. story
+    weather = weather_for(now, tick)
+    summary = {"tick": tick, "time": fmt_time(now), "weather": weather,
+               "where": {first(world, a): world["zones"][start_pos[a]]["name"] for a in agents},
+               "moods": {first(world, a): results[a]["emotional_state"] for a in agents},
+               "lines": public_lines + town_news}
+    try:
+        story = brain.story(summary)
+    except Exception as e:
+        story = " ".join(public_lines)
+        log.append({"agent": "story", "raw": f"ERROR: {e}"})
+
+    # periodic reflections
+    if cfg["reflect_every_ticks"] and tick % cfg["reflect_every_ticks"] == 0:
+        for a in agents:
+            try:
+                recent = [m["text"] for m in state["memories"][a][-20:]]
+                state["reflections"][a] = (state["reflections"][a] + brain.reflect(world["agents"][a]["name"], recent))[-8:]
+            except Exception as e:
+                log.append({"agent": a, "raw": f"REFLECT ERROR: {e}"})
+
+    state["matters"] += new_matters
+
+    # 6. write the tick for the viewer
+    tick_doc = {
+        "tick": tick,
+        "simulation_time": fmt_time(now),
+        "weather": weather,
+        "positions": start_pos,
+        "story": story,
+        "events": town_news + [line for line in public_lines if "said to" not in line],
+        "results": results,
+        "matters": new_matters,
+        "laws": state["laws"],
+    }
+    name = f"tick_{tick:04d}.json"
+    save_json(TICKS / name, tick_doc)
+    index_path = TICKS / "index.json"
+    index = load_json(index_path) if index_path.exists() else {"ticks": []}
+    if name not in index["ticks"]:
+        index["ticks"].append(name)
+    index["updated"] = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+    save_json(index_path, index)
+    LOGS.mkdir(parents=True, exist_ok=True)
+    (LOGS / f"tick_{tick:04d}.json").write_text(json.dumps({"prompts": prompts, "replies": log}, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    # advance the clock; overnight, everyone goes home
+    nxt = now + dt.timedelta(minutes=cfg["minutes_per_tick"])
+    if nxt.time() >= parse_hhmm(cfg["day_end"]) or nxt.date() != now.date():
+        day = (now + dt.timedelta(days=1)).date()
+        nxt = dt.datetime.combine(day, parse_hhmm(cfg["day_start"]))
+        for a in agents:
+            state["positions"][a] = world["agents"][a]["home"]
+            state["perceptions"][a] = [f"A new morning in {world['town_name']}. You're at home."]
+    state["time"] = nxt.isoformat(timespec="minutes")
+    state["tick"] = tick + 1
+    save_json(STATE_FILE, state)
+    return tick_doc
+
+
+# ---------------------------------------------------------------- main
+
+def main():
+    ap = argparse.ArgumentParser(description="Run Sumter Oaks ticks.")
+    ap.add_argument("--ticks", type=int, default=1, help="how many ticks to run (default 1)")
+    ap.add_argument("--test", action="store_true", help="use the cheap test model for everything")
+    ap.add_argument("--mock", action="store_true", help="no API calls; canned actions")
+    ap.add_argument("--reset", action="store_true", help="delete data/ and start from seed.json")
+    args = ap.parse_args()
+
+    key_source = load_env()
+    cfg = load_json(ROOT / "config.json")
+    world = load_json(ROOT / "world.json")
+    template = (ROOT / "prompt_template.md").read_text(encoding="utf-8")
+
+    if args.reset and DATA.exists():
+        shutil.rmtree(DATA)
+    state = load_json(STATE_FILE) if STATE_FILE.exists() else new_state(world, load_json(ROOT / "seed.json"), cfg)
+    brain = Brain(cfg, test=args.test, mock=args.mock)
+    mode = "mock" if args.mock else f"{brain.resident_model} / {brain.story_model}"
+    print(f"Sumter Oaks: running {args.ticks} tick(s) from tick {state['tick']} [{mode}]")
+    if not args.mock:
+        print(f"Key loaded from: {key_source}")
+    brain.preflight()
+
+    for _ in range(args.ticks):
+        doc = run_tick(world, state, cfg, template, brain)
+        print(f"\nTick {doc['tick']}  {doc['simulation_time']}  {doc['weather']}")
+        for a, r in doc["results"].items():
+            act = r["action"]
+            extra = f"  <- {r['engine_note']}" if "engine_note" in r else ""
+            print(f"  {first(world, a):6} [{r['emotional_state']}] {act['type']} {act['parameters'].get('target')}: "
+                  f"{act['parameters'].get('content', '')}{extra}")
+        print(f"  Story: {doc['story']}")
+    print(f"\nSaved to {TICKS}")
+
+
+if __name__ == "__main__":
+    main()

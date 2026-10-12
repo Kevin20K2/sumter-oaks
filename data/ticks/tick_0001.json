@@ -1,0 +1,98 @@
+{
+  "tick": 1,
+  "simulation_time": "Saturday, November 14, 9:00 AM",
+  "weather": "Sunny, 78°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On Saturday morning in sunny Sumter Oaks, Gary apologizes to Hal for knocking out the Buffett speaker while he tests the wiring in his garage, though he admits the lights and sound still need Architectural Review sign-off before the parade. Donna, determined as ever, lures Gary to the rec center for a half hour of paddle practice with a spare paddle and free coffee. Hal, resolute, heads off toward Town Square, while Rosa, hopeful, thanks him for the recycling tip and",
+  "events": [
+    "Hal headed to Town Square."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Hal is eyeing my cart and the speaker, and he doesn't like me much. I'd rather head him off than have him stew. It's 9 AM, so L-03 quiet hours aren't an issue. The rope lights and speaker are exterior mods, so L-01 means I need Architectural Review approval before the cart rolls anywhere visible. I'll be upfront and a little friendly. Then I'll take the cart back to the garage to do the wiring, where I'm most myself, and file for approval afterward.",
+      "emotional_state": "hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Morning, Hal. Sorry about the Buffett, just testing the speaker and it's down now. I know the lights and sound need Architectural Review sign-off before the parade, so I'm wiring it in the garage first and filing the paperwork after."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary is right there with his cart, and I've already asked him once about pickleball and got dodged, so I can't just repeat the question. I'll make it easy to say yes: a half-hour at the rec center, my spare paddle, no commitment, and I'll buy coffee after. His speaker gives me an opening to tease him and keep it friendly. Hal is eyeing my seven flamingos, which is over the limit, and his mailbox complaint history worries me. That can wait until I've locked Gary in.",
+      "emotional_state": "determined",
+      "importance_rating": 7,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, that speaker has great timing, and so do you. Come hit a few balls with me at the rec center this morning. I've got a spare paddle, it's thirty minutes, and coffee's on me."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Seven flamingos against a limit of three, and Gary's cart now has lights, wiring and a speaker, with no approval on record. I've counted and written it all down. Another lap of the mailbox won't change anything, and the notebook is no use unless it gets filed. Time to take it to the town square and put it in front of the committee. Rosa's invitations can wait, and I'm not starting a street argument on a sunny Saturday when the paperwork will do the talking.",
+      "emotional_state": "resolute",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_square",
+          "content": "Heading to Town Hall to file the L-01 report on Gary's cart and the L-02 report on Donna's flamingos."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm holding a stack of invitations and all three of them are right here within earshot, which is a rare chance. They obviously have friction: Gary's speaker, Donna's flamingos, Hal glaring at both. If I bring up the dinner now, I can invite everyone at once so nobody feels singled out or hears about it secondhand. I'll keep it warm and blunt, skip the neighborhood squabbles, and start with Hal, who's standing alone at the mailbox kiosk and looks most irritated. I'm leading with food because Gary fixed my disposal and I owe him a meal anyway.",
+      "emotional_state": "hopeful",
+      "importance_rating": 7,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Morning, Hal. Thanks for the recycling tip, you were right. I'm hosting a welcome dinner at my place and I'd like you, Gary, and Donna all at the table. Come hungry, and leave the cart and flamingo opinions at the door."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ]
+}
