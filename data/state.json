@@ -1,26 +1,21 @@
 {
-  "tick": 13,
-  "time": "2026-10-13T09:17",
+  "tick": 14,
+  "time": "2026-10-13T10:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
+    "donna": "garys_house",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+      "Donna just arrived."
     ],
     "donna": [
-      "You arrived at Magnolia Loop (the street).",
-      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+      "You arrived at Gary's House."
     ],
-    "hal": [
-      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
-    ],
-    "rosa": [
-      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
-    ]
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
@@ -168,6 +163,16 @@
         "tick": 12,
         "text": "I (gary workbench): Bench-test the LED rope light strings on the 12V supply and sketch the wiring plan",
         "importance": 4
+      },
+      {
+        "tick": 13,
+        "text": "I (gary golf cart): Run the 12V wiring harness and test-fit the speaker mount inside the cart",
+        "importance": 5
+      },
+      {
+        "tick": 13,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ],
     "donna": [
@@ -310,6 +315,16 @@
         "tick": 12,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 13,
+        "text": "I headed to Gary's House.",
+        "importance": 5
+      },
+      {
+        "tick": 13,
+        "text": "You arrived at Gary's House.",
+        "importance": 5
       }
     ],
     "hal": [
@@ -421,6 +436,11 @@
       {
         "tick": 12,
         "text": "I (hal binoculars): Scan the street to confirm Gary's cart modifications and count Donna's flamingos",
+        "importance": 4
+      },
+      {
+        "tick": 13,
+        "text": "I (hal binoculars): Scan Magnolia Loop, count Donna's flamingos and check Gary's cart modifications",
         "importance": 4
       }
     ],
@@ -549,6 +569,11 @@
         "tick": 12,
         "text": "I (rosa kitchen): Plan the dinner menu and check what groceries I need for four people",
         "importance": 5
+      },
+      {
+        "tick": 13,
+        "text": "I (rosa kitchen): Check the pantry and fridge and write the grocery list for four",
+        "importance": 5
       }
     ]
   },
@@ -581,8 +606,8 @@
   "emotions": {
     "gary": "focused",
     "donna": "determined",
-    "hal": "resolute",
-    "rosa": "optimistic"
+    "hal": "determined",
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -643,18 +668,24 @@
       "time": "Tuesday, October 13, 9:17 AM",
       "story": "At 9:17 on this humid, hazy Tuesday morning in Sumter Oaks, Gary is bench-testing LED rope light strings at his workbench while sketching out his wiring plan. Donna is heading down Magnolia Loop with a determined stride, and Hal is watching the street through his binoculars to keep tabs on Gary's cart modifications and count Donna's flamingos. Meanwhile, Rosa is at her kitchen counter, planning tonight's dinner menu and jotting down the groceries she'll need for four.",
       "dialogue": []
+    },
+    {
+      "tick": 13,
+      "time": "Tuesday, October 13, 10:17 AM",
+      "story": "At 10:17 on this humid, hazy Tuesday in Sumter Oaks, Gary is focused in his garage, running wiring and fitting a speaker mount inside his golf cart while Donna, determined as ever, makes her way down Magnolia Loop to visit him. Hal, equally determined, keeps watch from his house with binoculars, tallying Donna's flamingos and inspecting Gary's cart modifications from a safe distance. Meanwhile Rosa, also determined, works through her pantry and fridge in her kitchen, writing up a grocery list for four.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 0.31523,
+    "total_usd": 0.34612,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
         "usd": 0.22284
       },
       "2026-10-13": {
-        "ticks": 3,
-        "usd": 0.09239
+        "ticks": 4,
+        "usd": 0.12328
       }
     }
   },
@@ -667,7 +698,8 @@
     0.03056,
     0.03162,
     0.03076,
-    0.03001
+    0.03001,
+    0.03089
   ],
   "fund": {
     "gross_usd": 15.0,
