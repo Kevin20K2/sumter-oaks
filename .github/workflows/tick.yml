@@ -23,6 +23,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main               # a run that waited in line still starts from the newest code and data
 
       - uses: actions/setup-python@v6
         with:
@@ -45,4 +47,10 @@ jobs:
           if git diff --cached --quiet; then echo "Nothing new to save."; exit 0; fi
           LAST=$(python -c "import json; print(json.load(open('data/state.json'))['tick'] - 1)")
           git commit -m "Tick $LAST"
-          git push
+          # If main moved while this tick ran (a merge or a manual edit), catch up and try again.
+          for i in 1 2 3; do
+            git push && exit 0
+            echo "main moved; catching up (try $i)"
+            git pull --rebase origin main || { git rebase --abort; exit 1; }
+          done
+          exit 1
