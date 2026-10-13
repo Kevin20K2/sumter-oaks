@@ -147,7 +147,7 @@ def fetch_donations(cfg):
 
 
 CLOUD_LINES = {
-    "bright": "The big cloud over Sumter Oaks puffs up, bright white and full.",
+    "bright": None,  # say nothing while the cloud has a week or more; a full cloud reads as "no help needed"
     "fair": "The cloud over Sumter Oaks looks ordinary today. Nothing to write home about.",
     "low": "The cloud over Sumter Oaks has gone thin and grey. It looks worn out.",
     "empty": "The cloud over Sumter Oaks is down to a few grey wisps, drizzling on Magnolia Loop.",
@@ -201,9 +201,9 @@ def update_fund(cfg, state, fetched=None):
     # The residents notice the sky.
     news = None
     if prev_gross is not None and d["gross_usd"] > (prev_gross or 0) and prev_level is not None:
-        news = "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+        news = "The cloud over Magnolia Loop gives a little puff, as if someone just topped it up."
     elif prev_level is not None and level != prev_level:
-        news = CLOUD_LINES[level]
+        news = CLOUD_LINES.get(level)
     if news:
         for a in state.get("perceptions", {}):
             state["perceptions"][a].append(news)

@@ -171,6 +171,8 @@ button:disabled { opacity: 0.4; cursor: default; }
 .give.monthly { background: var(--surface); color: var(--accent); border: 2px solid var(--accent); padding: 6px 14px; }
 .give:hover { filter: brightness(1.08); }
 .give:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.sup-manage { font-size: 0.82rem; color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+.sup-manage:hover { color: var(--accent); }
 .test-badge { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); border: 1px dashed var(--line); border-radius: 6px; padding: 2px 8px; }
 
 /* Story + board */
@@ -258,6 +260,7 @@ button:disabled { opacity: 0.4; cursor: default; }
     <div class="sup-options">
       <div class="sup-group"><span class="sup-label">One time</span><span class="sup-group" id="sup-once"></span></div>
       <div class="sup-group"><span class="sup-label">Monthly</span><span class="sup-group" id="sup-monthly"></span></div>
+      <a class="sup-manage" id="sup-manage" target="_blank" rel="noopener" hidden>Already a monthly supporter? Manage or cancel</a>
       <span class="test-badge" id="sup-test" hidden>Test mode · no real charges</span>
     </div>
   </section>
@@ -428,9 +431,20 @@ const SAMPLE_FUND = {
   ]
 };
 
+// Live-only Stripe extras. They appear only when the fund data comes from the live
+// account (test_mode false), so a live link never sits next to test links.
+const SUPPORT_EXTRAS = {
+  custom_url: "https://buy.stripe.com/fZu00j5ipg7Z2Ul8WIc3m00",  // pay what you want, $3 minimum
+  portal_url: "https://billing.stripe.com/p/login/fZu00j5ipg7Z2Ul8WIc3m00"  // Stripe customer portal
+};
+
 async function loadFund() {
   try { return await getJSON("data/ticks/fund.json"); } catch (e) { return null; }
 }
+
+// Show a countdown only when it matters (under a week). A big surplus reads as
+// "no help needed", so above that the card and cloud stay quiet about the number.
+function showCountdown(f) { return !!f && f.level !== "bright"; }
 
 function powerLeft(f) {
   if (!f || f.balance_usd <= 0) return "no power left";
@@ -452,7 +466,8 @@ function drawCloud(f) {
   host.replaceChildren();
   if (!f) return;
   const look = CLOUD_LOOK[f.level] || CLOUD_LOOK.fair;
-  const link = el("a", { href: "#support", "aria-label": `The data-center cloud: ${powerLeft(f)}. Keep the lights on.` });
+  const label = showCountdown(f) ? `The data-center cloud: ${powerLeft(f)}. Keep the lights on.` : "The data-center cloud. Keep the lights on.";
+  const link = el("a", { href: "#support", "aria-label": label });
   const bob = el("g", { id: "cloud-bob" });
   const shape = el("g", { transform: `translate(196 -30) scale(${look.scale})` });
   if (look.rain) {
@@ -465,7 +480,7 @@ function drawCloud(f) {
   bob.append(shape);
   link.append(bob);
   link.append(el("text", { x: 250, y: -40, "font-size": 8, "letter-spacing": 2, fill: "var(--muted)" }, "THE CLOUD"));
-  link.append(el("text", { x: 250, y: -26, "font-size": 10.5, fill: "var(--ink)" }, powerLeft(f)));
+  if (showCountdown(f)) link.append(el("text", { x: 250, y: -26, "font-size": 10.5, fill: "var(--ink)" }, powerLeft(f)));
   host.append(link);
 }
 
@@ -473,16 +488,18 @@ function renderSupport(f) {
   const sec = $("support");
   if (!f) { sec.hidden = true; return; }
   sec.hidden = false;
+  const cents = Math.max(1, Math.round((f.avg_tick_usd || 0.025) * 100));
+  const cost = `Every hour of town life costs about ${cents}¢ in AI time.`;
   const lead = {
-    bright: "The cloud is full. Sumter Oaks has " + powerLeft(f) + ".",
+    bright: cost,
     fair: "Sumter Oaks has " + powerLeft(f) + " left in the cloud.",
     low: "The cloud is running thin: " + powerLeft(f) + " left.",
     empty: "The cloud is empty. The neighbors are waiting for someone to top it up.",
   }[f.level] || "";
   $("sup-status").textContent = lead;
-  const cents = Math.max(1, Math.round((f.avg_tick_usd || 0.025) * 100));
   const who = f.supporters ? ` Thanks to ${f.supporters} supporter${f.supporters === 1 ? "" : "s"}${f.monthly_supporters ? ` (${f.monthly_supporters} monthly)` : ""}.` : "";
-  $("sup-note").textContent = `Every hour of town life costs about ${cents}¢ in AI time.${who} Gifts pay running costs and aren't tax-deductible.`;
+  const first = showCountdown(f) ? cost : "Supporters keep the neighbors talking.";
+  $("sup-note").textContent = `${first}${who} Gifts pay running costs and aren't tax-deductible.`;
   const make = (o) => {
     const a = document.createElement("a");
     a.className = "give" + (o.recurring ? " monthly" : "");
@@ -492,10 +509,22 @@ function renderSupport(f) {
     return a;
   };
   const opts = (f.options || []).slice().sort((a, b) => a.amount - b.amount);
-  $("sup-once").replaceChildren(...opts.filter(o => !o.recurring).map(make));
+  const once = opts.filter(o => !o.recurring).map(make);
+  if (!f.test_mode && SUPPORT_EXTRAS.custom_url && once.length) {
+    const other = document.createElement("a");
+    other.className = "give monthly";
+    other.href = SUPPORT_EXTRAS.custom_url; other.target = "_blank"; other.rel = "noopener";
+    other.textContent = "Other";
+    other.setAttribute("aria-label", "Give an amount you choose, once ($3 minimum)");
+    once.push(other);
+  }
+  $("sup-once").replaceChildren(...once);
   $("sup-monthly").replaceChildren(...opts.filter(o => o.recurring).map(make));
   $("sup-once").parentElement.hidden = !opts.some(o => !o.recurring);
   $("sup-monthly").parentElement.hidden = !opts.some(o => o.recurring);
+  const manage = $("sup-manage");
+  manage.hidden = !!f.test_mode || !SUPPORT_EXTRAS.portal_url || !opts.some(o => o.recurring);
+  if (!manage.hidden) manage.href = SUPPORT_EXTRAS.portal_url;
   $("sup-test").hidden = !f.test_mode;
 }
 
