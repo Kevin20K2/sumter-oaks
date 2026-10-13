@@ -1,0 +1,122 @@
+{
+  "tick": 22,
+  "simulation_time": "Tuesday, October 13, 5:17 PM",
+  "weather": "Afternoon shower, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "town_hall",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 5:17 on this rainy Tuesday afternoon in Sumter Oaks, Gary is content in his garage at home, finishing the rope lights and speaker on his golf cart, while Donna cheerfully reminds him, with a gentle nudge, that the Architectural Review Board must bless anything visible from the street before Saturday. Over at Town Hall, Hal sits reflectively at the review desk, marking Donna's flamingo count down to three and withdrawing that follow-up while Gary's cart notice stays pending. Meanwhile, Rosa is determinedly heading down Magnolia Loop toward the Rec Center, unbothered by the afternoon shower.",
+  "events": [
+    "Gary (gary golf cart): Finish wiring the rope lights and speaker, then run a full test at low volume",
+    "Hal (architectural review desk): Amend my filing: note Donna has reduced visible flamingos to three, so L-02 follow-up is withdrawn; leave Gary's cart notice pending review",
+    "Rosa headed to Rec Center."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just told me she's booked the court for Saturday at eight, an hour and a half, within the two-hour limit, and handed me the paddle. No need to say yes all over again, she's already settled it, and I'm not going to repeat myself with another thank-you. The cart is half-done: the speaker is wired to the battery and tested at low volume, the LED rope light is soldered. It's 5 PM and raining, so it's a good time to finish the wiring in the garage. The guilt about the speaker and the skipped Architectural Review nags at me too. Once the wiring is done I should file the cart modifications properly (L-01) rather than hope Hal and Rosa keep letting it slide. For now, back to the cart to finish the wiring and run a proper test, keeping the volume reasonable.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Finish wiring the rope lights and speaker, then run a full test at low volume"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at Gary's house in the late afternoon. I already booked Saturday at eight and gave him the spare paddle last tick, so I shouldn't repeat that. He's wiring his speaker to the cart battery, and I noticed Hal fussing about that earlier and Gary's own admission that he's wiring first and filing paperwork after. L-01 says visible exterior cart modifications need Architectural Review approval. A marine speaker on a cart is visible from the street. I want Gary on the ladder with me, not tangled up in a violation, and I love being the one in the know. So a friendly nudge to get the paperwork done is the move, plus keeping the quiet-hours reminder light.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, hon, that speaker sounds like a fun project, but anything you bolt onto the cart where the street can see it needs Architectural Review's blessing first. File the form before Saturday so you're not benched by a violation, I need my partner."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I filed the notice on Gary's cart and flagged Donna's flamingos last tick. Donna already pulled all but three flamingos into the garage, so L-02 is satisfied and a follow-up would just be keeping score on a neighbor who complied. Gary's cart is a real issue, but he said he'd file the paperwork, and the notice is already on the desk. I'm alone in Town Hall with nothing left to file, and my memories keep nagging that I've been more scorekeeper than neighbor. I'll amend the record to note Donna's compliance, which is the fair thing, and then I can go think about Rosa's dinner.",
+      "emotional_state": "reflective",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "architectural_review_desk",
+          "content": "Amend my filing: note Donna has reduced visible flamingos to three, so L-02 follow-up is withdrawn; leave Gary's cart notice pending review"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I already pinned the dinner invitation on the street bulletin board last tick, and Hal said yes in person. Nobody is in sight right now, so there's no one to talk to. The next useful step is to track down Gary and Donna directly so the Saturday invite isn't just a note on a board. Donna was likely at the rec center, since I was checking her court times earlier. It's raining lightly, but the rec center is a short walk and she's the one I haven't confirmed yet. I'll head there.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center to invite Donna to Saturday's welcome dinner in person."
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "hal",
+      "text": "Hal Weems: Amend my filing: note Donna has reduced visible flamingos to three, so L-02 follow-up is withdrawn; leave Gary's cart notice pending review"
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03403,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9713,
+        "output_tokens": 1382,
+        "usd": 0.03325
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3691,
+        "output_tokens": 819,
+        "usd": 0.00078
+      }
+    }
+  }
+}
