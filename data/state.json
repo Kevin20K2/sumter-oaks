@@ -1,26 +1,17 @@
 {
-  "tick": 10,
-  "time": "2026-10-12T21:17",
+  "tick": 11,
+  "time": "2026-10-13T07:17",
   "positions": {
-    "gary": "magnolia_loop",
-    "donna": "rec_center",
-    "hal": "town_hall",
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "Donna said to Gary: “Go on home and get some rest, partner, you've earned it. I'll lock up the paddles, and I'll see you Saturday at eight, cart or no cart.”",
-      "You arrived at Magnolia Loop (the street)."
-    ],
-    "donna": [
-      "Gary headed to Magnolia Loop (the street)."
-    ],
-    "hal": [
-      "You arrived at Town Hall."
-    ],
-    "rosa": [
-      "You arrived at Rosa's House."
-    ]
+    "gary": [],
+    "donna": [],
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
@@ -153,6 +144,11 @@
         "tick": 9,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 10,
+        "text": "I (gary workbench): Lay out the marine speaker and LED rope light and start planning the wiring",
+        "importance": 5
       }
     ],
     "donna": [
@@ -275,6 +271,11 @@
         "tick": 9,
         "text": "Gary headed to Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 10,
+        "text": "I (donna club calendar): Pencil in Saturday 8 AM doubles with Gary and plan a practice session or two before then",
+        "importance": 5
       }
     ],
     "hal": [
@@ -371,6 +372,11 @@
       {
         "tick": 9,
         "text": "You arrived at Town Hall.",
+        "importance": 5
+      },
+      {
+        "tick": 10,
+        "text": "I (hal violation notebook): Write up dated notes on Gary's cart modifications and Donna's flamingo count for the review committee",
         "importance": 5
       }
     ],
@@ -484,6 +490,11 @@
         "tick": 9,
         "text": "You arrived at Rosa's House.",
         "importance": 4
+      },
+      {
+        "tick": 10,
+        "text": "I (rosa shift schedule): Check my per-diem shifts to pick an open evening for the welcome dinner",
+        "importance": 6
       }
     ]
   },
@@ -514,10 +525,10 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "satisfied",
-    "hal": "resolute",
-    "rosa": "hopeful"
+    "gary": "focused",
+    "donna": "optimistic",
+    "hal": "dutiful",
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -566,54 +577,17 @@
       "text": "Hal Weems: Double-check both filings are logged with dates and violation codes L-01 and L-02"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 5,
-      "time": "Saturday, November 14, 11:00 AM",
-      "story": "At 11:00 on a sunny Saturday in Sumter Oaks, Gary is at the Rec Center feeling nervous but game, admitting to Donna that he has never held a paddle before. Donna, optimistic as ever, hands him the spare and promises he'll be a natural by noon once they take Court 1 for the hour. Meanwhile Hal is dutifully logging two architectural filings at Town Hall, double-checking their dates and violation codes L-01 and L-02, while Rosa, curious as ever, is at the Town Square parade table looking over who has signed up for what.",
-      "dialogue": [
-        "Gary said to Donna: “Morning, Donna. I'm here, but fair warning, I've never held a paddle in my life. Oh, and Rosa says dinner's at six tonight at her place, she wanted me to tell you.”",
-        "Donna said to Gary: “There he is! Court 1 is ours for the hour, Gary, and the spare paddle's right here. Stand behind the kitchen line and just keep the ball in, you'll be a natural by noon.”"
-      ]
-    },
-    {
-      "tick": 6,
-      "time": "Saturday, November 14, 11:30 AM",
-      "story": "At 11:30 on a sunny Saturday in Sumter Oaks, Donna is on pickleball court 1 at the Rec Center, handing Gary a spare paddle and starting a gentle rally to show him the basics, while Gary, nervous but game, stands behind the kitchen line trying to keep the ball in play. Hal, feeling satisfied, has headed over to the Town Square, and Rosa, determined as ever, is making her way down Magnolia Loop.",
-      "dialogue": []
-    },
-    {
-      "tick": 7,
-      "time": "Monday, October 12, 7:17 PM",
-      "story": "On Monday evening in Sumter Oaks, the humid October air hangs hazy and warm at 75 degrees as the town settles in. Gary, content after a few lucky rounds of pickleball, is still at the Rec Center, where Donna, triumphant and already penciling him in as her doubles partner on the ladder board for Saturday, is cheerfully refusing to let him leave. Over at Town Square, Hal is dutifully checking the parade sign-up sheet to see whether Gary's cart made the cut, while Rosa, determined to keep the neighborhood fed and friendly, pins a handwritten dinner invitation to the Magnolia Loop bulletin board.",
-      "dialogue": [
-        "Gary said to Donna: “Well, I got three in a row over the net, so I'm calling myself a natural. Another few and I'll head home to my garage, though. That cart won't wire itself for the parade.”",
-        "Donna said to Gary: “Gary, look at you, you're a natural! Go on to Rosa's before she sends out a search party, but I'm putting us down as doubles partners on the ladder board, Saturday at eight. Don't you dare say no.”"
-      ]
-    },
-    {
-      "tick": 8,
-      "time": "Monday, October 12, 8:17 PM",
-      "story": "At 8:17 on this humid, hazy Monday evening in Sumter Oaks, Gary is pleased to have finally agreed to a Saturday doubles match, and Donna is triumphant as she chalks their names onto the ladder standings board at the Rec Center. Over in Town Square, Hal is satisfied with his plain vanilla cone, which he is eating on his way to a bench, while Rosa, looking hopeful but a little tired, pauses at the mailbox kiosk on Magnolia Loop to check her mail and any notices posted there.",
-      "dialogue": [
-        "Gary said to Donna: “All right, Donna, put us down, Saturday at eight. But if I'm late it's 'cause the cart ate my morning, so no hard feelings.”"
-      ]
-    },
-    {
-      "tick": 9,
-      "time": "Monday, October 12, 9:17 PM",
-      "story": "On Monday night in Sumter Oaks, the humid October air hangs hazy at 73 degrees as the town settles in. Gary, content after a long evening, heads out along Magnolia Loop while Donna, feeling satisfied, stays behind at the Rec Center to lock up the paddles and tells him to go rest because he's earned it. Hal, resolute as ever, makes his way to Town Hall, and Rosa, hopeful about what the week might bring, heads home.",
-      "dialogue": [
-        "Donna said to Gary: “Go on home and get some rest, partner, you've earned it. I'll lock up the paddles, and I'll see you Saturday at eight, cart or no cart.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 0.22284,
+    "total_usd": 0.25446,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
         "usd": 0.22284
+      },
+      "2026-10-13": {
+        "ticks": 1,
+        "usd": 0.03162
       }
     }
   },
@@ -623,7 +597,8 @@
     0.03066,
     0.03114,
     0.03068,
-    0.03056
+    0.03056,
+    0.03162
   ],
   "fund": {
     "gross_usd": 10.0,
@@ -671,5 +646,5 @@
     "test_mode": true,
     "level": "bright"
   },
-  "last_tick_date": "2026-10-12"
+  "last_tick_date": "2026-10-13"
 }
