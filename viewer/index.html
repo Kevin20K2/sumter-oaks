@@ -442,6 +442,10 @@ async function loadFund() {
   try { return await getJSON("data/ticks/fund.json"); } catch (e) { return null; }
 }
 
+// Show a countdown only when it matters (under a week). A big surplus reads as
+// "no help needed", so above that the card and cloud stay quiet about the number.
+function showCountdown(f) { return !!f && f.level !== "bright"; }
+
 function powerLeft(f) {
   if (!f || f.balance_usd <= 0) return "no power left";
   if (f.days_left < 1) { const h = Math.max(1, Math.round(f.days_left * 24)); return `about ${h} hour${h === 1 ? "" : "s"} of power`; }
@@ -462,7 +466,8 @@ function drawCloud(f) {
   host.replaceChildren();
   if (!f) return;
   const look = CLOUD_LOOK[f.level] || CLOUD_LOOK.fair;
-  const link = el("a", { href: "#support", "aria-label": `The data-center cloud: ${powerLeft(f)}. Keep the lights on.` });
+  const label = showCountdown(f) ? `The data-center cloud: ${powerLeft(f)}. Keep the lights on.` : "The data-center cloud. Keep the lights on.";
+  const link = el("a", { href: "#support", "aria-label": label });
   const bob = el("g", { id: "cloud-bob" });
   const shape = el("g", { transform: `translate(196 -30) scale(${look.scale})` });
   if (look.rain) {
@@ -475,7 +480,7 @@ function drawCloud(f) {
   bob.append(shape);
   link.append(bob);
   link.append(el("text", { x: 250, y: -40, "font-size": 8, "letter-spacing": 2, fill: "var(--muted)" }, "THE CLOUD"));
-  link.append(el("text", { x: 250, y: -26, "font-size": 10.5, fill: "var(--ink)" }, powerLeft(f)));
+  if (showCountdown(f)) link.append(el("text", { x: 250, y: -26, "font-size": 10.5, fill: "var(--ink)" }, powerLeft(f)));
   host.append(link);
 }
 
@@ -483,16 +488,18 @@ function renderSupport(f) {
   const sec = $("support");
   if (!f) { sec.hidden = true; return; }
   sec.hidden = false;
+  const cents = Math.max(1, Math.round((f.avg_tick_usd || 0.025) * 100));
+  const cost = `Every hour of town life costs about ${cents}¢ in AI time.`;
   const lead = {
-    bright: "The cloud is full. Sumter Oaks has " + powerLeft(f) + ".",
+    bright: cost,
     fair: "Sumter Oaks has " + powerLeft(f) + " left in the cloud.",
     low: "The cloud is running thin: " + powerLeft(f) + " left.",
     empty: "The cloud is empty. The neighbors are waiting for someone to top it up.",
   }[f.level] || "";
   $("sup-status").textContent = lead;
-  const cents = Math.max(1, Math.round((f.avg_tick_usd || 0.025) * 100));
   const who = f.supporters ? ` Thanks to ${f.supporters} supporter${f.supporters === 1 ? "" : "s"}${f.monthly_supporters ? ` (${f.monthly_supporters} monthly)` : ""}.` : "";
-  $("sup-note").textContent = `Every hour of town life costs about ${cents}¢ in AI time.${who} Gifts pay running costs and aren't tax-deductible.`;
+  const first = showCountdown(f) ? cost : "Supporters keep the neighbors talking.";
+  $("sup-note").textContent = `${first}${who} Gifts pay running costs and aren't tax-deductible.`;
   const make = (o) => {
     const a = document.createElement("a");
     a.className = "give" + (o.recurring ? " monthly" : "");
