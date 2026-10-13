@@ -1,6 +1,6 @@
 {
-  "tick": 16,
-  "time": "2026-10-13T12:17",
+  "tick": 17,
+  "time": "2026-10-13T13:17",
   "positions": {
     "gary": "garys_house",
     "donna": "garys_house",
@@ -9,16 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Thanks, Gary, I'll mind the wire. I came to steal you for pickleball, but it's past noon now, so how about I book us a court for tomorrow morning and you finish your cart today? Thirty minutes, spare paddle, and I'll bring the coffee.”"
+      "Donna said to Gary: “Take your time, Gary, and don't you dare apologize for being terrible. Everybody's terrible for the first week, and I've got the spare paddle and a cooler of iced tea in the cart. Soldering iron off, sneakers on, and I'll drive.”"
     ],
     "donna": [
-      "Gary said to Donna: “Alright, Donna, you've worn me down. Give me two minutes to find my sneakers and unplug the soldering iron, but fair warning, I'm going to be terrible at this.”"
+      "Gary said to Donna: “That's a deal, Donna. Book it for tomorrow, I'll have the cart lights sorted by then, and I'll bring the sneakers. Save me a spot where I can do the least damage.”"
     ],
     "hal": [
-      "Rosa (street bulletin board): Pin up a note: Rosa's welcome dinner, Gary, Donna, and Hal, come hungry"
+      "Rosa said to Hal: “Glad you're coming, Hal. Saturday at six at my place. Bring nothing but yourself and an appetite, I've got the food covered, and the rulebook can stay in your pocket.”"
     ],
     "rosa": [
-      "Hal said to Rosa: “Afternoon, Rosa. About your dinner invitation, I'll come, and I'll keep the rulebook in my pocket. What time, and should I bring anything?”"
+      "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total for the record"
     ]
   },
   "memories": {
@@ -197,6 +197,16 @@
         "tick": 15,
         "text": "Donna said to Gary: “Thanks, Gary, I'll mind the wire. I came to steal you for pickleball, but it's past noon now, so how about I book us a court for tomorrow morning and you finish your cart today? Thirty minutes, spare paddle, and I'll bring the coffee.”",
         "importance": 6
+      },
+      {
+        "tick": 16,
+        "text": "I said to Donna: “That's a deal, Donna. Book it for tomorrow, I'll have the cart lights sorted by then, and I'll bring the sneakers. Save me a spot where I can do the least damage.”",
+        "importance": 5
+      },
+      {
+        "tick": 16,
+        "text": "Donna said to Gary: “Take your time, Gary, and don't you dare apologize for being terrible. Everybody's terrible for the first week, and I've got the spare paddle and a cooler of iced tea in the cart. Soldering iron off, sneakers on, and I'll drive.”",
+        "importance": 5
       }
     ],
     "donna": [
@@ -369,6 +379,16 @@
         "tick": 15,
         "text": "Gary said to Donna: “Alright, Donna, you've worn me down. Give me two minutes to find my sneakers and unplug the soldering iron, but fair warning, I'm going to be terrible at this.”",
         "importance": 6
+      },
+      {
+        "tick": 16,
+        "text": "I said to Gary: “Take your time, Gary, and don't you dare apologize for being terrible. Everybody's terrible for the first week, and I've got the spare paddle and a cooler of iced tea in the cart. Soldering iron off, sneakers on, and I'll drive.”",
+        "importance": 6
+      },
+      {
+        "tick": 16,
+        "text": "Gary said to Donna: “That's a deal, Donna. Book it for tomorrow, I'll have the cart lights sorted by then, and I'll bring the sneakers. Save me a spot where I can do the least damage.”",
+        "importance": 6
       }
     ],
     "hal": [
@@ -510,6 +530,16 @@
       {
         "tick": 15,
         "text": "Rosa (street bulletin board): Pin up a note: Rosa's welcome dinner, Gary, Donna, and Hal, come hungry",
+        "importance": 5
+      },
+      {
+        "tick": 16,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the total for the record",
+        "importance": 5
+      },
+      {
+        "tick": 16,
+        "text": "Rosa said to Hal: “Glad you're coming, Hal. Saturday at six at my place. Bring nothing but yourself and an appetite, I've got the food covered, and the rulebook can stay in your pocket.”",
         "importance": 5
       }
     ],
@@ -668,6 +698,16 @@
         "tick": 15,
         "text": "Hal said to Rosa: “Afternoon, Rosa. About your dinner invitation, I'll come, and I'll keep the rulebook in my pocket. What time, and should I bring anything?”",
         "importance": 4
+      },
+      {
+        "tick": 16,
+        "text": "I said to Hal: “Glad you're coming, Hal. Saturday at six at my place. Bring nothing but yourself and an appetite, I've got the food covered, and the rulebook can stay in your pocket.”",
+        "importance": 6
+      },
+      {
+        "tick": 16,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total for the record",
+        "importance": 6
       }
     ]
   },
@@ -676,32 +716,40 @@
       "Since Linda passed, the garage is where I feel most like myself.",
       "Hal doesn't like me much, but nobody on this street knows wiring like I do.",
       "Gary's guilt about the speaker and the skipped permits is nagging at me, but Hal and Rosa seem to be letting it slide for now.",
-      "Donna has been surprisingly generous with her time and her spare paddle, and I think I'm starting to look forward to our Saturday doubles match."
+      "Donna has been surprisingly generous with her time and her spare paddle, and I think I'm starting to look forward to our Saturday doubles match.",
+      "Donna has been pushing me into pickleball with a grin and a booked court, and I'm surprised how much I'm looking forward to being her doubles partner.",
+      "My parade cart still needs its wiring finished, but getting out with Donna today reminded me that a bit of pickleball is worth more than a perfect circuit."
     ],
     "donna": [
       "Partners make or break your ladder ranking, and mine keep moving to Ocala.",
       "Gary has quick hands and nothing to do on weekends. He just doesn't know he wants to play yet.",
       "Gary is surprisingly easy to talk into things, and I'm glad he showed up to the court and kept the ball in play, even if he calls himself terrible.",
-      "Rosa's dinner invitation and the doubles partnership with Gary make me feel like this town is starting to feel like a real community again."
+      "Rosa's dinner invitation and the doubles partnership with Gary make me feel like this town is starting to feel like a real community again.",
+      "Gary is a good sport who needs a little nudging, but I think he'll be a fine doubles partner once he gets the hang of the kitchen line.",
+      "I want Saturday at eight to be a real win for Gary and me, so I'm going to book those practice sessions and make sure he has the spare paddle he needs."
     ],
     "hal": [
       "Rules exist so neighbors don't have to argue. Somebody has to keep them.",
       "The street was quieter before the new speaker arrived.",
       "Gary's garage wiring worries me, but I also know the rules matter, and I'm not sure how to balance loyalty with what I owe the town.",
-      "Rosa's welcome dinner invitation surprised me, and I'm hoping I can sit at her table without turning every conversation into a complaint about flamingos."
+      "Rosa's welcome dinner invitation surprised me, and I'm hoping I can sit at her table without turning every conversation into a complaint about flamingos.",
+      "I've been logging Gary's cart and Donna's flamingos so carefully that I'm starting to wonder whether I'm keeping the peace or just keeping score on my neighbors.",
+      "Rosa's dinner invitation caught me off guard, and I'm hoping a plate of food and some good company might make me less of a rulebook and more of a friend."
     ],
     "rosa": [
       "I moved here to slow down, and so far I've worked four shifts and met nobody.",
       "These three neighbors clearly have history I don't understand yet.",
       "Gary turned a broken disposal into a favor I can't repay, and I think he's the kind of neighbor who shows up without being asked.",
-      "Hosting dinner for Gary, Donna, and Hal feels like the right way to thank them and finally make this street feel like home."
+      "Hosting dinner for Gary, Donna, and Hal feels like the right way to thank them and finally make this street feel like home.",
+      "Hal's easy yes to my dinner made me happy, and I'm glad the welcome will finally bring Gary, Donna, and Hal together at my table on Saturday.",
+      "Planning this dinner around my shifts and the grocery list reminded me that I want to be the kind of neighbor who makes people feel at home on Magnolia Loop."
     ]
   },
   "emotions": {
-    "gary": "nervous but warmed",
-    "donna": "optimistic",
-    "hal": "gruff but conflicted",
-    "rosa": "hopeful"
+    "gary": "warm",
+    "donna": "triumphant",
+    "hal": "dutiful",
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -750,55 +798,17 @@
       "text": "Hal Weems: Double-check both filings are logged with dates and violation codes L-01 and L-02"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 11,
-      "time": "Tuesday, October 13, 8:17 AM",
-      "story": "At 8:17 on a humid, hazy Tuesday morning in Sumter Oaks, Gary is at his workbench stripping wire and bench-testing a marine speaker he plans to bolt onto his golf cart. Across the way, Donna is checking her paddles and balls and packing a spare paddle for Gary's upcoming practice sessions, optimistic as ever. Hal is sitting at his kitchen table with his violation notebook, finalizing dated entries on Gary's cart modifications and Donna's flamingo count, including Gary's grudging admission that he tends to file paperwork after the fact. Meanwhile, Rosa is scanning her shift schedule at home, hunting for an evening free of per-diem duty so she can block it off for the welcome dinner.",
-      "dialogue": []
-    },
-    {
-      "tick": 12,
-      "time": "Tuesday, October 13, 9:17 AM",
-      "story": "At 9:17 on this humid, hazy Tuesday morning in Sumter Oaks, Gary is bench-testing LED rope light strings at his workbench while sketching out his wiring plan. Donna is heading down Magnolia Loop with a determined stride, and Hal is watching the street through his binoculars to keep tabs on Gary's cart modifications and count Donna's flamingos. Meanwhile, Rosa is at her kitchen counter, planning tonight's dinner menu and jotting down the groceries she'll need for four.",
-      "dialogue": []
-    },
-    {
-      "tick": 13,
-      "time": "Tuesday, October 13, 10:17 AM",
-      "story": "At 10:17 on this humid, hazy Tuesday in Sumter Oaks, Gary is focused in his garage, running wiring and fitting a speaker mount inside his golf cart while Donna, determined as ever, makes her way down Magnolia Loop to visit him. Hal, equally determined, keeps watch from his house with binoculars, tallying Donna's flamingos and inspecting Gary's cart modifications from a safe distance. Meanwhile Rosa, also determined, works through her pantry and fridge in her kitchen, writing up a grocery list for four.",
-      "dialogue": []
-    },
-    {
-      "tick": 14,
-      "time": "Tuesday, October 13, 11:17 AM",
-      "story": "At 11:17 on a humid, hazy Tuesday in Sumter Oaks, Gary is elbow-deep in his parade cart at home when Donna arrives eager to recruit him for pickleball before lunch. Gary cheerfully agrees to spare a few minutes while stepping carefully around the wire on his floor. Meanwhile, Hal and Rosa are both heading out onto Magnolia Loop with the same quiet determination, though neither has said where they're going.",
-      "dialogue": [
-        "Gary said to Donna: “Morning, Donna! Come on in, mind the wire on the floor. I'm knee-deep in the parade cart, but I can spare a few minutes. What brings you by?”",
-        "Donna said to Gary: “Gary, I came to you since you didn't come to me. Spare paddle's in the bag, the court's open till noon, and I'll have you back before lunch. Grab your sneakers, you're my doubles partner now.”"
-      ]
-    },
-    {
-      "tick": 15,
-      "time": "Tuesday, October 13, 12:17 PM",
-      "story": "At Gary's house on Magnolia Loop, Gary is nervous but warmed, and he's agreed to swap his soldering iron for sneakers once Donna, who is optimistic and promising coffee, settles on a pickleball court for tomorrow morning. Out on the street, Hal, gruff but conflicted, tells Rosa, who is hopeful, that he'll come to her dinner and keep the rulebook in his pocket. Rosa then pins a welcome dinner note to the bulletin board, inviting Gary, Donna, and Hal to come hungry.",
-      "dialogue": [
-        "Gary said to Donna: “Alright, Donna, you've worn me down. Give me two minutes to find my sneakers and unplug the soldering iron, but fair warning, I'm going to be terrible at this.”",
-        "Donna said to Gary: “Thanks, Gary, I'll mind the wire. I came to steal you for pickleball, but it's past noon now, so how about I book us a court for tomorrow morning and you finish your cart today? Thirty minutes, spare paddle, and I'll bring the coffee.”",
-        "Hal said to Rosa: “Afternoon, Rosa. About your dinner invitation, I'll come, and I'll keep the rulebook in my pocket. What time, and should I bring anything?”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 0.40821,
+    "total_usd": 0.44175,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
         "usd": 0.22284
       },
       "2026-10-13": {
-        "ticks": 6,
-        "usd": 0.18537
+        "ticks": 7,
+        "usd": 0.21891
       }
     }
   },
@@ -814,7 +824,8 @@
     0.03001,
     0.03089,
     0.03023,
-    0.03186
+    0.03186,
+    0.03354
   ],
   "fund": {
     "gross_usd": 20.0,
