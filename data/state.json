@@ -1,21 +1,31 @@
 {
-  "tick": 14,
-  "time": "2026-10-13T10:17",
+  "tick": 15,
+  "time": "2026-10-13T11:17",
   "positions": {
     "gary": "garys_house",
     "donna": "garys_house",
-    "hal": "hals_house",
-    "rosa": "rosas_house"
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna just arrived."
+      "Donna said to Gary: “Gary, I came to you since you didn't come to me. Spare paddle's in the bag, the court's open till noon, and I'll have you back before lunch. Grab your sneakers, you're my doubles partner now.”",
+      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
     ],
     "donna": [
-      "You arrived at Gary's House."
+      "Gary said to Donna: “Morning, Donna! Come on in, mind the wire on the floor. I'm knee-deep in the parade cart, but I can spare a few minutes. What brings you by?”",
+      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
     ],
-    "hal": [],
-    "rosa": []
+    "hal": [
+      "You arrived at Magnolia Loop (the street).",
+      "Rosa just arrived.",
+      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+    ],
+    "rosa": [
+      "You arrived at Magnolia Loop (the street).",
+      "Hal just arrived.",
+      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+    ]
   },
   "memories": {
     "gary": [
@@ -173,6 +183,16 @@
         "tick": 13,
         "text": "Donna just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 14,
+        "text": "I said to Donna: “Morning, Donna! Come on in, mind the wire on the floor. I'm knee-deep in the parade cart, but I can spare a few minutes. What brings you by?”",
+        "importance": 4
+      },
+      {
+        "tick": 14,
+        "text": "Donna said to Gary: “Gary, I came to you since you didn't come to me. Spare paddle's in the bag, the court's open till noon, and I'll have you back before lunch. Grab your sneakers, you're my doubles partner now.”",
+        "importance": 4
       }
     ],
     "donna": [
@@ -325,6 +345,16 @@
         "tick": 13,
         "text": "You arrived at Gary's House.",
         "importance": 5
+      },
+      {
+        "tick": 14,
+        "text": "I said to Gary: “Gary, I came to you since you didn't come to me. Spare paddle's in the bag, the court's open till noon, and I'll have you back before lunch. Grab your sneakers, you're my doubles partner now.”",
+        "importance": 6
+      },
+      {
+        "tick": 14,
+        "text": "Gary said to Donna: “Morning, Donna! Come on in, mind the wire on the floor. I'm knee-deep in the parade cart, but I can spare a few minutes. What brings you by?”",
+        "importance": 6
       }
     ],
     "hal": [
@@ -442,6 +472,21 @@
         "tick": 13,
         "text": "I (hal binoculars): Scan Magnolia Loop, count Donna's flamingos and check Gary's cart modifications",
         "importance": 4
+      },
+      {
+        "tick": 14,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 14,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 14,
+        "text": "Rosa just arrived.",
+        "importance": 6
       }
     ],
     "rosa": [
@@ -574,6 +619,21 @@
         "tick": 13,
         "text": "I (rosa kitchen): Check the pantry and fridge and write the grocery list for four",
         "importance": 5
+      },
+      {
+        "tick": 14,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 14,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 14,
+        "text": "Hal just arrived.",
+        "importance": 6
       }
     ]
   },
@@ -604,9 +664,9 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
-    "donna": "determined",
-    "hal": "determined",
+    "gary": "cheerful, a little guarded",
+    "donna": "eager",
+    "hal": "resolute",
     "rosa": "determined"
   },
   "laws": [
@@ -674,18 +734,27 @@
       "time": "Tuesday, October 13, 10:17 AM",
       "story": "At 10:17 on this humid, hazy Tuesday in Sumter Oaks, Gary is focused in his garage, running wiring and fitting a speaker mount inside his golf cart while Donna, determined as ever, makes her way down Magnolia Loop to visit him. Hal, equally determined, keeps watch from his house with binoculars, tallying Donna's flamingos and inspecting Gary's cart modifications from a safe distance. Meanwhile Rosa, also determined, works through her pantry and fridge in her kitchen, writing up a grocery list for four.",
       "dialogue": []
+    },
+    {
+      "tick": 14,
+      "time": "Tuesday, October 13, 11:17 AM",
+      "story": "At 11:17 on a humid, hazy Tuesday in Sumter Oaks, Gary is elbow-deep in his parade cart at home when Donna arrives eager to recruit him for pickleball before lunch. Gary cheerfully agrees to spare a few minutes while stepping carefully around the wire on his floor. Meanwhile, Hal and Rosa are both heading out onto Magnolia Loop with the same quiet determination, though neither has said where they're going.",
+      "dialogue": [
+        "Gary said to Donna: “Morning, Donna! Come on in, mind the wire on the floor. I'm knee-deep in the parade cart, but I can spare a few minutes. What brings you by?”",
+        "Donna said to Gary: “Gary, I came to you since you didn't come to me. Spare paddle's in the bag, the court's open till noon, and I'll have you back before lunch. Grab your sneakers, you're my doubles partner now.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 0.34612,
+    "total_usd": 0.37635,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
         "usd": 0.22284
       },
       "2026-10-13": {
-        "ticks": 4,
-        "usd": 0.12328
+        "ticks": 5,
+        "usd": 0.15351
       }
     }
   },
@@ -699,12 +768,13 @@
     0.03162,
     0.03076,
     0.03001,
-    0.03089
+    0.03089,
+    0.03023
   ],
   "fund": {
-    "gross_usd": 15.0,
-    "payments": 3,
-    "supporters": 3,
+    "gross_usd": 20.0,
+    "payments": 4,
+    "supporters": 4,
     "monthly_supporters": 0,
     "options": [
       {
