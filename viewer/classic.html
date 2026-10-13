@@ -1,0 +1,1013 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sumter Oaks Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an illustrated street scene is the hero, with residents walking zone to zone and speech bubbles over their heads; a resident list sits beside it, the story and Town Hall board below. */
+:root {
+  --bg: #f2f5f0;
+  --surface: #ffffff;
+  --ink: #1d2a24;
+  --muted: #5d6b63;
+  --line: #d7dfd8;
+  --lawn: #d9e8d2;
+  --lawn-2: #cddfc4;
+  --sky: #e2eef2;
+  --cloud: #ffffff;
+  --cloud-grey: #aeb8bd;
+  --cloud-dark: #7c878d;
+  --road: #b9c3bc;
+  --road-mark: #f3f6f1;
+  --roof: #8e5b45;
+  --wall: #fbf8f2;
+  --palm: #3f8a52;
+  --trunk: #9b7a52;
+  --accent: #0f7c7a;
+  --accent-ink: #ffffff;
+  --bubble: #ffffff;
+  --bubble-ink: #1d2a24;
+  --gary: #c98a12;
+  --donna: #d6417f;
+  --hal: #2f4f8a;
+  --rosa: #7b3fb0;
+  --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121a16; --surface: #1a241f; --ink: #e6ede8; --muted: #9aa9a0; --line: #2c3a33;
+    --sky: #16232a; --cloud: #e9eef0; --cloud-grey: #8d989e; --cloud-dark: #5d686e; --lawn: #1c2e22; --lawn-2: #203528; --road: #3a4840; --road-mark: #8c9a91; --roof: #a06a52; --wall: #d9d3c6;
+    --palm: #4f9c62; --trunk: #8a6d4a; --accent: #3fb8b4; --accent-ink: #0c1512;
+    --bubble: #f4f7f4; --bubble-ink: #15201a;
+    --gary: #e8b14a; --donna: #ef77a8; --hal: #7f9fdb; --rosa: #b68ae0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121a16; --surface: #1a241f; --ink: #e6ede8; --muted: #9aa9a0; --line: #2c3a33;
+  --sky: #16232a; --cloud: #e9eef0; --cloud-grey: #8d989e; --cloud-dark: #5d686e; --lawn: #1c2e22; --lawn-2: #203528; --road: #3a4840; --road-mark: #8c9a91; --roof: #a06a52; --wall: #d9d3c6;
+  --palm: #4f9c62; --trunk: #8a6d4a; --accent: #3fb8b4; --accent-ink: #0c1512;
+  --bubble: #f4f7f4; --bubble-ink: #15201a;
+  --gary: #e8b14a; --donna: #ef77a8; --hal: #7f9fdb; --rosa: #b68ae0;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 48px; display: grid; gap: 24px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.15; }
+h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); font-weight: 700; letter-spacing: -0.02em; }
+h2 { font-size: 1.2rem; font-weight: 700; }
+h3 { font-size: 1rem; font-weight: 700; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+.muted { color: var(--muted); }
+
+header.top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 12px 24px; }
+header.top .title { display: grid; gap: 4px; }
+.sample { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); border: 1px dashed var(--line); border-radius: 6px; padding: 6px 10px; max-width: 44ch; }
+
+/* Previously on Sumter Oaks: the soap-opera recap */
+.previously { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px 16px; display: grid; gap: 12px; position: relative; overflow: hidden; }
+.previously::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--gary) 0 25%, var(--donna) 25% 50%, var(--hal) 50% 75%, var(--rosa) 75%); }
+.prev-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; }
+.prev-kicker { font-family: var(--font-body); font-style: italic; font-size: 1.05rem; color: var(--donna); }
+.prev-meta { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.prev-title { font-family: var(--font-display); font-size: clamp(1.4rem, 3.6vw, 1.9rem); font-weight: 700; letter-spacing: -0.015em; margin: 0; }
+.prev-title::before { content: "“"; color: var(--muted); }
+.prev-title::after { content: "”"; color: var(--muted); }
+.prev-titlerow { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; }
+.prev-toggle { font-size: 0.78rem; padding: 4px 10px; }
+.previously.collapsed .prev-recap, .previously.collapsed .standings, .previously.collapsed .next-time, .previously.collapsed .archive { display: none; }
+.prev-recap { margin: 0; max-width: 68ch; font-size: 1.06rem; line-height: 1.6; }
+.standings { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px 16px; }
+.standings li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; align-items: center; font-size: 0.93rem; line-height: 1.35; }
+.standings .face { width: 34px; height: 34px; border-radius: 50%; background: var(--lawn); border: 2px solid var(--c); overflow: hidden; display: grid; place-items: end center; }
+.standings .face svg { width: 26px; height: auto; margin-bottom: -12px; }
+.standings b { font-family: var(--font-display); color: var(--c); margin-right: 4px; }
+.next-time { border-top: 1px dashed var(--line); padding-top: 10px; display: grid; gap: 4px; }
+.nt-label { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
+.next-time ul { margin: 0; padding-left: 1.1em; display: grid; gap: 2px; font-style: italic; }
+.archive summary { cursor: pointer; font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); width: fit-content; }
+.archive summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ep-list { margin: 10px 0 0; padding-left: 1.6em; display: grid; gap: 12px; max-height: 420px; overflow-y: auto; }
+.ep-list li::marker { font-family: var(--font-mono); color: var(--muted); }
+.ep-list .ep-t { font-family: var(--font-display); font-weight: 700; }
+.ep-list .ep-m { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); margin-left: 6px; }
+.ep-list p { margin: 2px 0 0; font-size: 0.95rem; color: var(--muted); max-width: 68ch; }
+
+/* Tick controls */
+.controls { display: grid; gap: 8px; }
+.tickline { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+.tickno { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.scrub { display: flex; align-items: center; gap: 10px; }
+.scrub input[type=range] { flex: 1; min-width: 0; accent-color: var(--accent); }
+button { font-family: var(--font-mono); font-size: 0.85rem; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 6px; padding: 7px 12px; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button.play { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); min-width: 72px; }
+button:disabled { opacity: 0.4; cursor: default; }
+
+/* Scene + side list */
+.stage { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 2fr); gap: 20px; align-items: start; }
+@media (max-width: 820px) { .stage { grid-template-columns: 1fr; } }
+.scene { position: relative; border-radius: 14px; background: var(--lawn); overflow: hidden; }
+.scene svg { display: block; width: 100%; height: auto; }
+.scene svg text { font-family: var(--font-mono); }
+.layer { position: absolute; inset: 0; pointer-events: none; }
+
+.avatar { position: absolute; width: 8.5%; transform: translate(-50%, -100%); transition: left 0.9s cubic-bezier(.45,.05,.25,1), top 0.9s cubic-bezier(.45,.05,.25,1); }
+.avatar svg { display: block; width: 100%; height: auto; overflow: visible; }
+.avatar .tag { position: absolute; left: 50%; top: 100%; transform: translate(-50%, 2px); font-family: var(--font-mono); font-size: clamp(9px, 1.5vw, 11px); font-weight: 500; color: var(--ink); background: var(--surface); border: 1.5px solid var(--c); border-radius: 999px; padding: 0 6px; white-space: nowrap; }
+
+.bubble { position: absolute; max-width: min(48%, 200px); width: max-content; background: var(--bubble); color: var(--bubble-ink); border: 2px solid var(--c); border-radius: 14px; padding: 6px 10px; font-family: var(--font-body); font-size: clamp(11.5px, 1.9vw, 13.5px); line-height: 1.35; box-shadow: 0 2px 0 var(--c); }
+.bubble .to { display: block; font-family: var(--font-mono); font-size: 0.72em; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c); }
+.bubble.action { border-style: dashed; box-shadow: none; font-style: italic; font-size: clamp(10.5px, 1.7vw, 12.5px); border-radius: 10px; padding: 4px 8px; }
+.bubble.tight { max-width: min(34%, 165px); font-size: clamp(10.5px, 1.6vw, 12.5px); padding: 5px 8px; }
+.bubble.more { pointer-events: auto; cursor: pointer; }
+.bubble.more .txt::after { content: " ▸"; color: var(--c); font-style: normal; font-size: 0.85em; }
+.bubble.open { max-width: min(92%, 340px); z-index: 5; box-shadow: 0 6px 18px rgba(0,0,0,.18), 0 2px 0 var(--c); }
+.bubble.open .txt::after { content: ""; }
+.bubble:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.bubble.action.tight { font-size: clamp(10px, 1.5vw, 11.5px); }
+.dialogue { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; max-width: 65ch; }
+.dialogue li { border-left: 3px solid var(--c); padding-left: 10px; font-size: 0.97rem; }
+.dialogue .who { display: block; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c); }
+.pop { animation: pop 0.35s 0.75s both cubic-bezier(.3,1.4,.5,1); }
+@keyframes pop { from { opacity: 0; transform: translateY(6px) scale(0.92); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .avatar { transition: none; } .pop { animation: none; } }
+
+.people { display: grid; gap: 10px; }
+.person { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 4px 12px; align-items: start; }
+.person .face { grid-row: span 3; width: 44px; height: 44px; border-radius: 50%; background: var(--lawn); border: 2px solid var(--c); overflow: hidden; display: grid; place-items: end center; }
+.person .face svg { width: 34px; height: auto; margin-bottom: -16px; }
+.person .who { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.person .age { font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-family: var(--font-mono); font-size: 0.72rem; border-radius: 999px; padding: 1px 8px; border: 1px solid var(--line); color: var(--muted); }
+.chip.mood { color: var(--c); border-color: var(--c); }
+.goal { font-size: 0.85rem; color: var(--muted); }
+.imp { display: flex; gap: 3px; align-items: center; }
+.imp i { width: 6px; height: 6px; border-radius: 50%; background: var(--line); }
+.imp i.on { background: var(--c); }
+
+/* The data-center cloud and support */
+#cloud-bob { animation: bob 6s ease-in-out infinite; }
+@keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
+@media (prefers-reduced-motion: reduce) { #cloud-bob { animation: none; } }
+#cloud a:focus-visible { outline: 2px solid var(--accent); }
+.thanks { background: var(--surface); border: 2px solid var(--accent); border-radius: 12px; padding: 12px 16px; font-size: 1rem; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.support { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px 28px; align-items: center; }
+@media (max-width: 760px) { .support { grid-template-columns: 1fr; } }
+.support h2 { margin: 0 0 4px; }
+.sup-status { margin: 0; font-size: 1.02rem; max-width: 60ch; }
+.sup-note { margin: 4px 0 0; font-size: 0.86rem; color: var(--muted); max-width: 60ch; }
+.sup-options { display: grid; gap: 10px; justify-items: start; }
+.sup-group { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.sup-label { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); width: 5.5em; }
+.give { font-family: var(--font-display); font-weight: 700; font-size: 1rem; text-decoration: none; color: var(--accent-ink); background: var(--accent); border-radius: 999px; padding: 8px 16px; min-width: 44px; text-align: center; }
+.give.monthly { background: var(--surface); color: var(--accent); border: 2px solid var(--accent); padding: 6px 14px; }
+.give:hover { filter: brightness(1.08); }
+.give:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.sup-manage { font-size: 0.82rem; color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+.sup-manage:hover { color: var(--accent); }
+.test-badge { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); border: 1px dashed var(--line); border-radius: 6px; padding: 2px 8px; }
+
+/* Story + board */
+.lower { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 28px; }
+@media (max-width: 760px) { .lower { grid-template-columns: 1fr; } }
+.story { display: grid; gap: 14px; align-content: start; }
+.beat { max-width: 65ch; font-size: 1.08rem; margin: 0; }
+.events { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; color: var(--muted); font-size: 0.95rem; }
+.past { display: grid; gap: 12px; border-top: 1px solid var(--line); padding-top: 14px; }
+.past button { text-align: left; background: none; border: none; padding: 0; font-family: var(--font-body); font-size: 0.95rem; color: var(--ink); display: grid; gap: 2px; }
+.past button:hover .t { color: var(--accent); }
+.past .t { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
+.board { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 14px; align-content: start; }
+.laws { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.laws li { display: grid; grid-template-columns: 3.4em 1fr; gap: 8px; font-size: 0.92rem; }
+.laws .id { font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); padding-top: 2px; }
+.matters { display: grid; gap: 8px; }
+.matter { font-size: 0.9rem; border-left: 3px solid var(--c); padding-left: 10px; }
+.empty { font-size: 0.9rem; color: var(--muted); }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="title">
+      <div class="eyebrow">Magnolia Loop · Sumter Oaks, Florida</div>
+      <h1>Sumter Oaks Live</h1>
+    </div>
+    <div class="sample" id="sample">Preview with sample ticks. Live ticks will appear here once the simulation starts.</div>
+  </header>
+
+  <div class="thanks" id="thanks" role="status" hidden>
+    <span>Thank you! Your gift reaches the cloud at the next hourly tick. Watch it puff up.</span>
+    <button type="button" id="thanks-close" aria-label="Dismiss">✕</button>
+  </div>
+
+  <section class="previously" id="previously" aria-label="Previously on Sumter Oaks" hidden>
+    <div class="prev-head">
+      <span class="prev-kicker">Previously on Sumter Oaks…</span>
+      <span class="prev-meta" id="prev-meta"></span>
+    </div>
+    <div class="prev-titlerow">
+      <h2 class="prev-title" id="prev-title"></h2>
+      <button type="button" class="prev-toggle" id="prev-toggle" aria-expanded="true" aria-controls="previously">Hide recap</button>
+    </div>
+    <p class="prev-recap" id="prev-recap"></p>
+    <ul class="standings" id="standings"></ul>
+    <div class="next-time" id="next-time">
+      <span class="nt-label">Next time on Sumter Oaks</span>
+      <ul id="next-list"></ul>
+    </div>
+    <details class="archive" id="archive">
+      <summary>All episodes <span id="ep-count"></span></summary>
+      <ol class="ep-list" id="ep-list" reversed></ol>
+    </details>
+  </section>
+
+  <section class="controls" aria-label="Tick controls">
+    <div class="tickline">
+      <span class="tickno" id="tickno">Tick 1</span>
+      <span class="muted" id="when"></span>
+    </div>
+    <div class="scrub">
+      <button id="prev" aria-label="Previous tick">◀</button>
+      <input type="range" id="slider" min="0" max="0" value="0" aria-label="Choose tick">
+      <button id="next" aria-label="Next tick">▶</button>
+      <button id="play" class="play">Play</button>
+    </div>
+  </section>
+
+  <div class="stage">
+    <section class="scene" id="scene" aria-label="Street scene">
+      <svg id="map" viewBox="0 -64 480 444" role="img" aria-label="Magnolia Loop with the four houses, the Rec Center, Town Square and Town Hall, under the data-center cloud"></svg>
+      <div class="layer" id="avatars"></div>
+      <div class="layer" id="bubbles" aria-live="polite"></div>
+    </section>
+    <aside class="people" id="people" aria-label="Residents"></aside>
+  </div>
+
+  <section class="support" id="support" aria-labelledby="support-h">
+    <div>
+      <h2 id="support-h">Keep the lights on</h2>
+      <p class="sup-status" id="sup-status"></p>
+      <p class="sup-note" id="sup-note"></p>
+    </div>
+    <div class="sup-options">
+      <div class="sup-group"><span class="sup-label">One time</span><span class="sup-group" id="sup-once"></span></div>
+      <div class="sup-group"><span class="sup-label">Monthly</span><span class="sup-group" id="sup-monthly"></span></div>
+      <a class="sup-manage" id="sup-manage" target="_blank" rel="noopener" hidden>Already a monthly supporter? Manage or cancel</a>
+      <span class="test-badge" id="sup-test" hidden>Test mode · no real charges</span>
+    </div>
+  </section>
+
+  <div class="lower">
+    <section class="story" aria-label="Story">
+      <h2>What happened</h2>
+      <p class="beat" id="beat"></p>
+      <ul class="dialogue" id="dialogue" aria-label="What was said"></ul>
+      <ul class="events" id="events"></ul>
+      <div class="past" id="past"></div>
+    </section>
+    <aside class="board" aria-label="Town board">
+      <h2>Town Hall board</h2>
+      <div>
+        <div class="eyebrow" style="margin-bottom:8px">Open matters</div>
+        <div class="matters" id="matters"></div>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom:8px">Active laws</div>
+        <ul class="laws" id="laws"></ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<script>
+// ---- Data. On Vercel, replace loadData() with fetches of world.json and ticks/*.json. ----
+// Zone x/y is the building's centre; sx/sy is where residents stand (feet), in the 480x380 scene.
+const WORLD = {
+  town_name: "Sumter Oaks",
+  zones: {
+    donnas_house: { name: "Donna's", x: 120, y: 100, sx: 120, sy: 172 },
+    garys_house: { name: "Gary's", x: 240, y: 100, sx: 240, sy: 172 },
+    hals_house: { name: "Hal's", x: 360, y: 100, sx: 360, sy: 172 },
+    magnolia_loop: { name: "Magnolia Loop", sx: 240, sy: 222, spread: 82 },
+    rec_center: { name: "Rec Center", x: 62, y: 296, sx: 62, sy: 362 },
+    rosas_house: { name: "Rosa's", x: 240, y: 296, sx: 240, sy: 362 },
+    town_square: { name: "Town Square", x: 360, y: 300, sx: 360, sy: 362 },
+    town_hall: { name: "Town Hall", x: 440, y: 300, sx: 440, sy: 362 }
+  },
+  laws: [
+    { id: "L-01", title: "Cart Modifications", text: "Exterior golf cart modifications visible from the street require Architectural Review approval." },
+    { id: "L-02", title: "Lawn Ornaments", text: "No more than 3 decorative ornaments may be visible from the street." },
+    { id: "L-03", title: "Quiet Hours", text: "No amplified sound from 10 PM to 7 AM." },
+    { id: "L-04", title: "Holiday Decor", text: "Holiday lighting is permitted from Thanksgiving through January 15." },
+    { id: "L-05", title: "Court Reservations", text: "Pickleball courts may be reserved for a maximum of 2 hours per party." },
+    { id: "L-06", title: "Parking", text: "No parking on the grass. Carts and cars stay on driveways or the street." }
+  ],
+  agents: {
+    donna: { name: "Donna Pruitt", age: 68, home: "donnas_house", goal: "Climb the pickleball ladder with Gary as her doubles partner" },
+    gary: { name: "Gary Kowalski", age: 71, home: "garys_house", goal: "Rig his golf cart with lights and sound for the Holiday Golf Cart Parade" },
+    hal: { name: "Hal Weems", age: 76, home: "hals_house", goal: "Report Gary's cart and Donna's flamingos to architectural review" },
+    rosa: { name: "Rosa Delgado", age: 63, home: "rosas_house", goal: "Get all three neighbors at her dinner table" }
+  }
+};
+
+const TICKS = [
+  {
+    tick: 1, simulation_time: "Saturday, November 14, 9:00 AM", weather: "Sunny, 78°F, light breeze",
+    positions: { donna: "magnolia_loop", gary: "magnolia_loop", hal: "magnolia_loop", rosa: "magnolia_loop" },
+    story: "Saturday morning on Magnolia Loop. Gary tests his new cart speaker a little too loudly, Donna makes her pickleball pitch before he can escape, Hal counts flamingos for the second time this week, and Rosa hands Hal the first dinner invitation.",
+    events: [
+      "Gary's new speaker plays a few bars of Jimmy Buffett before he turns it down.",
+      "Donna's visible flamingo flock is now up to seven.",
+      "Rosa crosses the street with a stack of handwritten invitations."
+    ],
+    results: {
+      gary: { emotional_state: "proud", importance_rating: 5, action: { type: "INTERACT", parameters: { target: "gary_golf_cart", content: "Testing the LED rope lights" } } },
+      donna: { emotional_state: "determined", importance_rating: 6, action: { type: "SPEAK", parameters: { target: "gary", content: "Court 2, next Saturday, 8 AM. You have quick hands. Don't argue." } } },
+      hal: { emotional_state: "vindicated", importance_rating: 6, action: { type: "INTERACT", parameters: { target: "donna_flamingo_flock", content: "Counting flamingos. Seven." } } },
+      rosa: { emotional_state: "hopeful", importance_rating: 7, action: { type: "SPEAK", parameters: { target: "hal", content: "Dinner at my place Friday at six. You're coming." } } }
+    },
+    matters: []
+  },
+  {
+    tick: 2, simulation_time: "Saturday, November 14, 9:15 AM", weather: "Sunny, 79°F",
+    positions: { donna: "magnolia_loop", gary: "magnolia_loop", hal: "town_square", rosa: "magnolia_loop" },
+    story: "Gary agrees to one morning of pickleball, with conditions. Donna RSVPs to Rosa's dinner before anyone else can. Hal is already halfway to Town Hall with his notebook under his arm, and Rosa pins an invitation to the bulletin board for good measure.",
+    events: [
+      "Hal leaves the street without answering Rosa.",
+      "Gary and Donna are still talking by the mailbox kiosk."
+    ],
+    results: {
+      gary: { emotional_state: "reluctant", importance_rating: 4, action: { type: "SPEAK", parameters: { target: "donna", content: "One morning. If I'm terrible, I'm wiring your patio lights instead." } } },
+      donna: { emotional_state: "delighted", importance_rating: 6, action: { type: "SPEAK", parameters: { target: "rosa", content: "Friday? I'll bring my seven-layer dip. Who else is coming?" } } },
+      hal: { emotional_state: "resolute", importance_rating: 7, action: { type: "MOVE", parameters: { target: "town_hall", content: "Two violations to report" } } },
+      rosa: { emotional_state: "encouraged", importance_rating: 5, action: { type: "INTERACT", parameters: { target: "street_bulletin_board", content: "Pinning up an invitation" } } }
+    },
+    matters: []
+  },
+  {
+    tick: 3, simulation_time: "Saturday, November 14, 9:30 AM", weather: "Sunny, 80°F",
+    positions: { donna: "rec_center", gary: "garys_house", hal: "town_hall", rosa: "rosas_house" },
+    story: "Hal files two complaints at the architectural review desk, then stands there a moment longer than he needs to. Gary is back in the garage with the rope lights. Donna books court 2 for Saturday. Rosa starts a menu for six people, just in case.",
+    events: [
+      "Hal is the only person at Town Hall.",
+      "The street is quiet for the first time all morning."
+    ],
+    results: {
+      gary: { emotional_state: "absorbed", importance_rating: 4, action: { type: "INTERACT", parameters: { target: "gary_workbench", content: "Wiring lights to the cart battery" } } },
+      donna: { emotional_state: "triumphant", importance_rating: 5, action: { type: "INTERACT", parameters: { target: "court_reservation_kiosk", content: "Booking court 2, Sat 8–10 AM" } } },
+      hal: { emotional_state: "conflicted", importance_rating: 8, action: { type: "INTERACT", parameters: { target: "architectural_review_desk", content: "Filing two complaints" } } },
+      rosa: { emotional_state: "busy", importance_rating: 5, action: { type: "INTERACT", parameters: { target: "rosa_kitchen", content: "Planning a menu for six" } } }
+    },
+    matters: [
+      { by: "hal", text: "Complaint filed: Gary Kowalski's golf cart lights and wiring (L-01)" },
+      { by: "hal", text: "Complaint filed: Donna Pruitt's seven flamingos (L-02)" }
+    ]
+  }
+];
+
+const SAMPLE_EPISODES = [{
+  number: 1, from_tick: 1, through_tick: 3, simulation_time: "Saturday, November 14, 9:30 AM",
+  title: "The Speaker, the Flamingos, and the Invitation",
+  recap: "It was supposed to be an ordinary Saturday on Magnolia Loop. Then Gary's new parade speaker let loose a few bars of Jimmy Buffett, and Hal's notebook came out. Donna, never one to waste a crisis, claimed Gary as her pickleball partner, quick hands and all, while Rosa went door to door with dinner invitations, determined to get these three at one table. And at Town Hall, Hal has filed not one complaint, but two.",
+  standings: {
+    gary: "Wiring lights for the parade, unaware he's officially on file.",
+    donna: "Has her doubles partner. Has seven flamingos. Has a problem.",
+    hal: "Two complaints filed. One dinner invitation, still unanswered.",
+    rosa: "Planning a menu for six, just in case."
+  },
+  next_time: ["Will Gary's quick hands survive court 2?", "Can Rosa seat Hal and the flamingo owner at the same table?"]
+}];
+
+// When served next to the simulation (python -m http.server, or Vercel), read the real files.
+// Anywhere else (like the Claude artifact), fall back to the built-in sample ticks.
+const BASE = "../";
+const getJSON = (path) => fetch(BASE + path, { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(path); return r.json(); });
+
+function mergeWorld(w) {
+  const zones = {};
+  for (const [zid, z] of Object.entries(w.zones)) zones[zid] = { ...(WORLD.zones[zid] || {}), name: WORLD.zones[zid]?.name ?? z.name };
+  const agents = {};
+  for (const [id, a] of Object.entries(w.agents)) agents[id] = { name: a.name, age: a.age, home: a.home, goal: a.current_goal };
+  return { town_name: w.town_name, zones, laws: w.laws, agents };
+}
+
+async function loadTicks(names) { return Promise.all(names.map(n => getJSON("data/ticks/" + n))); }
+
+async function loadData() {
+  try {
+    const [w, index] = await Promise.all([getJSON("world.json"), getJSON("data/ticks/index.json")]);
+    const ticks = await loadTicks(index.ticks);
+    if (!ticks.length) throw new Error("no ticks yet");
+    const [episodes, fund] = await Promise.all([loadEpisodes(), loadFund()]);
+    return { world: mergeWorld(w), ticks, names: index.ticks, episodes, fund, sample: false, live: true };
+  } catch (e) {
+    return { world: WORLD, ticks: TICKS, episodes: SAMPLE_EPISODES, fund: SAMPLE_FUND, sample: true, live: false };
+  }
+}
+
+function setCollapsed(on) {
+  $("previously").classList.toggle("collapsed", on);
+  $("prev-toggle").textContent = on ? "Read recap" : "Hide recap";
+  $("prev-toggle").setAttribute("aria-expanded", String(!on));
+}
+
+const SAMPLE_FUND = {
+  level: "fair", days_left: 3.4, balance_usd: 2.04, supporters: 1, monthly_supporters: 0, avg_tick_usd: 0.025, test_mode: true,
+  options: [
+    { plan: "once_5", amount: 5, recurring: false, url: "https://buy.stripe.com/test_14AfZh1ioeuo47s37cb7y00" },
+    { plan: "once_10", amount: 10, recurring: false, url: "https://buy.stripe.com/test_9B600j3qw2LGgUegY2b7y01" },
+    { plan: "once_20", amount: 20, recurring: false, url: "https://buy.stripe.com/test_dRm7sLe5a5XS7jEazEb7y02" },
+    { plan: "monthly_5", amount: 5, recurring: true, url: "https://buy.stripe.com/test_4gM6oHgdieuo6fAazEb7y03" },
+    { plan: "monthly_10", amount: 10, recurring: true, url: "https://buy.stripe.com/test_4gMcN56CI9a4eM6cHMb7y04" },
+    { plan: "monthly_20", amount: 20, recurring: true, url: "https://buy.stripe.com/test_cNi7sL7GM1HCavQ6job7y05" }
+  ]
+};
+
+// Live-only Stripe extras. They appear only when the fund data comes from the live
+// account (test_mode false), so a live link never sits next to test links.
+const SUPPORT_EXTRAS = {
+  custom_url: "https://buy.stripe.com/fZu00j5ipg7Z2Ul8WIc3m00",  // pay what you want, $3 minimum
+  portal_url: "https://billing.stripe.com/p/login/fZu00j5ipg7Z2Ul8WIc3m00"  // Stripe customer portal
+};
+
+async function loadFund() {
+  try { return await getJSON("data/ticks/fund.json"); } catch (e) { return null; }
+}
+
+// Show a countdown only when it matters (under a week). A big surplus reads as
+// "no help needed", so above that the card and cloud stay quiet about the number.
+function showCountdown(f) { return !!f && f.level !== "bright"; }
+
+function powerLeft(f) {
+  if (!f || f.balance_usd <= 0) return "no power left";
+  if (f.days_left < 1) { const h = Math.max(1, Math.round(f.days_left * 24)); return `about ${h} hour${h === 1 ? "" : "s"} of power`; }
+  if (f.days_left >= 60) return "power for months";
+  return `about ${Math.round(f.days_left)} day${Math.round(f.days_left) === 1 ? "" : "s"} of power`;
+}
+
+// The cloud floats in the sky strip; its size and colour follow the fund level.
+const CLOUD_LOOK = {
+  bright: { scale: 1.15, fill: "var(--cloud)", rain: false },
+  fair:   { scale: 1.0,  fill: "var(--cloud)", rain: false },
+  low:    { scale: 0.82, fill: "var(--cloud-grey)", rain: false },
+  empty:  { scale: 0.68, fill: "var(--cloud-dark)", rain: true },
+};
+function drawCloud(f) {
+  const host = $("cloud");
+  if (!host) return;
+  host.replaceChildren();
+  if (!f) return;
+  const look = CLOUD_LOOK[f.level] || CLOUD_LOOK.fair;
+  const label = showCountdown(f) ? `The data-center cloud: ${powerLeft(f)}. Keep the lights on.` : "The data-center cloud. Keep the lights on.";
+  const link = el("a", { href: "#support", "aria-label": label });
+  const bob = el("g", { id: "cloud-bob" });
+  const shape = el("g", { transform: `translate(196 -30) scale(${look.scale})` });
+  if (look.rain) {
+    for (const dx of [-22, -8, 6, 20]) shape.append(el("path", { d: `M${dx} 16 l-3 9`, stroke: "var(--cloud-dark)", "stroke-width": 2, "stroke-linecap": "round" }));
+  }
+  for (const [cx, cy, r] of [[-28, 4, 13], [-12, -6, 17], [8, -10, 19], [27, 1, 14], [0, 6, 15]]) {
+    shape.append(el("circle", { cx, cy, r, fill: look.fill }));
+  }
+  shape.append(el("rect", { x: -40, y: 2, width: 80, height: 15, rx: 7.5, fill: look.fill }));
+  bob.append(shape);
+  link.append(bob);
+  link.append(el("text", { x: 250, y: -40, "font-size": 8, "letter-spacing": 2, fill: "var(--muted)" }, "THE CLOUD"));
+  if (showCountdown(f)) link.append(el("text", { x: 250, y: -26, "font-size": 10.5, fill: "var(--ink)" }, powerLeft(f)));
+  host.append(link);
+}
+
+function renderSupport(f) {
+  const sec = $("support");
+  if (!f) { sec.hidden = true; return; }
+  sec.hidden = false;
+  const cents = Math.max(1, Math.round((f.avg_tick_usd || 0.025) * 100));
+  const cost = `Every hour of town life costs about ${cents}¢ in AI time.`;
+  const lead = {
+    bright: cost,
+    fair: "Sumter Oaks has " + powerLeft(f) + " left in the cloud.",
+    low: "The cloud is running thin: " + powerLeft(f) + " left.",
+    empty: "The cloud is empty. The neighbors are waiting for someone to top it up.",
+  }[f.level] || "";
+  $("sup-status").textContent = lead;
+  const who = f.supporters ? ` Thanks to ${f.supporters} supporter${f.supporters === 1 ? "" : "s"}${f.monthly_supporters ? ` (${f.monthly_supporters} monthly)` : ""}.` : "";
+  const first = showCountdown(f) ? cost : "Supporters keep the neighbors talking.";
+  $("sup-note").textContent = `${first}${who} Gifts pay running costs and aren't tax-deductible.`;
+  const make = (o) => {
+    const a = document.createElement("a");
+    a.className = "give" + (o.recurring ? " monthly" : "");
+    a.href = o.url; a.target = "_blank"; a.rel = "noopener";
+    a.textContent = `$${o.amount}${o.recurring ? "/mo" : ""}`;
+    a.setAttribute("aria-label", o.recurring ? `Give $${o.amount} every month` : `Give $${o.amount} once`);
+    return a;
+  };
+  const opts = (f.options || []).slice().sort((a, b) => a.amount - b.amount);
+  const once = opts.filter(o => !o.recurring).map(make);
+  if (!f.test_mode && SUPPORT_EXTRAS.custom_url && once.length) {
+    const other = document.createElement("a");
+    other.className = "give monthly";
+    other.href = SUPPORT_EXTRAS.custom_url; other.target = "_blank"; other.rel = "noopener";
+    other.textContent = "Other";
+    other.setAttribute("aria-label", "Give an amount you choose, once ($3 minimum)");
+    once.push(other);
+  }
+  $("sup-once").replaceChildren(...once);
+  $("sup-monthly").replaceChildren(...opts.filter(o => o.recurring).map(make));
+  $("sup-once").parentElement.hidden = !opts.some(o => !o.recurring);
+  $("sup-monthly").parentElement.hidden = !opts.some(o => o.recurring);
+  const manage = $("sup-manage");
+  manage.hidden = !!f.test_mode || !SUPPORT_EXTRAS.portal_url || !opts.some(o => o.recurring);
+  if (!manage.hidden) manage.href = SUPPORT_EXTRAS.portal_url;
+  $("sup-test").hidden = !f.test_mode;
+}
+
+async function loadEpisodes() {
+  try { return (await getJSON("data/ticks/episodes.json")).episodes || []; } catch (e) { return []; }
+}
+
+function renderPrevious() {
+  const eps = data.episodes || [];
+  const box = $("previously");
+  box.hidden = !eps.length;
+  if (!eps.length) return;
+  const ep = eps[eps.length - 1];
+  // Open a new episode fully; once this viewer has seen it, start it collapsed to the title.
+  if (data.shownEp !== ep.number) {
+    let seen = 0;
+    try { seen = +localStorage.getItem("so-seen-episode") || 0; } catch (e) {}
+    setCollapsed(!data.sample && seen >= ep.number);
+    try { localStorage.setItem("so-seen-episode", String(ep.number)); } catch (e) {}
+    data.shownEp = ep.number;
+  }
+  $("prev-meta").textContent = `Episode ${ep.number} · through tick ${ep.through_tick}`;
+  $("prev-title").textContent = ep.title;
+  $("prev-recap").textContent = ep.recap;
+  $("standings").replaceChildren(...Object.keys(data.world.agents).filter(id => ep.standings?.[id]).map(id => {
+    const li = document.createElement("li");
+    li.style.setProperty("--c", `var(--${id})`);
+    li.innerHTML = `<span class="face">${avatarSVG(id)}</span><span><b></b><span class="s"></span></span>`;
+    li.querySelector("b").textContent = first(data.world, id);
+    li.querySelector(".s").textContent = ep.standings[id];
+    return li;
+  }));
+  const qs = ep.next_time || [];
+  $("next-time").hidden = !qs.length;
+  $("next-list").replaceChildren(...qs.map(q => { const li = document.createElement("li"); li.textContent = q; return li; }));
+  $("ep-count").textContent = `(${eps.length})`;
+  $("archive").hidden = eps.length < 2;
+  $("ep-list").replaceChildren(...eps.slice().reverse().map(e => {
+    const li = document.createElement("li");
+    li.value = e.number;
+    li.innerHTML = `<span class="ep-t"></span><span class="ep-m"></span><p></p>`;
+    li.querySelector(".ep-t").textContent = e.title;
+    li.querySelector(".ep-m").textContent = `ticks ${e.from_tick}–${e.through_tick}`;
+    li.querySelector("p").textContent = e.recap;
+    return li;
+  }));
+}
+
+// Check for new ticks once a minute; follow along if the viewer is on the latest tick.
+async function poll() {
+  try {
+    const index = await getJSON("data/ticks/index.json");
+    const fresh = index.ticks.filter(n => !data.names.includes(n));
+    if (!fresh.length) return;
+    data.episodes = await loadEpisodes();
+    renderPrevious();
+    data.fund = await loadFund() || data.fund;
+    drawCloud(data.fund); renderSupport(data.fund);
+    const atEnd = idx === data.ticks.length - 1;
+    data.ticks.push(...await loadTicks(fresh));
+    data.names.push(...fresh);
+    $("slider").max = data.ticks.length - 1;
+    if (atEnd && !timer) go(data.ticks.length - 1); else go(idx);
+  } catch (e) { /* offline or between deploys; try again next minute */ }
+}
+
+// ---- Avatars: one simple figure per resident, in shorts (it's Florida). ----
+const OUTLINE = 'stroke="rgba(20,25,22,.55)" stroke-width="1"';
+const LOOKS = {
+  gary: { skin: "#f0c7a2", hair: "#cfcfcf", extra: (c) =>
+    `<path d="M10 11 Q20 1 30 11 Z" fill="${c}" ${OUTLINE}/><rect x="24" y="9.5" width="10" height="3" rx="1.5" fill="${c}" ${OUTLINE}/>
+     <path d="M15.5 19.5 Q20 17.5 24.5 19.5 Q20 21.5 15.5 19.5Z" fill="#cfcfcf"/>` },
+  donna: { skin: "#ebbb95", hair: "#e6cf8c", extra: (c) =>
+    `<circle cx="20" cy="9" r="10" fill="#e6cf8c" ${OUTLINE}/><circle cx="20" cy="14" r="8.2" fill="#ebbb95" ${OUTLINE}/>
+     <rect x="12" y="6.5" width="16" height="3.4" rx="1.7" fill="${c}"/>
+     <rect x="14" y="12" width="5" height="3.2" rx="1.5" fill="#1d1d1d"/><rect x="21" y="12" width="5" height="3.2" rx="1.5" fill="#1d1d1d"/>
+     <rect x="19" y="13" width="2" height="1" fill="#1d1d1d"/>` },
+  hal: { skin: "#ddb08b", hair: "#ececec", extra: () =>
+    `<rect x="12.5" y="4.5" width="15" height="4.5" rx="1.5" fill="#ececec" ${OUTLINE}/>
+     <rect x="14" y="12" width="5" height="3.4" rx="1" fill="none" stroke="#2a2a2a" stroke-width="1"/><rect x="21" y="12" width="5" height="3.4" rx="1" fill="none" stroke="#2a2a2a" stroke-width="1"/>
+     <path d="M17 19.5 H23" stroke="#5a3a2a" stroke-width="1.1" stroke-linecap="round"/>` },
+  rosa: { skin: "#b67a54", hair: "#3a2722", extra: () =>
+    `<circle cx="20" cy="2.8" r="3.8" fill="#3a2722"/><path d="M11.5 14 Q12 5 20 5 Q28 5 28.5 14 Q26 8.5 20 8.5 Q14 8.5 11.5 14Z" fill="#3a2722"/>` }
+};
+
+function avatarSVG(id) {
+  const L = LOOKS[id], c = `var(--${id})`;
+  const face = id === "donna" ? "" :
+    `<circle cx="20" cy="14" r="8.2" fill="${L.skin}" ${OUTLINE}/>` +
+    (id === "hal" ? "" : `<circle cx="17" cy="13.5" r="1" fill="#2a2a2a"/><circle cx="23" cy="13.5" r="1" fill="#2a2a2a"/>`) +
+    (id === "gary" || id === "hal" ? "" : `<path d="M17 17.5 Q20 19.8 23 17.5" fill="none" stroke="#5a3a2a" stroke-width="1.1" stroke-linecap="round"/>`);
+  const smileGary = id === "gary" ? `<path d="M17.5 21.5 Q20 22.8 22.5 21.5" fill="none" stroke="#5a3a2a" stroke-width="1" stroke-linecap="round"/>` : "";
+  const donnaSmile = id === "donna" ? `<path d="M17 18 Q20 20.3 23 18" fill="none" stroke="#9b2c50" stroke-width="1.3" stroke-linecap="round"/>` : "";
+  return `<svg viewBox="0 0 40 60" aria-hidden="true">
+    <ellipse cx="20" cy="58.5" rx="11" ry="2" fill="rgba(0,0,0,.18)"/>
+    <rect x="14" y="44" width="4.5" height="13" rx="2" fill="${L.skin}" ${OUTLINE}/>
+    <rect x="21.5" y="44" width="4.5" height="13" rx="2" fill="${L.skin}" ${OUTLINE}/>
+    <rect x="12.5" y="38" width="15" height="9" rx="2.5" fill="#d8c8a2" ${OUTLINE}/>
+    <rect x="9" y="22.5" width="22" height="18" rx="7" fill="${c}" ${OUTLINE}/>
+    <rect x="5.5" y="25" width="5" height="12" rx="2.5" fill="${L.skin}" ${OUTLINE}/>
+    <rect x="29.5" y="25" width="5" height="12" rx="2.5" fill="${L.skin}" ${OUTLINE}/>
+    ${face}${L.extra(c)}${smileGary}${donnaSmile}
+  </svg>`;
+}
+
+// ---- Scene ----
+const NS = "http://www.w3.org/2000/svg";
+const VB = { y: -64, w: 480, h: 444 };   // the sky strip sits above y = 0
+const $ = id => document.getElementById(id);
+let data, idx = 0, timer = null, firstPaint = true;
+
+function el(tag, attrs = {}, text) {
+  const e = document.createElementNS(NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  if (text != null) e.textContent = text;
+  return e;
+}
+
+function palm(svg, x, y, s = 1) {
+  const g = el("g", { transform: `translate(${x} ${y}) scale(${s})` });
+  g.append(el("path", { d: "M0 0 Q3 -18 -2 -36", stroke: "var(--trunk)", "stroke-width": 4, fill: "none", "stroke-linecap": "round" }));
+  for (const a of [-150, -110, -70, -30, 10]) {
+    g.append(el("path", { d: "M0 0 Q9 -7 19 -2 Q9 -2 0 0Z", fill: "var(--palm)", transform: `translate(-2 -36) rotate(${a})` }));
+  }
+  svg.append(g);
+}
+
+function drawScene(world) {
+  const svg = $("map");
+  svg.replaceChildren();
+  svg.append(el("rect", { x: 0, y: VB.y, width: VB.w, height: -VB.y + 4, fill: "var(--sky)" }));
+  svg.append(el("rect", { x: 0, y: 0, width: VB.w, height: 380, fill: "var(--lawn)" }));
+  svg.append(el("g", { id: "cloud" }));
+  svg.append(el("rect", { x: 0, y: 248, width: VB.w, height: 132, fill: "var(--lawn-2)" }));
+
+  // Roads: Magnolia Loop, side roads to the Rec Center and Town Square, and the path to Town Hall.
+  svg.append(el("rect", { x: 0, y: 196, width: VB.w, height: 40, fill: "var(--road)" }));
+  svg.append(el("path", { d: "M 8 216 H 472", stroke: "var(--road-mark)", "stroke-width": 2, "stroke-dasharray": "10 10" }));
+  for (const zid of ["donnas_house", "garys_house", "hals_house"]) {
+    const z = world.zones[zid];
+    svg.append(el("rect", { x: z.x - 13, y: z.y + 26, width: 26, height: 70, fill: "var(--road)", opacity: 0.7 }));
+  }
+  svg.append(el("rect", { x: 49, y: 236, width: 26, height: 40, fill: "var(--road)", opacity: 0.7 }));
+  svg.append(el("rect", { x: 227, y: 236, width: 26, height: 40, fill: "var(--road)", opacity: 0.7 }));
+  svg.append(el("rect", { x: 347, y: 236, width: 26, height: 40, fill: "var(--road)", opacity: 0.7 }));
+  svg.append(el("path", { d: "M 390 300 H 410", stroke: "var(--road)", "stroke-width": 10 }));
+  svg.append(el("text", { x: 14, y: 191, "font-size": 9, "letter-spacing": 2, fill: "var(--ink)", opacity: 0.55 }, "MAGNOLIA LOOP"));
+
+  // Houses.
+  const houseOf = {};
+  for (const [id, a] of Object.entries(world.agents)) houseOf[a.home] = id;
+  for (const [zid, z] of Object.entries(world.zones)) {
+    if (zid === "magnolia_loop") continue;
+    const owner = houseOf[zid];
+    const g = el("g");
+    if (owner) {
+      const c = `var(--${owner})`;
+      g.append(el("rect", { x: z.x - 36, y: z.y - 12, width: 72, height: 40, rx: 3, fill: "var(--wall)", stroke: c, "stroke-width": 2 }));
+      g.append(el("path", { d: `M ${z.x - 44} ${z.y - 10} L ${z.x} ${z.y - 40} L ${z.x + 44} ${z.y - 10} Z`, fill: "var(--roof)" }));
+      g.append(el("rect", { x: z.x - 6, y: z.y + 8, width: 12, height: 20, rx: 2, fill: c }));
+      g.append(el("rect", { x: z.x - 28, y: z.y - 2, width: 14, height: 11, rx: 1.5, fill: "var(--lawn-2)", stroke: c, "stroke-width": 1 }));
+      g.append(el("rect", { x: z.x + 14, y: z.y - 2, width: 14, height: 11, rx: 1.5, fill: "var(--lawn-2)", stroke: c, "stroke-width": 1 }));
+      g.append(el("text", { x: z.x, y: z.y - 46, "text-anchor": "middle", "font-size": 10, "font-weight": 500, fill: "var(--ink)" }, z.name));
+    } else {
+      g.append(el("rect", { x: z.x - 34, y: z.y - 22, width: 68, height: 44, rx: 6, fill: "var(--wall)", stroke: "var(--accent)", "stroke-width": 1.5 }));
+      g.append(el("rect", { x: z.x - 34, y: z.y - 22, width: 68, height: 10, rx: 6, fill: "var(--accent)" }));
+      g.append(el("text", { x: z.x, y: z.y + 6, "text-anchor": "middle", "font-size": 9, fill: "var(--bubble-ink)" }, z.name));
+    }
+    svg.append(g);
+  }
+
+  // Donna's flamingos (seven, as Hal has noted) and Gary's cart.
+  const d = world.zones.donnas_house;
+  for (let i = 0; i < 7; i++) {
+    const fx = d.x - 52 + (i % 4) * 9 + (i > 3 ? 4 : 0), fy = d.y + 52 + (i > 3 ? 10 : 0);
+    svg.append(el("path", { d: `M${fx} ${fy} v-7 m0 0 q-4 -2 -1 -6 q3 -3 1 -6`, stroke: "var(--donna)", "stroke-width": 2, fill: "none", "stroke-linecap": "round" }));
+  }
+  const g = world.zones.garys_house;
+  const cart = el("g", { transform: `translate(${g.x + 46} ${g.y + 44})` });
+  cart.append(el("rect", { x: 0, y: 0, width: 30, height: 12, rx: 3, fill: "var(--wall)", stroke: "var(--gary)", "stroke-width": 1.5 }));
+  cart.append(el("path", { d: "M4 0 V-14 H28 V0", fill: "none", stroke: "var(--ink)", "stroke-width": 1.2, opacity: 0.6 }));
+  cart.append(el("rect", { x: 2, y: -16, width: 28, height: 3, rx: 1.5, fill: "var(--gary)" }));
+  cart.append(el("circle", { cx: 7, cy: 13, r: 3.5, fill: "var(--ink)" }));
+  cart.append(el("circle", { cx: 24, cy: 13, r: 3.5, fill: "var(--ink)" }));
+  svg.append(cart);
+
+  // Palms.
+  palm(svg, 30, 120, 0.9); palm(svg, 452, 130, 1); palm(svg, 300, 160, 0.7);
+  palm(svg, 150, 330, 0.8); palm(svg, 300, 340, 0.75);
+}
+
+function standPoints(world, t) {
+  const groups = {};
+  for (const [id, zid] of Object.entries(t.positions)) (groups[zid] ||= []).push(id);
+  const pts = {};
+  for (const [zid, ids] of Object.entries(groups)) {
+    const z = world.zones[zid];
+    const gap = z.spread || 30;
+    ids.forEach((id, i) => { pts[id] = { x: z.sx + (i - (ids.length - 1) / 2) * gap, y: z.sy }; });
+  }
+  return pts;
+}
+
+function buildAvatars(world) {
+  const layer = $("avatars");
+  layer.replaceChildren();
+  for (const id of Object.keys(world.agents)) {
+    const a = document.createElement("div");
+    a.className = "avatar"; a.id = "av-" + id;
+    a.style.setProperty("--c", `var(--${id})`);
+    a.innerHTML = avatarSVG(id) + `<span class="tag"></span>`;
+    a.querySelector(".tag").textContent = world.agents[id].name.split(" ")[0];
+    layer.append(a);
+  }
+}
+
+function placeAvatars(pts) {
+  for (const [id, p] of Object.entries(pts)) {
+    const a = $("av-" + id);
+    a.style.left = (p.x / VB.w * 100) + "%";
+    a.style.top = ((p.y - VB.y) / VB.h * 100) + "%";
+  }
+}
+
+function targetName(world, target) {
+  return world.agents[target]?.name.split(" ")[0] ?? world.zones[target]?.name ?? String(target).replace(/_/g, " ");
+}
+
+// Bubble placement: speech first, then action notes. Each bubble tries spots above the speaker's head,
+// then below their name tag, shifting sideways and stacking outward, and takes the first spot that is
+// inside the scene and clear of other bubbles and of the residents themselves. When a crowd gathers,
+// bubbles get narrower and long lines are shortened (the full lines are always in "What happened").
+const clip = (s, n) => s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, "").replace(/[\s.,;:!?—-]+$/, "") + "…" : s;
+
+function layoutBubbles(world, t, animate) {
+  const layer = $("bubbles");
+  layer.replaceChildren();
+  const scene = $("scene");
+  const W = scene.clientWidth, H = scene.clientHeight;
+  const pts = standPoints(world, t);
+  const avW = W * 0.085, avH = avW * 1.5, tagH = 18;
+  const stems = document.createElementNS(NS, "svg");
+  stems.setAttribute("width", W); stems.setAttribute("height", H);
+  stems.style.cssText = "position:absolute;inset:0;overflow:visible";
+  layer.append(stems);
+
+  const people = Object.entries(pts).map(([id, p]) => {
+    const x = p.x / VB.w * W, y = (p.y - VB.y) / VB.h * H;
+    return { id, x, head: y - avH, feet: y + tagH, box: { left: x - avW / 2, top: y - avH, w: avW, h: avH + tagH } };
+  });
+  const byId = Object.fromEntries(people.map(p => [p.id, p]));
+  const crowd = {};
+  for (const z of Object.values(t.positions)) crowd[z] = (crowd[z] || 0) + 1;
+  // When two or more people share a spot on a smaller screen, name tags shrink to initials so they don't overlap.
+  const narrow = W < 560;
+  for (const [id, z] of Object.entries(t.positions)) {
+    const tag = document.querySelector(`#av-${id} .tag`);
+    if (!tag) continue;
+    const name = first(world, id);
+    tag.textContent = (W < 700 && crowd[z] >= 2 && z !== "magnolia_loop") ? name[0] : name;
+    tag.title = name;
+  }
+
+  const items = Object.entries(t.results || {}).map(([id, r]) => ({ id, r, speak: r.action.type === "SPEAK" }))
+    .sort((a, b) => (b.speak - a.speak) || (byId[a.id].x - byId[b.id].x));
+  const placed = people.map(p => p.box);
+  const hits = (r) => placed.some(q => r.left < q.left + q.w + 4 && r.left + r.w + 4 > q.left && r.top < q.top + q.h + 4 && r.top + r.h + 4 > q.top);
+  const inside = (r) => r.left >= 2 && r.top >= 2 && r.left + r.w <= W - 2 && r.top + r.h <= H - 2;
+
+  for (const it of items) {
+    const me = byId[it.id];
+    const crowded = crowd[t.positions[it.id]] >= 3;
+    const P = it.r.action.parameters || {};
+    const b = document.createElement("div");
+    b.className = "bubble" + (it.speak ? "" : " action") + (crowded ? " tight" : "") + (animate ? " pop" : "");
+    b.style.setProperty("--c", `var(--${it.id})`);
+    let full;
+    if (it.speak) {
+      full = `“${P.content}”`;
+      b.innerHTML = `<span class="to"></span><span class="txt"></span>`;
+      b.querySelector(".to").textContent = `${first(world, it.id)} → ${targetName(world, P.target)}`;
+      b.querySelector(".txt").textContent = clip(full, narrow ? 80 : crowded ? 95 : 170);
+    } else {
+      full = it.r.action.type === "MOVE" ? `Off to ${targetName(world, P.target)}` : (P.content || it.r.action.type.toLowerCase());
+      b.innerHTML = `<span class="txt"></span>`;
+      b.querySelector(".txt").textContent = clip(full, narrow ? 32 : crowded ? 40 : 60);
+    }
+    b.title = full;
+    const short = b.querySelector(".txt").textContent;
+    if (short !== full) makeExpandable(b, short, full, W, H);
+    layer.append(b);
+    const bw = b.offsetWidth, bh = b.offsetHeight;
+    const shifts = [0, -0.55, 0.55, -1.05, 1.05].map(f => f * bw);
+    let spot = null;
+    for (let level = 0; level < 3 && !spot; level++) {
+      for (const side of ["above", "below"]) {
+        for (const dx of shifts) {
+          const left = Math.min(Math.max(me.x - bw / 2 + dx, 2), W - bw - 2);
+          const top = side === "above" ? me.head - 10 - bh - level * (bh + 8) : me.feet + 10 + level * (bh + 8);
+          const r = { left, top, w: bw, h: bh, side };
+          if (inside(r) && !hits(r)) { spot = r; break; }
+        }
+        if (spot) break;
+      }
+    }
+    if (!spot) {
+      if (!it.speak) { b.remove(); continue; }
+      const left = Math.min(Math.max(me.x - bw / 2, 2), W - bw - 2);
+      spot = { left, top: Math.max(2, me.head - 10 - bh), w: bw, h: bh, side: "above" };
+    }
+    b.style.left = spot.left + "px"; b.style.top = spot.top + "px";
+    placed.push(spot);
+    // Stem from the bubble's nearest edge to the speaker's head (or name tag).
+    const sx = Math.min(Math.max(me.x, spot.left + 12), spot.left + bw - 12);
+    const sy = spot.side === "above" ? spot.top + bh : spot.top;
+    const ey = spot.side === "above" ? me.head + 2 : me.feet - 2;
+    const line = document.createElementNS(NS, "line");
+    line.setAttribute("x1", sx); line.setAttribute("y1", sy); line.setAttribute("x2", me.x); line.setAttribute("y2", ey);
+    line.setAttribute("stroke-width", 2);
+    line.setAttribute("stroke-linecap", "round");
+    if (!it.speak) line.setAttribute("stroke-dasharray", "3 3");
+    line.style.stroke = `var(--${it.id})`;
+    if (animate) line.setAttribute("class", "pop");
+    stems.append(line);
+  }
+}
+// A shortened bubble opens to the full line on tap (or Enter), and closes on a second tap.
+function makeExpandable(b, short, full, W, H) {
+  b.classList.add("more");
+  b.tabIndex = 0;
+  b.setAttribute("role", "button");
+  b.setAttribute("aria-expanded", "false");
+  const toggle = () => {
+    const open = !b.classList.contains("open");
+    document.querySelectorAll(".bubble.open").forEach(o => { if (o !== b) o._close && o._close(); });
+    if (!open) return b._close();
+    b._home = { left: b.style.left, top: b.style.top };
+    b.classList.add("open");
+    b.setAttribute("aria-expanded", "true");
+    b.querySelector(".txt").textContent = full;
+    // keep the opened bubble inside the scene
+    const bw = b.offsetWidth, bh = b.offsetHeight;
+    b.style.left = Math.min(Math.max(parseFloat(b.style.left), 4), W - bw - 4) + "px";
+    b.style.top = Math.min(Math.max(parseFloat(b.style.top), 4), Math.max(4, H - bh - 4)) + "px";
+  };
+  b._close = () => {
+    b.classList.remove("open");
+    b.setAttribute("aria-expanded", "false");
+    b.querySelector(".txt").textContent = short;
+    if (b._home) { b.style.left = b._home.left; b.style.top = b._home.top; }
+  };
+  b.addEventListener("click", (e) => { e.stopPropagation(); toggle(); });
+  b.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } });
+}
+
+function first(world, id) { return world.agents[id].name.split(" ")[0]; }
+
+// ---- Panels ----
+function renderPeople(world, t) {
+  const box = $("people");
+  box.replaceChildren();
+  for (const [id, a] of Object.entries(world.agents)) {
+    const r = t.results?.[id];
+    const imp = r ? r.importance_rating : 0;
+    const card = document.createElement("article");
+    card.className = "person";
+    card.style.setProperty("--c", `var(--${id})`);
+    card.innerHTML = `
+      <div class="face">${avatarSVG(id)}</div>
+      <div class="who"><h3></h3><span class="age">${a.age}</span></div>
+      <div class="meta"><span class="chip loc"></span>${r ? '<span class="chip mood"></span>' : ""}</div>
+      <div class="imp" aria-label="Importance ${imp} of 10">${Array.from({ length: 10 }, (_, i) => `<i class="${i < imp ? "on" : ""}"></i>`).join("")}</div>
+      <div class="goal" style="grid-column: 1 / -1"></div>`;
+    card.querySelector("h3").textContent = a.name;
+    card.querySelector(".loc").textContent = world.zones[t.positions[id]]?.name ?? t.positions[id];
+    if (r) card.querySelector(".mood").textContent = r.emotional_state;
+    card.querySelector(".goal").textContent = "Goal: " + a.goal;
+    box.append(card);
+  }
+}
+
+function renderStory(t) {
+  $("beat").textContent = t.story || "";
+  const said = Object.entries(t.results || {}).filter(([, r]) => r.action.type === "SPEAK");
+  $("dialogue").replaceChildren(...said.map(([id, r]) => {
+    const li = document.createElement("li");
+    li.style.setProperty("--c", `var(--${id})`);
+    li.innerHTML = `<span class="who"></span><span class="line"></span>`;
+    li.querySelector(".who").textContent = `${first(data.world, id)} → ${targetName(data.world, r.action.parameters.target)}`;
+    li.querySelector(".line").textContent = `“${r.action.parameters.content}”`;
+    return li;
+  }));
+  $("dialogue").hidden = !said.length;
+  $("events").replaceChildren(...(t.events || []).map(e => { const li = document.createElement("li"); li.textContent = e; return li; }));
+  const past = $("past");
+  past.replaceChildren();
+  const earlier = data.ticks.slice(0, idx).reverse();
+  if (earlier.length) { const h = document.createElement("div"); h.className = "eyebrow"; h.textContent = "Earlier"; past.append(h); }
+  earlier.forEach(pt => {
+    const b = document.createElement("button");
+    b.innerHTML = `<span class="t"></span><span class="s"></span>`;
+    b.querySelector(".t").textContent = `Tick ${pt.tick} · ${pt.simulation_time}`;
+    b.querySelector(".s").textContent = pt.story;
+    b.onclick = () => go(data.ticks.indexOf(pt));
+    past.append(b);
+  });
+  past.hidden = !earlier.length;
+}
+
+function renderBoard(world) {
+  const laws = data.ticks[idx].laws || world.laws;
+  $("laws").replaceChildren(...laws.map(l => {
+    const li = document.createElement("li");
+    li.innerHTML = `<span class="id"></span><span><strong></strong> <span class="muted"></span></span>`;
+    li.querySelector(".id").textContent = l.id;
+    li.querySelector("strong").textContent = l.title + ".";
+    li.querySelector(".muted").textContent = l.text;
+    return li;
+  }));
+  const matters = data.ticks.slice(0, idx + 1).flatMap(t => t.matters || []);
+  const box = $("matters");
+  if (!matters.length) { box.innerHTML = '<div class="empty">Nothing filed yet.</div>'; return; }
+  box.replaceChildren(...matters.map(m => {
+    const d = document.createElement("div"); d.className = "matter";
+    d.style.setProperty("--c", `var(--${m.by})`); d.textContent = m.text; return d;
+  }));
+}
+
+function go(i) {
+  idx = Math.max(0, Math.min(data.ticks.length - 1, i));
+  const t = data.ticks[idx];
+  $("tickno").textContent = `Tick ${t.tick}`;
+  $("when").textContent = `${t.simulation_time} · ${t.weather}`;
+  $("slider").value = idx;
+  $("prev").disabled = idx === 0;
+  $("next").disabled = idx === data.ticks.length - 1;
+  placeAvatars(standPoints(data.world, t));
+  layoutBubbles(data.world, t, !firstPaint);
+  firstPaint = false;
+  renderPeople(data.world, t);
+  renderStory(t);
+  renderBoard(data.world);
+}
+
+function togglePlay() {
+  if (timer) { clearInterval(timer); timer = null; $("play").textContent = "Play"; return; }
+  if (idx >= data.ticks.length - 1) go(0);
+  $("play").textContent = "Pause";
+  timer = setInterval(() => {
+    if (idx >= data.ticks.length - 1) { togglePlay(); return; }
+    go(idx + 1);
+  }, 3600);
+}
+
+loadData().then(d => {
+  data = d;
+  $("sample").hidden = !d.sample;
+  $("slider").max = d.ticks.length - 1;
+  drawScene(d.world);
+  buildAvatars(d.world);
+  renderPrevious();
+  drawCloud(d.fund);
+  renderSupport(d.fund);
+  if (/[?&]thanks=1\b/.test(location.search)) {
+    $("thanks").hidden = false;
+    try { history.replaceState(null, "", location.pathname + location.hash); } catch (e) {}
+  }
+  $("thanks-close").onclick = () => { $("thanks").hidden = true; };
+  document.addEventListener("click", () => document.querySelectorAll(".bubble.open").forEach(o => o._close && o._close()));
+  $("prev-toggle").onclick = () => setCollapsed(!$("previously").classList.contains("collapsed"));
+  $("prev").onclick = () => go(idx - 1);
+  $("next").onclick = () => go(idx + 1);
+  $("slider").oninput = e => go(+e.target.value);
+  $("play").onclick = togglePlay;
+  document.addEventListener("keydown", e => {
+    if (e.target.tagName === "INPUT") return;
+    if (e.key === "ArrowLeft") go(idx - 1);
+    if (e.key === "ArrowRight") go(idx + 1);
+  });
+  go(d.live ? d.ticks.length - 1 : 0);
+  if (d.live) setInterval(poll, 60000);
+  let rt;
+  new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(() => layoutBubbles(data.world, data.ticks[idx], false), 80); }).observe($("scene"));
+  if (document.fonts) document.fonts.ready.then(() => layoutBubbles(data.world, data.ticks[idx], false));
+});
+</script>
