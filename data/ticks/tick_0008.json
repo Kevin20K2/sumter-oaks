@@ -1,0 +1,117 @@
+{
+  "tick": 8,
+  "simulation_time": "Monday, October 12, 8:17 PM",
+  "weather": "Humid and hazy, 74°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "town_square",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 8:17 on this humid, hazy Monday evening in Sumter Oaks, Gary is pleased to have finally agreed to a Saturday doubles match, and Donna is triumphant as she chalks their names onto the ladder standings board at the Rec Center. Over in Town Square, Hal is satisfied with his plain vanilla cone, which he is eating on his way to a bench, while Rosa, looking hopeful but a little tired, pauses at the mailbox kiosk on Magnolia Loop to check her mail and any notices posted there.",
+  "events": [
+    "Donna (ladder standings board): Write Donna Pruitt and Gary Kowalski in as doubles partners, Saturday at 8",
+    "Hal (ice cream stand): Buy a plain vanilla cone and eat it on the way to a bench",
+    "Rosa (mailbox kiosk): Check my mail and any notices posted at the kiosk"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just roped me into doubles on the ladder board for Saturday at eight and told me to go on to Rosa's. I already said I'd head home to the garage, and I've been out here a while. Nobody's lonely when a neighbor wants them as a partner, and truth be told it felt good to be asked. She's waiting on a yes, so I shouldn't dodge or repeat myself. Give her a straight answer, own up that I'm hooked, and then get moving. Cart lights and the speaker won't install themselves, and I still have to sort out Architectural Review for the exterior mods.",
+      "emotional_state": "pleased",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "All right, Donna, put us down, Saturday at eight. But if I'm late it's 'cause the cart ate my morning, so no hard feelings."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just said he'll head home after a few more rallies, and he's hedging with the cart-wiring excuse. I already put us down as doubles partners for Saturday at eight, so I shouldn't pester him with another invite. Best move is to lock it in at the ladder standings board while he's still watching, since I'm the one who spotted his talent. Making it official and visible gets me closer to climbing the ladder and makes it harder for him to back out.",
+      "emotional_state": "triumphant",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Write Donna Pruitt and Gary Kowalski in as doubles partners, Saturday at 8"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Complaints against Gary (L-01) and Donna (L-02) are already filed and logged at the review desk. I read the parade sign-up sheet last tick. It's after eight in the evening, nobody's around, and there's nothing more to enforce in the square. Might as well treat myself to something at the ice cream stand. Even a watchdog is allowed a cone, and Gary's Buffett can't be heard from here.",
+      "emotional_state": "satisfied",
+      "importance_rating": 2,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ice_cream_stand",
+          "content": "Buy a plain vanilla cone and eat it on the way to a bench"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 8:17 PM and I already pinned the invitation on the bulletin board last tick, so I shouldn't repeat that. I've asked Hal in person and posted for all three. Nobody's around, and the invite still needs a date, time, and my address so it's actually usable. But I did pin it already, and over-fussing the note isn't useful. The mailbox kiosk might have mail or notices, and I'm standing right here. A quick check costs nothing, and I'm tired from running around. After that I'll head home and plan the menu.",
+      "emotional_state": "hopeful, tired",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "mailbox_kiosk",
+          "content": "Check my mail and any notices posted at the kiosk"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03068,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9305,
+        "output_tokens": 1133,
+        "usd": 0.02994
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4495,
+        "output_tokens": 572,
+        "usd": 0.00074
+      }
+    }
+  }
+}

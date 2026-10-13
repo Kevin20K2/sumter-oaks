@@ -1,6 +1,6 @@
 {
-  "tick": 8,
-  "time": "2026-10-12T19:17",
+  "tick": 9,
+  "time": "2026-10-12T20:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,10 +9,10 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, look at you, you're a natural! Go on to Rosa's before she sends out a search party, but I'm putting us down as doubles partners on the ladder board, Saturday at eight. Don't you dare say no.”"
+      "Donna (ladder standings board): Write Donna Pruitt and Gary Kowalski in as doubles partners, Saturday at 8"
     ],
     "donna": [
-      "Gary said to Donna: “Well, I got three in a row over the net, so I'm calling myself a natural. Another few and I'll head home to my garage, though. That cart won't wire itself for the parade.”"
+      "Gary said to Donna: “All right, Donna, put us down, Saturday at eight. But if I'm late it's 'cause the cart ate my morning, so no hard feelings.”"
     ],
     "hal": [],
     "rosa": []
@@ -123,6 +123,16 @@
         "tick": 7,
         "text": "Donna said to Gary: “Gary, look at you, you're a natural! Go on to Rosa's before she sends out a search party, but I'm putting us down as doubles partners on the ladder board, Saturday at eight. Don't you dare say no.”",
         "importance": 4
+      },
+      {
+        "tick": 8,
+        "text": "I said to Donna: “All right, Donna, put us down, Saturday at eight. But if I'm late it's 'cause the cart ate my morning, so no hard feelings.”",
+        "importance": 5
+      },
+      {
+        "tick": 8,
+        "text": "Donna (ladder standings board): Write Donna Pruitt and Gary Kowalski in as doubles partners, Saturday at 8",
+        "importance": 5
       }
     ],
     "donna": [
@@ -225,6 +235,16 @@
         "tick": 7,
         "text": "Gary said to Donna: “Well, I got three in a row over the net, so I'm calling myself a natural. Another few and I'll head home to my garage, though. That cart won't wire itself for the parade.”",
         "importance": 6
+      },
+      {
+        "tick": 8,
+        "text": "I (ladder standings board): Write Donna Pruitt and Gary Kowalski in as doubles partners, Saturday at 8",
+        "importance": 6
+      },
+      {
+        "tick": 8,
+        "text": "Gary said to Donna: “All right, Donna, put us down, Saturday at eight. But if I'm late it's 'cause the cart ate my morning, so no hard feelings.”",
+        "importance": 6
       }
     ],
     "hal": [
@@ -307,6 +327,11 @@
         "tick": 7,
         "text": "I (parade signup table): Read the sign-up sheet to see whether Gary's cart is entered in the parade",
         "importance": 4
+      },
+      {
+        "tick": 8,
+        "text": "I (ice cream stand): Buy a plain vanilla cone and eat it on the way to a bench",
+        "importance": 2
       }
     ],
     "rosa": [
@@ -404,32 +429,45 @@
         "tick": 7,
         "text": "I (street bulletin board): Pin up a handwritten welcome dinner invitation for Gary, Donna, and Hal at my place, with food and no cart or flamingo debates",
         "importance": 6
+      },
+      {
+        "tick": 8,
+        "text": "I (mailbox kiosk): Check my mail and any notices posted at the kiosk",
+        "importance": 3
       }
     ]
   },
   "reflections": {
     "gary": [
       "Since Linda passed, the garage is where I feel most like myself.",
-      "Hal doesn't like me much, but nobody on this street knows wiring like I do."
+      "Hal doesn't like me much, but nobody on this street knows wiring like I do.",
+      "Gary's guilt about the speaker and the skipped permits is nagging at me, but Hal and Rosa seem to be letting it slide for now.",
+      "Donna has been surprisingly generous with her time and her spare paddle, and I think I'm starting to look forward to our Saturday doubles match."
     ],
     "donna": [
       "Partners make or break your ladder ranking, and mine keep moving to Ocala.",
-      "Gary has quick hands and nothing to do on weekends. He just doesn't know he wants to play yet."
+      "Gary has quick hands and nothing to do on weekends. He just doesn't know he wants to play yet.",
+      "Gary is surprisingly easy to talk into things, and I'm glad he showed up to the court and kept the ball in play, even if he calls himself terrible.",
+      "Rosa's dinner invitation and the doubles partnership with Gary make me feel like this town is starting to feel like a real community again."
     ],
     "hal": [
       "Rules exist so neighbors don't have to argue. Somebody has to keep them.",
-      "The street was quieter before the new speaker arrived."
+      "The street was quieter before the new speaker arrived.",
+      "Gary's garage wiring worries me, but I also know the rules matter, and I'm not sure how to balance loyalty with what I owe the town.",
+      "Rosa's welcome dinner invitation surprised me, and I'm hoping I can sit at her table without turning every conversation into a complaint about flamingos."
     ],
     "rosa": [
       "I moved here to slow down, and so far I've worked four shifts and met nobody.",
-      "These three neighbors clearly have history I don't understand yet."
+      "These three neighbors clearly have history I don't understand yet.",
+      "Gary turned a broken disposal into a favor I can't repay, and I think he's the kind of neighbor who shows up without being asked.",
+      "Hosting dinner for Gary, Donna, and Hal feels like the right way to thank them and finally make this street feel like home."
     ]
   },
   "emotions": {
-    "gary": "content",
+    "gary": "pleased",
     "donna": "triumphant",
-    "hal": "dutiful",
-    "rosa": "determined"
+    "hal": "satisfied",
+    "rosa": "hopeful, tired"
   },
   "laws": [
     {
@@ -502,14 +540,22 @@
         "Gary said to Donna: “Well, I got three in a row over the net, so I'm calling myself a natural. Another few and I'll head home to my garage, though. That cart won't wire itself for the parade.”",
         "Donna said to Gary: “Gary, look at you, you're a natural! Go on to Rosa's before she sends out a search party, but I'm putting us down as doubles partners on the ladder board, Saturday at eight. Don't you dare say no.”"
       ]
+    },
+    {
+      "tick": 8,
+      "time": "Monday, October 12, 8:17 PM",
+      "story": "At 8:17 on this humid, hazy Monday evening in Sumter Oaks, Gary is pleased to have finally agreed to a Saturday doubles match, and Donna is triumphant as she chalks their names onto the ladder standings board at the Rec Center. Over in Town Square, Hal is satisfied with his plain vanilla cone, which he is eating on his way to a bench, while Rosa, looking hopeful but a little tired, pauses at the mailbox kiosk on Magnolia Loop to check her mail and any notices posted there.",
+      "dialogue": [
+        "Gary said to Donna: “All right, Donna, put us down, Saturday at eight. But if I'm late it's 'cause the cart ate my morning, so no hard feelings.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 0.1616,
+    "total_usd": 0.19228,
     "by_day": {
       "2026-10-12": {
-        "ticks": 5,
-        "usd": 0.1616
+        "ticks": 6,
+        "usd": 0.19228
       }
     }
   },
@@ -517,7 +563,8 @@
     0.03034,
     0.03069,
     0.03066,
-    0.03114
+    0.03114,
+    0.03068
   ],
   "fund": {
     "gross_usd": 10.0,
