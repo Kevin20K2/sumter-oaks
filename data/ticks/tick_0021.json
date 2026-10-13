@@ -1,0 +1,122 @@
+{
+  "tick": 21,
+  "simulation_time": "Tuesday, October 13, 4:48 PM",
+  "weather": "Afternoon shower, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "town_hall",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 4:48 on a rainy Tuesday afternoon in Sumter Oaks, Gary is at home wiring a marine speaker into his golf cart battery, testing it at low volume with the focus of a man who takes his cart modifications seriously. Donna, cheerful as the afternoon shower is passing, has just booked them a pickleball court for Saturday at eight and handed Gary a spare paddle, urging him to practice his dinks against the garage door. Over at Town Hall, Hal is filing a review notice on Gary's cart upgrades while quietly noting Donna's lawn ornaments for follow-up, a dutiful task he seems to be doing with a bit of conflicted reluctance. Meanwhile, Rosa is pinning a welcome dinner notice to the bulletin board on Magnolia Loop, inviting Gary, Donna, and Hal to her place on Saturday evening.",
+  "events": [
+    "Gary (gary golf cart): Wire the marine speaker to the cart battery and test it at low volume",
+    "Hal (architectural review desk): File a notice on Gary's cart modifications needing review approval, and note Donna's lawn ornaments for L-02 follow-up",
+    "Rosa (street bulletin board): Pin up a note: welcome dinner at Rosa's, Saturday evening, Gary, Donna and Hal all invited"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just walked in again, probably to check on the cart or confirm tomorrow's court. She already offered to book it and bring coffee, so no need to re-ask or repeat myself. I mounted the speaker last tick and still need to wire it to the battery. The cart's exterior mods (rope lights, speaker) fall under L-01, and I skipped the Architectural Review permit, which keeps nagging at me. I'll keep wiring and let her talk if she wants. Practical move: get the speaker wired up properly so the cart's done and tomorrow morning is free for pickleball.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Wire the marine speaker to the cart battery and test it at low volume"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just walked over to Gary's house to lock in our doubles plan. My memories say he already came out to the court and kept the ball in play, so I don't need to re-invite him. What I need now is a concrete commitment: book the courts for Saturday at eight (staying under the two-hour limit) and make sure he has my spare paddle. Keep it short and upbeat, give him a specific next step, and keep it moving rather than repeating the earlier pitch.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, you were a natural out there. I'm booking us the court for Saturday at eight, a nice tidy hour and a half, and the spare paddle is yours to keep until then. Practice the dink against your garage door and we'll work on that kitchen line together."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Town Hall with the architectural review desk right in front of me, and I came here to file on Gary's cart and Donna's flamingos. Gary admitted himself he's wiring lights and sound in the garage and filing paperwork after, which is backwards under L-01. Donna was pulling flamingos in already, so I'll keep the report factual and note the compliance steps. Rosa's dinner has me wanting to be less of a scorekeeper, but a plain, fair notice about the cart modifications is the job, not meanness.",
+      "emotional_state": "dutiful, conflicted",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "architectural_review_desk",
+          "content": "File a notice on Gary's cart modifications needing review approval, and note Donna's lawn ornaments for L-02 follow-up"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've invited Hal already and he said yes. Gary and Donna are still unconfirmed. I checked the rec center boards for Donna's schedule and came away with nothing concrete, and nobody is in sight on the street right now. The street bulletin board is the practical move: I can post a welcome dinner notice for Saturday so Gary and Donna see it, then follow up in person when I run into them. It keeps things moving without repeating myself to anyone.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Pin up a note: welcome dinner at Rosa's, Saturday evening, Gary, Donna and Hal all invited"
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "hal",
+      "text": "Hal Weems: File a notice on Gary's cart modifications needing review approval, and note Donna's lawn ornaments for L-02 follow-up"
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03126,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9446,
+        "output_tokens": 1217,
+        "usd": 0.03106
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 513,
+        "output_tokens": 298,
+        "usd": 0.0002
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "tick": 21,
-  "time": "2026-10-13T16:17",
+  "tick": 22,
+  "time": "2026-10-13T16:48",
   "positions": {
     "gary": "garys_house",
     "donna": "garys_house",
@@ -9,17 +9,13 @@
   },
   "perceptions": {
     "gary": [
-      "Donna just arrived."
+      "Donna said to Gary: “Gary, you were a natural out there. I'm booking us the court for Saturday at eight, a nice tidy hour and a half, and the spare paddle is yours to keep until then. Practice the dink against your garage door and we'll work on that kitchen line together.”"
     ],
     "donna": [
-      "You arrived at Gary's House."
+      "Gary (gary golf cart): Wire the marine speaker to the cart battery and test it at low volume"
     ],
-    "hal": [
-      "You arrived at Town Hall."
-    ],
-    "rosa": [
-      "You arrived at Magnolia Loop (the street)."
-    ]
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
@@ -236,6 +232,16 @@
       {
         "tick": 20,
         "text": "Donna just arrived.",
+        "importance": 4
+      },
+      {
+        "tick": 21,
+        "text": "I (gary golf cart): Wire the marine speaker to the cart battery and test it at low volume",
+        "importance": 4
+      },
+      {
+        "tick": 21,
+        "text": "Donna said to Gary: “Gary, you were a natural out there. I'm booking us the court for Saturday at eight, a nice tidy hour and a half, and the spare paddle is yours to keep until then. Practice the dink against your garage door and we'll work on that kitchen line together.”",
         "importance": 4
       }
     ],
@@ -464,6 +470,16 @@
         "tick": 20,
         "text": "You arrived at Gary's House.",
         "importance": 6
+      },
+      {
+        "tick": 21,
+        "text": "I said to Gary: “Gary, you were a natural out there. I'm booking us the court for Saturday at eight, a nice tidy hour and a half, and the spare paddle is yours to keep until then. Practice the dink against your garage door and we'll work on that kitchen line together.”",
+        "importance": 6
+      },
+      {
+        "tick": 21,
+        "text": "Gary (gary golf cart): Wire the marine speaker to the cart battery and test it at low volume",
+        "importance": 6
       }
     ],
     "hal": [
@@ -665,6 +681,11 @@
       {
         "tick": 20,
         "text": "You arrived at Town Hall.",
+        "importance": 6
+      },
+      {
+        "tick": 21,
+        "text": "I (architectural review desk): File a notice on Gary's cart modifications needing review approval, and note Donna's lawn ornaments for L-02 follow-up",
         "importance": 6
       }
     ],
@@ -868,6 +889,11 @@
         "tick": 20,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 21,
+        "text": "I (street bulletin board): Pin up a note: welcome dinner at Rosa's, Saturday evening, Gary, Donna and Hal all invited",
+        "importance": 6
       }
     ]
   },
@@ -907,8 +933,8 @@
   },
   "emotions": {
     "gary": "focused",
-    "donna": "determined",
-    "hal": "conflicted",
+    "donna": "optimistic",
+    "hal": "dutiful, conflicted",
     "rosa": "determined"
   },
   "laws": [
@@ -956,6 +982,10 @@
     {
       "by": "hal",
       "text": "Hal Weems: Double-check both filings are logged with dates and violation codes L-01 and L-02"
+    },
+    {
+      "by": "hal",
+      "text": "Hal Weems: File a notice on Gary's cart modifications needing review approval, and note Donna's lawn ornaments for L-02 follow-up"
     }
   ],
   "recap_pending": [
@@ -985,18 +1015,26 @@
       "time": "Tuesday, October 13, 4:17 PM",
       "story": "On a damp Tuesday afternoon in Sumter Oaks, Gary is focused in his driveway, wiring a marine speaker to his golf cart's battery while the afternoon shower drifts off. Donna is marching over to Gary's House with determination, and Rosa is heading out to Magnolia Loop with the same resolve. Meanwhile Hal, looking conflicted, is making his way to Town Hall, unsure what waits for him there.",
       "dialogue": []
+    },
+    {
+      "tick": 21,
+      "time": "Tuesday, October 13, 4:48 PM",
+      "story": "At 4:48 on a rainy Tuesday afternoon in Sumter Oaks, Gary is at home wiring a marine speaker into his golf cart battery, testing it at low volume with the focus of a man who takes his cart modifications seriously. Donna, cheerful as the afternoon shower is passing, has just booked them a pickleball court for Saturday at eight and handed Gary a spare paddle, urging him to practice his dinks against the garage door. Over at Town Hall, Hal is filing a review notice on Gary's cart upgrades while quietly noting Donna's lawn ornaments for follow-up, a dutiful task he seems to be doing with a bit of conflicted reluctance. Meanwhile, Rosa is pinning a welcome dinner notice to the bulletin board on Magnolia Loop, inviting Gary, Donna, and Hal to her place on Saturday evening.",
+      "dialogue": [
+        "Donna said to Gary: “Gary, you were a natural out there. I'm booking us the court for Saturday at eight, a nice tidy hour and a half, and the spare paddle is yours to keep until then. Practice the dink against your garage door and we'll work on that kitchen line together.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 0.57128,
+    "total_usd": 0.60254,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
         "usd": 0.22284
       },
       "2026-10-13": {
-        "ticks": 11,
-        "usd": 0.34844
+        "ticks": 12,
+        "usd": 0.3797
       }
     }
   },
@@ -1017,52 +1055,53 @@
     0.0333,
     0.03242,
     0.03209,
-    0.03172
+    0.03172,
+    0.03126
   ],
   "fund": {
-    "gross_usd": 20.0,
-    "payments": 4,
-    "supporters": 4,
+    "gross_usd": 0.0,
+    "payments": 0,
+    "supporters": 0,
     "monthly_supporters": 0,
     "options": [
       {
         "plan": "once_5",
         "amount": 5.0,
         "recurring": false,
-        "url": "https://buy.stripe.com/test_14AfZh1ioeuo47s37cb7y00"
+        "url": "https://buy.stripe.com/5kQeVdh177Bt9iJ5Kwc3m03"
       },
       {
         "plan": "once_10",
         "amount": 10.0,
         "recurring": false,
-        "url": "https://buy.stripe.com/test_9B600j3qw2LGgUegY2b7y01"
+        "url": "https://buy.stripe.com/9B63cv129aNF7aBdcYc3m01"
       },
       {
         "plan": "once_20",
         "amount": 20.0,
         "recurring": false,
-        "url": "https://buy.stripe.com/test_dRm7sLe5a5XS7jEazEb7y02"
+        "url": "https://buy.stripe.com/aFa28r5ip7Bt7aBfl6c3m04"
       },
       {
         "plan": "monthly_5",
         "amount": 5.0,
         "recurring": true,
-        "url": "https://buy.stripe.com/test_4gM6oHgdieuo6fAazEb7y03"
+        "url": "https://buy.stripe.com/eVqdR9fX36xp7aBgpac3m06"
       },
       {
         "plan": "monthly_10",
         "amount": 10.0,
         "recurring": true,
-        "url": "https://buy.stripe.com/test_4gMcN56CI9a4eM6cHMb7y04"
+        "url": "https://buy.stripe.com/4gM9ATcKR7Bt7aBa0Mc3m05"
       },
       {
         "plan": "monthly_20",
         "amount": 20.0,
         "recurring": true,
-        "url": "https://buy.stripe.com/test_cNi7sL7GM1HCavQ6job7y05"
+        "url": "https://buy.stripe.com/cNi5kDbGN5tl3Yp4Gsc3m02"
       }
     ],
-    "test_mode": true,
+    "test_mode": false,
     "level": "bright"
   },
   "last_tick_date": "2026-10-13"
