@@ -1,21 +1,26 @@
 {
-  "tick": 9,
-  "time": "2026-10-12T20:17",
+  "tick": 10,
+  "time": "2026-10-12T21:17",
   "positions": {
-    "gary": "rec_center",
+    "gary": "magnolia_loop",
     "donna": "rec_center",
-    "hal": "town_square",
-    "rosa": "magnolia_loop"
+    "hal": "town_hall",
+    "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna (ladder standings board): Write Donna Pruitt and Gary Kowalski in as doubles partners, Saturday at 8"
+      "Donna said to Gary: “Go on home and get some rest, partner, you've earned it. I'll lock up the paddles, and I'll see you Saturday at eight, cart or no cart.”",
+      "You arrived at Magnolia Loop (the street)."
     ],
     "donna": [
-      "Gary said to Donna: “All right, Donna, put us down, Saturday at eight. But if I'm late it's 'cause the cart ate my morning, so no hard feelings.”"
+      "Gary headed to Magnolia Loop (the street)."
     ],
-    "hal": [],
-    "rosa": []
+    "hal": [
+      "You arrived at Town Hall."
+    ],
+    "rosa": [
+      "You arrived at Rosa's House."
+    ]
   },
   "memories": {
     "gary": [
@@ -133,6 +138,21 @@
         "tick": 8,
         "text": "Donna (ladder standings board): Write Donna Pruitt and Gary Kowalski in as doubles partners, Saturday at 8",
         "importance": 5
+      },
+      {
+        "tick": 9,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 9,
+        "text": "Donna said to Gary: “Go on home and get some rest, partner, you've earned it. I'll lock up the paddles, and I'll see you Saturday at eight, cart or no cart.”",
+        "importance": 4
+      },
+      {
+        "tick": 9,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "donna": [
@@ -245,6 +265,16 @@
         "tick": 8,
         "text": "Gary said to Donna: “All right, Donna, put us down, Saturday at eight. But if I'm late it's 'cause the cart ate my morning, so no hard feelings.”",
         "importance": 6
+      },
+      {
+        "tick": 9,
+        "text": "I said to Gary: “Go on home and get some rest, partner, you've earned it. I'll lock up the paddles, and I'll see you Saturday at eight, cart or no cart.”",
+        "importance": 4
+      },
+      {
+        "tick": 9,
+        "text": "Gary headed to Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "hal": [
@@ -332,6 +362,16 @@
         "tick": 8,
         "text": "I (ice cream stand): Buy a plain vanilla cone and eat it on the way to a bench",
         "importance": 2
+      },
+      {
+        "tick": 9,
+        "text": "I headed to Town Hall.",
+        "importance": 5
+      },
+      {
+        "tick": 9,
+        "text": "You arrived at Town Hall.",
+        "importance": 5
       }
     ],
     "rosa": [
@@ -434,6 +474,16 @@
         "tick": 8,
         "text": "I (mailbox kiosk): Check my mail and any notices posted at the kiosk",
         "importance": 3
+      },
+      {
+        "tick": 9,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 9,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
       }
     ]
   },
@@ -464,10 +514,10 @@
     ]
   },
   "emotions": {
-    "gary": "pleased",
-    "donna": "triumphant",
-    "hal": "satisfied",
-    "rosa": "hopeful, tired"
+    "gary": "content",
+    "donna": "satisfied",
+    "hal": "resolute",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -548,14 +598,22 @@
       "dialogue": [
         "Gary said to Donna: “All right, Donna, put us down, Saturday at eight. But if I'm late it's 'cause the cart ate my morning, so no hard feelings.”"
       ]
+    },
+    {
+      "tick": 9,
+      "time": "Monday, October 12, 9:17 PM",
+      "story": "On Monday night in Sumter Oaks, the humid October air hangs hazy at 73 degrees as the town settles in. Gary, content after a long evening, heads out along Magnolia Loop while Donna, feeling satisfied, stays behind at the Rec Center to lock up the paddles and tells him to go rest because he's earned it. Hal, resolute as ever, makes his way to Town Hall, and Rosa, hopeful about what the week might bring, heads home.",
+      "dialogue": [
+        "Donna said to Gary: “Go on home and get some rest, partner, you've earned it. I'll lock up the paddles, and I'll see you Saturday at eight, cart or no cart.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 0.19228,
+    "total_usd": 0.22284,
     "by_day": {
       "2026-10-12": {
-        "ticks": 6,
-        "usd": 0.19228
+        "ticks": 7,
+        "usd": 0.22284
       }
     }
   },
@@ -564,7 +622,8 @@
     0.03069,
     0.03066,
     0.03114,
-    0.03068
+    0.03068,
+    0.03056
   ],
   "fund": {
     "gross_usd": 10.0,

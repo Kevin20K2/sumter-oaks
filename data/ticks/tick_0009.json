@@ -1,0 +1,117 @@
+{
+  "tick": 9,
+  "simulation_time": "Monday, October 12, 9:17 PM",
+  "weather": "Humid and hazy, 73°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "town_square",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On Monday night in Sumter Oaks, the humid October air hangs hazy at 73 degrees as the town settles in. Gary, content after a long evening, heads out along Magnolia Loop while Donna, feeling satisfied, stays behind at the Rec Center to lock up the paddles and tells him to go rest because he's earned it. Hal, resolute as ever, makes his way to Town Hall, and Rosa, hopeful about what the week might bring, heads home.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Hal headed to Town Hall.",
+    "Rosa headed to Rosa's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's past 9 PM and I told Donna I'd head home to the garage after a few more rallies. We already settled the Saturday doubles, so no need to keep chatting or repeat myself. The cart won't wire itself, and the garage is where I feel most like myself. Also, I should probably think about the Architectural Review approval and quiet hours before I fire up that 200-watt speaker, but first I need to get home. Time to leave the rec center and go back down Magnolia Loop.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading home to the garage to work on the parade cart."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 9:17 PM and I'm still at the rec center with Gary, which is odd. He's already agreed to Saturday at eight and I wrote us onto the ladder board, so I shouldn't ask or nag him again. Everyone's ready for bed, and L-03 quiet hours start at 10 PM. The goal is done for now: partner recruited. Best move is to wrap up warmly and let him go home, maybe a quick nudge to rest up, then head out myself. A short, friendly sendoff keeps things moving without repeating the invitation.",
+      "emotional_state": "satisfied",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Go on home and get some rest, partner, you've earned it. I'll lock up the paddles, and I'll see you Saturday at eight, cart or no cart."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's past nine at night and the square is empty. I already checked the sign-up sheet and had my cone. My goal is to get Gary's cart and Donna's flamingos in front of the review committee, and the filings are logged under L-01 and L-02. The right place for that is Town Hall, not a deserted bandstand. Heading over now, and I'll make sure the paperwork is in order. Rules are what keep neighbors from arguing, and I'd rather do this properly than with a grudge.",
+      "emotional_state": "resolute",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_hall",
+          "content": "Heading to Town Hall to make sure the L-01 and L-02 reports are properly on file with the review committee."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 9:17 PM and nobody is around. I already pinned the dinner invitation at tick 7 and checked the mail at tick 8, so I shouldn't repeat those. The invitation is up, but I haven't confirmed anyone has seen it. It's late, and after a long day I should head home, rest, and plan the menu for the dinner. Tomorrow I can knock on doors and follow up with Gary, Donna, and Hal in person. Going home to my place is the next step.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading home for the night to plan the dinner menu and rest up before following up with the neighbors tomorrow."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03056,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9632,
+        "output_tokens": 1118,
+        "usd": 0.03044
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 378,
+        "output_tokens": 156,
+        "usd": 0.00012
+      }
+    }
+  }
+}
