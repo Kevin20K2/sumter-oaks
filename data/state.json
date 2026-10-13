@@ -1,23 +1,23 @@
 {
-  "tick": 23,
-  "time": "2026-10-13T17:17",
+  "tick": 24,
+  "time": "2026-10-13T18:17",
   "positions": {
     "gary": "garys_house",
     "donna": "garys_house",
-    "hal": "town_hall",
+    "hal": "town_square",
     "rosa": "rec_center"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, hon, that speaker sounds like a fun project, but anything you bolt onto the cart where the street can see it needs Architectural Review's blessing first. File the form before Saturday so you're not benched by a violation, I need my partner.”"
+      "Donna said to Gary: “Gary, test it at low volume tonight, you've got until ten before the quiet rules kick in, and I'll hold my tongue about the form. Just promise me the paperwork gets filed Thursday, and that you'll hit the garage door with that paddle for twenty minutes after. Saturday at eight, partner.”"
     ],
     "donna": [
-      "Gary (gary golf cart): Finish wiring the rope lights and speaker, then run a full test at low volume"
+      "Gary said to Donna: “Alright, alright, you're right, I'll get the Architectural Review form filed before Saturday. Can't have my doubles partner sidelined over a speaker. See you at eight, and I'll bring the paddle.”"
     ],
-    "hal": [],
-    "rosa": [
-      "You arrived at Rec Center."
-    ]
+    "hal": [
+      "You arrived at Town Square."
+    ],
+    "rosa": []
   },
   "memories": {
     "gary": [
@@ -255,6 +255,16 @@
         "tick": 22,
         "text": "Donna said to Gary: “Gary, hon, that speaker sounds like a fun project, but anything you bolt onto the cart where the street can see it needs Architectural Review's blessing first. File the form before Saturday so you're not benched by a violation, I need my partner.”",
         "importance": 4
+      },
+      {
+        "tick": 23,
+        "text": "I said to Donna: “Alright, alright, you're right, I'll get the Architectural Review form filed before Saturday. Can't have my doubles partner sidelined over a speaker. See you at eight, and I'll bring the paddle.”",
+        "importance": 5
+      },
+      {
+        "tick": 23,
+        "text": "Donna said to Gary: “Gary, test it at low volume tonight, you've got until ten before the quiet rules kick in, and I'll hold my tongue about the form. Just promise me the paperwork gets filed Thursday, and that you'll hit the garage door with that paddle for twenty minutes after. Saturday at eight, partner.”",
+        "importance": 5
       }
     ],
     "donna": [
@@ -502,6 +512,16 @@
         "tick": 22,
         "text": "Gary (gary golf cart): Finish wiring the rope lights and speaker, then run a full test at low volume",
         "importance": 4
+      },
+      {
+        "tick": 23,
+        "text": "I said to Gary: “Gary, test it at low volume tonight, you've got until ten before the quiet rules kick in, and I'll hold my tongue about the form. Just promise me the paperwork gets filed Thursday, and that you'll hit the garage door with that paddle for twenty minutes after. Saturday at eight, partner.”",
+        "importance": 5
+      },
+      {
+        "tick": 23,
+        "text": "Gary said to Donna: “Alright, alright, you're right, I'll get the Architectural Review form filed before Saturday. Can't have my doubles partner sidelined over a speaker. See you at eight, and I'll bring the paddle.”",
+        "importance": 5
       }
     ],
     "hal": [
@@ -713,6 +733,16 @@
       {
         "tick": 22,
         "text": "I (architectural review desk): Amend my filing: note Donna has reduced visible flamingos to three, so L-02 follow-up is withdrawn; leave Gary's cart notice pending review",
+        "importance": 4
+      },
+      {
+        "tick": 23,
+        "text": "I headed to Town Square.",
+        "importance": 4
+      },
+      {
+        "tick": 23,
+        "text": "You arrived at Town Square.",
         "importance": 4
       }
     ],
@@ -931,6 +961,11 @@
         "tick": 22,
         "text": "You arrived at Rec Center.",
         "importance": 5
+      },
+      {
+        "tick": 23,
+        "text": "I (ladder standings board): Scan the standings for Donna's name and see when she's been playing",
+        "importance": 4
       }
     ]
   },
@@ -969,10 +1004,10 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "cheerful",
+    "gary": "sheepish",
+    "donna": "determined",
     "hal": "reflective",
-    "rosa": "determined"
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -1029,17 +1064,27 @@
       "text": "Hal Weems: Amend my filing: note Donna has reduced visible flamingos to three, so L-02 follow-up is withdrawn; leave Gary's cart notice pending review"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 23,
+      "time": "Tuesday, October 13, 6:17 PM",
+      "story": "At 6:17 on a humid, hazy Tuesday evening, Gary sheepishly agrees at his house to file his Architectural Review form and keep the speaker at low volume before the ten o'clock quiet rules, while Donna, determined, bargains for a Thursday deadline and a little garage-door paddle practice before their Saturday doubles match. Across town, Hal wanders toward the Town Square in a reflective mood, and Rosa climbs the ladder at the Rec Center, hopeful, to check the standings board for Donna's name and see how often she's been playing.",
+      "dialogue": [
+        "Gary said to Donna: “Alright, alright, you're right, I'll get the Architectural Review form filed before Saturday. Can't have my doubles partner sidelined over a speaker. See you at eight, and I'll bring the paddle.”",
+        "Donna said to Gary: “Gary, test it at low volume tonight, you've got until ten before the quiet rules kick in, and I'll hold my tongue about the form. Just promise me the paperwork gets filed Thursday, and that you'll hit the garage door with that paddle for twenty minutes after. Saturday at eight, partner.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 0.63657,
+    "total_usd": 0.66841,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
         "usd": 0.22284
       },
       "2026-10-13": {
-        "ticks": 13,
-        "usd": 0.41373
+        "ticks": 14,
+        "usd": 0.44557
       }
     }
   },
@@ -1062,7 +1107,8 @@
     0.03209,
     0.03172,
     0.03126,
-    0.03403
+    0.03403,
+    0.03184
   ],
   "fund": {
     "gross_usd": 0.0,

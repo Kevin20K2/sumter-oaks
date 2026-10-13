@@ -1,0 +1,116 @@
+{
+  "tick": 23,
+  "simulation_time": "Tuesday, October 13, 6:17 PM",
+  "weather": "Humid and hazy, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "town_hall",
+    "rosa": "rec_center"
+  },
+  "story": "At 6:17 on a humid, hazy Tuesday evening, Gary sheepishly agrees at his house to file his Architectural Review form and keep the speaker at low volume before the ten o'clock quiet rules, while Donna, determined, bargains for a Thursday deadline and a little garage-door paddle practice before their Saturday doubles match. Across town, Hal wanders toward the Town Square in a reflective mood, and Rosa climbs the ladder at the Rec Center, hopeful, to check the standings board for Donna's name and see how often she's been playing.",
+  "events": [
+    "Hal headed to Town Square.",
+    "Rosa (ladder standings board): Scan the standings for Donna's name and see when she's been playing"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just reminded me about the Architectural Review form for the speaker and lights. I've been feeling guilty about skipping permits, and she's right that I don't want to get benched before Saturday. I already said yes to pickleball, so no need to keep chatting. The honest thing is to tell her I'll file the form, then get back to the cart wiring, keeping the volume low and the test indoors-ish so I'm not breaking quiet hours. It's 6 PM so it's still fine for a low-volume test.",
+      "emotional_state": "sheepish",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Alright, alright, you're right, I'll get the Architectural Review form filed before Saturday. Can't have my doubles partner sidelined over a speaker. See you at eight, and I'll bring the paddle."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 6:17 PM and Gary is still out here finishing the rope lights and speaker. I already told him last tick about filing with Architectural Review, and he's carrying on anyway, so I shouldn't nag the same point again. Quiet hours don't start until 10, so low-volume testing is fine on that front. What I actually want is my doubles partner ready for Saturday at eight. I'll cheer him on, give him a practical way to cover the paperwork, and tie it back to practice so the conversation moves forward.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, test it at low volume tonight, you've got until ten before the quiet rules kick in, and I'll hold my tongue about the form. Just promise me the paperwork gets filed Thursday, and that you'll hit the garage door with that paddle for twenty minutes after. Saturday at eight, partner."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've filed the notice on Gary's cart and withdrawn the flamingo complaint now that Donna's down to three. That's the job done. Nobody's around, the desk work is finished, and it's past six. Rosa's welcome dinner is the better use of my evening, and I'd rather be a neighbor than a rulebook for one night. Back to Town Square, then on toward dinner.",
+      "emotional_state": "reflective",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_square",
+          "content": "Filing's done. Heading out toward Rosa's welcome dinner."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm at the Rec Center at 6:17 PM and nobody's in line-of-sight. I've already hit Hal and pinned the note on the street board, so Gary and Donna are the ones I still need to lock in. Donna was heading to the rec center earlier to play pickleball, so this is a likely place to catch her. I don't want to repeat the invite to Hal, and nobody is here to speak to. Checking the ladder standings board is a cheap way to see if Donna's been around and what the regulars are up to, which gives me something to bring up when I do find her.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Scan the standings for Donna's name and see when she's been playing"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03184,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9846,
+        "output_tokens": 1201,
+        "usd": 0.0317
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 503,
+        "output_tokens": 188,
+        "usd": 0.00014
+      }
+    }
+  }
+}
