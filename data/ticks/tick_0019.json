@@ -1,0 +1,118 @@
+{
+  "tick": 19,
+  "simulation_time": "Tuesday, October 13, 3:27 PM",
+  "weather": "Afternoon shower, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rec_center"
+  },
+  "story": "At 3:27 on a damp Tuesday afternoon in Sumter Oaks, Gary sits at his workbench in his garage, soldering the LED rope light connections while the afternoon shower taps on the roof. Out on Magnolia Loop, Donna is sheepishly pulling most of her pink flamingo flock out of the front lawn to stash them in her garage, leaving just three standing guard. Hal, looking dutiful but a little torn, is headed toward Town Square, and Rosa is at the Rec Center kiosk, determined to check the court reservations and find out when Donna plans to book her next game.",
+  "events": [
+    "Gary (gary workbench): Solder the LED rope light connections and test the circuit",
+    "Donna (donna flamingo flock): Pull all but three flamingos out of the front lawn and stash them in the garage",
+    "Hal headed to Town Square.",
+    "Rosa (court reservation kiosk): Check upcoming reservations to see when Donna books her court"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's mid-afternoon, raining outside, and I'm alone in the house. Donna booked us a court for tomorrow morning and I promised her the cart lights would be sorted by then, so I should keep working. The workbench is where the LED rope light circuit is, and I just picked it back up last tick. That speaker and the lights are still bugging me a bit since I skipped Architectural Review under L-01, but lights up close in the garage aren't visible from the street yet, so there's no harm in finishing the wiring. A quiet afternoon with a soldering iron beats worrying. Besides, being useful to the parade crowd is the whole point.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Solder the LED rope light connections and test the circuit"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal just warned me about the flamingos, and L-02 is clear: three ornaments max visible from the street. I've already told him about the ladder, so I shouldn't repeat myself or argue. The easy, practical move is to deal with the flock right now via the donna_flamingo_flock object, thinning it to three. That keeps Hal off my back and keeps me on good terms for gossip, and then I can get back to recruiting Gary and booking practice courts.",
+      "emotional_state": "sheepish",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Pull all but three flamingos out of the front lawn and stash them in the garage"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna's still standing here and she's already had her say about the doubles ladder; I've given her my warning about the flamingos, so repeating it would just be nagging. I've been keeping score on neighbors for days and Rosa's dinner invitation has me wanting to be less of a rulebook. The bulletin board is right here and Rosa's note is posted. The honest move is to stop chatting and do something about my goal: head to Town Square, where the architectural review notices are, and figure out how to file the cart and flamingo reports properly. Gary at least has admitted he's filing paperwork after the fact, so I'll lay out the rules in writing and keep it fair.",
+      "emotional_state": "dutiful, conflicted",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_square",
+          "content": "Walking over to Town Square to look into how to file the Architectural Review notices on the cart and the flamingos, by the book."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I came to the Rec Center to catch Donna, since I want her at my Saturday dinner table along with Gary and Hal. Nobody is here right now, with the afternoon shower and all. I already checked the standings board last tick, so doing it again is pointless. The reservation kiosk may show when Donna books her court, which tells me when to find her instead of wandering around. Hal said yes, Gary's been warmed up, Donna is the last one to invite. Checking the kiosk is a quick, useful step before I head back out.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Check upcoming reservations to see when Donna books her court"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03209,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9954,
+        "output_tokens": 1204,
+        "usd": 0.03195
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 396,
+        "output_tokens": 201,
+        "usd": 0.00014
+      }
+    }
+  }
+}

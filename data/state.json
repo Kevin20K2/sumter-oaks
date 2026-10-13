@@ -1,19 +1,20 @@
 {
-  "tick": 19,
-  "time": "2026-10-13T15:17",
+  "tick": 20,
+  "time": "2026-10-13T15:27",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
-    "hal": "magnolia_loop",
+    "hal": "town_square",
     "rosa": "rec_center"
   },
   "perceptions": {
     "gary": [],
     "donna": [
-      "Hal said to Donna: “Afternoon, Donna. I counted your flamingos from the street, and the rule says three ornaments, no more. Thin the flock a bit and I won't have to write it up for the committee.”"
+      "Hal headed to Town Square."
     ],
     "hal": [
-      "Donna said to Hal: “Hal, you're just the man I wanted. Gary and I are entering the doubles ladder, so don't be surprised when we start climbing. And if you hear anything about who's got the good court times, you come tell me first.”"
+      "Donna (donna flamingo flock): Pull all but three flamingos out of the front lawn and stash them in the garage",
+      "You arrived at Town Square."
     ],
     "rosa": []
   },
@@ -218,6 +219,11 @@
         "tick": 18,
         "text": "I (gary workbench): Pick the cart wiring back up and finish the LED rope light circuit",
         "importance": 5
+      },
+      {
+        "tick": 19,
+        "text": "I (gary workbench): Solder the LED rope light connections and test the circuit",
+        "importance": 4
       }
     ],
     "donna": [
@@ -425,6 +431,16 @@
         "tick": 18,
         "text": "Hal said to Donna: “Afternoon, Donna. I counted your flamingos from the street, and the rule says three ornaments, no more. Thin the flock a bit and I won't have to write it up for the committee.”",
         "importance": 4
+      },
+      {
+        "tick": 19,
+        "text": "I (donna flamingo flock): Pull all but three flamingos out of the front lawn and stash them in the garage",
+        "importance": 4
+      },
+      {
+        "tick": 19,
+        "text": "Hal headed to Town Square.",
+        "importance": 4
       }
     ],
     "hal": [
@@ -602,6 +618,21 @@
         "tick": 18,
         "text": "Donna said to Hal: “Hal, you're just the man I wanted. Gary and I are entering the doubles ladder, so don't be surprised when we start climbing. And if you hear anything about who's got the good court times, you come tell me first.”",
         "importance": 6
+      },
+      {
+        "tick": 19,
+        "text": "I headed to Town Square.",
+        "importance": 5
+      },
+      {
+        "tick": 19,
+        "text": "Donna (donna flamingo flock): Pull all but three flamingos out of the front lawn and stash them in the garage",
+        "importance": 5
+      },
+      {
+        "tick": 19,
+        "text": "You arrived at Town Square.",
+        "importance": 5
       }
     ],
     "rosa": [
@@ -789,6 +820,11 @@
         "tick": 18,
         "text": "I (ladder standings board): Check the standings and sign-up times to see when Donna usually plays",
         "importance": 5
+      },
+      {
+        "tick": 19,
+        "text": "I (court reservation kiosk): Check upcoming reservations to see when Donna books her court",
+        "importance": 5
       }
     ]
   },
@@ -827,9 +863,9 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "upbeat",
-    "hal": "gruff but conflicted",
+    "gary": "focused",
+    "donna": "sheepish",
+    "hal": "dutiful, conflicted",
     "rosa": "determined"
   },
   "laws": [
@@ -894,18 +930,24 @@
         "Donna said to Hal: “Hal, you're just the man I wanted. Gary and I are entering the doubles ladder, so don't be surprised when we start climbing. And if you hear anything about who's got the good court times, you come tell me first.”",
         "Hal said to Donna: “Afternoon, Donna. I counted your flamingos from the street, and the rule says three ornaments, no more. Thin the flock a bit and I won't have to write it up for the committee.”"
       ]
+    },
+    {
+      "tick": 19,
+      "time": "Tuesday, October 13, 3:27 PM",
+      "story": "At 3:27 on a damp Tuesday afternoon in Sumter Oaks, Gary sits at his workbench in his garage, soldering the LED rope light connections while the afternoon shower taps on the roof. Out on Magnolia Loop, Donna is sheepishly pulling most of her pink flamingo flock out of the front lawn to stash them in her garage, leaving just three standing guard. Hal, looking dutiful but a little torn, is headed toward Town Square, and Rosa is at the Rec Center kiosk, determined to check the court reservations and find out when Donna plans to book her next game.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 0.50747,
+    "total_usd": 0.53956,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
         "usd": 0.22284
       },
       "2026-10-13": {
-        "ticks": 9,
-        "usd": 0.28463
+        "ticks": 10,
+        "usd": 0.31672
       }
     }
   },
@@ -924,7 +966,8 @@
     0.03186,
     0.03354,
     0.0333,
-    0.03242
+    0.03242,
+    0.03209
   ],
   "fund": {
     "gross_usd": 20.0,
