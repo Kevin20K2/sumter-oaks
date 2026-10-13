@@ -1,6 +1,6 @@
 {
-  "tick": 18,
-  "time": "2026-10-13T14:17",
+  "tick": 19,
+  "time": "2026-10-13T15:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
@@ -8,21 +8,14 @@
     "rosa": "rec_center"
   },
   "perceptions": {
-    "gary": [
-      "Donna headed to Magnolia Loop (the street)."
-    ],
+    "gary": [],
     "donna": [
-      "Gary (gary workbench): Unplug the soldering iron, set the cart wiring aside, and grab my sneakers",
-      "You arrived at Magnolia Loop (the street)."
+      "Hal said to Donna: “Afternoon, Donna. I counted your flamingos from the street, and the rule says three ornaments, no more. Thin the flock a bit and I won't have to write it up for the committee.”"
     ],
     "hal": [
-      "Rosa headed to Rec Center.",
-      "Donna just arrived."
+      "Donna said to Hal: “Hal, you're just the man I wanted. Gary and I are entering the doubles ladder, so don't be surprised when we start climbing. And if you hear anything about who's got the good court times, you come tell me first.”"
     ],
-    "rosa": [
-      "Hal (street bulletin board): Read the posted notices, including Rosa's dinner note",
-      "You arrived at Rec Center."
-    ]
+    "rosa": []
   },
   "memories": {
     "gary": [
@@ -220,6 +213,11 @@
         "tick": 17,
         "text": "Donna headed to Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 18,
+        "text": "I (gary workbench): Pick the cart wiring back up and finish the LED rope light circuit",
+        "importance": 5
       }
     ],
     "donna": [
@@ -417,6 +415,16 @@
         "tick": 17,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 18,
+        "text": "I said to Hal: “Hal, you're just the man I wanted. Gary and I are entering the doubles ladder, so don't be surprised when we start climbing. And if you hear anything about who's got the good court times, you come tell me first.”",
+        "importance": 4
+      },
+      {
+        "tick": 18,
+        "text": "Hal said to Donna: “Afternoon, Donna. I counted your flamingos from the street, and the rule says three ornaments, no more. Thin the flock a bit and I won't have to write it up for the committee.”",
+        "importance": 4
       }
     ],
     "hal": [
@@ -584,6 +592,16 @@
         "tick": 17,
         "text": "Donna just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 18,
+        "text": "I said to Donna: “Afternoon, Donna. I counted your flamingos from the street, and the rule says three ornaments, no more. Thin the flock a bit and I won't have to write it up for the committee.”",
+        "importance": 6
+      },
+      {
+        "tick": 18,
+        "text": "Donna said to Hal: “Hal, you're just the man I wanted. Gary and I are entering the doubles ladder, so don't be surprised when we start climbing. And if you hear anything about who's got the good court times, you come tell me first.”",
+        "importance": 6
       }
     ],
     "rosa": [
@@ -766,6 +784,11 @@
         "tick": 17,
         "text": "You arrived at Rec Center.",
         "importance": 6
+      },
+      {
+        "tick": 18,
+        "text": "I (ladder standings board): Check the standings and sign-up times to see when Donna usually plays",
+        "importance": 5
       }
     ]
   },
@@ -804,9 +827,9 @@
     ]
   },
   "emotions": {
-    "gary": "warm, a little nervous",
-    "donna": "optimistic",
-    "hal": "content",
+    "gary": "determined",
+    "donna": "upbeat",
+    "hal": "gruff but conflicted",
     "rosa": "determined"
   },
   "laws": [
@@ -862,18 +885,27 @@
       "time": "Tuesday, October 13, 2:17 PM",
       "story": "At 2:17 on a rainy Tuesday in Sumter Oaks, Gary is unplugging his soldering iron and setting aside his golf cart wiring at the workbench in his house, a little nervous and clearly hoping to head out soon. Donna, feeling upbeat, is making her way out to Magnolia Loop, where Hal is content as he reads the notices on the street bulletin board, including Rosa's dinner invitation. Rosa, meanwhile, is determined and already on her way to the Rec Center.",
       "dialogue": []
+    },
+    {
+      "tick": 18,
+      "time": "Tuesday, October 13, 3:17 PM",
+      "story": "At 3:17 on a rainy Tuesday afternoon in Sumter Oaks, Gary is at his workbench in his house, determined to finish the LED rope light circuit on his golf cart. Out on Magnolia Loop, Donna is cheerfully announcing that she and Gary are entering the doubles ladder, then asks Hal to tip her off about the good court times, while Hal grumbles that her flamingos break the three-ornament rule. Over at the Rec Center, Rosa is studying the ladder standings board, determined to figure out when Donna usually plays.",
+      "dialogue": [
+        "Donna said to Hal: “Hal, you're just the man I wanted. Gary and I are entering the doubles ladder, so don't be surprised when we start climbing. And if you hear anything about who's got the good court times, you come tell me first.”",
+        "Hal said to Donna: “Afternoon, Donna. I counted your flamingos from the street, and the rule says three ornaments, no more. Thin the flock a bit and I won't have to write it up for the committee.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 0.47505,
+    "total_usd": 0.50747,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
         "usd": 0.22284
       },
       "2026-10-13": {
-        "ticks": 8,
-        "usd": 0.25221
+        "ticks": 9,
+        "usd": 0.28463
       }
     }
   },
@@ -891,7 +923,8 @@
     0.03023,
     0.03186,
     0.03354,
-    0.0333
+    0.0333,
+    0.03242
   ],
   "fund": {
     "gross_usd": 20.0,
