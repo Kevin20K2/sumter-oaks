@@ -1,23 +1,26 @@
 {
-  "tick": 24,
-  "time": "2026-10-13T18:17",
+  "tick": 25,
+  "time": "2026-10-13T19:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "garys_house",
+    "donna": "magnolia_loop",
     "hal": "town_square",
-    "rosa": "rec_center"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, test it at low volume tonight, you've got until ten before the quiet rules kick in, and I'll hold my tongue about the form. Just promise me the paperwork gets filed Thursday, and that you'll hit the garage door with that paddle for twenty minutes after. Saturday at eight, partner.”"
+      "Donna headed to Magnolia Loop (the street)."
     ],
     "donna": [
-      "Gary said to Donna: “Alright, alright, you're right, I'll get the Architectural Review form filed before Saturday. Can't have my doubles partner sidelined over a speaker. See you at eight, and I'll bring the paddle.”"
+      "Gary (gary golf cart): Finish wiring the rope lights and speaker, then run a low-volume test",
+      "You arrived at Magnolia Loop (the street).",
+      "Rosa just arrived."
     ],
-    "hal": [
-      "You arrived at Town Square."
-    ],
-    "rosa": []
+    "hal": [],
+    "rosa": [
+      "You arrived at Magnolia Loop (the street).",
+      "Donna just arrived."
+    ]
   },
   "memories": {
     "gary": [
@@ -264,6 +267,16 @@
       {
         "tick": 23,
         "text": "Donna said to Gary: “Gary, test it at low volume tonight, you've got until ten before the quiet rules kick in, and I'll hold my tongue about the form. Just promise me the paperwork gets filed Thursday, and that you'll hit the garage door with that paddle for twenty minutes after. Saturday at eight, partner.”",
+        "importance": 5
+      },
+      {
+        "tick": 24,
+        "text": "I (gary golf cart): Finish wiring the rope lights and speaker, then run a low-volume test",
+        "importance": 5
+      },
+      {
+        "tick": 24,
+        "text": "Donna headed to Magnolia Loop (the street).",
         "importance": 5
       }
     ],
@@ -522,6 +535,26 @@
         "tick": 23,
         "text": "Gary said to Donna: “Alright, alright, you're right, I'll get the Architectural Review form filed before Saturday. Can't have my doubles partner sidelined over a speaker. See you at eight, and I'll bring the paddle.”",
         "importance": 5
+      },
+      {
+        "tick": 24,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 24,
+        "text": "Gary (gary golf cart): Finish wiring the rope lights and speaker, then run a low-volume test",
+        "importance": 4
+      },
+      {
+        "tick": 24,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 24,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
@@ -744,6 +777,11 @@
         "tick": 23,
         "text": "You arrived at Town Square.",
         "importance": 4
+      },
+      {
+        "tick": 24,
+        "text": "I (ice cream stand): Buy a single scoop of butter pecan and sit a minute",
+        "importance": 3
       }
     ],
     "rosa": [
@@ -966,6 +1004,21 @@
         "tick": 23,
         "text": "I (ladder standings board): Scan the standings for Donna's name and see when she's been playing",
         "importance": 4
+      },
+      {
+        "tick": 24,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 24,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 24,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ]
   },
@@ -976,7 +1029,9 @@
       "Gary's guilt about the speaker and the skipped permits is nagging at me, but Hal and Rosa seem to be letting it slide for now.",
       "Donna has been surprisingly generous with her time and her spare paddle, and I think I'm starting to look forward to our Saturday doubles match.",
       "Donna has been pushing me into pickleball with a grin and a booked court, and I'm surprised how much I'm looking forward to being her doubles partner.",
-      "My parade cart still needs its wiring finished, but getting out with Donna today reminded me that a bit of pickleball is worth more than a perfect circuit."
+      "My parade cart still needs its wiring finished, but getting out with Donna today reminded me that a bit of pickleball is worth more than a perfect circuit.",
+      "Donna keeps dragging me out of the garage, but I'm glad she won't let me hide behind my soldering iron, and I think I might actually enjoy being her doubles partner.",
+      "I've promised to file the Architectural Review form before Saturday, and I want to keep my word so I can stay on the court with Donna at eight."
     ],
     "donna": [
       "Partners make or break your ladder ranking, and mine keep moving to Ocala.",
@@ -984,7 +1039,9 @@
       "Gary is surprisingly easy to talk into things, and I'm glad he showed up to the court and kept the ball in play, even if he calls himself terrible.",
       "Rosa's dinner invitation and the doubles partnership with Gary make me feel like this town is starting to feel like a real community again.",
       "Gary is a good sport who needs a little nudging, but I think he'll be a fine doubles partner once he gets the hang of the kitchen line.",
-      "I want Saturday at eight to be a real win for Gary and me, so I'm going to book those practice sessions and make sure he has the spare paddle he needs."
+      "I want Saturday at eight to be a real win for Gary and me, so I'm going to book those practice sessions and make sure he has the spare paddle he needs.",
+      "Gary and I finally have a plan for Saturday, and I'm looking forward to climbing the doubles ladder with him at my side.",
+      "Hal's flamingo rule is a pain, but keeping the street tidy matters to me, and I'd rather settle it with a friendly chat than a violation notice."
     ],
     "hal": [
       "Rules exist so neighbors don't have to argue. Somebody has to keep them.",
@@ -992,7 +1049,9 @@
       "Gary's garage wiring worries me, but I also know the rules matter, and I'm not sure how to balance loyalty with what I owe the town.",
       "Rosa's welcome dinner invitation surprised me, and I'm hoping I can sit at her table without turning every conversation into a complaint about flamingos.",
       "I've been logging Gary's cart and Donna's flamingos so carefully that I'm starting to wonder whether I'm keeping the peace or just keeping score on my neighbors.",
-      "Rosa's dinner invitation caught me off guard, and I'm hoping a plate of food and some good company might make me less of a rulebook and more of a friend."
+      "Rosa's dinner invitation caught me off guard, and I'm hoping a plate of food and some good company might make me less of a rulebook and more of a friend.",
+      "Rosa's dinner on Saturday should be a good chance to get to know her better, and I'm glad to have been invited.",
+      "Donna and Gary's doubles ladder challenge is going to be a lot of fun to watch, even if I'm not sure I'll keep up with them."
     ],
     "rosa": [
       "I moved here to slow down, and so far I've worked four shifts and met nobody.",
@@ -1000,14 +1059,16 @@
       "Gary turned a broken disposal into a favor I can't repay, and I think he's the kind of neighbor who shows up without being asked.",
       "Hosting dinner for Gary, Donna, and Hal feels like the right way to thank them and finally make this street feel like home.",
       "Hal's easy yes to my dinner made me happy, and I'm glad the welcome will finally bring Gary, Donna, and Hal together at my table on Saturday.",
-      "Planning this dinner around my shifts and the grocery list reminded me that I want to be the kind of neighbor who makes people feel at home on Magnolia Loop."
+      "Planning this dinner around my shifts and the grocery list reminded me that I want to be the kind of neighbor who makes people feel at home on Magnolia Loop.",
+      "Hal said he'll come to my welcome dinner and keep the rulebook in his pocket, which made me smile, and I'm glad someone here already feels like a neighbor.",
+      "I keep checking the ladder standings and court bookings to find Donna, and I hope a friendly game with her will help us get to know each other."
     ]
   },
   "emotions": {
-    "gary": "sheepish",
-    "donna": "determined",
+    "gary": "content",
+    "donna": "satisfied",
     "hal": "reflective",
-    "rosa": "hopeful"
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -1073,18 +1134,24 @@
         "Gary said to Donna: “Alright, alright, you're right, I'll get the Architectural Review form filed before Saturday. Can't have my doubles partner sidelined over a speaker. See you at eight, and I'll bring the paddle.”",
         "Donna said to Gary: “Gary, test it at low volume tonight, you've got until ten before the quiet rules kick in, and I'll hold my tongue about the form. Just promise me the paperwork gets filed Thursday, and that you'll hit the garage door with that paddle for twenty minutes after. Saturday at eight, partner.”"
       ]
+    },
+    {
+      "tick": 24,
+      "time": "Tuesday, October 13, 7:17 PM",
+      "story": "It is Tuesday evening in Sumter Oaks, humid and hazy at 75 degrees, and Gary is at home finishing the rope lights and speaker on his golf cart, planning a quiet low-volume test. Donna is with him at the house, pleased with how the evening has gone. Across town, Hal has stopped at the ice cream stand in the square for a single scoop of butter pecan and a reflective moment on a bench. Rosa is heading out toward Magnolia Loop with determination, just as Donna is.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 0.66841,
+    "total_usd": 0.70071,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
         "usd": 0.22284
       },
       "2026-10-13": {
-        "ticks": 14,
-        "usd": 0.44557
+        "ticks": 15,
+        "usd": 0.47787
       }
     }
   },
@@ -1108,7 +1175,8 @@
     0.03172,
     0.03126,
     0.03403,
-    0.03184
+    0.03184,
+    0.0323
   ],
   "fund": {
     "gross_usd": 0.0,

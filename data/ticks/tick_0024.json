@@ -1,0 +1,118 @@
+{
+  "tick": 24,
+  "simulation_time": "Tuesday, October 13, 7:17 PM",
+  "weather": "Humid and hazy, 75°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "town_square",
+    "rosa": "rec_center"
+  },
+  "story": "It is Tuesday evening in Sumter Oaks, humid and hazy at 75 degrees, and Gary is at home finishing the rope lights and speaker on his golf cart, planning a quiet low-volume test. Donna is with him at the house, pleased with how the evening has gone. Across town, Hal has stopped at the ice cream stand in the square for a single scoop of butter pecan and a reflective moment on a bench. Rosa is heading out toward Magnolia Loop with determination, just as Donna is.",
+  "events": [
+    "Gary (gary golf cart): Finish wiring the rope lights and speaker, then run a low-volume test",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (ice cream stand): Buy a single scoop of butter pecan and sit a minute",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just told me to test at low volume tonight, and it's 7:17 PM, well before the 10 PM quiet hours. I already answered her last tick and promised the form Thursday, so no need to repeat myself. The cart wiring is still unfinished and that's my real goal. Time to quit chatting and get my hands on the cart: finish wiring the rope lights and speaker, then run a low-volume test. I'll keep it modest since the cart's still in my garage and I owe Architectural Review that form.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Finish wiring the rope lights and speaker, then run a low-volume test"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary already promised to file the form and bring the paddle, and I've said my piece. Repeating myself would just be nagging. It's past seven, I'm in his house, and he's got a speaker project to test before quiet hours. Time to let him work and go line up the practice court. L-05 caps reservations at two hours, so I'll keep it reasonable. I'll head out and get my Saturday plan in motion.",
+      "emotional_state": "satisfied",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Gary's got the plan and the paddle, so I'll leave him to his wiring and head out to line up our practice court time before Saturday."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've filed my notice at Town Hall and amended it fair and square: Donna's down to three flamingos, so L-02 is withdrawn, and Gary's cart notice is pending review. Now I'm back in the Square at dusk with nobody around. Rosa's welcome dinner is on my mind, and I'd rather arrive as a neighbor than a clipboard. A cone of ice cream at the stand is a harmless way to clear my head and stop keeping score for an hour.",
+      "emotional_state": "reflective",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ice_cream_stand",
+          "content": "Buy a single scoop of butter pecan and sit a minute"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm at the rec center at 7:17 PM looking for Donna, since Gary, Hal, and Donna all need to be at my table Saturday. I've already pinned the invite on the street bulletin board and told Hal in person. I haven't actually invited Donna directly. I scanned the standings board last tick, so I know roughly when she plays, but nobody is around right now. Standing here waiting won't help, and I've already done the posting. Best move is to leave and track her down at her place on Magnolia Loop, then invite her face to face. The dinner is the whole point of this week.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Nobody's at the courts. I'm heading back to the street to find Donna and invite her to Saturday's dinner in person."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0323,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10167,
+        "output_tokens": 1128,
+        "usd": 0.03161
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4057,
+        "output_tokens": 572,
+        "usd": 0.00069
+      }
+    }
+  }
+}
