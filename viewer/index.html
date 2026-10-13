@@ -171,6 +171,8 @@ button:disabled { opacity: 0.4; cursor: default; }
 .give.monthly { background: var(--surface); color: var(--accent); border: 2px solid var(--accent); padding: 6px 14px; }
 .give:hover { filter: brightness(1.08); }
 .give:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.sup-manage { font-size: 0.82rem; color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+.sup-manage:hover { color: var(--accent); }
 .test-badge { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); border: 1px dashed var(--line); border-radius: 6px; padding: 2px 8px; }
 
 /* Story + board */
@@ -258,6 +260,7 @@ button:disabled { opacity: 0.4; cursor: default; }
     <div class="sup-options">
       <div class="sup-group"><span class="sup-label">One time</span><span class="sup-group" id="sup-once"></span></div>
       <div class="sup-group"><span class="sup-label">Monthly</span><span class="sup-group" id="sup-monthly"></span></div>
+      <a class="sup-manage" id="sup-manage" target="_blank" rel="noopener" hidden>Already a monthly supporter? Manage or cancel</a>
       <span class="test-badge" id="sup-test" hidden>Test mode · no real charges</span>
     </div>
   </section>
@@ -428,6 +431,13 @@ const SAMPLE_FUND = {
   ]
 };
 
+// Live-only Stripe extras. They appear only when the fund data comes from the live
+// account (test_mode false), so a live link never sits next to test links.
+const SUPPORT_EXTRAS = {
+  custom_url: "https://buy.stripe.com/fZu00j5ipg7Z2Ul8WIc3m00",  // pay what you want, $3 minimum
+  portal_url: "https://billing.stripe.com/p/login/fZu00j5ipg7Z2Ul8WIc3m00"  // Stripe customer portal
+};
+
 async function loadFund() {
   try { return await getJSON("data/ticks/fund.json"); } catch (e) { return null; }
 }
@@ -492,10 +502,22 @@ function renderSupport(f) {
     return a;
   };
   const opts = (f.options || []).slice().sort((a, b) => a.amount - b.amount);
-  $("sup-once").replaceChildren(...opts.filter(o => !o.recurring).map(make));
+  const once = opts.filter(o => !o.recurring).map(make);
+  if (!f.test_mode && SUPPORT_EXTRAS.custom_url && once.length) {
+    const other = document.createElement("a");
+    other.className = "give monthly";
+    other.href = SUPPORT_EXTRAS.custom_url; other.target = "_blank"; other.rel = "noopener";
+    other.textContent = "Other";
+    other.setAttribute("aria-label", "Give an amount you choose, once ($3 minimum)");
+    once.push(other);
+  }
+  $("sup-once").replaceChildren(...once);
   $("sup-monthly").replaceChildren(...opts.filter(o => o.recurring).map(make));
   $("sup-once").parentElement.hidden = !opts.some(o => !o.recurring);
   $("sup-monthly").parentElement.hidden = !opts.some(o => o.recurring);
+  const manage = $("sup-manage");
+  manage.hidden = !!f.test_mode || !SUPPORT_EXTRAS.portal_url || !opts.some(o => o.recurring);
+  if (!manage.hidden) manage.href = SUPPORT_EXTRAS.portal_url;
   $("sup-test").hidden = !f.test_mode;
 }
 
