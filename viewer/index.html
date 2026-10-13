@@ -5,7 +5,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: an illustrated street scene is the hero, with residents walking zone to zone and speech bubbles over their heads; a resident list sits beside it, the story and Town Hall board below. */
+/* Layout: the painted Magnolia Loop map is the hero, with each resident's pin in their zone and speech bubbles over their heads; a resident list sits beside it, the story and Town Hall board below. */
 :root {
   --bg: #f2f5f0;
   --surface: #ffffff;
@@ -28,10 +28,11 @@
   --accent-ink: #ffffff;
   --bubble: #ffffff;
   --bubble-ink: #1d2a24;
-  --gary: #c98a12;
-  --donna: #d6417f;
-  --hal: #2f4f8a;
-  --rosa: #7b3fb0;
+  --gary: #1f63d1;
+  --donna: #cf3a7c;
+  --hal: #23874c;
+  --rosa: #c2610f;
+  --badge-sky: #b9d6e4;
   --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
   --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
   --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
@@ -42,7 +43,7 @@
     --sky: #16232a; --cloud: #e9eef0; --cloud-grey: #8d989e; --cloud-dark: #5d686e; --lawn: #1c2e22; --lawn-2: #203528; --road: #3a4840; --road-mark: #8c9a91; --roof: #a06a52; --wall: #d9d3c6;
     --palm: #4f9c62; --trunk: #8a6d4a; --accent: #3fb8b4; --accent-ink: #0c1512;
     --bubble: #f4f7f4; --bubble-ink: #15201a;
-    --gary: #e8b14a; --donna: #ef77a8; --hal: #7f9fdb; --rosa: #b68ae0;
+    --gary: #79a6f2; --donna: #f07aac; --hal: #63c98d; --rosa: #f4a35a; --badge-sky: #22343d;
     color-scheme: dark;
   }
 }
@@ -51,7 +52,7 @@
   --sky: #16232a; --cloud: #e9eef0; --cloud-grey: #8d989e; --cloud-dark: #5d686e; --lawn: #1c2e22; --lawn-2: #203528; --road: #3a4840; --road-mark: #8c9a91; --roof: #a06a52; --wall: #d9d3c6;
   --palm: #4f9c62; --trunk: #8a6d4a; --accent: #3fb8b4; --accent-ink: #0c1512;
   --bubble: #f4f7f4; --bubble-ink: #15201a;
-  --gary: #e8b14a; --donna: #ef77a8; --hal: #7f9fdb; --rosa: #b68ae0;
+  --gary: #79a6f2; --donna: #f07aac; --hal: #63c98d; --rosa: #f4a35a; --badge-sky: #22343d;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -84,8 +85,8 @@ header.top .title { display: grid; gap: 4px; }
 .prev-recap { margin: 0; max-width: 68ch; font-size: 1.06rem; line-height: 1.6; }
 .standings { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px 16px; }
 .standings li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; align-items: center; font-size: 0.93rem; line-height: 1.35; }
-.standings .face { width: 34px; height: 34px; border-radius: 50%; background: var(--lawn); border: 2px solid var(--c); overflow: hidden; display: grid; place-items: end center; }
-.standings .face svg { width: 26px; height: auto; margin-bottom: -12px; }
+.standings .face { width: 34px; height: 34px; }
+.standings .face img, .person .face img { display: block; width: 100%; height: auto; }
 .standings b { font-family: var(--font-display); color: var(--c); margin-right: 4px; }
 .next-time { border-top: 1px dashed var(--line); padding-top: 10px; display: grid; gap: 4px; }
 .nt-label { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
@@ -114,12 +115,15 @@ button:disabled { opacity: 0.4; cursor: default; }
 .stage { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 2fr); gap: 20px; align-items: start; }
 @media (max-width: 820px) { .stage { grid-template-columns: 1fr; } }
 .scene { position: relative; border-radius: 14px; background: var(--lawn); overflow: hidden; }
-.scene svg { display: block; width: 100%; height: auto; }
-.scene svg text { font-family: var(--font-mono); }
+.scene .map-img { display: block; width: 100%; height: auto; }
 .layer { position: absolute; inset: 0; pointer-events: none; }
+/* Stacking: map labels, then the cloud badge, then pins, then bubbles on top (an opened bubble covers the pins). */
+#avatars { z-index: 2; }
+#bubbles { z-index: 3; }
+.place { position: absolute; transform: translate(-50%, -50%); font-family: var(--font-mono); font-size: clamp(9px, 1.4vw, 11px); letter-spacing: 0.04em; color: var(--ink); background: color-mix(in srgb, var(--surface) 82%, transparent); border-radius: 6px; padding: 1px 6px; white-space: nowrap; }
 
-.avatar { position: absolute; width: 8.5%; transform: translate(-50%, -100%); transition: left 0.9s cubic-bezier(.45,.05,.25,1), top 0.9s cubic-bezier(.45,.05,.25,1); }
-.avatar svg { display: block; width: 100%; height: auto; overflow: visible; }
+.avatar { position: absolute; width: clamp(40px, 7.5%, 64px); transform: translate(-50%, -99%); filter: drop-shadow(0 2px 2px rgba(0,0,0,.35)); transition: left 0.9s cubic-bezier(.45,.05,.25,1), top 0.9s cubic-bezier(.45,.05,.25,1); }
+.avatar img { display: block; width: 100%; height: auto; }
 .avatar .tag { position: absolute; left: 50%; top: 100%; transform: translate(-50%, 2px); font-family: var(--font-mono); font-size: clamp(9px, 1.5vw, 11px); font-weight: 500; color: var(--ink); background: var(--surface); border: 1.5px solid var(--c); border-radius: 999px; padding: 0 6px; white-space: nowrap; }
 
 .bubble { position: absolute; max-width: min(48%, 200px); width: max-content; background: var(--bubble); color: var(--bubble-ink); border: 2px solid var(--c); border-radius: 14px; padding: 6px 10px; font-family: var(--font-body); font-size: clamp(11.5px, 1.9vw, 13.5px); line-height: 1.35; box-shadow: 0 2px 0 var(--c); }
@@ -141,8 +145,7 @@ button:disabled { opacity: 0.4; cursor: default; }
 
 .people { display: grid; gap: 10px; }
 .person { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 4px 12px; align-items: start; }
-.person .face { grid-row: span 3; width: 44px; height: 44px; border-radius: 50%; background: var(--lawn); border: 2px solid var(--c); overflow: hidden; display: grid; place-items: end center; }
-.person .face svg { width: 34px; height: auto; margin-bottom: -16px; }
+.person .face { grid-row: span 3; width: 44px; height: 44px; }
 .person .who { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 .person .age { font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); }
 .meta { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -154,6 +157,11 @@ button:disabled { opacity: 0.4; cursor: default; }
 .imp i.on { background: var(--c); }
 
 /* The data-center cloud and support */
+#cloud { position: absolute; top: 8px; right: 8px; z-index: 1; }
+#cloud a { display: flex; align-items: center; gap: 6px; background: var(--badge-sky); border-radius: 999px; padding: 3px 12px 3px 6px; text-decoration: none; color: var(--ink); box-shadow: 0 1px 4px rgba(0,0,0,.25); }
+#cloud svg { width: 40px; height: 26px; display: block; overflow: visible; }
+#cloud .cl-k { display: block; font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.14em; color: var(--muted); }
+#cloud .cl-v { display: block; font-family: var(--font-body); font-size: 0.8rem; line-height: 1.2; }
 #cloud-bob { animation: bob 6s ease-in-out infinite; }
 @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
 @media (prefers-reduced-motion: reduce) { #cloud-bob { animation: none; } }
@@ -192,6 +200,8 @@ button:disabled { opacity: 0.4; cursor: default; }
 .matters { display: grid; gap: 8px; }
 .matter { font-size: 0.9rem; border-left: 3px solid var(--c); padding-left: 10px; }
 .empty { font-size: 0.9rem; color: var(--muted); }
+.foot { font-size: 0.85rem; color: var(--muted); }
+.foot a { color: var(--accent); }
 </style>
 
 <div class="wrap">
@@ -244,7 +254,9 @@ button:disabled { opacity: 0.4; cursor: default; }
 
   <div class="stage">
     <section class="scene" id="scene" aria-label="Street scene">
-      <svg id="map" viewBox="0 -64 480 444" role="img" aria-label="Magnolia Loop with the four houses, the Rec Center, Town Square and Town Hall, under the data-center cloud"></svg>
+      <img id="map" class="map-img" alt="Painted map of Magnolia Loop: Gary's, Donna's, Hal's and Rosa's houses, the Rec Center, Town Square with its bandstand, and Town Hall">
+      <div class="layer" id="places" aria-hidden="true"></div>
+      <div id="cloud"></div>
       <div class="layer" id="avatars"></div>
       <div class="layer" id="bubbles" aria-live="polite"></div>
     </section>
@@ -285,6 +297,7 @@ button:disabled { opacity: 0.4; cursor: default; }
       </div>
     </aside>
   </div>
+  <p class="foot">Prefer the old drawing? <a id="classic-link" href="/viewer/classic.html">See the classic map</a>.</p>
 </div>
 
 <script>
@@ -317,6 +330,42 @@ const WORLD = {
     rosa: { name: "Rosa Delgado", age: 63, home: "rosas_house", goal: "Get all three neighbors at her dinner table" }
   }
 };
+
+// Painted maps. Points are fractions of the image (x across, y down).
+// x/y is where a resident's pin stands; label is where the place name sits.
+// Magnolia Loop gives each resident their own spot on the street, near their house.
+const MAPS = {
+  phone: {
+    file: "map-phone.webp", w: 941, h: 1070,
+    zones: {
+      garys_house:  { x: 0.17, y: 0.37, label: [0.13, 0.235] },
+      donnas_house: { x: 0.15, y: 0.59, label: [0.14, 0.43] },
+      hals_house:   { x: 0.17, y: 0.87, label: [0.13, 0.71] },
+      rosas_house:  { x: 0.83, y: 0.89, label: [0.87, 0.72] },
+      rec_center:   { x: 0.50, y: 0.22, label: [0.50, 0.05] },
+      town_square:  { x: 0.50, y: 0.68, label: [0.40, 0.505] },
+      town_hall:    { x: 0.79, y: 0.49, label: [0.80, 0.375] },
+      magnolia_loop: { spots: { gary: [0.31, 0.33], donna: [0.25, 0.655], hal: [0.34, 0.75], rosa: [0.66, 0.80] } }
+    }
+  },
+  desktop: {
+    file: "map-desktop.webp", w: 1536, h: 770,
+    zones: {
+      garys_house:  { x: 0.11, y: 0.33, label: [0.13, 0.15] },
+      donnas_house: { x: 0.24, y: 0.58, label: [0.27, 0.38] },
+      hals_house:   { x: 0.19, y: 0.89, label: [0.14, 0.64] },
+      rosas_house:  { x: 0.85, y: 0.90, label: [0.88, 0.68] },
+      rec_center:   { x: 0.52, y: 0.27, label: [0.51, 0.04] },
+      town_square:  { x: 0.55, y: 0.69, label: [0.45, 0.46] },
+      town_hall:    { x: 0.86, y: 0.53, label: [0.88, 0.33] },
+      magnolia_loop: { spots: { gary: [0.33, 0.22], donna: [0.30, 0.625], hal: [0.44, 0.80], rosa: [0.68, 0.78] } }
+    }
+  }
+};
+const phoneQuery = window.matchMedia("(max-width: 640px)");
+const currentMap = () => MAPS[phoneQuery.matches ? "phone" : "desktop"];
+const pinWidth = (W) => Math.min(64, Math.max(40, W * 0.075));
+const pinImg = (id) => `<img src="${BASE}viewer/assets/pin-${id}.webp" alt="" width="128" height="128">`;
 
 const TICKS = [
   {
@@ -464,12 +513,16 @@ function drawCloud(f) {
   const host = $("cloud");
   if (!host) return;
   host.replaceChildren();
+  host.hidden = !f;
   if (!f) return;
   const look = CLOUD_LOOK[f.level] || CLOUD_LOOK.fair;
   const label = showCountdown(f) ? `The data-center cloud: ${powerLeft(f)}. Keep the lights on.` : "The data-center cloud. Keep the lights on.";
-  const link = el("a", { href: "#support", "aria-label": label });
+  const link = document.createElement("a");
+  link.href = "#support";
+  link.setAttribute("aria-label", label);
+  const svg = el("svg", { viewBox: "-44 -30 88 58", "aria-hidden": "true" });
   const bob = el("g", { id: "cloud-bob" });
-  const shape = el("g", { transform: `translate(196 -30) scale(${look.scale})` });
+  const shape = el("g", { transform: `scale(${look.scale})` });
   if (look.rain) {
     for (const dx of [-22, -8, 6, 20]) shape.append(el("path", { d: `M${dx} 16 l-3 9`, stroke: "var(--cloud-dark)", "stroke-width": 2, "stroke-linecap": "round" }));
   }
@@ -478,9 +531,13 @@ function drawCloud(f) {
   }
   shape.append(el("rect", { x: -40, y: 2, width: 80, height: 15, rx: 7.5, fill: look.fill }));
   bob.append(shape);
-  link.append(bob);
-  link.append(el("text", { x: 250, y: -40, "font-size": 8, "letter-spacing": 2, fill: "var(--muted)" }, "THE CLOUD"));
-  if (showCountdown(f)) link.append(el("text", { x: 250, y: -26, "font-size": 10.5, fill: "var(--ink)" }, powerLeft(f)));
+  svg.append(bob);
+  const text = document.createElement("span");
+  text.innerHTML = `<span class="cl-k">THE CLOUD</span>`;
+  if (showCountdown(f)) {
+    const v = document.createElement("span"); v.className = "cl-v"; v.textContent = powerLeft(f); text.append(v);
+  }
+  link.append(svg, text);
   host.append(link);
 }
 
@@ -552,7 +609,7 @@ function renderPrevious() {
   $("standings").replaceChildren(...Object.keys(data.world.agents).filter(id => ep.standings?.[id]).map(id => {
     const li = document.createElement("li");
     li.style.setProperty("--c", `var(--${id})`);
-    li.innerHTML = `<span class="face">${avatarSVG(id)}</span><span><b></b><span class="s"></span></span>`;
+    li.innerHTML = `<span class="face">${pinImg(id)}</span><span><b></b><span class="s"></span></span>`;
     li.querySelector("b").textContent = first(data.world, id);
     li.querySelector(".s").textContent = ep.standings[id];
     return li;
@@ -591,48 +648,8 @@ async function poll() {
   } catch (e) { /* offline or between deploys; try again next minute */ }
 }
 
-// ---- Avatars: one simple figure per resident, in shorts (it's Florida). ----
-const OUTLINE = 'stroke="rgba(20,25,22,.55)" stroke-width="1"';
-const LOOKS = {
-  gary: { skin: "#f0c7a2", hair: "#cfcfcf", extra: (c) =>
-    `<path d="M10 11 Q20 1 30 11 Z" fill="${c}" ${OUTLINE}/><rect x="24" y="9.5" width="10" height="3" rx="1.5" fill="${c}" ${OUTLINE}/>
-     <path d="M15.5 19.5 Q20 17.5 24.5 19.5 Q20 21.5 15.5 19.5Z" fill="#cfcfcf"/>` },
-  donna: { skin: "#ebbb95", hair: "#e6cf8c", extra: (c) =>
-    `<circle cx="20" cy="9" r="10" fill="#e6cf8c" ${OUTLINE}/><circle cx="20" cy="14" r="8.2" fill="#ebbb95" ${OUTLINE}/>
-     <rect x="12" y="6.5" width="16" height="3.4" rx="1.7" fill="${c}"/>
-     <rect x="14" y="12" width="5" height="3.2" rx="1.5" fill="#1d1d1d"/><rect x="21" y="12" width="5" height="3.2" rx="1.5" fill="#1d1d1d"/>
-     <rect x="19" y="13" width="2" height="1" fill="#1d1d1d"/>` },
-  hal: { skin: "#ddb08b", hair: "#ececec", extra: () =>
-    `<rect x="12.5" y="4.5" width="15" height="4.5" rx="1.5" fill="#ececec" ${OUTLINE}/>
-     <rect x="14" y="12" width="5" height="3.4" rx="1" fill="none" stroke="#2a2a2a" stroke-width="1"/><rect x="21" y="12" width="5" height="3.4" rx="1" fill="none" stroke="#2a2a2a" stroke-width="1"/>
-     <path d="M17 19.5 H23" stroke="#5a3a2a" stroke-width="1.1" stroke-linecap="round"/>` },
-  rosa: { skin: "#b67a54", hair: "#3a2722", extra: () =>
-    `<circle cx="20" cy="2.8" r="3.8" fill="#3a2722"/><path d="M11.5 14 Q12 5 20 5 Q28 5 28.5 14 Q26 8.5 20 8.5 Q14 8.5 11.5 14Z" fill="#3a2722"/>` }
-};
-
-function avatarSVG(id) {
-  const L = LOOKS[id], c = `var(--${id})`;
-  const face = id === "donna" ? "" :
-    `<circle cx="20" cy="14" r="8.2" fill="${L.skin}" ${OUTLINE}/>` +
-    (id === "hal" ? "" : `<circle cx="17" cy="13.5" r="1" fill="#2a2a2a"/><circle cx="23" cy="13.5" r="1" fill="#2a2a2a"/>`) +
-    (id === "gary" || id === "hal" ? "" : `<path d="M17 17.5 Q20 19.8 23 17.5" fill="none" stroke="#5a3a2a" stroke-width="1.1" stroke-linecap="round"/>`);
-  const smileGary = id === "gary" ? `<path d="M17.5 21.5 Q20 22.8 22.5 21.5" fill="none" stroke="#5a3a2a" stroke-width="1" stroke-linecap="round"/>` : "";
-  const donnaSmile = id === "donna" ? `<path d="M17 18 Q20 20.3 23 18" fill="none" stroke="#9b2c50" stroke-width="1.3" stroke-linecap="round"/>` : "";
-  return `<svg viewBox="0 0 40 60" aria-hidden="true">
-    <ellipse cx="20" cy="58.5" rx="11" ry="2" fill="rgba(0,0,0,.18)"/>
-    <rect x="14" y="44" width="4.5" height="13" rx="2" fill="${L.skin}" ${OUTLINE}/>
-    <rect x="21.5" y="44" width="4.5" height="13" rx="2" fill="${L.skin}" ${OUTLINE}/>
-    <rect x="12.5" y="38" width="15" height="9" rx="2.5" fill="#d8c8a2" ${OUTLINE}/>
-    <rect x="9" y="22.5" width="22" height="18" rx="7" fill="${c}" ${OUTLINE}/>
-    <rect x="5.5" y="25" width="5" height="12" rx="2.5" fill="${L.skin}" ${OUTLINE}/>
-    <rect x="29.5" y="25" width="5" height="12" rx="2.5" fill="${L.skin}" ${OUTLINE}/>
-    ${face}${L.extra(c)}${smileGary}${donnaSmile}
-  </svg>`;
-}
-
 // ---- Scene ----
 const NS = "http://www.w3.org/2000/svg";
-const VB = { y: -64, w: 480, h: 444 };   // the sky strip sits above y = 0
 const $ = id => document.getElementById(id);
 let data, idx = 0, timer = null, firstPaint = true;
 
@@ -643,88 +660,48 @@ function el(tag, attrs = {}, text) {
   return e;
 }
 
-function palm(svg, x, y, s = 1) {
-  const g = el("g", { transform: `translate(${x} ${y}) scale(${s})` });
-  g.append(el("path", { d: "M0 0 Q3 -18 -2 -36", stroke: "var(--trunk)", "stroke-width": 4, fill: "none", "stroke-linecap": "round" }));
-  for (const a of [-150, -110, -70, -30, 10]) {
-    g.append(el("path", { d: "M0 0 Q9 -7 19 -2 Q9 -2 0 0Z", fill: "var(--palm)", transform: `translate(-2 -36) rotate(${a})` }));
-  }
-  svg.append(g);
+// Place names drawn as text over the painting, so they stay sharp and readable.
+function drawPlaces(world) {
+  const layer = $("places");
+  const map = currentMap();
+  layer.replaceChildren(...Object.entries(map.zones).filter(([, z]) => z.label).map(([zid, z]) => {
+    const d = document.createElement("span");
+    d.className = "place";
+    d.textContent = world.zones[zid]?.name ?? zid;
+    d.style.left = (z.label[0] * 100) + "%";
+    d.style.top = (z.label[1] * 100) + "%";
+    return d;
+  }));
 }
 
-function drawScene(world) {
-  const svg = $("map");
-  svg.replaceChildren();
-  svg.append(el("rect", { x: 0, y: VB.y, width: VB.w, height: -VB.y + 4, fill: "var(--sky)" }));
-  svg.append(el("rect", { x: 0, y: 0, width: VB.w, height: 380, fill: "var(--lawn)" }));
-  svg.append(el("g", { id: "cloud" }));
-  svg.append(el("rect", { x: 0, y: 248, width: VB.w, height: 132, fill: "var(--lawn-2)" }));
-
-  // Roads: Magnolia Loop, side roads to the Rec Center and Town Square, and the path to Town Hall.
-  svg.append(el("rect", { x: 0, y: 196, width: VB.w, height: 40, fill: "var(--road)" }));
-  svg.append(el("path", { d: "M 8 216 H 472", stroke: "var(--road-mark)", "stroke-width": 2, "stroke-dasharray": "10 10" }));
-  for (const zid of ["donnas_house", "garys_house", "hals_house"]) {
-    const z = world.zones[zid];
-    svg.append(el("rect", { x: z.x - 13, y: z.y + 26, width: 26, height: 70, fill: "var(--road)", opacity: 0.7 }));
-  }
-  svg.append(el("rect", { x: 49, y: 236, width: 26, height: 40, fill: "var(--road)", opacity: 0.7 }));
-  svg.append(el("rect", { x: 227, y: 236, width: 26, height: 40, fill: "var(--road)", opacity: 0.7 }));
-  svg.append(el("rect", { x: 347, y: 236, width: 26, height: 40, fill: "var(--road)", opacity: 0.7 }));
-  svg.append(el("path", { d: "M 390 300 H 410", stroke: "var(--road)", "stroke-width": 10 }));
-  svg.append(el("text", { x: 14, y: 191, "font-size": 9, "letter-spacing": 2, fill: "var(--ink)", opacity: 0.55 }, "MAGNOLIA LOOP"));
-
-  // Houses.
-  const houseOf = {};
-  for (const [id, a] of Object.entries(world.agents)) houseOf[a.home] = id;
-  for (const [zid, z] of Object.entries(world.zones)) {
-    if (zid === "magnolia_loop") continue;
-    const owner = houseOf[zid];
-    const g = el("g");
-    if (owner) {
-      const c = `var(--${owner})`;
-      g.append(el("rect", { x: z.x - 36, y: z.y - 12, width: 72, height: 40, rx: 3, fill: "var(--wall)", stroke: c, "stroke-width": 2 }));
-      g.append(el("path", { d: `M ${z.x - 44} ${z.y - 10} L ${z.x} ${z.y - 40} L ${z.x + 44} ${z.y - 10} Z`, fill: "var(--roof)" }));
-      g.append(el("rect", { x: z.x - 6, y: z.y + 8, width: 12, height: 20, rx: 2, fill: c }));
-      g.append(el("rect", { x: z.x - 28, y: z.y - 2, width: 14, height: 11, rx: 1.5, fill: "var(--lawn-2)", stroke: c, "stroke-width": 1 }));
-      g.append(el("rect", { x: z.x + 14, y: z.y - 2, width: 14, height: 11, rx: 1.5, fill: "var(--lawn-2)", stroke: c, "stroke-width": 1 }));
-      g.append(el("text", { x: z.x, y: z.y - 46, "text-anchor": "middle", "font-size": 10, "font-weight": 500, fill: "var(--ink)" }, z.name));
-    } else {
-      g.append(el("rect", { x: z.x - 34, y: z.y - 22, width: 68, height: 44, rx: 6, fill: "var(--wall)", stroke: "var(--accent)", "stroke-width": 1.5 }));
-      g.append(el("rect", { x: z.x - 34, y: z.y - 22, width: 68, height: 10, rx: 6, fill: "var(--accent)" }));
-      g.append(el("text", { x: z.x, y: z.y + 6, "text-anchor": "middle", "font-size": 9, fill: "var(--bubble-ink)" }, z.name));
-    }
-    svg.append(g);
-  }
-
-  // Donna's flamingos (seven, as Hal has noted) and Gary's cart.
-  const d = world.zones.donnas_house;
-  for (let i = 0; i < 7; i++) {
-    const fx = d.x - 52 + (i % 4) * 9 + (i > 3 ? 4 : 0), fy = d.y + 52 + (i > 3 ? 10 : 0);
-    svg.append(el("path", { d: `M${fx} ${fy} v-7 m0 0 q-4 -2 -1 -6 q3 -3 1 -6`, stroke: "var(--donna)", "stroke-width": 2, fill: "none", "stroke-linecap": "round" }));
-  }
-  const g = world.zones.garys_house;
-  const cart = el("g", { transform: `translate(${g.x + 46} ${g.y + 44})` });
-  cart.append(el("rect", { x: 0, y: 0, width: 30, height: 12, rx: 3, fill: "var(--wall)", stroke: "var(--gary)", "stroke-width": 1.5 }));
-  cart.append(el("path", { d: "M4 0 V-14 H28 V0", fill: "none", stroke: "var(--ink)", "stroke-width": 1.2, opacity: 0.6 }));
-  cart.append(el("rect", { x: 2, y: -16, width: 28, height: 3, rx: 1.5, fill: "var(--gary)" }));
-  cart.append(el("circle", { cx: 7, cy: 13, r: 3.5, fill: "var(--ink)" }));
-  cart.append(el("circle", { cx: 24, cy: 13, r: 3.5, fill: "var(--ink)" }));
-  svg.append(cart);
-
-  // Palms.
-  palm(svg, 30, 120, 0.9); palm(svg, 452, 130, 1); palm(svg, 300, 160, 0.7);
-  palm(svg, 150, 330, 0.8); palm(svg, 300, 340, 0.75);
+function setMap(world) {
+  const map = currentMap();
+  const img = $("map");
+  img.width = map.w; img.height = map.h;
+  const src = BASE + "viewer/assets/" + map.file;
+  if (img.getAttribute("src") !== src) img.src = src;
+  drawPlaces(world);
 }
 
-function standPoints(world, t) {
+// Where each resident's pin stands, in pixels. Residents sharing a place stand side by side;
+// on Magnolia Loop each one has their own spot on the street.
+function standPoints(world, t, W, H) {
+  const map = currentMap(), pw = pinWidth(W);
   const groups = {};
   for (const [id, zid] of Object.entries(t.positions)) (groups[zid] ||= []).push(id);
   const pts = {};
   for (const [zid, ids] of Object.entries(groups)) {
-    const z = world.zones[zid];
-    const gap = z.spread || 30;
-    ids.forEach((id, i) => { pts[id] = { x: z.sx + (i - (ids.length - 1) / 2) * gap, y: z.sy }; });
+    const z = map.zones[zid] || { x: 0.5, y: 0.5 };
+    ids.forEach((id, i) => {
+      if (z.spots) {
+        const s = z.spots[id] || Object.values(z.spots)[i % 4];
+        pts[id] = { x: s[0] * W, y: s[1] * H };
+      } else {
+        pts[id] = { x: z.x * W + (i - (ids.length - 1) / 2) * pw * 1.08, y: z.y * H };
+      }
+    });
   }
+  for (const p of Object.values(pts)) p.x = Math.min(Math.max(p.x, pw / 2 + 2), W - pw / 2 - 2);
   return pts;
 }
 
@@ -735,18 +712,29 @@ function buildAvatars(world) {
     const a = document.createElement("div");
     a.className = "avatar"; a.id = "av-" + id;
     a.style.setProperty("--c", `var(--${id})`);
-    a.innerHTML = avatarSVG(id) + `<span class="tag"></span>`;
+    a.innerHTML = pinImg(id) + `<span class="tag"></span>`;
     a.querySelector(".tag").textContent = world.agents[id].name.split(" ")[0];
     layer.append(a);
   }
 }
 
-function placeAvatars(pts) {
+function placeAvatars(pts, W, H) {
   for (const [id, p] of Object.entries(pts)) {
     const a = $("av-" + id);
-    a.style.left = (p.x / VB.w * 100) + "%";
-    a.style.top = ((p.y - VB.y) / VB.h * 100) + "%";
+    a.style.left = (p.x / W * 100) + "%";
+    a.style.top = (p.y / H * 100) + "%";
+    a.style.zIndex = Math.round(p.y);   // pins lower on the map stand in front
   }
+}
+
+function layoutScene(animate) {
+  const scene = $("scene");
+  const W = scene.clientWidth, H = scene.clientHeight;
+  if (!W || !H) return;
+  const t = data.ticks[idx];
+  const pts = standPoints(data.world, t, W, H);
+  placeAvatars(pts, W, H);
+  layoutBubbles(data.world, t, animate, pts, W, H);
 }
 
 function targetName(world, target) {
@@ -759,20 +747,17 @@ function targetName(world, target) {
 // bubbles get narrower and long lines are shortened (the full lines are always in "What happened").
 const clip = (s, n) => s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, "").replace(/[\s.,;:!?—-]+$/, "") + "…" : s;
 
-function layoutBubbles(world, t, animate) {
+function layoutBubbles(world, t, animate, pts, W, H) {
   const layer = $("bubbles");
   layer.replaceChildren();
-  const scene = $("scene");
-  const W = scene.clientWidth, H = scene.clientHeight;
-  const pts = standPoints(world, t);
-  const avW = W * 0.085, avH = avW * 1.5, tagH = 18;
+  const avW = pinWidth(W), avH = avW * 0.99, tagH = 18;
   const stems = document.createElementNS(NS, "svg");
   stems.setAttribute("width", W); stems.setAttribute("height", H);
   stems.style.cssText = "position:absolute;inset:0;overflow:visible";
   layer.append(stems);
 
   const people = Object.entries(pts).map(([id, p]) => {
-    const x = p.x / VB.w * W, y = (p.y - VB.y) / VB.h * H;
+    const x = p.x, y = p.y;
     return { id, x, head: y - avH, feet: y + tagH, box: { left: x - avW / 2, top: y - avH, w: avW, h: avH + tagH } };
   });
   const byId = Object.fromEntries(people.map(p => [p.id, p]));
@@ -791,7 +776,10 @@ function layoutBubbles(world, t, animate) {
   const items = Object.entries(t.results || {}).map(([id, r]) => ({ id, r, speak: r.action.type === "SPEAK" }))
     .sort((a, b) => (b.speak - a.speak) || (byId[a.id].x - byId[b.id].x));
   const placed = people.map(p => p.box);
+  const cl = $("cloud");
+  if (cl && !cl.hidden && cl.offsetWidth) placed.push({ left: cl.offsetLeft, top: cl.offsetTop, w: cl.offsetWidth, h: cl.offsetHeight });
   const hits = (r) => placed.some(q => r.left < q.left + q.w + 4 && r.left + r.w + 4 > q.left && r.top < q.top + q.h + 4 && r.top + r.h + 4 > q.top);
+  const overlap = (r) => placed.reduce((sum, q) => sum + Math.max(0, Math.min(r.left + r.w, q.left + q.w) - Math.max(r.left, q.left)) * Math.max(0, Math.min(r.top + r.h, q.top + q.h) - Math.max(r.top, q.top)), 0);
   const inside = (r) => r.left >= 2 && r.top >= 2 && r.left + r.w <= W - 2 && r.top + r.h <= H - 2;
 
   for (const it of items) {
@@ -804,13 +792,14 @@ function layoutBubbles(world, t, animate) {
     let full;
     if (it.speak) {
       full = `“${P.content}”`;
-      b.innerHTML = `<span class="to"></span><span class="txt"></span>`;
-      b.querySelector(".to").textContent = `${first(world, it.id)} → ${targetName(world, P.target)}`;
-      b.querySelector(".txt").textContent = clip(full, narrow ? 80 : crowded ? 95 : 170);
+      // On phones the map bubble is a short teaser; the full line (and who it's to) is in the list below the map.
+      b.innerHTML = narrow ? `<span class="txt"></span>` : `<span class="to"></span><span class="txt"></span>`;
+      if (!narrow) b.querySelector(".to").textContent = `${first(world, it.id)} → ${targetName(world, P.target)}`;
+      b.querySelector(".txt").textContent = clip(full, narrow ? 46 : crowded ? 70 : 90);
     } else {
       full = it.r.action.type === "MOVE" ? `Off to ${targetName(world, P.target)}` : (P.content || it.r.action.type.toLowerCase());
       b.innerHTML = `<span class="txt"></span>`;
-      b.querySelector(".txt").textContent = clip(full, narrow ? 32 : crowded ? 40 : 60);
+      b.querySelector(".txt").textContent = clip(full, narrow ? 28 : crowded ? 40 : 60);
     }
     b.title = full;
     const short = b.querySelector(".txt").textContent;
@@ -818,22 +807,24 @@ function layoutBubbles(world, t, animate) {
     layer.append(b);
     const bw = b.offsetWidth, bh = b.offsetHeight;
     const shifts = [0, -0.55, 0.55, -1.05, 1.05].map(f => f * bw);
-    let spot = null;
+    let spot = null, best = null, bestArea = Infinity;
     for (let level = 0; level < 3 && !spot; level++) {
       for (const side of ["above", "below"]) {
         for (const dx of shifts) {
           const left = Math.min(Math.max(me.x - bw / 2 + dx, 2), W - bw - 2);
           const top = side === "above" ? me.head - 10 - bh - level * (bh + 8) : me.feet + 10 + level * (bh + 8);
           const r = { left, top, w: bw, h: bh, side };
-          if (inside(r) && !hits(r)) { spot = r; break; }
+          if (!inside(r)) continue;
+          if (!hits(r)) { spot = r; break; }
+          const a = overlap(r);
+          if (level < 2 && a < bestArea) { best = r; bestArea = a; }   // remember the least-covered spot near the speaker
         }
         if (spot) break;
       }
     }
     if (!spot) {
       if (!it.speak) { b.remove(); continue; }
-      const left = Math.min(Math.max(me.x - bw / 2, 2), W - bw - 2);
-      spot = { left, top: Math.max(2, me.head - 10 - bh), w: bw, h: bh, side: "above" };
+      spot = best || { left: Math.min(Math.max(me.x - bw / 2, 2), W - bw - 2), top: Math.max(2, me.head - 10 - bh), w: bw, h: bh, side: "above" };
     }
     b.style.left = spot.left + "px"; b.style.top = spot.top + "px";
     placed.push(spot);
@@ -893,7 +884,7 @@ function renderPeople(world, t) {
     card.className = "person";
     card.style.setProperty("--c", `var(--${id})`);
     card.innerHTML = `
-      <div class="face">${avatarSVG(id)}</div>
+      <div class="face">${pinImg(id)}</div>
       <div class="who"><h3></h3><span class="age">${a.age}</span></div>
       <div class="meta"><span class="chip loc"></span>${r ? '<span class="chip mood"></span>' : ""}</div>
       <div class="imp" aria-label="Importance ${imp} of 10">${Array.from({ length: 10 }, (_, i) => `<i class="${i < imp ? "on" : ""}"></i>`).join("")}</div>
@@ -961,8 +952,7 @@ function go(i) {
   $("slider").value = idx;
   $("prev").disabled = idx === 0;
   $("next").disabled = idx === data.ticks.length - 1;
-  placeAvatars(standPoints(data.world, t));
-  layoutBubbles(data.world, t, !firstPaint);
+  layoutScene(!firstPaint);
   firstPaint = false;
   renderPeople(data.world, t);
   renderStory(t);
@@ -983,7 +973,7 @@ loadData().then(d => {
   data = d;
   $("sample").hidden = !d.sample;
   $("slider").max = d.ticks.length - 1;
-  drawScene(d.world);
+  setMap(d.world);
   buildAvatars(d.world);
   renderPrevious();
   drawCloud(d.fund);
@@ -1007,7 +997,9 @@ loadData().then(d => {
   go(d.live ? d.ticks.length - 1 : 0);
   if (d.live) setInterval(poll, 60000);
   let rt;
-  new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(() => layoutBubbles(data.world, data.ticks[idx], false), 80); }).observe($("scene"));
-  if (document.fonts) document.fonts.ready.then(() => layoutBubbles(data.world, data.ticks[idx], false));
+  new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(() => layoutScene(false), 80); }).observe($("scene"));
+  phoneQuery.addEventListener("change", () => { setMap(data.world); layoutScene(false); });
+  $("map").addEventListener("load", () => layoutScene(false));
+  if (document.fonts) document.fonts.ready.then(() => layoutScene(false));
 });
 </script>
