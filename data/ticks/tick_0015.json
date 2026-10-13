@@ -1,0 +1,115 @@
+{
+  "tick": 15,
+  "simulation_time": "Tuesday, October 13, 12:17 PM",
+  "weather": "Humid and hazy, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At Gary's house on Magnolia Loop, Gary is nervous but warmed, and he's agreed to swap his soldering iron for sneakers once Donna, who is optimistic and promising coffee, settles on a pickleball court for tomorrow morning. Out on the street, Hal, gruff but conflicted, tells Rosa, who is hopeful, that he'll come to her dinner and keep the rulebook in his pocket. Rosa then pins a welcome dinner note to the bulletin board, inviting Gary, Donna, and Hal to come hungry.",
+  "events": [
+    "Rosa (street bulletin board): Pin up a note: Rosa's welcome dinner, Gary, Donna, and Hal, come hungry"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just invited me to be her doubles partner, and she's been generous with her spare paddle and time. I told her I'd never played, and I'm a little nervous, but I've been looking forward to Saturday matches and being around people beats being alone in the garage. The wiring harness will keep, and the parade sign-ups don't close until the end of the month. She already made the invitation, so I shouldn't re-ask anything. I should answer her directly and agree, honestly admitting I'm a beginner. Then next tick I can head out with her.",
+      "emotional_state": "nervous but warmed",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Alright, Donna, you've worn me down. Give me two minutes to find my sneakers and unplug the soldering iron, but fair warning, I'm going to be terrible at this."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just invited me in and asked what brings me by, and I've already said my piece about the paddle and the court twice. Repeating it would be nagging. He's busy with the parade cart, so I should be gracious, answer his question directly, and make it easy for him. It's past noon now, so the court I mentioned is closing. I'll offer a concrete, low-pressure follow-up: let me watch him work for a minute, then come hit for thirty minutes this afternoon, or we book the courts for tomorrow morning. That moves the partnership forward without pushing.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Thanks, Gary, I'll mind the wire. I came to steal you for pickleball, but it's past noon now, so how about I book us a court for tomorrow morning and you finish your cart today? Thirty minutes, spare paddle, and I'll bring the coffee."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've scanned the street twice and have my count of flamingos and Gary's cart mods. Rosa just walked up, and she invited me to dinner. I don't want to turn every chat into a flamingo complaint, and I'm torn about Gary's garage wiring. Best to be civil first and acknowledge her invitation. The complaint to the review committee can wait until I've had my say at the proper place.",
+      "emotional_state": "gruff but conflicted",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Afternoon, Rosa. About your dinner invitation, I'll come, and I'll keep the rulebook in my pocket. What time, and should I bring anything?"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal just arrived on the street with me. I already invited him to the dinner in tick 1, and he hasn't answered, so I shouldn't repeat the invitation. I'm out here to get groceries and hunt down Gary and Donna, and the bulletin board is right here. Posting a dinner notice would reinforce the invitation without nagging Hal, and a note might catch Gary and Donna when they pass. Hal can read it too, and maybe he'll bring up the dinner himself.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Pin up a note: Rosa's welcome dinner, Gary, Donna, and Hal, come hungry"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03186,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9686,
+        "output_tokens": 1234,
+        "usd": 0.03171
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 575,
+        "output_tokens": 187,
+        "usd": 0.00015
+      }
+    }
+  }
+}
