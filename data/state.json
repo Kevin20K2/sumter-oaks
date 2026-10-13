@@ -1,22 +1,25 @@
 {
-  "tick": 20,
-  "time": "2026-10-13T15:27",
+  "tick": 21,
+  "time": "2026-10-13T16:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
-    "hal": "town_square",
-    "rosa": "rec_center"
+    "donna": "garys_house",
+    "hal": "town_hall",
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "Donna just arrived."
+    ],
     "donna": [
-      "Hal headed to Town Square."
+      "You arrived at Gary's House."
     ],
     "hal": [
-      "Donna (donna flamingo flock): Pull all but three flamingos out of the front lawn and stash them in the garage",
-      "You arrived at Town Square."
+      "You arrived at Town Hall."
     ],
-    "rosa": []
+    "rosa": [
+      "You arrived at Magnolia Loop (the street)."
+    ]
   },
   "memories": {
     "gary": [
@@ -223,6 +226,16 @@
       {
         "tick": 19,
         "text": "I (gary workbench): Solder the LED rope light connections and test the circuit",
+        "importance": 4
+      },
+      {
+        "tick": 20,
+        "text": "I (gary golf cart): Mount the marine speaker and wire it to the cart battery",
+        "importance": 4
+      },
+      {
+        "tick": 20,
+        "text": "Donna just arrived.",
         "importance": 4
       }
     ],
@@ -441,6 +454,16 @@
         "tick": 19,
         "text": "Hal headed to Town Square.",
         "importance": 4
+      },
+      {
+        "tick": 20,
+        "text": "I headed to Gary's House.",
+        "importance": 6
+      },
+      {
+        "tick": 20,
+        "text": "You arrived at Gary's House.",
+        "importance": 6
       }
     ],
     "hal": [
@@ -633,6 +656,16 @@
         "tick": 19,
         "text": "You arrived at Town Square.",
         "importance": 5
+      },
+      {
+        "tick": 20,
+        "text": "I headed to Town Hall.",
+        "importance": 6
+      },
+      {
+        "tick": 20,
+        "text": "You arrived at Town Hall.",
+        "importance": 6
       }
     ],
     "rosa": [
@@ -825,6 +858,16 @@
         "tick": 19,
         "text": "I (court reservation kiosk): Check upcoming reservations to see when Donna books her court",
         "importance": 5
+      },
+      {
+        "tick": 20,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 20,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       }
     ]
   },
@@ -864,8 +907,8 @@
   },
   "emotions": {
     "gary": "focused",
-    "donna": "sheepish",
-    "hal": "dutiful, conflicted",
+    "donna": "determined",
+    "hal": "conflicted",
     "rosa": "determined"
   },
   "laws": [
@@ -936,18 +979,24 @@
       "time": "Tuesday, October 13, 3:27 PM",
       "story": "At 3:27 on a damp Tuesday afternoon in Sumter Oaks, Gary sits at his workbench in his garage, soldering the LED rope light connections while the afternoon shower taps on the roof. Out on Magnolia Loop, Donna is sheepishly pulling most of her pink flamingo flock out of the front lawn to stash them in her garage, leaving just three standing guard. Hal, looking dutiful but a little torn, is headed toward Town Square, and Rosa is at the Rec Center kiosk, determined to check the court reservations and find out when Donna plans to book her next game.",
       "dialogue": []
+    },
+    {
+      "tick": 20,
+      "time": "Tuesday, October 13, 4:17 PM",
+      "story": "On a damp Tuesday afternoon in Sumter Oaks, Gary is focused in his driveway, wiring a marine speaker to his golf cart's battery while the afternoon shower drifts off. Donna is marching over to Gary's House with determination, and Rosa is heading out to Magnolia Loop with the same resolve. Meanwhile Hal, looking conflicted, is making his way to Town Hall, unsure what waits for him there.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 0.53956,
+    "total_usd": 0.57128,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
         "usd": 0.22284
       },
       "2026-10-13": {
-        "ticks": 10,
-        "usd": 0.31672
+        "ticks": 11,
+        "usd": 0.34844
       }
     }
   },
@@ -967,7 +1016,8 @@
     0.03354,
     0.0333,
     0.03242,
-    0.03209
+    0.03209,
+    0.03172
   ],
   "fund": {
     "gross_usd": 20.0,

@@ -1,0 +1,118 @@
+{
+  "tick": 20,
+  "simulation_time": "Tuesday, October 13, 4:17 PM",
+  "weather": "Afternoon shower, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "town_square",
+    "rosa": "rec_center"
+  },
+  "story": "On a damp Tuesday afternoon in Sumter Oaks, Gary is focused in his driveway, wiring a marine speaker to his golf cart's battery while the afternoon shower drifts off. Donna is marching over to Gary's House with determination, and Rosa is heading out to Magnolia Loop with the same resolve. Meanwhile Hal, looking conflicted, is making his way to Town Hall, unsure what waits for him there.",
+  "events": [
+    "Gary (gary golf cart): Mount the marine speaker and wire it to the cart battery",
+    "Donna headed to Gary's House.",
+    "Hal headed to Town Hall.",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "The soldering is done and the LED circuit is tested, so the hard part is behind me. It's 4:17 and raining, and nobody's around. The speaker is still sitting there, and I know the exterior mods probably need Architectural Review approval under L-01. Rather than keep dodging that, I should at least get the speaker wired into the cart tonight, then deal with the paperwork at Town Hall. Tomorrow morning I've got pickleball with Donna, so I want the cart work in good shape before then. Next step: mount and wire the marine speaker to the cart.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Mount the marine speaker and wire it to the cart battery"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Nobody's around on Magnolia Loop, it's drizzling, and the flamingo situation is already handled from last tick, so I don't need to fuss with that again. My real goal is the doubles ladder with Gary. He's at his house, he's a good sport who needs a little nudging, and I want to lock in Saturday at eight and make sure he has the spare paddle. Walking over to Gary's is the most useful move, instead of standing in the rain talking to nobody.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading to Gary's with the spare paddle to lock in our practice sessions and Saturday at eight."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna is already pulling the flamingos down to three, so that complaint is mostly settled and I don't need to file it. Gary's cart wiring is the real issue, and he said himself he's wiring first and filing paperwork after, which runs against L-01. I'm standing in Town Square with nobody in sight and a shower coming down. The committee reports are filed at Town Hall, which is right next door. I'll go there and log the cart matter, factual and fair, and ask for it to be reviewed rather than punished. Keeping the peace and keeping the rules aren't necessarily opposites, and Rosa's dinner is still ahead of me.",
+      "emotional_state": "conflicted",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_hall",
+          "content": "Going to Town Hall to put Gary's cart modifications on the record for Architectural Review, politely and by the book."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I came to the rec center hoping to find Donna so I can invite her to Saturday's dinner. I've checked the ladder standings and the reservation kiosk, and I know her usual play times now. It's raining, nobody's here, and I can't stand around waiting on a maybe. Hal already said yes, and Gary got the invite. Donna is the last one still unconfirmed. Magnolia Loop is the better bet, since she might be home or out on her cart, and I still need to get groceries sorted before my next shift. Head back and track her down.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Donna isn't at the courts in this rain. I'm heading back to Magnolia Loop to catch her and invite her to Saturday's dinner."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03172,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9767,
+        "output_tokens": 1208,
+        "usd": 0.03161
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 346,
+        "output_tokens": 148,
+        "usd": 0.00011
+      }
+    }
+  }
+}
