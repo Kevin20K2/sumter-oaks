@@ -122,8 +122,20 @@ button:disabled { opacity: 0.4; cursor: default; }
 #bubbles { z-index: 3; }
 .place { position: absolute; transform: translate(-50%, -50%); font-family: var(--font-mono); font-size: clamp(9px, 1.4vw, 11px); letter-spacing: 0.04em; color: var(--ink); background: color-mix(in srgb, var(--surface) 82%, transparent); border-radius: 6px; padding: 1px 6px; white-space: nowrap; }
 
-.avatar { position: absolute; width: clamp(40px, 7.5%, 64px); transform: translate(-50%, -99%); filter: drop-shadow(0 2px 2px rgba(0,0,0,.35)); transition: left 0.9s cubic-bezier(.45,.05,.25,1), top 0.9s cubic-bezier(.45,.05,.25,1); }
-.avatar img { display: block; width: 100%; height: auto; }
+.avatar { position: absolute; width: clamp(40px, 7.5%, 64px); transform: translate(-50%, -99%); filter: drop-shadow(0 2px 2px rgba(0,0,0,.35)); pointer-events: auto; cursor: pointer; }
+.avatar img { display: block; width: 100%; height: auto; position: relative; z-index: 1; }
+.avatar .cart { position: absolute; left: 50%; top: -14%; width: 150%; transform: translateX(-50%); display: none; pointer-events: none; }
+.avatar .cart.back { z-index: 0; }
+.avatar .cart.front { z-index: 2; }
+.avatar .cart svg { display: block; width: 100%; height: auto; }
+.avatar.driving .cart { display: block; }
+.avatar.driving.west .cart svg { transform: scaleX(-1); }
+.avatar.driving .tag { display: none; }
+.avatar.arrive img { animation: arrive 0.45s ease-out; }
+@keyframes arrive { 0% { transform: translateY(0); } 40% { transform: translateY(-14%); } 100% { transform: translateY(0); } }
+.avatar:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; border-radius: 50%; }
+.flash { animation: flash 1.6s ease-out; }
+@keyframes flash { 0%, 40% { background: color-mix(in srgb, var(--c) 18%, transparent); } 100% { background: transparent; } }
 .avatar .tag { position: absolute; left: 50%; top: 100%; transform: translate(-50%, 2px); font-family: var(--font-mono); font-size: clamp(9px, 1.5vw, 11px); font-weight: 500; color: var(--ink); background: var(--surface); border: 1.5px solid var(--c); border-radius: 999px; padding: 0 6px; white-space: nowrap; }
 
 .bubble { position: absolute; max-width: min(48%, 200px); width: max-content; background: var(--bubble); color: var(--bubble-ink); border: 2px solid var(--c); border-radius: 14px; padding: 6px 10px; font-family: var(--font-body); font-size: clamp(11.5px, 1.9vw, 13.5px); line-height: 1.35; box-shadow: 0 2px 0 var(--c); }
@@ -141,7 +153,7 @@ button:disabled { opacity: 0.4; cursor: default; }
 .dialogue .who { display: block; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--c); }
 .pop { animation: pop 0.35s 0.75s both cubic-bezier(.3,1.4,.5,1); }
 @keyframes pop { from { opacity: 0; transform: translateY(6px) scale(0.92); } to { opacity: 1; transform: none; } }
-@media (prefers-reduced-motion: reduce) { .avatar { transition: none; } .pop { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .avatar.arrive img, .flash { animation: none; } .pop { animation: none; } }
 
 .people { display: grid; gap: 10px; }
 .person { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 4px 12px; align-items: start; }
@@ -346,6 +358,14 @@ const MAPS = {
       town_square:  { x: 0.50, y: 0.68, label: [0.40, 0.505] },
       town_hall:    { x: 0.79, y: 0.49, label: [0.80, 0.375] },
       magnolia_loop: { spots: { gary: [0.31, 0.33], donna: [0.25, 0.655], hal: [0.34, 0.75], rosa: [0.66, 0.80] } }
+    },
+    // Golf cart routes traced along the painted roads. entry = the road point each place's driveway meets.
+    roads: {
+      nodes: { A: [0.36, 0.29], J: [0.50, 0.37], B: [0.62, 0.32], T: [0.50, 0.46], LU: [0.33, 0.48], GM: [0.30, 0.425], GR: [0.20, 0.40],
+               LM: [0.27, 0.62], DR: [0.15, 0.635], LL: [0.33, 0.75], BL: [0.42, 0.80], BM: [0.50, 0.81], BR: [0.60, 0.80],
+               RL: [0.67, 0.75], RM: [0.72, 0.60], RU: [0.66, 0.50], TH: [0.80, 0.57], HR: [0.30, 0.90], RR: [0.68, 0.87] },
+      edges: ["A-J", "J-B", "J-T", "T-LU", "LU-GM", "GM-GR", "LU-LM", "LM-DR", "LM-LL", "LL-BL", "BL-BM", "BM-BR", "BR-RL", "RL-RM", "RM-RU", "RU-T", "RM-TH", "BL-HR", "BR-RR"],
+      entry: { garys_house: "GR", donnas_house: "DR", hals_house: "HR", rosas_house: "RR", rec_center: "A", town_square: "BM", town_hall: "TH" }
     }
   },
   desktop: {
@@ -359,9 +379,43 @@ const MAPS = {
       town_square:  { x: 0.55, y: 0.69, label: [0.45, 0.46] },
       town_hall:    { x: 0.86, y: 0.53, label: [0.88, 0.33] },
       magnolia_loop: { spots: { gary: [0.33, 0.22], donna: [0.30, 0.625], hal: [0.44, 0.80], rosa: [0.68, 0.78] } }
+    },
+    roads: {
+      nodes: { A: [0.40, 0.29], J: [0.53, 0.40], B: [0.64, 0.35], T: [0.55, 0.46], LU: [0.42, 0.48], GM: [0.35, 0.37], GR: [0.22, 0.355],
+               LM: [0.37, 0.62], DR: [0.24, 0.625], LL: [0.40, 0.72], BM: [0.53, 0.77], BR: [0.63, 0.75], RM: [0.70, 0.62],
+               RU: [0.67, 0.49], TH: [0.86, 0.58], HR: [0.33, 0.84], RR: [0.70, 0.86] },
+      edges: ["A-J", "J-B", "J-T", "T-LU", "LU-GM", "GM-GR", "LU-LM", "LM-DR", "LM-LL", "LL-BM", "BM-BR", "BR-RM", "RM-RU", "RU-T", "RM-TH", "LL-HR", "BR-RR"],
+      entry: { garys_house: "GR", donnas_house: "DR", hals_house: "HR", rosas_house: "RR", rec_center: "A", town_square: "BM", town_hall: "TH" }
     }
   }
 };
+
+// Shortest drive between two points on the current map, in pixels: out the driveway,
+// along the roads, in the other driveway. Points on Magnolia Loop join the nearest road point.
+function routeBetween(from, fromZone, to, toZone, W, H) {
+  const R = currentMap().roads;
+  const P = Object.fromEntries(Object.entries(R.nodes).map(([k, v]) => [k, { x: v[0] * W, y: v[1] * H }]));
+  const d = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+  const nearest = (pt) => Object.keys(P).reduce((best, k) => d(P[k], pt) < d(P[best], pt) ? k : best);
+  const a = R.entry[fromZone] || nearest(from), b = R.entry[toZone] || nearest(to);
+  const adj = {};
+  for (const e of R.edges) { const [u, v] = e.split("-"); (adj[u] ||= []).push(v); (adj[v] ||= []).push(u); }
+  const dist = { [a]: 0 }, prev = {}, todo = new Set(Object.keys(P));
+  while (todo.size) {
+    let u = null;
+    for (const k of todo) if (dist[k] != null && (u == null || dist[k] < dist[u])) u = k;
+    if (u == null || u === b) break;
+    todo.delete(u);
+    for (const v of adj[u] || []) {
+      const nd = dist[u] + d(P[u], P[v]);
+      if (dist[v] == null || nd < dist[v]) { dist[v] = nd; prev[v] = u; }
+    }
+  }
+  const nodes = [b];
+  while (nodes[0] !== a && prev[nodes[0]]) nodes.unshift(prev[nodes[0]]);
+  if (nodes[0] !== a) return [from, to];   // no road found: drive straight
+  return [from, ...nodes.map(k => P[k]), to];
+}
 const phoneQuery = window.matchMedia("(max-width: 640px)");
 const currentMap = () => MAPS[phoneQuery.matches ? "phone" : "desktop"];
 const pinWidth = (W) => Math.min(64, Math.max(40, W * 0.075));
@@ -644,7 +698,7 @@ async function poll() {
     data.ticks.push(...await loadTicks(fresh));
     data.names.push(...fresh);
     $("slider").max = data.ticks.length - 1;
-    if (atEnd && !timer) go(data.ticks.length - 1); else go(idx);
+    if (atEnd && !timer) go(data.ticks.length - 1, true); else go(idx);
   } catch (e) { /* offline or between deploys; try again next minute */ }
 }
 
@@ -712,8 +766,14 @@ function buildAvatars(world) {
     const a = document.createElement("div");
     a.className = "avatar"; a.id = "av-" + id;
     a.style.setProperty("--c", `var(--${id})`);
-    a.innerHTML = pinImg(id) + `<span class="tag"></span>`;
+    a.innerHTML = `<span class="cart back">${cartSVG(id, "back")}</span>` + pinImg(id) + `<span class="cart front">${cartSVG(id, "front")}</span><span class="tag"></span>`;
     a.querySelector(".tag").textContent = world.agents[id].name.split(" ")[0];
+    a.tabIndex = 0;
+    a.setAttribute("role", "button");
+    a.setAttribute("aria-label", `${world.agents[id].name}: show what they said`);
+    const show = () => showLine(id);
+    a.addEventListener("click", (e) => { e.stopPropagation(); show(); });
+    a.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); show(); } });
     layer.append(a);
   }
 }
@@ -727,14 +787,91 @@ function placeAvatars(pts, W, H) {
   }
 }
 
-function layoutScene(animate) {
+// A golf cart in the resident's color, drawn in two layers so the resident sits inside it:
+// the canopy and posts behind the pin, the body and wheels in front of it.
+function cartSVG(id, part) {
+  const c = `var(--${id})`, line = 'stroke="#4d5553" stroke-width="1.6"';
+  const art = part === "back"
+    ? `<path d="M10 7 Q50 -1 90 7 L88 11 H12Z" fill="${c}" ${line}/>
+       <path d="M16 11 V60 M84 11 V60" ${line} stroke-linecap="round"/>`
+    : `<path d="M6 60 H90 Q96 60 96 66 V74 Q96 78 92 78 H8 Q4 78 4 74 V64 Q4 60 6 60Z" fill="#fbfaf6" ${line}/>
+       <rect x="8" y="64" width="84" height="4" rx="2" fill="${c}"/>
+       <circle cx="24" cy="80" r="8" fill="#2b2f2e"/><circle cx="76" cy="80" r="8" fill="#2b2f2e"/>
+       <circle cx="24" cy="80" r="3" fill="#c9cdcb"/><circle cx="76" cy="80" r="3" fill="#c9cdcb"/>`;
+  return `<svg viewBox="0 0 100 90" aria-hidden="true">${art}</svg>`;
+}
+
+// Tapping a pin jumps to that resident's line in "What happened" (or their card if they didn't speak).
+function showLine(id) {
+  const target = document.querySelector(`#dialogue li[data-id="${id}"]`) || $("card-" + id);
+  if (!target) return;
+  const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  target.scrollIntoView({ behavior: still ? "auto" : "smooth", block: "center" });
+  target.classList.remove("flash"); void target.offsetWidth; target.classList.add("flash");
+}
+
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+let driveGen = 0;
+
+function pointAlong(path, dist) {
+  for (let i = 1; i < path.length; i++) {
+    const a = path[i - 1], b = path[i], seg = Math.hypot(b.x - a.x, b.y - a.y);
+    if (dist <= seg || i === path.length - 1) {
+      const f = seg ? Math.min(1, dist / seg) : 1;
+      return { x: a.x + (b.x - a.x) * f, y: a.y + (b.y - a.y) * f, dx: b.x - a.x };
+    }
+    dist -= seg;
+  }
+  const last = path[path.length - 1];
+  return { x: last.x, y: last.y, dx: 0 };
+}
+
+// Lay out the scene for the current tick. With fromIdx (the tick we came from, one step away),
+// residents who changed places drive there along the roads first, and the bubbles appear on arrival.
+function layoutScene(animate, fromIdx) {
   const scene = $("scene");
   const W = scene.clientWidth, H = scene.clientHeight;
   if (!W || !H) return;
+  const gen = ++driveGen;
   const t = data.ticks[idx];
   const pts = standPoints(data.world, t, W, H);
-  placeAvatars(pts, W, H);
-  layoutBubbles(data.world, t, animate, pts, W, H);
+  const finish = (bob) => {
+    document.querySelectorAll(".avatar.driving").forEach(a => a.classList.remove("driving", "west"));
+    placeAvatars(pts, W, H);
+    for (const id of bob) { const a = $("av-" + id); a.classList.remove("arrive"); void a.offsetWidth; a.classList.add("arrive"); }
+    layoutBubbles(data.world, t, animate, pts, W, H);
+  };
+  if (fromIdx == null || reducedMotion.matches) return finish([]);
+  const before = data.ticks[fromIdx];
+  const prevPts = standPoints(data.world, before, W, H);
+  const pw = pinWidth(W);
+  const trips = Object.keys(pts).filter(id => prevPts[id] && Math.hypot(pts[id].x - prevPts[id].x, pts[id].y - prevPts[id].y) > 3).map(id => {
+    const path = routeBetween(prevPts[id], before.positions[id], pts[id], t.positions[id], W, H);
+    let len = 0;
+    for (let i = 1; i < path.length; i++) len += Math.hypot(path[i].x - path[i - 1].x, path[i].y - path[i - 1].y);
+    return { id, path, len, cart: len > pw * 0.9 };
+  });
+  if (!trips.length) return finish([]);
+  $("bubbles").replaceChildren();
+  placeAvatars(prevPts, W, H);
+  const longest = Math.max(...trips.map(r => r.len));
+  const dur = Math.min(2600, Math.max(1100, 500 + longest / Math.max(W, H) * 2200));
+  const start = performance.now();
+  const ease = (x) => x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2;
+  const frame = (now) => {
+    if (gen !== driveGen) return;   // a newer tick (or a resize) took over
+    const k = Math.min(1, (now - start) / dur);
+    for (const r of trips) {
+      const p = pointAlong(r.path, ease(k) * r.len);
+      const a = $("av-" + r.id);
+      a.style.left = (p.x / W * 100) + "%";
+      a.style.top = (p.y / H * 100) + "%";
+      a.style.zIndex = Math.round(p.y);
+      if (r.cart) { a.classList.add("driving"); if (Math.abs(p.dx) > 0.5) a.classList.toggle("west", p.dx < 0); }
+    }
+    if (k < 1) requestAnimationFrame(frame); else finish(trips.map(r => r.id));
+  };
+  requestAnimationFrame(frame);
 }
 
 function targetName(world, target) {
@@ -882,6 +1019,7 @@ function renderPeople(world, t) {
     const imp = r ? r.importance_rating : 0;
     const card = document.createElement("article");
     card.className = "person";
+    card.id = "card-" + id;
     card.style.setProperty("--c", `var(--${id})`);
     card.innerHTML = `
       <div class="face">${pinImg(id)}</div>
@@ -903,6 +1041,7 @@ function renderStory(t) {
   $("dialogue").replaceChildren(...said.map(([id, r]) => {
     const li = document.createElement("li");
     li.style.setProperty("--c", `var(--${id})`);
+    li.dataset.id = id;
     li.innerHTML = `<span class="who"></span><span class="line"></span>`;
     li.querySelector(".who").textContent = `${first(data.world, id)} → ${targetName(data.world, r.action.parameters.target)}`;
     li.querySelector(".line").textContent = `“${r.action.parameters.content}”`;
@@ -944,15 +1083,17 @@ function renderBoard(world) {
   }));
 }
 
-function go(i) {
+function go(i, step) {
+  const from = idx;
   idx = Math.max(0, Math.min(data.ticks.length - 1, i));
+  const drive = step && !firstPaint && Math.abs(idx - from) === 1 ? from : null;
   const t = data.ticks[idx];
   $("tickno").textContent = `Tick ${t.tick}`;
   $("when").textContent = `${t.simulation_time} · ${t.weather}`;
   $("slider").value = idx;
   $("prev").disabled = idx === 0;
   $("next").disabled = idx === data.ticks.length - 1;
-  layoutScene(!firstPaint);
+  layoutScene(!firstPaint, drive);
   firstPaint = false;
   renderPeople(data.world, t);
   renderStory(t);
@@ -965,8 +1106,8 @@ function togglePlay() {
   $("play").textContent = "Pause";
   timer = setInterval(() => {
     if (idx >= data.ticks.length - 1) { togglePlay(); return; }
-    go(idx + 1);
-  }, 3600);
+    go(idx + 1, true);
+  }, 4200);
 }
 
 loadData().then(d => {
@@ -985,14 +1126,14 @@ loadData().then(d => {
   $("thanks-close").onclick = () => { $("thanks").hidden = true; };
   document.addEventListener("click", () => document.querySelectorAll(".bubble.open").forEach(o => o._close && o._close()));
   $("prev-toggle").onclick = () => setCollapsed(!$("previously").classList.contains("collapsed"));
-  $("prev").onclick = () => go(idx - 1);
-  $("next").onclick = () => go(idx + 1);
+  $("prev").onclick = () => go(idx - 1, true);
+  $("next").onclick = () => go(idx + 1, true);
   $("slider").oninput = e => go(+e.target.value);
   $("play").onclick = togglePlay;
   document.addEventListener("keydown", e => {
     if (e.target.tagName === "INPUT") return;
-    if (e.key === "ArrowLeft") go(idx - 1);
-    if (e.key === "ArrowRight") go(idx + 1);
+    if (e.key === "ArrowLeft") go(idx - 1, true);
+    if (e.key === "ArrowRight") go(idx + 1, true);
   });
   go(d.live ? d.ticks.length - 1 : 0);
   if (d.live) setInterval(poll, 60000);
