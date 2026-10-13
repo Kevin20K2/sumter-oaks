@@ -1,17 +1,26 @@
 {
-  "tick": 12,
-  "time": "2026-10-13T08:17",
+  "tick": 13,
+  "time": "2026-10-13T09:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
-    "donna": [],
-    "hal": [],
-    "rosa": []
+    "gary": [
+      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+    ],
+    "donna": [
+      "You arrived at Magnolia Loop (the street).",
+      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+    ],
+    "hal": [
+      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+    ],
+    "rosa": [
+      "The cloud over Magnolia Loop suddenly swells, bright and white, as if someone just topped it up."
+    ]
   },
   "memories": {
     "gary": [
@@ -154,6 +163,11 @@
         "tick": 11,
         "text": "I (gary workbench): Cut and strip wire, bench-test the marine speaker with a 12V supply",
         "importance": 5
+      },
+      {
+        "tick": 12,
+        "text": "I (gary workbench): Bench-test the LED rope light strings on the 12V supply and sketch the wiring plan",
+        "importance": 4
       }
     ],
     "donna": [
@@ -286,6 +300,16 @@
         "tick": 11,
         "text": "I (donna pickleball bag): Check the paddles and balls and pack the spare paddle for Gary's practice sessions",
         "importance": 5
+      },
+      {
+        "tick": 12,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 12,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       }
     ],
     "hal": [
@@ -393,6 +417,11 @@
         "tick": 11,
         "text": "I (hal violation notebook): Review and finalize dated entries on Gary's cart modifications and Donna's flamingo count, including Gary's admission about filing paperwork after",
         "importance": 5
+      },
+      {
+        "tick": 12,
+        "text": "I (hal binoculars): Scan the street to confirm Gary's cart modifications and count Donna's flamingos",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -515,6 +544,11 @@
         "tick": 11,
         "text": "I (rosa shift schedule): Pick an evening with no per-diem shift and block it off for the welcome dinner",
         "importance": 6
+      },
+      {
+        "tick": 12,
+        "text": "I (rosa kitchen): Plan the dinner menu and check what groceries I need for four people",
+        "importance": 5
       }
     ]
   },
@@ -545,10 +579,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "optimistic",
-    "hal": "dutiful",
-    "rosa": "determined"
+    "gary": "focused",
+    "donna": "determined",
+    "hal": "resolute",
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -603,18 +637,24 @@
       "time": "Tuesday, October 13, 8:17 AM",
       "story": "At 8:17 on a humid, hazy Tuesday morning in Sumter Oaks, Gary is at his workbench stripping wire and bench-testing a marine speaker he plans to bolt onto his golf cart. Across the way, Donna is checking her paddles and balls and packing a spare paddle for Gary's upcoming practice sessions, optimistic as ever. Hal is sitting at his kitchen table with his violation notebook, finalizing dated entries on Gary's cart modifications and Donna's flamingo count, including Gary's grudging admission that he tends to file paperwork after the fact. Meanwhile, Rosa is scanning her shift schedule at home, hunting for an evening free of per-diem duty so she can block it off for the welcome dinner.",
       "dialogue": []
+    },
+    {
+      "tick": 12,
+      "time": "Tuesday, October 13, 9:17 AM",
+      "story": "At 9:17 on this humid, hazy Tuesday morning in Sumter Oaks, Gary is bench-testing LED rope light strings at his workbench while sketching out his wiring plan. Donna is heading down Magnolia Loop with a determined stride, and Hal is watching the street through his binoculars to keep tabs on Gary's cart modifications and count Donna's flamingos. Meanwhile, Rosa is at her kitchen counter, planning tonight's dinner menu and jotting down the groceries she'll need for four.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 0.28522,
+    "total_usd": 0.31523,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
         "usd": 0.22284
       },
       "2026-10-13": {
-        "ticks": 2,
-        "usd": 0.06238
+        "ticks": 3,
+        "usd": 0.09239
       }
     }
   },
@@ -626,12 +666,13 @@
     0.03068,
     0.03056,
     0.03162,
-    0.03076
+    0.03076,
+    0.03001
   ],
   "fund": {
-    "gross_usd": 10.0,
-    "payments": 2,
-    "supporters": 2,
+    "gross_usd": 15.0,
+    "payments": 3,
+    "supporters": 3,
     "monthly_supporters": 0,
     "options": [
       {
