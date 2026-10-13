@@ -1,24 +1,27 @@
 {
-  "tick": 17,
-  "time": "2026-10-13T13:17",
+  "tick": 18,
+  "time": "2026-10-13T14:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "garys_house",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "rosa": "rec_center"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Take your time, Gary, and don't you dare apologize for being terrible. Everybody's terrible for the first week, and I've got the spare paddle and a cooler of iced tea in the cart. Soldering iron off, sneakers on, and I'll drive.”"
+      "Donna headed to Magnolia Loop (the street)."
     ],
     "donna": [
-      "Gary said to Donna: “That's a deal, Donna. Book it for tomorrow, I'll have the cart lights sorted by then, and I'll bring the sneakers. Save me a spot where I can do the least damage.”"
+      "Gary (gary workbench): Unplug the soldering iron, set the cart wiring aside, and grab my sneakers",
+      "You arrived at Magnolia Loop (the street)."
     ],
     "hal": [
-      "Rosa said to Hal: “Glad you're coming, Hal. Saturday at six at my place. Bring nothing but yourself and an appetite, I've got the food covered, and the rulebook can stay in your pocket.”"
+      "Rosa headed to Rec Center.",
+      "Donna just arrived."
     ],
     "rosa": [
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total for the record"
+      "Hal (street bulletin board): Read the posted notices, including Rosa's dinner note",
+      "You arrived at Rec Center."
     ]
   },
   "memories": {
@@ -207,6 +210,16 @@
         "tick": 16,
         "text": "Donna said to Gary: “Take your time, Gary, and don't you dare apologize for being terrible. Everybody's terrible for the first week, and I've got the spare paddle and a cooler of iced tea in the cart. Soldering iron off, sneakers on, and I'll drive.”",
         "importance": 5
+      },
+      {
+        "tick": 17,
+        "text": "I (gary workbench): Unplug the soldering iron, set the cart wiring aside, and grab my sneakers",
+        "importance": 4
+      },
+      {
+        "tick": 17,
+        "text": "Donna headed to Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "donna": [
@@ -389,6 +402,21 @@
         "tick": 16,
         "text": "Gary said to Donna: “That's a deal, Donna. Book it for tomorrow, I'll have the cart lights sorted by then, and I'll bring the sneakers. Save me a spot where I can do the least damage.”",
         "importance": 6
+      },
+      {
+        "tick": 17,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 17,
+        "text": "Gary (gary workbench): Unplug the soldering iron, set the cart wiring aside, and grab my sneakers",
+        "importance": 6
+      },
+      {
+        "tick": 17,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "hal": [
@@ -541,6 +569,21 @@
         "tick": 16,
         "text": "Rosa said to Hal: “Glad you're coming, Hal. Saturday at six at my place. Bring nothing but yourself and an appetite, I've got the food covered, and the rulebook can stay in your pocket.”",
         "importance": 5
+      },
+      {
+        "tick": 17,
+        "text": "I (street bulletin board): Read the posted notices, including Rosa's dinner note",
+        "importance": 3
+      },
+      {
+        "tick": 17,
+        "text": "Rosa headed to Rec Center.",
+        "importance": 3
+      },
+      {
+        "tick": 17,
+        "text": "Donna just arrived.",
+        "importance": 3
       }
     ],
     "rosa": [
@@ -708,6 +751,21 @@
         "tick": 16,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total for the record",
         "importance": 6
+      },
+      {
+        "tick": 17,
+        "text": "I headed to Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 17,
+        "text": "Hal (street bulletin board): Read the posted notices, including Rosa's dinner note",
+        "importance": 6
+      },
+      {
+        "tick": 17,
+        "text": "You arrived at Rec Center.",
+        "importance": 6
       }
     ]
   },
@@ -746,10 +804,10 @@
     ]
   },
   "emotions": {
-    "gary": "warm",
-    "donna": "triumphant",
-    "hal": "dutiful",
-    "rosa": "optimistic"
+    "gary": "warm, a little nervous",
+    "donna": "optimistic",
+    "hal": "content",
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -798,17 +856,24 @@
       "text": "Hal Weems: Double-check both filings are logged with dates and violation codes L-01 and L-02"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 17,
+      "time": "Tuesday, October 13, 2:17 PM",
+      "story": "At 2:17 on a rainy Tuesday in Sumter Oaks, Gary is unplugging his soldering iron and setting aside his golf cart wiring at the workbench in his house, a little nervous and clearly hoping to head out soon. Donna, feeling upbeat, is making her way out to Magnolia Loop, where Hal is content as he reads the notices on the street bulletin board, including Rosa's dinner invitation. Rosa, meanwhile, is determined and already on her way to the Rec Center.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 0.44175,
+    "total_usd": 0.47505,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
         "usd": 0.22284
       },
       "2026-10-13": {
-        "ticks": 7,
-        "usd": 0.21891
+        "ticks": 8,
+        "usd": 0.25221
       }
     }
   },
@@ -825,7 +890,8 @@
     0.03089,
     0.03023,
     0.03186,
-    0.03354
+    0.03354,
+    0.0333
   ],
   "fund": {
     "gross_usd": 20.0,

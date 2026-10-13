@@ -1,0 +1,118 @@
+{
+  "tick": 17,
+  "simulation_time": "Tuesday, October 13, 2:17 PM",
+  "weather": "Afternoon shower, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 2:17 on a rainy Tuesday in Sumter Oaks, Gary is unplugging his soldering iron and setting aside his golf cart wiring at the workbench in his house, a little nervous and clearly hoping to head out soon. Donna, feeling upbeat, is making her way out to Magnolia Loop, where Hal is content as he reads the notices on the street bulletin board, including Rosa's dinner invitation. Rosa, meanwhile, is determined and already on her way to the Rec Center.",
+  "events": [
+    "Gary (gary workbench): Unplug the soldering iron, set the cart wiring aside, and grab my sneakers",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (street bulletin board): Read the posted notices, including Rosa's dinner note",
+    "Rosa headed to Rec Center."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just told me to take my time and she'll drive, and I already said yes to the deal at tick 16. No need to repeat myself. The soldering iron is still plugged in on the workbench, and I'm not walking out the door with it hot. Unplug it first, then get my sneakers. The cart wiring can wait; the parade sign-ups don't close until the end of the month, and a morning on the court with Donna matters more than a perfect circuit. Besides, I keep dodging the permit and speaker guilt, and tidying up my bench feels like a small step toward doing right.",
+      "emotional_state": "warm, a little nervous",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Unplug the soldering iron, set the cart wiring aside, and grab my sneakers"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary already agreed to tomorrow's session and said he needs two minutes for his sneakers. I shouldn't keep asking or repeat the invite. The next step toward my goal is to actually book the court, but I can't do that from Gary's house. L-05 caps reservations at 2 hours, and I only need an hour, so I'll book the 8 AM slot at the rec center and get my paddles ready. Rain is falling anyway, so there's no reason to drag Gary out today. I'll leave him to finish his cart lights and head off to lock in the reservation.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to book the pickleball court for tomorrow morning at eight and let Gary get back to his cart."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa just confirmed Saturday at six and told me to leave the rulebook in my pocket. That conversation is finished, and answering again would only repeat myself. I've already counted the flamingos once and I'm tired of keeping score on the neighbors. The honest move is to stay on duty and check the street bulletin board, which is the official notice channel and where Rosa pinned her dinner note. Gary's wiring and the committee filing still bother me, but filing happens at Town Hall, so for now I'll read the notices and see whether anyone has posted anything about the carts or the parade.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the posted notices, including Rosa's dinner note"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal is the only one here, and he's already said yes to Saturday at six. I've told him twice, so I shouldn't repeat the invitation. He's counting flamingos, which is Hal being Hal, and Donna's flock is probably over L-02's limit of three. I want all three neighbors at the same table, so I shouldn't poke at a fight before the dinner. Gary and Donna are the ones I haven't locked in yet, and the note is already pinned. Best move is to leave Hal to his count and go find Donna, since the rec center is where she was heading this morning, and ask her in person.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Hal's confirmed and the note is up. Heading to the rec center to invite Donna in person before the shower sets in."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0333,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10444,
+        "output_tokens": 1229,
+        "usd": 0.03318
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 384,
+        "output_tokens": 171,
+        "usd": 0.00012
+      }
+    }
+  }
+}
