@@ -1,6 +1,6 @@
 {
-  "tick": 11,
-  "time": "2026-10-13T07:17",
+  "tick": 12,
+  "time": "2026-10-13T08:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -149,6 +149,11 @@
         "tick": 10,
         "text": "I (gary workbench): Lay out the marine speaker and LED rope light and start planning the wiring",
         "importance": 5
+      },
+      {
+        "tick": 11,
+        "text": "I (gary workbench): Cut and strip wire, bench-test the marine speaker with a 12V supply",
+        "importance": 5
       }
     ],
     "donna": [
@@ -276,6 +281,11 @@
         "tick": 10,
         "text": "I (donna club calendar): Pencil in Saturday 8 AM doubles with Gary and plan a practice session or two before then",
         "importance": 5
+      },
+      {
+        "tick": 11,
+        "text": "I (donna pickleball bag): Check the paddles and balls and pack the spare paddle for Gary's practice sessions",
+        "importance": 5
       }
     ],
     "hal": [
@@ -377,6 +387,11 @@
       {
         "tick": 10,
         "text": "I (hal violation notebook): Write up dated notes on Gary's cart modifications and Donna's flamingo count for the review committee",
+        "importance": 5
+      },
+      {
+        "tick": 11,
+        "text": "I (hal violation notebook): Review and finalize dated entries on Gary's cart modifications and Donna's flamingo count, including Gary's admission about filing paperwork after",
         "importance": 5
       }
     ],
@@ -495,6 +510,11 @@
         "tick": 10,
         "text": "I (rosa shift schedule): Check my per-diem shifts to pick an open evening for the welcome dinner",
         "importance": 6
+      },
+      {
+        "tick": 11,
+        "text": "I (rosa shift schedule): Pick an evening with no per-diem shift and block it off for the welcome dinner",
+        "importance": 6
       }
     ]
   },
@@ -525,7 +545,7 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
+    "gary": "determined",
     "donna": "optimistic",
     "hal": "dutiful",
     "rosa": "determined"
@@ -577,17 +597,24 @@
       "text": "Hal Weems: Double-check both filings are logged with dates and violation codes L-01 and L-02"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 11,
+      "time": "Tuesday, October 13, 8:17 AM",
+      "story": "At 8:17 on a humid, hazy Tuesday morning in Sumter Oaks, Gary is at his workbench stripping wire and bench-testing a marine speaker he plans to bolt onto his golf cart. Across the way, Donna is checking her paddles and balls and packing a spare paddle for Gary's upcoming practice sessions, optimistic as ever. Hal is sitting at his kitchen table with his violation notebook, finalizing dated entries on Gary's cart modifications and Donna's flamingo count, including Gary's grudging admission that he tends to file paperwork after the fact. Meanwhile, Rosa is scanning her shift schedule at home, hunting for an evening free of per-diem duty so she can block it off for the welcome dinner.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 0.25446,
+    "total_usd": 0.28522,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
         "usd": 0.22284
       },
       "2026-10-13": {
-        "ticks": 1,
-        "usd": 0.03162
+        "ticks": 2,
+        "usd": 0.06238
       }
     }
   },
@@ -598,7 +625,8 @@
     0.03114,
     0.03068,
     0.03056,
-    0.03162
+    0.03162,
+    0.03076
   ],
   "fund": {
     "gross_usd": 10.0,

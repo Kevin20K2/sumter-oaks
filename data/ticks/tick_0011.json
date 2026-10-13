@@ -1,0 +1,118 @@
+{
+  "tick": 11,
+  "simulation_time": "Tuesday, October 13, 8:17 AM",
+  "weather": "Humid and hazy, 73°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on a humid, hazy Tuesday morning in Sumter Oaks, Gary is at his workbench stripping wire and bench-testing a marine speaker he plans to bolt onto his golf cart. Across the way, Donna is checking her paddles and balls and packing a spare paddle for Gary's upcoming practice sessions, optimistic as ever. Hal is sitting at his kitchen table with his violation notebook, finalizing dated entries on Gary's cart modifications and Donna's flamingo count, including Gary's grudging admission that he tends to file paperwork after the fact. Meanwhile, Rosa is scanning her shift schedule at home, hunting for an evening free of per-diem duty so she can block it off for the welcome dinner.",
+  "events": [
+    "Gary (gary workbench): Cut and strip wire, bench-test the marine speaker with a 12V supply",
+    "Donna (donna pickleball bag): Check the paddles and balls and pack the spare paddle for Gary's practice sessions",
+    "Hal (hal violation notebook): Review and finalize dated entries on Gary's cart modifications and Donna's flamingo count, including Gary's admission about filing paperwork after",
+    "Rosa (rosa shift schedule): Pick an evening with no per-diem shift and block it off for the welcome dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Last tick I laid out the marine speaker and LED rope light at the workbench and started planning the wiring. It's 8:17 AM, nobody's around, and the garage is where I feel most like myself. Time to actually get my hands on the build and keep making progress. I need to remember that exterior cart mods visible from the street need Architectural Review approval (L-01). The LED rope on the outside is the part that needs paperwork, so I'll start with the speaker wiring, keep the cart in the garage, and sort out the review before anything goes on the street. Parade sign-ups close at month's end, so there's no time to waste.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Cut and strip wire, bench-test the marine speaker with a 12V supply"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary's locked in for Saturday at eight, and the ladder board and my calendar both say so. Nobody's nearby, so it's a quiet Tuesday morning at home. The smart move for my ranking is to get him some practice before Saturday, or he'll be a liability on court. My pickleball bag is right here, so I'll check my gear and make sure the spare paddle, balls, and extra grip tape are ready for a practice session or two with Gary. Then I can track him down.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Check the paddles and balls and pack the spare paddle for Gary's practice sessions"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm back home at Hal's House with the violation notebook right here. I already wrote up dated notes at Town Hall last tick, but the notebook is where the record lives, and I should make sure the entries are complete before I file anything. Gary's cart wiring and Donna's flamingo count both need to be documented properly so the committee can't wave it off. I'll also note that Gary admitted out loud he's wiring first and filing paperwork after, which is a plain L-01 problem. Still, Gary's honesty counts for something, and I'm not eager to be cruel about it. I'll log the facts, nothing more, and keep it fair.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Review and finalize dated entries on Gary's cart modifications and Donna's flamingo count, including Gary's admission about filing paperwork after"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm back home after posting the invitation and checking the kiosk. The dinner only works if I know which evening I'm free, and the shift schedule is right here in the house. I checked it last tick, but I haven't actually chosen a date. Gary, Donna, and Hal aren't around to talk to, so the useful move is to settle the evening and plan the menu with what I have. The kitchen can wait until I know the night, so I'll lock in the date first.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Pick an evening with no per-diem shift and block it off for the welcome dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03076,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9286,
+        "output_tokens": 1202,
+        "usd": 0.03059
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 445,
+        "output_tokens": 254,
+        "usd": 0.00017
+      }
+    }
+  }
+}
