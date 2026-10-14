@@ -1,6 +1,6 @@
 {
-  "tick": 31,
-  "time": "2026-10-14T10:17",
+  "tick": 32,
+  "time": "2026-10-14T11:17",
   "positions": {
     "gary": "magnolia_loop",
     "donna": "magnolia_loop",
@@ -9,16 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna just arrived.",
-      "Hal just arrived."
+      "Donna said to Hal: “Morning, Hal! I know you've got your eye on my flamingos, so I'll save you the trouble. I'll do a quick count and trim the flock down to three so we're square with the ornament rule. No violation notice needed.”",
+      "Hal said to Donna: “Donna, I counted your flamingos from the street this morning. L-02 says three ornaments, and you're well past that. Thin the flock before I have to write it up, and I'd rather not.”"
     ],
     "donna": [
-      "You arrived at Magnolia Loop (the street).",
-      "Hal just arrived."
+      "Gary said to Donna: “Tomorrow morning works, Donna, put me down for the court and I'll bring my worst backhand. Today I've got to finish the cart wiring and get that Architectural Review form filed. Either of you know where they keep the blanks?”",
+      "Hal said to Donna: “Donna, I counted your flamingos from the street this morning. L-02 says three ornaments, and you're well past that. Thin the flock before I have to write it up, and I'd rather not.”"
     ],
     "hal": [
-      "You arrived at Magnolia Loop (the street).",
-      "Donna just arrived."
+      "Gary said to Donna: “Tomorrow morning works, Donna, put me down for the court and I'll bring my worst backhand. Today I've got to finish the cart wiring and get that Architectural Review form filed. Either of you know where they keep the blanks?”",
+      "Donna said to Hal: “Morning, Hal! I know you've got your eye on my flamingos, so I'll save you the trouble. I'll do a quick count and trim the flock down to three so we're square with the ornament rule. No violation notice needed.”"
     ],
     "rosa": []
   },
@@ -322,6 +322,21 @@
       {
         "tick": 30,
         "text": "Hal just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 31,
+        "text": "I said to Donna: “Tomorrow morning works, Donna, put me down for the court and I'll bring my worst backhand. Today I've got to finish the cart wiring and get that Architectural Review form filed. Either of you know where they keep the blanks?”",
+        "importance": 5
+      },
+      {
+        "tick": 31,
+        "text": "Donna said to Hal: “Morning, Hal! I know you've got your eye on my flamingos, so I'll save you the trouble. I'll do a quick count and trim the flock down to three so we're square with the ornament rule. No violation notice needed.”",
+        "importance": 5
+      },
+      {
+        "tick": 31,
+        "text": "Hal said to Donna: “Donna, I counted your flamingos from the street this morning. L-02 says three ornaments, and you're well past that. Thin the flock before I have to write it up, and I'd rather not.”",
         "importance": 5
       }
     ],
@@ -650,6 +665,21 @@
         "tick": 30,
         "text": "Hal just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 31,
+        "text": "I said to Hal: “Morning, Hal! I know you've got your eye on my flamingos, so I'll save you the trouble. I'll do a quick count and trim the flock down to three so we're square with the ornament rule. No violation notice needed.”",
+        "importance": 4
+      },
+      {
+        "tick": 31,
+        "text": "Gary said to Donna: “Tomorrow morning works, Donna, put me down for the court and I'll bring my worst backhand. Today I've got to finish the cart wiring and get that Architectural Review form filed. Either of you know where they keep the blanks?”",
+        "importance": 4
+      },
+      {
+        "tick": 31,
+        "text": "Hal said to Donna: “Donna, I counted your flamingos from the street this morning. L-02 says three ornaments, and you're well past that. Thin the flock before I have to write it up, and I'd rather not.”",
+        "importance": 4
       }
     ],
     "hal": [
@@ -916,6 +946,21 @@
       {
         "tick": 30,
         "text": "Donna just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 31,
+        "text": "I said to Donna: “Donna, I counted your flamingos from the street this morning. L-02 says three ornaments, and you're well past that. Thin the flock before I have to write it up, and I'd rather not.”",
+        "importance": 5
+      },
+      {
+        "tick": 31,
+        "text": "Gary said to Donna: “Tomorrow morning works, Donna, put me down for the court and I'll bring my worst backhand. Today I've got to finish the cart wiring and get that Architectural Review form filed. Either of you know where they keep the blanks?”",
+        "importance": 5
+      },
+      {
+        "tick": 31,
+        "text": "Donna said to Hal: “Morning, Hal! I know you've got your eye on my flamingos, so I'll save you the trouble. I'll do a quick count and trim the flock down to three so we're square with the ornament rule. No violation notice needed.”",
         "importance": 5
       }
     ],
@@ -1194,6 +1239,11 @@
         "tick": 30,
         "text": "I (rosa dining table): Count chairs, set out placemats, and lock in the seating for four guests",
         "importance": 5
+      },
+      {
+        "tick": 31,
+        "text": "I (rosa kitchen): Finalize the grocery list with quantities for four and pick which day to shop",
+        "importance": 4
       }
     ]
   },
@@ -1240,9 +1290,9 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "optimistic",
-    "hal": "resolute",
+    "gary": "optimistic",
+    "donna": "cheerful",
+    "hal": "wary but fair",
     "rosa": "optimistic"
   },
   "laws": [
@@ -1312,10 +1362,20 @@
       "time": "Wednesday, October 14, 10:17 AM",
       "story": "Gary is standing at the bulletin board on Magnolia Loop, determined to find the Architectural Review form for cart modifications before the morning is out. Donna and Hal are both heading down to the street, optimistic and resolute, though it isn't yet clear whether they're there to help Gary or to argue about his paperwork. Meanwhile, Rosa is at her dining table on a pleasant October morning, counting chairs and setting out placemats for four guests she's hoping will show up for lunch.",
       "dialogue": []
+    },
+    {
+      "tick": 31,
+      "time": "Wednesday, October 14, 11:17 AM",
+      "story": "On Magnolia Loop on this partly cloudy Wednesday, Gary is hunting for the Architectural Review blanks while he finishes wiring his golf cart, and he promises Donna a tomorrow morning tennis match. Donna cheerfully offers to trim her flamingo flock to three, but Hal, wary yet fair, reminds her of the ornament rule and asks her to thin the flock before he has to write a violation notice. Meanwhile, in her kitchen, Rosa is optimistically finalizing a grocery list for four and deciding which day to go shopping.",
+      "dialogue": [
+        "Gary said to Donna: “Tomorrow morning works, Donna, put me down for the court and I'll bring my worst backhand. Today I've got to finish the cart wiring and get that Architectural Review form filed. Either of you know where they keep the blanks?”",
+        "Donna said to Hal: “Morning, Hal! I know you've got your eye on my flamingos, so I'll save you the trouble. I'll do a quick count and trim the flock down to three so we're square with the ornament rule. No violation notice needed.”",
+        "Hal said to Donna: “Donna, I counted your flamingos from the street this morning. L-02 says three ornaments, and you're well past that. Thin the flock before I have to write it up, and I'd rather not.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 0.8893,
+    "total_usd": 0.9209,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -1326,13 +1386,12 @@
         "usd": 0.54045
       },
       "2026-10-14": {
-        "ticks": 4,
-        "usd": 0.12601
+        "ticks": 5,
+        "usd": 0.15761
       }
     }
   },
   "recent_tick_costs": [
-    0.03114,
     0.03068,
     0.03056,
     0.03162,
@@ -1355,7 +1414,8 @@
     0.03104,
     0.03169,
     0.03221,
-    0.03107
+    0.03107,
+    0.0316
   ],
   "fund": {
     "gross_usd": 0.0,
