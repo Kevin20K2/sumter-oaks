@@ -1,14 +1,16 @@
 {
-  "tick": 29,
-  "time": "2026-10-14T08:17",
+  "tick": 30,
+  "time": "2026-10-14T09:17",
   "positions": {
-    "gary": "garys_house",
+    "gary": "magnolia_loop",
     "donna": "donnas_house",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "donna": [],
     "hal": [],
     "rosa": []
@@ -289,6 +291,16 @@
         "tick": 28,
         "text": "I (gary golf cart): Check the rope light and speaker wiring, run a low-volume test",
         "importance": 5
+      },
+      {
+        "tick": 29,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 29,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "donna": [
@@ -596,6 +608,11 @@
         "tick": 28,
         "text": "I (donna pickleball bag): Pull out the spare paddle and set it aside for Gary",
         "importance": 5
+      },
+      {
+        "tick": 29,
+        "text": "I (donna club calendar): Pencil in Saturday 8 AM pickleball with Gary, then Rosa's dinner that evening",
+        "importance": 5
       }
     ],
     "hal": [
@@ -843,6 +860,11 @@
         "tick": 28,
         "text": "I (hal violation notebook): Flip through my notes on Gary's cart and Donna's flamingos and see if they're real violations",
         "importance": 5
+      },
+      {
+        "tick": 29,
+        "text": "I (hal binoculars): Scan Magnolia Loop and count the flamingos and cart modifications visible from the street",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -1110,6 +1132,11 @@
         "tick": 28,
         "text": "I (rosa kitchen): Plan Saturday's dinner menu and write the grocery list",
         "importance": 6
+      },
+      {
+        "tick": 29,
+        "text": "I (rosa dining table): Check the table size and sketch the seating plan for Saturday's dinner",
+        "importance": 6
       }
     ]
   },
@@ -1157,8 +1184,8 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "optimistic",
-    "hal": "contemplative",
+    "donna": "energized",
+    "hal": "reflective",
     "rosa": "optimistic"
   },
   "laws": [
@@ -1216,9 +1243,16 @@
       "text": "Hal Weems: Amend my filing: note Donna has reduced visible flamingos to three, so L-02 follow-up is withdrawn; leave Gary's cart notice pending review"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 29,
+      "time": "Wednesday, October 14, 9:17 AM",
+      "story": "Gary is heading down Magnolia Loop in determined fashion while the morning sun warms the palmettos at 82 degrees. Donna is penciling a Saturday pickleball date with Gary into her club calendar, followed by Rosa's dinner that evening. Hal, reflective as ever, is scanning the street with his binoculars to count flamingos and golf cart modifications. Meanwhile, Rosa is measuring her dining table and sketching a seating plan, optimistic that Saturday will go off without a hitch.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 0.82602,
+    "total_usd": 0.85823,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -1229,13 +1263,12 @@
         "usd": 0.54045
       },
       "2026-10-14": {
-        "ticks": 2,
-        "usd": 0.06273
+        "ticks": 3,
+        "usd": 0.09494
       }
     }
   },
   "recent_tick_costs": [
-    0.03069,
     0.03066,
     0.03114,
     0.03068,
@@ -1258,7 +1291,8 @@
     0.03101,
     0.03157,
     0.03104,
-    0.03169
+    0.03169,
+    0.03221
   ],
   "fund": {
     "gross_usd": 0.0,

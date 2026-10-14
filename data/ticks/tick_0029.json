@@ -1,0 +1,118 @@
+{
+  "tick": 29,
+  "simulation_time": "Wednesday, October 14, 9:17 AM",
+  "weather": "Partly cloudy, 82°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is heading down Magnolia Loop in determined fashion while the morning sun warms the palmettos at 82 degrees. Donna is penciling a Saturday pickleball date with Gary into her club calendar, followed by Rosa's dinner that evening. Hal, reflective as ever, is scanning the street with his binoculars to count flamingos and golf cart modifications. Meanwhile, Rosa is measuring her dining table and sketching a seating plan, optimistic that Saturday will go off without a hitch.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Donna (donna club calendar): Pencil in Saturday 8 AM pickleball with Gary, then Rosa's dinner that evening",
+    "Hal (hal binoculars): Scan Magnolia Loop and count the flamingos and cart modifications visible from the street",
+    "Rosa (rosa dining table): Check the table size and sketch the seating plan for Saturday's dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 9:17 AM Wednesday and I'm alone in the garage. I've soldered the rope light and speaker wiring and already checked the wiring and tried a low-volume test over the last few ticks, so I shouldn't just repeat the same thing. But I've got a nagging promise: I told myself I'd file the Architectural Review form before Saturday, since L-01 says visible cart modifications need approval. Lights and a 200-watt speaker bolted to the cart are plainly visible from the street, and L-03 means no amplified sound after 10 PM, so my tests stay low and in the daytime. Donna and I are on the court at eight, so I need the paperwork done to keep my word. Town Hall is the place to handle it, but it isn't connected to my house directly. Magnolia Loop is the connector, so I should head out to the street and then on to Town Hall. That moves my goal forward instead of tinkering in circles.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Wiring's done and tested low-volume, so I'm heading out toward Town Hall to file the Architectural Review form for the cart mods like I promised."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already pulled the spare paddle out of the bag for Gary, so the gear is handled. Nobody's in line-of-sight, and I've already invited Gary and accepted Rosa's dinner, so no one needs another pitch right now. The club calendar is the next useful thing: I should pencil in Saturday at eight for pickleball and Rosa's dinner that evening, and keep the court booking within the two-hour limit so nobody can gripe about it.",
+      "emotional_state": "energized",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Pencil in Saturday 8 AM pickleball with Gary, then Rosa's dinner that evening"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm back on my porch at 9:17 on a quiet Wednesday morning with nobody in sight. My memory says I already flipped through the violation notebook last tick and I'm starting to wonder if I'm keeping the peace or just keeping score. Rather than re-read the same notes, I'll use the binoculars for an honest look down Magnolia Loop. Gary's cart and Donna's flamingos need a real count against L-01 and L-02 before I file anything. If the count comes up short, I'd rather know that than embarrass myself in front of the committee.",
+      "emotional_state": "reflective",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Magnolia Loop and count the flamingos and cart modifications visible from the street"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary, Donna, and Hal have all said yes, and the menu and grocery list are already written. Nobody is around, so the useful next step is to use the dining table to figure out Saturday's seating and timing. Pickleball is at eight, so dinner should land in the evening, and I want all three of them seated where they'll actually talk to each other.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Check the table size and sketch the seating plan for Saturday's dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03221,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9815,
+        "output_tokens": 1245,
+        "usd": 0.03208
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 408,
+        "output_tokens": 172,
+        "usd": 0.00013
+      }
+    }
+  }
+}
