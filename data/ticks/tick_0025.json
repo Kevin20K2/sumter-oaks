@@ -1,0 +1,116 @@
+{
+  "tick": 25,
+  "simulation_time": "Tuesday, October 13, 8:17 PM",
+  "weather": "Humid and hazy, 74°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "town_square",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On Tuesday evening in Sumter Oaks, Gary is bent over his workbench at home, carefully soldering rope light and speaker wiring for a low-volume test. Out on Magnolia Loop, cheerful Donna invites Rosa to cheer on her and Gary at Saturday's doubles match, while Rosa, hopeful, counters with a welcome dinner invitation that comes with a promise of pickleball lessons. Meanwhile, contemplative Hal is over at the Town Square, leafing through the parade sign-up sheet to see which golf carts have entered.",
+  "events": [
+    "Gary (gary workbench): Finish soldering the rope light and speaker wiring, ready for a low-volume test",
+    "Hal (parade signup table): Look over the parade sign-up sheet to see who's entered carts"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 8:17 PM, so I've got under two hours before quiet hours at 10. Donna said to test at low volume tonight, and my memory shows I planned to finish wiring the rope lights and speaker. No one is around, the workbench is right here, so I'll get the wiring done. The Architectural Review form still has to be filed Thursday before Saturday's pickleball at eight, but tonight is for the circuit. Keep it low volume and don't annoy the neighbors.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Finish soldering the rope light and speaker wiring, ready for a low-volume test"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa just walked up on Magnolia Loop. Gary and I settled Saturday at eight, so I don't need to chase him tonight. Rosa is a neighbor and a natural person to keep in the social loop. A friendly greeting costs nothing, and I might mention the pickleball ladder and Saturday while I'm at it. Keep it short and warm, and not push too hard.",
+      "emotional_state": "cheerful",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, hi! Out for a walk in this humidity? Gary and I are playing doubles Saturday at eight, so come cheer us on if you're up."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's past eight in the evening, and I'm alone in the square. I've filed my notice on Gary's cart, and Donna sorted out her flamingos, so L-02 is closed. The ice cream stand is still open, and I already had my butter pecan earlier. The signup table for the parade is right here, and keeping an eye on who's signing up is part of the job. I've been keeping score on my neighbors a bit too much lately, so a quiet look at the sheet is about as much business as I need tonight.",
+      "emotional_state": "contemplative",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "parade_signup_table",
+          "content": "Look over the parade sign-up sheet to see who's entered carts"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Donna just walked up on Magnolia Loop, and I've been hunting for her all evening through the ladder board. This is my chance to invite her to the Saturday dinner. Hal already said yes, and I haven't asked Donna yet. I should keep it short, warm, and blunt, and tie in the pickleball since that's how I was trying to find her. Gary's invite can come after.",
+      "emotional_state": "hopeful",
+      "importance_rating": 7,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna, there you are. I've been reading that ladder board like tea leaves trying to track you down. I'm hosting a welcome dinner at my place Saturday, Hal's already coming, and I'd love you at the table. Then you can teach me pickleball and I'll feed you after."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03101,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9869,
+        "output_tokens": 1112,
+        "usd": 0.03086
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 517,
+        "output_tokens": 192,
+        "usd": 0.00015
+      }
+    }
+  }
+}
