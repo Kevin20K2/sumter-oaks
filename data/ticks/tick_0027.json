@@ -1,0 +1,118 @@
+{
+  "tick": 27,
+  "simulation_time": "Wednesday, October 14, 7:17 AM",
+  "weather": "Partly cloudy, 80°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a partly cloudy Wednesday morning in Sumter Oaks, Gary is in his garage testing rope lights and a speaker at low volume, focused as ever on his setup. Across the way, Donna is checking her pickleball bag and setting aside a spare paddle for Gary, optimistic about the week ahead. Hal sits on his porch with a cup of coffee, reflectively watching Magnolia Loop slowly wake up, while Rosa sorts through her shift schedule and blocks out Saturday for pickleball and dinner.",
+  "events": [
+    "Gary (gary golf cart): Power up the rope lights and speaker for a low-volume test inside the garage",
+    "Donna (donna pickleball bag): Check the bag and set aside the spare paddle for Gary",
+    "Hal (hal porch chair): Sit on the porch with my coffee and watch Magnolia Loop wake up",
+    "Rosa (rosa shift schedule): Check my shifts and block out Saturday for pickleball and the dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 7:17 AM, quiet hours are over, and nobody is around. My last tick I wasted trying to wait on a nonexistent object, so I should do something real. The wiring is soldered, so the next step is the low-volume test of the speaker and rope lights on the cart. Holiday lighting isn't legal until Thanksgiving, so I'll keep the test inside the garage, low volume, and still have to file the Architectural Review form Thursday like I promised Donna. Test first, then paperwork, then pickleball Saturday at eight.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Power up the rope lights and speaker for a low-volume test inside the garage"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's early Wednesday morning and I'm home alone. Saturday at eight is locked in with Gary, Rosa's dinner is confirmed in my head, and I promised Gary a spare paddle and practice sessions. Nobody's around to talk to, so the useful thing is to get organized: check my pickleball bag so the spare paddle is ready, and get those practice sessions sorted. The bag is the quickest way to move my goal forward.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Check the bag and set aside the spare paddle for Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Back home at 7:17 on a Wednesday morning. Nobody around. I've been lugging a grudge around for weeks, and my own reflections say I may be keeping score more than keeping the peace. Still, the notebook's the job, and the binoculars are right there. I'll sit on the porch chair a spell and look over Magnolia Loop with fresh eyes. If I see an actual violation, it goes in the book. If I see a neighbor out walking, maybe I'll say good morning instead of writing them up.",
+      "emotional_state": "reflective",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_porch_chair",
+          "content": "Sit on the porch with my coffee and watch Magnolia Loop wake up"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "All three neighbors have said yes: Hal, Donna, and Gary through Donna's doubles plan. I'm home alone at 7:17 AM Wednesday with Saturday's dinner days away. The shift schedule is the obvious next step, since I need to confirm I'm not on the floor Saturday and can fit the grocery run and cooking around my per-diem shifts. No one's around to talk to, and nothing more to ask anyone right now.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my shifts and block out Saturday for pickleball and the dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03104,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9940,
+        "output_tokens": 1103,
+        "usd": 0.03091
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 412,
+        "output_tokens": 185,
+        "usd": 0.00013
+      }
+    }
+  }
+}
