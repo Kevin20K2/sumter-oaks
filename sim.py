@@ -858,6 +858,16 @@ def run_tick(world, state, cfg, template, brain):
     index = load_json(index_path) if index_path.exists() else {"ticks": []}
     if name not in index["ticks"]:
         index["ticks"].append(name)
+    # per-tick date + filings so the viewer can fold old days without fetching every tick
+    meta = index.setdefault("meta", {})
+    for n in index["ticks"]:
+        if n not in meta and (TICKS / n).exists():
+            try:
+                old = load_json(TICKS / n)
+                meta[n] = {"time": old.get("simulation_time", ""), "matters": old.get("matters", [])}
+            except Exception:
+                pass
+    meta[name] = {"time": tick_doc["simulation_time"], "matters": new_matters}
     index["updated"] = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     save_json(index_path, index)
     LOGS.mkdir(parents=True, exist_ok=True)
