@@ -1,27 +1,27 @@
 {
-  "tick": 34,
-  "time": "2026-10-14T13:17",
+  "tick": 35,
+  "time": "2026-10-14T14:17",
   "positions": {
-    "gary": "town_square",
+    "gary": "town_hall",
     "donna": "magnolia_loop",
     "hal": "magnolia_loop",
-    "rosa": "rosas_house"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna (donna flamingo flock): Pull the extra flamingos and leave exactly three out front",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street to confirm it's three",
-      "You arrived at Town Square."
+      "You arrived at Town Hall."
     ],
     "donna": [
-      "Gary headed to Town Square.",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street to confirm it's three"
+      "Hal said to Donna: “Three flamingos visible from the street, Donna. That's L-02 squared away, and no notice needed. I appreciate you handling it without an argument.”",
+      "Rosa just arrived."
     ],
     "hal": [
-      "Gary headed to Town Square.",
-      "Donna (donna flamingo flock): Pull the extra flamingos and leave exactly three out front"
+      "Donna said to Hal: “Three flamingos, Hal, count 'em yourself. Thanks for being reasonable about it. Come Saturday you ought to swing by the courts at eight, Gary and I will be out there.”",
+      "Rosa just arrived."
     ],
-    "rosa": []
+    "rosa": [
+      "You arrived at Magnolia Loop (the street)."
+    ]
   },
   "memories": {
     "gary": [
@@ -373,6 +373,16 @@
       {
         "tick": 33,
         "text": "You arrived at Town Square.",
+        "importance": 6
+      },
+      {
+        "tick": 34,
+        "text": "I headed to Town Hall.",
+        "importance": 6
+      },
+      {
+        "tick": 34,
+        "text": "You arrived at Town Hall.",
         "importance": 6
       }
     ],
@@ -746,6 +756,21 @@
         "tick": 33,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street to confirm it's three",
         "importance": 4
+      },
+      {
+        "tick": 34,
+        "text": "I said to Hal: “Three flamingos, Hal, count 'em yourself. Thanks for being reasonable about it. Come Saturday you ought to swing by the courts at eight, Gary and I will be out there.”",
+        "importance": 4
+      },
+      {
+        "tick": 34,
+        "text": "Hal said to Donna: “Three flamingos visible from the street, Donna. That's L-02 squared away, and no notice needed. I appreciate you handling it without an argument.”",
+        "importance": 4
+      },
+      {
+        "tick": 34,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
@@ -1058,6 +1083,21 @@
         "tick": 33,
         "text": "Donna (donna flamingo flock): Pull the extra flamingos and leave exactly three out front",
         "importance": 4
+      },
+      {
+        "tick": 34,
+        "text": "I said to Donna: “Three flamingos visible from the street, Donna. That's L-02 squared away, and no notice needed. I appreciate you handling it without an argument.”",
+        "importance": 4
+      },
+      {
+        "tick": 34,
+        "text": "Donna said to Hal: “Three flamingos, Hal, count 'em yourself. Thanks for being reasonable about it. Come Saturday you ought to swing by the courts at eight, Gary and I will be out there.”",
+        "importance": 4
+      },
+      {
+        "tick": 34,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -1350,6 +1390,16 @@
         "tick": 33,
         "text": "I (rosa shift schedule): Lock in a shopping window between shifts and confirm Saturday is clear",
         "importance": 5
+      },
+      {
+        "tick": 34,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 34,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       }
     ]
   },
@@ -1397,8 +1447,8 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "cheerful",
-    "hal": "watchful",
+    "donna": "content",
+    "hal": "satisfied",
     "rosa": "determined"
   },
   "laws": [
@@ -1456,46 +1506,9 @@
       "text": "Hal Weems: Amend my filing: note Donna has reduced visible flamingos to three, so L-02 follow-up is withdrawn; leave Gary's cart notice pending review"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 29,
-      "time": "Wednesday, October 14, 9:17 AM",
-      "story": "Gary is heading down Magnolia Loop in determined fashion while the morning sun warms the palmettos at 82 degrees. Donna is penciling a Saturday pickleball date with Gary into her club calendar, followed by Rosa's dinner that evening. Hal, reflective as ever, is scanning the street with his binoculars to count flamingos and golf cart modifications. Meanwhile, Rosa is measuring her dining table and sketching a seating plan, optimistic that Saturday will go off without a hitch.",
-      "dialogue": []
-    },
-    {
-      "tick": 30,
-      "time": "Wednesday, October 14, 10:17 AM",
-      "story": "Gary is standing at the bulletin board on Magnolia Loop, determined to find the Architectural Review form for cart modifications before the morning is out. Donna and Hal are both heading down to the street, optimistic and resolute, though it isn't yet clear whether they're there to help Gary or to argue about his paperwork. Meanwhile, Rosa is at her dining table on a pleasant October morning, counting chairs and setting out placemats for four guests she's hoping will show up for lunch.",
-      "dialogue": []
-    },
-    {
-      "tick": 31,
-      "time": "Wednesday, October 14, 11:17 AM",
-      "story": "On Magnolia Loop on this partly cloudy Wednesday, Gary is hunting for the Architectural Review blanks while he finishes wiring his golf cart, and he promises Donna a tomorrow morning tennis match. Donna cheerfully offers to trim her flamingo flock to three, but Hal, wary yet fair, reminds her of the ornament rule and asks her to thin the flock before he has to write a violation notice. Meanwhile, in her kitchen, Rosa is optimistically finalizing a grocery list for four and deciding which day to go shopping.",
-      "dialogue": [
-        "Gary said to Donna: “Tomorrow morning works, Donna, put me down for the court and I'll bring my worst backhand. Today I've got to finish the cart wiring and get that Architectural Review form filed. Either of you know where they keep the blanks?”",
-        "Donna said to Hal: “Morning, Hal! I know you've got your eye on my flamingos, so I'll save you the trouble. I'll do a quick count and trim the flock down to three so we're square with the ornament rule. No violation notice needed.”",
-        "Hal said to Donna: “Donna, I counted your flamingos from the street this morning. L-02 says three ornaments, and you're well past that. Thin the flock before I have to write it up, and I'd rather not.”"
-      ]
-    },
-    {
-      "tick": 32,
-      "time": "Wednesday, October 14, 12:17 PM",
-      "story": "At 12:17 on a sunny Wednesday in Sumter Oaks, Gary is squinting at the street bulletin board on Magnolia Loop, hunting for the Architectural Review form before he wires up another string of lights. Donna, looking a little sheepish, is thinning her pink flamingo flock down to three out front to comply with rule L-02, and Hal, gruff but cooperative, has told Gary to file at Town Hall first and taken Donna's word that three flamingos will square things. Meanwhile, over at Rosa's House, Rosa is determinedly penciling in a shopping window between her shifts so Saturday stays clear.",
-      "dialogue": [
-        "Hal said to Gary: “Gary, the Architectural Review blanks are at Town Hall. File before you wire another inch, and I'll quit asking. And Donna, I'll take your word on the flamingos. Three, and we're square.”"
-      ]
-    },
-    {
-      "tick": 33,
-      "time": "Wednesday, October 14, 1:17 PM",
-      "story": "On Wednesday afternoon in Sumter Oaks, Gary is cutting across Magnolia Loop toward Town Square with a determined stride, while Donna cheerfully directs the flamingo flock and asks for exactly three to stay out front. Hal stands watchful on the street, counting the pink birds to make sure the number is right. Meanwhile, Rosa, back at her house, is working out a shopping window between her shifts and checking that Saturday stays clear.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 0.98408,
+    "total_usd": 1.0155,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -1506,13 +1519,12 @@
         "usd": 0.54045
       },
       "2026-10-14": {
-        "ticks": 7,
-        "usd": 0.22079
+        "ticks": 8,
+        "usd": 0.25221
       }
     }
   },
   "recent_tick_costs": [
-    0.03162,
     0.03076,
     0.03001,
     0.03089,
@@ -1535,7 +1547,8 @@
     0.03107,
     0.0316,
     0.03201,
-    0.03117
+    0.03117,
+    0.03142
   ],
   "fund": {
     "gross_usd": 0.0,

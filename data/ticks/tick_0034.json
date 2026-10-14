@@ -1,0 +1,116 @@
+{
+  "tick": 34,
+  "simulation_time": "Wednesday, October 14, 2:17 PM",
+  "weather": "Partly cloudy, 85°F",
+  "positions": {
+    "gary": "town_square",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 2:17 on a warm Wednesday afternoon in Sumter Oaks, Gary is heading to Town Hall with a determined stride, while Rosa is on her way out to Magnolia Loop with the same resolve. On the street itself, Donna and Hal have settled a flamingo dispute amicably, with Hal confirming the three pink birds are visible from the road and Donna inviting everyone to the courts on Saturday at eight. Both of them leave the exchange content and satisfied, the kind of neighborly peace that suits a golf cart community on a partly cloudy October afternoon.",
+  "events": [
+    "Gary headed to Town Hall.",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm in Town Square and nobody's around. Hal told me the Architectural Review blanks are at Town Hall, and I promised Donna I'd file before Saturday so I can make the eight o'clock court. L-01 says visible cart mods need approval, and I'm not wiring another inch until the paperwork is in. Town Hall is connected to the square, so the next step is simple: go get the form. Lights and sound system can wait an hour.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_hall",
+          "content": "Heading to Town Hall to pick up and file the Architectural Review form for the cart before I wire anything else."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Flamingos are down to three and Hal is counting, so that matter is settled. Gary headed to Town Square, probably to get the Architectural Review form. My real goal is still Gary as my doubles partner, and Saturday at eight is on the calendar. Hal is right here, so I should thank him and close out the flamingo business warmly. No more pestering Gary or repeating invites. Then I'll head to the rec center to check the court schedule for Saturday.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Three flamingos, Hal, count 'em yourself. Thanks for being reasonable about it. Come Saturday you ought to swing by the courts at eight, Gary and I will be out there."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna's already pulling the flamingos down to three, and my memory says I'm glad she respects the rules without a formal notice. Best thing is to confirm the count myself, plainly, and let her know it passes. That settles the flamingo half of my goal fairly, leaving Gary's cart filing to be handled honestly on its own merits.",
+      "emotional_state": "satisfied",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Three flamingos visible from the street, Donna. That's L-02 squared away, and no notice needed. I appreciate you handling it without an argument."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've already sketched the seating, counted chairs, finalized the grocery list, and picked a shopping window. The shift schedule is the last thing I keep looking at, and I've confirmed Saturday is clear twice now. Nobody's around to talk to, and rechecking again would be spinning my wheels. The next useful step is to actually go do something about dinner, and the only way out of the house is magnolia_loop, where I can find Donna, Gary, or Hal in person and lock in that everyone is truly coming Saturday.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Planning is done and Saturday is clear, so I'm heading out to run the grocery errand and track down my neighbors in person to confirm they're coming."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03142,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9808,
+        "output_tokens": 1107,
+        "usd": 0.03069
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3678,
+        "output_tokens": 731,
+        "usd": 0.00073
+      }
+    }
+  }
+}
