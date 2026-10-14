@@ -1,0 +1,118 @@
+{
+  "tick": 33,
+  "simulation_time": "Wednesday, October 14, 1:17 PM",
+  "weather": "Partly cloudy, 85°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On Wednesday afternoon in Sumter Oaks, Gary is cutting across Magnolia Loop toward Town Square with a determined stride, while Donna cheerfully directs the flamingo flock and asks for exactly three to stay out front. Hal stands watchful on the street, counting the pink birds to make sure the number is right. Meanwhile, Rosa, back at her house, is working out a shopping window between her shifts and checking that Saturday stays clear.",
+  "events": [
+    "Gary headed to Town Square.",
+    "Donna (donna flamingo flock): Pull the extra flamingos and leave exactly three out front",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street to confirm it's three",
+    "Rosa (rosa shift schedule): Lock in a shopping window between shifts and confirm Saturday is clear"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Hal's been clear: the Architectural Review blanks are at Town Hall, and I should file before wiring another inch. I promised Donna I'd file before Saturday so I can make our eight o'clock court time. Everyone's said their piece on the street, so there's no point standing around chatting. The Town Hall trip is the next useful step toward the cart parade, and it keeps my word.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_square",
+          "content": "Heading to Town Hall to pick up the Architectural Review form and file for the cart lights before I touch any more wiring."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal said he'd take my word on the flamingos, and I did queue up pulling the extras last tick. Rather than make a fuss, I'll just finish the job so the street is tidy and Hal has nothing to write up. Gary is on his way to Town Hall for the form, and we already have the court set for tomorrow morning, so I don't need to pester him again. Flamingos first, then I can chase my social calendar.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Pull the extra flamingos and leave exactly three out front"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I told Gary the blanks are at Town Hall and took Donna at her word on the flamingos. Both are now acting on it: Gary is checking the bulletin board, Donna is pulling the extras. I've said my piece, and repeating myself would just be nagging. The fair thing is to verify the flamingo count with my own eyes. I'm not going to file against a woman who's already complying. The count is on the street, so I'll look at her flock.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street to confirm it's three"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've planned the menu, sketched the seating, counted chairs, finalized the grocery list with quantities for four, and checked the shift schedule. The last open step is picking an actual shopping window between shifts and confirming Saturday is fully clear. The shift schedule is right here in the house, so I'll check it and lock in the shopping time. No one is nearby, so there's nobody to talk to. Once the window is set, I can head out and shop without second-guessing.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Lock in a shopping window between shifts and confirm Saturday is clear"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03117,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10429,
+        "output_tokens": 1019,
+        "usd": 0.03105
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 403,
+        "output_tokens": 154,
+        "usd": 0.00012
+      }
+    }
+  }
+}

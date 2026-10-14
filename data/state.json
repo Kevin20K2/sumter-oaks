@@ -1,24 +1,25 @@
 {
-  "tick": 33,
-  "time": "2026-10-14T12:17",
+  "tick": 34,
+  "time": "2026-10-14T13:17",
   "positions": {
-    "gary": "magnolia_loop",
+    "gary": "town_square",
     "donna": "magnolia_loop",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna (donna flamingo flock): Pull the extra flamingos and leave just three out front to comply with L-02",
-      "Hal said to Gary: “Gary, the Architectural Review blanks are at Town Hall. File before you wire another inch, and I'll quit asking. And Donna, I'll take your word on the flamingos. Three, and we're square.”"
+      "Donna (donna flamingo flock): Pull the extra flamingos and leave exactly three out front",
+      "Hal (donna flamingo flock): Count the flamingos visible from the street to confirm it's three",
+      "You arrived at Town Square."
     ],
     "donna": [
-      "Gary (street bulletin board): Look over the board for an Architectural Review form or filing instructions",
-      "Hal said to Gary: “Gary, the Architectural Review blanks are at Town Hall. File before you wire another inch, and I'll quit asking. And Donna, I'll take your word on the flamingos. Three, and we're square.”"
+      "Gary headed to Town Square.",
+      "Hal (donna flamingo flock): Count the flamingos visible from the street to confirm it's three"
     ],
     "hal": [
-      "Gary (street bulletin board): Look over the board for an Architectural Review form or filing instructions",
-      "Donna (donna flamingo flock): Pull the extra flamingos and leave just three out front to comply with L-02"
+      "Gary headed to Town Square.",
+      "Donna (donna flamingo flock): Pull the extra flamingos and leave exactly three out front"
     ],
     "rosa": []
   },
@@ -353,6 +354,26 @@
         "tick": 32,
         "text": "Hal said to Gary: “Gary, the Architectural Review blanks are at Town Hall. File before you wire another inch, and I'll quit asking. And Donna, I'll take your word on the flamingos. Three, and we're square.”",
         "importance": 5
+      },
+      {
+        "tick": 33,
+        "text": "I headed to Town Square.",
+        "importance": 6
+      },
+      {
+        "tick": 33,
+        "text": "Donna (donna flamingo flock): Pull the extra flamingos and leave exactly three out front",
+        "importance": 6
+      },
+      {
+        "tick": 33,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street to confirm it's three",
+        "importance": 6
+      },
+      {
+        "tick": 33,
+        "text": "You arrived at Town Square.",
+        "importance": 6
       }
     ],
     "donna": [
@@ -710,6 +731,21 @@
         "tick": 32,
         "text": "Hal said to Gary: “Gary, the Architectural Review blanks are at Town Hall. File before you wire another inch, and I'll quit asking. And Donna, I'll take your word on the flamingos. Three, and we're square.”",
         "importance": 4
+      },
+      {
+        "tick": 33,
+        "text": "I (donna flamingo flock): Pull the extra flamingos and leave exactly three out front",
+        "importance": 4
+      },
+      {
+        "tick": 33,
+        "text": "Gary headed to Town Square.",
+        "importance": 4
+      },
+      {
+        "tick": 33,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street to confirm it's three",
+        "importance": 4
       }
     ],
     "hal": [
@@ -1007,6 +1043,21 @@
         "tick": 32,
         "text": "Donna (donna flamingo flock): Pull the extra flamingos and leave just three out front to comply with L-02",
         "importance": 4
+      },
+      {
+        "tick": 33,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street to confirm it's three",
+        "importance": 4
+      },
+      {
+        "tick": 33,
+        "text": "Gary headed to Town Square.",
+        "importance": 4
+      },
+      {
+        "tick": 33,
+        "text": "Donna (donna flamingo flock): Pull the extra flamingos and leave exactly three out front",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -1294,6 +1345,11 @@
         "tick": 32,
         "text": "I (rosa shift schedule): Pick a shopping window between shifts and double-check Saturday is fully clear",
         "importance": 5
+      },
+      {
+        "tick": 33,
+        "text": "I (rosa shift schedule): Lock in a shopping window between shifts and confirm Saturday is clear",
+        "importance": 5
       }
     ]
   },
@@ -1341,8 +1397,8 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "cheerful, a little sheepish",
-    "hal": "gruff but cooperative",
+    "donna": "cheerful",
+    "hal": "watchful",
     "rosa": "determined"
   },
   "laws": [
@@ -1430,10 +1486,16 @@
       "dialogue": [
         "Hal said to Gary: “Gary, the Architectural Review blanks are at Town Hall. File before you wire another inch, and I'll quit asking. And Donna, I'll take your word on the flamingos. Three, and we're square.”"
       ]
+    },
+    {
+      "tick": 33,
+      "time": "Wednesday, October 14, 1:17 PM",
+      "story": "On Wednesday afternoon in Sumter Oaks, Gary is cutting across Magnolia Loop toward Town Square with a determined stride, while Donna cheerfully directs the flamingo flock and asks for exactly three to stay out front. Hal stands watchful on the street, counting the pink birds to make sure the number is right. Meanwhile, Rosa, back at her house, is working out a shopping window between her shifts and checking that Saturday stays clear.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 0.95291,
+    "total_usd": 0.98408,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -1444,13 +1506,12 @@
         "usd": 0.54045
       },
       "2026-10-14": {
-        "ticks": 6,
-        "usd": 0.18962
+        "ticks": 7,
+        "usd": 0.22079
       }
     }
   },
   "recent_tick_costs": [
-    0.03056,
     0.03162,
     0.03076,
     0.03001,
@@ -1473,7 +1534,8 @@
     0.03221,
     0.03107,
     0.0316,
-    0.03201
+    0.03201,
+    0.03117
   ],
   "fund": {
     "gross_usd": 0.0,
