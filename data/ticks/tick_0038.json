@@ -1,0 +1,116 @@
+{
+  "tick": 38,
+  "simulation_time": "Wednesday, October 14, 6:17 PM",
+  "weather": "Partly cloudy, 84°F",
+  "positions": {
+    "gary": "town_square",
+    "donna": "magnolia_loop",
+    "hal": "garys_house",
+    "rosa": "garys_house"
+  },
+  "story": "Gary is at the Town Square parade signup table, cheerfully trying to sign his golf cart up for the Holiday Golf Cart Parade. Donna is marching down Magnolia Loop toward Gary's house with a determined look on her face. Meanwhile, Hal and Rosa are both at Gary's house, each waiting on him and each with a message about Saturday at six, so the whole street seems to be converging on the same mystery of where Gary has wandered off to.",
+  "events": [
+    "Gary (parade signup table): Sign my golf cart up for the Holiday Golf Cart Parade",
+    "Donna headed to Gary's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I filed the Architectural Review form at Town Hall and I'm back in the square at 6 PM with nobody around. The paperwork is done, so now I should get on with the actual goal: lights and sound for the parade. The parade_signup_table is right here, and I haven't signed my cart up yet. Holiday lighting isn't allowed until Thanksgiving, so I'll just get on the list and wire the sound system once approval comes through. Donna wanted me at the court at eight, and signing up is quick, so I can do it now and still keep my word.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "parade_signup_table",
+          "content": "Sign my golf cart up for the Holiday Golf Cart Parade"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm alone on Magnolia Loop, and I already pulled the flamingos down to three last tick, so Hal's rule is handled. Everything is set for Saturday: pickleball at eight and Rosa's dinner at six, and I promised Rosa I'd track Gary down and tell him to call her. She just headed to Gary's House, so he's probably there. The best way to move things forward is to head over, catch Gary, pass along Rosa's message, and lock him in as my doubles partner.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading to Gary's to pass along Rosa's Saturday dinner message and lock him in as my pickleball partner."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Gary's house with Rosa, and she just arrived. I came to inspect that cart for L-01 compliance, and the cart is right here. Gary's not in sight, though; Rosa asked me to pass along Saturday at six, and I haven't done it yet. Since she's standing right here, I'll tell her I'm checking the cart and that Gary is missing, then deliver my message honestly. Fair is fair: I'll look at the cart on the merits, not out of annoyance over the parade. Keep it short, and don't repeat what's already been said.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Evening, Rosa. I'm here to look over Gary's cart, and the man himself isn't around. If he turns up, I'll tell him Saturday at six, no excuses accepted."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm at Gary's House and Hal is here, which is convenient since I came looking for Gary. Hal already said yes to the dinner, so I shouldn't re-invite him. Donna is bringing dessert for Saturday at six, but she hasn't found Gary yet, and Gary is the one guest who hasn't confirmed. Gary isn't visible here. I can use Hal to learn where Gary is, or at least leave word through him. Keep it short and practical, and don't repeat the invitation: ask Hal if he's seen Gary and ask him to pass along Saturday at six.",
+      "emotional_state": "hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, you seen Gary? I need him to know it's Saturday at six at my place. If you run into him before I do, tell him to bring his appetite and I'll handle the rest."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03184,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9651,
+        "output_tokens": 1242,
+        "usd": 0.03172
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 464,
+        "output_tokens": 153,
+        "usd": 0.00012
+      }
+    }
+  }
+}

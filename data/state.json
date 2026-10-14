@@ -1,25 +1,24 @@
 {
-  "tick": 38,
-  "time": "2026-10-14T17:17",
+  "tick": 39,
+  "time": "2026-10-14T18:17",
   "positions": {
     "gary": "town_square",
-    "donna": "magnolia_loop",
+    "donna": "garys_house",
     "hal": "garys_house",
     "rosa": "garys_house"
   },
   "perceptions": {
-    "gary": [
-      "You arrived at Town Square."
-    ],
+    "gary": [],
     "donna": [
-      "Rosa headed to Gary's House."
+      "You arrived at Gary's House."
     ],
     "hal": [
-      "Rosa just arrived."
+      "Rosa said to Hal: “Hal, you seen Gary? I need him to know it's Saturday at six at my place. If you run into him before I do, tell him to bring his appetite and I'll handle the rest.”",
+      "Donna just arrived."
     ],
     "rosa": [
-      "Donna (donna flamingo flock): Pull the extra flamingos off the lawn, leaving just three",
-      "You arrived at Gary's House."
+      "Hal said to Rosa: “Evening, Rosa. I'm here to look over Gary's cart, and the man himself isn't around. If he turns up, I'll tell him Saturday at six, no excuses accepted.”",
+      "Donna just arrived."
     ]
   },
   "memories": {
@@ -402,6 +401,11 @@
       {
         "tick": 37,
         "text": "You arrived at Town Square.",
+        "importance": 5
+      },
+      {
+        "tick": 38,
+        "text": "I (parade signup table): Sign my golf cart up for the Holiday Golf Cart Parade",
         "importance": 5
       }
     ],
@@ -830,6 +834,16 @@
         "tick": 37,
         "text": "Rosa headed to Gary's House.",
         "importance": 4
+      },
+      {
+        "tick": 38,
+        "text": "I headed to Gary's House.",
+        "importance": 5
+      },
+      {
+        "tick": 38,
+        "text": "You arrived at Gary's House.",
+        "importance": 5
       }
     ],
     "hal": [
@@ -1202,6 +1216,21 @@
         "tick": 37,
         "text": "Rosa just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 38,
+        "text": "I said to Rosa: “Evening, Rosa. I'm here to look over Gary's cart, and the man himself isn't around. If he turns up, I'll tell him Saturday at six, no excuses accepted.”",
+        "importance": 4
+      },
+      {
+        "tick": 38,
+        "text": "Rosa said to Hal: “Hal, you seen Gary? I need him to know it's Saturday at six at my place. If you run into him before I do, tell him to bring his appetite and I'll handle the rest.”",
+        "importance": 4
+      },
+      {
+        "tick": 38,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -1549,6 +1578,21 @@
         "tick": 37,
         "text": "You arrived at Gary's House.",
         "importance": 6
+      },
+      {
+        "tick": 38,
+        "text": "I said to Hal: “Hal, you seen Gary? I need him to know it's Saturday at six at my place. If you run into him before I do, tell him to bring his appetite and I'll handle the rest.”",
+        "importance": 5
+      },
+      {
+        "tick": 38,
+        "text": "Hal said to Rosa: “Evening, Rosa. I'm here to look over Gary's cart, and the man himself isn't around. If he turns up, I'll tell him Saturday at six, no excuses accepted.”",
+        "importance": 5
+      },
+      {
+        "tick": 38,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ]
   },
@@ -1595,10 +1639,10 @@
     ]
   },
   "emotions": {
-    "gary": "satisfied",
+    "gary": "optimistic",
     "donna": "determined",
     "hal": "dutiful",
-    "rosa": "determined"
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -1688,10 +1732,19 @@
       "time": "Wednesday, October 14, 5:17 PM",
       "story": "At 5:17 on a mild Wednesday in Sumter Oaks, Gary is settled at Town Hall, looking pleased with how the day has gone. Donna is out on Magnolia Loop, determined to thin the pink flamingo flock on the lawn down to just three, while Rosa is heading over to Gary's House with the same stubborn resolve. Hal, dutifully, is checking the exterior modifications on Gary's golf cart against the L-01 compliance rules.",
       "dialogue": []
+    },
+    {
+      "tick": 38,
+      "time": "Wednesday, October 14, 6:17 PM",
+      "story": "Gary is at the Town Square parade signup table, cheerfully trying to sign his golf cart up for the Holiday Golf Cart Parade. Donna is marching down Magnolia Loop toward Gary's house with a determined look on her face. Meanwhile, Hal and Rosa are both at Gary's house, each waiting on him and each with a message about Saturday at six, so the whole street seems to be converging on the same mystery of where Gary has wandered off to.",
+      "dialogue": [
+        "Hal said to Rosa: “Evening, Rosa. I'm here to look over Gary's cart, and the man himself isn't around. If he turns up, I'll tell him Saturday at six, no excuses accepted.”",
+        "Rosa said to Hal: “Hal, you seen Gary? I need him to know it's Saturday at six at my place. If you run into him before I do, tell him to bring his appetite and I'll handle the rest.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 1.10947,
+    "total_usd": 1.14131,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -1702,13 +1755,12 @@
         "usd": 0.54045
       },
       "2026-10-14": {
-        "ticks": 11,
-        "usd": 0.34618
+        "ticks": 12,
+        "usd": 0.37802
       }
     }
   },
   "recent_tick_costs": [
-    0.03023,
     0.03186,
     0.03354,
     0.0333,
@@ -1731,7 +1783,8 @@
     0.03142,
     0.03065,
     0.03158,
-    0.03174
+    0.03174,
+    0.03184
   ],
   "fund": {
     "gross_usd": 0.0,
