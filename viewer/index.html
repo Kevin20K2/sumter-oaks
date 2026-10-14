@@ -172,8 +172,8 @@ button:disabled { opacity: 0.4; cursor: default; }
 @media (prefers-reduced-motion: reduce) { .avatar.arrive img, .flash { animation: none; } .pop { animation: none; } }
 
 .people { display: grid; gap: 10px; }
-.person { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 4px 12px; align-items: start; }
-.person .face { grid-row: span 3; width: 44px; height: 44px; }
+.person { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 4px 12px; align-items: start; }
+.person .face { grid-row: span 3; width: 64px; height: 64px; }
 .person .who { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 .person .age { font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); }
 .meta { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -229,6 +229,17 @@ button:disabled { opacity: 0.4; cursor: default; }
 .matter { font-size: 0.9rem; border-left: 3px solid var(--c); padding-left: 10px; }
 .empty { font-size: 0.9rem; color: var(--muted); }
 .foot { font-size: 0.85rem; color: var(--muted); }
+
+/* Meet the neighbors */
+.cast { display: grid; gap: 14px; }
+.cast-lede { margin: 0; color: var(--muted); max-width: 62ch; }
+.cast-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.neighbor { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px 14px; display: grid; gap: 4px; align-content: start; }
+.neighbor img { display: block; width: 100%; max-width: 170px; height: auto; margin: 0 auto 6px; }
+.neighbor h3 { color: var(--c); font-size: 1.05rem; }
+.neighbor .age { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
+.neighbor p { margin: 0; font-size: 0.9rem; line-height: 1.45; }
+.neighbor .home { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.04em; color: var(--muted); }
 .foot a { color: var(--accent); }
 </style>
 
@@ -325,6 +336,12 @@ button:disabled { opacity: 0.4; cursor: default; }
       </div>
     </aside>
   </div>
+  <section class="cast" aria-labelledby="cast-h">
+    <h2 id="cast-h">Meet the neighbors</h2>
+    <p class="cast-lede">Four neighbors on Magnolia Loop. An AI plays each of them, choosing what they say and do next.</p>
+    <div class="cast-grid" id="cast"></div>
+  </section>
+
   <p class="foot">Prefer the old drawing? <a id="classic-link" href="/viewer/classic.html">See the classic map</a>.</p>
 </div>
 
@@ -352,10 +369,10 @@ const WORLD = {
     { id: "L-06", title: "Parking", text: "No parking on the grass. Carts and cars stay on driveways or the street." }
   ],
   agents: {
-    donna: { name: "Donna Pruitt", age: 68, home: "donnas_house", goal: "Climb the pickleball ladder with Gary as her doubles partner" },
-    gary: { name: "Gary Kowalski", age: 71, home: "garys_house", goal: "Rig his golf cart with lights and sound for the Holiday Golf Cart Parade" },
-    hal: { name: "Hal Weems", age: 76, home: "hals_house", goal: "Report Gary's cart and Donna's flamingos to architectural review" },
-    rosa: { name: "Rosa Delgado", age: 63, home: "rosas_house", goal: "Get all three neighbors at her dinner table" }
+    donna: { name: "Donna Pruitt", age: 68, home: "donnas_house", goal: "Climb the pickleball ladder with Gary as her doubles partner", profession: "Retired real estate agent from New Jersey; social chair of three clubs" },
+    gary: { name: "Gary Kowalski", age: 71, home: "garys_house", goal: "Rig his golf cart with lights and sound for the Holiday Golf Cart Parade", profession: "Retired HVAC engineer from Toledo; the street's unofficial fix-it guy" },
+    hal: { name: "Hal Weems", age: 76, home: "hals_house", goal: "Report Gary's cart and Donna's flamingos to architectural review", profession: "Retired Army supply sergeant; self-appointed deed-restriction watchdog" },
+    rosa: { name: "Rosa Delgado", age: 63, home: "rosas_house", goal: "Get all three neighbors at her dinner table", profession: "ER nurse from Miami, recently semi-retired; still picks up per-diem shifts" }
   }
 };
 
@@ -435,6 +452,8 @@ function routeBetween(from, fromZone, to, toZone, W, H) {
 const phoneQuery = window.matchMedia("(max-width: 640px)");
 const currentMap = () => MAPS[phoneQuery.matches ? "phone" : "desktop"];
 const pinWidth = (W) => Math.min(64, Math.max(40, W * 0.075));
+const bustImg = (id) => `<img src="${BASE}viewer/assets/bust-${id}.webp" alt="" width="256" height="256">`;
+const figureImg = (id, name) => `<img src="${BASE}viewer/assets/figure-${id}.webp" alt="${name}" width="400" height="480" loading="lazy">`;
 const pinImg = (id) => `<img src="${BASE}viewer/assets/pin-${id}.webp" alt="" width="128" height="128">`;
 
 const TICKS = [
@@ -514,7 +533,7 @@ function mergeWorld(w) {
   const zones = {};
   for (const [zid, z] of Object.entries(w.zones)) zones[zid] = { ...(WORLD.zones[zid] || {}), name: WORLD.zones[zid]?.name ?? z.name };
   const agents = {};
-  for (const [id, a] of Object.entries(w.agents)) agents[id] = { name: a.name, age: a.age, home: a.home, goal: a.current_goal };
+  for (const [id, a] of Object.entries(w.agents)) agents[id] = { name: a.name, age: a.age, home: a.home, goal: a.current_goal, profession: a.profession };
   return { town_name: w.town_name, zones, laws: w.laws, agents };
 }
 
@@ -1038,7 +1057,7 @@ function renderPeople(world, t) {
     card.id = "card-" + id;
     card.style.setProperty("--c", `var(--${id})`);
     card.innerHTML = `
-      <div class="face">${pinImg(id)}</div>
+      <div class="face">${bustImg(id)}</div>
       <div class="who"><h3></h3><span class="age">${a.age}</span></div>
       <div class="meta"><span class="chip loc"></span>${r ? '<span class="chip mood"></span>' : ""}</div>
       <div class="imp" aria-label="Importance ${imp} of 10">${Array.from({ length: 10 }, (_, i) => `<i class="${i < imp ? "on" : ""}"></i>`).join("")}</div>
@@ -1049,6 +1068,21 @@ function renderPeople(world, t) {
     card.querySelector(".goal").textContent = "Goal: " + a.goal;
     box.append(card);
   }
+}
+
+// "Meet the neighbors": a mini figure and a one-line bio for each resident, from world.json.
+function renderCast(world) {
+  $("cast").replaceChildren(...Object.entries(world.agents).map(([id, a]) => {
+    const card = document.createElement("article");
+    card.className = "neighbor";
+    card.style.setProperty("--c", `var(--${id})`);
+    card.innerHTML = `${figureImg(id, a.name)}<h3></h3><span class="age"></span><p class="bio"></p><span class="home"></span>`;
+    card.querySelector("h3").textContent = a.name;
+    card.querySelector(".age").textContent = `Age ${a.age}`;
+    card.querySelector(".bio").textContent = a.profession || "";
+    card.querySelector(".home").textContent = "Lives at " + (world.zones[a.home]?.name ?? a.home);
+    return card;
+  }));
 }
 
 function renderStory(t) {
@@ -1132,6 +1166,7 @@ loadData().then(d => {
   $("slider").max = d.ticks.length - 1;
   setMap(d.world);
   buildAvatars(d.world);
+  renderCast(d.world);
   renderPrevious();
   drawCloud(d.fund);
   renderSupport(d.fund);
