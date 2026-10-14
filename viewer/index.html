@@ -133,6 +133,16 @@ button:disabled { opacity: 0.4; cursor: default; }
 .scene { position: relative; border-radius: 14px; background: var(--lawn); overflow: hidden; }
 .scene .map-img { display: block; width: 100%; height: auto; }
 .layer { position: absolute; inset: 0; pointer-events: none; }
+/* Sky: time-of-day and weather light over the painting (below labels, pins and bubbles). */
+.sky > div { position: absolute; inset: 0; transition: background-color 1.4s ease, opacity 1.4s ease; }
+.sky .tint, .sky .wx { mix-blend-mode: multiply; background-color: transparent; }
+.sky .wash, .sky .glow { mix-blend-mode: screen; }
+.sky .wash { background-color: transparent; }
+.sky .glow { opacity: 0; }
+.sky .rain { opacity: 0; background-image: repeating-linear-gradient(104deg, transparent 0 11px, rgba(225,235,245,.55) 11px 12px, transparent 12px 23px); background-size: 46px 160px; animation: rain 0.7s linear infinite; }
+.sky.raining .rain { opacity: 0.5; }
+@keyframes rain { from { background-position: 0 0; } to { background-position: -46px 160px; } }
+@media (prefers-reduced-motion: reduce) { .sky .rain { animation: none; } .sky > div { transition: none; } }
 /* Stacking: map labels, then the cloud badge, then pins, then bubbles on top (an opened bubble covers the pins). */
 #avatars { z-index: 2; }
 #bubbles { z-index: 3; }
@@ -294,6 +304,7 @@ button:disabled { opacity: 0.4; cursor: default; }
   <div class="stage">
     <section class="scene" id="scene" aria-label="Street scene">
       <img id="map" class="map-img" alt="Painted map of Magnolia Loop: Gary's, Donna's, Hal's and Rosa's houses, the Rec Center, Town Square with its bandstand, and Town Hall">
+      <div class="layer sky" id="sky" aria-hidden="true"><div class="tint"></div><div class="wx"></div><div class="wash"></div><div class="glow"></div><div class="rain"></div></div>
       <div class="layer" id="places" aria-hidden="true"></div>
       <div id="cloud"></div>
       <div class="layer" id="avatars"></div>
@@ -392,6 +403,9 @@ const MAPS = {
       town_hall:    { x: 0.79, y: 0.49, label: [0.80, 0.375] },
       magnolia_loop: { spots: { gary: [0.31, 0.33], donna: [0.25, 0.655], hal: [0.34, 0.75], rosa: [0.66, 0.80] } }
     },
+    // Warm lights that come on at dusk: porches, the Rec Center and Town Hall, and the Town Square lamps.
+    lights: [[0.17, 0.33, 0.07], [0.12, 0.54, 0.07], [0.14, 0.82, 0.07], [0.85, 0.85, 0.07], [0.50, 0.15, 0.10],
+             [0.82, 0.44, 0.08], [0.35, 0.59, 0.035], [0.41, 0.64, 0.035], [0.61, 0.66, 0.035]],
     // Golf cart routes traced along the painted roads. entry = the road point each place's driveway meets.
     roads: {
       nodes: { A: [0.36, 0.29], J: [0.50, 0.37], B: [0.62, 0.32], T: [0.50, 0.46], LU: [0.33, 0.48], GM: [0.30, 0.425], GR: [0.20, 0.40],
@@ -413,6 +427,8 @@ const MAPS = {
       town_hall:    { x: 0.86, y: 0.53, label: [0.88, 0.33] },
       magnolia_loop: { spots: { gary: [0.33, 0.22], donna: [0.30, 0.625], hal: [0.44, 0.80], rosa: [0.68, 0.78] } }
     },
+    lights: [[0.13, 0.28, 0.05], [0.24, 0.50, 0.05], [0.15, 0.80, 0.05], [0.85, 0.82, 0.05], [0.51, 0.18, 0.07],
+             [0.85, 0.47, 0.06], [0.455, 0.585, 0.022], [0.475, 0.625, 0.022], [0.625, 0.60, 0.022]],
     roads: {
       nodes: { A: [0.40, 0.29], J: [0.53, 0.40], B: [0.64, 0.35], T: [0.55, 0.46], LU: [0.42, 0.48], GM: [0.35, 0.37], GR: [0.22, 0.355],
                LM: [0.37, 0.62], DR: [0.24, 0.625], LL: [0.40, 0.72], BM: [0.53, 0.77], BR: [0.63, 0.75], RM: [0.70, 0.62],
@@ -749,6 +765,51 @@ function el(tag, attrs = {}, text) {
   return e;
 }
 
+// ---- Sky: light the painting by the tick's clock and weather (both come from the simulation). ----
+function tickHour(t) {
+  const m = /(\d{1,2}):(\d{2})\s*([AP]M)/i.exec(t.simulation_time || "");
+  if (!m) return 12;
+  let h = +m[1] % 12; if (m[3].toUpperCase() === "PM") h += 12;
+  return h + +m[2] / 60;
+}
+const SKY = {
+  //            phase tint (multiply)          morning/haze wash (screen)       lights on
+  morning: { tint: "rgba(170, 190, 235, .30)", wash: "rgba(255, 196, 170, .10)", glow: 0 },
+  day:     { tint: "transparent",              wash: "transparent",              glow: 0 },
+  golden:  { tint: "rgba(255, 168, 92, .22)",  wash: "transparent",              glow: 0 },
+  dusk:    { tint: "rgba(92, 82, 170, .48)",   wash: "transparent",              glow: 0.65 },
+  night:   { tint: "rgba(14, 22, 74, .86)",    wash: "transparent",              glow: 1 }
+};
+function skyPhase(h) {
+  if (h < 6 || h >= 20.75) return "night";
+  if (h < 8) return "morning";
+  if (h < 16.5) return "day";
+  if (h < 19) return "golden";
+  return "dusk";
+}
+function setSky(t) {
+  const sky = $("sky");
+  if (!sky || !t) return;
+  const look = SKY[skyPhase(tickHour(t))];
+  const w = (t.weather || "").toLowerCase();
+  const rain = /rain|shower|storm|drizzle|thunder/.test(w);
+  const grey = rain ? "rgba(118, 128, 140, .38)" : /overcast|cloudy|fog/.test(w) ? "rgba(165, 170, 180, .20)" : "transparent";
+  const haze = /haz|humid|fog/.test(w) && !rain ? "rgba(255, 250, 236, .12)" : look.wash;
+  sky.querySelector(".tint").style.backgroundColor = look.tint;
+  sky.querySelector(".wx").style.backgroundColor = grey;
+  sky.querySelector(".wash").style.backgroundColor = haze;
+  sky.querySelector(".glow").style.opacity = look.glow;
+  sky.classList.toggle("raining", rain);
+  sky.dataset.phase = skyPhase(tickHour(t));
+}
+function setSkyLights() {
+  const g = $("sky")?.querySelector(".glow");
+  if (!g) return;
+  const map = currentMap(), aspect = map.w / map.h;   // r is a fraction of the map's width; keep the glows round
+  g.style.backgroundImage = (map.lights || []).map(([x, y, r]) =>
+    `radial-gradient(ellipse ${r * 100}% ${r * 100 * aspect}% at ${x * 100}% ${y * 100}%, rgba(255, 200, 115, .95) 0%, rgba(255, 170, 80, .42) 45%, transparent 100%)`).join(", ");
+}
+
 // Place names drawn as text over the painting, so they stay sharp and readable.
 function drawPlaces(world) {
   const layer = $("places");
@@ -770,6 +831,7 @@ function setMap(world) {
   const src = BASE + "viewer/assets/" + map.file;
   if (img.getAttribute("src") !== src) img.src = src;
   drawPlaces(world);
+  setSkyLights();
 }
 
 // Where each resident's pin stands, in pixels. Residents sharing a place stand side by side;
@@ -1143,6 +1205,7 @@ function go(i, step) {
   $("slider").value = idx;
   $("prev").disabled = idx === 0;
   $("next").disabled = idx === data.ticks.length - 1;
+  setSky(t);
   layoutScene(!firstPaint, drive);
   firstPaint = false;
   renderPeople(data.world, t);
