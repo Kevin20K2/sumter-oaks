@@ -290,7 +290,7 @@ button:disabled { opacity: 0.4; cursor: default; }
     </div>
     <div class="prev-titlerow">
       <h2 class="prev-title" id="prev-title"></h2>
-      <button type="button" class="prev-toggle" id="prev-toggle" aria-expanded="false" aria-controls="previously">Read recap</button>
+      <button type="button" class="prev-toggle" id="prev-toggle" aria-expanded="false" aria-controls="previously">What did I miss? ▾</button>
     </div>
     <p class="prev-recap" id="prev-recap"></p>
     <ul class="standings" id="standings"></ul>
@@ -612,7 +612,7 @@ const dayOf = (time) => time.replace(/,\s*[^,]*$/, "");   // "Tuesday, October 1
 
 function setCollapsed(on) {
   $("previously").classList.toggle("collapsed", on);
-  $("prev-toggle").textContent = on ? "Read recap" : "Hide recap";
+  $("prev-toggle").textContent = on ? "What did I miss? ▾" : "Back to the town ▴";
   $("prev-toggle").setAttribute("aria-expanded", String(!on));
 }
 
