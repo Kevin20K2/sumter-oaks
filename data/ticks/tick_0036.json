@@ -1,0 +1,121 @@
+{
+  "tick": 36,
+  "simulation_time": "Wednesday, October 14, 4:17 PM",
+  "weather": "Partly cloudy, 85°F",
+  "positions": {
+    "gary": "town_hall",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 4:17 on a warm October Wednesday in Sumter Oaks, Gary is at the Town Hall architectural review desk, determined to get his golf cart lights and sound system form filed before he leaves. Donna and Rosa are chatting on Magnolia Loop, where Donna promises to bring dessert to Rosa's Saturday six o'clock dinner and to hunt down Gary so he'll call. Hal, dutifully, sets off toward Gary's house to pass along Rosa's invitation, having been told not to show up without an appetite.",
+  "events": [
+    "Gary (architectural review desk): Fill out and file the golf cart modification form for the lights and sound system",
+    "Hal headed to Gary's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I walked all the way to Town Hall to file the cart paperwork, and the architectural_review_desk is right here. I told myself I'd file before Saturday so I can keep my word to Donna and stay on that court at eight. No one's around to chat with, so no excuse to dawdle. Fill out the form for the lights and sound system, and be honest about it so it doesn't get kicked back. Then I can finally wire the cart in peace.",
+      "emotional_state": "determined",
+      "importance_rating": 7,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "architectural_review_desk",
+          "content": "Fill out and file the golf cart modification form for the lights and sound system"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa just asked if I've seen Gary today, and I haven't since this morning when I invited him to hit balls. Dinner Saturday at six is settled, so no need to ask about it again. The useful thing is to answer Rosa and help her find Gary, while keeping my pickleball plan moving. I'll tell her I last saw him this morning and offer to flag him down, since I'm headed that way anyway.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Six on Saturday, got it, I'll bring the dessert. Haven't laid eyes on Gary since this morning, hon, but I'll track him down for you and tell him to call you."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa already confirmed Saturday at six and Donna said her piece, so there's nothing more to ask. Donna's flamingos are down to three, which settles the L-02 complaint, and no notice is needed. That leaves Gary's cart. Rosa is looking for him too, and he claimed he'd file the Architectural Review paperwork after the garage wiring. The only way to judge it fairly is to see him and the cart myself. Last I heard he was headed toward Town Square, but his house is the likeliest place to find the project. I'll walk down and ask for the filing date, nothing more.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading to Gary's to ask when the cart modifications will be filed with Architectural Review, and to see the setup fairly before anyone judges it."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Donna has already confirmed dinner, so I shouldn't ask her again. Hal asked what to bring, and that's a direct question I haven't answered. Gary is the only one I still haven't pinned down. Answer Hal simply, then go find Gary after.",
+      "emotional_state": "warm",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Just your appetite, Hal. Donna's got dessert covered, and I'll handle the rest. If you see Gary, tell him Saturday at six and I'm not taking no for an answer."
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "gary",
+      "text": "Gary Kowalski: Fill out and file the golf cart modification form for the lights and sound system"
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03158,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10363,
+        "output_tokens": 1071,
+        "usd": 0.03144
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 479,
+        "output_tokens": 182,
+        "usd": 0.00014
+      }
+    }
+  }
+}
