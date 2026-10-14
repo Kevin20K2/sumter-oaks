@@ -1,0 +1,120 @@
+{
+  "tick": 35,
+  "simulation_time": "Wednesday, October 14, 3:17 PM",
+  "weather": "Partly cloudy, 86°F",
+  "positions": {
+    "gary": "town_hall",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "Gary is at the Town Hall architectural review desk, determined to file his golf cart modification form for new lights and a sound system. On Magnolia Loop in the warm 86-degree afternoon, Donna, Hal, and Rosa are chatting in the street about Saturday's dinner at Rosa's place after pickleball. Donna cheerfully announces that Gary is her new doubles partner and that she's bringing dessert, while Hal content asks whether he should bring anything, and Rosa hopefully wonders where Gary has gotten to.",
+  "events": [
+    "Gary (architectural review desk): Fill out and file the golf cart modification form for lights and sound system"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at Town Hall with the cart paperwork still unfiled, and I promised Donna I'd get it done before Saturday so I can be on the court at eight. Nobody's around, the architectural_review_desk is right here, and L-01 says visible lights and a sound system need approval before I wire another thing. Time to stop tinkering and file the form.",
+      "emotional_state": "determined",
+      "importance_rating": 7,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "architectural_review_desk",
+          "content": "Fill out and file the golf cart modification form for lights and sound system"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "The flamingo business with Hal is settled and I already invited him to the courts, so no need to repeat myself. Rosa just walked up, and she's hosting dinner Saturday after pickleball. She's a good person to chat with and I can confirm the plan. Gary and I still need to actually get on the court before Saturday, so I should mention that I'm lining him up. Keep it short, friendly, and move things forward.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, hon, perfect timing. Still on for dinner at your place after pickleball Saturday? I'm bringing the dessert, and Gary's my new doubles partner, so you'll be feeding a couple of champions."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna's flamingos are settled at three, so that item is off my list. Rosa just walked up, and Saturday's dinner at her place is worth confirming. I've already talked with Donna this hour, so no need to repeat myself. Gary's cart is still the real business, but he's not here. A civil word with Rosa is the right move, and it keeps me sociable without chasing anyone.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Afternoon, Rosa. Thank you again for the Saturday invitation. Is there anything I should bring, or just my appetite?"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm out on Magnolia Loop with Donna and Hal both in line-of-sight. Both already said yes to dinner, and I've settled on four at the table. The one thing still open is Gary, since I haven't heard a yes from him yet. Rather than re-invite Hal or Donna, I should give them something useful: confirm the day and time so it's locked in, and ask whether either of them has seen Gary today. Donna is the one who hit balls with him, so she may know where he is. That moves the plan forward without repeating myself.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna, good timing. Dinner at my place is Saturday at six, and you and Hal are both on the list. Have you seen Gary today? I still need to pin him down."
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "gary",
+      "text": "Gary Kowalski: Fill out and file the golf cart modification form for lights and sound system"
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03065,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9826,
+        "output_tokens": 1086,
+        "usd": 0.03051
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 527,
+        "output_tokens": 178,
+        "usd": 0.00014
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "tick": 35,
-  "time": "2026-10-14T14:17",
+  "tick": 36,
+  "time": "2026-10-14T15:17",
   "positions": {
     "gary": "town_hall",
     "donna": "magnolia_loop",
@@ -8,19 +8,18 @@
     "rosa": "magnolia_loop"
   },
   "perceptions": {
-    "gary": [
-      "You arrived at Town Hall."
-    ],
+    "gary": [],
     "donna": [
-      "Hal said to Donna: “Three flamingos visible from the street, Donna. That's L-02 squared away, and no notice needed. I appreciate you handling it without an argument.”",
-      "Rosa just arrived."
+      "Hal said to Rosa: “Afternoon, Rosa. Thank you again for the Saturday invitation. Is there anything I should bring, or just my appetite?”",
+      "Rosa said to Donna: “Donna, good timing. Dinner at my place is Saturday at six, and you and Hal are both on the list. Have you seen Gary today? I still need to pin him down.”"
     ],
     "hal": [
-      "Donna said to Hal: “Three flamingos, Hal, count 'em yourself. Thanks for being reasonable about it. Come Saturday you ought to swing by the courts at eight, Gary and I will be out there.”",
-      "Rosa just arrived."
+      "Donna said to Rosa: “Rosa, hon, perfect timing. Still on for dinner at your place after pickleball Saturday? I'm bringing the dessert, and Gary's my new doubles partner, so you'll be feeding a couple of champions.”",
+      "Rosa said to Donna: “Donna, good timing. Dinner at my place is Saturday at six, and you and Hal are both on the list. Have you seen Gary today? I still need to pin him down.”"
     ],
     "rosa": [
-      "You arrived at Magnolia Loop (the street)."
+      "Donna said to Rosa: “Rosa, hon, perfect timing. Still on for dinner at your place after pickleball Saturday? I'm bringing the dessert, and Gary's my new doubles partner, so you'll be feeding a couple of champions.”",
+      "Hal said to Rosa: “Afternoon, Rosa. Thank you again for the Saturday invitation. Is there anything I should bring, or just my appetite?”"
     ]
   },
   "memories": {
@@ -384,6 +383,11 @@
         "tick": 34,
         "text": "You arrived at Town Hall.",
         "importance": 6
+      },
+      {
+        "tick": 35,
+        "text": "I (architectural review desk): Fill out and file the golf cart modification form for lights and sound system",
+        "importance": 7
       }
     ],
     "donna": [
@@ -771,6 +775,21 @@
         "tick": 34,
         "text": "Rosa just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 35,
+        "text": "I said to Rosa: “Rosa, hon, perfect timing. Still on for dinner at your place after pickleball Saturday? I'm bringing the dessert, and Gary's my new doubles partner, so you'll be feeding a couple of champions.”",
+        "importance": 4
+      },
+      {
+        "tick": 35,
+        "text": "Hal said to Rosa: “Afternoon, Rosa. Thank you again for the Saturday invitation. Is there anything I should bring, or just my appetite?”",
+        "importance": 4
+      },
+      {
+        "tick": 35,
+        "text": "Rosa said to Donna: “Donna, good timing. Dinner at my place is Saturday at six, and you and Hal are both on the list. Have you seen Gary today? I still need to pin him down.”",
+        "importance": 4
       }
     ],
     "hal": [
@@ -1098,6 +1117,21 @@
         "tick": 34,
         "text": "Rosa just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 35,
+        "text": "I said to Rosa: “Afternoon, Rosa. Thank you again for the Saturday invitation. Is there anything I should bring, or just my appetite?”",
+        "importance": 4
+      },
+      {
+        "tick": 35,
+        "text": "Donna said to Rosa: “Rosa, hon, perfect timing. Still on for dinner at your place after pickleball Saturday? I'm bringing the dessert, and Gary's my new doubles partner, so you'll be feeding a couple of champions.”",
+        "importance": 4
+      },
+      {
+        "tick": 35,
+        "text": "Rosa said to Donna: “Donna, good timing. Dinner at my place is Saturday at six, and you and Hal are both on the list. Have you seen Gary today? I still need to pin him down.”",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -1400,6 +1434,21 @@
         "tick": 34,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 35,
+        "text": "I said to Donna: “Donna, good timing. Dinner at my place is Saturday at six, and you and Hal are both on the list. Have you seen Gary today? I still need to pin him down.”",
+        "importance": 6
+      },
+      {
+        "tick": 35,
+        "text": "Donna said to Rosa: “Rosa, hon, perfect timing. Still on for dinner at your place after pickleball Saturday? I'm bringing the dessert, and Gary's my new doubles partner, so you'll be feeding a couple of champions.”",
+        "importance": 6
+      },
+      {
+        "tick": 35,
+        "text": "Hal said to Rosa: “Afternoon, Rosa. Thank you again for the Saturday invitation. Is there anything I should bring, or just my appetite?”",
+        "importance": 6
       }
     ]
   },
@@ -1447,9 +1496,9 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "content",
-    "hal": "satisfied",
-    "rosa": "determined"
+    "donna": "cheerful",
+    "hal": "content",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -1504,11 +1553,26 @@
     {
       "by": "hal",
       "text": "Hal Weems: Amend my filing: note Donna has reduced visible flamingos to three, so L-02 follow-up is withdrawn; leave Gary's cart notice pending review"
+    },
+    {
+      "by": "gary",
+      "text": "Gary Kowalski: Fill out and file the golf cart modification form for lights and sound system"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 35,
+      "time": "Wednesday, October 14, 3:17 PM",
+      "story": "Gary is at the Town Hall architectural review desk, determined to file his golf cart modification form for new lights and a sound system. On Magnolia Loop in the warm 86-degree afternoon, Donna, Hal, and Rosa are chatting in the street about Saturday's dinner at Rosa's place after pickleball. Donna cheerfully announces that Gary is her new doubles partner and that she's bringing dessert, while Hal content asks whether he should bring anything, and Rosa hopefully wonders where Gary has gotten to.",
+      "dialogue": [
+        "Donna said to Rosa: “Rosa, hon, perfect timing. Still on for dinner at your place after pickleball Saturday? I'm bringing the dessert, and Gary's my new doubles partner, so you'll be feeding a couple of champions.”",
+        "Hal said to Rosa: “Afternoon, Rosa. Thank you again for the Saturday invitation. Is there anything I should bring, or just my appetite?”",
+        "Rosa said to Donna: “Donna, good timing. Dinner at my place is Saturday at six, and you and Hal are both on the list. Have you seen Gary today? I still need to pin him down.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 1.0155,
+    "total_usd": 1.04615,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -1519,13 +1583,12 @@
         "usd": 0.54045
       },
       "2026-10-14": {
-        "ticks": 8,
-        "usd": 0.25221
+        "ticks": 9,
+        "usd": 0.28286
       }
     }
   },
   "recent_tick_costs": [
-    0.03076,
     0.03001,
     0.03089,
     0.03023,
@@ -1548,7 +1611,8 @@
     0.0316,
     0.03201,
     0.03117,
-    0.03142
+    0.03142,
+    0.03065
   ],
   "fund": {
     "gross_usd": 0.0,
