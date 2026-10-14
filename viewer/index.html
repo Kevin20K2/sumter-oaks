@@ -228,6 +228,22 @@ button:disabled { opacity: 0.4; cursor: default; }
 .beat { max-width: 65ch; font-size: 1.08rem; margin: 0; }
 .events { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; color: var(--muted); font-size: 0.95rem; }
 .past { display: grid; gap: 12px; border-top: 1px solid var(--line); padding-top: 14px; }
+.past .ticks { display: grid; gap: 12px; }
+.past details { border-top: 1px dashed var(--line); padding-top: 10px; }
+.past summary { cursor: pointer; display: grid; gap: 2px; list-style: none; }
+.past summary::-webkit-details-marker { display: none; }
+.past summary .d { font-family: var(--font-display); font-weight: 700; font-size: 0.98rem; }
+.past summary .d::after { content: " ▸"; color: var(--accent); font-size: 0.8em; }
+.past details[open] summary .d::after { content: " ▾"; }
+.past summary .n { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); font-weight: 400; margin-left: 6px; }
+.past summary .ep { font-size: 0.88rem; color: var(--muted); font-style: italic; }
+.past summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.past details .ticks { padding-top: 10px; }
+.past .loading { font-size: 0.85rem; color: var(--muted); }
+/* On larger screens the history scrolls in its own box; phones scroll the page normally. */
+@media (min-width: 821px) { .past { max-height: 560px; overflow-y: auto; padding-right: 6px; } }
+.older-matters summary { cursor: pointer; font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); }
+.older-matters .matters { margin-top: 8px; }
 .past button { text-align: left; background: none; border: none; padding: 0; font-family: var(--font-body); font-size: 0.95rem; color: var(--ink); display: grid; gap: 2px; }
 .past button:hover .t { color: var(--accent); }
 .past .t { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
@@ -555,17 +571,44 @@ function mergeWorld(w) {
 
 async function loadTicks(names) { return Promise.all(names.map(n => getJSON("data/ticks/" + n))); }
 
+// Ticks load lazily: the page opens with the most recent ones, and older ticks are fetched
+// only when someone goes back to them. index.json's "meta" gives every tick's time and
+// Town Hall filings, so day groups and the board work without loading every tick.
+const FIRST_LOAD = 24;
+const hasMeta = (index) => index.meta && index.ticks.every(n => index.meta[n]);
+
 async function loadData() {
   try {
     const [w, index] = await Promise.all([getJSON("world.json"), getJSON("data/ticks/index.json")]);
-    const ticks = await loadTicks(index.ticks);
-    if (!ticks.length) throw new Error("no ticks yet");
+    const names = index.ticks;
+    if (!names.length) throw new Error("no ticks yet");
+    const meta = hasMeta(index) ? index.meta : null;
+    const start = meta ? Math.max(0, names.length - FIRST_LOAD) : 0;   // without meta, load everything as before
+    const ticks = new Array(names.length);
+    (await loadTicks(names.slice(start))).forEach((t, k) => { ticks[start + k] = t; });
     const [episodes, fund] = await Promise.all([loadEpisodes(), loadFund()]);
-    return { world: mergeWorld(w), ticks, names: index.ticks, episodes, fund, sample: false, live: true };
+    return { world: mergeWorld(w), ticks, names, meta, episodes, fund, sample: false, live: true };
   } catch (e) {
-    return { world: WORLD, ticks: TICKS, episodes: SAMPLE_EPISODES, fund: SAMPLE_FUND, sample: true, live: false };
+    return { world: WORLD, ticks: TICKS, names: TICKS.map(t => "sample_" + t.tick), meta: null, episodes: SAMPLE_EPISODES, fund: SAMPLE_FUND, sample: true, live: false };
   }
 }
+
+const loading = new Map();
+// Make sure ticks lo..hi (inclusive) are loaded.
+function ensureTicks(lo, hi) {
+  lo = Math.max(0, lo); hi = Math.min(data.names.length - 1, hi);
+  const want = [];
+  for (let i = lo; i <= hi; i++) if (!data.ticks[i]) want.push(i);
+  return Promise.all(want.map(i => {
+    if (!loading.has(i)) loading.set(i, getJSON("data/ticks/" + data.names[i]).then(t => { data.ticks[i] = t; loading.delete(i); }, () => loading.delete(i)));
+    return loading.get(i);
+  }));
+}
+// A tick's time and filings, from the loaded tick or from index meta.
+function tickTime(i) { return data.ticks[i]?.simulation_time ?? data.meta?.[data.names[i]]?.time ?? ""; }
+function tickMatters(i) { return data.ticks[i]?.matters ?? data.meta?.[data.names[i]]?.matters ?? []; }
+const dayOf = (time) => time.replace(/,\s*[^,]*$/, "");   // "Tuesday, October 13, 4:17 PM" -> "Tuesday, October 13"
+
 
 function setCollapsed(on) {
   $("previously").classList.toggle("collapsed", on);
@@ -741,15 +784,18 @@ async function poll() {
     const index = await getJSON("data/ticks/index.json");
     const fresh = index.ticks.filter(n => !data.names.includes(n));
     if (!fresh.length) return;
+    if (hasMeta(index)) data.meta = index.meta;
     data.episodes = await loadEpisodes();
     renderPrevious();
     data.fund = await loadFund() || data.fund;
     drawCloud(data.fund); renderSupport(data.fund);
-    const atEnd = idx === data.ticks.length - 1;
-    data.ticks.push(...await loadTicks(fresh));
+    const atEnd = idx === data.names.length - 1;
+    const base = data.names.length;
+    const got = await loadTicks(fresh);
+    got.forEach((t, k) => { data.ticks[base + k] = t; });
     data.names.push(...fresh);
-    $("slider").max = data.ticks.length - 1;
-    if (atEnd && !timer) go(data.ticks.length - 1, true); else go(idx);
+    $("slider").max = data.names.length - 1;
+    if (atEnd && !timer) go(data.names.length - 1, true); else go(idx);
   } catch (e) { /* offline or between deploys; try again next minute */ }
 }
 
@@ -1161,19 +1207,58 @@ function renderStory(t) {
   }));
   $("dialogue").hidden = !said.length;
   $("events").replaceChildren(...(t.events || []).map(e => { const li = document.createElement("li"); li.textContent = e; return li; }));
+  renderHistory();
+}
+
+// Earlier ticks: the rest of the current tick's day in full, then one folded line per older day
+// with that day's episode titles. Opening a day loads its ticks.
+function tickButton(i) {
+  const b = document.createElement("button");
+  b.innerHTML = `<span class="t"></span><span class="s"></span>`;
+  const t = data.ticks[i];
+  b.querySelector(".t").textContent = `Tick ${t?.tick ?? i + 1} · ${tickTime(i)}`;
+  b.querySelector(".s").textContent = t?.story ?? "";
+  b.onclick = () => go(i);
+  return b;
+}
+function fillTicks(box, list) {
+  const missing = list.filter(i => !data.ticks[i]);
+  if (!missing.length) { box.replaceChildren(...list.map(tickButton)); return; }
+  box.innerHTML = '<div class="loading">Loading…</div>';
+  ensureTicks(Math.min(...missing), Math.max(...missing)).then(() => box.isConnected && box.replaceChildren(...list.map(tickButton)));
+}
+function renderHistory() {
   const past = $("past");
   past.replaceChildren();
-  const earlier = data.ticks.slice(0, idx).reverse();
-  if (earlier.length) { const h = document.createElement("div"); h.className = "eyebrow"; h.textContent = "Earlier"; past.append(h); }
-  earlier.forEach(pt => {
-    const b = document.createElement("button");
-    b.innerHTML = `<span class="t"></span><span class="s"></span>`;
-    b.querySelector(".t").textContent = `Tick ${pt.tick} · ${pt.simulation_time}`;
-    b.querySelector(".s").textContent = pt.story;
-    b.onclick = () => go(data.ticks.indexOf(pt));
-    past.append(b);
+  if (!idx) { past.hidden = true; return; }
+  past.hidden = false;
+  // Group ticks 0..idx-1 into runs that share a day, newest first.
+  const days = [];
+  for (let i = idx - 1; i >= 0; i--) {
+    const d = dayOf(tickTime(i));
+    if (!days.length || days[days.length - 1].day !== d) days.push({ day: d, ticks: [] });
+    days[days.length - 1].ticks.push(i);
+  }
+  const today = dayOf(tickTime(idx));
+  days.forEach((g, k) => {
+    if (k === 0 && g.day === today) {
+      const h = document.createElement("div"); h.className = "eyebrow"; h.textContent = "Earlier today";
+      const box = document.createElement("div"); box.className = "ticks";
+      past.append(h, box); fillTicks(box, g.ticks);
+      return;
+    }
+    const det = document.createElement("details");
+    const first = Math.min(...g.ticks) + 1, last = Math.max(...g.ticks) + 1;   // tick numbers are 1-based
+    const eps = (data.episodes || []).filter(e => e.from_tick <= last && e.through_tick >= first);
+    det.innerHTML = `<summary><span class="d"></span><span class="ep"></span></summary><div class="ticks"></div>`;
+    det.querySelector(".d").textContent = g.day || "Earlier";
+    const n = document.createElement("span"); n.className = "n"; n.textContent = `${g.ticks.length} tick${g.ticks.length === 1 ? "" : "s"}`;
+    det.querySelector(".d").append(n);
+    det.querySelector(".ep").textContent = eps.map(e => `Episode ${e.number}: ${e.title}`).join(" · ");
+    det.querySelector(".ep").hidden = !eps.length;
+    det.addEventListener("toggle", () => { if (det.open) fillTicks(det.querySelector(".ticks"), g.ticks); });
+    past.append(det);
   });
-  past.hidden = !earlier.length;
 }
 
 function renderBoard(world) {
@@ -1186,39 +1271,58 @@ function renderBoard(world) {
     li.querySelector(".muted").textContent = l.text;
     return li;
   }));
-  const matters = data.ticks.slice(0, idx + 1).flatMap(t => t.matters || []);
+  const matters = [];
+  for (let i = 0; i <= idx; i++) matters.push(...tickMatters(i));
   const box = $("matters");
   if (!matters.length) { box.innerHTML = '<div class="empty">Nothing filed yet.</div>'; return; }
-  box.replaceChildren(...matters.map(m => {
-    const d = document.createElement("div"); d.className = "matter";
-    d.style.setProperty("--c", `var(--${m.by})`); d.textContent = m.text; return d;
-  }));
+  const item = (m) => { const d = document.createElement("div"); d.className = "matter"; d.style.setProperty("--c", `var(--${m.by})`); d.textContent = m.text; return d; };
+  // Newest filings first; older ones fold away so the board stays short.
+  const recent = matters.slice(-6).reverse(), older = matters.slice(0, -6).reverse();
+  box.replaceChildren(...recent.map(item));
+  if (older.length) {
+    const det = document.createElement("details"); det.className = "older-matters";
+    det.innerHTML = `<summary>Earlier filings (${older.length})</summary><div class="matters"></div>`;
+    det.querySelector(".matters").append(...older.map(item));
+    box.append(det);
+  }
 }
 
+let wanted = null;
 function go(i, step) {
+  i = Math.max(0, Math.min(data.names.length - 1, i));
+  if (!data.ticks[i]) {   // not loaded yet: fetch it and its neighbours, then show it
+    wanted = i;
+    $("tickno").textContent = `Tick ${i + 1}`;
+    $("when").textContent = "Loading…";
+    $("slider").value = i;
+    ensureTicks(i - 12, i + 12).then(() => { if (wanted === i) go(i, step); });
+    return;
+  }
+  wanted = null;
   const from = idx;
-  idx = Math.max(0, Math.min(data.ticks.length - 1, i));
+  idx = i;
   const drive = step && !firstPaint && Math.abs(idx - from) === 1 ? from : null;
   const t = data.ticks[idx];
   $("tickno").textContent = `Tick ${t.tick}`;
   $("when").textContent = `${t.simulation_time} · ${t.weather}`;
   $("slider").value = idx;
   $("prev").disabled = idx === 0;
-  $("next").disabled = idx === data.ticks.length - 1;
+  $("next").disabled = idx === data.names.length - 1;
   setSky(t);
   layoutScene(!firstPaint, drive);
   firstPaint = false;
   renderPeople(data.world, t);
   renderStory(t);
   renderBoard(data.world);
+  if (timer) ensureTicks(idx + 1, idx + 12);   // keep a few ticks ahead while playing
 }
 
 function togglePlay() {
   if (timer) { clearInterval(timer); timer = null; $("play").textContent = "Play"; return; }
-  if (idx >= data.ticks.length - 1) go(0);
+  if (idx >= data.names.length - 1) go(0);
   $("play").textContent = "Pause";
   timer = setInterval(() => {
-    if (idx >= data.ticks.length - 1) { togglePlay(); return; }
+    if (idx >= data.names.length - 1) { togglePlay(); return; }
     go(idx + 1, true);
   }, 4200);
 }
