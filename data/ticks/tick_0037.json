@@ -1,0 +1,118 @@
+{
+  "tick": 37,
+  "simulation_time": "Wednesday, October 14, 5:17 PM",
+  "weather": "Partly cloudy, 84°F",
+  "positions": {
+    "gary": "town_hall",
+    "donna": "magnolia_loop",
+    "hal": "garys_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 5:17 on a mild Wednesday in Sumter Oaks, Gary is settled at Town Hall, looking pleased with how the day has gone. Donna is out on Magnolia Loop, determined to thin the pink flamingo flock on the lawn down to just three, while Rosa is heading over to Gary's House with the same stubborn resolve. Hal, dutifully, is checking the exterior modifications on Gary's golf cart against the L-01 compliance rules.",
+  "events": [
+    "Gary headed to Town Square.",
+    "Donna (donna flamingo flock): Pull the extra flamingos off the lawn, leaving just three",
+    "Hal (gary golf cart): Inspect the cart's exterior modifications for L-01 compliance",
+    "Rosa headed to Gary's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at Town Hall at 5:17 PM. I've already used the architectural review desk twice in the last couple of ticks to fill out the golf cart modification form for lights and sound, so the paperwork should be done. Filing it again would be repeating myself. The proposal drop box is for law proposals, which isn't my business today. The form is in, I promised Donna I'd file before Saturday, and the real work is still waiting in the garage: the lights and the sound system for the parade. Thanksgiving lighting rules (L-04) mean I can't hang holiday lights until closer to the date anyway, but I can get the wiring bench-tested, and I'll keep the volume sensible for quiet hours (L-03). Time to head home via the town square and get tinkering.",
+      "emotional_state": "satisfied",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_square",
+          "content": "Form's filed, so I'm heading back toward home to get to work on the cart wiring."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa is right here and I already told her I'd track down Gary, so no need to repeat myself. Saturday is set: pickleball at eight and Rosa's dinner at six. My flamingos are sitting in plain view on the street, and Hal's been eyeing them. L-02 caps decorative ornaments at three visible from the street, and I'd rather trim the flock myself than get a violation notice. Fixing that now keeps the peace and frees me to go find Gary after.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Pull the extra flamingos off the lawn, leaving just three"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Gary's House with nobody around. Rosa asked me to pass along Saturday at six if I see him, and Gary isn't here. His cart is parked right here, and I told myself I'd handle his Architectural Review filing honestly, not on annoyance. The only fair way to judge is to look at what's actually been modified, so I'll inspect the cart and note what's visible from the street under L-01.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Inspect the cart's exterior modifications for L-01 compliance"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Donna just confirmed Saturday at six and said she'd track down Gary, so I shouldn't ask her again. Hal and Donna are both set. Gary is the only one without a confirmed yes, and Hal just headed to Gary's house, so he may relay my message. Rather than keep chatting, I should go find Gary myself and make sure he hears the invite from me directly.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading to Gary's house to invite him to Saturday dinner in person, since nobody's seen him since morning."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03174,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10206,
+        "output_tokens": 1121,
+        "usd": 0.03162
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 373,
+        "output_tokens": 158,
+        "usd": 0.00012
+      }
+    }
+  }
+}

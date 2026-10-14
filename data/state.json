@@ -1,26 +1,25 @@
 {
-  "tick": 37,
-  "time": "2026-10-14T16:17",
+  "tick": 38,
+  "time": "2026-10-14T17:17",
   "positions": {
-    "gary": "town_hall",
+    "gary": "town_square",
     "donna": "magnolia_loop",
     "hal": "garys_house",
-    "rosa": "magnolia_loop"
+    "rosa": "garys_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Town Square."
+    ],
     "donna": [
-      "Hal headed to Gary's House.",
-      "Rosa said to Hal: “Just your appetite, Hal. Donna's got dessert covered, and I'll handle the rest. If you see Gary, tell him Saturday at six and I'm not taking no for an answer.”"
+      "Rosa headed to Gary's House."
     ],
     "hal": [
-      "Donna said to Rosa: “Six on Saturday, got it, I'll bring the dessert. Haven't laid eyes on Gary since this morning, hon, but I'll track him down for you and tell him to call you.”",
-      "Rosa said to Hal: “Just your appetite, Hal. Donna's got dessert covered, and I'll handle the rest. If you see Gary, tell him Saturday at six and I'm not taking no for an answer.”",
-      "You arrived at Gary's House."
+      "Rosa just arrived."
     ],
     "rosa": [
-      "Donna said to Rosa: “Six on Saturday, got it, I'll bring the dessert. Haven't laid eyes on Gary since this morning, hon, but I'll track him down for you and tell him to call you.”",
-      "Hal headed to Gary's House."
+      "Donna (donna flamingo flock): Pull the extra flamingos off the lawn, leaving just three",
+      "You arrived at Gary's House."
     ]
   },
   "memories": {
@@ -394,6 +393,16 @@
         "tick": 36,
         "text": "I (architectural review desk): Fill out and file the golf cart modification form for the lights and sound system",
         "importance": 7
+      },
+      {
+        "tick": 37,
+        "text": "I headed to Town Square.",
+        "importance": 5
+      },
+      {
+        "tick": 37,
+        "text": "You arrived at Town Square.",
+        "importance": 5
       }
     ],
     "donna": [
@@ -811,6 +820,16 @@
         "tick": 36,
         "text": "Rosa said to Hal: “Just your appetite, Hal. Donna's got dessert covered, and I'll handle the rest. If you see Gary, tell him Saturday at six and I'm not taking no for an answer.”",
         "importance": 4
+      },
+      {
+        "tick": 37,
+        "text": "I (donna flamingo flock): Pull the extra flamingos off the lawn, leaving just three",
+        "importance": 4
+      },
+      {
+        "tick": 37,
+        "text": "Rosa headed to Gary's House.",
+        "importance": 4
       }
     ],
     "hal": [
@@ -1173,6 +1192,16 @@
         "tick": 36,
         "text": "You arrived at Gary's House.",
         "importance": 5
+      },
+      {
+        "tick": 37,
+        "text": "I (gary golf cart): Inspect the cart's exterior modifications for L-01 compliance",
+        "importance": 5
+      },
+      {
+        "tick": 37,
+        "text": "Rosa just arrived.",
+        "importance": 5
       }
     ],
     "rosa": [
@@ -1505,6 +1534,21 @@
         "tick": 36,
         "text": "Hal headed to Gary's House.",
         "importance": 5
+      },
+      {
+        "tick": 37,
+        "text": "I headed to Gary's House.",
+        "importance": 6
+      },
+      {
+        "tick": 37,
+        "text": "Donna (donna flamingo flock): Pull the extra flamingos off the lawn, leaving just three",
+        "importance": 6
+      },
+      {
+        "tick": 37,
+        "text": "You arrived at Gary's House.",
+        "importance": 6
       }
     ]
   },
@@ -1551,10 +1595,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "cheerful",
+    "gary": "satisfied",
+    "donna": "determined",
     "hal": "dutiful",
-    "rosa": "warm"
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -1638,10 +1682,16 @@
         "Donna said to Rosa: “Six on Saturday, got it, I'll bring the dessert. Haven't laid eyes on Gary since this morning, hon, but I'll track him down for you and tell him to call you.”",
         "Rosa said to Hal: “Just your appetite, Hal. Donna's got dessert covered, and I'll handle the rest. If you see Gary, tell him Saturday at six and I'm not taking no for an answer.”"
       ]
+    },
+    {
+      "tick": 37,
+      "time": "Wednesday, October 14, 5:17 PM",
+      "story": "At 5:17 on a mild Wednesday in Sumter Oaks, Gary is settled at Town Hall, looking pleased with how the day has gone. Donna is out on Magnolia Loop, determined to thin the pink flamingo flock on the lawn down to just three, while Rosa is heading over to Gary's House with the same stubborn resolve. Hal, dutifully, is checking the exterior modifications on Gary's golf cart against the L-01 compliance rules.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 1.07773,
+    "total_usd": 1.10947,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -1652,13 +1702,12 @@
         "usd": 0.54045
       },
       "2026-10-14": {
-        "ticks": 10,
-        "usd": 0.31444
+        "ticks": 11,
+        "usd": 0.34618
       }
     }
   },
   "recent_tick_costs": [
-    0.03089,
     0.03023,
     0.03186,
     0.03354,
@@ -1681,7 +1730,8 @@
     0.03117,
     0.03142,
     0.03065,
-    0.03158
+    0.03158,
+    0.03174
   ],
   "fund": {
     "gross_usd": 0.0,
