@@ -283,14 +283,14 @@ button:disabled { opacity: 0.4; cursor: default; }
     <button type="button" id="thanks-close" aria-label="Dismiss">✕</button>
   </div>
 
-  <section class="previously" id="previously" aria-label="Previously on Sumter Oaks" hidden>
+  <section class="previously collapsed" id="previously" aria-label="Previously on Sumter Oaks" hidden>
     <div class="prev-head">
       <span class="prev-kicker">Previously on Sumter Oaks…</span>
       <span class="prev-meta" id="prev-meta"></span>
     </div>
     <div class="prev-titlerow">
       <h2 class="prev-title" id="prev-title"></h2>
-      <button type="button" class="prev-toggle" id="prev-toggle" aria-expanded="true" aria-controls="previously">Hide recap</button>
+      <button type="button" class="prev-toggle" id="prev-toggle" aria-expanded="false" aria-controls="previously">What did I miss? ▾</button>
     </div>
     <p class="prev-recap" id="prev-recap"></p>
     <ul class="standings" id="standings"></ul>
@@ -612,7 +612,7 @@ const dayOf = (time) => time.replace(/,\s*[^,]*$/, "");   // "Tuesday, October 1
 
 function setCollapsed(on) {
   $("previously").classList.toggle("collapsed", on);
-  $("prev-toggle").textContent = on ? "Read recap" : "Hide recap";
+  $("prev-toggle").textContent = on ? "What did I miss? ▾" : "Back to the town ▴";
   $("prev-toggle").setAttribute("aria-expanded", String(!on));
 }
 
@@ -743,14 +743,9 @@ function renderPrevious() {
   box.hidden = !eps.length;
   if (!eps.length) return;
   const ep = eps[eps.length - 1];
-  // Open a new episode fully; once this viewer has seen it, start it collapsed to the title.
-  if (data.shownEp !== ep.number) {
-    let seen = 0;
-    try { seen = +localStorage.getItem("so-seen-episode") || 0; } catch (e) {}
-    setCollapsed(!data.sample && seen >= ep.number);
-    try { localStorage.setItem("so-seen-episode", String(ep.number)); } catch (e) {}
-    data.shownEp = ep.number;
-  }
+  // The recap always starts closed to its title; after that, opening or closing is up to the viewer.
+  if (data.shownEp === undefined) setCollapsed(true);
+  data.shownEp = ep.number;
   $("prev-meta").textContent = `Episode ${ep.number} · through tick ${ep.through_tick}`;
   $("prev-title").textContent = ep.title;
   $("prev-recap").textContent = ep.recap;
