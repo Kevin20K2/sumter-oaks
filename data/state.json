@@ -1,24 +1,27 @@
 {
-  "tick": 39,
-  "time": "2026-10-14T18:17",
+  "tick": 40,
+  "time": "2026-10-14T19:17",
   "positions": {
-    "gary": "town_square",
+    "gary": "magnolia_loop",
     "donna": "garys_house",
     "hal": "garys_house",
     "rosa": "garys_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "donna": [
-      "You arrived at Gary's House."
+      "Hal (gary golf cart): Walk around the cart and note which modifications are visible from the street for L-01",
+      "Rosa said to Donna: “Donna, good timing. Dinner's Saturday at six at my place, and I'm still hunting for Gary to tell him. You seen him anywhere?”"
     ],
     "hal": [
-      "Rosa said to Hal: “Hal, you seen Gary? I need him to know it's Saturday at six at my place. If you run into him before I do, tell him to bring his appetite and I'll handle the rest.”",
-      "Donna just arrived."
+      "Donna said to Hal: “Evening, Hal. I trimmed the flamingos down to three this afternoon, so you can put the violation notice away. Rosa's got us all lined up for Saturday dinner, and I'm bringing dessert.”",
+      "Rosa said to Donna: “Donna, good timing. Dinner's Saturday at six at my place, and I'm still hunting for Gary to tell him. You seen him anywhere?”"
     ],
     "rosa": [
-      "Hal said to Rosa: “Evening, Rosa. I'm here to look over Gary's cart, and the man himself isn't around. If he turns up, I'll tell him Saturday at six, no excuses accepted.”",
-      "Donna just arrived."
+      "Donna said to Hal: “Evening, Hal. I trimmed the flamingos down to three this afternoon, so you can put the violation notice away. Rosa's got us all lined up for Saturday dinner, and I'm bringing dessert.”",
+      "Hal (gary golf cart): Walk around the cart and note which modifications are visible from the street for L-01"
     ]
   },
   "memories": {
@@ -407,6 +410,16 @@
         "tick": 38,
         "text": "I (parade signup table): Sign my golf cart up for the Holiday Golf Cart Parade",
         "importance": 5
+      },
+      {
+        "tick": 39,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 39,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "donna": [
@@ -844,6 +857,21 @@
         "tick": 38,
         "text": "You arrived at Gary's House.",
         "importance": 5
+      },
+      {
+        "tick": 39,
+        "text": "I said to Hal: “Evening, Hal. I trimmed the flamingos down to three this afternoon, so you can put the violation notice away. Rosa's got us all lined up for Saturday dinner, and I'm bringing dessert.”",
+        "importance": 4
+      },
+      {
+        "tick": 39,
+        "text": "Hal (gary golf cart): Walk around the cart and note which modifications are visible from the street for L-01",
+        "importance": 4
+      },
+      {
+        "tick": 39,
+        "text": "Rosa said to Donna: “Donna, good timing. Dinner's Saturday at six at my place, and I'm still hunting for Gary to tell him. You seen him anywhere?”",
+        "importance": 4
       }
     ],
     "hal": [
@@ -1231,6 +1259,21 @@
         "tick": 38,
         "text": "Donna just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 39,
+        "text": "I (gary golf cart): Walk around the cart and note which modifications are visible from the street for L-01",
+        "importance": 6
+      },
+      {
+        "tick": 39,
+        "text": "Donna said to Hal: “Evening, Hal. I trimmed the flamingos down to three this afternoon, so you can put the violation notice away. Rosa's got us all lined up for Saturday dinner, and I'm bringing dessert.”",
+        "importance": 6
+      },
+      {
+        "tick": 39,
+        "text": "Rosa said to Donna: “Donna, good timing. Dinner's Saturday at six at my place, and I'm still hunting for Gary to tell him. You seen him anywhere?”",
+        "importance": 6
       }
     ],
     "rosa": [
@@ -1593,6 +1636,21 @@
         "tick": 38,
         "text": "Donna just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 39,
+        "text": "I said to Donna: “Donna, good timing. Dinner's Saturday at six at my place, and I'm still hunting for Gary to tell him. You seen him anywhere?”",
+        "importance": 6
+      },
+      {
+        "tick": 39,
+        "text": "Donna said to Hal: “Evening, Hal. I trimmed the flamingos down to three this afternoon, so you can put the violation notice away. Rosa's got us all lined up for Saturday dinner, and I'm bringing dessert.”",
+        "importance": 6
+      },
+      {
+        "tick": 39,
+        "text": "Hal (gary golf cart): Walk around the cart and note which modifications are visible from the street for L-01",
+        "importance": 6
       }
     ]
   },
@@ -1639,10 +1697,10 @@
     ]
   },
   "emotions": {
-    "gary": "optimistic",
-    "donna": "determined",
+    "gary": "content",
+    "donna": "cheerful",
     "hal": "dutiful",
-    "rosa": "hopeful"
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -1741,10 +1799,19 @@
         "Hal said to Rosa: “Evening, Rosa. I'm here to look over Gary's cart, and the man himself isn't around. If he turns up, I'll tell him Saturday at six, no excuses accepted.”",
         "Rosa said to Hal: “Hal, you seen Gary? I need him to know it's Saturday at six at my place. If you run into him before I do, tell him to bring his appetite and I'll handle the rest.”"
       ]
+    },
+    {
+      "tick": 39,
+      "time": "Wednesday, October 14, 7:17 PM",
+      "story": "Gary has wandered off to Magnolia Loop while Donna, Hal, and Rosa stay behind at Gary's house on this mild Wednesday evening. Donna cheerfully reports that she has trimmed her flamingos down to three, which should keep Hal's violation notice in the drawer, and Rosa is busy lining up a Saturday dinner at six. Hal, dutifully, is inspecting Gary's golf cart for any modifications visible from the street, while Rosa scans the neighborhood for Gary so she can deliver the invitation.",
+      "dialogue": [
+        "Donna said to Hal: “Evening, Hal. I trimmed the flamingos down to three this afternoon, so you can put the violation notice away. Rosa's got us all lined up for Saturday dinner, and I'm bringing dessert.”",
+        "Rosa said to Donna: “Donna, good timing. Dinner's Saturday at six at my place, and I'm still hunting for Gary to tell him. You seen him anywhere?”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 1.14131,
+    "total_usd": 1.17233,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -1755,13 +1822,12 @@
         "usd": 0.54045
       },
       "2026-10-14": {
-        "ticks": 12,
-        "usd": 0.37802
+        "ticks": 13,
+        "usd": 0.40904
       }
     }
   },
   "recent_tick_costs": [
-    0.03186,
     0.03354,
     0.0333,
     0.03242,
@@ -1784,7 +1850,8 @@
     0.03065,
     0.03158,
     0.03174,
-    0.03184
+    0.03184,
+    0.03102
   ],
   "fund": {
     "gross_usd": 0.0,
