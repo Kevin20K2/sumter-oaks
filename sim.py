@@ -112,6 +112,18 @@ def plan_option(plan, url):
     return {"plan": plan, "amount": amount, "recurring": kind == "monthly", "url": url}
 
 
+def refunds_by_payment_intent(key):
+    """Total refunded per payment, in cents. Needs Read on Refunds; without it, refunds just aren't subtracted."""
+    out = {}
+    try:
+        for r in stripe_list("refunds", {}, key):
+            if r.get("status") in ("succeeded", "pending") and r.get("payment_intent"):
+                out[r["payment_intent"]] = out.get(r["payment_intent"], 0) + (r.get("amount") or 0)
+    except Exception as e:
+        print(f"  ! Couldn't check refunds ({e}); give the Stripe key Read access to Refunds to subtract them.")
+    return out
+
+
 def fetch_donations(cfg):
     """Total what supporters have given through this project's Stripe Payment Links.
     One-time gifts count once; monthly gifts count every paid invoice, so renewals add up.
@@ -128,20 +140,29 @@ def fetch_donations(cfg):
     options = [o for o in (plan_option((l.get("metadata") or {}).get("plan", ""), l["url"])
                            for l in links if l.get("active")) if o]
     link_ids = {l["id"] for l in links}
-    gross, payments, supporters, monthly = 0, 0, 0, 0
+    refunded = refunds_by_payment_intent(key)
+    gross, payments, supporters, monthly, returned = 0, 0, 0, 0, 0
     for s in stripe_list("checkout/sessions", {"status": "complete"}, key):
         if s.get("payment_link") not in link_ids and (s.get("metadata") or {}).get("project") != tag:
             continue
-        supporters += 1
         if s.get("mode") == "subscription" and s.get("subscription"):
-            monthly += 1
+            paid = back = 0
             for inv in stripe_list("invoices", {"subscription": s["subscription"], "status": "paid"}, key):
-                gross += inv.get("amount_paid", 0)
+                paid += inv.get("amount_paid", 0)
+                back += min(refunded.get(inv.get("payment_intent"), 0), inv.get("amount_paid", 0))
                 payments += 1
+            gross += paid; returned += back
+            if paid and back < paid:   # a fully refunded supporter isn't counted
+                supporters += 1; monthly += 1
         elif s.get("payment_status") == "paid":
-            gross += s.get("amount_total") or 0
+            paid = s.get("amount_total") or 0
+            back = min(refunded.get(s.get("payment_intent"), 0), paid)
+            gross += paid; returned += back
             payments += 1
-    return {"gross_usd": gross / 100, "payments": payments, "supporters": supporters,
+            if back < paid:
+                supporters += 1
+    gross -= returned   # Stripe keeps its fee on a refund, so the payment still counts toward fees
+    return {"gross_usd": gross / 100, "refunded_usd": returned / 100, "payments": payments, "supporters": supporters,
             "monthly_supporters": monthly, "options": sorted(options, key=lambda o: (o["recurring"], o["amount"])),
             "test_mode": key.startswith(("sk_test", "rk_test"))}
 
@@ -560,32 +581,34 @@ def validate(result, agent_id, world, state):
     target, content = p.get("target"), str(p.get("content") or "").strip()
     note = None
 
-    def wait(reason):
-        return {"type": "WAIT", "parameters": {"target": "none", "content": content or reason}}, reason
+    def wait(reason, public):
+        # The reason stays in the log and engine_note; the story shows the resident's own words
+        # if they gave any, otherwise a plain description of what they're doing.
+        return {"type": "WAIT", "parameters": {"target": "none", "content": content or public}}, reason
 
     if typ == "MOVE":
         zone_names = {z: world["zones"][z]["name"] for z in zone["connects_to"]}
         dest = match_id(target, zone["connects_to"], zone_names)
         act, note = ({"type": "MOVE", "parameters": {"target": dest, "content": content}}, None) if dest else \
-            wait(f"tried to go to {target!r}, which isn't connected to {zid}")
+            wait(f"tried to go to {target!r}, which isn't connected to {zid}", "thinking about where to head next")
     elif typ == "SPEAK":
         here = [o for o, z in state["positions"].items() if z == zid and o != agent_id]
         who = match_id(target, here, {o: world["agents"][o]["name"] for o in here})
         act, note = ({"type": "SPEAK", "parameters": {"target": who, "content": content}}, None) if who and content else \
-            wait(f"tried to speak to {target!r}, who isn't here")
+            wait(f"tried to speak to {target!r}, who isn't here", "looking around for someone to talk to")
     elif typ == "INTERACT":
         obj = match_id(target, zone["objects"])
         act, note = ({"type": "INTERACT", "parameters": {"target": obj, "content": content}}, None) if obj else \
-            wait(f"tried to use {target!r}, which isn't in {zid}")
+            wait(f"tried to use {target!r}, which isn't in {zid}", f"puttering around {zone['name']}")
     elif typ == "DRAFT_LAW":
         act, note = ({"type": "DRAFT_LAW", "parameters": {"target": str(target).strip(), "content": content}}, None) \
-            if zid == "town_hall" and target and content else wait("tried to draft a law away from Town Hall")
+            if zid == "town_hall" and target and content else wait("tried to draft a law away from Town Hall", "mulling over the neighborhood rules")
     elif typ == "VOTE":
         ids = [p_["id"] for p_ in state["proposals"] if p_["status"] == "open"]
         pid = str(target or "").upper().strip()
         vote = content.upper()
         act, note = ({"type": "VOTE", "parameters": {"target": pid, "content": vote}}, None) \
-            if zid == "town_hall" and pid in ids and vote in ("YES", "NO") else wait(f"tried to vote on {target!r}")
+            if zid == "town_hall" and pid in ids and vote in ("YES", "NO") else wait(f"tried to vote on {target!r}", "reading over the open proposals")
     else:
         act = {"type": "WAIT", "parameters": {"target": "none", "content": content or "watching the street"}}
 
