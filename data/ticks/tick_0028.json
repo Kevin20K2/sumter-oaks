@@ -1,0 +1,118 @@
+{
+  "tick": 28,
+  "simulation_time": "Wednesday, October 14, 8:17 AM",
+  "weather": "Partly cloudy, 81°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on a partly cloudy Wednesday morning in Sumter Oaks, Gary is at home checking the rope lights and speaker wiring on his golf cart, determined to get a quiet test run in before anyone else is up. Donna is pulling a spare pickleball paddle out of her bag and setting it aside for Gary, optimistic that he'll be heading to the courts soon. Hal is sitting with his violation notebook, flipping through his notes on Gary's cart and Donna's flamingos and wondering whether any of it actually counts, while Rosa, cheerful as ever, is in her kitchen planning Saturday's dinner menu and writing out the grocery list.",
+  "events": [
+    "Gary (gary golf cart): Check the rope light and speaker wiring, run a low-volume test",
+    "Donna (donna pickleball bag): Pull out the spare paddle and set it aside for Gary",
+    "Hal (hal violation notebook): Flip through my notes on Gary's cart and Donna's flamingos and see if they're real violations",
+    "Rosa (rosa kitchen): Plan Saturday's dinner menu and write the grocery list"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 8:17 AM and I'm alone in the garage. Last tick I powered up the rope lights and speaker for a low-volume test, so I should check that it actually works. Quiet hours ended at 7 AM, so a low-volume test is legal, and I'm only testing inside the garage, so L-03 isn't a problem. Donna wanted me on the court at eight, but the Architectural Review form (L-01) still has to be filed before Saturday, and I promised her I'd do it. Wiring first, then I head to Town Hall and file the form. Right now the workbench is where the unfinished work is, so I'll check the connections and confirm the lights and speaker run clean.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Check the rope light and speaker wiring, run a low-volume test"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Last tick I set out to pull the spare paddle for Gary, and the pickleball bag is right here in the house. Nobody's around to talk to, so the useful move is to actually dig out the paddle and set it aside so it's ready for Saturday at eight. Then I can head out and find Gary to firm up practice.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Pull out the spare paddle and set it aside for Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm back on my porch with coffee, the street's quiet, and no one's in sight. My notebook and binoculars are right here, and I haven't written a thing down about Gary's cart or Donna's flamingos in proper form yet. But I keep thinking about my own reflection: am I keeping the peace or keeping score? I'll check the violation notebook, review what I've actually got on the record, and see whether it's a real complaint or just me being sour. Better to look at the facts before anything goes to the committee.",
+      "emotional_state": "contemplative",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Flip through my notes on Gary's cart and Donna's flamingos and see if they're real violations"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal and Donna are both confirmed for Saturday, and Donna said she'd bring Gary, so the guest list is nearly done. Last tick I checked my shift schedule, and I'm alone in the house with the kitchen and dining table right here. The next practical step is to plan the actual dinner: figure out the menu, seating for four guests, and what I need to shop for around my per-diem shifts. No one is nearby to talk to, so I should use the time to get the work done rather than repeat invitations.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Plan Saturday's dinner menu and write the grocery list"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03169,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9887,
+        "output_tokens": 1113,
+        "usd": 0.0309
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3851,
+        "output_tokens": 802,
+        "usd": 0.00079
+      }
+    }
+  }
+}

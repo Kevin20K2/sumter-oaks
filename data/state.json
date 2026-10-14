@@ -1,6 +1,6 @@
 {
-  "tick": 28,
-  "time": "2026-10-14T07:17",
+  "tick": 29,
+  "time": "2026-10-14T08:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -283,6 +283,11 @@
       {
         "tick": 27,
         "text": "I (gary golf cart): Power up the rope lights and speaker for a low-volume test inside the garage",
+        "importance": 5
+      },
+      {
+        "tick": 28,
+        "text": "I (gary golf cart): Check the rope light and speaker wiring, run a low-volume test",
         "importance": 5
       }
     ],
@@ -586,6 +591,11 @@
         "tick": 27,
         "text": "I (donna pickleball bag): Check the bag and set aside the spare paddle for Gary",
         "importance": 5
+      },
+      {
+        "tick": 28,
+        "text": "I (donna pickleball bag): Pull out the spare paddle and set it aside for Gary",
+        "importance": 5
       }
     ],
     "hal": [
@@ -828,6 +838,11 @@
         "tick": 27,
         "text": "I (hal porch chair): Sit on the porch with my coffee and watch Magnolia Loop wake up",
         "importance": 3
+      },
+      {
+        "tick": 28,
+        "text": "I (hal violation notebook): Flip through my notes on Gary's cart and Donna's flamingos and see if they're real violations",
+        "importance": 5
       }
     ],
     "rosa": [
@@ -1090,6 +1105,11 @@
         "tick": 27,
         "text": "I (rosa shift schedule): Check my shifts and block out Saturday for pickleball and the dinner",
         "importance": 6
+      },
+      {
+        "tick": 28,
+        "text": "I (rosa kitchen): Plan Saturday's dinner menu and write the grocery list",
+        "importance": 6
       }
     ]
   },
@@ -1136,9 +1156,9 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
+    "gary": "determined",
     "donna": "optimistic",
-    "hal": "reflective",
+    "hal": "contemplative",
     "rosa": "optimistic"
   },
   "laws": [
@@ -1196,49 +1216,9 @@
       "text": "Hal Weems: Amend my filing: note Donna has reduced visible flamingos to three, so L-02 follow-up is withdrawn; leave Gary's cart notice pending review"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 23,
-      "time": "Tuesday, October 13, 6:17 PM",
-      "story": "At 6:17 on a humid, hazy Tuesday evening, Gary sheepishly agrees at his house to file his Architectural Review form and keep the speaker at low volume before the ten o'clock quiet rules, while Donna, determined, bargains for a Thursday deadline and a little garage-door paddle practice before their Saturday doubles match. Across town, Hal wanders toward the Town Square in a reflective mood, and Rosa climbs the ladder at the Rec Center, hopeful, to check the standings board for Donna's name and see how often she's been playing.",
-      "dialogue": [
-        "Gary said to Donna: “Alright, alright, you're right, I'll get the Architectural Review form filed before Saturday. Can't have my doubles partner sidelined over a speaker. See you at eight, and I'll bring the paddle.”",
-        "Donna said to Gary: “Gary, test it at low volume tonight, you've got until ten before the quiet rules kick in, and I'll hold my tongue about the form. Just promise me the paperwork gets filed Thursday, and that you'll hit the garage door with that paddle for twenty minutes after. Saturday at eight, partner.”"
-      ]
-    },
-    {
-      "tick": 24,
-      "time": "Tuesday, October 13, 7:17 PM",
-      "story": "It is Tuesday evening in Sumter Oaks, humid and hazy at 75 degrees, and Gary is at home finishing the rope lights and speaker on his golf cart, planning a quiet low-volume test. Donna is with him at the house, pleased with how the evening has gone. Across town, Hal has stopped at the ice cream stand in the square for a single scoop of butter pecan and a reflective moment on a bench. Rosa is heading out toward Magnolia Loop with determination, just as Donna is.",
-      "dialogue": []
-    },
-    {
-      "tick": 25,
-      "time": "Tuesday, October 13, 8:17 PM",
-      "story": "On Tuesday evening in Sumter Oaks, Gary is bent over his workbench at home, carefully soldering rope light and speaker wiring for a low-volume test. Out on Magnolia Loop, cheerful Donna invites Rosa to cheer on her and Gary at Saturday's doubles match, while Rosa, hopeful, counters with a welcome dinner invitation that comes with a promise of pickleball lessons. Meanwhile, contemplative Hal is over at the Town Square, leafing through the parade sign-up sheet to see which golf carts have entered.",
-      "dialogue": [
-        "Donna said to Rosa: “Rosa, hi! Out for a walk in this humidity? Gary and I are playing doubles Saturday at eight, so come cheer us on if you're up.”",
-        "Rosa said to Donna: “Donna, there you are. I've been reading that ladder board like tea leaves trying to track you down. I'm hosting a welcome dinner at my place Saturday, Hal's already coming, and I'd love you at the table. Then you can teach me pickleball and I'll feed you after.”"
-      ]
-    },
-    {
-      "tick": 26,
-      "time": "Tuesday, October 13, 9:17 PM",
-      "story": "On Tuesday night at 9:17, the humid October air hangs over Sumter Oaks at 73 degrees, and Gary is content at home in his house, though a small hiccup in the simulation has left him briefly stuck waiting for a state that never loaded. Donna is delighted out on Magnolia Loop, where she has just invited Rosa to dinner and promised to bring a spare paddle so Rosa can learn pickleball. Rosa, hopeful, answers from the same street that she'll be there Saturday at eight with a thermos, and then invites Donna and Gary to her place afterward, so the winners and losers can share her cooking. Meanwhile Hal, reflective, sits on a bench in Town Square and takes a quiet moment to enjoy the evening.",
-      "dialogue": [
-        "Donna said to Rosa: “Rosa, I'd love to come to your dinner, count me in! Pickleball at eight, dinner after, and I'll bring a spare paddle so you can start learning with us.”",
-        "Rosa said to Donna: “I'll be there Saturday at eight with a thermos, loudly. Then come to my place that evening, you and Gary both, and I'll feed the winners and the losers. Can I count you in?”"
-      ]
-    },
-    {
-      "tick": 27,
-      "time": "Wednesday, October 14, 7:17 AM",
-      "story": "At 7:17 on a partly cloudy Wednesday morning in Sumter Oaks, Gary is in his garage testing rope lights and a speaker at low volume, focused as ever on his setup. Across the way, Donna is checking her pickleball bag and setting aside a spare paddle for Gary, optimistic about the week ahead. Hal sits on his porch with a cup of coffee, reflectively watching Magnolia Loop slowly wake up, while Rosa sorts through her shift schedule and blocks out Saturday for pickleball and dinner.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 0.79433,
+    "total_usd": 0.82602,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -1249,13 +1229,12 @@
         "usd": 0.54045
       },
       "2026-10-14": {
-        "ticks": 1,
-        "usd": 0.03104
+        "ticks": 2,
+        "usd": 0.06273
       }
     }
   },
   "recent_tick_costs": [
-    0.03034,
     0.03069,
     0.03066,
     0.03114,
@@ -1278,7 +1257,8 @@
     0.0323,
     0.03101,
     0.03157,
-    0.03104
+    0.03104,
+    0.03169
   ],
   "fund": {
     "gross_usd": 0.0,
