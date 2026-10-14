@@ -1,18 +1,25 @@
 {
-  "tick": 30,
-  "time": "2026-10-14T09:17",
+  "tick": 31,
+  "time": "2026-10-14T10:17",
   "positions": {
     "gary": "magnolia_loop",
-    "donna": "donnas_house",
-    "hal": "hals_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "You arrived at Magnolia Loop (the street)."
+      "Donna just arrived.",
+      "Hal just arrived."
     ],
-    "donna": [],
-    "hal": [],
+    "donna": [
+      "You arrived at Magnolia Loop (the street).",
+      "Hal just arrived."
+    ],
+    "hal": [
+      "You arrived at Magnolia Loop (the street).",
+      "Donna just arrived."
+    ],
     "rosa": []
   },
   "memories": {
@@ -301,6 +308,21 @@
         "tick": 29,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 30,
+        "text": "I (street bulletin board): Look for the Architectural Review form or filing notice for cart modifications",
+        "importance": 5
+      },
+      {
+        "tick": 30,
+        "text": "Donna just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 30,
+        "text": "Hal just arrived.",
+        "importance": 5
       }
     ],
     "donna": [
@@ -613,6 +635,21 @@
         "tick": 29,
         "text": "I (donna club calendar): Pencil in Saturday 8 AM pickleball with Gary, then Rosa's dinner that evening",
         "importance": 5
+      },
+      {
+        "tick": 30,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 30,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 30,
+        "text": "Hal just arrived.",
+        "importance": 5
       }
     ],
     "hal": [
@@ -865,6 +902,21 @@
         "tick": 29,
         "text": "I (hal binoculars): Scan Magnolia Loop and count the flamingos and cart modifications visible from the street",
         "importance": 4
+      },
+      {
+        "tick": 30,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 30,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 30,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ],
     "rosa": [
@@ -1137,6 +1189,11 @@
         "tick": 29,
         "text": "I (rosa dining table): Check the table size and sketch the seating plan for Saturday's dinner",
         "importance": 6
+      },
+      {
+        "tick": 30,
+        "text": "I (rosa dining table): Count chairs, set out placemats, and lock in the seating for four guests",
+        "importance": 5
       }
     ]
   },
@@ -1184,8 +1241,8 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "energized",
-    "hal": "reflective",
+    "donna": "optimistic",
+    "hal": "resolute",
     "rosa": "optimistic"
   },
   "laws": [
@@ -1249,10 +1306,16 @@
       "time": "Wednesday, October 14, 9:17 AM",
       "story": "Gary is heading down Magnolia Loop in determined fashion while the morning sun warms the palmettos at 82 degrees. Donna is penciling a Saturday pickleball date with Gary into her club calendar, followed by Rosa's dinner that evening. Hal, reflective as ever, is scanning the street with his binoculars to count flamingos and golf cart modifications. Meanwhile, Rosa is measuring her dining table and sketching a seating plan, optimistic that Saturday will go off without a hitch.",
       "dialogue": []
+    },
+    {
+      "tick": 30,
+      "time": "Wednesday, October 14, 10:17 AM",
+      "story": "Gary is standing at the bulletin board on Magnolia Loop, determined to find the Architectural Review form for cart modifications before the morning is out. Donna and Hal are both heading down to the street, optimistic and resolute, though it isn't yet clear whether they're there to help Gary or to argue about his paperwork. Meanwhile, Rosa is at her dining table on a pleasant October morning, counting chairs and setting out placemats for four guests she's hoping will show up for lunch.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 0.85823,
+    "total_usd": 0.8893,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -1263,13 +1326,12 @@
         "usd": 0.54045
       },
       "2026-10-14": {
-        "ticks": 3,
-        "usd": 0.09494
+        "ticks": 4,
+        "usd": 0.12601
       }
     }
   },
   "recent_tick_costs": [
-    0.03066,
     0.03114,
     0.03068,
     0.03056,
@@ -1292,7 +1354,8 @@
     0.03157,
     0.03104,
     0.03169,
-    0.03221
+    0.03221,
+    0.03107
   ],
   "fund": {
     "gross_usd": 0.0,

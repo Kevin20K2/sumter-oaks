@@ -1,0 +1,118 @@
+{
+  "tick": 30,
+  "simulation_time": "Wednesday, October 14, 10:17 AM",
+  "weather": "Partly cloudy, 82°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is standing at the bulletin board on Magnolia Loop, determined to find the Architectural Review form for cart modifications before the morning is out. Donna and Hal are both heading down to the street, optimistic and resolute, though it isn't yet clear whether they're there to help Gary or to argue about his paperwork. Meanwhile, Rosa is at her dining table on a pleasant October morning, counting chairs and setting out placemats for four guests she's hoping will show up for lunch.",
+  "events": [
+    "Gary (street bulletin board): Look for the Architectural Review form or filing notice for cart modifications",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa dining table): Count chairs, set out placemats, and lock in the seating for four guests"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm out on Magnolia Loop at 10:17 with nobody around. Donna said she'd book a court for tomorrow morning and I've got Saturday's deadline on the Architectural Review form, which I promised to file. L-01 says visible cart mods like rope lights and a speaker need approval, so I shouldn't run the cart down the street until that's in. The street bulletin board might have the form or the review committee's notice. Checking it is a quick, useful step toward my parade goal and keeping my word, and then I can decide about Town Hall.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Look for the Architectural Review form or filing notice for cart modifications"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already penciled in Saturday with Gary and pulled out the spare paddle, so the prep at home is done. Nobody is in sight and there's nothing left to ask anyone right now. The best next step toward climbing the ladder is to get Gary actually on a court before Saturday. Courts can be reserved for up to 2 hours, so I should head toward Magnolia Loop and find Gary to nudge him into a practice session, paddle in hand.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with the spare paddle to track down Gary and line up a practice session before Saturday."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've scanned the street with the binoculars and flipped through the notebook already. Doing it again is just scorekeeping, and my own reflection says I'm starting to feel like I'm doing exactly that. The flamingos and Gary's cart rig are matters for the review committee, not for me to stew over from the porch. The parade sheet is at Town Square, and Gary said he'd file his paperwork after wiring things up, so that's worth checking on. Time to stop counting and go do something about it, in the proper channel.",
+      "emotional_state": "resolute",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to see what's actually visible from the street and to find out whether Gary has filed his Architectural Review paperwork. I'll handle this by the book instead of fuming on the porch."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Pickleball is Saturday at eight and the dinner is that evening. I've blocked out my shifts, planned the menu and grocery list, and sketched the seating plan, so the last prep piece is the table itself. Gary, Donna, Hal and me makes four, and I want everyone comfortable. I'm alone in the house, so nobody to talk to. Time to start the actual dinner work. I'll go through the dining table and make sure there's enough room and chairs before I shop.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Count chairs, set out placemats, and lock in the seating for four guests"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03107,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9757,
+        "output_tokens": 1144,
+        "usd": 0.03095
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 382,
+        "output_tokens": 161,
+        "usd": 0.00012
+      }
+    }
+  }
+}
