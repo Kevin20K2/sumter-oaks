@@ -1,6 +1,6 @@
 {
-  "tick": 52,
-  "time": "2026-10-15T16:17",
+  "tick": 53,
+  "time": "2026-10-15T17:17",
   "positions": {
     "gary": "garys_house",
     "donna": "garys_house",
@@ -9,19 +9,17 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, you're all set with Rosa, so let's lock in ours: Saturday, eight sharp, rec center, and wear real sneakers, not those loafers. I'll bring the spare paddle and walk you through the basics, you'll be dinking like a pro by lunch.”",
-      "Rosa said to Gary: “Baked beans from your wife's recipe? Gary, that's perfect, consider it your assignment, and I'll cover the rest and the rolls. Saturday at six, and I'm holding you to the clean shirt.”"
+      "Donna said to Rosa: “Rosa, since Gary's got the beans, let me bring dessert Saturday. I make a peach cobbler that never lasts past the first pass, and I'll bring an extra folding chair just in case.”",
+      "Rosa said to Gary: “Alright, you two, I've got a menu to plan and a table to set. Gary, beans and rolls, Donna, dessert, and I'll see you both Saturday at six. I'm heading home to start cooking.”"
     ],
     "donna": [
-      "Gary said to Rosa: “No allergies here, Rosa, I'll eat anything that holds still. I'll bring the beans, and I'll pick up rolls on the way so Donna doesn't have to nag me. And don't worry, the cart stays on my driveway.”",
-      "Rosa said to Gary: “Baked beans from your wife's recipe? Gary, that's perfect, consider it your assignment, and I'll cover the rest and the rolls. Saturday at six, and I'm holding you to the clean shirt.”"
+      "Gary (gary workbench): Lay out the light strings and sound system parts and start testing the wiring",
+      "Rosa said to Gary: “Alright, you two, I've got a menu to plan and a table to set. Gary, beans and rolls, Donna, dessert, and I'll see you both Saturday at six. I'm heading home to start cooking.”"
     ],
-    "hal": [
-      "You arrived at Hal's House."
-    ],
+    "hal": [],
     "rosa": [
-      "Gary said to Rosa: “No allergies here, Rosa, I'll eat anything that holds still. I'll bring the beans, and I'll pick up rolls on the way so Donna doesn't have to nag me. And don't worry, the cart stays on my driveway.”",
-      "Donna said to Gary: “Gary, you're all set with Rosa, so let's lock in ours: Saturday, eight sharp, rec center, and wear real sneakers, not those loafers. I'll bring the spare paddle and walk you through the basics, you'll be dinking like a pro by lunch.”"
+      "Gary (gary workbench): Lay out the light strings and sound system parts and start testing the wiring",
+      "Donna said to Rosa: “Rosa, since Gary's got the beans, let me bring dessert Saturday. I make a peach cobbler that never lasts past the first pass, and I'll bring an extra folding chair just in case.”"
     ]
   },
   "memories": {
@@ -544,6 +542,21 @@
       {
         "tick": 51,
         "text": "Rosa said to Gary: “Baked beans from your wife's recipe? Gary, that's perfect, consider it your assignment, and I'll cover the rest and the rolls. Saturday at six, and I'm holding you to the clean shirt.”",
+        "importance": 4
+      },
+      {
+        "tick": 52,
+        "text": "I (gary workbench): Lay out the light strings and sound system parts and start testing the wiring",
+        "importance": 4
+      },
+      {
+        "tick": 52,
+        "text": "Donna said to Rosa: “Rosa, since Gary's got the beans, let me bring dessert Saturday. I make a peach cobbler that never lasts past the first pass, and I'll bring an extra folding chair just in case.”",
+        "importance": 4
+      },
+      {
+        "tick": 52,
+        "text": "Rosa said to Gary: “Alright, you two, I've got a menu to plan and a table to set. Gary, beans and rolls, Donna, dessert, and I'll see you both Saturday at six. I'm heading home to start cooking.”",
         "importance": 4
       }
     ],
@@ -1162,6 +1175,21 @@
         "tick": 51,
         "text": "Rosa said to Gary: “Baked beans from your wife's recipe? Gary, that's perfect, consider it your assignment, and I'll cover the rest and the rolls. Saturday at six, and I'm holding you to the clean shirt.”",
         "importance": 6
+      },
+      {
+        "tick": 52,
+        "text": "I said to Rosa: “Rosa, since Gary's got the beans, let me bring dessert Saturday. I make a peach cobbler that never lasts past the first pass, and I'll bring an extra folding chair just in case.”",
+        "importance": 4
+      },
+      {
+        "tick": 52,
+        "text": "Gary (gary workbench): Lay out the light strings and sound system parts and start testing the wiring",
+        "importance": 4
+      },
+      {
+        "tick": 52,
+        "text": "Rosa said to Gary: “Alright, you two, I've got a menu to plan and a table to set. Gary, beans and rolls, Donna, dessert, and I'll see you both Saturday at six. I'm heading home to start cooking.”",
+        "importance": 4
       }
     ],
     "hal": [
@@ -1678,6 +1706,11 @@
       {
         "tick": 51,
         "text": "You arrived at Hal's House.",
+        "importance": 4
+      },
+      {
+        "tick": 52,
+        "text": "I (hal violation notebook): Log today's flamingo count and note Gary's pending cart filing",
         "importance": 4
       }
     ],
@@ -2206,6 +2239,21 @@
         "tick": 51,
         "text": "Donna said to Gary: “Gary, you're all set with Rosa, so let's lock in ours: Saturday, eight sharp, rec center, and wear real sneakers, not those loafers. I'll bring the spare paddle and walk you through the basics, you'll be dinking like a pro by lunch.”",
         "importance": 6
+      },
+      {
+        "tick": 52,
+        "text": "I said to Gary: “Alright, you two, I've got a menu to plan and a table to set. Gary, beans and rolls, Donna, dessert, and I'll see you both Saturday at six. I'm heading home to start cooking.”",
+        "importance": 4
+      },
+      {
+        "tick": 52,
+        "text": "Gary (gary workbench): Lay out the light strings and sound system parts and start testing the wiring",
+        "importance": 4
+      },
+      {
+        "tick": 52,
+        "text": "Donna said to Rosa: “Rosa, since Gary's got the beans, let me bring dessert Saturday. I make a peach cobbler that never lasts past the first pass, and I'll bring an extra folding chair just in case.”",
+        "importance": 4
       }
     ]
   },
@@ -2253,9 +2301,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "optimistic",
+    "donna": "pleased",
     "hal": "dutiful",
-    "rosa": "pleased"
+    "rosa": "content"
   },
   "laws": [
     {
@@ -2320,60 +2368,9 @@
       "text": "Gary Kowalski: Fill out and file the golf cart modification form for the lights and sound system"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 47,
-      "time": "Thursday, October 15, 12:17 PM",
-      "story": "At Gary's house on Thursday just after noon, Gary is cheerfully showing off his golf cart, with the bracket mounted and the lights strung but not yet switched on until the review form clears. Donna has arrived with a determined pitch: a Saturday dinner at six, pie included, and a doubles match at eight the next morning with a spare paddle waiting for Gary. Out on Magnolia Loop, Hal is dutifully counting the donna flamingos against the three-ornament limit while Rosa, equally determined, asks him for two folding chairs and heads off to corner Gary.",
-      "dialogue": [
-        "Gary said to Donna: “Well, look who's here! Come see the cart, Donna. Bracket's mounted, lights are strung, and not a single wire's live until that review form clears, so I'm staying legal.”",
-        "Donna said to Gary: “Gary, there you are! Rosa says you're still on for Saturday at six, so pie, dinner, the works. And you're my doubles partner at eight that morning, no more dodging. I've got a spare paddle with your name on it.”",
-        "Rosa said to Hal: “Pie and punctuality, Hal, you're a gift. If you've got two spare folding chairs for Saturday, that's all I need hauled. Now I'm going to run Gary to ground.”"
-      ]
-    },
-    {
-      "tick": 48,
-      "time": "Thursday, October 15, 1:17 PM",
-      "story": "At 1:17 on a mild Thursday afternoon in Sumter Oaks, Gary is warm and a little sheepish inside his house as he agrees to join Saturday's game, promising to show up at eight sharp with an appetite for Rosa's pie. Donna, cheerful as ever, compliments his golf cart and offers to bring a spare paddle so he can practice his dinks in the driveway once his paperwork clears. Out on Magnolia Loop, Hal, dutiful as always, promises Rosa two folding chairs from his garage before Saturday. Rosa, determined, is already on her way to Gary's House to make sure he keeps his word.",
-      "dialogue": [
-        "Gary said to Donna: “Alright, alright, I'm in for Saturday. Eight o'clock sharp, and I'll bring the appetite for Rosa's pie. Just don't expect me to hit anything, my knees and I have an understanding.”",
-        "Donna said to Gary: “Well, that is a handsome cart, Gary, and I'm glad you're keeping it legal, Hal will be thrilled. Once that form clears, I'll swing by with the spare paddle so you can practice your dinks in the driveway before Saturday.”",
-        "Hal said to Rosa: “Two folding chairs, Rosa. I've got a pair in the garage and I'll have them at your door before Saturday. Good luck running Gary down.”"
-      ]
-    },
-    {
-      "tick": 49,
-      "time": "Thursday, October 15, 2:17 PM",
-      "story": "At 2:17 on a warm Thursday afternoon in Sumter Oaks, Gary welcomes Rosa into his house with a joke about Donna bragging on her pie, and Donna beams from the couch while Rosa, determined as ever, pins Gary down for a Saturday dinner at six. Out on Magnolia Loop, Hal dutifully counts the pink plastic flamingos in Donna's flock against the community's three-ornament limit, keeping the peace one lawn at a time. Donna, meanwhile, has booked Gary for an early tennis date at the courts on Saturday morning, so he is about to be quite busy.",
-      "dialogue": [
-        "Gary said to Rosa: “Rosa, come on in! Donna's been bragging about your pie all week, so I hope you didn't come to take it back. Pull up a stool and tell me what you think of the cart.”",
-        "Donna said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”",
-        "Rosa said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”"
-      ]
-    },
-    {
-      "tick": 50,
-      "time": "Thursday, October 15, 3:17 PM",
-      "story": "Gary and Donna are at Gary's house on a warm Thursday afternoon, with Rosa there too, settling the details of Saturday's dinner. Gary has promised baked beans and a clean shirt, and Donna has nudged him toward rolls while offering to cover dessert herself. Rosa, satisfied that the plan is set, asks about allergies and reminds Gary not to park his golf cart on her lawn. Out on Magnolia Loop, Hal is dutifully checking the street bulletin board for review notices, Gary's filing, and Rosa's dinner details.",
-      "dialogue": [
-        "Gary said to Rosa: “Put me down for a yes, Rosa, and I'll bring my late wife's baked beans, they hold up better than my knees. Saturday at six, I'll be there with a clean shirt.”",
-        "Donna said to Rosa: “Put Gary down for a dish, Rosa. He's the type who'll say yes and show up empty-handed unless you pin him to something. Rolls, I'd say, and I'll bring dessert so you're covered.”",
-        "Rosa said to Gary: “Good, that's all I needed to hear, Gary. Saturday at six, and bring your appetite. Any allergies I should know about before I start cooking? And the cart looks fine from here, just don't let it park on my lawn.”"
-      ]
-    },
-    {
-      "tick": 51,
-      "time": "Thursday, October 15, 4:17 PM",
-      "story": "At 4:17 on a warm Thursday afternoon in Sumter Oaks, Gary is at his house, content, agreeing with Rosa to bring the baked beans and pick up the rolls for Saturday's cookout. Donna, also at Gary's house and feeling optimistic, sets their pickleball lesson for eight sharp at the rec center and insists on real sneakers. Rosa, pleased with the plan, confirms dinner at six and teases Gary about wearing a clean shirt. Meanwhile Hal, dutifully, heads home along Magnolia Loop to Hal's House.",
-      "dialogue": [
-        "Gary said to Rosa: “No allergies here, Rosa, I'll eat anything that holds still. I'll bring the beans, and I'll pick up rolls on the way so Donna doesn't have to nag me. And don't worry, the cart stays on my driveway.”",
-        "Donna said to Gary: “Gary, you're all set with Rosa, so let's lock in ours: Saturday, eight sharp, rec center, and wear real sneakers, not those loafers. I'll bring the spare paddle and walk you through the basics, you'll be dinking like a pro by lunch.”",
-        "Rosa said to Gary: “Baked beans from your wife's recipe? Gary, that's perfect, consider it your assignment, and I'll cover the rest and the rolls. Saturday at six, and I'm holding you to the clean shirt.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 1.55998,
+    "total_usd": 1.59336,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -2388,13 +2385,12 @@
         "usd": 0.4745
       },
       "2026-10-15": {
-        "ticks": 10,
-        "usd": 0.32219
+        "ticks": 11,
+        "usd": 0.35557
       }
     }
   },
   "recent_tick_costs": [
-    0.03169,
     0.03221,
     0.03107,
     0.0316,
@@ -2417,7 +2413,8 @@
     0.03362,
     0.03157,
     0.03283,
-    0.03432
+    0.03432,
+    0.03338
   ],
   "fund": {
     "gross_usd": 0.0,
