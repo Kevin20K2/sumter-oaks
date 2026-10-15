@@ -1,0 +1,115 @@
+{
+  "tick": 49,
+  "simulation_time": "Thursday, October 15, 2:17 PM",
+  "weather": "Partly cloudy, 83°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
+    "rosa": "garys_house"
+  },
+  "story": "At 2:17 on a warm Thursday afternoon in Sumter Oaks, Gary welcomes Rosa into his house with a joke about Donna bragging on her pie, and Donna beams from the couch while Rosa, determined as ever, pins Gary down for a Saturday dinner at six. Out on Magnolia Loop, Hal dutifully counts the pink plastic flamingos in Donna's flock against the community's three-ornament limit, keeping the peace one lawn at a time. Donna, meanwhile, has booked Gary for an early tennis date at the courts on Saturday morning, so he is about to be quite busy.",
+  "events": [
+    "Hal (donna flamingo flock): Count the flamingos visible from the street against the three-ornament limit"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna and I just covered Saturday and the cart, and I already told her I'm in, so no sense repeating that. Rosa just walked up and I haven't greeted her yet. Pie is on the horizon and she's the one making it. A warm welcome, and maybe a chance to show off the cart and make her feel included, keeps me useful and sociable without rehashing the pickleball business.",
+      "emotional_state": "cheerful",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, come on in! Donna's been bragging about your pie all week, so I hope you didn't come to take it back. Pull up a stool and tell me what you think of the cart."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just committed to Saturday doubles at eight and Rosa's dinner at six, so my main goal is basically won. Rosa just walked in, and I want both of them at Saturday's table. I shouldn't repeat my pitch to Gary. Better to turn to Rosa, confirm Gary's in, and keep the plans from falling apart, which is exactly the kind of connective role I love.",
+      "emotional_state": "delighted",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Alone on Magnolia Loop with Donna's flamingo flock in front of me. My old goal is to report this stuff, but lately I've softened. Still, L-02 caps visible ornaments at three, and I should know the actual count before I decide anything, especially with Saturday's dinner coming. Facts first, then I can choose whether a friendly word to Donna beats a written report. Count them, by the book.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street against the three-ornament limit"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I tracked Gary down at his house, and Donna is here too. Hal and Donna are already confirmed for Saturday, and Gary is the last chair to fill. He's been dodging, so I'll be direct and warm, give him the time and place, and make it easy to say yes. I haven't asked him yet this tick, so asking now isn't repeating myself.",
+      "emotional_state": "determined",
+      "importance_rating": 7,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03157,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10467,
+        "output_tokens": 1048,
+        "usd": 0.03141
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 516,
+        "output_tokens": 210,
+        "usd": 0.00016
+      }
+    }
+  }
+}

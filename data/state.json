@@ -1,6 +1,6 @@
 {
-  "tick": 49,
-  "time": "2026-10-15T13:17",
+  "tick": 50,
+  "time": "2026-10-15T14:17",
   "positions": {
     "gary": "garys_house",
     "donna": "garys_house",
@@ -9,19 +9,17 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Well, that is a handsome cart, Gary, and I'm glad you're keeping it legal, Hal will be thrilled. Once that form clears, I'll swing by with the spare paddle so you can practice your dinks in the driveway before Saturday.”",
-      "Rosa just arrived."
+      "Donna said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”",
+      "Rosa said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”"
     ],
     "donna": [
-      "Gary said to Donna: “Alright, alright, I'm in for Saturday. Eight o'clock sharp, and I'll bring the appetite for Rosa's pie. Just don't expect me to hit anything, my knees and I have an understanding.”",
-      "Rosa just arrived."
+      "Gary said to Rosa: “Rosa, come on in! Donna's been bragging about your pie all week, so I hope you didn't come to take it back. Pull up a stool and tell me what you think of the cart.”",
+      "Rosa said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”"
     ],
-    "hal": [
-      "Rosa headed to Gary's House."
-    ],
+    "hal": [],
     "rosa": [
-      "Hal said to Rosa: “Two folding chairs, Rosa. I've got a pair in the garage and I'll have them at your door before Saturday. Good luck running Gary down.”",
-      "You arrived at Gary's House."
+      "Gary said to Rosa: “Rosa, come on in! Donna's been bragging about your pie all week, so I hope you didn't come to take it back. Pull up a stool and tell me what you think of the cart.”",
+      "Donna said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”"
     ]
   },
   "memories": {
@@ -500,6 +498,21 @@
         "tick": 48,
         "text": "Rosa just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 49,
+        "text": "I said to Rosa: “Rosa, come on in! Donna's been bragging about your pie all week, so I hope you didn't come to take it back. Pull up a stool and tell me what you think of the cart.”",
+        "importance": 3
+      },
+      {
+        "tick": 49,
+        "text": "Donna said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”",
+        "importance": 3
+      },
+      {
+        "tick": 49,
+        "text": "Rosa said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”",
+        "importance": 3
       }
     ],
     "donna": [
@@ -1072,6 +1085,21 @@
         "tick": 48,
         "text": "Rosa just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 49,
+        "text": "I said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”",
+        "importance": 5
+      },
+      {
+        "tick": 49,
+        "text": "Gary said to Rosa: “Rosa, come on in! Donna's been bragging about your pie all week, so I hope you didn't come to take it back. Pull up a stool and tell me what you think of the cart.”",
+        "importance": 5
+      },
+      {
+        "tick": 49,
+        "text": "Rosa said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”",
+        "importance": 5
       }
     ],
     "hal": [
@@ -1569,6 +1597,11 @@
         "tick": 48,
         "text": "Rosa headed to Gary's House.",
         "importance": 3
+      },
+      {
+        "tick": 49,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street against the three-ornament limit",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -2051,6 +2084,21 @@
         "tick": 48,
         "text": "You arrived at Gary's House.",
         "importance": 6
+      },
+      {
+        "tick": 49,
+        "text": "I said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”",
+        "importance": 7
+      },
+      {
+        "tick": 49,
+        "text": "Gary said to Rosa: “Rosa, come on in! Donna's been bragging about your pie all week, so I hope you didn't come to take it back. Pull up a stool and tell me what you think of the cart.”",
+        "importance": 7
+      },
+      {
+        "tick": 49,
+        "text": "Donna said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”",
+        "importance": 7
       }
     ]
   },
@@ -2097,8 +2145,8 @@
     ]
   },
   "emotions": {
-    "gary": "warm, a little sheepish",
-    "donna": "cheerful",
+    "gary": "cheerful",
+    "donna": "delighted",
     "hal": "dutiful",
     "rosa": "determined"
   },
@@ -2185,10 +2233,20 @@
         "Donna said to Gary: “Well, that is a handsome cart, Gary, and I'm glad you're keeping it legal, Hal will be thrilled. Once that form clears, I'll swing by with the spare paddle so you can practice your dinks in the driveway before Saturday.”",
         "Hal said to Rosa: “Two folding chairs, Rosa. I've got a pair in the garage and I'll have them at your door before Saturday. Good luck running Gary down.”"
       ]
+    },
+    {
+      "tick": 49,
+      "time": "Thursday, October 15, 2:17 PM",
+      "story": "At 2:17 on a warm Thursday afternoon in Sumter Oaks, Gary welcomes Rosa into his house with a joke about Donna bragging on her pie, and Donna beams from the couch while Rosa, determined as ever, pins Gary down for a Saturday dinner at six. Out on Magnolia Loop, Hal dutifully counts the pink plastic flamingos in Donna's flock against the community's three-ornament limit, keeping the peace one lawn at a time. Donna, meanwhile, has booked Gary for an early tennis date at the courts on Saturday morning, so he is about to be quite busy.",
+      "dialogue": [
+        "Gary said to Rosa: “Rosa, come on in! Donna's been bragging about your pie all week, so I hope you didn't come to take it back. Pull up a stool and tell me what you think of the cart.”",
+        "Donna said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”",
+        "Rosa said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 1.46126,
+    "total_usd": 1.49283,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -2203,13 +2261,12 @@
         "usd": 0.4745
       },
       "2026-10-15": {
-        "ticks": 7,
-        "usd": 0.22347
+        "ticks": 8,
+        "usd": 0.25504
       }
     }
   },
   "recent_tick_costs": [
-    0.03101,
     0.03157,
     0.03104,
     0.03169,
@@ -2232,7 +2289,8 @@
     0.0314,
     0.03242,
     0.03206,
-    0.03362
+    0.03362,
+    0.03157
   ],
   "fund": {
     "gross_usd": 0.0,
