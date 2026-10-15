@@ -1,6 +1,6 @@
 {
-  "tick": 50,
-  "time": "2026-10-15T14:17",
+  "tick": 51,
+  "time": "2026-10-15T15:17",
   "positions": {
     "gary": "garys_house",
     "donna": "garys_house",
@@ -9,17 +9,17 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”",
-      "Rosa said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”"
+      "Donna said to Rosa: “Put Gary down for a dish, Rosa. He's the type who'll say yes and show up empty-handed unless you pin him to something. Rolls, I'd say, and I'll bring dessert so you're covered.”",
+      "Rosa said to Gary: “Good, that's all I needed to hear, Gary. Saturday at six, and bring your appetite. Any allergies I should know about before I start cooking? And the cart looks fine from here, just don't let it park on my lawn.”"
     ],
     "donna": [
-      "Gary said to Rosa: “Rosa, come on in! Donna's been bragging about your pie all week, so I hope you didn't come to take it back. Pull up a stool and tell me what you think of the cart.”",
-      "Rosa said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”"
+      "Gary said to Rosa: “Put me down for a yes, Rosa, and I'll bring my late wife's baked beans, they hold up better than my knees. Saturday at six, I'll be there with a clean shirt.”",
+      "Rosa said to Gary: “Good, that's all I needed to hear, Gary. Saturday at six, and bring your appetite. Any allergies I should know about before I start cooking? And the cart looks fine from here, just don't let it park on my lawn.”"
     ],
     "hal": [],
     "rosa": [
-      "Gary said to Rosa: “Rosa, come on in! Donna's been bragging about your pie all week, so I hope you didn't come to take it back. Pull up a stool and tell me what you think of the cart.”",
-      "Donna said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”"
+      "Gary said to Rosa: “Put me down for a yes, Rosa, and I'll bring my late wife's baked beans, they hold up better than my knees. Saturday at six, I'll be there with a clean shirt.”",
+      "Donna said to Rosa: “Put Gary down for a dish, Rosa. He's the type who'll say yes and show up empty-handed unless you pin him to something. Rolls, I'd say, and I'll bring dessert so you're covered.”"
     ]
   },
   "memories": {
@@ -513,6 +513,21 @@
         "tick": 49,
         "text": "Rosa said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”",
         "importance": 3
+      },
+      {
+        "tick": 50,
+        "text": "I said to Rosa: “Put me down for a yes, Rosa, and I'll bring my late wife's baked beans, they hold up better than my knees. Saturday at six, I'll be there with a clean shirt.”",
+        "importance": 6
+      },
+      {
+        "tick": 50,
+        "text": "Donna said to Rosa: “Put Gary down for a dish, Rosa. He's the type who'll say yes and show up empty-handed unless you pin him to something. Rolls, I'd say, and I'll bring dessert so you're covered.”",
+        "importance": 6
+      },
+      {
+        "tick": 50,
+        "text": "Rosa said to Gary: “Good, that's all I needed to hear, Gary. Saturday at six, and bring your appetite. Any allergies I should know about before I start cooking? And the cart looks fine from here, just don't let it park on my lawn.”",
+        "importance": 6
       }
     ],
     "donna": [
@@ -1100,6 +1115,21 @@
         "tick": 49,
         "text": "Rosa said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”",
         "importance": 5
+      },
+      {
+        "tick": 50,
+        "text": "I said to Rosa: “Put Gary down for a dish, Rosa. He's the type who'll say yes and show up empty-handed unless you pin him to something. Rolls, I'd say, and I'll bring dessert so you're covered.”",
+        "importance": 5
+      },
+      {
+        "tick": 50,
+        "text": "Gary said to Rosa: “Put me down for a yes, Rosa, and I'll bring my late wife's baked beans, they hold up better than my knees. Saturday at six, I'll be there with a clean shirt.”",
+        "importance": 5
+      },
+      {
+        "tick": 50,
+        "text": "Rosa said to Gary: “Good, that's all I needed to hear, Gary. Saturday at six, and bring your appetite. Any allergies I should know about before I start cooking? And the cart looks fine from here, just don't let it park on my lawn.”",
+        "importance": 5
       }
     ],
     "hal": [
@@ -1602,6 +1632,11 @@
         "tick": 49,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street against the three-ornament limit",
         "importance": 4
+      },
+      {
+        "tick": 50,
+        "text": "I (street bulletin board): Read the postings for review notices, Gary's filing, and Rosa's dinner details",
+        "importance": 3
       }
     ],
     "rosa": [
@@ -2099,6 +2134,21 @@
         "tick": 49,
         "text": "Donna said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”",
         "importance": 7
+      },
+      {
+        "tick": 50,
+        "text": "I said to Gary: “Good, that's all I needed to hear, Gary. Saturday at six, and bring your appetite. Any allergies I should know about before I start cooking? And the cart looks fine from here, just don't let it park on my lawn.”",
+        "importance": 6
+      },
+      {
+        "tick": 50,
+        "text": "Gary said to Rosa: “Put me down for a yes, Rosa, and I'll bring my late wife's baked beans, they hold up better than my knees. Saturday at six, I'll be there with a clean shirt.”",
+        "importance": 6
+      },
+      {
+        "tick": 50,
+        "text": "Donna said to Rosa: “Put Gary down for a dish, Rosa. He's the type who'll say yes and show up empty-handed unless you pin him to something. Rolls, I'd say, and I'll bring dessert so you're covered.”",
+        "importance": 6
       }
     ]
   },
@@ -2145,10 +2195,10 @@
     ]
   },
   "emotions": {
-    "gary": "cheerful",
-    "donna": "delighted",
+    "gary": "warm",
+    "donna": "pleased",
     "hal": "dutiful",
-    "rosa": "determined"
+    "rosa": "satisfied"
   },
   "laws": [
     {
@@ -2243,10 +2293,20 @@
         "Donna said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”",
         "Rosa said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”"
       ]
+    },
+    {
+      "tick": 50,
+      "time": "Thursday, October 15, 3:17 PM",
+      "story": "Gary and Donna are at Gary's house on a warm Thursday afternoon, with Rosa there too, settling the details of Saturday's dinner. Gary has promised baked beans and a clean shirt, and Donna has nudged him toward rolls while offering to cover dessert herself. Rosa, satisfied that the plan is set, asks about allergies and reminds Gary not to park his golf cart on her lawn. Out on Magnolia Loop, Hal is dutifully checking the street bulletin board for review notices, Gary's filing, and Rosa's dinner details.",
+      "dialogue": [
+        "Gary said to Rosa: “Put me down for a yes, Rosa, and I'll bring my late wife's baked beans, they hold up better than my knees. Saturday at six, I'll be there with a clean shirt.”",
+        "Donna said to Rosa: “Put Gary down for a dish, Rosa. He's the type who'll say yes and show up empty-handed unless you pin him to something. Rolls, I'd say, and I'll bring dessert so you're covered.”",
+        "Rosa said to Gary: “Good, that's all I needed to hear, Gary. Saturday at six, and bring your appetite. Any allergies I should know about before I start cooking? And the cart looks fine from here, just don't let it park on my lawn.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 1.49283,
+    "total_usd": 1.52566,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -2261,13 +2321,12 @@
         "usd": 0.4745
       },
       "2026-10-15": {
-        "ticks": 8,
-        "usd": 0.25504
+        "ticks": 9,
+        "usd": 0.28787
       }
     }
   },
   "recent_tick_costs": [
-    0.03157,
     0.03104,
     0.03169,
     0.03221,
@@ -2290,7 +2349,8 @@
     0.03242,
     0.03206,
     0.03362,
-    0.03157
+    0.03157,
+    0.03283
   ],
   "fund": {
     "gross_usd": 0.0,

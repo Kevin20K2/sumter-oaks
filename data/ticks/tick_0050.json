@@ -1,0 +1,115 @@
+{
+  "tick": 50,
+  "simulation_time": "Thursday, October 15, 3:17 PM",
+  "weather": "Partly cloudy, 84°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
+    "rosa": "garys_house"
+  },
+  "story": "Gary and Donna are at Gary's house on a warm Thursday afternoon, with Rosa there too, settling the details of Saturday's dinner. Gary has promised baked beans and a clean shirt, and Donna has nudged him toward rolls while offering to cover dessert herself. Rosa, satisfied that the plan is set, asks about allergies and reminds Gary not to park his golf cart on her lawn. Out on Magnolia Loop, Hal is dutifully checking the street bulletin board for review notices, Gary's filing, and Rosa's dinner details.",
+  "events": [
+    "Hal (street bulletin board): Read the postings for review notices, Gary's filing, and Rosa's dinner details"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa asked me straight for a yes or a dish and I haven't answered her yet. Donna already told her I swore I'm coming, so I shouldn't dither. Saturday at six is open, I live alone, and being at a table with people is exactly what I need. I'll say yes and commit to a dish I can actually make, something simple that doesn't need a soldering iron.",
+      "emotional_state": "warm",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Put me down for a yes, Rosa, and I'll bring my late wife's baked beans, they hold up better than my knees. Saturday at six, I'll be there with a clean shirt."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary already said yes to Saturday doubles at eight and Rosa's dinner at six, and Rosa is pressing him for a dish right now. I already told Rosa he's confirmed, so I shouldn't ask him again. The best move is to help Rosa lock in a dish, which keeps me as the one holding the plans together. Gary's cart is right here, so a quick nudge about bringing something to dinner keeps things moving without repeating my invitation.",
+      "emotional_state": "pleased",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Put Gary down for a dish, Rosa. He's the type who'll say yes and show up empty-handed unless you pin him to something. Rolls, I'd say, and I'll bring dessert so you're covered."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm alone on Magnolia Loop and the flamingo flock is right here. My memory shows I've counted them twice already, and my reflections say I'd rather keep the Loop friendly than play enforcer, especially with Rosa's dinner Saturday. Counting a third time accomplishes nothing. The bulletin board is the better use of this hour: check for the architectural review notices, Rosa's dinner details, and whether Gary's paperwork has gone up. Then I'll sort the folding chairs.",
+      "emotional_state": "dutiful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the postings for review notices, Gary's filing, and Rosa's dinner details"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary and Donna both just confirmed Saturday at six, which is exactly what I came for. Hal has the chairs covered. I asked Gary last tick and he answered, so I shouldn't badger him again. He did ask me to look at the cart, and a quick thank-you plus one useful question, like a dish or allergies, moves the dinner forward without repeating the invite. Then I can go home and start planning the menu for four.",
+      "emotional_state": "satisfied",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Good, that's all I needed to hear, Gary. Saturday at six, and bring your appetite. Any allergies I should know about before I start cooking? And the cart looks fine from here, just don't let it park on my lawn."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03283,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10594,
+        "output_tokens": 1149,
+        "usd": 0.03268
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 549,
+        "output_tokens": 190,
+        "usd": 0.00015
+      }
+    }
+  }
+}
