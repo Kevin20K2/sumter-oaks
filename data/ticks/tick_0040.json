@@ -1,0 +1,117 @@
+{
+  "tick": 40,
+  "simulation_time": "Wednesday, October 14, 8:17 PM",
+  "weather": "Partly cloudy, 82°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "garys_house",
+    "hal": "garys_house",
+    "rosa": "garys_house"
+  },
+  "story": "Gary is out on Magnolia Loop, determined to get home, while Donna, Hal, and Rosa are gathered together at Gary's House on a mild October evening. Donna is cheerfully promising to pass along details about Saturday at six, since she and Gary have pickleball early that morning. Hal is dutifully checking the golf cart's exterior modifications for anything visible from the street, and Rosa, equally determined, is heading out onto Magnolia Loop herself.",
+  "events": [
+    "Gary headed to Gary's House.",
+    "Hal (gary golf cart): Inspect the cart's exterior mods and note which are visible from the street under L-01",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've filed the Architectural Review form and signed the cart up for the parade, so the paperwork is done and I can finally wire the lights and sound system without worrying about L-01. It's after 8 PM, so Quiet Hours at 10 don't bite yet, but I should get the sound system rigged before then. No one's around on Magnolia Loop to chat with, and Donna's flamingos aren't going to help me. Best move is to head home to the garage and start the wiring so the cart is ready for the parade.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Paperwork's filed and I'm signed up for the parade, so time to head to the garage and start wiring the lights and speakers before quiet hours."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa asked where Gary is, and I'm standing in his house, so I should be honest: I don't see him, and I haven't seen him since this morning at the rec center. Rosa's already told me the dinner details, so no need to re-ask or repeat myself. I'll answer her directly and offer to pass the word along, since I'll be partnering with him Saturday anyway and I'm happy to be the one with the news.",
+      "emotional_state": "cheerful",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Not hide nor hair of him tonight, hon, and I'm standing in his house. Tell you what, I'll tell him about Saturday at six if I catch him first, since we've got pickleball at eight that morning anyway."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm standing in Gary's house with Donna and Rosa, and Gary's cart is right here. I already noted visible mods last tick, but Rosa is asking after Gary, and Donna just told me about the flamingos. Donna's said her piece and Rosa's question was aimed at Donna, so no need to pile on. My own business is the cart: L-01 turns on what's actually visible from the street, and I should check it fairly rather than let my annoyance over the parade decide it. A look at the cart itself is the honest next step before I file anything with Architectural Review.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Inspect the cart's exterior mods and note which are visible from the street under L-01"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm at Gary's house and he's still not here. I've already asked Donna and Hal about him and told both Saturday at six, so asking again would just be repeating myself. Hal's busy inspecting the cart and Donna already said yes to dinner and dessert. The one missing guest is Gary. Hanging around his empty house won't help, so I'll head back out to Magnolia Loop to look for him and tell him in person.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Gary's not here and I still need to tell him about Saturday dinner, so I'm heading out to track him down."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03308,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10097,
+        "output_tokens": 1150,
+        "usd": 0.03169
+      },
+      "claude-haiku-5-5": {
+        "calls": 6,
+        "input_tokens": 7598,
+        "output_tokens": 1257,
+        "usd": 0.00139
+      }
+    }
+  }
+}
