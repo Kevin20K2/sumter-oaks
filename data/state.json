@@ -1,24 +1,28 @@
 {
-  "tick": 46,
-  "time": "2026-10-15T10:17",
+  "tick": 47,
+  "time": "2026-10-15T11:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
+    "donna": "garys_house",
     "hal": "magnolia_loop",
     "rosa": "magnolia_loop"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "Donna just arrived."
+    ],
     "donna": [
-      "Rosa said to Donna: “Morning, Donna. Quick favor: you seen Gary today? He keeps slipping past me and I want him at my table Saturday at six, so if you run into him before I do, nudge him my way.”",
-      "Hal just arrived."
+      "Hal said to Rosa: “Morning, Rosa. About Saturday at six, I'll bring a pie from the commissary lady's recipe, and I'll be on time. Anything else you need hauled over?”",
+      "Rosa said to Donna: “Dessert is a yes, Donna, bless you. And Gary's absolutely still on the list, I just have to catch him standing still long enough to say so. Saturday at six, table's set for four.”",
+      "You arrived at Gary's House."
     ],
     "hal": [
-      "You arrived at Magnolia Loop (the street)."
+      "Donna headed to Gary's House.",
+      "Rosa said to Donna: “Dessert is a yes, Donna, bless you. And Gary's absolutely still on the list, I just have to catch him standing still long enough to say so. Saturday at six, table's set for four.”"
     ],
     "rosa": [
-      "Donna said to Rosa: “Rosa, good morning! I've got Saturday penciled in, pickleball at eight and your dinner at six. Can I bring a dessert, and is Gary still on the guest list?”",
-      "Hal just arrived."
+      "Donna headed to Gary's House.",
+      "Hal said to Rosa: “Morning, Rosa. About Saturday at six, I'll bring a pie from the commissary lady's recipe, and I'll be on time. Anything else you need hauled over?”"
     ]
   },
   "memories": {
@@ -462,6 +466,16 @@
         "tick": 45,
         "text": "I (gary workbench): Test the amp wiring continuity with the multimeter and label the connections, nothing mounted yet",
         "importance": 4
+      },
+      {
+        "tick": 46,
+        "text": "I (gary golf cart): Mount the speaker bracket on the cart frame, unpowered, waiting on approval",
+        "importance": 5
+      },
+      {
+        "tick": 46,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ],
     "donna": [
@@ -989,6 +1003,26 @@
         "tick": 45,
         "text": "Hal just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 46,
+        "text": "I headed to Gary's House.",
+        "importance": 6
+      },
+      {
+        "tick": 46,
+        "text": "Hal said to Rosa: “Morning, Rosa. About Saturday at six, I'll bring a pie from the commissary lady's recipe, and I'll be on time. Anything else you need hauled over?”",
+        "importance": 6
+      },
+      {
+        "tick": 46,
+        "text": "Rosa said to Donna: “Dessert is a yes, Donna, bless you. And Gary's absolutely still on the list, I just have to catch him standing still long enough to say so. Saturday at six, table's set for four.”",
+        "importance": 6
+      },
+      {
+        "tick": 46,
+        "text": "You arrived at Gary's House.",
+        "importance": 6
       }
     ],
     "hal": [
@@ -1451,6 +1485,21 @@
         "tick": 45,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 46,
+        "text": "I said to Rosa: “Morning, Rosa. About Saturday at six, I'll bring a pie from the commissary lady's recipe, and I'll be on time. Anything else you need hauled over?”",
+        "importance": 4
+      },
+      {
+        "tick": 46,
+        "text": "Donna headed to Gary's House.",
+        "importance": 4
+      },
+      {
+        "tick": 46,
+        "text": "Rosa said to Donna: “Dessert is a yes, Donna, bless you. And Gary's absolutely still on the list, I just have to catch him standing still long enough to say so. Saturday at six, table's set for four.”",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -1893,6 +1942,21 @@
         "tick": 45,
         "text": "Hal just arrived.",
         "importance": 6
+      },
+      {
+        "tick": 46,
+        "text": "I said to Donna: “Dessert is a yes, Donna, bless you. And Gary's absolutely still on the list, I just have to catch him standing still long enough to say so. Saturday at six, table's set for four.”",
+        "importance": 6
+      },
+      {
+        "tick": 46,
+        "text": "Donna headed to Gary's House.",
+        "importance": 6
+      },
+      {
+        "tick": 46,
+        "text": "Hal said to Rosa: “Morning, Rosa. About Saturday at six, I'll bring a pie from the commissary lady's recipe, and I'll be on time. Anything else you need hauled over?”",
+        "importance": 6
       }
     ]
   },
@@ -1939,10 +2003,10 @@
     ]
   },
   "emotions": {
-    "gary": "patient",
-    "donna": "cheerful",
-    "hal": "watchful",
-    "rosa": "determined"
+    "gary": "focused",
+    "donna": "determined",
+    "hal": "content",
+    "rosa": "warm"
   },
   "laws": [
     {
@@ -2007,46 +2071,9 @@
       "text": "Gary Kowalski: Fill out and file the golf cart modification form for the lights and sound system"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 41,
-      "time": "Wednesday, October 14, 9:17 PM",
-      "story": "At 9:17 on a mild October Wednesday, Gary is at home planning to wire light strips onto his golf cart, though he's been told the work waits until the paperwork clears. Donna has swung by to remind him about Saturday dinner at Rosa's and a pickleball game at eight that morning, promising to bring a spare paddle. Hal, stern but fair as always, has reminded Gary that anything visible from the street needs Architectural Review sign-off first, and Rosa has pinned a welcome dinner notice on the Magnolia Loop bulletin board.",
-      "dialogue": [
-        "Donna said to Gary: “Gary, there you are! Rosa's dinner is Saturday at six at her place, and I've got us down for pickleball at eight that morning, so you'd better be rested. I'll bring the spare paddle.”",
-        "Hal said to Gary: “Evening, Gary. Anything on that cart visible from the street needs Architectural Review sign-off before it goes on, not after. File the paperwork tomorrow and I'll see it through straight, no grudges.”"
-      ]
-    },
-    {
-      "tick": 42,
-      "time": "Thursday, October 15, 7:17 AM",
-      "story": "At 7:17 on a partly cloudy Thursday morning in Sumter Oaks, Gary is at home quietly wiring light strips onto his golf cart frame, with the power still off. Donna is packing a spare paddle and extra balls into her pickleball bag for Gary, while Rosa checks her shift schedule to make sure nothing clashes with Saturday at six before she plans the dinner menu. Meanwhile, Hal keeps watch from his house with his binoculars, scanning Magnolia Loop for Gary's cart and any lights that might suddenly switch on.",
-      "dialogue": []
-    },
-    {
-      "tick": 43,
-      "time": "Thursday, October 15, 8:17 AM",
-      "story": "At 8:17 on this partly cloudy Thursday morning, Gary is at home finishing the light strips on his golf cart, keeping the power off until the community approves them. Donna is penciling a Saturday 8 AM doubles match with Gary and a dinner with Rosa at 6 onto her club calendar, feeling upbeat about the weekend. Hal is keeping a watchful eye on Magnolia Loop through his binoculars, checking for any cart lights or ornaments that might be showing from the street, while Rosa plans a Saturday menu for four and makes a list of what she needs from the grocery store.",
-      "dialogue": []
-    },
-    {
-      "tick": 44,
-      "time": "Thursday, October 15, 9:17 AM",
-      "story": "At 9:17 on this partly cloudy Thursday in Sumter Oaks, Gary is at his workbench in his own house, carefully wiring a speaker and amp setup meant for his golf cart. Hal sits at home in his house, logging the morning's observations on Magnolia Loop, including three flamingos and no cart lights, while he waits on Gary's paperwork. Meanwhile Donna and Rosa are both heading out onto Magnolia Loop, Donna looking hopeful and Rosa looking determined.",
-      "dialogue": []
-    },
-    {
-      "tick": 45,
-      "time": "Thursday, October 15, 10:17 AM",
-      "story": "On Thursday morning in Sumter Oaks, Gary is patiently testing wiring at his workbench at home, labeling each connection before anything gets mounted. Donna, cheerful as ever, catches Rosa on Magnolia Loop to pencil in Saturday's pickleball and dinner and to ask whether Gary is still on the guest list. Rosa, determined to pin Gary down for her table at six, asks Donna to nudge him her way if they cross paths first. Meanwhile Hal, watchful as always, is heading out onto the same street.",
-      "dialogue": [
-        "Donna said to Rosa: “Rosa, good morning! I've got Saturday penciled in, pickleball at eight and your dinner at six. Can I bring a dessert, and is Gary still on the guest list?”",
-        "Rosa said to Donna: “Morning, Donna. Quick favor: you seen Gary today? He keeps slipping past me and I want him at my table Saturday at six, so if you run into him before I do, nudge him my way.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 1.36316,
+    "total_usd": 1.39558,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -2061,13 +2088,12 @@
         "usd": 0.4745
       },
       "2026-10-15": {
-        "ticks": 4,
-        "usd": 0.12537
+        "ticks": 5,
+        "usd": 0.15779
       }
     }
   },
   "recent_tick_costs": [
-    0.03403,
     0.03184,
     0.0323,
     0.03101,
@@ -2090,7 +2116,8 @@
     0.03177,
     0.03066,
     0.03154,
-    0.0314
+    0.0314,
+    0.03242
   ],
   "fund": {
     "gross_usd": 0.0,
