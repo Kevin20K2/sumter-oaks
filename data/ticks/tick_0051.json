@@ -1,0 +1,115 @@
+{
+  "tick": 51,
+  "simulation_time": "Thursday, October 15, 4:17 PM",
+  "weather": "Partly cloudy, 83°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
+    "rosa": "garys_house"
+  },
+  "story": "At 4:17 on a warm Thursday afternoon in Sumter Oaks, Gary is at his house, content, agreeing with Rosa to bring the baked beans and pick up the rolls for Saturday's cookout. Donna, also at Gary's house and feeling optimistic, sets their pickleball lesson for eight sharp at the rec center and insists on real sneakers. Rosa, pleased with the plan, confirms dinner at six and teases Gary about wearing a clean shirt. Meanwhile Hal, dutifully, heads home along Magnolia Loop to Hal's House.",
+  "events": [
+    "Hal headed to Hal's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa asked about allergies and gave a nod to the cart, so a quick answer is the polite thing, and it closes out her question. I already committed to beans, and Donna suggested rolls, so I can settle that now rather than leave it hanging. Rosa's lawn warning is fair; the cart stays on my driveway per L-06. After this I should get back to the wiring on the cart, since the Architectural Review form is already filed and I'm only waiting on approval.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "No allergies here, Rosa, I'll eat anything that holds still. I'll bring the beans, and I'll pick up rolls on the way so Donna doesn't have to nag me. And don't worry, the cart stays on my driveway."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just committed to Rosa's dinner and a dish, and Rosa's wrapping up. My own goal is the pickleball ladder, and Gary agreed to Saturday doubles at eight sharp but he's never played. I already pushed on dishes last tick, so no more dinner talk. Best move now is to follow through on the real goal: remind him of the 8 AM court time, tell him to bring comfortable shoes, and offer the spare paddle so he actually shows up ready.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, you're all set with Rosa, so let's lock in ours: Saturday, eight sharp, rec center, and wear real sneakers, not those loafers. I'll bring the spare paddle and walk you through the basics, you'll be dinking like a pro by lunch."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I already counted the flamingos and read the bulletin board. Nothing new there. My memories say I'd rather keep the Loop friendly than catch anyone out, and Rosa's dinner is Saturday. I promised two folding chairs to her door before then. I'm at Magnolia Loop with nobody in sight, so the practical move is to head home, grab the chairs from the garage, and get the errand done. The deed-restriction report can wait until I see how Gary's filing shakes out.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "hals_house",
+          "content": "Heading home to pull the two folding chairs out of the garage for Rosa's Saturday dinner."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary said yes and offered his late wife's baked beans, Donna's bringing dessert, Hal's confirmed earlier. I already asked about allergies last tick and haven't heard back, but the table is basically full. Donna suggested rolls for Gary, but he's committed to beans, so I should lock that in, not ask again. Beans plus Donna's dessert means I cover the main dish and rolls myself. Time to thank him warmly, confirm the beans, and then go start prepping at home.",
+      "emotional_state": "pleased",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Baked beans from your wife's recipe? Gary, that's perfect, consider it your assignment, and I'll cover the rest and the rolls. Saturday at six, and I'm holding you to the clean shirt."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03432,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10892,
+        "output_tokens": 1239,
+        "usd": 0.03417
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 556,
+        "output_tokens": 198,
+        "usd": 0.00015
+      }
+    }
+  }
+}
