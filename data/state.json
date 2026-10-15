@@ -1,6 +1,6 @@
 {
-  "tick": 47,
-  "time": "2026-10-15T11:17",
+  "tick": 48,
+  "time": "2026-10-15T12:17",
   "positions": {
     "gary": "garys_house",
     "donna": "garys_house",
@@ -9,20 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna just arrived."
+      "Donna said to Gary: “Gary, there you are! Rosa says you're still on for Saturday at six, so pie, dinner, the works. And you're my doubles partner at eight that morning, no more dodging. I've got a spare paddle with your name on it.”"
     ],
     "donna": [
-      "Hal said to Rosa: “Morning, Rosa. About Saturday at six, I'll bring a pie from the commissary lady's recipe, and I'll be on time. Anything else you need hauled over?”",
-      "Rosa said to Donna: “Dessert is a yes, Donna, bless you. And Gary's absolutely still on the list, I just have to catch him standing still long enough to say so. Saturday at six, table's set for four.”",
-      "You arrived at Gary's House."
+      "Gary said to Donna: “Well, look who's here! Come see the cart, Donna. Bracket's mounted, lights are strung, and not a single wire's live until that review form clears, so I'm staying legal.”"
     ],
     "hal": [
-      "Donna headed to Gary's House.",
-      "Rosa said to Donna: “Dessert is a yes, Donna, bless you. And Gary's absolutely still on the list, I just have to catch him standing still long enough to say so. Saturday at six, table's set for four.”"
+      "Rosa said to Hal: “Pie and punctuality, Hal, you're a gift. If you've got two spare folding chairs for Saturday, that's all I need hauled. Now I'm going to run Gary to ground.”"
     ],
     "rosa": [
-      "Donna headed to Gary's House.",
-      "Hal said to Rosa: “Morning, Rosa. About Saturday at six, I'll bring a pie from the commissary lady's recipe, and I'll be on time. Anything else you need hauled over?”"
+      "Hal (donna flamingo flock): Count the flamingos visible from the street against the three-ornament limit"
     ]
   },
   "memories": {
@@ -476,6 +472,16 @@
         "tick": 46,
         "text": "Donna just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 47,
+        "text": "I said to Donna: “Well, look who's here! Come see the cart, Donna. Bracket's mounted, lights are strung, and not a single wire's live until that review form clears, so I'm staying legal.”",
+        "importance": 4
+      },
+      {
+        "tick": 47,
+        "text": "Donna said to Gary: “Gary, there you are! Rosa says you're still on for Saturday at six, so pie, dinner, the works. And you're my doubles partner at eight that morning, no more dodging. I've got a spare paddle with your name on it.”",
+        "importance": 4
       }
     ],
     "donna": [
@@ -1023,6 +1029,16 @@
         "tick": 46,
         "text": "You arrived at Gary's House.",
         "importance": 6
+      },
+      {
+        "tick": 47,
+        "text": "I said to Gary: “Gary, there you are! Rosa says you're still on for Saturday at six, so pie, dinner, the works. And you're my doubles partner at eight that morning, no more dodging. I've got a spare paddle with your name on it.”",
+        "importance": 6
+      },
+      {
+        "tick": 47,
+        "text": "Gary said to Donna: “Well, look who's here! Come see the cart, Donna. Bracket's mounted, lights are strung, and not a single wire's live until that review form clears, so I'm staying legal.”",
+        "importance": 6
       }
     ],
     "hal": [
@@ -1500,6 +1516,16 @@
         "tick": 46,
         "text": "Rosa said to Donna: “Dessert is a yes, Donna, bless you. And Gary's absolutely still on the list, I just have to catch him standing still long enough to say so. Saturday at six, table's set for four.”",
         "importance": 4
+      },
+      {
+        "tick": 47,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street against the three-ornament limit",
+        "importance": 4
+      },
+      {
+        "tick": 47,
+        "text": "Rosa said to Hal: “Pie and punctuality, Hal, you're a gift. If you've got two spare folding chairs for Saturday, that's all I need hauled. Now I'm going to run Gary to ground.”",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -1957,6 +1983,16 @@
         "tick": 46,
         "text": "Hal said to Rosa: “Morning, Rosa. About Saturday at six, I'll bring a pie from the commissary lady's recipe, and I'll be on time. Anything else you need hauled over?”",
         "importance": 6
+      },
+      {
+        "tick": 47,
+        "text": "I said to Hal: “Pie and punctuality, Hal, you're a gift. If you've got two spare folding chairs for Saturday, that's all I need hauled. Now I'm going to run Gary to ground.”",
+        "importance": 6
+      },
+      {
+        "tick": 47,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street against the three-ornament limit",
+        "importance": 6
       }
     ]
   },
@@ -2003,10 +2039,10 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
+    "gary": "cheerful",
     "donna": "determined",
-    "hal": "content",
-    "rosa": "warm"
+    "hal": "dutiful",
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -2071,9 +2107,20 @@
       "text": "Gary Kowalski: Fill out and file the golf cart modification form for the lights and sound system"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 47,
+      "time": "Thursday, October 15, 12:17 PM",
+      "story": "At Gary's house on Thursday just after noon, Gary is cheerfully showing off his golf cart, with the bracket mounted and the lights strung but not yet switched on until the review form clears. Donna has arrived with a determined pitch: a Saturday dinner at six, pie included, and a doubles match at eight the next morning with a spare paddle waiting for Gary. Out on Magnolia Loop, Hal is dutifully counting the donna flamingos against the three-ornament limit while Rosa, equally determined, asks him for two folding chairs and heads off to corner Gary.",
+      "dialogue": [
+        "Gary said to Donna: “Well, look who's here! Come see the cart, Donna. Bracket's mounted, lights are strung, and not a single wire's live until that review form clears, so I'm staying legal.”",
+        "Donna said to Gary: “Gary, there you are! Rosa says you're still on for Saturday at six, so pie, dinner, the works. And you're my doubles partner at eight that morning, no more dodging. I've got a spare paddle with your name on it.”",
+        "Rosa said to Hal: “Pie and punctuality, Hal, you're a gift. If you've got two spare folding chairs for Saturday, that's all I need hauled. Now I'm going to run Gary to ground.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 1.39558,
+    "total_usd": 1.42764,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -2088,13 +2135,12 @@
         "usd": 0.4745
       },
       "2026-10-15": {
-        "ticks": 5,
-        "usd": 0.15779
+        "ticks": 6,
+        "usd": 0.18985
       }
     }
   },
   "recent_tick_costs": [
-    0.03184,
     0.0323,
     0.03101,
     0.03157,
@@ -2117,7 +2163,8 @@
     0.03066,
     0.03154,
     0.0314,
-    0.03242
+    0.03242,
+    0.03206
   ],
   "fund": {
     "gross_usd": 0.0,
