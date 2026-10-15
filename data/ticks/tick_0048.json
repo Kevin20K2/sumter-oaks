@@ -1,0 +1,115 @@
+{
+  "tick": 48,
+  "simulation_time": "Thursday, October 15, 1:17 PM",
+  "weather": "Partly cloudy, 83°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 1:17 on a mild Thursday afternoon in Sumter Oaks, Gary is warm and a little sheepish inside his house as he agrees to join Saturday's game, promising to show up at eight sharp with an appetite for Rosa's pie. Donna, cheerful as ever, compliments his golf cart and offers to bring a spare paddle so he can practice his dinks in the driveway once his paperwork clears. Out on Magnolia Loop, Hal, dutiful as always, promises Rosa two folding chairs from his garage before Saturday. Rosa, determined, is already on her way to Gary's House to make sure he keeps his word.",
+  "events": [
+    "Rosa headed to Gary's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just told me Saturday plans are set: dinner at six, doubles at eight that morning. I already told her about the cart and that nothing's live until the review clears, so I shouldn't repeat myself. The form is filed, the bracket's mounted, the lights are strung, and the wiring is labeled. I've got an hour and nothing left to wire legally, so the useful thing is to answer her, confirm Saturday, and then get my sneakers like I promised. Better to commit to the doubles game with a little humor than dodge it again.",
+      "emotional_state": "warm, a little sheepish",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Alright, alright, I'm in for Saturday. Eight o'clock sharp, and I'll bring the appetite for Rosa's pie. Just don't expect me to hit anything, my knees and I have an understanding."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just invited me to see the cart, and I've already pinned him down about Saturday at eight and Rosa's dinner at six, so there's no need to ask again. He's being careful about Architectural Review, which is good. Now I should respond to what he actually said, admire the work, and keep him warm toward the pickleball idea by offering to hand him the spare paddle while I'm here, rather than nagging.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Well, that is a handsome cart, Gary, and I'm glad you're keeping it legal, Hal will be thrilled. Once that form clears, I'll swing by with the spare paddle so you can practice your dinks in the driveway before Saturday."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa's heading off to find Gary, and the pie and Saturday are settled. I haven't answered her chair question yet, though; she asked for two spare folding chairs and I only owe her a yes. Meanwhile, the flamingo flock is right here on Magnolia Loop. I've been meaning to count them against L-02 before I take anything to the review committee, and a fair count is the honest way to do it. I'll answer Rosa briefly first so she's not left hanging, then do the count next tick. Actually, she's the only one nearby and the chairs are an easy yes, so I'll tell her and keep things moving.",
+      "emotional_state": "dutiful",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Two folding chairs, Rosa. I've got a pair in the garage and I'll have them at your door before Saturday. Good luck running Gary down."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I said last tick I'd run Gary to ground, and Hal is the only one in sight here. Donna headed to Gary's house, so Gary is probably there. Hal is already confirmed for Saturday with pie and chairs, so I shouldn't ask him again. Time to act: walk over to Gary's house and pin him down in person for six o'clock Saturday.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading to Gary's to pin him down for Saturday at six before he wires himself into another project."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03362,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10418,
+        "output_tokens": 1203,
+        "usd": 0.03287
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4483,
+        "output_tokens": 602,
+        "usd": 0.00075
+      }
+    }
+  }
+}
