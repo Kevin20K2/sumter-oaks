@@ -1,6 +1,6 @@
 {
-  "tick": 41,
-  "time": "2026-10-14T20:17",
+  "tick": 42,
+  "time": "2026-10-14T21:17",
   "positions": {
     "gary": "garys_house",
     "donna": "garys_house",
@@ -9,23 +9,18 @@
   },
   "perceptions": {
     "gary": [
-      "You arrived at Gary's House."
+      "Donna said to Gary: “Gary, there you are! Rosa's dinner is Saturday at six at her place, and I've got us down for pickleball at eight that morning, so you'd better be rested. I'll bring the spare paddle.”",
+      "Hal said to Gary: “Evening, Gary. Anything on that cart visible from the street needs Architectural Review sign-off before it goes on, not after. File the paperwork tomorrow and I'll see it through straight, no grudges.”"
     ],
     "donna": [
-      "Hal (gary golf cart): Inspect the cart's exterior mods and note which are visible from the street under L-01",
-      "Rosa headed to Magnolia Loop (the street).",
-      "Gary just arrived."
+      "Gary (gary golf cart): Start wiring the light strips onto the cart frame, no sound until tomorrow",
+      "Hal said to Gary: “Evening, Gary. Anything on that cart visible from the street needs Architectural Review sign-off before it goes on, not after. File the paperwork tomorrow and I'll see it through straight, no grudges.”"
     ],
     "hal": [
-      "Donna said to Rosa: “Not hide nor hair of him tonight, hon, and I'm standing in his house. Tell you what, I'll tell him about Saturday at six if I catch him first, since we've got pickleball at eight that morning anyway.”",
-      "Rosa headed to Magnolia Loop (the street).",
-      "Gary just arrived."
+      "Gary (gary golf cart): Start wiring the light strips onto the cart frame, no sound until tomorrow",
+      "Donna said to Gary: “Gary, there you are! Rosa's dinner is Saturday at six at her place, and I've got us down for pickleball at eight that morning, so you'd better be rested. I'll bring the spare paddle.”"
     ],
-    "rosa": [
-      "Donna said to Rosa: “Not hide nor hair of him tonight, hon, and I'm standing in his house. Tell you what, I'll tell him about Saturday at six if I catch him first, since we've got pickleball at eight that morning anyway.”",
-      "Hal (gary golf cart): Inspect the cart's exterior mods and note which are visible from the street under L-01",
-      "You arrived at Magnolia Loop (the street)."
-    ]
+    "rosa": []
   },
   "memories": {
     "gary": [
@@ -432,6 +427,21 @@
       {
         "tick": 40,
         "text": "You arrived at Gary's House.",
+        "importance": 6
+      },
+      {
+        "tick": 41,
+        "text": "I (gary golf cart): Start wiring the light strips onto the cart frame, no sound until tomorrow",
+        "importance": 6
+      },
+      {
+        "tick": 41,
+        "text": "Donna said to Gary: “Gary, there you are! Rosa's dinner is Saturday at six at her place, and I've got us down for pickleball at eight that morning, so you'd better be rested. I'll bring the spare paddle.”",
+        "importance": 6
+      },
+      {
+        "tick": 41,
+        "text": "Hal said to Gary: “Evening, Gary. Anything on that cart visible from the street needs Architectural Review sign-off before it goes on, not after. File the paperwork tomorrow and I'll see it through straight, no grudges.”",
         "importance": 6
       }
     ],
@@ -905,6 +915,21 @@
         "tick": 40,
         "text": "Gary just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 41,
+        "text": "I said to Gary: “Gary, there you are! Rosa's dinner is Saturday at six at her place, and I've got us down for pickleball at eight that morning, so you'd better be rested. I'll bring the spare paddle.”",
+        "importance": 6
+      },
+      {
+        "tick": 41,
+        "text": "Gary (gary golf cart): Start wiring the light strips onto the cart frame, no sound until tomorrow",
+        "importance": 6
+      },
+      {
+        "tick": 41,
+        "text": "Hal said to Gary: “Evening, Gary. Anything on that cart visible from the street needs Architectural Review sign-off before it goes on, not after. File the paperwork tomorrow and I'll see it through straight, no grudges.”",
+        "importance": 6
       }
     ],
     "hal": [
@@ -1327,6 +1352,21 @@
         "tick": 40,
         "text": "Gary just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 41,
+        "text": "I said to Gary: “Evening, Gary. Anything on that cart visible from the street needs Architectural Review sign-off before it goes on, not after. File the paperwork tomorrow and I'll see it through straight, no grudges.”",
+        "importance": 6
+      },
+      {
+        "tick": 41,
+        "text": "Gary (gary golf cart): Start wiring the light strips onto the cart frame, no sound until tomorrow",
+        "importance": 6
+      },
+      {
+        "tick": 41,
+        "text": "Donna said to Gary: “Gary, there you are! Rosa's dinner is Saturday at six at her place, and I've got us down for pickleball at eight that morning, so you'd better be rested. I'll bring the spare paddle.”",
+        "importance": 6
       }
     ],
     "rosa": [
@@ -1724,6 +1764,11 @@
         "tick": 40,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 41,
+        "text": "I (street bulletin board): Pin a note: Welcome dinner at Rosa's, Saturday at six. Gary, Donna, Hal, come hungry.",
+        "importance": 5
       }
     ]
   },
@@ -1770,9 +1815,9 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
+    "gary": "optimistic",
     "donna": "cheerful",
-    "hal": "dutiful",
+    "hal": "stern but fair",
     "rosa": "determined"
   },
   "laws": [
@@ -1838,9 +1883,19 @@
       "text": "Gary Kowalski: Fill out and file the golf cart modification form for the lights and sound system"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 41,
+      "time": "Wednesday, October 14, 9:17 PM",
+      "story": "At 9:17 on a mild October Wednesday, Gary is at home planning to wire light strips onto his golf cart, though he's been told the work waits until the paperwork clears. Donna has swung by to remind him about Saturday dinner at Rosa's and a pickleball game at eight that morning, promising to bring a spare paddle. Hal, stern but fair as always, has reminded Gary that anything visible from the street needs Architectural Review sign-off first, and Rosa has pinned a welcome dinner notice on the Magnolia Loop bulletin board.",
+      "dialogue": [
+        "Donna said to Gary: “Gary, there you are! Rosa's dinner is Saturday at six at her place, and I've got us down for pickleball at eight that morning, so you'd better be rested. I'll bring the spare paddle.”",
+        "Hal said to Gary: “Evening, Gary. Anything on that cart visible from the street needs Architectural Review sign-off before it goes on, not after. File the paperwork tomorrow and I'll see it through straight, no grudges.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 1.20541,
+    "total_usd": 1.23779,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -1851,13 +1906,12 @@
         "usd": 0.54045
       },
       "2026-10-14": {
-        "ticks": 14,
-        "usd": 0.44212
+        "ticks": 15,
+        "usd": 0.4745
       }
     }
   },
   "recent_tick_costs": [
-    0.0333,
     0.03242,
     0.03209,
     0.03172,
@@ -1880,7 +1934,8 @@
     0.03174,
     0.03184,
     0.03102,
-    0.03308
+    0.03308,
+    0.03238
   ],
   "fund": {
     "gross_usd": 0.0,
