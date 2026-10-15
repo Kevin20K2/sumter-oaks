@@ -1,0 +1,118 @@
+{
+  "tick": 42,
+  "simulation_time": "Thursday, October 15, 7:17 AM",
+  "weather": "Partly cloudy, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a partly cloudy Thursday morning in Sumter Oaks, Gary is at home quietly wiring light strips onto his golf cart frame, with the power still off. Donna is packing a spare paddle and extra balls into her pickleball bag for Gary, while Rosa checks her shift schedule to make sure nothing clashes with Saturday at six before she plans the dinner menu. Meanwhile, Hal keeps watch from his house with his binoculars, scanning Magnolia Loop for Gary's cart and any lights that might suddenly switch on.",
+  "events": [
+    "Gary (gary golf cart): Keep wiring the light strips onto the cart frame, unpowered for now",
+    "Donna (donna pickleball bag): Pack the spare paddle and extra balls for Gary",
+    "Hal (hal binoculars): Scan Magnolia Loop for Gary's cart and any lights going on it",
+    "Rosa (rosa shift schedule): Check that no per-diem shift conflicts with Saturday at six before I plan the dinner menu"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 7:17 AM and I'm home with nobody around. The Architectural Review form is already filed, so L-01 is handled, and Hal said sign-off comes before anything goes on, but I've started the light strips already. I'll hold off on sound since L-03 quiet hours end at 7 AM anyway, but there's no reason to rush the speaker. Best use of this hour is to keep wiring the light strips on the cart at the workbench and cart. Holiday lighting isn't legal until Thanksgiving, but the parade prep is wiring, not displaying, so I'll keep it tidy and unplugged. Donna's pickleball is Saturday at eight, so there's time to get this done.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Keep wiring the light strips onto the cart frame, unpowered for now"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 7:17 AM and I'm alone at home. Saturday is set: pickleball at eight, Rosa's dinner at six, and Gary has the spare paddle plan. I've already told Gary everything, so no one to talk to right now. The smart move is to get organized for the ladder push. My pickleball bag is right here, so I'll check the spare paddle is packed, then head out to find Gary and keep him on track.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Pack the spare paddle and extra balls for Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Quiet morning, nobody in sight. Gary said he'd file his Architectural Review paperwork tomorrow, and that's today, so the thing to do is get to the committee and see it through straight. Donna's already trimming her flamingos to three, so no notice needed there. I should start with a look up and down Magnolia Loop with the binoculars to see whether the cart has anything on it yet, then wait for Gary's filing like I said I would. Rosa's dinner is Saturday at six, so I should think about what to bring while I'm at it.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Magnolia Loop for Gary's cart and any lights going on it"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I pinned the dinner note on the bulletin board last tick, and Hal and Donna are both confirmed. Gary is the only holdout, and he keeps slipping past me. Right now I'm home at 7:17 AM with no one around. The dinner is Saturday at six, so the useful thing is to actually plan it. I have the kitchen and dining table here, and I also need to check my per-diem shift schedule so I don't accidentally book a shift over Saturday evening. Checking the schedule first protects the whole plan.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check that no per-diem shift conflicts with Saturday at six before I plan the dinner menu"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03177,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9922,
+        "output_tokens": 1179,
+        "usd": 0.03163
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 415,
+        "output_tokens": 191,
+        "usd": 0.00014
+      }
+    }
+  }
+}
