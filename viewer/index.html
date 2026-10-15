@@ -693,8 +693,13 @@ function renderSupport(f) {
   const sec = $("support");
   if (!f) { sec.hidden = true; return; }
   sec.hidden = false;
-  const cents = Math.max(1, Math.round((f.avg_tick_usd || 0.025) * 100));
-  const cost = `Every hour of town life costs about ${cents}¢ in AI time.`;
+  // Monthly running cost: average tick cost × ticks per day × 30, with "how many $5 monthly gifts cover it".
+  const perDay = f.ticks_left > 0 && f.days_left > 0 ? Math.round(f.ticks_left / f.days_left) : 15;
+  const monthly = Math.max(1, Math.round((f.avg_tick_usd || 0.03) * perDay * 30));
+  const fives = Math.ceil(monthly / 5);
+  const WORDS = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+  const cost = `Running Sumter Oaks costs about $${monthly} a month in AI time. ` +
+    (fives === 1 ? "One $5 monthly supporter keeps the lights on." : `${WORDS[fives] || fives} $5 monthly supporters keep the lights on.`);
   const lead = {
     bright: cost,
     fair: "Sumter Oaks has " + powerLeft(f) + " left in the cloud.",
