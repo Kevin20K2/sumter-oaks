@@ -1,0 +1,118 @@
+{
+  "tick": 58,
+  "simulation_time": "Friday, October 16, 8:17 AM",
+  "weather": "Breezy and clear, 75°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "It's a breezy, clear Friday morning at 8:17 in Sumter Oaks, with the air at a pleasant 75°F. Gary is focused at his house, finishing the light string wiring and test-fitting a speaker mount on his golf cart. Across the street, Donna is satisfied as she packs a spare paddle and balls for Saturday's doubles, while Hal keeps a watchful eye on the Loop through his binoculars. Rosa, determined as ever, is checking her per-diem shifts to make sure Friday evening and Saturday stay clear for the big dinner she's cooking.",
+  "events": [
+    "Gary (gary golf cart): Finish securing the light string wiring and test-fit the speaker mount",
+    "Donna (donna pickleball bag): Pack the spare paddle and balls for Saturday's doubles",
+    "Hal (hal binoculars): Scan the Loop for stray carts, flamingo count, and any grass parking",
+    "Rosa (rosa shift schedule): Check my per-diem shifts and make sure Friday evening and Saturday are clear for cooking and the dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Nobody's around and it's a quiet Friday morning. My last action was running wiring and mounting the speaker, and I filed the Architectural Review form for the cart mods, so I'm doing this legally. Dinner at Rosa's is tonight and pickleball Saturday, but the parade cart is my real project. Holiday lighting isn't allowed until Thanksgiving, so I'll build and test it all in the garage and leave it off the street until then. Best use of this hour is to keep working on the cart itself.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Finish securing the light string wiring and test-fit the speaker mount"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm back on Magnolia Loop, alone. Gary said yes in ink to Saturday doubles and Rosa's dinner, so the hard part is done. I already checked the club calendar last tick, so the next useful step is to make sure my pickleball bag is packed with the spare paddle for Saturday at eight sharp. No point chasing anyone down when nobody's in sight and Gary just told me to go home. Quick check of the bag, then I'll be set.",
+      "emotional_state": "satisfied",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Pack the spare paddle and balls for Saturday's doubles"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's 8:17 on a clear Friday morning, no one's in sight, and I'm at home. My notebook entries are up to date, and my reflections say I'd rather see Gary file his paperwork than catch him in a violation. Still, the Loop doesn't watch itself. A scan with the binoculars is good morning routine: stray carts, flamingo count, anyone parking on the grass. Then I can settle the pie question for Saturday.",
+      "emotional_state": "watchful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan the Loop for stray carts, flamingo count, and any grass parking"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm home at last and the plan is set: Donna, Hal, and Gary are all confirmed for Saturday at six. The last step I wrote down was checking my per-diem shifts so dinner prep and cooking time are clear. The schedule is right here in the house, nobody is around to talk to, and it's the one thing that could still wreck Saturday. Better to check now than get paged into a double shift at the last minute.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts and make sure Friday evening and Saturday are clear for cooking and the dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03074,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9645,
+        "output_tokens": 1072,
+        "usd": 0.03001
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3789,
+        "output_tokens": 706,
+        "usd": 0.00073
+      }
+    }
+  }
+}
