@@ -1,0 +1,118 @@
+{
+  "tick": 60,
+  "simulation_time": "Friday, October 16, 10:17 AM",
+  "weather": "Breezy and clear, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is at his house on a breezy, clear Friday morning, double-checking the wiring on his golf cart, securing the speaker mount, and running a final light test. Donna is at her house with a cup of coffee, waiting on Rosa's reply about dinner while she mentally runs through Saturday's plans. Hal is out on Magnolia Loop, watchfully counting the flamingos on display against the community's three-ornament limit, while Rosa in her kitchen marinates the pork and preps rice and plantains so Saturday's cooking is all that's left.",
+  "events": [
+    "Gary (gary golf cart): Double-check the wiring, secure the speaker mount, and do a final light test",
+    "Donna waited: Pouring a coffee and waiting on Rosa's text back about dinner, running through Saturday's plan in my head.",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and compare against the three-ornament limit",
+    "Rosa (rosa kitchen): Marinate the pork and prep the rice and plantains so Saturday only needs cooking"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've wired the speaker and tested the string lights over the last few ticks, so the cart is mostly done. I filed the modification form for Hal's review, and the legal way is the way I want to do this. Nobody's around and it's mid-morning, so the volume is fine under L-03. Before I call it finished, I should do a final check on the wiring and the speaker connections at the cart, since a loose joint on parade day would be embarrassing. Saturday at eight I owe Donna a pickleball lesson, so I want the cart sorted today.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Double-check the wiring, secure the speaker mount, and do a final light test"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary said yes to Saturday doubles and Rosa's dinner, and I've already checked the calendar, packed the spare paddle and balls, and texted Rosa. I'm alone at home with nothing left to chase this tick, and I shouldn't keep repeating the same prep. Court reservations are capped at 2 hours under L-05, so my plan fits. The best use of this hour is to wait for Rosa's reply, enjoy the breeze, and think about how Saturday should go.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Pouring a coffee and waiting on Rosa's text back about dinner, running through Saturday's plan in my head."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've just arrived on Magnolia Loop to do my morning rounds, and nobody's around. My notebook and binoculars are already used this morning, so the logging is done. The flamingo flock is right here in the zone, and checking it firsthand is better than eyeballing it from a distance. Truth is, I'd rather get Gary's paperwork filed than write him up, so I'll keep this to a factual count. A proper count is the by-the-book thing to do before I decide whether anything even needs reporting to the review committee.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and compare against the three-ornament limit"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm home on Friday morning, shifts are confirmed clear, and I already started prepping last tick. Everyone's confirmed for Saturday at six, with Gary on beans, Donna on cobbler, and Hal coming. No one is nearby to talk to, and nobody needs chasing right now. The best use of this hour is the actual cooking: keep working in the kitchen on the main dish and sides so Saturday isn't a scramble.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Marinate the pork and prep the rice and plantains so Saturday only needs cooking"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03058,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9644,
+        "output_tokens": 1116,
+        "usd": 0.03045
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 427,
+        "output_tokens": 182,
+        "usd": 0.00013
+      }
+    }
+  }
+}

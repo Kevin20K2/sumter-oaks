@@ -1,6 +1,6 @@
 {
-  "tick": 60,
-  "time": "2026-10-16T09:17",
+  "tick": 61,
+  "time": "2026-10-16T10:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -10,9 +10,7 @@
   "perceptions": {
     "gary": [],
     "donna": [],
-    "hal": [
-      "You arrived at Magnolia Loop (the street)."
-    ],
+    "hal": [],
     "rosa": []
   },
   "memories": {
@@ -620,6 +618,11 @@
       {
         "tick": 59,
         "text": "I (gary golf cart): Wire up the speaker and test the string lights",
+        "importance": 5
+      },
+      {
+        "tick": 60,
+        "text": "I (gary golf cart): Double-check the wiring, secure the speaker mount, and do a final light test",
         "importance": 5
       }
     ],
@@ -1328,6 +1331,11 @@
         "tick": 59,
         "text": "I (donna phone): Text Rosa to confirm Saturday dinner time and lock in the two-hour court slot",
         "importance": 5
+      },
+      {
+        "tick": 60,
+        "text": "I waited: Pouring a coffee and waiting on Rosa's text back about dinner, running through Saturday's plan in my head.",
+        "importance": 3
       }
     ],
     "hal": [
@@ -1890,6 +1898,11 @@
         "tick": 59,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 3
+      },
+      {
+        "tick": 60,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and compare against the three-ornament limit",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -2507,6 +2520,11 @@
         "tick": 59,
         "text": "I (rosa kitchen): Start prepping Saturday's dinner: chop vegetables, season the main dish, and plan the menu around Gary's beans and Donna's cobbler",
         "importance": 6
+      },
+      {
+        "tick": 60,
+        "text": "I (rosa kitchen): Marinate the pork and prep the rice and plantains so Saturday only needs cooking",
+        "importance": 5
       }
     ]
   },
@@ -2554,9 +2572,9 @@
   },
   "emotions": {
     "gary": "focused",
-    "donna": "organized",
-    "hal": "restless",
-    "rosa": "determined"
+    "donna": "content",
+    "hal": "watchful",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -2627,10 +2645,16 @@
       "time": "Friday, October 16, 9:17 AM",
       "story": "At 9:17 on a breezy, clear Friday morning in Sumter Oaks, Gary is at home rigging a speaker and testing string lights for the weekend, his focus fixed on the wiring. Across the way, Donna is on her phone, organizing the schedule by texting Rosa to lock in Saturday's dinner time and reserve the two-hour court slot. Hal, feeling restless, has wandered out onto Magnolia Loop, while Rosa, determined to make the evening a success, is already in her kitchen chopping vegetables and planning the menu around Gary's beans and Donna's cobbler.",
       "dialogue": []
+    },
+    {
+      "tick": 60,
+      "time": "Friday, October 16, 10:17 AM",
+      "story": "Gary is at his house on a breezy, clear Friday morning, double-checking the wiring on his golf cart, securing the speaker mount, and running a final light test. Donna is at her house with a cup of coffee, waiting on Rosa's reply about dinner while she mentally runs through Saturday's plans. Hal is out on Magnolia Loop, watchfully counting the flamingos on display against the community's three-ornament limit, while Rosa in her kitchen marinates the pork and preps rice and plantains so Saturday's cooking is all that's left.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 1.8175,
+    "total_usd": 1.84808,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -2649,13 +2673,12 @@
         "usd": 0.48691
       },
       "2026-10-16": {
-        "ticks": 3,
-        "usd": 0.0928
+        "ticks": 4,
+        "usd": 0.12338
       }
     }
   },
   "recent_tick_costs": [
-    0.03158,
     0.03174,
     0.03184,
     0.03102,
@@ -2678,7 +2701,8 @@
     0.03209,
     0.03075,
     0.03074,
-    0.03131
+    0.03131,
+    0.03058
   ],
   "fund": {
     "gross_usd": 0.0,
