@@ -1,0 +1,123 @@
+{
+  "tick": 69,
+  "simulation_time": "Friday, October 16, 7:17 PM",
+  "weather": "Breezy and clear, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "town_hall",
+    "rosa": "rosas_house"
+  },
+  "story": "Friday evening at Sumter Oaks settles into a breezy, clear 77 degrees, and Gary is tidying his toolbox and lining up his sneakers and gear by the door for tomorrow, nervous but hopeful about whatever Saturday brings. Over on Magnolia Loop, Donna is counting her flamingos and pulling extras so only three stand on the street, content as ever with her modest flock. Hal, resolute as always, has filed his L-01 report at Town Hall on Gary's unapproved cart lights and speaker, and he has noted that the flamingo count stays under review until Donna finishes thinning. Meanwhile Rosa, sitting comfortably at home, is going over her shift schedule one more time to make sure no call-in can touch her Saturday at six.",
+  "events": [
+    "Gary (gary toolbox): Tidy up the tools and set my sneakers and gear by the door for tomorrow",
+    "Donna (donna flamingo flock): Count the flamingos and pull extras so only three show from the street",
+    "Hal (architectural review desk): File written L-01 report on Gary's unapproved cart lights and speaker; note flamingo count under review pending Donna's thinning.",
+    "Rosa (rosa shift schedule): Look the schedule over once more and make sure no call-in can touch Saturday at six"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna's gone, the water bottles are chilling, and the wiring's tested and coiled. It's 7:17 on a Friday night with a pickleball lesson at 7:45 tomorrow and Rosa's dinner somewhere in there too. My cart modification form is already filed at the review desk, so I shouldn't touch the exterior lights until approval comes through (L-01). But I can still get the cart ready indoors. I should lay out the flat-soled sneakers and spare gear by the door so I don't scramble in the morning. That keeps me useful, keeps my promise to Donna, and gives my hands something to do instead of letting the quiet house get to me.",
+      "emotional_state": "nervous but hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_toolbox",
+          "content": "Tidy up the tools and set my sneakers and gear by the door for tomorrow"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm back on Magnolia Loop at 7:17 PM with nobody around. Gary is locked in for pickleball at eight tomorrow and I promised to swing by at 7:45, so there's nothing left to chase tonight. Dinner at Rosa's is at six, and Hal agreed to a pecan pie. Hal warned me about the flamingos, and L-02 caps visible ornaments at three. My flock has been growing, so before the neighbors start gossiping about me, I should check it over and thin the count to stay legal.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos and pull extras so only three show from the street"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Town Hall, evening, nobody around. Two ticks ago I decided to file a written L-01 report on Gary's cart lights and speaker. Gary himself admitted he's wiring it in the garage and filing paperwork after, which is backwards. The desk is right here. No sense dithering; by the book means filing it. I'll note the flamingo count is under review since Donna agreed to thin them for Saturday's dinner at Rosa's. Then I'll go home and bake that pecan pie.",
+      "emotional_state": "resolute",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "architectural_review_desk",
+          "content": "File written L-01 report on Gary's unapproved cart lights and speaker; note flamingo count under review pending Donna's thinning."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Everything for Saturday is prepped: pork marinating, table set, spices staged, and my shift schedule is checked. No one is nearby, and Donna and Gary are already confirmed, so I don't need to chase anyone down tonight. Hal said he'd come after my invitation, and I don't want to nag. The shift schedule is the one thing I can still double-check so a per-diem call-in doesn't wreck the six o'clock dinner. Then I can rest and enjoy the quiet before the big day.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Look the schedule over once more and make sure no call-in can touch Saturday at six"
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "hal",
+      "text": "Hal Weems: File written L-01 report on Gary's unapproved cart lights and speaker; note flamingo count under review pending Donna's thinning."
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03221,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9980,
+        "output_tokens": 1208,
+        "usd": 0.03204
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 440,
+        "output_tokens": 258,
+        "usd": 0.00017
+      }
+    }
+  }
+}
