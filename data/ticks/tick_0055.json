@@ -1,0 +1,116 @@
+{
+  "tick": 55,
+  "simulation_time": "Thursday, October 15, 8:17 PM",
+  "weather": "Partly cloudy, 80°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "hals_house",
+    "rosa": "garys_house"
+  },
+  "story": "Thursday evening in Sumter Oaks finds Gary at his kitchen table, touched but distracted, as he tells Rosa he'll come to her dinner Saturday at six, bottle and appetite in tow, before returning to his soldering. Donna, optimistic as ever, pins him down on a Saturday morning tennis match at eight sharp, and Gary agrees before she heads off. Across the Loop, Hal sits content on his porch, weighing which pie to bring Saturday, while Rosa walks off down Magnolia Loop with her plans firmly set.",
+  "events": [
+    "Hal waited: Sitting on the porch watching the Loop go quiet, thinking over which pie to bring Saturday.",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa's asked me straight out and she's been chasing me around Magnolia Loop, so the polite thing is to answer her. Saturday at six, her table, Donna's cobbler, Hal coming. Pickleball is at eight that morning, so no conflict. Being needed and fed by neighbors is exactly what I've been missing since Linda passed, and I shouldn't make her ask twice. Then I can get back to the soldering.",
+      "emotional_state": "touched",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Yes, Rosa, you've got me. Saturday at six, and I'll bring a bottle of something and my appetite. Now let me get back to this wiring before the solder goes cold."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa has made her pitch and Gary is on the spot. I've already given him the paddle tip and told Rosa I'm bringing cobbler, so repeating myself would just crowd him. Saturday doubles at eight and Rosa's dinner at six are both nearly locked in. What's left is a light nudge: confirm the schedule once so he can't claim he forgot, then let him get back to his wiring. It's 8:17 PM, quiet hours start at ten, and I should wrap this up gracefully rather than hover.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, just so it's written in ink: dinner at Rosa's at six, then you and me on the court Sunday morning, I mean Saturday at eight sharp. Say yes to both and I'll leave you to your solder."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Evening's winding down and I'm home alone on the porch. I've logged the flamingo count and Gary's pending cart filing, and I've already scanned the Loop with the binoculars. Nothing's out of order. Saturday's dinner at Rosa's is coming up, and I'd rather keep the Loop friendly than chase violations. No need to wander or bother anyone at this hour. I'll sit and keep an eye out, and think about which pie to bring.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Sitting on the porch watching the Loop go quiet, thinking over which pie to bring Saturday."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I already told Gary Saturday at six at my table, and Donna and Hal are confirmed. Asking again would just be nagging, and it's been about an hour since I pushed him. Gary's soldering and Donna's coaching him, so they're busy. I'm at Gary's house with a dinner to plan and I'm not going to hover over his workbench. Time to head back toward Magnolia Loop and get on with prepping my kitchen, and let him answer in his own time.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading back out to Magnolia Loop to get on with dinner prep; I've said my piece to Gary."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03256,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10430,
+        "output_tokens": 1156,
+        "usd": 0.03242
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 477,
+        "output_tokens": 187,
+        "usd": 0.00014
+      }
+    }
+  }
+}
