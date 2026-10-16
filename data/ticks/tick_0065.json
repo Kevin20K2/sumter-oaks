@@ -1,0 +1,118 @@
+{
+  "tick": 65,
+  "simulation_time": "Friday, October 16, 3:17 PM",
+  "weather": "Afternoon shower, 80°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On a rainy Friday afternoon in Sumter Oaks, Gary is at his workbench testing the light strip and speaker wiring while the shower drums softly on his roof. Donna is hurrying up the street toward Gary's house with a determined look, and Hal is heading the other way toward Town Square, pleased with himself. Meanwhile Rosa, content in her kitchen, is cutting plantains, soaking rice, and labeling serving dishes so tomorrow can be all cooking and welcoming.",
+  "events": [
+    "Gary (gary workbench): Test the light strip and speaker wiring on the bench",
+    "Donna headed to Gary's House.",
+    "Hal headed to Town Square.",
+    "Rosa (rosa kitchen): Cut the plantains, soak the rice, and label the serving dishes so tomorrow is just cooking and welcoming"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's Friday afternoon, nobody's around, and I've already checked Marge's beans twice. The cart paperwork is filed, the soldering iron is put away, and I can't install the lights and sound system until the Architectural Review approves them (L-01). The one thing still sitting on my bench is the cart wiring, so I'll do a last test on it while it rains, then I'll be ready for Rosa's dinner and Donna's pickleball lesson tomorrow. Keeping my hands busy beats sitting here missing Marge.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Test the light strip and speaker wiring on the bench"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal has already agreed to the pie and chairs, and I've promised to thin the flamingos before Saturday, so that conversation is done. No need to keep chatting in the rain. Gary is committed for Saturday at eight, but he's never held a paddle, so the smart move is to get him ahead of the game. I'll head to Gary's house now and offer him a practice session at the rec center before the big day.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading to Gary's to make sure he's ready for Saturday and offer a practice session before then."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna just promised to pull all but three flamingos before Saturday, so that matter is settled and I shouldn't press her again. Standing here chatting won't move my goal along. Gary's cart modifications are still unreported, and the architectural review committee is the proper channel. Town Square is the logical place to head and check on Gary's setup. I'll keep it civil and let the pie and the paperwork each have their day.",
+      "emotional_state": "satisfied",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_square",
+          "content": "Flamingo matter is settled. Heading to Town Square to look into Gary's cart modifications and the review committee filing."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've done the pork, set the table, checked the pantry, and confirmed my shifts don't clash with Saturday at six. Gary, Donna, and Hal are all lined up and nobody is nearby to talk to. The only open question is whether anything is still missing for tomorrow, and the pantry check already answered that. I'll use the kitchen to finish the dessert prep and lay out the serving pieces so Saturday is just cooking and welcoming people.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Cut the plantains, soak the rice, and label the serving dishes so tomorrow is just cooking and welcoming"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.031,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10149,
+        "output_tokens": 1058,
+        "usd": 0.03088
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 379,
+        "output_tokens": 167,
+        "usd": 0.00012
+      }
+    }
+  }
+}

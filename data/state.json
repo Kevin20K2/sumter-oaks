@@ -1,19 +1,23 @@
 {
-  "tick": 65,
-  "time": "2026-10-16T14:17",
+  "tick": 66,
+  "time": "2026-10-16T15:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
-    "hal": "magnolia_loop",
+    "donna": "garys_house",
+    "hal": "town_square",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "Donna just arrived."
+    ],
     "donna": [
-      "Hal said to Donna: “Saturday's noted, Donna. I'll bring a pecan pie and a couple of folding chairs. We'll sort the flamingos some other day.”"
+      "Hal headed to Town Square.",
+      "You arrived at Gary's House."
     ],
     "hal": [
-      "Donna said to Hal: “Oh, Hal, you caught me. I'll pull all but three before Saturday, so you can enjoy that pie in peace. The flamingos can sit out the dinner.”"
+      "Donna headed to Gary's House.",
+      "You arrived at Town Square."
     ],
     "rosa": []
   },
@@ -648,6 +652,16 @@
         "tick": 64,
         "text": "I (gary fridge): Check Marge's beans are sealed and ready to carry to Rosa's",
         "importance": 4
+      },
+      {
+        "tick": 65,
+        "text": "I (gary workbench): Test the light strip and speaker wiring on the bench",
+        "importance": 3
+      },
+      {
+        "tick": 65,
+        "text": "Donna just arrived.",
+        "importance": 3
       }
     ],
     "donna": [
@@ -1395,6 +1409,21 @@
         "tick": 64,
         "text": "Hal said to Donna: “Saturday's noted, Donna. I'll bring a pecan pie and a couple of folding chairs. We'll sort the flamingos some other day.”",
         "importance": 4
+      },
+      {
+        "tick": 65,
+        "text": "I headed to Gary's House.",
+        "importance": 5
+      },
+      {
+        "tick": 65,
+        "text": "Hal headed to Town Square.",
+        "importance": 5
+      },
+      {
+        "tick": 65,
+        "text": "You arrived at Gary's House.",
+        "importance": 5
       }
     ],
     "hal": [
@@ -1996,6 +2025,21 @@
       {
         "tick": 64,
         "text": "Donna said to Hal: “Oh, Hal, you caught me. I'll pull all but three before Saturday, so you can enjoy that pie in peace. The flamingos can sit out the dinner.”",
+        "importance": 4
+      },
+      {
+        "tick": 65,
+        "text": "I headed to Town Square.",
+        "importance": 4
+      },
+      {
+        "tick": 65,
+        "text": "Donna headed to Gary's House.",
+        "importance": 4
+      },
+      {
+        "tick": 65,
+        "text": "You arrived at Town Square.",
         "importance": 4
       }
     ],
@@ -2639,6 +2683,11 @@
         "tick": 64,
         "text": "I (rosa shift schedule): Check my per-diem shifts to make sure nothing conflicts with Saturday's dinner at six",
         "importance": 4
+      },
+      {
+        "tick": 65,
+        "text": "I (rosa kitchen): Cut the plantains, soak the rice, and label the serving dishes so tomorrow is just cooking and welcoming",
+        "importance": 4
       }
     ]
   },
@@ -2686,8 +2735,8 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "amused, cooperative",
-    "hal": "content",
+    "donna": "determined",
+    "hal": "satisfied",
     "rosa": "content"
   },
   "laws": [
@@ -2753,9 +2802,16 @@
       "text": "Gary Kowalski: Fill out and file the golf cart modification form for the lights and sound system"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 65,
+      "time": "Friday, October 16, 3:17 PM",
+      "story": "On a rainy Friday afternoon in Sumter Oaks, Gary is at his workbench testing the light strip and speaker wiring while the shower drums softly on his roof. Donna is hurrying up the street toward Gary's house with a determined look, and Hal is heading the other way toward Town Square, pleased with himself. Meanwhile Rosa, content in her kitchen, is cutting plantains, soaking rice, and labeling serving dishes so tomorrow can be all cooking and welcoming.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 1.97196,
+    "total_usd": 2.00296,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -2774,13 +2830,12 @@
         "usd": 0.48691
       },
       "2026-10-16": {
-        "ticks": 8,
-        "usd": 0.24726
+        "ticks": 9,
+        "usd": 0.27826
       }
     }
   },
   "recent_tick_costs": [
-    0.03238,
     0.03177,
     0.03066,
     0.03154,
@@ -2803,7 +2858,8 @@
     0.03033,
     0.03073,
     0.03045,
-    0.03237
+    0.03237,
+    0.031
   ],
   "fund": {
     "gross_usd": 0.0,
