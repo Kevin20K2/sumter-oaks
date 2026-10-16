@@ -1,0 +1,123 @@
+{
+  "tick": 68,
+  "simulation_time": "Friday, October 16, 6:17 PM",
+  "weather": "Breezy and clear, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "town_hall",
+    "rosa": "rosas_house"
+  },
+  "story": "At 6:17 on a breezy, clear Friday evening in Sumter Oaks, Gary is filling water bottles in his kitchen to chill for tomorrow's pickleball, looking a little nervous but warm as ever. Donna, feeling satisfied, is out on Magnolia Loop, while Hal is at Town Hall filing a written report on Gary's unapproved cart lights and speaker and noting that the flamingo count is still under review. Over at her house, Rosa is content, giving the pork one last check in the fridge and lining up pots, serving dishes, and spices for tomorrow.",
+  "events": [
+    "Gary (gary fridge): Fill a couple water bottles and chill them for tomorrow's pickleball",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (architectural review desk): File a written L-01 report on Gary's unapproved cart lights and speaker; note the flamingo count is under review.",
+    "Rosa (rosa kitchen): Final check: pork covered in the fridge, pots and serving dishes staged, spices lined up for tomorrow"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just laid out the plan for tomorrow: 7:45 pickup, water, good attitude. I've already said my piece about being terrible, and I shouldn't repeat myself. I finished testing the wiring last tick, so the speaker and lights are done. The cart modification form is filed, and I can't hang anything on the cart's exterior until Architectural Review approves it, so that's out of my hands for now. Best use of this hour is to get ready for tomorrow so I show up with something real: grab water from the fridge and set out my sneakers. It's a small way to keep my promise.",
+      "emotional_state": "nervous but warm",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_fridge",
+          "content": "Fill a couple water bottles and chill them for tomorrow's pickleball"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at Gary's, it's 6:17 PM Friday, and I've already laid out the 7:45 pickup plan and the flat-soled shoes advice. He's busy finishing the wiring, and Rosa's dinner and the court are both locked in for tomorrow. Repeating the plan would be nagging, and I said I wasn't here to nag. I've got what I came for, so the smart move is to leave him to his work and go get my own gear ready (spare paddle, cobbler fixings, tomorrow's schedule). Heading back out to Magnolia Loop keeps things moving.",
+      "emotional_state": "satisfied",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading home to pack the spare paddle and start on the cobbler for Rosa's dinner."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Town Hall at the review desk, and last tick I said I'd file a written L-01 report on Gary's cart lights and speaker. Nobody is around to talk to, so there's no sense standing here. Gary did admit the speaker was tested and that he's wiring things before filing paperwork, so the report should stick to the facts. I'll note the flamingo count is only under review, since Donna agreed to thin them. Rules are rules, but I'll keep it fair and civil so Saturday at Rosa's goes smoothly.",
+      "emotional_state": "dutiful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "architectural_review_desk",
+          "content": "File a written L-01 report on Gary's unapproved cart lights and speaker; note the flamingo count is under review."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The table is set, the pork is marinating, the plantains are cut, and the rice is soaking. Everything for Saturday's six o'clock dinner is staged, and nobody is nearby to talk to. One last look at the kitchen is worth it: confirm the pork is covered and in the fridge, set out the pots and serving dishes, and put the flan on the counter list so tomorrow is just cooking and welcoming Hal, Gary, and Donna.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Final check: pork covered in the fridge, pots and serving dishes staged, spices lined up for tomorrow"
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "hal",
+      "text": "Hal Weems: File a written L-01 report on Gary's unapproved cart lights and speaker; note the flamingo count is under review."
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03212,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9996,
+        "output_tokens": 1199,
+        "usd": 0.03198
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 421,
+        "output_tokens": 197,
+        "usd": 0.00014
+      }
+    }
+  }
+}
