@@ -17,6 +17,12 @@
 <meta name="twitter:image" content="https://sumter-oaks.com/viewer/assets/share-card.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="/viewer/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="/viewer/assets/icon-180.png">
+<link rel="manifest" href="/viewer/manifest.webmanifest">
+<meta name="theme-color" content="#137d76">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Sumter Oaks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -301,6 +307,20 @@ button:disabled { opacity: 0.4; cursor: default; }
 .sbox .done p { margin: 0 0 6px; }
 .sbox .stamp { display: inline-block; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: #c8473d; border: 2px solid #c8473d; border-radius: 6px; padding: 2px 8px; transform: rotate(-4deg); }
 .sbox .again { font-size: 0.8rem; color: var(--accent); text-decoration: underline; background: none; border: 0; padding: 0; }
+
+/* Add to home screen */
+.a2hs { display: inline-flex; align-items: center; gap: 8px; font-size: 0.8rem; border: 1.5px solid var(--accent); color: var(--accent); background: var(--surface); border-radius: 999px; padding: 6px 12px 6px 6px; }
+.a2hs img { width: 24px; height: 24px; border-radius: 6px; }
+.a2hs[hidden] { display: none; }
+.a2hs-sheet { border: 1px solid var(--line); border-radius: 16px; padding: 20px; max-width: min(420px, calc(100vw - 32px)); background: var(--surface); color: var(--ink); }
+.a2hs-sheet::backdrop { background: rgb(0 0 0 / 0.4); }
+.a2hs-sheet h2 { font-size: 1.25rem; margin: 0 0 4px; }
+.a2hs-sheet .head { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 12px; align-items: center; margin-bottom: 12px; }
+.a2hs-sheet .head img { width: 56px; height: 56px; border-radius: 13px; }
+.a2hs-sheet .head p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+.a2hs-sheet ol { margin: 0 0 16px; padding-left: 1.3em; display: grid; gap: 8px; font-size: 1.02rem; }
+.a2hs-sheet .glyph { display: inline-block; vertical-align: -4px; width: 20px; height: 20px; color: var(--accent); }
+.a2hs-sheet .close { font-family: var(--font-display); font-weight: 700; font-size: 1rem; background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 999px; padding: 9px 20px; }
 </style>
 
 <div class="wrap">
@@ -309,8 +329,15 @@ button:disabled { opacity: 0.4; cursor: default; }
       <div class="eyebrow">Magnolia Loop · Sumter Oaks, Florida</div>
       <h1>Sumter Oaks Live</h1>
     </div>
+    <button type="button" class="a2hs" id="a2hs" hidden><img src="/viewer/assets/icon-180.png" alt="">Add to home screen</button>
     <div class="sample" id="sample">Preview with sample ticks. Live ticks will appear here once the simulation starts.</div>
   </header>
+
+  <dialog class="a2hs-sheet" id="a2hs-sheet" aria-labelledby="a2hs-h">
+    <div class="head"><img src="/viewer/assets/icon-180.png" alt=""><div><h2 id="a2hs-h">Keep Sumter Oaks one tap away</h2><p>Add it to your home screen and come back to the neighbors any time.</p></div></div>
+    <ol id="a2hs-steps"></ol>
+    <form method="dialog"><button class="close" type="submit">Got it</button></form>
+  </dialog>
 
   <div class="thanks" id="thanks" role="status" hidden>
     <span>Thank you! Your gift reaches the cloud at the next hourly tick. Watch it puff up.</span>
@@ -425,7 +452,7 @@ button:disabled { opacity: 0.4; cursor: default; }
       <div class="send-row"><button type="submit" class="send" id="sbox-send">Drop it in the box</button><p class="fine">Notes go to the town's caretaker, not the public page.</p></div>
     </form>
     <div class="done" id="sbox-done" hidden>
-      <img src="assets/bust-hal.webp" alt="">
+      <img src="/viewer/assets/bust-hal.webp" alt="">
       <div><span class="stamp">Received</span><h3 tabindex="-1" id="sbox-done-h">Hal has filed your note.</h3><p>In triplicate. Thanks for writing in. The caretaker reads every one.</p><button class="again" type="button" id="sbox-again">Write another note</button></div>
     </div>
   </section>
@@ -890,6 +917,42 @@ function initSuggestionBox() {
     err.hidden = true;
     $("sbox-done").hidden = true; form.hidden = false; msg.focus();
   };
+}
+
+// ---- Add to home screen: the browser's own install prompt when it offers one, else short steps for this phone ----
+function initHomeScreen() {
+  const btn = $("a2hs"), sheet = $("a2hs-sheet"), steps = $("a2hs-steps");
+  const standalone = matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+  if (standalone || !btn || !sheet) return;
+  const ua = navigator.userAgent;
+  const ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  const android = /Android/.test(ua);
+  const inApp = /FBAN|FBAV|Instagram|Line\/|MicroMessenger|; wv\)/.test(ua);
+  const share = '<svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Share"><path d="M12 15V3"/><path d="M8 7l4-4 4 4"/><path d="M6 11H5v10h14V11h-1"/></svg>';
+  const dots = '<svg class="glyph" viewBox="0 0 24 24" fill="currentColor" aria-label="menu"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>';
+  let deferred = null;
+  window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); deferred = e; btn.hidden = false; });
+  window.addEventListener("appinstalled", () => { btn.hidden = true; deferred = null; });
+  // Phones always get the button; computers only when the browser offers to install.
+  if (ios || android) btn.hidden = false;
+  const fill = () => {
+    let html;
+    if (inApp) html = [`Tap the <b>⋯</b> menu at the top of this screen.`, `Choose <b>Open in browser</b> (Safari or Chrome).`, `Then tap <b>Add to home screen</b> on the page again.`];
+    else if (ios) html = [`Tap the <b>Share</b> button ${share} in Safari's toolbar.`, `Scroll down and tap <b>Add to Home Screen</b>.`, `Tap <b>Add</b>. Look for the magnolia on your home screen.`];
+    else html = [`Tap the menu ${dots} in the top corner of your browser.`, `Tap <b>Add to Home screen</b> or <b>Install app</b>.`, `Tap <b>Add</b> or <b>Install</b>. Look for the magnolia on your home screen.`];
+    steps.innerHTML = html.map(h => `<li>${h}</li>`).join("");
+  };
+  btn.onclick = async () => {
+    if (deferred) {
+      deferred.prompt();
+      try { const r = await deferred.userChoice; if (r.outcome === "accepted") btn.hidden = true; } catch (e) {}
+      deferred = null;
+      return;
+    }
+    fill();
+    if (sheet.showModal) sheet.showModal(); else sheet.setAttribute("open", "");
+  };
+  sheet.addEventListener("click", (e) => { if (e.target === sheet) sheet.close(); });
 }
 
 // ---- Scene ----
@@ -1431,6 +1494,7 @@ loadData().then(d => {
   drawCloud(d.fund);
   renderSupport(d.fund);
   initSuggestionBox();
+  initHomeScreen();
   if (/[?&]thanks=1\b/.test(location.search)) {
     $("thanks").hidden = false;
     try { history.replaceState(null, "", location.pathname + location.hash); } catch (e) {}
