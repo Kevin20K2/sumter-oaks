@@ -1,0 +1,16 @@
+{
+  "name": "Sumter Oaks Live",
+  "short_name": "Sumter Oaks",
+  "description": "A live, AI-run Florida neighborhood. Four neighbors, one street, new drama every hour.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f2f5f0",
+  "theme_color": "#137d76",
+  "icons": [
+    { "src": "/viewer/assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/viewer/assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/viewer/assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
