@@ -1,0 +1,116 @@
+{
+  "tick": 64,
+  "simulation_time": "Friday, October 16, 2:17 PM",
+  "weather": "Afternoon shower, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On this rainy Friday afternoon in Sumter Oaks, Gary is at home content with his task of making sure Marge's beans are sealed and ready to carry over to Rosa's. Out on Magnolia Loop, Donna and Hal have settled a playful flamingo dispute: Donna agrees to pull all but three of her pink lawn birds before Saturday, and Hal promises a pecan pie and folding chairs for the dinner. Rosa, meanwhile, is checking her per-diem shifts at home to make sure nothing gets in the way of Saturday's six o'clock dinner.",
+  "events": [
+    "Gary (gary fridge): Check Marge's beans are sealed and ready to carry to Rosa's",
+    "Rosa (rosa shift schedule): Check my per-diem shifts to make sure nothing conflicts with Saturday's dinner at six"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I just took Marge's beans out of the fridge to check they're ready for Rosa's dinner. The cart wiring is done and tested, and the form's filed with Hal, so no need to touch the lights again. Nobody's around, so no one to talk to. Best use of this hour is to check that the beans are properly sealed and ready to carry over, since I promised Rosa and these beans mean a lot to me. Afterward I'll sort out the afternoon shower and Donna's pickleball.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_fridge",
+          "content": "Check Marge's beans are sealed and ready to carry to Rosa's"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal just called me out on the flamingos, and he's right that the code caps ornaments at three. I don't want a citation hanging over Saturday, and I like staying on his good side before Rosa's dinner. I already told him about the cobbler, so no need to repeat that. The easy fix is to thin the flock myself. I'll give him a lighthearted answer and commit to pulling a few off the lawn, which settles it without paperwork. Then I'll get back to the real business of lining up Saturday's pickleball.",
+      "emotional_state": "amused, cooperative",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Oh, Hal, you caught me. I'll pull all but three before Saturday, so you can enjoy that pie in peace. The flamingos can sit out the dinner."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna invited me to bring something Saturday, and I've already said my piece on the flamingos and the three-ornament limit. Repeating it would just be nagging, and Saturday's dinner is the better thread. My memory says I want to bring a good pecan pie and be counted on. I'll accept, tell her what I'm bringing, and let the flamingo matter ride until the paperwork question comes up again. No sense souring the street over lawn birds.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Saturday's noted, Donna. I'll bring a pecan pie and a couple of folding chairs. We'll sort the flamingos some other day."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The dinner prep is basically done: table set, pork marinated, flan covered, pots out. It's Friday afternoon, nobody's nearby, and there's an afternoon shower outside. The shift schedule object is the one thing I haven't touched, and I should check it so no per-diem shift collides with Saturday at six. That's the last loose end before I can rest easy.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts to make sure nothing conflicts with Saturday's dinner at six"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03237,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10010,
+        "output_tokens": 1100,
+        "usd": 0.03102
+      },
+      "claude-haiku-5-5": {
+        "calls": 6,
+        "input_tokens": 7705,
+        "output_tokens": 1150,
+        "usd": 0.00135
+      }
+    }
+  }
+}
