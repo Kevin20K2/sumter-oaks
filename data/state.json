@@ -1,16 +1,20 @@
 {
-  "tick": 62,
-  "time": "2026-10-16T11:17",
+  "tick": 63,
+  "time": "2026-10-16T12:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
-    "donna": [],
-    "hal": [],
+    "donna": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
+    "hal": [
+      "Donna just arrived."
+    ],
     "rosa": []
   },
   "memories": {
@@ -629,6 +633,11 @@
         "tick": 61,
         "text": "I (gary toolbox): Put away the soldering iron and wire cutters, tidy the toolbox",
         "importance": 4
+      },
+      {
+        "tick": 62,
+        "text": "I (gary fridge): Make a quick lunch and check on the beans for Rosa's dinner",
+        "importance": 3
       }
     ],
     "donna": [
@@ -1346,6 +1355,16 @@
         "tick": 61,
         "text": "I (donna club calendar): Pencil in Saturday's 8 AM court slot as a two-hour block and mark Rosa's dinner after it",
         "importance": 4
+      },
+      {
+        "tick": 62,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 62,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "hal": [
@@ -1917,6 +1936,16 @@
       {
         "tick": 61,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street and compare against the three-ornament limit",
+        "importance": 4
+      },
+      {
+        "tick": 62,
+        "text": "I (street bulletin board): Read the posted notices for anything on cart approvals, ornaments, or Saturday's dinner",
+        "importance": 4
+      },
+      {
+        "tick": 62,
+        "text": "Donna just arrived.",
         "importance": 4
       }
     ],
@@ -2545,6 +2574,11 @@
         "tick": 61,
         "text": "I (rosa dining table): Set the table for four with plates, glasses, and napkins so Saturday is just cooking and welcoming",
         "importance": 5
+      },
+      {
+        "tick": 62,
+        "text": "I (rosa kitchen): Check the pantry against the menu, make a short list of anything missing, and make flan so dessert has a backup",
+        "importance": 4
       }
     ]
   },
@@ -2592,9 +2626,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "organized",
-    "hal": "watchful",
-    "rosa": "content"
+    "donna": "content",
+    "hal": "dutiful",
+    "rosa": "content, eager"
   },
   "laws": [
     {
@@ -2677,10 +2711,16 @@
       "time": "Friday, October 16, 11:17 AM",
       "story": "Gary is putting his soldering iron and wire cutters away and tidying his toolbox at home, looking content with the morning's work. Donna is penciling Saturday's 8 AM court slot into her club calendar as a two-hour block and marking Rosa's dinner right after it, all very organized. Over on Magnolia Loop, Hal is watchfully counting the flamingos visible from the street and checking them against the community's three-ornament limit. Meanwhile Rosa, feeling content, is setting her dining table for four with plates, glasses, and napkins so that Saturday will be nothing but cooking and welcoming.",
       "dialogue": []
+    },
+    {
+      "tick": 62,
+      "time": "Friday, October 16, 12:17 PM",
+      "story": "At 12:17 on a breezy, clear Friday in Sumter Oaks, Gary is making a quick lunch at home and keeping an eye on the beans he promised to check for Rosa's dinner. Donna has just set off down Magnolia Loop, and Hal is reading the notices on the street bulletin board for anything about cart approvals, ornaments, or Saturday's dinner. Rosa, eager and content, is in her kitchen checking the pantry against the menu and jotting down what's missing, all while starting a backup flan so dessert is covered.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 1.87841,
+    "total_usd": 1.90914,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -2699,13 +2739,12 @@
         "usd": 0.48691
       },
       "2026-10-16": {
-        "ticks": 5,
-        "usd": 0.15371
+        "ticks": 6,
+        "usd": 0.18444
       }
     }
   },
   "recent_tick_costs": [
-    0.03184,
     0.03102,
     0.03308,
     0.03238,
@@ -2728,7 +2767,8 @@
     0.03074,
     0.03131,
     0.03058,
-    0.03033
+    0.03033,
+    0.03073
   ],
   "fund": {
     "gross_usd": 0.0,

@@ -1,0 +1,118 @@
+{
+  "tick": 62,
+  "simulation_time": "Friday, October 16, 12:17 PM",
+  "weather": "Breezy and clear, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 12:17 on a breezy, clear Friday in Sumter Oaks, Gary is making a quick lunch at home and keeping an eye on the beans he promised to check for Rosa's dinner. Donna has just set off down Magnolia Loop, and Hal is reading the notices on the street bulletin board for anything about cart approvals, ornaments, or Saturday's dinner. Rosa, eager and content, is in her kitchen checking the pantry against the menu and jotting down what's missing, all while starting a backup flan so dessert is covered.",
+  "events": [
+    "Gary (gary fridge): Make a quick lunch and check on the beans for Rosa's dinner",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (street bulletin board): Read the posted notices for anything on cart approvals, ornaments, or Saturday's dinner",
+    "Rosa (rosa kitchen): Check the pantry against the menu, make a short list of anything missing, and make flan so dessert has a backup"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "The wiring is done, the speaker's mounted, the lights tested, and the toolbox is tidy. The cart is basically ready, and I filed the form with the Architectural Review desk back at tick 36. Hal's approval is what makes this legal under L-01, so I shouldn't be driving it down the street yet. I also promised Donna pickleball and Rosa dinner. Nobody's nearby, it's lunchtime, and I'm standing in my own house with a fridge. Grab something to eat and think about what to bring to Rosa's with my late wife's beans.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_fridge",
+          "content": "Make a quick lunch and check on the beans for Rosa's dinner"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already checked the calendar, packed the bag, texted Rosa, and penciled in the court slot over the last few ticks. Nobody's nearby, and there's no reply from Rosa to act on yet. Gary's committed, so the plan is in place. Rather than fuss with the same objects again, I should get out and do something useful: head out onto Magnolia Loop, where I might run into Gary or Hal and keep Saturday's plans from slipping.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Everything's packed and penciled in for Saturday, so I'm heading out onto the loop to find Gary and remind him about eight sharp."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've counted the flock twice now and the street is empty. My reflections say I'd rather keep the Loop friendly than catch Gary out, and Saturday's dinner at Rosa's is coming. Counting again just repeats myself. The street bulletin board is the proper place to see what's posted, any notices about carts, ornaments, or Saturday's dinner. By the book, but with a little goodwill.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the posted notices for anything on cart approvals, ornaments, or Saturday's dinner"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The table is set, the pork is marinated, the rice and plantains are prepped, and my shifts are clear. Everything that can be done today is done. Nobody is around to talk to, and nagging anyone again would just be repeating myself since Hal, Donna, and Gary have all said yes. I could run out of things to do and start fussing, so the useful move is the kitchen: check the menu against Gary's beans and Donna's cobbler, make sure I have enough of everything, and make a short list of anything I still need to pick up before Saturday.",
+      "emotional_state": "content, eager",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check the pantry against the menu, make a short list of anything missing, and make flan so dessert has a backup"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03073,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9648,
+        "output_tokens": 1130,
+        "usd": 0.0306
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 412,
+        "output_tokens": 182,
+        "usd": 0.00013
+      }
+    }
+  }
+}
