@@ -1,0 +1,117 @@
+{
+  "tick": 56,
+  "simulation_time": "Thursday, October 15, 9:17 PM",
+  "weather": "Partly cloudy, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "hals_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 9:17 on a mild, partly cloudy Thursday in Sumter Oaks, Gary is warmly amused as he sends Donna home after settling their Saturday plans at eight sharp, with a paddle, bent knees, and no soldering iron left to get jealous. Donna heads out onto Magnolia Loop, feeling satisfied, while Rosa, content, makes her way to her own house. Hal, also content, sits on his porch with a pecan pie in mind for Saturday, keeping an ear out to make sure the Loop stays quiet before ten.",
+  "events": [
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal waited: Sitting out the last of the evening on the porch, settling on a pecan pie for Saturday and listening to make sure the Loop stays quiet before ten.",
+    "Rosa headed to Rosa's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just asked me to say yes to both dinner at Rosa's Saturday at six and pickleball Saturday at eight sharp. I already said yes to Rosa, but I haven't actually answered Donna on the pickleball, and she wants it in ink. Answer her plainly, then get back to the wiring. Knees bent, shake hands with the paddle. Cart's got to be wired before parade day.",
+      "emotional_state": "warm, amused",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Yes to both, Donna, in ink. Saturday at eight sharp, paddle shaking hands with me and knees bent. Now go home before my soldering iron gets jealous."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just said yes to Rosa for Saturday dinner, and I already pinned him down on both dinner and the court in the last tick. It's past nine at night, he's soldering, and nagging him again would be exactly what I told myself not to do. I got what I came for. Best move now is a short, warm sign-off, then head home and let him work. Quiet hours start at ten anyway, so it's a good time to wrap up.",
+      "emotional_state": "satisfied",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading home since Gary's confirmed Saturday dinner and doubles, and he needs to finish his wiring in peace."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's past nine at night and the Loop is quiet. I've already logged the flamingo count and Gary's pending cart filing, and I've scanned the street with the binoculars. Nobody is around to speak to. The pie question for Saturday is settled enough in my head: something sturdy that travels well. Nothing left to do but keep watch a bit longer and call it a night soon. Quiet hours start at ten and the street seems to be honoring them.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Sitting out the last of the evening on the porch, settling on a pecan pie for Saturday and listening to make sure the Loop stays quiet before ten."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 9 PM, and I've got all three confirmed for Saturday at six: Gary said yes, Donna and Hal are coming. No one's around on the street to talk to, and I shouldn't repeat my invitations. The dinner needs prep, so the sensible move is to head home and start planning the menu and table for four before I turn in.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading home to plan the menu and set up for Saturday's dinner for four."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03209,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10414,
+        "output_tokens": 1039,
+        "usd": 0.03122
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 5390,
+        "output_tokens": 665,
+        "usd": 0.00087
+      }
+    }
+  }
+}
