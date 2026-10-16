@@ -1,0 +1,116 @@
+{
+  "tick": 63,
+  "simulation_time": "Friday, October 16, 1:17 PM",
+  "weather": "Breezy and clear, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On Magnolia Loop this breezy Friday afternoon, Donna cheerfully invites Hal to Rosa's Saturday dinner and promises a cobbler, while Hal, ever dutiful, gently reminds her that her flamingo flock has grown past the community's three-ornament limit. Gary, content at home, is busy having Marge's beans taken out so they'll be ready for Rosa's dinner, and Rosa is at her kitchen counter finishing her pantry check and covering the flan. Everyone is tending to Saturday's dinner in their own way, with a little friendly friction about lawn decor thrown in for good measure.",
+  "events": [
+    "Gary (gary fridge): Take out Marge's beans and check they're ready for Rosa's dinner",
+    "Rosa (rosa kitchen): Finish the pantry check, cover the flan, and set out the pots and serving dishes for Saturday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Cart wiring is done and the toolbox is tidy, and I just made lunch. The beans for Rosa's dinner are in the fridge and I promised to show up for both Rosa and Donna, so I should make sure the beans are actually ready to carry over. Nobody's around, so no talking. Checking the fridge is the useful next step, and it keeps me from drifting off empty-handed.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_fridge",
+          "content": "Take out Marge's beans and check they're ready for Rosa's dinner"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm back on Magnolia Loop with Saturday's court slot and Rosa's dinner penciled in. Hal is right here, and he's part of the Saturday mix. Gary already agreed to doubles, so I don't need to chase him again. Better to keep the neighborhood plans tight: nudge Hal about the dinner at Rosa's and stay at the center of things, without repeating anything I've already said.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, good timing. Rosa's hosting dinner Saturday evening and Gary's coming, so save the night. I'm bringing cobbler, and you're welcome to bring whatever you like to go with it."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I counted the flamingos twice already and read the bulletin board. Donna just walked up, and my memories say I'd rather keep the Loop friendly than ambush anyone with a violation. Still, three ornaments is three ornaments under L-02, and a by-the-book man gives fair warning before filing anything. I'll be straight with her, dry about it, and mention Saturday's dinner so it doesn't read like a feud.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Afternoon, Donna. I've counted your flamingos from the street, and the code caps ornaments at three. Thin the flock or file for review, and we'll both enjoy Rosa's pie on Saturday without paperwork."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Friday afternoon and the dinner is nearly set. The pork is marinated, the table is laid, and the flan is made or in progress. Last tick I was checking the pantry against the menu and writing a short list of anything missing. Nobody is nearby, so there's no one to chase down or re-invite. The most useful thing left is to finish that pantry check and tick off anything missing, so Saturday is only cooking and welcoming.",
+      "emotional_state": "content, busy",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Finish the pantry check, cover the flan, and set out the pots and serving dishes for Saturday"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03045,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9685,
+        "output_tokens": 1092,
+        "usd": 0.03029
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 525,
+        "output_tokens": 210,
+        "usd": 0.00016
+      }
+    }
+  }
+}

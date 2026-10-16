@@ -1,6 +1,6 @@
 {
-  "tick": 63,
-  "time": "2026-10-16T12:17",
+  "tick": 64,
+  "time": "2026-10-16T13:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
@@ -10,10 +10,10 @@
   "perceptions": {
     "gary": [],
     "donna": [
-      "You arrived at Magnolia Loop (the street)."
+      "Hal said to Donna: “Afternoon, Donna. I've counted your flamingos from the street, and the code caps ornaments at three. Thin the flock or file for review, and we'll both enjoy Rosa's pie on Saturday without paperwork.”"
     ],
     "hal": [
-      "Donna just arrived."
+      "Donna said to Hal: “Hal, good timing. Rosa's hosting dinner Saturday evening and Gary's coming, so save the night. I'm bringing cobbler, and you're welcome to bring whatever you like to go with it.”"
     ],
     "rosa": []
   },
@@ -638,6 +638,11 @@
         "tick": 62,
         "text": "I (gary fridge): Make a quick lunch and check on the beans for Rosa's dinner",
         "importance": 3
+      },
+      {
+        "tick": 63,
+        "text": "I (gary fridge): Take out Marge's beans and check they're ready for Rosa's dinner",
+        "importance": 4
       }
     ],
     "donna": [
@@ -1365,6 +1370,16 @@
         "tick": 62,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 63,
+        "text": "I said to Hal: “Hal, good timing. Rosa's hosting dinner Saturday evening and Gary's coming, so save the night. I'm bringing cobbler, and you're welcome to bring whatever you like to go with it.”",
+        "importance": 4
+      },
+      {
+        "tick": 63,
+        "text": "Hal said to Donna: “Afternoon, Donna. I've counted your flamingos from the street, and the code caps ornaments at three. Thin the flock or file for review, and we'll both enjoy Rosa's pie on Saturday without paperwork.”",
+        "importance": 4
       }
     ],
     "hal": [
@@ -1947,6 +1962,16 @@
         "tick": 62,
         "text": "Donna just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 63,
+        "text": "I said to Donna: “Afternoon, Donna. I've counted your flamingos from the street, and the code caps ornaments at three. Thin the flock or file for review, and we'll both enjoy Rosa's pie on Saturday without paperwork.”",
+        "importance": 5
+      },
+      {
+        "tick": 63,
+        "text": "Donna said to Hal: “Hal, good timing. Rosa's hosting dinner Saturday evening and Gary's coming, so save the night. I'm bringing cobbler, and you're welcome to bring whatever you like to go with it.”",
+        "importance": 5
       }
     ],
     "rosa": [
@@ -2579,6 +2604,11 @@
         "tick": 62,
         "text": "I (rosa kitchen): Check the pantry against the menu, make a short list of anything missing, and make flan so dessert has a backup",
         "importance": 4
+      },
+      {
+        "tick": 63,
+        "text": "I (rosa kitchen): Finish the pantry check, cover the flan, and set out the pots and serving dishes for Saturday",
+        "importance": 4
       }
     ]
   },
@@ -2626,9 +2656,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "content",
+    "donna": "cheerful",
     "hal": "dutiful",
-    "rosa": "content, eager"
+    "rosa": "content, busy"
   },
   "laws": [
     {
@@ -2717,10 +2747,19 @@
       "time": "Friday, October 16, 12:17 PM",
       "story": "At 12:17 on a breezy, clear Friday in Sumter Oaks, Gary is making a quick lunch at home and keeping an eye on the beans he promised to check for Rosa's dinner. Donna has just set off down Magnolia Loop, and Hal is reading the notices on the street bulletin board for anything about cart approvals, ornaments, or Saturday's dinner. Rosa, eager and content, is in her kitchen checking the pantry against the menu and jotting down what's missing, all while starting a backup flan so dessert is covered.",
       "dialogue": []
+    },
+    {
+      "tick": 63,
+      "time": "Friday, October 16, 1:17 PM",
+      "story": "On Magnolia Loop this breezy Friday afternoon, Donna cheerfully invites Hal to Rosa's Saturday dinner and promises a cobbler, while Hal, ever dutiful, gently reminds her that her flamingo flock has grown past the community's three-ornament limit. Gary, content at home, is busy having Marge's beans taken out so they'll be ready for Rosa's dinner, and Rosa is at her kitchen counter finishing her pantry check and covering the flan. Everyone is tending to Saturday's dinner in their own way, with a little friendly friction about lawn decor thrown in for good measure.",
+      "dialogue": [
+        "Donna said to Hal: “Hal, good timing. Rosa's hosting dinner Saturday evening and Gary's coming, so save the night. I'm bringing cobbler, and you're welcome to bring whatever you like to go with it.”",
+        "Hal said to Donna: “Afternoon, Donna. I've counted your flamingos from the street, and the code caps ornaments at three. Thin the flock or file for review, and we'll both enjoy Rosa's pie on Saturday without paperwork.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 1.90914,
+    "total_usd": 1.93959,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -2739,13 +2778,12 @@
         "usd": 0.48691
       },
       "2026-10-16": {
-        "ticks": 6,
-        "usd": 0.18444
+        "ticks": 7,
+        "usd": 0.21489
       }
     }
   },
   "recent_tick_costs": [
-    0.03102,
     0.03308,
     0.03238,
     0.03177,
@@ -2768,7 +2806,8 @@
     0.03131,
     0.03058,
     0.03033,
-    0.03073
+    0.03073,
+    0.03045
   ],
   "fund": {
     "gross_usd": 0.0,
