@@ -1,0 +1,118 @@
+{
+  "tick": 61,
+  "simulation_time": "Friday, October 16, 11:17 AM",
+  "weather": "Breezy and clear, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is putting his soldering iron and wire cutters away and tidying his toolbox at home, looking content with the morning's work. Donna is penciling Saturday's 8 AM court slot into her club calendar as a two-hour block and marking Rosa's dinner right after it, all very organized. Over on Magnolia Loop, Hal is watchfully counting the flamingos visible from the street and checking them against the community's three-ornament limit. Meanwhile Rosa, feeling content, is setting her dining table for four with plates, glasses, and napkins so that Saturday will be nothing but cooking and welcoming.",
+  "events": [
+    "Gary (gary toolbox): Put away the soldering iron and wire cutters, tidy the toolbox",
+    "Donna (donna club calendar): Pencil in Saturday's 8 AM court slot as a two-hour block and mark Rosa's dinner after it",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and compare against the three-ornament limit",
+    "Rosa (rosa dining table): Set the table for four with plates, glasses, and napkins so Saturday is just cooking and welcoming"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've checked the wiring over and over for the last few ticks, and the lights and speaker are done. The form's filed with Hal's desk, so the legal side is covered. I've got Rosa's dinner and Donna's pickleball lesson to show up for, and nobody's nearby to talk to. Rather than fuss with the cart again, I'll grab the toolbox and put things away, then head out and see if Hal's review has come back.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_toolbox",
+          "content": "Put away the soldering iron and wire cutters, tidy the toolbox"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already checked the calendar, packed the bag, and texted Rosa. I'm just waiting on her reply, and nobody is around to talk to. Rather than waste another hour pouring coffee, I should get ahead on Saturday: Gary has never played, so a quick check of the court slot and timing keeps things from falling apart. Saturday's doubles at eight and Rosa's dinner are set, and I just need to make sure the reservation stays within the two-hour limit under L-05. The club calendar is the best way to lock that down.",
+      "emotional_state": "organized",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Pencil in Saturday's 8 AM court slot as a two-hour block and mark Rosa's dinner after it"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm standing on Magnolia Loop with the binoculars work already done. My notebook says the flamingo count has been steady, but I never actually ran the count against the L-02 limit, and the flock is right here in front of me. My memories say I'd rather keep the Loop friendly than catch anyone out, but a proper tally is just good housekeeping. I'll count them properly, so if it ever comes to a report, I've got numbers and not hearsay. Then maybe I'll decide whether this is worth bothering Donna over before Saturday's dinner.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and compare against the three-ornament limit"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The pork is marinated and the rice and plantains are prepped, so the heavy lifting for Saturday is done. It's a quiet Friday morning, I'm alone in the house, and the table is where this whole dinner comes together. I should set the dining table for four now, lay out plates, glasses and a place card or two, so tomorrow I'm only cooking and welcoming people instead of scrambling.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Set the table for four with plates, glasses, and napkins so Saturday is just cooking and welcoming"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03033,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9581,
+        "output_tokens": 1103,
+        "usd": 0.03019
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 436,
+        "output_tokens": 202,
+        "usd": 0.00014
+      }
+    }
+  }
+}
