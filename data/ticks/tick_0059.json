@@ -1,0 +1,118 @@
+{
+  "tick": 59,
+  "simulation_time": "Friday, October 16, 9:17 AM",
+  "weather": "Breezy and clear, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a breezy, clear Friday morning in Sumter Oaks, Gary is at home rigging a speaker and testing string lights for the weekend, his focus fixed on the wiring. Across the way, Donna is on her phone, organizing the schedule by texting Rosa to lock in Saturday's dinner time and reserve the two-hour court slot. Hal, feeling restless, has wandered out onto Magnolia Loop, while Rosa, determined to make the evening a success, is already in her kitchen chopping vegetables and planning the menu around Gary's beans and Donna's cobbler.",
+  "events": [
+    "Gary (gary golf cart): Wire up the speaker and test the string lights",
+    "Donna (donna phone): Text Rosa to confirm Saturday dinner time and lock in the two-hour court slot",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa kitchen): Start prepping Saturday's dinner: chop vegetables, season the main dish, and plan the menu around Gary's beans and Donna's cobbler"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm home alone at the workbench on a breezy Friday morning. The string-light wiring is secured and the speaker mount is test-fit, so the cart is nearly done. Next step is to actually wire up and test the speaker with the lights on the cart. I filed the architectural review form earlier, so I'm doing this the legal way. Stay quiet-hours compliant, since it's past 7 AM, and keep the volume sensible for a test. Then I can get ready for Rosa's dinner and Saturday's pickleball with Donna.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Wire up the speaker and test the string lights"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm out on Magnolia Loop at 9:17 on Friday with nobody around. Gary's locked in for Saturday at eight, and I've already checked the calendar and packed the spare paddle and balls. The one loose end is the courts, because L-05 caps a reservation at two hours and I need to be sure doubles and Rosa's dinner don't collide. My phone is the quickest way to confirm the court slot and dinner timing with Rosa, and I like being the one who keeps these plans from falling apart.",
+      "emotional_state": "organized",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_phone",
+          "content": "Text Rosa to confirm Saturday dinner time and lock in the two-hour court slot"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've scanned the Loop and logged my notes already, and nothing's out of line this morning. Reporting Gary and Donna to the committee is the long-standing plan, but lately I'd rather see Gary file his paperwork than catch him in a violation, and the flamingo count has held steady. It's nearly 9:30 on a clear Friday and I'm sitting here with nothing to observe. The pecan pie for Saturday at Rosa's won't bake itself, and I've done enough watching. Time to get off the porch and see what's happening in the neighborhood, starting with the Loop itself where I can check on the carts in person and maybe nudge Gary toward filing.",
+      "emotional_state": "restless",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Nothing left to see from the porch. Heading out to the Loop to inspect carts and flamingos up close and check whether Gary's paperwork got filed."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've already checked my shift schedule twice and the dinner is set: Donna, Hal, and Gary are all confirmed. Checking again would be pointless. What's left is the cooking itself, and it's Friday morning with Saturday dinner at six. The smart move is to get ahead on prep now so I'm not scrambling tomorrow. The kitchen is right here, so I'll start the big cook-ahead items while I have the time.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Start prepping Saturday's dinner: chop vegetables, season the main dish, and plan the menu around Gary's beans and Donna's cobbler"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03131,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9573,
+        "output_tokens": 1202,
+        "usd": 0.03117
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 408,
+        "output_tokens": 202,
+        "usd": 0.00014
+      }
+    }
+  }
+}

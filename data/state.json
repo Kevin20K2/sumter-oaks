@@ -1,16 +1,18 @@
 {
-  "tick": 59,
-  "time": "2026-10-16T08:17",
+  "tick": 60,
+  "time": "2026-10-16T09:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
-    "hal": "hals_house",
+    "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
     "donna": [],
-    "hal": [],
+    "hal": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "rosa": []
   },
   "memories": {
@@ -614,6 +616,11 @@
         "tick": 58,
         "text": "I (gary golf cart): Finish securing the light string wiring and test-fit the speaker mount",
         "importance": 4
+      },
+      {
+        "tick": 59,
+        "text": "I (gary golf cart): Wire up the speaker and test the string lights",
+        "importance": 5
       }
     ],
     "donna": [
@@ -1316,6 +1323,11 @@
         "tick": 58,
         "text": "I (donna pickleball bag): Pack the spare paddle and balls for Saturday's doubles",
         "importance": 4
+      },
+      {
+        "tick": 59,
+        "text": "I (donna phone): Text Rosa to confirm Saturday dinner time and lock in the two-hour court slot",
+        "importance": 5
       }
     ],
     "hal": [
@@ -1867,6 +1879,16 @@
       {
         "tick": 58,
         "text": "I (hal binoculars): Scan the Loop for stray carts, flamingo count, and any grass parking",
+        "importance": 3
+      },
+      {
+        "tick": 59,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 59,
+        "text": "You arrived at Magnolia Loop (the street).",
         "importance": 3
       }
     ],
@@ -2480,6 +2502,11 @@
         "tick": 58,
         "text": "I (rosa shift schedule): Check my per-diem shifts and make sure Friday evening and Saturday are clear for cooking and the dinner",
         "importance": 6
+      },
+      {
+        "tick": 59,
+        "text": "I (rosa kitchen): Start prepping Saturday's dinner: chop vegetables, season the main dish, and plan the menu around Gary's beans and Donna's cobbler",
+        "importance": 6
       }
     ]
   },
@@ -2527,8 +2554,8 @@
   },
   "emotions": {
     "gary": "focused",
-    "donna": "satisfied",
-    "hal": "watchful",
+    "donna": "organized",
+    "hal": "restless",
     "rosa": "determined"
   },
   "laws": [
@@ -2594,9 +2621,16 @@
       "text": "Gary Kowalski: Fill out and file the golf cart modification form for the lights and sound system"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 59,
+      "time": "Friday, October 16, 9:17 AM",
+      "story": "At 9:17 on a breezy, clear Friday morning in Sumter Oaks, Gary is at home rigging a speaker and testing string lights for the weekend, his focus fixed on the wiring. Across the way, Donna is on her phone, organizing the schedule by texting Rosa to lock in Saturday's dinner time and reserve the two-hour court slot. Hal, feeling restless, has wandered out onto Magnolia Loop, while Rosa, determined to make the evening a success, is already in her kitchen chopping vegetables and planning the menu around Gary's beans and Donna's cobbler.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 1.78619,
+    "total_usd": 1.8175,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -2615,13 +2649,12 @@
         "usd": 0.48691
       },
       "2026-10-16": {
-        "ticks": 2,
-        "usd": 0.06149
+        "ticks": 3,
+        "usd": 0.0928
       }
     }
   },
   "recent_tick_costs": [
-    0.03065,
     0.03158,
     0.03174,
     0.03184,
@@ -2644,7 +2677,8 @@
     0.03256,
     0.03209,
     0.03075,
-    0.03074
+    0.03074,
+    0.03131
   ],
   "fund": {
     "gross_usd": 0.0,
