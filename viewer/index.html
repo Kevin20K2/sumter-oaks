@@ -267,6 +267,40 @@ button:disabled { opacity: 0.4; cursor: default; }
 .neighbor p { margin: 0; font-size: 0.9rem; line-height: 1.45; }
 .neighbor .home { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.04em; color: var(--muted); }
 .foot a { color: var(--accent); }
+
+/* Town Hall suggestion box */
+.sbox { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px 20px 18px; display: grid; gap: 14px; position: relative; overflow: hidden; }
+.sbox::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: repeating-linear-gradient(135deg, #c8473d 0 14px, var(--surface) 14px 22px, #2f5fa8 22px 36px, var(--surface) 36px 44px); }
+.sbox-head { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 14px; align-items: center; }
+.sbox-head svg { width: 52px; height: 52px; }
+.sbox h2 { margin: 0 0 2px; }
+.sbox .lede { margin: 0; color: var(--muted); max-width: 56ch; }
+.sbox form { display: grid; gap: 14px; }
+.sbox form[hidden], .sbox .done[hidden] { display: none; }
+.kinds { display: flex; flex-wrap: wrap; gap: 8px; }
+.kind { font-size: 0.8rem; border: 1.5px solid var(--line); border-radius: 999px; padding: 6px 12px; }
+.kind[aria-pressed="true"] { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, var(--surface)); color: var(--accent); font-weight: 600; }
+.sbox textarea, .sbox input[type=text], .sbox input[type=email] { width: 100%; font: inherit; font-size: 1rem; color: var(--ink); background: var(--bg); border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.sbox textarea { min-height: 96px; resize: vertical; line-height: 1.45; }
+.sbox textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.sbox textarea::placeholder, .sbox input::placeholder { color: var(--muted); font-style: italic; }
+.sbox .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+@media (max-width: 560px) { .sbox .row2 { grid-template-columns: 1fr; } }
+.sbox label.f { display: grid; gap: 4px; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.sbox label.f small { text-transform: none; letter-spacing: 0; font-size: 1em; }
+.sbox .count { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); justify-self: end; margin-top: -8px; }
+.sbox .send-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.sbox .send { font-family: var(--font-display); font-weight: 700; font-size: 1rem; background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 999px; padding: 10px 20px; }
+.sbox .send:disabled { opacity: 0.6; cursor: default; }
+.sbox .fine { font-size: 0.82rem; color: var(--muted); margin: 0; max-width: 46ch; }
+.sbox .err { margin: 0; font-size: 0.9rem; color: #b3261e; }
+.sbox .trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.sbox .done { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 16px; align-items: center; }
+.sbox .done img { width: 96px; height: auto; }
+.sbox .done h3 { font-size: 1.2rem; color: var(--hal); margin: 8px 0 4px; }
+.sbox .done p { margin: 0 0 6px; }
+.sbox .stamp { display: inline-block; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: #c8473d; border: 2px solid #c8473d; border-radius: 6px; padding: 2px 8px; transform: rotate(-4deg); }
+.sbox .again { font-size: 0.8rem; color: var(--accent); text-decoration: underline; background: none; border: 0; padding: 0; }
 </style>
 
 <div class="wrap">
@@ -367,6 +401,33 @@ button:disabled { opacity: 0.4; cursor: default; }
     <h2 id="cast-h">Meet the neighbors</h2>
     <p class="cast-lede">Four neighbors on Magnolia Loop. An AI plays each of them, choosing what they say and do next.</p>
     <div class="cast-grid" id="cast"></div>
+  </section>
+
+  <section class="sbox" id="sbox" aria-labelledby="sbox-h">
+    <div class="sbox-head">
+      <svg viewBox="0 0 52 52" aria-hidden="true"><rect x="10" y="20" width="32" height="28" rx="3" fill="#2f5fa8"/><path d="M10 24 Q26 4 42 24" fill="#3b6fbd"/><rect x="17" y="27" width="18" height="4" rx="2" fill="#1d3b6b"/><rect x="24" y="44" width="4" height="8" fill="#6b5a45"/><path d="M20 12 l10 -6 l4 6 z" fill="#fff" stroke="#c8473d" stroke-width="1.5"/></svg>
+      <div><h2 id="sbox-h">Town Hall suggestion box</h2><p class="lede">An idea for the neighbors, something that looks off, or just saying hi? Drop a note in the box.</p></div>
+    </div>
+    <form id="sbox-form" novalidate>
+      <div class="kinds" role="group" aria-label="What kind of note">
+        <button type="button" class="kind" data-kind="idea" aria-pressed="true">Idea for the town</button>
+        <button type="button" class="kind" data-kind="issue" aria-pressed="false">Something's off</button>
+        <button type="button" class="kind" data-kind="hi" aria-pressed="false">Just saying hi</button>
+      </div>
+      <textarea id="sbox-msg" maxlength="600" placeholder="Wouldn't it be fun if…" aria-label="Your note"></textarea>
+      <span class="count" id="sbox-count" aria-hidden="true">0 / 600</span>
+      <div class="row2">
+        <label class="f">Name <small>(optional)</small><input type="text" id="sbox-name" maxlength="60" autocomplete="name" placeholder="A neighbor"></label>
+        <label class="f">Email <small>(only if you'd like a reply)</small><input type="email" id="sbox-email" maxlength="120" autocomplete="email" placeholder="you@example.com"></label>
+      </div>
+      <label class="trap" aria-hidden="true">Leave this empty<input type="text" id="sbox-website" tabindex="-1" autocomplete="off"></label>
+      <p class="err" id="sbox-err" role="alert" hidden></p>
+      <div class="send-row"><button type="submit" class="send" id="sbox-send">Drop it in the box</button><p class="fine">Notes go to the town's caretaker, not the public page.</p></div>
+    </form>
+    <div class="done" id="sbox-done" hidden>
+      <img src="assets/bust-hal.webp" alt="">
+      <div><span class="stamp">Received</span><h3 tabindex="-1" id="sbox-done-h">Hal has filed your note.</h3><p>In triplicate. Thanks for writing in. The caretaker reads every one.</p><button class="again" type="button" id="sbox-again">Write another note</button></div>
+    </div>
   </section>
 
   <p class="foot">Prefer the old drawing? <a id="classic-link" href="/viewer/classic.html">See the classic map</a>.</p>
@@ -797,6 +858,38 @@ async function poll() {
     $("slider").max = data.names.length - 1;
     if (atEnd && !timer) go(data.names.length - 1, true); else go(idx);
   } catch (e) { /* offline or between deploys; try again next minute */ }
+}
+
+// ---- Town Hall suggestion box: notes go privately to the caretaker via /api/suggest ----
+function initSuggestionBox() {
+  const form = $("sbox-form"), msg = $("sbox-msg"), err = $("sbox-err"), send = $("sbox-send");
+  let kind = "idea", shownAt = Date.now();
+  const kinds = [...form.querySelectorAll(".kind")];
+  kinds.forEach(b => b.onclick = () => { kind = b.dataset.kind; kinds.forEach(k => k.setAttribute("aria-pressed", String(k === b))); });
+  msg.oninput = () => { $("sbox-count").textContent = `${msg.value.length} / 600`; err.hidden = true; };
+  const fail = (text) => { err.textContent = text; err.hidden = false; };
+  form.onsubmit = async (e) => {
+    e.preventDefault();
+    const note = msg.value.trim();
+    if (note.length < 3) { fail("Write a few words first."); msg.focus(); return; }
+    const email = $("sbox-email").value.trim();
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { fail("That email doesn't look right. Leave it blank if you don't need a reply."); return; }
+    send.disabled = true; send.textContent = "Dropping it in…";
+    try {
+      const r = await fetch("/api/suggest", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ kind, message: note, name: $("sbox-name").value.trim(), email, website: $("sbox-website").value, ms: Date.now() - shownAt }) });
+      if (r.status === 429) throw new Error("That's a lot of notes. Try again a little later.");
+      if (!r.ok) throw new Error("The box is stuck right now. Try again in a minute.");
+      form.hidden = true; $("sbox-done").hidden = false; $("sbox-done-h").focus();
+    } catch (x) {
+      fail(x.message && !/fetch|network/i.test(x.message) ? x.message : "Couldn't reach the box. Check your connection and try again.");
+    } finally { send.disabled = false; send.textContent = "Drop it in the box"; }
+  };
+  $("sbox-again").onclick = () => {
+    form.reset(); msg.value = ""; $("sbox-count").textContent = "0 / 600"; shownAt = Date.now();
+    err.hidden = true;
+    $("sbox-done").hidden = true; form.hidden = false; msg.focus();
+  };
 }
 
 // ---- Scene ----
@@ -1337,6 +1430,7 @@ loadData().then(d => {
   renderPrevious();
   drawCloud(d.fund);
   renderSupport(d.fund);
+  initSuggestionBox();
   if (/[?&]thanks=1\b/.test(location.search)) {
     $("thanks").hidden = false;
     try { history.replaceState(null, "", location.pathname + location.hash); } catch (e) {}
@@ -1349,7 +1443,7 @@ loadData().then(d => {
   $("slider").oninput = e => go(+e.target.value);
   $("play").onclick = togglePlay;
   document.addEventListener("keydown", e => {
-    if (e.target.tagName === "INPUT") return;
+    if (/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
     if (e.key === "ArrowLeft") go(idx - 1, true);
     if (e.key === "ArrowRight") go(idx + 1, true);
   });
