@@ -1,0 +1,116 @@
+{
+  "tick": 66,
+  "simulation_time": "Friday, October 16, 4:17 PM",
+  "weather": "Afternoon shower, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "town_square",
+    "rosa": "rosas_house"
+  },
+  "story": "At 4:17 on this rainy Friday afternoon in Sumter Oaks, Gary is cheerfully testing a speaker for his golf cart at his house, where Donna has dropped by to coach him on tomorrow's plans and reminded him that flat-soled shoes and the kitchen line matter most. Donna arrived upbeat, promising to bring a spare paddle while Gary promised to bring the confidence. Across town, Hal is marching to Town Hall with a determined stride, while Rosa stays content in her kitchen, seasoning pork and setting it to marinate overnight so her spices and rice are ready for tomorrow.",
+  "events": [
+    "Hal headed to Town Hall.",
+    "Rosa (rosa kitchen): Season the pork and start marinating it overnight, then stage the spices and rice for tomorrow"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just walked in while I'm at the bench testing the light strip and speaker wiring. I told her at Tick 15 I'd be terrible at pickleball, and I've promised Saturday morning at the court and Rosa's dinner with Marge's beans. Nobody has spoken yet this tick, so I should greet her and own up to what I'm doing, since the cart project is tangled up with the review form I already filed. Short and warm, no repeating old lines.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Well, look who's here. Come on in, Donna, mind the wires. I'm just testing the speaker for the cart, and I already filed the review form, so I'm staying legal."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just got to Gary's house. Saturday is already locked in with him: pickleball at eight, dinner at Rosa's at six. I don't need to ask again. What I can do is make him actually ready, since he's never played. A short, specific pickleball tip and a reminder about the paddle will move things forward without repeating the invitation. The Saturday morning match is the big social moment I want to get right.",
+      "emotional_state": "upbeat",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, I'm not here to nag, I'm here to coach. Wear flat-soled shoes tomorrow, and remember the kitchen line is the only rule that'll ever matter to you. I'll bring the spare paddle, you bring the confidence."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm alone in the Square with nobody to talk to. Donna agreed to thin her flamingos before Saturday, so that complaint is settled for now. Gary's cart modifications are still unreported. He admitted wiring the lights and sound in his garage and filing paperwork after, which is backwards under L-01. Donna just headed to Gary's House, so he's likely occupied. The review committee business gets handled at Town Hall, which connects from here. I'll go file the cart report now and keep it factual so it stands up.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_hall",
+          "content": "Heading to Town Hall to put Gary's cart modifications on the record with the review committee. Approval comes before the wiring, not after."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Friday afternoon and the table is set, the pantry is checked, the flan is covered, and the plantains are cut. The shift schedule is clear. What's left is the prep that makes tomorrow smooth. Gary's beans, Donna's cobbler and everyone's yes are secured, so I don't need to chase anyone. I'll use the kitchen to season the meat and stage the ingredients so Saturday is just cooking and welcoming.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Season the pork and start marinating it overnight, then stage the spices and rice for tomorrow"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03107,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9705,
+        "output_tokens": 1151,
+        "usd": 0.03092
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 481,
+        "output_tokens": 210,
+        "usd": 0.00015
+      }
+    }
+  }
+}
