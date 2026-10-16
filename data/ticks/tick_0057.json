@@ -1,0 +1,118 @@
+{
+  "tick": 57,
+  "simulation_time": "Friday, October 16, 7:17 AM",
+  "weather": "Breezy and clear, 74°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on this breezy, clear Friday morning in Sumter Oaks, Gary is content in his garage at home, running wiring for his golf cart's string lights and getting ready to mount a speaker. Across the way, Donna is optimistic as she checks her club calendar against Saturday's court reservation and dinner timing. Hal, dutiful as ever, is logging the morning's observations in his violation notebook: Gary's cart filing is still pending, the flamingo count is holding steady, and no one is parking on the grass. Rosa, also optimistic, is reviewing her per-diem shifts to make sure Saturday's dinner prep and cooking time are clear.",
+  "events": [
+    "Gary (gary golf cart): Run the wiring for the cart's string lights and mount the speaker",
+    "Donna (donna club calendar): Check Saturday's court reservation and dinner timing against the calendar",
+    "Hal (hal violation notebook): Log the morning observations: Gary's cart filing still pending, flamingo count steady, no grass parking",
+    "Rosa (rosa shift schedule): Check my per-diem shifts to make sure Saturday dinner prep and cooking time are clear"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's Friday morning, I'm home, nobody around. I've already filed the architectural review form for the cart mods, so the legal side is moving. I've got a Saturday full of promises to Rosa and Donna, so I want the cart wiring finished and solder cooled before then. Best use of this hour is to get back to the golf cart and keep working on the lights and sound system, careful and by the book. Keep the sound unplugged in the garage so I don't run afoul of anything.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Run the wiring for the cart's string lights and mount the speaker"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Friday morning, I'm home, and Gary has committed in ink to Saturday doubles at eight and Rosa's dinner at six. Nobody's in sight, so there's no one to nag. The sensible thing is to get ready: check the club calendar so Saturday's court time stays within the 2-hour reservation limit and nothing collides with Rosa's dinner. Then I can pack the spare paddle and balls for Gary.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check Saturday's court reservation and dinner timing against the calendar"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's 7:17 AM, a new morning, and I'm alone at home. My notebook has Gary's pending cart filing and the flamingo count from last night, and I'd rather those be written down properly than carried in my head. My recent reflections say I want Gary filing correctly and the Loop friendly, not catching anybody out. A good sergeant starts the day with his records in order, so I'll update the violation notebook with the morning log before heading out to Rosa's pie plans later.",
+      "emotional_state": "dutiful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Log the morning observations: Gary's cart filing still pending, flamingo count steady, no grass parking"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm home at 7:17 AM Friday. Gary, Donna, and Hal are all confirmed for Saturday at six, so the invitations are done and I shouldn't chase anyone again. The real work now is the cooking prep. Gary's bringing beans or a bottle, Donna's on cobbler, so I need to plan the main dish and check my per-diem shift schedule to make sure nothing collides with Saturday. The shift schedule is right here, so I'll check it first before I commit to a shopping and cooking plan.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts to make sure Saturday dinner prep and cooking time are clear"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03075,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9789,
+        "output_tokens": 1102,
+        "usd": 0.0306
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 424,
+        "output_tokens": 221,
+        "usd": 0.00015
+      }
+    }
+  }
+}

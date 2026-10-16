@@ -1,24 +1,17 @@
 {
-  "tick": 57,
-  "time": "2026-10-15T21:17",
+  "tick": 58,
+  "time": "2026-10-16T07:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
+    "donna": "donnas_house",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "Donna headed to Magnolia Loop (the street)."
-    ],
-    "donna": [
-      "Gary said to Donna: “Yes to both, Donna, in ink. Saturday at eight sharp, paddle shaking hands with me and knees bent. Now go home before my soldering iron gets jealous.”",
-      "You arrived at Magnolia Loop (the street)."
-    ],
+    "gary": [],
+    "donna": [],
     "hal": [],
-    "rosa": [
-      "You arrived at Rosa's House."
-    ]
+    "rosa": []
   },
   "memories": {
     "gary": [
@@ -611,6 +604,11 @@
         "tick": 56,
         "text": "Donna headed to Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 57,
+        "text": "I (gary golf cart): Run the wiring for the cart's string lights and mount the speaker",
+        "importance": 5
       }
     ],
     "donna": [
@@ -1303,6 +1301,11 @@
         "tick": 56,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 57,
+        "text": "I (donna club calendar): Check Saturday's court reservation and dinner timing against the calendar",
+        "importance": 4
       }
     ],
     "hal": [
@@ -1845,6 +1848,11 @@
         "tick": 56,
         "text": "I waited: Sitting out the last of the evening on the porch, settling on a pecan pie for Saturday and listening to make sure the Loop stays quiet before ten.",
         "importance": 2
+      },
+      {
+        "tick": 57,
+        "text": "I (hal violation notebook): Log the morning observations: Gary's cart filing still pending, flamingo count steady, no grass parking",
+        "importance": 3
       }
     ],
     "rosa": [
@@ -2447,6 +2455,11 @@
         "tick": 56,
         "text": "You arrived at Rosa's House.",
         "importance": 5
+      },
+      {
+        "tick": 57,
+        "text": "I (rosa shift schedule): Check my per-diem shifts to make sure Saturday dinner prep and cooking time are clear",
+        "importance": 6
       }
     ]
   },
@@ -2493,10 +2506,10 @@
     ]
   },
   "emotions": {
-    "gary": "warm, amused",
-    "donna": "satisfied",
-    "hal": "content",
-    "rosa": "content"
+    "gary": "content",
+    "donna": "optimistic",
+    "hal": "dutiful",
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -2596,10 +2609,16 @@
       "dialogue": [
         "Gary said to Donna: “Yes to both, Donna, in ink. Saturday at eight sharp, paddle shaking hands with me and knees bent. Now go home before my soldering iron gets jealous.”"
       ]
+    },
+    {
+      "tick": 57,
+      "time": "Friday, October 16, 7:17 AM",
+      "story": "At 7:17 on this breezy, clear Friday morning in Sumter Oaks, Gary is content in his garage at home, running wiring for his golf cart's string lights and getting ready to mount a speaker. Across the way, Donna is optimistic as she checks her club calendar against Saturday's court reservation and dinner timing. Hal, dutiful as ever, is logging the morning's observations in his violation notebook: Gary's cart filing is still pending, the flamingo count is holding steady, and no one is parking on the grass. Rosa, also optimistic, is reviewing her per-diem shifts to make sure Saturday's dinner prep and cooking time are clear.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 1.7247,
+    "total_usd": 1.75545,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -2616,11 +2635,14 @@
       "2026-10-15": {
         "ticks": 15,
         "usd": 0.48691
+      },
+      "2026-10-16": {
+        "ticks": 1,
+        "usd": 0.03075
       }
     }
   },
   "recent_tick_costs": [
-    0.03117,
     0.03142,
     0.03065,
     0.03158,
@@ -2643,7 +2665,8 @@
     0.03353,
     0.03316,
     0.03256,
-    0.03209
+    0.03209,
+    0.03075
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -2691,5 +2714,5 @@
     "test_mode": false,
     "level": "bright"
   },
-  "last_tick_date": "2026-10-15"
+  "last_tick_date": "2026-10-16"
 }
