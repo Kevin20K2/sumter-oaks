@@ -1,0 +1,122 @@
+{
+  "tick": 67,
+  "simulation_time": "Friday, October 16, 5:17 PM",
+  "weather": "Afternoon shower, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "town_hall",
+    "rosa": "rosas_house"
+  },
+  "story": "At 5:17 on a Friday afternoon, a light shower dampens Sumter Oaks at a comfortable 78 degrees, and Gary is at his workbench at home, finishing the wiring on his golf cart's new light strip and speaker and coiling the cords neatly. Donna has stopped by his house with an upbeat plan for tomorrow morning: she'll pick him up in her cart at 7:45 so they can head to the pickleball court together, with Gary bringing water and his good attitude. Across town, Hal is at the architectural review desk in Town Hall, dutifully filing a written report on Gary's unapproved cart lights and speaker and noting that the flamingo count is under review. Meanwhile, Rosa is at her dining table setting out the good plates and place cards for four, content to have tomorrow's dinner ready to cook.",
+  "events": [
+    "Gary (gary workbench): Finish testing the light strip and speaker wiring, then coil everything up neatly",
+    "Hal (architectural review desk): File a written L-01 report on Gary's unapproved cart lights and speaker; note the flamingo count is under review.",
+    "Rosa (rosa dining table): Set the table for four with the good plates and place cards so tomorrow is just cooking"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna already gave me her coaching instructions and I've said my piece, so no sense repeating myself. I filed the review form, the speaker is on the bench, and Marge's beans are sealed for Rosa's. The rain is coming down and it's after five, so I should get on with the actual work: finish testing the light strip and speaker wiring so the cart is ready once approval comes through. It keeps my hands busy and keeps me useful, and I'll be on time Saturday with sneakers and beans.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Finish testing the light strip and speaker wiring, then coil everything up neatly"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at Gary's, he's invited me in, and I've already given him the shoes and kitchen line speech. Saturday is locked in: pickleball at eight, dinner at Rosa's at six. I shouldn't repeat coaching. The practical thing left is to make sure the logistics are nailed down so he doesn't flake, and be a good guest. The fridge is right here, and a quick check on what he might bring or whether he's hydrated for tomorrow is a natural, low-pressure way to keep him on track without nagging. Actually, a short confirmation about picking him up in my cart at 7:45 moves things forward without repeating myself.",
+      "emotional_state": "upbeat",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Thanks, Gary, I'll step around the wires. Here's the plan: I'll swing by in my cart at 7:45 tomorrow so you can't oversleep, and we'll roll straight to the court. You just bring water and that good attitude."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Town Hall with nobody around, and the architectural review desk is right here. Gary's cart modifications are the clear L-01 violation, and he said himself he's wiring the lights and sound first and filing paperwork after. That's backwards, and it belongs on the record. Donna agreed to thin the flamingos before Saturday's dinner at Rosa's, so I'll hold off on her and keep the peace. I'll file the cart report and nothing more tonight, then go pick up the pecan pie ingredients.",
+      "emotional_state": "dutiful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "architectural_review_desk",
+          "content": "File a written L-01 report on Gary's unapproved cart lights and speaker; note the flamingo count is under review."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Friday evening and the prep is nearly done: pork is marinating, rice is soaked, plantains are cut, dishes are labeled, and I've already checked my shift schedule. What's left is the flan I planned as dessert backup. My memory says I covered the pantry check and covered the flan, so it may just need a final look. Nobody is nearby, so there's no one to chase or re-invite; Gary, Donna and Hal have all been asked. The sensible move is to use the quiet hour to check on the flan and set the dining table so tomorrow I can just cook and welcome people.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Set the table for four with the good plates and place cards so tomorrow is just cooking"
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "hal",
+      "text": "Hal Weems: File a written L-01 report on Gary's unapproved cart lights and speaker; note the flamingo count is under review."
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03239,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9835,
+        "output_tokens": 1253,
+        "usd": 0.0322
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 478,
+        "output_tokens": 276,
+        "usd": 0.00019
+      }
+    }
+  }
+}
