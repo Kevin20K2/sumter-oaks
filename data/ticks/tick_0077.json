@@ -1,0 +1,116 @@
+{
+  "tick": 77,
+  "simulation_time": "Saturday, October 17, 12:17 PM",
+  "weather": "Breezy and clear, 78°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "It's a breezy, clear Saturday just after noon in Sumter Oaks, and Gary is nervously lacing up his sneakers at the Rec Center while Donna cheerfully waves him toward court one with a spare paddle. Across the way, Hal is heading out onto Magnolia Loop with a watchful eye, and at home Rosa is checking the pork in her kitchen before she starts on the sides for tonight.",
+  "events": [
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa kitchen): Check the pork, then start prepping the sides for tonight"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just showed up at the Rec Center, and I've already checked the kiosk for her booking over the last few ticks, so no need to keep scanning. She said she'd coach me and I promised I'd be terrible, so the thing to do now is greet her and ask which court she's got us on. Keep it short and friendly, and let her lead from there.",
+      "emotional_state": "nervous but game",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "There you are. Sneakers are on and the soldering iron's unplugged, so which court are we on? Go easy on me."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at the rec center and Gary is right here, and it's midday Saturday. He said yes in ink to the 8 AM court time, so I shouldn't pester him with another invite or repeat myself. Better to check in on how he's doing, praise the effort, and point him toward practicing before we hit the ladder. I'll keep it short and move things forward rather than re-asking.",
+      "emotional_state": "upbeat",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, look at you showing up early! Grab that spare paddle and let's get in a little practice on court one, because the ladder won't climb itself."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Tick 77, noon on a breezy Saturday. I've scanned the Loop several times this morning and logged my notes. Nobody's in sight, and Donna promised to thin the flamingos before Rosa's tonight. Another scan would just repeat what I've already done. Sitting here fussing isn't getting the job done either. I'd rather walk the Loop myself and see the flamingo count and Gary's cart up close, check for grass parking, and be around if a neighbor wants a word before dinner. Order matters, but so does keeping the peace.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out onto the Loop to check the flamingo count and carts up close before tonight's dinner."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 12:17, the pork is slow cooking, the table is set, and no one is around. Dinner is at six, so I still need to make the sides. My shift schedule is already confirmed and nothing can pull me away. The kitchen is where the work is, so I'll get started on a side dish now so the evening isn't a scramble.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check the pork, then start prepping the sides for tonight"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02936,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9590,
+        "output_tokens": 1007,
+        "usd": 0.02925
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 428,
+        "output_tokens": 139,
+        "usd": 0.00011
+      }
+    }
+  }
+}

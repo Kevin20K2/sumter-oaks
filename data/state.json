@@ -1,20 +1,22 @@
 {
-  "tick": 77,
-  "time": "2026-10-17T11:17",
+  "tick": 78,
+  "time": "2026-10-17T12:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
-    "hal": "hals_house",
+    "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna just arrived."
+      "Donna said to Gary: “Gary, look at you showing up early! Grab that spare paddle and let's get in a little practice on court one, because the ladder won't climb itself.”"
     ],
     "donna": [
-      "You arrived at Rec Center."
+      "Gary said to Donna: “There you are. Sneakers are on and the soldering iron's unplugged, so which court are we on? Go easy on me.”"
     ],
-    "hal": [],
+    "hal": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "rosa": []
   },
   "memories": {
@@ -743,6 +745,16 @@
         "tick": 76,
         "text": "Donna just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 77,
+        "text": "I said to Donna: “There you are. Sneakers are on and the soldering iron's unplugged, so which court are we on? Go easy on me.”",
+        "importance": 4
+      },
+      {
+        "tick": 77,
+        "text": "Donna said to Gary: “Gary, look at you showing up early! Grab that spare paddle and let's get in a little practice on court one, because the ladder won't climb itself.”",
+        "importance": 4
       }
     ],
     "donna": [
@@ -1590,6 +1602,16 @@
         "tick": 76,
         "text": "You arrived at Rec Center.",
         "importance": 5
+      },
+      {
+        "tick": 77,
+        "text": "I said to Gary: “Gary, look at you showing up early! Grab that spare paddle and let's get in a little practice on court one, because the ladder won't climb itself.”",
+        "importance": 5
+      },
+      {
+        "tick": 77,
+        "text": "Gary said to Donna: “There you are. Sneakers are on and the soldering iron's unplugged, so which court are we on? Go easy on me.”",
+        "importance": 5
       }
     ],
     "hal": [
@@ -2267,6 +2289,16 @@
         "tick": 76,
         "text": "I (hal porch chair): Settle into the porch chair and keep an eye on the Loop for a while",
         "importance": 3
+      },
+      {
+        "tick": 77,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 77,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -2969,6 +3001,11 @@
         "tick": 76,
         "text": "I waited: Sip my coffee, give the pork a quick glance, and mentally list the sides still left to make before six.",
         "importance": 3
+      },
+      {
+        "tick": 77,
+        "text": "I (rosa kitchen): Check the pork, then start prepping the sides for tonight",
+        "importance": 4
       }
     ]
   },
@@ -3015,10 +3052,10 @@
     ]
   },
   "emotions": {
-    "gary": "curious",
-    "donna": "optimistic",
+    "gary": "nervous but game",
+    "donna": "upbeat",
     "hal": "watchful",
-    "rosa": "content"
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -3099,9 +3136,19 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 77,
+      "time": "Saturday, October 17, 12:17 PM",
+      "story": "It's a breezy, clear Saturday just after noon in Sumter Oaks, and Gary is nervously lacing up his sneakers at the Rec Center while Donna cheerfully waves him toward court one with a spare paddle. Across the way, Hal is heading out onto Magnolia Loop with a watchful eye, and at home Rosa is checking the pork in her kitchen before she starts on the sides for tonight.",
+      "dialogue": [
+        "Gary said to Donna: “There you are. Sneakers are on and the soldering iron's unplugged, so which court are we on? Go easy on me.”",
+        "Donna said to Gary: “Gary, look at you showing up early! Grab that spare paddle and let's get in a little practice on court one, because the ladder won't climb itself.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 2.34409,
+    "total_usd": 2.37345,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3124,13 +3171,12 @@
         "usd": 0.46732
       },
       "2026-10-17": {
-        "ticks": 5,
-        "usd": 0.15207
+        "ticks": 6,
+        "usd": 0.18143
       }
     }
   },
   "recent_tick_costs": [
-    0.03353,
     0.03316,
     0.03256,
     0.03209,
@@ -3153,7 +3199,8 @@
     0.03114,
     0.03039,
     0.02965,
-    0.02985
+    0.02985,
+    0.02936
   ],
   "fund": {
     "gross_usd": 0.0,
