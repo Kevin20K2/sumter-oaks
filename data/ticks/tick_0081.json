@@ -1,0 +1,117 @@
+{
+  "tick": 81,
+  "simulation_time": "Saturday, October 17, 4:17 PM",
+  "weather": "Breezy and clear, 79°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is at the Rec Center cheerfully practicing his shots with Donna, who is optimistic that his last swing finally went where he aimed it. Across the way, Donna has also been checking the ladder standings board to see where a Pruitt-Kowalski team would start. Hal, watching from Magnolia Loop, is making a final count of the flamingos on the lawns to confirm Donna kept her promise. Meanwhile, Rosa is content at home, setting the table for four with the good plates, napkins, and a small centerpiece to make the evening feel welcoming.",
+  "events": [
+    "Donna (ladder standings board): Check the ladder standings to see where a Pruitt-Kowalski team would start",
+    "Hal (donna flamingo flock): Make a final count of flamingos visible from the street to confirm Donna kept her promise",
+    "Rosa (rosa dining table): Set the table for four with the good plates, napkins, and a little centerpiece so it feels welcoming"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm on court one rallying with Donna, and she's been feeding me easy serves for a while now. I've already said my piece about being terrible, so no need to repeat that. Best thing is to keep playing, keep my knees soft like she said, and maybe tell her it's starting to click. Cart parade work can wait until after dinner at Rosa's.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Knees soft, got it. Hey, that last one actually went where I aimed it. Keep 'em coming, I think I'm starting to get the hang of this."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary and I have been rallying on court one for a few ticks now, and he's holding his own for a beginner. I already coached his footwork last tick. It's 4:17 and we've been at it a while. The goal is to climb the ladder with him as my doubles partner, so the logical next step is to check where we stand on the ladder standings board. That moves things forward without repeating myself, and I can show him what we're aiming for.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Check the ladder standings to see where a Pruitt-Kowalski team would start"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've already counted Donna's flamingos twice and read the board for postings. Nobody else is on the Loop. Donna promised to thin the flock before Saturday dinner at Rosa's, and it's 4:17 PM, so the deadline is close. I'd rather confirm with my own eyes than file a report on a hunch. One more careful look at the flock, then decide whether the report is warranted or if she kept her word. Keeping the peace counts for something, but the rule is the rule.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Make a final count of flamingos visible from the street to confirm Donna kept her promise"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 4:17 and dinner is at six. The pork has been checked and basted and the sides are done or close to it. Over the last several ticks I've been circling the same checks, so I should move forward. The dining table is the one thing I haven't touched. Setting it now means that when Hal, Gary, and Donna arrive, every seat is ready and I can just welcome them. The schedule is already confirmed clear.",
+      "emotional_state": "content",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Set the table for four with the good plates, napkins, and a little centerpiece so it feels welcoming"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02982,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9672,
+        "output_tokens": 1034,
+        "usd": 0.02968
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 458,
+        "output_tokens": 186,
+        "usd": 0.00014
+      }
+    }
+  }
+}
