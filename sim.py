@@ -255,6 +255,8 @@ def real_clock(cfg):
 
 def town_now(cfg, state):
     """Real Florida time when "clock" is "real"; otherwise the town's own calendar."""
+    if os.environ.get("SIM_NOW"):  # for testing dated events, e.g. SIM_NOW=2026-10-31T17:17
+        return dt.datetime.fromisoformat(os.environ["SIM_NOW"])
     if real_clock(cfg):
         return dt.datetime.now(town_tz(cfg)).replace(second=0, microsecond=0, tzinfo=None)
     return dt.datetime.fromisoformat(state["time"])
@@ -262,6 +264,20 @@ def town_now(cfg, state):
 
 def awake(cfg, now):
     return parse_hhmm(cfg["day_start"]) <= now.time() < parse_hhmm(cfg["day_end"])
+
+
+def calendar_news(cfg, state, now):
+    """Dated town events from config.json "calendar": each fires once, on its date, at the first tick after its time."""
+    fired = state.setdefault("calendar_fired", [])
+    out = []
+    for ev in cfg.get("calendar", []):
+        if ev["id"] in fired or now.date().isoformat() != ev["on"]:
+            continue
+        if now.time() < parse_hhmm(ev.get("after", "00:00")):
+            continue
+        fired.append(ev["id"])
+        out.append((f"Town news: {ev['news']}", int(ev.get("importance", 7))))
+    return out
 
 
 def parse_hhmm(s):
@@ -757,6 +773,11 @@ def run_tick(world, state, cfg, template, brain):
             new_matters.append({"by": pr["by"], "text": msg})
             town_news.append(f"Town Hall notice: {msg}")
 
+    # dated town events (holidays and the like) from the calendar
+    cal = calendar_news(cfg, state, now)
+    town_news += [line for line, _ in cal]
+    cal_importance = dict(cal)
+
     # what each resident perceives next tick, and what they remember
     for a in agents:
         seen = [line for (who, line) in zone_events.get(start_pos[a], []) if who != a]
@@ -771,7 +792,7 @@ def run_tick(world, state, cfg, template, brain):
         own = describe(world, a, results[a]["action"]).replace(first(world, a), "I", 1)
         state["memories"][a].append({"tick": tick, "text": own, "importance": imp})
         for s in seen:
-            state["memories"][a].append({"tick": tick, "text": s, "importance": imp})
+            state["memories"][a].append({"tick": tick, "text": s, "importance": max(imp, cal_importance.get(s, 0))})
         state["memories"][a] = state["memories"][a][-200:]
 
     # 5. story
