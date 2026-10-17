@@ -321,6 +321,24 @@ button:disabled { opacity: 0.4; cursor: default; }
 .a2hs-sheet ol { margin: 0 0 16px; padding-left: 1.3em; display: grid; gap: 8px; font-size: 1.02rem; }
 .a2hs-sheet .glyph { display: inline-block; vertical-align: -4px; width: 20px; height: 20px; color: var(--accent); }
 .a2hs-sheet .close { font-family: var(--font-display); font-weight: 700; font-size: 1rem; background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 999px; padding: 9px 20px; }
+
+/* Seasonal decorations and the parade (from the tick's "season" and "scenes") */
+#deco, #parade { z-index: 1; }
+.deco { position: absolute; transform: translate(-50%, -100%); width: clamp(14px, 2.6%, 26px); filter: drop-shadow(0 1px 1px rgba(0,0,0,.35)); }
+.deco svg { display: block; width: 100%; height: auto; }
+.deco .face { opacity: 0; transition: opacity 1.4s ease; }
+.sky[data-phase="dusk"] ~ #deco .face, .sky[data-phase="night"] ~ #deco .face { opacity: 1; }
+.sky[data-phase="dusk"] ~ #deco .deco.pumpkin, .sky[data-phase="night"] ~ #deco .deco.pumpkin { filter: drop-shadow(0 0 6px rgba(255, 160, 40, .9)); }
+.deco.bat { width: clamp(16px, 3%, 30px); transform: translate(-50%, -50%); opacity: 0; transition: opacity 1.4s ease; animation: bat 2.8s ease-in-out infinite alternate; }
+.sky[data-phase="dusk"] ~ #deco .bat, .sky[data-phase="night"] ~ #deco .bat { opacity: 0.95; }
+.deco.moon { width: clamp(30px, 6%, 60px); transform: translate(-50%, -50%); opacity: 0; transition: opacity 1.4s ease; filter: drop-shadow(0 0 14px rgba(255, 240, 200, .8)); }
+.sky[data-phase="dusk"] ~ #deco .moon, .sky[data-phase="night"] ~ #deco .moon { opacity: 1; }
+@keyframes bat { from { translate: 0 0; } to { translate: 10px -8px; } }
+.pcart { position: absolute; width: clamp(46px, 8.5%, 70px); transform: translate(-50%, -88%); filter: drop-shadow(0 2px 2px rgba(0,0,0,.35)); }
+.pcart svg { display: block; width: 100%; height: auto; }
+.pcart.west svg { transform: scaleX(-1); }
+.parade-banner { position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%); font-family: var(--font-mono); font-size: clamp(10px, 1.6vw, 13px); letter-spacing: 0.06em; text-transform: uppercase; color: #fff; background: #c2560f; border-radius: 999px; padding: 3px 12px; white-space: nowrap; box-shadow: 0 2px 0 #7a340a; }
+@media (prefers-reduced-motion: reduce) { .deco.bat { animation: none; } }
 </style>
 
 <div class="wrap">
@@ -382,6 +400,8 @@ button:disabled { opacity: 0.4; cursor: default; }
     <section class="scene" id="scene" aria-label="Street scene">
       <img id="map" class="map-img" alt="Painted map of Magnolia Loop: Gary's, Donna's, Hal's and Rosa's houses, the Rec Center, Town Square with its bandstand, and Town Hall">
       <div class="layer sky" id="sky" aria-hidden="true"><div class="tint"></div><div class="wx"></div><div class="wash"></div><div class="glow"></div><div class="rain"></div></div>
+      <div class="layer" id="deco" aria-hidden="true"></div>
+      <div class="layer" id="parade" aria-hidden="true"></div>
       <div class="layer" id="places" aria-hidden="true"></div>
       <div id="cloud"></div>
       <div class="layer" id="avatars"></div>
@@ -517,7 +537,11 @@ const MAPS = {
                RL: [0.67, 0.75], RM: [0.72, 0.60], RU: [0.66, 0.50], TH: [0.80, 0.57], HR: [0.30, 0.90], RR: [0.68, 0.87] },
       edges: ["A-J", "J-B", "J-T", "T-LU", "LU-GM", "GM-GR", "LU-LM", "LM-DR", "LM-LL", "LL-BL", "BL-BM", "BM-BR", "BR-RL", "RL-RM", "RM-RU", "RU-T", "RM-TH", "BL-HR", "BR-RR"],
       entry: { garys_house: "GR", donnas_house: "DR", hals_house: "HR", rosas_house: "RR", rec_center: "A", town_square: "BM", town_hall: "TH" }
-    }
+    },
+    // Halloween: pumpkins on porches and at Town Square, bats in the evening sky; the parade's loop of road points.
+    halloween: { pumpkins: [[0.07, 0.36], [0.27, 0.37], [0.05, 0.58], [0.27, 0.58], [0.07, 0.86], [0.27, 0.86], [0.73, 0.88], [0.93, 0.88], [0.41, 0.70], [0.59, 0.70], [0.70, 0.49]],
+                 bats: [[0.06, 0.10], [0.22, 0.05], [0.30, 0.12]], moon: [0.13, 0.08] },
+    parade: ["T", "LU", "LM", "LL", "BL", "BM", "BR", "RL", "RM", "RU"]
   },
   desktop: {
     file: "map-desktop.webp", w: 1536, h: 770,
@@ -539,7 +563,10 @@ const MAPS = {
                RU: [0.67, 0.49], TH: [0.86, 0.58], HR: [0.33, 0.84], RR: [0.70, 0.86] },
       edges: ["A-J", "J-B", "J-T", "T-LU", "LU-GM", "GM-GR", "LU-LM", "LM-DR", "LM-LL", "LL-BM", "BM-BR", "BR-RM", "RM-RU", "RU-T", "RM-TH", "LL-HR", "BR-RR"],
       entry: { garys_house: "GR", donnas_house: "DR", hals_house: "HR", rosas_house: "RR", rec_center: "A", town_square: "BM", town_hall: "TH" }
-    }
+    },
+    halloween: { pumpkins: [[0.05, 0.33], [0.17, 0.33], [0.18, 0.58], [0.30, 0.58], [0.13, 0.89], [0.25, 0.89], [0.79, 0.90], [0.91, 0.90], [0.48, 0.70], [0.62, 0.70], [0.80, 0.53]],
+                 bats: [[0.03, 0.12], [0.16, 0.05], [0.25, 0.09]], moon: [0.09, 0.08] },
+    parade: ["T", "LU", "LM", "LL", "BM", "BR", "RM", "RU"]
   }
 };
 
@@ -953,6 +980,70 @@ function initHomeScreen() {
     if (sheet.showModal) sheet.showModal(); else sheet.setAttribute("open", "");
   };
   sheet.addEventListener("click", (e) => { if (e.target === sheet) sheet.close(); });
+}
+
+// ---- Seasons and town events on the map: Halloween pumpkins and bats, and the golf cart parade ----
+const PUMPKIN = `<svg viewBox="0 0 40 36"><path d="M19 7 Q18 2 22 1" stroke="#4a6b2a" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="11" cy="21" rx="9" ry="12" fill="#e2731c"/><ellipse cx="29" cy="21" rx="9" ry="12" fill="#e2731c"/><ellipse cx="20" cy="21" rx="10" ry="13.5" fill="#f08a24" stroke="#b9560f" stroke-width="1.2"/><g class="face" fill="#ffd34d"><path d="M12 17 l4 -4 l3 4z M21 17 l3 -4 l4 4z"/><path d="M11 24 Q20 31 29 24 L26 25 L24 23 L22 25 L20 23 L18 25 L16 23 L14 25z"/></g></svg>`;
+const MOON = `<svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#fff4d6"/><circle cx="14" cy="15" r="3" fill="#efe1b8"/><circle cx="25" cy="24" r="4" fill="#efe1b8"/></svg>`;
+const BAT = `<svg viewBox="0 0 40 20"><path d="M20 8 Q17 2 13 6 Q8 1 1 6 Q6 8 7 14 Q11 10 14 13 Q17 10 20 15 Q23 10 26 13 Q29 10 33 14 Q34 8 39 6 Q32 1 27 6 Q23 2 20 8z" fill="#1e1a24" stroke="#fff4d6" stroke-width="0.8" stroke-opacity=".6"/></svg>`;
+const PARADE_COLORS = ["#f08a24", "#6b3fa0", "#2b2f2e", "#5aa832", "#f08a24", "#6b3fa0"];
+const RIDERS = [
+  `<circle cx="50" cy="40" r="17" fill="#f08a24" stroke="#b9560f" stroke-width="2"/><path d="M50 23 q-1 -6 4 -8" stroke="#4a6b2a" stroke-width="3.5" fill="none"/><path d="M41 37 l4 -5 l3 5z M52 37 l3 -5 l4 5z M40 45 Q50 54 60 45" fill="#3a1d05" stroke="#3a1d05" stroke-width="1.5"/>`,
+  `<path d="M33 60 V34 a17 17 0 0 1 34 0 V60 l-5.6 -5 l-5.6 5 l-5.6 -5 l-5.6 5 l-5.6 -5z" fill="#ffffff" stroke="#9aa3a0" stroke-width="2"/><ellipse cx="44" cy="34" rx="3" ry="4" fill="#2b2f2e"/><ellipse cx="56" cy="34" rx="3" ry="4" fill="#2b2f2e"/>`,
+  `<circle cx="50" cy="44" r="13" fill="#7bb661"/><path d="M30 34 H70 L50 2z" fill="#2b2f2e"/><rect x="30" y="31" width="40" height="5" rx="2.5" fill="#6b3fa0"/>`
+];
+function paradeCartSVG(i) {
+  const c = PARADE_COLORS[i % PARADE_COLORS.length], line = 'stroke="#4d5553" stroke-width="1.6"';
+  const lights = [14, 26, 38, 50, 62, 74, 86].map((x, k) => `<circle cx="${x}" cy="${9 + (k % 2) * 2}" r="2.2" fill="${k % 2 ? "#ffb347" : "#ff7a1a"}"/>`).join("");
+  return `<svg viewBox="0 0 100 90" aria-hidden="true"><path d="M10 7 Q50 -1 90 7 L88 11 H12Z" fill="${c}" ${line}/>${lights}<path d="M16 11 V60 M84 11 V60" ${line} stroke-linecap="round"/>${RIDERS[i % RIDERS.length]}<path d="M6 60 H90 Q96 60 96 66 V74 Q96 78 92 78 H8 Q4 78 4 74 V64 Q4 60 6 60Z" fill="#fbfaf6" ${line}/><rect x="8" y="64" width="84" height="4" rx="2" fill="${c}"/><circle cx="24" cy="80" r="8" fill="#2b2f2e"/><circle cx="76" cy="80" r="8" fill="#2b2f2e"/><circle cx="24" cy="80" r="3" fill="#c9cdcb"/><circle cx="76" cy="80" r="3" fill="#c9cdcb"/></svg>`;
+}
+function renderSeason(t) {
+  const layer = $("deco");
+  if (!layer) return;
+  const look = currentMap()[t?.season || ""];
+  if (!look) { layer.replaceChildren(); layer.dataset.season = ""; return; }
+  if (layer.dataset.season === t.season + (phoneQuery.matches ? "-p" : "-d")) return;
+  layer.dataset.season = t.season + (phoneQuery.matches ? "-p" : "-d");
+  const mk = (cls, svg, [x, y], k) => {
+    const d = document.createElement("span");
+    d.className = "deco " + cls; d.innerHTML = svg;
+    d.style.left = (x * 100) + "%"; d.style.top = (y * 100) + "%";
+    if (k != null) d.style.animationDelay = (-k * 0.9) + "s";
+    return d;
+  };
+  layer.replaceChildren(...(look.moon ? [mk("moon", MOON, look.moon)] : []), ...(look.pumpkins || []).map(p => mk("pumpkin", PUMPKIN, p)), ...(look.bats || []).map((b, k) => mk("bat", BAT, b, k)));
+}
+let paradeGen = 0;
+function runParade(t) {
+  const layer = $("parade");
+  if (!layer) return;
+  const gen = ++paradeGen;
+  layer.replaceChildren();
+  if (!(t?.scenes || []).includes("parade")) return;
+  const banner = document.createElement("span");
+  banner.className = "parade-banner"; banner.textContent = "Halloween golf cart parade";
+  layer.append(banner);
+  const map = currentMap(), loop = map.parade || [];
+  if (loop.length < 3) return;
+  const carts = [0, 1, 2, 3, 4, 5].map(i => { const d = document.createElement("span"); d.className = "pcart"; d.innerHTML = paradeCartSVG(i); layer.append(d); return d; });
+  const still = reducedMotion.matches, start = performance.now();
+  const frame = (now) => {
+    if (gen !== paradeGen) return;   // a new tick took over
+    const sc = $("scene"), W = sc.clientWidth, H = sc.clientHeight, R = currentMap().roads.nodes;
+    const pts = (currentMap().parade || loop).map(k => ({ x: R[k][0] * W, y: R[k][1] * H }));
+    pts.push(pts[0]);
+    let total = 0;
+    for (let i = 1; i < pts.length; i++) total += Math.hypot(pts[i].x - pts[i - 1].x, pts[i].y - pts[i - 1].y);
+    const gap = total / carts.length, speed = total / 16000;   // one lap about every 16 seconds
+    carts.forEach((c, i) => {
+      const d = ((still ? 0 : (now - start) * speed) + i * gap) % total;
+      const p = pointAlong(pts, d);
+      c.style.left = (p.x / W * 100) + "%"; c.style.top = (p.y / H * 100) + "%";
+      if (Math.abs(p.dx) > 0.5) c.classList.toggle("west", p.dx < 0);
+    });
+    if (!still) requestAnimationFrame(frame);
+  };
+  requestAnimationFrame(frame);
 }
 
 // ---- Scene ----
@@ -1465,6 +1556,8 @@ function go(i, step) {
   $("prev").disabled = idx === 0;
   $("next").disabled = idx === data.names.length - 1;
   setSky(t);
+  renderSeason(t);
+  if (!(data.ticks[from]?.tick === t.tick && $("parade").childElementCount)) runParade(t);
   layoutScene(!firstPaint, drive);
   firstPaint = false;
   renderPeople(data.world, t);
@@ -1515,7 +1608,7 @@ loadData().then(d => {
   if (d.live) setInterval(poll, 60000);
   let rt;
   new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(() => layoutScene(false), 80); }).observe($("scene"));
-  phoneQuery.addEventListener("change", () => { setMap(data.world); layoutScene(false); });
+  phoneQuery.addEventListener("change", () => { setMap(data.world); renderSeason(data.ticks[idx]); layoutScene(false); });
   $("map").addEventListener("load", () => layoutScene(false));
   if (document.fonts) document.fonts.ready.then(() => layoutScene(false));
 });
