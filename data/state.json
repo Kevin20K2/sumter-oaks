@@ -1,6 +1,6 @@
 {
-  "tick": 71,
-  "time": "2026-10-16T20:17",
+  "tick": 72,
+  "time": "2026-10-16T21:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
@@ -693,6 +693,11 @@
       {
         "tick": 70,
         "text": "I (gary golf cart): Check the cart battery and lay out the light strip and speaker for after approval, interior work only",
+        "importance": 3
+      },
+      {
+        "tick": 71,
+        "text": "I waited: Switching off the workbench lamp, calling it a night so I'm rested for pickleball with Donna at 7:45.",
         "importance": 3
       }
     ],
@@ -1501,6 +1506,11 @@
         "tick": 70,
         "text": "I (donna flamingo flock): Pull the extra flamingos so only three show from the street",
         "importance": 3
+      },
+      {
+        "tick": 71,
+        "text": "I (street bulletin board): Check the board for notices and pin a reminder about Saturday's pickleball and Rosa's dinner",
+        "importance": 3
       }
     ],
     "hal": [
@@ -2147,6 +2157,11 @@
       {
         "tick": 70,
         "text": "I (voting terminal): Check for any open proposals on the terminal",
+        "importance": 3
+      },
+      {
+        "tick": 71,
+        "text": "I (proposal drop box): Check the drop box for any new proposals on carts or lawn ornaments",
         "importance": 3
       }
     ],
@@ -2820,6 +2835,11 @@
         "tick": 70,
         "text": "I waited: Put my feet up with a cup of tea, glad the prep is done, and get an early night so I'm fresh for tomorrow's dinner.",
         "importance": 3
+      },
+      {
+        "tick": 71,
+        "text": "I waited: Finish my tea, turn off the kitchen light, and head to bed early so I'm rested for Saturday's dinner.",
+        "importance": 3
       }
     ]
   },
@@ -2866,7 +2886,7 @@
     ]
   },
   "emotions": {
-    "gary": "content, slightly nervous",
+    "gary": "content, a little nervous",
     "donna": "content",
     "hal": "dutiful",
     "rosa": "content"
@@ -2944,11 +2964,22 @@
     {
       "by": "hal",
       "text": "Hal Weems: File written L-01 report on Gary's unapproved cart lights and speaker; note flamingo count under review pending Donna's thinning."
+    },
+    {
+      "by": "hal",
+      "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 71,
+      "time": "Friday, October 16, 9:17 PM",
+      "story": "On a breezy, clear Friday night in Sumter Oaks, Gary switches off his workbench lamp and turns in early so he's rested for pickleball with Donna at 7:45. Donna is out on Magnolia Loop, pinning a reminder about Saturday's pickleball and Rosa's dinner to the street bulletin board. Over at Town Hall, Hal dutifully checks the proposal drop box for any new ideas about golf carts or lawn ornaments. Rosa finishes her tea, turns off the kitchen light, and heads to bed early so she's rested for Saturday's dinner.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 2.16146,
+    "total_usd": 2.19202,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -2967,13 +2998,12 @@
         "usd": 0.48691
       },
       "2026-10-16": {
-        "ticks": 14,
-        "usd": 0.43676
+        "ticks": 15,
+        "usd": 0.46732
       }
     }
   },
   "recent_tick_costs": [
-    0.03206,
     0.03362,
     0.03157,
     0.03283,
@@ -2996,7 +3026,8 @@
     0.03239,
     0.03212,
     0.03221,
-    0.03071
+    0.03071,
+    0.03056
   ],
   "fund": {
     "gross_usd": 0.0,
