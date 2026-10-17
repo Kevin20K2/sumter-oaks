@@ -1,0 +1,118 @@
+{
+  "tick": 74,
+  "simulation_time": "Saturday, October 17, 9:17 AM",
+  "weather": "Breezy and clear, 76°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a breezy, clear Saturday morning in Sumter Oaks, Gary stands at the Rec Center kiosk, uncertain, checking whether Donna has reserved a pickleball court. Donna, looking determined, reads the bulletin board on Magnolia Loop and updates the notices, including the reminder for Rosa's dinner. Over at Hal's House, Hal, content as ever, logs a quiet morning in his violation notebook, with no new infractions and the flamingo count still waiting on Donna's thinning. Meanwhile Rosa, also content, sets her table for four with the good plates and a small centerpiece.",
+  "events": [
+    "Gary (court reservation kiosk): Check the court reservations to see if Donna booked a slot",
+    "Donna (street bulletin board): Check the board for notices and update the pickleball and Rosa's dinner reminder",
+    "Hal (hal violation notebook): Log this morning's Loop check: no new violations, flamingo count pending Donna's thinning, Gary's report already filed",
+    "Rosa (rosa dining table): Set the table for four with the good plates and a small centerpiece"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at the Rec Center for pickleball with Donna, but it's already 9:17 and nobody is in line-of-sight. Donna said she'd swing by at 7:45, so I'm either very late or we got our wires crossed. No sense standing around fretting. The courts are right here and the reservation kiosk should show whether Donna booked a slot, and I need to keep the L-05 two-hour limit in mind anyway. Checking it beats waiting around, and I can work out what to do from there.",
+      "emotional_state": "uncertain",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Check the court reservations to see if Donna booked a slot"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 9:17 on Saturday morning, and the court time was eight sharp, so I'm well past it. I'm not sure whether Gary and I already played or whether something derailed us. I just got back to Magnolia Loop with my bag and the flamingos are already trimmed to three, so I'm clear on L-02. Nobody is in sight to ask. The bulletin board is the best way to confirm the plan for the day and keep my reminder current, and then I can figure out whether to go to Gary's house or the rec center.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Check the board for notices and update the pickleball and Rosa's dinner reminder"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've already scanned the Loop twice from the porch and found nothing worth noting. Gary's L-01 report is filed, Donna promised to thin her flamingos before Saturday's dinner, and nobody is in sight. Staring through binoculars a third time is just nosiness. Better to log the morning in my violation notebook so the record is orderly, then see about the pecan pie for tonight.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Log this morning's Loop check: no new violations, flamingo count pending Donna's thinning, Gary's report already filed"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I started the pork at tick 73, so the slow cook is running and the big prep is done. It's only 9:17 AM and dinner isn't until six, so I have hours of slack. I've already checked the shift schedule twice and nothing is going to pull me away, and a third look would just be nervous habit. The dinner table is the one thing left to make right: Hal, Gary, and Donna all sitting together, with everything set so I'm not scrambling at five. I'll go to the dining table and set it now, then the rest of the day is just tending the pork.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Set the table for four with the good plates and a small centerpiece"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03039,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9612,
+        "output_tokens": 1102,
+        "usd": 0.03024
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 422,
+        "output_tokens": 214,
+        "usd": 0.00015
+      }
+    }
+  }
+}
