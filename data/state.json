@@ -1,6 +1,6 @@
 {
-  "tick": 79,
-  "time": "2026-10-17T13:17",
+  "tick": 80,
+  "time": "2026-10-17T14:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,10 +9,10 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Court one, Gary, it's wide open. Stand behind the line, keep your knees soft, and I'll feed you easy ones first. By dinner at Rosa's you'll be talking like a ladder climber.”"
+      "Donna (pickleball court 1): Take my spot opposite Gary and feed him easy underhand serves to rally"
     ],
     "donna": [
-      "Gary (pickleball court 1): Grab the spare paddle and start rallying with Donna"
+      "Gary (pickleball court 1): Stand behind the line, knees soft, and start rallying easy ones with Donna"
     ],
     "hal": [],
     "rosa": []
@@ -762,6 +762,16 @@
       {
         "tick": 78,
         "text": "Donna said to Gary: “Court one, Gary, it's wide open. Stand behind the line, keep your knees soft, and I'll feed you easy ones first. By dinner at Rosa's you'll be talking like a ladder climber.”",
+        "importance": 4
+      },
+      {
+        "tick": 79,
+        "text": "I (pickleball court 1): Stand behind the line, knees soft, and start rallying easy ones with Donna",
+        "importance": 4
+      },
+      {
+        "tick": 79,
+        "text": "Donna (pickleball court 1): Take my spot opposite Gary and feed him easy underhand serves to rally",
         "importance": 4
       }
     ],
@@ -1630,6 +1640,16 @@
         "tick": 78,
         "text": "Gary (pickleball court 1): Grab the spare paddle and start rallying with Donna",
         "importance": 6
+      },
+      {
+        "tick": 79,
+        "text": "I (pickleball court 1): Take my spot opposite Gary and feed him easy underhand serves to rally",
+        "importance": 6
+      },
+      {
+        "tick": 79,
+        "text": "Gary (pickleball court 1): Stand behind the line, knees soft, and start rallying easy ones with Donna",
+        "importance": 6
       }
     ],
     "hal": [
@@ -2321,6 +2341,11 @@
       {
         "tick": 78,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
+        "importance": 5
+      },
+      {
+        "tick": 79,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street to see whether Donna has thinned them to three or fewer",
         "importance": 5
       }
     ],
@@ -3034,6 +3059,11 @@
         "tick": 78,
         "text": "I (rosa kitchen): Prep the sides for tonight and baste the pork",
         "importance": 5
+      },
+      {
+        "tick": 79,
+        "text": "I (rosa shift schedule): Check the schedule to confirm I'm not on call and nothing conflicts with six o'clock",
+        "importance": 6
       }
     ]
   },
@@ -3081,7 +3111,7 @@
   },
   "emotions": {
     "gary": "nervous but game",
-    "donna": "delighted",
+    "donna": "enthusiastic",
     "hal": "watchful",
     "rosa": "determined"
   },
@@ -3181,10 +3211,16 @@
       "dialogue": [
         "Donna said to Gary: “Court one, Gary, it's wide open. Stand behind the line, keep your knees soft, and I'll feed you easy ones first. By dinner at Rosa's you'll be talking like a ladder climber.”"
       ]
+    },
+    {
+      "tick": 79,
+      "time": "Saturday, October 17, 2:17 PM",
+      "story": "At 2:17 on a breezy, clear Saturday in Sumter Oaks, Gary and Donna are warming up on pickleball court one at the Rec Center, with Donna feeding him easy underhand serves while he tries to keep his knees soft behind the line. Over on Magnolia Loop, Hal is quietly counting the pink plastic flamingos in Donna's flock to see whether she has thinned them down to three or fewer. Meanwhile, Rosa is at home checking her shift schedule to make sure she isn't on call and that nothing will get in the way of six o'clock.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 2.40356,
+    "total_usd": 2.4328,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3207,13 +3243,12 @@
         "usd": 0.46732
       },
       "2026-10-17": {
-        "ticks": 7,
-        "usd": 0.21154
+        "ticks": 8,
+        "usd": 0.24078
       }
     }
   },
   "recent_tick_costs": [
-    0.03256,
     0.03209,
     0.03075,
     0.03074,
@@ -3236,7 +3271,8 @@
     0.02965,
     0.02985,
     0.02936,
-    0.03011
+    0.03011,
+    0.02924
   ],
   "fund": {
     "gross_usd": 0.0,

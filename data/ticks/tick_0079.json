@@ -1,0 +1,118 @@
+{
+  "tick": 79,
+  "simulation_time": "Saturday, October 17, 2:17 PM",
+  "weather": "Breezy and clear, 79°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 2:17 on a breezy, clear Saturday in Sumter Oaks, Gary and Donna are warming up on pickleball court one at the Rec Center, with Donna feeding him easy underhand serves while he tries to keep his knees soft behind the line. Over on Magnolia Loop, Hal is quietly counting the pink plastic flamingos in Donna's flock to see whether she has thinned them down to three or fewer. Meanwhile, Rosa is at home checking her shift schedule to make sure she isn't on call and that nothing will get in the way of six o'clock.",
+  "events": [
+    "Gary (pickleball court 1): Stand behind the line, knees soft, and start rallying easy ones with Donna",
+    "Donna (pickleball court 1): Take my spot opposite Gary and feed him easy underhand serves to rally",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street to see whether Donna has thinned them to three or fewer",
+    "Rosa (rosa shift schedule): Check the schedule to confirm I'm not on call and nothing conflicts with six o'clock"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna told me to take court one, stand behind the line, and keep my knees soft. I already said I'd be terrible, and she already knows it, so no more talk is needed. Time to actually pick up the spare paddle and start rallying. Being useful and showing up for a friend beats sitting alone with my wiring, and the cart paperwork is already filed.",
+      "emotional_state": "nervous but game",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Stand behind the line, knees soft, and start rallying easy ones with Donna"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary is on court one with the spare paddle and ready to rally. I already told him the basics last tick, so no more talking. The best move is to get on the court and feed him some easy shots so he builds confidence before Saturday morning at eight. I can check the ladder board later.",
+      "emotional_state": "enthusiastic",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Take my spot opposite Gary and feed him easy underhand serves to rally"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm back on Magnolia Loop with no one in sight. My last action was counting the flamingos against the L-02 limit, but nothing in memory says what the count came to. Donna promised to thin them before Saturday's dinner at Rosa's, and I'd rather keep the peace than file a report if she's kept her word. The flock is right here, so I'll look it over properly now and decide whether the committee needs to hear from me.",
+      "emotional_state": "watchful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street to see whether Donna has thinned them to three or fewer"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 2:17 and dinner is at six. The pork is basted and the sides are in progress, and I've already set the table. I just checked the kitchen last tick, so rather than fuss over the pork again, I should double-check my shift schedule to make sure nothing can pull me away from Saturday. Then I can get back to the sides with peace of mind.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check the schedule to confirm I'm not on call and nothing conflicts with six o'clock"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02924,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9855,
+        "output_tokens": 939,
+        "usd": 0.0291
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 442,
+        "output_tokens": 193,
+        "usd": 0.00014
+      }
+    }
+  }
+}
