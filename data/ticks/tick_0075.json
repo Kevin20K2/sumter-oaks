@@ -1,0 +1,118 @@
+{
+  "tick": 75,
+  "simulation_time": "Saturday, October 17, 10:17 AM",
+  "weather": "Breezy and clear, 76°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 10:17 on a breezy, clear Saturday morning, Gary stands at the Rec Center kiosk anxiously hoping to find Donna's name on today's court bookings. Out on Magnolia Loop, Donna is optimistically thinning her flamingo flock, while Hal keeps a watchful eye on the street through his binoculars from his house, checking whether she's down to three and whether anyone has been parking on the grass. Back at Rosa's house, the pork is slow cooking as she sits with her coffee, hopefully picturing Hal, Gary, and Donna all gathered at her table at six.",
+  "events": [
+    "Gary (court reservation kiosk): Look up today's court bookings for Donna's name and time",
+    "Donna (donna flamingo flock): Thin the flock down to three flamingos visible from the street",
+    "Hal (hal binoculars): Scan Magnolia Loop to see whether Donna has thinned her flamingos to three or fewer, and check for grass parking",
+    "Rosa waited: Let the pork slow cook and sit down with a cup of coffee, running through the evening in my head: Hal, Gary, and Donna all at my table at six."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I came back to the Rec Center to see if Donna booked a court slot, since it's Saturday morning and we were supposed to play pickleball. Nobody's around, and the reservation kiosk is right here. Checking it again is the quickest way to find out if she reserved a slot and when, so I know whether I'm early, late, or just nervous for nothing. The cart project can wait an hour.",
+      "emotional_state": "anxious but hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Look up today's court bookings for Donna's name and time"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 10:17 on Saturday, and Gary's court time was supposed to be eight sharp. I've already checked the bulletin board twice and updated the reminder, so there's nothing more to do there. No one is in sight on Magnolia Loop. The flamingo flock is the one thing Hal warned me about, and with the three-ornament limit under L-02 I should tidy it up before he or Architectural Review notices. Then I can head to the rec center to see how Gary's doing.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Thin the flock down to three flamingos visible from the street"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on my porch with nobody in sight. I've already logged the morning check and filed on Gary's cart. The flamingo count is still pending, since Donna promised to thin them before Saturday's dinner at Rosa's. Another scan of the Loop is the sensible, by-the-book move. If the flock is down to three, I can close the matter and enjoy the pie without another report.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Magnolia Loop to see whether Donna has thinned her flamingos to three or fewer, and check for grass parking"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 10:17 AM on dinner day. The pork is in the slow cook, the table is set for four, and the schedule is already confirmed. Nobody's nearby, so there's no one to talk to. I've checked the schedule three times today; rechecking would just be nerves. Best use of this hour is to rest my feet and let the pork do its work so I'm fresh and warm when everyone arrives at six.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Let the pork slow cook and sit down with a cup of coffee, running through the evening in my head: Hal, Gary, and Donna all at my table at six."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02965,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9580,
+        "output_tokens": 1034,
+        "usd": 0.0295
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 452,
+        "output_tokens": 200,
+        "usd": 0.00015
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "tick": 75,
-  "time": "2026-10-17T09:17",
+  "tick": 76,
+  "time": "2026-10-17T10:17",
   "positions": {
     "gary": "rec_center",
     "donna": "magnolia_loop",
@@ -723,6 +723,11 @@
       {
         "tick": 74,
         "text": "I (court reservation kiosk): Check the court reservations to see if Donna booked a slot",
+        "importance": 4
+      },
+      {
+        "tick": 75,
+        "text": "I (court reservation kiosk): Look up today's court bookings for Donna's name and time",
         "importance": 4
       }
     ],
@@ -1556,6 +1561,11 @@
         "tick": 74,
         "text": "I (street bulletin board): Check the board for notices and update the pickleball and Rosa's dinner reminder",
         "importance": 4
+      },
+      {
+        "tick": 75,
+        "text": "I (donna flamingo flock): Thin the flock down to three flamingos visible from the street",
+        "importance": 4
       }
     ],
     "hal": [
@@ -2223,6 +2233,11 @@
         "tick": 74,
         "text": "I (hal violation notebook): Log this morning's Loop check: no new violations, flamingo count pending Donna's thinning, Gary's report already filed",
         "importance": 3
+      },
+      {
+        "tick": 75,
+        "text": "I (hal binoculars): Scan Magnolia Loop to see whether Donna has thinned her flamingos to three or fewer, and check for grass parking",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -2915,6 +2930,11 @@
         "tick": 74,
         "text": "I (rosa dining table): Set the table for four with the good plates and a small centerpiece",
         "importance": 5
+      },
+      {
+        "tick": 75,
+        "text": "I waited: Let the pork slow cook and sit down with a cup of coffee, running through the evening in my head: Hal, Gary, and Donna all at my table at six.",
+        "importance": 4
       }
     ]
   },
@@ -2961,10 +2981,10 @@
     ]
   },
   "emotions": {
-    "gary": "uncertain",
-    "donna": "determined",
-    "hal": "content",
-    "rosa": "content"
+    "gary": "anxious but hopeful",
+    "donna": "optimistic",
+    "hal": "watchful",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -3069,10 +3089,16 @@
       "time": "Saturday, October 17, 9:17 AM",
       "story": "At 9:17 on a breezy, clear Saturday morning in Sumter Oaks, Gary stands at the Rec Center kiosk, uncertain, checking whether Donna has reserved a pickleball court. Donna, looking determined, reads the bulletin board on Magnolia Loop and updates the notices, including the reminder for Rosa's dinner. Over at Hal's House, Hal, content as ever, logs a quiet morning in his violation notebook, with no new infractions and the flamingo count still waiting on Donna's thinning. Meanwhile Rosa, also content, sets her table for four with the good plates and a small centerpiece.",
       "dialogue": []
+    },
+    {
+      "tick": 75,
+      "time": "Saturday, October 17, 10:17 AM",
+      "story": "At 10:17 on a breezy, clear Saturday morning, Gary stands at the Rec Center kiosk anxiously hoping to find Donna's name on today's court bookings. Out on Magnolia Loop, Donna is optimistically thinning her flamingo flock, while Hal keeps a watchful eye on the street through his binoculars from his house, checking whether she's down to three and whether anyone has been parking on the grass. Back at Rosa's house, the pork is slow cooking as she sits with her coffee, hopefully picturing Hal, Gary, and Donna all gathered at her table at six.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 2.28459,
+    "total_usd": 2.31424,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3095,13 +3121,12 @@
         "usd": 0.46732
       },
       "2026-10-17": {
-        "ticks": 3,
-        "usd": 0.09257
+        "ticks": 4,
+        "usd": 0.12222
       }
     }
   },
   "recent_tick_costs": [
-    0.03432,
     0.03338,
     0.03353,
     0.03316,
@@ -3124,7 +3149,8 @@
     0.03056,
     0.03104,
     0.03114,
-    0.03039
+    0.03039,
+    0.02965
   ],
   "fund": {
     "gross_usd": 0.0,
