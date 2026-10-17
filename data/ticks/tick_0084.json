@@ -1,0 +1,117 @@
+{
+  "tick": 84,
+  "simulation_time": "Saturday, October 17, 7:17 PM",
+  "weather": "Breezy and clear, 77°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "rosas_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "Gary and Donna are wrapping up a rally on pickleball court one at the Rec Center, with Donna delighted that she has written her own name onto the ladder. She has invited Gary to celebrate at Rosa's house and promised to be back at 7:45 tomorrow morning to practice before anyone else takes the court. Over at Rosa's, Hal is counting out seats at the dining table with the patience of a man who knows the guests will arrive when they arrive. Rosa, meanwhile, stands on Magnolia Loop reading the bulletin board for any word of where the neighbors have gotten to, looking a little concerned that the evening is getting away from her.",
+  "events": [
+    "Gary (pickleball court 1): Rally with Donna, knees soft, working on my footwork",
+    "Hal (rosa dining table): Check the place settings and count seats for dinner",
+    "Rosa (street bulletin board): Check the board for any note or news about where the neighbors are"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just signed us up as Pruitt-Kowalski on the doubles ladder, and I already told her I'd be proud to partner with her. I suggested one more rally and then dinner at Rosa's, and she hasn't answered yet, so I shouldn't ask again. The best thing is to just get back to rallying on court 1, knees soft, working on my footwork. It's nearly 7:20 and I've still got a cart to finish for the parade, so I'll make the most of this one more hour of practice before dinner.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Rally with Donna, knees soft, working on my footwork"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary said yes to being my doubles partner, and I already wrote 'Pruitt-Kowalski' on the ladder sheet. He suggested one more rally and then dinner at Rosa's. It's past seven in the evening and the sun is down, so I shouldn't push another hour on the court. Better to keep the goodwill, wrap up the day on a high note, and head to dinner. I'll tell him we're officially on the ladder, set up practice for tomorrow morning, and steer us toward Rosa's.",
+      "emotional_state": "delighted",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Partner! We're officially on the ladder, Pruitt-Kowalski, I wrote it in myself. Let's call it a night on the court and go celebrate at Rosa's, and I'll roll by tomorrow at 7:45 so we can practice before anyone else grabs court one."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Rosa's House now, nobody else in sight. The flamingo count is done and Donna kept her word, so I'd rather let that rest. The review ruling on Gary's cart is still pending and not something I can force from here. Saturday dinner is at Rosa's, so the dining table seems the sensible place to check on things. A supply sergeant likes to know the setup before the troops arrive.",
+      "emotional_state": "patient",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Check the place settings and count seats for dinner"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 7:17 PM on Saturday and dinner was set for six. I just stepped out onto Magnolia Loop, and nobody's in sight. My memories say the table is set for four and the pork is done, so the food is waiting but nobody has shown up. I don't know whether they're running late, forgot, or got held up somewhere. The quickest way to find out is to check the street bulletin board for any word, since I'm standing right here. If nothing's there, I'll walk over to Hal's, Gary's, and Donna's houses and knock on doors. I'm not going to sit around stewing; I'll find my people and bring them to dinner.",
+      "emotional_state": "concerned",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Check the board for any note or news about where the neighbors are"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03164,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9887,
+        "output_tokens": 1172,
+        "usd": 0.03149
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 461,
+        "output_tokens": 215,
+        "usd": 0.00015
+      }
+    }
+  }
+}

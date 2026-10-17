@@ -1,6 +1,6 @@
 {
-  "tick": 84,
-  "time": "2026-10-17T18:17",
+  "tick": 85,
+  "time": "2026-10-17T19:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,17 +9,13 @@
   },
   "perceptions": {
     "gary": [
-      "Donna (ladder standings board): Write 'Pruitt-Kowalski' on the doubles ladder sign-up sheet"
+      "Donna said to Gary: “Partner! We're officially on the ladder, Pruitt-Kowalski, I wrote it in myself. Let's call it a night on the court and go celebrate at Rosa's, and I'll roll by tomorrow at 7:45 so we can practice before anyone else grabs court one.”"
     ],
     "donna": [
-      "Gary said to Donna: “You're on, Donna. Fair warning, I'm a work in progress and I've still got a golf cart to rig before the parade, but I'd be proud to be your partner. Now what do you say we rally one more, then go get that dinner at Rosa's?”"
+      "Gary (pickleball court 1): Rally with Donna, knees soft, working on my footwork"
     ],
-    "hal": [
-      "You arrived at Rosa's House."
-    ],
-    "rosa": [
-      "You arrived at Magnolia Loop (the street)."
-    ]
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
@@ -817,6 +813,16 @@
         "tick": 83,
         "text": "Donna (ladder standings board): Write 'Pruitt-Kowalski' on the doubles ladder sign-up sheet",
         "importance": 6
+      },
+      {
+        "tick": 84,
+        "text": "I (pickleball court 1): Rally with Donna, knees soft, working on my footwork",
+        "importance": 4
+      },
+      {
+        "tick": 84,
+        "text": "Donna said to Gary: “Partner! We're officially on the ladder, Pruitt-Kowalski, I wrote it in myself. Let's call it a night on the court and go celebrate at Rosa's, and I'll roll by tomorrow at 7:45 so we can practice before anyone else grabs court one.”",
+        "importance": 4
       }
     ],
     "donna": [
@@ -1734,6 +1740,16 @@
         "tick": 83,
         "text": "Gary said to Donna: “You're on, Donna. Fair warning, I'm a work in progress and I've still got a golf cart to rig before the parade, but I'd be proud to be your partner. Now what do you say we rally one more, then go get that dinner at Rosa's?”",
         "importance": 7
+      },
+      {
+        "tick": 84,
+        "text": "I said to Gary: “Partner! We're officially on the ladder, Pruitt-Kowalski, I wrote it in myself. Let's call it a night on the court and go celebrate at Rosa's, and I'll roll by tomorrow at 7:45 so we can practice before anyone else grabs court one.”",
+        "importance": 6
+      },
+      {
+        "tick": 84,
+        "text": "Gary (pickleball court 1): Rally with Donna, knees soft, working on my footwork",
+        "importance": 6
       }
     ],
     "hal": [
@@ -2456,6 +2472,11 @@
         "tick": 83,
         "text": "You arrived at Rosa's House.",
         "importance": 4
+      },
+      {
+        "tick": 84,
+        "text": "I (rosa dining table): Check the place settings and count seats for dinner",
+        "importance": 3
       }
     ],
     "rosa": [
@@ -3198,6 +3219,11 @@
         "tick": 83,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 7
+      },
+      {
+        "tick": 84,
+        "text": "I (street bulletin board): Check the board for any note or news about where the neighbors are",
+        "importance": 6
       }
     ]
   },
@@ -3244,10 +3270,10 @@
     ]
   },
   "emotions": {
-    "gary": "touched, hopeful",
-    "donna": "optimistic",
-    "hal": "resigned",
-    "rosa": "hopeful, slightly anxious"
+    "gary": "content",
+    "donna": "delighted",
+    "hal": "patient",
+    "rosa": "concerned"
   },
   "laws": [
     {
@@ -3336,10 +3362,18 @@
       "dialogue": [
         "Gary said to Donna: “You're on, Donna. Fair warning, I'm a work in progress and I've still got a golf cart to rig before the parade, but I'd be proud to be your partner. Now what do you say we rally one more, then go get that dinner at Rosa's?”"
       ]
+    },
+    {
+      "tick": 84,
+      "time": "Saturday, October 17, 7:17 PM",
+      "story": "Gary and Donna are wrapping up a rally on pickleball court one at the Rec Center, with Donna delighted that she has written her own name onto the ladder. She has invited Gary to celebrate at Rosa's house and promised to be back at 7:45 tomorrow morning to practice before anyone else takes the court. Over at Rosa's, Hal is counting out seats at the dining table with the patience of a man who knows the guests will arrive when they arrive. Rosa, meanwhile, stands on Magnolia Loop reading the bulletin board for any word of where the neighbors have gotten to, looking a little concerned that the evening is getting away from her.",
+      "dialogue": [
+        "Donna said to Gary: “Partner! We're officially on the ladder, Pruitt-Kowalski, I wrote it in myself. Let's call it a night on the court and go celebrate at Rosa's, and I'll roll by tomorrow at 7:45 so we can practice before anyone else grabs court one.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 2.55567,
+    "total_usd": 2.58731,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3362,13 +3396,12 @@
         "usd": 0.46732
       },
       "2026-10-17": {
-        "ticks": 12,
-        "usd": 0.36365
+        "ticks": 13,
+        "usd": 0.39529
       }
     }
   },
   "recent_tick_costs": [
-    0.03058,
     0.03033,
     0.03073,
     0.03045,
@@ -3391,7 +3424,8 @@
     0.03028,
     0.02982,
     0.03056,
-    0.03221
+    0.03221,
+    0.03164
   ],
   "fund": {
     "gross_usd": 0.0,
