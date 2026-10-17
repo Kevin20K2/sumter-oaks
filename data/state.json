@@ -1,21 +1,25 @@
 {
-  "tick": 83,
-  "time": "2026-10-17T17:17",
+  "tick": 84,
+  "time": "2026-10-17T18:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
-    "hal": "magnolia_loop",
-    "rosa": "rosas_house"
+    "hal": "rosas_house",
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “That's the spirit, Gary! You've got a natural touch, and I'm not just saying that. Be my doubles partner on the ladder, we'd climb fast, and I'll handle all the signing up.”"
+      "Donna (ladder standings board): Write 'Pruitt-Kowalski' on the doubles ladder sign-up sheet"
     ],
     "donna": [
-      "Gary (pickleball court 1): Keep rallying with Donna, knees soft, working on my footwork"
+      "Gary said to Donna: “You're on, Donna. Fair warning, I'm a work in progress and I've still got a golf cart to rig before the parade, but I'd be proud to be your partner. Now what do you say we rally one more, then go get that dinner at Rosa's?”"
     ],
-    "hal": [],
-    "rosa": []
+    "hal": [
+      "You arrived at Rosa's House."
+    ],
+    "rosa": [
+      "You arrived at Magnolia Loop (the street)."
+    ]
   },
   "memories": {
     "gary": [
@@ -803,6 +807,16 @@
         "tick": 82,
         "text": "Donna said to Gary: “That's the spirit, Gary! You've got a natural touch, and I'm not just saying that. Be my doubles partner on the ladder, we'd climb fast, and I'll handle all the signing up.”",
         "importance": 4
+      },
+      {
+        "tick": 83,
+        "text": "I said to Donna: “You're on, Donna. Fair warning, I'm a work in progress and I've still got a golf cart to rig before the parade, but I'd be proud to be your partner. Now what do you say we rally one more, then go get that dinner at Rosa's?”",
+        "importance": 6
+      },
+      {
+        "tick": 83,
+        "text": "Donna (ladder standings board): Write 'Pruitt-Kowalski' on the doubles ladder sign-up sheet",
+        "importance": 6
       }
     ],
     "donna": [
@@ -1710,6 +1724,16 @@
         "tick": 82,
         "text": "Gary (pickleball court 1): Keep rallying with Donna, knees soft, working on my footwork",
         "importance": 7
+      },
+      {
+        "tick": 83,
+        "text": "I (ladder standings board): Write 'Pruitt-Kowalski' on the doubles ladder sign-up sheet",
+        "importance": 7
+      },
+      {
+        "tick": 83,
+        "text": "Gary said to Donna: “You're on, Donna. Fair warning, I'm a work in progress and I've still got a golf cart to rig before the parade, but I'd be proud to be your partner. Now what do you say we rally one more, then go get that dinner at Rosa's?”",
+        "importance": 7
       }
     ],
     "hal": [
@@ -2421,6 +2445,16 @@
       {
         "tick": 82,
         "text": "I (mailbox kiosk): Check mail for any Architectural Review ruling on Gary's cart modifications",
+        "importance": 4
+      },
+      {
+        "tick": 83,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 83,
+        "text": "You arrived at Rosa's House.",
         "importance": 4
       }
     ],
@@ -3154,6 +3188,16 @@
         "tick": 82,
         "text": "I (rosa kitchen): Check the pork one last time and keep the sides warm for six",
         "importance": 6
+      },
+      {
+        "tick": 83,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 7
+      },
+      {
+        "tick": 83,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 7
       }
     ]
   },
@@ -3200,10 +3244,10 @@
     ]
   },
   "emotions": {
-    "gary": "encouraged",
+    "gary": "touched, hopeful",
     "donna": "optimistic",
-    "hal": "wary",
-    "rosa": "hopeful"
+    "hal": "resigned",
+    "rosa": "hopeful, slightly anxious"
   },
   "laws": [
     {
@@ -3284,9 +3328,18 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 83,
+      "time": "Saturday, October 17, 6:17 PM",
+      "story": "At 6:17 on a breezy, clear Saturday evening in Sumter Oaks, Gary tells Donna he would be proud to be her doubles partner, and she heads to the ladder board to write \"Pruitt-Kowalski\" on the sign-up sheet. Gary is touched and hopeful, though he still has a golf cart to rig before the parade. Hal, looking resigned, makes his way to Rosa's House, while Rosa heads out to Magnolia Loop, a little anxious but hopeful about the evening ahead.",
+      "dialogue": [
+        "Gary said to Donna: “You're on, Donna. Fair warning, I'm a work in progress and I've still got a golf cart to rig before the parade, but I'd be proud to be your partner. Now what do you say we rally one more, then go get that dinner at Rosa's?”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 2.52346,
+    "total_usd": 2.55567,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3309,13 +3362,12 @@
         "usd": 0.46732
       },
       "2026-10-17": {
-        "ticks": 11,
-        "usd": 0.33144
+        "ticks": 12,
+        "usd": 0.36365
       }
     }
   },
   "recent_tick_costs": [
-    0.03131,
     0.03058,
     0.03033,
     0.03073,
@@ -3338,7 +3390,8 @@
     0.02924,
     0.03028,
     0.02982,
-    0.03056
+    0.03056,
+    0.03221
   ],
   "fund": {
     "gross_usd": 0.0,

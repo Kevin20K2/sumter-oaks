@@ -1,0 +1,117 @@
+{
+  "tick": 83,
+  "simulation_time": "Saturday, October 17, 6:17 PM",
+  "weather": "Breezy and clear, 78°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 6:17 on a breezy, clear Saturday evening in Sumter Oaks, Gary tells Donna he would be proud to be her doubles partner, and she heads to the ladder board to write \"Pruitt-Kowalski\" on the sign-up sheet. Gary is touched and hopeful, though he still has a golf cart to rig before the parade. Hal, looking resigned, makes his way to Rosa's House, while Rosa heads out to Magnolia Loop, a little anxious but hopeful about the evening ahead.",
+  "events": [
+    "Donna (ladder standings board): Write 'Pruitt-Kowalski' on the doubles ladder sign-up sheet",
+    "Hal headed to Rosa's House.",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just asked me to be her doubles partner on the ladder. I haven't answered yet, and she's waiting. Part of me wants to say yes since being needed is what I'm after, but I'm a 71-year-old who's been playing for one afternoon. Also, I filed the cart form at Tick 35 and have a parade to rig for. I should answer honestly: yes, with a caveat that I'm green, and that the cart project still takes priority. Keep it short and warm, then we can head to Rosa's.",
+      "emotional_state": "touched, hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "You're on, Donna. Fair warning, I'm a work in progress and I've still got a golf cart to rig before the parade, but I'd be proud to be your partner. Now what do you say we rally one more, then go get that dinner at Rosa's?"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 6:17 PM and Gary and I have rallied long enough. I already asked him to be my doubles partner last tick and he hasn't answered, so I shouldn't ask again. Time to make it official: the ladder standings board is right here, so I can sign us up, and that actually moves my goal forward. I'll also remember to keep L-05 in mind about court time, but that's not an issue yet.",
+      "emotional_state": "optimistic",
+      "importance_rating": 7,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Write 'Pruitt-Kowalski' on the doubles ladder sign-up sheet"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've counted the flamingos more than once and checked the bulletin board and the mail. Nobody's around, and Donna promised to thin them before dinner at Rosa's tonight, so I'd rather keep the peace than file another report. Gary's cart still has no ruling that I can find, but I'm not going to stand on this street all evening waiting for paperwork to appear. A proper man is on time to supper, so I'll head over to Rosa's and let the review committee deal with the rest on Monday.",
+      "emotional_state": "resigned",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's for Saturday dinner; the flamingo count and the cart ruling can keep until Monday."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 6:17 PM and the dinner was set for six, but nobody is here. The table is set for four, the pork is done, and the sides are warm. I already checked the shift schedule at tick 79 and I'm not on call, so that's not what's holding things up. Nobody is in line-of-sight, and I can't call out to anyone from here. Maybe they're running a little late, or maybe they're waiting at their own doors for a signal from me. The best move is to go out to Magnolia Loop where I can see who's coming and wave them in, instead of standing in my kitchen second-guessing everything. If nobody's out there, I'll know something's off and can go knock on a door.",
+      "emotional_state": "hopeful, slightly anxious",
+      "importance_rating": 7,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to the street to see if Hal, Gary, and Donna are on their way. Dinner's ready and I'd rather flag them down than let the pork dry out."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03221,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9838,
+        "output_tokens": 1240,
+        "usd": 0.03208
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 453,
+        "output_tokens": 176,
+        "usd": 0.00013
+      }
+    }
+  }
+}
