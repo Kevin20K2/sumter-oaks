@@ -1,6 +1,6 @@
 {
-  "tick": 70,
-  "time": "2026-10-16T19:17",
+  "tick": 71,
+  "time": "2026-10-16T20:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
@@ -689,6 +689,11 @@
         "tick": 69,
         "text": "I (gary toolbox): Tidy up the tools and set my sneakers and gear by the door for tomorrow",
         "importance": 4
+      },
+      {
+        "tick": 70,
+        "text": "I (gary golf cart): Check the cart battery and lay out the light strip and speaker for after approval, interior work only",
+        "importance": 3
       }
     ],
     "donna": [
@@ -1491,6 +1496,11 @@
         "tick": 69,
         "text": "I (donna flamingo flock): Count the flamingos and pull extras so only three show from the street",
         "importance": 4
+      },
+      {
+        "tick": 70,
+        "text": "I (donna flamingo flock): Pull the extra flamingos so only three show from the street",
+        "importance": 3
       }
     ],
     "hal": [
@@ -2133,6 +2143,11 @@
         "tick": 69,
         "text": "I (architectural review desk): File written L-01 report on Gary's unapproved cart lights and speaker; note flamingo count under review pending Donna's thinning.",
         "importance": 5
+      },
+      {
+        "tick": 70,
+        "text": "I (voting terminal): Check for any open proposals on the terminal",
+        "importance": 3
       }
     ],
     "rosa": [
@@ -2800,6 +2815,11 @@
         "tick": 69,
         "text": "I (rosa shift schedule): Look the schedule over once more and make sure no call-in can touch Saturday at six",
         "importance": 4
+      },
+      {
+        "tick": 70,
+        "text": "I waited: Put my feet up with a cup of tea, glad the prep is done, and get an early night so I'm fresh for tomorrow's dinner.",
+        "importance": 3
       }
     ]
   },
@@ -2846,9 +2866,9 @@
     ]
   },
   "emotions": {
-    "gary": "nervous but hopeful",
+    "gary": "content, slightly nervous",
     "donna": "content",
-    "hal": "resolute",
+    "hal": "dutiful",
     "rosa": "content"
   },
   "laws": [
@@ -2926,45 +2946,9 @@
       "text": "Hal Weems: File written L-01 report on Gary's unapproved cart lights and speaker; note flamingo count under review pending Donna's thinning."
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 65,
-      "time": "Friday, October 16, 3:17 PM",
-      "story": "On a rainy Friday afternoon in Sumter Oaks, Gary is at his workbench testing the light strip and speaker wiring while the shower drums softly on his roof. Donna is hurrying up the street toward Gary's house with a determined look, and Hal is heading the other way toward Town Square, pleased with himself. Meanwhile Rosa, content in her kitchen, is cutting plantains, soaking rice, and labeling serving dishes so tomorrow can be all cooking and welcoming.",
-      "dialogue": []
-    },
-    {
-      "tick": 66,
-      "time": "Friday, October 16, 4:17 PM",
-      "story": "At 4:17 on this rainy Friday afternoon in Sumter Oaks, Gary is cheerfully testing a speaker for his golf cart at his house, where Donna has dropped by to coach him on tomorrow's plans and reminded him that flat-soled shoes and the kitchen line matter most. Donna arrived upbeat, promising to bring a spare paddle while Gary promised to bring the confidence. Across town, Hal is marching to Town Hall with a determined stride, while Rosa stays content in her kitchen, seasoning pork and setting it to marinate overnight so her spices and rice are ready for tomorrow.",
-      "dialogue": [
-        "Gary said to Donna: “Well, look who's here. Come on in, Donna, mind the wires. I'm just testing the speaker for the cart, and I already filed the review form, so I'm staying legal.”",
-        "Donna said to Gary: “Gary, I'm not here to nag, I'm here to coach. Wear flat-soled shoes tomorrow, and remember the kitchen line is the only rule that'll ever matter to you. I'll bring the spare paddle, you bring the confidence.”"
-      ]
-    },
-    {
-      "tick": 67,
-      "time": "Friday, October 16, 5:17 PM",
-      "story": "At 5:17 on a Friday afternoon, a light shower dampens Sumter Oaks at a comfortable 78 degrees, and Gary is at his workbench at home, finishing the wiring on his golf cart's new light strip and speaker and coiling the cords neatly. Donna has stopped by his house with an upbeat plan for tomorrow morning: she'll pick him up in her cart at 7:45 so they can head to the pickleball court together, with Gary bringing water and his good attitude. Across town, Hal is at the architectural review desk in Town Hall, dutifully filing a written report on Gary's unapproved cart lights and speaker and noting that the flamingo count is under review. Meanwhile, Rosa is at her dining table setting out the good plates and place cards for four, content to have tomorrow's dinner ready to cook.",
-      "dialogue": [
-        "Donna said to Gary: “Thanks, Gary, I'll step around the wires. Here's the plan: I'll swing by in my cart at 7:45 tomorrow so you can't oversleep, and we'll roll straight to the court. You just bring water and that good attitude.”"
-      ]
-    },
-    {
-      "tick": 68,
-      "time": "Friday, October 16, 6:17 PM",
-      "story": "At 6:17 on a breezy, clear Friday evening in Sumter Oaks, Gary is filling water bottles in his kitchen to chill for tomorrow's pickleball, looking a little nervous but warm as ever. Donna, feeling satisfied, is out on Magnolia Loop, while Hal is at Town Hall filing a written report on Gary's unapproved cart lights and speaker and noting that the flamingo count is still under review. Over at her house, Rosa is content, giving the pork one last check in the fridge and lining up pots, serving dishes, and spices for tomorrow.",
-      "dialogue": []
-    },
-    {
-      "tick": 69,
-      "time": "Friday, October 16, 7:17 PM",
-      "story": "Friday evening at Sumter Oaks settles into a breezy, clear 77 degrees, and Gary is tidying his toolbox and lining up his sneakers and gear by the door for tomorrow, nervous but hopeful about whatever Saturday brings. Over on Magnolia Loop, Donna is counting her flamingos and pulling extras so only three stand on the street, content as ever with her modest flock. Hal, resolute as always, has filed his L-01 report at Town Hall on Gary's unapproved cart lights and speaker, and he has noted that the flamingo count stays under review until Donna finishes thinning. Meanwhile Rosa, sitting comfortably at home, is going over her shift schedule one more time to make sure no call-in can touch her Saturday at six.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 2.13075,
+    "total_usd": 2.16146,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -2983,13 +2967,12 @@
         "usd": 0.48691
       },
       "2026-10-16": {
-        "ticks": 13,
-        "usd": 0.40605
+        "ticks": 14,
+        "usd": 0.43676
       }
     }
   },
   "recent_tick_costs": [
-    0.03242,
     0.03206,
     0.03362,
     0.03157,
@@ -3012,7 +2995,8 @@
     0.03107,
     0.03239,
     0.03212,
-    0.03221
+    0.03221,
+    0.03071
   ],
   "fund": {
     "gross_usd": 0.0,
