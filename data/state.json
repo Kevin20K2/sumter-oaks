@@ -1,17 +1,19 @@
 {
-  "tick": 73,
-  "time": "2026-10-17T07:17",
+  "tick": 74,
+  "time": "2026-10-17T08:17",
   "positions": {
-    "gary": "magnolia_loop",
-    "donna": "donnas_house",
+    "gary": "rec_center",
+    "donna": "magnolia_loop",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
+      "You arrived at Rec Center."
+    ],
+    "donna": [
       "You arrived at Magnolia Loop (the street)."
     ],
-    "donna": [],
     "hal": [],
     "rosa": []
   },
@@ -710,6 +712,16 @@
       {
         "tick": 72,
         "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 73,
+        "text": "I headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 73,
+        "text": "You arrived at Rec Center.",
         "importance": 5
       }
     ],
@@ -1528,6 +1540,16 @@
         "tick": 72,
         "text": "I (donna pickleball bag): Check the bag for the spare paddle, balls, and water before heading to the court",
         "importance": 5
+      },
+      {
+        "tick": 73,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 73,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "hal": [
@@ -2185,6 +2207,11 @@
         "tick": 72,
         "text": "I (hal binoculars): Scan Magnolia Loop from the porch for flamingo counts, cart modifications, and grass parking",
         "importance": 3
+      },
+      {
+        "tick": 73,
+        "text": "I (hal binoculars): Scan Magnolia Loop for flamingo count, Gary's cart, and any grass parking",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -2867,6 +2894,11 @@
         "tick": 72,
         "text": "I (rosa shift schedule): Check the schedule one more time to confirm nothing can pull me away before six tonight",
         "importance": 5
+      },
+      {
+        "tick": 73,
+        "text": "I (rosa kitchen): Pull the pork from the fridge, season it, and start the slow cook for tonight's dinner",
+        "importance": 6
       }
     ]
   },
@@ -2913,10 +2945,10 @@
     ]
   },
   "emotions": {
-    "gary": "nervous but willing",
-    "donna": "excited",
+    "gary": "nervous, determined",
+    "donna": "determined",
     "hal": "watchful",
-    "rosa": "optimistic"
+    "rosa": "eager"
   },
   "laws": [
     {
@@ -3009,10 +3041,16 @@
       "time": "Saturday, October 17, 7:17 AM",
       "story": "At 7:17 on a breezy, clear Saturday morning in Sumter Oaks, Gary is making his way down Magnolia Loop, a little nervous but willing to see what the day brings. Donna is in her house double-checking her pickleball bag for the spare paddle, balls, and water before she heads to the court, clearly excited about the match. Hal is on his porch with his binoculars, scanning the street for flamingo counts, golf cart modifications, and anyone parking on the grass, while Rosa reviews her shift schedule once more to make sure nothing will pull her away before six tonight.",
       "dialogue": []
+    },
+    {
+      "tick": 73,
+      "time": "Saturday, October 17, 8:17 AM",
+      "story": "On a breezy, clear Saturday morning at 8:17 in Sumter Oaks, Gary is walking toward the Rec Center with a nervous but determined stride. Donna is heading out onto Magnolia Loop with the same resolve, while Hal watches from his house with binoculars, keeping an eye on the flamingos, Gary's golf cart, and any grass parking. Meanwhile, Rosa is in her kitchen seasoning pork and setting up a slow cook for tonight's dinner.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 2.22306,
+    "total_usd": 2.2542,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3035,13 +3073,12 @@
         "usd": 0.46732
       },
       "2026-10-17": {
-        "ticks": 1,
-        "usd": 0.03104
+        "ticks": 2,
+        "usd": 0.06218
       }
     }
   },
   "recent_tick_costs": [
-    0.03157,
     0.03283,
     0.03432,
     0.03338,
@@ -3064,7 +3101,8 @@
     0.03221,
     0.03071,
     0.03056,
-    0.03104
+    0.03104,
+    0.03114
   ],
   "fund": {
     "gross_usd": 0.0,
