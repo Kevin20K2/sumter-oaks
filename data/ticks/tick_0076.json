@@ -1,0 +1,118 @@
+{
+  "tick": 76,
+  "simulation_time": "Saturday, October 17, 11:17 AM",
+  "weather": "Breezy and clear, 77°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 11:17 on a breezy, clear Saturday in Sumter Oaks, Donna is walking over to the Rec Center while Gary scans the court reservation kiosk for her name and time slot. Hal settles into his porch chair to keep a watchful eye on Magnolia Loop, and Rosa sips her coffee at home, glancing at the pork and mentally listing the sides she still needs to make before six.",
+  "events": [
+    "Gary (court reservation kiosk): Scan today's court bookings for Donna's name and time slot",
+    "Donna headed to Rec Center.",
+    "Hal (hal porch chair): Settle into the porch chair and keep an eye on the Loop for a while",
+    "Rosa waited: Sip my coffee, give the pork a quick glance, and mentally list the sides still left to make before six."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 11:17 AM Saturday and I'm at the Rec Center with nobody around. I came here to see if Donna booked a slot, and I already tried the kiosk twice with no result. Time to actually use it instead of just thinking about it. If her name isn't there, I'll know to stop chasing it and go back to the cart wiring. I don't want to keep looping on this.",
+      "emotional_state": "curious",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Scan today's court bookings for Donna's name and time slot"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already trimmed the flamingo flock to three, checked the bag, and updated the bulletin board. Gary and the Saturday plans are locked in, and nobody's around to talk to. Rather than loiter on the street, I should head to the rec center to see the courts and make sure the reservation is set up for tomorrow at eight sharp, keeping it within the two-hour limit.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center to check on the pickleball court reservation for Saturday at eight and get a feel for the ladder board."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Tick 75 I scanned the Loop with the binoculars, but the result is not in my memory, so I can't say whether Donna actually thinned the flamingos. I've logged my morning check, filed Gary's report, and there's no one around to talk to. Dinner at Rosa's is tonight, and I'd rather keep the peace than file a second report. Best use of this hour: stay put, watch the Loop from the porch chair, and see if the flamingos are down to three before the evening.",
+      "emotional_state": "watchful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_porch_chair",
+          "content": "Settle into the porch chair and keep an eye on the Loop for a while"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The pork is on the slow cook, the table is set for four, and the schedule is checked. It's only 11 AM and dinner is at six. Nobody's nearby, and I've already confirmed the schedule once, so no need to fuss with it again. Best use of the hour is to sit with my coffee, keep an eye on the pork, and run through the evening so nothing slips. Everything's on track.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Sip my coffee, give the pork a quick glance, and mentally list the sides still left to make before six."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02985,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9613,
+        "output_tokens": 999,
+        "usd": 0.02922
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3107,
+        "output_tokens": 645,
+        "usd": 0.00063
+      }
+    }
+  }
+}
