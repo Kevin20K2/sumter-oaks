@@ -1,0 +1,118 @@
+{
+  "tick": 80,
+  "simulation_time": "Saturday, October 17, 3:17 PM",
+  "weather": "Breezy and clear, 80°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 3:17 on a breezy, clear Saturday in Sumter Oaks, Gary and Donna are rallying on pickleball court one at the Rec Center, with Donna feeding him gentle underhand serves and calling out footwork tips between points. Her quiet pride shows as Gary, nervous but game, keeps returning them with soft knees. Over on Magnolia Loop, Hal stands at the street bulletin board, reading every notice with a watchful eye for anything about Architectural Review or the parade. Meanwhile, Rosa is in her kitchen finishing the side dishes and checking the pork, hopeful that everything will be ready by six.",
+  "events": [
+    "Gary (pickleball court 1): Rally with Donna, knees soft, returning her easy serves",
+    "Donna (pickleball court 1): Feed Gary easy underhand serves and rally with him, coaching his footwork between points",
+    "Hal (street bulletin board): Read the notices for any Architectural Review or parade postings",
+    "Rosa (rosa kitchen): Finish the sides and check the pork so everything's ready by six"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just stepped over to feed me easy underhand serves, so the rally is about to start. I'm out here on court one with a spare paddle, nervous but glad to be doing it. I've been at this a while, so the best thing is to actually play and keep my knees soft like she told me. I'll interact with the court and rally rather than talk her ear off. Afterward I can get back to the cart wiring and my parade project.",
+      "emotional_state": "nervous but game",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Rally with Donna, knees soft, returning her easy serves"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary and I are on court one, and the last tick I took my spot opposite him to feed easy serves. He's standing behind the line with knees soft. I shouldn't repeat my invitation or the earlier instructions. Time to actually play: feed him easy underhand balls, then follow up with a bit of encouragement. Interacting with the court is the natural step to move the rally forward, and it builds toward Saturday's ladder play.",
+      "emotional_state": "proud",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Feed Gary easy underhand serves and rally with him, coaching his footwork between points"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I counted the flamingos last tick and I'm still standing on the Loop with a flock in front of me. Donna promised to thin them before Saturday's dinner at Rosa's, and it's already mid-afternoon. No one's around to argue the count with. I'll check the street bulletin board to see if anything's been posted about the Architectural Review, the parade, or the dinner, rather than count again. Keeping the peace beats filing paperwork, but I do want to know where the process stands on Gary's cart.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the notices for any Architectural Review or parade postings"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 3:17 PM and dinner is at six. I've already checked the schedule and the pork has been basting. The sides are the last piece, and I don't want to be scrambling when Hal, Gary, and Donna walk in. I'm alone, so no one to talk to. Best use of this hour is to get back in the kitchen, finish the sides, and check the pork so the evening runs smooth.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Finish the sides and check the pork so everything's ready by six"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03028,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9851,
+        "output_tokens": 992,
+        "usd": 0.02962
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 3625,
+        "output_tokens": 602,
+        "usd": 0.00066
+      }
+    }
+  }
+}
