@@ -1,0 +1,118 @@
+{
+  "tick": 72,
+  "simulation_time": "Saturday, October 17, 7:17 AM",
+  "weather": "Breezy and clear, 74°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a breezy, clear Saturday morning in Sumter Oaks, Gary is making his way down Magnolia Loop, a little nervous but willing to see what the day brings. Donna is in her house double-checking her pickleball bag for the spare paddle, balls, and water before she heads to the court, clearly excited about the match. Hal is on his porch with his binoculars, scanning the street for flamingo counts, golf cart modifications, and anyone parking on the grass, while Rosa reviews her shift schedule once more to make sure nothing will pull her away before six tonight.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Donna (donna pickleball bag): Check the bag for the spare paddle, balls, and water before heading to the court",
+    "Hal (hal binoculars): Scan Magnolia Loop from the porch for flamingo counts, cart modifications, and grass parking",
+    "Rosa (rosa shift schedule): Check the schedule one more time to confirm nothing can pull me away before six tonight"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 7:17 AM Saturday and Donna's expecting me at the courts at 7:45. My sneakers and gear are already by the door and the water bottles are chilled in the fridge. Nothing left to tinker with at the workbench, and the cart work has to wait for Architectural Review approval anyway. The courts are down Magnolia Loop, so I should grab my things and head out now. I'd rather be early and nervous than late and making excuses.",
+      "emotional_state": "nervous but willing",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Grabbing my sneakers and the chilled water bottles and heading out to meet Donna for pickleball at 7:45."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Saturday morning, the big day. Pickleball with Gary is at eight sharp on the court, and Rosa's dinner is at six. I'm home alone at 7:17 with my pickleball bag and phone right here. I've already pulled the extra flamingos and pinned the reminder, so the neighborhood stuff is handled. Before heading out, I should check my club calendar so I don't miss any other commitments and make sure the paddles and everything are set for Gary's first game.",
+      "emotional_state": "excited",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Check the bag for the spare paddle, balls, and water before heading to the court"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's early Saturday morning and I'm home alone. I've already filed the L-01 report on Gary's cart lights and speaker, and checked the terminal and drop box with nothing new. Tonight's dinner at Rosa's is what matters, and I owe the neighbors a good pecan pie. Before I head out, I'll sit on the porch with the binoculars and see whether the Loop is square this morning: carts on driveways, flamingos at three or fewer, nothing parked on grass. Order first, then pie.",
+      "emotional_state": "watchful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Magnolia Loop from the porch for flamingo counts, cart modifications, and grass parking"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Saturday morning, dinner is at six, and the prep is already staged: table set, pork in the fridge, spices lined up. I'm alone at home with no one nearby to talk to. The one thing that could still sink the evening is an unexpected shift call-in, so a last look at the schedule is worth doing, and then I can start the actual cooking.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check the schedule one more time to confirm nothing can pull me away before six tonight"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03104,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9761,
+        "output_tokens": 1081,
+        "usd": 0.03033
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4037,
+        "output_tokens": 611,
+        "usd": 0.00071
+      }
+    }
+  }
+}
