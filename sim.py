@@ -267,7 +267,8 @@ def awake(cfg, now):
 
 
 def calendar_news(cfg, state, now):
-    """Dated town events from config.json "calendar": each fires once, on its date, at the first tick after its time."""
+    """Dated town events from config.json "calendar": each fires once, on its date, at the first tick after its time.
+    Returns (line, importance, scene) for each event that fires now; scene (e.g. "parade") tells the viewer what to show."""
     fired = state.setdefault("calendar_fired", [])
     out = []
     for ev in cfg.get("calendar", []):
@@ -276,8 +277,17 @@ def calendar_news(cfg, state, now):
         if now.time() < parse_hhmm(ev.get("after", "00:00")):
             continue
         fired.append(ev["id"])
-        out.append((f"Town news: {ev['news']}", int(ev.get("importance", 7))))
+        out.append((f"Town news: {ev['news']}", int(ev.get("importance", 7)), ev.get("scene")))
     return out
+
+
+def current_season(cfg, now):
+    """The decorations season (e.g. "halloween") the viewer should show for this date, if any."""
+    day = now.date().isoformat()
+    for se in cfg.get("seasons", []):
+        if se["from"] <= day <= se["to"]:
+            return se["id"]
+    return None
 
 
 def parse_hhmm(s):
@@ -775,8 +785,9 @@ def run_tick(world, state, cfg, template, brain):
 
     # dated town events (holidays and the like) from the calendar
     cal = calendar_news(cfg, state, now)
-    town_news += [line for line, _ in cal]
-    cal_importance = dict(cal)
+    town_news += [line for line, _, _ in cal]
+    cal_importance = {line: imp for line, imp, _ in cal}
+    scenes = [scene for _, _, scene in cal if scene]
 
     # what each resident perceives next tick, and what they remember
     for a in agents:
@@ -873,6 +884,11 @@ def run_tick(world, state, cfg, template, brain):
         "laws": state["laws"],
         "cost": cost,
     }
+    season = current_season(cfg, now)
+    if season:
+        tick_doc["season"] = season
+    if scenes:
+        tick_doc["scenes"] = scenes
     name = f"tick_{tick:04d}.json"
     save_json(TICKS / name, tick_doc)
     index_path = TICKS / "index.json"

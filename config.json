@@ -91,14 +91,14 @@
       "on": "2026-10-24",
       "after": "09:00",
       "importance": 8,
-      "news": "A flyer went up on the Magnolia Loop bulletin board: Halloween on the Loop, Saturday, October 31. Trick-or-treating from 5 to 7 PM, then a costume contest at the Town Square bandstand at 7, with prizes for best costume and best-decorated golf cart."
+      "news": "A flyer went up on the Magnolia Loop bulletin board: Halloween on the Loop, Saturday, October 31. Trick-or-treating from 5 to 7 PM, a golf cart parade around the Loop at 6, then a costume contest at the Town Square bandstand at 7, with prizes for best costume and best-decorated golf cart. Decorations welcome all week."
     },
     {
       "id": "halloween-reminder",
       "on": "2026-10-30",
       "after": "09:00",
       "importance": 7,
-      "news": "Reminder on the bulletin board: Halloween on the Loop is tomorrow. Trick-or-treating 5 to 7 PM; costume contest at the Town Square bandstand at 7."
+      "news": "Reminder on the bulletin board: Halloween on the Loop is tomorrow. Trick-or-treating 5 to 7 PM, the golf cart parade at 6, and the costume contest at the Town Square bandstand at 7."
     },
     {
       "id": "halloween-morning",
@@ -115,6 +115,14 @@
       "news": "Trick-or-treaters are out on Magnolia Loop: visiting grandkids in costumes, golf carts trimmed in orange, and doorbells ringing up and down the street."
     },
     {
+      "id": "halloween-parade",
+      "on": "2026-10-31",
+      "after": "18:00",
+      "importance": 8,
+      "scene": "parade",
+      "news": "The Halloween golf cart parade is rolling around Magnolia Loop: carts trimmed in orange lights, cobwebs and jack-o'-lanterns, horns tooting, with neighbors waving from the curb."
+    },
+    {
       "id": "halloween-contest",
       "on": "2026-10-31",
       "after": "19:00",
@@ -127,6 +135,13 @@
       "after": "08:00",
       "importance": 6,
       "news": "The morning after Halloween: candy wrappers on the sidewalks, a slumping inflatable ghost, and a note at Town Hall asking that Halloween decorations come down by November 7."
+    }
+  ],
+  "seasons": [
+    {
+      "id": "halloween",
+      "from": "2026-10-24",
+      "to": "2026-11-01"
     }
   ]
 }
