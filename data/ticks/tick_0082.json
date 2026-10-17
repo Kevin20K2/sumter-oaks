@@ -1,0 +1,117 @@
+{
+  "tick": 82,
+  "simulation_time": "Saturday, October 17, 5:17 PM",
+  "weather": "Breezy and clear, 78°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 5:17 on a breezy, clear Saturday evening in Sumter Oaks, Gary is rallying with Donna on pickleball court one at the Rec Center, working on his footwork and feeling encouraged by her praise. Donna, optimistic as ever, has invited him to be her doubles partner on the ladder and promised to handle the sign-up. Over on Magnolia Loop, Hal is checking the mailbox kiosk for the Architectural Review ruling on Gary's golf cart modifications, a wait he's approaching with some wariness. Meanwhile, Rosa is fussing over the pork in her kitchen one last time and keeping the sides warm for the six guests she's expecting.",
+  "events": [
+    "Gary (pickleball court 1): Keep rallying with Donna, knees soft, working on my footwork",
+    "Hal (mailbox kiosk): Check mail for any Architectural Review ruling on Gary's cart modifications",
+    "Rosa (rosa kitchen): Check the pork one last time and keep the sides warm for six"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna is checking the ladder standings for a Pruitt-Kowalski team, so she's clearly thinking ahead. We've been rallying all afternoon and my last few shots actually landed where I aimed. I've said my piece about being terrible already, so no point repeating it. Best move is to keep playing and stay useful and game, working on the footwork she coached me on. The cart parade project can wait until after dinner at Rosa's.",
+      "emotional_state": "encouraged",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Keep rallying with Donna, knees soft, working on my footwork"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just said he's getting the hang of it and the ball went where he aimed. That's the moment to lock him in as my doubles partner. I checked the ladder board last tick, so I know where we'd start. He's not hesitating, so I'll keep the rally momentum and ask him straight out to be my partner for the ladder. Keep it warm and short, don't repeat the coffee invite.",
+      "emotional_state": "optimistic",
+      "importance_rating": 7,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "That's the spirit, Gary! You've got a natural touch, and I'm not just saying that. Be my doubles partner on the ladder, we'd climb fast, and I'll handle all the signing up."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've counted the flamingos three times now and the last memory says I was making a final count. No one is around, it's evening, and Donna promised to thin them before Saturday's dinner at Rosa's. Rather than keep staring at plastic birds, I should check the mailbox kiosk for any Architectural Review rulings on Gary's cart. If the flock is at three or under, I let it lie and keep the peace, which is better than another report.",
+      "emotional_state": "wary",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "mailbox_kiosk",
+          "content": "Check mail for any Architectural Review ruling on Gary's cart modifications"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 5:17 and the pork is basted, sides are done, and the table is set for four with the good plates. I've already checked my shift schedule and confirmed nothing conflicts with six. Nobody's in sight yet, so there's no one to talk to. One last look at the kitchen to make sure the pork is resting right and everything's warm will keep me calm and ready for when Hal, Gary, and Donna walk in.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check the pork one last time and keep the sides warm for six"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03056,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9737,
+        "output_tokens": 1035,
+        "usd": 0.02982
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3589,
+        "output_tokens": 758,
+        "usd": 0.00074
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "tick": 82,
-  "time": "2026-10-17T16:17",
+  "tick": 83,
+  "time": "2026-10-17T17:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,10 +9,10 @@
   },
   "perceptions": {
     "gary": [
-      "Donna (ladder standings board): Check the ladder standings to see where a Pruitt-Kowalski team would start"
+      "Donna said to Gary: “That's the spirit, Gary! You've got a natural touch, and I'm not just saying that. Be my doubles partner on the ladder, we'd climb fast, and I'll handle all the signing up.”"
     ],
     "donna": [
-      "Gary said to Donna: “Knees soft, got it. Hey, that last one actually went where I aimed it. Keep 'em coming, I think I'm starting to get the hang of this.”"
+      "Gary (pickleball court 1): Keep rallying with Donna, knees soft, working on my footwork"
     ],
     "hal": [],
     "rosa": []
@@ -792,6 +792,16 @@
       {
         "tick": 81,
         "text": "Donna (ladder standings board): Check the ladder standings to see where a Pruitt-Kowalski team would start",
+        "importance": 4
+      },
+      {
+        "tick": 82,
+        "text": "I (pickleball court 1): Keep rallying with Donna, knees soft, working on my footwork",
+        "importance": 4
+      },
+      {
+        "tick": 82,
+        "text": "Donna said to Gary: “That's the spirit, Gary! You've got a natural touch, and I'm not just saying that. Be my doubles partner on the ladder, we'd climb fast, and I'll handle all the signing up.”",
         "importance": 4
       }
     ],
@@ -1690,6 +1700,16 @@
         "tick": 81,
         "text": "Gary said to Donna: “Knees soft, got it. Hey, that last one actually went where I aimed it. Keep 'em coming, I think I'm starting to get the hang of this.”",
         "importance": 6
+      },
+      {
+        "tick": 82,
+        "text": "I said to Gary: “That's the spirit, Gary! You've got a natural touch, and I'm not just saying that. Be my doubles partner on the ladder, we'd climb fast, and I'll handle all the signing up.”",
+        "importance": 7
+      },
+      {
+        "tick": 82,
+        "text": "Gary (pickleball court 1): Keep rallying with Donna, knees soft, working on my footwork",
+        "importance": 7
       }
     ],
     "hal": [
@@ -2396,6 +2416,11 @@
       {
         "tick": 81,
         "text": "I (donna flamingo flock): Make a final count of flamingos visible from the street to confirm Donna kept her promise",
+        "importance": 4
+      },
+      {
+        "tick": 82,
+        "text": "I (mailbox kiosk): Check mail for any Architectural Review ruling on Gary's cart modifications",
         "importance": 4
       }
     ],
@@ -3124,6 +3149,11 @@
         "tick": 81,
         "text": "I (rosa dining table): Set the table for four with the good plates, napkins, and a little centerpiece so it feels welcoming",
         "importance": 6
+      },
+      {
+        "tick": 82,
+        "text": "I (rosa kitchen): Check the pork one last time and keep the sides warm for six",
+        "importance": 6
       }
     ]
   },
@@ -3170,10 +3200,10 @@
     ]
   },
   "emotions": {
-    "gary": "cheerful",
+    "gary": "encouraged",
     "donna": "optimistic",
-    "hal": "watchful",
-    "rosa": "content"
+    "hal": "wary",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -3254,47 +3284,9 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 77,
-      "time": "Saturday, October 17, 12:17 PM",
-      "story": "It's a breezy, clear Saturday just after noon in Sumter Oaks, and Gary is nervously lacing up his sneakers at the Rec Center while Donna cheerfully waves him toward court one with a spare paddle. Across the way, Hal is heading out onto Magnolia Loop with a watchful eye, and at home Rosa is checking the pork in her kitchen before she starts on the sides for tonight.",
-      "dialogue": [
-        "Gary said to Donna: “There you are. Sneakers are on and the soldering iron's unplugged, so which court are we on? Go easy on me.”",
-        "Donna said to Gary: “Gary, look at you showing up early! Grab that spare paddle and let's get in a little practice on court one, because the ladder won't climb itself.”"
-      ]
-    },
-    {
-      "tick": 78,
-      "time": "Saturday, October 17, 1:17 PM",
-      "story": "Saturday afternoon in Sumter Oaks is breezy and clear at 79 degrees, and Gary is out on pickleball court one with a spare paddle, nervous but game. Donna is delighted to coach him, telling him to keep his knees soft and promising easy shots first so he'll be talking like a pro by dinner. Over on Magnolia Loop, Hal is watchfully counting the pink flamingos on the lawns against the neighborhood's L-02 limit. Meanwhile, Rosa is in her kitchen prepping the sides and basting the pork, determined to make tonight's dinner a success.",
-      "dialogue": [
-        "Donna said to Gary: “Court one, Gary, it's wide open. Stand behind the line, keep your knees soft, and I'll feed you easy ones first. By dinner at Rosa's you'll be talking like a ladder climber.”"
-      ]
-    },
-    {
-      "tick": 79,
-      "time": "Saturday, October 17, 2:17 PM",
-      "story": "At 2:17 on a breezy, clear Saturday in Sumter Oaks, Gary and Donna are warming up on pickleball court one at the Rec Center, with Donna feeding him easy underhand serves while he tries to keep his knees soft behind the line. Over on Magnolia Loop, Hal is quietly counting the pink plastic flamingos in Donna's flock to see whether she has thinned them down to three or fewer. Meanwhile, Rosa is at home checking her shift schedule to make sure she isn't on call and that nothing will get in the way of six o'clock.",
-      "dialogue": []
-    },
-    {
-      "tick": 80,
-      "time": "Saturday, October 17, 3:17 PM",
-      "story": "At 3:17 on a breezy, clear Saturday in Sumter Oaks, Gary and Donna are rallying on pickleball court one at the Rec Center, with Donna feeding him gentle underhand serves and calling out footwork tips between points. Her quiet pride shows as Gary, nervous but game, keeps returning them with soft knees. Over on Magnolia Loop, Hal stands at the street bulletin board, reading every notice with a watchful eye for anything about Architectural Review or the parade. Meanwhile, Rosa is in her kitchen finishing the side dishes and checking the pork, hopeful that everything will be ready by six.",
-      "dialogue": []
-    },
-    {
-      "tick": 81,
-      "time": "Saturday, October 17, 4:17 PM",
-      "story": "Gary is at the Rec Center cheerfully practicing his shots with Donna, who is optimistic that his last swing finally went where he aimed it. Across the way, Donna has also been checking the ladder standings board to see where a Pruitt-Kowalski team would start. Hal, watching from Magnolia Loop, is making a final count of the flamingos on the lawns to confirm Donna kept her promise. Meanwhile, Rosa is content at home, setting the table for four with the good plates, napkins, and a small centerpiece to make the evening feel welcoming.",
-      "dialogue": [
-        "Gary said to Donna: “Knees soft, got it. Hey, that last one actually went where I aimed it. Keep 'em coming, I think I'm starting to get the hang of this.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 2.4929,
+    "total_usd": 2.52346,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3317,13 +3309,12 @@
         "usd": 0.46732
       },
       "2026-10-17": {
-        "ticks": 10,
-        "usd": 0.30088
+        "ticks": 11,
+        "usd": 0.33144
       }
     }
   },
   "recent_tick_costs": [
-    0.03074,
     0.03131,
     0.03058,
     0.03033,
@@ -3346,7 +3337,8 @@
     0.03011,
     0.02924,
     0.03028,
-    0.02982
+    0.02982,
+    0.03056
   ],
   "fund": {
     "gross_usd": 0.0,
