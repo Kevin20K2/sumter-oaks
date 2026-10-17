@@ -1,0 +1,117 @@
+{
+  "tick": 78,
+  "simulation_time": "Saturday, October 17, 1:17 PM",
+  "weather": "Breezy and clear, 79°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Saturday afternoon in Sumter Oaks is breezy and clear at 79 degrees, and Gary is out on pickleball court one with a spare paddle, nervous but game. Donna is delighted to coach him, telling him to keep his knees soft and promising easy shots first so he'll be talking like a pro by dinner. Over on Magnolia Loop, Hal is watchfully counting the pink flamingos on the lawns against the neighborhood's L-02 limit. Meanwhile, Rosa is in her kitchen prepping the sides and basting the pork, determined to make tonight's dinner a success.",
+  "events": [
+    "Gary (pickleball court 1): Grab the spare paddle and start rallying with Donna",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
+    "Rosa (rosa kitchen): Prep the sides for tonight and baste the pork"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just invited me to grab the spare paddle and start practicing on court one. I already told her I'm ready and asked which court, so there's no need to ask again. The nervous part of me wants to stall, but I showed up, and the whole point is to say yes to her plan. Best move is to actually pick up the paddle and start hitting on court one. The cart lights and speaker can wait until after, and the golf cart form is already filed.",
+      "emotional_state": "nervous but game",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Grab the spare paddle and start rallying with Donna"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary is standing right here with his sneakers on and asked which court we're on. I already invited him earlier, so no more persuading. Nobody else is waiting, so court one is open. The kiosk would just add paperwork for a simple practice session, and the 2-hour cap is no issue for one hour. Time to put him to work: pick court one and give him a quick, easy-going first lesson so he sticks with it before Saturday's game.",
+      "emotional_state": "delighted",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Court one, Gary, it's wide open. Stand behind the line, keep your knees soft, and I'll feed you easy ones first. By dinner at Rosa's you'll be talking like a ladder climber."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm back on Magnolia Loop with nobody in sight. Donna promised to thin her flamingos before Saturday's dinner at Rosa's, and it's 1:17 PM on Saturday, so now is the time to check. The flock is right here among the interactive objects. I'll inspect it, count the ornaments against the three-per-lawn limit in L-02, and rely on the facts rather than assumption. If she's kept her word, no report is needed and the peace holds.",
+      "emotional_state": "watchful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street against the L-02 limit"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 1:17 PM and dinner is at six. The pork is slow cooking, the table is already set, and I have a lot of sides left to make. Nobody is around, so the best thing is to get into the kitchen and keep prepping. I also keep glancing at that shift schedule, but I've promised myself nothing pulls me away tonight. Right now the work is in the kitchen.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Prep the sides for tonight and baste the pork"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03011,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9780,
+        "output_tokens": 1040,
+        "usd": 0.02996
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 447,
+        "output_tokens": 202,
+        "usd": 0.00015
+      }
+    }
+  }
+}

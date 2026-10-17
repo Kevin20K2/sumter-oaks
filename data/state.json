@@ -1,6 +1,6 @@
 {
-  "tick": 78,
-  "time": "2026-10-17T12:17",
+  "tick": 79,
+  "time": "2026-10-17T13:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,14 +9,12 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, look at you showing up early! Grab that spare paddle and let's get in a little practice on court one, because the ladder won't climb itself.”"
+      "Donna said to Gary: “Court one, Gary, it's wide open. Stand behind the line, keep your knees soft, and I'll feed you easy ones first. By dinner at Rosa's you'll be talking like a ladder climber.”"
     ],
     "donna": [
-      "Gary said to Donna: “There you are. Sneakers are on and the soldering iron's unplugged, so which court are we on? Go easy on me.”"
+      "Gary (pickleball court 1): Grab the spare paddle and start rallying with Donna"
     ],
-    "hal": [
-      "You arrived at Magnolia Loop (the street)."
-    ],
+    "hal": [],
     "rosa": []
   },
   "memories": {
@@ -754,6 +752,16 @@
       {
         "tick": 77,
         "text": "Donna said to Gary: “Gary, look at you showing up early! Grab that spare paddle and let's get in a little practice on court one, because the ladder won't climb itself.”",
+        "importance": 4
+      },
+      {
+        "tick": 78,
+        "text": "I (pickleball court 1): Grab the spare paddle and start rallying with Donna",
+        "importance": 4
+      },
+      {
+        "tick": 78,
+        "text": "Donna said to Gary: “Court one, Gary, it's wide open. Stand behind the line, keep your knees soft, and I'll feed you easy ones first. By dinner at Rosa's you'll be talking like a ladder climber.”",
         "importance": 4
       }
     ],
@@ -1612,6 +1620,16 @@
         "tick": 77,
         "text": "Gary said to Donna: “There you are. Sneakers are on and the soldering iron's unplugged, so which court are we on? Go easy on me.”",
         "importance": 5
+      },
+      {
+        "tick": 78,
+        "text": "I said to Gary: “Court one, Gary, it's wide open. Stand behind the line, keep your knees soft, and I'll feed you easy ones first. By dinner at Rosa's you'll be talking like a ladder climber.”",
+        "importance": 6
+      },
+      {
+        "tick": 78,
+        "text": "Gary (pickleball court 1): Grab the spare paddle and start rallying with Donna",
+        "importance": 6
       }
     ],
     "hal": [
@@ -2299,6 +2317,11 @@
         "tick": 77,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 78,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
+        "importance": 5
       }
     ],
     "rosa": [
@@ -3006,6 +3029,11 @@
         "tick": 77,
         "text": "I (rosa kitchen): Check the pork, then start prepping the sides for tonight",
         "importance": 4
+      },
+      {
+        "tick": 78,
+        "text": "I (rosa kitchen): Prep the sides for tonight and baste the pork",
+        "importance": 5
       }
     ]
   },
@@ -3053,9 +3081,9 @@
   },
   "emotions": {
     "gary": "nervous but game",
-    "donna": "upbeat",
+    "donna": "delighted",
     "hal": "watchful",
-    "rosa": "hopeful"
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -3145,10 +3173,18 @@
         "Gary said to Donna: “There you are. Sneakers are on and the soldering iron's unplugged, so which court are we on? Go easy on me.”",
         "Donna said to Gary: “Gary, look at you showing up early! Grab that spare paddle and let's get in a little practice on court one, because the ladder won't climb itself.”"
       ]
+    },
+    {
+      "tick": 78,
+      "time": "Saturday, October 17, 1:17 PM",
+      "story": "Saturday afternoon in Sumter Oaks is breezy and clear at 79 degrees, and Gary is out on pickleball court one with a spare paddle, nervous but game. Donna is delighted to coach him, telling him to keep his knees soft and promising easy shots first so he'll be talking like a pro by dinner. Over on Magnolia Loop, Hal is watchfully counting the pink flamingos on the lawns against the neighborhood's L-02 limit. Meanwhile, Rosa is in her kitchen prepping the sides and basting the pork, determined to make tonight's dinner a success.",
+      "dialogue": [
+        "Donna said to Gary: “Court one, Gary, it's wide open. Stand behind the line, keep your knees soft, and I'll feed you easy ones first. By dinner at Rosa's you'll be talking like a ladder climber.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 2.37345,
+    "total_usd": 2.40356,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3171,13 +3207,12 @@
         "usd": 0.46732
       },
       "2026-10-17": {
-        "ticks": 6,
-        "usd": 0.18143
+        "ticks": 7,
+        "usd": 0.21154
       }
     }
   },
   "recent_tick_costs": [
-    0.03316,
     0.03256,
     0.03209,
     0.03075,
@@ -3200,7 +3235,8 @@
     0.03039,
     0.02965,
     0.02985,
-    0.02936
+    0.02936,
+    0.03011
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -3248,5 +3284,6 @@
     "test_mode": false,
     "level": "fair"
   },
-  "last_tick_date": "2026-10-17"
+  "last_tick_date": "2026-10-17",
+  "calendar_fired": []
 }
