@@ -1,21 +1,29 @@
 {
-  "tick": 91,
-  "time": "2026-10-18T10:17",
+  "tick": 92,
+  "time": "2026-10-18T11:17",
   "positions": {
-    "gary": "garys_house",
+    "gary": "magnolia_loop",
     "donna": "garys_house",
     "hal": "magnolia_loop",
-    "rosa": "rosas_house"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Morning, partner! I've got the bag packed with your spare paddle and fresh balls. Grab your water and let's get to court one before the Sunday crowd takes it.”"
+      "Donna said to Gary: “Perfect, grab that paddle and hop in with me. I'll drive, we'll hit court one by noon, and I'll treat you to Rosa's after if your footwork holds up.”",
+      "You arrived at Magnolia Loop (the street).",
+      "Rosa just arrived."
     ],
     "donna": [
-      "Gary said to Donna: “Morning, Donna! Just got the cart lights mounted and the speaker tested, so I'm all yours. Let me grab my paddle and we'll get some more of those easy serves in before Rosa's.”"
+      "Gary headed to Magnolia Loop (the street)."
     ],
-    "hal": [],
-    "rosa": []
+    "hal": [
+      "Gary just arrived.",
+      "Rosa just arrived."
+    ],
+    "rosa": [
+      "You arrived at Magnolia Loop (the street).",
+      "Gary just arrived."
+    ]
   },
   "memories": {
     "gary": [
@@ -888,14 +896,29 @@
         "tick": 90,
         "text": "Donna said to Gary: “Morning, partner! I've got the bag packed with your spare paddle and fresh balls. Grab your water and let's get to court one before the Sunday crowd takes it.”",
         "importance": 4
+      },
+      {
+        "tick": 91,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 91,
+        "text": "Donna said to Gary: “Perfect, grab that paddle and hop in with me. I'll drive, we'll hit court one by noon, and I'll treat you to Rosa's after if your footwork holds up.”",
+        "importance": 4
+      },
+      {
+        "tick": 91,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 91,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": -20,
-        "text": "Dropped from 4th to 6th on the ladder after my partner moved away.",
-        "importance": 5
-      },
       {
         "tick": -12,
         "text": "Asked Gary about pickleball; he dodged the question.",
@@ -1885,6 +1908,16 @@
         "tick": 90,
         "text": "Gary said to Donna: “Morning, Donna! Just got the cart lights mounted and the speaker tested, so I'm all yours. Let me grab my paddle and we'll get some more of those easy serves in before Rosa's.”",
         "importance": 6
+      },
+      {
+        "tick": 91,
+        "text": "I said to Gary: “Perfect, grab that paddle and hop in with me. I'll drive, we'll hit court one by noon, and I'll treat you to Rosa's after if your footwork holds up.”",
+        "importance": 5
+      },
+      {
+        "tick": 91,
+        "text": "Gary headed to Magnolia Loop (the street).",
+        "importance": 5
       }
     ],
     "hal": [
@@ -2651,6 +2684,21 @@
       {
         "tick": 90,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit of three",
+        "importance": 5
+      },
+      {
+        "tick": 91,
+        "text": "I (donna flamingo flock): Finish counting the flamingos visible from the street and compare the total to the L-02 limit of three",
+        "importance": 5
+      },
+      {
+        "tick": 91,
+        "text": "Gary just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 91,
+        "text": "Rosa just arrived.",
         "importance": 5
       }
     ],
@@ -3434,6 +3482,21 @@
         "tick": 90,
         "text": "I waited: puttering around Rosa's House",
         "importance": 4
+      },
+      {
+        "tick": 91,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 91,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 91,
+        "text": "Gary just arrived.",
+        "importance": 6
       }
     ]
   },
@@ -3480,10 +3543,10 @@
     ]
   },
   "emotions": {
-    "gary": "cheerful",
+    "gary": "eager",
     "donna": "eager",
-    "hal": "vigilant",
-    "rosa": "wistful, determined"
+    "hal": "determined",
+    "rosa": "worried but determined"
   },
   "laws": [
     {
@@ -3579,10 +3642,18 @@
         "Gary said to Donna: “Morning, Donna! Just got the cart lights mounted and the speaker tested, so I'm all yours. Let me grab my paddle and we'll get some more of those easy serves in before Rosa's.”",
         "Donna said to Gary: “Morning, partner! I've got the bag packed with your spare paddle and fresh balls. Grab your water and let's get to court one before the Sunday crowd takes it.”"
       ]
+    },
+    {
+      "tick": 91,
+      "time": "Sunday, October 18, 11:17 AM",
+      "story": "On a sunny Sunday morning in Sumter Oaks, Gary and Donna are eager to head out for pickleball, with Donna promising to drive them to court one by noon. Meanwhile, Hal is determined to count the pink flamingos along Magnolia Loop and check whether they break the three-flamingo limit. Rosa, a little worried but determined, is also making her way to the street, and everyone seems to be converging on Magnolia Loop.",
+      "dialogue": [
+        "Donna said to Gary: “Perfect, grab that paddle and hop in with me. I'll drive, we'll hit court one by noon, and I'll treat you to Rosa's after if your footwork holds up.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 2.77299,
+    "total_usd": 2.80246,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3609,13 +3680,12 @@
         "usd": 0.45691
       },
       "2026-10-18": {
-        "ticks": 4,
-        "usd": 0.12406
+        "ticks": 5,
+        "usd": 0.15353
       }
     }
   },
   "recent_tick_costs": [
-    0.03239,
     0.03212,
     0.03221,
     0.03071,
@@ -3638,7 +3708,8 @@
     0.0306,
     0.03242,
     0.03055,
-    0.03049
+    0.03049,
+    0.02947
   ],
   "fund": {
     "gross_usd": 0.0,

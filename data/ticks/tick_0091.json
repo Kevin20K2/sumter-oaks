@@ -1,0 +1,117 @@
+{
+  "tick": 91,
+  "simulation_time": "Sunday, October 18, 11:17 AM",
+  "weather": "Sunny, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On a sunny Sunday morning in Sumter Oaks, Gary and Donna are eager to head out for pickleball, with Donna promising to drive them to court one by noon. Meanwhile, Hal is determined to count the pink flamingos along Magnolia Loop and check whether they break the three-flamingo limit. Rosa, a little worried but determined, is also making her way to the street, and everyone seems to be converging on Magnolia Loop.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Hal (donna flamingo flock): Finish counting the flamingos visible from the street and compare the total to the L-02 limit of three",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna's standing here with the bag packed, and I already told her I'd grab my paddle. She's been patient all morning, and I don't want to keep her waiting or lose court one to the Sunday crowd. The cart lights and speaker are tested, so that's done for now. I'm already in the middle of this exchange, so no more chatting. Courts first, then Rosa's. Time to get moving to magnolia_loop and head over.",
+      "emotional_state": "eager",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with Donna to the pickleball courts before the Sunday crowd takes court one"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just said he's grabbing his paddle and will be all mine, so there's no need to ask again. He has the cart lights and speaker done, and I've got the bag packed. Rather than keep chatting, I should move us along toward court one so we get there before the Sunday crowd, and I'll keep it short and encouraging.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Perfect, grab that paddle and hop in with me. I'll drive, we'll hit court one by noon, and I'll treat you to Rosa's after if your footwork holds up."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop with the sun out and no one around. Last tick I started counting the flamingos against the L-02 limit of three, and I'll finish the job properly. A count I can write in the notebook with a date beats any complaint I make from memory. Gary's cart can wait until I see it. Flamingos first.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Finish counting the flamingos visible from the street and compare the total to the L-02 limit of three"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Sunday late morning and nobody's here. I've checked the shift schedule twice, studied the table, and waited. The dinner has clearly passed or I got the date wrong, and sitting around won't fix it. The pork is already put away, and nobody is in line-of-sight to ask. The smart move is to go find my neighbors in person on Magnolia Loop, see if Hal is okay since I worried about his house, and reschedule face to face instead of fretting.",
+      "emotional_state": "worried but determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to find Hal, Gary, and Donna in person, make sure everyone's okay, and sort out a new dinner date."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02947,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9720,
+        "output_tokens": 991,
+        "usd": 0.02935
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 421,
+        "output_tokens": 148,
+        "usd": 0.00012
+      }
+    }
+  }
+}
