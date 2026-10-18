@@ -1,0 +1,118 @@
+{
+  "tick": 96,
+  "simulation_time": "Sunday, October 18, 4:17 PM",
+  "weather": "Afternoon shower, 81°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 4:17 on this rainy-then-muggy Sunday afternoon in Sumter Oaks, Gary and Donna are warming up on pickleball court one at the Rec Center, trading easy serves and rallies while the afternoon shower lets up. Hal is out on Magnolia Loop, determinedly counting the pink plastic flamingos on the lawns so he can log the total in his complaint file. Rosa, looking a little anxious, is heading out toward Magnolia Loop herself, leaving her house behind as the community settles into its quiet Sunday.",
+  "events": [
+    "Gary (pickleball court 1): Step onto court one with my paddle and start rallying easy serves with Donna",
+    "Donna (pickleball court 1): Take position on court one and start easy serves and rallies with Gary",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and write the total in my complaint file",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna already told me to grab my paddle and head to court one, and I've already said I'm ready. No more talking needed. Time to actually get on the court and work on the footwork she's been coaching. The cart parade can wait an hour, and the form is already filed. Being useful to Donna as her partner counts too.",
+      "emotional_state": "hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Step onto court one with my paddle and start rallying easy serves with Donna"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just said he's ready to get footwork in before the shower returns. I already put us down as Pruitt-Kowalski and asked him last tick, so I shouldn't repeat myself. Time to actually get on court and rally, which is what I came here for. Court one is open, and L-05 caps reservations at two hours, so I'll be mindful of time. Best move is to start practicing with the ladder partner I've been recruiting.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Take position on court one and start easy serves and rallies with Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop with no one around, and my last tick I noted the flamingo flock as a pending task. Rain's light, and my complaint file needs an actual count. Tick 95 I intended to count them; best to actually do it now so the report to the architectural review committee has hard numbers. L-02 caps it at three visible from the street. Paperwork wins arguments.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and write the total in my complaint file"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's past 4 PM and nobody has shown up. I checked the shift schedule last tick, and it seems I didn't mix up the date. Gary and Donna went to the rec center for pickleball, and Hal was still fussing about Donna's flamingos at Tick 94, so they may just be running late and lost track of time. I'm alone at the house with the pork going cold. I can't ask anyone from here, no one's in line-of-sight. The practical move is to stop pacing and go find them. Magnolia Loop is the only connection from here, and I'll start there and track down at least one neighbor and remind them dinner is on.",
+      "emotional_state": "anxious",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to find Hal, Gary, and Donna and see what's holding up dinner."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03014,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9603,
+        "output_tokens": 1024,
+        "usd": 0.02945
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 3952,
+        "output_tokens": 588,
+        "usd": 0.00069
+      }
+    }
+  }
+}

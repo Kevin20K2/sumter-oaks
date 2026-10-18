@@ -1,21 +1,25 @@
 {
-  "tick": 96,
-  "time": "2026-10-18T15:17",
+  "tick": 97,
+  "time": "2026-10-18T16:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
     "hal": "magnolia_loop",
-    "rosa": "rosas_house"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “There he is! I put us down on the ladder as Pruitt-Kowalski, so no backing out now. Grab your paddle and let's get some footwork in on court one before this shower clears.”"
+      "Donna (pickleball court 1): Take position on court one and start easy serves and rallies with Gary"
     ],
     "donna": [
-      "Gary said to Donna: “Sneakers on, soldering iron unplugged, Donna. Hit me with those easy serves and let's get some footwork in before the shower rolls back in.”"
+      "Gary (pickleball court 1): Step onto court one with my paddle and start rallying easy serves with Donna"
     ],
-    "hal": [],
-    "rosa": []
+    "hal": [
+      "Rosa just arrived."
+    ],
+    "rosa": [
+      "You arrived at Magnolia Loop (the street)."
+    ]
   },
   "memories": {
     "gary": [
@@ -988,19 +992,19 @@
         "tick": 95,
         "text": "Donna said to Gary: “There he is! I put us down on the ladder as Pruitt-Kowalski, so no backing out now. Grab your paddle and let's get some footwork in on court one before this shower clears.”",
         "importance": 4
+      },
+      {
+        "tick": 96,
+        "text": "I (pickleball court 1): Step onto court one with my paddle and start rallying easy serves with Donna",
+        "importance": 5
+      },
+      {
+        "tick": 96,
+        "text": "Donna (pickleball court 1): Take position on court one and start easy serves and rallies with Gary",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 5,
-        "text": "Gary said to Donna: “Morning, Donna. I'm here, but fair warning, I've never held a paddle in my life. Oh, and Rosa says dinner's at six tonight at her place, she wanted me to tell you.”",
-        "importance": 6
-      },
-      {
-        "tick": 6,
-        "text": "I (pickleball court 1): Hand Gary the spare paddle, step onto court 1, and start a gentle rally to teach him the basics",
-        "importance": 6
-      },
       {
         "tick": 6,
         "text": "Gary (pickleball court 1): Take the spare paddle, stand behind the kitchen line, and try keeping the ball in play",
@@ -1990,6 +1994,16 @@
         "tick": 95,
         "text": "Gary said to Donna: “Sneakers on, soldering iron unplugged, Donna. Hit me with those easy serves and let's get some footwork in before the shower rolls back in.”",
         "importance": 6
+      },
+      {
+        "tick": 96,
+        "text": "I (pickleball court 1): Take position on court one and start easy serves and rallies with Gary",
+        "importance": 6
+      },
+      {
+        "tick": 96,
+        "text": "Gary (pickleball court 1): Step onto court one with my paddle and start rallying easy serves with Donna",
+        "importance": 6
       }
     ],
     "hal": [
@@ -2837,6 +2851,16 @@
         "tick": 95,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the total for my complaint file",
         "importance": 5
+      },
+      {
+        "tick": 96,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and write the total in my complaint file",
+        "importance": 6
+      },
+      {
+        "tick": 96,
+        "text": "Rosa just arrived.",
+        "importance": 6
       }
     ],
     "rosa": [
@@ -3704,56 +3728,66 @@
         "tick": 95,
         "text": "I (rosa shift schedule): Check the schedule to see if I got the dinner date wrong",
         "importance": 6
+      },
+      {
+        "tick": 96,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 96,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ]
   },
   "reflections": {
     "gary": [
-      "Rosa and Donna have both pinned me down for Saturday, and honestly I'm glad, since I'd rather be stuck with their plans than sitting alone with my wiring.",
-      "I'm a little nervous about the pickleball court Saturday morning, but Donna's paddle tips and her promise that nobody expects me to be good yet make it easier to show up.",
       "Donna's coaching and her offer to swing by at 7:45 for pickleball mean I've got a good friend keeping me on track, and I'm grateful for it.",
       "Getting the cart's lights and speaker wired up neatly feels like proof that I can still finish a project I care about, and that makes me proud.",
       "Donna has been patient with me all morning, feeding me easy serves and coaching my footwork, and I'm grateful she still wants to play with me.",
       "I'm looking forward to dinner at Rosa's with Donna after we finish rallying, and I'm hoping this practice finally helps me get better at pickleball.",
       "Donna keeps pushing me onto the court and I'm glad she does, because my footwork is finally starting to click with her easy serves.",
-      "Being Donna's doubles partner on the ladder feels like something I've earned, and I want to show up tomorrow ready to climb with her."
+      "Being Donna's doubles partner on the ladder feels like something I've earned, and I want to show up tomorrow ready to climb with her.",
+      "Rosa's roast has been waiting on me all afternoon, so I want to finish this rally with Donna and get over there by six without letting anyone down again.",
+      "Donna keeps pushing me to be sharper on the ladder, and I'm glad she's in my corner even when she teases me about my footwork."
     ],
     "donna": [
-      "Gary finally said yes in ink, so Saturday at eight sharp on the court and dinner at Rosa's at six are locked in, and I'm glad I didn't have to chase him any further.",
-      "Hal gave me a fair warning about the flamingos and then agreed to a pecan pie, and I think neighbors who call out problems straight and still show up for dinner are worth keeping close.",
       "Hal caught me bending the flamingo rule, but he was fair about it, and I'm glad we can settle it over Rosa's dinner on Saturday.",
       "Gary is taking his pickleball seriously and making me a little proud, so I'll roll over at 7:45 tomorrow to make sure he gets to the court on time.",
       "Gary is a good sport who shows up early and keeps pushing me to rally, and I like that about him.",
       "Pickleball on court one with Gary is my favorite part of the week, and I want us to keep climbing that ladder together.",
       "Gary is coming along nicely on the court, and I'm proud of how hard he's working on his footwork, so I'm glad we're partners on the ladder.",
-      "Locking in Pruitt-Kowalski with Gary feels like a real goal now, and I'm already looking forward to picking him up at 7:45 to practice on court one."
+      "Locking in Pruitt-Kowalski with Gary feels like a real goal now, and I'm already looking forward to picking him up at 7:45 to practice on court one.",
+      "Gary's footwork is improving and I love how easily we fall into rhythm together on court one, even with Hal's warnings about those birds hanging over my mind.",
+      "Rosa's dinner tonight at six feels like a good reward after our ladder match, and I hope Gary and Hal keep showing up for these simple moments we share."
     ],
     "hal": [
-      "I'm glad Donna agreed to thin her flamingos so Saturday's dinner at Rosa's can go smoothly, and I'm looking forward to sharing a pecan pie with the neighbors.",
-      "I want to keep the Loop orderly and fair for everyone, which means watching the carts, the flamingo count, and the grass parking while still making room for friendship.",
       "Donna's flamingos have been crowding the lawn, but she promised to thin them before Saturday's dinner at Rosa's, and I'd rather keep the peace than file another report.",
       "I keep thinking about Gary's cart lights and speaker; I want the review process to be fair to him, even if the rules are clear.",
       "Gary's cart lights and speaker are exactly the kind of unapproved clutter I keep reporting, and I'm still annoyed I haven't gotten a proper ruling on them yet.",
       "Donna's flamingos are under review, and I'll keep watching the Loop until she thins them to three or fewer, because the rules exist for a reason.",
       "I keep a close watch on Magnolia Loop because someone has to make sure Donna keeps her promise about the flamingos and Gary's cart stays within the rules.",
-      "Rosa's dinners are the one thing that brings this street together, even if I'd rather be on the porch with my binoculars than at her table."
+      "Rosa's dinners are the one thing that brings this street together, even if I'd rather be on the porch with my binoculars than at her table.",
+      "I keep thinking I let Rosa down by losing track of the afternoon, and I want to make it right at dinner tonight.",
+      "Hal is still the neighbor who insists on order and the flamingo limit, but I'm starting to see how much he cares about this street."
     ],
     "rosa": [
-      "I'm glad Donna and Gary are coming Saturday, since a table full of people I trust is what makes this kitchen feel like home again.",
-      "Getting Gary to say yes after all that chasing feels like a small victory, and I want Saturday's dinner to show him he made the right call.",
       "I've done all the prep for Saturday's dinner, and I'm glad Gary and Donna will be sitting at my table with a full heart and a full plate.",
       "I keep checking my shift schedule because I want to be there for the people I love, and I won't let anything pull me away from Saturday's dinner at six.",
       "I feel a quiet happiness knowing Hal, Gary, and Donna will all be gathered around my table tonight, and I want them to feel truly welcome.",
       "I find comfort in every careful step of preparation, because cooking for the people I love is how I show them they matter to me.",
       "I keep checking the clock and the schedule, but Hal, Gary, and Donna still haven't come, and I'm starting to wonder if I misread the dinner date.",
-      "I want to believe my neighbors just forgot or got held up, but the empty chairs and the cooling pork make me worry something happened at Hal's house."
+      "I want to believe my neighbors just forgot or got held up, but the empty chairs and the cooling pork make me worry something happened at Hal's house.",
+      "I felt a pang of worry when Hal didn't show, but I'm glad he and Gary took responsibility, and I want my friends to know the table is always set for them.",
+      "Pickleball and street politics keep Donna, Gary, and Hal busy, but I'd rather be the one who makes home feel like the easiest place to show up to."
     ]
   },
   "emotions": {
-    "gary": "eager",
-    "donna": "cheerful",
+    "gary": "hopeful",
+    "donna": "eager",
     "hal": "determined",
-    "rosa": "worried"
+    "rosa": "anxious"
   },
   "laws": [
     {
@@ -3843,10 +3877,16 @@
         "Gary said to Donna: “Sneakers on, soldering iron unplugged, Donna. Hit me with those easy serves and let's get some footwork in before the shower rolls back in.”",
         "Donna said to Gary: “There he is! I put us down on the ladder as Pruitt-Kowalski, so no backing out now. Grab your paddle and let's get some footwork in on court one before this shower clears.”"
       ]
+    },
+    {
+      "tick": 96,
+      "time": "Sunday, October 18, 4:17 PM",
+      "story": "At 4:17 on this rainy-then-muggy Sunday afternoon in Sumter Oaks, Gary and Donna are warming up on pickleball court one at the Rec Center, trading easy serves and rallies while the afternoon shower lets up. Hal is out on Magnolia Loop, determinedly counting the pink plastic flamingos on the lawns so he can log the total in his complaint file. Rosa, looking a little anxious, is heading out toward Magnolia Loop herself, leaving her house behind as the community settles into its quiet Sunday.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 2.93267,
+    "total_usd": 2.96281,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3873,13 +3913,12 @@
         "usd": 0.45691
       },
       "2026-10-18": {
-        "ticks": 9,
-        "usd": 0.28374
+        "ticks": 10,
+        "usd": 0.31388
       }
     }
   },
   "recent_tick_costs": [
-    0.03104,
     0.03114,
     0.03039,
     0.02965,
@@ -3902,7 +3941,8 @@
     0.03214,
     0.03336,
     0.03326,
-    0.03145
+    0.03145,
+    0.03014
   ],
   "fund": {
     "gross_usd": 0.0,
