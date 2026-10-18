@@ -1,49 +1,30 @@
 {
-  "tick": 99,
-  "time": "2026-10-18T18:17",
+  "tick": 100,
+  "time": "2026-10-18T19:17",
   "positions": {
-    "gary": "rec_center",
-    "donna": "rec_center",
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
     "hal": "rosas_house",
-    "rosa": "magnolia_loop"
+    "rosa": "garys_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “That's a wrap for today, Gary, you're moving like a pro out there. Let's pack up and get over to Rosa's before the Sunday crowd takes all the good tables.”"
+      "Donna headed to Magnolia Loop (the street).",
+      "You arrived at Magnolia Loop (the street).",
+      "Donna just arrived."
     ],
     "donna": [
-      "Gary said to Donna: “Thanks for the coaching, Donna, my knees may never forgive you but my footwork says thank you. Let's call it here so we can get over to Rosa's by six-thirty before that roast goes cold on me again.”"
+      "Gary headed to Magnolia Loop (the street).",
+      "You arrived at Magnolia Loop (the street).",
+      "Gary just arrived."
     ],
-    "hal": [
-      "Rosa said to Hal: “Thank you, Hal, apology accepted. If you see Gary or Donna on your way, tell them the table's set and there's no lecture waiting. I'll go knock on a door or two myself.”",
-      "You arrived at Rosa's House."
-    ],
+    "hal": [],
     "rosa": [
-      "Hal headed to Rosa's House."
+      "You arrived at Gary's House."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": -40,
-        "text": "Bought a 200-watt marine speaker and two strings of LED rope light for the cart.",
-        "importance": 5
-      },
-      {
-        "tick": -12,
-        "text": "Donna asked if I'd ever played pickleball. I said no and changed the subject.",
-        "importance": 5
-      },
-      {
-        "tick": -3,
-        "text": "Read the parade flyer at the Town Square: sign-ups close at the end of the month.",
-        "importance": 5
-      },
-      {
-        "tick": 1,
-        "text": "I said to Hal: “Morning, Hal. Sorry about the Buffett, just testing the speaker and it's down now. I know the lights and sound need Architectural Review sign-off before the parade, so I'm wiring it in the garage first and filing the paperwork after.”",
-        "importance": 5
-      },
       {
         "tick": 1,
         "text": "Donna said to Gary: “Gary, that speaker has great timing, and so do you. Come hit a few balls with me at the rec center this morning. I've got a spare paddle, it's thirty minutes, and coffee's on me.”",
@@ -1023,29 +1004,29 @@
         "tick": 98,
         "text": "Donna said to Gary: “That's a wrap for today, Gary, you're moving like a pro out there. Let's pack up and get over to Rosa's before the Sunday crowd takes all the good tables.”",
         "importance": 5
+      },
+      {
+        "tick": 99,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 99,
+        "text": "Donna headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 99,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 99,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 8,
-        "text": "Gary said to Donna: “All right, Donna, put us down, Saturday at eight. But if I'm late it's 'cause the cart ate my morning, so no hard feelings.”",
-        "importance": 6
-      },
-      {
-        "tick": 9,
-        "text": "I said to Gary: “Go on home and get some rest, partner, you've earned it. I'll lock up the paddles, and I'll see you Saturday at eight, cart or no cart.”",
-        "importance": 4
-      },
-      {
-        "tick": 9,
-        "text": "Gary headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 10,
-        "text": "I (donna club calendar): Pencil in Saturday 8 AM doubles with Gary and plan a practice session or two before then",
-        "importance": 5
-      },
       {
         "tick": 11,
         "text": "I (donna pickleball bag): Check the paddles and balls and pack the spare paddle for Gary's practice sessions",
@@ -2025,6 +2006,26 @@
         "tick": 98,
         "text": "Gary said to Donna: “Thanks for the coaching, Donna, my knees may never forgive you but my footwork says thank you. Let's call it here so we can get over to Rosa's by six-thirty before that roast goes cold on me again.”",
         "importance": 5
+      },
+      {
+        "tick": 99,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 99,
+        "text": "Gary headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 99,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 99,
+        "text": "Gary just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
@@ -2907,6 +2908,11 @@
         "tick": 98,
         "text": "You arrived at Rosa's House.",
         "importance": 6
+      },
+      {
+        "tick": 99,
+        "text": "I (rosa dining table): Straighten the chairs and take my seat, ready on time",
+        "importance": 5
       }
     ],
     "rosa": [
@@ -3804,6 +3810,16 @@
         "tick": 98,
         "text": "Hal headed to Rosa's House.",
         "importance": 6
+      },
+      {
+        "tick": 99,
+        "text": "I headed to Gary's House.",
+        "importance": 6
+      },
+      {
+        "tick": 99,
+        "text": "You arrived at Gary's House.",
+        "importance": 6
       }
     ]
   },
@@ -3850,10 +3866,10 @@
     ]
   },
   "emotions": {
-    "gary": "grateful",
+    "gary": "content",
     "donna": "cheerful",
-    "hal": "remorseful",
-    "rosa": "relieved"
+    "hal": "dutiful",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -3969,10 +3985,16 @@
         "Donna said to Gary: “That's a wrap for today, Gary, you're moving like a pro out there. Let's pack up and get over to Rosa's before the Sunday crowd takes all the good tables.”",
         "Rosa said to Hal: “Thank you, Hal, apology accepted. If you see Gary or Donna on your way, tell them the table's set and there's no lecture waiting. I'll go knock on a door or two myself.”"
       ]
+    },
+    {
+      "tick": 99,
+      "time": "Sunday, October 18, 7:17 PM",
+      "story": "At 7:17 on a sunny Sunday evening in Sumter Oaks, Gary and Donna both wander toward Magnolia Loop, where Rosa is also making her way, though she has her sights set on Gary's house instead. Gary is content and Donna is cheerful as they head out, while Hal, feeling dutiful, is back at Rosa's house straightening the dining chairs so everything is ready for when the evening's plans get underway. Rosa, hopeful about the night ahead, is on her way to Gary's place even as the others are scattered across the neighborhood.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 3.02456,
+    "total_usd": 3.05567,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3999,13 +4021,12 @@
         "usd": 0.45691
       },
       "2026-10-18": {
-        "ticks": 12,
-        "usd": 0.37563
+        "ticks": 13,
+        "usd": 0.40674
       }
     }
   },
   "recent_tick_costs": [
-    0.02965,
     0.02985,
     0.02936,
     0.03011,
@@ -4028,7 +4049,8 @@
     0.03145,
     0.03014,
     0.03047,
-    0.03128
+    0.03128,
+    0.03111
   ],
   "fund": {
     "gross_usd": 0.0,
