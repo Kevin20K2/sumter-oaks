@@ -1,24 +1,25 @@
 {
-  "tick": 98,
-  "time": "2026-10-18T17:17",
+  "tick": 99,
+  "time": "2026-10-18T18:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
-    "hal": "magnolia_loop",
+    "hal": "rosas_house",
     "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Nice, Gary, that's it, stay low and take little steps to the ball. Keep this up and we'll be ready for our first ladder match, and then dinner at Rosa's is on me.”"
+      "Donna said to Gary: “That's a wrap for today, Gary, you're moving like a pro out there. Let's pack up and get over to Rosa's before the Sunday crowd takes all the good tables.”"
     ],
     "donna": [
-      "Gary (pickleball court 1): Return Donna's easy serves and rally, working on footwork"
+      "Gary said to Donna: “Thanks for the coaching, Donna, my knees may never forgive you but my footwork says thank you. Let's call it here so we can get over to Rosa's by six-thirty before that roast goes cold on me again.”"
     ],
     "hal": [
-      "Rosa said to Hal: “Hal, there you are. Dinner's been ready at my place since five and your chair's still empty. Is everything okay? Where are Gary and Donna? Come on over, I'll warm the pork back up.”"
+      "Rosa said to Hal: “Thank you, Hal, apology accepted. If you see Gary or Donna on your way, tell them the table's set and there's no lecture waiting. I'll go knock on a door or two myself.”",
+      "You arrived at Rosa's House."
     ],
     "rosa": [
-      "Hal said to Rosa: “Rosa. I lost track of the afternoon and I owe you an apology. I'll be at your table tonight, on time, and I'll bring something to carry.”"
+      "Hal headed to Rosa's House."
     ]
   },
   "memories": {
@@ -1012,19 +1013,19 @@
         "tick": 97,
         "text": "Donna said to Gary: “Nice, Gary, that's it, stay low and take little steps to the ball. Keep this up and we'll be ready for our first ladder match, and then dinner at Rosa's is on me.”",
         "importance": 4
+      },
+      {
+        "tick": 98,
+        "text": "I said to Donna: “Thanks for the coaching, Donna, my knees may never forgive you but my footwork says thank you. Let's call it here so we can get over to Rosa's by six-thirty before that roast goes cold on me again.”",
+        "importance": 5
+      },
+      {
+        "tick": 98,
+        "text": "Donna said to Gary: “That's a wrap for today, Gary, you're moving like a pro out there. Let's pack up and get over to Rosa's before the Sunday crowd takes all the good tables.”",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 7,
-        "text": "Gary said to Donna: “Well, I got three in a row over the net, so I'm calling myself a natural. Another few and I'll head home to my garage, though. That cart won't wire itself for the parade.”",
-        "importance": 6
-      },
-      {
-        "tick": 8,
-        "text": "I (ladder standings board): Write Donna Pruitt and Gary Kowalski in as doubles partners, Saturday at 8",
-        "importance": 6
-      },
       {
         "tick": 8,
         "text": "Gary said to Donna: “All right, Donna, put us down, Saturday at eight. But if I'm late it's 'cause the cart ate my morning, so no hard feelings.”",
@@ -2014,6 +2015,16 @@
         "tick": 97,
         "text": "Gary (pickleball court 1): Return Donna's easy serves and rally, working on footwork",
         "importance": 5
+      },
+      {
+        "tick": 98,
+        "text": "I said to Gary: “That's a wrap for today, Gary, you're moving like a pro out there. Let's pack up and get over to Rosa's before the Sunday crowd takes all the good tables.”",
+        "importance": 5
+      },
+      {
+        "tick": 98,
+        "text": "Gary said to Donna: “Thanks for the coaching, Donna, my knees may never forgive you but my footwork says thank you. Let's call it here so we can get over to Rosa's by six-thirty before that roast goes cold on me again.”",
+        "importance": 5
       }
     ],
     "hal": [
@@ -2880,6 +2891,21 @@
       {
         "tick": 97,
         "text": "Rosa said to Hal: “Hal, there you are. Dinner's been ready at my place since five and your chair's still empty. Is everything okay? Where are Gary and Donna? Come on over, I'll warm the pork back up.”",
+        "importance": 6
+      },
+      {
+        "tick": 98,
+        "text": "I headed to Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 98,
+        "text": "Rosa said to Hal: “Thank you, Hal, apology accepted. If you see Gary or Donna on your way, tell them the table's set and there's no lecture waiting. I'll go knock on a door or two myself.”",
+        "importance": 6
+      },
+      {
+        "tick": 98,
+        "text": "You arrived at Rosa's House.",
         "importance": 6
       }
     ],
@@ -3768,6 +3794,16 @@
         "tick": 97,
         "text": "Hal said to Rosa: “Rosa. I lost track of the afternoon and I owe you an apology. I'll be at your table tonight, on time, and I'll bring something to carry.”",
         "importance": 6
+      },
+      {
+        "tick": 98,
+        "text": "I said to Hal: “Thank you, Hal, apology accepted. If you see Gary or Donna on your way, tell them the table's set and there's no lecture waiting. I'll go knock on a door or two myself.”",
+        "importance": 6
+      },
+      {
+        "tick": 98,
+        "text": "Hal headed to Rosa's House.",
+        "importance": 6
       }
     ]
   },
@@ -3814,10 +3850,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
+    "gary": "grateful",
     "donna": "cheerful",
     "hal": "remorseful",
-    "rosa": "worried but hopeful"
+    "rosa": "relieved"
   },
   "laws": [
     {
@@ -3923,10 +3959,20 @@
         "Hal said to Rosa: “Rosa. I lost track of the afternoon and I owe you an apology. I'll be at your table tonight, on time, and I'll bring something to carry.”",
         "Rosa said to Hal: “Hal, there you are. Dinner's been ready at my place since five and your chair's still empty. Is everything okay? Where are Gary and Donna? Come on over, I'll warm the pork back up.”"
       ]
+    },
+    {
+      "tick": 98,
+      "time": "Sunday, October 18, 6:17 PM",
+      "story": "At 6:17 on a sunny Sunday evening in Sumter Oaks, Gary and Donna are wrapping up a dance coaching session at the Rec Center, with Gary grateful for the lessons and Donna cheerful about his footwork. Over on Magnolia Loop, Hal is feeling remorseful as he heads to Rosa's House, while Rosa, who has accepted his apology, is relieved and getting the table ready. Everyone seems to be heading toward a happy Sunday supper at Rosa's.",
+      "dialogue": [
+        "Gary said to Donna: “Thanks for the coaching, Donna, my knees may never forgive you but my footwork says thank you. Let's call it here so we can get over to Rosa's by six-thirty before that roast goes cold on me again.”",
+        "Donna said to Gary: “That's a wrap for today, Gary, you're moving like a pro out there. Let's pack up and get over to Rosa's before the Sunday crowd takes all the good tables.”",
+        "Rosa said to Hal: “Thank you, Hal, apology accepted. If you see Gary or Donna on your way, tell them the table's set and there's no lecture waiting. I'll go knock on a door or two myself.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 2.99328,
+    "total_usd": 3.02456,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3953,13 +3999,12 @@
         "usd": 0.45691
       },
       "2026-10-18": {
-        "ticks": 11,
-        "usd": 0.34435
+        "ticks": 12,
+        "usd": 0.37563
       }
     }
   },
   "recent_tick_costs": [
-    0.03039,
     0.02965,
     0.02985,
     0.02936,
@@ -3982,7 +4027,8 @@
     0.03326,
     0.03145,
     0.03014,
-    0.03047
+    0.03047,
+    0.03128
   ],
   "fund": {
     "gross_usd": 0.0,
