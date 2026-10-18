@@ -1,0 +1,117 @@
+{
+  "tick": 86,
+  "simulation_time": "Saturday, October 17, 9:17 PM",
+  "weather": "Breezy and clear, 75°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "rosas_house",
+    "rosa": "hals_house"
+  },
+  "story": "On Magnolia Loop, Donna is still glowing from Gary's footwork on the courts, and she sends him off with a reminder to rest up for a 7:45 pickup and court one tomorrow. Gary heads off toward Rosa's House, looking content, while Hal, dutiful as ever, wanders over to Magnolia Loop. Back at Hal's House, Rosa sits with her violation notebook open, uneasy and flipping through the latest entries for any clue about where the three of them went tonight.",
+  "events": [
+    "Gary headed to Rosa's House.",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (hal violation notebook): Flip through the latest entries for any clue about where Hal, Gary, and Donna went tonight"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "We just got back from the courts and Donna's right here on Magnolia Loop. We already settled the plan: celebrate at Rosa's tonight, practice tomorrow at 7:45. No need to re-ask anything. Rosa's house connects to the street, and it's past nine, so the sensible thing is to head over for dinner and let Donna follow. Plus I'm still a little buzzed about being on the ladder, and good company beats an empty house.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's for the dinner Donna and I planned after our first night on the pickleball ladder."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 9:17 PM on a breezy night and Gary just followed me onto Magnolia Loop after our rally. I already planned to roll over at 7:45 tomorrow to get him to the court, so I don't need to re-invite him. Time to wrap up the evening on a high note: praise his footwork, confirm the morning plan, and send us both home so he's rested for the ladder.",
+      "emotional_state": "cheerful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, your footwork tonight was something, I'm telling the whole ladder. Get some rest, because I'm picking you up at 7:45 sharp tomorrow and we're reserving court one."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's past nine at night, and I'm at Rosa's with nobody around. I counted seats and read the shift schedule already, so there's nothing more to gain here. Dinner is Saturday and I'd rather not stew over Donna's flamingos tonight; she promised to thin them. My real unfinished business is Gary's cart and the review committee, and a ruling on the lights and speaker is still outstanding. Standing in an empty dining room accomplishes nothing. I can poke at the kitchen, but better to head back out to Magnolia Loop and see for myself whether the flamingos are down to three and whether Gary's cart is parked right and quiet. Quiet hours are on too, so I'll keep an ear out for that speaker.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Nothing more to learn here. Walking the Loop to check on the flamingos and listen for Gary's speaker during quiet hours."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 9:17 PM Saturday. The dinner was supposed to be at six at my place, and I'm standing at Hal's house with nobody around. My memories are all cheerful prep, but I can't actually recall the dinner happening, and I've been walking around checking the board for where the neighbors are. Hal's porch is empty. Standing here staring at binoculars and a violation notebook won't answer anything. The most useful thing is to check Hal's violation notebook, since it might show where Hal has been watching or what happened tonight, and it's right here. If that tells me nothing, I'll head back out onto Magnolia Loop to look for the others.",
+      "emotional_state": "uneasy",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Flip through the latest entries for any clue about where Hal, Gary, and Donna went tonight"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03154,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9475,
+        "output_tokens": 1246,
+        "usd": 0.03141
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 433,
+        "output_tokens": 166,
+        "usd": 0.00013
+      }
+    }
+  }
+}
