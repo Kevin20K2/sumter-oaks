@@ -1,0 +1,117 @@
+{
+  "tick": 94,
+  "simulation_time": "Sunday, October 18, 2:17 PM",
+  "weather": "Afternoon shower, 81°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On a rainy Sunday afternoon in Sumter Oaks, Gary and Donna are both striding determinedly toward the Rec Center along Magnolia Loop, each clearly bent on a match. Hal, looking dutiful, catches Donna with a warning about the flock of birds on the lawn and a golf cart that may not care who wins. Meanwhile Rosa, hopeful as ever, heads off toward her own house.",
+  "events": [
+    "Gary headed to Rec Center.",
+    "Donna headed to Rec Center.",
+    "Rosa headed to Rosa's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna told me to paddle the cart over to court one, and Rosa's got dinner set for six, so everything's already settled. No more chatter needed. I owe Donna the footwork practice, and my cart modification form is already filed. Time to stop talking and get to the rec center.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the pickleball courts with Donna to get my footwork warmed up before dinner at Rosa's."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa just invited Gary and me to dinner at six, so that's settled and I don't need to answer at length. Gary is standing right here and we're already behind on our practice. Instead of chatting more, I should get us moving to the rec center so we can use court one before the ladder match. The shower is annoying, but the courts are what matter. Let me head to the rec center and Gary will follow along in the cart.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center to get court one and warm Gary up before the ladder match, then dinner at Rosa's at six."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa's dinner is at six and I owe her one for the last missed meal. Gary and Donna are about to roll off to the rec center, so they're not going to sit still for a lecture, and the cart modification complaint belongs in front of the committee anyway, not shouted down the street in the rain. I've already told Rosa I'm coming. No sense repeating myself. But since I'm standing right at the flamingo flock with Donna in sight, a dry reminder about the three-ornament limit costs nothing and keeps the record straight. Short, civil, and then I'll go file the paperwork like a sergeant should.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 2:17 PM. Everyone has already answered me: Gary and Donna are finishing pickleball and coming over, Hal says he'll be along shortly. Asking again would just be nagging, and my memories have me thinking the dinner is tonight at six, which is hours away. The roast doesn't need to be cooling yet. The best thing I can do for my goal is go home, get the prep going, and trust my neighbors to show up. I'll head to my house.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading home to start the roast and set the table. Everyone's confirmed, so I'll get ready for six."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03326,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10903,
+        "output_tokens": 1076,
+        "usd": 0.03257
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3690,
+        "output_tokens": 634,
+        "usd": 0.00069
+      }
+    }
+  }
+}

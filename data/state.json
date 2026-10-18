@@ -1,32 +1,37 @@
 {
-  "tick": 94,
-  "time": "2026-10-18T13:17",
+  "tick": 95,
+  "time": "2026-10-18T14:17",
   "positions": {
-    "gary": "magnolia_loop",
-    "donna": "magnolia_loop",
+    "gary": "rec_center",
+    "donna": "rec_center",
     "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Okay, Gary, we're officially behind schedule, so paddle in the cart and let's roll to court one. Rosa's gets us afterward, and I want your footwork warm before the ladder match.”",
-      "Hal said to Rosa: “Day got away from me, Rosa. That's on me, not you. Keep that roast warm and I'll be along shortly.”",
-      "Rosa said to Donna: “Donna, good, I've got you and Gary both in one spot. Dinner at my place tonight at six, Hal's coming too. Go win your pickleball, then come hungry.”"
+      "Donna headed to Rec Center.",
+      "Hal said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
+      "Rosa headed to Rosa's House.",
+      "You arrived at Rec Center.",
+      "Donna just arrived."
     ],
     "donna": [
-      "Gary said to Rosa: “Rosa, that's on me, I thought you meant tonight. Donna and I will finish our rally and come straight over, and I'll eat enough for Hal too.”",
-      "Hal said to Rosa: “Day got away from me, Rosa. That's on me, not you. Keep that roast warm and I'll be along shortly.”",
-      "Rosa said to Donna: “Donna, good, I've got you and Gary both in one spot. Dinner at my place tonight at six, Hal's coming too. Go win your pickleball, then come hungry.”"
+      "Gary headed to Rec Center.",
+      "Hal said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
+      "Rosa headed to Rosa's House.",
+      "You arrived at Rec Center.",
+      "Gary just arrived."
     ],
     "hal": [
-      "Gary said to Rosa: “Rosa, that's on me, I thought you meant tonight. Donna and I will finish our rally and come straight over, and I'll eat enough for Hal too.”",
-      "Donna said to Gary: “Okay, Gary, we're officially behind schedule, so paddle in the cart and let's roll to court one. Rosa's gets us afterward, and I want your footwork warm before the ladder match.”",
-      "Rosa said to Donna: “Donna, good, I've got you and Gary both in one spot. Dinner at my place tonight at six, Hal's coming too. Go win your pickleball, then come hungry.”"
+      "Gary headed to Rec Center.",
+      "Donna headed to Rec Center.",
+      "Rosa headed to Rosa's House."
     ],
     "rosa": [
-      "Gary said to Rosa: “Rosa, that's on me, I thought you meant tonight. Donna and I will finish our rally and come straight over, and I'll eat enough for Hal too.”",
-      "Donna said to Gary: “Okay, Gary, we're officially behind schedule, so paddle in the cart and let's roll to court one. Rosa's gets us afterward, and I want your footwork warm before the ladder match.”",
-      "Hal said to Rosa: “Day got away from me, Rosa. That's on me, not you. Keep that roast warm and I'll be along shortly.”"
+      "Gary headed to Rec Center.",
+      "Donna headed to Rec Center.",
+      "Hal said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
+      "You arrived at Rosa's House."
     ]
   },
   "memories": {
@@ -960,39 +965,39 @@
         "tick": 93,
         "text": "Rosa said to Donna: “Donna, good, I've got you and Gary both in one spot. Dinner at my place tonight at six, Hal's coming too. Go win your pickleball, then come hungry.”",
         "importance": 4
+      },
+      {
+        "tick": 94,
+        "text": "I headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 94,
+        "text": "Donna headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 94,
+        "text": "Hal said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
+        "importance": 4
+      },
+      {
+        "tick": 94,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 94,
+        "text": "You arrived at Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 94,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 2,
-        "text": "I headed to Rec Center.",
-        "importance": 6
-      },
-      {
-        "tick": 2,
-        "text": "Gary said to Donna: “Alright, Donna, you win. Thirty minutes and I'm holding you to the coffee, but I'm warning you, I'll be terrible at it.”",
-        "importance": 6
-      },
-      {
-        "tick": 2,
-        "text": "Rosa said to Gary: “Gary, before you two run off: I'm hosting a welcome dinner at my place, and you, Donna, and Hal are all invited. It's the least I can do after the disposal, and I'm not taking no for an answer.”",
-        "importance": 6
-      },
-      {
-        "tick": 2,
-        "text": "You arrived at Rec Center.",
-        "importance": 6
-      },
-      {
-        "tick": 3,
-        "text": "I (court reservation kiosk): Reserve pickleball court 1 for one hour, starting now, under Donna Pruitt",
-        "importance": 5
-      },
-      {
-        "tick": 4,
-        "text": "I (ladder standings board): Check the ladder standings and see where I rank and who's ahead of me",
-        "importance": 4
-      },
       {
         "tick": 4,
         "text": "Gary just arrived.",
@@ -1962,6 +1967,36 @@
         "tick": 93,
         "text": "Rosa said to Donna: “Donna, good, I've got you and Gary both in one spot. Dinner at my place tonight at six, Hal's coming too. Go win your pickleball, then come hungry.”",
         "importance": 4
+      },
+      {
+        "tick": 94,
+        "text": "I headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 94,
+        "text": "Gary headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 94,
+        "text": "Hal said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
+        "importance": 5
+      },
+      {
+        "tick": 94,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 94,
+        "text": "You arrived at Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 94,
+        "text": "Gary just arrived.",
+        "importance": 5
       }
     ],
     "hal": [
@@ -2784,6 +2819,26 @@
         "tick": 93,
         "text": "Rosa said to Donna: “Donna, good, I've got you and Gary both in one spot. Dinner at my place tonight at six, Hal's coming too. Go win your pickleball, then come hungry.”",
         "importance": 5
+      },
+      {
+        "tick": 94,
+        "text": "I said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
+        "importance": 4
+      },
+      {
+        "tick": 94,
+        "text": "Gary headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 94,
+        "text": "Donna headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 94,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 4
       }
     ],
     "rosa": [
@@ -3621,6 +3676,31 @@
         "tick": 93,
         "text": "Hal said to Rosa: “Day got away from me, Rosa. That's on me, not you. Keep that roast warm and I'll be along shortly.”",
         "importance": 7
+      },
+      {
+        "tick": 94,
+        "text": "I headed to Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 94,
+        "text": "Gary headed to Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 94,
+        "text": "Donna headed to Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 94,
+        "text": "Hal said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
+        "importance": 6
+      },
+      {
+        "tick": 94,
+        "text": "You arrived at Rosa's House.",
+        "importance": 6
       }
     ]
   },
@@ -3667,10 +3747,10 @@
     ]
   },
   "emotions": {
-    "gary": "apologetic",
-    "donna": "upbeat",
-    "hal": "gruff, sheepish",
-    "rosa": "relieved, hopeful"
+    "gary": "determined",
+    "donna": "determined",
+    "hal": "dutiful",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -3751,53 +3831,9 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 89,
-      "time": "Sunday, October 18, 9:17 AM",
-      "story": "Gary is content at his workbench, powering up a speaker and testing its sound at a low volume, while Donna eagerly makes her way over to his house. Out on Magnolia Loop, Hal sets off with quiet determination, and back at her dining table Rosa, worried but practical, looks over the leftover food and table settings. She is putting the pork away and weighing whether the dinner should be rescheduled.",
-      "dialogue": []
-    },
-    {
-      "tick": 90,
-      "time": "Sunday, October 18, 10:17 AM",
-      "story": "Gary and Donna are at Gary's House on a sunny Sunday morning, with Gary's cart lights just mounted and Donna's bag packed for pickleball on court one before the Sunday crowd arrives. Hal is out on Magnolia Loop, keeping a vigilant eye on the pink plastic flamingos and counting them against the three-flamingo limit in the community rules. Over at Rosa's House, Rosa is puttering around, a little wistful but determined, waiting for her own turn on the court.",
-      "dialogue": [
-        "Gary said to Donna: “Morning, Donna! Just got the cart lights mounted and the speaker tested, so I'm all yours. Let me grab my paddle and we'll get some more of those easy serves in before Rosa's.”",
-        "Donna said to Gary: “Morning, partner! I've got the bag packed with your spare paddle and fresh balls. Grab your water and let's get to court one before the Sunday crowd takes it.”"
-      ]
-    },
-    {
-      "tick": 91,
-      "time": "Sunday, October 18, 11:17 AM",
-      "story": "On a sunny Sunday morning in Sumter Oaks, Gary and Donna are eager to head out for pickleball, with Donna promising to drive them to court one by noon. Meanwhile, Hal is determined to count the pink flamingos along Magnolia Loop and check whether they break the three-flamingo limit. Rosa, a little worried but determined, is also making her way to the street, and everyone seems to be converging on Magnolia Loop.",
-      "dialogue": [
-        "Donna said to Gary: “Perfect, grab that paddle and hop in with me. I'll drive, we'll hit court one by noon, and I'll treat you to Rosa's after if your footwork holds up.”"
-      ]
-    },
-    {
-      "tick": 92,
-      "time": "Sunday, October 18, 12:17 PM",
-      "story": "Gary is out on Magnolia Loop in the sunny 80-degree afternoon, cheerfully teasing Rosa about the pickleball beating he's about to take from Donna, who has just hurried over from his house, eager to get going. Hal stands at the street bulletin board with a stern look, pinning up a written notice about the flamingo count and a cart modification review. Rosa, who had set a table and let a pork roast cool for Gary and Donna, walks over with concern and a hopeful smile, asking whether she got the day wrong and offering them dinner anyway.",
-      "dialogue": [
-        "Gary said to Rosa: “Afternoon, Rosa! Heading off to get humiliated at pickleball with Donna, but save us a table tonight, we'll be hungry.”",
-        "Rosa said to Hal: “Hal, there you are. I had the table set for you, Gary, and Donna and sat there with a cooling pork roast. Did I get the day wrong, or did something come up at your place? Either way, the food's still good if you two want to come eat.”"
-      ]
-    },
-    {
-      "tick": 93,
-      "time": "Sunday, October 18, 1:17 PM",
-      "story": "On a sunny October Sunday afternoon at 1:17 on Magnolia Loop in Sumter Oaks, Rosa catches Gary and Donna and sets dinner for six o'clock at her place, with Hal invited too. Gary apologizes for mixing up the evening, promising he and Donna will finish their pickleball rally and come over hungry, while Donna cheerfully hurries them toward court one. Hal, sounding gruff but sheepish, admits the day got away from him and asks Rosa to keep the roast warm, and Rosa, relieved and hopeful, sends everyone off to play well.",
-      "dialogue": [
-        "Gary said to Rosa: “Rosa, that's on me, I thought you meant tonight. Donna and I will finish our rally and come straight over, and I'll eat enough for Hal too.”",
-        "Donna said to Gary: “Okay, Gary, we're officially behind schedule, so paddle in the cart and let's roll to court one. Rosa's gets us afterward, and I want your footwork warm before the ladder match.”",
-        "Hal said to Rosa: “Day got away from me, Rosa. That's on me, not you. Keep that roast warm and I'll be along shortly.”",
-        "Rosa said to Donna: “Donna, good, I've got you and Gary both in one spot. Dinner at my place tonight at six, Hal's coming too. Go win your pickleball, then come hungry.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 2.86796,
+    "total_usd": 2.90122,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3824,13 +3860,12 @@
         "usd": 0.45691
       },
       "2026-10-18": {
-        "ticks": 7,
-        "usd": 0.21903
+        "ticks": 8,
+        "usd": 0.25229
       }
     }
   },
   "recent_tick_costs": [
-    0.03071,
     0.03056,
     0.03104,
     0.03114,
@@ -3853,7 +3888,8 @@
     0.03049,
     0.02947,
     0.03214,
-    0.03336
+    0.03336,
+    0.03326
   ],
   "fund": {
     "gross_usd": 0.0,
