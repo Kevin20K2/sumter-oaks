@@ -1,0 +1,116 @@
+{
+  "tick": 95,
+  "simulation_time": "Sunday, October 18, 3:17 PM",
+  "weather": "Afternoon shower, 82°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 3:17 on this Sunday afternoon in Sumter Oaks, a brief shower has the grounds looking damp but not washed out, and Gary and Donna are at the Rec Center, where Donna has already signed them up for the pickleball ladder as a team. Gary is eager to get some footwork in before the rain returns, though he's still a little distracted by a soldering iron he swears he unplugged. Over on Magnolia Loop, Hal is standing determinedly in the wet street tallying the pink flamingos on Donna's lawn for his complaint file, and back at home Rosa is worried she may have mixed up a dinner date, so she's checking her shift schedule.",
+  "events": [
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total for my complaint file",
+    "Rosa (rosa shift schedule): Check the schedule to see if I got the dinner date wrong"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at the Rec Center and Donna just walked in. I said I'd be terrible, and she's been patient all morning. Dinner at Rosa's and the ladder are on my mind, and I want to be useful to her as a partner. Hal's L-02 jab about her lawn birds is fresh, so a friendly heads-up would be neighborly. But I shouldn't ramble. I'll greet her, say I'm ready to rally, and get on with it.",
+      "emotional_state": "eager",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Sneakers on, soldering iron unplugged, Donna. Hit me with those easy serves and let's get some footwork in before the shower rolls back in."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just walked into the Rec Center, and I'm already here. I signed us up as Pruitt-Kowalski last tick, so I've got what I came for on the sign-up front. He's showing up early like always, and my memory says I'm proud of how he's working on his footwork. I shouldn't repeat my partner pitch, since he's already my partner. Time to move forward with the actual plan: practice. Hal's lecture about the lawn birds is a nuisance for later, but right now I've got my partner standing in front of me and a court to use. Let him know the sheet is signed and get him moving toward court one.",
+      "emotional_state": "cheerful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "There he is! I put us down on the ladder as Pruitt-Kowalski, so no backing out now. Grab your paddle and let's get some footwork in on court one before this shower clears."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Nobody's in line-of-sight. Gary, Donna, and Rosa all left the Loop, and it's coming down rain. I've been warning Donna about the flock and my goal is to get a formal complaint in front of the architectural review committee. The flamingo flock is right here, so I can document the count for the record before I file anything. A hard number carries more weight than my say-so. Gary's cart mods I can handle once I've got the flamingo count in hand. Dinner at Rosa's at six, so there's time yet.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and note the total for my complaint file"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm back at the house and nobody is in sight. Gary and Donna headed to the Rec Center, and Hal is out arguing about flamingos. They never showed for dinner, and it's past three, so I'm wondering whether I got the date wrong. The rosa_shift_schedule is right here, and it's the one thing that can tell me whether I misread the day or double-booked a shift. I'll check it before I decide whether to go knock on doors on Magnolia Loop.",
+      "emotional_state": "worried",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check the schedule to see if I got the dinner date wrong"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03145,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9778,
+        "output_tokens": 1173,
+        "usd": 0.03129
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 473,
+        "output_tokens": 221,
+        "usd": 0.00016
+      }
+    }
+  }
+}

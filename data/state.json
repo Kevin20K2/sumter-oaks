@@ -1,6 +1,6 @@
 {
-  "tick": 95,
-  "time": "2026-10-18T14:17",
+  "tick": 96,
+  "time": "2026-10-18T15:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,30 +9,13 @@
   },
   "perceptions": {
     "gary": [
-      "Donna headed to Rec Center.",
-      "Hal said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
-      "Rosa headed to Rosa's House.",
-      "You arrived at Rec Center.",
-      "Donna just arrived."
+      "Donna said to Gary: “There he is! I put us down on the ladder as Pruitt-Kowalski, so no backing out now. Grab your paddle and let's get some footwork in on court one before this shower clears.”"
     ],
     "donna": [
-      "Gary headed to Rec Center.",
-      "Hal said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
-      "Rosa headed to Rosa's House.",
-      "You arrived at Rec Center.",
-      "Gary just arrived."
+      "Gary said to Donna: “Sneakers on, soldering iron unplugged, Donna. Hit me with those easy serves and let's get some footwork in before the shower rolls back in.”"
     ],
-    "hal": [
-      "Gary headed to Rec Center.",
-      "Donna headed to Rec Center.",
-      "Rosa headed to Rosa's House."
-    ],
-    "rosa": [
-      "Gary headed to Rec Center.",
-      "Donna headed to Rec Center.",
-      "Hal said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
-      "You arrived at Rosa's House."
-    ]
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
@@ -995,19 +978,19 @@
         "tick": 94,
         "text": "Donna just arrived.",
         "importance": 4
-      }
-    ],
-    "donna": [
+      },
       {
-        "tick": 4,
-        "text": "Gary just arrived.",
+        "tick": 95,
+        "text": "I said to Donna: “Sneakers on, soldering iron unplugged, Donna. Hit me with those easy serves and let's get some footwork in before the shower rolls back in.”",
         "importance": 4
       },
       {
-        "tick": 5,
-        "text": "I said to Gary: “There he is! Court 1 is ours for the hour, Gary, and the spare paddle's right here. Stand behind the kitchen line and just keep the ball in, you'll be a natural by noon.”",
-        "importance": 6
-      },
+        "tick": 95,
+        "text": "Donna said to Gary: “There he is! I put us down on the ladder as Pruitt-Kowalski, so no backing out now. Grab your paddle and let's get some footwork in on court one before this shower clears.”",
+        "importance": 4
+      }
+    ],
+    "donna": [
       {
         "tick": 5,
         "text": "Gary said to Donna: “Morning, Donna. I'm here, but fair warning, I've never held a paddle in my life. Oh, and Rosa says dinner's at six tonight at her place, she wanted me to tell you.”",
@@ -1997,6 +1980,16 @@
         "tick": 94,
         "text": "Gary just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 95,
+        "text": "I said to Gary: “There he is! I put us down on the ladder as Pruitt-Kowalski, so no backing out now. Grab your paddle and let's get some footwork in on court one before this shower clears.”",
+        "importance": 6
+      },
+      {
+        "tick": 95,
+        "text": "Gary said to Donna: “Sneakers on, soldering iron unplugged, Donna. Hit me with those easy serves and let's get some footwork in before the shower rolls back in.”",
+        "importance": 6
       }
     ],
     "hal": [
@@ -2839,6 +2832,11 @@
         "tick": 94,
         "text": "Rosa headed to Rosa's House.",
         "importance": 4
+      },
+      {
+        "tick": 95,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the total for my complaint file",
+        "importance": 5
       }
     ],
     "rosa": [
@@ -3701,6 +3699,11 @@
         "tick": 94,
         "text": "You arrived at Rosa's House.",
         "importance": 6
+      },
+      {
+        "tick": 95,
+        "text": "I (rosa shift schedule): Check the schedule to see if I got the dinner date wrong",
+        "importance": 6
       }
     ]
   },
@@ -3747,10 +3750,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "determined",
-    "hal": "dutiful",
-    "rosa": "hopeful"
+    "gary": "eager",
+    "donna": "cheerful",
+    "hal": "determined",
+    "rosa": "worried"
   },
   "laws": [
     {
@@ -3831,9 +3834,19 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 95,
+      "time": "Sunday, October 18, 3:17 PM",
+      "story": "At 3:17 on this Sunday afternoon in Sumter Oaks, a brief shower has the grounds looking damp but not washed out, and Gary and Donna are at the Rec Center, where Donna has already signed them up for the pickleball ladder as a team. Gary is eager to get some footwork in before the rain returns, though he's still a little distracted by a soldering iron he swears he unplugged. Over on Magnolia Loop, Hal is standing determinedly in the wet street tallying the pink flamingos on Donna's lawn for his complaint file, and back at home Rosa is worried she may have mixed up a dinner date, so she's checking her shift schedule.",
+      "dialogue": [
+        "Gary said to Donna: “Sneakers on, soldering iron unplugged, Donna. Hit me with those easy serves and let's get some footwork in before the shower rolls back in.”",
+        "Donna said to Gary: “There he is! I put us down on the ladder as Pruitt-Kowalski, so no backing out now. Grab your paddle and let's get some footwork in on court one before this shower clears.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 2.90122,
+    "total_usd": 2.93267,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3860,13 +3873,12 @@
         "usd": 0.45691
       },
       "2026-10-18": {
-        "ticks": 8,
-        "usd": 0.25229
+        "ticks": 9,
+        "usd": 0.28374
       }
     }
   },
   "recent_tick_costs": [
-    0.03056,
     0.03104,
     0.03114,
     0.03039,
@@ -3889,7 +3901,8 @@
     0.02947,
     0.03214,
     0.03336,
-    0.03326
+    0.03326,
+    0.03145
   ],
   "fund": {
     "gross_usd": 0.0,
