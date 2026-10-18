@@ -1,18 +1,22 @@
 {
-  "tick": 89,
-  "time": "2026-10-18T08:17",
+  "tick": 90,
+  "time": "2026-10-18T09:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
-    "hal": "hals_house",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "Donna just arrived."
+    ],
     "donna": [
+      "You arrived at Gary's House."
+    ],
+    "hal": [
       "You arrived at Magnolia Loop (the street)."
     ],
-    "hal": [],
     "rosa": []
   },
   "memories": {
@@ -865,6 +869,16 @@
       {
         "tick": 88,
         "text": "I (gary golf cart): Mount the light strips and secure the speaker wiring on the cart",
+        "importance": 4
+      },
+      {
+        "tick": 89,
+        "text": "I (gary workbench): Power up the speaker and test the sound levels at low volume",
+        "importance": 4
+      },
+      {
+        "tick": 89,
+        "text": "Donna just arrived.",
         "importance": 4
       }
     ],
@@ -1843,6 +1857,16 @@
         "tick": 88,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 89,
+        "text": "I headed to Gary's House.",
+        "importance": 5
+      },
+      {
+        "tick": 89,
+        "text": "You arrived at Gary's House.",
+        "importance": 5
       }
     ],
     "hal": [
@@ -2594,6 +2618,16 @@
       {
         "tick": 88,
         "text": "I (hal violation notebook): Log today's flamingo count and Gary's cart modifications, noting dates and Donna's promise to thin the flock",
+        "importance": 4
+      },
+      {
+        "tick": 89,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 89,
+        "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
       }
     ],
@@ -3367,6 +3401,11 @@
         "tick": 88,
         "text": "I (rosa shift schedule): Check today's date against my shifts and see whether the dinner date has passed or needs rescheduling",
         "importance": 6
+      },
+      {
+        "tick": 89,
+        "text": "I (rosa dining table): Look over the table settings and leftover food, put the pork away, and figure out whether to reschedule the dinner",
+        "importance": 5
       }
     ]
   },
@@ -3413,10 +3452,10 @@
     ]
   },
   "emotions": {
-    "gary": "restless",
-    "donna": "determined",
-    "hal": "watchful",
-    "rosa": "uneasy"
+    "gary": "content",
+    "donna": "eager",
+    "hal": "determined",
+    "rosa": "worried but practical"
   },
   "laws": [
     {
@@ -3497,9 +3536,16 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 89,
+      "time": "Sunday, October 18, 9:17 AM",
+      "story": "Gary is content at his workbench, powering up a speaker and testing its sound at a low volume, while Donna eagerly makes her way over to his house. Out on Magnolia Loop, Hal sets off with quiet determination, and back at her dining table Rosa, worried but practical, looks over the leftover food and table settings. She is putting the pork away and weighing whether the dinner should be rescheduled.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 2.71195,
+    "total_usd": 2.7425,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3526,13 +3572,12 @@
         "usd": 0.45691
       },
       "2026-10-18": {
-        "ticks": 2,
-        "usd": 0.06302
+        "ticks": 3,
+        "usd": 0.09357
       }
     }
   },
   "recent_tick_costs": [
-    0.031,
     0.03107,
     0.03239,
     0.03212,
@@ -3555,7 +3600,8 @@
     0.03008,
     0.03154,
     0.0306,
-    0.03242
+    0.03242,
+    0.03055
   ],
   "fund": {
     "gross_usd": 0.0,
