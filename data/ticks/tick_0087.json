@@ -1,0 +1,118 @@
+{
+  "tick": 87,
+  "simulation_time": "Sunday, October 18, 7:17 AM",
+  "weather": "Sunny, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a sunny Sunday morning in Sumter Oaks, Gary is bench-testing speaker wiring at his workbench while Donna packs her pickleball bag with paddles and balls, including a spare for him. Across the way, Hal peers through his binoculars, counting flamingos on Donna's lawn and eyeing Gary's golf cart for any suspicious modifications. Meanwhile, Rosa sits with her shift schedule, double-checking her per-diem hours against the dinner date she has planned.",
+  "events": [
+    "Gary (gary workbench): Bench-test the speaker wiring and tidy up the connections before Donna arrives",
+    "Donna (donna pickleball bag): Check the paddles and balls and pack the spare for Gary",
+    "Hal (hal binoculars): Scan Donna's lawn and Gary's cart to count flamingos and check for modifications",
+    "Rosa (rosa shift schedule): Check my per-diem shifts against the dinner date and time"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 7:17 and Donna is picking me up at 7:45 for pickleball, so I've got about half an hour. My memories are a little tangled: I seem to have ended up at Rosa's House last tick, but I'm back home now with the workbench and cart in front of me. I filed the Architectural Review form for the lights and sound system, so I shouldn't be hanging more on the cart until it's approved, since L-01 covers anything visible from the street. What I can do is bench-test the speaker wiring and tidy up the connections, which is quiet and perfectly legal inside my own house, and it keeps me busy and feeling useful until Donna shows up.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Bench-test the speaker wiring and tidy up the connections before Donna arrives"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 7:17 on a sunny Sunday morning and I'm home alone. I told Gary I'd pick him up at 7:45 sharp and we'd take court one. I have the pickleball bag and the club calendar right here. Nobody's around to talk to, so the useful thing is to check the bag and make sure the spare paddle and balls are packed before I roll over to Rosa's house to get Gary. Then next tick I can head out to Magnolia Loop.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Check the paddles and balls and pack the spare for Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm back home on Magnolia Loop at 7:17 on a quiet Sunday morning, nobody in sight. Donna promised to thin the flamingos before Saturday's dinner, and I'd rather keep the peace than file another report. Still, the Loop is my watch, and a by-the-book man does his own count rather than trusting hearsay. The binoculars are right here. Let me tally the ornaments and cart modifications on the street for the record. No accusations yet, just facts, and I'll decide about the review committee after I see the numbers.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Donna's lawn and Gary's cart to count flamingos and check for modifications"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Sunday morning at 7:17 and I'm home. My memories are muddled: I keep thinking the dinner is Saturday at six or 'tonight,' but I went hunting for the neighbors around Hal's house, which suggests I've lost track of where everyone is. The shift schedule is right here in my house, and I've been checking it anyway. Before I go chasing neighbors around the street again, I should look at the schedule and pin down when I'm actually working and when the dinner really is, so I don't double-book myself and can give a firm time when I invite people.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts against the dinner date and time"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0306,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9332,
+        "output_tokens": 1181,
+        "usd": 0.03047
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 403,
+        "output_tokens": 174,
+        "usd": 0.00013
+      }
+    }
+  }
+}

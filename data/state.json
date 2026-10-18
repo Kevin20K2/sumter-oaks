@@ -1,24 +1,16 @@
 {
-  "tick": 87,
-  "time": "2026-10-17T21:17",
+  "tick": 88,
+  "time": "2026-10-18T07:17",
   "positions": {
-    "gary": "rosas_house",
-    "donna": "magnolia_loop",
-    "hal": "magnolia_loop",
-    "rosa": "hals_house"
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "Donna said to Gary: “Gary, your footwork tonight was something, I'm telling the whole ladder. Get some rest, because I'm picking you up at 7:45 sharp tomorrow and we're reserving court one.”",
-      "You arrived at Rosa's House."
-    ],
-    "donna": [
-      "Gary headed to Rosa's House.",
-      "Hal just arrived."
-    ],
-    "hal": [
-      "You arrived at Magnolia Loop (the street)."
-    ],
+    "gary": [],
+    "donna": [],
+    "hal": [],
     "rosa": []
   },
   "memories": {
@@ -861,6 +853,11 @@
       {
         "tick": 86,
         "text": "You arrived at Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 87,
+        "text": "I (gary workbench): Bench-test the speaker wiring and tidy up the connections before Donna arrives",
         "importance": 4
       }
     ],
@@ -1824,6 +1821,11 @@
         "tick": 86,
         "text": "Hal just arrived.",
         "importance": 6
+      },
+      {
+        "tick": 87,
+        "text": "I (donna pickleball bag): Check the paddles and balls and pack the spare for Gary",
+        "importance": 5
       }
     ],
     "hal": [
@@ -2565,6 +2567,11 @@
       {
         "tick": 86,
         "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 87,
+        "text": "I (hal binoculars): Scan Donna's lawn and Gary's cart to count flamingos and check for modifications",
         "importance": 4
       }
     ],
@@ -3328,6 +3335,11 @@
         "tick": 86,
         "text": "I (hal violation notebook): Flip through the latest entries for any clue about where Hal, Gary, and Donna went tonight",
         "importance": 6
+      },
+      {
+        "tick": 87,
+        "text": "I (rosa shift schedule): Check my per-diem shifts against the dinner date and time",
+        "importance": 5
       }
     ]
   },
@@ -3375,9 +3387,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "cheerful",
-    "hal": "dutiful",
-    "rosa": "uneasy"
+    "donna": "eager",
+    "hal": "watchful",
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -3488,10 +3500,16 @@
       "dialogue": [
         "Donna said to Gary: “Gary, your footwork tonight was something, I'm telling the whole ladder. Get some rest, because I'm picking you up at 7:45 sharp tomorrow and we're reserving court one.”"
       ]
+    },
+    {
+      "tick": 87,
+      "time": "Sunday, October 18, 7:17 AM",
+      "story": "At 7:17 on a sunny Sunday morning in Sumter Oaks, Gary is bench-testing speaker wiring at his workbench while Donna packs her pickleball bag with paddles and balls, including a spare for him. Across the way, Hal peers through his binoculars, counting flamingos on Donna's lawn and eyeing Gary's golf cart for any suspicious modifications. Meanwhile, Rosa sits with her shift schedule, double-checking her per-diem hours against the dinner date she has planned.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 2.64893,
+    "total_usd": 2.67953,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3516,11 +3534,14 @@
       "2026-10-17": {
         "ticks": 15,
         "usd": 0.45691
+      },
+      "2026-10-18": {
+        "ticks": 1,
+        "usd": 0.0306
       }
     }
   },
   "recent_tick_costs": [
-    0.03045,
     0.03237,
     0.031,
     0.03107,
@@ -3543,7 +3564,8 @@
     0.03221,
     0.03164,
     0.03008,
-    0.03154
+    0.03154,
+    0.0306
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -3591,6 +3613,6 @@
     "test_mode": false,
     "level": "fair"
   },
-  "last_tick_date": "2026-10-17",
+  "last_tick_date": "2026-10-18",
   "calendar_fired": []
 }
