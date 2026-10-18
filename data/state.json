@@ -1,6 +1,6 @@
 {
-  "tick": 90,
-  "time": "2026-10-18T09:17",
+  "tick": 91,
+  "time": "2026-10-18T10:17",
   "positions": {
     "gary": "garys_house",
     "donna": "garys_house",
@@ -9,14 +9,12 @@
   },
   "perceptions": {
     "gary": [
-      "Donna just arrived."
+      "Donna said to Gary: “Morning, partner! I've got the bag packed with your spare paddle and fresh balls. Grab your water and let's get to court one before the Sunday crowd takes it.”"
     ],
     "donna": [
-      "You arrived at Gary's House."
+      "Gary said to Donna: “Morning, Donna! Just got the cart lights mounted and the speaker tested, so I'm all yours. Let me grab my paddle and we'll get some more of those easy serves in before Rosa's.”"
     ],
-    "hal": [
-      "You arrived at Magnolia Loop (the street)."
-    ],
+    "hal": [],
     "rosa": []
   },
   "memories": {
@@ -879,6 +877,16 @@
       {
         "tick": 89,
         "text": "Donna just arrived.",
+        "importance": 4
+      },
+      {
+        "tick": 90,
+        "text": "I said to Donna: “Morning, Donna! Just got the cart lights mounted and the speaker tested, so I'm all yours. Let me grab my paddle and we'll get some more of those easy serves in before Rosa's.”",
+        "importance": 4
+      },
+      {
+        "tick": 90,
+        "text": "Donna said to Gary: “Morning, partner! I've got the bag packed with your spare paddle and fresh balls. Grab your water and let's get to court one before the Sunday crowd takes it.”",
         "importance": 4
       }
     ],
@@ -1867,6 +1875,16 @@
         "tick": 89,
         "text": "You arrived at Gary's House.",
         "importance": 5
+      },
+      {
+        "tick": 90,
+        "text": "I said to Gary: “Morning, partner! I've got the bag packed with your spare paddle and fresh balls. Grab your water and let's get to court one before the Sunday crowd takes it.”",
+        "importance": 6
+      },
+      {
+        "tick": 90,
+        "text": "Gary said to Donna: “Morning, Donna! Just got the cart lights mounted and the speaker tested, so I'm all yours. Let me grab my paddle and we'll get some more of those easy serves in before Rosa's.”",
+        "importance": 6
       }
     ],
     "hal": [
@@ -2629,6 +2647,11 @@
         "tick": 89,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 90,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit of three",
+        "importance": 5
       }
     ],
     "rosa": [
@@ -3406,6 +3429,11 @@
         "tick": 89,
         "text": "I (rosa dining table): Look over the table settings and leftover food, put the pork away, and figure out whether to reschedule the dinner",
         "importance": 5
+      },
+      {
+        "tick": 90,
+        "text": "I waited: puttering around Rosa's House",
+        "importance": 4
       }
     ]
   },
@@ -3452,10 +3480,10 @@
     ]
   },
   "emotions": {
-    "gary": "content",
+    "gary": "cheerful",
     "donna": "eager",
-    "hal": "determined",
-    "rosa": "worried but practical"
+    "hal": "vigilant",
+    "rosa": "wistful, determined"
   },
   "laws": [
     {
@@ -3542,10 +3570,19 @@
       "time": "Sunday, October 18, 9:17 AM",
       "story": "Gary is content at his workbench, powering up a speaker and testing its sound at a low volume, while Donna eagerly makes her way over to his house. Out on Magnolia Loop, Hal sets off with quiet determination, and back at her dining table Rosa, worried but practical, looks over the leftover food and table settings. She is putting the pork away and weighing whether the dinner should be rescheduled.",
       "dialogue": []
+    },
+    {
+      "tick": 90,
+      "time": "Sunday, October 18, 10:17 AM",
+      "story": "Gary and Donna are at Gary's House on a sunny Sunday morning, with Gary's cart lights just mounted and Donna's bag packed for pickleball on court one before the Sunday crowd arrives. Hal is out on Magnolia Loop, keeping a vigilant eye on the pink plastic flamingos and counting them against the three-flamingo limit in the community rules. Over at Rosa's House, Rosa is puttering around, a little wistful but determined, waiting for her own turn on the court.",
+      "dialogue": [
+        "Gary said to Donna: “Morning, Donna! Just got the cart lights mounted and the speaker tested, so I'm all yours. Let me grab my paddle and we'll get some more of those easy serves in before Rosa's.”",
+        "Donna said to Gary: “Morning, partner! I've got the bag packed with your spare paddle and fresh balls. Grab your water and let's get to court one before the Sunday crowd takes it.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 2.7425,
+    "total_usd": 2.77299,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3572,13 +3609,12 @@
         "usd": 0.45691
       },
       "2026-10-18": {
-        "ticks": 3,
-        "usd": 0.09357
+        "ticks": 4,
+        "usd": 0.12406
       }
     }
   },
   "recent_tick_costs": [
-    0.03107,
     0.03239,
     0.03212,
     0.03221,
@@ -3601,7 +3637,8 @@
     0.03154,
     0.0306,
     0.03242,
-    0.03055
+    0.03055,
+    0.03049
   ],
   "fund": {
     "gross_usd": 0.0,

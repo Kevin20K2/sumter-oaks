@@ -1,0 +1,117 @@
+{
+  "tick": 90,
+  "simulation_time": "Sunday, October 18, 10:17 AM",
+  "weather": "Sunny, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary and Donna are at Gary's House on a sunny Sunday morning, with Gary's cart lights just mounted and Donna's bag packed for pickleball on court one before the Sunday crowd arrives. Hal is out on Magnolia Loop, keeping a vigilant eye on the pink plastic flamingos and counting them against the three-flamingo limit in the community rules. Over at Rosa's House, Rosa is puttering around, a little wistful but determined, waiting for her own turn on the court.",
+  "events": [
+    "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit of three",
+    "Rosa waited: puttering around Rosa's House"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just walked into my garage right as I finished testing the speaker at low volume. The cart lights are mounted, the wiring's tidy, and I filed the modification form back at tick 35, so I should be square with L-01 as long as I wait on approval. She's been patient with me all morning, so I'll greet her, show off the cart a bit, and head to the court with her. Dinner at Rosa's and tomorrow's ladder match are on my mind, and I'm not looking to dwell in the garage.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Morning, Donna! Just got the cart lights mounted and the speaker tested, so I'm all yours. Let me grab my paddle and we'll get some more of those easy serves in before Rosa's."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just arrived at Gary's house with the pickleball bag, spare paddle packed. Gary is right here in line of sight. I invited him earlier in tick 1 and he's been practicing with me, and I want to lock in our ladder partnership. It's past 10 AM, so no point lingering. I should greet him, tell him the bag is packed, and get him moving toward the courts while keeping it short and friendly. I'll keep the court reservation limit of two hours in mind for later.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Morning, partner! I've got the bag packed with your spare paddle and fresh balls. Grab your water and let's get to court one before the Sunday crowd takes it."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm back on Magnolia Loop with nobody around, and the flamingo flock is right here. I counted and logged earlier, but one more look at the actual flock is worth it. The notebook's got Donna's promise on record. L-02 caps it at three visible from the street, and I intend to see the count stays honest before I take anything to the architectural review committee.",
+      "emotional_state": "vigilant",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street against the L-02 limit of three"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Sunday morning, 10:17 AM, and I'm standing in my own house with leftover pork and no neighbors. My memories say I went to Hal's house, checked his notebook, checked my shift schedule, and looked over the table. I still haven't pinned down whether I mixed up the dinner date or whether the date simply passed. I've already checked the schedule twice, so the next useful step is to stop fretting and look at what's actually in my kitchen, since the food needs handling. Then I can go find Hal, Gary, and Donna in person and reschedule properly. The kitchen is the concrete next step: salvage or store the food, and think about a fresh date.",
+      "emotional_state": "wistful, determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "puttering around Rosa's House"
+        }
+      },
+      "engine_note": "tried to use None, which isn't in rosas_house"
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03049,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9404,
+        "output_tokens": 1155,
+        "usd": 0.03036
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 470,
+        "output_tokens": 168,
+        "usd": 0.00013
+      }
+    }
+  }
+}
