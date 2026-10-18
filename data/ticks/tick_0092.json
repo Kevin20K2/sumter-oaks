@@ -1,0 +1,116 @@
+{
+  "tick": 92,
+  "simulation_time": "Sunday, October 18, 12:17 PM",
+  "weather": "Sunny, 80°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "Gary is out on Magnolia Loop in the sunny 80-degree afternoon, cheerfully teasing Rosa about the pickleball beating he's about to take from Donna, who has just hurried over from his house, eager to get going. Hal stands at the street bulletin board with a stern look, pinning up a written notice about the flamingo count and a cart modification review. Rosa, who had set a table and let a pork roast cool for Gary and Donna, walks over with concern and a hopeful smile, asking whether she got the day wrong and offering them dinner anyway.",
+  "events": [
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (street bulletin board): Post a written notice citing L-02 flamingo count and L-01 cart modification review"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm on Magnolia Loop at lunchtime. Donna said she'd drive us to court one, and I'm supposed to be heading to pickleball, but she isn't in my line of sight, only Hal and Rosa. Rosa just showed up, and dinner at her place is on the books after rallying. Hal's right here too, and I haven't talked to him. I've got the cart parade on my mind, but I filed that Architectural Review form already and the pickleball practice is what I committed to today. A quick friendly word with Rosa keeps me neighborly, and I can mention I'll be by for dinner later with Donna. Then I'll go meet Donna at the courts.",
+      "emotional_state": "cheerful",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Afternoon, Rosa! Heading off to get humiliated at pickleball with Donna, but save us a table tonight, we'll be hungry."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary headed to Magnolia Loop with his paddle, and I told him I'd drive and we'd be at court one by noon. It's already 12:17 and I'm still standing in his house with nobody around. Court one will fill up with the Sunday crowd and I only get two hours on it, so I should stop dawdling. Nothing in this house helps my goal, so I'll follow Gary out to the street, load us into the cart, and get to the courts and then Rosa's.",
+      "emotional_state": "eager",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Following Gary out to the street so we can get to court one before the Sunday crowd takes it."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've been counting Donna's flamingos for two ticks and the tally is over the L-02 limit of three. Gary and Rosa just walked up, and the Loop is where my complaints should start. Gary's cart mods under L-01 are still unapproved, and he told me himself he's wiring first and filing paperwork after. I'd rather put the facts on the record than stew on the porch. The street bulletin board is right here, so a proper written notice about the flamingo count and the cart review fits my duty. It's by the book, and it gives Donna and Gary a fair chance to comply before I go to the committee.",
+      "emotional_state": "stern",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Post a written notice citing L-02 flamingo count and L-01 cart modification review"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I walked out to Magnolia Loop and found Gary and Hal both here, finally. The dinner was supposed to be today and nobody showed, so I need to find out if I misread the date or if something happened at Hal's house. I should address Hal directly since I invited him first and my worry is mostly about him. Keep it warm but blunt, ask once, and don't pile on guilt. If they're free, I can offer to reheat the pork so the evening isn't wasted.",
+      "emotional_state": "concerned, hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, there you are. I had the table set for you, Gary, and Donna and sat there with a cooling pork roast. Did I get the day wrong, or did something come up at your place? Either way, the food's still good if you two want to come eat."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03214,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9759,
+        "output_tokens": 1248,
+        "usd": 0.032
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 493,
+        "output_tokens": 185,
+        "usd": 0.00014
+      }
+    }
+  }
+}
