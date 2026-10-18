@@ -1,0 +1,118 @@
+{
+  "tick": 88,
+  "simulation_time": "Sunday, October 18, 8:17 AM",
+  "weather": "Sunny, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On a sunny Sunday morning at 8:17, Gary is out in his driveway mounting light strips and wiring speakers onto his golf cart, restless as ever about his latest upgrade. Donna has set off down Magnolia Loop with a determined look, while Hal stays at home with his violation notebook, logging the flamingo count and Gary's cart modifications along with Donna's promise to thin the flock. Meanwhile, Rosa is uneasy at her house, checking her shift schedule to see whether her dinner date has already passed or needs to be rescheduled.",
+  "events": [
+    "Gary (gary golf cart): Mount the light strips and secure the speaker wiring on the cart",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (hal violation notebook): Log today's flamingo count and Gary's cart modifications, noting dates and Donna's promise to thin the flock",
+    "Rosa (rosa shift schedule): Check today's date against my shifts and see whether the dinner date has passed or needs rescheduling"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 8:17 AM and Donna said she'd pick me up at 7:45, but nobody's here. Maybe I misjudged the day, or she's running late. Either way, I'm home, and the speaker wiring is bench-tested but I haven't checked it on the cart itself. The parade rig is my real goal, so I'll use the time. I filed the modification form already, so the exterior lights should be covered, but I'll keep the work tidy and not blast any sound on the street. Back to the cart to mount and secure the lights.",
+      "emotional_state": "restless",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Mount the light strips and secure the speaker wiring on the cart"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 8:17 Sunday morning and nobody is around. Last tick I packed the spare paddle for Gary, so the bag is ready. I told Gary I'd pick him up at 7:45 sharp, but that time has already passed and I'm still at home, which is not like me. Gary is at Rosa's house, so I should head over rather than wait. I'll roll out on magnolia_loop and get him to court one, keeping the reservation inside the two-hour limit. No point standing around when the ladder won't climb itself.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Bag is packed with the spare paddle for Gary. I'm running behind the 7:45 pickup, so I'm heading out to collect him for court one."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at home on a quiet Sunday morning with nobody in sight. I just scanned the lawn and cart with the binoculars last tick, so repeating that gets me nothing new. The notebook is where my observations belong. I'll log what I saw, flamingo count, Gary's lights and speaker, so the record is accurate and fair before I decide whether any report is warranted. Donna promised to thin the flock before Saturday, so I'll note that too.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Log today's flamingo count and Gary's cart modifications, noting dates and Donna's promise to thin the flock"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Sunday morning, 8:17 AM, and nobody is around. My memories say I've been preparing for a Saturday dinner at six, but it's now Sunday, and I've been checking the board, Hal's house, and the notebook for clues about where everyone went. My memory seems to be running a day behind reality, and I can't tell whether Saturday's dinner happened or got missed. Rather than keep chasing neighbors around, I should look at the one thing that actually matters on my own turf: my shift schedule. I already checked it at tick 87, but the date has clearly moved past Saturday, so I should pin down what's on the calendar now and where the dinner stands. Then I can decide whether to reschedule and re-invite everyone properly. Checking the schedule is the concrete, useful step.",
+      "emotional_state": "uneasy",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check today's date against my shifts and see whether the dinner date has passed or needs rescheduling"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03242,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9353,
+        "output_tokens": 1250,
+        "usd": 0.03121
+      },
+      "claude-haiku-5-5": {
+        "calls": 6,
+        "input_tokens": 6741,
+        "output_tokens": 1079,
+        "usd": 0.00121
+      }
+    }
+  }
+}
