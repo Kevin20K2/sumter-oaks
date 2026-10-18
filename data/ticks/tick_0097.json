@@ -1,0 +1,115 @@
+{
+  "tick": 97,
+  "simulation_time": "Sunday, October 18, 5:17 PM",
+  "weather": "Afternoon shower, 80°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 5:17 on this damp Sunday in Sumter Oaks, the afternoon shower has left the air a bit cooler at 80 degrees, and Gary is working hard on the pickleball court at the Rec Center, returning Donna's easy serves while she cheers him on about staying low and taking small steps. Hal stands on Magnolia Loop, feeling sheepish after losing track of the afternoon, and he has promised Rosa he'll be at her table on time. Rosa, a little worried but hopeful, has kept dinner warm since five and is waving him over to her place with the pork ready to reheat.",
+  "events": [
+    "Gary (pickleball court 1): Return Donna's easy serves and rally, working on footwork"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna's on court one waiting and already serving easy ones. I told her I'd get some footwork in, and that's what I'm here for. Rosa's roast is at six, and it's 5:17, so I can't stretch this out, but I can give it a solid rally and then head over. Best thing right now is to actually play instead of chatting. Step on, return her serve, and get my feet moving.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Return Donna's easy serves and rally, working on footwork"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary and I are already out on court one rallying, and it's going well. I got him signed up and he showed up with his sneakers on, so the recruiting part is done. The shower is hanging around, but he's got the right attitude. I shouldn't repeat my earlier pitch. Now's the time to coach him a bit and keep the rally moving, and mention that Rosa's dinner at six is a nice reward. Keep it short and encouraging.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Nice, Gary, that's it, stay low and take little steps to the ball. Keep this up and we'll be ready for our first ladder match, and then dinner at Rosa's is on me."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa just walked up on Magnolia Loop and it's past five on a Sunday, so her dinner is likely coming soon. I've counted the flamingos twice already and the complaint file can wait. I felt I let her down earlier by losing track of the afternoon, and I want to make it right. Better to address her directly and own it than to hover with my binoculars. Gruff, but sincere.",
+      "emotional_state": "remorseful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa. I lost track of the afternoon and I owe you an apology. I'll be at your table tonight, on time, and I'll bring something to carry."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 5:17 PM, my dinner is cold, and Hal is standing right here on the street, the only one of the three I can actually reach. Last I heard he was out counting flamingos, so maybe he just lost track of time. I already invited him once at Tick 1, so I shouldn't repeat the invitation like it's new. I'll be blunt and warm, ask what happened, and tell him the table's still set and I'll keep the pork warm. That also gets me news on Gary and Donna.",
+      "emotional_state": "worried but hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, there you are. Dinner's been ready at my place since five and your chair's still empty. Is everything okay? Where are Gary and Donna? Come on over, I'll warm the pork back up."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03047,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9677,
+        "output_tokens": 1097,
+        "usd": 0.03032
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 526,
+        "output_tokens": 199,
+        "usd": 0.00015
+      }
+    }
+  }
+}

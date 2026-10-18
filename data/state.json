@@ -1,6 +1,6 @@
 {
-  "tick": 97,
-  "time": "2026-10-18T16:17",
+  "tick": 98,
+  "time": "2026-10-18T17:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,16 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna (pickleball court 1): Take position on court one and start easy serves and rallies with Gary"
+      "Donna said to Gary: “Nice, Gary, that's it, stay low and take little steps to the ball. Keep this up and we'll be ready for our first ladder match, and then dinner at Rosa's is on me.”"
     ],
     "donna": [
-      "Gary (pickleball court 1): Step onto court one with my paddle and start rallying easy serves with Donna"
+      "Gary (pickleball court 1): Return Donna's easy serves and rally, working on footwork"
     ],
     "hal": [
-      "Rosa just arrived."
+      "Rosa said to Hal: “Hal, there you are. Dinner's been ready at my place since five and your chair's still empty. Is everything okay? Where are Gary and Donna? Come on over, I'll warm the pork back up.”"
     ],
     "rosa": [
-      "You arrived at Magnolia Loop (the street)."
+      "Hal said to Rosa: “Rosa. I lost track of the afternoon and I owe you an apology. I'll be at your table tonight, on time, and I'll bring something to carry.”"
     ]
   },
   "memories": {
@@ -1002,19 +1002,19 @@
         "tick": 96,
         "text": "Donna (pickleball court 1): Take position on court one and start easy serves and rallies with Gary",
         "importance": 5
+      },
+      {
+        "tick": 97,
+        "text": "I (pickleball court 1): Return Donna's easy serves and rally, working on footwork",
+        "importance": 4
+      },
+      {
+        "tick": 97,
+        "text": "Donna said to Gary: “Nice, Gary, that's it, stay low and take little steps to the ball. Keep this up and we'll be ready for our first ladder match, and then dinner at Rosa's is on me.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 6,
-        "text": "Gary (pickleball court 1): Take the spare paddle, stand behind the kitchen line, and try keeping the ball in play",
-        "importance": 6
-      },
-      {
-        "tick": 7,
-        "text": "I said to Gary: “Gary, look at you, you're a natural! Go on to Rosa's before she sends out a search party, but I'm putting us down as doubles partners on the ladder board, Saturday at eight. Don't you dare say no.”",
-        "importance": 6
-      },
       {
         "tick": 7,
         "text": "Gary said to Donna: “Well, I got three in a row over the net, so I'm calling myself a natural. Another few and I'll head home to my garage, though. That cart won't wire itself for the parade.”",
@@ -2004,6 +2004,16 @@
         "tick": 96,
         "text": "Gary (pickleball court 1): Step onto court one with my paddle and start rallying easy serves with Donna",
         "importance": 6
+      },
+      {
+        "tick": 97,
+        "text": "I said to Gary: “Nice, Gary, that's it, stay low and take little steps to the ball. Keep this up and we'll be ready for our first ladder match, and then dinner at Rosa's is on me.”",
+        "importance": 5
+      },
+      {
+        "tick": 97,
+        "text": "Gary (pickleball court 1): Return Donna's easy serves and rally, working on footwork",
+        "importance": 5
       }
     ],
     "hal": [
@@ -2860,6 +2870,16 @@
       {
         "tick": 96,
         "text": "Rosa just arrived.",
+        "importance": 6
+      },
+      {
+        "tick": 97,
+        "text": "I said to Rosa: “Rosa. I lost track of the afternoon and I owe you an apology. I'll be at your table tonight, on time, and I'll bring something to carry.”",
+        "importance": 6
+      },
+      {
+        "tick": 97,
+        "text": "Rosa said to Hal: “Hal, there you are. Dinner's been ready at my place since five and your chair's still empty. Is everything okay? Where are Gary and Donna? Come on over, I'll warm the pork back up.”",
         "importance": 6
       }
     ],
@@ -3738,6 +3758,16 @@
         "tick": 96,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 97,
+        "text": "I said to Hal: “Hal, there you are. Dinner's been ready at my place since five and your chair's still empty. Is everything okay? Where are Gary and Donna? Come on over, I'll warm the pork back up.”",
+        "importance": 6
+      },
+      {
+        "tick": 97,
+        "text": "Hal said to Rosa: “Rosa. I lost track of the afternoon and I owe you an apology. I'll be at your table tonight, on time, and I'll bring something to carry.”",
+        "importance": 6
       }
     ]
   },
@@ -3784,10 +3814,10 @@
     ]
   },
   "emotions": {
-    "gary": "hopeful",
-    "donna": "eager",
-    "hal": "determined",
-    "rosa": "anxious"
+    "gary": "determined",
+    "donna": "cheerful",
+    "hal": "remorseful",
+    "rosa": "worried but hopeful"
   },
   "laws": [
     {
@@ -3883,10 +3913,20 @@
       "time": "Sunday, October 18, 4:17 PM",
       "story": "At 4:17 on this rainy-then-muggy Sunday afternoon in Sumter Oaks, Gary and Donna are warming up on pickleball court one at the Rec Center, trading easy serves and rallies while the afternoon shower lets up. Hal is out on Magnolia Loop, determinedly counting the pink plastic flamingos on the lawns so he can log the total in his complaint file. Rosa, looking a little anxious, is heading out toward Magnolia Loop herself, leaving her house behind as the community settles into its quiet Sunday.",
       "dialogue": []
+    },
+    {
+      "tick": 97,
+      "time": "Sunday, October 18, 5:17 PM",
+      "story": "At 5:17 on this damp Sunday in Sumter Oaks, the afternoon shower has left the air a bit cooler at 80 degrees, and Gary is working hard on the pickleball court at the Rec Center, returning Donna's easy serves while she cheers him on about staying low and taking small steps. Hal stands on Magnolia Loop, feeling sheepish after losing track of the afternoon, and he has promised Rosa he'll be at her table on time. Rosa, a little worried but hopeful, has kept dinner warm since five and is waving him over to her place with the pork ready to reheat.",
+      "dialogue": [
+        "Donna said to Gary: “Nice, Gary, that's it, stay low and take little steps to the ball. Keep this up and we'll be ready for our first ladder match, and then dinner at Rosa's is on me.”",
+        "Hal said to Rosa: “Rosa. I lost track of the afternoon and I owe you an apology. I'll be at your table tonight, on time, and I'll bring something to carry.”",
+        "Rosa said to Hal: “Hal, there you are. Dinner's been ready at my place since five and your chair's still empty. Is everything okay? Where are Gary and Donna? Come on over, I'll warm the pork back up.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 2.96281,
+    "total_usd": 2.99328,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3913,13 +3953,12 @@
         "usd": 0.45691
       },
       "2026-10-18": {
-        "ticks": 10,
-        "usd": 0.31388
+        "ticks": 11,
+        "usd": 0.34435
       }
     }
   },
   "recent_tick_costs": [
-    0.03114,
     0.03039,
     0.02965,
     0.02985,
@@ -3942,7 +3981,8 @@
     0.03336,
     0.03326,
     0.03145,
-    0.03014
+    0.03014,
+    0.03047
   ],
   "fund": {
     "gross_usd": 0.0,
