@@ -1,21 +1,27 @@
 {
-  "tick": 85,
-  "time": "2026-10-17T19:17",
+  "tick": 86,
+  "time": "2026-10-17T20:17",
   "positions": {
-    "gary": "rec_center",
-    "donna": "rec_center",
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
     "hal": "rosas_house",
-    "rosa": "magnolia_loop"
+    "rosa": "hals_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Partner! We're officially on the ladder, Pruitt-Kowalski, I wrote it in myself. Let's call it a night on the court and go celebrate at Rosa's, and I'll roll by tomorrow at 7:45 so we can practice before anyone else grabs court one.”"
+      "Donna headed to Magnolia Loop (the street).",
+      "You arrived at Magnolia Loop (the street).",
+      "Donna just arrived."
     ],
     "donna": [
-      "Gary (pickleball court 1): Rally with Donna, knees soft, working on my footwork"
+      "Gary headed to Magnolia Loop (the street).",
+      "You arrived at Magnolia Loop (the street).",
+      "Gary just arrived."
     ],
     "hal": [],
-    "rosa": []
+    "rosa": [
+      "You arrived at Hal's House."
+    ]
   },
   "memories": {
     "gary": [
@@ -823,6 +829,26 @@
         "tick": 84,
         "text": "Donna said to Gary: “Partner! We're officially on the ladder, Pruitt-Kowalski, I wrote it in myself. Let's call it a night on the court and go celebrate at Rosa's, and I'll roll by tomorrow at 7:45 so we can practice before anyone else grabs court one.”",
         "importance": 4
+      },
+      {
+        "tick": 85,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 85,
+        "text": "Donna headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 85,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 85,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ],
     "donna": [
@@ -1750,6 +1776,26 @@
         "tick": 84,
         "text": "Gary (pickleball court 1): Rally with Donna, knees soft, working on my footwork",
         "importance": 6
+      },
+      {
+        "tick": 85,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 85,
+        "text": "Gary headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 85,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 85,
+        "text": "Gary just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
@@ -2476,6 +2522,11 @@
       {
         "tick": 84,
         "text": "I (rosa dining table): Check the place settings and count seats for dinner",
+        "importance": 3
+      },
+      {
+        "tick": 85,
+        "text": "I (rosa shift schedule): Read the shift schedule to see when dinner service and guests are expected",
         "importance": 3
       }
     ],
@@ -3224,6 +3275,16 @@
         "tick": 84,
         "text": "I (street bulletin board): Check the board for any note or news about where the neighbors are",
         "importance": 6
+      },
+      {
+        "tick": 85,
+        "text": "I headed to Hal's House.",
+        "importance": 7
+      },
+      {
+        "tick": 85,
+        "text": "You arrived at Hal's House.",
+        "importance": 7
       }
     ]
   },
@@ -3273,7 +3334,7 @@
     "gary": "content",
     "donna": "delighted",
     "hal": "patient",
-    "rosa": "concerned"
+    "rosa": "worried"
   },
   "laws": [
     {
@@ -3370,10 +3431,16 @@
       "dialogue": [
         "Donna said to Gary: “Partner! We're officially on the ladder, Pruitt-Kowalski, I wrote it in myself. Let's call it a night on the court and go celebrate at Rosa's, and I'll roll by tomorrow at 7:45 so we can practice before anyone else grabs court one.”"
       ]
+    },
+    {
+      "tick": 85,
+      "time": "Saturday, October 17, 8:17 PM",
+      "story": "Saturday evening in Sumter Oaks is breezy and clear at 76 degrees, and Gary and Donna are both making their way toward Magnolia Loop while Hal waits patiently at Rosa's house, reading over her shift schedule to see when dinner service and guests are due. Rosa, looking a little worried, has just headed over to Hal's house, while Gary, content as ever, and a delighted Donna are on their way to the same street. The whole community seems to be drifting toward the Loop tonight, and everyone's plans are starting to overlap in the cool October air.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 2.58731,
+    "total_usd": 2.61739,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3396,13 +3463,12 @@
         "usd": 0.46732
       },
       "2026-10-17": {
-        "ticks": 13,
-        "usd": 0.39529
+        "ticks": 14,
+        "usd": 0.42537
       }
     }
   },
   "recent_tick_costs": [
-    0.03033,
     0.03073,
     0.03045,
     0.03237,
@@ -3425,7 +3491,8 @@
     0.02982,
     0.03056,
     0.03221,
-    0.03164
+    0.03164,
+    0.03008
   ],
   "fund": {
     "gross_usd": 0.0,

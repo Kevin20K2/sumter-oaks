@@ -1,0 +1,118 @@
+{
+  "tick": 85,
+  "simulation_time": "Saturday, October 17, 8:17 PM",
+  "weather": "Breezy and clear, 76°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "rosas_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "Saturday evening in Sumter Oaks is breezy and clear at 76 degrees, and Gary and Donna are both making their way toward Magnolia Loop while Hal waits patiently at Rosa's house, reading over her shift schedule to see when dinner service and guests are due. Rosa, looking a little worried, has just headed over to Hal's house, while Gary, content as ever, and a delighted Donna are on their way to the same street. The whole community seems to be drifting toward the Loop tonight, and everyone's plans are starting to overlap in the cool October air.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (rosa shift schedule): Read the shift schedule to see when dinner service and guests are expected",
+    "Rosa headed to Hal's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just wrapped things up: we're on the ladder, she's rolling by at 7:45 tomorrow, and dinner at Rosa's is the plan. I don't need to ask or invite again. Time to head out of the rec center toward Rosa's via Magnolia Loop. It's past 8 PM, so I'll take the cart and deal with the parade rigging tomorrow. Feels good to have someone count on me.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to meet Donna for dinner at Rosa's, then home to rest up for the 7:45 practice"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "We're signed up on the ladder, it's past 8 PM, and I already told Gary we'd go celebrate at Rosa's and I'd roll by at 7:45 tomorrow. No need to ask again or keep rallying. The conversation has run its course, so I should follow through on the plan and head out of the rec center toward Magnolia Loop and dinner.",
+      "emotional_state": "delighted",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to Rosa's to celebrate the new ladder team, and I'll be back at 7:45 tomorrow to practice."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Rosa's for Saturday's dinner. I already counted the flamingos and checked the mail for a ruling, and I just arrived and looked over the place settings and seats. Nobody else is here yet. The kitchen and shift schedule are left to look at. The schedule might tell me who's expected or when Rosa gets off. I'd rather keep the peace tonight than file another report, but I'll still note things properly.",
+      "emotional_state": "patient",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Read the shift schedule to see when dinner service and guests are expected"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 8:17 PM and dinner was set for six. The table is set, the pork is done, and nobody has shown up. I checked the board and found nothing about where the neighbors are, and I can't see anyone from here. Standing on the street won't bring them to my table. Hal, Gary, and Donna all live on Magnolia Loop, so the quickest way to find out what happened is to go knock on a door. Hal's was the first name I invited, so I'll start there.",
+      "emotional_state": "worried",
+      "importance_rating": 7,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "hals_house",
+          "content": "Dinner was at six and no one has come. I'm going to Hal's to see what happened and bring him to the table."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03008,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9928,
+        "output_tokens": 1009,
+        "usd": 0.02995
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 354,
+        "output_tokens": 187,
+        "usd": 0.00013
+      }
+    }
+  }
+}
