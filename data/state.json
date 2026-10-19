@@ -1,25 +1,29 @@
 {
-  "tick": 105,
-  "time": "2026-10-19T09:17",
+  "tick": 106,
+  "time": "2026-10-19T10:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
-    "rosa": "hals_house"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [],
-    "donna": [],
-    "hal": [],
-    "rosa": []
+    "donna": [
+      "You arrived at Magnolia Loop (the street).",
+      "Rosa just arrived."
+    ],
+    "hal": [
+      "Donna just arrived.",
+      "Rosa just arrived."
+    ],
+    "rosa": [
+      "You arrived at Magnolia Loop (the street).",
+      "Donna just arrived."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 4,
-        "text": "I headed to Rec Center.",
-        "importance": 4
-      },
       {
         "tick": 4,
         "text": "Rosa headed to Town Square.",
@@ -1014,24 +1018,14 @@
         "tick": 104,
         "text": "I (gary workbench): Tidy the cart wiring and run a low-volume test of the amp and light strings",
         "importance": 5
+      },
+      {
+        "tick": 105,
+        "text": "I (gary golf cart): Run a full test of the amp and light strings off the cart battery, check connections and battery draw, all inside the garage",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 15,
-        "text": "Gary said to Donna: “Alright, Donna, you've worn me down. Give me two minutes to find my sneakers and unplug the soldering iron, but fair warning, I'm going to be terrible at this.”",
-        "importance": 6
-      },
-      {
-        "tick": 16,
-        "text": "I said to Gary: “Take your time, Gary, and don't you dare apologize for being terrible. Everybody's terrible for the first week, and I've got the spare paddle and a cooler of iced tea in the cart. Soldering iron off, sneakers on, and I'll drive.”",
-        "importance": 6
-      },
-      {
-        "tick": 16,
-        "text": "Gary said to Donna: “That's a deal, Donna. Book it for tomorrow, I'll have the cart lights sorted by then, and I'll bring the sneakers. Save me a spot where I can do the least damage.”",
-        "importance": 6
-      },
       {
         "tick": 17,
         "text": "I headed to Magnolia Loop (the street).",
@@ -2016,6 +2010,21 @@
         "tick": 104,
         "text": "I (donna club calendar): Reserve a 2-hour court slot for Gary and me and mark our first ladder match",
         "importance": 5
+      },
+      {
+        "tick": 105,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 105,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 105,
+        "text": "Rosa just arrived.",
+        "importance": 5
       }
     ],
     "hal": [
@@ -2942,6 +2951,21 @@
       {
         "tick": 104,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the total for the review committee",
+        "importance": 5
+      },
+      {
+        "tick": 105,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the total for the review committee",
+        "importance": 5
+      },
+      {
+        "tick": 105,
+        "text": "Donna just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 105,
+        "text": "Rosa just arrived.",
         "importance": 5
       }
     ],
@@ -3895,6 +3919,21 @@
         "tick": 104,
         "text": "I (hal violation notebook): Flip through the latest pages for any sign of where Hal's been",
         "importance": 5
+      },
+      {
+        "tick": 105,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 105,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 105,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ]
   },
@@ -3941,10 +3980,10 @@
     ]
   },
   "emotions": {
-    "gary": "focused, content",
+    "gary": "focused",
     "donna": "determined",
-    "hal": "determined",
-    "rosa": "worried"
+    "hal": "dutiful",
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -4054,10 +4093,16 @@
       "time": "Monday, October 19, 9:17 AM",
       "story": "At 9:17 on a partly cloudy Monday morning in Sumter Oaks, Gary is tinkering at his workbench in his garage, carefully tidying the golf cart wiring and running a quiet test of the amp and light strings with a content look on his face. Over at her house, Donna is planning ahead, reserving a two-hour court slot on the club calendar for herself and Gary and marking their first ladder match with determination. Out on Magnolia Loop, Hal is counting the pink flamingos visible from the street so he can report the total to the review committee, while at his house, Rosa is flipping through the latest pages of her violation notebook, looking worried about where Hal has been.",
       "dialogue": []
+    },
+    {
+      "tick": 105,
+      "time": "Monday, October 19, 10:17 AM",
+      "story": "At 10:17 on this partly cloudy Monday morning in Sumter Oaks, Gary is focused in his garage, running a careful test of the amp and light strings off his golf cart battery and checking every connection and draw. Across the way, Donna is determined as she heads out to Magnolia Loop, while Hal, dutifully keeping count, is tallying the flamingos visible from the street for the review committee. Rosa, equally determined, is also making her way to Magnolia Loop, and the street is about to get a little busier.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 3.21447,
+    "total_usd": 3.24511,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4088,13 +4133,12 @@
         "usd": 0.46942
       },
       "2026-10-19": {
-        "ticks": 3,
-        "usd": 0.09612
+        "ticks": 4,
+        "usd": 0.12676
       }
     }
   },
   "recent_tick_costs": [
-    0.02982,
     0.03056,
     0.03221,
     0.03164,
@@ -4117,7 +4161,8 @@
     0.03135,
     0.03169,
     0.03148,
-    0.03295
+    0.03295,
+    0.03064
   ],
   "fund": {
     "gross_usd": 0.0,

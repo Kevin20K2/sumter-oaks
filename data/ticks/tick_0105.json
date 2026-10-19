@@ -1,0 +1,118 @@
+{
+  "tick": 105,
+  "simulation_time": "Monday, October 19, 10:17 AM",
+  "weather": "Partly cloudy, 74°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "hals_house"
+  },
+  "story": "At 10:17 on this partly cloudy Monday morning in Sumter Oaks, Gary is focused in his garage, running a careful test of the amp and light strings off his golf cart battery and checking every connection and draw. Across the way, Donna is determined as she heads out to Magnolia Loop, while Hal, dutifully keeping count, is tallying the flamingos visible from the street for the review committee. Rosa, equally determined, is also making her way to Magnolia Loop, and the street is about to get a little busier.",
+  "events": [
+    "Gary (gary golf cart): Run a full test of the amp and light strings off the cart battery, check connections and battery draw, all inside the garage",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total for the review committee",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's Monday morning, I'm home with no one around, and the cart wiring is tidied with a low-volume test done. Rosa's roast got squared away last night, and the pickleball knees are grumbling but I'm fine. The cart modification form is filed at Architectural Review, but approval hasn't come, so under L-01 nothing visible from the street yet. Best use of this hour is to keep the build moving inside the garage: run a proper full test of the amp and light strings on the cart battery, check the connections and battery draw, all out of street view. It's well within quiet hours too.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Run a full test of the amp and light strings off the cart battery, check connections and battery draw, all inside the garage"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've packed my bag and reserved the 2-hour court slot (within L-05's limit) for our first ladder match. Rosa said she hasn't seen Gary or Hal and was worried, and Gary isn't here. Nobody is in line-of-sight, so I can't just chat. The sensible thing is to stop sitting around the house, head out onto Magnolia Loop, and track down Gary so we can get to the court on time.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to find Gary so we can get to our reserved court time for the ladder match."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop and nobody's around. Donna's flock is right here, and I already logged a count last tick from the notebook. Rule L-02 caps visible ornaments at three, and I want an accurate, dated number for the committee. I'll do the count properly, by the book. I've also been keeping a record of everyone's mistakes lately, and I don't love that, but order is order. Tonight I'll make things right with Rosa at dinner.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and note the total for the review committee"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm back at Hal's House and nobody's here. I already flipped through his violation notebook last tick and it didn't tell me where he's gone, so there's nothing more to dig for there. Standing around his porch isn't getting my dinner table filled. Hal keeps drifting off, and Donna and Gary are probably still at the rec center with their pickleball. The best use of this hour is to head back out to Magnolia Loop, where I can catch any of them walking by and keep inviting people in person.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Hal's not home and the notebook told me nothing. I'm heading back to the street to track down a neighbor for my welcome dinner."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03064,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9648,
+        "output_tokens": 1122,
+        "usd": 0.03052
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 389,
+        "output_tokens": 170,
+        "usd": 0.00012
+      }
+    }
+  }
+}
