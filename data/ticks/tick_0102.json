@@ -1,0 +1,118 @@
+{
+  "tick": 102,
+  "simulation_time": "Monday, October 19, 7:17 AM",
+  "weather": "Partly cloudy, 72°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a cool, partly cloudy Monday morning in Sumter Oaks, Gary is bench-testing the speaker amp and light strings for his golf cart at his house, content with the project ahead of Donna's arrival. Donna, feeling energized, is packing paddles, balls, and water bottles at her house for pickleball practice with Gary. Meanwhile, Hal is at his house writing up dated notes on Gary's cart modifications and Donna's flamingo count for the review committee, determined to keep the community's standards in order. Rosa, looking concerned, is heading out along Magnolia Loop.",
+  "events": [
+    "Gary (gary workbench): Bench-test the speaker amp and light strings for the cart before Donna arrives",
+    "Donna (donna pickleball bag): Pack paddles, balls, and water bottles for practice with Gary",
+    "Hal (hal violation notebook): Write up dated notes on Gary's cart modifications and Donna's flamingo count for the review committee",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Morning at home, nobody around. Donna's picking me up at 7:45 for pickleball and it's 7:17, so I've got a little time before that. My real goal is still the cart lights and sound system for the parade. I filed the Architectural Review form around Tick 35 or 36, so I'm not going to touch anything visible from the street until I hear back, and any sound system testing has to be after 7 AM, which it is now. Best use of the half hour is working on the inside of the rig at the workbench, wiring and bench-testing the speaker amp and light strings. That's legal, keeps me useful, and I can still be ready when Donna shows up.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Bench-test the speaker amp and light strings for the cart before Donna arrives"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's a quiet Monday morning and I'm home alone. Last night Rosa said dinner was going cold and she hadn't seen Hal or Gary, which is a little odd since Gary went to her place. I promised to pick Gary up at 7:45 for practice on court one, so I need to gather my pickleball bag and get moving. Checking the bag first makes sure paddles, balls, and water are ready before I head out to Magnolia Loop.",
+      "emotional_state": "energized",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Pack paddles, balls, and water bottles for practice with Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "A fresh Monday morning, 7:17, and I'm home with nobody in sight. Last night's dinner at Rosa's went right and I made it up to her, so my conscience is clear. Now to the business I've put off: Gary's cart modifications (L-01) and Donna's flamingos (L-02) need to be on paper for the review committee. Facts, dates, counts. The violation notebook is sitting right here, and the binoculars can confirm the flamingo tally before I write it down. By the book, one step at a time. Notebook first.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Write up dated notes on Gary's cart modifications and Donna's flamingo count for the review committee"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's a new morning and I'm home alone. Last night's dinner went cold, and Donna said it was delicious, so she must have eaten at some point. Hal and Gary are the ones I worried about. I'm done guessing at the clock. The practical thing is to walk over and check on Hal in person, since Gary was already at his own place last night. First, though, the table is still set and the kitchen is a mess from last night. I want to leave the house in order so that if they do show up to apologize, the table is ready. But worry is the bigger pull. I'll head out to Magnolia Loop and see who's around, then decide whether to knock on Hal's door.",
+      "emotional_state": "concerned",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to check on Hal in person. I'd rather knock on his door than keep staring at an empty table."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03169,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9719,
+        "output_tokens": 1211,
+        "usd": 0.03155
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 398,
+        "output_tokens": 204,
+        "usd": 0.00014
+      }
+    }
+  }
+}
