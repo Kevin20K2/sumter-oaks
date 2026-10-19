@@ -1,0 +1,116 @@
+{
+  "tick": 109,
+  "simulation_time": "Monday, October 19, 2:17 PM",
+  "weather": "Partly cloudy, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rec_center"
+  },
+  "story": "At 2:17 on a partly cloudy Monday afternoon in Sumter Oaks, Gary is heading out to Magnolia Loop, determined to make his way down the street. Over at the Rec Center, cheerful Donna is hunting for Gary so they can partner up on the ladder, while Rosa, hopeful about tonight, promises a welcome dinner at six with the table set for everyone. Meanwhile Hal, resolved about something, is scanning the street bulletin board for notices on cart mods or lawn ornaments, and he's already sworn he'll be at dinner.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Hal (street bulletin board): read the notices for anything on cart mods or lawn ornaments"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "The wiring is zip-tied and fused, and the amp and lights tested fine inside the garage. I filed the modification form back at the start, but I never heard whether Architectural Review approved it. L-01 says visible cart mods need approval, and I don't want to get cited for the parade. I also promised Rosa I'd be at her roast by six tonight. It's 2:17, so I have time to check on the form status now rather than risk a problem later. Nobody is around to talk to, so heading to the review desk is the most useful move.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to check on my golf cart modification approval before the parade so I stay on the right side of L-01."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at the Rec Center and Rosa just walked in. Gary's name is already on the ladder and I haven't seen him since the match, which is nagging at me. Rosa's dinner at six is on the horizon, and she's a fellow social creature who probably knows where everyone is. I haven't spoken to her yet this tick, so a quick friendly check-in about Gary and the dinner is natural and keeps me at the center of things.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, hon! Looking forward to dinner at six. Have you seen Gary at all? We're on the ladder now and I can't find my partner."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Nobody's on Magnolia Loop but me and the flamingos. I promised Rosa six sharp and said I'd bring something, so I shouldn't show up empty-handed. The flamingo complaint can wait until after pot roast, I said as much. But while I'm standing here with a bulletin board and a flock in plain view, I can at least check the count and see what's posted. Order is order, and a man with a dinner to bring something to can still do a little noting. Let me check the bulletin board for anything new on cart mods or ornaments before I decide what to carry over.",
+      "emotional_state": "resolved",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "read the notices for anything on cart mods or lawn ornaments"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal just promised six sharp, so he's covered. Donna just walked in at the rec center, and she's the one I haven't pinned down for the welcome dinner yet. She and Gary are deep in their ladder climb, so I should keep it short, friendly, and not pushy: invite her, mention Hal's confirmed, and let her answer. I haven't asked her yet this tick, so no repeat.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna, glad I caught you. I'm doing a welcome dinner tonight at six, and Hal just swore he'll be there. Bring Gary and bring your appetite, I'll have the table set for all of you."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03098,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9698,
+        "output_tokens": 1144,
+        "usd": 0.03084
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 464,
+        "output_tokens": 192,
+        "usd": 0.00014
+      }
+    }
+  }
+}

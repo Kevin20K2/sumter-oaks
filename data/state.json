@@ -1,43 +1,28 @@
 {
-  "tick": 109,
-  "time": "2026-10-19T13:17",
+  "tick": 110,
+  "time": "2026-10-19T14:17",
   "positions": {
-    "gary": "garys_house",
+    "gary": "magnolia_loop",
     "donna": "rec_center",
     "hal": "magnolia_loop",
     "rosa": "rec_center"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "donna": [
-      "Hal said to Rosa: “You can count on me, Rosa. Six sharp, and I'll bring something so I'm not showing up empty-handed. The flamingos can keep till after dinner.”",
-      "Rosa headed to Rec Center.",
-      "You arrived at Rec Center.",
-      "Rosa just arrived."
+      "Rosa said to Donna: “Donna, glad I caught you. I'm doing a welcome dinner tonight at six, and Hal just swore he'll be there. Bring Gary and bring your appetite, I'll have the table set for all of you.”"
     ],
     "hal": [
-      "Donna headed to Rec Center.",
-      "Rosa headed to Rec Center."
+      "Gary just arrived."
     ],
     "rosa": [
-      "Donna headed to Rec Center.",
-      "Hal said to Rosa: “You can count on me, Rosa. Six sharp, and I'll bring something so I'm not showing up empty-handed. The flamingos can keep till after dinner.”",
-      "You arrived at Rec Center.",
-      "Donna just arrived."
+      "Donna said to Rosa: “Rosa, hon! Looking forward to dinner at six. Have you seen Gary at all? We're on the ladder now and I can't find my partner.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 5,
-        "text": "Donna said to Gary: “There he is! Court 1 is ours for the hour, Gary, and the spare paddle's right here. Stand behind the kitchen line and just keep the ball in, you'll be a natural by noon.”",
-        "importance": 4
-      },
-      {
-        "tick": 6,
-        "text": "I (pickleball court 1): Take the spare paddle, stand behind the kitchen line, and try keeping the ball in play",
-        "importance": 4
-      },
       {
         "tick": 6,
         "text": "Donna (pickleball court 1): Hand Gary the spare paddle, step onto court 1, and start a gentle rally to teach him the basics",
@@ -1027,19 +1012,19 @@
         "tick": 108,
         "text": "I (gary golf cart): Zip-tie the wiring runs and fit spare fuses in the amp and light circuits",
         "importance": 4
+      },
+      {
+        "tick": 109,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 109,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 22,
-        "text": "I said to Gary: “Gary, hon, that speaker sounds like a fun project, but anything you bolt onto the cart where the street can see it needs Architectural Review's blessing first. File the form before Saturday so you're not benched by a violation, I need my partner.”",
-        "importance": 4
-      },
-      {
-        "tick": 22,
-        "text": "Gary (gary golf cart): Finish wiring the rope lights and speaker, then run a full test at low volume",
-        "importance": 4
-      },
       {
         "tick": 23,
         "text": "I said to Gary: “Gary, test it at low volume tonight, you've got until ten before the quiet rules kick in, and I'll hold my tongue about the form. Just promise me the paperwork gets filed Thursday, and that you'll hit the garage door with that paddle for twenty minutes after. Saturday at eight, partner.”",
@@ -2029,6 +2014,16 @@
         "tick": 108,
         "text": "Rosa just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 109,
+        "text": "I said to Rosa: “Rosa, hon! Looking forward to dinner at six. Have you seen Gary at all? We're on the ladder now and I can't find my partner.”",
+        "importance": 4
+      },
+      {
+        "tick": 109,
+        "text": "Rosa said to Donna: “Donna, glad I caught you. I'm doing a welcome dinner tonight at six, and Hal just swore he'll be there. Bring Gary and bring your appetite, I'll have the table set for all of you.”",
+        "importance": 4
       }
     ],
     "hal": [
@@ -3016,19 +3011,19 @@
         "tick": 108,
         "text": "Rosa headed to Rec Center.",
         "importance": 5
+      },
+      {
+        "tick": 109,
+        "text": "I (street bulletin board): read the notices for anything on cart mods or lawn ornaments",
+        "importance": 3
+      },
+      {
+        "tick": 109,
+        "text": "Gary just arrived.",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 1,
-        "text": "Gary said to Hal: “Morning, Hal. Sorry about the Buffett, just testing the speaker and it's down now. I know the lights and sound need Architectural Review sign-off before the parade, so I'm wiring it in the garage first and filing the paperwork after.”",
-        "importance": 7
-      },
-      {
-        "tick": 1,
-        "text": "Donna said to Gary: “Gary, that speaker has great timing, and so do you. Come hit a few balls with me at the rec center this morning. I've got a spare paddle, it's thirty minutes, and coffee's on me.”",
-        "importance": 7
-      },
       {
         "tick": 1,
         "text": "Hal headed to Town Square.",
@@ -4018,6 +4013,16 @@
         "tick": 108,
         "text": "Donna just arrived.",
         "importance": 6
+      },
+      {
+        "tick": 109,
+        "text": "I said to Donna: “Donna, glad I caught you. I'm doing a welcome dinner tonight at six, and Hal just swore he'll be there. Bring Gary and bring your appetite, I'll have the table set for all of you.”",
+        "importance": 6
+      },
+      {
+        "tick": 109,
+        "text": "Donna said to Rosa: “Rosa, hon! Looking forward to dinner at six. Have you seen Gary at all? We're on the ladder now and I can't find my partner.”",
+        "importance": 6
       }
     ]
   },
@@ -4064,10 +4069,10 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
-    "donna": "determined",
-    "hal": "gruffly warm",
-    "rosa": "determined"
+    "gary": "determined",
+    "donna": "cheerful",
+    "hal": "resolved",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4165,10 +4170,19 @@
       "dialogue": [
         "Hal said to Rosa: “You can count on me, Rosa. Six sharp, and I'll bring something so I'm not showing up empty-handed. The flamingos can keep till after dinner.”"
       ]
+    },
+    {
+      "tick": 109,
+      "time": "Monday, October 19, 2:17 PM",
+      "story": "At 2:17 on a partly cloudy Monday afternoon in Sumter Oaks, Gary is heading out to Magnolia Loop, determined to make his way down the street. Over at the Rec Center, cheerful Donna is hunting for Gary so they can partner up on the ladder, while Rosa, hopeful about tonight, promises a welcome dinner at six with the table set for everyone. Meanwhile Hal, resolved about something, is scanning the street bulletin board for notices on cart mods or lawn ornaments, and he's already sworn he'll be at dinner.",
+      "dialogue": [
+        "Donna said to Rosa: “Rosa, hon! Looking forward to dinner at six. Have you seen Gary at all? We're on the ladder now and I can't find my partner.”",
+        "Rosa said to Donna: “Donna, glad I caught you. I'm doing a welcome dinner tonight at six, and Hal just swore he'll be there. Bring Gary and bring your appetite, I'll have the table set for all of you.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 3.34216,
+    "total_usd": 3.37314,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4199,13 +4213,12 @@
         "usd": 0.46942
       },
       "2026-10-19": {
-        "ticks": 7,
-        "usd": 0.22381
+        "ticks": 8,
+        "usd": 0.25479
       }
     }
   },
   "recent_tick_costs": [
-    0.03008,
     0.03154,
     0.0306,
     0.03242,
@@ -4228,7 +4241,8 @@
     0.03064,
     0.03225,
     0.03289,
-    0.03191
+    0.03191,
+    0.03098
   ],
   "fund": {
     "gross_usd": 0.0,
