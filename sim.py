@@ -217,6 +217,7 @@ def update_fund(cfg, state, fetched=None):
         "days_left": round(days_left, 1),
         "level": level,
         "paused": bool(level == "empty" and sup.get("pause_when_empty")),   # a "hurricane day" on the page
+        "pause_reason": "cloud" if level == "empty" and sup.get("pause_when_empty") else None,
         "options": d["options"],
     }
     save_json(TICKS / "fund.json", doc)
@@ -373,6 +374,10 @@ def extract_json(text):
 USAGE_LOCK = __import__("threading").Lock()
 
 
+class OutOfCredits(Exception):
+    """The Anthropic account has no credits left: the town takes a hurricane day instead of failing."""
+
+
 class Brain:
     def __init__(self, cfg, test=False, mock=False):
         self.cfg, self.mock = cfg, mock
@@ -413,7 +418,7 @@ class Brain:
             except a.BadRequestError as e:
                 msg = str(e)
                 if "credit" in msg.lower():
-                    sys.exit("Your API account is out of credits. Add credits under Billing in the Console.")
+                    raise OutOfCredits(msg)
                 sys.exit(f"The API refused the request (400): {msg}")
             except a.APIConnectionError:
                 sys.exit("Couldn't reach the Anthropic API. Check your internet connection.")
@@ -977,10 +982,22 @@ def main():
             save_json(STATE_FILE, state)
             print(f"The cloud is empty (balance ${fund['balance_usd']:.2f}): hurricane day, the town is paused. No ticks run.")
             return
-        if state.pop("hurricane_since", None):
-            state["hurricane_over"] = True
         save_json(STATE_FILE, state)
-    brain.preflight()
+    try:
+        brain.preflight()
+    except OutOfCredits as e:
+        # Out of API credits: same hurricane day on the page (paused, with its own reason), no failed runs.
+        print(f"The API account is out of credits ({e}). Hurricane day until credits are added under Billing.")
+        state.setdefault("hurricane_since", dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"))
+        save_json(STATE_FILE, state)
+        fund_path = TICKS / "fund.json"
+        doc = load_json(fund_path) if fund_path.exists() else {}
+        doc.update(paused=True, pause_reason="credits",
+                   updated=dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"))
+        save_json(fund_path, doc)
+        return
+    if state.pop("hurricane_since", None):   # the storm has passed: the next tick tells everyone
+        state["hurricane_over"] = True
 
     for _ in range(args.ticks):
         doc = run_tick(world, state, cfg, template, brain)

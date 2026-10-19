@@ -831,6 +831,7 @@ function fiveDollarDays(f) {
 function renderHurricane(f) {
   const on = isHurricane(f);
   $("hurricane").hidden = !on;
+  if (on && f.pause_reason === "credits") { $("hurricane-text").textContent = "The town's generator is out of fuel, so the neighbors are sheltering in place and no new ticks run. They'll be back out as soon as the caretaker refuels it."; return; }
   if (on) $("hurricane-text").textContent = `The cloud is out of power, so the neighbors are sheltering in place and no new ticks run. A $5 gift brings back about ${fiveDollarDays(f)} days of town life; the neighbors come back out at the next hourly check.`;
 }
 function renderSupport(f) {
