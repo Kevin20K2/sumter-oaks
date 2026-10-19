@@ -1,6 +1,6 @@
 {
-  "tick": 106,
-  "time": "2026-10-19T10:17",
+  "tick": 107,
+  "time": "2026-10-19T11:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
@@ -10,25 +10,20 @@
   "perceptions": {
     "gary": [],
     "donna": [
-      "You arrived at Magnolia Loop (the street).",
-      "Rosa just arrived."
+      "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total for the committee",
+      "Rosa said to Donna: “Donna, good timing. I'm hosting a welcome dinner at my place and I want you at the table with Gary and Hal. Tell me what evening works after your ladder games and I'll build the menu around you.”"
     ],
     "hal": [
-      "Donna just arrived.",
-      "Rosa just arrived."
+      "Donna said to Rosa: “Rosa, honey, good morning! Six o'clock tonight, I haven't forgotten. Have you seen Gary anywhere? We've got our first ladder match coming up and he's gone missing on me.”",
+      "Rosa said to Donna: “Donna, good timing. I'm hosting a welcome dinner at my place and I want you at the table with Gary and Hal. Tell me what evening works after your ladder games and I'll build the menu around you.”"
     ],
     "rosa": [
-      "You arrived at Magnolia Loop (the street).",
-      "Donna just arrived."
+      "Donna said to Rosa: “Rosa, honey, good morning! Six o'clock tonight, I haven't forgotten. Have you seen Gary anywhere? We've got our first ladder match coming up and he's gone missing on me.”",
+      "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total for the committee"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 4,
-        "text": "Rosa headed to Town Square.",
-        "importance": 4
-      },
       {
         "tick": 4,
         "text": "You arrived at Rec Center.",
@@ -1023,24 +1018,14 @@
         "tick": 105,
         "text": "I (gary golf cart): Run a full test of the amp and light strings off the cart battery, check connections and battery draw, all inside the garage",
         "importance": 5
+      },
+      {
+        "tick": 106,
+        "text": "I (gary toolbox): Check for spare fuses and zip ties to secure the cart wiring",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 17,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 17,
-        "text": "Gary (gary workbench): Unplug the soldering iron, set the cart wiring aside, and grab my sneakers",
-        "importance": 6
-      },
-      {
-        "tick": 17,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
       {
         "tick": 18,
         "text": "I said to Hal: “Hal, you're just the man I wanted. Gary and I are entering the doubles ladder, so don't be surprised when we start climbing. And if you hear anything about who's got the good court times, you come tell me first.”",
@@ -2025,6 +2010,21 @@
         "tick": 105,
         "text": "Rosa just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 106,
+        "text": "I said to Rosa: “Rosa, honey, good morning! Six o'clock tonight, I haven't forgotten. Have you seen Gary anywhere? We've got our first ladder match coming up and he's gone missing on me.”",
+        "importance": 5
+      },
+      {
+        "tick": 106,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total for the committee",
+        "importance": 5
+      },
+      {
+        "tick": 106,
+        "text": "Rosa said to Donna: “Donna, good timing. I'm hosting a welcome dinner at my place and I want you at the table with Gary and Hal. Tell me what evening works after your ladder games and I'll build the menu around you.”",
+        "importance": 5
       }
     ],
     "hal": [
@@ -2966,6 +2966,21 @@
       {
         "tick": 105,
         "text": "Rosa just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 106,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the total for the committee",
+        "importance": 5
+      },
+      {
+        "tick": 106,
+        "text": "Donna said to Rosa: “Rosa, honey, good morning! Six o'clock tonight, I haven't forgotten. Have you seen Gary anywhere? We've got our first ladder match coming up and he's gone missing on me.”",
+        "importance": 5
+      },
+      {
+        "tick": 106,
+        "text": "Rosa said to Donna: “Donna, good timing. I'm hosting a welcome dinner at my place and I want you at the table with Gary and Hal. Tell me what evening works after your ladder games and I'll build the menu around you.”",
         "importance": 5
       }
     ],
@@ -3934,6 +3949,21 @@
         "tick": 105,
         "text": "Donna just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 106,
+        "text": "I said to Donna: “Donna, good timing. I'm hosting a welcome dinner at my place and I want you at the table with Gary and Hal. Tell me what evening works after your ladder games and I'll build the menu around you.”",
+        "importance": 6
+      },
+      {
+        "tick": 106,
+        "text": "Donna said to Rosa: “Rosa, honey, good morning! Six o'clock tonight, I haven't forgotten. Have you seen Gary anywhere? We've got our first ladder match coming up and he's gone missing on me.”",
+        "importance": 6
+      },
+      {
+        "tick": 106,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total for the committee",
+        "importance": 6
       }
     ]
   },
@@ -3980,10 +4010,10 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
-    "donna": "determined",
+    "gary": "content",
+    "donna": "eager",
     "hal": "dutiful",
-    "rosa": "determined"
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4064,45 +4094,9 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 101,
-      "time": "Sunday, October 18, 9:17 PM",
-      "story": "Gary has shown up late to Rosa's house, sheepish about missing her roast after a long pickleball session, and Hal has waved him in to sit down and eat. Meanwhile Donna, cheerful as ever, is out on Magnolia Loop thanking Rosa for dinner and bragging that she and Gary now sit on the doubles ladder as Pruitt-Kowalski. Rosa, still worried about the cooling dinner and the men she can't find, has just offered Donna a plate from the table that's still set for her.",
-      "dialogue": [
-        "Gary said to Hal: “Evening, Hal. I know I'm hours late on Rosa's roast, got tangled up in pickleball. Is there anything still needing a hand, or did you two get it handled without me?”",
-        "Donna said to Rosa: “Rosa, honey, thank you again for dinner, it was delicious. Big news: Gary and I are officially on the doubles ladder as Pruitt-Kowalski, so you'll be seeing us at the top before long.”",
-        "Hal said to Gary: “Gary. Rosa's got the table set and the pork's warm, so sit down. We'll talk carts and paperwork another day. Tonight we eat.”",
-        "Rosa said to Donna: “Donna, have you seen Hal or Gary tonight? I've got dinner going cold at my place and I'm starting to worry. The table's still set for you too, if you want a plate.”"
-      ]
-    },
-    {
-      "tick": 102,
-      "time": "Monday, October 19, 7:17 AM",
-      "story": "At 7:17 on a cool, partly cloudy Monday morning in Sumter Oaks, Gary is bench-testing the speaker amp and light strings for his golf cart at his house, content with the project ahead of Donna's arrival. Donna, feeling energized, is packing paddles, balls, and water bottles at her house for pickleball practice with Gary. Meanwhile, Hal is at his house writing up dated notes on Gary's cart modifications and Donna's flamingo count for the review committee, determined to keep the community's standards in order. Rosa, looking concerned, is heading out along Magnolia Loop.",
-      "dialogue": []
-    },
-    {
-      "tick": 103,
-      "time": "Monday, October 19, 8:17 AM",
-      "story": "On a mild Monday morning in Sumter Oaks, Gary is content in his garage, quietly wiring a speaker amp and light strings into his golf cart's battery and keeping everything hidden from street view until the HOA approves it. Donna, feeling determined, sits down with the club calendar to find open court time and pencil in the first ladder match against Gary. Hal, just as determined, heads out onto Magnolia Loop, while a worried Rosa makes her way over to his house to see what he's up to.",
-      "dialogue": []
-    },
-    {
-      "tick": 104,
-      "time": "Monday, October 19, 9:17 AM",
-      "story": "At 9:17 on a partly cloudy Monday morning in Sumter Oaks, Gary is tinkering at his workbench in his garage, carefully tidying the golf cart wiring and running a quiet test of the amp and light strings with a content look on his face. Over at her house, Donna is planning ahead, reserving a two-hour court slot on the club calendar for herself and Gary and marking their first ladder match with determination. Out on Magnolia Loop, Hal is counting the pink flamingos visible from the street so he can report the total to the review committee, while at his house, Rosa is flipping through the latest pages of her violation notebook, looking worried about where Hal has been.",
-      "dialogue": []
-    },
-    {
-      "tick": 105,
-      "time": "Monday, October 19, 10:17 AM",
-      "story": "At 10:17 on this partly cloudy Monday morning in Sumter Oaks, Gary is focused in his garage, running a careful test of the amp and light strings off his golf cart battery and checking every connection and draw. Across the way, Donna is determined as she heads out to Magnolia Loop, while Hal, dutifully keeping count, is tallying the flamingos visible from the street for the review committee. Rosa, equally determined, is also making her way to Magnolia Loop, and the street is about to get a little busier.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 3.24511,
+    "total_usd": 3.27736,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4133,13 +4127,12 @@
         "usd": 0.46942
       },
       "2026-10-19": {
-        "ticks": 4,
-        "usd": 0.12676
+        "ticks": 5,
+        "usd": 0.15901
       }
     }
   },
   "recent_tick_costs": [
-    0.03056,
     0.03221,
     0.03164,
     0.03008,
@@ -4162,7 +4155,8 @@
     0.03169,
     0.03148,
     0.03295,
-    0.03064
+    0.03064,
+    0.03225
   ],
   "fund": {
     "gross_usd": 0.0,
