@@ -1,6 +1,6 @@
 {
-  "tick": 101,
-  "time": "2026-10-18T20:17",
+  "tick": 102,
+  "time": "2026-10-18T21:17",
   "positions": {
     "gary": "rosas_house",
     "donna": "magnolia_loop",
@@ -9,32 +9,20 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “You were a champ out there tonight, Gary, and our name's officially on the ladder. Same time tomorrow? I'll swing by and pick you up at 7:45 sharp.”",
-      "You arrived at Rosa's House."
+      "Hal said to Gary: “Gary. Rosa's got the table set and the pork's warm, so sit down. We'll talk carts and paperwork another day. Tonight we eat.”"
     ],
     "donna": [
-      "Gary headed to Rosa's House.",
-      "Rosa just arrived."
+      "Rosa said to Donna: “Donna, have you seen Hal or Gary tonight? I've got dinner going cold at my place and I'm starting to worry. The table's still set for you too, if you want a plate.”"
     ],
     "hal": [
-      "Gary just arrived."
+      "Gary said to Hal: “Evening, Hal. I know I'm hours late on Rosa's roast, got tangled up in pickleball. Is there anything still needing a hand, or did you two get it handled without me?”"
     ],
     "rosa": [
-      "You arrived at Magnolia Loop (the street)."
+      "Donna said to Rosa: “Rosa, honey, thank you again for dinner, it was delicious. Big news: Gary and I are officially on the doubles ladder as Pruitt-Kowalski, so you'll be seeing us at the top before long.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 2,
-        "text": "I said to Donna: “Alright, Donna, you win. Thirty minutes and I'm holding you to the coffee, but I'm warning you, I'll be terrible at it.”",
-        "importance": 5
-      },
-      {
-        "tick": 2,
-        "text": "Donna headed to Rec Center.",
-        "importance": 5
-      },
       {
         "tick": 2,
         "text": "Rosa said to Gary: “Gary, before you two run off: I'm hosting a welcome dinner at my place, and you, Donna, and Hal are all invited. It's the least I can do after the disposal, and I'm not taking no for an answer.”",
@@ -1024,19 +1012,19 @@
         "tick": 100,
         "text": "You arrived at Rosa's House.",
         "importance": 4
+      },
+      {
+        "tick": 101,
+        "text": "I said to Hal: “Evening, Hal. I know I'm hours late on Rosa's roast, got tangled up in pickleball. Is there anything still needing a hand, or did you two get it handled without me?”",
+        "importance": 4
+      },
+      {
+        "tick": 101,
+        "text": "Hal said to Gary: “Gary. Rosa's got the table set and the pork's warm, so sit down. We'll talk carts and paperwork another day. Tonight we eat.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 13,
-        "text": "I headed to Gary's House.",
-        "importance": 5
-      },
-      {
-        "tick": 13,
-        "text": "You arrived at Gary's House.",
-        "importance": 5
-      },
       {
         "tick": 14,
         "text": "I said to Gary: “Gary, I came to you since you didn't come to me. Spare paddle's in the bag, the court's open till noon, and I'll have you back before lunch. Grab your sneakers, you're my doubles partner now.”",
@@ -2026,6 +2014,16 @@
         "tick": 100,
         "text": "Rosa just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 101,
+        "text": "I said to Rosa: “Rosa, honey, thank you again for dinner, it was delicious. Big news: Gary and I are officially on the doubles ladder as Pruitt-Kowalski, so you'll be seeing us at the top before long.”",
+        "importance": 4
+      },
+      {
+        "tick": 101,
+        "text": "Rosa said to Donna: “Donna, have you seen Hal or Gary tonight? I've got dinner going cold at my place and I'm starting to worry. The table's still set for you too, if you want a plate.”",
+        "importance": 4
       }
     ],
     "hal": [
@@ -2922,6 +2920,16 @@
       {
         "tick": 100,
         "text": "Gary just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 101,
+        "text": "I said to Gary: “Gary. Rosa's got the table set and the pork's warm, so sit down. We'll talk carts and paperwork another day. Tonight we eat.”",
+        "importance": 5
+      },
+      {
+        "tick": 101,
+        "text": "Gary said to Hal: “Evening, Hal. I know I'm hours late on Rosa's roast, got tangled up in pickleball. Is there anything still needing a hand, or did you two get it handled without me?”",
         "importance": 5
       }
     ],
@@ -3840,6 +3848,16 @@
         "tick": 100,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 101,
+        "text": "I said to Donna: “Donna, have you seen Hal or Gary tonight? I've got dinner going cold at my place and I'm starting to worry. The table's still set for you too, if you want a plate.”",
+        "importance": 6
+      },
+      {
+        "tick": 101,
+        "text": "Donna said to Rosa: “Rosa, honey, thank you again for dinner, it was delicious. Big news: Gary and I are officially on the doubles ladder as Pruitt-Kowalski, so you'll be seeing us at the top before long.”",
+        "importance": 6
       }
     ]
   },
@@ -3886,10 +3904,10 @@
     ]
   },
   "emotions": {
-    "gary": "content",
+    "gary": "sheepish",
     "donna": "cheerful",
-    "hal": "remorseful",
-    "rosa": "hopeful but tired"
+    "hal": "gruff but conciliatory",
+    "rosa": "worried, patient"
   },
   "laws": [
     {
@@ -3970,9 +3988,21 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 101,
+      "time": "Sunday, October 18, 9:17 PM",
+      "story": "Gary has shown up late to Rosa's house, sheepish about missing her roast after a long pickleball session, and Hal has waved him in to sit down and eat. Meanwhile Donna, cheerful as ever, is out on Magnolia Loop thanking Rosa for dinner and bragging that she and Gary now sit on the doubles ladder as Pruitt-Kowalski. Rosa, still worried about the cooling dinner and the men she can't find, has just offered Donna a plate from the table that's still set for her.",
+      "dialogue": [
+        "Gary said to Hal: “Evening, Hal. I know I'm hours late on Rosa's roast, got tangled up in pickleball. Is there anything still needing a hand, or did you two get it handled without me?”",
+        "Donna said to Rosa: “Rosa, honey, thank you again for dinner, it was delicious. Big news: Gary and I are officially on the doubles ladder as Pruitt-Kowalski, so you'll be seeing us at the top before long.”",
+        "Hal said to Gary: “Gary. Rosa's got the table set and the pork's warm, so sit down. We'll talk carts and paperwork another day. Tonight we eat.”",
+        "Rosa said to Donna: “Donna, have you seen Hal or Gary tonight? I've got dinner going cold at my place and I'm starting to worry. The table's still set for you too, if you want a plate.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 3.087,
+    "total_usd": 3.11835,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -3999,13 +4029,12 @@
         "usd": 0.45691
       },
       "2026-10-18": {
-        "ticks": 14,
-        "usd": 0.43807
+        "ticks": 15,
+        "usd": 0.46942
       }
     }
   },
   "recent_tick_costs": [
-    0.02936,
     0.03011,
     0.02924,
     0.03028,
@@ -4028,7 +4057,8 @@
     0.03047,
     0.03128,
     0.03111,
-    0.03133
+    0.03133,
+    0.03135
   ],
   "fund": {
     "gross_usd": 0.0,

@@ -1,0 +1,113 @@
+{
+  "tick": 101,
+  "simulation_time": "Sunday, October 18, 9:17 PM",
+  "weather": "Sunny, 77°F",
+  "positions": {
+    "gary": "rosas_house",
+    "donna": "magnolia_loop",
+    "hal": "rosas_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "Gary has shown up late to Rosa's house, sheepish about missing her roast after a long pickleball session, and Hal has waved him in to sit down and eat. Meanwhile Donna, cheerful as ever, is out on Magnolia Loop thanking Rosa for dinner and bragging that she and Gary now sit on the doubles ladder as Pruitt-Kowalski. Rosa, still worried about the cooling dinner and the men she can't find, has just offered Donna a plate from the table that's still set for her.",
+  "events": [],
+  "results": {
+    "gary": {
+      "thought_process": "I'm finally at Rosa's, and it's past 9 PM, well after the six o'clock I promised myself. Hal's here, so I should be straight with him and not let the roast thing slide again. Donna's already got me on for 7:45 tomorrow, so that's settled. Nothing to repeat to her. Right now the useful thing is to own up to Hal about being late and ask whether I can still help with whatever Rosa needed.",
+      "emotional_state": "sheepish",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Evening, Hal. I know I'm hours late on Rosa's roast, got tangled up in pickleball. Is there anything still needing a hand, or did you two get it handled without me?"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 9:17 PM and I'm on Magnolia Loop. Gary just headed to Rosa's house and Rosa has just arrived here. We're officially on the ladder and I already told Gary I'd pick him up at 7:45 tomorrow, so no need to repeat that. Rosa is right here and I haven't talked to her yet tonight. She hosted dinner earlier, so a warm thank-you is natural, and I can tell her about Pruitt-Kowalski going up on the ladder. Being at the center of the social scene means keeping Rosa in the loop.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, honey, thank you again for dinner, it was delicious. Big news: Gary and I are officially on the doubles ladder as Pruitt-Kowalski, so you'll be seeing us at the top before long."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary just walked in the door, and the table's already set. I came here to make things right with Rosa, not to start a fight over carts and flamingos. I've got a complaint filed in my head against this man, but it's keeping until after the pork. He already owned up this morning about doing the wiring first and paperwork after, and I'd rather see him file it properly than lecture him over dinner. Say something civil, welcome him in, and let Rosa have her quiet table.",
+      "emotional_state": "gruff but conciliatory",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary. Rosa's got the table set and the pork's warm, so sit down. We'll talk carts and paperwork another day. Tonight we eat."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 9:17 PM and my dinner has gone cold with no sign of Hal, Gary, or Donna at my table. I walked to Gary's and found nothing, and now I'm back on Magnolia Loop with Donna in sight. I won't repeat the dinner invitation as if she hasn't heard it. I should ask directly, without scolding, whether she's seen Hal or Gary, and let her know the table is still set. She might know what happened, and I'm a little worried about Hal.",
+      "emotional_state": "worried, patient",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna, have you seen Hal or Gary tonight? I've got dinner going cold at my place and I'm starting to worry. The table's still set for you too, if you want a plate."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03135,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9486,
+        "output_tokens": 1224,
+        "usd": 0.03121
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 573,
+        "output_tokens": 172,
+        "usd": 0.00014
+      }
+    }
+  }
+}
