@@ -1,6 +1,6 @@
 {
-  "tick": 114,
-  "time": "2026-10-19T18:17",
+  "tick": 115,
+  "time": "2026-10-19T19:17",
   "positions": {
     "gary": "garys_house",
     "donna": "rosas_house",
@@ -8,44 +8,22 @@
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "Donna headed to Rosa's House.",
-      "Hal headed to Rosa's House.",
-      "Rosa headed to Rosa's House.",
-      "You arrived at Gary's House."
-    ],
+    "gary": [],
     "donna": [
-      "Gary headed to Gary's House.",
-      "Hal headed to Rosa's House.",
-      "Rosa headed to Rosa's House.",
-      "You arrived at Rosa's House.",
-      "Hal just arrived.",
-      "Rosa just arrived."
+      "Hal said to Rosa: “Rosa, I'm late and I'm sorry. Lost track of the afternoon, and that's no excuse for a man who ran supply on a schedule for thirty years. Put me to work, I'll carry whatever needs carrying.”",
+      "Rosa said to Donna: “Well, look who walked in at the same time! Come in, both of you. What's the occasion, Donna, did you two come to taste-test Saturday's menu early?”"
     ],
     "hal": [
-      "Gary headed to Gary's House.",
-      "Donna headed to Rosa's House.",
-      "Rosa headed to Rosa's House.",
-      "You arrived at Rosa's House.",
-      "Donna just arrived.",
-      "Rosa just arrived."
+      "Donna said to Rosa: “Rosa, thank you for having us all! Gary's just run home for a minute but he'll be right along. Can I help you carry anything to the table?”",
+      "Rosa said to Donna: “Well, look who walked in at the same time! Come in, both of you. What's the occasion, Donna, did you two come to taste-test Saturday's menu early?”"
     ],
     "rosa": [
-      "Gary headed to Gary's House.",
-      "Donna headed to Rosa's House.",
-      "Hal headed to Rosa's House.",
-      "You arrived at Rosa's House.",
-      "Donna just arrived.",
-      "Hal just arrived."
+      "Donna said to Rosa: “Rosa, thank you for having us all! Gary's just run home for a minute but he'll be right along. Can I help you carry anything to the table?”",
+      "Hal said to Rosa: “Rosa, I'm late and I'm sorry. Lost track of the afternoon, and that's no excuse for a man who ran supply on a schedule for thirty years. Put me to work, I'll carry whatever needs carrying.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 15,
-        "text": "Donna said to Gary: “Thanks, Gary, I'll mind the wire. I came to steal you for pickleball, but it's past noon now, so how about I book us a court for tomorrow morning and you finish your cart today? Thirty minutes, spare paddle, and I'll bring the coffee.”",
-        "importance": 6
-      },
       {
         "tick": 16,
         "text": "I said to Donna: “That's a deal, Donna. Book it for tomorrow, I'll have the cart lights sorted by then, and I'll bring the sneakers. Save me a spot where I can do the least damage.”",
@@ -1040,24 +1018,14 @@
         "tick": 113,
         "text": "You arrived at Gary's House.",
         "importance": 4
+      },
+      {
+        "tick": 114,
+        "text": "I (gary workbench): Bench-test the light strings and speaker wiring indoors, keeping the cart untouched until approval",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 31,
-        "text": "Hal said to Donna: “Donna, I counted your flamingos from the street this morning. L-02 says three ornaments, and you're well past that. Thin the flock before I have to write it up, and I'd rather not.”",
-        "importance": 4
-      },
-      {
-        "tick": 32,
-        "text": "I (donna flamingo flock): Pull the extra flamingos and leave just three out front to comply with L-02",
-        "importance": 4
-      },
-      {
-        "tick": 32,
-        "text": "Gary (street bulletin board): Look over the board for an Architectural Review form or filing instructions",
-        "importance": 4
-      },
       {
         "tick": 32,
         "text": "Hal said to Gary: “Gary, the Architectural Review blanks are at Town Hall. File before you wire another inch, and I'll quit asking. And Donna, I'll take your word on the flamingos. Three, and we're square.”",
@@ -2042,24 +2010,24 @@
         "tick": 113,
         "text": "Rosa just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 114,
+        "text": "I said to Rosa: “Rosa, thank you for having us all! Gary's just run home for a minute but he'll be right along. Can I help you carry anything to the table?”",
+        "importance": 4
+      },
+      {
+        "tick": 114,
+        "text": "Hal said to Rosa: “Rosa, I'm late and I'm sorry. Lost track of the afternoon, and that's no excuse for a man who ran supply on a schedule for thirty years. Put me to work, I'll carry whatever needs carrying.”",
+        "importance": 4
+      },
+      {
+        "tick": 114,
+        "text": "Rosa said to Donna: “Well, look who walked in at the same time! Come in, both of you. What's the occasion, Donna, did you two come to taste-test Saturday's menu early?”",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 9,
-        "text": "I headed to Town Hall.",
-        "importance": 5
-      },
-      {
-        "tick": 9,
-        "text": "You arrived at Town Hall.",
-        "importance": 5
-      },
-      {
-        "tick": 10,
-        "text": "I (hal violation notebook): Write up dated notes on Gary's cart modifications and Donna's flamingo count for the review committee",
-        "importance": 5
-      },
       {
         "tick": 11,
         "text": "I (hal violation notebook): Review and finalize dated entries on Gary's cart modifications and Donna's flamingo count, including Gary's admission about filing paperwork after",
@@ -3044,24 +3012,24 @@
         "tick": 113,
         "text": "Rosa just arrived.",
         "importance": 6
+      },
+      {
+        "tick": 114,
+        "text": "I said to Rosa: “Rosa, I'm late and I'm sorry. Lost track of the afternoon, and that's no excuse for a man who ran supply on a schedule for thirty years. Put me to work, I'll carry whatever needs carrying.”",
+        "importance": 6
+      },
+      {
+        "tick": 114,
+        "text": "Donna said to Rosa: “Rosa, thank you for having us all! Gary's just run home for a minute but he'll be right along. Can I help you carry anything to the table?”",
+        "importance": 6
+      },
+      {
+        "tick": 114,
+        "text": "Rosa said to Donna: “Well, look who walked in at the same time! Come in, both of you. What's the occasion, Donna, did you two come to taste-test Saturday's menu early?”",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 9,
-        "text": "You arrived at Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 10,
-        "text": "I (rosa shift schedule): Check my per-diem shifts to pick an open evening for the welcome dinner",
-        "importance": 6
-      },
-      {
-        "tick": 11,
-        "text": "I (rosa shift schedule): Pick an evening with no per-diem shift and block it off for the welcome dinner",
-        "importance": 6
-      },
       {
         "tick": 12,
         "text": "I (rosa kitchen): Plan the dinner menu and check what groceries I need for four people",
@@ -4046,6 +4014,21 @@
         "tick": 113,
         "text": "Hal just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 114,
+        "text": "I said to Donna: “Well, look who walked in at the same time! Come in, both of you. What's the occasion, Donna, did you two come to taste-test Saturday's menu early?”",
+        "importance": 5
+      },
+      {
+        "tick": 114,
+        "text": "Donna said to Rosa: “Rosa, thank you for having us all! Gary's just run home for a minute but he'll be right along. Can I help you carry anything to the table?”",
+        "importance": 5
+      },
+      {
+        "tick": 114,
+        "text": "Hal said to Rosa: “Rosa, I'm late and I'm sorry. Lost track of the afternoon, and that's no excuse for a man who ran supply on a schedule for thirty years. Put me to work, I'll carry whatever needs carrying.”",
+        "importance": 5
       }
     ]
   },
@@ -4092,10 +4075,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "cheerful, hurried",
-    "hal": "resolved",
-    "rosa": "content"
+    "gary": "content",
+    "donna": "cheerful",
+    "hal": "remorseful",
+    "rosa": "warm, curious"
   },
   "laws": [
     {
@@ -4182,10 +4165,20 @@
       "time": "Monday, October 19, 6:17 PM",
       "story": "At 6:17 on a mild Monday evening in Sumter Oaks, the four neighbors are all out on Magnolia Loop, where Gary strides off determinedly toward his own front door. Donna and Hal are hurrying toward Rosa's house, Donna cheerful and in a rush, Hal with quiet resolve, while Rosa, already home, settles in content at her own place. The golf carts are parked along the street, and the partly cloudy sky keeps the 76-degree air pleasant for the walk.",
       "dialogue": []
+    },
+    {
+      "tick": 114,
+      "time": "Monday, October 19, 7:17 PM",
+      "story": "At 7:17 on a cool, partly cloudy Monday evening in Sumter Oaks, Rosa is welcoming Donna and Hal into her house, where her warm curiosity about the visit shows in her teasing. Donna is in good spirits as she offers to help carry things to the table and explains that Gary has stepped home for a minute and will be along shortly. Hal arrives apologizing for being late, a little ashamed of losing track of the afternoon, and he offers to carry whatever needs moving. Meanwhile, Gary is back at his own house at the workbench, content and bench-testing the light strings and speaker wiring indoors, leaving the golf cart untouched until it's approved.",
+      "dialogue": [
+        "Donna said to Rosa: “Rosa, thank you for having us all! Gary's just run home for a minute but he'll be right along. Can I help you carry anything to the table?”",
+        "Hal said to Rosa: “Rosa, I'm late and I'm sorry. Lost track of the afternoon, and that's no excuse for a man who ran supply on a schedule for thirty years. Put me to work, I'll carry whatever needs carrying.”",
+        "Rosa said to Donna: “Well, look who walked in at the same time! Come in, both of you. What's the occasion, Donna, did you two come to taste-test Saturday's menu early?”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 3.5037,
+    "total_usd": 3.53456,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4216,13 +4209,12 @@
         "usd": 0.46942
       },
       "2026-10-19": {
-        "ticks": 12,
-        "usd": 0.38535
+        "ticks": 13,
+        "usd": 0.41621
       }
     }
   },
   "recent_tick_costs": [
-    0.03049,
     0.02947,
     0.03214,
     0.03336,
@@ -4245,7 +4237,8 @@
     0.03052,
     0.03214,
     0.0347,
-    0.0332
+    0.0332,
+    0.03086
   ],
   "fund": {
     "gross_usd": 0.0,
