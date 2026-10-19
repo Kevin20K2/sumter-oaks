@@ -1,45 +1,30 @@
 {
-  "tick": 100,
-  "time": "2026-10-18T19:17",
+  "tick": 101,
+  "time": "2026-10-18T20:17",
   "positions": {
-    "gary": "magnolia_loop",
+    "gary": "rosas_house",
     "donna": "magnolia_loop",
     "hal": "rosas_house",
-    "rosa": "garys_house"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna headed to Magnolia Loop (the street).",
-      "You arrived at Magnolia Loop (the street).",
-      "Donna just arrived."
+      "Donna said to Gary: “You were a champ out there tonight, Gary, and our name's officially on the ladder. Same time tomorrow? I'll swing by and pick you up at 7:45 sharp.”",
+      "You arrived at Rosa's House."
     ],
     "donna": [
-      "Gary headed to Magnolia Loop (the street).",
-      "You arrived at Magnolia Loop (the street).",
+      "Gary headed to Rosa's House.",
+      "Rosa just arrived."
+    ],
+    "hal": [
       "Gary just arrived."
     ],
-    "hal": [],
     "rosa": [
-      "You arrived at Gary's House."
+      "You arrived at Magnolia Loop (the street)."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 1,
-        "text": "Donna said to Gary: “Gary, that speaker has great timing, and so do you. Come hit a few balls with me at the rec center this morning. I've got a spare paddle, it's thirty minutes, and coffee's on me.”",
-        "importance": 5
-      },
-      {
-        "tick": 1,
-        "text": "Hal headed to Town Square.",
-        "importance": 5
-      },
-      {
-        "tick": 1,
-        "text": "Rosa said to Hal: “Morning, Hal. Thanks for the recycling tip, you were right. I'm hosting a welcome dinner at my place and I'd like you, Gary, and Donna all at the table. Come hungry, and leave the cart and flamingo opinions at the door.”",
-        "importance": 5
-      },
       {
         "tick": 2,
         "text": "I said to Donna: “Alright, Donna, you win. Thirty minutes and I'm holding you to the coffee, but I'm warning you, I'll be terrible at it.”",
@@ -1024,24 +1009,24 @@
         "tick": 99,
         "text": "Donna just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 100,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 100,
+        "text": "Donna said to Gary: “You were a champ out there tonight, Gary, and our name's officially on the ladder. Same time tomorrow? I'll swing by and pick you up at 7:45 sharp.”",
+        "importance": 4
+      },
+      {
+        "tick": 100,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 11,
-        "text": "I (donna pickleball bag): Check the paddles and balls and pack the spare paddle for Gary's practice sessions",
-        "importance": 5
-      },
-      {
-        "tick": 12,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 12,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 13,
         "text": "I headed to Gary's House.",
@@ -2026,6 +2011,21 @@
         "tick": 99,
         "text": "Gary just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 100,
+        "text": "I said to Gary: “You were a champ out there tonight, Gary, and our name's officially on the ladder. Same time tomorrow? I'll swing by and pick you up at 7:45 sharp.”",
+        "importance": 5
+      },
+      {
+        "tick": 100,
+        "text": "Gary headed to Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 100,
+        "text": "Rosa just arrived.",
+        "importance": 5
       }
     ],
     "hal": [
@@ -2912,6 +2912,16 @@
       {
         "tick": 99,
         "text": "I (rosa dining table): Straighten the chairs and take my seat, ready on time",
+        "importance": 5
+      },
+      {
+        "tick": 100,
+        "text": "I (rosa kitchen): Offer to help warm the pork and carry dishes to the table",
+        "importance": 5
+      },
+      {
+        "tick": 100,
+        "text": "Gary just arrived.",
         "importance": 5
       }
     ],
@@ -3820,6 +3830,16 @@
         "tick": 99,
         "text": "You arrived at Gary's House.",
         "importance": 6
+      },
+      {
+        "tick": 100,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 100,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ]
   },
@@ -3868,8 +3888,8 @@
   "emotions": {
     "gary": "content",
     "donna": "cheerful",
-    "hal": "dutiful",
-    "rosa": "hopeful"
+    "hal": "remorseful",
+    "rosa": "hopeful but tired"
   },
   "laws": [
     {
@@ -3950,51 +3970,9 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 95,
-      "time": "Sunday, October 18, 3:17 PM",
-      "story": "At 3:17 on this Sunday afternoon in Sumter Oaks, a brief shower has the grounds looking damp but not washed out, and Gary and Donna are at the Rec Center, where Donna has already signed them up for the pickleball ladder as a team. Gary is eager to get some footwork in before the rain returns, though he's still a little distracted by a soldering iron he swears he unplugged. Over on Magnolia Loop, Hal is standing determinedly in the wet street tallying the pink flamingos on Donna's lawn for his complaint file, and back at home Rosa is worried she may have mixed up a dinner date, so she's checking her shift schedule.",
-      "dialogue": [
-        "Gary said to Donna: “Sneakers on, soldering iron unplugged, Donna. Hit me with those easy serves and let's get some footwork in before the shower rolls back in.”",
-        "Donna said to Gary: “There he is! I put us down on the ladder as Pruitt-Kowalski, so no backing out now. Grab your paddle and let's get some footwork in on court one before this shower clears.”"
-      ]
-    },
-    {
-      "tick": 96,
-      "time": "Sunday, October 18, 4:17 PM",
-      "story": "At 4:17 on this rainy-then-muggy Sunday afternoon in Sumter Oaks, Gary and Donna are warming up on pickleball court one at the Rec Center, trading easy serves and rallies while the afternoon shower lets up. Hal is out on Magnolia Loop, determinedly counting the pink plastic flamingos on the lawns so he can log the total in his complaint file. Rosa, looking a little anxious, is heading out toward Magnolia Loop herself, leaving her house behind as the community settles into its quiet Sunday.",
-      "dialogue": []
-    },
-    {
-      "tick": 97,
-      "time": "Sunday, October 18, 5:17 PM",
-      "story": "At 5:17 on this damp Sunday in Sumter Oaks, the afternoon shower has left the air a bit cooler at 80 degrees, and Gary is working hard on the pickleball court at the Rec Center, returning Donna's easy serves while she cheers him on about staying low and taking small steps. Hal stands on Magnolia Loop, feeling sheepish after losing track of the afternoon, and he has promised Rosa he'll be at her table on time. Rosa, a little worried but hopeful, has kept dinner warm since five and is waving him over to her place with the pork ready to reheat.",
-      "dialogue": [
-        "Donna said to Gary: “Nice, Gary, that's it, stay low and take little steps to the ball. Keep this up and we'll be ready for our first ladder match, and then dinner at Rosa's is on me.”",
-        "Hal said to Rosa: “Rosa. I lost track of the afternoon and I owe you an apology. I'll be at your table tonight, on time, and I'll bring something to carry.”",
-        "Rosa said to Hal: “Hal, there you are. Dinner's been ready at my place since five and your chair's still empty. Is everything okay? Where are Gary and Donna? Come on over, I'll warm the pork back up.”"
-      ]
-    },
-    {
-      "tick": 98,
-      "time": "Sunday, October 18, 6:17 PM",
-      "story": "At 6:17 on a sunny Sunday evening in Sumter Oaks, Gary and Donna are wrapping up a dance coaching session at the Rec Center, with Gary grateful for the lessons and Donna cheerful about his footwork. Over on Magnolia Loop, Hal is feeling remorseful as he heads to Rosa's House, while Rosa, who has accepted his apology, is relieved and getting the table ready. Everyone seems to be heading toward a happy Sunday supper at Rosa's.",
-      "dialogue": [
-        "Gary said to Donna: “Thanks for the coaching, Donna, my knees may never forgive you but my footwork says thank you. Let's call it here so we can get over to Rosa's by six-thirty before that roast goes cold on me again.”",
-        "Donna said to Gary: “That's a wrap for today, Gary, you're moving like a pro out there. Let's pack up and get over to Rosa's before the Sunday crowd takes all the good tables.”",
-        "Rosa said to Hal: “Thank you, Hal, apology accepted. If you see Gary or Donna on your way, tell them the table's set and there's no lecture waiting. I'll go knock on a door or two myself.”"
-      ]
-    },
-    {
-      "tick": 99,
-      "time": "Sunday, October 18, 7:17 PM",
-      "story": "At 7:17 on a sunny Sunday evening in Sumter Oaks, Gary and Donna both wander toward Magnolia Loop, where Rosa is also making her way, though she has her sights set on Gary's house instead. Gary is content and Donna is cheerful as they head out, while Hal, feeling dutiful, is back at Rosa's house straightening the dining chairs so everything is ready for when the evening's plans get underway. Rosa, hopeful about the night ahead, is on her way to Gary's place even as the others are scattered across the neighborhood.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 3.05567,
+    "total_usd": 3.087,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4021,13 +3999,12 @@
         "usd": 0.45691
       },
       "2026-10-18": {
-        "ticks": 13,
-        "usd": 0.40674
+        "ticks": 14,
+        "usd": 0.43807
       }
     }
   },
   "recent_tick_costs": [
-    0.02985,
     0.02936,
     0.03011,
     0.02924,
@@ -4050,7 +4027,8 @@
     0.03014,
     0.03047,
     0.03128,
-    0.03111
+    0.03111,
+    0.03133
   ],
   "fund": {
     "gross_usd": 0.0,

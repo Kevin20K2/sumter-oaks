@@ -1,0 +1,117 @@
+{
+  "tick": 100,
+  "simulation_time": "Sunday, October 18, 8:17 PM",
+  "weather": "Sunny, 78°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "rosas_house",
+    "rosa": "garys_house"
+  },
+  "story": "On Sunday evening at 8:17, under a sunny sky at 78 degrees, Gary is making his way toward Rosa's house while Donna, cheerful as ever, stands on Magnolia Loop praising him for a strong showing tonight and promising to pick him up at 7:45 tomorrow. Hal, still feeling remorseful, is in Rosa's kitchen offering to warm the pork and carry dishes to the table as a small way to make things right. Rosa, hopeful but worn out, is heading out onto Magnolia Loop as the neighborhood winds down for the night.",
+  "events": [
+    "Gary headed to Rosa's House.",
+    "Hal (rosa kitchen): Offer to help warm the pork and carry dishes to the table",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna and I just got back to Magnolia Loop after a good session on the court, and she said we should get over to Rosa's before the Sunday crowd takes the tables. Rosa's roast has been waiting on me all afternoon, and I already let her down once, so I don't want to stall out here chatting. It's past eight now, so I should skip more talk and head straight there. Donna will catch up. Once I'm fed, I can think about the cart parade and that modification form.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading over to Rosa's for that roast before it goes cold and I let her down again."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "We just left the courts and Gary's on the street with me. Dinner at Rosa's is at six-thirty, and it's already past eight, so we've clearly been busy, but the ladder sign-up is done and he's been a trooper. I shouldn't repeat my coaching pitch. Best to be warm, thank him for sticking with it, and set up the next practice, since keeping Pruitt-Kowalski climbing is the whole point. Quick pickup time keeps momentum going.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "You were a champ out there tonight, Gary, and our name's officially on the ladder. Same time tomorrow? I'll swing by and pick you up at 7:45 sharp."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Rosa's with no one in sight. I apologized last tick and Rosa set the table. The last thing I did was straighten the chairs. The kitchen is right here and Rosa has been working all evening on a dinner I missed. The least a retired supply sergeant can do is make himself useful. The cart and flamingo reports can wait one more night; tonight the order that matters is the one at Rosa's table.",
+      "emotional_state": "remorseful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Offer to help warm the pork and carry dishes to the table"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I just arrived at Gary's House, but no one is in line-of-sight. It's 8:17 PM, the pork is cooling, and Hal said he'd be at my table on time tonight. Gary isn't here. I shouldn't waste another hour hunting on foot when Hal may already be at my place and Gary might be at the rec center or on his way back. Waiting here wastes time, and poking around his workbench or toolbox isn't my business. The best move is to head back toward Magnolia Loop, where I can see who's out and steer anyone I meet to the dinner table.",
+      "emotional_state": "hopeful but tired",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Gary isn't home, so I'm heading out to the street to find him or Donna and let them know the table's set, then back to Hal and the dinner."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03133,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9631,
+        "output_tokens": 1132,
+        "usd": 0.03058
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3866,
+        "output_tokens": 725,
+        "usd": 0.00075
+      }
+    }
+  }
+}
