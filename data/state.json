@@ -1,43 +1,31 @@
 {
-  "tick": 110,
-  "time": "2026-10-19T14:17",
+  "tick": 111,
+  "time": "2026-10-19T15:17",
   "positions": {
     "gary": "magnolia_loop",
-    "donna": "rec_center",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
     "rosa": "rec_center"
   },
   "perceptions": {
     "gary": [
-      "You arrived at Magnolia Loop (the street)."
+      "Hal said to Gary: “Gary, the paperwork goes in before the wiring, not after. Get your cart mods in front of Architectural Review before that parade and we'll have no trouble, you and me.”",
+      "Donna just arrived."
     ],
     "donna": [
-      "Rosa said to Donna: “Donna, glad I caught you. I'm doing a welcome dinner tonight at six, and Hal just swore he'll be there. Bring Gary and bring your appetite, I'll have the table set for all of you.”"
+      "Rosa said to Donna: “Haven't laid eyes on Gary since this morning, hon. If you track him down, remind him six sharp at my place, and tell him the disposal is long forgiven.”",
+      "You arrived at Magnolia Loop (the street)."
     ],
     "hal": [
-      "Gary just arrived."
+      "Gary said to Hal: “Afternoon, Hal. Thanks again for not giving me grief about being late to Rosa's. I'm on my way over by six this time, and the cart's wiring is finally buttoned up for the parade.”",
+      "Donna just arrived."
     ],
     "rosa": [
-      "Donna said to Rosa: “Rosa, hon! Looking forward to dinner at six. Have you seen Gary at all? We're on the ladder now and I can't find my partner.”"
+      "Donna headed to Magnolia Loop (the street)."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 6,
-        "text": "Donna (pickleball court 1): Hand Gary the spare paddle, step onto court 1, and start a gentle rally to teach him the basics",
-        "importance": 4
-      },
-      {
-        "tick": 7,
-        "text": "I said to Donna: “Well, I got three in a row over the net, so I'm calling myself a natural. Another few and I'll head home to my garage, though. That cart won't wire itself for the parade.”",
-        "importance": 4
-      },
-      {
-        "tick": 7,
-        "text": "Donna said to Gary: “Gary, look at you, you're a natural! Go on to Rosa's before she sends out a search party, but I'm putting us down as doubles partners on the ladder board, Saturday at eight. Don't you dare say no.”",
-        "importance": 4
-      },
       {
         "tick": 8,
         "text": "I said to Donna: “All right, Donna, put us down, Saturday at eight. But if I'm late it's 'cause the cart ate my morning, so no hard feelings.”",
@@ -1022,24 +1010,24 @@
         "tick": 109,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 110,
+        "text": "I said to Hal: “Afternoon, Hal. Thanks again for not giving me grief about being late to Rosa's. I'm on my way over by six this time, and the cart's wiring is finally buttoned up for the parade.”",
+        "importance": 4
+      },
+      {
+        "tick": 110,
+        "text": "Hal said to Gary: “Gary, the paperwork goes in before the wiring, not after. Get your cart mods in front of Architectural Review before that parade and we'll have no trouble, you and me.”",
+        "importance": 4
+      },
+      {
+        "tick": 110,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 23,
-        "text": "I said to Gary: “Gary, test it at low volume tonight, you've got until ten before the quiet rules kick in, and I'll hold my tongue about the form. Just promise me the paperwork gets filed Thursday, and that you'll hit the garage door with that paddle for twenty minutes after. Saturday at eight, partner.”",
-        "importance": 5
-      },
-      {
-        "tick": 23,
-        "text": "Gary said to Donna: “Alright, alright, you're right, I'll get the Architectural Review form filed before Saturday. Can't have my doubles partner sidelined over a speaker. See you at eight, and I'll bring the paddle.”",
-        "importance": 5
-      },
-      {
-        "tick": 24,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 24,
         "text": "Gary (gary golf cart): Finish wiring the rope lights and speaker, then run a low-volume test",
@@ -2024,19 +2012,24 @@
         "tick": 109,
         "text": "Rosa said to Donna: “Donna, glad I caught you. I'm doing a welcome dinner tonight at six, and Hal just swore he'll be there. Bring Gary and bring your appetite, I'll have the table set for all of you.”",
         "importance": 4
+      },
+      {
+        "tick": 110,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 110,
+        "text": "Rosa said to Donna: “Haven't laid eyes on Gary since this morning, hon. If you track him down, remind him six sharp at my place, and tell him the disposal is long forgiven.”",
+        "importance": 5
+      },
+      {
+        "tick": 110,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": -30,
-        "text": "Wrote 'Kowalski cart: lights + wiring, no approval?' in the notebook.",
-        "importance": 5
-      },
-      {
-        "tick": -8,
-        "text": "Counted five flamingos in Pruitt's yard. Limit is three.",
-        "importance": 5
-      },
       {
         "tick": -2,
         "text": "Rosa waved at me from her driveway. Waved back. Didn't know what else to do.",
@@ -3021,19 +3014,24 @@
         "tick": 109,
         "text": "Gary just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 110,
+        "text": "I said to Gary: “Gary, the paperwork goes in before the wiring, not after. Get your cart mods in front of Architectural Review before that parade and we'll have no trouble, you and me.”",
+        "importance": 4
+      },
+      {
+        "tick": 110,
+        "text": "Gary said to Hal: “Afternoon, Hal. Thanks again for not giving me grief about being late to Rosa's. I'm on my way over by six this time, and the cart's wiring is finally buttoned up for the parade.”",
+        "importance": 4
+      },
+      {
+        "tick": 110,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 1,
-        "text": "Hal headed to Town Square.",
-        "importance": 7
-      },
-      {
-        "tick": 2,
-        "text": "I said to Gary: “Gary, before you two run off: I'm hosting a welcome dinner at my place, and you, Donna, and Hal are all invited. It's the least I can do after the disposal, and I'm not taking no for an answer.”",
-        "importance": 7
-      },
       {
         "tick": 2,
         "text": "Gary said to Donna: “Alright, Donna, you win. Thirty minutes and I'm holding you to the coffee, but I'm warning you, I'll be terrible at it.”",
@@ -4023,6 +4021,16 @@
         "tick": 109,
         "text": "Donna said to Rosa: “Rosa, hon! Looking forward to dinner at six. Have you seen Gary at all? We're on the ladder now and I can't find my partner.”",
         "importance": 6
+      },
+      {
+        "tick": 110,
+        "text": "I said to Donna: “Haven't laid eyes on Gary since this morning, hon. If you track him down, remind him six sharp at my place, and tell him the disposal is long forgiven.”",
+        "importance": 4
+      },
+      {
+        "tick": 110,
+        "text": "Donna headed to Magnolia Loop (the street).",
+        "importance": 4
       }
     ]
   },
@@ -4069,10 +4077,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "cheerful",
-    "hal": "resolved",
-    "rosa": "hopeful"
+    "gary": "cheerful",
+    "donna": "determined",
+    "hal": "wry",
+    "rosa": "warm, slightly harried"
   },
   "laws": [
     {
@@ -4179,10 +4187,20 @@
         "Donna said to Rosa: “Rosa, hon! Looking forward to dinner at six. Have you seen Gary at all? We're on the ladder now and I can't find my partner.”",
         "Rosa said to Donna: “Donna, glad I caught you. I'm doing a welcome dinner tonight at six, and Hal just swore he'll be there. Bring Gary and bring your appetite, I'll have the table set for all of you.”"
       ]
+    },
+    {
+      "tick": 110,
+      "time": "Monday, October 19, 3:17 PM",
+      "story": "On a warm Monday afternoon in Sumter Oaks, Gary is cruising along Magnolia Loop in his golf cart, cheerfully promising Hal that he'll be at Rosa's by six and that the parade wiring is finally finished. Hal, leaning wryly against his own cart, reminds him that the Architectural Review paperwork should have gone in before the wiring, not after. Meanwhile, Donna is heading off, determined to track Gary down, while Rosa, back at the Rec Center and a little harried, asks her to pass along the six o'clock reminder and a friendly pardon for the disposal.",
+      "dialogue": [
+        "Gary said to Hal: “Afternoon, Hal. Thanks again for not giving me grief about being late to Rosa's. I'm on my way over by six this time, and the cart's wiring is finally buttoned up for the parade.”",
+        "Hal said to Gary: “Gary, the paperwork goes in before the wiring, not after. Get your cart mods in front of Architectural Review before that parade and we'll have no trouble, you and me.”",
+        "Rosa said to Donna: “Haven't laid eyes on Gary since this morning, hon. If you track him down, remind him six sharp at my place, and tell him the disposal is long forgiven.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 3.37314,
+    "total_usd": 3.40366,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4213,13 +4231,12 @@
         "usd": 0.46942
       },
       "2026-10-19": {
-        "ticks": 8,
-        "usd": 0.25479
+        "ticks": 9,
+        "usd": 0.28531
       }
     }
   },
   "recent_tick_costs": [
-    0.03154,
     0.0306,
     0.03242,
     0.03055,
@@ -4242,7 +4259,8 @@
     0.03225,
     0.03289,
     0.03191,
-    0.03098
+    0.03098,
+    0.03052
   ],
   "fund": {
     "gross_usd": 0.0,
