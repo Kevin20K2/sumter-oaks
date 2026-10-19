@@ -1,0 +1,118 @@
+{
+  "tick": 103,
+  "simulation_time": "Monday, October 19, 8:17 AM",
+  "weather": "Partly cloudy, 73°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On a mild Monday morning in Sumter Oaks, Gary is content in his garage, quietly wiring a speaker amp and light strings into his golf cart's battery and keeping everything hidden from street view until the HOA approves it. Donna, feeling determined, sits down with the club calendar to find open court time and pencil in the first ladder match against Gary. Hal, just as determined, heads out onto Magnolia Loop, while a worried Rosa makes her way over to his house to see what he's up to.",
+  "events": [
+    "Gary (gary golf cart): Wire the speaker amp and light strings into the cart's battery, keeping it all inside the garage and out of street view until approval comes through",
+    "Donna (donna club calendar): Check the calendar for open court time and note our first ladder match with Gary",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa headed to Hal's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's Monday morning and I'm home alone at my workbench. Donna's picking me up at 7:45 tomorrow for the ladder match, and I last bench-tested the speaker amp and lights, so the next step is the cart itself. My memory says I filed the Architectural Review form for the cart modifications, and L-01 means I can't mount anything visible from the street until it's approved. L-04 says holiday lighting doesn't start until Thanksgiving anyway. So I can wire things up and fit the sound system's mounting without bolting anything on for the street to see. Working on the cart makes me feel useful, and it keeps me out of trouble with the rules.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Wire the speaker amp and light strings into the cart's battery, keeping it all inside the garage and out of street view until approval comes through"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 8:17 AM Monday and I'm home. Gary and I are officially on the ladder as Pruitt-Kowalski, and Rosa mentioned last night that neither Gary nor Hal turned up for dinner, which is a little worrying, but nobody's in sight to ask. The practical thing is to get ready: my pickleball bag is right here and I already packed paddles, balls, and water bottles last tick. I'll check the club calendar to line up court time (staying within the 2-hour reservation limit) before heading out to find Gary.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check the calendar for open court time and note our first ladder match with Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's Monday morning and I'm at home with nobody in sight. I wrote up my notes on Gary's cart and Donna's flamingos last tick, so the next step is getting them to the review committee. That means Town Hall, via Magnolia Loop. Dinner with Rosa went fine, and Gary and I settled the cart business for the night, but the rules are the rules and paperwork is how you keep order. I'll follow procedure, not pick a fight. Time to walk it over.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with my notes on the cart modifications and flamingo count to file with the review committee."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's the morning after and I'm on Magnolia Loop with nobody in sight. Donna already told me last night she and Gary are on the ladder together and thanked me for dinner, so she's fine. Hal is the one I haven't heard from, and I keep worrying about him. Asking anyone again would be pointless since no one is around. The practical thing is to walk to Hal's house and check on him myself. I'm a nurse, and a neighbor who missed dinner and has gone quiet deserves a knock on the door.",
+      "emotional_state": "worried",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "hals_house",
+          "content": "Going to knock on Hal's door and make sure he's alright after he missed dinner."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03148,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9724,
+        "output_tokens": 1191,
+        "usd": 0.03136
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 385,
+        "output_tokens": 164,
+        "usd": 0.00012
+      }
+    }
+  }
+}
