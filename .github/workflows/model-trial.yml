@@ -1,0 +1,86 @@
+# Model trial: plays one town day twice from today's state, once with each resident model,
+# and reports cost and quality side by side. Never touches the live town (nothing is committed).
+# Run it from the Actions tab: "Model trial" > Run workflow. Costs about 50 cents.
+name: Model trial
+
+on:
+  workflow_dispatch:
+    inputs:
+      ticks:
+        description: "Ticks per model (one town day is 15)"
+        default: "15"
+      day:
+        description: "Town date to play, YYYY-MM-DD (a day with no calendar events)"
+        default: "2026-10-21"
+      models:
+        description: "Resident models to compare, space separated"
+        default: "claude-sonnet-5-5 claude-haiku-5-5"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sumter-oaks-trial
+  cancel-in-progress: false
+
+jobs:
+  trial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Play the day with each model
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TICKS: ${{ inputs.ticks }}
+          DAY: ${{ inputs.day }}
+          MODELS: ${{ inputs.models }}
+        run: |
+          N=$(( TICKS > 15 ? 15 : TICKS ))
+          for M in $MODELS; do
+            ARM="trial/$M"
+            mkdir -p "$ARM"
+            cp sim.py world.json seed.json prompt_template.md config.json "$ARM/"
+            cp -r data "$ARM/data"
+            # this arm's resident model; no pausing, no Stripe, no calendar events
+            python - "$ARM/config.json" "$M" <<'PY'
+          import json, sys
+          p, m = sys.argv[1], sys.argv[2]
+          c = json.load(open(p))
+          c["models"]["resident"] = m
+          c.setdefault("support", {})["pause_when_empty"] = False
+          c["calendar"] = []
+          json.dump(c, open(p, "w"), indent=2)
+          PY
+            for i in $(seq 0 $((N - 1))); do
+              H=$(printf "%02d" $((7 + i)))
+              SIM_NOW="${DAY}T${H}:17" python "$ARM/sim.py" || echo "tick failed for $M at $H:17"
+            done
+          done
+
+      - name: Compare
+        env:
+          MODELS: ${{ inputs.models }}
+        run: |
+          python tools/trial_report.py $(for M in $MODELS; do echo "trial/$M"; done) > trial/summary.md
+          cat trial/summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Keep the results
+        uses: actions/upload-artifact@v4
+        with:
+          name: model-trial
+          path: |
+            trial/summary.md
+            trial/*/data/ticks
+            trial/*/data/logs
+          retention-days: 30
