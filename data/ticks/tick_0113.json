@@ -1,0 +1,118 @@
+{
+  "tick": 113,
+  "simulation_time": "Monday, October 19, 6:17 PM",
+  "weather": "Partly cloudy, 76°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 6:17 on a mild Monday evening in Sumter Oaks, the four neighbors are all out on Magnolia Loop, where Gary strides off determinedly toward his own front door. Donna and Hal are hurrying toward Rosa's house, Donna cheerful and in a rush, Hal with quiet resolve, while Rosa, already home, settles in content at her own place. The golf carts are parked along the street, and the partly cloudy sky keeps the 76-degree air pleasant for the walk.",
+  "events": [
+    "Gary headed to Gary's House.",
+    "Donna headed to Rosa's House.",
+    "Hal headed to Rosa's House.",
+    "Rosa headed to Rosa's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Hal said wait for approval before running the parade, and I've already filed the form at the review desk. I told Donna I'd get sneakers and unplug the soldering iron, then meet her at the courts, and I promised not to be late for Rosa's dinner again. Everyone's standing around chatting and I've already said my piece, so repeating myself would just be noise. Time to act: head to my house, unplug the iron (also keeps the cart project honest, nothing running), grab sneakers.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading home to unplug the soldering iron and grab my sneakers, then I'll be right back for dinner."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 6:17 and Rosa's dinner was set for six, so we're already late. Gary just said he's heading home for sneakers and to unplug the iron, then meeting me at the courts. Hal already told him not to wait on the parade approval. Rosa's standing right here saying the table's practically assembled. Nobody needs another round of promises from me. The best move is to head to Rosa's with her and Hal, and Gary can catch up after the iron. Practice can wait until tomorrow; dinner can't.",
+      "emotional_state": "cheerful, hurried",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's for dinner, we're past six already and Gary can catch up after he unplugs that iron."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's 6:17, Rosa's dinner was at six, and I told Gary I'd carry something. Everyone's said their piece on the cart and the flamingos, so there's no point repeating myself out here on Magnolia Loop. I've got no dish to carry yet, so the best thing is to head over to Rosa's place and make good on my word, then actually help her. Enough record-keeping for one evening.",
+      "emotional_state": "resolved",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's for the welcome dinner. I'm already late and I said I'd carry something."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 6:17 PM on Monday, and all three of my neighbors are standing right here on Magnolia Loop. Saturday's dinner is already settled: Hal said he'll carry something, Gary promised not to be late, Donna's been invited. I've asked everyone already, so asking again would just be nagging. Gary and Donna are heading to the courts, and the conversation has run its course. The useful thing now is to plan the actual dinner, so I'll go home and work out the menu, the table, and who's bringing what.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Everyone's confirmed for Saturday, so I'm heading home to plan the menu and figure out how to seat four at my table."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0332,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10957,
+        "output_tokens": 1117,
+        "usd": 0.03308
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 348,
+        "output_tokens": 168,
+        "usd": 0.00012
+      }
+    }
+  }
+}

@@ -1,61 +1,46 @@
 {
-  "tick": 113,
-  "time": "2026-10-19T17:17",
+  "tick": 114,
+  "time": "2026-10-19T18:17",
   "positions": {
-    "gary": "magnolia_loop",
-    "donna": "magnolia_loop",
-    "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "gary": "garys_house",
+    "donna": "rosas_house",
+    "hal": "rosas_house",
+    "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Hal: “Oh Hal, you got me, the flock does get ahead of itself. I'll pull a few back to the lanai by Saturday, scout's honor, and you keep the committee out of my business.”",
-      "Hal said to Gary: “Committee usually takes a week or two, Gary. Don't run the parade till you've got the approval in hand. Now let's quit squawking and get to Rosa's table before six; I'll carry something.”",
-      "Rosa said to Donna: “Donna, look who's standing right here, your missing partner. Well, with all three of you on one street, the dinner table's practically assembled already.”"
+      "Donna headed to Rosa's House.",
+      "Hal headed to Rosa's House.",
+      "Rosa headed to Rosa's House.",
+      "You arrived at Gary's House."
     ],
     "donna": [
-      "Gary said to Donna: “I hear you, Donna. I'm heading to my place right now for sneakers and to unplug the iron, then I'll meet you at the courts. Not late for Rosa this time, I promise.”",
-      "Hal said to Gary: “Committee usually takes a week or two, Gary. Don't run the parade till you've got the approval in hand. Now let's quit squawking and get to Rosa's table before six; I'll carry something.”",
-      "Rosa said to Donna: “Donna, look who's standing right here, your missing partner. Well, with all three of you on one street, the dinner table's practically assembled already.”"
+      "Gary headed to Gary's House.",
+      "Hal headed to Rosa's House.",
+      "Rosa headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Hal just arrived.",
+      "Rosa just arrived."
     ],
     "hal": [
-      "Gary said to Donna: “I hear you, Donna. I'm heading to my place right now for sneakers and to unplug the iron, then I'll meet you at the courts. Not late for Rosa this time, I promise.”",
-      "Donna said to Hal: “Oh Hal, you got me, the flock does get ahead of itself. I'll pull a few back to the lanai by Saturday, scout's honor, and you keep the committee out of my business.”",
-      "Rosa said to Donna: “Donna, look who's standing right here, your missing partner. Well, with all three of you on one street, the dinner table's practically assembled already.”"
+      "Gary headed to Gary's House.",
+      "Donna headed to Rosa's House.",
+      "Rosa headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Donna just arrived.",
+      "Rosa just arrived."
     ],
     "rosa": [
-      "Gary said to Donna: “I hear you, Donna. I'm heading to my place right now for sneakers and to unplug the iron, then I'll meet you at the courts. Not late for Rosa this time, I promise.”",
-      "Donna said to Hal: “Oh Hal, you got me, the flock does get ahead of itself. I'll pull a few back to the lanai by Saturday, scout's honor, and you keep the committee out of my business.”",
-      "Hal said to Gary: “Committee usually takes a week or two, Gary. Don't run the parade till you've got the approval in hand. Now let's quit squawking and get to Rosa's table before six; I'll carry something.”"
+      "Gary headed to Gary's House.",
+      "Donna headed to Rosa's House.",
+      "Hal headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Donna just arrived.",
+      "Hal just arrived."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 13,
-        "text": "I (gary golf cart): Run the 12V wiring harness and test-fit the speaker mount inside the cart",
-        "importance": 5
-      },
-      {
-        "tick": 13,
-        "text": "Donna just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 14,
-        "text": "I said to Donna: “Morning, Donna! Come on in, mind the wire on the floor. I'm knee-deep in the parade cart, but I can spare a few minutes. What brings you by?”",
-        "importance": 4
-      },
-      {
-        "tick": 14,
-        "text": "Donna said to Gary: “Gary, I came to you since you didn't come to me. Spare paddle's in the bag, the court's open till noon, and I'll have you back before lunch. Grab your sneakers, you're my doubles partner now.”",
-        "importance": 4
-      },
-      {
-        "tick": 15,
-        "text": "I said to Donna: “Alright, Donna, you've worn me down. Give me two minutes to find my sneakers and unplug the soldering iron, but fair warning, I'm going to be terrible at this.”",
-        "importance": 6
-      },
       {
         "tick": 15,
         "text": "Donna said to Gary: “Thanks, Gary, I'll mind the wire. I came to steal you for pickleball, but it's past noon now, so how about I book us a court for tomorrow morning and you finish your cart today? Thirty minutes, spare paddle, and I'll bring the coffee.”",
@@ -1030,44 +1015,34 @@
         "tick": 112,
         "text": "Rosa said to Donna: “Donna, look who's standing right here, your missing partner. Well, with all three of you on one street, the dinner table's practically assembled already.”",
         "importance": 4
+      },
+      {
+        "tick": 113,
+        "text": "I headed to Gary's House.",
+        "importance": 4
+      },
+      {
+        "tick": 113,
+        "text": "Donna headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 113,
+        "text": "Hal headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 113,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 113,
+        "text": "You arrived at Gary's House.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 28,
-        "text": "I (donna pickleball bag): Pull out the spare paddle and set it aside for Gary",
-        "importance": 5
-      },
-      {
-        "tick": 29,
-        "text": "I (donna club calendar): Pencil in Saturday 8 AM pickleball with Gary, then Rosa's dinner that evening",
-        "importance": 5
-      },
-      {
-        "tick": 30,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 30,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 30,
-        "text": "Hal just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 31,
-        "text": "I said to Hal: “Morning, Hal! I know you've got your eye on my flamingos, so I'll save you the trouble. I'll do a quick count and trim the flock down to three so we're square with the ornament rule. No violation notice needed.”",
-        "importance": 4
-      },
-      {
-        "tick": 31,
-        "text": "Gary said to Donna: “Tomorrow morning works, Donna, put me down for the court and I'll bring my worst backhand. Today I've got to finish the cart wiring and get that Architectural Review form filed. Either of you know where they keep the blanks?”",
-        "importance": 4
-      },
       {
         "tick": 31,
         "text": "Hal said to Donna: “Donna, I counted your flamingos from the street this morning. L-02 says three ornaments, and you're well past that. Thin the flock before I have to write it up, and I'd rather not.”",
@@ -2032,44 +2007,44 @@
         "tick": 112,
         "text": "Rosa said to Donna: “Donna, look who's standing right here, your missing partner. Well, with all three of you on one street, the dinner table's practically assembled already.”",
         "importance": 5
-      }
-    ],
-    "hal": [
-      {
-        "tick": 3,
-        "text": "I (architectural review desk): File report: Kowalski cart lights and wiring, no approval on record; Gary admitted it himself",
-        "importance": 6
       },
       {
-        "tick": 4,
-        "text": "I (architectural review desk): File complaint: Donna's flamingo collection, over three visible ornaments, violation of L-02",
+        "tick": 113,
+        "text": "I headed to Rosa's House.",
         "importance": 5
       },
       {
-        "tick": 5,
-        "text": "I (architectural review desk): Double-check both filings are logged with dates and violation codes L-01 and L-02",
-        "importance": 4
+        "tick": 113,
+        "text": "Gary headed to Gary's House.",
+        "importance": 5
       },
       {
-        "tick": 6,
-        "text": "I headed to Town Square.",
-        "importance": 3
+        "tick": 113,
+        "text": "Hal headed to Rosa's House.",
+        "importance": 5
       },
       {
-        "tick": 6,
-        "text": "You arrived at Town Square.",
-        "importance": 3
+        "tick": 113,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 5
       },
       {
-        "tick": 7,
-        "text": "I (parade signup table): Read the sign-up sheet to see whether Gary's cart is entered in the parade",
-        "importance": 4
+        "tick": 113,
+        "text": "You arrived at Rosa's House.",
+        "importance": 5
       },
       {
-        "tick": 8,
-        "text": "I (ice cream stand): Buy a plain vanilla cone and eat it on the way to a bench",
-        "importance": 2
+        "tick": 113,
+        "text": "Hal just arrived.",
+        "importance": 5
       },
+      {
+        "tick": 113,
+        "text": "Rosa just arrived.",
+        "importance": 5
+      }
+    ],
+    "hal": [
       {
         "tick": 9,
         "text": "I headed to Town Hall.",
@@ -3034,44 +3009,44 @@
         "tick": 112,
         "text": "Rosa said to Donna: “Donna, look who's standing right here, your missing partner. Well, with all three of you on one street, the dinner table's practically assembled already.”",
         "importance": 5
+      },
+      {
+        "tick": 113,
+        "text": "I headed to Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 113,
+        "text": "Gary headed to Gary's House.",
+        "importance": 6
+      },
+      {
+        "tick": 113,
+        "text": "Donna headed to Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 113,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 113,
+        "text": "You arrived at Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 113,
+        "text": "Donna just arrived.",
+        "importance": 6
+      },
+      {
+        "tick": 113,
+        "text": "Rosa just arrived.",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 4,
-        "text": "You arrived at Town Square.",
-        "importance": 6
-      },
-      {
-        "tick": 5,
-        "text": "I (parade signup table): Look over the parade signup sheet to see who's entered what and what the fuss is about",
-        "importance": 4
-      },
-      {
-        "tick": 6,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 6,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 7,
-        "text": "I (street bulletin board): Pin up a handwritten welcome dinner invitation for Gary, Donna, and Hal at my place, with food and no cart or flamingo debates",
-        "importance": 6
-      },
-      {
-        "tick": 8,
-        "text": "I (mailbox kiosk): Check my mail and any notices posted at the kiosk",
-        "importance": 3
-      },
-      {
-        "tick": 9,
-        "text": "I headed to Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 9,
         "text": "You arrived at Rosa's House.",
@@ -4036,6 +4011,41 @@
         "tick": 112,
         "text": "Hal said to Gary: “Committee usually takes a week or two, Gary. Don't run the parade till you've got the approval in hand. Now let's quit squawking and get to Rosa's table before six; I'll carry something.”",
         "importance": 6
+      },
+      {
+        "tick": 113,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 113,
+        "text": "Gary headed to Gary's House.",
+        "importance": 4
+      },
+      {
+        "tick": 113,
+        "text": "Donna headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 113,
+        "text": "Hal headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 113,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 113,
+        "text": "Donna just arrived.",
+        "importance": 4
+      },
+      {
+        "tick": 113,
+        "text": "Hal just arrived.",
+        "importance": 4
       }
     ]
   },
@@ -4083,9 +4093,9 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "sheepish but cheerful",
-    "hal": "gruff but mellowing",
-    "rosa": "hopeful"
+    "donna": "cheerful, hurried",
+    "hal": "resolved",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4166,9 +4176,16 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 113,
+      "time": "Monday, October 19, 6:17 PM",
+      "story": "At 6:17 on a mild Monday evening in Sumter Oaks, the four neighbors are all out on Magnolia Loop, where Gary strides off determinedly toward his own front door. Donna and Hal are hurrying toward Rosa's house, Donna cheerful and in a rush, Hal with quiet resolve, while Rosa, already home, settles in content at her own place. The golf carts are parked along the street, and the partly cloudy sky keeps the 76-degree air pleasant for the walk.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 3.4705,
+    "total_usd": 3.5037,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4199,13 +4216,12 @@
         "usd": 0.46942
       },
       "2026-10-19": {
-        "ticks": 11,
-        "usd": 0.35215
+        "ticks": 12,
+        "usd": 0.38535
       }
     }
   },
   "recent_tick_costs": [
-    0.03055,
     0.03049,
     0.02947,
     0.03214,
@@ -4228,7 +4244,8 @@
     0.03098,
     0.03052,
     0.03214,
-    0.0347
+    0.0347,
+    0.0332
   ],
   "fund": {
     "gross_usd": 0.0,
