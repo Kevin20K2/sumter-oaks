@@ -1,0 +1,117 @@
+{
+  "tick": 108,
+  "simulation_time": "Monday, October 19, 1:17 PM",
+  "weather": "Partly cloudy, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 1:17 on a mild Monday afternoon in Sumter Oaks, Gary is at home focused on zip-tying the wiring runs and fitting spare fuses into his golf cart's amp and light circuits. Donna and Rosa are both determined and heading toward the Rec Center, while Hal, gruffly warm as ever, promises Rosa he'll show up at six sharp with something in hand so he isn't empty-handed. The flamingos on Magnolia Loop will have to wait until after dinner.",
+  "events": [
+    "Gary (gary golf cart): Zip-tie the wiring runs and fit spare fuses in the amp and light circuits",
+    "Donna headed to Rec Center.",
+    "Rosa headed to Rec Center."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've been wiring and testing the cart all morning, and the amp and lights are working off the battery. Spare fuses and zip ties were grabbed last tick, so the next step is to finish securing the wiring. Everything stays inside the garage since the Architectural Review approval hasn't come through yet (L-01). Rosa's roast is at six, so I have plenty of afternoon left but shouldn't lose track of time. Keep the work tidy and let the cart sit until approved.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Zip-tie the wiring runs and fit spare fuses in the amp and light circuits"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa's already heard my yes on six tonight, and Hal's busy counting my flamingos, so no need to belabor either. The real loose end is Gary. I've been hunting for him since the ladder sign-up and nobody on Magnolia Loop has seen him. Our ladder match won't win itself, and he's still new to this. The courts are at the rec center and he's been rallying on court one before, so that's the logical place to find him. I'll head there instead of standing around chatting.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center to track down Gary for our ladder match."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa asked if she can count on me for six tonight and I haven't answered. Donna's flamingo flock is right here, and I should do my duty and count them for the committee, but I won't leave the woman hanging. Answer Rosa plainly, then the count can wait until after pot roast, as she said. Gruff but honest: I'll be there, and I'll bring something to carry.",
+      "emotional_state": "gruffly warm",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "You can count on me, Rosa. Six sharp, and I'll bring something so I'm not showing up empty-handed. The flamingos can keep till after dinner."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Donna already confirmed six tonight, and I've asked Hal once and he didn't answer. Asking again would just be nagging, and I've said everything I need to say. Gary is the missing piece; Donna's hunting for him and I want all three at my table. He's probably at the rec center with his speaker or paddle, so I'll go look. If I find him, I can invite him in person and also pass Donna's message along. That moves the dinner forward instead of repeating myself.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center to track down Gary, tell him Donna's looking for him, and invite him to dinner at six."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03191,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10522,
+        "output_tokens": 1074,
+        "usd": 0.03178
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 416,
+        "output_tokens": 169,
+        "usd": 0.00013
+      }
+    }
+  }
+}

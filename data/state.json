@@ -1,34 +1,33 @@
 {
-  "tick": 108,
-  "time": "2026-10-19T12:17",
+  "tick": 109,
+  "time": "2026-10-19T13:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
+    "donna": "rec_center",
     "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "rosa": "rec_center"
   },
   "perceptions": {
     "gary": [],
     "donna": [
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and write the total in my notebook for the committee",
-      "Rosa said to Hal: “Hal, Donna's coming at six tonight and I'm setting a place for you too. No pressure about the flamingo count, it'll still be here after pot roast. Can I count on you?”"
+      "Hal said to Rosa: “You can count on me, Rosa. Six sharp, and I'll bring something so I'm not showing up empty-handed. The flamingos can keep till after dinner.”",
+      "Rosa headed to Rec Center.",
+      "You arrived at Rec Center.",
+      "Rosa just arrived."
     ],
     "hal": [
-      "Donna said to Rosa: “Rosa, six tonight is perfect, no need to build around me, I'll be there with bells on. And if you spot Gary before I do, tell him his doubles partner is hunting for him, we have a ladder match to win!”",
-      "Rosa said to Hal: “Hal, Donna's coming at six tonight and I'm setting a place for you too. No pressure about the flamingo count, it'll still be here after pot roast. Can I count on you?”"
+      "Donna headed to Rec Center.",
+      "Rosa headed to Rec Center."
     ],
     "rosa": [
-      "Donna said to Rosa: “Rosa, six tonight is perfect, no need to build around me, I'll be there with bells on. And if you spot Gary before I do, tell him his doubles partner is hunting for him, we have a ladder match to win!”",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and write the total in my notebook for the committee"
+      "Donna headed to Rec Center.",
+      "Hal said to Rosa: “You can count on me, Rosa. Six sharp, and I'll bring something so I'm not showing up empty-handed. The flamingos can keep till after dinner.”",
+      "You arrived at Rec Center.",
+      "Donna just arrived."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 5,
-        "text": "I said to Donna: “Morning, Donna. I'm here, but fair warning, I've never held a paddle in my life. Oh, and Rosa says dinner's at six tonight at her place, she wanted me to tell you.”",
-        "importance": 4
-      },
       {
         "tick": 5,
         "text": "Donna said to Gary: “There he is! Court 1 is ours for the hour, Gary, and the spare paddle's right here. Stand behind the kitchen line and just keep the ball in, you'll be a natural by noon.”",
@@ -1023,34 +1022,14 @@
         "tick": 107,
         "text": "I (gary toolbox): Grab spare fuses and zip ties, then secure the cart wiring",
         "importance": 4
+      },
+      {
+        "tick": 108,
+        "text": "I (gary golf cart): Zip-tie the wiring runs and fit spare fuses in the amp and light circuits",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 19,
-        "text": "Hal headed to Town Square.",
-        "importance": 4
-      },
-      {
-        "tick": 20,
-        "text": "I headed to Gary's House.",
-        "importance": 6
-      },
-      {
-        "tick": 20,
-        "text": "You arrived at Gary's House.",
-        "importance": 6
-      },
-      {
-        "tick": 21,
-        "text": "I said to Gary: “Gary, you were a natural out there. I'm booking us the court for Saturday at eight, a nice tidy hour and a half, and the spare paddle is yours to keep until then. Practice the dink against your garage door and we'll work on that kitchen line together.”",
-        "importance": 6
-      },
-      {
-        "tick": 21,
-        "text": "Gary (gary golf cart): Wire the marine speaker to the cart battery and test it at low volume",
-        "importance": 6
-      },
       {
         "tick": 22,
         "text": "I said to Gary: “Gary, hon, that speaker sounds like a fun project, but anything you bolt onto the cart where the street can see it needs Architectural Review's blessing first. File the form before Saturday so you're not benched by a violation, I need my partner.”",
@@ -2025,6 +2004,31 @@
         "tick": 107,
         "text": "Rosa said to Hal: “Hal, Donna's coming at six tonight and I'm setting a place for you too. No pressure about the flamingo count, it'll still be here after pot roast. Can I count on you?”",
         "importance": 5
+      },
+      {
+        "tick": 108,
+        "text": "I headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 108,
+        "text": "Hal said to Rosa: “You can count on me, Rosa. Six sharp, and I'll bring something so I'm not showing up empty-handed. The flamingos can keep till after dinner.”",
+        "importance": 5
+      },
+      {
+        "tick": 108,
+        "text": "Rosa headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 108,
+        "text": "You arrived at Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 108,
+        "text": "Rosa just arrived.",
+        "importance": 5
       }
     ],
     "hal": [
@@ -2997,29 +3001,24 @@
         "tick": 107,
         "text": "Rosa said to Hal: “Hal, Donna's coming at six tonight and I'm setting a place for you too. No pressure about the flamingo count, it'll still be here after pot roast. Can I count on you?”",
         "importance": 5
+      },
+      {
+        "tick": 108,
+        "text": "I said to Rosa: “You can count on me, Rosa. Six sharp, and I'll bring something so I'm not showing up empty-handed. The flamingos can keep till after dinner.”",
+        "importance": 5
+      },
+      {
+        "tick": 108,
+        "text": "Donna headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 108,
+        "text": "Rosa headed to Rec Center.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": -15,
-        "text": "Gary fixed my garbage disposal and refused to take any money.",
-        "importance": 5
-      },
-      {
-        "tick": -10,
-        "text": "Donna invited me to three clubs in one conversation.",
-        "importance": 5
-      },
-      {
-        "tick": -1,
-        "text": "Hal told me my recycling bin was facing the wrong way. He was right.",
-        "importance": 5
-      },
-      {
-        "tick": 1,
-        "text": "I said to Hal: “Morning, Hal. Thanks for the recycling tip, you were right. I'm hosting a welcome dinner at my place and I'd like you, Gary, and Donna all at the table. Come hungry, and leave the cart and flamingo opinions at the door.”",
-        "importance": 7
-      },
       {
         "tick": 1,
         "text": "Gary said to Hal: “Morning, Hal. Sorry about the Buffett, just testing the speaker and it's down now. I know the lights and sound need Architectural Review sign-off before the parade, so I'm wiring it in the garage first and filing the paperwork after.”",
@@ -3994,6 +3993,31 @@
         "tick": 107,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and write the total in my notebook for the committee",
         "importance": 6
+      },
+      {
+        "tick": 108,
+        "text": "I headed to Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 108,
+        "text": "Donna headed to Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 108,
+        "text": "Hal said to Rosa: “You can count on me, Rosa. Six sharp, and I'll bring something so I'm not showing up empty-handed. The flamingos can keep till after dinner.”",
+        "importance": 6
+      },
+      {
+        "tick": 108,
+        "text": "You arrived at Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 108,
+        "text": "Donna just arrived.",
+        "importance": 6
       }
     ]
   },
@@ -4042,8 +4066,8 @@
   "emotions": {
     "gary": "focused",
     "donna": "determined",
-    "hal": "dutiful",
-    "rosa": "hopeful"
+    "hal": "gruffly warm",
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -4133,10 +4157,18 @@
         "Donna said to Rosa: “Rosa, six tonight is perfect, no need to build around me, I'll be there with bells on. And if you spot Gary before I do, tell him his doubles partner is hunting for him, we have a ladder match to win!”",
         "Rosa said to Hal: “Hal, Donna's coming at six tonight and I'm setting a place for you too. No pressure about the flamingo count, it'll still be here after pot roast. Can I count on you?”"
       ]
+    },
+    {
+      "tick": 108,
+      "time": "Monday, October 19, 1:17 PM",
+      "story": "At 1:17 on a mild Monday afternoon in Sumter Oaks, Gary is at home focused on zip-tying the wiring runs and fitting spare fuses into his golf cart's amp and light circuits. Donna and Rosa are both determined and heading toward the Rec Center, while Hal, gruffly warm as ever, promises Rosa he'll show up at six sharp with something in hand so he isn't empty-handed. The flamingos on Magnolia Loop will have to wait until after dinner.",
+      "dialogue": [
+        "Hal said to Rosa: “You can count on me, Rosa. Six sharp, and I'll bring something so I'm not showing up empty-handed. The flamingos can keep till after dinner.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 3.31025,
+    "total_usd": 3.34216,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4167,13 +4199,12 @@
         "usd": 0.46942
       },
       "2026-10-19": {
-        "ticks": 6,
-        "usd": 0.1919
+        "ticks": 7,
+        "usd": 0.22381
       }
     }
   },
   "recent_tick_costs": [
-    0.03164,
     0.03008,
     0.03154,
     0.0306,
@@ -4196,7 +4227,8 @@
     0.03295,
     0.03064,
     0.03225,
-    0.03289
+    0.03289,
+    0.03191
   ],
   "fund": {
     "gross_usd": 0.0,
