@@ -216,6 +216,7 @@ def update_fund(cfg, state, fetched=None):
         "ticks_left": int(ticks_left),
         "days_left": round(days_left, 1),
         "level": level,
+        "paused": bool(level == "empty" and sup.get("pause_when_empty")),   # a "hurricane day" on the page
         "options": d["options"],
     }
     save_json(TICKS / "fund.json", doc)
@@ -787,6 +788,11 @@ def run_tick(world, state, cfg, template, brain):
     cal = calendar_news(cfg, state, now)
     town_news += [line for line, _, _ in cal]
     cal_importance = {line: imp for line, imp, _ in cal}
+    if state.pop("hurricane_over", False):
+        over = ("Town news: The hurricane day is over. The power is back on along Magnolia Loop, "
+                "and neighbors are stepping outside to see how everyone came through.")
+        town_news.append(over)
+        cal_importance[over] = 8
     scenes = [scene for _, _, scene in cal if scene]
 
     # what each resident perceives next tick, and what they remember
@@ -962,13 +968,18 @@ def main():
                   f"{cfg['day_start']}. No tick run. (Use --force to run anyway.)")
             return
 
-    # When the cloud is empty and pausing is on, the town sleeps until someone chips in.
+    # When the cloud is empty and pausing is on, it's a "hurricane day": the town shelters in place
+    # (no ticks, no AI spending) until someone chips in, then the next tick tells everyone it's over.
     if cfg.get("support", {}).get("pause_when_empty") and not args.mock:
         fund = update_fund(cfg, state)
-        save_json(STATE_FILE, state)
         if fund["level"] == "empty":
-            print(f"The cloud is empty (balance ${fund['balance_usd']:.2f}), so the town is paused. No ticks run.")
+            state.setdefault("hurricane_since", dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"))
+            save_json(STATE_FILE, state)
+            print(f"The cloud is empty (balance ${fund['balance_usd']:.2f}): hurricane day, the town is paused. No ticks run.")
             return
+        if state.pop("hurricane_since", None):
+            state["hurricane_over"] = True
+        save_json(STATE_FILE, state)
     brain.preflight()
 
     for _ in range(args.ticks):

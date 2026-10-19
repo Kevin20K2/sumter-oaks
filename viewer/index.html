@@ -339,6 +339,17 @@ button:disabled { opacity: 0.4; cursor: default; }
 .pcart.west svg { transform: scaleX(-1); }
 .parade-banner { position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%); font-family: var(--font-mono); font-size: clamp(10px, 1.6vw, 13px); letter-spacing: 0.06em; text-transform: uppercase; color: #fff; background: #c2560f; border-radius: 999px; padding: 3px 12px; white-space: nowrap; box-shadow: 0 2px 0 #7a340a; }
 @media (prefers-reduced-motion: reduce) { .deco.bat { animation: none; } }
+
+/* Hurricane day: the cloud is empty and the town is paused until someone tops it up */
+.hurricane-note { background: #2f3a46; color: #f4f6f8; border-radius: 12px; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.hurricane-note[hidden] { display: none; }
+.hurricane-note b { font-family: var(--font-display); font-size: 1.05rem; }
+.hurricane-note p { margin: 0; flex: 1 1 24ch; font-size: 0.98rem; }
+.hurricane-note a { font-family: var(--font-display); font-weight: 700; color: #2f3a46; background: #ffd34d; border-radius: 999px; padding: 7px 16px; text-decoration: none; white-space: nowrap; }
+.scene.hurricane .sky .wx { background-color: rgba(70, 82, 98, .62) !important; }
+.scene.hurricane .sky .rain { opacity: .75; background-image: repeating-linear-gradient(118deg, transparent 0 9px, rgba(225,235,245,.6) 9px 10px, transparent 10px 19px); }
+.storm-tag { display: none; position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%); z-index: 4; font-family: var(--font-mono); font-size: clamp(10px, 1.6vw, 13px); letter-spacing: 0.06em; text-transform: uppercase; color: #fff; background: #2f3a46; border-radius: 999px; padding: 3px 12px; white-space: nowrap; }
+.scene.hurricane .storm-tag { display: block; }
 </style>
 
 <div class="wrap">
@@ -356,6 +367,12 @@ button:disabled { opacity: 0.4; cursor: default; }
     <ol id="a2hs-steps"></ol>
     <form method="dialog"><button class="close" type="submit">Got it</button></form>
   </dialog>
+
+  <div class="hurricane-note" id="hurricane" role="status" hidden>
+    <b>Hurricane day on Magnolia Loop</b>
+    <p id="hurricane-text">The cloud is out of power, so the neighbors are sheltering in place. The town picks up again as soon as someone tops it up.</p>
+    <a href="#support">Restore power</a>
+  </div>
 
   <div class="thanks" id="thanks" role="status" hidden>
     <span>Thank you! Your gift reaches the cloud at the next hourly tick. Watch it puff up.</span>
@@ -406,6 +423,7 @@ button:disabled { opacity: 0.4; cursor: default; }
       <div id="cloud"></div>
       <div class="layer" id="avatars"></div>
       <div class="layer" id="bubbles" aria-live="polite"></div>
+      <span class="storm-tag" aria-hidden="true">Hurricane day · sheltering in place</span>
     </section>
     <aside class="people" id="people" aria-label="Residents"></aside>
   </div>
@@ -798,12 +816,23 @@ function drawCloud(f) {
   const text = document.createElement("span");
   text.innerHTML = `<span class="cl-k">THE CLOUD</span>`;
   if (showCountdown(f)) {
-    const v = document.createElement("span"); v.className = "cl-v"; v.textContent = powerLeft(f); text.append(v);
+    const v = document.createElement("span"); v.className = "cl-v"; v.textContent = isHurricane(f) ? "Hurricane day" : powerLeft(f); text.append(v);
   }
   link.append(svg, text);
   host.append(link);
 }
 
+// Hurricane day: the town is paused because the cloud is empty. How far a $5 gift goes, after card fees.
+const isHurricane = (f) => !!(f && f.paused);
+function fiveDollarDays(f) {
+  const perDay = f.ticks_left > 0 && f.days_left > 0 ? f.ticks_left / f.days_left : 15;
+  return Math.max(1, Math.floor((5 * 0.971 - 0.30) / ((f.avg_tick_usd || 0.03) * perDay)));
+}
+function renderHurricane(f) {
+  const on = isHurricane(f);
+  $("hurricane").hidden = !on;
+  if (on) $("hurricane-text").textContent = `The cloud is out of power, so the neighbors are sheltering in place and no new ticks run. A $5 gift brings back about ${fiveDollarDays(f)} days of town life; the neighbors come back out at the next hourly check.`;
+}
 function renderSupport(f) {
   const sec = $("support");
   if (!f) { sec.hidden = true; return; }
@@ -819,7 +848,7 @@ function renderSupport(f) {
     bright: cost,
     fair: "Sumter Oaks has " + powerLeft(f) + " left in the cloud.",
     low: "The cloud is running thin: " + powerLeft(f) + " left.",
-    empty: "The cloud is empty. The neighbors are waiting for someone to top it up.",
+    empty: isHurricane(f) ? `Hurricane day: the town is paused until the cloud has power again. A $5 gift brings back about ${fiveDollarDays(f)} days.` : "The cloud is empty. The neighbors are waiting for someone to top it up.",
   }[f.level] || "";
   $("sup-status").textContent = lead;
   const who = f.supporters ? ` Thanks to ${f.supporters} supporter${f.supporters === 1 ? "" : "s"}${f.monthly_supporters ? ` (${f.monthly_supporters} monthly)` : ""}.` : "";
@@ -898,12 +927,19 @@ async function poll() {
   try {
     const index = await getJSON("data/ticks/index.json");
     const fresh = index.ticks.filter(n => !data.names.includes(n));
-    if (!fresh.length) return;
+    if (!fresh.length) {   // no new tick (night, or a hurricane day): still keep the cloud and banner current
+      const f = await loadFund();
+      if (f && f.updated !== data.fund?.updated) {
+        data.fund = f; drawCloud(f); renderSupport(f); renderHurricane(f);
+        $("scene").classList.toggle("hurricane", isHurricane(f) && idx === data.names.length - 1);
+      }
+      return;
+    }
     if (hasMeta(index)) data.meta = index.meta;
     data.episodes = await loadEpisodes();
     renderPrevious();
     data.fund = await loadFund() || data.fund;
-    drawCloud(data.fund); renderSupport(data.fund);
+    drawCloud(data.fund); renderSupport(data.fund); renderHurricane(data.fund);
     const atEnd = idx === data.names.length - 1;
     const base = data.names.length;
     const got = await loadTicks(fresh);
@@ -1557,6 +1593,7 @@ function go(i, step) {
   $("next").disabled = idx === data.names.length - 1;
   setSky(t);
   renderSeason(t);
+  $("scene").classList.toggle("hurricane", isHurricane(data.fund) && idx === data.names.length - 1);
   if (!(data.ticks[from]?.tick === t.tick && $("parade").childElementCount)) runParade(t);
   layoutScene(!firstPaint, drive);
   firstPaint = false;
@@ -1585,7 +1622,7 @@ loadData().then(d => {
   renderCast(d.world);
   renderPrevious();
   drawCloud(d.fund);
-  renderSupport(d.fund);
+  renderSupport(d.fund); renderHurricane(d.fund);
   initSuggestionBox();
   initHomeScreen();
   if (/[?&]thanks=1\b/.test(location.search)) {
