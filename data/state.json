@@ -1,44 +1,30 @@
 {
-  "tick": 129,
-  "time": "2026-10-20T18:17",
+  "tick": 130,
+  "time": "2026-10-20T19:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
-    "hal": "rec_center",
+    "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Hal: “Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together.”",
-      "Hal said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”"
+      "Donna (pickleball court 1): Pick up my paddle and rally one last time with Gary, working on his dinks",
+      "Hal headed to Magnolia Loop (the street)."
     ],
     "donna": [
-      "Gary said to Hal: “Evening, Hal. Donna's got me popping dinks soft as a baby's tuck-in, and my cart form's filed, so I'm keeping my word. Give me one more rally and I'll head over for Rosa's dinner right on time.”",
-      "Hal said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”"
+      "Gary said to Hal: “Saturday at six, boots wiped, I've got it written down this time. Let me stash my paddle and I'll walk out with you two.”",
+      "Hal headed to Magnolia Loop (the street)."
     ],
     "hal": [
-      "Gary said to Hal: “Evening, Hal. Donna's got me popping dinks soft as a baby's tuck-in, and my cart form's filed, so I'm keeping my word. Give me one more rally and I'll head over for Rosa's dinner right on time.”",
-      "Donna said to Hal: “Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together.”"
+      "Gary said to Hal: “Saturday at six, boots wiped, I've got it written down this time. Let me stash my paddle and I'll walk out with you two.”",
+      "Donna (pickleball court 1): Pick up my paddle and rally one last time with Gary, working on his dinks",
+      "You arrived at Magnolia Loop (the street)."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 33,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street to confirm it's three",
-        "importance": 6
-      },
-      {
-        "tick": 33,
-        "text": "You arrived at Town Square.",
-        "importance": 6
-      },
-      {
-        "tick": 34,
-        "text": "I headed to Town Hall.",
-        "importance": 6
-      },
       {
         "tick": 34,
         "text": "You arrived at Town Hall.",
@@ -1023,24 +1009,24 @@
         "tick": 128,
         "text": "Hal said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”",
         "importance": 4
+      },
+      {
+        "tick": 129,
+        "text": "I said to Hal: “Saturday at six, boots wiped, I've got it written down this time. Let me stash my paddle and I'll walk out with you two.”",
+        "importance": 4
+      },
+      {
+        "tick": 129,
+        "text": "Donna (pickleball court 1): Pick up my paddle and rally one last time with Gary, working on his dinks",
+        "importance": 4
+      },
+      {
+        "tick": 129,
+        "text": "Hal headed to Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 45,
-        "text": "Rosa said to Donna: “Morning, Donna. Quick favor: you seen Gary today? He keeps slipping past me and I want him at my table Saturday at six, so if you run into him before I do, nudge him my way.”",
-        "importance": 4
-      },
-      {
-        "tick": 45,
-        "text": "Hal just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 46,
-        "text": "I headed to Gary's House.",
-        "importance": 6
-      },
       {
         "tick": 46,
         "text": "Hal said to Rosa: “Morning, Rosa. About Saturday at six, I'll bring a pie from the commissary lady's recipe, and I'll be on time. Anything else you need hauled over?”",
@@ -2025,29 +2011,24 @@
         "tick": 128,
         "text": "Hal said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”",
         "importance": 4
+      },
+      {
+        "tick": 129,
+        "text": "I (pickleball court 1): Pick up my paddle and rally one last time with Gary, working on his dinks",
+        "importance": 5
+      },
+      {
+        "tick": 129,
+        "text": "Gary said to Hal: “Saturday at six, boots wiped, I've got it written down this time. Let me stash my paddle and I'll walk out with you two.”",
+        "importance": 5
+      },
+      {
+        "tick": 129,
+        "text": "Hal headed to Magnolia Loop (the street).",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 30,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 30,
-        "text": "Donna just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 31,
-        "text": "I said to Donna: “Donna, I counted your flamingos from the street this morning. L-02 says three ornaments, and you're well past that. Thin the flock before I have to write it up, and I'd rather not.”",
-        "importance": 5
-      },
-      {
-        "tick": 31,
-        "text": "Gary said to Donna: “Tomorrow morning works, Donna, put me down for the court and I'll bring my worst backhand. Today I've got to finish the cart wiring and get that Architectural Review form filed. Either of you know where they keep the blanks?”",
-        "importance": 5
-      },
       {
         "tick": 31,
         "text": "Donna said to Hal: “Morning, Hal! I know you've got your eye on my flamingos, so I'll save you the trouble. I'll do a quick count and trim the flock down to three so we're square with the ornament rule. No violation notice needed.”",
@@ -3027,14 +3008,29 @@
         "tick": 128,
         "text": "Donna said to Hal: “Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together.”",
         "importance": 4
+      },
+      {
+        "tick": 129,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 129,
+        "text": "Gary said to Hal: “Saturday at six, boots wiped, I've got it written down this time. Let me stash my paddle and I'll walk out with you two.”",
+        "importance": 4
+      },
+      {
+        "tick": 129,
+        "text": "Donna (pickleball court 1): Pick up my paddle and rally one last time with Gary, working on his dinks",
+        "importance": 4
+      },
+      {
+        "tick": 129,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 22,
-        "text": "You arrived at Rec Center.",
-        "importance": 5
-      },
       {
         "tick": 23,
         "text": "I (ladder standings board): Scan the standings for Donna's name and see when she's been playing",
@@ -4029,6 +4025,11 @@
         "tick": 128,
         "text": "I (rosa shift schedule): Double-check Saturday evening is still clear of per-diem shifts before I commit to the grocery run",
         "importance": 5
+      },
+      {
+        "tick": 129,
+        "text": "I (rosa kitchen): Go through the pantry and fridge against my grocery list and mark what I still need to buy",
+        "importance": 4
       }
     ]
   },
@@ -4076,8 +4077,8 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "cheerful",
-    "hal": "gruffly content",
+    "donna": "upbeat",
+    "hal": "content",
     "rosa": "determined"
   },
   "laws": [
@@ -4193,10 +4194,18 @@
         "Donna said to Hal: “Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together.”",
         "Hal said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”"
       ]
+    },
+    {
+      "tick": 129,
+      "time": "Tuesday, October 20, 7:17 PM",
+      "story": "At the Sumter Oaks Rec Center on Tuesday evening, Gary is content and promising Hal a Saturday night plan with freshly wiped boots, while Donna, upbeat as ever, coaxes one last rally out of Gary with her dinks on court one. Hal is heading out along Magnolia Loop, cart keys jingling as he goes. Over at her house, Rosa is determined, going through her pantry and fridge against her grocery list and marking what she still needs to buy.",
+      "dialogue": [
+        "Gary said to Hal: “Saturday at six, boots wiped, I've got it written down this time. Let me stash my paddle and I'll walk out with you two.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 3.97358,
+    "total_usd": 4.00509,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4231,13 +4240,12 @@
         "usd": 0.47744
       },
       "2026-10-20": {
-        "ticks": 12,
-        "usd": 0.37779
+        "ticks": 13,
+        "usd": 0.4093
       }
     }
   },
   "recent_tick_costs": [
-    0.03064,
     0.03225,
     0.03289,
     0.03191,
@@ -4260,7 +4268,8 @@
     0.03039,
     0.03054,
     0.03094,
-    0.03289
+    0.03289,
+    0.03151
   ],
   "fund": {
     "gross_usd": 0.0,
