@@ -1,34 +1,20 @@
 {
-  "tick": 117,
-  "time": "2026-10-19T21:17",
+  "tick": 118,
+  "time": "2026-10-20T07:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "rosas_house",
-    "hal": "rosas_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
-    "donna": [
-      "Hal (rosa kitchen): Pick up the big platter and carry it to the table",
-      "Rosa (rosa kitchen): Pull the main dish from the oven and get it ready to serve"
-    ],
-    "hal": [
-      "Donna (rosa dining table): Set out napkins and glasses at each place",
-      "Rosa (rosa kitchen): Pull the main dish from the oven and get it ready to serve"
-    ],
-    "rosa": [
-      "Donna (rosa dining table): Set out napkins and glasses at each place",
-      "Hal (rosa kitchen): Pick up the big platter and carry it to the table"
-    ]
+    "donna": [],
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 17,
-        "text": "I (gary workbench): Unplug the soldering iron, set the cart wiring aside, and grab my sneakers",
-        "importance": 4
-      },
       {
         "tick": 17,
         "text": "Donna headed to Magnolia Loop (the street).",
@@ -1023,14 +1009,14 @@
         "tick": 116,
         "text": "I waited: puttering around Gary's House",
         "importance": 3
+      },
+      {
+        "tick": 117,
+        "text": "I (gary workbench): Finish soldering the speaker wiring and test the light strings indoors, cart untouched",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 34,
-        "text": "Rosa just arrived.",
-        "importance": 4
-      },
       {
         "tick": 35,
         "text": "I said to Rosa: “Rosa, hon, perfect timing. Still on for dinner at your place after pickleball Saturday? I'm bringing the dessert, and Gary's my new doubles partner, so you'll be feeding a couple of champions.”",
@@ -2025,14 +2011,14 @@
         "tick": 116,
         "text": "Rosa (rosa kitchen): Pull the main dish from the oven and get it ready to serve",
         "importance": 4
+      },
+      {
+        "tick": 117,
+        "text": "I (donna club calendar): Check open court times and pencil in a doubles practice with Gary",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 15,
-        "text": "I said to Rosa: “Afternoon, Rosa. About your dinner invitation, I'll come, and I'll keep the rulebook in my pocket. What time, and should I bring anything?”",
-        "importance": 5
-      },
       {
         "tick": 15,
         "text": "Rosa (street bulletin board): Pin up a note: Rosa's welcome dinner, Gary, Donna, and Hal, come hungry",
@@ -3027,14 +3013,14 @@
         "tick": 116,
         "text": "Rosa (rosa kitchen): Pull the main dish from the oven and get it ready to serve",
         "importance": 5
+      },
+      {
+        "tick": 117,
+        "text": "I (hal violation notebook): Review my entries on Gary's cart and Donna's flamingos, and note only what the rules actually cover",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 15,
-        "text": "Hal said to Rosa: “Afternoon, Rosa. About your dinner invitation, I'll come, and I'll keep the rulebook in my pocket. What time, and should I bring anything?”",
-        "importance": 4
-      },
       {
         "tick": 16,
         "text": "I said to Hal: “Glad you're coming, Hal. Saturday at six at my place. Bring nothing but yourself and an appetite, I've got the food covered, and the rulebook can stay in your pocket.”",
@@ -4029,6 +4015,11 @@
         "tick": 116,
         "text": "Hal (rosa kitchen): Pick up the big platter and carry it to the table",
         "importance": 6
+      },
+      {
+        "tick": 117,
+        "text": "I (rosa shift schedule): Check my per-diem shift schedule for the week",
+        "importance": 3
       }
     ]
   },
@@ -4075,9 +4066,9 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "cheerful",
-    "hal": "remorseful",
+    "gary": "determined",
+    "donna": "determined",
+    "hal": "resolved",
     "rosa": "content"
   },
   "laws": [
@@ -4190,10 +4181,16 @@
       "time": "Monday, October 19, 9:17 PM",
       "story": "At 9:17 on a mild Monday night in Sumter Oaks, Rosa is pulling the main dish from her oven while Donna sets out napkins and glasses at the dining table. Hal, looking a little remorseful, is carrying the big platter across Rosa's kitchen to the table. Meanwhile, Gary is puttering around his own house, content to wait for the invitation to come over.",
       "dialogue": []
+    },
+    {
+      "tick": 117,
+      "time": "Tuesday, October 20, 7:17 AM",
+      "story": "At 7:17 on a sunny Tuesday morning in Sumter Oaks, Gary is at his workbench in his own house, soldering speaker wiring and testing his light strings indoors with the golf cart left alone in the driveway. Down the street, Donna is at her kitchen table with the club calendar, hoping to pencil in a doubles practice with Gary once she finds an open court. Over at his house, Hal is flipping through his violation notebook, determined to record only what the community rules actually cover, while Rosa sits content with her shift schedule for the week ahead.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 3.59579,
+    "total_usd": 3.62587,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4226,11 +4223,14 @@
       "2026-10-19": {
         "ticks": 15,
         "usd": 0.47744
+      },
+      "2026-10-20": {
+        "ticks": 1,
+        "usd": 0.03008
       }
     }
   },
   "recent_tick_costs": [
-    0.03336,
     0.03326,
     0.03145,
     0.03014,
@@ -4253,7 +4253,8 @@
     0.0332,
     0.03086,
     0.03129,
-    0.02994
+    0.02994,
+    0.03008
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4301,6 +4302,6 @@
     "test_mode": false,
     "level": "bright"
   },
-  "last_tick_date": "2026-10-19",
+  "last_tick_date": "2026-10-20",
   "calendar_fired": []
 }
