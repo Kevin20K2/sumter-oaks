@@ -1,0 +1,119 @@
+{
+  "tick": 116,
+  "simulation_time": "Monday, October 19, 9:17 PM",
+  "weather": "Partly cloudy, 73°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "rosas_house",
+    "hal": "rosas_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a mild Monday night in Sumter Oaks, Rosa is pulling the main dish from her oven while Donna sets out napkins and glasses at the dining table. Hal, looking a little remorseful, is carrying the big platter across Rosa's kitchen to the table. Meanwhile, Gary is puttering around his own house, content to wait for the invitation to come over.",
+  "events": [
+    "Gary waited: puttering around Gary's House",
+    "Donna (rosa dining table): Set out napkins and glasses at each place",
+    "Hal (rosa kitchen): Pick up the big platter and carry it to the table",
+    "Rosa (rosa kitchen): Pull the main dish from the oven and get it ready to serve"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's past 9 PM and I'm home alone at the workbench. I've already bench-tested the lights and speaker wiring twice, and I promised myself I'd leave the cart untouched until Architectural Review signs off. Quiet hours start at 10, so any more sound testing needs to be done soon and kept low. The honest thing is to keep the work on the bench: tidy the wiring, label the connections, and get everything ready to install the moment approval comes through. It keeps my hands busy and the house a little less quiet.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "puttering around Gary's House"
+        }
+      },
+      "engine_note": "tried to use None, which isn't in garys_house"
+    },
+    "donna": {
+      "thought_process": "Rosa asked me to grab napkins and glasses and help set the table, and Hal's already hauling platters, so the polite thing is to just do it. Gary's still missing, which nags at me, but Rosa said he'll find us when he finds us. I'll get the table set and keep the mood warm, then work on getting Gary to that ladder match tomorrow.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Set out napkins and glasses at each place"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa said I'm forgiven the second I pick up that big platter on the kitchen counter. I owe her an apology and want to help carry things, so the right move is to act, not talk more. The kitchen is the object that holds the platter. My committee complaints about Gary and Donna's flamingos can wait until after dinner.",
+      "emotional_state": "remorseful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Pick up the big platter and carry it to the table"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal's here and apologized, Donna's here and setting the table, and the table is already coming together. Gary is still missing, but I've told him already and Donna says he's coming, so I shouldn't chase him again. The dinner is the goal and the food is waiting in the kitchen. I should stop talking and get the main dish out of the kitchen so we can all sit down together.",
+      "emotional_state": "content",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Pull the main dish from the oven and get it ready to serve"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02994,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10233,
+        "output_tokens": 937,
+        "usd": 0.02984
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 366,
+        "output_tokens": 129,
+        "usd": 0.0001
+      }
+    }
+  }
+}

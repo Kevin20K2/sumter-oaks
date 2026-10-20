@@ -1,6 +1,6 @@
 {
-  "tick": 116,
-  "time": "2026-10-19T20:17",
+  "tick": 117,
+  "time": "2026-10-19T21:17",
   "positions": {
     "gary": "garys_house",
     "donna": "rosas_house",
@@ -10,25 +10,20 @@
   "perceptions": {
     "gary": [],
     "donna": [
-      "Hal (rosa dining table): Start carrying dishes and setting out the table without waiting to be asked twice",
-      "Rosa said to Hal: “Hal, you're forgiven the second you pick up that big platter on the kitchen counter. Donna, grab the napkins and glasses and help me set the table, and Gary can find us when he finds us.”"
+      "Hal (rosa kitchen): Pick up the big platter and carry it to the table",
+      "Rosa (rosa kitchen): Pull the main dish from the oven and get it ready to serve"
     ],
     "hal": [
-      "Donna said to Rosa: “Ha! No taste-testing, Rosa, I'm just here for your company and whatever smells that good in the kitchen. Point me to the serving dishes and I'll start setting the table while Hal hauls the heavy stuff.”",
-      "Rosa said to Hal: “Hal, you're forgiven the second you pick up that big platter on the kitchen counter. Donna, grab the napkins and glasses and help me set the table, and Gary can find us when he finds us.”"
+      "Donna (rosa dining table): Set out napkins and glasses at each place",
+      "Rosa (rosa kitchen): Pull the main dish from the oven and get it ready to serve"
     ],
     "rosa": [
-      "Donna said to Rosa: “Ha! No taste-testing, Rosa, I'm just here for your company and whatever smells that good in the kitchen. Point me to the serving dishes and I'll start setting the table while Hal hauls the heavy stuff.”",
-      "Hal (rosa dining table): Start carrying dishes and setting out the table without waiting to be asked twice"
+      "Donna (rosa dining table): Set out napkins and glasses at each place",
+      "Hal (rosa kitchen): Pick up the big platter and carry it to the table"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 16,
-        "text": "Donna said to Gary: “Take your time, Gary, and don't you dare apologize for being terrible. Everybody's terrible for the first week, and I've got the spare paddle and a cooler of iced tea in the cart. Soldering iron off, sneakers on, and I'll drive.”",
-        "importance": 5
-      },
       {
         "tick": 17,
         "text": "I (gary workbench): Unplug the soldering iron, set the cart wiring aside, and grab my sneakers",
@@ -1023,24 +1018,14 @@
         "tick": 115,
         "text": "I (gary workbench): Bench-test the light strings and speaker wiring, low volume, cart untouched",
         "importance": 4
+      },
+      {
+        "tick": 116,
+        "text": "I waited: puttering around Gary's House",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 33,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street to confirm it's three",
-        "importance": 4
-      },
-      {
-        "tick": 34,
-        "text": "I said to Hal: “Three flamingos, Hal, count 'em yourself. Thanks for being reasonable about it. Come Saturday you ought to swing by the courts at eight, Gary and I will be out there.”",
-        "importance": 4
-      },
-      {
-        "tick": 34,
-        "text": "Hal said to Donna: “Three flamingos visible from the street, Donna. That's L-02 squared away, and no notice needed. I appreciate you handling it without an argument.”",
-        "importance": 4
-      },
       {
         "tick": 34,
         "text": "Rosa just arrived.",
@@ -2025,24 +2010,24 @@
         "tick": 115,
         "text": "Rosa said to Hal: “Hal, you're forgiven the second you pick up that big platter on the kitchen counter. Donna, grab the napkins and glasses and help me set the table, and Gary can find us when he finds us.”",
         "importance": 4
+      },
+      {
+        "tick": 116,
+        "text": "I (rosa dining table): Set out napkins and glasses at each place",
+        "importance": 4
+      },
+      {
+        "tick": 116,
+        "text": "Hal (rosa kitchen): Pick up the big platter and carry it to the table",
+        "importance": 4
+      },
+      {
+        "tick": 116,
+        "text": "Rosa (rosa kitchen): Pull the main dish from the oven and get it ready to serve",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 14,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 14,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 14,
-        "text": "Rosa just arrived.",
-        "importance": 6
-      },
       {
         "tick": 15,
         "text": "I said to Rosa: “Afternoon, Rosa. About your dinner invitation, I'll come, and I'll keep the rulebook in my pocket. What time, and should I bring anything?”",
@@ -3027,24 +3012,24 @@
         "tick": 115,
         "text": "Rosa said to Hal: “Hal, you're forgiven the second you pick up that big platter on the kitchen counter. Donna, grab the napkins and glasses and help me set the table, and Gary can find us when he finds us.”",
         "importance": 4
+      },
+      {
+        "tick": 116,
+        "text": "I (rosa kitchen): Pick up the big platter and carry it to the table",
+        "importance": 5
+      },
+      {
+        "tick": 116,
+        "text": "Donna (rosa dining table): Set out napkins and glasses at each place",
+        "importance": 5
+      },
+      {
+        "tick": 116,
+        "text": "Rosa (rosa kitchen): Pull the main dish from the oven and get it ready to serve",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 14,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 14,
-        "text": "Hal just arrived.",
-        "importance": 6
-      },
-      {
-        "tick": 15,
-        "text": "I (street bulletin board): Pin up a note: Rosa's welcome dinner, Gary, Donna, and Hal, come hungry",
-        "importance": 4
-      },
       {
         "tick": 15,
         "text": "Hal said to Rosa: “Afternoon, Rosa. About your dinner invitation, I'll come, and I'll keep the rulebook in my pocket. What time, and should I bring anything?”",
@@ -4029,6 +4014,21 @@
         "tick": 115,
         "text": "Hal (rosa dining table): Start carrying dishes and setting out the table without waiting to be asked twice",
         "importance": 6
+      },
+      {
+        "tick": 116,
+        "text": "I (rosa kitchen): Pull the main dish from the oven and get it ready to serve",
+        "importance": 6
+      },
+      {
+        "tick": 116,
+        "text": "Donna (rosa dining table): Set out napkins and glasses at each place",
+        "importance": 6
+      },
+      {
+        "tick": 116,
+        "text": "Hal (rosa kitchen): Pick up the big platter and carry it to the table",
+        "importance": 6
       }
     ]
   },
@@ -4075,10 +4075,10 @@
     ]
   },
   "emotions": {
-    "gary": "content, focused",
+    "gary": "content",
     "donna": "cheerful",
-    "hal": "sheepish",
-    "rosa": "pleased"
+    "hal": "remorseful",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4184,10 +4184,16 @@
         "Donna said to Rosa: “Ha! No taste-testing, Rosa, I'm just here for your company and whatever smells that good in the kitchen. Point me to the serving dishes and I'll start setting the table while Hal hauls the heavy stuff.”",
         "Rosa said to Hal: “Hal, you're forgiven the second you pick up that big platter on the kitchen counter. Donna, grab the napkins and glasses and help me set the table, and Gary can find us when he finds us.”"
       ]
+    },
+    {
+      "tick": 116,
+      "time": "Monday, October 19, 9:17 PM",
+      "story": "At 9:17 on a mild Monday night in Sumter Oaks, Rosa is pulling the main dish from her oven while Donna sets out napkins and glasses at the dining table. Hal, looking a little remorseful, is carrying the big platter across Rosa's kitchen to the table. Meanwhile, Gary is puttering around his own house, content to wait for the invitation to come over.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 3.56585,
+    "total_usd": 3.59579,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4218,13 +4224,12 @@
         "usd": 0.46942
       },
       "2026-10-19": {
-        "ticks": 14,
-        "usd": 0.4475
+        "ticks": 15,
+        "usd": 0.47744
       }
     }
   },
   "recent_tick_costs": [
-    0.03214,
     0.03336,
     0.03326,
     0.03145,
@@ -4247,7 +4252,8 @@
     0.0347,
     0.0332,
     0.03086,
-    0.03129
+    0.03129,
+    0.02994
   ],
   "fund": {
     "gross_usd": 0.0,
