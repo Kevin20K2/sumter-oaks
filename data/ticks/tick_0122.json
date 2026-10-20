@@ -1,0 +1,116 @@
+{
+  "tick": 122,
+  "simulation_time": "Tuesday, October 20, 12:17 PM",
+  "weather": "Sunny, 80°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 12:17 on a sunny Tuesday in Sumter Oaks, Gary and Donna are out on Magnolia Loop, where Gary cheerfully promises Donna he'll show up on time to Rosa's dinner and keep his soldering iron at home. Donna, upbeat as ever, reminds him that she's already booked a two-hour doubles slot at the rec center and packed his bag, so all he needs to bring are his soft knees. Nearby, Hal is dutifully counting the flamingos in Donna's flock from the street and jotting the total in his notebook. Meanwhile, Rosa is focused at home, portioning her make-ahead dishes for the fridge before tonight's gathering.",
+  "events": [
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
+    "Rosa (rosa kitchen): Finish prepping the make-ahead dishes and portion them for the fridge"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Hal already has my word on the form and the cart staying bare, and I've said my piece twice, so no sense repeating it. Donna just walked up and I haven't greeted her yet. She's one of the folks keeping me on the doubles roster, and I'm a chatty guy who gets lonely, so a friendly hello and a reminder that I'll be on time to Rosa's dinner keeps my promise fresh without rehashing the cart paperwork.",
+      "emotional_state": "cheerful",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Afternoon, Donna. Heading to Rosa's dinner together later? I'll be there on time, and I promise to keep my soldering iron at home."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just texted Gary the practice time and now I'm on Magnolia Loop with Gary and Hal both in sight. Gary's the one I need for doubles, and I've already confirmed the court slot, so I should follow up in person rather than wait on a text. Hal is right here too, and I did promise to thin the flock by Saturday, so I could mention it, but the practice is the priority. Keep it short and bright, make sure Gary knows the time and that I've got the bag packed.",
+      "emotional_state": "upbeat",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "There you are, Gary! I booked us a two-hour doubles slot at the rec center and texted you the time. Bag's packed, so all you need to bring is those soft knees."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary has confirmed twice that his cart is untouched and the paperwork is filed, so that complaint is closed. Donna just arrived and her flamingo flock is right here, which is my other open item. I already planned to count them from the street and log the total in my notebook, so rather than start a new conversation I'll do the count now. L-02 caps ornaments at three visible from the street, and I want an accurate number before accusing anyone of anything. If it comes out over three, I can raise it with her fairly, by the book, and still see her at Rosa's dinner.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and note the total in my notebook"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've already checked the shift schedule twice and started the make-ahead dishes last tick. The dinner is Saturday at six, and I'm at home alone at midday with a grocery list in hand. The next useful step is to keep prepping in the kitchen so Saturday isn't a scramble. I shouldn't repeat the schedule check; I should get more done on the food.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Finish prepping the make-ahead dishes and portion them for the fridge"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03085,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9814,
+        "output_tokens": 1105,
+        "usd": 0.03068
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 487,
+        "output_tokens": 233,
+        "usd": 0.00017
+      }
+    }
+  }
+}
