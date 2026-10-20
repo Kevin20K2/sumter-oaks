@@ -1,54 +1,33 @@
 {
-  "tick": 124,
-  "time": "2026-10-20T13:17",
+  "tick": 125,
+  "time": "2026-10-20T14:17",
   "positions": {
-    "gary": "magnolia_loop",
-    "donna": "magnolia_loop",
+    "gary": "rec_center",
+    "donna": "rec_center",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Perfect, Gary, you're a gentleman. Then let's walk over to the rec center now and get you warmed up before our slot. I'll carry the paddles, you just bring those soft knees.”",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook"
+      "Donna headed to Rec Center.",
+      "Hal (street bulletin board): Check for Architectural Review schedule and pending cart approvals",
+      "You arrived at Rec Center.",
+      "Donna just arrived."
     ],
     "donna": [
-      "Gary said to Donna: “Two hours, perfect, thanks for booking it, Donna. I'll grab my paddle and meet you at the rec center, and I'll be there on time.”",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook"
+      "Gary headed to Rec Center.",
+      "Hal (street bulletin board): Check for Architectural Review schedule and pending cart approvals",
+      "You arrived at Rec Center.",
+      "Gary just arrived."
     ],
     "hal": [
-      "Gary said to Donna: “Two hours, perfect, thanks for booking it, Donna. I'll grab my paddle and meet you at the rec center, and I'll be there on time.”",
-      "Donna said to Gary: “Perfect, Gary, you're a gentleman. Then let's walk over to the rec center now and get you warmed up before our slot. I'll carry the paddles, you just bring those soft knees.”"
+      "Gary headed to Rec Center.",
+      "Donna headed to Rec Center."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 27,
-        "text": "I (gary golf cart): Power up the rope lights and speaker for a low-volume test inside the garage",
-        "importance": 5
-      },
-      {
-        "tick": 28,
-        "text": "I (gary golf cart): Check the rope light and speaker wiring, run a low-volume test",
-        "importance": 5
-      },
-      {
-        "tick": 29,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 29,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 30,
-        "text": "I (street bulletin board): Look for the Architectural Review form or filing notice for cart modifications",
-        "importance": 5
-      },
       {
         "tick": 30,
         "text": "Donna just arrived.",
@@ -1023,34 +1002,34 @@
         "tick": 123,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
         "importance": 4
+      },
+      {
+        "tick": 124,
+        "text": "I headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 124,
+        "text": "Donna headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 124,
+        "text": "Hal (street bulletin board): Check for Architectural Review schedule and pending cart approvals",
+        "importance": 4
+      },
+      {
+        "tick": 124,
+        "text": "You arrived at Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 124,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 39,
-        "text": "Hal (gary golf cart): Walk around the cart and note which modifications are visible from the street for L-01",
-        "importance": 4
-      },
-      {
-        "tick": 39,
-        "text": "Rosa said to Donna: “Donna, good timing. Dinner's Saturday at six at my place, and I'm still hunting for Gary to tell him. You seen him anywhere?”",
-        "importance": 4
-      },
-      {
-        "tick": 40,
-        "text": "I said to Rosa: “Not hide nor hair of him tonight, hon, and I'm standing in his house. Tell you what, I'll tell him about Saturday at six if I catch him first, since we've got pickleball at eight that morning anyway.”",
-        "importance": 3
-      },
-      {
-        "tick": 40,
-        "text": "Hal (gary golf cart): Inspect the cart's exterior mods and note which are visible from the street under L-01",
-        "importance": 3
-      },
-      {
-        "tick": 40,
-        "text": "Rosa headed to Magnolia Loop (the street).",
-        "importance": 3
-      },
       {
         "tick": 40,
         "text": "Gary just arrived.",
@@ -2025,24 +2004,34 @@
         "tick": 123,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
         "importance": 5
+      },
+      {
+        "tick": 124,
+        "text": "I headed to Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 124,
+        "text": "Gary headed to Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 124,
+        "text": "Hal (street bulletin board): Check for Architectural Review schedule and pending cart approvals",
+        "importance": 6
+      },
+      {
+        "tick": 124,
+        "text": "You arrived at Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 124,
+        "text": "Gary just arrived.",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 22,
-        "text": "I (architectural review desk): Amend my filing: note Donna has reduced visible flamingos to three, so L-02 follow-up is withdrawn; leave Gary's cart notice pending review",
-        "importance": 4
-      },
-      {
-        "tick": 23,
-        "text": "I headed to Town Square.",
-        "importance": 4
-      },
-      {
-        "tick": 23,
-        "text": "You arrived at Town Square.",
-        "importance": 4
-      },
       {
         "tick": 24,
         "text": "I (ice cream stand): Buy a single scoop of butter pecan and sit a minute",
@@ -3027,14 +3016,24 @@
         "tick": 123,
         "text": "Donna said to Gary: “Perfect, Gary, you're a gentleman. Then let's walk over to the rec center now and get you warmed up before our slot. I'll carry the paddles, you just bring those soft knees.”",
         "importance": 5
+      },
+      {
+        "tick": 124,
+        "text": "I (street bulletin board): Check for Architectural Review schedule and pending cart approvals",
+        "importance": 4
+      },
+      {
+        "tick": 124,
+        "text": "Gary headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 124,
+        "text": "Donna headed to Rec Center.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 19,
-        "text": "I (court reservation kiosk): Check upcoming reservations to see when Donna books her court",
-        "importance": 5
-      },
       {
         "tick": 20,
         "text": "I headed to Magnolia Loop (the street).",
@@ -4029,6 +4028,11 @@
         "tick": 123,
         "text": "I (rosa dining table): Count place settings and chairs for Saturday, and jot down what to borrow or buy",
         "importance": 4
+      },
+      {
+        "tick": 124,
+        "text": "I (rosa shift schedule): Check this week's per-diem shifts and confirm Saturday evening is clear for the dinner",
+        "importance": 6
       }
     ]
   },
@@ -4075,8 +4079,8 @@
     ]
   },
   "emotions": {
-    "gary": "grateful",
-    "donna": "cheerful",
+    "gary": "content",
+    "donna": "eager",
     "hal": "dutiful",
     "rosa": "determined"
   },
@@ -4159,51 +4163,9 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 119,
-      "time": "Tuesday, October 20, 9:17 AM",
-      "story": "On Tuesday morning in Sumter Oaks, Gary stands at the bulletin board on Magnolia Loop, hoping to find either an Architectural Review decision or news about the parade. Donna, eager as ever, is at home checking the club calendar so she can lock in a two-hour doubles practice with Gary once the courts open up. Meanwhile Hal is heading down Magnolia Loop with a determined stride, and Rosa, equally determined, is at home reviewing her per-diem shifts to make sure Saturday evening stays free for the dinner.",
-      "dialogue": []
-    },
-    {
-      "tick": 120,
-      "time": "Tuesday, October 20, 10:17 AM",
-      "story": "On Tuesday morning in Sumter Oaks, Gary stands on Magnolia Loop assuring Hal that his golf cart modifications are on hold until the Architectural Review committee signs off, while Hal, dutifully checking the rules, asks whether the paperwork is on file. Over at her house, Donna is texting Gary to confirm a practice time and see if he's ready, a determined look on her face. Meanwhile, Rosa is in her kitchen planning Saturday's menu and getting a head start on the dishes that can be made ahead.",
-      "dialogue": [
-        "Gary said to Hal: “Morning, Hal. Took your advice to heart: form's filed, cart's sitting untouched in the garage, and I'm doing all the soldering at my workbench until Architectural Review signs off.”",
-        "Hal said to Gary: “Morning, Gary. Those cart modifications are visible from the street, so the rule says Architectural Review has to approve them. You have that paperwork on file? If so, I'll drop it and see you at Rosa's dinner.”"
-      ]
-    },
-    {
-      "tick": 121,
-      "time": "Tuesday, October 20, 11:17 AM",
-      "story": "On a sunny Tuesday morning in Sumter Oaks, Gary is out on Magnolia Loop with Hal, promising him that his golf cart paperwork is filed and that the cart will stay parked until approval posts, and that he'll be on time to Rosa's place. Donna has just set off from her house toward the same street, eager to see what the day brings. Hal, ever dutiful, is keeping his notebook handy so he can count the flamingos in Donna's yard flock from the road. Meanwhile, Rosa is in her kitchen, determined to get a head start on the make-ahead dishes for Saturday's dinner and jotting down her grocery list.",
-      "dialogue": [
-        "Gary said to Hal: “Filed it twice to be safe, Hal, but no approval's posted yet, so the cart stays parked and bare till it comes through. You can hold off on that complaint. And I'll be on time to Rosa's, scout's honor.”"
-      ]
-    },
-    {
-      "tick": 122,
-      "time": "Tuesday, October 20, 12:17 PM",
-      "story": "At 12:17 on a sunny Tuesday in Sumter Oaks, Gary and Donna are out on Magnolia Loop, where Gary cheerfully promises Donna he'll show up on time to Rosa's dinner and keep his soldering iron at home. Donna, upbeat as ever, reminds him that she's already booked a two-hour doubles slot at the rec center and packed his bag, so all he needs to bring are his soft knees. Nearby, Hal is dutifully counting the flamingos in Donna's flock from the street and jotting the total in his notebook. Meanwhile, Rosa is focused at home, portioning her make-ahead dishes for the fridge before tonight's gathering.",
-      "dialogue": [
-        "Gary said to Donna: “Afternoon, Donna. Heading to Rosa's dinner together later? I'll be there on time, and I promise to keep my soldering iron at home.”",
-        "Donna said to Gary: “There you are, Gary! I booked us a two-hour doubles slot at the rec center and texted you the time. Bag's packed, so all you need to bring is those soft knees.”"
-      ]
-    },
-    {
-      "tick": 123,
-      "time": "Tuesday, October 20, 1:17 PM",
-      "story": "On Tuesday afternoon in Sumter Oaks, Gary and Donna stroll down Magnolia Loop toward the rec center, where Gary is determined to arrive on time for their pickleball slot that Donna booked for him. Hal stands on the same street with his notebook, tallying the pink plastic flamingos in the front yards, while Rosa sits at her dining table at home, counting chairs and plates and making a list of what she'll need to borrow or buy for Saturday. The sun is bright at 81 degrees, and the whole neighborhood seems to be enjoying a lazy, golf-cart-friendly afternoon.",
-      "dialogue": [
-        "Gary said to Donna: “Two hours, perfect, thanks for booking it, Donna. I'll grab my paddle and meet you at the rec center, and I'll be there on time.”",
-        "Donna said to Gary: “Perfect, Gary, you're a gentleman. Then let's walk over to the rec center now and get you warmed up before our slot. I'll carry the paddles, you just bring those soft knees.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 3.81679,
+    "total_usd": 3.84882,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4238,13 +4200,12 @@
         "usd": 0.47744
       },
       "2026-10-20": {
-        "ticks": 7,
-        "usd": 0.221
+        "ticks": 8,
+        "usd": 0.25303
       }
     }
   },
   "recent_tick_costs": [
-    0.03133,
     0.03135,
     0.03169,
     0.03148,
@@ -4267,7 +4228,8 @@
     0.03093,
     0.03744,
     0.03085,
-    0.03115
+    0.03115,
+    0.03203
   ],
   "fund": {
     "gross_usd": 0.0,
