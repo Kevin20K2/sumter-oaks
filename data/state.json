@@ -1,6 +1,6 @@
 {
-  "tick": 128,
-  "time": "2026-10-20T17:17",
+  "tick": 129,
+  "time": "2026-10-20T18:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,35 +9,21 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Perfect, you're loose. Stay at the kitchen line and just pop it soft over the net, no swinging. Think of it like tucking in a baby, and we'll rally till the shower picks up.”",
-      "Hal just arrived."
+      "Donna said to Hal: “Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together.”",
+      "Hal said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”"
     ],
     "donna": [
-      "Gary (pickleball court 1): Practice dinks with Donna on the reserved court",
-      "Hal just arrived."
+      "Gary said to Hal: “Evening, Hal. Donna's got me popping dinks soft as a baby's tuck-in, and my cart form's filed, so I'm keeping my word. Give me one more rally and I'll head over for Rosa's dinner right on time.”",
+      "Hal said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”"
     ],
     "hal": [
-      "You arrived at Rec Center."
+      "Gary said to Hal: “Evening, Hal. Donna's got me popping dinks soft as a baby's tuck-in, and my cart form's filed, so I'm keeping my word. Give me one more rally and I'll head over for Rosa's dinner right on time.”",
+      "Donna said to Hal: “Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together.”"
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 32,
-        "text": "Hal said to Gary: “Gary, the Architectural Review blanks are at Town Hall. File before you wire another inch, and I'll quit asking. And Donna, I'll take your word on the flamingos. Three, and we're square.”",
-        "importance": 5
-      },
-      {
-        "tick": 33,
-        "text": "I headed to Town Square.",
-        "importance": 6
-      },
-      {
-        "tick": 33,
-        "text": "Donna (donna flamingo flock): Pull the extra flamingos and leave exactly three out front",
-        "importance": 6
-      },
       {
         "tick": 33,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street to confirm it's three",
@@ -1022,24 +1008,24 @@
         "tick": 127,
         "text": "Hal just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 128,
+        "text": "I said to Hal: “Evening, Hal. Donna's got me popping dinks soft as a baby's tuck-in, and my cart form's filed, so I'm keeping my word. Give me one more rally and I'll head over for Rosa's dinner right on time.”",
+        "importance": 4
+      },
+      {
+        "tick": 128,
+        "text": "Donna said to Hal: “Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together.”",
+        "importance": 4
+      },
+      {
+        "tick": 128,
+        "text": "Hal said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 44,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 44,
-        "text": "Rosa just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 45,
-        "text": "I said to Rosa: “Rosa, good morning! I've got Saturday penciled in, pickleball at eight and your dinner at six. Can I bring a dessert, and is Gary still on the guest list?”",
-        "importance": 4
-      },
       {
         "tick": 45,
         "text": "Rosa said to Donna: “Morning, Donna. Quick favor: you seen Gary today? He keeps slipping past me and I want him at my table Saturday at six, so if you run into him before I do, nudge him my way.”",
@@ -2024,24 +2010,24 @@
         "tick": 127,
         "text": "Hal just arrived.",
         "importance": 5
-      }
-    ],
-    "hal": [
-      {
-        "tick": 28,
-        "text": "I (hal violation notebook): Flip through my notes on Gary's cart and Donna's flamingos and see if they're real violations",
-        "importance": 5
       },
       {
-        "tick": 29,
-        "text": "I (hal binoculars): Scan Magnolia Loop and count the flamingos and cart modifications visible from the street",
+        "tick": 128,
+        "text": "I said to Hal: “Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together.”",
         "importance": 4
       },
       {
-        "tick": 30,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
+        "tick": 128,
+        "text": "Gary said to Hal: “Evening, Hal. Donna's got me popping dinks soft as a baby's tuck-in, and my cart form's filed, so I'm keeping my word. Give me one more rally and I'll head over for Rosa's dinner right on time.”",
+        "importance": 4
       },
+      {
+        "tick": 128,
+        "text": "Hal said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”",
+        "importance": 4
+      }
+    ],
+    "hal": [
       {
         "tick": 30,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -3026,14 +3012,24 @@
         "tick": 127,
         "text": "You arrived at Rec Center.",
         "importance": 4
+      },
+      {
+        "tick": 128,
+        "text": "I said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”",
+        "importance": 4
+      },
+      {
+        "tick": 128,
+        "text": "Gary said to Hal: “Evening, Hal. Donna's got me popping dinks soft as a baby's tuck-in, and my cart form's filed, so I'm keeping my word. Give me one more rally and I'll head over for Rosa's dinner right on time.”",
+        "importance": 4
+      },
+      {
+        "tick": 128,
+        "text": "Donna said to Hal: “Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together.”",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 22,
-        "text": "I headed to Rec Center.",
-        "importance": 5
-      },
       {
         "tick": 22,
         "text": "You arrived at Rec Center.",
@@ -4028,55 +4024,60 @@
         "tick": 127,
         "text": "I (rosa kitchen): Draft the Saturday menu and write out a grocery and borrow list",
         "importance": 4
+      },
+      {
+        "tick": 128,
+        "text": "I (rosa shift schedule): Double-check Saturday evening is still clear of per-diem shifts before I commit to the grocery run",
+        "importance": 5
       }
     ]
   },
   "reflections": {
     "gary": [
-      "Rosa's roast has been waiting on me all afternoon, so I want to finish this rally with Donna and get over there by six without letting anyone down again.",
-      "Donna keeps pushing me to be sharper on the ladder, and I'm glad she's in my corner even when she teases me about my footwork.",
       "Donna and I had a good workout on court one, and I think our footwork is finally improving, though my knees are going to complain tomorrow.",
       "Hal made me feel welcome at Rosa's even though I was late, and I'm grateful he didn't make me feel guilty about missing dinner.",
       "Hal's right that I should have waited for approval before wiring the cart, and I'm glad Donna and Rosa still have me on the doubles roster despite my lateness.",
       "I want to keep my cart project honest with the neighborhood, so I'll stop running it before the parade until Architectural Review signs off.",
       "I need to slow down and get the approval paperwork squared away before I run the parade, even though Donna and Hal keep reminding me how eager I am.",
-      "I feel lucky to have Hal and Donna looking out for me, and I want to keep my word to them about being on time for Rosa's dinner."
+      "I feel lucky to have Hal and Donna looking out for me, and I want to keep my word to them about being on time for Rosa's dinner.",
+      "Donna has been a steady presence at the rec center, and I'm glad she keeps saving me a spot on the doubles roster and nudging me to show up on time.",
+      "Keeping my word about the cart form and the dinks feels good, and I want to be the reliable partner Donna and Hal already count on, especially at Rosa's dinner on Saturday."
     ],
     "donna": [
-      "Gary's footwork is improving and I love how easily we fall into rhythm together on court one, even with Hal's warnings about those birds hanging over my mind.",
-      "Rosa's dinner tonight at six feels like a good reward after our ladder match, and I hope Gary and Hal keep showing up for these simple moments we share.",
       "Gary and I are finally a real doubles team now that our name is on the ladder, and I'm proud of how he's stuck with the footwork drills even with his knees complaining.",
       "I want to climb that ladder with Gary and show Rosa that dinner at her place was worth every bit of effort we put into practice, though I'm starting to worry about where he's gotten off to.",
       "Hal and I finally sorted out the flamingo business, and I'm glad it ended with a promise to thin the flock by Saturday instead of a fight with the committee.",
       "Gary is back on track for doubles and Rosa's six o'clock dinner, and I'm grateful the whole neighborhood crew is gathering around one table tonight.",
       "I like how easily Rosa and Hal fell back into their old rhythm, and I'm glad I could help set the table for everyone.",
-      "Gary's always running off to fix something, but I trust he'll show up, and I'm looking forward to our doubles practice together."
+      "Gary's always running off to fix something, but I trust he'll show up, and I'm looking forward to our doubles practice together.",
+      "Gary has been reliable lately, filing his cart form and keeping his word about dinner, and I appreciate that about him.",
+      "Practicing dinks with Gary on the court feels like a good way to strengthen our friendship and get ready for doubles."
     ],
     "hal": [
-      "I keep thinking I let Rosa down by losing track of the afternoon, and I want to make it right at dinner tonight.",
-      "Hal is still the neighbor who insists on order and the flamingo limit, but I'm starting to see how much he cares about this street.",
       "I owe Rosa a real apology for losing track of the afternoon, and I want to show up on time tonight and help carry things.",
       "Gary and Donna keep stirring up complaints about each other, and I'm starting to feel like I'm the one keeping a record of everyone's mistakes instead of just enjoying our neighborhood.",
       "Rosa's welcome dinner at six is a good sign that this neighborhood is starting to feel like home, and I'm glad Gary and Donna will be there to share it with me.",
       "I need to get my cart modifications approved by Architectural Review before the parade, so I'll keep pressing the committee for an answer and not cut corners on the rules.",
       "I'm glad Rosa forgave me so quickly, and I want to earn that trust by carrying every heavy thing I can find at her dinner.",
-      "Gary followed the rules on his cart, and I'm proud I stuck to the regulations on that notebook instead of chasing every petty complaint."
+      "Gary followed the rules on his cart, and I'm proud I stuck to the regulations on that notebook instead of chasing every petty complaint.",
+      "Gary has kept his word on the cart and the soldering, so I can let the complaint go and trust him to show up at Rosa's on time.",
+      "Donna has been a good partner to Gary, and I'm glad the three of us are heading to Rosa's dinner together."
     ],
     "rosa": [
-      "I felt a pang of worry when Hal didn't show, but I'm glad he and Gary took responsibility, and I want my friends to know the table is always set for them.",
-      "Pickleball and street politics keep Donna, Gary, and Hal busy, but I'd rather be the one who makes home feel like the easiest place to show up to.",
       "Hal has been drifting off without a word, and I hate that my dinner table keeps waiting on him, but his apology sounded sincere and I want to believe he'll show up.",
       "Donna and Gary are so caught up in their doubles ladder climb that I worry they're leaving the rest of us behind, though I still want them at my table because they're family to me.",
       "I have a warm, bustling house full of people I care about, and tonight's six o'clock dinner is a chance to gather them all at my table.",
       "Donna and Gary keep me on my toes with their ladder match and missing-partner antics, and I'd rather be their friend and host than let the flamingo committee squabbles get in the way.",
       "Rosa's kitchen is buzzing with friends arriving for dinner, and I'm glad Donna and Hal showed up to share the evening with me.",
-      "Hal's apology was sincere, and watching him grab that platter makes me feel grateful for these people who keep showing up for each other."
+      "Hal's apology was sincere, and watching him grab that platter makes me feel grateful for these people who keep showing up for each other.",
+      "Hosting these people at my table feels good, and I'm glad Hal and Donna jumped in to help without being asked twice.",
+      "I keep coming back to whether Saturday's dinner will go smoothly, so I'm planning ahead and making sure my shifts leave the evening open for the people I care about."
     ]
   },
   "emotions": {
     "gary": "content",
-    "donna": "enthusiastic",
-    "hal": "dutiful",
+    "donna": "cheerful",
+    "hal": "gruffly content",
     "rosa": "determined"
   },
   "laws": [
@@ -4182,10 +4183,20 @@
       "dialogue": [
         "Donna said to Gary: “Perfect, you're loose. Stay at the kitchen line and just pop it soft over the net, no swinging. Think of it like tucking in a baby, and we'll rally till the shower picks up.”"
       ]
+    },
+    {
+      "tick": 128,
+      "time": "Tuesday, October 20, 6:17 PM",
+      "story": "At the Sumter Oaks Rec Center on a sunny Tuesday evening at 6:17, Gary is finishing up his pickleball drills with Donna, who is cheerfully calling out his progress on the soft dinks. Hal stops by to pass along a message from Rosa: dinner is set for Saturday at six at her house, so Gary should be on time and wipe his boots. Meanwhile, Rosa is at home, determined to double-check her shift schedule to make sure Saturday evening is clear before she commits to the grocery run.",
+      "dialogue": [
+        "Gary said to Hal: “Evening, Hal. Donna's got me popping dinks soft as a baby's tuck-in, and my cart form's filed, so I'm keeping my word. Give me one more rally and I'll head over for Rosa's dinner right on time.”",
+        "Donna said to Hal: “Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together.”",
+        "Hal said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 3.94069,
+    "total_usd": 3.97358,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4220,13 +4231,12 @@
         "usd": 0.47744
       },
       "2026-10-20": {
-        "ticks": 11,
-        "usd": 0.3449
+        "ticks": 12,
+        "usd": 0.37779
       }
     }
   },
   "recent_tick_costs": [
-    0.03295,
     0.03064,
     0.03225,
     0.03289,
@@ -4249,7 +4259,8 @@
     0.03203,
     0.03039,
     0.03054,
-    0.03094
+    0.03094,
+    0.03289
   ],
   "fund": {
     "gross_usd": 0.0,

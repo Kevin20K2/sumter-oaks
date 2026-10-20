@@ -1,0 +1,115 @@
+{
+  "tick": 128,
+  "simulation_time": "Tuesday, October 20, 6:17 PM",
+  "weather": "Sunny, 80°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "rec_center",
+    "rosa": "rosas_house"
+  },
+  "story": "At the Sumter Oaks Rec Center on a sunny Tuesday evening at 6:17, Gary is finishing up his pickleball drills with Donna, who is cheerfully calling out his progress on the soft dinks. Hal stops by to pass along a message from Rosa: dinner is set for Saturday at six at her house, so Gary should be on time and wipe his boots. Meanwhile, Rosa is at home, determined to double-check her shift schedule to make sure Saturday evening is clear before she commits to the grocery run.",
+  "events": [
+    "Rosa (rosa shift schedule): Double-check Saturday evening is still clear of per-diem shifts before I commit to the grocery run"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just told me to keep the dinks soft and Hal showed up. I filed the cart form back at tick 35, so I'm on the honest track now, and I promised Hal and Donna I'd make Rosa's dinner on time. It's past 6 PM, so I shouldn't get lost in the rally. Best move is to greet Hal, thank Donna for the lesson, and mention dinner so he knows I'm keeping my word. That keeps the chat moving forward without repeating myself.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Evening, Hal. Donna's got me popping dinks soft as a baby's tuck-in, and my cart form's filed, so I'm keeping my word. Give me one more rally and I'll head over for Rosa's dinner right on time."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal just walked in, and I know he's coming to Rosa's six o'clock dinner. It's already 6:17, so we're running late if we want to eat on time. Gary and I have been dinking for a good stretch and he's got the soft touch down. I shouldn't keep drilling him or ask him again about being my partner, that's settled and I signed us up. Best move is to greet Hal, wrap up practice, and herd everyone toward dinner so the whole crew arrives together.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at the Rec Center and Gary and Donna are both in sight. Donna already trimmed the flamingos to three, and Gary's cart came up clean, so my petty-violation list is basically empty. Still, I came here for a reason, and the cart modifications question for Architectural Review is the one rule matter I actually care about. I checked the mailbox kiosk and there was no reply. Rather than nag again, I'll acknowledge Donna's compliance, which is only right, and mention dinner. Rosa's been hunting for Gary, so I can confirm Saturday at six with him too. Keep it short and gruff, with a little warmth underneath.",
+      "emotional_state": "gruffly content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The table is set with the tablecloth and platters, the chair count is confirmed, and the menu and grocery/borrow list are drafted. I'm alone at home with nobody in line-of-sight, and Gary hasn't actually given me a yes or a dish yet. I shouldn't redo the table or the menu. The next real step toward Saturday's dinner is to confirm my per-diem shifts leave the evening clear. I checked the schedule at tick 124, so I'll just do a quick look now to make sure nothing has changed. Then I can head out on magnolia_loop to chase down Gary's answer and start borrowing chairs.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Double-check Saturday evening is still clear of per-diem shifts before I commit to the grocery run"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03289,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9631,
+        "output_tokens": 1290,
+        "usd": 0.03216
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4485,
+        "output_tokens": 560,
+        "usd": 0.00073
+      }
+    }
+  }
+}
