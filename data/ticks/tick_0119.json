@@ -1,0 +1,118 @@
+{
+  "tick": 119,
+  "simulation_time": "Tuesday, October 20, 9:17 AM",
+  "weather": "Sunny, 78°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On Tuesday morning in Sumter Oaks, Gary stands at the bulletin board on Magnolia Loop, hoping to find either an Architectural Review decision or news about the parade. Donna, eager as ever, is at home checking the club calendar so she can lock in a two-hour doubles practice with Gary once the courts open up. Meanwhile Hal is heading down Magnolia Loop with a determined stride, and Rosa, equally determined, is at home reviewing her per-diem shifts to make sure Saturday evening stays free for the dinner.",
+  "events": [
+    "Gary (street bulletin board): Check the board for an Architectural Review decision or parade notice",
+    "Donna (donna club calendar): Check open court times and confirm a two-hour doubles practice slot with Gary",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa shift schedule): Check this week's per-diem shifts and make sure Saturday evening is clear for the dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm on Magnolia Loop with nobody around, and the bench work is done: lights and speaker wiring tested indoors, cart untouched. I filed the modification form back around tick 35-36, but I haven't heard a word on approval. I told myself I'd keep this honest and not run anything on the cart until Architectural Review signs off. Anything I rig to the cart would be visible from the street, so L-01 applies. The street bulletin board is the likeliest place for a notice about the review decision or the parade rules. Check there before I touch the cart, and if there's nothing, I'll know to go nudge the review desk.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Check the board for an Architectural Review decision or parade notice"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm home on a sunny Tuesday morning with nobody around. I've already packed the bag and penciled in practice, so the only thing left is to make it official. Courts max out at 2 hours per party under L-05, so I should check the calendar for open slots and lock in a time with Gary before someone else grabs the good morning ones. Then I'll go hunt Gary down and make sure he shows up.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check open court times and confirm a two-hour doubles practice slot with Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's Tuesday morning and I'm alone at the house. I already went through my notebook and struck anything that isn't an L-01 or L-02 item, so the entries are clean and honest. The cart mods still need to go before Architectural Review, and I've been pressing for an answer. Sitting on the porch won't file anything. Town Hall is where the paperwork gets done, and I'll take the notebook along. Rosa's dinner is tonight, so I want to be finished and back in good time to help carry things this time.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out toward Town Hall to press the committee on the cart approval and file my L-01 and L-02 notes, then back in time to help Rosa with dinner."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Tuesday morning, the dinner is Saturday at six, and nobody is in sight. I already invited Donna, Gary, and Hal, and I shouldn't nag anyone again. The last tick I was planning the next batch of food in the kitchen. The shift schedule is the practical thing to settle: I'm overcommitted, and I don't want a per-diem shift colliding with my own welcome dinner. Check it now, then plan the menu around it.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check this week's per-diem shifts and make sure Saturday evening is clear for the dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03028,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9402,
+        "output_tokens": 1135,
+        "usd": 0.03015
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 400,
+        "output_tokens": 184,
+        "usd": 0.00013
+      }
+    }
+  }
+}
