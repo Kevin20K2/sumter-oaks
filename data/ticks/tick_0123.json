@@ -1,0 +1,116 @@
+{
+  "tick": 123,
+  "simulation_time": "Tuesday, October 20, 1:17 PM",
+  "weather": "Sunny, 81°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On Tuesday afternoon in Sumter Oaks, Gary and Donna stroll down Magnolia Loop toward the rec center, where Gary is determined to arrive on time for their pickleball slot that Donna booked for him. Hal stands on the same street with his notebook, tallying the pink plastic flamingos in the front yards, while Rosa sits at her dining table at home, counting chairs and plates and making a list of what she'll need to borrow or buy for Saturday. The sun is bright at 81 degrees, and the whole neighborhood seems to be enjoying a lazy, golf-cart-friendly afternoon.",
+  "events": [
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
+    "Rosa (rosa dining table): Count place settings and chairs for Saturday, and jot down what to borrow or buy"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna already booked the doubles slot and told me to bring soft knees. I asked about Rosa's dinner last tick and she answered about pickleball instead, so I shouldn't ask again. Best move is to acknowledge her booking, thank her, and commit to the rec center. L-05 caps us at two hours, which she respected. My cart project is on hold until Architectural Review signs off, so no tinkering today. After this I should head to the rec center and stop chatting.",
+      "emotional_state": "grateful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Two hours, perfect, thanks for booking it, Donna. I'll grab my paddle and meet you at the rec center, and I'll be there on time."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just answered me about Rosa's dinner and promised to be on time, so the dinner question is settled and I shouldn't ask again. I already booked our two-hour slot and texted him, and he's standing right here. Best move is to confirm the plan out loud and keep our doubles momentum going. Hal is counting my flamingos, but he promised to thin the flock by Saturday, so I'll let him count in peace.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Perfect, Gary, you're a gentleman. Then let's walk over to the rec center now and get you warmed up before our slot. I'll carry the paddles, you just bring those soft knees."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary says nothing's approved yet and the cart is parked bare, so there's no violation to report. My notebook shows Donna's flamingos still need counting for L-02. I'm standing right here on Magnolia Loop, and the flock is an interactive object in this zone, so I can do the count myself instead of chatting. Rosa's dinner is at six and I'd rather not stir up a fight beforehand, but the rule is the rule. Count first, then decide about the committee.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and note the total in my notebook"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 1:17 PM Tuesday and nobody's around. The make-ahead dishes are portioned and in the fridge, and the dinner is Saturday at six. Gary never actually gave me a yes or a dish, so I shouldn't assume he's coming. The next useful step is a grocery list for the fresh items, and that means going over the pantry, the fridge, and the table setup in the kitchen. I'll work it out here rather than redo the prep I already finished.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Count place settings and chairs for Saturday, and jot down what to borrow or buy"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03115,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9947,
+        "output_tokens": 1111,
+        "usd": 0.031
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 495,
+        "output_tokens": 208,
+        "usd": 0.00015
+      }
+    }
+  }
+}
