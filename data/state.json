@@ -1,6 +1,6 @@
 {
-  "tick": 125,
-  "time": "2026-10-20T14:17",
+  "tick": 126,
+  "time": "2026-10-20T15:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,35 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna headed to Rec Center.",
-      "Hal (street bulletin board): Check for Architectural Review schedule and pending cart approvals",
-      "You arrived at Rec Center.",
-      "Donna just arrived."
+      "Donna (court reservation kiosk): Reserve a two-hour court slot for Gary and me to practice doubles"
     ],
     "donna": [
-      "Gary headed to Rec Center.",
-      "Hal (street bulletin board): Check for Architectural Review schedule and pending cart approvals",
-      "You arrived at Rec Center.",
-      "Gary just arrived."
+      "Gary said to Donna: “Afternoon, Donna. Sorry I was late last time, and thanks for keeping me on the doubles roster. I filed the cart form with Architectural Review, so no wiring till they sign off, scout's honor.”"
     ],
-    "hal": [
-      "Gary headed to Rec Center.",
-      "Donna headed to Rec Center."
-    ],
+    "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 30,
-        "text": "Donna just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 30,
-        "text": "Hal just arrived.",
-        "importance": 5
-      },
       {
         "tick": 31,
         "text": "I said to Donna: “Tomorrow morning works, Donna, put me down for the court and I'll bring my worst backhand. Today I've got to finish the cart wiring and get that Architectural Review form filed. Either of you know where they keep the blanks?”",
@@ -1027,19 +1008,19 @@
         "tick": 124,
         "text": "Donna just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 125,
+        "text": "I said to Donna: “Afternoon, Donna. Sorry I was late last time, and thanks for keeping me on the doubles roster. I filed the cart form with Architectural Review, so no wiring till they sign off, scout's honor.”",
+        "importance": 4
+      },
+      {
+        "tick": 125,
+        "text": "Donna (court reservation kiosk): Reserve a two-hour court slot for Gary and me to practice doubles",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 40,
-        "text": "Gary just arrived.",
-        "importance": 3
-      },
-      {
-        "tick": 41,
-        "text": "I said to Gary: “Gary, there you are! Rosa's dinner is Saturday at six at her place, and I've got us down for pickleball at eight that morning, so you'd better be rested. I'll bring the spare paddle.”",
-        "importance": 6
-      },
       {
         "tick": 41,
         "text": "Gary (gary golf cart): Start wiring the light strips onto the cart frame, no sound until tomorrow",
@@ -2029,14 +2010,19 @@
         "tick": 124,
         "text": "Gary just arrived.",
         "importance": 6
+      },
+      {
+        "tick": 125,
+        "text": "I (court reservation kiosk): Reserve a two-hour court slot for Gary and me to practice doubles",
+        "importance": 4
+      },
+      {
+        "tick": 125,
+        "text": "Gary said to Donna: “Afternoon, Donna. Sorry I was late last time, and thanks for keeping me on the doubles roster. I filed the cart form with Architectural Review, so no wiring till they sign off, scout's honor.”",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 24,
-        "text": "I (ice cream stand): Buy a single scoop of butter pecan and sit a minute",
-        "importance": 3
-      },
       {
         "tick": 25,
         "text": "I (parade signup table): Look over the parade sign-up sheet to see who's entered carts",
@@ -3031,14 +3017,14 @@
         "tick": 124,
         "text": "Donna headed to Rec Center.",
         "importance": 4
+      },
+      {
+        "tick": 125,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street to verify L-02 compliance",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 20,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 20,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -4033,6 +4019,11 @@
         "tick": 124,
         "text": "I (rosa shift schedule): Check this week's per-diem shifts and confirm Saturday evening is clear for the dinner",
         "importance": 6
+      },
+      {
+        "tick": 125,
+        "text": "I (rosa dining table): Pull out the tablecloth and serving platters, and set aside the extra chairs I'll need to borrow",
+        "importance": 4
       }
     ]
   },
@@ -4079,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "eager",
+    "gary": "sheepish but hopeful",
+    "donna": "upbeat",
     "hal": "dutiful",
-    "rosa": "determined"
+    "rosa": "focused"
   },
   "laws": [
     {
@@ -4163,9 +4154,18 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 125,
+      "time": "Tuesday, October 20, 3:17 PM",
+      "story": "Gary stands at the Rec Center with a sheepish grin, thanking Donna for keeping him on the doubles roster and promising he has filed his golf cart paperwork with Architectural Review before any wiring begins. Donna, cheerful as ever, reserves a two-hour court slot for the two of them to practice. Out on Magnolia Loop, Hal dutifully counts the pink flamingos on the lawns to make sure the street stays within its L-02 compliance rules, while the afternoon shower drifts past. Over at her house, Rosa focuses on setting out the tablecloth and serving platters and sets aside extra chairs she plans to borrow for the afternoon.",
+      "dialogue": [
+        "Gary said to Donna: “Afternoon, Donna. Sorry I was late last time, and thanks for keeping me on the doubles roster. I filed the cart form with Architectural Review, so no wiring till they sign off, scout's honor.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 3.84882,
+    "total_usd": 3.87921,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4200,13 +4200,12 @@
         "usd": 0.47744
       },
       "2026-10-20": {
-        "ticks": 8,
-        "usd": 0.25303
+        "ticks": 9,
+        "usd": 0.28342
       }
     }
   },
   "recent_tick_costs": [
-    0.03135,
     0.03169,
     0.03148,
     0.03295,
@@ -4229,7 +4228,8 @@
     0.03744,
     0.03085,
     0.03115,
-    0.03203
+    0.03203,
+    0.03039
   ],
   "fund": {
     "gross_usd": 0.0,

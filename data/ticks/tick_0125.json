@@ -1,0 +1,117 @@
+{
+  "tick": 125,
+  "simulation_time": "Tuesday, October 20, 3:17 PM",
+  "weather": "Afternoon shower, 82°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary stands at the Rec Center with a sheepish grin, thanking Donna for keeping him on the doubles roster and promising he has filed his golf cart paperwork with Architectural Review before any wiring begins. Donna, cheerful as ever, reserves a two-hour court slot for the two of them to practice. Out on Magnolia Loop, Hal dutifully counts the pink flamingos on the lawns to make sure the street stays within its L-02 compliance rules, while the afternoon shower drifts past. Over at her house, Rosa focuses on setting out the tablecloth and serving platters and sets aside extra chairs she plans to borrow for the afternoon.",
+  "events": [
+    "Donna (court reservation kiosk): Reserve a two-hour court slot for Gary and me to practice doubles",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street to verify L-02 compliance",
+    "Rosa (rosa dining table): Pull out the tablecloth and serving platters, and set aside the extra chairs I'll need to borrow"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just walked into the Rec Center right behind me, and I'm already running late on the doubles roster. She and Hal keep reminding me not to jump ahead on the cart. I did file the modification form back at Tick 35 and 36, so the honest thing is to tell her where I stand: filed, waiting on Architectural Review, and not wiring a single light until they sign off. It keeps my word to her and Hal, and it's a chance to thank her for keeping me on the roster. Short and friendly, then I can go check the court kiosk.",
+      "emotional_state": "sheepish but hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Afternoon, Donna. Sorry I was late last time, and thanks for keeping me on the doubles roster. I filed the cart form with Architectural Review, so no wiring till they sign off, scout's honor."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary and I both just walked into the Rec Center, and we already settled doubles and signed Pruitt-Kowalski on the ladder. No need to pitch him again or repeat myself. Best next step is to be useful: the court reservation kiosk is right here, and it's an afternoon shower, so I'll grab a court slot for us within the 2-hour limit and get practice moving.",
+      "emotional_state": "upbeat",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Reserve a two-hour court slot for Gary and me to practice doubles"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Nobody's around on Magnolia Loop. Last tick I checked the bulletin board for the Architectural Review schedule, and my memories say Gary followed the rules and Donna trimmed her flamingos to three. The flock is right here, so I'll count them myself to confirm L-02 compliance before I stir up any complaint with the committee. Facts first, then paperwork. If she's at three, I put the notice away like I said I would.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street to verify L-02 compliance"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've done the menu, make-ahead prep, place settings count, and shift schedule check over the past few ticks. What's left is the dining table: I counted settings and jotted what to borrow or buy, but the actual work of setting up for Saturday isn't done. Nobody is around, so no one to talk to. Rather than redo something I've already done, I'll lay out the table linens and serving platters so Saturday morning isn't a scramble, and I can see whether I need to borrow chairs from a neighbor.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Pull out the tablecloth and serving platters, and set aside the extra chairs I'll need to borrow"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03039,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9490,
+        "output_tokens": 1125,
+        "usd": 0.03023
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 482,
+        "output_tokens": 222,
+        "usd": 0.00016
+      }
+    }
+  }
+}
