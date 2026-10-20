@@ -1,0 +1,117 @@
+{
+  "tick": 121,
+  "simulation_time": "Tuesday, October 20, 11:17 AM",
+  "weather": "Sunny, 79°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On a sunny Tuesday morning in Sumter Oaks, Gary is out on Magnolia Loop with Hal, promising him that his golf cart paperwork is filed and that the cart will stay parked until approval posts, and that he'll be on time to Rosa's place. Donna has just set off from her house toward the same street, eager to see what the day brings. Hal, ever dutiful, is keeping his notebook handy so he can count the flamingos in Donna's yard flock from the road. Meanwhile, Rosa is in her kitchen, determined to get a head start on the make-ahead dishes for Saturday's dinner and jotting down her grocery list.",
+  "events": [
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
+    "Rosa (rosa kitchen): Start the make-ahead dishes and write up a grocery list for Saturday's dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Hal asked straight out whether I have the paperwork on file. I filed the form back at Tick 35 and 36, but I just checked the bulletin board and have no decision yet, so I can't claim approval. Honest answer is filed, pending, cart untouched. He's looking out for me and I don't want him dropping a complaint over a misunderstanding. Last tick I already told him the form's filed, so I shouldn't repeat that. Instead I'll answer his specific question about approval and let him know I'll wait on the green light, and that I'll see him at Rosa's dinner on time.",
+      "emotional_state": "earnest",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Filed it twice to be safe, Hal, but no approval's posted yet, so the cart stays parked and bare till it comes through. You can hold off on that complaint. And I'll be on time to Rosa's, scout's honor."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already penciled in the practice, confirmed the two-hour slot (within L-05's limit), packed my bag, and texted Gary the time. No one's around, and I shouldn't keep re-checking the calendar or re-texting him. Time to actually get going: head out toward Magnolia Loop so I'm on my way to the courts and ready for doubles practice with Gary before Rosa's six o'clock dinner.",
+      "emotional_state": "eager",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with my paddles to meet Gary for doubles practice; everything's packed and booked."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary has the paperwork filed and the cart is untouched in the garage, so L-01 is settled and there's nothing left to report on him. My notebook is trimmed down to L-01 and L-02 items, and Donna's flamingos are still the open one. I've already asked Gary and he answered, so no point repeating myself. The flock is right here on Magnolia Loop, so I'll check the count myself before I write anything up.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and note the total in my notebook"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Tuesday late morning and I'm alone at home. I've checked my shift schedule and planned the menu in recent ticks, so I shouldn't loop on that. Saturday's dinner is on, and Hal, Donna, and Gary have all been invited. The best use of this hour is to do real prep, so I'll go to the kitchen and start the make-ahead dishes, which means a pantry check and a grocery list.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Start the make-ahead dishes and write up a grocery list for Saturday's dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03744,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 5,
+        "input_tokens": 12276,
+        "output_tokens": 1274,
+        "usd": 0.03729
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 457,
+        "output_tokens": 216,
+        "usd": 0.00015
+      }
+    }
+  }
+}

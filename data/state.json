@@ -1,39 +1,28 @@
 {
-  "tick": 121,
-  "time": "2026-10-20T10:17",
+  "tick": 122,
+  "time": "2026-10-20T11:17",
   "positions": {
     "gary": "magnolia_loop",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Hal said to Gary: “Morning, Gary. Those cart modifications are visible from the street, so the rule says Architectural Review has to approve them. You have that paperwork on file? If so, I'll drop it and see you at Rosa's dinner.”"
+      "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
+      "Donna just arrived."
     ],
-    "donna": [],
+    "donna": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "hal": [
-      "Gary said to Hal: “Morning, Hal. Took your advice to heart: form's filed, cart's sitting untouched in the garage, and I'm doing all the soldering at my workbench until Architectural Review signs off.”"
+      "Gary said to Hal: “Filed it twice to be safe, Hal, but no approval's posted yet, so the cart stays parked and bare till it comes through. You can hold off on that complaint. And I'll be on time to Rosa's, scout's honor.”",
+      "Donna just arrived."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 21,
-        "text": "Donna said to Gary: “Gary, you were a natural out there. I'm booking us the court for Saturday at eight, a nice tidy hour and a half, and the spare paddle is yours to keep until then. Practice the dink against your garage door and we'll work on that kitchen line together.”",
-        "importance": 4
-      },
-      {
-        "tick": 22,
-        "text": "I (gary golf cart): Finish wiring the rope lights and speaker, then run a full test at low volume",
-        "importance": 4
-      },
-      {
-        "tick": 22,
-        "text": "Donna said to Gary: “Gary, hon, that speaker sounds like a fun project, but anything you bolt onto the cart where the street can see it needs Architectural Review's blessing first. File the form before Saturday so you're not benched by a violation, I need my partner.”",
-        "importance": 4
-      },
       {
         "tick": 23,
         "text": "I said to Donna: “Alright, alright, you're right, I'll get the Architectural Review form filed before Saturday. Can't have my doubles partner sidelined over a speaker. See you at eight, and I'll bring the paddle.”",
@@ -1018,19 +1007,24 @@
         "tick": 120,
         "text": "Hal said to Gary: “Morning, Gary. Those cart modifications are visible from the street, so the rule says Architectural Review has to approve them. You have that paperwork on file? If so, I'll drop it and see you at Rosa's dinner.”",
         "importance": 4
+      },
+      {
+        "tick": 121,
+        "text": "I said to Hal: “Filed it twice to be safe, Hal, but no approval's posted yet, so the cart stays parked and bare till it comes through. You can hold off on that complaint. And I'll be on time to Rosa's, scout's honor.”",
+        "importance": 6
+      },
+      {
+        "tick": 121,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
+        "importance": 6
+      },
+      {
+        "tick": 121,
+        "text": "Donna just arrived.",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 36,
-        "text": "I said to Rosa: “Six on Saturday, got it, I'll bring the dessert. Haven't laid eyes on Gary since this morning, hon, but I'll track him down for you and tell him to call you.”",
-        "importance": 4
-      },
-      {
-        "tick": 36,
-        "text": "Hal headed to Gary's House.",
-        "importance": 4
-      },
       {
         "tick": 36,
         "text": "Rosa said to Hal: “Just your appetite, Hal. Donna's got dessert covered, and I'll handle the rest. If you see Gary, tell him Saturday at six and I'm not taking no for an answer.”",
@@ -2020,24 +2014,19 @@
         "tick": 120,
         "text": "I (donna phone): Text Gary the confirmed practice time and ask if he's ready",
         "importance": 5
+      },
+      {
+        "tick": 121,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 121,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 17,
-        "text": "Donna just arrived.",
-        "importance": 3
-      },
-      {
-        "tick": 18,
-        "text": "I said to Donna: “Afternoon, Donna. I counted your flamingos from the street, and the rule says three ornaments, no more. Thin the flock a bit and I won't have to write it up for the committee.”",
-        "importance": 6
-      },
-      {
-        "tick": 18,
-        "text": "Donna said to Hal: “Hal, you're just the man I wanted. Gary and I are entering the doubles ladder, so don't be surprised when we start climbing. And if you hear anything about who's got the good court times, you come tell me first.”",
-        "importance": 6
-      },
       {
         "tick": 19,
         "text": "I headed to Town Square.",
@@ -3022,14 +3011,24 @@
         "tick": 120,
         "text": "Gary said to Hal: “Morning, Hal. Took your advice to heart: form's filed, cart's sitting untouched in the garage, and I'm doing all the soldering at my workbench until Architectural Review signs off.”",
         "importance": 5
+      },
+      {
+        "tick": 121,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
+        "importance": 4
+      },
+      {
+        "tick": 121,
+        "text": "Gary said to Hal: “Filed it twice to be safe, Hal, but no approval's posted yet, so the cart stays parked and bare till it comes through. You can hold off on that complaint. And I'll be on time to Rosa's, scout's honor.”",
+        "importance": 4
+      },
+      {
+        "tick": 121,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 17,
-        "text": "Hal (street bulletin board): Read the posted notices, including Rosa's dinner note",
-        "importance": 6
-      },
       {
         "tick": 17,
         "text": "You arrived at Rec Center.",
@@ -4024,6 +4023,11 @@
         "tick": 120,
         "text": "I (rosa kitchen): Plan the Saturday menu and start prepping the dishes that can be made ahead",
         "importance": 5
+      },
+      {
+        "tick": 121,
+        "text": "I (rosa kitchen): Start the make-ahead dishes and write up a grocery list for Saturday's dinner",
+        "importance": 5
       }
     ]
   },
@@ -4070,8 +4074,8 @@
     ]
   },
   "emotions": {
-    "gary": "hopeful",
-    "donna": "determined",
+    "gary": "earnest",
+    "donna": "eager",
     "hal": "dutiful",
     "rosa": "determined"
   },
@@ -4169,10 +4173,18 @@
         "Gary said to Hal: “Morning, Hal. Took your advice to heart: form's filed, cart's sitting untouched in the garage, and I'm doing all the soldering at my workbench until Architectural Review signs off.”",
         "Hal said to Gary: “Morning, Gary. Those cart modifications are visible from the street, so the rule says Architectural Review has to approve them. You have that paperwork on file? If so, I'll drop it and see you at Rosa's dinner.”"
       ]
+    },
+    {
+      "tick": 121,
+      "time": "Tuesday, October 20, 11:17 AM",
+      "story": "On a sunny Tuesday morning in Sumter Oaks, Gary is out on Magnolia Loop with Hal, promising him that his golf cart paperwork is filed and that the cart will stay parked until approval posts, and that he'll be on time to Rosa's place. Donna has just set off from her house toward the same street, eager to see what the day brings. Hal, ever dutiful, is keeping his notebook handy so he can count the flamingos in Donna's yard flock from the road. Meanwhile, Rosa is in her kitchen, determined to get a head start on the make-ahead dishes for Saturday's dinner and jotting down her grocery list.",
+      "dialogue": [
+        "Gary said to Hal: “Filed it twice to be safe, Hal, but no approval's posted yet, so the cart stays parked and bare till it comes through. You can hold off on that complaint. And I'll be on time to Rosa's, scout's honor.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 3.71735,
+    "total_usd": 3.75479,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4207,13 +4219,12 @@
         "usd": 0.47744
       },
       "2026-10-20": {
-        "ticks": 4,
-        "usd": 0.12156
+        "ticks": 5,
+        "usd": 0.159
       }
     }
   },
   "recent_tick_costs": [
-    0.03047,
     0.03128,
     0.03111,
     0.03133,
@@ -4236,7 +4247,8 @@
     0.03008,
     0.03027,
     0.03028,
-    0.03093
+    0.03093,
+    0.03744
   ],
   "fund": {
     "gross_usd": 0.0,
