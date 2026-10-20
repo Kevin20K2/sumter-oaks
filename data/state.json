@@ -1,6 +1,6 @@
 {
-  "tick": 120,
-  "time": "2026-10-20T09:17",
+  "tick": 121,
+  "time": "2026-10-20T10:17",
   "positions": {
     "gary": "magnolia_loop",
     "donna": "donnas_house",
@@ -9,26 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Hal just arrived."
+      "Hal said to Gary: “Morning, Gary. Those cart modifications are visible from the street, so the rule says Architectural Review has to approve them. You have that paperwork on file? If so, I'll drop it and see you at Rosa's dinner.”"
     ],
     "donna": [],
     "hal": [
-      "You arrived at Magnolia Loop (the street)."
+      "Gary said to Hal: “Morning, Hal. Took your advice to heart: form's filed, cart's sitting untouched in the garage, and I'm doing all the soldering at my workbench until Architectural Review signs off.”"
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 20,
-        "text": "Donna just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 21,
-        "text": "I (gary golf cart): Wire the marine speaker to the cart battery and test it at low volume",
-        "importance": 4
-      },
       {
         "tick": 21,
         "text": "Donna said to Gary: “Gary, you were a natural out there. I'm booking us the court for Saturday at eight, a nice tidy hour and a half, and the spare paddle is yours to keep until then. Practice the dink against your garage door and we'll work on that kitchen line together.”",
@@ -1018,14 +1008,19 @@
         "tick": 119,
         "text": "Hal just arrived.",
         "importance": 6
+      },
+      {
+        "tick": 120,
+        "text": "I said to Hal: “Morning, Hal. Took your advice to heart: form's filed, cart's sitting untouched in the garage, and I'm doing all the soldering at my workbench until Architectural Review signs off.”",
+        "importance": 4
+      },
+      {
+        "tick": 120,
+        "text": "Hal said to Gary: “Morning, Gary. Those cart modifications are visible from the street, so the rule says Architectural Review has to approve them. You have that paperwork on file? If so, I'll drop it and see you at Rosa's dinner.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 35,
-        "text": "Rosa said to Donna: “Donna, good timing. Dinner at my place is Saturday at six, and you and Hal are both on the list. Have you seen Gary today? I still need to pin him down.”",
-        "importance": 4
-      },
       {
         "tick": 36,
         "text": "I said to Rosa: “Six on Saturday, got it, I'll bring the dessert. Haven't laid eyes on Gary since this morning, hon, but I'll track him down for you and tell him to call you.”",
@@ -2020,19 +2015,14 @@
         "tick": 119,
         "text": "I (donna club calendar): Check open court times and confirm a two-hour doubles practice slot with Gary",
         "importance": 5
+      },
+      {
+        "tick": 120,
+        "text": "I (donna phone): Text Gary the confirmed practice time and ask if he's ready",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 17,
-        "text": "I (street bulletin board): Read the posted notices, including Rosa's dinner note",
-        "importance": 3
-      },
-      {
-        "tick": 17,
-        "text": "Rosa headed to Rec Center.",
-        "importance": 3
-      },
       {
         "tick": 17,
         "text": "Donna just arrived.",
@@ -3022,14 +3012,19 @@
         "tick": 119,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 120,
+        "text": "I said to Gary: “Morning, Gary. Those cart modifications are visible from the street, so the rule says Architectural Review has to approve them. You have that paperwork on file? If so, I'll drop it and see you at Rosa's dinner.”",
+        "importance": 5
+      },
+      {
+        "tick": 120,
+        "text": "Gary said to Hal: “Morning, Hal. Took your advice to heart: form's filed, cart's sitting untouched in the garage, and I'm doing all the soldering at my workbench until Architectural Review signs off.”",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 17,
-        "text": "I headed to Rec Center.",
-        "importance": 6
-      },
       {
         "tick": 17,
         "text": "Hal (street bulletin board): Read the posted notices, including Rosa's dinner note",
@@ -4024,55 +4019,60 @@
         "tick": 119,
         "text": "I (rosa shift schedule): Check this week's per-diem shifts and make sure Saturday evening is clear for the dinner",
         "importance": 4
+      },
+      {
+        "tick": 120,
+        "text": "I (rosa kitchen): Plan the Saturday menu and start prepping the dishes that can be made ahead",
+        "importance": 5
       }
     ]
   },
   "reflections": {
     "gary": [
-      "Donna keeps pushing me onto the court and I'm glad she does, because my footwork is finally starting to click with her easy serves.",
-      "Being Donna's doubles partner on the ladder feels like something I've earned, and I want to show up tomorrow ready to climb with her.",
       "Rosa's roast has been waiting on me all afternoon, so I want to finish this rally with Donna and get over there by six without letting anyone down again.",
       "Donna keeps pushing me to be sharper on the ladder, and I'm glad she's in my corner even when she teases me about my footwork.",
       "Donna and I had a good workout on court one, and I think our footwork is finally improving, though my knees are going to complain tomorrow.",
       "Hal made me feel welcome at Rosa's even though I was late, and I'm grateful he didn't make me feel guilty about missing dinner.",
       "Hal's right that I should have waited for approval before wiring the cart, and I'm glad Donna and Rosa still have me on the doubles roster despite my lateness.",
-      "I want to keep my cart project honest with the neighborhood, so I'll stop running it before the parade until Architectural Review signs off."
+      "I want to keep my cart project honest with the neighborhood, so I'll stop running it before the parade until Architectural Review signs off.",
+      "I need to slow down and get the approval paperwork squared away before I run the parade, even though Donna and Hal keep reminding me how eager I am.",
+      "I feel lucky to have Hal and Donna looking out for me, and I want to keep my word to them about being on time for Rosa's dinner."
     ],
     "donna": [
-      "Gary is coming along nicely on the court, and I'm proud of how hard he's working on his footwork, so I'm glad we're partners on the ladder.",
-      "Locking in Pruitt-Kowalski with Gary feels like a real goal now, and I'm already looking forward to picking him up at 7:45 to practice on court one.",
       "Gary's footwork is improving and I love how easily we fall into rhythm together on court one, even with Hal's warnings about those birds hanging over my mind.",
       "Rosa's dinner tonight at six feels like a good reward after our ladder match, and I hope Gary and Hal keep showing up for these simple moments we share.",
       "Gary and I are finally a real doubles team now that our name is on the ladder, and I'm proud of how he's stuck with the footwork drills even with his knees complaining.",
       "I want to climb that ladder with Gary and show Rosa that dinner at her place was worth every bit of effort we put into practice, though I'm starting to worry about where he's gotten off to.",
       "Hal and I finally sorted out the flamingo business, and I'm glad it ended with a promise to thin the flock by Saturday instead of a fight with the committee.",
-      "Gary is back on track for doubles and Rosa's six o'clock dinner, and I'm grateful the whole neighborhood crew is gathering around one table tonight."
+      "Gary is back on track for doubles and Rosa's six o'clock dinner, and I'm grateful the whole neighborhood crew is gathering around one table tonight.",
+      "I like how easily Rosa and Hal fell back into their old rhythm, and I'm glad I could help set the table for everyone.",
+      "Gary's always running off to fix something, but I trust he'll show up, and I'm looking forward to our doubles practice together."
     ],
     "hal": [
-      "I keep a close watch on Magnolia Loop because someone has to make sure Donna keeps her promise about the flamingos and Gary's cart stays within the rules.",
-      "Rosa's dinners are the one thing that brings this street together, even if I'd rather be on the porch with my binoculars than at her table.",
       "I keep thinking I let Rosa down by losing track of the afternoon, and I want to make it right at dinner tonight.",
       "Hal is still the neighbor who insists on order and the flamingo limit, but I'm starting to see how much he cares about this street.",
       "I owe Rosa a real apology for losing track of the afternoon, and I want to show up on time tonight and help carry things.",
       "Gary and Donna keep stirring up complaints about each other, and I'm starting to feel like I'm the one keeping a record of everyone's mistakes instead of just enjoying our neighborhood.",
       "Rosa's welcome dinner at six is a good sign that this neighborhood is starting to feel like home, and I'm glad Gary and Donna will be there to share it with me.",
-      "I need to get my cart modifications approved by Architectural Review before the parade, so I'll keep pressing the committee for an answer and not cut corners on the rules."
+      "I need to get my cart modifications approved by Architectural Review before the parade, so I'll keep pressing the committee for an answer and not cut corners on the rules.",
+      "I'm glad Rosa forgave me so quickly, and I want to earn that trust by carrying every heavy thing I can find at her dinner.",
+      "Gary followed the rules on his cart, and I'm proud I stuck to the regulations on that notebook instead of chasing every petty complaint."
     ],
     "rosa": [
-      "I keep checking the clock and the schedule, but Hal, Gary, and Donna still haven't come, and I'm starting to wonder if I misread the dinner date.",
-      "I want to believe my neighbors just forgot or got held up, but the empty chairs and the cooling pork make me worry something happened at Hal's house.",
       "I felt a pang of worry when Hal didn't show, but I'm glad he and Gary took responsibility, and I want my friends to know the table is always set for them.",
       "Pickleball and street politics keep Donna, Gary, and Hal busy, but I'd rather be the one who makes home feel like the easiest place to show up to.",
       "Hal has been drifting off without a word, and I hate that my dinner table keeps waiting on him, but his apology sounded sincere and I want to believe he'll show up.",
       "Donna and Gary are so caught up in their doubles ladder climb that I worry they're leaving the rest of us behind, though I still want them at my table because they're family to me.",
       "I have a warm, bustling house full of people I care about, and tonight's six o'clock dinner is a chance to gather them all at my table.",
-      "Donna and Gary keep me on my toes with their ladder match and missing-partner antics, and I'd rather be their friend and host than let the flamingo committee squabbles get in the way."
+      "Donna and Gary keep me on my toes with their ladder match and missing-partner antics, and I'd rather be their friend and host than let the flamingo committee squabbles get in the way.",
+      "Rosa's kitchen is buzzing with friends arriving for dinner, and I'm glad Donna and Hal showed up to share the evening with me.",
+      "Hal's apology was sincere, and watching him grab that platter makes me feel grateful for these people who keep showing up for each other."
     ]
   },
   "emotions": {
     "gary": "hopeful",
-    "donna": "eager",
-    "hal": "determined",
+    "donna": "determined",
+    "hal": "dutiful",
     "rosa": "determined"
   },
   "laws": [
@@ -4160,10 +4160,19 @@
       "time": "Tuesday, October 20, 9:17 AM",
       "story": "On Tuesday morning in Sumter Oaks, Gary stands at the bulletin board on Magnolia Loop, hoping to find either an Architectural Review decision or news about the parade. Donna, eager as ever, is at home checking the club calendar so she can lock in a two-hour doubles practice with Gary once the courts open up. Meanwhile Hal is heading down Magnolia Loop with a determined stride, and Rosa, equally determined, is at home reviewing her per-diem shifts to make sure Saturday evening stays free for the dinner.",
       "dialogue": []
+    },
+    {
+      "tick": 120,
+      "time": "Tuesday, October 20, 10:17 AM",
+      "story": "On Tuesday morning in Sumter Oaks, Gary stands on Magnolia Loop assuring Hal that his golf cart modifications are on hold until the Architectural Review committee signs off, while Hal, dutifully checking the rules, asks whether the paperwork is on file. Over at her house, Donna is texting Gary to confirm a practice time and see if he's ready, a determined look on her face. Meanwhile, Rosa is in her kitchen planning Saturday's menu and getting a head start on the dishes that can be made ahead.",
+      "dialogue": [
+        "Gary said to Hal: “Morning, Hal. Took your advice to heart: form's filed, cart's sitting untouched in the garage, and I'm doing all the soldering at my workbench until Architectural Review signs off.”",
+        "Hal said to Gary: “Morning, Gary. Those cart modifications are visible from the street, so the rule says Architectural Review has to approve them. You have that paperwork on file? If so, I'll drop it and see you at Rosa's dinner.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 3.68642,
+    "total_usd": 3.71735,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4198,13 +4207,12 @@
         "usd": 0.47744
       },
       "2026-10-20": {
-        "ticks": 3,
-        "usd": 0.09063
+        "ticks": 4,
+        "usd": 0.12156
       }
     }
   },
   "recent_tick_costs": [
-    0.03014,
     0.03047,
     0.03128,
     0.03111,
@@ -4227,7 +4235,8 @@
     0.02994,
     0.03008,
     0.03027,
-    0.03028
+    0.03028,
+    0.03093
   ],
   "fund": {
     "gross_usd": 0.0,

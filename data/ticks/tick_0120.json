@@ -1,0 +1,116 @@
+{
+  "tick": 120,
+  "simulation_time": "Tuesday, October 20, 10:17 AM",
+  "weather": "Sunny, 78°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On Tuesday morning in Sumter Oaks, Gary stands on Magnolia Loop assuring Hal that his golf cart modifications are on hold until the Architectural Review committee signs off, while Hal, dutifully checking the rules, asks whether the paperwork is on file. Over at her house, Donna is texting Gary to confirm a practice time and see if he's ready, a determined look on her face. Meanwhile, Rosa is in her kitchen planning Saturday's menu and getting a head start on the dishes that can be made ahead.",
+  "events": [
+    "Donna (donna phone): Text Gary the confirmed practice time and ask if he's ready",
+    "Rosa (rosa kitchen): Plan the Saturday menu and start prepping the dishes that can be made ahead"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I already checked the bulletin board last tick and there's nothing new on it that I recall. Hal just walked up, and he's the one who gently told me to wait for approval, so I owe him a straight update. I filed the form, I've kept the cart untouched, and I've been soldering and testing indoors at my workbench. No need to ask him anything big, just be honest and friendly and let him know I'm playing by the rules. It also feels good to have someone to talk to on a sunny morning.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Morning, Hal. Took your advice to heart: form's filed, cart's sitting untouched in the garage, and I'm doing all the soldering at my workbench until Architectural Review signs off."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already penciled in and confirmed a two-hour practice slot, and my bag is packed with paddles, balls, and a spare grip. Gary isn't around, and I'm a little worried about where he's gotten off to. Rosa's dinner is at six, so there's plenty of day left. Rather than keep fussing with the calendar, I should text Gary to lock in the practice time and make sure his knees are holding up.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_phone",
+          "content": "Text Gary the confirmed practice time and ask if he's ready"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've pruned my notebook down to L-01 and L-02 only, and I'm on Magnolia Loop with Gary in sight. Rosa's dinner is at six and I owe her an apology, so I don't want to start a feud today. But Gary's cart mods are exactly what my notebook covers, and a plain question is fair. I'll ask whether he got Architectural Review approval, stick to the rule, and keep it civil. If he has the paperwork, I'm done with it.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Morning, Gary. Those cart modifications are visible from the street, so the rule says Architectural Review has to approve them. You have that paperwork on file? If so, I'll drop it and see you at Rosa's dinner."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Tuesday morning and I'm alone at the house. I've been through the shift schedule twice already, so Saturday evening is as clear as it's going to get. The dinner is Saturday at six, and I've got Hal, Donna and Gary all lined up. The useful thing now is to get ahead of the cooking. I checked the pantry last tick, so the next step is working on the actual menu and what I'll prep early, not re-checking things I already know. The kitchen is where that happens.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Plan the Saturday menu and start prepping the dishes that can be made ahead"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03093,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9456,
+        "output_tokens": 1135,
+        "usd": 0.03026
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 3906,
+        "output_tokens": 557,
+        "usd": 0.00067
+      }
+    }
+  }
+}
