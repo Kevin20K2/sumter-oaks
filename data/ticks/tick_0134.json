@@ -1,0 +1,118 @@
+{
+  "tick": 134,
+  "simulation_time": "Wednesday, October 21, 9:17 AM",
+  "weather": "Humid and hazy, 80°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a humid, hazy Wednesday morning in Sumter Oaks, Gary is making his way down Magnolia Loop with a determined stride, while Donna packs her paddle and balls for a doubles practice session with him. Hal, content as ever, keeps watch with his binoculars for any grass parking or stray lawn ornaments along the street. Meanwhile, Rosa sits at her dining table, focused and hopeful, counting chairs and planning the seating and serving dishes for Saturday's dinner.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Donna (donna pickleball bag): Grab my paddle and balls and pack the bag for doubles practice with Gary",
+    "Hal (hal binoculars): Sweep Magnolia Loop for grass parking or stray lawn ornaments",
+    "Rosa (rosa dining table): Count chairs and plan the seating and serving dishes for Saturday's dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Bench work is done: the light controller and amp are wired and labeled, nothing mounted on the cart yet. Mounting anything visible from the street needs Architectural Review approval under L-01, and I told myself and Donna and Hal I'd get the paperwork squared away first. Approval is filed at Town Hall, so the right next step is to go there instead of mounting on impulse. I'm eager, but I'm keeping my word. Sound stays off until tomorrow anyway, and nothing amplified before 7 AM or after 10 PM.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out toward Town Hall to file the Architectural Review request for the cart mods before I mount anything."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've penciled in a 2-hour doubles practice block with Gary on court 1, and that's within the L-05 limit. Nobody's around in line-of-sight, and Gary just headed off down Magnolia Loop. I should stop fiddling with the calendar and make it happen: grab my pickleball bag so I'm ready to head to the courts and find him. Getting practice in is how we climb the ladder.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Grab my paddle and balls and pack the bag for doubles practice with Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Odd. Memory says I headed to Rosa's House at tick 131, but I'm standing in my own house at 9:17 AM on a Wednesday with nobody around. Dinner isn't until Saturday at six anyway. The cart and flamingo complaints are resolved, Gary and Donna came through, and I've nothing left to report. A retired supply sergeant doesn't sit idle, though. Binoculars are right here, and a quick sweep of Magnolia Loop for parking or ornament violations is just routine upkeep of the neighborhood. Order and respect, one pass of the street.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Sweep Magnolia Loop for grass parking or stray lawn ornaments"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Wednesday morning and I'm alone in the kitchen. I checked my shift schedule last tick and Saturday evening is clear. The marinade is started and the grocery list is done, so the next useful thing is to use the dining table: count seats, set out plates and serving dishes, and see whether anything needs borrowing before Saturday at six. Gary hasn't actually said yes or named a dish, but I'm not chasing him again when nobody's in sight and I already asked. Better to get the table ready than to keep rechecking the same things.",
+      "emotional_state": "focused, hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Count chairs and plan the seating and serving dishes for Saturday's dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03004,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9157,
+        "output_tokens": 1160,
+        "usd": 0.02991
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 403,
+        "output_tokens": 174,
+        "usd": 0.00013
+      }
+    }
+  }
+}
