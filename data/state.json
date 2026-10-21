@@ -1,44 +1,32 @@
 {
-  "tick": 131,
-  "time": "2026-10-20T20:17",
+  "tick": 132,
+  "time": "2026-10-20T21:17",
   "positions": {
-    "gary": "rec_center",
-    "donna": "rec_center",
-    "hal": "magnolia_loop",
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "rosas_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Go on, Gary, don't keep Hal waiting. Our names are already on the ladder sheet, so let's get another practice in before Saturday's dinner.”"
+      "Donna headed to Magnolia Loop (the street).",
+      "You arrived at Magnolia Loop (the street).",
+      "Donna just arrived."
     ],
     "donna": [
-      "Gary said to Donna: “Thanks for the extra dinks, Donna. I'll stash my paddle and catch up with Hal out on the street.”"
+      "Gary headed to Magnolia Loop (the street).",
+      "You arrived at Magnolia Loop (the street).",
+      "Gary just arrived."
     ],
-    "hal": [],
-    "rosa": []
+    "hal": [
+      "You arrived at Rosa's House."
+    ],
+    "rosa": [
+      "Hal just arrived."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 36,
-        "text": "I (architectural review desk): Fill out and file the golf cart modification form for the lights and sound system",
-        "importance": 7
-      },
-      {
-        "tick": 37,
-        "text": "I headed to Town Square.",
-        "importance": 5
-      },
-      {
-        "tick": 37,
-        "text": "You arrived at Town Square.",
-        "importance": 5
-      },
-      {
-        "tick": 38,
-        "text": "I (parade signup table): Sign my golf cart up for the Holiday Golf Cart Parade",
-        "importance": 5
-      },
       {
         "tick": 39,
         "text": "I headed to Magnolia Loop (the street).",
@@ -1018,29 +1006,29 @@
         "tick": 130,
         "text": "Donna said to Gary: “Go on, Gary, don't keep Hal waiting. Our names are already on the ladder sheet, so let's get another practice in before Saturday's dinner.”",
         "importance": 3
+      },
+      {
+        "tick": 131,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 131,
+        "text": "Donna headed to Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 131,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 131,
+        "text": "Donna just arrived.",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 46,
-        "text": "You arrived at Gary's House.",
-        "importance": 6
-      },
-      {
-        "tick": 47,
-        "text": "I said to Gary: “Gary, there you are! Rosa says you're still on for Saturday at six, so pie, dinner, the works. And you're my doubles partner at eight that morning, no more dodging. I've got a spare paddle with your name on it.”",
-        "importance": 6
-      },
-      {
-        "tick": 47,
-        "text": "Gary said to Donna: “Well, look who's here! Come see the cart, Donna. Bracket's mounted, lights are strung, and not a single wire's live until that review form clears, so I'm staying legal.”",
-        "importance": 6
-      },
-      {
-        "tick": 48,
-        "text": "I said to Gary: “Well, that is a handsome cart, Gary, and I'm glad you're keeping it legal, Hal will be thrilled. Once that form clears, I'll swing by with the spare paddle so you can practice your dinks in the driveway before Saturday.”",
-        "importance": 4
-      },
       {
         "tick": 48,
         "text": "Gary said to Donna: “Alright, alright, I'm in for Saturday. Eight o'clock sharp, and I'll bring the appetite for Rosa's pie. Just don't expect me to hit anything, my knees and I have an understanding.”",
@@ -2020,19 +2008,29 @@
         "tick": 130,
         "text": "Gary said to Donna: “Thanks for the extra dinks, Donna. I'll stash my paddle and catch up with Hal out on the street.”",
         "importance": 4
+      },
+      {
+        "tick": 131,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 131,
+        "text": "Gary headed to Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 131,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 131,
+        "text": "Gary just arrived.",
+        "importance": 3
       }
     ],
     "hal": [
-      {
-        "tick": 32,
-        "text": "I said to Gary: “Gary, the Architectural Review blanks are at Town Hall. File before you wire another inch, and I'll quit asking. And Donna, I'll take your word on the flamingos. Three, and we're square.”",
-        "importance": 4
-      },
-      {
-        "tick": 32,
-        "text": "Gary (street bulletin board): Look over the board for an Architectural Review form or filing instructions",
-        "importance": 4
-      },
       {
         "tick": 32,
         "text": "Donna (donna flamingo flock): Pull the extra flamingos and leave just three out front to comply with L-02",
@@ -3022,19 +3020,19 @@
         "tick": 130,
         "text": "I (street bulletin board): Read the posted notices while waiting for Gary and Donna",
         "importance": 3
+      },
+      {
+        "tick": 131,
+        "text": "I headed to Rosa's House.",
+        "importance": 3
+      },
+      {
+        "tick": 131,
+        "text": "You arrived at Rosa's House.",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 24,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 24,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 24,
         "text": "Donna just arrived.",
@@ -4024,6 +4022,16 @@
         "tick": 130,
         "text": "I (rosa kitchen): Finalize the grocery list and plan what to prep ahead of Saturday",
         "importance": 4
+      },
+      {
+        "tick": 131,
+        "text": "I (rosa kitchen): Start a marinade and set aside prep for Saturday's dinner",
+        "importance": 4
+      },
+      {
+        "tick": 131,
+        "text": "Hal just arrived.",
+        "importance": 4
       }
     ]
   },
@@ -4071,7 +4079,7 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "cheerful",
+    "donna": "content",
     "hal": "content",
     "rosa": "determined"
   },
@@ -4154,9 +4162,16 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 131,
+      "time": "Tuesday, October 20, 9:17 PM",
+      "story": "At 9:17 on a sunny Tuesday night, Sumter Oaks is still warm at 77 degrees, and Gary and Donna are strolling down Magnolia Loop together, both content to take the long way around. Hal has wandered over to Rosa's House, where Rosa, determined as ever, is in her kitchen starting a marinade and setting aside prep for Saturday's dinner. Gary and Donna's walk and Hal's visit are the quiet threads of the evening, while Rosa's planning gives the neighborhood something to look forward to.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 4.036,
+    "total_usd": 4.0665,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4191,13 +4206,12 @@
         "usd": 0.47744
       },
       "2026-10-20": {
-        "ticks": 14,
-        "usd": 0.44021
+        "ticks": 15,
+        "usd": 0.47071
       }
     }
   },
   "recent_tick_costs": [
-    0.03289,
     0.03191,
     0.03098,
     0.03052,
@@ -4220,7 +4234,8 @@
     0.03094,
     0.03289,
     0.03151,
-    0.03091
+    0.03091,
+    0.0305
   ],
   "fund": {
     "gross_usd": 0.0,

@@ -1,0 +1,118 @@
+{
+  "tick": 131,
+  "simulation_time": "Tuesday, October 20, 9:17 PM",
+  "weather": "Sunny, 77°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a sunny Tuesday night, Sumter Oaks is still warm at 77 degrees, and Gary and Donna are strolling down Magnolia Loop together, both content to take the long way around. Hal has wandered over to Rosa's House, where Rosa, determined as ever, is in her kitchen starting a marinade and setting aside prep for Saturday's dinner. Gary and Donna's walk and Hal's visit are the quiet threads of the evening, while Rosa's planning gives the neighborhood something to look forward to.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal headed to Rosa's House.",
+    "Rosa (rosa kitchen): Start a marinade and set aside prep for Saturday's dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just told me not to keep Hal waiting, and I already said I'd stash my paddle and catch up with him on the street. No point lingering and repeating myself. Hal's out on Magnolia Loop, so I should go. I also promised myself I'd get the cart modification paperwork squared away, but that's for another tick. Keep my word and head out.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Paddle's stashed. Heading out to catch up with Hal like I said I would."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just said he's heading out to catch up with Hal, and I already told him to go ahead. Our names are on the ladder sheet, so the recruiting part of my goal is done. It's past 9 PM, and I don't need to keep him chatting or repeat myself. Best move is to let him go and do something useful with my own time: head out to Magnolia Loop, maybe catch Hal and Gary and gossip a little about Saturday's dinner.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to Magnolia Loop to walk home and see who's around after practice."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've been on Magnolia Loop for a couple of ticks waiting on Gary and Donna, and nobody's in sight. I already read the bulletin board and the complaints against Gary and Donna are settled, so there's nothing left to report. Gary said he'd walk out with us Saturday at six, but it's Tuesday night and I'm standing in the street like a lost sentry. No point loitering. I'll head to Rosa's place and see if she needs anything hauled ahead of dinner. Heavy lifting is the least I can do after she forgave me so fast.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Nobody's coming out here tonight. I'll go check whether Rosa needs anything carried for Saturday's dinner."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 9:17 PM on Tuesday and I'm alone in my house. I've already drafted the menu, checked my shift schedule, gone through the pantry, and finalized the grocery list over the last few ticks. The prep planning is done. The next useful step is the dining table, since I only laid out tablecloth and platters and confirmed chairs earlier. But with the list finished, the real remaining work is the grocery run and prepping ahead, and it's late. I'll make a final pass at the kitchen to sort what can be prepped tonight, like marinating or chopping, so Saturday at six goes smoothly and I'm not frantic.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Start a marinade and set aside prep for Saturday's dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0305,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9607,
+        "output_tokens": 1116,
+        "usd": 0.03037
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 350,
+        "output_tokens": 182,
+        "usd": 0.00013
+      }
+    }
+  }
+}
