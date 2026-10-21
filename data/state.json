@@ -1,6 +1,6 @@
 {
-  "tick": 130,
-  "time": "2026-10-20T19:17",
+  "tick": 131,
+  "time": "2026-10-20T20:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,32 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna (pickleball court 1): Pick up my paddle and rally one last time with Gary, working on his dinks",
-      "Hal headed to Magnolia Loop (the street)."
+      "Donna said to Gary: “Go on, Gary, don't keep Hal waiting. Our names are already on the ladder sheet, so let's get another practice in before Saturday's dinner.”"
     ],
     "donna": [
-      "Gary said to Hal: “Saturday at six, boots wiped, I've got it written down this time. Let me stash my paddle and I'll walk out with you two.”",
-      "Hal headed to Magnolia Loop (the street)."
+      "Gary said to Donna: “Thanks for the extra dinks, Donna. I'll stash my paddle and catch up with Hal out on the street.”"
     ],
-    "hal": [
-      "Gary said to Hal: “Saturday at six, boots wiped, I've got it written down this time. Let me stash my paddle and I'll walk out with you two.”",
-      "Donna (pickleball court 1): Pick up my paddle and rally one last time with Gary, working on his dinks",
-      "You arrived at Magnolia Loop (the street)."
-    ],
+    "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 34,
-        "text": "You arrived at Town Hall.",
-        "importance": 6
-      },
-      {
-        "tick": 35,
-        "text": "I (architectural review desk): Fill out and file the golf cart modification form for lights and sound system",
-        "importance": 7
-      },
       {
         "tick": 36,
         "text": "I (architectural review desk): Fill out and file the golf cart modification form for the lights and sound system",
@@ -1024,19 +1008,19 @@
         "tick": 129,
         "text": "Hal headed to Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 130,
+        "text": "I said to Donna: “Thanks for the extra dinks, Donna. I'll stash my paddle and catch up with Hal out on the street.”",
+        "importance": 3
+      },
+      {
+        "tick": 130,
+        "text": "Donna said to Gary: “Go on, Gary, don't keep Hal waiting. Our names are already on the ladder sheet, so let's get another practice in before Saturday's dinner.”",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 46,
-        "text": "Hal said to Rosa: “Morning, Rosa. About Saturday at six, I'll bring a pie from the commissary lady's recipe, and I'll be on time. Anything else you need hauled over?”",
-        "importance": 6
-      },
-      {
-        "tick": 46,
-        "text": "Rosa said to Donna: “Dessert is a yes, Donna, bless you. And Gary's absolutely still on the list, I just have to catch him standing still long enough to say so. Saturday at six, table's set for four.”",
-        "importance": 6
-      },
       {
         "tick": 46,
         "text": "You arrived at Gary's House.",
@@ -2026,14 +2010,19 @@
         "tick": 129,
         "text": "Hal headed to Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 130,
+        "text": "I said to Gary: “Go on, Gary, don't keep Hal waiting. Our names are already on the ladder sheet, so let's get another practice in before Saturday's dinner.”",
+        "importance": 4
+      },
+      {
+        "tick": 130,
+        "text": "Gary said to Donna: “Thanks for the extra dinks, Donna. I'll stash my paddle and catch up with Hal out on the street.”",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 31,
-        "text": "Donna said to Hal: “Morning, Hal! I know you've got your eye on my flamingos, so I'll save you the trouble. I'll do a quick count and trim the flock down to three so we're square with the ornament rule. No violation notice needed.”",
-        "importance": 5
-      },
       {
         "tick": 32,
         "text": "I said to Gary: “Gary, the Architectural Review blanks are at Town Hall. File before you wire another inch, and I'll quit asking. And Donna, I'll take your word on the flamingos. Three, and we're square.”",
@@ -3028,14 +3017,14 @@
         "tick": 129,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 130,
+        "text": "I (street bulletin board): Read the posted notices while waiting for Gary and Donna",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 23,
-        "text": "I (ladder standings board): Scan the standings for Donna's name and see when she's been playing",
-        "importance": 4
-      },
       {
         "tick": 24,
         "text": "I headed to Magnolia Loop (the street).",
@@ -4030,6 +4019,11 @@
         "tick": 129,
         "text": "I (rosa kitchen): Go through the pantry and fridge against my grocery list and mark what I still need to buy",
         "importance": 4
+      },
+      {
+        "tick": 130,
+        "text": "I (rosa kitchen): Finalize the grocery list and plan what to prep ahead of Saturday",
+        "importance": 4
       }
     ]
   },
@@ -4077,7 +4071,7 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "upbeat",
+    "donna": "cheerful",
     "hal": "content",
     "rosa": "determined"
   },
@@ -4160,52 +4154,9 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 125,
-      "time": "Tuesday, October 20, 3:17 PM",
-      "story": "Gary stands at the Rec Center with a sheepish grin, thanking Donna for keeping him on the doubles roster and promising he has filed his golf cart paperwork with Architectural Review before any wiring begins. Donna, cheerful as ever, reserves a two-hour court slot for the two of them to practice. Out on Magnolia Loop, Hal dutifully counts the pink flamingos on the lawns to make sure the street stays within its L-02 compliance rules, while the afternoon shower drifts past. Over at her house, Rosa focuses on setting out the tablecloth and serving platters and sets aside extra chairs she plans to borrow for the afternoon.",
-      "dialogue": [
-        "Gary said to Donna: “Afternoon, Donna. Sorry I was late last time, and thanks for keeping me on the doubles roster. I filed the cart form with Architectural Review, so no wiring till they sign off, scout's honor.”"
-      ]
-    },
-    {
-      "tick": 126,
-      "time": "Tuesday, October 20, 4:17 PM",
-      "story": "At 4:17 on this rainy Tuesday afternoon in Sumter Oaks, Gary is stepping onto pickleball court one to warm up for doubles, while Donna, upbeat as ever, praises him for filing his form and promises a two-hour session on his dink shot before dinner. Over on Magnolia Loop, Hal dutifully checks the mailbox kiosk for any replies from the Architectural Review committee. Back at her house, Rosa is setting out the tablecloth and platters and counting chairs for her four dinner guests and herself, looking determined to get everything just right.",
-      "dialogue": [
-        "Donna said to Gary: “No apology needed, Gary, and good on you for filing that form. I've got us a two-hour slot, so grab a paddle and let's get you working on that dink shot before dinner.”"
-      ]
-    },
-    {
-      "tick": 127,
-      "time": "Tuesday, October 20, 5:17 PM",
-      "story": "Gary and Donna are out on the reserved pickleball court at the Rec Center, where Donna is coaching him to soft-dink from the kitchen line while an afternoon shower drifts over Sumter Oaks. Hal is strolling down Magnolia Loop toward the Rec Center with the dutiful air of a man who has been asked to deliver something important. Back at her house, Rosa is sitting at her kitchen table drafting the Saturday menu and writing out her grocery and borrow list, determined to have everything in order before the weekend.",
-      "dialogue": [
-        "Donna said to Gary: “Perfect, you're loose. Stay at the kitchen line and just pop it soft over the net, no swinging. Think of it like tucking in a baby, and we'll rally till the shower picks up.”"
-      ]
-    },
-    {
-      "tick": 128,
-      "time": "Tuesday, October 20, 6:17 PM",
-      "story": "At the Sumter Oaks Rec Center on a sunny Tuesday evening at 6:17, Gary is finishing up his pickleball drills with Donna, who is cheerfully calling out his progress on the soft dinks. Hal stops by to pass along a message from Rosa: dinner is set for Saturday at six at her house, so Gary should be on time and wipe his boots. Meanwhile, Rosa is at home, determined to double-check her shift schedule to make sure Saturday evening is clear before she commits to the grocery run.",
-      "dialogue": [
-        "Gary said to Hal: “Evening, Hal. Donna's got me popping dinks soft as a baby's tuck-in, and my cart form's filed, so I'm keeping my word. Give me one more rally and I'll head over for Rosa's dinner right on time.”",
-        "Donna said to Hal: “Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together.”",
-        "Hal said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”"
-      ]
-    },
-    {
-      "tick": 129,
-      "time": "Tuesday, October 20, 7:17 PM",
-      "story": "At the Sumter Oaks Rec Center on Tuesday evening, Gary is content and promising Hal a Saturday night plan with freshly wiped boots, while Donna, upbeat as ever, coaxes one last rally out of Gary with her dinks on court one. Hal is heading out along Magnolia Loop, cart keys jingling as he goes. Over at her house, Rosa is determined, going through her pantry and fridge against her grocery list and marking what she still needs to buy.",
-      "dialogue": [
-        "Gary said to Hal: “Saturday at six, boots wiped, I've got it written down this time. Let me stash my paddle and I'll walk out with you two.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 4.00509,
+    "total_usd": 4.036,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4240,13 +4191,12 @@
         "usd": 0.47744
       },
       "2026-10-20": {
-        "ticks": 13,
-        "usd": 0.4093
+        "ticks": 14,
+        "usd": 0.44021
       }
     }
   },
   "recent_tick_costs": [
-    0.03225,
     0.03289,
     0.03191,
     0.03098,
@@ -4269,7 +4219,8 @@
     0.03054,
     0.03094,
     0.03289,
-    0.03151
+    0.03151,
+    0.03091
   ],
   "fund": {
     "gross_usd": 0.0,

@@ -1,0 +1,116 @@
+{
+  "tick": 130,
+  "simulation_time": "Tuesday, October 20, 8:17 PM",
+  "weather": "Sunny, 78°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on a warm Tuesday evening in Sumter Oaks, Gary and Donna are wrapping up pickleball at the Rec Center, with Gary tucking his paddle away and Donna cheerfully reminding him that they have a spot on the ladder sheet before Saturday's dinner. Out on Magnolia Loop, Hal is content to stroll the street and read the notices on the community bulletin board while he waits for Gary to join him. Meanwhile, Rosa, feeling determined, is at her kitchen table finalizing her grocery list and deciding which dishes she can prep ahead for the big weekend.",
+  "events": [
+    "Hal (street bulletin board): Read the posted notices while waiting for Gary and Donna",
+    "Rosa (rosa kitchen): Finalize the grocery list and plan what to prep ahead of Saturday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Hal's already headed out to Magnolia Loop and Donna is picking up her paddle for one last rally. I told Hal I'd stash my paddle and walk out with them, so I shouldn't stand around. Dinner at Rosa's is Saturday, I've got it written down, and I don't want to be the guy who dawdles. I should say a quick line to Donna, thank her for the dink lessons, and tell her I'm heading out to catch up with Hal. Then tomorrow I can think about the cart form and the parade lights.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Thanks for the extra dinks, Donna. I'll stash my paddle and catch up with Hal out on the street."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just said he'll stash his paddle and walk out with Hal, so he's about to leave for Rosa's. I already signed us up on the ladder at tick 83, so there's no need to repeat my pitch. Best move is a short, warm send-off and set up our next practice so the doubles plan keeps moving.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Go on, Gary, don't keep Hal waiting. Our names are already on the ladder sheet, so let's get another practice in before Saturday's dinner."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop alone. Gary and Donna are still stashing their paddles and said they'd walk out with me, so there's nobody to talk to yet. Their cart and flamingos are in compliance and I've let the complaints go. Rosa's dinner is Saturday at six, and there's no sense pestering anyone when they've already agreed. I'll stand by the bulletin board, glance over the notices for anything worth knowing, and wait for them like a sergeant waiting on a squad.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the posted notices while waiting for Gary and Donna"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've confirmed my shifts are clear and gone through the pantry against my grocery list. The next step in prepping for Saturday is turning that marked-up list into an actual shopping plan. No one is nearby, so I should keep working in the kitchen rather than talk. Gary still hasn't confirmed a yes or a dish, but I already asked him, so I won't chase him again tonight.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Finalize the grocery list and plan what to prep ahead of Saturday"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03091,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9843,
+        "output_tokens": 1049,
+        "usd": 0.03018
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3837,
+        "output_tokens": 699,
+        "usd": 0.00073
+      }
+    }
+  }
+}
