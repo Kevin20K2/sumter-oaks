@@ -1,37 +1,20 @@
 {
-  "tick": 132,
-  "time": "2026-10-20T21:17",
+  "tick": 133,
+  "time": "2026-10-21T07:17",
   "positions": {
-    "gary": "magnolia_loop",
-    "donna": "magnolia_loop",
-    "hal": "rosas_house",
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "Donna headed to Magnolia Loop (the street).",
-      "You arrived at Magnolia Loop (the street).",
-      "Donna just arrived."
-    ],
-    "donna": [
-      "Gary headed to Magnolia Loop (the street).",
-      "You arrived at Magnolia Loop (the street).",
-      "Gary just arrived."
-    ],
-    "hal": [
-      "You arrived at Rosa's House."
-    ],
-    "rosa": [
-      "Hal just arrived."
-    ]
+    "gary": [],
+    "donna": [],
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 39,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 39,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -1026,14 +1009,14 @@
         "tick": 131,
         "text": "Donna just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 132,
+        "text": "I (gary workbench): Bench-test the light strip controller and speaker amp, speaker volume off, nothing mounted yet",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 48,
-        "text": "Gary said to Donna: “Alright, alright, I'm in for Saturday. Eight o'clock sharp, and I'll bring the appetite for Rosa's pie. Just don't expect me to hit anything, my knees and I have an understanding.”",
-        "importance": 4
-      },
       {
         "tick": 48,
         "text": "Rosa just arrived.",
@@ -2028,14 +2011,14 @@
         "tick": 131,
         "text": "Gary just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 132,
+        "text": "I (donna club calendar): Look for an open court slot to pencil in doubles practice with Gary",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 32,
-        "text": "Donna (donna flamingo flock): Pull the extra flamingos and leave just three out front to comply with L-02",
-        "importance": 4
-      },
       {
         "tick": 33,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street to confirm it's three",
@@ -3030,14 +3013,14 @@
         "tick": 131,
         "text": "You arrived at Rosa's House.",
         "importance": 3
+      },
+      {
+        "tick": 132,
+        "text": "I (hal violation notebook): Mark the cart and flamingo entries as resolved and compliant",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 24,
-        "text": "Donna just arrived.",
-        "importance": 5
-      },
       {
         "tick": 25,
         "text": "I said to Donna: “Donna, there you are. I've been reading that ladder board like tea leaves trying to track you down. I'm hosting a welcome dinner at my place Saturday, Hal's already coming, and I'd love you at the table. Then you can teach me pickleball and I'll feed you after.”",
@@ -4032,6 +4015,11 @@
         "tick": 131,
         "text": "Hal just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 132,
+        "text": "I (rosa kitchen): Check the marinade and prep what can be made ahead for Saturday's dinner",
+        "importance": 4
       }
     ]
   },
@@ -4078,10 +4066,10 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "content",
+    "gary": "determined",
+    "donna": "energized",
     "hal": "content",
-    "rosa": "determined"
+    "rosa": "focused"
   },
   "laws": [
     {
@@ -4168,10 +4156,16 @@
       "time": "Tuesday, October 20, 9:17 PM",
       "story": "At 9:17 on a sunny Tuesday night, Sumter Oaks is still warm at 77 degrees, and Gary and Donna are strolling down Magnolia Loop together, both content to take the long way around. Hal has wandered over to Rosa's House, where Rosa, determined as ever, is in her kitchen starting a marinade and setting aside prep for Saturday's dinner. Gary and Donna's walk and Hal's visit are the quiet threads of the evening, while Rosa's planning gives the neighborhood something to look forward to.",
       "dialogue": []
+    },
+    {
+      "tick": 132,
+      "time": "Wednesday, October 21, 7:17 AM",
+      "story": "At 7:17 on a humid, hazy Wednesday morning in Sumter Oaks, Gary is bench-testing a light strip controller and speaker amp in his garage, keeping the volume off since nothing is mounted yet. Across the way, Donna is hunting her club calendar for an open court slot so she can pencil in doubles practice with Gary. Hal sits content at his kitchen table, marking the golf cart and flamingo entries in his violation notebook as resolved and compliant. Meanwhile, Rosa is focused in her kitchen, checking her marinade and prepping what she can make ahead for Saturday's dinner.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 4.0665,
+    "total_usd": 4.09635,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4208,11 +4202,14 @@
       "2026-10-20": {
         "ticks": 15,
         "usd": 0.47071
+      },
+      "2026-10-21": {
+        "ticks": 1,
+        "usd": 0.02985
       }
     }
   },
   "recent_tick_costs": [
-    0.03191,
     0.03098,
     0.03052,
     0.03214,
@@ -4235,7 +4232,8 @@
     0.03289,
     0.03151,
     0.03091,
-    0.0305
+    0.0305,
+    0.02985
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4283,6 +4281,6 @@
     "test_mode": false,
     "level": "bright"
   },
-  "last_tick_date": "2026-10-20",
+  "last_tick_date": "2026-10-21",
   "calendar_fired": []
 }
