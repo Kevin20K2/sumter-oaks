@@ -1,6 +1,6 @@
 {
-  "tick": 133,
-  "time": "2026-10-21T07:17",
+  "tick": 134,
+  "time": "2026-10-21T08:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -15,11 +15,6 @@
   },
   "memories": {
     "gary": [
-      {
-        "tick": 39,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 40,
         "text": "I headed to Gary's House.",
@@ -1014,14 +1009,14 @@
         "tick": 132,
         "text": "I (gary workbench): Bench-test the light strip controller and speaker amp, speaker volume off, nothing mounted yet",
         "importance": 5
+      },
+      {
+        "tick": 133,
+        "text": "I (gary workbench): Finish wiring and labeling the light controller and amp on the bench, nothing mounted on the cart yet",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 48,
-        "text": "Rosa just arrived.",
-        "importance": 4
-      },
       {
         "tick": 49,
         "text": "I said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”",
@@ -2016,14 +2011,14 @@
         "tick": 132,
         "text": "I (donna club calendar): Look for an open court slot to pencil in doubles practice with Gary",
         "importance": 4
+      },
+      {
+        "tick": 133,
+        "text": "I (donna club calendar): Pencil in a 2-hour doubles practice block with Gary on court 1, within the L-05 limit",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 33,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street to confirm it's three",
-        "importance": 4
-      },
       {
         "tick": 33,
         "text": "Gary headed to Town Square.",
@@ -3018,14 +3013,14 @@
         "tick": 132,
         "text": "I (hal violation notebook): Mark the cart and flamingo entries as resolved and compliant",
         "importance": 4
+      },
+      {
+        "tick": 133,
+        "text": "I (hal binoculars): Scan Magnolia Loop for any parking or ornament violations",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 25,
-        "text": "I said to Donna: “Donna, there you are. I've been reading that ladder board like tea leaves trying to track you down. I'm hosting a welcome dinner at my place Saturday, Hal's already coming, and I'd love you at the table. Then you can teach me pickleball and I'll feed you after.”",
-        "importance": 7
-      },
       {
         "tick": 25,
         "text": "Donna said to Rosa: “Rosa, hi! Out for a walk in this humidity? Gary and I are playing doubles Saturday at eight, so come cheer us on if you're up.”",
@@ -4020,6 +4015,11 @@
         "tick": 132,
         "text": "I (rosa kitchen): Check the marinade and prep what can be made ahead for Saturday's dinner",
         "importance": 4
+      },
+      {
+        "tick": 133,
+        "text": "I (rosa shift schedule): Check my per-diem shifts and make sure Saturday evening is clear for the dinner",
+        "importance": 5
       }
     ]
   },
@@ -4066,8 +4066,8 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "energized",
+    "gary": "focused",
+    "donna": "determined",
     "hal": "content",
     "rosa": "focused"
   },
@@ -4162,10 +4162,16 @@
       "time": "Wednesday, October 21, 7:17 AM",
       "story": "At 7:17 on a humid, hazy Wednesday morning in Sumter Oaks, Gary is bench-testing a light strip controller and speaker amp in his garage, keeping the volume off since nothing is mounted yet. Across the way, Donna is hunting her club calendar for an open court slot so she can pencil in doubles practice with Gary. Hal sits content at his kitchen table, marking the golf cart and flamingo entries in his violation notebook as resolved and compliant. Meanwhile, Rosa is focused in her kitchen, checking her marinade and prepping what she can make ahead for Saturday's dinner.",
       "dialogue": []
+    },
+    {
+      "tick": 133,
+      "time": "Wednesday, October 21, 8:17 AM",
+      "story": "At 8:17 on this humid, hazy Wednesday morning in Sumter Oaks, Gary is focused at his workbench, wiring and labeling a light controller and amp without touching the cart yet. Donna, determined as ever, is penciling a two-hour doubles practice block with Gary on court one, careful to stay within the community's L-05 limit. Hal, content with his binoculars in hand, is scanning Magnolia Loop for any parking or ornament violations, while Rosa checks her per-diem shifts and makes sure Saturday evening is clear for the dinner.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 4.09635,
+    "total_usd": 4.12674,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4204,13 +4210,12 @@
         "usd": 0.47071
       },
       "2026-10-21": {
-        "ticks": 1,
-        "usd": 0.02985
+        "ticks": 2,
+        "usd": 0.06024
       }
     }
   },
   "recent_tick_costs": [
-    0.03098,
     0.03052,
     0.03214,
     0.0347,
@@ -4233,7 +4238,8 @@
     0.03151,
     0.03091,
     0.0305,
-    0.02985
+    0.02985,
+    0.03039
   ],
   "fund": {
     "gross_usd": 0.0,

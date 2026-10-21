@@ -1,0 +1,118 @@
+{
+  "tick": 133,
+  "simulation_time": "Wednesday, October 21, 8:17 AM",
+  "weather": "Humid and hazy, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on this humid, hazy Wednesday morning in Sumter Oaks, Gary is focused at his workbench, wiring and labeling a light controller and amp without touching the cart yet. Donna, determined as ever, is penciling a two-hour doubles practice block with Gary on court one, careful to stay within the community's L-05 limit. Hal, content with his binoculars in hand, is scanning Magnolia Loop for any parking or ornament violations, while Rosa checks her per-diem shifts and makes sure Saturday evening is clear for the dinner.",
+  "events": [
+    "Gary (gary workbench): Finish wiring and labeling the light controller and amp on the bench, nothing mounted on the cart yet",
+    "Donna (donna club calendar): Pencil in a 2-hour doubles practice block with Gary on court 1, within the L-05 limit",
+    "Hal (hal binoculars): Scan Magnolia Loop for any parking or ornament violations",
+    "Rosa (rosa shift schedule): Check my per-diem shifts and make sure Saturday evening is clear for the dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at the house with the workbench in reach. Last tick I bench-tested the controller and amp with the volume off, nothing mounted. Light strips on the cart frame are exterior modifications visible from the street, so under L-01 I need Architectural Review approval before I go any further, and I told myself to get the paperwork squared away first. The bench work is fine since it's indoors. Best use of this hour is wrapping up the controller wiring and labeling connections at the workbench, which keeps me busy and useful, then I'll head to Town Hall to file the cart form. Sound stays off until the proper hours anyway.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Finish wiring and labeling the light controller and amp on the bench, nothing mounted on the cart yet"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm home at Donna's House with the club calendar right here. At tick 132 I was looking for an open court slot to pencil in doubles practice with Gary, and the sign-up sheet already has Pruitt-Kowalski on it. Time to actually lock in a practice slot. Courts max out at 2 hours per party (L-05), so I'll book a reasonable block and tell Gary after. Morning is humid and hazy, so an early slot tomorrow or later today makes sense.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Pencil in a 2-hour doubles practice block with Gary on court 1, within the L-05 limit"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's Wednesday morning and I'm back at my house. The cart and flamingo complaints are settled and marked resolved, so there's nothing left to report. Saturday dinner at Rosa's is a few days off and I've promised myself I'll carry whatever heavy thing she needs. Nobody's around to talk to. A watchdog's work is never done, so I'll take the porch chair and the binoculars and make my morning rounds of Magnolia Loop. Ornament count, cart parking, grass. By the book, though I'll admit the street's been looking decent.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Magnolia Loop for any parking or ornament violations"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 8:17 AM Wednesday and I'm alone in my kitchen. I've already done the pantry check, finalized the grocery list, and started the marinade, and last tick I checked on it. Everyone is confirmed for Saturday: Hal and Donna said yes, and Gary got my 'no maybes' ask. The one thing still hanging is my per-diem shifts, since I want Saturday evening completely clear. The shift schedule is right here, so I'll check it and make sure nothing lands on Saturday before I commit more energy to cooking.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts and make sure Saturday evening is clear for the dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03039,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9119,
+        "output_tokens": 1201,
+        "usd": 0.03025
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 428,
+        "output_tokens": 190,
+        "usd": 0.00014
+      }
+    }
+  }
+}
