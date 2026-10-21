@@ -1,6 +1,6 @@
 {
-  "tick": 141,
-  "time": "2026-10-21T15:17",
+  "tick": 142,
+  "time": "2026-10-21T16:17",
   "positions": {
     "gary": "town_hall",
     "donna": "magnolia_loop",
@@ -10,20 +10,15 @@
   "perceptions": {
     "gary": [],
     "donna": [
-      "Rosa said to Donna: “Donna, good timing. Saturday at six is set, so just bring yourself and a sweet tooth. And honey, count those flamingos before the HOA does, the limit's three from the street.”"
+      "Rosa (street bulletin board): Pin up a note: Welcome dinner, Saturday at 6, Rosa's place. Bring an appetite."
     ],
     "hal": [],
     "rosa": [
-      "Donna said to Rosa: “Rosa, hon, perfect timing! I'm still counting the minutes to Saturday's dinner, and guess who's signed up with me on the doubles ladder? Gary!”"
+      "Donna (donna flamingo flock): Count the flamingos and pull any extras past three out of view from the street"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 46,
-        "text": "Donna just arrived.",
-        "importance": 5
-      },
       {
         "tick": 47,
         "text": "I said to Donna: “Well, look who's here! Come see the cart, Donna. Bracket's mounted, lights are strung, and not a single wire's live until that review form clears, so I'm staying legal.”",
@@ -1018,19 +1013,14 @@
         "tick": 140,
         "text": "I (architectural review desk): Check status of my cart modification request and ask about approval steps",
         "importance": 6
+      },
+      {
+        "tick": 141,
+        "text": "I waited: Sketching the wiring plan for the cart lights and speakers on the back of a form while I wait for Architectural Review to get back to me.",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 53,
-        "text": "I said to Gary: “Gary, I'll put you down for the court at eight sharp Saturday, and I'll bring the spare paddle so you've got nothing to buy. Wear sneakers that grip, and don't worry, nobody expects you to be good yet.”",
-        "importance": 6
-      },
-      {
-        "tick": 53,
-        "text": "Gary (gary workbench): Keep testing the light string wiring and sound system connections",
-        "importance": 6
-      },
       {
         "tick": 53,
         "text": "Rosa said to Donna: “Peach cobbler and an extra chair? Donna, you're hired. Bring both Saturday, and I'll have the ice cream ready. Now I really am heading home to cook.”",
@@ -2020,14 +2010,19 @@
         "tick": 140,
         "text": "Rosa said to Donna: “Donna, good timing. Saturday at six is set, so just bring yourself and a sweet tooth. And honey, count those flamingos before the HOA does, the limit's three from the street.”",
         "importance": 4
+      },
+      {
+        "tick": 141,
+        "text": "I (donna flamingo flock): Count the flamingos and pull any extras past three out of view from the street",
+        "importance": 4
+      },
+      {
+        "tick": 141,
+        "text": "Rosa (street bulletin board): Pin up a note: Welcome dinner, Saturday at 6, Rosa's place. Bring an appetite.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 35,
-        "text": "Rosa said to Donna: “Donna, good timing. Dinner at my place is Saturday at six, and you and Hal are both on the list. Have you seen Gary today? I still need to pin him down.”",
-        "importance": 4
-      },
       {
         "tick": 36,
         "text": "I headed to Gary's House.",
@@ -3022,19 +3017,14 @@
         "tick": 140,
         "text": "I waited: Sitting on the porch in the humid haze, watching the street out of habit and planning to haul the sturdy chair over to Rosa's on Saturday.",
         "importance": 2
+      },
+      {
+        "tick": 141,
+        "text": "I (hal violation notebook): Cross out the resolved cart and flamingo entries and note the ones still open",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 34,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 34,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 35,
         "text": "I said to Donna: “Donna, good timing. Dinner at my place is Saturday at six, and you and Hal are both on the list. Have you seen Gary today? I still need to pin him down.”",
@@ -4024,6 +4014,16 @@
         "tick": 140,
         "text": "Donna said to Rosa: “Rosa, hon, perfect timing! I'm still counting the minutes to Saturday's dinner, and guess who's signed up with me on the doubles ladder? Gary!”",
         "importance": 4
+      },
+      {
+        "tick": 141,
+        "text": "I (street bulletin board): Pin up a note: Welcome dinner, Saturday at 6, Rosa's place. Bring an appetite.",
+        "importance": 5
+      },
+      {
+        "tick": 141,
+        "text": "Donna (donna flamingo flock): Count the flamingos and pull any extras past three out of view from the street",
+        "importance": 5
       }
     ]
   },
@@ -4070,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "cheerful",
+    "gary": "patient, hopeful",
+    "donna": "cheerful, slightly sheepish",
     "hal": "content",
-    "rosa": "warm, determined"
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4189,10 +4189,16 @@
         "Donna said to Rosa: “Rosa, hon, perfect timing! I'm still counting the minutes to Saturday's dinner, and guess who's signed up with me on the doubles ladder? Gary!”",
         "Rosa said to Donna: “Donna, good timing. Saturday at six is set, so just bring yourself and a sweet tooth. And honey, count those flamingos before the HOA does, the limit's three from the street.”"
       ]
+    },
+    {
+      "tick": 141,
+      "time": "Wednesday, October 21, 4:17 PM",
+      "story": "At 4:17 on a humid, hazy Wednesday in Sumter Oaks, Gary waits at Town Hall, sketching cart light and speaker wiring on the back of a form while Architectural Review gets back to him. Donna, a little sheepish, is on Magnolia Loop keeping her flamingo flock to three in plain view from the street. Hal, content at home, is crossing off the resolved cart and flamingo entries in his violation notebook and noting the ones still open. Rosa, also content, is pinning a welcome dinner invitation to the street bulletin board for Saturday at six at her place.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 4.33825,
+    "total_usd": 4.36973,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4231,13 +4237,12 @@
         "usd": 0.47071
       },
       "2026-10-21": {
-        "ticks": 9,
-        "usd": 0.27175
+        "ticks": 10,
+        "usd": 0.30323
       }
     }
   },
   "recent_tick_costs": [
-    0.03008,
     0.03027,
     0.03028,
     0.03093,
@@ -4260,7 +4265,8 @@
     0.0301,
     0.03058,
     0.02984,
-    0.03139
+    0.03139,
+    0.03148
   ],
   "fund": {
     "gross_usd": 0.0,

@@ -1,0 +1,118 @@
+{
+  "tick": 141,
+  "simulation_time": "Wednesday, October 21, 4:17 PM",
+  "weather": "Humid and hazy, 83°F",
+  "positions": {
+    "gary": "town_hall",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 4:17 on a humid, hazy Wednesday in Sumter Oaks, Gary waits at Town Hall, sketching cart light and speaker wiring on the back of a form while Architectural Review gets back to him. Donna, a little sheepish, is on Magnolia Loop keeping her flamingo flock to three in plain view from the street. Hal, content at home, is crossing off the resolved cart and flamingo entries in his violation notebook and noting the ones still open. Rosa, also content, is pinning a welcome dinner invitation to the street bulletin board for Saturday at six at her place.",
+  "events": [
+    "Gary waited: Sketching the wiring plan for the cart lights and speakers on the back of a form while I wait for Architectural Review to get back to me.",
+    "Donna (donna flamingo flock): Count the flamingos and pull any extras past three out of view from the street",
+    "Hal (hal violation notebook): Cross out the resolved cart and flamingo entries and note the ones still open",
+    "Rosa (street bulletin board): Pin up a note: Welcome dinner, Saturday at 6, Rosa's place. Bring an appetite."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I submitted the cart modification request at tick 139 and checked its status at tick 140. Nobody is around to ask, and the desk can't approve anything faster just because I keep poking it. Standing here refreshing the status is how a man drives himself nuts. The parade is the goal, and I can't legally hang lights or a sound system on the cart until Architectural Review signs off (L-01), so the smart move is to be patient. Meanwhile, I can use the hour on something that doesn't need a permit, like sketching the wiring plan and sorting the speaker setup in my head so I'm ready to go the minute approval comes through. Also remembering Saturday at six at Rosa's with the baked beans, so I'm keeping my word on everything. I'll wait here a bit and plan.",
+      "emotional_state": "patient, hopeful",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Sketching the wiring plan for the cart lights and speakers on the back of a form while I wait for Architectural Review to get back to me."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa just confirmed Saturday at six and gave me a friendly warning about my flamingo flock. I already told her about Gary and the doubles ladder, so there's no need to keep chatting. The flamingos are mine and L-02 caps visible ornaments at three, so a quick count and trim of the flock is the smart move before the HOA notices. Then I can go find Gary for more doubles practice.",
+      "emotional_state": "cheerful, slightly sheepish",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos and pull any extras past three out of view from the street"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's Wednesday afternoon, humid and hazy, and the street is empty. I've already tested the chair, swept the street with the binoculars, and closed out what I could in the notebook. Gary and Donna settled their violations, so there's nothing left to report. Saturday at Rosa's is what matters now. The notebook's still got entries I haven't looked over today, and a supply sergeant keeps his records straight, so I'll tidy up the resolved ones.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Cross out the resolved cart and flamingo entries and note the ones still open"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Everyone is confirmed for Saturday at six: Gary, Donna, Hal. Donna and I just went through it last tick, so asking her again would be repeating myself. What's left is the real prep, and I have a dinner for four to plan. The street bulletin board is right here, so I can post a reminder with the time and address so nobody mixes it up, and it helps the neighbors keep the date straight. Donna's flamingos can stay her business for now. I already warned her about the three-ornament limit last tick.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Pin up a note: Welcome dinner, Saturday at 6, Rosa's place. Bring an appetite."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03148,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9702,
+        "output_tokens": 1193,
+        "usd": 0.03133
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 460,
+        "output_tokens": 199,
+        "usd": 0.00015
+      }
+    }
+  }
+}
