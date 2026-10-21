@@ -1,0 +1,121 @@
+{
+  "tick": 140,
+  "simulation_time": "Wednesday, October 21, 3:17 PM",
+  "weather": "Humid and hazy, 84°F",
+  "positions": {
+    "gary": "town_hall",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 3:17 on a humid, hazy Wednesday afternoon, Gary is at the architectural review desk in Town Hall, determined to find out where his golf cart modification request stands and what approval steps remain. Over on Magnolia Loop, Donna is cheerfully reminding Rosa that she has signed up with Gary for the doubles ladder, and Rosa is happily confirming that Saturday dinner is set for six. Hal is content on his porch, idly watching the street while planning to haul his sturdy chair over to Rosa's on Saturday. Rosa also gives Donna a friendly reminder that the HOA allows only three flamingos on the street.",
+  "events": [
+    "Gary (architectural review desk): Check status of my cart modification request and ask about approval steps",
+    "Hal waited: Sitting on the porch in the humid haze, watching the street out of habit and planning to haul the sturdy chair over to Rosa's on Saturday."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at Town Hall and the modification request for the parade lights and sound system went in last tick. Under L-01 anything visible from the street needs Architectural Review approval, and I don't want to be the guy who rigs the cart first and apologizes later. Nobody else is around, so the useful thing is to follow up at the review desk, check that my submission was logged, and see what the approval process requires. Parade is a holiday event, so L-04 lighting dates and L-03 quiet hours matter too. Better to confirm everything is squared away now so I can get to wiring this weekend, and still keep my promise about Rosa's dinner on Saturday.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "architectural_review_desk",
+          "content": "Check status of my cart modification request and ask about approval steps"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary never came out of his house, so I gave up waiting and walked back to Magnolia Loop. Rosa just arrived and is right here in line-of-sight. She's one of my people, and Saturday's dinner at her place is coming up, so a friendly word is in order. I haven't spoken to her yet this tick, and I can mention that Gary and I have our name on the doubles ladder, which keeps me at the center of the scene. No need to repeat anything I've said before.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, hon, perfect timing! I'm still counting the minutes to Saturday's dinner, and guess who's signed up with me on the doubles ladder? Gary!"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've tested the porch chair and swept the street already. The complaints against Gary and Donna are settled: the cart is in order and the flamingos are down to three. Nothing left to log in the notebook. Nobody's in sight, so no one to talk to. Saturday's dinner at Rosa's is coming and I want to bring something useful. I'll sit tight on the porch, keep an eye on Magnolia Loop out of habit, and plan to carry that chair over.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Sitting on the porch in the humid haze, watching the street out of habit and planning to haul the sturdy chair over to Rosa's on Saturday."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Donna just arrived on Magnolia Loop. Gary already committed to Saturday at six, so my table is full. Hal is helping, I've blocked my shift schedule, and the place cards are sketched. The one loose thread is Donna's flamingo flock, since L-02 caps visible ornaments at three and she seems to love those birds. I don't want a neighbor dispute souring the week, so a friendly, blunt check-in about the flamingos plus a quick dinner confirmation fits me. I won't re-invite her since she's already confirmed.",
+      "emotional_state": "warm, determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna, good timing. Saturday at six is set, so just bring yourself and a sweet tooth. And honey, count those flamingos before the HOA does, the limit's three from the street."
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "gary",
+      "text": "Gary Kowalski: Check status of my cart modification request and ask about approval steps"
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03139,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9504,
+        "output_tokens": 1222,
+        "usd": 0.03123
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 507,
+        "output_tokens": 217,
+        "usd": 0.00016
+      }
+    }
+  }
+}
