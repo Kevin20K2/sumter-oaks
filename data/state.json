@@ -1,6 +1,6 @@
 {
-  "tick": 143,
-  "time": "2026-10-21T17:17",
+  "tick": 144,
+  "time": "2026-10-21T18:17",
   "positions": {
     "gary": "town_square",
     "donna": "magnolia_loop",
@@ -8,24 +8,17 @@
     "rosa": "magnolia_loop"
   },
   "perceptions": {
-    "gary": [
-      "You arrived at Town Square."
-    ],
+    "gary": [],
     "donna": [
-      "Rosa said to Donna: “Donna, one practical thing before I go shopping: are you thinking a dessert for Saturday, or should I handle all of it? I'd rather plan the menu around what you're bringing.”"
+      "Rosa said to Donna: “Good call on the flamingos, Donna, that's three and you're legal. I'm off to shop for Saturday, so text me if you decide on a dessert, otherwise I'll plan around a pie.”"
     ],
     "hal": [],
     "rosa": [
-      "Donna (donna flamingo flock): Tuck the extra flamingos behind the hedge so only three show from the street"
+      "Donna said to Rosa: “Dessert's mine, Rosa. I'll bring my lemon bars, so you plan your menu around those. And the flamingos are down to three, I checked.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 48,
-        "text": "I said to Donna: “Alright, alright, I'm in for Saturday. Eight o'clock sharp, and I'll bring the appetite for Rosa's pie. Just don't expect me to hit anything, my knees and I have an understanding.”",
-        "importance": 5
-      },
       {
         "tick": 48,
         "text": "Donna said to Gary: “Well, that is a handsome cart, Gary, and I'm glad you're keeping it legal, Hal will be thrilled. Once that form clears, I'll swing by with the spare paddle so you can practice your dinks in the driveway before Saturday.”",
@@ -1020,19 +1013,14 @@
         "tick": 142,
         "text": "You arrived at Town Square.",
         "importance": 4
+      },
+      {
+        "tick": 143,
+        "text": "I (parade signup table): Sign my golf cart up for the Holiday Golf Cart Parade, noting lights and sound pending review",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 54,
-        "text": "Gary (gary workbench): Solder the light string connections and test the sound system wiring",
-        "importance": 4
-      },
-      {
-        "tick": 54,
-        "text": "Rosa said to Gary: “Gary, I'm done chasing you around Magnolia Loop. Saturday at six, my table, and Donna's already bringing cobbler and Hal's coming. Say yes and I'll let you get back to your wiring.”",
-        "importance": 4
-      },
       {
         "tick": 55,
         "text": "I said to Gary: “Gary, just so it's written in ink: dinner at Rosa's at six, then you and me on the court Sunday morning, I mean Saturday at eight sharp. Say yes to both and I'll leave you to your solder.”",
@@ -2022,14 +2010,19 @@
         "tick": 142,
         "text": "Rosa said to Donna: “Donna, one practical thing before I go shopping: are you thinking a dessert for Saturday, or should I handle all of it? I'd rather plan the menu around what you're bringing.”",
         "importance": 4
+      },
+      {
+        "tick": 143,
+        "text": "I said to Rosa: “Dessert's mine, Rosa. I'll bring my lemon bars, so you plan your menu around those. And the flamingos are down to three, I checked.”",
+        "importance": 4
+      },
+      {
+        "tick": 143,
+        "text": "Rosa said to Donna: “Good call on the flamingos, Donna, that's three and you're legal. I'm off to shop for Saturday, so text me if you decide on a dessert, otherwise I'll plan around a pie.”",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 36,
-        "text": "Donna said to Rosa: “Six on Saturday, got it, I'll bring the dessert. Haven't laid eyes on Gary since this morning, hon, but I'll track him down for you and tell him to call you.”",
-        "importance": 5
-      },
       {
         "tick": 36,
         "text": "Rosa said to Hal: “Just your appetite, Hal. Donna's got dessert covered, and I'll handle the rest. If you see Gary, tell him Saturday at six and I'm not taking no for an answer.”",
@@ -3024,19 +3017,14 @@
         "tick": 142,
         "text": "I (hal violation notebook): Review the remaining open entries and confirm nothing else needs filing before Saturday",
         "importance": 3
+      },
+      {
+        "tick": 143,
+        "text": "I waited: Sitting on the porch with the evening haze rolling in, letting the street be and looking forward to Saturday at Rosa's.",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 35,
-        "text": "Hal said to Rosa: “Afternoon, Rosa. Thank you again for the Saturday invitation. Is there anything I should bring, or just my appetite?”",
-        "importance": 6
-      },
-      {
-        "tick": 36,
-        "text": "I said to Hal: “Just your appetite, Hal. Donna's got dessert covered, and I'll handle the rest. If you see Gary, tell him Saturday at six and I'm not taking no for an answer.”",
-        "importance": 5
-      },
       {
         "tick": 36,
         "text": "Donna said to Rosa: “Six on Saturday, got it, I'll bring the dessert. Haven't laid eyes on Gary since this morning, hon, but I'll track him down for you and tell him to call you.”",
@@ -4026,6 +4014,16 @@
         "tick": 142,
         "text": "Donna (donna flamingo flock): Tuck the extra flamingos behind the hedge so only three show from the street",
         "importance": 5
+      },
+      {
+        "tick": 143,
+        "text": "I said to Donna: “Good call on the flamingos, Donna, that's three and you're legal. I'm off to shop for Saturday, so text me if you decide on a dessert, otherwise I'll plan around a pie.”",
+        "importance": 4
+      },
+      {
+        "tick": 143,
+        "text": "Donna said to Rosa: “Dessert's mine, Rosa. I'll bring my lemon bars, so you plan your menu around those. And the flamingos are down to three, I checked.”",
+        "importance": 4
       }
     ]
   },
@@ -4072,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "determined",
+    "gary": "hopeful",
+    "donna": "cheerful",
     "hal": "content",
-    "rosa": "optimistic"
+    "rosa": "focused"
   },
   "laws": [
     {
@@ -4164,9 +4162,19 @@
       "text": "Gary Kowalski: Check status of my cart modification request and ask about approval steps"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 143,
+      "time": "Wednesday, October 21, 6:17 PM",
+      "story": "At 6:17 on a humid, hazy Wednesday evening in Sumter Oaks, Gary is hopefully signing golf carts up for the Holiday Golf Cart Parade at the Town Square table, with his lights and sound still pending review. Donna, cheerful as ever, is out on Magnolia Loop claiming dessert duty for Saturday with her lemon bars and reassuring Rosa that the flamingo count is down to three. Hal is content on his porch, letting the street be and looking forward to the weekend at Rosa's. Rosa, focused, agrees with Donna about the flamingos and heads off to shop, planning her menu around either lemon bars or a pie.",
+      "dialogue": [
+        "Donna said to Rosa: “Dessert's mine, Rosa. I'll bring my lemon bars, so you plan your menu around those. And the flamingos are down to three, I checked.”",
+        "Rosa said to Donna: “Good call on the flamingos, Donna, that's three and you're legal. I'm off to shop for Saturday, so text me if you decide on a dessert, otherwise I'll plan around a pie.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 4.40125,
+    "total_usd": 4.43199,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4205,13 +4213,12 @@
         "usd": 0.47071
       },
       "2026-10-21": {
-        "ticks": 11,
-        "usd": 0.33475
+        "ticks": 12,
+        "usd": 0.36549
       }
     }
   },
   "recent_tick_costs": [
-    0.03028,
     0.03093,
     0.03744,
     0.03085,
@@ -4234,7 +4241,8 @@
     0.02984,
     0.03139,
     0.03148,
-    0.03152
+    0.03152,
+    0.03074
   ],
   "fund": {
     "gross_usd": 0.0,
