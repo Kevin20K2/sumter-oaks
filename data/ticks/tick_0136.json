@@ -1,0 +1,118 @@
+{
+  "tick": 136,
+  "simulation_time": "Wednesday, October 21, 11:17 AM",
+  "weather": "Humid and hazy, 81°F",
+  "positions": {
+    "gary": "town_square",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is at the parade signup table in Town Square, determined to get his golf cart entered and to go over the rules with care. Donna is walking down Magnolia Loop toward Gary's house in an eager hurry, while the October haze hangs over the 81-degree morning. Hal sits at home with his violation notebook, content to close out the entries that have been resolved, and Rosa stands in her kitchen tasting the marinade and jotting a grocery list for Saturday.",
+  "events": [
+    "Gary (parade signup table): Look over the parade rules and sign up my cart",
+    "Donna headed to Gary's House.",
+    "Hal (hal violation notebook): Review the open entries and close out anything resolved",
+    "Rosa (rosa kitchen): Check the marinade, taste for salt, and jot down a grocery list for Saturday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at Town Square with nobody around, and the cart work on the bench is done, nothing mounted yet. My reflections keep telling me to get the Architectural Review paperwork squared away before the parade, and Hal said to file it before the mods go on, not after. The parade signup table is right here, so I can at least see what the rules and sign-up look like for the Holiday Golf Cart Parade. The formal Architectural Review filing happens at Town Hall, which is one hop over, so after this I should head there and do it right.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "parade_signup_table",
+          "content": "Look over the parade rules and sign up my cart"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've got my bag packed and the 2-hour practice block penciled in with Gary on court 1. I'm on Magnolia Loop now and nobody's in sight. Gary's house is right off the loop, so the quickest way to get him out to the court is to go knock on his door and hustle him along. No reason to dawdle at the mailbox when practice time is ticking.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading to Gary's to collect him for our doubles practice on court 1."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Hal's House, nobody around, and the memory log has me at Rosa's House, but I'll trust the current location. The cart and flamingo complaints are resolved, and Gary and Donna have kept their word, so there's nothing left to report. Saturday dinner is days off, and the binoculars have shown me nothing but a quiet Magnolia Loop. No point chewing the same bone twice. I'll make my one useful move: check the violation notebook, make sure those entries are closed out clean, and see if anything else on the books actually needs my attention before I let the whole business rest.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Review the open entries and close out anything resolved"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's late morning, I'm alone, and Saturday's dinner is the whole point of my week. I've already checked the shift schedule, counted chairs, and done the pie crusts and chopping. Gary, Donna, and Hal all said yes, so nobody needs another nudge. The marinade should be sitting by now, and checking it is the sensible next step. I can also start a list of what's left to buy so I'm not scrambling Friday.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check the marinade, taste for salt, and jot down a grocery list for Saturday"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03056,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9429,
+        "output_tokens": 1055,
+        "usd": 0.02941
+      },
+      "claude-haiku-5-5": {
+        "calls": 6,
+        "input_tokens": 6234,
+        "output_tokens": 1046,
+        "usd": 0.00115
+      }
+    }
+  }
+}
