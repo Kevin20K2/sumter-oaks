@@ -1,0 +1,118 @@
+{
+  "tick": 137,
+  "simulation_time": "Wednesday, October 21, 12:17 PM",
+  "weather": "Humid and hazy, 82°F",
+  "positions": {
+    "gary": "town_square",
+    "donna": "garys_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 12:17 on a humid Wednesday in Sumter Oaks, Gary is at the Town Square parade signup table, determined to get his golf cart entry form filled out and the lighting and sound rules checked. Donna is standing at Gary's door with her pickleball bag, eager to head to the court for doubles practice once he comes out. Meanwhile, Hal sits content on his porch with a glass of water, watching Magnolia Loop and sizing up which chair is sturdy enough to carry over to Rosa's, who is focused on double-checking that her Saturday evening stays clear and declining any new per-diem requests.",
+  "events": [
+    "Gary (parade signup table): Fill out the cart entry form and check the lighting and sound rules",
+    "Donna waited: Standing at Gary's door with my pickleball bag, waiting for him to come out so we can head to the court for doubles practice.",
+    "Hal waited: Sitting on the porch with a glass of water, watching Magnolia Loop out of habit and figuring which chair is sturdy enough to carry over to Rosa's.",
+    "Rosa (rosa shift schedule): Double-check Saturday evening is blocked off and decline any new per-diem requests"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at the Town Square and my last action at tick 136 was looking over the parade rules and signing up the cart. There's no one around to talk to. The parade signup table is right here, and my goal is rigging lights and a sound system. Law L-01 says visible exterior cart mods need Architectural Review approval, and L-03 limits amplified sound at night, so I should make sure my entry is squared away with the table's paperwork before I start wiring. Keeping my word matters to me, so I'll finish the signup properly rather than leave it half done.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "parade_signup_table",
+          "content": "Fill out the cart entry form and check the lighting and sound rules"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've just arrived at Gary's House with my pickleball bag packed for doubles practice, but nobody is in line-of-sight. Gary may be out back or inside, or maybe he's out. I shouldn't wander off after coming all this way. I'll wait here a bit, bag in hand, and see if he shows up so we can head to the court together. No point shouting into an empty yard or poking around his things.",
+      "emotional_state": "eager",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Standing at Gary's door with my pickleball bag, waiting for him to come out so we can head to the court for doubles practice."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Nobody's in sight and it's midday, hazy and hot. The cart and flamingo complaints are resolved; Gary and Donna kept their word and Rosa's dinner is Saturday. I've already closed out the notebook and swept the street a couple of times. Nothing left to chase today, so I'll take the porch chair, keep a casual eye on the loop out of habit, and think about which good chair to haul over for Rosa.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Sitting on the porch with a glass of water, watching Magnolia Loop out of habit and figuring which chair is sturdy enough to carry over to Rosa's."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's midday Wednesday and I'm alone at home. I've been through the marinade, the pie crusts, the chairs, and the shift schedule over the last few ticks, and I've confirmed what I can. Gary, Hal, and Donna have all said yes to Saturday at six. The only loose thread is groceries: I jotted down a list last tick but haven't acted on it. Rather than keep fussing in the kitchen, I should check the shift schedule once more and make sure Saturday evening is protected, since per-diem requests can come in last minute. Then I can head out and get the shopping done.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Double-check Saturday evening is blocked off and decline any new per-diem requests"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0301,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9351,
+        "output_tokens": 1125,
+        "usd": 0.02995
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 441,
+        "output_tokens": 204,
+        "usd": 0.00015
+      }
+    }
+  }
+}

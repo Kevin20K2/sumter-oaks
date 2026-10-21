@@ -1,6 +1,6 @@
 {
-  "tick": 137,
-  "time": "2026-10-21T11:17",
+  "tick": 138,
+  "time": "2026-10-21T12:17",
   "positions": {
     "gary": "town_square",
     "donna": "garys_house",
@@ -9,19 +9,12 @@
   },
   "perceptions": {
     "gary": [],
-    "donna": [
-      "You arrived at Gary's House."
-    ],
+    "donna": [],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 42,
-        "text": "I (gary golf cart): Keep wiring the light strips onto the cart frame, unpowered for now",
-        "importance": 5
-      },
       {
         "tick": 43,
         "text": "I (gary golf cart): Finish wiring the light strips onto the cart frame, unpowered until approval",
@@ -1016,14 +1009,14 @@
         "tick": 136,
         "text": "I (parade signup table): Look over the parade rules and sign up my cart",
         "importance": 6
+      },
+      {
+        "tick": 137,
+        "text": "I (parade signup table): Fill out the cart entry form and check the lighting and sound rules",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 50,
-        "text": "Rosa said to Gary: “Good, that's all I needed to hear, Gary. Saturday at six, and bring your appetite. Any allergies I should know about before I start cooking? And the cart looks fine from here, just don't let it park on my lawn.”",
-        "importance": 5
-      },
       {
         "tick": 51,
         "text": "I said to Gary: “Gary, you're all set with Rosa, so let's lock in ours: Saturday, eight sharp, rec center, and wear real sneakers, not those loafers. I'll bring the spare paddle and walk you through the basics, you'll be dinking like a pro by lunch.”",
@@ -2018,14 +2011,14 @@
         "tick": 136,
         "text": "You arrived at Gary's House.",
         "importance": 5
+      },
+      {
+        "tick": 137,
+        "text": "I waited: Standing at Gary's door with my pickleball bag, waiting for him to come out so we can head to the court for doubles practice.",
+        "importance": 3
       }
     ],
     "hal": [
-      {
-        "tick": 34,
-        "text": "Donna said to Hal: “Three flamingos, Hal, count 'em yourself. Thanks for being reasonable about it. Come Saturday you ought to swing by the courts at eight, Gary and I will be out there.”",
-        "importance": 4
-      },
       {
         "tick": 34,
         "text": "Rosa just arrived.",
@@ -3020,14 +3013,14 @@
         "tick": 136,
         "text": "I (hal violation notebook): Review the open entries and close out anything resolved",
         "importance": 3
+      },
+      {
+        "tick": 137,
+        "text": "I waited: Sitting on the porch with a glass of water, watching Magnolia Loop out of habit and figuring which chair is sturdy enough to carry over to Rosa's.",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 27,
-        "text": "I (rosa shift schedule): Check my shifts and block out Saturday for pickleball and the dinner",
-        "importance": 6
-      },
       {
         "tick": 28,
         "text": "I (rosa kitchen): Plan Saturday's dinner menu and write the grocery list",
@@ -4022,6 +4015,11 @@
         "tick": 136,
         "text": "I (rosa kitchen): Check the marinade, taste for salt, and jot down a grocery list for Saturday",
         "importance": 4
+      },
+      {
+        "tick": 137,
+        "text": "I (rosa shift schedule): Double-check Saturday evening is blocked off and decline any new per-diem requests",
+        "importance": 4
       }
     ]
   },
@@ -4071,7 +4069,7 @@
     "gary": "determined",
     "donna": "eager",
     "hal": "content",
-    "rosa": "content"
+    "rosa": "focused"
   },
   "laws": [
     {
@@ -4152,9 +4150,16 @@
       "text": "Hal Weems: Check the drop box for any new proposals on carts or lawn ornaments"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 137,
+      "time": "Wednesday, October 21, 12:17 PM",
+      "story": "At 12:17 on a humid Wednesday in Sumter Oaks, Gary is at the Town Square parade signup table, determined to get his golf cart entry form filled out and the lighting and sound rules checked. Donna is standing at Gary's door with her pickleball bag, eager to head to the court for doubles practice once he comes out. Meanwhile, Hal sits content on his porch with a glass of water, watching Magnolia Loop and sizing up which chair is sturdy enough to carry over to Rosa's, who is focused on double-checking that her Saturday evening stays clear and declining any new per-diem requests.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 4.21634,
+    "total_usd": 4.24644,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4193,13 +4198,12 @@
         "usd": 0.47071
       },
       "2026-10-21": {
-        "ticks": 5,
-        "usd": 0.14984
+        "ticks": 6,
+        "usd": 0.17994
       }
     }
   },
   "recent_tick_costs": [
-    0.0332,
     0.03086,
     0.03129,
     0.02994,
@@ -4222,7 +4226,8 @@
     0.03039,
     0.03004,
     0.029,
-    0.03056
+    0.03056,
+    0.0301
   ],
   "fund": {
     "gross_usd": 0.0,
