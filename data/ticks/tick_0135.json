@@ -1,0 +1,118 @@
+{
+  "tick": 135,
+  "simulation_time": "Wednesday, October 21, 10:17 AM",
+  "weather": "Humid and hazy, 80°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Under a hazy, humid October sky at 10:17 on Wednesday morning, Gary is marching determinedly toward Town Square while Donna, eager as ever, heads out onto Magnolia Loop. Hal settles into his porch chair with a content eye on the street, already turning over ideas for what he can haul for Rosa on Saturday. Meanwhile Rosa, calm in her kitchen, gets a head start on the weekend by baking pie crusts and chopping vegetables that can be made ahead.",
+  "events": [
+    "Gary headed to Town Square.",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal waited: Settling into the porch chair with a quiet eye on Magnolia Loop, thinking about what I can haul for Rosa on Saturday.",
+    "Rosa (rosa kitchen): Bake the pie crusts and chop vegetables that can be made ahead for Saturday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm on Magnolia Loop with nobody around, and I've got the controller and amp wired and labeled on the bench. Hal said the Architectural Review paperwork has to be filed before anything goes on the cart, and I told myself I'd square that away. Town Hall is where it gets filed, and the street connects to town_square. I'd better stop tinkering and go file it so the lights can go on the right way before the parade.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_square",
+          "content": "Heading to Town Hall to file the Architectural Review paperwork for the cart lights before I mount anything."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already penciled in the 2-hour block on the calendar and packed my bag, so I'm ready. Gary arrived on Magnolia Loop at tick 131 and isn't in sight now, and the court is the next logical step. Time to head to the court and set up for doubles practice. I'll go to Magnolia Loop first since that's the only connected zone from my house.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Bag packed and court time penciled in, heading out toward the courts for doubles practice with Gary."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've already marked the cart and flamingo entries resolved and swept Magnolia Loop twice with the binoculars. Nothing to cite, and the complaint against Gary and Donna is dropped. I'm at home with nobody around, and dinner at Rosa's is Saturday, so I'll sit on the porch, keep an eye on the street out of habit, and think about what heavy things I can carry for her.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Settling into the porch chair with a quiet eye on Magnolia Loop, thinking about what I can haul for Rosa on Saturday."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've already marinated, prepped, checked my shifts, and counted chairs for Saturday. Everyone has said yes: Gary, Donna, Hal. Nobody is nearby and I'm alone in the house. The one concrete loose end from counting chairs is serving dishes and what's left to do ahead of time, and the kitchen is where I can make real progress. I'll stop circling the planning and actually cook something that can be done two days early.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Bake the pie crusts and chop vegetables that can be made ahead for Saturday"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.029,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9361,
+        "output_tokens": 1016,
+        "usd": 0.02888
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 393,
+        "output_tokens": 168,
+        "usd": 0.00012
+      }
+    }
+  }
+}

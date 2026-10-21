@@ -1,32 +1,24 @@
 {
-  "tick": 135,
-  "time": "2026-10-21T09:17",
+  "tick": 136,
+  "time": "2026-10-21T10:17",
   "positions": {
-    "gary": "magnolia_loop",
-    "donna": "donnas_house",
+    "gary": "town_square",
+    "donna": "magnolia_loop",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
+      "You arrived at Town Square."
+    ],
+    "donna": [
       "You arrived at Magnolia Loop (the street)."
     ],
-    "donna": [],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 41,
-        "text": "I (gary golf cart): Start wiring the light strips onto the cart frame, no sound until tomorrow",
-        "importance": 6
-      },
-      {
-        "tick": 41,
-        "text": "Donna said to Gary: “Gary, there you are! Rosa's dinner is Saturday at six at her place, and I've got us down for pickleball at eight that morning, so you'd better be rested. I'll bring the spare paddle.”",
-        "importance": 6
-      },
       {
         "tick": 41,
         "text": "Hal said to Gary: “Evening, Gary. Anything on that cart visible from the street needs Architectural Review sign-off before it goes on, not after. File the paperwork tomorrow and I'll see it through straight, no grudges.”",
@@ -1016,19 +1008,19 @@
         "tick": 134,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 135,
+        "text": "I headed to Town Square.",
+        "importance": 6
+      },
+      {
+        "tick": 135,
+        "text": "You arrived at Town Square.",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 49,
-        "text": "Gary said to Rosa: “Rosa, come on in! Donna's been bragging about your pie all week, so I hope you didn't come to take it back. Pull up a stool and tell me what you think of the cart.”",
-        "importance": 5
-      },
-      {
-        "tick": 49,
-        "text": "Rosa said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”",
-        "importance": 5
-      },
       {
         "tick": 50,
         "text": "I said to Rosa: “Put Gary down for a dish, Rosa. He's the type who'll say yes and show up empty-handed unless you pin him to something. Rolls, I'd say, and I'll bring dessert so you're covered.”",
@@ -2018,14 +2010,19 @@
         "tick": 134,
         "text": "I (donna pickleball bag): Grab my paddle and balls and pack the bag for doubles practice with Gary",
         "importance": 5
+      },
+      {
+        "tick": 135,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 135,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 33,
-        "text": "Donna (donna flamingo flock): Pull the extra flamingos and leave exactly three out front",
-        "importance": 4
-      },
       {
         "tick": 34,
         "text": "I said to Donna: “Three flamingos visible from the street, Donna. That's L-02 squared away, and no notice needed. I appreciate you handling it without an argument.”",
@@ -3020,14 +3017,14 @@
         "tick": 134,
         "text": "I (hal binoculars): Sweep Magnolia Loop for grass parking or stray lawn ornaments",
         "importance": 2
+      },
+      {
+        "tick": 135,
+        "text": "I waited: Settling into the porch chair with a quiet eye on Magnolia Loop, thinking about what I can haul for Rosa on Saturday.",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 26,
-        "text": "I said to Donna: “I'll be there Saturday at eight with a thermos, loudly. Then come to my place that evening, you and Gary both, and I'll feed the winners and the losers. Can I count you in?”",
-        "importance": 6
-      },
       {
         "tick": 26,
         "text": "Donna said to Rosa: “Rosa, I'd love to come to your dinner, count me in! Pickleball at eight, dinner after, and I'll bring a spare paddle so you can start learning with us.”",
@@ -4022,6 +4019,11 @@
         "tick": 134,
         "text": "I (rosa dining table): Count chairs and plan the seating and serving dishes for Saturday's dinner",
         "importance": 5
+      },
+      {
+        "tick": 135,
+        "text": "I (rosa kitchen): Bake the pie crusts and chop vegetables that can be made ahead for Saturday",
+        "importance": 4
       }
     ]
   },
@@ -4069,9 +4071,9 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "determined",
+    "donna": "eager",
     "hal": "content",
-    "rosa": "focused, hopeful"
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4176,10 +4178,16 @@
       "time": "Wednesday, October 21, 9:17 AM",
       "story": "At 9:17 on a humid, hazy Wednesday morning in Sumter Oaks, Gary is making his way down Magnolia Loop with a determined stride, while Donna packs her paddle and balls for a doubles practice session with him. Hal, content as ever, keeps watch with his binoculars for any grass parking or stray lawn ornaments along the street. Meanwhile, Rosa sits at her dining table, focused and hopeful, counting chairs and planning the seating and serving dishes for Saturday's dinner.",
       "dialogue": []
+    },
+    {
+      "tick": 135,
+      "time": "Wednesday, October 21, 10:17 AM",
+      "story": "Under a hazy, humid October sky at 10:17 on Wednesday morning, Gary is marching determinedly toward Town Square while Donna, eager as ever, heads out onto Magnolia Loop. Hal settles into his porch chair with a content eye on the street, already turning over ideas for what he can haul for Rosa on Saturday. Meanwhile Rosa, calm in her kitchen, gets a head start on the weekend by baking pie crusts and chopping vegetables that can be made ahead.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 4.15678,
+    "total_usd": 4.18578,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4218,13 +4226,12 @@
         "usd": 0.47071
       },
       "2026-10-21": {
-        "ticks": 3,
-        "usd": 0.09028
+        "ticks": 4,
+        "usd": 0.11928
       }
     }
   },
   "recent_tick_costs": [
-    0.03214,
     0.0347,
     0.0332,
     0.03086,
@@ -4247,7 +4254,8 @@
     0.0305,
     0.02985,
     0.03039,
-    0.03004
+    0.03004,
+    0.029
   ],
   "fund": {
     "gross_usd": 0.0,
