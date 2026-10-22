@@ -1,57 +1,31 @@
 {
-  "tick": 154,
-  "time": "2026-10-22T13:17",
+  "tick": 155,
+  "time": "2026-10-22T14:17",
   "positions": {
-    "gary": "magnolia_loop",
+    "gary": "town_square",
     "donna": "rec_center",
-    "hal": "magnolia_loop",
+    "hal": "hals_house",
     "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna headed to Rec Center.",
-      "Hal said to Rosa: “Yes, Rosa, I'll be there Saturday at six. Nothing I can't eat, and I'm bringing the cornbread and my good chair, so don't go buying a seat for me.”",
-      "Rosa said to Gary: “Gary, Hal's in with cornbread and Donna's got lemon bars, so you're the last one. Bring ice and a six-pack of whatever you like, and I'll handle the rest. Go win your match.”"
+      "Hal headed to Hal's House.",
+      "Rosa said to Hal: “Hal, you're a lifesaver, and I'll take that chair gladly. If you can come by around five-thirty, I could use a second pair of hands setting up the long table.”",
+      "You arrived at Town Square."
     ],
-    "donna": [
-      "Gary waited: thinking about where to head next",
-      "Hal said to Rosa: “Yes, Rosa, I'll be there Saturday at six. Nothing I can't eat, and I'm bringing the cornbread and my good chair, so don't go buying a seat for me.”",
-      "Rosa said to Gary: “Gary, Hal's in with cornbread and Donna's got lemon bars, so you're the last one. Bring ice and a six-pack of whatever you like, and I'll handle the rest. Go win your match.”",
-      "You arrived at Rec Center."
-    ],
+    "donna": [],
     "hal": [
-      "Gary waited: thinking about where to head next",
-      "Donna headed to Rec Center.",
-      "Rosa said to Gary: “Gary, Hal's in with cornbread and Donna's got lemon bars, so you're the last one. Bring ice and a six-pack of whatever you like, and I'll handle the rest. Go win your match.”"
+      "Gary headed to Town Square.",
+      "Rosa said to Hal: “Hal, you're a lifesaver, and I'll take that chair gladly. If you can come by around five-thirty, I could use a second pair of hands setting up the long table.”",
+      "You arrived at Hal's House."
     ],
     "rosa": [
-      "Gary waited: thinking about where to head next",
-      "Donna headed to Rec Center.",
-      "Hal said to Rosa: “Yes, Rosa, I'll be there Saturday at six. Nothing I can't eat, and I'm bringing the cornbread and my good chair, so don't go buying a seat for me.”"
+      "Gary headed to Town Square.",
+      "Hal headed to Hal's House."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 56,
-        "text": "I said to Donna: “Yes to both, Donna, in ink. Saturday at eight sharp, paddle shaking hands with me and knees bent. Now go home before my soldering iron gets jealous.”",
-        "importance": 4
-      },
-      {
-        "tick": 56,
-        "text": "Donna headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 57,
-        "text": "I (gary golf cart): Run the wiring for the cart's string lights and mount the speaker",
-        "importance": 5
-      },
-      {
-        "tick": 58,
-        "text": "I (gary golf cart): Finish securing the light string wiring and test-fit the speaker mount",
-        "importance": 4
-      },
       {
         "tick": 59,
         "text": "I (gary golf cart): Wire up the speaker and test the string lights",
@@ -1031,14 +1005,29 @@
         "tick": 153,
         "text": "Rosa said to Gary: “Gary, Hal's in with cornbread and Donna's got lemon bars, so you're the last one. Bring ice and a six-pack of whatever you like, and I'll handle the rest. Go win your match.”",
         "importance": 5
+      },
+      {
+        "tick": 154,
+        "text": "I headed to Town Square.",
+        "importance": 6
+      },
+      {
+        "tick": 154,
+        "text": "Hal headed to Hal's House.",
+        "importance": 6
+      },
+      {
+        "tick": 154,
+        "text": "Rosa said to Hal: “Hal, you're a lifesaver, and I'll take that chair gladly. If you can come by around five-thirty, I could use a second pair of hands setting up the long table.”",
+        "importance": 6
+      },
+      {
+        "tick": 154,
+        "text": "You arrived at Town Square.",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 68,
-        "text": "Gary (gary fridge): Fill a couple water bottles and chill them for tomorrow's pickleball",
-        "importance": 4
-      },
       {
         "tick": 68,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -2033,29 +2022,14 @@
         "tick": 153,
         "text": "You arrived at Rec Center.",
         "importance": 5
+      },
+      {
+        "tick": 154,
+        "text": "I (ladder standings board): Check where Pruitt-Kowalski stands on the doubles ladder",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 46,
-        "text": "Donna headed to Gary's House.",
-        "importance": 4
-      },
-      {
-        "tick": 46,
-        "text": "Rosa said to Donna: “Dessert is a yes, Donna, bless you. And Gary's absolutely still on the list, I just have to catch him standing still long enough to say so. Saturday at six, table's set for four.”",
-        "importance": 4
-      },
-      {
-        "tick": 47,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street against the three-ornament limit",
-        "importance": 4
-      },
-      {
-        "tick": 47,
-        "text": "Rosa said to Hal: “Pie and punctuality, Hal, you're a gift. If you've got two spare folding chairs for Saturday, that's all I need hauled. Now I'm going to run Gary to ground.”",
-        "importance": 4
-      },
       {
         "tick": 48,
         "text": "I said to Rosa: “Two folding chairs, Rosa. I've got a pair in the garage and I'll have them at your door before Saturday. Good luck running Gary down.”",
@@ -3035,24 +3009,29 @@
         "tick": 153,
         "text": "Rosa said to Gary: “Gary, Hal's in with cornbread and Donna's got lemon bars, so you're the last one. Bring ice and a six-pack of whatever you like, and I'll handle the rest. Go win your match.”",
         "importance": 5
+      },
+      {
+        "tick": 154,
+        "text": "I headed to Hal's House.",
+        "importance": 4
+      },
+      {
+        "tick": 154,
+        "text": "Gary headed to Town Square.",
+        "importance": 4
+      },
+      {
+        "tick": 154,
+        "text": "Rosa said to Hal: “Hal, you're a lifesaver, and I'll take that chair gladly. If you can come by around five-thirty, I could use a second pair of hands setting up the long table.”",
+        "importance": 4
+      },
+      {
+        "tick": 154,
+        "text": "You arrived at Hal's House.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 46,
-        "text": "I said to Donna: “Dessert is a yes, Donna, bless you. And Gary's absolutely still on the list, I just have to catch him standing still long enough to say so. Saturday at six, table's set for four.”",
-        "importance": 6
-      },
-      {
-        "tick": 46,
-        "text": "Donna headed to Gary's House.",
-        "importance": 6
-      },
-      {
-        "tick": 46,
-        "text": "Hal said to Rosa: “Morning, Rosa. About Saturday at six, I'll bring a pie from the commissary lady's recipe, and I'll be on time. Anything else you need hauled over?”",
-        "importance": 6
-      },
       {
         "tick": 47,
         "text": "I said to Hal: “Pie and punctuality, Hal, you're a gift. If you've got two spare folding chairs for Saturday, that's all I need hauled. Now I'm going to run Gary to ground.”",
@@ -4037,6 +4016,21 @@
         "tick": 153,
         "text": "Hal said to Rosa: “Yes, Rosa, I'll be there Saturday at six. Nothing I can't eat, and I'm bringing the cornbread and my good chair, so don't go buying a seat for me.”",
         "importance": 6
+      },
+      {
+        "tick": 154,
+        "text": "I said to Hal: “Hal, you're a lifesaver, and I'll take that chair gladly. If you can come by around five-thirty, I could use a second pair of hands setting up the long table.”",
+        "importance": 4
+      },
+      {
+        "tick": 154,
+        "text": "Gary headed to Town Square.",
+        "importance": 4
+      },
+      {
+        "tick": 154,
+        "text": "Hal headed to Hal's House.",
+        "importance": 4
       }
     ]
   },
@@ -4084,9 +4078,9 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "eager",
+    "donna": "determined",
     "hal": "content",
-    "rosa": "satisfied"
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4175,52 +4169,9 @@
       "text": "Gary Kowalski: Check status of my cart modification request and ask about approval steps"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 149,
-      "time": "Thursday, October 22, 9:17 AM",
-      "story": "At 9:17 on this breezy, clear Thursday in Sumter Oaks, Gary is test-fitting light strips and speaker brackets at his house, careful not to mount anything permanent just yet. Across town, Donna is packing paddles, balls, and water for doubles practice with Gary, both of them determined to be ready. Hal, watchful as ever, is counting the flamingos along Magnolia Loop to make sure there are only three, while Rosa, content at her house, is arranging the dining table for four so Hal, Gary, and Donna can mingle over place settings.",
-      "dialogue": []
-    },
-    {
-      "tick": 150,
-      "time": "Thursday, October 22, 10:17 AM",
-      "story": "On a breezy, clear Thursday morning at 10:17, Gary and Donna are both heading out to Magnolia Loop, Gary with determined steps and Donna eager to get there. Rosa, feeling energized, is joining them on the street while Hal keeps a watchful eye on things, counting the flamingos in Donna's flock to make sure they meet the L-02 rule.",
-      "dialogue": []
-    },
-    {
-      "tick": 151,
-      "time": "Thursday, October 22, 11:17 AM",
-      "story": "On Magnolia Loop this breezy Thursday morning, Gary stands at the street bulletin board hunting for the Architectural Review submission forms he needs for his golf cart modifications, his jaw set with determination. Donna, bag packed and upbeat, waves him toward the rec center for some pickleball practice before their ladder match, while Hal, dutifully keeping an eye on the neighborhood rules, reminds Gary that filing those cart light papers will settle things between them before Saturday. Rosa, hopeful as ever, catches the whole crew in one happy moment to invite them all to her place Saturday at six and asks about food allergies and dish contributions.",
-      "dialogue": [
-        "Donna said to Gary: “There's my partner! Bag's packed, so grab your paddle and let's walk over to the rec center. I want to work on those dinks before the ladder match.”",
-        "Hal said to Gary: “Morning, Gary. That paperwork for the cart lights go in to Architectural Review yet? Get it filed and I'll drop the matter, and we'll walk Saturday with a clean slate.”",
-        "Rosa said to Hal: “Hal, good, you're here with the whole crew. Saturday at six at my place, you're on the list. Anything you can't eat, or any dish you want to bring?”"
-      ]
-    },
-    {
-      "tick": 152,
-      "time": "Thursday, October 22, 12:17 PM",
-      "story": "On Magnolia Loop on a breezy, clear Thursday just after noon, Gary is determined to finally file his Architectural Review paperwork, but first he wants to sort out Donna's pickleball dinks. Donna is eager to get on court before the lunch crowd arrives and offers to carry Gary's water bottle to help him move along. Hal, content in the warm 76-degree air, promises Rosa he'll bring a pan of cornbread and his sturdy chair to her Saturday supper, while Rosa, determined to plan the evening, presses him for a yes.",
-      "dialogue": [
-        "Gary said to Hal: “Morning, Hal. You're right, I'm filing the Architectural Review paperwork today, no more stalling. Let me get Donna's dinks sorted first and then I'll walk it in.”",
-        "Donna said to Gary: “Finish up with Hal, Gary, then let's move. I want us on court before the lunch crowd grabs it, and I'll carry your water bottle if that's what it takes.”",
-        "Hal said to Rosa: “Nothing I can't eat, Rosa, I'm not fussy. I'll bring a pan of cornbread and that sturdy chair of mine, since your porch is short a good seat.”",
-        "Rosa said to Hal: “Hal, I still need your answer for Saturday at six. Gary and Donna are both in, so tell me yes, tell me what you can't eat, and I'll plan around it.”"
-      ]
-    },
-    {
-      "tick": 153,
-      "time": "Thursday, October 22, 1:17 PM",
-      "story": "On a breezy, clear Thursday afternoon at 1:17, Gary stands on Magnolia Loop weighing his next move while Donna heads off toward the Rec Center, eager for whatever is waiting there. Hal and Rosa are still chatting on the street, with Hal promising to show up Saturday at six with his cornbread and his own chair. Rosa, looking satisfied, passes Gary the word that Donna is bringing lemon bars and that he's been assigned the ice and a six-pack, sending him off to go win his match.",
-      "dialogue": [
-        "Hal said to Rosa: “Yes, Rosa, I'll be there Saturday at six. Nothing I can't eat, and I'm bringing the cornbread and my good chair, so don't go buying a seat for me.”",
-        "Rosa said to Gary: “Gary, Hal's in with cornbread and Donna's got lemon bars, so you're the last one. Bring ice and a six-pack of whatever you like, and I'll handle the rest. Go win your match.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 4.74617,
+    "total_usd": 4.77895,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4263,13 +4214,12 @@
         "usd": 0.45951
       },
       "2026-10-22": {
-        "ticks": 7,
-        "usd": 0.22016
+        "ticks": 8,
+        "usd": 0.25294
       }
     }
   },
   "recent_tick_costs": [
-    0.03091,
     0.0305,
     0.02985,
     0.03039,
@@ -4292,7 +4242,8 @@
     0.02991,
     0.03094,
     0.03482,
-    0.03401
+    0.03401,
+    0.03278
   ],
   "fund": {
     "gross_usd": 0.0,
