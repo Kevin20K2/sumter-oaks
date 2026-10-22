@@ -1,0 +1,115 @@
+{
+  "tick": 151,
+  "simulation_time": "Thursday, October 22, 11:17 AM",
+  "weather": "Breezy and clear, 75°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On Magnolia Loop this breezy Thursday morning, Gary stands at the street bulletin board hunting for the Architectural Review submission forms he needs for his golf cart modifications, his jaw set with determination. Donna, bag packed and upbeat, waves him toward the rec center for some pickleball practice before their ladder match, while Hal, dutifully keeping an eye on the neighborhood rules, reminds Gary that filing those cart light papers will settle things between them before Saturday. Rosa, hopeful as ever, catches the whole crew in one happy moment to invite them all to her place Saturday at six and asks about food allergies and dish contributions.",
+  "events": [
+    "Gary (street bulletin board): Check for Architectural Review submission info for my cart mods"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm out on Magnolia Loop with Donna, Hal, and Rosa all around, and I've already got Saturday dinner and court time locked in, so no need to rehash that. What actually matters is the parade cart. I just test-fit the light strips and speaker brackets, and L-01 says exterior mods visible from the street need Architectural Review approval. I'd rather not get cited after all that wiring. The street bulletin board is right here and probably has the review notice or sign-up. Better to check that than stand around chatting.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Check for Architectural Review submission info for my cart mods"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've got my pickleball bag packed and Gary just showed up on Magnolia Loop, right on schedule for doubles practice. We already signed the Pruitt-Kowalski name on the ladder, so there's no need to re-ask or re-pitch him. The thing to do now is keep us moving toward the courts. Rosa's here too, so a quick nod to Saturday's dinner can wait. Gary first, then rec center.",
+      "emotional_state": "upbeat",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "There's my partner! Bag's packed, so grab your paddle and let's walk over to the rec center. I want to work on those dinks before the ladder match."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna and Gary and Rosa are all here on Magnolia Loop. I've been tallying flamingos and cart wiring for a while now, but memory says I told Gary to file paperwork tomorrow and I'd see it through straight. Gary's been quiet about it. Rather than lecture the whole street again, I'll ask Gary directly whether the Architectural Review filing happened, since I'm the one who promised to see it through fairly. Saturday's dinner and the walk are coming up, so keep it civil, short, and by the book.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Morning, Gary. That paperwork for the cart lights go in to Architectural Review yet? Get it filed and I'll drop the matter, and we'll walk Saturday with a clean slate."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary, Donna, and Hal are all standing on Magnolia Loop at once, which is rare. Gary and Donna already confirmed Saturday at six. Hal is the one I haven't heard a clear yes from, and I want to seat him next to the others. I shouldn't re-ask Gary or Donna; I'll turn to Hal, confirm he's in, and pin down a dish or anything he can't eat so I can finish the menu around Donna's lemon bars.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, good, you're here with the whole crew. Saturday at six at my place, you're on the list. Anything you can't eat, or any dish you want to bring?"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03094,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9535,
+        "output_tokens": 1171,
+        "usd": 0.03078
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 523,
+        "output_tokens": 217,
+        "usd": 0.00016
+      }
+    }
+  }
+}
