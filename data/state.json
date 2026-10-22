@@ -1,6 +1,6 @@
 {
-  "tick": 145,
-  "time": "2026-10-21T19:17",
+  "tick": 146,
+  "time": "2026-10-21T20:17",
   "positions": {
     "gary": "magnolia_loop",
     "donna": "rec_center",
@@ -8,26 +8,13 @@
     "rosa": "town_square"
   },
   "perceptions": {
-    "gary": [
-      "You arrived at Magnolia Loop (the street)."
-    ],
-    "donna": [
-      "Rosa headed to Town Square.",
-      "You arrived at Rec Center."
-    ],
+    "gary": [],
+    "donna": [],
     "hal": [],
-    "rosa": [
-      "Donna headed to Rec Center.",
-      "You arrived at Town Square."
-    ]
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 49,
-        "text": "I said to Rosa: “Rosa, come on in! Donna's been bragging about your pie all week, so I hope you didn't come to take it back. Pull up a stool and tell me what you think of the cart.”",
-        "importance": 3
-      },
       {
         "tick": 49,
         "text": "Donna said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”",
@@ -1022,14 +1009,14 @@
         "tick": 144,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 145,
+        "text": "I (street bulletin board): Read the board for Architectural Review forms and deadlines for cart modifications",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 56,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 56,
         "text": "Gary said to Donna: “Yes to both, Donna, in ink. Saturday at eight sharp, paddle shaking hands with me and knees bent. Now go home before my soldering iron gets jealous.”",
@@ -2024,14 +2011,14 @@
         "tick": 144,
         "text": "You arrived at Rec Center.",
         "importance": 4
+      },
+      {
+        "tick": 145,
+        "text": "I (ladder standings board): Check where Pruitt-Kowalski stands on the doubles ladder",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 36,
-        "text": "You arrived at Gary's House.",
-        "importance": 5
-      },
       {
         "tick": 37,
         "text": "I (gary golf cart): Inspect the cart's exterior modifications for L-01 compliance",
@@ -3026,14 +3013,14 @@
         "tick": 144,
         "text": "I waited: Settling into the porch chair as the haze thickens, keeping a casual eye on Magnolia Loop and thinking about which chair to haul over to Rosa's on Saturday.",
         "importance": 2
+      },
+      {
+        "tick": 145,
+        "text": "I waited: Sitting in the porch chair with the haze rolling in, street's quiet, notebook closed. Thinking I'll oil the hinges on the good chair before Saturday so I'm not squeaking into Rosa's dinner.",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 37,
-        "text": "Donna (donna flamingo flock): Pull the extra flamingos off the lawn, leaving just three",
-        "importance": 6
-      },
       {
         "tick": 37,
         "text": "You arrived at Gary's House.",
@@ -4028,6 +4015,11 @@
         "tick": 144,
         "text": "You arrived at Town Square.",
         "importance": 4
+      },
+      {
+        "tick": 145,
+        "text": "I (ice cream stand): Grab a small cone and sit a minute while I sketch Saturday's menu in my head",
+        "importance": 3
       }
     ]
   },
@@ -4075,9 +4067,9 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "upbeat",
+    "donna": "determined",
     "hal": "content",
-    "rosa": "determined"
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4181,10 +4173,16 @@
       "time": "Wednesday, October 21, 7:17 PM",
       "story": "As the hazy October evening settles over Sumter Oaks at 7:17, Gary is making his way to Magnolia Loop with a determined stride, while Donna, upbeat as ever, heads toward the Rec Center. Hal stays put on his porch, content in his chair and keeping a casual eye on the street as he weighs which chair to haul over to Rosa's on Saturday. Rosa, equally determined, is off to Town Square, the two of them crossing paths in the golden gloom of the community's quiet evening.",
       "dialogue": []
+    },
+    {
+      "tick": 145,
+      "time": "Wednesday, October 21, 8:17 PM",
+      "story": "On Magnolia Loop, Gary is reading the street bulletin board for Architectural Review forms and cart modification deadlines, while Donna checks the doubles ladder standings at the Rec Center to see where Pruitt-Kowalski stands. Over at his porch in Hal's House, Hal sits content in the hazy October evening, planning to oil the hinges on his good chair before Saturday's dinner at Rosa's. Rosa, at the Town Square ice cream stand, is taking a quiet moment with a small cone while she sketches out her menu for the weekend.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 4.46389,
+    "total_usd": 4.49442,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4223,13 +4221,12 @@
         "usd": 0.47071
       },
       "2026-10-21": {
-        "ticks": 13,
-        "usd": 0.39739
+        "ticks": 14,
+        "usd": 0.42792
       }
     }
   },
   "recent_tick_costs": [
-    0.03744,
     0.03085,
     0.03115,
     0.03203,
@@ -4252,7 +4249,8 @@
     0.03148,
     0.03152,
     0.03074,
-    0.0319
+    0.0319,
+    0.03053
   ],
   "fund": {
     "gross_usd": 0.0,
