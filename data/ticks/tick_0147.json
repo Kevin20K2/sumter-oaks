@@ -1,0 +1,118 @@
+{
+  "tick": 147,
+  "simulation_time": "Thursday, October 22, 7:17 AM",
+  "weather": "Breezy and clear, 72°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a breezy, clear Thursday morning in Sumter Oaks, Gary is at his workbench sketching the layout for his golf cart's lights and speaker and jotting down parts for the community review application. Donna, feeling energized, is checking her club calendar against a practice slot and Rosa's dinner on Saturday. Across the loop, Hal is content as he scans Magnolia Loop with his binoculars for anything out of place, while Rosa, focused, works in her kitchen on Saturday's menu and shopping list, building it around Donna's lemon bars.",
+  "events": [
+    "Gary (gary workbench): Sketch the cart light and speaker layout and list parts for the review application",
+    "Donna (donna club calendar): Check the practice slot against my club commitments and Rosa's dinner Saturday",
+    "Hal (hal binoculars): Scan Magnolia Loop for anything out of order this morning",
+    "Rosa (rosa kitchen): Write out Saturday's menu and shopping list, building around Donna's lemon bars"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm home at 7:17 AM with the parade coming up. I already signed up and went looking for the Architectural Review form at the kiosk last tick, but it's not clear I filed anything, and L-01 says visible exterior mods need approval before the cart goes out. Nobody's around, so the best use of this hour is hands-on work: get the lights and speaker laid out at the workbench so I know exactly what to describe on the application. Sound system stays quiet, since it's past 7 and I'm only bench-testing anyway. Keeping busy also takes the edge off the quiet house.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Sketch the cart light and speaker layout and list parts for the review application"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's early morning at home and no one is around. I already reserved the 2-hour doubles slot at the Rec Center last tick, and Gary and I are making real progress. My pickleball bag is right here, so I should grab it before heading out. Checking the club calendar first helps me confirm when practice is and make sure it doesn't clash with Rosa's Saturday dinner prep or my club duties.",
+      "emotional_state": "energized",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check the practice slot against my club commitments and Rosa's dinner Saturday"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Morning's here, breezy and clear, and nobody's on the street. I oiled the chair hinges last tick, Donna cut the flamingos to three, and Gary's promised to walk out Saturday. My open complaints have mostly resolved themselves, which is a funny feeling for a watchdog. Still, old habits: a quick look down Magnolia Loop with the binoculars costs nothing and makes sure everything's in order before I settle in for the day.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Magnolia Loop for anything out of order this morning"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 7:17 AM Thursday and I'm home alone. Saturday's dinner is two days out, and I've been wandering town sketching the menu in my head without writing anything down. Gary and Donna are confirmed, Donna is bringing lemon bars, and Hal is the guest of honor. Time to pin down the menu and check my per-diem shift schedule so Saturday evening is genuinely clear. The kitchen is the right place to turn the plan into a real list.",
+      "emotional_state": "focused",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Write out Saturday's menu and shopping list, building around Donna's lemon bars"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02991,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9504,
+        "output_tokens": 1076,
+        "usd": 0.02977
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 404,
+        "output_tokens": 191,
+        "usd": 0.00014
+      }
+    }
+  }
+}

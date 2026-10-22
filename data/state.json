@@ -1,11 +1,11 @@
 {
-  "tick": 147,
-  "time": "2026-10-21T21:17",
+  "tick": 148,
+  "time": "2026-10-22T07:17",
   "positions": {
-    "gary": "magnolia_loop",
-    "donna": "rec_center",
+    "gary": "garys_house",
+    "donna": "donnas_house",
     "hal": "hals_house",
-    "rosa": "town_square"
+    "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
@@ -15,11 +15,6 @@
   },
   "memories": {
     "gary": [
-      {
-        "tick": 49,
-        "text": "Rosa said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”",
-        "importance": 3
-      },
       {
         "tick": 50,
         "text": "I said to Rosa: “Put me down for a yes, Rosa, and I'll bring my late wife's baked beans, they hold up better than my knees. Saturday at six, I'll be there with a clean shirt.”",
@@ -1014,14 +1009,14 @@
         "tick": 146,
         "text": "I (mailbox kiosk): Look for the Architectural Review application and submit my golf cart lights and sound system request",
         "importance": 6
+      },
+      {
+        "tick": 147,
+        "text": "I (gary workbench): Sketch the cart light and speaker layout and list parts for the review application",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 56,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 57,
         "text": "I (donna club calendar): Check Saturday's court reservation and dinner timing against the calendar",
@@ -2016,14 +2011,14 @@
         "tick": 146,
         "text": "I (court reservation kiosk): Reserve a 2-hour doubles practice slot for Pruitt-Kowalski",
         "importance": 5
+      },
+      {
+        "tick": 147,
+        "text": "I (donna club calendar): Check the practice slot against my club commitments and Rosa's dinner Saturday",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 37,
-        "text": "Rosa just arrived.",
-        "importance": 5
-      },
       {
         "tick": 38,
         "text": "I said to Rosa: “Evening, Rosa. I'm here to look over Gary's cart, and the man himself isn't around. If he turns up, I'll tell him Saturday at six, no excuses accepted.”",
@@ -3018,14 +3013,14 @@
         "tick": 146,
         "text": "I (hal porch chair): Check the chair over and oil the squeaky hinges for Saturday",
         "importance": 3
+      },
+      {
+        "tick": 147,
+        "text": "I (hal binoculars): Scan Magnolia Loop for anything out of order this morning",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 38,
-        "text": "I said to Hal: “Hal, you seen Gary? I need him to know it's Saturday at six at my place. If you run into him before I do, tell him to bring his appetite and I'll handle the rest.”",
-        "importance": 5
-      },
       {
         "tick": 38,
         "text": "Hal said to Rosa: “Evening, Rosa. I'm here to look over Gary's cart, and the man himself isn't around. If he turns up, I'll tell him Saturday at six, no excuses accepted.”",
@@ -4020,6 +4015,11 @@
         "tick": 146,
         "text": "I (parade signup table): Look over the parade signup sheet to see who's signed up and if there's anyone new to invite Saturday",
         "importance": 3
+      },
+      {
+        "tick": 147,
+        "text": "I (rosa kitchen): Write out Saturday's menu and shopping list, building around Donna's lemon bars",
+        "importance": 6
       }
     ]
   },
@@ -4067,9 +4067,9 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "determined",
+    "donna": "energized",
     "hal": "content",
-    "rosa": "content"
+    "rosa": "focused"
   },
   "laws": [
     {
@@ -4185,10 +4185,16 @@
       "time": "Wednesday, October 21, 9:17 PM",
       "story": "At 9:17 on a humid Wednesday night in Sumter Oaks, Gary is at the mailbox kiosk on Magnolia Loop, determined to find the Architectural Review application for his golf cart lights and sound system. Across town, Donna is at the Rec Center reserving a two-hour doubles practice slot for the Pruitt-Kowalski pairing, while Hal sits content on his porch, oiling the squeaky hinges and checking over his chair before Saturday. Rosa, also content, is at the Town Square parade signup table looking over who has signed up and whether anyone new might be invited to join in.",
       "dialogue": []
+    },
+    {
+      "tick": 147,
+      "time": "Thursday, October 22, 7:17 AM",
+      "story": "At 7:17 on a breezy, clear Thursday morning in Sumter Oaks, Gary is at his workbench sketching the layout for his golf cart's lights and speaker and jotting down parts for the community review application. Donna, feeling energized, is checking her club calendar against a practice slot and Rosa's dinner on Saturday. Across the loop, Hal is content as he scans Magnolia Loop with his binoculars for anything out of place, while Rosa, focused, works in her kitchen on Saturday's menu and shopping list, building it around Donna's lemon bars.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 4.52601,
+    "total_usd": 4.55592,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4229,11 +4235,14 @@
       "2026-10-21": {
         "ticks": 15,
         "usd": 0.45951
+      },
+      "2026-10-22": {
+        "ticks": 1,
+        "usd": 0.02991
       }
     }
   },
   "recent_tick_costs": [
-    0.03115,
     0.03203,
     0.03039,
     0.03054,
@@ -4256,7 +4265,8 @@
     0.03074,
     0.0319,
     0.03053,
-    0.03159
+    0.03159,
+    0.02991
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4304,6 +4314,6 @@
     "test_mode": false,
     "level": "bright"
   },
-  "last_tick_date": "2026-10-21",
+  "last_tick_date": "2026-10-22",
   "calendar_fired": []
 }
