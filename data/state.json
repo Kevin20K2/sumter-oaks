@@ -1,32 +1,24 @@
 {
-  "tick": 157,
-  "time": "2026-10-22T16:17",
+  "tick": 158,
+  "time": "2026-10-22T17:17",
   "positions": {
-    "gary": "town_hall",
+    "gary": "town_square",
     "donna": "rec_center",
-    "hal": "hals_house",
+    "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Town Square."
+    ],
     "donna": [],
-    "hal": [],
-    "rosa": [
-      "You arrived at Rosa's House."
-    ]
+    "hal": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 62,
-        "text": "I (gary fridge): Make a quick lunch and check on the beans for Rosa's dinner",
-        "importance": 3
-      },
-      {
-        "tick": 63,
-        "text": "I (gary fridge): Take out Marge's beans and check they're ready for Rosa's dinner",
-        "importance": 4
-      },
       {
         "tick": 64,
         "text": "I (gary fridge): Check Marge's beans are sealed and ready to carry to Rosa's",
@@ -1016,14 +1008,19 @@
         "tick": 156,
         "text": "I (architectural review desk): File Architectural Review application for golf cart lights and sound system",
         "importance": 7
+      },
+      {
+        "tick": 157,
+        "text": "I headed to Town Square.",
+        "importance": 5
+      },
+      {
+        "tick": 157,
+        "text": "You arrived at Town Square.",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 70,
-        "text": "I (donna flamingo flock): Pull the extra flamingos so only three show from the street",
-        "importance": 3
-      },
       {
         "tick": 71,
         "text": "I (street bulletin board): Check the board for notices and pin a reminder about Saturday's pickleball and Rosa's dinner",
@@ -2018,19 +2015,14 @@
         "tick": 156,
         "text": "I (pickleball court 1): Warm up with serves and dinks while waiting for Gary",
         "importance": 4
+      },
+      {
+        "tick": 157,
+        "text": "I waited: puttering around Rec Center",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 49,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street against the three-ornament limit",
-        "importance": 4
-      },
-      {
-        "tick": 50,
-        "text": "I (street bulletin board): Read the postings for review notices, Gary's filing, and Rosa's dinner details",
-        "importance": 3
-      },
       {
         "tick": 51,
         "text": "I headed to Hal's House.",
@@ -3020,14 +3012,19 @@
         "tick": 156,
         "text": "I (hal porch chair): Give the chair a last sturdiness check, tighten the loose bolt, and set it by the door to carry over",
         "importance": 4
+      },
+      {
+        "tick": 157,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 157,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 48,
-        "text": "Hal said to Rosa: “Two folding chairs, Rosa. I've got a pair in the garage and I'll have them at your door before Saturday. Good luck running Gary down.”",
-        "importance": 6
-      },
       {
         "tick": 48,
         "text": "You arrived at Gary's House.",
@@ -4022,6 +4019,11 @@
         "tick": 156,
         "text": "You arrived at Rosa's House.",
         "importance": 5
+      },
+      {
+        "tick": 157,
+        "text": "I (rosa dining table): Lay out place settings and sketch the seating chart so Hal, Gary and Donna are mixed together",
+        "importance": 5
       }
     ]
   },
@@ -4068,7 +4070,7 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
+    "gary": "relieved",
     "donna": "eager",
     "hal": "content",
     "rosa": "content"
@@ -4176,10 +4178,16 @@
       "time": "Thursday, October 22, 4:17 PM",
       "story": "Gary sits at the architectural review desk in Town Hall, determined to file his application for golf cart lights and a sound system before the day is out. Over at the Rec Center, Donna is warming up on pickleball court one with serves and dinks while she waits for him to finish. Hal, content on his porch, tightens a loose bolt on his chair and sets it by the door to carry over, while Rosa rolls along Magnolia Loop toward her house on this breezy, clear October afternoon.",
       "dialogue": []
+    },
+    {
+      "tick": 157,
+      "time": "Thursday, October 22, 5:17 PM",
+      "story": "At 5:17 on a breezy, clear Thursday in Sumter Oaks, Gary is relieved to be heading into Town Square after a long day at Town Hall. Donna is puttering around the Rec Center, eager for whatever comes next, while Hal strolls down Magnolia Loop feeling content. Back at her dining table, Rosa is laying out place settings and sketching a seating chart so that Hal, Gary, and Donna all end up sitting together.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 4.83911,
+    "total_usd": 4.86807,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4222,13 +4230,12 @@
         "usd": 0.45951
       },
       "2026-10-22": {
-        "ticks": 10,
-        "usd": 0.3131
+        "ticks": 11,
+        "usd": 0.34206
       }
     }
   },
   "recent_tick_costs": [
-    0.03039,
     0.03004,
     0.029,
     0.03056,
@@ -4251,7 +4258,8 @@
     0.03401,
     0.03278,
     0.03057,
-    0.02959
+    0.02959,
+    0.02896
   ],
   "fund": {
     "gross_usd": 0.0,
