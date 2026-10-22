@@ -1,0 +1,118 @@
+{
+  "tick": 146,
+  "simulation_time": "Wednesday, October 21, 9:17 PM",
+  "weather": "Humid and hazy, 79°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "rec_center",
+    "hal": "hals_house",
+    "rosa": "town_square"
+  },
+  "story": "At 9:17 on a humid Wednesday night in Sumter Oaks, Gary is at the mailbox kiosk on Magnolia Loop, determined to find the Architectural Review application for his golf cart lights and sound system. Across town, Donna is at the Rec Center reserving a two-hour doubles practice slot for the Pruitt-Kowalski pairing, while Hal sits content on his porch, oiling the squeaky hinges and checking over his chair before Saturday. Rosa, also content, is at the Town Square parade signup table looking over who has signed up and whether anyone new might be invited to join in.",
+  "events": [
+    "Gary (mailbox kiosk): Look for the Architectural Review application and submit my golf cart lights and sound system request",
+    "Donna (court reservation kiosk): Reserve a 2-hour doubles practice slot for Pruitt-Kowalski",
+    "Hal (hal porch chair): Check the chair over and oil the squeaky hinges for Saturday",
+    "Rosa (parade signup table): Look over the parade signup sheet to see who's signed up and if there's anyone new to invite Saturday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 9:17 PM and I just got back to Magnolia Loop. Last tick I read the bulletin board for Architectural Review forms and deadlines, but nothing came of it in my recent memories. L-01 says exterior cart mods visible from the street need approval, and I've already signed up for the parade with lights and sound pending review. Quiet hours start at 10 PM, so I shouldn't be testing any sound system tonight anyway. The right move is to file for approval before I start wiring. The mailbox kiosk might be where forms get submitted, so I'll check it for the Architectural Review paperwork. Nobody's around to chat with, and I've got a real goal to push forward.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "mailbox_kiosk",
+          "content": "Look for the Architectural Review application and submit my golf cart lights and sound system request"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 9:17 PM and I'm alone at the Rec Center. I already checked the ladder board last tick, and Pruitt-Kowalski is signed up. Gary isn't here to practice with, and the courts are probably dark anyway. The kiosk is the useful thing: L-05 caps reservations at 2 hours per party, so I can lock in a doubles practice slot for Gary and me before Rosa's dinner Saturday. That moves my ladder climb forward instead of me standing around the board again.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Reserve a 2-hour doubles practice slot for Pruitt-Kowalski"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Street's quiet, nobody in sight, and it's past nine on a humid Wednesday. The cart and flamingo entries are crossed out, the notebook's been reviewed twice, and there's nothing left to file before Saturday. Last tick I settled on oiling the hinges on the good chair so it won't squeak into Rosa's dinner. The porch chair is right here, so I'll go ahead and tend to it. Small job, but I'd rather show up with my gear squared away.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_porch_chair",
+          "content": "Check the chair over and oil the squeaky hinges for Saturday"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's past nine at night in the Town Square and nobody is around. Tick 145 I already sketched Saturday's menu in my head at the ice cream stand, and Gary, Donna and Hal are all confirmed for six on Saturday. Donna has dessert covered with lemon bars. Nothing left to ask anyone tonight, so there's no point hunting for a neighbor to repeat myself to. The parade signup table is the one thing here I haven't touched. Rather than stand around, I'll glance at the table, see what's going on in the neighborhood, and maybe find something that fits into the dinner conversation. After that I should head home and get rest and prep time for the week.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "parade_signup_table",
+          "content": "Look over the parade signup sheet to see who's signed up and if there's anyone new to invite Saturday"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03159,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9534,
+        "output_tokens": 1238,
+        "usd": 0.03145
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 427,
+        "output_tokens": 203,
+        "usd": 0.00014
+      }
+    }
+  }
+}
