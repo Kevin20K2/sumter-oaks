@@ -1,0 +1,118 @@
+{
+  "tick": 159,
+  "simulation_time": "Thursday, October 22, 7:17 PM",
+  "weather": "Breezy and clear, 75°F",
+  "positions": {
+    "gary": "town_square",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a breezy, clear Thursday evening in Sumter Oaks, Gary and Donna are both heading determinedly toward Magnolia Loop, each with their own purpose in mind. Hal is out on the street counting the pink plastic flamingos in Donna's flock so his L-02 notice gets the numbers right. Back at her house, Rosa sits content in her kitchen, sketching out a Saturday menu built around Hal's cornbread and Donna's lemon bars, grocery list in hand.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (donna flamingo flock): Count the visible flamingos from the street to make sure my L-02 notice is accurate",
+    "Rosa (rosa kitchen): Plan the Saturday menu around Hal's cornbread and Donna's lemon bars, and make the grocery list"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've filed the Architectural Review application and signed up for the parade, so the paperwork side is done. Now I'm standing alone in the Town Square at 7:17 PM with nobody around. Approval won't come overnight, and I shouldn't rig anything visible from the street until it does (L-01). Quiet hours don't start until 10 PM, but there's no point in a sound test with no approval. Best use of the hour is to get back to Magnolia Loop and work on the cart's wiring plans, keeping everything inside the garage until the review clears. It's what makes me feel useful, and the evening is a bit lonely.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading home to Magnolia Loop to sketch out the cart's lighting and sound wiring in the garage while the review is pending."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already reserved the court and warmed up for a few ticks, and Gary still hasn't shown. Nobody else is around, and standing here repeating the same drills doesn't move my ladder goal forward. Rosa's dinner is Saturday and the sun is going down, so I shouldn't burn another hour waiting. Better to head back out to Magnolia Loop, track Gary down, and make sure we practice before our ladder match.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Gary hasn't shown up at the courts, so I'm heading out to find my doubles partner before the light goes."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop with the chair already set by the door back home, and my notice on the bulletin board was updated last tick to reflect Gary's filed paperwork. Nobody's in sight and it's past seven on a Thursday evening. The flamingo flock is still sitting there, so I'll give the count a proper look so my L-02 notice is accurate and fair. No sense carrying a stale tally into Saturday. Then I'll head home to get the cornbread sorted.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the visible flamingos from the street to make sure my L-02 notice is accurate"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Everything's confirmed: Hal, Gary and Donna are all coming Saturday at six, the seating chart is sketched, the note is pinned up, and my shift schedule is clear. The one open item is the menu. Donna's lemon bars cover dessert and Hal has the cornbread, so I should work out the main dish and sides in the kitchen. No one's nearby, so no need to pester anyone again about the invite.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Plan the Saturday menu around Hal's cornbread and Donna's lemon bars, and make the grocery list"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03014,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9319,
+        "output_tokens": 1137,
+        "usd": 0.03001
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 395,
+        "output_tokens": 172,
+        "usd": 0.00013
+      }
+    }
+  }
+}

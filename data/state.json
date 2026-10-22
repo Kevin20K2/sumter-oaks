@@ -1,35 +1,29 @@
 {
-  "tick": 159,
-  "time": "2026-10-22T18:17",
+  "tick": 160,
+  "time": "2026-10-22T19:17",
   "positions": {
-    "gary": "town_square",
-    "donna": "rec_center",
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
-    "donna": [],
-    "hal": [],
+    "gary": [
+      "You arrived at Magnolia Loop (the street).",
+      "Donna just arrived."
+    ],
+    "donna": [
+      "You arrived at Magnolia Loop (the street).",
+      "Gary just arrived."
+    ],
+    "hal": [
+      "Gary just arrived.",
+      "Donna just arrived."
+    ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 65,
-        "text": "I (gary workbench): Test the light strip and speaker wiring on the bench",
-        "importance": 3
-      },
-      {
-        "tick": 65,
-        "text": "Donna just arrived.",
-        "importance": 3
-      },
-      {
-        "tick": 66,
-        "text": "I said to Donna: “Well, look who's here. Come on in, Donna, mind the wires. I'm just testing the speaker for the cart, and I already filed the review form, so I'm staying legal.”",
-        "importance": 4
-      },
       {
         "tick": 66,
         "text": "Donna said to Gary: “Gary, I'm not here to nag, I'm here to coach. Wear flat-soled shoes tomorrow, and remember the kitchen line is the only rule that'll ever matter to you. I'll bring the spare paddle, you bring the confidence.”",
@@ -1014,24 +1008,24 @@
         "tick": 158,
         "text": "I (parade signup table): Sign up my golf cart for the Holiday Golf Cart Parade",
         "importance": 6
-      }
-    ],
-    "donna": [
+      },
       {
-        "tick": 72,
-        "text": "I (donna pickleball bag): Check the bag for the spare paddle, balls, and water before heading to the court",
+        "tick": 159,
+        "text": "I headed to Magnolia Loop (the street).",
         "importance": 5
       },
       {
-        "tick": 73,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 6
+        "tick": 159,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       },
       {
-        "tick": 73,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
+        "tick": 159,
+        "text": "Donna just arrived.",
+        "importance": 5
+      }
+    ],
+    "donna": [
       {
         "tick": 74,
         "text": "I (street bulletin board): Check the board for notices and update the pickleball and Rosa's dinner reminder",
@@ -2016,24 +2010,24 @@
         "tick": 158,
         "text": "I (pickleball court 1): Practice third-shot drops and dinks while I wait for Gary",
         "importance": 4
+      },
+      {
+        "tick": 159,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 159,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 159,
+        "text": "Gary just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 51,
-        "text": "You arrived at Hal's House.",
-        "importance": 4
-      },
-      {
-        "tick": 52,
-        "text": "I (hal violation notebook): Log today's flamingo count and note Gary's pending cart filing",
-        "importance": 4
-      },
-      {
-        "tick": 53,
-        "text": "I (hal porch chair): Settle in on the porch chair and watch the Loop as the evening winds down",
-        "importance": 3
-      },
       {
         "tick": 54,
         "text": "I (hal binoculars): Scan the Loop from the porch for stray carts, flamingos, and any grass parking",
@@ -3018,14 +3012,24 @@
         "tick": 158,
         "text": "I (street bulletin board): Review my posted notice and update it to reflect Gary's filed paperwork",
         "importance": 3
+      },
+      {
+        "tick": 159,
+        "text": "I (donna flamingo flock): Count the visible flamingos from the street to make sure my L-02 notice is accurate",
+        "importance": 3
+      },
+      {
+        "tick": 159,
+        "text": "Gary just arrived.",
+        "importance": 3
+      },
+      {
+        "tick": 159,
+        "text": "Donna just arrived.",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 49,
-        "text": "I said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”",
-        "importance": 7
-      },
       {
         "tick": 49,
         "text": "Gary said to Rosa: “Rosa, come on in! Donna's been bragging about your pie all week, so I hope you didn't come to take it back. Pull up a stool and tell me what you think of the cart.”",
@@ -4020,6 +4024,11 @@
         "tick": 158,
         "text": "I (rosa shift schedule): Check the schedule to confirm Saturday evening is clear of per-diem shifts",
         "importance": 5
+      },
+      {
+        "tick": 159,
+        "text": "I (rosa kitchen): Plan the Saturday menu around Hal's cornbread and Donna's lemon bars, and make the grocery list",
+        "importance": 4
       }
     ]
   },
@@ -4066,10 +4075,10 @@
     ]
   },
   "emotions": {
-    "gary": "optimistic",
-    "donna": "eager",
+    "gary": "determined",
+    "donna": "determined",
     "hal": "content",
-    "rosa": "optimistic"
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4186,10 +4195,16 @@
       "time": "Thursday, October 22, 6:17 PM",
       "story": "At 6:17 on a breezy, clear Thursday evening in Sumter Oaks, Gary is at the Town Square signing up his golf cart for the Holiday Golf Cart Parade, feeling upbeat about his chances. Donna is over at the Rec Center's pickleball court, drilling third-shot drops and dinks while she waits for him, clearly eager to get started. Hal is reading the notice he posted on the bulletin board along Magnolia Loop and planning to update it so it reflects Gary's paperwork, looking content as always. Meanwhile, Rosa is at home checking her schedule to make sure Saturday evening is free of per-diem shifts, her optimism holding steady.",
       "dialogue": []
+    },
+    {
+      "tick": 159,
+      "time": "Thursday, October 22, 7:17 PM",
+      "story": "At 7:17 on a breezy, clear Thursday evening in Sumter Oaks, Gary and Donna are both heading determinedly toward Magnolia Loop, each with their own purpose in mind. Hal is out on the street counting the pink plastic flamingos in Donna's flock so his L-02 notice gets the numbers right. Back at her house, Rosa sits content in her kitchen, sketching out a Saturday menu built around Hal's cornbread and Donna's lemon bars, grocery list in hand.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 4.8973,
+    "total_usd": 4.92744,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4232,13 +4247,12 @@
         "usd": 0.45951
       },
       "2026-10-22": {
-        "ticks": 12,
-        "usd": 0.37129
+        "ticks": 13,
+        "usd": 0.40143
       }
     }
   },
   "recent_tick_costs": [
-    0.029,
     0.03056,
     0.0301,
     0.03058,
@@ -4261,7 +4275,8 @@
     0.03057,
     0.02959,
     0.02896,
-    0.02923
+    0.02923,
+    0.03014
   ],
   "fund": {
     "gross_usd": 0.0,
