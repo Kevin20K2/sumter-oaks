@@ -1,6 +1,6 @@
 {
-  "tick": 158,
-  "time": "2026-10-22T17:17",
+  "tick": 159,
+  "time": "2026-10-22T18:17",
   "positions": {
     "gary": "town_square",
     "donna": "rec_center",
@@ -8,22 +8,13 @@
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "You arrived at Town Square."
-    ],
+    "gary": [],
     "donna": [],
-    "hal": [
-      "You arrived at Magnolia Loop (the street)."
-    ],
+    "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 64,
-        "text": "I (gary fridge): Check Marge's beans are sealed and ready to carry to Rosa's",
-        "importance": 4
-      },
       {
         "tick": 65,
         "text": "I (gary workbench): Test the light strip and speaker wiring on the bench",
@@ -1018,14 +1009,14 @@
         "tick": 157,
         "text": "You arrived at Town Square.",
         "importance": 5
+      },
+      {
+        "tick": 158,
+        "text": "I (parade signup table): Sign up my golf cart for the Holiday Golf Cart Parade",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 71,
-        "text": "I (street bulletin board): Check the board for notices and pin a reminder about Saturday's pickleball and Rosa's dinner",
-        "importance": 3
-      },
       {
         "tick": 72,
         "text": "I (donna pickleball bag): Check the bag for the spare paddle, balls, and water before heading to the court",
@@ -2020,14 +2011,14 @@
         "tick": 157,
         "text": "I waited: puttering around Rec Center",
         "importance": 4
+      },
+      {
+        "tick": 158,
+        "text": "I (pickleball court 1): Practice third-shot drops and dinks while I wait for Gary",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 51,
-        "text": "I headed to Hal's House.",
-        "importance": 4
-      },
       {
         "tick": 51,
         "text": "You arrived at Hal's House.",
@@ -3022,14 +3013,14 @@
         "tick": 157,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 158,
+        "text": "I (street bulletin board): Review my posted notice and update it to reflect Gary's filed paperwork",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 48,
-        "text": "You arrived at Gary's House.",
-        "importance": 6
-      },
       {
         "tick": 49,
         "text": "I said to Gary: “Gary, there you are. Saturday at six, my place, welcome dinner with Hal and Donna. I'm not taking maybe, so what can I put you down for, a yes or a dish?”",
@@ -4024,6 +4015,11 @@
         "tick": 157,
         "text": "I (rosa dining table): Lay out place settings and sketch the seating chart so Hal, Gary and Donna are mixed together",
         "importance": 5
+      },
+      {
+        "tick": 158,
+        "text": "I (rosa shift schedule): Check the schedule to confirm Saturday evening is clear of per-diem shifts",
+        "importance": 5
       }
     ]
   },
@@ -4070,10 +4066,10 @@
     ]
   },
   "emotions": {
-    "gary": "relieved",
+    "gary": "optimistic",
     "donna": "eager",
     "hal": "content",
-    "rosa": "content"
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -4184,10 +4180,16 @@
       "time": "Thursday, October 22, 5:17 PM",
       "story": "At 5:17 on a breezy, clear Thursday in Sumter Oaks, Gary is relieved to be heading into Town Square after a long day at Town Hall. Donna is puttering around the Rec Center, eager for whatever comes next, while Hal strolls down Magnolia Loop feeling content. Back at her dining table, Rosa is laying out place settings and sketching a seating chart so that Hal, Gary, and Donna all end up sitting together.",
       "dialogue": []
+    },
+    {
+      "tick": 158,
+      "time": "Thursday, October 22, 6:17 PM",
+      "story": "At 6:17 on a breezy, clear Thursday evening in Sumter Oaks, Gary is at the Town Square signing up his golf cart for the Holiday Golf Cart Parade, feeling upbeat about his chances. Donna is over at the Rec Center's pickleball court, drilling third-shot drops and dinks while she waits for him, clearly eager to get started. Hal is reading the notice he posted on the bulletin board along Magnolia Loop and planning to update it so it reflects Gary's paperwork, looking content as always. Meanwhile, Rosa is at home checking her schedule to make sure Saturday evening is free of per-diem shifts, her optimism holding steady.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 4.86807,
+    "total_usd": 4.8973,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4230,13 +4232,12 @@
         "usd": 0.45951
       },
       "2026-10-22": {
-        "ticks": 11,
-        "usd": 0.34206
+        "ticks": 12,
+        "usd": 0.37129
       }
     }
   },
   "recent_tick_costs": [
-    0.03004,
     0.029,
     0.03056,
     0.0301,
@@ -4259,7 +4260,8 @@
     0.03278,
     0.03057,
     0.02959,
-    0.02896
+    0.02896,
+    0.02923
   ],
   "fund": {
     "gross_usd": 0.0,

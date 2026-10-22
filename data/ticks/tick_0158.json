@@ -1,0 +1,118 @@
+{
+  "tick": 158,
+  "simulation_time": "Thursday, October 22, 6:17 PM",
+  "weather": "Breezy and clear, 76°F",
+  "positions": {
+    "gary": "town_square",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 6:17 on a breezy, clear Thursday evening in Sumter Oaks, Gary is at the Town Square signing up his golf cart for the Holiday Golf Cart Parade, feeling upbeat about his chances. Donna is over at the Rec Center's pickleball court, drilling third-shot drops and dinks while she waits for him, clearly eager to get started. Hal is reading the notice he posted on the bulletin board along Magnolia Loop and planning to update it so it reflects Gary's paperwork, looking content as always. Meanwhile, Rosa is at home checking her schedule to make sure Saturday evening is free of per-diem shifts, her optimism holding steady.",
+  "events": [
+    "Gary (parade signup table): Sign up my golf cart for the Holiday Golf Cart Parade",
+    "Donna (pickleball court 1): Practice third-shot drops and dinks while I wait for Gary",
+    "Hal (street bulletin board): Review my posted notice and update it to reflect Gary's filed paperwork",
+    "Rosa (rosa shift schedule): Check the schedule to confirm Saturday evening is clear of per-diem shifts"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Filed the Architectural Review application at Town Hall last tick, so L-01 is handled and Hal can drop the matter. Now I'm back in the Square at 6:17 PM with nobody around. The parade_signup_table is right here, and I haven't officially signed up my cart yet. That's the next concrete step toward the parade, and it keeps me useful and moving instead of puttering around lonely. Pickleball with Donna and dinner at Rosa's can wait until I've got this squared away.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "parade_signup_table",
+          "content": "Sign up my golf cart for the Holiday Golf Cart Parade"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already put our name on the ladder, checked the standings, and reserved a court for two hours, and I've warmed up with serves and dinks. Gary still isn't here and nobody else is around. No point re-doing the sign-up or the reservation. I'll use the time on the court practicing my third-shot drop so we're sharp when he walks in, and I'll be ready to hand him a paddle and get right to doubles.",
+      "emotional_state": "eager",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Practice third-shot drops and dinks while I wait for Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop at 6:17 PM with no one around. The chair is tightened and set by my door, and Saturday at Rosa's is the plan. Gary filed his paperwork, so a clean slate is in order. The street bulletin board still has my L-02 notice about Donna's flamingos posted, so I'll check that the notice is accurate and current, rather than carrying a grudge into Saturday. Orderly, fair, by the book.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Review my posted notice and update it to reflect Gary's filed paperwork"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm home at Rosa's House, it's 6:17 PM Thursday, and nobody is nearby. All three guests are confirmed, the note is pinned, and I already sketched the seating chart last tick. The remaining prep is the menu and my work schedule, and I want to make sure Saturday evening is truly clear of a per-diem shift. Checking the shift schedule is the useful next step before I start planning the cooking around Donna's lemon bars.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check the schedule to confirm Saturday evening is clear of per-diem shifts"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02923,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9242,
+        "output_tokens": 1059,
+        "usd": 0.02907
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 417,
+        "output_tokens": 230,
+        "usd": 0.00016
+      }
+    }
+  }
+}
