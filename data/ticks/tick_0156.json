@@ -1,0 +1,123 @@
+{
+  "tick": 156,
+  "simulation_time": "Thursday, October 22, 4:17 PM",
+  "weather": "Breezy and clear, 77°F",
+  "positions": {
+    "gary": "town_hall",
+    "donna": "rec_center",
+    "hal": "hals_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "Gary sits at the architectural review desk in Town Hall, determined to file his application for golf cart lights and a sound system before the day is out. Over at the Rec Center, Donna is warming up on pickleball court one with serves and dinks while she waits for him to finish. Hal, content on his porch, tightens a loose bolt on his chair and sets it by the door to carry over, while Rosa rolls along Magnolia Loop toward her house on this breezy, clear October afternoon.",
+  "events": [
+    "Gary (architectural review desk): File Architectural Review application for golf cart lights and sound system",
+    "Donna (pickleball court 1): Warm up with serves and dinks while waiting for Gary",
+    "Hal (hal porch chair): Give the chair a last sturdiness check, tighten the loose bolt, and set it by the door to carry over",
+    "Rosa headed to Rosa's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm finally at Town Hall with no one around to distract me. I told myself I'd file the Architectural Review paperwork today so Hal can drop the matter, and the architectural_review_desk is right here. L-01 says visible exterior cart mods need approval, and the parade is coming up, so I should get the lights and sound system request in now. I'll keep the sound system in mind for L-03 quiet hours, but first things first: file the paperwork.",
+      "emotional_state": "determined",
+      "importance_rating": 7,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "architectural_review_desk",
+          "content": "File Architectural Review application for golf cart lights and sound system"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at the rec center with no one around. I already signed us up on the ladder, checked our standing, and reserved a court for two hours at the kiosk. Gary isn't here yet, and he and I are practicing before our match. Nothing left to do on paper, so the best use of this hour is to get on court 1 and warm up with some solo drills so I'm sharp when he shows up. No point repeating the kiosk or the board.",
+      "emotional_state": "eager",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Warm up with serves and dinks while waiting for Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Nobody's around and it's 4:17. Rosa wants me at her place around five-thirty to help with the long table, and I promised the good chair. I already wiped it down last tick, so the job's mostly done. The violation notebook can wait until after Saturday, since Gary filed his paperwork and I gave my word on a clean slate. Best use of the hour is to make sure the chair is solid, since a supply sergeant doesn't hand over equipment he hasn't checked, then get on the road to Magnolia Loop with time to spare.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_porch_chair",
+          "content": "Give the chair a last sturdiness check, tighten the loose bolt, and set it by the door to carry over"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "All three guests are confirmed: Gary, Donna, and Hal. I already pinned the bulletin board note last tick, and nobody is nearby to talk to. Asking anyone again would just repeat myself. Saturday needs groceries and prep, and the table seating is settled in my head. The sensible thing is to head home, check what's in the kitchen, plan the menu around Donna's lemon bars and Hal's cornbread, and start getting ready. I've got per-diem shift energy to spare but a dinner to build.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading home to plan the menu and start prepping for Saturday's dinner."
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "gary",
+      "text": "Gary Kowalski: File Architectural Review application for golf cart lights and sound system"
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02959,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9464,
+        "output_tokens": 1054,
+        "usd": 0.02947
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 388,
+        "output_tokens": 157,
+        "usd": 0.00012
+      }
+    }
+  }
+}
