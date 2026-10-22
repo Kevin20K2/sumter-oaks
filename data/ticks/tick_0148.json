@@ -1,0 +1,118 @@
+{
+  "tick": 148,
+  "simulation_time": "Thursday, October 22, 8:17 AM",
+  "weather": "Breezy and clear, 73°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On a breezy, clear Thursday morning at 8:17, Gary sits at his workbench finishing the parts list and wiring notes for the Architectural Review application, his focus unbroken. Across the way, Donna is checking the club calendar to make sure her doubles practice slot won't clash with her clubs or with Rosa's Saturday dinner, while Rosa reviews her per-diem shifts to confirm Saturday evening is free before she heads out to shop. Hal, content as ever, is already rolling down Magnolia Loop, enjoying the morning air.",
+  "events": [
+    "Gary (gary workbench): Finish the parts list and wiring notes for the Architectural Review application",
+    "Donna (donna club calendar): Confirm the doubles practice slot doesn't clash with my clubs or Rosa's dinner Saturday",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa shift schedule): Check my per-diem shifts to make sure Saturday evening is clear before I shop"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm back home at my workbench with the sketch done at Tick 147. The Architectural Review application needs the parts list, so I should work on that now. Nobody's around, so no sense talking. L-01 means I can't install anything visible from the street until approved, so I'll keep it all on paper and the bench until the board signs off. L-03 is a reminder to keep the speaker tests quiet and daytime. Finish the list so the application is solid.",
+      "emotional_state": "focused",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Finish the parts list and wiring notes for the Architectural Review application"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm home at 8:17 AM with no one around. I reserved the 2-hour practice slot for Pruitt-Kowalski last tick and was already checking it against my club commitments and Rosa's Saturday dinner. Finishing that check on the calendar is the natural next step. Once I know the slot doesn't collide with anything, I can grab my pickleball bag and head to the Rec Center to meet Gary.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Confirm the doubles practice slot doesn't clash with my clubs or Rosa's dinner Saturday"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Chair's oiled, binoculars already swept the Loop this morning, and nothing's out of order. Donna cut her flamingos to three and Gary's cart has been dealt with, so the notebook has no new entries. I could keep sitting here out of habit, but the street is where the neighbors are, and Rosa's dinner is Saturday. Time to stretch my legs, walk Magnolia Loop, and see who's out and whether Gary's still dodging me about that walk.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Stretching my legs along the Loop, checking in on the neighbors before Saturday."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Menu and shopping list are written, built around Donna's lemon bars. It's 8:17 Thursday and I'm in my house with no one nearby. I've already invited Gary, Donna, and Hal, so there's no one left to ask. I should check my shift schedule to make sure no per-diem shift collides with Saturday at six before I buy anything. That's the one thing that could wreck the dinner.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts to make sure Saturday evening is clear before I shop"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03006,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9489,
+        "output_tokens": 1041,
+        "usd": 0.02939
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3360,
+        "output_tokens": 661,
+        "usd": 0.00067
+      }
+    }
+  }
+}

@@ -1,25 +1,22 @@
 {
-  "tick": 148,
-  "time": "2026-10-22T07:17",
+  "tick": 149,
+  "time": "2026-10-22T08:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
-    "hal": "hals_house",
+    "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
     "donna": [],
-    "hal": [],
+    "hal": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 50,
-        "text": "I said to Rosa: “Put me down for a yes, Rosa, and I'll bring my late wife's baked beans, they hold up better than my knees. Saturday at six, I'll be there with a clean shirt.”",
-        "importance": 6
-      },
       {
         "tick": 50,
         "text": "Donna said to Rosa: “Put Gary down for a dish, Rosa. He's the type who'll say yes and show up empty-handed unless you pin him to something. Rolls, I'd say, and I'll bring dessert so you're covered.”",
@@ -1014,14 +1011,14 @@
         "tick": 147,
         "text": "I (gary workbench): Sketch the cart light and speaker layout and list parts for the review application",
         "importance": 6
+      },
+      {
+        "tick": 148,
+        "text": "I (gary workbench): Finish the parts list and wiring notes for the Architectural Review application",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 57,
-        "text": "I (donna club calendar): Check Saturday's court reservation and dinner timing against the calendar",
-        "importance": 4
-      },
       {
         "tick": 58,
         "text": "I (donna pickleball bag): Pack the spare paddle and balls for Saturday's doubles",
@@ -2016,19 +2013,14 @@
         "tick": 147,
         "text": "I (donna club calendar): Check the practice slot against my club commitments and Rosa's dinner Saturday",
         "importance": 4
+      },
+      {
+        "tick": 148,
+        "text": "I (donna club calendar): Confirm the doubles practice slot doesn't clash with my clubs or Rosa's dinner Saturday",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 38,
-        "text": "I said to Rosa: “Evening, Rosa. I'm here to look over Gary's cart, and the man himself isn't around. If he turns up, I'll tell him Saturday at six, no excuses accepted.”",
-        "importance": 4
-      },
-      {
-        "tick": 38,
-        "text": "Rosa said to Hal: “Hal, you seen Gary? I need him to know it's Saturday at six at my place. If you run into him before I do, tell him to bring his appetite and I'll handle the rest.”",
-        "importance": 4
-      },
       {
         "tick": 38,
         "text": "Donna just arrived.",
@@ -3018,14 +3010,19 @@
         "tick": 147,
         "text": "I (hal binoculars): Scan Magnolia Loop for anything out of order this morning",
         "importance": 2
+      },
+      {
+        "tick": 148,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 148,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 38,
-        "text": "Hal said to Rosa: “Evening, Rosa. I'm here to look over Gary's cart, and the man himself isn't around. If he turns up, I'll tell him Saturday at six, no excuses accepted.”",
-        "importance": 5
-      },
       {
         "tick": 38,
         "text": "Donna just arrived.",
@@ -4020,6 +4017,11 @@
         "tick": 147,
         "text": "I (rosa kitchen): Write out Saturday's menu and shopping list, building around Donna's lemon bars",
         "importance": 6
+      },
+      {
+        "tick": 148,
+        "text": "I (rosa shift schedule): Check my per-diem shifts to make sure Saturday evening is clear before I shop",
+        "importance": 5
       }
     ]
   },
@@ -4066,8 +4068,8 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "energized",
+    "gary": "focused",
+    "donna": "optimistic",
     "hal": "content",
     "rosa": "focused"
   },
@@ -4158,43 +4160,9 @@
       "text": "Gary Kowalski: Check status of my cart modification request and ask about approval steps"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 143,
-      "time": "Wednesday, October 21, 6:17 PM",
-      "story": "At 6:17 on a humid, hazy Wednesday evening in Sumter Oaks, Gary is hopefully signing golf carts up for the Holiday Golf Cart Parade at the Town Square table, with his lights and sound still pending review. Donna, cheerful as ever, is out on Magnolia Loop claiming dessert duty for Saturday with her lemon bars and reassuring Rosa that the flamingo count is down to three. Hal is content on his porch, letting the street be and looking forward to the weekend at Rosa's. Rosa, focused, agrees with Donna about the flamingos and heads off to shop, planning her menu around either lemon bars or a pie.",
-      "dialogue": [
-        "Donna said to Rosa: “Dessert's mine, Rosa. I'll bring my lemon bars, so you plan your menu around those. And the flamingos are down to three, I checked.”",
-        "Rosa said to Donna: “Good call on the flamingos, Donna, that's three and you're legal. I'm off to shop for Saturday, so text me if you decide on a dessert, otherwise I'll plan around a pie.”"
-      ]
-    },
-    {
-      "tick": 144,
-      "time": "Wednesday, October 21, 7:17 PM",
-      "story": "As the hazy October evening settles over Sumter Oaks at 7:17, Gary is making his way to Magnolia Loop with a determined stride, while Donna, upbeat as ever, heads toward the Rec Center. Hal stays put on his porch, content in his chair and keeping a casual eye on the street as he weighs which chair to haul over to Rosa's on Saturday. Rosa, equally determined, is off to Town Square, the two of them crossing paths in the golden gloom of the community's quiet evening.",
-      "dialogue": []
-    },
-    {
-      "tick": 145,
-      "time": "Wednesday, October 21, 8:17 PM",
-      "story": "On Magnolia Loop, Gary is reading the street bulletin board for Architectural Review forms and cart modification deadlines, while Donna checks the doubles ladder standings at the Rec Center to see where Pruitt-Kowalski stands. Over at his porch in Hal's House, Hal sits content in the hazy October evening, planning to oil the hinges on his good chair before Saturday's dinner at Rosa's. Rosa, at the Town Square ice cream stand, is taking a quiet moment with a small cone while she sketches out her menu for the weekend.",
-      "dialogue": []
-    },
-    {
-      "tick": 146,
-      "time": "Wednesday, October 21, 9:17 PM",
-      "story": "At 9:17 on a humid Wednesday night in Sumter Oaks, Gary is at the mailbox kiosk on Magnolia Loop, determined to find the Architectural Review application for his golf cart lights and sound system. Across town, Donna is at the Rec Center reserving a two-hour doubles practice slot for the Pruitt-Kowalski pairing, while Hal sits content on his porch, oiling the squeaky hinges and checking over his chair before Saturday. Rosa, also content, is at the Town Square parade signup table looking over who has signed up and whether anyone new might be invited to join in.",
-      "dialogue": []
-    },
-    {
-      "tick": 147,
-      "time": "Thursday, October 22, 7:17 AM",
-      "story": "At 7:17 on a breezy, clear Thursday morning in Sumter Oaks, Gary is at his workbench sketching the layout for his golf cart's lights and speaker and jotting down parts for the community review application. Donna, feeling energized, is checking her club calendar against a practice slot and Rosa's dinner on Saturday. Across the loop, Hal is content as he scans Magnolia Loop with his binoculars for anything out of place, while Rosa, focused, works in her kitchen on Saturday's menu and shopping list, building it around Donna's lemon bars.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 4.55592,
+    "total_usd": 4.58598,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4237,13 +4205,12 @@
         "usd": 0.45951
       },
       "2026-10-22": {
-        "ticks": 1,
-        "usd": 0.02991
+        "ticks": 2,
+        "usd": 0.05997
       }
     }
   },
   "recent_tick_costs": [
-    0.03203,
     0.03039,
     0.03054,
     0.03094,
@@ -4266,7 +4233,8 @@
     0.0319,
     0.03053,
     0.03159,
-    0.02991
+    0.02991,
+    0.03006
   ],
   "fund": {
     "gross_usd": 0.0,
