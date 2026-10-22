@@ -1,0 +1,118 @@
+{
+  "tick": 150,
+  "simulation_time": "Thursday, October 22, 10:17 AM",
+  "weather": "Breezy and clear, 74°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On a breezy, clear Thursday morning at 10:17, Gary and Donna are both heading out to Magnolia Loop, Gary with determined steps and Donna eager to get there. Rosa, feeling energized, is joining them on the street while Hal keeps a watchful eye on things, counting the flamingos in Donna's flock to make sure they meet the L-02 rule.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street to confirm L-02 compliance",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've finished the sketches, parts list, and test-fit, and the street bulletin board and mailbox kiosk are on magnolia_loop. L-01 says exterior cart mods visible from the street need Architectural Review approval, so I shouldn't mount anything permanent yet. Nobody's around and I'm at my house. The next step is to get out to the kiosk and actually submit the application with my parts list and wiring notes before I do any real installing. Keeps me busy and useful too, which beats rattling around the house alone.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to the kiosk to submit my Architectural Review application for the cart lights and sound system before I mount anything."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've got the doubles slot reserved, checked it against my calendar, and packed the bag with paddles, balls, and water. Everything is ready, and nobody is around to talk to. The next step is to get to the courts and meet Gary there. Magnolia Loop is the only connection from my house, so I'll head out that way and keep moving toward practice instead of fiddling with more admin.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Bag is packed and the slot is booked, so I'm heading out toward the courts to meet Gary for doubles practice."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop with nobody in sight, which suits a man who likes to do his inspections without an audience. My own memory says I counted the flamingos at tick 149 and Donna told me she trimmed to three. Rather than take her word, I should interact with the flamingo flock and verify the count for L-02. If it's three, I'm square with the ordinance and can put the notice away. And I'm still waiting on Gary's cart; that's a separate matter, but the flamingos are right here.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street to confirm L-02 compliance"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've already written the menu, checked my shifts, and planned the seating. Gary, Donna, and Hal are all confirmed for Saturday at six. The planning is done, and sitting around re-checking it won't put food on the table. The next real step is shopping, so I should leave the house and get moving toward the groceries. Magnolia Loop is the only way out of the house, so I'll head there.",
+      "emotional_state": "energized",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to pick up groceries for Saturday's dinner now that the menu and seating are settled."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02991,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9544,
+        "output_tokens": 1072,
+        "usd": 0.02981
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 364,
+        "output_tokens": 125,
+        "usd": 0.0001
+      }
+    }
+  }
+}
