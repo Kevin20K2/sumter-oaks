@@ -1,6 +1,6 @@
 {
-  "tick": 149,
-  "time": "2026-10-22T08:17",
+  "tick": 150,
+  "time": "2026-10-22T09:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -10,18 +10,11 @@
   "perceptions": {
     "gary": [],
     "donna": [],
-    "hal": [
-      "You arrived at Magnolia Loop (the street)."
-    ],
+    "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 50,
-        "text": "Donna said to Rosa: “Put Gary down for a dish, Rosa. He's the type who'll say yes and show up empty-handed unless you pin him to something. Rolls, I'd say, and I'll bring dessert so you're covered.”",
-        "importance": 6
-      },
       {
         "tick": 50,
         "text": "Rosa said to Gary: “Good, that's all I needed to hear, Gary. Saturday at six, and bring your appetite. Any allergies I should know about before I start cooking? And the cart looks fine from here, just don't let it park on my lawn.”",
@@ -1016,14 +1009,14 @@
         "tick": 148,
         "text": "I (gary workbench): Finish the parts list and wiring notes for the Architectural Review application",
         "importance": 6
+      },
+      {
+        "tick": 149,
+        "text": "I (gary golf cart): Test-fit the light strips and speaker brackets without mounting anything permanent",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 58,
-        "text": "I (donna pickleball bag): Pack the spare paddle and balls for Saturday's doubles",
-        "importance": 4
-      },
       {
         "tick": 59,
         "text": "I (donna phone): Text Rosa to confirm Saturday dinner time and lock in the two-hour court slot",
@@ -2018,14 +2011,14 @@
         "tick": 148,
         "text": "I (donna club calendar): Confirm the doubles practice slot doesn't clash with my clubs or Rosa's dinner Saturday",
         "importance": 4
+      },
+      {
+        "tick": 149,
+        "text": "I (donna pickleball bag): Pack paddles, balls, and water for doubles practice with Gary",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 38,
-        "text": "Donna just arrived.",
-        "importance": 4
-      },
       {
         "tick": 39,
         "text": "I (gary golf cart): Walk around the cart and note which modifications are visible from the street for L-01",
@@ -3020,14 +3013,14 @@
         "tick": 148,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 3
+      },
+      {
+        "tick": 149,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street to confirm there are only three",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 38,
-        "text": "Donna just arrived.",
-        "importance": 5
-      },
       {
         "tick": 39,
         "text": "I said to Donna: “Donna, good timing. Dinner's Saturday at six at my place, and I'm still hunting for Gary to tell him. You seen him anywhere?”",
@@ -4022,6 +4015,11 @@
         "tick": 148,
         "text": "I (rosa shift schedule): Check my per-diem shifts to make sure Saturday evening is clear before I shop",
         "importance": 5
+      },
+      {
+        "tick": 149,
+        "text": "I (rosa dining table): Check table seating for four and plan place settings so Hal, Gary and Donna mix",
+        "importance": 5
       }
     ]
   },
@@ -4068,10 +4066,10 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
-    "donna": "optimistic",
-    "hal": "content",
-    "rosa": "focused"
+    "gary": "determined",
+    "donna": "determined",
+    "hal": "watchful",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4160,9 +4158,16 @@
       "text": "Gary Kowalski: Check status of my cart modification request and ask about approval steps"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 149,
+      "time": "Thursday, October 22, 9:17 AM",
+      "story": "At 9:17 on this breezy, clear Thursday in Sumter Oaks, Gary is test-fitting light strips and speaker brackets at his house, careful not to mount anything permanent just yet. Across town, Donna is packing paddles, balls, and water for doubles practice with Gary, both of them determined to be ready. Hal, watchful as ever, is counting the flamingos along Magnolia Loop to make sure there are only three, while Rosa, content at her house, is arranging the dining table for four so Hal, Gary, and Donna can mingle over place settings.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 4.58598,
+    "total_usd": 4.61649,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4205,13 +4210,12 @@
         "usd": 0.45951
       },
       "2026-10-22": {
-        "ticks": 2,
-        "usd": 0.05997
+        "ticks": 3,
+        "usd": 0.09048
       }
     }
   },
   "recent_tick_costs": [
-    0.03039,
     0.03054,
     0.03094,
     0.03289,
@@ -4234,7 +4238,8 @@
     0.03053,
     0.03159,
     0.02991,
-    0.03006
+    0.03006,
+    0.03051
   ],
   "fund": {
     "gross_usd": 0.0,
