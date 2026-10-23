@@ -1,0 +1,118 @@
+{
+  "tick": 162,
+  "simulation_time": "Friday, October 23, 7:17 AM",
+  "weather": "Humid and hazy, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on this humid, hazy Friday morning in Sumter Oaks, Gary is at his workbench at home, wiring a cart light harness and bench-testing a speaker with the door closed to keep things quiet. Across the street, Donna is energized, scanning the club calendar for an open court slot so she can practice with Gary later. Hal sits in his kitchen with his violation notebook, logging yesterday's flamingo count against the L-02 limit and noting that Gary's application has been filed, while Rosa checks the pork marinating in her kitchen and finalizes the grocery list for sides, drinks, and a backup dessert.",
+  "events": [
+    "Gary (gary workbench): Wire up the cart light harness and bench-test the speaker, keeping it indoors and quiet",
+    "Donna (donna club calendar): Check today's club schedule and find a court slot for practice with Gary",
+    "Hal (hal violation notebook): Log yesterday's flamingo count against the L-02 limit, and note Gary's filed application",
+    "Rosa (rosa kitchen): Check the marinating pork and finalize the Friday grocery list: sides, drinks, backup dessert"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's early morning and I'm home alone with the cart sitting right there. I filed the Architectural Review application at tick 156, so the exterior lights and sound system are in the pipeline, but I shouldn't mount anything visible from the street until approval comes through (L-01). I can still do the bench work: wire up the lighting harness and test the speaker setup in the garage. Holiday lighting isn't legal until Thanksgiving (L-04), and I'll keep the sound off since it's past 7 AM but I don't want to blare it at the neighbors. Time to get my hands dirty and feel useful.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Wire up the cart light harness and bench-test the speaker, keeping it indoors and quiet"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's early Friday morning and I'm at home, no one around. Last tick I headed to the Rec Center with Gary, but the world says I'm at my house now, so a new day has started. The doubles ladder match is coming up and I want Gary and me ready. Before I head out, I should check my club calendar so I know what's on my plate and when to book a court, keeping in mind the 2-hour reservation limit. Then I can grab my pickleball bag and go.",
+      "emotional_state": "energized",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check today's club schedule and find a court slot for practice with Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's 7:17 on a humid Friday morning and I'm home alone. Gary filed his paperwork and gave his word to hold off on the wiring, so the cart business is settled for now. Donna's flamingos are the one loose end, and I counted them last night without writing anything down. The notebook is right here on the porch. Better to log the date, the count, and the L-02 limit properly before I do anything else. Order starts with good records. Then maybe I'll sit and watch the street a while.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Log yesterday's flamingo count against the L-02 limit, and note Gary's filed application"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Friday morning, the day before the dinner. I already marinated the pork last night and laid out the table, cards and all. Confirming my Saturday schedule was done at tick 158, but I haven't actually finished the grocery list for the Friday errands, and I only sorted it, not shopped. Nobody's nearby, so no one to talk to. The most useful thing right now is to be at the kitchen checking the menu against what's still missing so my errands run smoothly. Hal's cornbread and Donna's lemon bars are covered, so I just need pork sides, drinks, and a backup dessert in case Gary shows up empty-handed.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check the marinating pork and finalize the Friday grocery list: sides, drinks, backup dessert"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03148,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9724,
+        "output_tokens": 1188,
+        "usd": 0.03133
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 429,
+        "output_tokens": 210,
+        "usd": 0.00015
+      }
+    }
+  }
+}
