@@ -1,0 +1,118 @@
+{
+  "tick": 167,
+  "simulation_time": "Friday, October 23, 12:17 PM",
+  "weather": "Humid and hazy, 83°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 12:17 on a humid, hazy Friday in Sumter Oaks, Gary is content at home, quietly checking the speaker and wiring on his golf cart with the lights off. Donna, feeling determined, has set off down Magnolia Loop, where Hal is dutifully counting the flamingos from the street to record an exact tally for the review committee. Back at her house, Rosa is hopeful as she goes through the pantry and fridge, writing a shopping list and cooking schedule for Saturday's dinner.",
+  "events": [
+    "Gary (gary golf cart): Run a quiet low-volume speaker check and verify the secured wiring, lights left off",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and record the exact tally for the review committee",
+    "Rosa (rosa kitchen): Check the pantry and fridge, write the shopping list and cooking schedule for Saturday's dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "The wiring is zip-tied and taped neat, the light harness and speaker are mounted, and the Architectural Review application is already filed. The lights stay off until Thanksgiving (L-04), so there's no sense switching them on now. What's left is a quiet, low-power check of the whole setup. The sound system gets tested at low volume, midday, well outside quiet hours (L-03). I'm alone and there's no one to talk to, so I'll keep tinkering. A proper final check before I call the rig done feels good and useful.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Run a quiet low-volume speaker check and verify the secured wiring, lights left off"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I texted Gary the court time and warmed up, but he hasn't shown, and nobody's in sight at my house. Texting him again would be nagging, and I already told him the plan. The practice slot is penciled in and the rec center is where the court is, so the useful thing is to head out and get there. If Gary's coming, he'll find me; if not, I can still get a little rally in and keep us ladder-ready. I'll leave from home via Magnolia Loop with my bag.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with my pickleball bag toward the rec center for our practice slot; Gary can catch up."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop with no one around. I already logged this morning's flamingo count and posted the bulletin notice earlier. My memories say Gary filed his paperwork, so the cart issue is squared away, and I've got Saturday at Rosa's settled. Still, the flamingo count against L-02 is unresolved. I'll take one more official tally from the street, since the committee wants a figure and I won't report a number I haven't verified. By-the-book, no guessing.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and record the exact tally for the review committee"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm home at the dining table with place cards already set out and chairs counted for six. The note is pinned, Hal, Gary, and Donna are all committed, and nobody is nearby to talk to. With dinner Saturday at six and today being Friday, the useful move is to work on the actual prep. I haven't touched the kitchen yet, so I'll check my pantry and plan the shopping list and cooking schedule around Hal's cornbread and Donna's lemon bars. My shift schedule is there too, so I'll make sure nothing collides with the dinner.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check the pantry and fridge, write the shopping list and cooking schedule for Saturday's dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0304,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9405,
+        "output_tokens": 1146,
+        "usd": 0.03027
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 414,
+        "output_tokens": 170,
+        "usd": 0.00013
+      }
+    }
+  }
+}

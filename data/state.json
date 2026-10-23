@@ -1,25 +1,24 @@
 {
-  "tick": 167,
-  "time": "2026-10-23T11:17",
+  "tick": 168,
+  "time": "2026-10-23T12:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
-    "donna": [],
-    "hal": [],
+    "donna": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
+    "hal": [
+      "Donna just arrived."
+    ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 73,
-        "text": "You arrived at Rec Center.",
-        "importance": 5
-      },
       {
         "tick": 74,
         "text": "I (court reservation kiosk): Check the court reservations to see if Donna booked a slot",
@@ -1014,19 +1013,14 @@
         "tick": 166,
         "text": "I (gary golf cart): Zip-tie and tape the wiring runs neat and secure, lights off",
         "importance": 4
+      },
+      {
+        "tick": 167,
+        "text": "I (gary golf cart): Run a quiet low-volume speaker check and verify the secured wiring, lights left off",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 81,
-        "text": "I (ladder standings board): Check the ladder standings to see where a Pruitt-Kowalski team would start",
-        "importance": 6
-      },
-      {
-        "tick": 81,
-        "text": "Gary said to Donna: “Knees soft, got it. Hey, that last one actually went where I aimed it. Keep 'em coming, I think I'm starting to get the hang of this.”",
-        "importance": 6
-      },
       {
         "tick": 82,
         "text": "I said to Gary: “That's the spirit, Gary! You've got a natural touch, and I'm not just saying that. Be my doubles partner on the ladder, we'd climb fast, and I'll handle all the signing up.”",
@@ -2016,19 +2010,19 @@
         "tick": 166,
         "text": "I waited: Stretching out and warming up with my paddle, watching for Gary to come around the corner for our practice.",
         "importance": 4
+      },
+      {
+        "tick": 167,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 167,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 63,
-        "text": "Donna said to Hal: “Hal, good timing. Rosa's hosting dinner Saturday evening and Gary's coming, so save the night. I'm bringing cobbler, and you're welcome to bring whatever you like to go with it.”",
-        "importance": 5
-      },
-      {
-        "tick": 64,
-        "text": "I said to Donna: “Saturday's noted, Donna. I'll bring a pecan pie and a couple of folding chairs. We'll sort the flamingos some other day.”",
-        "importance": 4
-      },
       {
         "tick": 64,
         "text": "Donna said to Hal: “Oh, Hal, you caught me. I'll pull all but three before Saturday, so you can enjoy that pie in peace. The flamingos can sit out the dinner.”",
@@ -3018,14 +3012,19 @@
         "tick": 166,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the tally for the review committee",
         "importance": 4
+      },
+      {
+        "tick": 167,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and record the exact tally for the review committee",
+        "importance": 4
+      },
+      {
+        "tick": 167,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 52,
-        "text": "Gary (gary workbench): Lay out the light strings and sound system parts and start testing the wiring",
-        "importance": 4
-      },
       {
         "tick": 52,
         "text": "Donna said to Rosa: “Rosa, since Gary's got the beans, let me bring dessert Saturday. I make a peach cobbler that never lasts past the first pass, and I'll bring an extra folding chair just in case.”",
@@ -4020,6 +4019,11 @@
         "tick": 166,
         "text": "I (rosa dining table): Set out place cards and count chairs for six, planning the menu around Hal's cornbread and Donna's lemon bars",
         "importance": 6
+      },
+      {
+        "tick": 167,
+        "text": "I (rosa kitchen): Check the pantry and fridge, write the shopping list and cooking schedule for Saturday's dinner",
+        "importance": 6
       }
     ]
   },
@@ -4067,9 +4071,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "eager",
+    "donna": "determined",
     "hal": "dutiful",
-    "rosa": "optimistic"
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4162,9 +4166,16 @@
       "text": "Gary Kowalski: File Architectural Review application for golf cart lights and sound system"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 167,
+      "time": "Friday, October 23, 12:17 PM",
+      "story": "At 12:17 on a humid, hazy Friday in Sumter Oaks, Gary is content at home, quietly checking the speaker and wiring on his golf cart with the lights off. Donna, feeling determined, has set off down Magnolia Loop, where Hal is dutifully counting the flamingos from the street to record an exact tally for the review committee. Back at her house, Rosa is hopeful as she goes through the pantry and fridge, writing a shopping list and cooking schedule for Saturday's dinner.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 5.1472,
+    "total_usd": 5.1776,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4211,13 +4222,12 @@
         "usd": 0.46662
       },
       "2026-10-23": {
-        "ticks": 5,
-        "usd": 0.15457
+        "ticks": 6,
+        "usd": 0.18497
       }
     }
   },
   "recent_tick_costs": [
-    0.03074,
     0.0319,
     0.03053,
     0.03159,
@@ -4240,7 +4250,8 @@
     0.03125,
     0.03114,
     0.02991,
-    0.03079
+    0.03079,
+    0.0304
   ],
   "fund": {
     "gross_usd": 0.0,
