@@ -1,0 +1,116 @@
+{
+  "tick": 174,
+  "simulation_time": "Friday, October 23, 7:17 PM",
+  "weather": "Humid and hazy, 82°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "garys_house"
+  },
+  "story": "At 7:17 on a humid Friday evening in Sumter Oaks, Gary has agreed to bring two bags of ice and his good folding chairs to Rosa's gathering on Saturday at five, though Rosa is still asking whether the review board has signed off on the bracket he filed. Donna is heading over to Gary's House on Magnolia Loop, while Hal has gone home to his own place down the same street, content as ever. Rosa remains warm but watchful, keeping one eye on the paperwork and the other on the seating arrangements for Saturday.",
+  "events": [
+    "Donna headed to Gary's House.",
+    "Hal headed to Hal's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa just invited me to Saturday dinner at five and told me to bring ice and folding chairs. I haven't actually answered her yet, so the polite thing is to say yes and confirm what I'm bringing. Paperwork is filed, bracket is fitted, lights are off, so I'm squared away. Feels good to be counted on, and a bag of ice and chairs is something I can definitely handle. After this I'll get back to the cart.",
+      "emotional_state": "warm",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Count me in, Rosa. I'll bring two bags of ice and my good folding chairs, and I'll be there at five sharp. Thanks for saving me a seat."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal and I just wrapped up the flamingo business and he's agreed to bring cornbread. No need to keep chatting him up. It's a humid Friday evening, and the ladder match with Gary is coming. I should go find Gary at his house and set up a quick practice for tomorrow, working on third-shot drops. Hal is squared away, so moving on is the natural next step.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading over to Gary's to lock in our practice plan for the ladder match."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna already thanked me and sent me off for the evening. The notice is down, the flamingos are behind the hedge, Gary's paperwork is filed, and Saturday dinner at Rosa's is set. My business here is done and there's nothing left to say that wouldn't be repeating myself. Best thing is to head home, get the cornbread ready, and set the good chair by the door.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "hals_house",
+          "content": "Heading home to get the cornbread ready for tomorrow and call it a night."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I already invited Gary last tick and told him what to bring, and he's answered with a friendly greeting but not a clear yes yet. I shouldn't repeat the invitation. But a speaker bracket on the parade cart is worth a closer look: L-01 says exterior modifications visible from the street need Architectural Review approval, and he says the paperwork's already filed. I don't want a violation notice souring Saturday's dinner, so I'll gently ask whether approval actually came through and nail down his yes in the same breath.",
+      "emotional_state": "warm, watchful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Filed is good, Gary, but has the review board actually signed off on that bracket? I'd hate for Hal to wave a notice at you over my dinner table. And I'm counting you in for Saturday at five, yes?"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0313,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10196,
+        "output_tokens": 1077,
+        "usd": 0.03116
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 453,
+        "output_tokens": 182,
+        "usd": 0.00014
+      }
+    }
+  }
+}

@@ -1,43 +1,32 @@
 {
-  "tick": 174,
-  "time": "2026-10-23T18:17",
+  "tick": 175,
+  "time": "2026-10-23T19:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
-    "hal": "magnolia_loop",
+    "donna": "garys_house",
+    "hal": "hals_house",
     "rosa": "garys_house"
   },
   "perceptions": {
     "gary": [
-      "Rosa said to Gary: “Gary, Hal's bringing cornbread and Donna's got the cobbler, so you're my last seat at the table. Saturday at five, and if you bring a bag of ice and your folding chairs, you're all set.”"
+      "Rosa said to Gary: “Filed is good, Gary, but has the review board actually signed off on that bracket? I'd hate for Hal to wave a notice at you over my dinner table. And I'm counting you in for Saturday at five, yes?”",
+      "Donna just arrived."
     ],
     "donna": [
-      "Hal said to Donna: “Noted, Donna. Three showing from the street is what the code says, and I appreciate you seeing to it. I'll bring the cornbread tomorrow, and you save me a scoop of that ice cream.”"
+      "Hal headed to Hal's House.",
+      "You arrived at Gary's House."
     ],
     "hal": [
-      "Donna said to Hal: “Thanks for clearing that notice off the board, Hal, I appreciate it. Now go enjoy your evening, and I'll see you Saturday with the ice cream!”"
+      "Donna headed to Gary's House.",
+      "You arrived at Hal's House."
     ],
     "rosa": [
-      "Gary said to Rosa: “Well, evening, Rosa! Come on in. I'm just fitting a speaker bracket on the parade cart, lights off, paperwork's already filed. What can I do for you?”"
+      "Gary said to Rosa: “Count me in, Rosa. I'll bring two bags of ice and my good folding chairs, and I'll be there at five sharp. Thanks for saving me a seat.”",
+      "Donna just arrived."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 79,
-        "text": "I (pickleball court 1): Stand behind the line, knees soft, and start rallying easy ones with Donna",
-        "importance": 4
-      },
-      {
-        "tick": 79,
-        "text": "Donna (pickleball court 1): Take my spot opposite Gary and feed him easy underhand serves to rally",
-        "importance": 4
-      },
-      {
-        "tick": 80,
-        "text": "I (pickleball court 1): Rally with Donna, knees soft, returning her easy serves",
-        "importance": 4
-      },
       {
         "tick": 80,
         "text": "Donna (pickleball court 1): Feed Gary easy underhand serves and rally with him, coaching his footwork between points",
@@ -1022,24 +1011,24 @@
         "tick": 173,
         "text": "Rosa said to Gary: “Gary, Hal's bringing cornbread and Donna's got the cobbler, so you're my last seat at the table. Saturday at five, and if you bring a bag of ice and your folding chairs, you're all set.”",
         "importance": 3
+      },
+      {
+        "tick": 174,
+        "text": "I said to Rosa: “Count me in, Rosa. I'll bring two bags of ice and my good folding chairs, and I'll be there at five sharp. Thanks for saving me a seat.”",
+        "importance": 5
+      },
+      {
+        "tick": 174,
+        "text": "Rosa said to Gary: “Filed is good, Gary, but has the review board actually signed off on that bracket? I'd hate for Hal to wave a notice at you over my dinner table. And I'm counting you in for Saturday at five, yes?”",
+        "importance": 5
+      },
+      {
+        "tick": 174,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 89,
-        "text": "I headed to Gary's House.",
-        "importance": 5
-      },
-      {
-        "tick": 89,
-        "text": "You arrived at Gary's House.",
-        "importance": 5
-      },
-      {
-        "tick": 90,
-        "text": "I said to Gary: “Morning, partner! I've got the bag packed with your spare paddle and fresh balls. Grab your water and let's get to court one before the Sunday crowd takes it.”",
-        "importance": 6
-      },
       {
         "tick": 90,
         "text": "Gary said to Donna: “Morning, Donna! Just got the cart lights mounted and the speaker tested, so I'm all yours. Let me grab my paddle and we'll get some more of those easy serves in before Rosa's.”",
@@ -2024,24 +2013,24 @@
         "tick": 173,
         "text": "Hal said to Donna: “Noted, Donna. Three showing from the street is what the code says, and I appreciate you seeing to it. I'll bring the cornbread tomorrow, and you save me a scoop of that ice cream.”",
         "importance": 4
+      },
+      {
+        "tick": 174,
+        "text": "I headed to Gary's House.",
+        "importance": 4
+      },
+      {
+        "tick": 174,
+        "text": "Hal headed to Hal's House.",
+        "importance": 4
+      },
+      {
+        "tick": 174,
+        "text": "You arrived at Gary's House.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 77,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 77,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 78,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
-        "importance": 5
-      },
       {
         "tick": 79,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street to see whether Donna has thinned them to three or fewer",
@@ -3026,24 +3015,24 @@
         "tick": 173,
         "text": "Donna said to Hal: “Thanks for clearing that notice off the board, Hal, I appreciate it. Now go enjoy your evening, and I'll see you Saturday with the ice cream!”",
         "importance": 4
+      },
+      {
+        "tick": 174,
+        "text": "I headed to Hal's House.",
+        "importance": 3
+      },
+      {
+        "tick": 174,
+        "text": "Donna headed to Gary's House.",
+        "importance": 3
+      },
+      {
+        "tick": 174,
+        "text": "You arrived at Hal's House.",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 59,
-        "text": "I (rosa kitchen): Start prepping Saturday's dinner: chop vegetables, season the main dish, and plan the menu around Gary's beans and Donna's cobbler",
-        "importance": 6
-      },
-      {
-        "tick": 60,
-        "text": "I (rosa kitchen): Marinate the pork and prep the rice and plantains so Saturday only needs cooking",
-        "importance": 5
-      },
-      {
-        "tick": 61,
-        "text": "I (rosa dining table): Set the table for four with plates, glasses, and napkins so Saturday is just cooking and welcoming",
-        "importance": 5
-      },
       {
         "tick": 62,
         "text": "I (rosa kitchen): Check the pantry against the menu, make a short list of anything missing, and make flan so dessert has a backup",
@@ -4028,6 +4017,21 @@
         "tick": 173,
         "text": "Gary said to Rosa: “Well, evening, Rosa! Come on in. I'm just fitting a speaker bracket on the parade cart, lights off, paperwork's already filed. What can I do for you?”",
         "importance": 6
+      },
+      {
+        "tick": 174,
+        "text": "I said to Gary: “Filed is good, Gary, but has the review board actually signed off on that bracket? I'd hate for Hal to wave a notice at you over my dinner table. And I'm counting you in for Saturday at five, yes?”",
+        "importance": 5
+      },
+      {
+        "tick": 174,
+        "text": "Gary said to Rosa: “Count me in, Rosa. I'll bring two bags of ice and my good folding chairs, and I'll be there at five sharp. Thanks for saving me a seat.”",
+        "importance": 5
+      },
+      {
+        "tick": 174,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ]
   },
@@ -4074,10 +4078,10 @@
     ]
   },
   "emotions": {
-    "gary": "cheerful",
+    "gary": "warm",
     "donna": "cheerful",
     "hal": "content",
-    "rosa": "hopeful"
+    "rosa": "warm, watchful"
   },
   "laws": [
     {
@@ -4181,10 +4185,19 @@
         "Hal said to Donna: “Noted, Donna. Three showing from the street is what the code says, and I appreciate you seeing to it. I'll bring the cornbread tomorrow, and you save me a scoop of that ice cream.”",
         "Rosa said to Gary: “Gary, Hal's bringing cornbread and Donna's got the cobbler, so you're my last seat at the table. Saturday at five, and if you bring a bag of ice and your folding chairs, you're all set.”"
       ]
+    },
+    {
+      "tick": 174,
+      "time": "Friday, October 23, 7:17 PM",
+      "story": "At 7:17 on a humid Friday evening in Sumter Oaks, Gary has agreed to bring two bags of ice and his good folding chairs to Rosa's gathering on Saturday at five, though Rosa is still asking whether the review board has signed off on the bracket he filed. Donna is heading over to Gary's House on Magnolia Loop, while Hal has gone home to his own place down the same street, content as ever. Rosa remains warm but watchful, keeping one eye on the paperwork and the other on the seating arrangements for Saturday.",
+      "dialogue": [
+        "Gary said to Rosa: “Count me in, Rosa. I'll bring two bags of ice and my good folding chairs, and I'll be there at five sharp. Thanks for saving me a seat.”",
+        "Rosa said to Gary: “Filed is good, Gary, but has the review board actually signed off on that bracket? I'd hate for Hal to wave a notice at you over my dinner table. And I'm counting you in for Saturday at five, yes?”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 5.37034,
+    "total_usd": 5.40164,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4231,13 +4244,12 @@
         "usd": 0.46662
       },
       "2026-10-23": {
-        "ticks": 12,
-        "usd": 0.37771
+        "ticks": 13,
+        "usd": 0.40901
       }
     }
   },
   "recent_tick_costs": [
-    0.02991,
     0.03094,
     0.03482,
     0.03401,
@@ -4260,7 +4272,8 @@
     0.03292,
     0.03247,
     0.03336,
-    0.03198
+    0.03198,
+    0.0313
   ],
   "fund": {
     "gross_usd": 0.0,
