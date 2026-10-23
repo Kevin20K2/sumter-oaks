@@ -1,6 +1,6 @@
 {
-  "tick": 166,
-  "time": "2026-10-23T10:17",
+  "tick": 167,
+  "time": "2026-10-23T11:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -10,20 +10,11 @@
   "perceptions": {
     "gary": [],
     "donna": [],
-    "hal": [
-      "You arrived at Magnolia Loop (the street)."
-    ],
-    "rosa": [
-      "You arrived at Rosa's House."
-    ]
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 73,
-        "text": "I headed to Rec Center.",
-        "importance": 5
-      },
       {
         "tick": 73,
         "text": "You arrived at Rec Center.",
@@ -1018,14 +1009,14 @@
         "tick": 165,
         "text": "I (gary toolbox): Grab zip ties and electrical tape to tidy and secure the cart's wiring runs",
         "importance": 3
+      },
+      {
+        "tick": 166,
+        "text": "I (gary golf cart): Zip-tie and tape the wiring runs neat and secure, lights off",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 80,
-        "text": "Gary (pickleball court 1): Rally with Donna, knees soft, returning her easy serves",
-        "importance": 6
-      },
       {
         "tick": 81,
         "text": "I (ladder standings board): Check the ladder standings to see where a Pruitt-Kowalski team would start",
@@ -2020,14 +2011,14 @@
         "tick": 165,
         "text": "I (donna phone): Text Gary the court time and ask him to meet me for practice",
         "importance": 5
+      },
+      {
+        "tick": 166,
+        "text": "I waited: Stretching out and warming up with my paddle, watching for Gary to come around the corner for our practice.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 63,
-        "text": "I said to Donna: “Afternoon, Donna. I've counted your flamingos from the street, and the code caps ornaments at three. Thin the flock or file for review, and we'll both enjoy Rosa's pie on Saturday without paperwork.”",
-        "importance": 5
-      },
       {
         "tick": 63,
         "text": "Donna said to Hal: “Hal, good timing. Rosa's hosting dinner Saturday evening and Gary's coming, so save the night. I'm bringing cobbler, and you're welcome to bring whatever you like to go with it.”",
@@ -3022,14 +3013,14 @@
         "tick": 165,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 166,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the tally for the review committee",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 52,
-        "text": "I said to Gary: “Alright, you two, I've got a menu to plan and a table to set. Gary, beans and rolls, Donna, dessert, and I'll see you both Saturday at six. I'm heading home to start cooking.”",
-        "importance": 4
-      },
       {
         "tick": 52,
         "text": "Gary (gary workbench): Lay out the light strings and sound system parts and start testing the wiring",
@@ -4024,6 +4015,11 @@
         "tick": 165,
         "text": "You arrived at Rosa's House.",
         "importance": 4
+      },
+      {
+        "tick": 166,
+        "text": "I (rosa dining table): Set out place cards and count chairs for six, planning the menu around Hal's cornbread and Donna's lemon bars",
+        "importance": 6
       }
     ]
   },
@@ -4166,42 +4162,9 @@
       "text": "Gary Kowalski: File Architectural Review application for golf cart lights and sound system"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 161,
-      "time": "Thursday, October 22, 9:17 PM",
-      "story": "Gary and Donna are out on Magnolia Loop under a clear, breezy sky at 9:17 on Thursday night, with Gary cheerfully promising to help Donna hand out a few flyers before they call it a night by ten. Donna is marching ahead toward the Rec Center with real determination, while Hal is dutifully counting the pink plastic flamingos in view against the L-02 limit so the street stays within the rules. Back at her house, Rosa is content in her kitchen, marinating the pork and sorting her grocery list for Friday's errands.",
-      "dialogue": [
-        "Gary said to Donna: “Alright, Donna, lead the way. I'll hit a few drops with you, but we're done by ten or Hal'll have my hide. Hal, Saturday's a date, save me a plate of that cornbread.”"
-      ]
-    },
-    {
-      "tick": 162,
-      "time": "Friday, October 23, 7:17 AM",
-      "story": "At 7:17 on this humid, hazy Friday morning in Sumter Oaks, Gary is at his workbench at home, wiring a cart light harness and bench-testing a speaker with the door closed to keep things quiet. Across the street, Donna is energized, scanning the club calendar for an open court slot so she can practice with Gary later. Hal sits in his kitchen with his violation notebook, logging yesterday's flamingo count against the L-02 limit and noting that Gary's application has been filed, while Rosa checks the pork marinating in her kitchen and finalizes the grocery list for sides, drinks, and a backup dessert.",
-      "dialogue": []
-    },
-    {
-      "tick": 163,
-      "time": "Friday, October 23, 8:17 AM",
-      "story": "On a humid, hazy Friday morning in Sumter Oaks, Gary is mounting a wired light harness and speaker bracket onto his golf cart, though the lights will stay off until Thanksgiving. Donna, determined as ever, is penciling a two-hour practice court slot for herself and Gary into the club calendar. Across the way, Hal stands on his porch with his binoculars, dutifully counting the flamingos he can spot in Donna's yard, while Rosa heads out onto Magnolia Loop with her own determined stride.",
-      "dialogue": []
-    },
-    {
-      "tick": 164,
-      "time": "Friday, October 23, 9:17 AM",
-      "story": "On Magnolia Loop this Friday morning, humid and hazy at 81 degrees, Gary is content as he tightens the speaker bracket and light harness on his golf cart at home, double-checking the wiring with the lights off. Across the street, Donna is determined, packing paddles, balls, and water into her bag to head out for pickleball practice with Gary. Hal, dutiful as ever, is logging the morning's flamingo count in his violation notebook against the L-02 limit, while Rosa, feeling optimistic, pins a welcome note to the street bulletin board inviting everyone to dinner at her place Saturday at 6 PM.",
-      "dialogue": []
-    },
-    {
-      "tick": 165,
-      "time": "Friday, October 23, 10:17 AM",
-      "story": "At 10:17 on a humid, hazy Friday morning in Sumter Oaks, Gary is content in his garage, pulling zip ties and electrical tape from his toolbox to tidy up the wiring on his golf cart. Donna, feeling eager, is texting Gary the court time and asking him to join her for practice. Meanwhile, Hal heads out dutifully toward Magnolia Loop, and Rosa, optimistic as ever, makes her way home.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 5.11641,
+    "total_usd": 5.1472,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4248,13 +4211,12 @@
         "usd": 0.46662
       },
       "2026-10-23": {
-        "ticks": 4,
-        "usd": 0.12378
+        "ticks": 5,
+        "usd": 0.15457
       }
     }
   },
   "recent_tick_costs": [
-    0.03152,
     0.03074,
     0.0319,
     0.03053,
@@ -4277,7 +4239,8 @@
     0.03148,
     0.03125,
     0.03114,
-    0.02991
+    0.02991,
+    0.03079
   ],
   "fund": {
     "gross_usd": 0.0,
