@@ -1,0 +1,118 @@
+{
+  "tick": 169,
+  "simulation_time": "Friday, October 23, 2:17 PM",
+  "weather": "Humid and hazy, 84°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is at his fridge pulling out a cold drink and a sandwich, glad to take a break after his golf cart work in the humid, hazy afternoon heat. Over on Magnolia Loop, Donna is busy tucking several of her pink flamingos behind the hedge so only three show from the street, while Hal dutifully checks his bulletin board notices and updates the flamingo tally. Rosa, feeling optimistic, is making her way down to Magnolia Loop to see what the neighbors are up to.",
+  "events": [
+    "Gary (gary fridge): Grab a cold drink and a sandwich, take a break after the cart work",
+    "Donna (donna flamingo flock): Tuck several flamingos behind the hedge so only three are visible from the street",
+    "Hal (street bulletin board): Check my posted L-02 and L-01 notice and update it with today's flamingo tally",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've tightened the brackets, zip-tied the wiring, checked the speakers, and done the walk-around. The cart is mechanically ready, and the review application is already filed, so I shouldn't switch the lights on where the street can see until approval comes through (L-01). The last small thing is a snack and a cold drink from the fridge before I decide whether to head out. Being a bit lonely, I'd also like to see a neighbor, but nobody is around, so a quick break first.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_fridge",
+          "content": "Grab a cold drink and a sandwich, take a break after the cart work"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal just warned me about the flamingos and L-02, and he's being decent about it. I want to keep the peace before Saturday's dinner at Rosa's. Gary and I are due at the rec center for ladder practice, and I've already told Hal that, so no more chatting. The flock is right here, so the neighborly move is to quietly tuck a few behind the hedge, get down to three visible, and then head to the courts.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Tuck several flamingos behind the hedge so only three are visible from the street"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I already gave Donna fair warning about L-02, and she's off to ladder practice with Gary, keen to keep things friendly before Saturday at Rosa's. No sense repeating myself. My tally from last tick still stands, and the posted notice is already on the board. Best use of this hour is to follow through quietly: make sure the street bulletin board notice is accurate and current for the committee, without making a scene. Rules are rules, but I can be a decent neighbor about it.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Check my posted L-02 and L-01 notice and update it with today's flamingo tally"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've already set the table, written the shopping list, and blocked off Saturday. Nobody's nearby to talk to, and the dinner is tomorrow evening. The pantry and fridge check is done, but the real work now is getting groceries and prepping what can be made ahead. Standing around in the kitchen won't get the cornbread-and-lemon-bars table ready. I should head out onto Magnolia Loop to start the errands, and maybe catch Hal or Gary or Donna on the way to confirm they're still on for six.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to pick up groceries for Saturday's dinner and check in with the neighbors on my way."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03077,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9890,
+        "output_tokens": 1087,
+        "usd": 0.03065
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 411,
+        "output_tokens": 167,
+        "usd": 0.00012
+      }
+    }
+  }
+}

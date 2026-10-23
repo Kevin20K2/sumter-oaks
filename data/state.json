@@ -1,29 +1,28 @@
 {
-  "tick": 169,
-  "time": "2026-10-23T13:17",
+  "tick": 170,
+  "time": "2026-10-23T14:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
     "hal": "magnolia_loop",
-    "rosa": "rosas_house"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [],
     "donna": [
-      "Hal said to Donna: “Afternoon, Donna. I'll be straight with you: I'm counting the flamingos for the review committee. L-02 says three visible from the street, so you might want to tuck a few behind the hedge before they come around.”"
+      "Hal (street bulletin board): Check my posted L-02 and L-01 notice and update it with today's flamingo tally",
+      "Rosa just arrived."
     ],
     "hal": [
-      "Donna said to Hal: “Afternoon, Hal! Gary and I are headed to the rec center for ladder practice. Let's keep the cart paperwork friendly before Saturday, I want everyone relaxed for Rosa's dinner.”"
+      "Donna (donna flamingo flock): Tuck several flamingos behind the hedge so only three are visible from the street",
+      "Rosa just arrived."
     ],
-    "rosa": []
+    "rosa": [
+      "You arrived at Magnolia Loop (the street)."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 75,
-        "text": "I (court reservation kiosk): Look up today's court bookings for Donna's name and time",
-        "importance": 4
-      },
       {
         "tick": 76,
         "text": "I (court reservation kiosk): Scan today's court bookings for Donna's name and time slot",
@@ -1018,24 +1017,14 @@
         "tick": 168,
         "text": "I (gary golf cart): Do a final walk-around: wiggle-test the mounts and bracket, check the wiring runs, lights off",
         "importance": 5
+      },
+      {
+        "tick": 169,
+        "text": "I (gary fridge): Grab a cold drink and a sandwich, take a break after the cart work",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 83,
-        "text": "I (ladder standings board): Write 'Pruitt-Kowalski' on the doubles ladder sign-up sheet",
-        "importance": 7
-      },
-      {
-        "tick": 83,
-        "text": "Gary said to Donna: “You're on, Donna. Fair warning, I'm a work in progress and I've still got a golf cart to rig before the parade, but I'd be proud to be your partner. Now what do you say we rally one more, then go get that dinner at Rosa's?”",
-        "importance": 7
-      },
-      {
-        "tick": 84,
-        "text": "I said to Gary: “Partner! We're officially on the ladder, Pruitt-Kowalski, I wrote it in myself. Let's call it a night on the court and go celebrate at Rosa's, and I'll roll by tomorrow at 7:45 so we can practice before anyone else grabs court one.”",
-        "importance": 6
-      },
       {
         "tick": 84,
         "text": "Gary (pickleball court 1): Rally with Donna, knees soft, working on my footwork",
@@ -2020,24 +2009,24 @@
         "tick": 168,
         "text": "Hal said to Donna: “Afternoon, Donna. I'll be straight with you: I'm counting the flamingos for the review committee. L-02 says three visible from the street, so you might want to tuck a few behind the hedge before they come around.”",
         "importance": 4
+      },
+      {
+        "tick": 169,
+        "text": "I (donna flamingo flock): Tuck several flamingos behind the hedge so only three are visible from the street",
+        "importance": 4
+      },
+      {
+        "tick": 169,
+        "text": "Hal (street bulletin board): Check my posted L-02 and L-01 notice and update it with today's flamingo tally",
+        "importance": 4
+      },
+      {
+        "tick": 169,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 65,
-        "text": "Donna headed to Gary's House.",
-        "importance": 4
-      },
-      {
-        "tick": 65,
-        "text": "You arrived at Town Square.",
-        "importance": 4
-      },
-      {
-        "tick": 66,
-        "text": "I headed to Town Hall.",
-        "importance": 5
-      },
       {
         "tick": 66,
         "text": "You arrived at Town Hall.",
@@ -3022,19 +3011,24 @@
         "tick": 168,
         "text": "Donna said to Hal: “Afternoon, Hal! Gary and I are headed to the rec center for ladder practice. Let's keep the cart paperwork friendly before Saturday, I want everyone relaxed for Rosa's dinner.”",
         "importance": 5
+      },
+      {
+        "tick": 169,
+        "text": "I (street bulletin board): Check my posted L-02 and L-01 notice and update it with today's flamingo tally",
+        "importance": 4
+      },
+      {
+        "tick": 169,
+        "text": "Donna (donna flamingo flock): Tuck several flamingos behind the hedge so only three are visible from the street",
+        "importance": 4
+      },
+      {
+        "tick": 169,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 53,
-        "text": "I said to Donna: “Peach cobbler and an extra chair? Donna, you're hired. Bring both Saturday, and I'll have the ice cream ready. Now I really am heading home to cook.”",
-        "importance": 4
-      },
-      {
-        "tick": 53,
-        "text": "Gary (gary workbench): Keep testing the light string wiring and sound system connections",
-        "importance": 4
-      },
       {
         "tick": 53,
         "text": "Donna said to Gary: “Gary, I'll put you down for the court at eight sharp Saturday, and I'll bring the spare paddle so you've got nothing to buy. Wear sneakers that grip, and don't worry, nobody expects you to be good yet.”",
@@ -4024,6 +4018,16 @@
         "tick": 168,
         "text": "I (rosa shift schedule): Check my per-diem shifts and block off Saturday so nothing conflicts with dinner prep",
         "importance": 4
+      },
+      {
+        "tick": 169,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 169,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       }
     ]
   },
@@ -4070,10 +4074,10 @@
     ]
   },
   "emotions": {
-    "gary": "satisfied",
+    "gary": "content",
     "donna": "cheerful",
     "hal": "dutiful",
-    "rosa": "content"
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -4181,10 +4185,16 @@
         "Donna said to Hal: “Afternoon, Hal! Gary and I are headed to the rec center for ladder practice. Let's keep the cart paperwork friendly before Saturday, I want everyone relaxed for Rosa's dinner.”",
         "Hal said to Donna: “Afternoon, Donna. I'll be straight with you: I'm counting the flamingos for the review committee. L-02 says three visible from the street, so you might want to tuck a few behind the hedge before they come around.”"
       ]
+    },
+    {
+      "tick": 169,
+      "time": "Friday, October 23, 2:17 PM",
+      "story": "Gary is at his fridge pulling out a cold drink and a sandwich, glad to take a break after his golf cart work in the humid, hazy afternoon heat. Over on Magnolia Loop, Donna is busy tucking several of her pink flamingos behind the hedge so only three show from the street, while Hal dutifully checks his bulletin board notices and updates the flamingo tally. Rosa, feeling optimistic, is making her way down to Magnolia Loop to see what the neighbors are up to.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 5.20884,
+    "total_usd": 5.23961,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4231,13 +4241,12 @@
         "usd": 0.46662
       },
       "2026-10-23": {
-        "ticks": 7,
-        "usd": 0.21621
+        "ticks": 8,
+        "usd": 0.24698
       }
     }
   },
   "recent_tick_costs": [
-    0.03053,
     0.03159,
     0.02991,
     0.03006,
@@ -4260,7 +4269,8 @@
     0.02991,
     0.03079,
     0.0304,
-    0.03124
+    0.03124,
+    0.03077
   ],
   "fund": {
     "gross_usd": 0.0,
