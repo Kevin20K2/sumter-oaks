@@ -1,6 +1,6 @@
 {
-  "tick": 173,
-  "time": "2026-10-23T17:17",
+  "tick": 174,
+  "time": "2026-10-23T18:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
@@ -9,34 +9,20 @@
   },
   "perceptions": {
     "gary": [
-      "Rosa just arrived."
+      "Rosa said to Gary: “Gary, Hal's bringing cornbread and Donna's got the cobbler, so you're my last seat at the table. Saturday at five, and if you bring a bag of ice and your folding chairs, you're all set.”"
     ],
     "donna": [
-      "Hal (street bulletin board): Take down my old violation notice on the flamingos and cart, since both are squared away",
-      "Rosa headed to Gary's House."
+      "Hal said to Donna: “Noted, Donna. Three showing from the street is what the code says, and I appreciate you seeing to it. I'll bring the cornbread tomorrow, and you save me a scoop of that ice cream.”"
     ],
     "hal": [
-      "Donna said to Rosa: “Peach cobbler, Rosa, and I'll bring the vanilla ice cream so nobody has to out-bake anybody. Hal, I tucked the extra flamingos behind the hedge, so we're good on the ornament count. See you both Saturday!”",
-      "Rosa headed to Gary's House."
+      "Donna said to Hal: “Thanks for clearing that notice off the board, Hal, I appreciate it. Now go enjoy your evening, and I'll see you Saturday with the ice cream!”"
     ],
     "rosa": [
-      "Donna said to Rosa: “Peach cobbler, Rosa, and I'll bring the vanilla ice cream so nobody has to out-bake anybody. Hal, I tucked the extra flamingos behind the hedge, so we're good on the ornament count. See you both Saturday!”",
-      "Hal (street bulletin board): Take down my old violation notice on the flamingos and cart, since both are squared away",
-      "You arrived at Gary's House."
+      "Gary said to Rosa: “Well, evening, Rosa! Come on in. I'm just fitting a speaker bracket on the parade cart, lights off, paperwork's already filed. What can I do for you?”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 78,
-        "text": "I (pickleball court 1): Grab the spare paddle and start rallying with Donna",
-        "importance": 4
-      },
-      {
-        "tick": 78,
-        "text": "Donna said to Gary: “Court one, Gary, it's wide open. Stand behind the line, keep your knees soft, and I'll feed you easy ones first. By dinner at Rosa's you'll be talking like a ladder climber.”",
-        "importance": 4
-      },
       {
         "tick": 79,
         "text": "I (pickleball court 1): Stand behind the line, knees soft, and start rallying easy ones with Donna",
@@ -1026,19 +1012,19 @@
         "tick": 172,
         "text": "Rosa just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 173,
+        "text": "I said to Rosa: “Well, evening, Rosa! Come on in. I'm just fitting a speaker bracket on the parade cart, lights off, paperwork's already filed. What can I do for you?”",
+        "importance": 3
+      },
+      {
+        "tick": 173,
+        "text": "Rosa said to Gary: “Gary, Hal's bringing cornbread and Donna's got the cobbler, so you're my last seat at the table. Saturday at five, and if you bring a bag of ice and your folding chairs, you're all set.”",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 88,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 88,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 89,
         "text": "I headed to Gary's House.",
@@ -2028,19 +2014,19 @@
         "tick": 172,
         "text": "Rosa headed to Gary's House.",
         "importance": 4
-      }
-    ],
-    "hal": [
+      },
       {
-        "tick": 75,
-        "text": "I (hal binoculars): Scan Magnolia Loop to see whether Donna has thinned her flamingos to three or fewer, and check for grass parking",
+        "tick": 173,
+        "text": "I said to Hal: “Thanks for clearing that notice off the board, Hal, I appreciate it. Now go enjoy your evening, and I'll see you Saturday with the ice cream!”",
         "importance": 4
       },
       {
-        "tick": 76,
-        "text": "I (hal porch chair): Settle into the porch chair and keep an eye on the Loop for a while",
-        "importance": 3
-      },
+        "tick": 173,
+        "text": "Hal said to Donna: “Noted, Donna. Three showing from the street is what the code says, and I appreciate you seeing to it. I'll bring the cornbread tomorrow, and you save me a scoop of that ice cream.”",
+        "importance": 4
+      }
+    ],
+    "hal": [
       {
         "tick": 77,
         "text": "I headed to Magnolia Loop (the street).",
@@ -3030,19 +3016,19 @@
         "tick": 172,
         "text": "Rosa headed to Gary's House.",
         "importance": 5
+      },
+      {
+        "tick": 173,
+        "text": "I said to Donna: “Noted, Donna. Three showing from the street is what the code says, and I appreciate you seeing to it. I'll bring the cornbread tomorrow, and you save me a scoop of that ice cream.”",
+        "importance": 4
+      },
+      {
+        "tick": 173,
+        "text": "Donna said to Hal: “Thanks for clearing that notice off the board, Hal, I appreciate it. Now go enjoy your evening, and I'll see you Saturday with the ice cream!”",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 57,
-        "text": "I (rosa shift schedule): Check my per-diem shifts to make sure Saturday dinner prep and cooking time are clear",
-        "importance": 6
-      },
-      {
-        "tick": 58,
-        "text": "I (rosa shift schedule): Check my per-diem shifts and make sure Friday evening and Saturday are clear for cooking and the dinner",
-        "importance": 6
-      },
       {
         "tick": 59,
         "text": "I (rosa kitchen): Start prepping Saturday's dinner: chop vegetables, season the main dish, and plan the menu around Gary's beans and Donna's cobbler",
@@ -4032,6 +4018,16 @@
         "tick": 172,
         "text": "You arrived at Gary's House.",
         "importance": 6
+      },
+      {
+        "tick": 173,
+        "text": "I said to Gary: “Gary, Hal's bringing cornbread and Donna's got the cobbler, so you're my last seat at the table. Saturday at five, and if you bring a bag of ice and your folding chairs, you're all set.”",
+        "importance": 6
+      },
+      {
+        "tick": 173,
+        "text": "Gary said to Rosa: “Well, evening, Rosa! Come on in. I'm just fitting a speaker bracket on the parade cart, lights off, paperwork's already filed. What can I do for you?”",
+        "importance": 6
       }
     ]
   },
@@ -4078,9 +4074,9 @@
     ]
   },
   "emotions": {
-    "gary": "content",
+    "gary": "cheerful",
     "donna": "cheerful",
-    "hal": "satisfied",
+    "hal": "content",
     "rosa": "hopeful"
   },
   "laws": [
@@ -4174,9 +4170,21 @@
       "text": "Gary Kowalski: File Architectural Review application for golf cart lights and sound system"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 173,
+      "time": "Friday, October 23, 6:17 PM",
+      "story": "It is a humid Friday evening at 6:17 in Sumter Oaks, and the air hangs hazy at 83 degrees. Gary is cheerfully fitting a speaker bracket onto his parade cart in his garage when Rosa stops by, hopeful about her Saturday dinner plans. Over on Magnolia Loop, Donna thanks Hal for clearing a notice off the community board, and the two of them settle on cornbread, cobbler, and ice cream for the weekend gathering.",
+      "dialogue": [
+        "Gary said to Rosa: “Well, evening, Rosa! Come on in. I'm just fitting a speaker bracket on the parade cart, lights off, paperwork's already filed. What can I do for you?”",
+        "Donna said to Hal: “Thanks for clearing that notice off the board, Hal, I appreciate it. Now go enjoy your evening, and I'll see you Saturday with the ice cream!”",
+        "Hal said to Donna: “Noted, Donna. Three showing from the street is what the code says, and I appreciate you seeing to it. I'll bring the cornbread tomorrow, and you save me a scoop of that ice cream.”",
+        "Rosa said to Gary: “Gary, Hal's bringing cornbread and Donna's got the cobbler, so you're my last seat at the table. Saturday at five, and if you bring a bag of ice and your folding chairs, you're all set.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 5.33836,
+    "total_usd": 5.37034,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4223,13 +4231,12 @@
         "usd": 0.46662
       },
       "2026-10-23": {
-        "ticks": 11,
-        "usd": 0.34573
+        "ticks": 12,
+        "usd": 0.37771
       }
     }
   },
   "recent_tick_costs": [
-    0.03051,
     0.02991,
     0.03094,
     0.03482,
@@ -4252,7 +4259,8 @@
     0.03077,
     0.03292,
     0.03247,
-    0.03336
+    0.03336,
+    0.03198
   ],
   "fund": {
     "gross_usd": 0.0,
