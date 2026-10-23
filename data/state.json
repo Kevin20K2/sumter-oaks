@@ -1,44 +1,30 @@
 {
-  "tick": 161,
-  "time": "2026-10-22T20:17",
+  "tick": 162,
+  "time": "2026-10-22T21:17",
   "positions": {
     "gary": "magnolia_loop",
-    "donna": "magnolia_loop",
+    "donna": "rec_center",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “There you are, Gary! Let's get over to the rec center and shake out a few more third-shot drops before the ladder match. I'm bringing the competitive Donna tonight, so be ready!”",
-      "Hal said to Gary: “Evening, Gary. Saw your paperwork got filed, so we're square. Saturday at Rosa's still on, and I'm bringing cornbread and the good chair.”"
+      "Donna headed to Rec Center.",
+      "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit"
     ],
     "donna": [
-      "Gary said to Hal: “Hal, good timing. I filed the Architectural Review application for the cart lights and sound system today, so you can quit worrying about me. I'll hold off on the wiring until it's approved.”",
-      "Hal said to Gary: “Evening, Gary. Saw your paperwork got filed, so we're square. Saturday at Rosa's still on, and I'm bringing cornbread and the good chair.”"
+      "Gary said to Donna: “Alright, Donna, lead the way. I'll hit a few drops with you, but we're done by ten or Hal'll have my hide. Hal, Saturday's a date, save me a plate of that cornbread.”",
+      "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
+      "You arrived at Rec Center."
     ],
     "hal": [
-      "Gary said to Hal: “Hal, good timing. I filed the Architectural Review application for the cart lights and sound system today, so you can quit worrying about me. I'll hold off on the wiring until it's approved.”",
-      "Donna said to Gary: “There you are, Gary! Let's get over to the rec center and shake out a few more third-shot drops before the ladder match. I'm bringing the competitive Donna tonight, so be ready!”"
+      "Gary said to Donna: “Alright, Donna, lead the way. I'll hit a few drops with you, but we're done by ten or Hal'll have my hide. Hal, Saturday's a date, save me a plate of that cornbread.”",
+      "Donna headed to Rec Center."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 68,
-        "text": "I (gary fridge): Fill a couple water bottles and chill them for tomorrow's pickleball",
-        "importance": 4
-      },
-      {
-        "tick": 68,
-        "text": "Donna headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 69,
-        "text": "I (gary toolbox): Tidy up the tools and set my sneakers and gear by the door for tomorrow",
-        "importance": 4
-      },
       {
         "tick": 70,
         "text": "I (gary golf cart): Check the cart battery and lay out the light strip and speaker for after approval, interior work only",
@@ -1023,29 +1009,24 @@
         "tick": 160,
         "text": "Hal said to Gary: “Evening, Gary. Saw your paperwork got filed, so we're square. Saturday at Rosa's still on, and I'm bringing cornbread and the good chair.”",
         "importance": 6
+      },
+      {
+        "tick": 161,
+        "text": "I said to Donna: “Alright, Donna, lead the way. I'll hit a few drops with you, but we're done by ten or Hal'll have my hide. Hal, Saturday's a date, save me a plate of that cornbread.”",
+        "importance": 4
+      },
+      {
+        "tick": 161,
+        "text": "Donna headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 161,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 76,
-        "text": "You arrived at Rec Center.",
-        "importance": 5
-      },
-      {
-        "tick": 77,
-        "text": "I said to Gary: “Gary, look at you showing up early! Grab that spare paddle and let's get in a little practice on court one, because the ladder won't climb itself.”",
-        "importance": 5
-      },
-      {
-        "tick": 77,
-        "text": "Gary said to Donna: “There you are. Sneakers are on and the soldering iron's unplugged, so which court are we on? Go easy on me.”",
-        "importance": 5
-      },
-      {
-        "tick": 78,
-        "text": "I said to Gary: “Court one, Gary, it's wide open. Stand behind the line, keep your knees soft, and I'll feed you easy ones first. By dinner at Rosa's you'll be talking like a ladder climber.”",
-        "importance": 6
-      },
       {
         "tick": 78,
         "text": "Gary (pickleball court 1): Grab the spare paddle and start rallying with Donna",
@@ -2025,24 +2006,29 @@
         "tick": 160,
         "text": "Hal said to Gary: “Evening, Gary. Saw your paperwork got filed, so we're square. Saturday at Rosa's still on, and I'm bringing cornbread and the good chair.”",
         "importance": 5
+      },
+      {
+        "tick": 161,
+        "text": "I headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 161,
+        "text": "Gary said to Donna: “Alright, Donna, lead the way. I'll hit a few drops with you, but we're done by ten or Hal'll have my hide. Hal, Saturday's a date, save me a plate of that cornbread.”",
+        "importance": 5
+      },
+      {
+        "tick": 161,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
+        "importance": 5
+      },
+      {
+        "tick": 161,
+        "text": "You arrived at Rec Center.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 57,
-        "text": "I (hal violation notebook): Log the morning observations: Gary's cart filing still pending, flamingo count steady, no grass parking",
-        "importance": 3
-      },
-      {
-        "tick": 58,
-        "text": "I (hal binoculars): Scan the Loop for stray carts, flamingo count, and any grass parking",
-        "importance": 3
-      },
-      {
-        "tick": 59,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 3
-      },
       {
         "tick": 59,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -3027,14 +3013,24 @@
         "tick": 160,
         "text": "Donna said to Gary: “There you are, Gary! Let's get over to the rec center and shake out a few more third-shot drops before the ladder match. I'm bringing the competitive Donna tonight, so be ready!”",
         "importance": 5
+      },
+      {
+        "tick": 161,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
+        "importance": 4
+      },
+      {
+        "tick": 161,
+        "text": "Gary said to Donna: “Alright, Donna, lead the way. I'll hit a few drops with you, but we're done by ten or Hal'll have my hide. Hal, Saturday's a date, save me a plate of that cornbread.”",
+        "importance": 4
+      },
+      {
+        "tick": 161,
+        "text": "Donna headed to Rec Center.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 49,
-        "text": "Donna said to Rosa: “Rosa, perfect timing! Gary just swore he's coming Saturday at six, so you've got your full table, and he's all mine at the courts at eight that morning.”",
-        "importance": 7
-      },
       {
         "tick": 50,
         "text": "I said to Gary: “Good, that's all I needed to hear, Gary. Saturday at six, and bring your appetite. Any allergies I should know about before I start cooking? And the cart looks fine from here, just don't let it park on my lawn.”",
@@ -4029,6 +4025,11 @@
         "tick": 160,
         "text": "I (rosa dining table): Add the extra leaf, set out the chairs, and place Hal's, Gary's and Donna's cards so everyone is mixed together",
         "importance": 4
+      },
+      {
+        "tick": 161,
+        "text": "I (rosa kitchen): Prep what I can tonight: marinate the pork and sort the grocery list by Friday errands",
+        "importance": 4
       }
     ]
   },
@@ -4075,9 +4076,9 @@
     ]
   },
   "emotions": {
-    "gary": "relieved",
-    "donna": "upbeat",
-    "hal": "gruff but content",
+    "gary": "upbeat",
+    "donna": "determined",
+    "hal": "dutiful",
     "rosa": "content"
   },
   "laws": [
@@ -4171,9 +4172,18 @@
       "text": "Gary Kowalski: File Architectural Review application for golf cart lights and sound system"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 161,
+      "time": "Thursday, October 22, 9:17 PM",
+      "story": "Gary and Donna are out on Magnolia Loop under a clear, breezy sky at 9:17 on Thursday night, with Gary cheerfully promising to help Donna hand out a few flyers before they call it a night by ten. Donna is marching ahead toward the Rec Center with real determination, while Hal is dutifully counting the pink plastic flamingos in view against the L-02 limit so the street stays within the rules. Back at her house, Rosa is content in her kitchen, marinating the pork and sorting her grocery list for Friday's errands.",
+      "dialogue": [
+        "Gary said to Donna: “Alright, Donna, lead the way. I'll hit a few drops with you, but we're done by ten or Hal'll have my hide. Hal, Saturday's a date, save me a plate of that cornbread.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 4.96017,
+    "total_usd": 4.99263,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4216,13 +4226,12 @@
         "usd": 0.45951
       },
       "2026-10-22": {
-        "ticks": 14,
-        "usd": 0.43416
+        "ticks": 15,
+        "usd": 0.46662
       }
     }
   },
   "recent_tick_costs": [
-    0.0301,
     0.03058,
     0.02984,
     0.03139,
@@ -4245,7 +4254,8 @@
     0.02896,
     0.02923,
     0.03014,
-    0.03273
+    0.03273,
+    0.03246
   ],
   "fund": {
     "gross_usd": 0.0,
