@@ -1,0 +1,115 @@
+{
+  "tick": 160,
+  "simulation_time": "Thursday, October 22, 8:17 PM",
+  "weather": "Breezy and clear, 74°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On Magnolia Loop, under a breezy, clear sky at 74 degrees on a Thursday evening, Gary walks alongside Hal and Donna, relieved that his paperwork for the cart lights and sound system is finally filed with the Architectural Review. Donna is eager to head to the rec center for some practice shots before the ladder match, while Hal, gruff but content, reminds everyone that Saturday's dinner at Rosa's is still on and that he's bringing cornbread and his good chair. Back at her house, Rosa is content as she adds the extra leaf to her dining table and arranges the chairs, placing cards for Hal, Gary, and Donna so they'll all sit mixed together.",
+  "events": [
+    "Rosa (rosa dining table): Add the extra leaf, set out the chairs, and place Hal's, Gary's and Donna's cards so everyone is mixed together"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I just filed the Architectural Review application and signed up for the parade, so the paperwork is done. Now I'm back on Magnolia Loop with Donna and Hal both in sight. Hal's been on me about the cart mods, so he's owed an update. I shouldn't repeat the dinner-at-Rosa's line from earlier. Tell Hal the filing is done so he can drop it, and that keeps things moving toward getting the lights and sound system rigged legally.",
+      "emotional_state": "relieved",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, good timing. I filed the Architectural Review application for the cart lights and sound system today, so you can quit worrying about me. I'll hold off on the wiring until it's approved."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just got to Magnolia Loop and Gary showed up right behind me. We're supposed to be heading to the rec center together, and our doubles ladder match is coming up, so I want to keep that momentum going. Hal is also around, probably still fussing over Gary's cart paperwork, and I don't want that souring things before Rosa's Saturday dinner. I haven't spoken to Gary yet this tick, so a quick, upbeat line to keep us moving toward practice is the right move. No need to repeat the partner pitch, that's already settled and the sign-up sheet is done.",
+      "emotional_state": "upbeat",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "There you are, Gary! Let's get over to the rec center and shake out a few more third-shot drops before the ladder match. I'm bringing the competitive Donna tonight, so be ready!"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary and Donna both just walked up. I just counted the flamingos to make sure my notice is accurate, and Gary's paperwork is filed, so that's settled. Saturday at Rosa's is the bigger thing now. No sense starting a fresh fight over the flamingos on a breezy evening when we're all supposed to be neighbors on Saturday. I'll be civil, confirm the plan with Gary, and mention the cornbread. Keeps things orderly and gets him to say it again in front of Donna.",
+      "emotional_state": "gruff but content",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Evening, Gary. Saw your paperwork got filed, so we're square. Saturday at Rosa's still on, and I'm bringing cornbread and the good chair."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've done the seating chart, checked the shift schedule, and planned the menu around Hal's cornbread and Donna's lemon bars. The grocery list is made, and nobody is nearby to talk to. The dinner is set, so the useful thing left is to turn that list into an actual shopping trip, or at least make sure the house is ready. Everyone has already said yes, so there's no need to chase anyone again. It's 8:17 PM, too late for stores in this little town, so I'll use the quiet evening at the dining table to finish setting it up and then call it a night.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Add the extra leaf, set out the chairs, and place Hal's, Gary's and Donna's cards so everyone is mixed together"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03273,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9417,
+        "output_tokens": 1259,
+        "usd": 0.03142
+      },
+      "claude-haiku-5-5": {
+        "calls": 6,
+        "input_tokens": 7216,
+        "output_tokens": 1174,
+        "usd": 0.00131
+      }
+    }
+  }
+}
