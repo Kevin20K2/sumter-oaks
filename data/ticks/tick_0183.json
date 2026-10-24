@@ -1,0 +1,119 @@
+{
+  "tick": 183,
+  "simulation_time": "Saturday, October 24, 1:17 PM",
+  "weather": "Humid and hazy, 85°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "rec_center",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 1:17 on this hazy, 85-degree Saturday in Sumter Oaks, Gary is bench-testing speaker and light strip wiring at his workbench, keeping everything indoors and nothing mounted yet. Donna is at the Rec Center kiosk reserving a two-hour court slot so she and Gary can drill third-shot drops before their ladder match. Hal is settled into his porch chair, content to watch the quiet street until it's time to walk over to Rosa's, while Rosa, hopeful about tonight, checks the main dish and tidies her kitchen.",
+  "events": [
+    "Gary (gary workbench): Bench-test the speaker and light strip wiring, indoors only, nothing mounted",
+    "Donna (court reservation kiosk): Reserve a 2-hour court slot for Gary and me to practice third-shot drops before the ladder match",
+    "Hal (hal porch chair): Settle into the porch chair and watch the quiet street until it's time to head to Rosa's",
+    "Rosa (rosa kitchen): Check the main dish and tidy up so the kitchen is ready for tonight"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "My application for the cart lights and sound system is filed and the board hasn't signed off yet, so I can't install anything visible from the street. I've already measured, labeled the wiring, and staged the hardware, so there's not much left to do on the cart itself. L-01 is clear, no mounting until approval comes. I could test the speaker wiring on the workbench, indoors and out of sight of the street, and it's well before quiet hours. That keeps my hands busy and makes the install quick once the review board says yes.",
+      "emotional_state": "patient",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Bench-test the speaker and light strip wiring, indoors only, nothing mounted"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at the rec center and nobody's around. I just checked the ladder board, so I know where Pruitt-Kowalski stands. Gary's not here, and I can't ask him anything since he's out of sight. Best use of this hour is to book a court so Gary and I get real practice in before the ladder match. The kiosk is the thing to do, and I need to keep it within the 2-hour limit per L-05.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Reserve a 2-hour court slot for Gary and me to practice third-shot drops before the ladder match"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's 1:17 PM Saturday, and I'm alone at the house. Dinner at Rosa's is tonight, and I've checked the cornbread and table plan three ticks running. Nobody's around, the street is quiet, and checking the notebook again would just be fussing. A sergeant doesn't re-inspect a plan that's already squared away. I'll sit on the porch with the binoculars, keep an eye on the Loop, and let the afternoon pass until it's time to load the table and leave early.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_porch_chair",
+          "content": "Settle into the porch chair and watch the quiet street until it's time to head to Rosa's"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 1:17 PM and the dinner is tonight. The table is set with Hal, Gary and Donna seated side by side, and the main dish was finished and is holding warm. I checked my shift schedule and nothing conflicts. Nobody is around, and nothing in my plan needs me to leave. The one thing left is the kitchen: a quick check on the main dish and the warming setup so it's ready when the neighbors show up.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check the main dish and tidy up so the kitchen is ready for tonight"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03025,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9661,
+        "output_tokens": 1079,
+        "usd": 0.03011
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 428,
+        "output_tokens": 192,
+        "usd": 0.00014
+      }
+    }
+  },
+  "season": "halloween"
+}
