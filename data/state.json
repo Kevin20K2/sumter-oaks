@@ -1,6 +1,6 @@
 {
-  "tick": 182,
-  "time": "2026-10-24T11:17",
+  "tick": 183,
+  "time": "2026-10-24T12:17",
   "positions": {
     "gary": "garys_house",
     "donna": "rec_center",
@@ -9,19 +9,12 @@
   },
   "perceptions": {
     "gary": [],
-    "donna": [
-      "You arrived at Rec Center."
-    ],
+    "donna": [],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 85,
-        "text": "Donna just arrived.",
-        "importance": 5
-      },
       {
         "tick": 86,
         "text": "I headed to Rosa's House.",
@@ -1016,14 +1009,14 @@
         "tick": 181,
         "text": "I (gary fridge): Grab a cold drink and a sandwich while I wait on the review board",
         "importance": 3
+      },
+      {
+        "tick": 182,
+        "text": "I (gary toolbox): Sort out mounting hardware and zip ties, stage them by the cart for when approval comes",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 95,
-        "text": "I said to Gary: “There he is! I put us down on the ladder as Pruitt-Kowalski, so no backing out now. Grab your paddle and let's get some footwork in on court one before this shower clears.”",
-        "importance": 6
-      },
       {
         "tick": 95,
         "text": "Gary said to Donna: “Sneakers on, soldering iron unplugged, Donna. Hit me with those easy serves and let's get some footwork in before the shower rolls back in.”",
@@ -2018,14 +2011,14 @@
         "tick": 181,
         "text": "You arrived at Rec Center.",
         "importance": 5
+      },
+      {
+        "tick": 182,
+        "text": "I (ladder standings board): Check where Pruitt-Kowalski sits on the ladder and who we're up against",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 86,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 86,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -3020,14 +3013,14 @@
         "tick": 181,
         "text": "I (hal violation notebook): Write out the cornbread plan and time to leave for Rosa's so I show up early with the table, no fuss",
         "importance": 4
+      },
+      {
+        "tick": 182,
+        "text": "I (hal violation notebook): Check the cornbread and table plan once more and mark the leave-by time for Rosa's",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 74,
-        "text": "I (rosa dining table): Set the table for four with the good plates and a small centerpiece",
-        "importance": 5
-      },
       {
         "tick": 75,
         "text": "I waited: Let the pork slow cook and sit down with a cup of coffee, running through the evening in my head: Hal, Gary, and Donna all at my table at six.",
@@ -4022,6 +4015,11 @@
         "tick": 181,
         "text": "I (rosa shift schedule): Check my per-diem shift schedule to make sure nothing conflicts with tonight's dinner",
         "importance": 4
+      },
+      {
+        "tick": 182,
+        "text": "I (rosa dining table): Set the long table with plates and cutlery, putting Hal, Gary and Donna's seats side by side",
+        "importance": 6
       }
     ]
   },
@@ -4070,8 +4068,8 @@
   "emotions": {
     "gary": "patient",
     "donna": "determined",
-    "hal": "content",
-    "rosa": "optimistic"
+    "hal": "resolute",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4182,10 +4180,16 @@
       "time": "Saturday, October 24, 11:17 AM",
       "story": "On a humid, hazy Saturday morning in Sumter Oaks, Gary is at home with a cold drink and a sandwich, patiently waiting on the review board. Donna is heading down Magnolia Loop toward the Rec Center with determination in her step. Meanwhile Hal is at his house jotting down his cornbread plan and a departure time so he can arrive at Rosa's early with the folding table, and Rosa, feeling optimistic, is checking her per-diem shift schedule to make sure nothing clashes with tonight's dinner.",
       "dialogue": []
+    },
+    {
+      "tick": 182,
+      "time": "Saturday, October 24, 12:17 PM",
+      "story": "At 12:17 on this hazy, humid Saturday in Sumter Oaks, Gary is patiently laying out mounting hardware and zip ties by his golf cart while he waits for approval to come through. Over at the Rec Center, Donna is studying the ladder standings board, determined to figure out where Pruitt-Kowalski sits and who stands between her and the top spot. Meanwhile, Hal is resolutely double-checking his cornbread and table plan in his violation notebook and marking the leave-by time for Rosa's, while Rosa, hopeful as ever, sets her long dining table with plates and cutlery and arranges seats for Hal, Gary and Donna side by side.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 5.62254,
+    "total_usd": 5.65293,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4236,13 +4240,12 @@
         "usd": 0.47422
       },
       "2026-10-24": {
-        "ticks": 5,
-        "usd": 0.15569
+        "ticks": 6,
+        "usd": 0.18608
       }
     }
   },
   "recent_tick_costs": [
-    0.02923,
     0.03014,
     0.03273,
     0.03246,
@@ -4265,7 +4268,8 @@
     0.03079,
     0.03047,
     0.03256,
-    0.03042
+    0.03042,
+    0.03039
   ],
   "fund": {
     "gross_usd": 0.0,
