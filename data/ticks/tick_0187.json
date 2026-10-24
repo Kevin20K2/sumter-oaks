@@ -1,0 +1,117 @@
+{
+  "tick": 187,
+  "simulation_time": "Saturday, October 24, 5:17 PM",
+  "weather": "Humid and hazy, 84°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 5:17 on a humid, hazy Saturday in Sumter Oaks, Gary is content and heading out to Magnolia Loop, while Donna keeps drilling third-shot drops and dinks on pickleball court one, determined to hold out until he shows up. Hal, dutiful as ever, promises Rosa he'll walk over with the cornbread and have the chairs set before six, and Rosa, cheerful and busy, tells him to set the table along the back wall and keep the kitchen doorway clear.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Donna (pickleball court 1): Keep drilling third-shot drops and dinks until Gary shows up"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 5:17 PM and I've got the drinks and ice out of the fridge for Rosa's tonight. The cart is staged and tested indoors, the review board hasn't answered, so nothing goes on the outside of it yet. Nobody's here to talk to, and there's nothing left to do on the project. Time to head out to Magnolia Loop and walk over to Rosa's with the cold drinks before the ice starts sweating through the bag.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to Rosa's with the cold drinks and ice for dinner."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 5:17 PM and Rosa's dinner is tonight. I've drilled third-shot drops, checked the ladder, and reserved the slot, and Gary still hasn't shown up, though he said he'd be on time. Nobody is around to talk to. The two-hour limit means I shouldn't waste the reservation, so I'll keep working on my drops with the cones. I'm itching to get Gary on the court before the dinner and keep us climbing the ladder.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Keep drilling third-shot drops and dinks until Gary shows up"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa just asked if the cornbread is on track and offered a spot for chair duty around five. It's 5:17, so I'm already a bit late for that. I told her earlier I'd be at her door early and I've already asked where she wants the table, so no point repeating myself. Answer her question plainly and head over. The violation notebook can wait; tonight is about showing up for Rosa and the neighbors.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Cornbread's in hand and on schedule, Rosa. I'm walking over now, so point me at the chairs and I'll have them set before six."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal already confirmed the cornbread and the table, and I've already asked him about chairs. Asking again would be repeating myself. He asked where I want the table, so that's the one open question to answer. Long table along the back wall of the living room, leaving the kitchen doorway clear. Then I should get home and finish dinner prep, since the bulletin board is already read and doors open at six.",
+      "emotional_state": "cheerful, busy",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Thanks, Hal. Put the table along the back wall of the living room and keep the kitchen doorway clear. Come by around five-thirty and I'll have a spot ready for the cornbread."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03105,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10143,
+        "output_tokens": 1063,
+        "usd": 0.03092
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 469,
+        "output_tokens": 169,
+        "usd": 0.00013
+      }
+    }
+  },
+  "season": "halloween"
+}
