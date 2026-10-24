@@ -1,0 +1,119 @@
+{
+  "tick": 181,
+  "simulation_time": "Saturday, October 24, 11:17 AM",
+  "weather": "Humid and hazy, 83°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On a humid, hazy Saturday morning in Sumter Oaks, Gary is at home with a cold drink and a sandwich, patiently waiting on the review board. Donna is heading down Magnolia Loop toward the Rec Center with determination in her step. Meanwhile Hal is at his house jotting down his cornbread plan and a departure time so he can arrive at Rosa's early with the folding table, and Rosa, feeling optimistic, is checking her per-diem shift schedule to make sure nothing clashes with tonight's dinner.",
+  "events": [
+    "Gary (gary fridge): Grab a cold drink and a sandwich while I wait on the review board",
+    "Donna headed to Rec Center.",
+    "Hal (hal violation notebook): Write out the cornbread plan and time to leave for Rosa's so I show up early with the table, no fuss",
+    "Rosa (rosa shift schedule): Check my per-diem shift schedule to make sure nothing conflicts with tonight's dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Application's filed, wiring is labeled and tidy, mounting spots are marked. L-01 says nothing visible from the street gets installed until Architectural Review approves, so the cart stays bare for now. Nothing left to do at the workbench, and I'm alone. Rather than hover over the cart and be tempted, I'll check the fridge, grab a cold drink and a bite, and keep my head clear for Saturday at Rosa's and pickleball with Donna.",
+      "emotional_state": "patient",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_fridge",
+          "content": "Grab a cold drink and a sandwich while I wait on the review board"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm back on Magnolia Loop with my pickleball bag packed and the day's plan set: court one with Gary, then cobbler for Rosa's at five. Nobody's in sight, and the halftime of this humid morning is slipping by. My flamingo flock is right here, and with Halloween on the Loop coming I could stage them for the cart parade and decorations, but L-02 caps visible ornaments at three, and I'd rather not hand Hal fresh ammunition before Saturday's dinner. The ladder match is what matters, so the useful move is to head to the rec center and get that court time in with Gary.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center to get court one and drill third-shot drops with Gary before the ladder match"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Notebook's been reviewed, the street's quiet, and nothing is pending. It's 11 AM Saturday and Rosa's dinner is tonight. I've been sitting and jotting for a few ticks now. Time to do something useful: get the cornbread started so I'm not rushing later, and keep the peace with Gary and Donna. No violations to report, so the watchdog work can rest.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Write out the cornbread plan and time to leave for Rosa's so I show up early with the table, no fuss"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The main dish is done and holding warm. It's 11:17 AM and the dinner is tonight. The table is set, the seating is planned, Hal, Donna and Gary have their dishes covered. What's left is small stuff: I still have my per-diem shift schedule sitting right here, and I should check that it doesn't collide with tonight. Better to confirm now than get called in at the last minute and leave a full table without a host.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shift schedule to make sure nothing conflicts with tonight's dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03042,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9789,
+        "output_tokens": 1071,
+        "usd": 0.03029
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 408,
+        "output_tokens": 180,
+        "usd": 0.00013
+      }
+    }
+  },
+  "season": "halloween"
+}

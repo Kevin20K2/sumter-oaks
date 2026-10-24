@@ -1,27 +1,22 @@
 {
-  "tick": 181,
-  "time": "2026-10-24T10:17",
+  "tick": 182,
+  "time": "2026-10-24T11:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
+    "donna": "rec_center",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
     "donna": [
-      "You arrived at Magnolia Loop (the street)."
+      "You arrived at Rec Center."
     ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 85,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 85,
         "text": "Donna just arrived.",
@@ -1016,19 +1011,14 @@
         "tick": 180,
         "text": "I (gary workbench): Label and tidy the light strip and speaker wiring so mounting is quick once approved",
         "importance": 4
+      },
+      {
+        "tick": 181,
+        "text": "I (gary fridge): Grab a cold drink and a sandwich while I wait on the review board",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 94,
-        "text": "You arrived at Rec Center.",
-        "importance": 5
-      },
-      {
-        "tick": 94,
-        "text": "Gary just arrived.",
-        "importance": 5
-      },
       {
         "tick": 95,
         "text": "I said to Gary: “There he is! I put us down on the ladder as Pruitt-Kowalski, so no backing out now. Grab your paddle and let's get some footwork in on court one before this shower clears.”",
@@ -2018,14 +2008,19 @@
         "tick": 180,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 181,
+        "text": "I headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 181,
+        "text": "You arrived at Rec Center.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 85,
-        "text": "I (rosa shift schedule): Read the shift schedule to see when dinner service and guests are expected",
-        "importance": 3
-      },
       {
         "tick": 86,
         "text": "I headed to Magnolia Loop (the street).",
@@ -3020,14 +3015,14 @@
         "tick": 180,
         "text": "I (hal violation notebook): Jot down Halloween on the Loop dates, note L-04 lighting limits, and remind myself: cornbread and table for Rosa's tonight",
         "importance": 3
+      },
+      {
+        "tick": 181,
+        "text": "I (hal violation notebook): Write out the cornbread plan and time to leave for Rosa's so I show up early with the table, no fuss",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 73,
-        "text": "I (rosa kitchen): Pull the pork from the fridge, season it, and start the slow cook for tonight's dinner",
-        "importance": 6
-      },
       {
         "tick": 74,
         "text": "I (rosa dining table): Set the table for four with the good plates and a small centerpiece",
@@ -4022,6 +4017,11 @@
         "tick": 180,
         "text": "I (rosa kitchen): Finish the main dish and get it ready to hold warm for tonight's dinner",
         "importance": 6
+      },
+      {
+        "tick": 181,
+        "text": "I (rosa shift schedule): Check my per-diem shift schedule to make sure nothing conflicts with tonight's dinner",
+        "importance": 4
       }
     ]
   },
@@ -4068,10 +4068,10 @@
     ]
   },
   "emotions": {
-    "gary": "optimistic",
+    "gary": "patient",
     "donna": "determined",
     "hal": "content",
-    "rosa": "hopeful"
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -4176,10 +4176,16 @@
       "time": "Saturday, October 24, 10:17 AM",
       "story": "Saturday morning in Sumter Oaks is hazy and warm, and Gary is at his workbench sorting light strip and speaker wiring so the mounting goes quickly once it's approved. Donna has rolled her golf cart out onto Magnolia Loop, determined to get her errand done before the heat builds. Hal sits in his kitchen with his violation notebook, jotting down Halloween on the Loop dates and the lighting limits of L-04, plus a reminder to bring cornbread to Rosa's tonight. Rosa is in her kitchen finishing the main dish for dinner, hopeful the evening turns out as warm as the food she's keeping ready.",
       "dialogue": []
+    },
+    {
+      "tick": 181,
+      "time": "Saturday, October 24, 11:17 AM",
+      "story": "On a humid, hazy Saturday morning in Sumter Oaks, Gary is at home with a cold drink and a sandwich, patiently waiting on the review board. Donna is heading down Magnolia Loop toward the Rec Center with determination in her step. Meanwhile Hal is at his house jotting down his cornbread plan and a departure time so he can arrive at Rosa's early with the folding table, and Rosa, feeling optimistic, is checking her per-diem shift schedule to make sure nothing clashes with tonight's dinner.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 5.59212,
+    "total_usd": 5.62254,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4230,13 +4236,12 @@
         "usd": 0.47422
       },
       "2026-10-24": {
-        "ticks": 4,
-        "usd": 0.12527
+        "ticks": 5,
+        "usd": 0.15569
       }
     }
   },
   "recent_tick_costs": [
-    0.02896,
     0.02923,
     0.03014,
     0.03273,
@@ -4259,7 +4264,8 @@
     0.03145,
     0.03079,
     0.03047,
-    0.03256
+    0.03256,
+    0.03042
   ],
   "fund": {
     "gross_usd": 0.0,
