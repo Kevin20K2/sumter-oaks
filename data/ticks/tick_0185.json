@@ -1,0 +1,119 @@
+{
+  "tick": 185,
+  "simulation_time": "Saturday, October 24, 3:17 PM",
+  "weather": "Humid and hazy, 86°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "rec_center",
+    "hal": "hals_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 3:17 on this hazy, humid Saturday in Sumter Oaks, Gary sits patiently in his garage, keeping his golf cart parked until the review board signs off on his staged and tested setup. Donna is out on pickleball court one, determinedly drilling third-shot drops against a wall of cones while she waits on Gary's news. Hal is content to stroll down Magnolia Loop, where Rosa, hopeful as ever, is reading the bulletin board for new notices before she heads home to finish dinner.",
+  "events": [
+    "Gary waited: Waiting on the review board's answer. Everything's staged and tested indoors, so I'll sit tight and keep the cart in the garage until I'm signed off.",
+    "Donna (pickleball court 1): Drill third-shot drops against the wall of cones while I wait for Gary",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (street bulletin board): Read the bulletin board for any new notices before heading back to finish dinner prep"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've filed the review application, bench-tested everything indoors, pre-routed the wiring, and staged the hardware. Nothing's mounted outside, so I'm on the right side of L-01 and Hal's board. There's nothing left to do on the cart until approval comes through. Donna and I are on the court tomorrow and Saturday dinner at Rosa's is coming, so a cold drink and a sandwich can't hurt while I wait. Stay patient, stay useful, keep the cart in the garage.",
+      "emotional_state": "patient",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Waiting on the review board's answer. Everything's staged and tested indoors, so I'll sit tight and keep the cart in the garage until I'm signed off."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at the Rec Center, it's 3:17 PM, and nobody's around. I already reserved the 2-hour slot and took court one at Tick 184 while waiting for Gary. No point re-reserving or re-checking the board. Gary is my partner who needs to learn the third-shot drop, and he hasn't shown yet. Best use of the hour is to keep practicing on court one so I'm sharp and can coach him when he walks in, then get ready for Rosa's Saturday dinner with the cobbler.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Drill third-shot drops against the wall of cones while I wait for Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's 3:17 PM Saturday. Rosa's dinner is tonight, and I've got the cornbread and table plan in my notebook. I've been sitting on the porch watching an empty street for a couple of ticks. Nobody's around, and waiting won't get the table carried over. I'd rather head out to Magnolia Loop early, like a supply sergeant should, and show up on time without a fuss. Violations can wait; Donna and Gary's matters are settled and I'm glad of the quiet.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with plenty of time to spare so I reach Rosa's early with the cornbread and the table, no fuss."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 3:17 PM and dinner is tonight. The table is set and the kitchen is ready, so I came out to the Loop to catch my neighbors and confirm they're coming. Nobody is in sight right now. The bulletin board has the Halloween flyer, and I should check whether anything new is posted before I head back to put the finishing touches on the meal. A quick look costs nothing and keeps me in the loop on neighborhood news.",
+      "emotional_state": "hopeful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the bulletin board for any new notices before heading back to finish dinner prep"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03117,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9852,
+        "output_tokens": 1134,
+        "usd": 0.03104
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 420,
+        "output_tokens": 172,
+        "usd": 0.00013
+      }
+    }
+  },
+  "season": "halloween"
+}
