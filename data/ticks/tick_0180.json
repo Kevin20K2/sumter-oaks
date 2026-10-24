@@ -1,0 +1,119 @@
+{
+  "tick": 180,
+  "simulation_time": "Saturday, October 24, 10:17 AM",
+  "weather": "Humid and hazy, 82°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Saturday morning in Sumter Oaks is hazy and warm, and Gary is at his workbench sorting light strip and speaker wiring so the mounting goes quickly once it's approved. Donna has rolled her golf cart out onto Magnolia Loop, determined to get her errand done before the heat builds. Hal sits in his kitchen with his violation notebook, jotting down Halloween on the Loop dates and the lighting limits of L-04, plus a reminder to bring cornbread to Rosa's tonight. Rosa is in her kitchen finishing the main dish for dinner, hopeful the evening turns out as warm as the food she's keeping ready.",
+  "events": [
+    "Gary (gary workbench): Label and tidy the light strip and speaker wiring so mounting is quick once approved",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (hal violation notebook): Jot down Halloween on the Loop dates, note L-04 lighting limits, and remind myself: cornbread and table for Rosa's tonight",
+    "Rosa (rosa kitchen): Finish the main dish and get it ready to hold warm for tonight's dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've filed the Architectural Review application and bench-tested the lights and speaker, and I've measured and marked the cart without drilling anything. L-01 says exterior mods visible from the street need approval first, so nothing gets mounted until the board signs off. The Halloween flyer means the parade is next Saturday, so I'm on a clock, but I've done all I can legally do right now. I'm alone in the house, so the best use of this hour is more prep that doesn't touch the cart: cleaning up the light strip wiring and labeling connections on the bench so mounting goes fast the moment approval comes through.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Label and tidy the light strip and speaker wiring so mounting is quick once approved"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 10:17 on a hazy Saturday and I'm home with nobody in sight. My memories say court one with Gary and cobbler for Rosa's at five, and I've already checked the calendar twice, so no need to read it again. The thing I haven't done is pack the paddle bag, though I did that at tick 179. Next best step is getting myself and the bag over to Magnolia Loop and on toward the courts so I can find Gary and keep drilling those third-shot drops before the ladder match. Staying put won't move my pickleball plan forward.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with my bag to find Gary and get to the courts for some drills."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Saturday morning, 10:17. Nobody's in sight, notebook says nothing is pending, and the flamingos are behind the hedge. Rosa's dinner is tonight and I want to arrive on time with the cornbread and the table. The Halloween flyer is up, which means more decorations and carts to keep an eye on, and L-04 says holiday lighting doesn't start until Thanksgiving. Best use of the hour is to note the Halloween event and the dinner prep in the notebook, so nothing slips and I stay fair with the neighbors.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Jot down Halloween on the Loop dates, note L-04 lighting limits, and remind myself: cornbread and table for Rosa's tonight"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's mid-morning on the day of the welcome dinner and I've been prepping the main dish for two ticks. The long table is set, Hal has the cornbread, Donna the cobbler, Gary the ice and chairs. The main dish is the one thing that's mine alone, so I should keep at it rather than wander off. No neighbors are nearby, nothing to say to anyone. The Halloween flyer is nice news for later, but tonight's table comes first.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Finish the main dish and get it ready to hold warm for tonight's dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03256,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10246,
+        "output_tokens": 1192,
+        "usd": 0.03241
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 421,
+        "output_tokens": 219,
+        "usd": 0.00015
+      }
+    }
+  },
+  "season": "halloween"
+}

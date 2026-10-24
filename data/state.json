@@ -1,33 +1,22 @@
 {
-  "tick": 180,
-  "time": "2026-10-24T09:17",
+  "tick": 181,
+  "time": "2026-10-24T10:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "Town news: A flyer went up on the Magnolia Loop bulletin board: Halloween on the Loop, Saturday, October 31. Trick-or-treating from 5 to 7 PM, a golf cart parade around the Loop at 6, then a costume contest at the Town Square bandstand at 7, with prizes for best costume and best-decorated golf cart. Decorations welcome all week."
-    ],
+    "gary": [],
     "donna": [
-      "Town news: A flyer went up on the Magnolia Loop bulletin board: Halloween on the Loop, Saturday, October 31. Trick-or-treating from 5 to 7 PM, a golf cart parade around the Loop at 6, then a costume contest at the Town Square bandstand at 7, with prizes for best costume and best-decorated golf cart. Decorations welcome all week."
+      "You arrived at Magnolia Loop (the street)."
     ],
-    "hal": [
-      "Town news: A flyer went up on the Magnolia Loop bulletin board: Halloween on the Loop, Saturday, October 31. Trick-or-treating from 5 to 7 PM, a golf cart parade around the Loop at 6, then a costume contest at the Town Square bandstand at 7, with prizes for best costume and best-decorated golf cart. Decorations welcome all week."
-    ],
-    "rosa": [
-      "Town news: A flyer went up on the Magnolia Loop bulletin board: Halloween on the Loop, Saturday, October 31. Trick-or-treating from 5 to 7 PM, a golf cart parade around the Loop at 6, then a costume contest at the Town Square bandstand at 7, with prizes for best costume and best-decorated golf cart. Decorations welcome all week."
-    ]
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 85,
-        "text": "Donna headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 85,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -1022,19 +1011,14 @@
         "tick": 179,
         "text": "Town news: A flyer went up on the Magnolia Loop bulletin board: Halloween on the Loop, Saturday, October 31. Trick-or-treating from 5 to 7 PM, a golf cart parade around the Loop at 6, then a costume contest at the Town Square bandstand at 7, with prizes for best costume and best-decorated golf cart. Decorations welcome all week.",
         "importance": 8
+      },
+      {
+        "tick": 180,
+        "text": "I (gary workbench): Label and tidy the light strip and speaker wiring so mounting is quick once approved",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 94,
-        "text": "Hal said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
-        "importance": 5
-      },
-      {
-        "tick": 94,
-        "text": "Rosa headed to Rosa's House.",
-        "importance": 5
-      },
       {
         "tick": 94,
         "text": "You arrived at Rec Center.",
@@ -2024,14 +2008,19 @@
         "tick": 179,
         "text": "Town news: A flyer went up on the Magnolia Loop bulletin board: Halloween on the Loop, Saturday, October 31. Trick-or-treating from 5 to 7 PM, a golf cart parade around the Loop at 6, then a costume contest at the Town Square bandstand at 7, with prizes for best costume and best-decorated golf cart. Decorations welcome all week.",
         "importance": 8
+      },
+      {
+        "tick": 180,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 180,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 84,
-        "text": "I (rosa dining table): Check the place settings and count seats for dinner",
-        "importance": 3
-      },
       {
         "tick": 85,
         "text": "I (rosa shift schedule): Read the shift schedule to see when dinner service and guests are expected",
@@ -3026,14 +3015,14 @@
         "tick": 179,
         "text": "Town news: A flyer went up on the Magnolia Loop bulletin board: Halloween on the Loop, Saturday, October 31. Trick-or-treating from 5 to 7 PM, a golf cart parade around the Loop at 6, then a costume contest at the Town Square bandstand at 7, with prizes for best costume and best-decorated golf cart. Decorations welcome all week.",
         "importance": 8
+      },
+      {
+        "tick": 180,
+        "text": "I (hal violation notebook): Jot down Halloween on the Loop dates, note L-04 lighting limits, and remind myself: cornbread and table for Rosa's tonight",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 72,
-        "text": "I (rosa shift schedule): Check the schedule one more time to confirm nothing can pull me away before six tonight",
-        "importance": 5
-      },
       {
         "tick": 73,
         "text": "I (rosa kitchen): Pull the pork from the fridge, season it, and start the slow cook for tonight's dinner",
@@ -4028,6 +4017,11 @@
         "tick": 179,
         "text": "Town news: A flyer went up on the Magnolia Loop bulletin board: Halloween on the Loop, Saturday, October 31. Trick-or-treating from 5 to 7 PM, a golf cart parade around the Loop at 6, then a costume contest at the Town Square bandstand at 7, with prizes for best costume and best-decorated golf cart. Decorations welcome all week.",
         "importance": 8
+      },
+      {
+        "tick": 180,
+        "text": "I (rosa kitchen): Finish the main dish and get it ready to hold warm for tonight's dinner",
+        "importance": 6
       }
     ]
   },
@@ -4074,8 +4068,8 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "energized",
+    "gary": "optimistic",
+    "donna": "determined",
     "hal": "content",
     "rosa": "hopeful"
   },
@@ -4176,10 +4170,16 @@
       "time": "Saturday, October 24, 9:17 AM",
       "story": "At 9:17 on a humid, hazy Saturday morning in Sumter Oaks, Gary is measuring and marking spots on his golf cart for lights and a speaker, though nothing gets drilled yet. Donna is packing paddles, balls, and water bottles for her pickleball game with Gary on court one, while Hal settles into his porch chair with a cup of coffee to watch the quiet street. Over at Rosa's kitchen, she keeps prepping the main dish for tonight's dinner, and everyone is buzzing a little about the new Halloween on the Loop flyer, with its golf cart parade and costume contest on October 31.",
       "dialogue": []
+    },
+    {
+      "tick": 180,
+      "time": "Saturday, October 24, 10:17 AM",
+      "story": "Saturday morning in Sumter Oaks is hazy and warm, and Gary is at his workbench sorting light strip and speaker wiring so the mounting goes quickly once it's approved. Donna has rolled her golf cart out onto Magnolia Loop, determined to get her errand done before the heat builds. Hal sits in his kitchen with his violation notebook, jotting down Halloween on the Loop dates and the lighting limits of L-04, plus a reminder to bring cornbread to Rosa's tonight. Rosa is in her kitchen finishing the main dish for dinner, hopeful the evening turns out as warm as the food she's keeping ready.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 5.55956,
+    "total_usd": 5.59212,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4230,13 +4230,12 @@
         "usd": 0.47422
       },
       "2026-10-24": {
-        "ticks": 3,
-        "usd": 0.09271
+        "ticks": 4,
+        "usd": 0.12527
       }
     }
   },
   "recent_tick_costs": [
-    0.02959,
     0.02896,
     0.02923,
     0.03014,
@@ -4259,7 +4258,8 @@
     0.03236,
     0.03145,
     0.03079,
-    0.03047
+    0.03047,
+    0.03256
   ],
   "fund": {
     "gross_usd": 0.0,
