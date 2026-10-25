@@ -1,0 +1,119 @@
+{
+  "tick": 195,
+  "simulation_time": "Sunday, October 25, 10:17 AM",
+  "weather": "Sunny, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On a sunny Sunday morning at 76 degrees, Gary is quietly dry-fitting golf cart parts in his garage, keeping everything out of sight from the street. Donna, feeling upbeat, is penciling in a ladder match and blocking off Halloween events on the Loop calendar in her role as social chair. Hal is strolling down Magnolia Loop, content as ever, while Rosa checks her per-diem shifts at home so she doesn't overbook herself this week.",
+  "events": [
+    "Gary (gary golf cart): Check mounting points and dry-fit parts indoors, nothing visible from the street",
+    "Donna (donna club calendar): Pencil in the ladder match date and block off Halloween on the Loop events as social chair",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa shift schedule): Check my per-diem shifts for the week so I don't overbook myself"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've been tinkering indoors for a few ticks now and everything is bench-tested, labeled, and pre-assembled. The Architectural Review application was filed back at tick 156, and until that's approved I can't mount anything visible from the street (L-01). Nobody's around this Sunday morning, so no one to chat with. There's one more bit of prep I can do inside the garage without breaking any rules: test the speaker's volume limits and tuck the extra wiring neatly so install goes fast once approval comes through. Keeping busy with the cart keeps me feeling useful, and I'd rather be patient and legal than get a notice from Hal.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Check mounting points and dry-fit parts indoors, nothing visible from the street"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already checked the bag, penciled in the practice slot, and texted Gary this morning. Nobody's nearby and he hasn't replied yet, so texting again would just be nagging. It's a sunny Sunday and I've got practice and the ladder match to prepare for, and Halloween on the Loop is coming up, so there's decorating to think about. Within L-02, I can only show three ornaments from the street. I'll use the quiet time to pin down the ladder match date and plan my week as social chair.",
+      "emotional_state": "upbeat",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Pencil in the ladder match date and block off Halloween on the Loop events as social chair"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Notebook's updated, Halloween decor is allowed all week, and nobody's in sight. Nothing to report on Gary or Donna now that those matters are settled. A retired sergeant doesn't sit idle, though. A walk down Magnolia Loop will let me do a proper ground-level survey of ornament counts and any carts parked on the grass, and I might run into a neighbor on the way.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Taking a walk down the Loop to inspect the Halloween decorations at ground level"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The dinner went well and I've cleared the table. It's Sunday morning, nobody's around, and I know I tend to overcommit. I was just about to check my per-diem shifts, so I should do that now and make sure I don't double-book myself this week before the Halloween parade and contest on the 31st.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts for the week so I don't overbook myself"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03072,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9982,
+        "output_tokens": 1064,
+        "usd": 0.0306
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 391,
+        "output_tokens": 159,
+        "usd": 0.00012
+      }
+    }
+  },
+  "season": "halloween"
+}
