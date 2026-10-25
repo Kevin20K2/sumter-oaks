@@ -1,6 +1,6 @@
 {
-  "tick": 203,
-  "time": "2026-10-25T17:17",
+  "tick": 204,
+  "time": "2026-10-25T18:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
@@ -8,35 +8,22 @@
     "rosa": "magnolia_loop"
   },
   "perceptions": {
-    "gary": [
-      "Donna (street bulletin board): Pin up a tally sheet for parade theme ideas and note that cart plans go to Architectural Review first",
-      "Hal said to Gary: “Gary, red and blue lights on four carts is an exterior modification, so L-01 says file it with Architectural Review before you wire anything. Do that, keep the flamingos at three, and I'll sign off on your sketches myself.”",
-      "Rosa (street bulletin board): Pin up my 'Magnolia Loop Memorial Hospital' theme sketch with a note: all cart plans go to Architectural Review first, ornaments stay at three, and everyone's invited to dinner.",
-      "You arrived at Gary's House."
-    ],
+    "gary": [],
     "donna": [
-      "Gary headed to Gary's House.",
-      "Hal said to Gary: “Gary, red and blue lights on four carts is an exterior modification, so L-01 says file it with Architectural Review before you wire anything. Do that, keep the flamingos at three, and I'll sign off on your sketches myself.”",
-      "Rosa (street bulletin board): Pin up my 'Magnolia Loop Memorial Hospital' theme sketch with a note: all cart plans go to Architectural Review first, ornaments stay at three, and everyone's invited to dinner."
+      "Hal said to Rosa: “Saw your notice, Rosa. Sound rules, and I'll hold Gary to every one of them. What time is dinner, and what can I haul over? I'll bring the folding table, and I know where the extra chairs are.”",
+      "Rosa said to Hal: “Hal, I appreciate the rundown, and I'll keep every cart inside the rules. But right now there's a plate with your name on it at my table, and Donna's casserole is going cold. Leave the notebook on the porch and come eat with us.”"
     ],
     "hal": [
-      "Gary headed to Gary's House.",
-      "Donna (street bulletin board): Pin up a tally sheet for parade theme ideas and note that cart plans go to Architectural Review first",
-      "Rosa (street bulletin board): Pin up my 'Magnolia Loop Memorial Hospital' theme sketch with a note: all cart plans go to Architectural Review first, ornaments stay at three, and everyone's invited to dinner."
+      "Donna said to Hal: “Hal, I love the hospital theme and I'm keeping my flamingos to three, bandages and all. If I swing by with my cart plans tomorrow, will you look them over before I send them to Architectural Review?”",
+      "Rosa said to Hal: “Hal, I appreciate the rundown, and I'll keep every cart inside the rules. But right now there's a plate with your name on it at my table, and Donna's casserole is going cold. Leave the notebook on the porch and come eat with us.”"
     ],
     "rosa": [
-      "Gary headed to Gary's House.",
-      "Donna (street bulletin board): Pin up a tally sheet for parade theme ideas and note that cart plans go to Architectural Review first",
-      "Hal said to Gary: “Gary, red and blue lights on four carts is an exterior modification, so L-01 says file it with Architectural Review before you wire anything. Do that, keep the flamingos at three, and I'll sign off on your sketches myself.”"
+      "Donna said to Hal: “Hal, I love the hospital theme and I'm keeping my flamingos to three, bandages and all. If I swing by with my cart plans tomorrow, will you look them over before I send them to Architectural Review?”",
+      "Hal said to Rosa: “Saw your notice, Rosa. Sound rules, and I'll hold Gary to every one of them. What time is dinner, and what can I haul over? I'll bring the folding table, and I know where the extra chairs are.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 110,
-        "text": "Donna just arrived.",
-        "importance": 4
-      },
       {
         "tick": 111,
         "text": "I said to Hal: “Fair point, Hal, I got the cart cart cart wiring done before I should have. The mod form for the lights and sound is already filed with Architectural Review though. Any idea how long approval takes, so I'm not running the parade on a technicality?”",
@@ -1031,24 +1018,14 @@
         "tick": 202,
         "text": "You arrived at Gary's House.",
         "importance": 6
+      },
+      {
+        "tick": 203,
+        "text": "I (gary workbench): Draw up a careful wiring and speaker layout sketch for the cart lights and sound system to show Hal and the board",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 113,
-        "text": "You arrived at Rosa's House.",
-        "importance": 5
-      },
-      {
-        "tick": 113,
-        "text": "Hal just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 113,
-        "text": "Rosa just arrived.",
-        "importance": 5
-      },
       {
         "tick": 114,
         "text": "I said to Rosa: “Rosa, thank you for having us all! Gary's just run home for a minute but he'll be right along. Can I help you carry anything to the table?”",
@@ -2033,24 +2010,24 @@
         "tick": 202,
         "text": "Rosa (street bulletin board): Pin up my 'Magnolia Loop Memorial Hospital' theme sketch with a note: all cart plans go to Architectural Review first, ornaments stay at three, and everyone's invited to dinner.",
         "importance": 5
+      },
+      {
+        "tick": 203,
+        "text": "I said to Hal: “Hal, I love the hospital theme and I'm keeping my flamingos to three, bandages and all. If I swing by with my cart plans tomorrow, will you look them over before I send them to Architectural Review?”",
+        "importance": 5
+      },
+      {
+        "tick": 203,
+        "text": "Hal said to Rosa: “Saw your notice, Rosa. Sound rules, and I'll hold Gary to every one of them. What time is dinner, and what can I haul over? I'll bring the folding table, and I know where the extra chairs are.”",
+        "importance": 5
+      },
+      {
+        "tick": 203,
+        "text": "Rosa said to Hal: “Hal, I appreciate the rundown, and I'll keep every cart inside the rules. But right now there's a plate with your name on it at my table, and Donna's casserole is going cold. Leave the notebook on the porch and come eat with us.”",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 111,
-        "text": "Gary said to Hal: “Fair point, Hal, I got the cart cart cart wiring done before I should have. The mod form for the lights and sound is already filed with Architectural Review though. Any idea how long approval takes, so I'm not running the parade on a technicality?”",
-        "importance": 5
-      },
-      {
-        "tick": 111,
-        "text": "Donna said to Gary: “There you are, Gary! I've been combing the whole neighborhood for my doubles partner. Rosa's expecting us at six sharp, and she says the disposal is long forgiven, so no excuses.”",
-        "importance": 5
-      },
-      {
-        "tick": 111,
-        "text": "Rosa just arrived.",
-        "importance": 5
-      },
       {
         "tick": 112,
         "text": "I said to Gary: “Committee usually takes a week or two, Gary. Don't run the parade till you've got the approval in hand. Now let's quit squawking and get to Rosa's table before six; I'll carry something.”",
@@ -3035,24 +3012,24 @@
         "tick": 202,
         "text": "Rosa (street bulletin board): Pin up my 'Magnolia Loop Memorial Hospital' theme sketch with a note: all cart plans go to Architectural Review first, ornaments stay at three, and everyone's invited to dinner.",
         "importance": 5
+      },
+      {
+        "tick": 203,
+        "text": "I said to Rosa: “Saw your notice, Rosa. Sound rules, and I'll hold Gary to every one of them. What time is dinner, and what can I haul over? I'll bring the folding table, and I know where the extra chairs are.”",
+        "importance": 4
+      },
+      {
+        "tick": 203,
+        "text": "Donna said to Hal: “Hal, I love the hospital theme and I'm keeping my flamingos to three, bandages and all. If I swing by with my cart plans tomorrow, will you look them over before I send them to Architectural Review?”",
+        "importance": 4
+      },
+      {
+        "tick": 203,
+        "text": "Rosa said to Hal: “Hal, I appreciate the rundown, and I'll keep every cart inside the rules. But right now there's a plate with your name on it at my table, and Donna's casserole is going cold. Leave the notebook on the porch and come eat with us.”",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 106,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total for the committee",
-        "importance": 6
-      },
-      {
-        "tick": 107,
-        "text": "I said to Hal: “Hal, Donna's coming at six tonight and I'm setting a place for you too. No pressure about the flamingo count, it'll still be here after pot roast. Can I count on you?”",
-        "importance": 6
-      },
-      {
-        "tick": 107,
-        "text": "Donna said to Rosa: “Rosa, six tonight is perfect, no need to build around me, I'll be there with bells on. And if you spot Gary before I do, tell him his doubles partner is hunting for him, we have a ladder match to win!”",
-        "importance": 6
-      },
       {
         "tick": 107,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and write the total in my notebook for the committee",
@@ -4037,6 +4014,21 @@
         "tick": 202,
         "text": "Hal said to Gary: “Gary, red and blue lights on four carts is an exterior modification, so L-01 says file it with Architectural Review before you wire anything. Do that, keep the flamingos at three, and I'll sign off on your sketches myself.”",
         "importance": 6
+      },
+      {
+        "tick": 203,
+        "text": "I said to Hal: “Hal, I appreciate the rundown, and I'll keep every cart inside the rules. But right now there's a plate with your name on it at my table, and Donna's casserole is going cold. Leave the notebook on the porch and come eat with us.”",
+        "importance": 6
+      },
+      {
+        "tick": 203,
+        "text": "Donna said to Hal: “Hal, I love the hospital theme and I'm keeping my flamingos to three, bandages and all. If I swing by with my cart plans tomorrow, will you look them over before I send them to Architectural Review?”",
+        "importance": 6
+      },
+      {
+        "tick": 203,
+        "text": "Hal said to Rosa: “Saw your notice, Rosa. Sound rules, and I'll hold Gary to every one of them. What time is dinner, and what can I haul over? I'll bring the folding table, and I know where the extra chairs are.”",
+        "importance": 6
       }
     ]
   },
@@ -4083,10 +4075,10 @@
     ]
   },
   "emotions": {
-    "gary": "energized",
-    "donna": "energized",
-    "hal": "gruffly cooperative",
-    "rosa": "optimistic"
+    "gary": "optimistic",
+    "donna": "cheerful",
+    "hal": "gruff but content",
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -4179,9 +4171,20 @@
       "text": "Gary Kowalski: File Architectural Review application for golf cart lights and sound system"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 203,
+      "time": "Sunday, October 25, 6:17 PM",
+      "story": "On Sunday evening at 6:17, with the October sun still warm at 78 degrees, Gary is sketching wiring and speaker layouts at his workbench for the cart lights and sound system he wants to show Hal and the board. Donna, cheerful as ever, is out on Magnolia Loop asking Hal to look over her hospital-themed cart plans, with her three bandaged flamingos, before they go to Architectural Review. Hal, gruff but content, has his heart set on hauling a folding table and chairs to dinner, but Rosa, determined to keep the peace, waves him off the notebook and insists he come eat before Donna's casserole goes cold.",
+      "dialogue": [
+        "Donna said to Hal: “Hal, I love the hospital theme and I'm keeping my flamingos to three, bandages and all. If I swing by with my cart plans tomorrow, will you look them over before I send them to Architectural Review?”",
+        "Hal said to Rosa: “Saw your notice, Rosa. Sound rules, and I'll hold Gary to every one of them. What time is dinner, and what can I haul over? I'll bring the folding table, and I know where the extra chairs are.”",
+        "Rosa said to Hal: “Hal, I appreciate the rundown, and I'll keep every cart inside the rules. But right now there's a plate with your name on it at my table, and Donna's casserole is going cold. Leave the notebook on the porch and come eat with us.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 6.31432,
+    "total_usd": 6.34967,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4236,13 +4239,12 @@
         "usd": 0.47159
       },
       "2026-10-25": {
-        "ticks": 11,
-        "usd": 0.37588
+        "ticks": 12,
+        "usd": 0.41123
       }
     }
   },
   "recent_tick_costs": [
-    0.03047,
     0.03256,
     0.03042,
     0.03039,
@@ -4265,7 +4267,8 @@
     0.03717,
     0.03622,
     0.03695,
-    0.03855
+    0.03855,
+    0.03535
   ],
   "fund": {
     "gross_usd": 0.0,
