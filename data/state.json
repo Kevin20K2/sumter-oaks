@@ -1,6 +1,6 @@
 {
-  "tick": 193,
-  "time": "2026-10-25T07:17",
+  "tick": 194,
+  "time": "2026-10-25T08:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -15,11 +15,6 @@
   },
   "memories": {
     "gary": [
-      {
-        "tick": 94,
-        "text": "Hal said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
-        "importance": 4
-      },
       {
         "tick": 94,
         "text": "Rosa headed to Rosa's House.",
@@ -1014,14 +1009,14 @@
         "tick": 192,
         "text": "I (gary workbench): Bench-test the cart's light strips and speaker wiring indoors",
         "importance": 4
+      },
+      {
+        "tick": 193,
+        "text": "I (gary workbench): Fine-tune the speaker bracket and tidy the light strip wiring, all indoors",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 105,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 105,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -2016,14 +2011,14 @@
         "tick": 192,
         "text": "I (donna pickleball bag): Check the bag and pack the spare paddle and extra balls for Gary",
         "importance": 5
+      },
+      {
+        "tick": 193,
+        "text": "I (donna club calendar): Pencil in a two-hour practice slot with Gary and note the upcoming ladder match",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 97,
-        "text": "I said to Rosa: “Rosa. I lost track of the afternoon and I owe you an apology. I'll be at your table tonight, on time, and I'll bring something to carry.”",
-        "importance": 6
-      },
       {
         "tick": 97,
         "text": "Rosa said to Hal: “Hal, there you are. Dinner's been ready at my place since five and your chair's still empty. Is everything okay? Where are Gary and Donna? Come on over, I'll warm the pork back up.”",
@@ -3018,14 +3013,14 @@
         "tick": 192,
         "text": "I (hal binoculars): Scan Magnolia Loop from the porch for Halloween decorations going up",
         "importance": 3
+      },
+      {
+        "tick": 193,
+        "text": "I (hal binoculars): Take another careful look up and down Magnolia Loop for early Halloween decorations and any ornament counts worth noting",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 93,
-        "text": "Gary said to Rosa: “Rosa, that's on me, I thought you meant tonight. Donna and I will finish our rally and come straight over, and I'll eat enough for Hal too.”",
-        "importance": 7
-      },
       {
         "tick": 93,
         "text": "Donna said to Gary: “Okay, Gary, we're officially behind schedule, so paddle in the cart and let's roll to court one. Rosa's gets us afterward, and I want your footwork warm before the ladder match.”",
@@ -4020,6 +4015,11 @@
         "tick": 192,
         "text": "I (rosa dining table): Clear off the leftover dishes and wipe down the long table",
         "importance": 3
+      },
+      {
+        "tick": 193,
+        "text": "I (rosa dining table): Finish clearing the last dishes and wipe down the long table",
+        "importance": 3
       }
     ]
   },
@@ -4066,7 +4066,7 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
+    "gary": "content",
     "donna": "optimistic",
     "hal": "content",
     "rosa": "content"
@@ -4178,10 +4178,16 @@
       "time": "Sunday, October 25, 7:17 AM",
       "story": "It's a bright Sunday morning at 7:17 in Sumter Oaks, with the sun out and the air at a comfortable 74°F. Gary is at his workbench in his house, focused on bench-testing the light strips and speaker wiring for his golf cart before the day gets going. Across the way, Donna is optimistic as she packs her pickleball bag, adding a spare paddle and extra balls for Gary, while Hal watches Magnolia Loop from his porch through his binoculars, hoping to spot Halloween decorations going up. Meanwhile, Rosa is content at her dining table, clearing away the leftover dishes and wiping down the long table.",
       "dialogue": []
+    },
+    {
+      "tick": 193,
+      "time": "Sunday, October 25, 8:17 AM",
+      "story": "It's a bright, 75-degree Sunday morning in Sumter Oaks, and Gary is tinkering at his workbench at home, tightening a speaker bracket and tidying up a tangle of light strip wiring. Across the way, Donna is penciling a two-hour practice slot with Gary onto the club calendar, cheerfully noting an upcoming ladder match. Meanwhile, Hal is peering through his binoculars along Magnolia Loop, keeping an eye out for early Halloween decorations and counting ornaments, while Rosa wraps up the last dishes and wipes down the long dining table.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 5.97066,
+    "total_usd": 6.00284,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4236,13 +4242,12 @@
         "usd": 0.47159
       },
       "2026-10-25": {
-        "ticks": 1,
-        "usd": 0.03222
+        "ticks": 2,
+        "usd": 0.0644
       }
     }
   },
   "recent_tick_costs": [
-    0.03077,
     0.03292,
     0.03247,
     0.03336,
@@ -4265,7 +4270,8 @@
     0.03277,
     0.03143,
     0.0314,
-    0.03222
+    0.03222,
+    0.03218
   ],
   "fund": {
     "gross_usd": 0.0,
