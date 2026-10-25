@@ -1,6 +1,6 @@
 {
-  "tick": 194,
-  "time": "2026-10-25T08:17",
+  "tick": 195,
+  "time": "2026-10-25T09:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -15,11 +15,6 @@
   },
   "memories": {
     "gary": [
-      {
-        "tick": 94,
-        "text": "Rosa headed to Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 94,
         "text": "You arrived at Rec Center.",
@@ -1014,14 +1009,14 @@
         "tick": 193,
         "text": "I (gary workbench): Fine-tune the speaker bracket and tidy the light strip wiring, all indoors",
         "importance": 4
+      },
+      {
+        "tick": 194,
+        "text": "I (gary workbench): Label the wiring and pre-assemble the light strip mounts indoors so install is quick once approved",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 105,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 105,
         "text": "Rosa just arrived.",
@@ -2016,14 +2011,14 @@
         "tick": 193,
         "text": "I (donna club calendar): Pencil in a two-hour practice slot with Gary and note the upcoming ladder match",
         "importance": 5
+      },
+      {
+        "tick": 194,
+        "text": "I (donna phone): Text Gary the two-hour practice slot and tell him to bring soft knees",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 97,
-        "text": "Rosa said to Hal: “Hal, there you are. Dinner's been ready at my place since five and your chair's still empty. Is everything okay? Where are Gary and Donna? Come on over, I'll warm the pork back up.”",
-        "importance": 6
-      },
       {
         "tick": 98,
         "text": "I headed to Rosa's House.",
@@ -3018,14 +3013,14 @@
         "tick": 193,
         "text": "I (hal binoculars): Take another careful look up and down Magnolia Loop for early Halloween decorations and any ornament counts worth noting",
         "importance": 3
+      },
+      {
+        "tick": 194,
+        "text": "I (hal violation notebook): Update the notebook with this morning's observations and note Halloween decor allowances",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 93,
-        "text": "Donna said to Gary: “Okay, Gary, we're officially behind schedule, so paddle in the cart and let's roll to court one. Rosa's gets us afterward, and I want your footwork warm before the ladder match.”",
-        "importance": 7
-      },
       {
         "tick": 93,
         "text": "Hal said to Rosa: “Day got away from me, Rosa. That's on me, not you. Keep that roast warm and I'll be along shortly.”",
@@ -4020,6 +4015,11 @@
         "tick": 193,
         "text": "I (rosa dining table): Finish clearing the last dishes and wipe down the long table",
         "importance": 3
+      },
+      {
+        "tick": 194,
+        "text": "I (rosa shift schedule): Check my per-diem shifts for the week so I don't overbook myself",
+        "importance": 3
       }
     ]
   },
@@ -4066,7 +4066,7 @@
     ]
   },
   "emotions": {
-    "gary": "content",
+    "gary": "patient, content",
     "donna": "optimistic",
     "hal": "content",
     "rosa": "content"
@@ -4184,10 +4184,16 @@
       "time": "Sunday, October 25, 8:17 AM",
       "story": "It's a bright, 75-degree Sunday morning in Sumter Oaks, and Gary is tinkering at his workbench at home, tightening a speaker bracket and tidying up a tangle of light strip wiring. Across the way, Donna is penciling a two-hour practice slot with Gary onto the club calendar, cheerfully noting an upcoming ladder match. Meanwhile, Hal is peering through his binoculars along Magnolia Loop, keeping an eye out for early Halloween decorations and counting ornaments, while Rosa wraps up the last dishes and wipes down the long dining table.",
       "dialogue": []
+    },
+    {
+      "tick": 194,
+      "time": "Sunday, October 25, 9:17 AM",
+      "story": "At 9:17 on a sunny Sunday morning in Sumter Oaks, Gary is at his workbench labeling wires and pre-assembling mounts for the light strips so the install will go fast once he gets approval. Across the way, Donna is texting him about a two-hour practice slot and reminding him to bring soft knees, while Hal updates his violation notebook with his morning observations and makes a note of the Halloween decor allowances. Meanwhile, Rosa is checking her per-diem shifts for the week so she doesn't overbook herself, and everyone on the street seems content in the mild 76-degree weather.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 6.00284,
+    "total_usd": 6.03423,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4242,13 +4248,12 @@
         "usd": 0.47159
       },
       "2026-10-25": {
-        "ticks": 2,
-        "usd": 0.0644
+        "ticks": 3,
+        "usd": 0.09579
       }
     }
   },
   "recent_tick_costs": [
-    0.03292,
     0.03247,
     0.03336,
     0.03198,
@@ -4271,7 +4276,8 @@
     0.03143,
     0.0314,
     0.03222,
-    0.03218
+    0.03218,
+    0.03139
   ],
   "fund": {
     "gross_usd": 0.0,

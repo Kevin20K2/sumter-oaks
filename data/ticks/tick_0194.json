@@ -1,0 +1,119 @@
+{
+  "tick": 194,
+  "simulation_time": "Sunday, October 25, 9:17 AM",
+  "weather": "Sunny, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a sunny Sunday morning in Sumter Oaks, Gary is at his workbench labeling wires and pre-assembling mounts for the light strips so the install will go fast once he gets approval. Across the way, Donna is texting him about a two-hour practice slot and reminding him to bring soft knees, while Hal updates his violation notebook with his morning observations and makes a note of the Halloween decor allowances. Meanwhile, Rosa is checking her per-diem shifts for the week so she doesn't overbook herself, and everyone on the street seems content in the mild 76-degree weather.",
+  "events": [
+    "Gary (gary workbench): Label the wiring and pre-assemble the light strip mounts indoors so install is quick once approved",
+    "Donna (donna phone): Text Gary the two-hour practice slot and tell him to bring soft knees",
+    "Hal (hal violation notebook): Update the notebook with this morning's observations and note Halloween decor allowances",
+    "Rosa (rosa shift schedule): Check my per-diem shifts for the week so I don't overbook myself"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Sunday morning, sunny, nobody around. Last two ticks I bench-tested the wiring and tidied up the speaker bracket indoors, and Rosa reminded me the bracket isn't signed off by Architectural Review yet. That means the cart stays in the garage and nothing visible from the street until Hal and the board say yes. I filed the application at tick 156 and the Halloween parade is next Saturday, so I should keep the project legal. Best use of this hour: keep working on the cart indoors. The light strips are only attached on the workbench, and I can plan the mounting so everything bolts on quickly once approved. Donna's third-shot drop lesson is tomorrow, but that's later. For now, stay busy with something useful.",
+      "emotional_state": "patient, content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Label the wiring and pre-assemble the light strip mounts indoors so install is quick once approved"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already penciled in the practice slot on the calendar and packed the bag with the spare paddle and balls. Nobody is around to talk to, and I shouldn't repeat myself. The next useful step is to text Gary the practice time so he's confirmed, since I'm the one who always has to nudge him. Phone is right here.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_phone",
+          "content": "Text Gary the two-hour practice slot and tell him to bring soft knees"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Nobody's in sight, and I've already scanned the Loop twice this morning with the binoculars. Halloween decorations are welcome all week, so there's nothing to cite yet. Gary's cart is staying put and Donna's matters are cleared off the board. Best use of the quiet is tidying the violation notebook: log the date and my ornament counts so I'm ready if anything goes up that exceeds three or looks off. Order is kept by keeping records.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Update the notebook with this morning's observations and note Halloween decor allowances"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The dinner was a success and I've been clearing dishes for two ticks now. It's a quiet Sunday morning and nobody's around. The last thing left in the dining room is probably the final tidy-up, and I have my per-diem shift schedule to check so I don't double-book myself, since I tend to overcommit. Checking the schedule is the practical next step before I plan anything else for the week, like following up on the Halloween parade.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts for the week so I don't overbook myself"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03139,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10129,
+        "output_tokens": 1099,
+        "usd": 0.03125
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 411,
+        "output_tokens": 201,
+        "usd": 0.00014
+      }
+    }
+  },
+  "season": "halloween"
+}
