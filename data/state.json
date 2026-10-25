@@ -1,34 +1,30 @@
 {
-  "tick": 204,
-  "time": "2026-10-25T18:17",
+  "tick": 205,
+  "time": "2026-10-25T19:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
-    "hal": "magnolia_loop",
+    "hal": "rosas_house",
     "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [],
     "donna": [
-      "Hal said to Rosa: “Saw your notice, Rosa. Sound rules, and I'll hold Gary to every one of them. What time is dinner, and what can I haul over? I'll bring the folding table, and I know where the extra chairs are.”",
-      "Rosa said to Hal: “Hal, I appreciate the rundown, and I'll keep every cart inside the rules. But right now there's a plate with your name on it at my table, and Donna's casserole is going cold. Leave the notebook on the porch and come eat with us.”"
+      "Hal headed to Rosa's House.",
+      "Rosa said to Hal: “Hal, dinner's right now. Gary's already at my place and Donna's casserole is waiting. Bring that folding table and the extra chairs and walk over with us, I'll save you a plate.”"
     ],
     "hal": [
-      "Donna said to Hal: “Hal, I love the hospital theme and I'm keeping my flamingos to three, bandages and all. If I swing by with my cart plans tomorrow, will you look them over before I send them to Architectural Review?”",
-      "Rosa said to Hal: “Hal, I appreciate the rundown, and I'll keep every cart inside the rules. But right now there's a plate with your name on it at my table, and Donna's casserole is going cold. Leave the notebook on the porch and come eat with us.”"
+      "Donna said to Rosa: “Rosa, you're a doll for holding dinner. Hal, grab that folding table and let's go before my casserole turns into a doorstop. I'll walk over with you both.”",
+      "Rosa said to Hal: “Hal, dinner's right now. Gary's already at my place and Donna's casserole is waiting. Bring that folding table and the extra chairs and walk over with us, I'll save you a plate.”",
+      "You arrived at Rosa's House."
     ],
     "rosa": [
-      "Donna said to Hal: “Hal, I love the hospital theme and I'm keeping my flamingos to three, bandages and all. If I swing by with my cart plans tomorrow, will you look them over before I send them to Architectural Review?”",
-      "Hal said to Rosa: “Saw your notice, Rosa. Sound rules, and I'll hold Gary to every one of them. What time is dinner, and what can I haul over? I'll bring the folding table, and I know where the extra chairs are.”"
+      "Donna said to Rosa: “Rosa, you're a doll for holding dinner. Hal, grab that folding table and let's go before my casserole turns into a doorstop. I'll walk over with you both.”",
+      "Hal headed to Rosa's House."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 111,
-        "text": "I said to Hal: “Fair point, Hal, I got the cart cart cart wiring done before I should have. The mod form for the lights and sound is already filed with Architectural Review though. Any idea how long approval takes, so I'm not running the parade on a technicality?”",
-        "importance": 6
-      },
       {
         "tick": 111,
         "text": "Donna said to Gary: “There you are, Gary! I've been combing the whole neighborhood for my doubles partner. Rosa's expecting us at six sharp, and she says the disposal is long forgiven, so no excuses.”",
@@ -1023,24 +1019,14 @@
         "tick": 203,
         "text": "I (gary workbench): Draw up a careful wiring and speaker layout sketch for the cart lights and sound system to show Hal and the board",
         "importance": 5
+      },
+      {
+        "tick": 204,
+        "text": "I (gary workbench): Bench-test the light strings and speaker, refine the wiring sketch for Hal",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 114,
-        "text": "I said to Rosa: “Rosa, thank you for having us all! Gary's just run home for a minute but he'll be right along. Can I help you carry anything to the table?”",
-        "importance": 4
-      },
-      {
-        "tick": 114,
-        "text": "Hal said to Rosa: “Rosa, I'm late and I'm sorry. Lost track of the afternoon, and that's no excuse for a man who ran supply on a schedule for thirty years. Put me to work, I'll carry whatever needs carrying.”",
-        "importance": 4
-      },
-      {
-        "tick": 114,
-        "text": "Rosa said to Donna: “Well, look who walked in at the same time! Come in, both of you. What's the occasion, Donna, did you two come to taste-test Saturday's menu early?”",
-        "importance": 4
-      },
       {
         "tick": 115,
         "text": "I said to Rosa: “Ha! No taste-testing, Rosa, I'm just here for your company and whatever smells that good in the kitchen. Point me to the serving dishes and I'll start setting the table while Hal hauls the heavy stuff.”",
@@ -2025,29 +2011,24 @@
         "tick": 203,
         "text": "Rosa said to Hal: “Hal, I appreciate the rundown, and I'll keep every cart inside the rules. But right now there's a plate with your name on it at my table, and Donna's casserole is going cold. Leave the notebook on the porch and come eat with us.”",
         "importance": 5
+      },
+      {
+        "tick": 204,
+        "text": "I said to Rosa: “Rosa, you're a doll for holding dinner. Hal, grab that folding table and let's go before my casserole turns into a doorstop. I'll walk over with you both.”",
+        "importance": 4
+      },
+      {
+        "tick": 204,
+        "text": "Hal headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 204,
+        "text": "Rosa said to Hal: “Hal, dinner's right now. Gary's already at my place and Donna's casserole is waiting. Bring that folding table and the extra chairs and walk over with us, I'll save you a plate.”",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 112,
-        "text": "I said to Gary: “Committee usually takes a week or two, Gary. Don't run the parade till you've got the approval in hand. Now let's quit squawking and get to Rosa's table before six; I'll carry something.”",
-        "importance": 5
-      },
-      {
-        "tick": 112,
-        "text": "Gary said to Donna: “I hear you, Donna. I'm heading to my place right now for sneakers and to unplug the iron, then I'll meet you at the courts. Not late for Rosa this time, I promise.”",
-        "importance": 5
-      },
-      {
-        "tick": 112,
-        "text": "Donna said to Hal: “Oh Hal, you got me, the flock does get ahead of itself. I'll pull a few back to the lanai by Saturday, scout's honor, and you keep the committee out of my business.”",
-        "importance": 5
-      },
-      {
-        "tick": 112,
-        "text": "Rosa said to Donna: “Donna, look who's standing right here, your missing partner. Well, with all three of you on one street, the dinner table's practically assembled already.”",
-        "importance": 5
-      },
       {
         "tick": 113,
         "text": "I headed to Rosa's House.",
@@ -3027,24 +3008,29 @@
         "tick": 203,
         "text": "Rosa said to Hal: “Hal, I appreciate the rundown, and I'll keep every cart inside the rules. But right now there's a plate with your name on it at my table, and Donna's casserole is going cold. Leave the notebook on the porch and come eat with us.”",
         "importance": 4
+      },
+      {
+        "tick": 204,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 204,
+        "text": "Donna said to Rosa: “Rosa, you're a doll for holding dinner. Hal, grab that folding table and let's go before my casserole turns into a doorstop. I'll walk over with you both.”",
+        "importance": 4
+      },
+      {
+        "tick": 204,
+        "text": "Rosa said to Hal: “Hal, dinner's right now. Gary's already at my place and Donna's casserole is waiting. Bring that folding table and the extra chairs and walk over with us, I'll save you a plate.”",
+        "importance": 4
+      },
+      {
+        "tick": 204,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 107,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and write the total in my notebook for the committee",
-        "importance": 6
-      },
-      {
-        "tick": 108,
-        "text": "I headed to Rec Center.",
-        "importance": 6
-      },
-      {
-        "tick": 108,
-        "text": "Donna headed to Rec Center.",
-        "importance": 6
-      },
       {
         "tick": 108,
         "text": "Hal said to Rosa: “You can count on me, Rosa. Six sharp, and I'll bring something so I'm not showing up empty-handed. The flamingos can keep till after dinner.”",
@@ -4029,6 +4015,21 @@
         "tick": 203,
         "text": "Hal said to Rosa: “Saw your notice, Rosa. Sound rules, and I'll hold Gary to every one of them. What time is dinner, and what can I haul over? I'll bring the folding table, and I know where the extra chairs are.”",
         "importance": 6
+      },
+      {
+        "tick": 204,
+        "text": "I said to Hal: “Hal, dinner's right now. Gary's already at my place and Donna's casserole is waiting. Bring that folding table and the extra chairs and walk over with us, I'll save you a plate.”",
+        "importance": 6
+      },
+      {
+        "tick": 204,
+        "text": "Donna said to Rosa: “Rosa, you're a doll for holding dinner. Hal, grab that folding table and let's go before my casserole turns into a doorstop. I'll walk over with you both.”",
+        "importance": 6
+      },
+      {
+        "tick": 204,
+        "text": "Hal headed to Rosa's House.",
+        "importance": 6
       }
     ]
   },
@@ -4075,10 +4076,10 @@
     ]
   },
   "emotions": {
-    "gary": "optimistic",
+    "gary": "focused, hopeful",
     "donna": "cheerful",
-    "hal": "gruff but content",
-    "rosa": "determined"
+    "hal": "grudgingly content",
+    "rosa": "warm, hopeful"
   },
   "laws": [
     {
@@ -4181,10 +4182,19 @@
         "Hal said to Rosa: “Saw your notice, Rosa. Sound rules, and I'll hold Gary to every one of them. What time is dinner, and what can I haul over? I'll bring the folding table, and I know where the extra chairs are.”",
         "Rosa said to Hal: “Hal, I appreciate the rundown, and I'll keep every cart inside the rules. But right now there's a plate with your name on it at my table, and Donna's casserole is going cold. Leave the notebook on the porch and come eat with us.”"
       ]
+    },
+    {
+      "tick": 204,
+      "time": "Sunday, October 25, 7:17 PM",
+      "story": "On a sunny Sunday evening at 7:17, Gary is bench-testing light strings and a speaker in his garage, sketching out wiring for Hal with a hopeful focus. Donna, cheerful as ever, is heading up Magnolia Loop with her casserole and a folding table, and Hal walks along grudgingly content, while Rosa, warm and hopeful, waits to host the dinner. Gary has already made his way to Rosa's place, and the whole group is gathering for supper as the golden light fades over Sumter Oaks.",
+      "dialogue": [
+        "Donna said to Rosa: “Rosa, you're a doll for holding dinner. Hal, grab that folding table and let's go before my casserole turns into a doorstop. I'll walk over with you both.”",
+        "Rosa said to Hal: “Hal, dinner's right now. Gary's already at my place and Donna's casserole is waiting. Bring that folding table and the extra chairs and walk over with us, I'll save you a plate.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 6.34967,
+    "total_usd": 6.38393,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4239,13 +4249,12 @@
         "usd": 0.47159
       },
       "2026-10-25": {
-        "ticks": 12,
-        "usd": 0.41123
+        "ticks": 13,
+        "usd": 0.44549
       }
     }
   },
   "recent_tick_costs": [
-    0.03256,
     0.03042,
     0.03039,
     0.03025,
@@ -4268,7 +4277,8 @@
     0.03622,
     0.03695,
     0.03855,
-    0.03535
+    0.03535,
+    0.03426
   ],
   "fund": {
     "gross_usd": 0.0,
