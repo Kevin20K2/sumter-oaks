@@ -1,0 +1,119 @@
+{
+  "tick": 192,
+  "simulation_time": "Sunday, October 25, 7:17 AM",
+  "weather": "Sunny, 74°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "It's a bright Sunday morning at 7:17 in Sumter Oaks, with the sun out and the air at a comfortable 74°F. Gary is at his workbench in his house, focused on bench-testing the light strips and speaker wiring for his golf cart before the day gets going. Across the way, Donna is optimistic as she packs her pickleball bag, adding a spare paddle and extra balls for Gary, while Hal watches Magnolia Loop from his porch through his binoculars, hoping to spot Halloween decorations going up. Meanwhile, Rosa is content at her dining table, clearing away the leftover dishes and wiping down the long table.",
+  "events": [
+    "Gary (gary workbench): Bench-test the cart's light strips and speaker wiring indoors",
+    "Donna (donna pickleball bag): Check the bag and pack the spare paddle and extra balls for Gary",
+    "Hal (hal binoculars): Scan Magnolia Loop from the porch for Halloween decorations going up",
+    "Rosa (rosa dining table): Clear off the leftover dishes and wipe down the long table"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's a quiet Sunday morning and I'm alone at home with the cart in the garage. The Architectural Review application went in at tick 156 and the board hasn't signed off yet, so no exterior lights or bracket on the street side until it does (L-01). But I can still build the sound system and wire the lights on the workbench inside the garage, where nothing is visible from the street. Amplified sound is fine after 7 AM, but I'll test it quietly anyway. The Halloween parade is Saturday the 31st, so there's time to get the components bench-ready while I wait on approval. Staying busy also keeps the quiet house from getting to me. Working at the bench is the best use of this hour.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Bench-test the cart's light strips and speaker wiring indoors"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's a sunny Sunday morning and I'm home alone. Last night's dinner at Rosa's went beautifully, and I booked a doubles slot with Gary at the rec center. My goal is climbing the pickleball ladder, and Gary has never played, so I should make sure our practice is locked in. My bag's right here and the club calendar needs a look anyway. Checking the bag now means I'm ready to go and don't forget anything.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Check the bag and pack the spare paddle and extra balls for Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Quiet Sunday morning, nobody around. Memories say the notices are cleared and the street is settled, and Saturday's dinner went fine. Old habits die hard, though, so the binoculars and the notebook are right here. Might as well do a courtesy sweep of Magnolia Loop for the Halloween decorations going up this week. L-02 still caps ornaments at three, and holiday lighting isn't allowed until Thanksgiving. I'll watch from the porch chair and note anything real, not hunt for trouble.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Magnolia Loop from the porch for Halloween decorations going up"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Sunday morning and the dinner went well last night. The dining table is probably still a mess from the cobbler and cornbread, and the kitchen needs attention. I'm alone, so no one to talk to. Cleaning up first is the practical thing, and I can check my per-diem shift schedule afterward since I'm overcommitted as usual.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Clear off the leftover dishes and wipe down the long table"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03222,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10236,
+        "output_tokens": 1104,
+        "usd": 0.03151
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4096,
+        "output_tokens": 609,
+        "usd": 0.00071
+      }
+    }
+  },
+  "season": "halloween"
+}
