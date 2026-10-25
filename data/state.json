@@ -1,52 +1,36 @@
 {
-  "tick": 190,
-  "time": "2026-10-24T19:17",
+  "tick": 191,
+  "time": "2026-10-24T20:17",
   "positions": {
     "gary": "rosas_house",
-    "donna": "magnolia_loop",
+    "donna": "rosas_house",
     "hal": "rosas_house",
-    "rosa": "magnolia_loop"
+    "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, there you are! I've got the peach cobbler warming, so let's walk over to Rosa's together. And tomorrow morning you and I are hitting dinks at the rec center, no excuses.”",
-      "Rosa said to Donna: “Donna, there you are! Bring that cobbler straight through to the kitchen, Hal's already headed in and your seat is waiting. Gary, grab the ice and follow us, the table's set.”",
-      "You arrived at Rosa's House."
+      "Hal said to Gary: “Evening, Gary. Heard you kept the cart parked till the board signs off. That's how it's done. Now point me at whatever needs carrying.”",
+      "Donna just arrived.",
+      "Rosa just arrived."
     ],
     "donna": [
-      "Gary headed to Rosa's House.",
-      "Rosa said to Donna: “Donna, there you are! Bring that cobbler straight through to the kitchen, Hal's already headed in and your seat is waiting. Gary, grab the ice and follow us, the table's set.”"
+      "Rosa headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Rosa just arrived."
     ],
     "hal": [
-      "Gary just arrived."
+      "Gary (rosa kitchen): Carry the ice into the kitchen and set it out for the table",
+      "Donna just arrived.",
+      "Rosa just arrived."
     ],
     "rosa": [
-      "Gary headed to Rosa's House.",
-      "Donna said to Gary: “Gary, there you are! I've got the peach cobbler warming, so let's walk over to Rosa's together. And tomorrow morning you and I are hitting dinks at the rec center, no excuses.”"
+      "Donna headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Donna just arrived."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 92,
-        "text": "Hal (street bulletin board): Post a written notice citing L-02 flamingo count and L-01 cart modification review",
-        "importance": 3
-      },
-      {
-        "tick": 92,
-        "text": "Rosa said to Hal: “Hal, there you are. I had the table set for you, Gary, and Donna and sat there with a cooling pork roast. Did I get the day wrong, or did something come up at your place? Either way, the food's still good if you two want to come eat.”",
-        "importance": 3
-      },
-      {
-        "tick": 92,
-        "text": "Donna just arrived.",
-        "importance": 3
-      },
-      {
-        "tick": 93,
-        "text": "I said to Rosa: “Rosa, that's on me, I thought you meant tonight. Donna and I will finish our rally and come straight over, and I'll eat enough for Hal too.”",
-        "importance": 4
-      },
       {
         "tick": 93,
         "text": "Donna said to Gary: “Okay, Gary, we're officially behind schedule, so paddle in the cart and let's roll to court one. Rosa's gets us afterward, and I want your footwork warm before the ladder match.”",
@@ -1026,29 +1010,29 @@
         "tick": 189,
         "text": "You arrived at Rosa's House.",
         "importance": 4
-      }
-    ],
-    "donna": [
+      },
       {
-        "tick": 99,
-        "text": "Gary just arrived.",
+        "tick": 190,
+        "text": "I (rosa kitchen): Carry the ice into the kitchen and set it out for the table",
         "importance": 4
       },
       {
-        "tick": 100,
-        "text": "I said to Gary: “You were a champ out there tonight, Gary, and our name's officially on the ladder. Same time tomorrow? I'll swing by and pick you up at 7:45 sharp.”",
-        "importance": 5
+        "tick": 190,
+        "text": "Hal said to Gary: “Evening, Gary. Heard you kept the cart parked till the board signs off. That's how it's done. Now point me at whatever needs carrying.”",
+        "importance": 4
       },
       {
-        "tick": 100,
-        "text": "Gary headed to Rosa's House.",
-        "importance": 5
+        "tick": 190,
+        "text": "Donna just arrived.",
+        "importance": 4
       },
       {
-        "tick": 100,
+        "tick": 190,
         "text": "Rosa just arrived.",
-        "importance": 5
-      },
+        "importance": 4
+      }
+    ],
+    "donna": [
       {
         "tick": 101,
         "text": "I said to Rosa: “Rosa, honey, thank you again for dinner, it was delicious. Big news: Gary and I are officially on the doubles ladder as Pruitt-Kowalski, so you'll be seeing us at the top before long.”",
@@ -2028,29 +2012,29 @@
         "tick": 189,
         "text": "Rosa said to Donna: “Donna, there you are! Bring that cobbler straight through to the kitchen, Hal's already headed in and your seat is waiting. Gary, grab the ice and follow us, the table's set.”",
         "importance": 5
+      },
+      {
+        "tick": 190,
+        "text": "I headed to Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 190,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 190,
+        "text": "You arrived at Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 190,
+        "text": "Rosa just arrived.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 93,
-        "text": "Donna said to Gary: “Okay, Gary, we're officially behind schedule, so paddle in the cart and let's roll to court one. Rosa's gets us afterward, and I want your footwork warm before the ladder match.”",
-        "importance": 5
-      },
-      {
-        "tick": 93,
-        "text": "Rosa said to Donna: “Donna, good, I've got you and Gary both in one spot. Dinner at my place tonight at six, Hal's coming too. Go win your pickleball, then come hungry.”",
-        "importance": 5
-      },
-      {
-        "tick": 94,
-        "text": "I said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
-        "importance": 4
-      },
-      {
-        "tick": 94,
-        "text": "Gary headed to Rec Center.",
-        "importance": 4
-      },
       {
         "tick": 94,
         "text": "Donna headed to Rec Center.",
@@ -3030,29 +3014,29 @@
         "tick": 189,
         "text": "Gary just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 190,
+        "text": "I said to Gary: “Evening, Gary. Heard you kept the cart parked till the board signs off. That's how it's done. Now point me at whatever needs carrying.”",
+        "importance": 3
+      },
+      {
+        "tick": 190,
+        "text": "Gary (rosa kitchen): Carry the ice into the kitchen and set it out for the table",
+        "importance": 3
+      },
+      {
+        "tick": 190,
+        "text": "Donna just arrived.",
+        "importance": 3
+      },
+      {
+        "tick": 190,
+        "text": "Rosa just arrived.",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 90,
-        "text": "I waited: puttering around Rosa's House",
-        "importance": 4
-      },
-      {
-        "tick": 91,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 91,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 91,
-        "text": "Gary just arrived.",
-        "importance": 6
-      },
       {
         "tick": 92,
         "text": "I said to Hal: “Hal, there you are. I had the table set for you, Gary, and Donna and sat there with a cooling pork roast. Did I get the day wrong, or did something come up at your place? Either way, the food's still good if you two want to come eat.”",
@@ -4032,6 +4016,26 @@
         "tick": 189,
         "text": "Donna said to Gary: “Gary, there you are! I've got the peach cobbler warming, so let's walk over to Rosa's together. And tomorrow morning you and I are hitting dinks at the rec center, no excuses.”",
         "importance": 7
+      },
+      {
+        "tick": 190,
+        "text": "I headed to Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 190,
+        "text": "Donna headed to Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 190,
+        "text": "You arrived at Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 190,
+        "text": "Donna just arrived.",
+        "importance": 6
       }
     ]
   },
@@ -4080,8 +4084,8 @@
   "emotions": {
     "gary": "content",
     "donna": "cheerful",
-    "hal": "content",
-    "rosa": "warm, eager"
+    "hal": "gruff but warm",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4174,52 +4178,9 @@
       "text": "Gary Kowalski: File Architectural Review application for golf cart lights and sound system"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 185,
-      "time": "Saturday, October 24, 3:17 PM",
-      "story": "At 3:17 on this hazy, humid Saturday in Sumter Oaks, Gary sits patiently in his garage, keeping his golf cart parked until the review board signs off on his staged and tested setup. Donna is out on pickleball court one, determinedly drilling third-shot drops against a wall of cones while she waits on Gary's news. Hal is content to stroll down Magnolia Loop, where Rosa, hopeful as ever, is reading the bulletin board for new notices before she heads home to finish dinner.",
-      "dialogue": []
-    },
-    {
-      "tick": 186,
-      "time": "Saturday, October 24, 4:17 PM",
-      "story": "On a hazy Saturday afternoon in Sumter Oaks, Gary is pulling cold drinks and a bag of ice from his fridge to take over to Rosa's tonight, while Donna studies the ladder standings at the Rec Center to see how far her team has to climb. Out on Magnolia Loop, Hal and Rosa are sorting out the evening: he promises his cornbread and folding table will arrive early, and she asks him to help with the chairs around five before doors open at six. Everyone seems content in the warm 85-degree heat, with Donna determined and Rosa looking forward to the night ahead.",
-      "dialogue": [
-        "Hal said to Rosa: “Afternoon, Rosa. I've got the cornbread and the folding table ready, so I'll be at your door early. Tell me where you want the table and I'll carry it in without any fuss.”",
-        "Rosa said to Hal: “Hal, good timing. Is that cornbread on track for tonight? Doors open at six, and I could use an extra hand with the chairs if you're free around five.”"
-      ]
-    },
-    {
-      "tick": 187,
-      "time": "Saturday, October 24, 5:17 PM",
-      "story": "At 5:17 on a humid, hazy Saturday in Sumter Oaks, Gary is content and heading out to Magnolia Loop, while Donna keeps drilling third-shot drops and dinks on pickleball court one, determined to hold out until he shows up. Hal, dutiful as ever, promises Rosa he'll walk over with the cornbread and have the chairs set before six, and Rosa, cheerful and busy, tells him to set the table along the back wall and keep the kitchen doorway clear.",
-      "dialogue": [
-        "Hal said to Rosa: “Cornbread's in hand and on schedule, Rosa. I'm walking over now, so point me at the chairs and I'll have them set before six.”",
-        "Rosa said to Hal: “Thanks, Hal. Put the table along the back wall of the living room and keep the kitchen doorway clear. Come by around five-thirty and I'll have a spot ready for the cornbread.”"
-      ]
-    },
-    {
-      "tick": 188,
-      "time": "Saturday, October 24, 6:17 PM",
-      "story": "Gary stands on Magnolia Loop at 6:17 on a humid Saturday evening, cheerfully holding ice and cold drinks while his golf cart waits in the garage for the review board's sign-off. Rosa calls him in through the open doors of her house, where she has a seat ready for Donna, who is hurrying over from the Rec Center with her usual determination. Hal is making his way to Rosa's House with his dutiful air, and the warm haze over the street suggests the evening is only getting started.",
-      "dialogue": [
-        "Gary said to Rosa: “Evening, Rosa! Got the ice and cold drinks right here, and the cart's staying in the garage till the review board signs off. Want me to carry anything over?”",
-        "Rosa said to Gary: “Gary, there you are! Come on in, doors are open. Chairs and ice go through the kitchen, and I'll have Donna's seat waiting when she gets here.”"
-      ]
-    },
-    {
-      "tick": 189,
-      "time": "Saturday, October 24, 7:17 PM",
-      "story": "Saturday evening in Sumter Oaks finds the humid October air hanging hazy over Magnolia Loop, where Gary and Donna are walking together with a warm peach cobbler, Donna already promising a dink session at the rec center tomorrow morning. Rosa is waiting at her house with the table set and cornbread ready, calling Donna and Gary in for dinner while Hal squares up the dining table. Everyone is content and cheerful as the golf carts slow down along the street and the whole neighborhood settles in for supper.",
-      "dialogue": [
-        "Donna said to Gary: “Gary, there you are! I've got the peach cobbler warming, so let's walk over to Rosa's together. And tomorrow morning you and I are hitting dinks at the rec center, no excuses.”",
-        "Rosa said to Donna: “Donna, there you are! Bring that cobbler straight through to the kitchen, Hal's already headed in and your seat is waiting. Gary, grab the ice and follow us, the table's set.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 5.87561,
+    "total_usd": 5.90704,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4270,13 +4231,12 @@
         "usd": 0.47422
       },
       "2026-10-24": {
-        "ticks": 13,
-        "usd": 0.40876
+        "ticks": 14,
+        "usd": 0.44019
       }
     }
   },
   "recent_tick_costs": [
-    0.03079,
     0.0304,
     0.03124,
     0.03077,
@@ -4299,7 +4259,8 @@
     0.03141,
     0.03105,
     0.03345,
-    0.03277
+    0.03277,
+    0.03143
   ],
   "fund": {
     "gross_usd": 0.0,
