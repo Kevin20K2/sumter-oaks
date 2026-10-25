@@ -1,42 +1,36 @@
 {
-  "tick": 196,
-  "time": "2026-10-25T10:17",
+  "tick": 197,
+  "time": "2026-10-25T11:17",
   "positions": {
-    "gary": "garys_house",
-    "donna": "donnas_house",
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
-    "rosa": "rosas_house"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
-    "gary": [],
-    "donna": [],
-    "hal": [
-      "You arrived at Magnolia Loop (the street)."
+    "gary": [
+      "You arrived at Magnolia Loop (the street).",
+      "Donna just arrived.",
+      "Rosa just arrived."
     ],
-    "rosa": []
+    "donna": [
+      "You arrived at Magnolia Loop (the street).",
+      "Gary just arrived.",
+      "Rosa just arrived."
+    ],
+    "hal": [
+      "Gary just arrived.",
+      "Donna just arrived.",
+      "Rosa just arrived."
+    ],
+    "rosa": [
+      "You arrived at Magnolia Loop (the street).",
+      "Gary just arrived.",
+      "Donna just arrived."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 94,
-        "text": "Donna just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 95,
-        "text": "I said to Donna: “Sneakers on, soldering iron unplugged, Donna. Hit me with those easy serves and let's get some footwork in before the shower rolls back in.”",
-        "importance": 4
-      },
-      {
-        "tick": 95,
-        "text": "Donna said to Gary: “There he is! I put us down on the ladder as Pruitt-Kowalski, so no backing out now. Grab your paddle and let's get some footwork in on court one before this shower clears.”",
-        "importance": 4
-      },
-      {
-        "tick": 96,
-        "text": "I (pickleball court 1): Step onto court one with my paddle and start rallying easy serves with Donna",
-        "importance": 5
-      },
       {
         "tick": 96,
         "text": "Donna (pickleball court 1): Take position on court one and start easy serves and rallies with Gary",
@@ -1016,29 +1010,29 @@
         "tick": 195,
         "text": "I (gary golf cart): Check mounting points and dry-fit parts indoors, nothing visible from the street",
         "importance": 4
+      },
+      {
+        "tick": 196,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 196,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 196,
+        "text": "Donna just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 196,
+        "text": "Rosa just arrived.",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 106,
-        "text": "I said to Rosa: “Rosa, honey, good morning! Six o'clock tonight, I haven't forgotten. Have you seen Gary anywhere? We've got our first ladder match coming up and he's gone missing on me.”",
-        "importance": 5
-      },
-      {
-        "tick": 106,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total for the committee",
-        "importance": 5
-      },
-      {
-        "tick": 106,
-        "text": "Rosa said to Donna: “Donna, good timing. I'm hosting a welcome dinner at my place and I want you at the table with Gary and Hal. Tell me what evening works after your ladder games and I'll build the menu around you.”",
-        "importance": 5
-      },
-      {
-        "tick": 107,
-        "text": "I said to Rosa: “Rosa, six tonight is perfect, no need to build around me, I'll be there with bells on. And if you spot Gary before I do, tell him his doubles partner is hunting for him, we have a ladder match to win!”",
-        "importance": 5
-      },
       {
         "tick": 107,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and write the total in my notebook for the committee",
@@ -2018,29 +2012,29 @@
         "tick": 195,
         "text": "I (donna club calendar): Pencil in the ladder match date and block off Halloween on the Loop events as social chair",
         "importance": 4
+      },
+      {
+        "tick": 196,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 196,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 196,
+        "text": "Gary just arrived.",
+        "importance": 4
+      },
+      {
+        "tick": 196,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 98,
-        "text": "You arrived at Rosa's House.",
-        "importance": 6
-      },
-      {
-        "tick": 99,
-        "text": "I (rosa dining table): Straighten the chairs and take my seat, ready on time",
-        "importance": 5
-      },
-      {
-        "tick": 100,
-        "text": "I (rosa kitchen): Offer to help warm the pork and carry dishes to the table",
-        "importance": 5
-      },
-      {
-        "tick": 100,
-        "text": "Gary just arrived.",
-        "importance": 5
-      },
       {
         "tick": 101,
         "text": "I said to Gary: “Gary. Rosa's got the table set and the pork's warm, so sit down. We'll talk carts and paperwork another day. Tonight we eat.”",
@@ -3020,29 +3014,29 @@
         "tick": 195,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 3
+      },
+      {
+        "tick": 196,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note it in my head",
+        "importance": 4
+      },
+      {
+        "tick": 196,
+        "text": "Gary just arrived.",
+        "importance": 4
+      },
+      {
+        "tick": 196,
+        "text": "Donna just arrived.",
+        "importance": 4
+      },
+      {
+        "tick": 196,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 94,
-        "text": "I headed to Rosa's House.",
-        "importance": 6
-      },
-      {
-        "tick": 94,
-        "text": "Gary headed to Rec Center.",
-        "importance": 6
-      },
-      {
-        "tick": 94,
-        "text": "Donna headed to Rec Center.",
-        "importance": 6
-      },
-      {
-        "tick": 94,
-        "text": "Hal said to Donna: “Play your match, Donna. But I count a lot more than three birds on that lawn, and L-02 doesn't care whether you win. Thin the flock before the committee does it for you.”",
-        "importance": 6
-      },
       {
         "tick": 94,
         "text": "You arrived at Rosa's House.",
@@ -4022,6 +4016,26 @@
         "tick": 195,
         "text": "I (rosa shift schedule): Check my per-diem shifts for the week so I don't overbook myself",
         "importance": 3
+      },
+      {
+        "tick": 196,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 196,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 196,
+        "text": "Gary just arrived.",
+        "importance": 3
+      },
+      {
+        "tick": 196,
+        "text": "Donna just arrived.",
+        "importance": 3
       }
     ]
   },
@@ -4068,9 +4082,9 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "upbeat",
-    "hal": "content",
+    "gary": "patient, hopeful",
+    "donna": "energized",
+    "hal": "watchful",
     "rosa": "content"
   },
   "laws": [
@@ -4164,44 +4178,9 @@
       "text": "Gary Kowalski: File Architectural Review application for golf cart lights and sound system"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 191,
-      "time": "Saturday, October 24, 9:17 PM",
-      "story": "At 9:17 on this humid Saturday night at Rosa's house in Sumter Oaks, the neighbors have gathered in her kitchen and dining room, where Gary is content and keeping the cart parked until the board signs off. Donna is carrying in the peach cobbler and setting it out beside the ice cream, while Hal offers to haul the cornbread and table wherever Rosa points. Rosa, feeling cheerful and grateful, tells Donna the cobbler is the reason she isn't getting up from the table, and that this is exactly the neighborhood she hoped the Loop would be.",
-      "dialogue": [
-        "Gary said to Hal: “Evening, Hal, and thanks. Cart's staying put till the board signs off, no sense risking a notice. The ice is already in the kitchen, so check with Rosa on what else she needs hauled to the table.”",
-        "Hal said to Rosa: “Evening, Rosa. Cornbread's in hand and I'll carry the table wherever you want it. Just point and I'll have it squared away.”",
-        "Rosa said to Donna: “Donna, that cobbler is the reason I'm not getting up from this table. Thank you for pulling everyone together tonight, this is exactly the neighborhood I hoped the Loop would be.”"
-      ]
-    },
-    {
-      "tick": 192,
-      "time": "Sunday, October 25, 7:17 AM",
-      "story": "It's a bright Sunday morning at 7:17 in Sumter Oaks, with the sun out and the air at a comfortable 74°F. Gary is at his workbench in his house, focused on bench-testing the light strips and speaker wiring for his golf cart before the day gets going. Across the way, Donna is optimistic as she packs her pickleball bag, adding a spare paddle and extra balls for Gary, while Hal watches Magnolia Loop from his porch through his binoculars, hoping to spot Halloween decorations going up. Meanwhile, Rosa is content at her dining table, clearing away the leftover dishes and wiping down the long table.",
-      "dialogue": []
-    },
-    {
-      "tick": 193,
-      "time": "Sunday, October 25, 8:17 AM",
-      "story": "It's a bright, 75-degree Sunday morning in Sumter Oaks, and Gary is tinkering at his workbench at home, tightening a speaker bracket and tidying up a tangle of light strip wiring. Across the way, Donna is penciling a two-hour practice slot with Gary onto the club calendar, cheerfully noting an upcoming ladder match. Meanwhile, Hal is peering through his binoculars along Magnolia Loop, keeping an eye out for early Halloween decorations and counting ornaments, while Rosa wraps up the last dishes and wipes down the long dining table.",
-      "dialogue": []
-    },
-    {
-      "tick": 194,
-      "time": "Sunday, October 25, 9:17 AM",
-      "story": "At 9:17 on a sunny Sunday morning in Sumter Oaks, Gary is at his workbench labeling wires and pre-assembling mounts for the light strips so the install will go fast once he gets approval. Across the way, Donna is texting him about a two-hour practice slot and reminding him to bring soft knees, while Hal updates his violation notebook with his morning observations and makes a note of the Halloween decor allowances. Meanwhile, Rosa is checking her per-diem shifts for the week so she doesn't overbook herself, and everyone on the street seems content in the mild 76-degree weather.",
-      "dialogue": []
-    },
-    {
-      "tick": 195,
-      "time": "Sunday, October 25, 10:17 AM",
-      "story": "On a sunny Sunday morning at 76 degrees, Gary is quietly dry-fitting golf cart parts in his garage, keeping everything out of sight from the street. Donna, feeling upbeat, is penciling in a ladder match and blocking off Halloween events on the Loop calendar in her role as social chair. Hal is strolling down Magnolia Loop, content as ever, while Rosa checks her per-diem shifts at home so she doesn't overbook herself this week.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 6.06495,
+    "total_usd": 6.09624,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4256,13 +4235,12 @@
         "usd": 0.47159
       },
       "2026-10-25": {
-        "ticks": 4,
-        "usd": 0.12651
+        "ticks": 5,
+        "usd": 0.1578
       }
     }
   },
   "recent_tick_costs": [
-    0.03336,
     0.03198,
     0.0313,
     0.03285,
@@ -4285,7 +4263,8 @@
     0.03222,
     0.03218,
     0.03139,
-    0.03072
+    0.03072,
+    0.03129
   ],
   "fund": {
     "gross_usd": 0.0,
