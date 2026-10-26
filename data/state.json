@@ -1,49 +1,30 @@
 {
-  "tick": 218,
-  "time": "2026-10-26T17:17",
+  "tick": 219,
+  "time": "2026-10-26T18:17",
   "positions": {
-    "gary": "magnolia_loop",
+    "gary": "garys_house",
     "donna": "rec_center",
     "hal": "magnolia_loop",
     "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Hal (street bulletin board): Read the board for any Architectural Review notice on cart modifications",
-      "Rosa said to Hal: “Here you go, Hal. Everything's strap-on and removable, nothing touches the cart's frame until Review says yes. If the board's still empty, I'll walk these over to the committee tomorrow morning, and you're welcome to come along.”"
+      "Hal said to Rosa: “Sketches look orderly, Rosa. I'll walk over with you tomorrow morning, nine sharp, and I'll hold you both to it: nothing gets bolted on until the committee stamps it.”",
+      "Rosa said to Gary: “Sounds good, Gary. Bring your sketches by my place tomorrow around nine and we'll walk both sets over to the committee together. Hal, the offer's open if you want to come along.”",
+      "You arrived at Gary's House."
     ],
     "donna": [],
     "hal": [
-      "Gary said to Rosa: “Nothing up on the board yet, Rosa. I filed mine back at the desk but haven't heard a peep. Tell you what, I'll finish my wiring sketches tonight and you can carry both sets to the committee together. Nothing gets bolted on till they sign off, Hal's got my word on that.”",
-      "Rosa said to Hal: “Here you go, Hal. Everything's strap-on and removable, nothing touches the cart's frame until Review says yes. If the board's still empty, I'll walk these over to the committee tomorrow morning, and you're welcome to come along.”"
+      "Gary headed to Gary's House.",
+      "Rosa said to Gary: “Sounds good, Gary. Bring your sketches by my place tomorrow around nine and we'll walk both sets over to the committee together. Hal, the offer's open if you want to come along.”"
     ],
     "rosa": [
-      "Gary said to Rosa: “Nothing up on the board yet, Rosa. I filed mine back at the desk but haven't heard a peep. Tell you what, I'll finish my wiring sketches tonight and you can carry both sets to the committee together. Nothing gets bolted on till they sign off, Hal's got my word on that.”",
-      "Hal (street bulletin board): Read the board for any Architectural Review notice on cart modifications"
+      "Gary headed to Gary's House.",
+      "Hal said to Rosa: “Sketches look orderly, Rosa. I'll walk over with you tomorrow morning, nine sharp, and I'll hold you both to it: nothing gets bolted on until the committee stamps it.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 124,
-        "text": "Donna just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 125,
-        "text": "I said to Donna: “Afternoon, Donna. Sorry I was late last time, and thanks for keeping me on the doubles roster. I filed the cart form with Architectural Review, so no wiring till they sign off, scout's honor.”",
-        "importance": 4
-      },
-      {
-        "tick": 125,
-        "text": "Donna (court reservation kiosk): Reserve a two-hour court slot for Gary and me to practice doubles",
-        "importance": 4
-      },
-      {
-        "tick": 126,
-        "text": "I (pickleball court 1): Step onto the court and start warming up for doubles",
-        "importance": 4
-      },
       {
         "tick": 126,
         "text": "Donna said to Gary: “No apology needed, Gary, and good on you for filing that form. I've got us a two-hour slot, so grab a paddle and let's get you working on that dink shot before dinner.”",
@@ -1023,14 +1004,29 @@
         "tick": 217,
         "text": "Rosa said to Hal: “Here you go, Hal. Everything's strap-on and removable, nothing touches the cart's frame until Review says yes. If the board's still empty, I'll walk these over to the committee tomorrow morning, and you're welcome to come along.”",
         "importance": 5
+      },
+      {
+        "tick": 218,
+        "text": "I headed to Gary's House.",
+        "importance": 5
+      },
+      {
+        "tick": 218,
+        "text": "Hal said to Rosa: “Sketches look orderly, Rosa. I'll walk over with you tomorrow morning, nine sharp, and I'll hold you both to it: nothing gets bolted on until the committee stamps it.”",
+        "importance": 5
+      },
+      {
+        "tick": 218,
+        "text": "Rosa said to Gary: “Sounds good, Gary. Bring your sketches by my place tomorrow around nine and we'll walk both sets over to the committee together. Hal, the offer's open if you want to come along.”",
+        "importance": 5
+      },
+      {
+        "tick": 218,
+        "text": "You arrived at Gary's House.",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 130,
-        "text": "I said to Gary: “Go on, Gary, don't keep Hal waiting. Our names are already on the ladder sheet, so let's get another practice in before Saturday's dinner.”",
-        "importance": 4
-      },
       {
         "tick": 130,
         "text": "Gary said to Donna: “Thanks for the extra dinks, Donna. I'll stash my paddle and catch up with Hal out on the street.”",
@@ -2025,24 +2021,14 @@
         "tick": 217,
         "text": "I (court reservation kiosk): Check my court booking is two hours max and set for Gary's practice",
         "importance": 4
+      },
+      {
+        "tick": 218,
+        "text": "I (pickleball court 1): Warm up with some solo serves and dinks before Gary arrives",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 124,
-        "text": "I (street bulletin board): Check for Architectural Review schedule and pending cart approvals",
-        "importance": 4
-      },
-      {
-        "tick": 124,
-        "text": "Gary headed to Rec Center.",
-        "importance": 4
-      },
-      {
-        "tick": 124,
-        "text": "Donna headed to Rec Center.",
-        "importance": 4
-      },
       {
         "tick": 125,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street to verify L-02 compliance",
@@ -3027,24 +3013,24 @@
         "tick": 217,
         "text": "Rosa said to Hal: “Here you go, Hal. Everything's strap-on and removable, nothing touches the cart's frame until Review says yes. If the board's still empty, I'll walk these over to the committee tomorrow morning, and you're welcome to come along.”",
         "importance": 5
-      }
-    ],
-    "rosa": [
-      {
-        "tick": 127,
-        "text": "I (rosa kitchen): Draft the Saturday menu and write out a grocery and borrow list",
-        "importance": 4
       },
       {
-        "tick": 128,
-        "text": "I (rosa shift schedule): Double-check Saturday evening is still clear of per-diem shifts before I commit to the grocery run",
+        "tick": 218,
+        "text": "I said to Rosa: “Sketches look orderly, Rosa. I'll walk over with you tomorrow morning, nine sharp, and I'll hold you both to it: nothing gets bolted on until the committee stamps it.”",
         "importance": 5
       },
       {
-        "tick": 129,
-        "text": "I (rosa kitchen): Go through the pantry and fridge against my grocery list and mark what I still need to buy",
-        "importance": 4
+        "tick": 218,
+        "text": "Gary headed to Gary's House.",
+        "importance": 5
       },
+      {
+        "tick": 218,
+        "text": "Rosa said to Gary: “Sounds good, Gary. Bring your sketches by my place tomorrow around nine and we'll walk both sets over to the committee together. Hal, the offer's open if you want to come along.”",
+        "importance": 5
+      }
+    ],
+    "rosa": [
       {
         "tick": 130,
         "text": "I (rosa kitchen): Finalize the grocery list and plan what to prep ahead of Saturday",
@@ -4029,6 +4015,21 @@
         "tick": 217,
         "text": "Hal (street bulletin board): Read the board for any Architectural Review notice on cart modifications",
         "importance": 6
+      },
+      {
+        "tick": 218,
+        "text": "I said to Gary: “Sounds good, Gary. Bring your sketches by my place tomorrow around nine and we'll walk both sets over to the committee together. Hal, the offer's open if you want to come along.”",
+        "importance": 5
+      },
+      {
+        "tick": 218,
+        "text": "Gary headed to Gary's House.",
+        "importance": 5
+      },
+      {
+        "tick": 218,
+        "text": "Hal said to Rosa: “Sketches look orderly, Rosa. I'll walk over with you tomorrow morning, nine sharp, and I'll hold you both to it: nothing gets bolted on until the committee stamps it.”",
+        "importance": 5
       }
     ]
   },
@@ -4075,9 +4076,9 @@
     ]
   },
   "emotions": {
-    "gary": "patient, hopeful",
+    "gary": "determined",
     "donna": "determined",
-    "hal": "watchful",
+    "hal": "grudgingly satisfied",
     "rosa": "hopeful"
   },
   "laws": [
@@ -4197,10 +4198,19 @@
         "Gary said to Rosa: “Nothing up on the board yet, Rosa. I filed mine back at the desk but haven't heard a peep. Tell you what, I'll finish my wiring sketches tonight and you can carry both sets to the committee together. Nothing gets bolted on till they sign off, Hal's got my word on that.”",
         "Rosa said to Hal: “Here you go, Hal. Everything's strap-on and removable, nothing touches the cart's frame until Review says yes. If the board's still empty, I'll walk these over to the committee tomorrow morning, and you're welcome to come along.”"
       ]
+    },
+    {
+      "tick": 218,
+      "time": "Monday, October 26, 6:17 PM",
+      "story": "On a sunny Monday evening at 6:17, Gary is heading home to Gary's House along Magnolia Loop, looking determined about his plans. Over at the Rec Center, Donna is warming up on pickleball court one with solo serves and dinks, getting ready for Gary to arrive. Hal and Rosa are still on Magnolia Loop, where Hal grudgingly admits her sketches look orderly and agrees to walk over with her and Gary at nine the next morning, while Rosa, feeling hopeful, invites him to join them.",
+      "dialogue": [
+        "Hal said to Rosa: “Sketches look orderly, Rosa. I'll walk over with you tomorrow morning, nine sharp, and I'll hold you both to it: nothing gets bolted on until the committee stamps it.”",
+        "Rosa said to Gary: “Sounds good, Gary. Bring your sketches by my place tomorrow around nine and we'll walk both sets over to the committee together. Hal, the offer's open if you want to come along.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 6.81765,
+    "total_usd": 6.85179,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4259,13 +4269,12 @@
         "usd": 0.50904
       },
       "2026-10-26": {
-        "ticks": 11,
-        "usd": 0.37017
+        "ticks": 12,
+        "usd": 0.40431
       }
     }
   },
   "recent_tick_costs": [
-    0.03139,
     0.03072,
     0.03129,
     0.03282,
@@ -4288,7 +4297,8 @@
     0.037,
     0.03393,
     0.03392,
-    0.03356
+    0.03356,
+    0.03414
   ],
   "fund": {
     "gross_usd": 0.0,
