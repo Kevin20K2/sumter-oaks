@@ -1,0 +1,117 @@
+{
+  "tick": 214,
+  "simulation_time": "Monday, October 26, 2:17 PM",
+  "weather": "Sunny, 77°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On Monday afternoon in Sumter Oaks, the sun is warm at 77 degrees as Gary checks the street bulletin board on Magnolia Loop for an Architectural Review notice and any parade updates. Donna has just invited him to practice at the rec center at four, promising balls, iced tea, and a two-hour limit, with cart sketches to review on the way. Nearby, Hal is counting the pink flamingos in Donna's flock and logging the tally in his notebook, looking grudgingly satisfied with the numbers. Rosa, hopeful as ever, asks Hal to look over her cart sketches before Review sees them, offering him a plate of leftovers either way.",
+  "events": [
+    "Gary (street bulletin board): Check for an Architectural Review approval notice and any parade updates",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and log the tally in my notebook"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Hal just got his answer from Donna and Rosa, and the Tuesday 6 PM porch meeting is already set. I invited Hal's scrutiny in my head, but nobody has asked me anything this tick, and I've already told him the cart stays bare until Review approves. No need to repeat myself. Best use of the hour is to make progress on the actual goal: I promised Rosa a wiring sketch by Tuesday, and no approval is posted yet, so I should check the bulletin board for any Architectural Review notice or news before I head home to draw it up.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Check for an Architectural Review approval notice and any parade updates"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal is counting my flamingos right now, Rosa just invited him to Tuesday's cart planning, and Gary has the sketch covered. I've already told Hal I'm holding at three and invited him, so repeating that would be nagging. My real goal is getting Gary onto the pickleball court, and the ladder match is looming. He's right here and the afternoon is sunny, so I should move things forward: pin down a practice time and get him out of the planning chatter and onto the court. Hal can finish his tally in peace, and I'll sound confident about the count.",
+      "emotional_state": "upbeat",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, let's lock in practice. Rec center at four today, and I'll bring the balls and a thermos of iced tea. We keep it under our two-hour court limit, and you can show me those cart sketches on the way over."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Three neighbors just invited me to Rosa's porch Tuesday at six, and Donna says she's holding at three flamingos. I've got my notebook and my official count to take. Best to verify it with my own eyes instead of taking anyone's word, since that's how a supply sergeant does inventory. Gary's cart mods are going through Review first, which is by the book. I'll check the flock, log the tally, and save my commentary for Tuesday.",
+      "emotional_state": "grudgingly satisfied",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and log the tally in my notebook"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary, Donna, and Hal are all here on the Loop, and Hal is busy counting flamingos with his notebook. I've already invited Hal to Tuesday's porch planning, so I shouldn't repeat that. The flamingo count is Donna's business, and she's already answered him. My best move is to stay out of the middle of it, give Hal room to finish his tally, and see if he answers the invite. A quick, warm, practical word to Hal that acknowledges his notebook as useful rather than as a threat should help the thaw. I'll keep it short, not pushy, and tie it to getting the parade cleared before anything is built.",
+      "emotional_state": "hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, when you're done with the count, I'd love your eyes on the cart sketches before Review sees them. I'll make you a plate of leftovers either way."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.037,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 11890,
+        "output_tokens": 1240,
+        "usd": 0.03618
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 4448,
+        "output_tokens": 743,
+        "usd": 0.00082
+      }
+    }
+  },
+  "season": "halloween"
+}
