@@ -1,6 +1,6 @@
 {
-  "tick": 209,
-  "time": "2026-10-26T08:17",
+  "tick": 210,
+  "time": "2026-10-26T09:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -15,11 +15,6 @@
   },
   "memories": {
     "gary": [
-      {
-        "tick": 112,
-        "text": "Hal said to Gary: “Committee usually takes a week or two, Gary. Don't run the parade till you've got the approval in hand. Now let's quit squawking and get to Rosa's table before six; I'll carry something.”",
-        "importance": 4
-      },
       {
         "tick": 112,
         "text": "Rosa said to Donna: “Donna, look who's standing right here, your missing partner. Well, with all three of you on one street, the dinner table's practically assembled already.”",
@@ -1014,14 +1009,14 @@
         "tick": 208,
         "text": "I (gary golf cart): Dry-fit the speaker and light wiring inside the garage, nothing mounted until the board signs off",
         "importance": 5
+      },
+      {
+        "tick": 209,
+        "text": "I (gary toolbox): Sort out connectors, fuses, and mounting hardware, and tidy up the wiring sketches for the cart",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 120,
-        "text": "I (donna phone): Text Gary the confirmed practice time and ask if he's ready",
-        "importance": 5
-      },
       {
         "tick": 121,
         "text": "I headed to Magnolia Loop (the street).",
@@ -2016,14 +2011,14 @@
         "tick": 208,
         "text": "I (donna pickleball bag): Check the bag and pack a spare paddle and extra balls for Gary's practice",
         "importance": 5
+      },
+      {
+        "tick": 209,
+        "text": "I (donna phone): Text Gary a practice time for this week and ask when he's free to plan Halloween carts",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 114,
-        "text": "Donna said to Rosa: “Rosa, thank you for having us all! Gary's just run home for a minute but he'll be right along. Can I help you carry anything to the table?”",
-        "importance": 6
-      },
       {
         "tick": 114,
         "text": "Rosa said to Donna: “Well, look who walked in at the same time! Come in, both of you. What's the occasion, Donna, did you two come to taste-test Saturday's menu early?”",
@@ -3018,14 +3013,14 @@
         "tick": 208,
         "text": "I (hal binoculars): Scan Magnolia Loop for Halloween decorations, ornament counts, and cart modifications",
         "importance": 5
+      },
+      {
+        "tick": 209,
+        "text": "I (hal violation notebook): Log this morning's baseline: flamingo count at three, no cart mods visible, before Halloween decorations go up",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 112,
-        "text": "I said to Donna: “Donna, look who's standing right here, your missing partner. Well, with all three of you on one street, the dinner table's practically assembled already.”",
-        "importance": 6
-      },
       {
         "tick": 112,
         "text": "Gary said to Donna: “I hear you, Donna. I'm heading to my place right now for sneakers and to unplug the iron, then I'll meet you at the courts. Not late for Rosa this time, I promise.”",
@@ -4020,6 +4015,11 @@
         "tick": 208,
         "text": "I (rosa shift schedule): Check this week's per-diem shifts and block off evenings for Halloween parade planning",
         "importance": 4
+      },
+      {
+        "tick": 209,
+        "text": "I (rosa shift schedule): Pencil in Tuesday and Thursday evenings for parade planning around my shifts",
+        "importance": 4
       }
     ]
   },
@@ -4066,7 +4066,7 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
+    "gary": "patient",
     "donna": "determined",
     "hal": "watchful",
     "rosa": "optimistic"
@@ -4162,9 +4162,16 @@
       "text": "Gary Kowalski: File Architectural Review application for golf cart lights and sound system"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 209,
+      "time": "Monday, October 26, 9:17 AM",
+      "story": "At 9:17 on a sunny Monday morning in Sumter Oaks, Gary is sorting connectors, fuses, and mounting hardware at his house while sketching out tidy wiring diagrams for his golf cart. Across the way, Donna is determinedly texting Gary to propose a practice time this week and asking when he's free to plan the Halloween carts. Meanwhile, Hal is watchfully logging his baseline notes at his house, counting three flamingos and noting no cart modifications before the Halloween decorations go up. Rosa, optimistic as ever, is penciling Tuesday and Thursday evenings into her shift schedule so the parade planning can fit around her work.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 6.5114,
+    "total_usd": 6.54308,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4223,13 +4230,12 @@
         "usd": 0.50904
       },
       "2026-10-26": {
-        "ticks": 2,
-        "usd": 0.06392
+        "ticks": 3,
+        "usd": 0.0956
       }
     }
   },
   "recent_tick_costs": [
-    0.03117,
     0.03141,
     0.03105,
     0.03345,
@@ -4252,7 +4258,8 @@
     0.03286,
     0.03069,
     0.03128,
-    0.03264
+    0.03264,
+    0.03168
   ],
   "fund": {
     "gross_usd": 0.0,
