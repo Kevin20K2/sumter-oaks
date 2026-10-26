@@ -1,40 +1,32 @@
 {
-  "tick": 210,
-  "time": "2026-10-26T09:17",
+  "tick": 211,
+  "time": "2026-10-26T10:17",
   "positions": {
-    "gary": "garys_house",
-    "donna": "donnas_house",
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
     "hal": "hals_house",
-    "rosa": "rosas_house"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
-    "gary": [],
-    "donna": [],
+    "gary": [
+      "You arrived at Magnolia Loop (the street).",
+      "Donna just arrived.",
+      "Rosa just arrived."
+    ],
+    "donna": [
+      "You arrived at Magnolia Loop (the street).",
+      "Gary just arrived.",
+      "Rosa just arrived."
+    ],
     "hal": [],
-    "rosa": []
+    "rosa": [
+      "You arrived at Magnolia Loop (the street).",
+      "Gary just arrived.",
+      "Donna just arrived."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 112,
-        "text": "Rosa said to Donna: “Donna, look who's standing right here, your missing partner. Well, with all three of you on one street, the dinner table's practically assembled already.”",
-        "importance": 4
-      },
-      {
-        "tick": 113,
-        "text": "I headed to Gary's House.",
-        "importance": 4
-      },
-      {
-        "tick": 113,
-        "text": "Donna headed to Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 113,
-        "text": "Hal headed to Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 113,
         "text": "Rosa headed to Rosa's House.",
@@ -1014,29 +1006,29 @@
         "tick": 209,
         "text": "I (gary toolbox): Sort out connectors, fuses, and mounting hardware, and tidy up the wiring sketches for the cart",
         "importance": 4
+      },
+      {
+        "tick": 210,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 210,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 210,
+        "text": "Donna just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 210,
+        "text": "Rosa just arrived.",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 121,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 121,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 122,
-        "text": "I said to Gary: “There you are, Gary! I booked us a two-hour doubles slot at the rec center and texted you the time. Bag's packed, so all you need to bring is those soft knees.”",
-        "importance": 6
-      },
-      {
-        "tick": 122,
-        "text": "Gary said to Donna: “Afternoon, Donna. Heading to Rosa's dinner together later? I'll be there on time, and I promise to keep my soldering iron at home.”",
-        "importance": 6
-      },
       {
         "tick": 122,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
@@ -2016,14 +2008,29 @@
         "tick": 209,
         "text": "I (donna phone): Text Gary a practice time for this week and ask when he's free to plan Halloween carts",
         "importance": 5
+      },
+      {
+        "tick": 210,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 210,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 210,
+        "text": "Gary just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 210,
+        "text": "Rosa just arrived.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 114,
-        "text": "Rosa said to Donna: “Well, look who walked in at the same time! Come in, both of you. What's the occasion, Donna, did you two come to taste-test Saturday's menu early?”",
-        "importance": 6
-      },
       {
         "tick": 115,
         "text": "I (rosa dining table): Start carrying dishes and setting out the table without waiting to be asked twice",
@@ -3018,29 +3025,14 @@
         "tick": 209,
         "text": "I (hal violation notebook): Log this morning's baseline: flamingo count at three, no cart mods visible, before Halloween decorations go up",
         "importance": 3
+      },
+      {
+        "tick": 210,
+        "text": "I (hal porch chair): Sit on the porch and keep watch over the Loop",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 112,
-        "text": "Gary said to Donna: “I hear you, Donna. I'm heading to my place right now for sneakers and to unplug the iron, then I'll meet you at the courts. Not late for Rosa this time, I promise.”",
-        "importance": 6
-      },
-      {
-        "tick": 112,
-        "text": "Donna said to Hal: “Oh Hal, you got me, the flock does get ahead of itself. I'll pull a few back to the lanai by Saturday, scout's honor, and you keep the committee out of my business.”",
-        "importance": 6
-      },
-      {
-        "tick": 112,
-        "text": "Hal said to Gary: “Committee usually takes a week or two, Gary. Don't run the parade till you've got the approval in hand. Now let's quit squawking and get to Rosa's table before six; I'll carry something.”",
-        "importance": 6
-      },
-      {
-        "tick": 113,
-        "text": "I headed to Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 113,
         "text": "Gary headed to Gary's House.",
@@ -4020,6 +4012,26 @@
         "tick": 209,
         "text": "I (rosa shift schedule): Pencil in Tuesday and Thursday evenings for parade planning around my shifts",
         "importance": 4
+      },
+      {
+        "tick": 210,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 210,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 210,
+        "text": "Gary just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 210,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ]
   },
@@ -4066,7 +4078,7 @@
     ]
   },
   "emotions": {
-    "gary": "patient",
+    "gary": "determined",
     "donna": "determined",
     "hal": "watchful",
     "rosa": "optimistic"
@@ -4168,10 +4180,16 @@
       "time": "Monday, October 26, 9:17 AM",
       "story": "At 9:17 on a sunny Monday morning in Sumter Oaks, Gary is sorting connectors, fuses, and mounting hardware at his house while sketching out tidy wiring diagrams for his golf cart. Across the way, Donna is determinedly texting Gary to propose a practice time this week and asking when he's free to plan the Halloween carts. Meanwhile, Hal is watchfully logging his baseline notes at his house, counting three flamingos and noting no cart modifications before the Halloween decorations go up. Rosa, optimistic as ever, is penciling Tuesday and Thursday evenings into her shift schedule so the parade planning can fit around her work.",
       "dialogue": []
+    },
+    {
+      "tick": 210,
+      "time": "Monday, October 26, 10:17 AM",
+      "story": "On a sunny Monday morning at 10:17, Gary, Donna, and Rosa all set out for Magnolia Loop, each with a determined or hopeful stride. Hal stays home instead, settling into his porch chair to keep a watchful eye on the street. The town hums along under the 74-degree October sky as the neighbors converge on the Loop.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 6.54308,
+    "total_usd": 6.57583,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4230,13 +4248,12 @@
         "usd": 0.50904
       },
       "2026-10-26": {
-        "ticks": 3,
-        "usd": 0.0956
+        "ticks": 4,
+        "usd": 0.12835
       }
     }
   },
   "recent_tick_costs": [
-    0.03141,
     0.03105,
     0.03345,
     0.03277,
@@ -4259,7 +4276,8 @@
     0.03069,
     0.03128,
     0.03264,
-    0.03168
+    0.03168,
+    0.03275
   ],
   "fund": {
     "gross_usd": 0.0,
