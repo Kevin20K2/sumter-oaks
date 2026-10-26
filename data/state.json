@@ -1,56 +1,37 @@
 {
-  "tick": 215,
-  "time": "2026-10-26T14:17",
+  "tick": 216,
+  "time": "2026-10-26T15:17",
   "positions": {
     "gary": "magnolia_loop",
-    "donna": "magnolia_loop",
+    "donna": "rec_center",
     "hal": "magnolia_loop",
     "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, let's lock in practice. Rec center at four today, and I'll bring the balls and a thermos of iced tea. We keep it under our two-hour court limit, and you can show me those cart sketches on the way over.”",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and log the tally in my notebook",
-      "Rosa said to Hal: “Hal, when you're done with the count, I'd love your eyes on the cart sketches before Review sees them. I'll make you a plate of leftovers either way.”"
+      "Donna headed to Rec Center.",
+      "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”",
+      "Rosa (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations"
     ],
     "donna": [
-      "Gary (street bulletin board): Check for an Architectural Review approval notice and any parade updates",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and log the tally in my notebook",
-      "Rosa said to Hal: “Hal, when you're done with the count, I'd love your eyes on the cart sketches before Review sees them. I'll make you a plate of leftovers either way.”"
+      "Gary (street bulletin board): Check for an Architectural Review approval notice and any new parade updates",
+      "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”",
+      "Rosa (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations",
+      "You arrived at Rec Center."
     ],
     "hal": [
-      "Gary (street bulletin board): Check for an Architectural Review approval notice and any parade updates",
-      "Donna said to Gary: “Gary, let's lock in practice. Rec center at four today, and I'll bring the balls and a thermos of iced tea. We keep it under our two-hour court limit, and you can show me those cart sketches on the way over.”",
-      "Rosa said to Hal: “Hal, when you're done with the count, I'd love your eyes on the cart sketches before Review sees them. I'll make you a plate of leftovers either way.”"
+      "Gary (street bulletin board): Check for an Architectural Review approval notice and any new parade updates",
+      "Donna headed to Rec Center.",
+      "Rosa (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations"
     ],
     "rosa": [
-      "Gary (street bulletin board): Check for an Architectural Review approval notice and any parade updates",
-      "Donna said to Gary: “Gary, let's lock in practice. Rec center at four today, and I'll bring the balls and a thermos of iced tea. We keep it under our two-hour court limit, and you can show me those cart sketches on the way over.”",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and log the tally in my notebook"
+      "Gary (street bulletin board): Check for an Architectural Review approval notice and any new parade updates",
+      "Donna headed to Rec Center.",
+      "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 122,
-        "text": "I said to Donna: “Afternoon, Donna. Heading to Rosa's dinner together later? I'll be there on time, and I promise to keep my soldering iron at home.”",
-        "importance": 3
-      },
-      {
-        "tick": 122,
-        "text": "Donna said to Gary: “There you are, Gary! I booked us a two-hour doubles slot at the rec center and texted you the time. Bag's packed, so all you need to bring is those soft knees.”",
-        "importance": 3
-      },
-      {
-        "tick": 122,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
-        "importance": 3
-      },
-      {
-        "tick": 123,
-        "text": "I said to Donna: “Two hours, perfect, thanks for booking it, Donna. I'll grab my paddle and meet you at the rec center, and I'll be there on time.”",
-        "importance": 4
-      },
       {
         "tick": 123,
         "text": "Donna said to Gary: “Perfect, Gary, you're a gentleman. Then let's walk over to the rec center now and get you warmed up before our slot. I'll carry the paddles, you just bring those soft knees.”",
@@ -1030,34 +1011,29 @@
         "tick": 214,
         "text": "Rosa said to Hal: “Hal, when you're done with the count, I'd love your eyes on the cart sketches before Review sees them. I'll make you a plate of leftovers either way.”",
         "importance": 4
+      },
+      {
+        "tick": 215,
+        "text": "I (street bulletin board): Check for an Architectural Review approval notice and any new parade updates",
+        "importance": 5
+      },
+      {
+        "tick": 215,
+        "text": "Donna headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 215,
+        "text": "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”",
+        "importance": 5
+      },
+      {
+        "tick": 215,
+        "text": "Rosa (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 127,
-        "text": "Hal just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 128,
-        "text": "I said to Hal: “Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together.”",
-        "importance": 4
-      },
-      {
-        "tick": 128,
-        "text": "Gary said to Hal: “Evening, Hal. Donna's got me popping dinks soft as a baby's tuck-in, and my cart form's filed, so I'm keeping my word. Give me one more rally and I'll head over for Rosa's dinner right on time.”",
-        "importance": 4
-      },
-      {
-        "tick": 128,
-        "text": "Hal said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”",
-        "importance": 4
-      },
-      {
-        "tick": 129,
-        "text": "I (pickleball court 1): Pick up my paddle and rally one last time with Gary, working on his dinks",
-        "importance": 5
-      },
       {
         "tick": 129,
         "text": "Gary said to Hal: “Saturday at six, boots wiped, I've got it written down this time. Let me stash my paddle and I'll walk out with you two.”",
@@ -2032,29 +2008,34 @@
         "tick": 214,
         "text": "Rosa said to Hal: “Hal, when you're done with the count, I'd love your eyes on the cart sketches before Review sees them. I'll make you a plate of leftovers either way.”",
         "importance": 5
-      }
-    ],
-    "hal": [
+      },
       {
-        "tick": 120,
-        "text": "Gary said to Hal: “Morning, Hal. Took your advice to heart: form's filed, cart's sitting untouched in the garage, and I'm doing all the soldering at my workbench until Architectural Review signs off.”",
+        "tick": 215,
+        "text": "I headed to Rec Center.",
         "importance": 5
       },
       {
-        "tick": 121,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
-        "importance": 4
+        "tick": 215,
+        "text": "Gary (street bulletin board): Check for an Architectural Review approval notice and any new parade updates",
+        "importance": 5
       },
       {
-        "tick": 121,
-        "text": "Gary said to Hal: “Filed it twice to be safe, Hal, but no approval's posted yet, so the cart stays parked and bare till it comes through. You can hold off on that complaint. And I'll be on time to Rosa's, scout's honor.”",
-        "importance": 4
+        "tick": 215,
+        "text": "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”",
+        "importance": 5
       },
       {
-        "tick": 121,
-        "text": "Donna just arrived.",
-        "importance": 4
+        "tick": 215,
+        "text": "Rosa (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations",
+        "importance": 5
       },
+      {
+        "tick": 215,
+        "text": "You arrived at Rec Center.",
+        "importance": 5
+      }
+    ],
+    "hal": [
       {
         "tick": 122,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
@@ -3034,29 +3015,29 @@
         "tick": 214,
         "text": "Rosa said to Hal: “Hal, when you're done with the count, I'd love your eyes on the cart sketches before Review sees them. I'll make you a plate of leftovers either way.”",
         "importance": 4
+      },
+      {
+        "tick": 215,
+        "text": "I said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”",
+        "importance": 5
+      },
+      {
+        "tick": 215,
+        "text": "Gary (street bulletin board): Check for an Architectural Review approval notice and any new parade updates",
+        "importance": 5
+      },
+      {
+        "tick": 215,
+        "text": "Donna headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 215,
+        "text": "Rosa (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 117,
-        "text": "I (rosa shift schedule): Check my per-diem shift schedule for the week",
-        "importance": 3
-      },
-      {
-        "tick": 118,
-        "text": "I (rosa kitchen): Check what's left in the pantry and plan the next batch of food for the neighbors",
-        "importance": 3
-      },
-      {
-        "tick": 119,
-        "text": "I (rosa shift schedule): Check this week's per-diem shifts and make sure Saturday evening is clear for the dinner",
-        "importance": 4
-      },
-      {
-        "tick": 120,
-        "text": "I (rosa kitchen): Plan the Saturday menu and start prepping the dishes that can be made ahead",
-        "importance": 5
-      },
       {
         "tick": 121,
         "text": "I (rosa kitchen): Start the make-ahead dishes and write up a grocery list for Saturday's dinner",
@@ -4036,6 +4017,26 @@
         "tick": 214,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and log the tally in my notebook",
         "importance": 5
+      },
+      {
+        "tick": 215,
+        "text": "I (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations",
+        "importance": 5
+      },
+      {
+        "tick": 215,
+        "text": "Gary (street bulletin board): Check for an Architectural Review approval notice and any new parade updates",
+        "importance": 5
+      },
+      {
+        "tick": 215,
+        "text": "Donna headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 215,
+        "text": "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”",
+        "importance": 5
       }
     ]
   },
@@ -4082,9 +4083,9 @@
     ]
   },
   "emotions": {
-    "gary": "optimistic",
-    "donna": "upbeat",
-    "hal": "grudgingly satisfied",
+    "gary": "hopeful",
+    "donna": "eager",
+    "hal": "gruff but content",
     "rosa": "hopeful"
   },
   "laws": [
@@ -4178,9 +4179,18 @@
       "text": "Gary Kowalski: File Architectural Review application for golf cart lights and sound system"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 215,
+      "time": "Monday, October 26, 3:17 PM",
+      "story": "At 3:17 on a sunny Monday afternoon in Sumter Oaks, Gary and Rosa are both gathered at the bulletin board on Magnolia Loop, hoping to spot an Architectural Review notice and fresh parade news. Donna, eager as ever, has already cart-whizzed off toward the Rec Center, while Hal stays put, promising Rosa he'll look over her float sketches once he finishes counting the flamingos, with a wink about not telling the committee he can be bought with leftovers.",
+      "dialogue": [
+        "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 6.71624,
+    "total_usd": 6.75017,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4239,13 +4249,12 @@
         "usd": 0.50904
       },
       "2026-10-26": {
-        "ticks": 8,
-        "usd": 0.26876
+        "ticks": 9,
+        "usd": 0.30269
       }
     }
   },
   "recent_tick_costs": [
-    0.0314,
     0.03222,
     0.03218,
     0.03139,
@@ -4268,7 +4277,8 @@
     0.03229,
     0.03488,
     0.03624,
-    0.037
+    0.037,
+    0.03393
   ],
   "fund": {
     "gross_usd": 0.0,

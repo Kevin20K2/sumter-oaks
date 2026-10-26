@@ -1,0 +1,118 @@
+{
+  "tick": 215,
+  "simulation_time": "Monday, October 26, 3:17 PM",
+  "weather": "Sunny, 78°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 3:17 on a sunny Monday afternoon in Sumter Oaks, Gary and Rosa are both gathered at the bulletin board on Magnolia Loop, hoping to spot an Architectural Review notice and fresh parade news. Donna, eager as ever, has already cart-whizzed off toward the Rec Center, while Hal stays put, promising Rosa he'll look over her float sketches once he finishes counting the flamingos, with a wink about not telling the committee he can be bought with leftovers.",
+  "events": [
+    "Gary (street bulletin board): Check for an Architectural Review approval notice and any new parade updates",
+    "Donna headed to Rec Center.",
+    "Rosa (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna already set practice for four at the rec center and Rosa wants eyes on the cart sketches, so there's nothing left to ask anyone. Hal's counting flamingos, and I'd rather not crowd him. My Architectural Review application went in back at tick 156 and I haven't seen an approval notice. The bulletin board is right here, so I'll check it before I touch the cart. Until Review signs off, the cart stays in the garage, and I want my paperwork clean when Hal reads the sketches.",
+      "emotional_state": "hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Check for an Architectural Review approval notice and any new parade updates"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I told Gary rec center at four, and it's already past three. Rosa just invited Hal to look at the cart sketches, and Hal is busy counting my flamingos, which I know are at three, so no reason to hover over him. I shouldn't repeat my practice invite, since I've said it already. Best move is to head to the rec center now, get set up, and keep our court time under the two-hour limit. Gary will follow along with his sketches.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center early to claim our court and set out the iced tea before Gary and I practice at four."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa asked for my eyes on her cart sketches and offered leftovers, and she's right here on the street. Gary's form is filed and the cart is untouched, so the proper order of operations is being followed. Donna's flamingo count is still in my notebook, and I should finish it before anyone gets comfortable. Rosa asked first and I haven't answered her, so I'll respond now, accept the plate, and make clear that the count comes first and nothing gets built before Architectural Review signs off.",
+      "emotional_state": "gruff but content",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The welcome dinner went well, everyone ate, and Donna wants to talk Halloween carts. I already offered Hal leftovers and asked for his eyes on my sketches, and he's busy with his flamingo count. Gary and Donna are heading to the rec center at four. Rather than repeat myself, I should do something useful for the parade plan: check the bulletin board for the Architectural Review notice and any updates, so the whole Loop can enter decorated carts once the board signs off.",
+      "emotional_state": "hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the parade flyer and look for an Architectural Review notice on cart decorations"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03393,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 11257,
+        "output_tokens": 1129,
+        "usd": 0.0338
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 456,
+        "output_tokens": 171,
+        "usd": 0.00013
+      }
+    }
+  },
+  "season": "halloween"
+}
