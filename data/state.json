@@ -1,6 +1,6 @@
 {
-  "tick": 216,
-  "time": "2026-10-26T15:17",
+  "tick": 217,
+  "time": "2026-10-26T16:17",
   "positions": {
     "gary": "magnolia_loop",
     "donna": "rec_center",
@@ -9,44 +9,21 @@
   },
   "perceptions": {
     "gary": [
-      "Donna headed to Rec Center.",
-      "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”",
-      "Rosa (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations"
+      "Hal said to Rosa: “Count's done, Rosa, so show me those sketches. If Review hasn't posted anything yet, nothing gets bolted on until they do. Same goes for you, Gary.”",
+      "Rosa said to Gary: “Gary, did you spot a Review approval on the board? I didn't see one earlier. If it's not up yet, I'll walk the sketches over to the committee myself so we're ready by Saturday.”"
     ],
-    "donna": [
-      "Gary (street bulletin board): Check for an Architectural Review approval notice and any new parade updates",
-      "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”",
-      "Rosa (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations",
-      "You arrived at Rec Center."
-    ],
+    "donna": [],
     "hal": [
-      "Gary (street bulletin board): Check for an Architectural Review approval notice and any new parade updates",
-      "Donna headed to Rec Center.",
-      "Rosa (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations"
+      "Gary (street bulletin board): Scan for an Architectural Review approval notice on my cart lights and sound system",
+      "Rosa said to Gary: “Gary, did you spot a Review approval on the board? I didn't see one earlier. If it's not up yet, I'll walk the sketches over to the committee myself so we're ready by Saturday.”"
     ],
     "rosa": [
-      "Gary (street bulletin board): Check for an Architectural Review approval notice and any new parade updates",
-      "Donna headed to Rec Center.",
-      "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”"
+      "Gary (street bulletin board): Scan for an Architectural Review approval notice on my cart lights and sound system",
+      "Hal said to Rosa: “Count's done, Rosa, so show me those sketches. If Review hasn't posted anything yet, nothing gets bolted on until they do. Same goes for you, Gary.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 123,
-        "text": "Donna said to Gary: “Perfect, Gary, you're a gentleman. Then let's walk over to the rec center now and get you warmed up before our slot. I'll carry the paddles, you just bring those soft knees.”",
-        "importance": 4
-      },
-      {
-        "tick": 123,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
-        "importance": 4
-      },
-      {
-        "tick": 124,
-        "text": "I headed to Rec Center.",
-        "importance": 4
-      },
       {
         "tick": 124,
         "text": "Donna headed to Rec Center.",
@@ -1031,14 +1008,24 @@
         "tick": 215,
         "text": "Rosa (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations",
         "importance": 5
+      },
+      {
+        "tick": 216,
+        "text": "I (street bulletin board): Scan for an Architectural Review approval notice on my cart lights and sound system",
+        "importance": 5
+      },
+      {
+        "tick": 216,
+        "text": "Hal said to Rosa: “Count's done, Rosa, so show me those sketches. If Review hasn't posted anything yet, nothing gets bolted on until they do. Same goes for you, Gary.”",
+        "importance": 5
+      },
+      {
+        "tick": 216,
+        "text": "Rosa said to Gary: “Gary, did you spot a Review approval on the board? I didn't see one earlier. If it's not up yet, I'll walk the sketches over to the committee myself so we're ready by Saturday.”",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 129,
-        "text": "Gary said to Hal: “Saturday at six, boots wiped, I've got it written down this time. Let me stash my paddle and I'll walk out with you two.”",
-        "importance": 5
-      },
       {
         "tick": 129,
         "text": "Hal headed to Magnolia Loop (the street).",
@@ -2033,24 +2020,14 @@
         "tick": 215,
         "text": "You arrived at Rec Center.",
         "importance": 5
+      },
+      {
+        "tick": 216,
+        "text": "I (ladder standings board): Study the ladder standings to see how many wins we need to pass Pruitt-Kowalski",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 122,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
-        "importance": 5
-      },
-      {
-        "tick": 122,
-        "text": "Gary said to Donna: “Afternoon, Donna. Heading to Rosa's dinner together later? I'll be there on time, and I promise to keep my soldering iron at home.”",
-        "importance": 5
-      },
-      {
-        "tick": 122,
-        "text": "Donna said to Gary: “There you are, Gary! I booked us a two-hour doubles slot at the rec center and texted you the time. Bag's packed, so all you need to bring is those soft knees.”",
-        "importance": 5
-      },
       {
         "tick": 123,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the total in my notebook",
@@ -3035,24 +3012,24 @@
         "tick": 215,
         "text": "Rosa (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations",
         "importance": 5
-      }
-    ],
-    "rosa": [
+      },
       {
-        "tick": 121,
-        "text": "I (rosa kitchen): Start the make-ahead dishes and write up a grocery list for Saturday's dinner",
+        "tick": 216,
+        "text": "I said to Rosa: “Count's done, Rosa, so show me those sketches. If Review hasn't posted anything yet, nothing gets bolted on until they do. Same goes for you, Gary.”",
         "importance": 5
       },
       {
-        "tick": 122,
-        "text": "I (rosa kitchen): Finish prepping the make-ahead dishes and portion them for the fridge",
-        "importance": 4
+        "tick": 216,
+        "text": "Gary (street bulletin board): Scan for an Architectural Review approval notice on my cart lights and sound system",
+        "importance": 5
       },
       {
-        "tick": 123,
-        "text": "I (rosa dining table): Count place settings and chairs for Saturday, and jot down what to borrow or buy",
-        "importance": 4
-      },
+        "tick": 216,
+        "text": "Rosa said to Gary: “Gary, did you spot a Review approval on the board? I didn't see one earlier. If it's not up yet, I'll walk the sketches over to the committee myself so we're ready by Saturday.”",
+        "importance": 5
+      }
+    ],
+    "rosa": [
       {
         "tick": 124,
         "text": "I (rosa shift schedule): Check this week's per-diem shifts and confirm Saturday evening is clear for the dinner",
@@ -4037,54 +4014,69 @@
         "tick": 215,
         "text": "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”",
         "importance": 5
+      },
+      {
+        "tick": 216,
+        "text": "I said to Gary: “Gary, did you spot a Review approval on the board? I didn't see one earlier. If it's not up yet, I'll walk the sketches over to the committee myself so we're ready by Saturday.”",
+        "importance": 5
+      },
+      {
+        "tick": 216,
+        "text": "Gary (street bulletin board): Scan for an Architectural Review approval notice on my cart lights and sound system",
+        "importance": 5
+      },
+      {
+        "tick": 216,
+        "text": "Hal said to Rosa: “Count's done, Rosa, so show me those sketches. If Review hasn't posted anything yet, nothing gets bolted on until they do. Same goes for you, Gary.”",
+        "importance": 5
       }
     ]
   },
   "reflections": {
     "gary": [
-      "I'm glad Rosa caught that the bracket isn't signed off yet, because I'd rather keep the cart in the garage and stay on good terms with Hal than risk a notice over dinner. Saturday at five with Rosa, Donna, and the ice is shaping up to be a good night.",
-      "Donna's offer to work on my third-shot drops tomorrow is generous, and I'm looking forward to it, though I suspect I'll need the practice more than she lets on. Between the Loop's Halloween parade and the cart project, it feels good to have neighbors who keep me honest and keep me busy.",
       "Tonight at Rosa's with Donna, Hal, and the rest of the Loop crowd made me feel like this neighborhood is really coming together.",
       "I want to keep my ice cart legal and earn the board's sign-off, so I'm glad I've been patient and careful with it.",
       "I'm glad the parade plans are coming together, and I'll keep my cart in the garage until Architectural Review signs off so nobody has to write me up.",
       "Donna and Rosa have been good to me on this street, and I'd like Hal to see that my wiring plans are as careful as my flamingos count is accurate.",
       "Hal keeps the parade honest by holding every light and ornament to the rules, and I'd rather have his scrutiny than skip it.",
-      "Rosa's hospital theme gives my wiring a real purpose, and I want to get the sketches right so the carts earn her trust."
+      "Rosa's hospital theme gives my wiring a real purpose, and I want to get the sketches right so the carts earn her trust.",
+      "I think Rosa's careful approach to getting Architectural Review sign-off first is smart, and I want my wiring sketches to earn that same trust.",
+      "Donna keeps the court and practice plans running smoothly, and I'm glad to have her steady organization on this parade project."
     ],
     "donna": [
-      "Gary is someone I can count on to show up and work hard on the court, and I'm looking forward to our practice together before Rosa's Saturday dinner.",
-      "Rosa's warm welcome and the plans for the cobbler and long table make me feel more connected to this community, and I hope our Saturday gathering goes well.",
       "Gary and I have a ladder match coming up, and I want us to climb past Pruitt-Kowalski before the season ends.",
       "Tonight at Rosa's with Gary, Hal, and Rosa felt like the neighborhood I hoped the Loop would become, and I'm glad I brought the cobbler.",
       "I'm proud of how the parade committee is coming together, and I'm glad Rosa, Gary, and Hal are all in on helping me keep it fun and within the rules.",
       "Hal's watchful eye on the flamingos is a little annoying, but I respect that he keeps the Loop tidy, and I want our Halloween carts to win the parade fair and square.",
       "Hal's been fair about the cart rules, and dinner with Rosa and Gary feels like the kind of evening that keeps this place feeling like home. I want my flamingos to stay at three and my cart plans to go through Architectural Review, so Hal and I can keep trusting each other on the rules.",
-      "Gary's a good sport, and I'm glad he and I can pencil in pickleball and Halloween planning together without tripping over each other's ideas. Keeping things simple with my flamingos and the Architectural Review process will make this parade one everybody can enjoy."
+      "Gary's a good sport, and I'm glad he and I can pencil in pickleball and Halloween planning together without tripping over each other's ideas. Keeping things simple with my flamingos and the Architectural Review process will make this parade one everybody can enjoy.",
+      "Donna is standing at the Rec Center with her iced tea and a court booked for two hours, and I feel steady knowing Gary is coming to practice with the cart sketches in hand. Rosa's porch on Tuesday is where the parade really takes shape, and I'm glad Hal will be there to keep us honest about Architectural Review.",
+      "I want to climb the ladder standings with Gary's steady help and win enough matches to pass the Pruitt-Kowalski pair, but I'm keeping every flamingo and every cart idea clear of Review until the paperwork says go."
     ],
     "hal": [
-      "I've been keeping my violation notebook tidy because clearing those notices off the board feels like a small way of looking out for the Loop, and it's good to see Donna and Gary's matters settled.",
-      "Rosa's dinner on Saturday is something I'm looking forward to, and bringing the cornbread and table early feels like the right way to show up for her and the rest of the neighbors.",
       "Rosa's dinner is coming together nicely, and I'm glad I could pitch in with the cornbread and the table.",
       "Gary and Donna keep showing up for this neighborhood, and it feels good to be part of a crowd that actually looks out for each other.",
       "Hal's notebook is becoming the unofficial conscience of the street, and I find that more useful than annoying, even if it keeps me on my toes. Keeping the flamingo count at three feels like a small price to pay for a neighborhood where everyone knows the rules.",
       "Gary's patience with the review board and Rosa's steady organizing make me want to be a better neighbor, so I'll sign up for the parade and help keep our decorations within the limits.",
       "I'm glad Rosa and Donna keep holding me to the rules, because it's easier to trust a parade when everyone plays fair.",
-      "Hal's goal is a safe, fun Halloween loop, and I'll keep the carts and flamingos within the rules while sharing dinner with friends."
+      "Hal's goal is a safe, fun Halloween loop, and I'll keep the carts and flamingos within the rules while sharing dinner with friends.",
+      "I've been watching the Loop from my porch chair long enough to know Gary and Rosa mean well, even when their cart plans make me uneasy, so I'll hear them out before I judge.",
+      "My notebook keeps the flamingo count honest, and I want Donna and the others to see that I'm holding this street to the rules, not just to my own worries."
     ],
     "rosa": [
-      "I feel a little relieved that Gary took my concern about the review board seriously, and I'm glad he agreed to keep the cart off the street until it's signed off.",
       "Having Donna, Gary and Hal all at my table on Saturday makes me feel like the Loop is becoming the close-knit neighborhood I hoped for.",
       "Tonight at Rosa's table, with everyone's food and laughter filling the room, I feel like this neighborhood is finally becoming the close-knit community I hoped for.",
       "Gary's careful about the cart and the review board, and Donna and Hal keep showing up for each other, so I'm glad to be counted among these people.",
       "Rosa thinks Donna's casserole and her welcome to the parade plans show what a close, generous street we have, and I want the Halloween parade to make everyone feel part of it.",
       "Rosa feels a bit frustrated with Hal's notebook but is glad Gary and Donna are on board, and she hopes the whole Loop can enter decorated carts together once the board signs off.",
       "Hal and I had a rough start over the rules, but sitting down to Donna's casserole with him tonight made me think we can work this out together.",
-      "I want the Halloween parade to be the kind of neighborhood event where everyone feels welcome and the carts stay within the rules, and I'm glad Donna and Gary are on board with that."
+      "I want the Halloween parade to be the kind of neighborhood event where everyone feels welcome and the carts stay within the rules, and I'm glad Donna and Gary are on board with that.",
+      "I'm glad Gary and Hal are both coming to help plan the cart, since keeping everything removable until Architectural Review approves it feels like the safest way to protect our neighborhood standing. I still wish Donna had more free time, but I trust that when the Halloween parade comes, we'll all be proud of what we built together."
     ]
   },
   "emotions": {
     "gary": "hopeful",
-    "donna": "eager",
+    "donna": "determined",
     "hal": "gruff but content",
     "rosa": "hopeful"
   },
@@ -4187,10 +4179,19 @@
       "dialogue": [
         "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”"
       ]
+    },
+    {
+      "tick": 216,
+      "time": "Monday, October 26, 4:17 PM",
+      "story": "On Magnolia Loop in Sumter Oaks, this sunny Monday afternoon at 4:17, Gary is scanning the street bulletin board for an Architectural Review approval notice for his cart lights and sound system, while Hal and Rosa stand by with sketches in hand. Hal makes it clear that nothing gets bolted onto any cart until the committee posts its approval, and Rosa offers to walk the drawings over to the committee herself so everyone is ready by Saturday. Meanwhile, over at the Rec Center, Donna is studying the ladder standings with determination, working out how many wins she'll need to pass Pruitt-Kowalski.",
+      "dialogue": [
+        "Hal said to Rosa: “Count's done, Rosa, so show me those sketches. If Review hasn't posted anything yet, nothing gets bolted on until they do. Same goes for you, Gary.”",
+        "Rosa said to Gary: “Gary, did you spot a Review approval on the board? I didn't see one earlier. If it's not up yet, I'll walk the sketches over to the committee myself so we're ready by Saturday.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 6.75017,
+    "total_usd": 6.78409,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4249,13 +4250,12 @@
         "usd": 0.50904
       },
       "2026-10-26": {
-        "ticks": 9,
-        "usd": 0.30269
+        "ticks": 10,
+        "usd": 0.33661
       }
     }
   },
   "recent_tick_costs": [
-    0.03222,
     0.03218,
     0.03139,
     0.03072,
@@ -4278,7 +4278,8 @@
     0.03488,
     0.03624,
     0.037,
-    0.03393
+    0.03393,
+    0.03392
   ],
   "fund": {
     "gross_usd": 0.0,
