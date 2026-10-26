@@ -1,6 +1,6 @@
 {
-  "tick": 206,
-  "time": "2026-10-25T20:17",
+  "tick": 207,
+  "time": "2026-10-25T21:17",
   "positions": {
     "gary": "magnolia_loop",
     "donna": "rosas_house",
@@ -8,31 +8,22 @@
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "You arrived at Magnolia Loop (the street)."
-    ],
+    "gary": [],
     "donna": [
-      "Rosa headed to Rosa's House.",
-      "You arrived at Rosa's House.",
-      "Rosa just arrived."
+      "Hal said to Donna: “Evening, Donna. Casserole smells legal, and I'll note your flamingo count is holding at three, so the notebook stays in my pocket tonight.”",
+      "Rosa said to Donna: “Donna, Hal, you made it! Come on in, your seats are waiting at the table, and Gary's already got the drinks going. Let's eat before it gets cold.”"
     ],
     "hal": [
-      "Donna just arrived.",
-      "Rosa just arrived."
+      "Donna said to Rosa: “Rosa, thank you for hosting! Casserole's in the oven-safe dish, and Hal, grab a plate. Once we've eaten, let's talk Halloween carts. I want it fun and fully within the rules.”",
+      "Rosa said to Donna: “Donna, Hal, you made it! Come on in, your seats are waiting at the table, and Gary's already got the drinks going. Let's eat before it gets cold.”"
     ],
     "rosa": [
-      "Donna headed to Rosa's House.",
-      "You arrived at Rosa's House.",
-      "Donna just arrived."
+      "Donna said to Rosa: “Rosa, thank you for hosting! Casserole's in the oven-safe dish, and Hal, grab a plate. Once we've eaten, let's talk Halloween carts. I want it fun and fully within the rules.”",
+      "Hal said to Donna: “Evening, Donna. Casserole smells legal, and I'll note your flamingo count is holding at three, so the notebook stays in my pocket tonight.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 111,
-        "text": "Rosa just arrived.",
-        "importance": 6
-      },
       {
         "tick": 112,
         "text": "I said to Donna: “I hear you, Donna. I'm heading to my place right now for sneakers and to unplug the iron, then I'll meet you at the courts. Not late for Rosa this time, I promise.”",
@@ -1027,24 +1018,14 @@
         "tick": 205,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 206,
+        "text": "I (street bulletin board): Check the board for Architectural Review news and parade details",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 116,
-        "text": "Hal (rosa kitchen): Pick up the big platter and carry it to the table",
-        "importance": 4
-      },
-      {
-        "tick": 116,
-        "text": "Rosa (rosa kitchen): Pull the main dish from the oven and get it ready to serve",
-        "importance": 4
-      },
-      {
-        "tick": 117,
-        "text": "I (donna club calendar): Check open court times and pencil in a doubles practice with Gary",
-        "importance": 5
-      },
       {
         "tick": 118,
         "text": "I (donna pickleball bag): Pack paddles, balls, and a spare grip for doubles practice with Gary",
@@ -2029,24 +2010,24 @@
         "tick": 205,
         "text": "Rosa just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 206,
+        "text": "I said to Rosa: “Rosa, thank you for hosting! Casserole's in the oven-safe dish, and Hal, grab a plate. Once we've eaten, let's talk Halloween carts. I want it fun and fully within the rules.”",
+        "importance": 5
+      },
+      {
+        "tick": 206,
+        "text": "Hal said to Donna: “Evening, Donna. Casserole smells legal, and I'll note your flamingo count is holding at three, so the notebook stays in my pocket tonight.”",
+        "importance": 5
+      },
+      {
+        "tick": 206,
+        "text": "Rosa said to Donna: “Donna, Hal, you made it! Come on in, your seats are waiting at the table, and Gary's already got the drinks going. Let's eat before it gets cold.”",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 113,
-        "text": "Rosa headed to Rosa's House.",
-        "importance": 6
-      },
-      {
-        "tick": 113,
-        "text": "You arrived at Rosa's House.",
-        "importance": 6
-      },
-      {
-        "tick": 113,
-        "text": "Donna just arrived.",
-        "importance": 6
-      },
       {
         "tick": 113,
         "text": "Rosa just arrived.",
@@ -3031,24 +3012,24 @@
         "tick": 205,
         "text": "Rosa just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 206,
+        "text": "I said to Donna: “Evening, Donna. Casserole smells legal, and I'll note your flamingo count is holding at three, so the notebook stays in my pocket tonight.”",
+        "importance": 4
+      },
+      {
+        "tick": 206,
+        "text": "Donna said to Rosa: “Rosa, thank you for hosting! Casserole's in the oven-safe dish, and Hal, grab a plate. Once we've eaten, let's talk Halloween carts. I want it fun and fully within the rules.”",
+        "importance": 4
+      },
+      {
+        "tick": 206,
+        "text": "Rosa said to Donna: “Donna, Hal, you made it! Come on in, your seats are waiting at the table, and Gary's already got the drinks going. Let's eat before it gets cold.”",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 109,
-        "text": "Donna said to Rosa: “Rosa, hon! Looking forward to dinner at six. Have you seen Gary at all? We're on the ladder now and I can't find my partner.”",
-        "importance": 6
-      },
-      {
-        "tick": 110,
-        "text": "I said to Donna: “Haven't laid eyes on Gary since this morning, hon. If you track him down, remind him six sharp at my place, and tell him the disposal is long forgiven.”",
-        "importance": 4
-      },
-      {
-        "tick": 110,
-        "text": "Donna headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 111,
         "text": "I headed to Magnolia Loop (the street).",
@@ -4033,6 +4014,21 @@
         "tick": 205,
         "text": "Donna just arrived.",
         "importance": 7
+      },
+      {
+        "tick": 206,
+        "text": "I said to Donna: “Donna, Hal, you made it! Come on in, your seats are waiting at the table, and Gary's already got the drinks going. Let's eat before it gets cold.”",
+        "importance": 8
+      },
+      {
+        "tick": 206,
+        "text": "Donna said to Rosa: “Rosa, thank you for hosting! Casserole's in the oven-safe dish, and Hal, grab a plate. Once we've eaten, let's talk Halloween carts. I want it fun and fully within the rules.”",
+        "importance": 8
+      },
+      {
+        "tick": 206,
+        "text": "Hal said to Donna: “Evening, Donna. Casserole smells legal, and I'll note your flamingo count is holding at three, so the notebook stays in my pocket tonight.”",
+        "importance": 8
       }
     ]
   },
@@ -4079,10 +4075,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
+    "gary": "hopeful",
     "donna": "cheerful",
-    "hal": "gruff contentment",
-    "rosa": "hopeful"
+    "hal": "gruffly content",
+    "rosa": "delighted"
   },
   "laws": [
     {
@@ -4200,10 +4196,20 @@
       "time": "Sunday, October 25, 8:17 PM",
       "story": "Gary, determined as ever, has walked out onto Magnolia Loop while the evening is still warm and sunny at 76 degrees. Donna is cheerfully heading to Rosa's House, and Hal, in his gruff but contented way, is telling everyone to set the folding table square and take a seat for dinner at Rosa's dining table. Rosa, hopeful, is making her way home as well, and the whole street seems to be drifting toward a quiet Sunday supper.",
       "dialogue": []
+    },
+    {
+      "tick": 206,
+      "time": "Sunday, October 25, 9:17 PM",
+      "story": "At 9:17 on a sunny Sunday evening in Sumter Oaks, Gary is out on Magnolia Loop reading the street bulletin board for Architectural Review news and parade details, his mood hopeful. Over at Rosa's House, Rosa is delighted to welcome Donna and Hal, who arrive cheerful and gruffly content, respectively, and Donna is already pitching her plan for a fully within-the-rules Halloween cart. Hal promises to keep his flamingo-count notebook in his pocket for the night, and Rosa waves everyone to the table, where the casserole and Gary's drinks are waiting.",
+      "dialogue": [
+        "Donna said to Rosa: “Rosa, thank you for hosting! Casserole's in the oven-safe dish, and Hal, grab a plate. Once we've eaten, let's talk Halloween carts. I want it fun and fully within the rules.”",
+        "Hal said to Donna: “Evening, Donna. Casserole smells legal, and I'll note your flamingo count is holding at three, so the notebook stays in my pocket tonight.”",
+        "Rosa said to Donna: “Donna, Hal, you made it! Come on in, your seats are waiting at the table, and Gary's already got the drinks going. Let's eat before it gets cold.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 6.41679,
+    "total_usd": 6.44748,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4258,13 +4264,12 @@
         "usd": 0.47159
       },
       "2026-10-25": {
-        "ticks": 14,
-        "usd": 0.47835
+        "ticks": 15,
+        "usd": 0.50904
       }
     }
   },
   "recent_tick_costs": [
-    0.03039,
     0.03025,
     0.03258,
     0.03117,
@@ -4287,7 +4292,8 @@
     0.03855,
     0.03535,
     0.03426,
-    0.03286
+    0.03286,
+    0.03069
   ],
   "fund": {
     "gross_usd": 0.0,
