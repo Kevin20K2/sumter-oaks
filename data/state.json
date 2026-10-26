@@ -1,40 +1,33 @@
 {
-  "tick": 205,
-  "time": "2026-10-25T19:17",
+  "tick": 206,
+  "time": "2026-10-25T20:17",
   "positions": {
-    "gary": "garys_house",
-    "donna": "magnolia_loop",
+    "gary": "magnolia_loop",
+    "donna": "rosas_house",
     "hal": "rosas_house",
-    "rosa": "magnolia_loop"
+    "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "donna": [
-      "Hal headed to Rosa's House.",
-      "Rosa said to Hal: “Hal, dinner's right now. Gary's already at my place and Donna's casserole is waiting. Bring that folding table and the extra chairs and walk over with us, I'll save you a plate.”"
+      "Rosa headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Rosa just arrived."
     ],
     "hal": [
-      "Donna said to Rosa: “Rosa, you're a doll for holding dinner. Hal, grab that folding table and let's go before my casserole turns into a doorstop. I'll walk over with you both.”",
-      "Rosa said to Hal: “Hal, dinner's right now. Gary's already at my place and Donna's casserole is waiting. Bring that folding table and the extra chairs and walk over with us, I'll save you a plate.”",
-      "You arrived at Rosa's House."
+      "Donna just arrived.",
+      "Rosa just arrived."
     ],
     "rosa": [
-      "Donna said to Rosa: “Rosa, you're a doll for holding dinner. Hal, grab that folding table and let's go before my casserole turns into a doorstop. I'll walk over with you both.”",
-      "Hal headed to Rosa's House."
+      "Donna headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Donna just arrived."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 111,
-        "text": "Donna said to Gary: “There you are, Gary! I've been combing the whole neighborhood for my doubles partner. Rosa's expecting us at six sharp, and she says the disposal is long forgiven, so no excuses.”",
-        "importance": 6
-      },
-      {
-        "tick": 111,
-        "text": "Hal said to Donna: “Donna, three ornaments visible from the street, that's the rule, and your flock is well past it. Thin it out by the weekend and I'll leave the committee out of it.”",
-        "importance": 6
-      },
       {
         "tick": 111,
         "text": "Rosa just arrived.",
@@ -1024,29 +1017,19 @@
         "tick": 204,
         "text": "I (gary workbench): Bench-test the light strings and speaker, refine the wiring sketch for Hal",
         "importance": 4
+      },
+      {
+        "tick": 205,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 205,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 115,
-        "text": "I said to Rosa: “Ha! No taste-testing, Rosa, I'm just here for your company and whatever smells that good in the kitchen. Point me to the serving dishes and I'll start setting the table while Hal hauls the heavy stuff.”",
-        "importance": 4
-      },
-      {
-        "tick": 115,
-        "text": "Hal (rosa dining table): Start carrying dishes and setting out the table without waiting to be asked twice",
-        "importance": 4
-      },
-      {
-        "tick": 115,
-        "text": "Rosa said to Hal: “Hal, you're forgiven the second you pick up that big platter on the kitchen counter. Donna, grab the napkins and glasses and help me set the table, and Gary can find us when he finds us.”",
-        "importance": 4
-      },
-      {
-        "tick": 116,
-        "text": "I (rosa dining table): Set out napkins and glasses at each place",
-        "importance": 4
-      },
       {
         "tick": 116,
         "text": "Hal (rosa kitchen): Pick up the big platter and carry it to the table",
@@ -2026,24 +2009,29 @@
         "tick": 204,
         "text": "Rosa said to Hal: “Hal, dinner's right now. Gary's already at my place and Donna's casserole is waiting. Bring that folding table and the extra chairs and walk over with us, I'll save you a plate.”",
         "importance": 4
+      },
+      {
+        "tick": 205,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 205,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 205,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 205,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 113,
-        "text": "I headed to Rosa's House.",
-        "importance": 6
-      },
-      {
-        "tick": 113,
-        "text": "Gary headed to Gary's House.",
-        "importance": 6
-      },
-      {
-        "tick": 113,
-        "text": "Donna headed to Rosa's House.",
-        "importance": 6
-      },
       {
         "tick": 113,
         "text": "Rosa headed to Rosa's House.",
@@ -3028,29 +3016,24 @@
         "tick": 204,
         "text": "You arrived at Rosa's House.",
         "importance": 4
+      },
+      {
+        "tick": 205,
+        "text": "I (rosa dining table): Set down the folding table, square it up, and take my seat for dinner",
+        "importance": 3
+      },
+      {
+        "tick": 205,
+        "text": "Donna just arrived.",
+        "importance": 3
+      },
+      {
+        "tick": 205,
+        "text": "Rosa just arrived.",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 108,
-        "text": "Hal said to Rosa: “You can count on me, Rosa. Six sharp, and I'll bring something so I'm not showing up empty-handed. The flamingos can keep till after dinner.”",
-        "importance": 6
-      },
-      {
-        "tick": 108,
-        "text": "You arrived at Rec Center.",
-        "importance": 6
-      },
-      {
-        "tick": 108,
-        "text": "Donna just arrived.",
-        "importance": 6
-      },
-      {
-        "tick": 109,
-        "text": "I said to Donna: “Donna, glad I caught you. I'm doing a welcome dinner tonight at six, and Hal just swore he'll be there. Bring Gary and bring your appetite, I'll have the table set for all of you.”",
-        "importance": 6
-      },
       {
         "tick": 109,
         "text": "Donna said to Rosa: “Rosa, hon! Looking forward to dinner at six. Have you seen Gary at all? We're on the ladder now and I can't find my partner.”",
@@ -4030,6 +4013,26 @@
         "tick": 204,
         "text": "Hal headed to Rosa's House.",
         "importance": 6
+      },
+      {
+        "tick": 205,
+        "text": "I headed to Rosa's House.",
+        "importance": 7
+      },
+      {
+        "tick": 205,
+        "text": "Donna headed to Rosa's House.",
+        "importance": 7
+      },
+      {
+        "tick": 205,
+        "text": "You arrived at Rosa's House.",
+        "importance": 7
+      },
+      {
+        "tick": 205,
+        "text": "Donna just arrived.",
+        "importance": 7
       }
     ]
   },
@@ -4076,10 +4079,10 @@
     ]
   },
   "emotions": {
-    "gary": "focused, hopeful",
+    "gary": "determined",
     "donna": "cheerful",
-    "hal": "grudgingly content",
-    "rosa": "warm, hopeful"
+    "hal": "gruff contentment",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4191,10 +4194,16 @@
         "Donna said to Rosa: “Rosa, you're a doll for holding dinner. Hal, grab that folding table and let's go before my casserole turns into a doorstop. I'll walk over with you both.”",
         "Rosa said to Hal: “Hal, dinner's right now. Gary's already at my place and Donna's casserole is waiting. Bring that folding table and the extra chairs and walk over with us, I'll save you a plate.”"
       ]
+    },
+    {
+      "tick": 205,
+      "time": "Sunday, October 25, 8:17 PM",
+      "story": "Gary, determined as ever, has walked out onto Magnolia Loop while the evening is still warm and sunny at 76 degrees. Donna is cheerfully heading to Rosa's House, and Hal, in his gruff but contented way, is telling everyone to set the folding table square and take a seat for dinner at Rosa's dining table. Rosa, hopeful, is making her way home as well, and the whole street seems to be drifting toward a quiet Sunday supper.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 6.38393,
+    "total_usd": 6.41679,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4249,13 +4258,12 @@
         "usd": 0.47159
       },
       "2026-10-25": {
-        "ticks": 13,
-        "usd": 0.44549
+        "ticks": 14,
+        "usd": 0.47835
       }
     }
   },
   "recent_tick_costs": [
-    0.03042,
     0.03039,
     0.03025,
     0.03258,
@@ -4278,7 +4286,8 @@
     0.03695,
     0.03855,
     0.03535,
-    0.03426
+    0.03426,
+    0.03286
   ],
   "fund": {
     "gross_usd": 0.0,
