@@ -1,0 +1,119 @@
+{
+  "tick": 221,
+  "simulation_time": "Monday, October 26, 9:17 PM",
+  "weather": "Sunny, 73°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a sunny Monday night in Sumter Oaks, Gary is settling in at home with his sketches stacked by the door, resting up for his nine o'clock walk to the committee. Donna has headed out to Magnolia Loop, determined to get something done, while Hal is out on the same street with his notebook, dutifully counting the flamingos in the yard. Back at her house, Rosa is content but tired, checking her upcoming per-diem shifts so tomorrow's 9 AM cart planning doesn't clash.",
+  "events": [
+    "Gary waited: Settling in for the evening, sketches stacked by the door, resting up for the nine o'clock walk to the committee.",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (donna flamingo flock): Count the flamingos from the street and log the tally in my notebook",
+    "Rosa (rosa shift schedule): Check my upcoming per-diem shifts so tomorrow's 9 AM cart planning doesn't clash"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 9:17 PM and the sketches are labeled, checked, and stacked by the door for the nine o'clock walk with Rosa and Hal. Nobody's around, and there's nothing left to fiddle with that wouldn't tempt me to bolt something on before the committee stamps it. Hal would never let me hear the end of it. Best thing I can do is quiet down, rest, and be sharp for the morning. Maybe a little leftover sandwich thinking too.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Settling in for the evening, sketches stacked by the door, resting up for the nine o'clock walk to the committee."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's past 9 PM and I've been warming up solo for hours with no Gary in sight, and no one else is nearby. I've already studied the ladder board, checked the kiosk, and drilled alone, so repeating more solo drills won't move anything forward. The court reservation is capped at two hours per party under L-05, so I shouldn't sit on it forever. Best move is to head back toward Magnolia Loop, catch up with Gary there, and continue Halloween cart planning with him, keeping everything Architectural Review friendly.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Gary hasn't shown and I've drilled enough solo. I'll head out to Magnolia Loop to track him down and talk Halloween cart plans."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's past nine at night on Magnolia Loop and nobody's around. My notes are good: Rosa's meeting me at nine tomorrow to walk the paperwork to the committee. The flamingo count is something I keep honest, and I can see Donna's flock from the street without any argument. I'll tally them in my notebook so I have a clean, fair number to bring along in the morning, not just a gripe.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos from the street and log the tally in my notebook"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The dinner went well and I got all three neighbors at the same table, which was my big goal. Now it's after 9 PM and I'm home alone with no one around. My feet are killing me after a long day and I told Hal I'd put them up. The shift schedule is here, and I should check when my next per-diem shift is so I can plan the cart-building session with Gary and Hal tomorrow morning at nine without double-booking myself. Overcommitted is my middle name, so a quick look is the responsible move.",
+      "emotional_state": "content, tired",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my upcoming per-diem shifts so tomorrow's 9 AM cart planning doesn't clash"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03177,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10215,
+        "output_tokens": 1121,
+        "usd": 0.03164
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 415,
+        "output_tokens": 175,
+        "usd": 0.00013
+      }
+    }
+  },
+  "season": "halloween"
+}
