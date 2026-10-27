@@ -1,33 +1,26 @@
 {
-  "tick": 234,
-  "time": "2026-10-27T18:17",
+  "tick": 235,
+  "time": "2026-10-27T19:17",
   "positions": {
     "gary": "magnolia_loop",
     "donna": "rosas_house",
-    "hal": "town_square",
+    "hal": "town_hall",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "You arrived at Magnolia Loop (the street)."
-    ],
+    "gary": [],
     "donna": [
-      "Rosa (rosa dining table): Sit down beside Donna and sketch removable Halloween decorations for the parade cart"
+      "Rosa (rosa dining table): Sketch a pumpkin-patch theme with clip-on lights and a removable fabric banner for the cart"
     ],
     "hal": [
-      "You arrived at Town Square."
+      "You arrived at Town Hall."
     ],
     "rosa": [
-      "Donna (rosa dining table): Sit down with Rosa and start sketching the removable Halloween parade cart decorations, keeping everything Review-friendly"
+      "Donna (rosa dining table): Sketch the first parade cart design with Rosa: removable pumpkin garland and a clip-on bat banner"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 135,
-        "text": "I headed to Town Square.",
-        "importance": 6
-      },
       {
         "tick": 135,
         "text": "You arrived at Town Square.",
@@ -1022,19 +1015,14 @@
         "tick": 233,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 234,
+        "text": "I (street bulletin board): Read the board for any Review committee meeting date or parade updates",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 148,
-        "text": "I (donna club calendar): Confirm the doubles practice slot doesn't clash with my clubs or Rosa's dinner Saturday",
-        "importance": 4
-      },
-      {
-        "tick": 149,
-        "text": "I (donna pickleball bag): Pack paddles, balls, and water for doubles practice with Gary",
-        "importance": 4
-      },
       {
         "tick": 150,
         "text": "I headed to Magnolia Loop (the street).",
@@ -2024,19 +2012,19 @@
         "tick": 233,
         "text": "Rosa (rosa dining table): Sit down beside Donna and sketch removable Halloween decorations for the parade cart",
         "importance": 5
+      },
+      {
+        "tick": 234,
+        "text": "I (rosa dining table): Sketch the first parade cart design with Rosa: removable pumpkin garland and a clip-on bat banner",
+        "importance": 5
+      },
+      {
+        "tick": 234,
+        "text": "Rosa (rosa dining table): Sketch a pumpkin-patch theme with clip-on lights and a removable fabric banner for the cart",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 147,
-        "text": "I (hal binoculars): Scan Magnolia Loop for anything out of order this morning",
-        "importance": 2
-      },
-      {
-        "tick": 148,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 3
-      },
       {
         "tick": 148,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -3026,19 +3014,19 @@
         "tick": 233,
         "text": "You arrived at Town Square.",
         "importance": 5
+      },
+      {
+        "tick": 234,
+        "text": "I headed to Town Hall.",
+        "importance": 6
+      },
+      {
+        "tick": 234,
+        "text": "You arrived at Town Hall.",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 150,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 150,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 150,
         "text": "Gary just arrived.",
@@ -4028,6 +4016,16 @@
         "tick": 233,
         "text": "Donna (rosa dining table): Sit down with Rosa and start sketching the removable Halloween parade cart decorations, keeping everything Review-friendly",
         "importance": 5
+      },
+      {
+        "tick": 234,
+        "text": "I (rosa dining table): Sketch a pumpkin-patch theme with clip-on lights and a removable fabric banner for the cart",
+        "importance": 5
+      },
+      {
+        "tick": 234,
+        "text": "Donna (rosa dining table): Sketch the first parade cart design with Rosa: removable pumpkin garland and a clip-on bat banner",
+        "importance": 5
       }
     ]
   },
@@ -4074,10 +4072,10 @@
     ]
   },
   "emotions": {
-    "gary": "patient",
+    "gary": "hopeful",
     "donna": "enthusiastic",
-    "hal": "resolute",
-    "rosa": "optimistic"
+    "hal": "determined",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4184,10 +4182,16 @@
       "time": "Tuesday, October 27, 6:17 PM",
       "story": "At 6:17 on a sunny Tuesday evening in Sumter Oaks, Donna and Rosa sit together at Rosa's dining table, sketching removable Halloween decorations for the parade cart with an eye toward keeping everything tidy and approved. Gary is making his way down Magnolia Loop, while Hal, resolute as ever, heads for the Town Square. The October warmth still hangs over the community at 81 degrees, and the golf carts are quietly parked along the curbs.",
       "dialogue": []
+    },
+    {
+      "tick": 234,
+      "time": "Tuesday, October 27, 7:17 PM",
+      "story": "At 7:17 on a sunny Tuesday evening in Sumter Oaks, Gary is reading the bulletin board on Magnolia Loop for any news about the Review committee or the parade. Over at Rosa's house, Donna and Rosa are bent over the dining table sketching a golf cart design for the Halloween parade, with removable pumpkin garland, a clip-on bat banner, and a pumpkin-patch theme with little lights. Hal is heading to Town Hall with a determined stride, and everyone in town seems to agree that the cart will be the best-dressed thing on the road.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 7.33417,
+    "total_usd": 7.36541,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4250,13 +4254,12 @@
         "usd": 0.50209
       },
       "2026-10-27": {
-        "ticks": 12,
-        "usd": 0.3846
+        "ticks": 13,
+        "usd": 0.41584
       }
     }
   },
   "recent_tick_costs": [
-    0.03275,
     0.03229,
     0.03488,
     0.03624,
@@ -4279,7 +4282,8 @@
     0.03154,
     0.03264,
     0.0335,
-    0.03119
+    0.03119,
+    0.03124
   ],
   "fund": {
     "gross_usd": 0.0,
