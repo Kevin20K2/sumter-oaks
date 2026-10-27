@@ -1,29 +1,25 @@
 {
-  "tick": 220,
-  "time": "2026-10-26T19:17",
+  "tick": 221,
+  "time": "2026-10-26T20:17",
   "positions": {
     "gary": "garys_house",
     "donna": "rec_center",
     "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
     "donna": [],
     "hal": [
-      "Rosa said to Hal: “Nine sharp it is, Hal. Thanks for coming tonight and for hearing us out. I'm heading in to put my feet up, I've earned it.”"
+      "Rosa headed to Rosa's House."
     ],
     "rosa": [
-      "Hal (donna flamingo flock): Count the flamingos from the street and log the tally in my notebook"
+      "Hal (donna flamingo flock): Count the flamingos from the street and log the tally in my notebook",
+      "You arrived at Rosa's House."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 127,
-        "text": "I (pickleball court 1): Practice dinks with Donna on the reserved court",
-        "importance": 3
-      },
       {
         "tick": 127,
         "text": "Donna said to Gary: “Perfect, you're loose. Stay at the kitchen line and just pop it soft over the net, no swinging. Think of it like tucking in a baby, and we'll rally till the shower picks up.”",
@@ -1018,14 +1014,14 @@
         "tick": 219,
         "text": "I (gary workbench): Finalize and label the wiring sketches, marking everything strap-on and removable, ready for tomorrow's walk to the committee",
         "importance": 5
+      },
+      {
+        "tick": 220,
+        "text": "I (gary workbench): Give the labeled wiring sketches one last check and stack them by the door for the morning walk",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 131,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 3
-      },
       {
         "tick": 131,
         "text": "Gary headed to Magnolia Loop (the street).",
@@ -2020,19 +2016,14 @@
         "tick": 219,
         "text": "I (pickleball court 1): Run third-shot drop drills against the wall so I can coach Gary when he arrives",
         "importance": 4
+      },
+      {
+        "tick": 220,
+        "text": "I (pickleball court 2): Practice dinks and third-shot drops solo while waiting for Gary",
+        "importance": 3
       }
     ],
     "hal": [
-      {
-        "tick": 127,
-        "text": "I headed to Rec Center.",
-        "importance": 4
-      },
-      {
-        "tick": 127,
-        "text": "You arrived at Rec Center.",
-        "importance": 4
-      },
       {
         "tick": 128,
         "text": "I said to Gary: “Gary. Rosa's been looking for you: dinner's Saturday at six at her place. Don't be late, and wipe your boots.”",
@@ -3022,24 +3013,19 @@
         "tick": 219,
         "text": "Rosa said to Hal: “Nine sharp it is, Hal. Thanks for coming tonight and for hearing us out. I'm heading in to put my feet up, I've earned it.”",
         "importance": 5
+      },
+      {
+        "tick": 220,
+        "text": "I (donna flamingo flock): Count the flamingos from the street and log the tally in my notebook",
+        "importance": 5
+      },
+      {
+        "tick": 220,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 131,
-        "text": "Hal just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 132,
-        "text": "I (rosa kitchen): Check the marinade and prep what can be made ahead for Saturday's dinner",
-        "importance": 4
-      },
-      {
-        "tick": 133,
-        "text": "I (rosa shift schedule): Check my per-diem shifts and make sure Saturday evening is clear for the dinner",
-        "importance": 5
-      },
       {
         "tick": 134,
         "text": "I (rosa dining table): Count chairs and plan the seating and serving dishes for Saturday's dinner",
@@ -4024,6 +4010,21 @@
         "tick": 219,
         "text": "Hal (donna flamingo flock): Count the flamingos from the street and log the tally in my notebook",
         "importance": 4
+      },
+      {
+        "tick": 220,
+        "text": "I headed to Rosa's House.",
+        "importance": 3
+      },
+      {
+        "tick": 220,
+        "text": "Hal (donna flamingo flock): Count the flamingos from the street and log the tally in my notebook",
+        "importance": 3
+      },
+      {
+        "tick": 220,
+        "text": "You arrived at Rosa's House.",
+        "importance": 3
       }
     ]
   },
@@ -4070,10 +4071,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
+    "gary": "optimistic",
     "donna": "determined",
     "hal": "dutiful",
-    "rosa": "content"
+    "rosa": "content, tired"
   },
   "laws": [
     {
@@ -4166,53 +4167,9 @@
       "text": "Gary Kowalski: File Architectural Review application for golf cart lights and sound system"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 215,
-      "time": "Monday, October 26, 3:17 PM",
-      "story": "At 3:17 on a sunny Monday afternoon in Sumter Oaks, Gary and Rosa are both gathered at the bulletin board on Magnolia Loop, hoping to spot an Architectural Review notice and fresh parade news. Donna, eager as ever, has already cart-whizzed off toward the Rec Center, while Hal stays put, promising Rosa he'll look over her float sketches once he finishes counting the flamingos, with a wink about not telling the committee he can be bought with leftovers.",
-      "dialogue": [
-        "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”"
-      ]
-    },
-    {
-      "tick": 216,
-      "time": "Monday, October 26, 4:17 PM",
-      "story": "On Magnolia Loop in Sumter Oaks, this sunny Monday afternoon at 4:17, Gary is scanning the street bulletin board for an Architectural Review approval notice for his cart lights and sound system, while Hal and Rosa stand by with sketches in hand. Hal makes it clear that nothing gets bolted onto any cart until the committee posts its approval, and Rosa offers to walk the drawings over to the committee herself so everyone is ready by Saturday. Meanwhile, over at the Rec Center, Donna is studying the ladder standings with determination, working out how many wins she'll need to pass Pruitt-Kowalski.",
-      "dialogue": [
-        "Hal said to Rosa: “Count's done, Rosa, so show me those sketches. If Review hasn't posted anything yet, nothing gets bolted on until they do. Same goes for you, Gary.”",
-        "Rosa said to Gary: “Gary, did you spot a Review approval on the board? I didn't see one earlier. If it's not up yet, I'll walk the sketches over to the committee myself so we're ready by Saturday.”"
-      ]
-    },
-    {
-      "tick": 217,
-      "time": "Monday, October 26, 5:17 PM",
-      "story": "At 5:17 on a sunny Monday afternoon in Sumter Oaks, Gary and Rosa stand on Magnolia Loop, where Gary promises that nothing gets bolted onto any cart until the committee signs off. Hal keeps a watchful eye on the street bulletin board for any Architectural Review notice about cart modifications, while Rosa offers him her removable, strap-on plans and an invitation to join her at the committee tomorrow morning. Meanwhile, Donna is at the Rec Center kiosk, determined to book a two-hour court slot for Gary's practice session.",
-      "dialogue": [
-        "Gary said to Rosa: “Nothing up on the board yet, Rosa. I filed mine back at the desk but haven't heard a peep. Tell you what, I'll finish my wiring sketches tonight and you can carry both sets to the committee together. Nothing gets bolted on till they sign off, Hal's got my word on that.”",
-        "Rosa said to Hal: “Here you go, Hal. Everything's strap-on and removable, nothing touches the cart's frame until Review says yes. If the board's still empty, I'll walk these over to the committee tomorrow morning, and you're welcome to come along.”"
-      ]
-    },
-    {
-      "tick": 218,
-      "time": "Monday, October 26, 6:17 PM",
-      "story": "On a sunny Monday evening at 6:17, Gary is heading home to Gary's House along Magnolia Loop, looking determined about his plans. Over at the Rec Center, Donna is warming up on pickleball court one with solo serves and dinks, getting ready for Gary to arrive. Hal and Rosa are still on Magnolia Loop, where Hal grudgingly admits her sketches look orderly and agrees to walk over with her and Gary at nine the next morning, while Rosa, feeling hopeful, invites him to join them.",
-      "dialogue": [
-        "Hal said to Rosa: “Sketches look orderly, Rosa. I'll walk over with you tomorrow morning, nine sharp, and I'll hold you both to it: nothing gets bolted on until the committee stamps it.”",
-        "Rosa said to Gary: “Sounds good, Gary. Bring your sketches by my place tomorrow around nine and we'll walk both sets over to the committee together. Hal, the offer's open if you want to come along.”"
-      ]
-    },
-    {
-      "tick": 219,
-      "time": "Monday, October 26, 7:17 PM",
-      "story": "Gary is at his workbench at home, finalizing wiring sketches for tomorrow's walk to the committee, with every piece marked strap-on and removable. Across town, Donna is running third-shot drop drills against the wall at Rec Center pickleball court 1, getting ready to coach Gary when he arrives. Out on Magnolia Loop, Hal is counting flamingos in Donna's flock from the street and jotting the tally in his notebook, while Rosa, content, has just thanked him for coming and headed in to put her feet up.",
-      "dialogue": [
-        "Rosa said to Hal: “Nine sharp it is, Hal. Thanks for coming tonight and for hearing us out. I'm heading in to put my feet up, I've earned it.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 6.88475,
+    "total_usd": 6.9178,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4271,13 +4228,12 @@
         "usd": 0.50904
       },
       "2026-10-26": {
-        "ticks": 13,
-        "usd": 0.43727
+        "ticks": 14,
+        "usd": 0.47032
       }
     }
   },
   "recent_tick_costs": [
-    0.03129,
     0.03282,
     0.03637,
     0.03717,
@@ -4300,7 +4256,8 @@
     0.03392,
     0.03356,
     0.03414,
-    0.03296
+    0.03296,
+    0.03305
   ],
   "fund": {
     "gross_usd": 0.0,

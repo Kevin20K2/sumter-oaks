@@ -1,0 +1,119 @@
+{
+  "tick": 220,
+  "simulation_time": "Monday, October 26, 8:17 PM",
+  "weather": "Sunny, 74°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 8:17 on a sunny Monday evening in Sumter Oaks, Gary is at his workbench at home, checking his labeled wiring sketches and stacking them by the door for the morning walk. Donna is out on pickleball court 2 at the Rec Center, drilling dinks and third-shot drops on her own while she waits for Gary. Hal is strolling Magnolia Loop, dutifully counting the flamingos in the Donna flock and jotting the tally in his notebook, while Rosa, looking content and a little tired, is heading home along the same street.",
+  "events": [
+    "Gary (gary workbench): Give the labeled wiring sketches one last check and stack them by the door for the morning walk",
+    "Donna (pickleball court 2): Practice dinks and third-shot drops solo while waiting for Gary",
+    "Hal (donna flamingo flock): Count the flamingos from the street and log the tally in my notebook",
+    "Rosa headed to Rosa's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 8:17 PM and I'm home. I finalized and labeled the wiring sketches last tick, marked strap-on and removable, ready for the nine o'clock walk with Rosa and Hal tomorrow. No one is nearby to talk to. I could use this quiet hour to double-check the sketches against my cart and the toolbox, so nothing surprises the committee. Nothing gets bolted on until they stamp it, and L-03 means I'll test the sound system quietly or not at all tonight. A final look at the workbench is the useful thing to do.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Give the labeled wiring sketches one last check and stack them by the door for the morning walk"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 8:17 PM and nobody's here. I've warmed up, studied the ladder board, confirmed my two-hour booking, and run third-shot drop drills. Gary hasn't shown, and I shouldn't keep re-doing the same prep. The ladder standings board is the one thing worth one more look, since I want to know exactly how many wins we need to pass Pruitt-Kowalski. Actually I already studied it at tick 216, so rather than repeat myself, I'll use the time to keep my own game sharp with a last solo dink drill, so I'm ready when Gary does arrive and I can coach him on the drops.",
+      "emotional_state": "determined",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_2",
+          "content": "Practice dinks and third-shot drops solo while waiting for Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa's turning in and the plan for tomorrow is set: nine sharp, paperwork to the committee. I'm standing on Magnolia Loop with Donna's flamingo flock right in front of me, and my notebook tally needs finishing. L-02 allows three ornaments visible from the street, so I'll count from the curb and log the number properly. Facts first, then the committee gets something it can't argue with.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos from the street and log the tally in my notebook"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The dinner went well and I told Hal I was heading in to put my feet up. Everyone's plan is set for nine tomorrow, so there's nothing left to ask or invite. Hal is out counting Donna's flamingos in his notebook, and I don't need to restart the conversation. I'm on Magnolia Loop and my house is connected, so the natural move is to head home and rest like I said I would. I have a per-diem shift mindset, tired feet, and an early morning with the committee.",
+      "emotional_state": "content, tired",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading home to put my feet up after hosting dinner; big committee walk at nine tomorrow."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03305,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10397,
+        "output_tokens": 1150,
+        "usd": 0.03229
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3788,
+        "output_tokens": 760,
+        "usd": 0.00076
+      }
+    }
+  },
+  "season": "halloween"
+}
