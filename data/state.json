@@ -1,33 +1,28 @@
 {
-  "tick": 225,
-  "time": "2026-10-27T09:17",
+  "tick": 226,
+  "time": "2026-10-27T10:17",
   "positions": {
     "gary": "town_square",
     "donna": "magnolia_loop",
     "hal": "magnolia_loop",
-    "rosa": "rosas_house"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
-    "gary": [
-      "You arrived at Town Square."
-    ],
+    "gary": [],
     "donna": [
-      "You arrived at Magnolia Loop (the street).",
-      "Hal just arrived."
+      "Hal said to Donna: “Morning, Donna. I counted your flamingos again, and L-02 caps street-visible ornaments at three. Can we sort that out between us before I have to take it to the committee?”",
+      "Rosa just arrived."
     ],
     "hal": [
-      "You arrived at Magnolia Loop (the street).",
-      "Donna just arrived."
+      "Donna said to Hal: “Morning, Hal! You're still coming to Rosa's porch for the parade planning, right? We'll need you to keep us honest on Architectural Review, and I'm heading to the Rec Center to practice with Gary.”",
+      "Rosa just arrived."
     ],
-    "rosa": []
+    "rosa": [
+      "You arrived at Magnolia Loop (the street)."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 129,
-        "text": "Donna (pickleball court 1): Pick up my paddle and rally one last time with Gary, working on his dinks",
-        "importance": 4
-      },
       {
         "tick": 129,
         "text": "Hal headed to Magnolia Loop (the street).",
@@ -1022,24 +1017,14 @@
         "tick": 224,
         "text": "You arrived at Town Square.",
         "importance": 6
+      },
+      {
+        "tick": 225,
+        "text": "I (parade signup table): Sign up my golf cart for the parade, noting lights and sound are pending Architectural Review approval",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 135,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 136,
-        "text": "I headed to Gary's House.",
-        "importance": 5
-      },
-      {
-        "tick": 136,
-        "text": "You arrived at Gary's House.",
-        "importance": 5
-      },
       {
         "tick": 137,
         "text": "I waited: Standing at Gary's door with my pickleball bag, waiting for him to come out so we can head to the court for doubles practice.",
@@ -2024,24 +2009,24 @@
         "tick": 224,
         "text": "Hal just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 225,
+        "text": "I said to Hal: “Morning, Hal! You're still coming to Rosa's porch for the parade planning, right? We'll need you to keep us honest on Architectural Review, and I'm heading to the Rec Center to practice with Gary.”",
+        "importance": 4
+      },
+      {
+        "tick": 225,
+        "text": "Hal said to Donna: “Morning, Donna. I counted your flamingos again, and L-02 caps street-visible ornaments at three. Can we sort that out between us before I have to take it to the committee?”",
+        "importance": 4
+      },
+      {
+        "tick": 225,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 130,
-        "text": "I (street bulletin board): Read the posted notices while waiting for Gary and Donna",
-        "importance": 3
-      },
-      {
-        "tick": 131,
-        "text": "I headed to Rosa's House.",
-        "importance": 3
-      },
-      {
-        "tick": 131,
-        "text": "You arrived at Rosa's House.",
-        "importance": 3
-      },
       {
         "tick": 132,
         "text": "I (hal violation notebook): Mark the cart and flamingo entries as resolved and compliant",
@@ -3026,19 +3011,24 @@
         "tick": 224,
         "text": "Donna just arrived.",
         "importance": 6
-      }
-    ],
-    "rosa": [
+      },
       {
-        "tick": 138,
-        "text": "I (rosa dining table): Set out place cards and sketch the seating so Hal, Gary and Donna are mixed up",
+        "tick": 225,
+        "text": "I said to Donna: “Morning, Donna. I counted your flamingos again, and L-02 caps street-visible ornaments at three. Can we sort that out between us before I have to take it to the committee?”",
         "importance": 5
       },
       {
-        "tick": 139,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
+        "tick": 225,
+        "text": "Donna said to Hal: “Morning, Hal! You're still coming to Rosa's porch for the parade planning, right? We'll need you to keep us honest on Architectural Review, and I'm heading to the Rec Center to practice with Gary.”",
+        "importance": 5
       },
+      {
+        "tick": 225,
+        "text": "Rosa just arrived.",
+        "importance": 5
+      }
+    ],
+    "rosa": [
       {
         "tick": 139,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -4028,6 +4018,16 @@
         "tick": 224,
         "text": "I (rosa kitchen): Brew a pot of coffee and set out cups for the cart planning crew",
         "importance": 4
+      },
+      {
+        "tick": 225,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 225,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ]
   },
@@ -4074,10 +4074,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "eager",
-    "hal": "determined",
-    "rosa": "hopeful"
+    "gary": "hopeful",
+    "donna": "upbeat",
+    "hal": "dutiful",
+    "rosa": "restless, hopeful"
   },
   "laws": [
     {
@@ -4194,10 +4194,19 @@
       "time": "Tuesday, October 27, 9:17 AM",
       "story": "On a sunny Tuesday morning at 9:17, with the air at a pleasant 79°F in Sumter Oaks, Gary is striding down Magnolia Loop with a determined look toward Town Square. Donna, eager as ever, is heading out of her house onto the same street, while Hal follows with equal determination. Back in her kitchen, Rosa is brewing a pot of coffee and setting out cups, hopeful that her cart planning crew will show up ready to talk.",
       "dialogue": []
+    },
+    {
+      "tick": 225,
+      "time": "Tuesday, October 27, 10:17 AM",
+      "story": "At 10:17 on a sunny Tuesday morning in Sumter Oaks, Gary is hopefully signing up his golf cart for the parade at the Town Square table, with lights and sound still waiting on Architectural Review approval. Donna, upbeat as ever, is catching Hal on Magnolia Loop to remind him about the planning session on Rosa's porch, while Hal dutifully points out that her flamingo collection runs over the three-ornament limit. Rosa, restless and hopeful, is heading out of her house toward the same street, probably to see how the flamingo debate shakes out.",
+      "dialogue": [
+        "Donna said to Hal: “Morning, Hal! You're still coming to Rosa's porch for the parade planning, right? We'll need you to keep us honest on Architectural Review, and I'm heading to the Rec Center to practice with Gary.”",
+        "Hal said to Donna: “Morning, Donna. I counted your flamingos again, and L-02 caps street-visible ornaments at three. Can we sort that out between us before I have to take it to the committee?”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 7.04339,
+    "total_usd": 7.07575,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4260,13 +4269,12 @@
         "usd": 0.50209
       },
       "2026-10-27": {
-        "ticks": 3,
-        "usd": 0.09382
+        "ticks": 4,
+        "usd": 0.12618
       }
     }
   },
   "recent_tick_costs": [
-    0.03695,
     0.03855,
     0.03535,
     0.03426,
@@ -4289,7 +4297,8 @@
     0.03177,
     0.03167,
     0.03059,
-    0.03156
+    0.03156,
+    0.03236
   ],
   "fund": {
     "gross_usd": 0.0,
