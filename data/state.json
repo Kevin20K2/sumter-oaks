@@ -1,34 +1,28 @@
 {
-  "tick": 233,
-  "time": "2026-10-27T17:17",
+  "tick": 234,
+  "time": "2026-10-27T18:17",
   "positions": {
-    "gary": "town_square",
+    "gary": "magnolia_loop",
     "donna": "rosas_house",
-    "hal": "magnolia_loop",
+    "hal": "town_square",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
-    "donna": [
-      "Rosa (rosa dining table): Clear the table and lay out blank paper and pencils to start sketching the removable parade cart decorations with Donna"
+    "gary": [
+      "You arrived at Magnolia Loop (the street)."
     ],
-    "hal": [],
+    "donna": [
+      "Rosa (rosa dining table): Sit down beside Donna and sketch removable Halloween decorations for the parade cart"
+    ],
+    "hal": [
+      "You arrived at Town Square."
+    ],
     "rosa": [
-      "Donna (rosa dining table): Spread out the cart sketches and start drawing up the Halloween parade design, Review-friendly"
+      "Donna (rosa dining table): Sit down with Rosa and start sketching the removable Halloween parade cart decorations, keeping everything Review-friendly"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 134,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 134,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
       {
         "tick": 135,
         "text": "I headed to Town Square.",
@@ -1018,19 +1012,19 @@
         "tick": 232,
         "text": "I (parade signup table): Sign up my golf cart for Saturday's parade, noting the lights and sound are pending Architectural Review",
         "importance": 5
+      },
+      {
+        "tick": 233,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 233,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 146,
-        "text": "I (court reservation kiosk): Reserve a 2-hour doubles practice slot for Pruitt-Kowalski",
-        "importance": 5
-      },
-      {
-        "tick": 147,
-        "text": "I (donna club calendar): Check the practice slot against my club commitments and Rosa's dinner Saturday",
-        "importance": 4
-      },
       {
         "tick": 148,
         "text": "I (donna club calendar): Confirm the doubles practice slot doesn't clash with my clubs or Rosa's dinner Saturday",
@@ -2020,19 +2014,19 @@
         "tick": 232,
         "text": "Rosa (rosa dining table): Clear the table and lay out blank paper and pencils to start sketching the removable parade cart decorations with Donna",
         "importance": 4
+      },
+      {
+        "tick": 233,
+        "text": "I (rosa dining table): Sit down with Rosa and start sketching the removable Halloween parade cart decorations, keeping everything Review-friendly",
+        "importance": 5
+      },
+      {
+        "tick": 233,
+        "text": "Rosa (rosa dining table): Sit down beside Donna and sketch removable Halloween decorations for the parade cart",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 145,
-        "text": "I waited: Sitting in the porch chair with the haze rolling in, street's quiet, notebook closed. Thinking I'll oil the hinges on the good chair before Saturday so I'm not squeaking into Rosa's dinner.",
-        "importance": 2
-      },
-      {
-        "tick": 146,
-        "text": "I (hal porch chair): Check the chair over and oil the squeaky hinges for Saturday",
-        "importance": 3
-      },
       {
         "tick": 147,
         "text": "I (hal binoculars): Scan Magnolia Loop for anything out of order this morning",
@@ -3022,19 +3016,19 @@
         "tick": 232,
         "text": "I (street bulletin board): Read the postings for committee meeting times and Halloween decoration notices",
         "importance": 3
+      },
+      {
+        "tick": 233,
+        "text": "I headed to Town Square.",
+        "importance": 5
+      },
+      {
+        "tick": 233,
+        "text": "You arrived at Town Square.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 148,
-        "text": "I (rosa shift schedule): Check my per-diem shifts to make sure Saturday evening is clear before I shop",
-        "importance": 5
-      },
-      {
-        "tick": 149,
-        "text": "I (rosa dining table): Check table seating for four and plan place settings so Hal, Gary and Donna mix",
-        "importance": 5
-      },
       {
         "tick": 150,
         "text": "I headed to Magnolia Loop (the street).",
@@ -4024,6 +4018,16 @@
         "tick": 232,
         "text": "Donna (rosa dining table): Spread out the cart sketches and start drawing up the Halloween parade design, Review-friendly",
         "importance": 5
+      },
+      {
+        "tick": 233,
+        "text": "I (rosa dining table): Sit down beside Donna and sketch removable Halloween decorations for the parade cart",
+        "importance": 5
+      },
+      {
+        "tick": 233,
+        "text": "Donna (rosa dining table): Sit down with Rosa and start sketching the removable Halloween parade cart decorations, keeping everything Review-friendly",
+        "importance": 5
       }
     ]
   },
@@ -4070,10 +4074,10 @@
     ]
   },
   "emotions": {
-    "gary": "hopeful",
-    "donna": "eager",
-    "hal": "satisfied",
-    "rosa": "focused, warm"
+    "gary": "patient",
+    "donna": "enthusiastic",
+    "hal": "resolute",
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -4174,9 +4178,16 @@
       "text": "Gary Kowalski: Leave a copy of my wiring sketches and clamp list for the review committee"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 233,
+      "time": "Tuesday, October 27, 6:17 PM",
+      "story": "At 6:17 on a sunny Tuesday evening in Sumter Oaks, Donna and Rosa sit together at Rosa's dining table, sketching removable Halloween decorations for the parade cart with an eye toward keeping everything tidy and approved. Gary is making his way down Magnolia Loop, while Hal, resolute as ever, heads for the Town Square. The October warmth still hangs over the community at 81 degrees, and the golf carts are quietly parked along the curbs.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 7.30298,
+    "total_usd": 7.33417,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4239,13 +4250,12 @@
         "usd": 0.50209
       },
       "2026-10-27": {
-        "ticks": 11,
-        "usd": 0.35341
+        "ticks": 12,
+        "usd": 0.3846
       }
     }
   },
   "recent_tick_costs": [
-    0.03168,
     0.03275,
     0.03229,
     0.03488,
@@ -4268,7 +4278,8 @@
     0.0307,
     0.03154,
     0.03264,
-    0.0335
+    0.0335,
+    0.03119
   ],
   "fund": {
     "gross_usd": 0.0,
