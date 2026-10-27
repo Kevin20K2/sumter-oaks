@@ -1,0 +1,118 @@
+{
+  "tick": 230,
+  "simulation_time": "Tuesday, October 27, 3:17 PM",
+  "weather": "Afternoon shower, 83°F",
+  "positions": {
+    "gary": "town_hall",
+    "donna": "rosas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 3:17 on a Tuesday afternoon in Sumter Oaks, a light shower has settled over the town at 83 degrees, and Gary waits patiently at Town Hall, weighing where to head next. Donna, upbeat as ever, finds Rosa at her house and asks about the Architectural Review's word on the parade cart sketches, pointing out that her flamingos are down to three so she's ready to help. Rosa, optimistic, says she'd like to sit down with Donna and Hal to sketch the cart before the rain picks up, and Hal, satisfied, is out on Magnolia Loop counting the flamingos he can see from the street.",
+  "events": [
+    "Gary waited: thinking about where to head next",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and note it in my notebook"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've filed the application, checked in at the desk, and left my wiring sketches and clamp list in the drop box. Nobody's here to talk to, and the committee has everything it needs. Pestering the desk again would only annoy them and wouldn't speed anything up. Rosa and Hal were right to say wait for the sign-off, so the useful thing is to head back to the street, keep an eye on the cart, and check back at Town Hall once the review has had time to meet. No point running lights or sound until it's approved, per L-01.",
+      "emotional_state": "patient",
+      "importance_rating": 4,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "thinking about where to head next"
+        }
+      },
+      "engine_note": "tried to go to None, which isn't connected to town_hall"
+    },
+    "donna": {
+      "thought_process": "I just walked into Rosa's House and Rosa is right here. Tuesday porch planning is when the Halloween parade takes shape, and my memories say Hal and Rosa are working on cart sketches pending Architectural Review. I should open with a greeting and ask where the sketches stand and whether the Review notice has come through, since I don't want us decorating anything visible from the street before approval. I haven't spoken to her yet this tick, so this moves things forward. Afterward I can nudge Gary about practice.",
+      "emotional_state": "upbeat",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, hon, there you are! Any word from Architectural Review on the parade cart sketches? I've got my flamingos down to three out front, so I'm squeaky clean and ready to help."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna hauled six flamingos inside and left three showing, and I've counted three twice now in my notebook. That's within L-02, so there's nothing to report on her, and I'd rather be fair about it. Gary and Rosa have agreed to wait on the committee for the cart, so my complaint is mostly satisfied. Nobody is in sight on the Loop. The flock is right here, so one more tally before I call it settled seems proper. By-the-book means checking the book.",
+      "emotional_state": "satisfied",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and note it in my notebook"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Donna just walked in and Hal is supposed to be along shortly. The dinner's done and the cart planning is the next real step. I've already checked my shift schedule twice, so no more stalling on that. Hal's notebook said nine ornaments showing and Donna promised to get it down to three this afternoon, which matters for L-02, so I should ask her directly how that's going. Keep it short, friendly, and move things forward toward getting everyone at the table for cart planning.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna, good, you're here. Did you get the ornaments down to three yet? Hal's coming by soon and I'd like to sit down with both of you and sketch the cart before the rain picks up."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03154,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9855,
+        "output_tokens": 1168,
+        "usd": 0.03139
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 475,
+        "output_tokens": 214,
+        "usd": 0.00015
+      }
+    }
+  },
+  "season": "halloween"
+}

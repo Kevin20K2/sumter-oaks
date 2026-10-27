@@ -1,6 +1,6 @@
 {
-  "tick": 230,
-  "time": "2026-10-27T14:17",
+  "tick": 231,
+  "time": "2026-10-27T15:17",
   "positions": {
     "gary": "town_hall",
     "donna": "rosas_house",
@@ -10,23 +10,15 @@
   "perceptions": {
     "gary": [],
     "donna": [
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and log the number in my notebook",
-      "You arrived at Rosa's House."
+      "Rosa said to Donna: “Donna, good, you're here. Did you get the ornaments down to three yet? Hal's coming by soon and I'd like to sit down with both of you and sketch the cart before the rain picks up.”"
     ],
-    "hal": [
-      "Donna headed to Rosa's House."
-    ],
+    "hal": [],
     "rosa": [
-      "Donna just arrived."
+      "Donna said to Rosa: “Rosa, hon, there you are! Any word from Architectural Review on the parade cart sketches? I've got my flamingos down to three out front, so I'm squeaky clean and ready to help.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 131,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 3
-      },
       {
         "tick": 131,
         "text": "Donna just arrived.",
@@ -1021,19 +1013,14 @@
         "tick": 229,
         "text": "I (proposal drop box): Leave a copy of my wiring sketches and clamp list for the review committee",
         "importance": 5
+      },
+      {
+        "tick": 230,
+        "text": "I waited: thinking about where to head next",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 143,
-        "text": "I said to Rosa: “Dessert's mine, Rosa. I'll bring my lemon bars, so you plan your menu around those. And the flamingos are down to three, I checked.”",
-        "importance": 4
-      },
-      {
-        "tick": 143,
-        "text": "Rosa said to Donna: “Good call on the flamingos, Donna, that's three and you're legal. I'm off to shop for Saturday, so text me if you decide on a dessert, otherwise I'll plan around a pie.”",
-        "importance": 4
-      },
       {
         "tick": 144,
         "text": "I headed to Rec Center.",
@@ -2023,14 +2010,19 @@
         "tick": 229,
         "text": "You arrived at Rosa's House.",
         "importance": 5
+      },
+      {
+        "tick": 230,
+        "text": "I said to Rosa: “Rosa, hon, there you are! Any word from Architectural Review on the parade cart sketches? I've got my flamingos down to three out front, so I'm squeaky clean and ready to help.”",
+        "importance": 5
+      },
+      {
+        "tick": 230,
+        "text": "Rosa said to Donna: “Donna, good, you're here. Did you get the ornaments down to three yet? Hal's coming by soon and I'd like to sit down with both of you and sketch the cart before the rain picks up.”",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 142,
-        "text": "I (hal violation notebook): Review the remaining open entries and confirm nothing else needs filing before Saturday",
-        "importance": 3
-      },
       {
         "tick": 143,
         "text": "I waited: Sitting on the porch with the evening haze rolling in, letting the street be and looking forward to Saturday at Rosa's.",
@@ -3025,19 +3017,14 @@
         "tick": 229,
         "text": "Donna headed to Rosa's House.",
         "importance": 5
+      },
+      {
+        "tick": 230,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note it in my notebook",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 144,
-        "text": "I headed to Town Square.",
-        "importance": 4
-      },
-      {
-        "tick": 144,
-        "text": "Donna headed to Rec Center.",
-        "importance": 4
-      },
       {
         "tick": 144,
         "text": "You arrived at Town Square.",
@@ -4027,6 +4014,16 @@
         "tick": 229,
         "text": "Donna just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 230,
+        "text": "I said to Donna: “Donna, good, you're here. Did you get the ornaments down to three yet? Hal's coming by soon and I'd like to sit down with both of you and sketch the cart before the rain picks up.”",
+        "importance": 5
+      },
+      {
+        "tick": 230,
+        "text": "Donna said to Rosa: “Rosa, hon, there you are! Any word from Architectural Review on the parade cart sketches? I've got my flamingos down to three out front, so I'm squeaky clean and ready to help.”",
+        "importance": 5
       }
     ]
   },
@@ -4073,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "patient, hopeful",
+    "gary": "patient",
     "donna": "upbeat",
     "hal": "satisfied",
-    "rosa": "focused"
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -4198,10 +4195,19 @@
       "time": "Tuesday, October 27, 2:17 PM",
       "story": "At 2:17 on this Tuesday afternoon, a brief shower has just passed over Sumter Oaks, leaving the streets glossy at 82 degrees. Gary is at Town Hall, dropping his wiring sketches and clamp list into the proposal box for the review committee, hopeful that this time they'll get a fair hearing. Over on Magnolia Loop, Hal is satisfied as he counts and logs the pink flamingos in his notebook, while Donna, upbeat as ever, heads off to Rosa's House. Rosa, meanwhile, is focused at home, scanning her per-diem shift schedule for any open afternoons this week.",
       "dialogue": []
+    },
+    {
+      "tick": 230,
+      "time": "Tuesday, October 27, 3:17 PM",
+      "story": "At 3:17 on a Tuesday afternoon in Sumter Oaks, a light shower has settled over the town at 83 degrees, and Gary waits patiently at Town Hall, weighing where to head next. Donna, upbeat as ever, finds Rosa at her house and asks about the Architectural Review's word on the parade cart sketches, pointing out that her flamingos are down to three so she's ready to help. Rosa, optimistic, says she'd like to sit down with Donna and Hal to sketch the cart before the rain picks up, and Hal, satisfied, is out on Magnolia Loop counting the flamingos he can see from the street.",
+      "dialogue": [
+        "Donna said to Rosa: “Rosa, hon, there you are! Any word from Architectural Review on the parade cart sketches? I've got my flamingos down to three out front, so I'm squeaky clean and ready to help.”",
+        "Rosa said to Donna: “Donna, good, you're here. Did you get the ornaments down to three yet? Hal's coming by soon and I'd like to sit down with both of you and sketch the cart before the rain picks up.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 7.2053,
+    "total_usd": 7.23684,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4264,13 +4270,12 @@
         "usd": 0.50209
       },
       "2026-10-27": {
-        "ticks": 8,
-        "usd": 0.25573
+        "ticks": 9,
+        "usd": 0.28727
       }
     }
   },
   "recent_tick_costs": [
-    0.03069,
     0.03128,
     0.03264,
     0.03168,
@@ -4293,7 +4298,8 @@
     0.0333,
     0.03343,
     0.03212,
-    0.0307
+    0.0307,
+    0.03154
   ],
   "fund": {
     "gross_usd": 0.0,
