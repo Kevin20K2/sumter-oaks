@@ -1,0 +1,124 @@
+{
+  "tick": 228,
+  "simulation_time": "Tuesday, October 27, 1:17 PM",
+  "weather": "Sunny, 82°F",
+  "positions": {
+    "gary": "town_hall",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 1:17 on a sunny Tuesday in Sumter Oaks, Gary is at the Town Hall architectural review desk, eagerly going over his golf cart lights and sound system application while offering up his wiring sketches and clamp list. Over on Magnolia Loop, Donna is determinedly hauling six of her pink flamingos off the front lawn and into the house, leaving just three in view for the street. Hal, dutifully standing by on the same street, is counting the flamingos still showing and jotting the tally into his notebook. Meanwhile, Rosa is content and busy at home, checking her per-diem shifts so she knows when she's free to plan for the golf cart.",
+  "events": [
+    "Gary (architectural review desk): Check on my golf cart lights and sound system application and offer the wiring sketches and clamp list",
+    "Donna (donna flamingo flock): Pull six flamingos off the front lawn and carry them into the house, leaving three visible from the street",
+    "Hal (donna flamingo flock): Count the flamingos showing from the street and log it in my notebook",
+    "Rosa (rosa shift schedule): check my per-diem shifts so I know when I'm free for cart planning"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I filed the Architectural Review application back at tick 156 and I'm at Town Hall now with the review desk right here. No one is around, so no point speaking. I signed up for the parade noting the lights and sound are pending approval, and Saturday's parade is only four days off. The right move is to check the desk for the status of my application and be ready with my wiring sketches and clamp list, rather than rushing or modifying the cart before sign-off (L-01). I've kept faith with Rosa and Hal about waiting, so I'll follow the process.",
+      "emotional_state": "hopeful",
+      "importance_rating": 7,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "architectural_review_desk",
+          "content": "Check on my golf cart lights and sound system application and offer the wiring sketches and clamp list"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa's already headed to her porch and Hal is still here by the flamingo flock. I promised Hal the flock would be down to three by this afternoon, and nine showing is a Review headache nobody needs before the parade. Handling the flamingos now keeps my word, keeps Hal off my back, and leaves me free to join the sketching and later get Gary to practice. Best move is to deal with the flock right here.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Pull six flamingos off the front lawn and carry them into the house, leaving three visible from the street"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa headed to her house and Donna says she's right behind her. Donna promised to get the flamingos down to three by this afternoon, and I told Rosa I'd be along shortly. The flock is right here on the Loop, so I'll note the count in my notebook before I go, to give myself a baseline for the supper check. Quick look, then off to Rosa's porch. No need to nag Donna again; she's already agreed.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos showing from the street and log it in my notebook"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I just got back to my house and nobody's in line-of-sight yet. Donna and Hal both said they're on their way over to the porch to sketch the Halloween cart, and I already told them I'd be here, so there's no one to speak to and no need to repeat myself. Best use of this hour is to get ready: I'll check my shift schedule so I know what time I have free this week, since I'm overcommitted and the cart plan has to fit around per-diem shifts.",
+      "emotional_state": "content, busy",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "check my per-diem shifts so I know when I'm free for cart planning"
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "gary",
+      "text": "Gary Kowalski: Check on my golf cart lights and sound system application and offer the wiring sketches and clamp list"
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03212,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10631,
+        "output_tokens": 1071,
+        "usd": 0.03197
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 437,
+        "output_tokens": 222,
+        "usd": 0.00015
+      }
+    }
+  },
+  "season": "halloween"
+}
