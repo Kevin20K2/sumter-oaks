@@ -1,0 +1,119 @@
+{
+  "tick": 224,
+  "simulation_time": "Tuesday, October 27, 9:17 AM",
+  "weather": "Sunny, 79°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On a sunny Tuesday morning at 9:17, with the air at a pleasant 79°F in Sumter Oaks, Gary is striding down Magnolia Loop with a determined look toward Town Square. Donna, eager as ever, is heading out of her house onto the same street, while Hal follows with equal determination. Back in her kitchen, Rosa is brewing a pot of coffee and setting out cups, hopeful that her cart planning crew will show up ready to talk.",
+  "events": [
+    "Gary headed to Town Square.",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa kitchen): Brew a pot of coffee and set out cups for the cart planning crew"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 9:17 and I just stepped onto Magnolia Loop with the wiring sketches stacked and ready for the nine o'clock walk to the committee. My Architectural Review application is already filed, and L-01 means I need approval before any of these lights go on the cart's exterior, so I shouldn't dawdle. The sketches are back at my place by the door, and the committee is reached through the town square, so I'll head there now and get this in front of them with the sketches in hand.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_square",
+          "content": "Heading to meet the committee about my cart lights and sound system, sketches in hand."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at home on a sunny Tuesday morning with nobody around. I already packed my paddles, balls, and visor and penciled in practice with Gary, the ladder match, and Rosa's porch planning. Nothing else to do here. The practice with Gary won't happen sitting at home, so I should head out to Magnolia Loop on my way to the Rec Center and find him, then talk third-shot drops and keep the Halloween cart plans Review-friendly.",
+      "emotional_state": "eager",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Bag's packed and the calendar's set. Heading out to track down Gary for practice before the ladder match."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've reviewed the notebook twice already this morning and the entries are current. Sitting here updating it a third time accomplishes nothing. My goal is getting the cart and flamingo complaints in front of the architectural review committee, and Town Hall is where official business gets filed. Gary says he's filing his own paperwork today, so I'll go put my observations on record, by the book, and let the process work. Then I can bring that cornbread to Rosa's later.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out toward Town Hall to file my notebook observations on the cart modifications and flamingo count with the review committee."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've already checked my shifts against the 9 AM cart planning twice and cleared the dishes and set out paper and pens. The table is ready and it's 9:17, so Gary, Hal, and Donna should be arriving soon. Nothing left to prep except maybe getting the kitchen going. Coffee for the group is a small thing that helps a planning session feel welcoming, and Hal and I got off to a rough start, so a little hospitality can't hurt. I won't repeat any more shift checks.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Brew a pot of coffee and set out cups for the cart planning crew"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03156,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9974,
+        "output_tokens": 1090,
+        "usd": 0.03085
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4213,
+        "output_tokens": 578,
+        "usd": 0.00071
+      }
+    }
+  },
+  "season": "halloween"
+}
