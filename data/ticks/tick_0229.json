@@ -1,0 +1,124 @@
+{
+  "tick": 229,
+  "simulation_time": "Tuesday, October 27, 2:17 PM",
+  "weather": "Afternoon shower, 82°F",
+  "positions": {
+    "gary": "town_hall",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 2:17 on this Tuesday afternoon, a brief shower has just passed over Sumter Oaks, leaving the streets glossy at 82 degrees. Gary is at Town Hall, dropping his wiring sketches and clamp list into the proposal box for the review committee, hopeful that this time they'll get a fair hearing. Over on Magnolia Loop, Hal is satisfied as he counts and logs the pink flamingos in his notebook, while Donna, upbeat as ever, heads off to Rosa's House. Rosa, meanwhile, is focused at home, scanning her per-diem shift schedule for any open afternoons this week.",
+  "events": [
+    "Gary (proposal drop box): Leave a copy of my wiring sketches and clamp list for the review committee",
+    "Donna headed to Rosa's House.",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and log the number in my notebook",
+    "Rosa (rosa shift schedule): check my per-diem shifts for open afternoons this week"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at Town Hall and already filed the application at tick 156, then asked about it last tick. Nobody's around to talk to, and pestering the desk again with the same offer would be repeating myself. I've got my sketches and clamp list ready, and Rosa and Hal said to wait for the Review sign-off, so I won't rush or cut corners. The drop box and desk are the right channel. Best move is to put a copy of my wiring sketches and clamp list in the proposal drop box so the committee has everything in hand whenever they get to it, then go back to tinkering.",
+      "emotional_state": "patient, hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "proposal_drop_box",
+          "content": "Leave a copy of my wiring sketches and clamp list for the review committee"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I already carried six flamingos inside at tick 228 and Hal logged the street count, so the L-02 question is handled. I told Rosa I'd bring cart ideas to her porch, and Hal is heading there too. No reason to keep chatting on the street. Time to head to Rosa's house for the parade planning, staying Architectural Review friendly.",
+      "emotional_state": "upbeat",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's porch for the cart sketches and parade planning, flamingos down to three."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna just hauled six flamingos inside, which leaves three showing, right at the L-02 limit. I told Rosa I'd verify before supper, and my notebook doesn't lie. I'm standing right by the flock, so the honest thing is to count them myself and log it, then acknowledge her compliance. Gary's cart plans can wait for Rosa's porch.",
+      "emotional_state": "satisfied",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and log the number in my notebook"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm home at Rosa's House, nobody else around, and I last checked my shift schedule only by intention at tick 228. I told myself I'd look at my per-diem shifts so I know when I'm free for cart planning with Gary, Hal, and Donna. The schedule object is right here, so I'll use it now instead of guessing. Once I know my open windows I can pin down a time for the cart sketches.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "check my per-diem shifts for open afternoons this week"
+        }
+      }
+    }
+  },
+  "matters": [
+    {
+      "by": "gary",
+      "text": "Gary Kowalski: Leave a copy of my wiring sketches and clamp list for the review committee"
+    }
+  ],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0307,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10187,
+        "output_tokens": 1018,
+        "usd": 0.03055
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 402,
+        "output_tokens": 216,
+        "usd": 0.00015
+      }
+    }
+  },
+  "season": "halloween"
+}

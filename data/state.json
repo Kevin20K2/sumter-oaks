@@ -1,29 +1,27 @@
 {
-  "tick": 229,
-  "time": "2026-10-27T13:17",
+  "tick": 230,
+  "time": "2026-10-27T14:17",
   "positions": {
     "gary": "town_hall",
-    "donna": "magnolia_loop",
+    "donna": "rosas_house",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
     "donna": [
-      "Hal (donna flamingo flock): Count the flamingos showing from the street and log it in my notebook"
+      "Hal (donna flamingo flock): Count the flamingos visible from the street and log the number in my notebook",
+      "You arrived at Rosa's House."
     ],
     "hal": [
-      "Donna (donna flamingo flock): Pull six flamingos off the front lawn and carry them into the house, leaving three visible from the street"
+      "Donna headed to Rosa's House."
     ],
-    "rosa": []
+    "rosa": [
+      "Donna just arrived."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 131,
-        "text": "Donna headed to Magnolia Loop (the street).",
-        "importance": 3
-      },
       {
         "tick": 131,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -1018,24 +1016,14 @@
         "tick": 228,
         "text": "I (architectural review desk): Check on my golf cart lights and sound system application and offer the wiring sketches and clamp list",
         "importance": 7
+      },
+      {
+        "tick": 229,
+        "text": "I (proposal drop box): Leave a copy of my wiring sketches and clamp list for the review committee",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 141,
-        "text": "Rosa (street bulletin board): Pin up a note: Welcome dinner, Saturday at 6, Rosa's place. Bring an appetite.",
-        "importance": 4
-      },
-      {
-        "tick": 142,
-        "text": "I (donna flamingo flock): Tuck the extra flamingos behind the hedge so only three show from the street",
-        "importance": 4
-      },
-      {
-        "tick": 142,
-        "text": "Rosa said to Donna: “Donna, one practical thing before I go shopping: are you thinking a dessert for Saturday, or should I handle all of it? I'd rather plan the menu around what you're bringing.”",
-        "importance": 4
-      },
       {
         "tick": 143,
         "text": "I said to Rosa: “Dessert's mine, Rosa. I'll bring my lemon bars, so you plan your menu around those. And the flamingos are down to three, I checked.”",
@@ -2020,19 +2008,24 @@
         "tick": 228,
         "text": "Hal (donna flamingo flock): Count the flamingos showing from the street and log it in my notebook",
         "importance": 5
+      },
+      {
+        "tick": 229,
+        "text": "I headed to Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 229,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and log the number in my notebook",
+        "importance": 5
+      },
+      {
+        "tick": 229,
+        "text": "You arrived at Rosa's House.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 140,
-        "text": "I waited: Sitting on the porch in the humid haze, watching the street out of habit and planning to haul the sturdy chair over to Rosa's on Saturday.",
-        "importance": 2
-      },
-      {
-        "tick": 141,
-        "text": "I (hal violation notebook): Cross out the resolved cart and flamingo entries and note the ones still open",
-        "importance": 2
-      },
       {
         "tick": 142,
         "text": "I (hal violation notebook): Review the remaining open entries and confirm nothing else needs filing before Saturday",
@@ -3022,19 +3015,19 @@
         "tick": 228,
         "text": "Donna (donna flamingo flock): Pull six flamingos off the front lawn and carry them into the house, leaving three visible from the street",
         "importance": 4
+      },
+      {
+        "tick": 229,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and log the number in my notebook",
+        "importance": 5
+      },
+      {
+        "tick": 229,
+        "text": "Donna headed to Rosa's House.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 143,
-        "text": "I said to Donna: “Good call on the flamingos, Donna, that's three and you're legal. I'm off to shop for Saturday, so text me if you decide on a dessert, otherwise I'll plan around a pie.”",
-        "importance": 4
-      },
-      {
-        "tick": 143,
-        "text": "Donna said to Rosa: “Dessert's mine, Rosa. I'll bring my lemon bars, so you plan your menu around those. And the flamingos are down to three, I checked.”",
-        "importance": 4
-      },
       {
         "tick": 144,
         "text": "I headed to Town Square.",
@@ -4024,6 +4017,16 @@
         "tick": 228,
         "text": "I (rosa shift schedule): check my per-diem shifts so I know when I'm free for cart planning",
         "importance": 3
+      },
+      {
+        "tick": 229,
+        "text": "I (rosa shift schedule): check my per-diem shifts for open afternoons this week",
+        "importance": 4
+      },
+      {
+        "tick": 229,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ]
   },
@@ -4070,10 +4073,10 @@
     ]
   },
   "emotions": {
-    "gary": "hopeful",
-    "donna": "determined",
-    "hal": "dutiful",
-    "rosa": "content, busy"
+    "gary": "patient, hopeful",
+    "donna": "upbeat",
+    "hal": "satisfied",
+    "rosa": "focused"
   },
   "laws": [
     {
@@ -4168,6 +4171,10 @@
     {
       "by": "gary",
       "text": "Gary Kowalski: Check on my golf cart lights and sound system application and offer the wiring sketches and clamp list"
+    },
+    {
+      "by": "gary",
+      "text": "Gary Kowalski: Leave a copy of my wiring sketches and clamp list for the review committee"
     }
   ],
   "recap_pending": [
@@ -4185,10 +4192,16 @@
       "time": "Tuesday, October 27, 1:17 PM",
       "story": "At 1:17 on a sunny Tuesday in Sumter Oaks, Gary is at the Town Hall architectural review desk, eagerly going over his golf cart lights and sound system application while offering up his wiring sketches and clamp list. Over on Magnolia Loop, Donna is determinedly hauling six of her pink flamingos off the front lawn and into the house, leaving just three in view for the street. Hal, dutifully standing by on the same street, is counting the flamingos still showing and jotting the tally into his notebook. Meanwhile, Rosa is content and busy at home, checking her per-diem shifts so she knows when she's free to plan for the golf cart.",
       "dialogue": []
+    },
+    {
+      "tick": 229,
+      "time": "Tuesday, October 27, 2:17 PM",
+      "story": "At 2:17 on this Tuesday afternoon, a brief shower has just passed over Sumter Oaks, leaving the streets glossy at 82 degrees. Gary is at Town Hall, dropping his wiring sketches and clamp list into the proposal box for the review committee, hopeful that this time they'll get a fair hearing. Over on Magnolia Loop, Hal is satisfied as he counts and logs the pink flamingos in his notebook, while Donna, upbeat as ever, heads off to Rosa's House. Rosa, meanwhile, is focused at home, scanning her per-diem shift schedule for any open afternoons this week.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 7.1746,
+    "total_usd": 7.2053,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4251,13 +4264,12 @@
         "usd": 0.50209
       },
       "2026-10-27": {
-        "ticks": 7,
-        "usd": 0.22503
+        "ticks": 8,
+        "usd": 0.25573
       }
     }
   },
   "recent_tick_costs": [
-    0.03286,
     0.03069,
     0.03128,
     0.03264,
@@ -4280,7 +4292,8 @@
     0.03236,
     0.0333,
     0.03343,
-    0.03212
+    0.03212,
+    0.0307
   ],
   "fund": {
     "gross_usd": 0.0,
