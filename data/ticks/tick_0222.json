@@ -1,0 +1,119 @@
+{
+  "tick": 222,
+  "simulation_time": "Tuesday, October 27, 7:17 AM",
+  "weather": "Sunny, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a sunny Tuesday morning in Sumter Oaks, Gary is at his house test-fitting strap-on light mounts on his golf cart, making sure each clamp releases cleanly so his sketches match what's actually bolted to the cart. Across the street, Donna is energized, penciling practice with Gary, a ladder match, and Rosa's porch planning into her club calendar, while Rosa, focused at her own house, checks her per-diem shifts against the 9 AM cart planning. Hal, watchful as ever, sits at his house updating his violation notebook with the flamingo and cart entries from this morning.",
+  "events": [
+    "Gary (gary golf cart): Test-fit the strap-on light mounts and check each clamp releases cleanly, so every sketch matches what's on the cart",
+    "Donna (donna club calendar): Check today's schedule and pencil in practice with Gary, the ladder match, and Rosa's porch planning",
+    "Hal (hal violation notebook): Review and update the flamingo and cart entries with this morning's observations",
+    "Rosa (rosa shift schedule): Check my per-diem shifts against the 9 AM cart planning"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 7:17 AM Tuesday. The sketches are labeled and stacked by the door, and the walk to Rosa's is at nine. I've already filed the Architectural Review application and the sketches are done. With almost two hours to spare and nobody around, the best use of the time is a last bench-check of the strap-on, removable lighting hardware on the cart, so I can answer any committee question with certainty. Everything stays removable and I won't power anything up on the street until approval comes through.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Test-fit the strap-on light mounts and check each clamp releases cleanly, so every sketch matches what's on the cart"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm home at 7:17 on a sunny Tuesday and the memory log shows I was just out on Magnolia Loop. Rosa's porch planning is tonight, and I still want to climb the ladder with Gary. My calendar is right here, so this is a good moment to check what's on for today and line up the pickleball practice, the parade planning, and my club duties. Gary isn't in sight, so no use talking, and I shouldn't repeat my earlier invitation. Better to get organized and then head out.",
+      "emotional_state": "energized",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check today's schedule and pencil in practice with Gary, the ladder match, and Rosa's porch planning"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Morning at home, nobody around. My goal is to report Gary's cart mods and Donna's flamingos to the review committee, but the notebook is what keeps the tally honest, and Donna arrived last tick so she may have been out early. Gary said he'd file his paperwork today, and I told Rosa I'd hear folks out, so I want my facts straight before I march anywhere. Best use of this hour is to sit on the porch chair, binoculars in hand, and update the violation notebook with an accurate flamingo count against L-02 and any cart changes against L-01.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Review and update the flamingo and cart entries with this morning's observations"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 7:17 AM and I'm home alone. My last memory was checking whether my per-diem shifts would clash with tomorrow's 9 AM cart planning, so I should finish that check now. Wait, it's Tuesday morning and planning is at 9 AM, which means it's today or very soon. I don't want to promise Gary and Hal a time and then get called in to the ER. Looking at the schedule is the practical, grown-up move, and it protects the community-building I care about.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts against the 9 AM cart planning"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03167,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10027,
+        "output_tokens": 1147,
+        "usd": 0.03152
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 429,
+        "output_tokens": 208,
+        "usd": 0.00015
+      }
+    }
+  },
+  "season": "halloween"
+}

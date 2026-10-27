@@ -1,29 +1,20 @@
 {
-  "tick": 222,
-  "time": "2026-10-26T21:17",
+  "tick": 223,
+  "time": "2026-10-27T07:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
-    "hal": "magnolia_loop",
+    "donna": "donnas_house",
+    "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
-    "donna": [
-      "You arrived at Magnolia Loop (the street)."
-    ],
-    "hal": [
-      "Donna just arrived."
-    ],
+    "donna": [],
+    "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 127,
-        "text": "Hal just arrived.",
-        "importance": 3
-      },
       {
         "tick": 128,
         "text": "I said to Hal: “Evening, Hal. Donna's got me popping dinks soft as a baby's tuck-in, and my cart form's filed, so I'm keeping my word. Give me one more rally and I'll head over for Rosa's dinner right on time.”",
@@ -1018,14 +1009,14 @@
         "tick": 221,
         "text": "I waited: Settling in for the evening, sketches stacked by the door, resting up for the nine o'clock walk to the committee.",
         "importance": 2
+      },
+      {
+        "tick": 222,
+        "text": "I (gary golf cart): Test-fit the strap-on light mounts and check each clamp releases cleanly, so every sketch matches what's on the cart",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 131,
-        "text": "Gary just arrived.",
-        "importance": 3
-      },
       {
         "tick": 132,
         "text": "I (donna club calendar): Look for an open court slot to pencil in doubles practice with Gary",
@@ -2020,14 +2011,14 @@
         "tick": 221,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 222,
+        "text": "I (donna club calendar): Check today's schedule and pencil in practice with Gary, the ladder match, and Rosa's porch planning",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 128,
-        "text": "Donna said to Hal: “Hal, perfect timing! Gary's finally got his dink, and we're just wrapping up. Let us grab our things and we'll all walk over to Rosa's together.”",
-        "importance": 4
-      },
       {
         "tick": 129,
         "text": "I headed to Magnolia Loop (the street).",
@@ -3022,14 +3013,14 @@
         "tick": 221,
         "text": "Donna just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 222,
+        "text": "I (hal violation notebook): Review and update the flamingo and cart entries with this morning's observations",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 135,
-        "text": "I (rosa kitchen): Bake the pie crusts and chop vegetables that can be made ahead for Saturday",
-        "importance": 4
-      },
       {
         "tick": 136,
         "text": "I (rosa kitchen): Check the marinade, taste for salt, and jot down a grocery list for Saturday",
@@ -4024,6 +4015,11 @@
         "tick": 221,
         "text": "I (rosa shift schedule): Check my upcoming per-diem shifts so tomorrow's 9 AM cart planning doesn't clash",
         "importance": 3
+      },
+      {
+        "tick": 222,
+        "text": "I (rosa shift schedule): Check my per-diem shifts against the 9 AM cart planning",
+        "importance": 4
       }
     ]
   },
@@ -4070,10 +4066,10 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "determined",
-    "hal": "dutiful",
-    "rosa": "content, tired"
+    "gary": "determined",
+    "donna": "energized",
+    "hal": "watchful",
+    "rosa": "focused"
   },
   "laws": [
     {
@@ -4172,10 +4168,16 @@
       "time": "Monday, October 26, 9:17 PM",
       "story": "At 9:17 on a sunny Monday night in Sumter Oaks, Gary is settling in at home with his sketches stacked by the door, resting up for his nine o'clock walk to the committee. Donna has headed out to Magnolia Loop, determined to get something done, while Hal is out on the same street with his notebook, dutifully counting the flamingos in the yard. Back at her house, Rosa is content but tired, checking her upcoming per-diem shifts so tomorrow's 9 AM cart planning doesn't clash.",
       "dialogue": []
+    },
+    {
+      "tick": 222,
+      "time": "Tuesday, October 27, 7:17 AM",
+      "story": "At 7:17 on a sunny Tuesday morning in Sumter Oaks, Gary is at his house test-fitting strap-on light mounts on his golf cart, making sure each clamp releases cleanly so his sketches match what's actually bolted to the cart. Across the street, Donna is energized, penciling practice with Gary, a ladder match, and Rosa's porch planning into her club calendar, while Rosa, focused at her own house, checks her per-diem shifts against the 9 AM cart planning. Hal, watchful as ever, sits at his house updating his violation notebook with the flamingo and cart entries from this morning.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 6.94957,
+    "total_usd": 6.98124,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4236,11 +4238,14 @@
       "2026-10-26": {
         "ticks": 15,
         "usd": 0.50209
+      },
+      "2026-10-27": {
+        "ticks": 1,
+        "usd": 0.03167
       }
     }
   },
   "recent_tick_costs": [
-    0.03637,
     0.03717,
     0.03622,
     0.03695,
@@ -4263,7 +4268,8 @@
     0.03414,
     0.03296,
     0.03305,
-    0.03177
+    0.03177,
+    0.03167
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4311,7 +4317,7 @@
     "test_mode": false,
     "level": "bright"
   },
-  "last_tick_date": "2026-10-26",
+  "last_tick_date": "2026-10-27",
   "calendar_fired": [
     "halloween-flyer"
   ]
