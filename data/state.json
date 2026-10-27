@@ -1,39 +1,32 @@
 {
-  "tick": 227,
-  "time": "2026-10-27T11:17",
+  "tick": 228,
+  "time": "2026-10-27T12:17",
   "positions": {
-    "gary": "town_square",
+    "gary": "town_hall",
     "donna": "magnolia_loop",
     "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Town Hall."
+    ],
     "donna": [
-      "Hal said to Rosa: “Morning, Rosa. I'll be on your porch with the cornbread and my own chair. Anything that changes how a cart looks from the street goes to Architectural Review first, and I'll hold you to that.”",
-      "Rosa said to Hal: “Hal, Donna, there you are. Coffee's brewed and the paper and pens are set out at my place, so come on over and let's sketch that cart. And Hal, how many flamingos is that now?”"
+      "Hal said to Rosa: “Nine showing from the street, Rosa, by my notebook. Donna says she'll have it down to three by this afternoon, so I'll check it again before supper. I'll be along to your porch shortly.”",
+      "Rosa headed to Rosa's House."
     ],
     "hal": [
-      "Donna said to Hal: “Fair enough, Hal. I'll move the extras behind the hedge this afternoon so only three show from the street. Hold off on the committee and I'll have it squared away before Rosa's porch meeting.”",
-      "Rosa said to Hal: “Hal, Donna, there you are. Coffee's brewed and the paper and pens are set out at my place, so come on over and let's sketch that cart. And Hal, how many flamingos is that now?”"
+      "Donna said to Rosa: “Rosa, you're a doll, I'm right behind you with my iced tea. Hal, the flamingos get sorted the minute we're done sketching, and I'll bring a few cart ideas that won't give Review a headache.”",
+      "Rosa headed to Rosa's House."
     ],
     "rosa": [
-      "Donna said to Hal: “Fair enough, Hal. I'll move the extras behind the hedge this afternoon so only three show from the street. Hold off on the committee and I'll have it squared away before Rosa's porch meeting.”",
-      "Hal said to Rosa: “Morning, Rosa. I'll be on your porch with the cornbread and my own chair. Anything that changes how a cart looks from the street goes to Architectural Review first, and I'll hold you to that.”"
+      "Donna said to Rosa: “Rosa, you're a doll, I'm right behind you with my iced tea. Hal, the flamingos get sorted the minute we're done sketching, and I'll bring a few cart ideas that won't give Review a headache.”",
+      "Hal said to Rosa: “Nine showing from the street, Rosa, by my notebook. Donna says she'll have it down to three by this afternoon, so I'll check it again before supper. I'll be along to your porch shortly.”",
+      "You arrived at Rosa's House."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 130,
-        "text": "I said to Donna: “Thanks for the extra dinks, Donna. I'll stash my paddle and catch up with Hal out on the street.”",
-        "importance": 3
-      },
-      {
-        "tick": 130,
-        "text": "Donna said to Gary: “Go on, Gary, don't keep Hal waiting. Our names are already on the ladder sheet, so let's get another practice in before Saturday's dinner.”",
-        "importance": 3
-      },
       {
         "tick": 131,
         "text": "I headed to Magnolia Loop (the street).",
@@ -1023,24 +1016,19 @@
         "tick": 226,
         "text": "I waited: Sitting on a square bench, going over my wiring sketches and clamp list once more while I wait on the Architectural Review answer.",
         "importance": 4
+      },
+      {
+        "tick": 227,
+        "text": "I headed to Town Hall.",
+        "importance": 5
+      },
+      {
+        "tick": 227,
+        "text": "You arrived at Town Hall.",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 139,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 3
-      },
-      {
-        "tick": 139,
-        "text": "Rosa just arrived.",
-        "importance": 3
-      },
-      {
-        "tick": 140,
-        "text": "I said to Rosa: “Rosa, hon, perfect timing! I'm still counting the minutes to Saturday's dinner, and guess who's signed up with me on the doubles ladder? Gary!”",
-        "importance": 4
-      },
       {
         "tick": 140,
         "text": "Rosa said to Donna: “Donna, good timing. Saturday at six is set, so just bring yourself and a sweet tooth. And honey, count those flamingos before the HOA does, the limit's three from the street.”",
@@ -2025,24 +2013,24 @@
         "tick": 226,
         "text": "Rosa said to Hal: “Hal, Donna, there you are. Coffee's brewed and the paper and pens are set out at my place, so come on over and let's sketch that cart. And Hal, how many flamingos is that now?”",
         "importance": 5
+      },
+      {
+        "tick": 227,
+        "text": "I said to Rosa: “Rosa, you're a doll, I'm right behind you with my iced tea. Hal, the flamingos get sorted the minute we're done sketching, and I'll bring a few cart ideas that won't give Review a headache.”",
+        "importance": 4
+      },
+      {
+        "tick": 227,
+        "text": "Hal said to Rosa: “Nine showing from the street, Rosa, by my notebook. Donna says she'll have it down to three by this afternoon, so I'll check it again before supper. I'll be along to your porch shortly.”",
+        "importance": 4
+      },
+      {
+        "tick": 227,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 135,
-        "text": "I waited: Settling into the porch chair with a quiet eye on Magnolia Loop, thinking about what I can haul for Rosa on Saturday.",
-        "importance": 2
-      },
-      {
-        "tick": 136,
-        "text": "I (hal violation notebook): Review the open entries and close out anything resolved",
-        "importance": 3
-      },
-      {
-        "tick": 137,
-        "text": "I waited: Sitting on the porch with a glass of water, watching Magnolia Loop out of habit and figuring which chair is sturdy enough to carry over to Rosa's.",
-        "importance": 2
-      },
       {
         "tick": 138,
         "text": "I (hal porch chair): Test the chair's legs and weight to see if it's sturdy enough to carry to Rosa's",
@@ -3027,29 +3015,24 @@
         "tick": 226,
         "text": "Rosa said to Hal: “Hal, Donna, there you are. Coffee's brewed and the paper and pens are set out at my place, so come on over and let's sketch that cart. And Hal, how many flamingos is that now?”",
         "importance": 5
-      }
-    ],
-    "rosa": [
+      },
       {
-        "tick": 140,
-        "text": "Donna said to Rosa: “Rosa, hon, perfect timing! I'm still counting the minutes to Saturday's dinner, and guess who's signed up with me on the doubles ladder? Gary!”",
+        "tick": 227,
+        "text": "I said to Rosa: “Nine showing from the street, Rosa, by my notebook. Donna says she'll have it down to three by this afternoon, so I'll check it again before supper. I'll be along to your porch shortly.”",
         "importance": 4
       },
       {
-        "tick": 141,
-        "text": "I (street bulletin board): Pin up a note: Welcome dinner, Saturday at 6, Rosa's place. Bring an appetite.",
-        "importance": 5
+        "tick": 227,
+        "text": "Donna said to Rosa: “Rosa, you're a doll, I'm right behind you with my iced tea. Hal, the flamingos get sorted the minute we're done sketching, and I'll bring a few cart ideas that won't give Review a headache.”",
+        "importance": 4
       },
       {
-        "tick": 141,
-        "text": "Donna (donna flamingo flock): Count the flamingos and pull any extras past three out of view from the street",
-        "importance": 5
-      },
-      {
-        "tick": 142,
-        "text": "I said to Donna: “Donna, one practical thing before I go shopping: are you thinking a dessert for Saturday, or should I handle all of it? I'd rather plan the menu around what you're bringing.”",
-        "importance": 5
-      },
+        "tick": 227,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 4
+      }
+    ],
+    "rosa": [
       {
         "tick": 142,
         "text": "Donna (donna flamingo flock): Tuck the extra flamingos behind the hedge so only three show from the street",
@@ -4029,6 +4012,26 @@
         "tick": 226,
         "text": "Hal said to Rosa: “Morning, Rosa. I'll be on your porch with the cornbread and my own chair. Anything that changes how a cart looks from the street goes to Architectural Review first, and I'll hold you to that.”",
         "importance": 5
+      },
+      {
+        "tick": 227,
+        "text": "I headed to Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 227,
+        "text": "Donna said to Rosa: “Rosa, you're a doll, I'm right behind you with my iced tea. Hal, the flamingos get sorted the minute we're done sketching, and I'll bring a few cart ideas that won't give Review a headache.”",
+        "importance": 5
+      },
+      {
+        "tick": 227,
+        "text": "Hal said to Rosa: “Nine showing from the street, Rosa, by my notebook. Donna says she'll have it down to three by this afternoon, so I'll check it again before supper. I'll be along to your porch shortly.”",
+        "importance": 5
+      },
+      {
+        "tick": 227,
+        "text": "You arrived at Rosa's House.",
+        "importance": 5
       }
     ]
   },
@@ -4076,9 +4079,9 @@
   },
   "emotions": {
     "gary": "patient, hopeful",
-    "donna": "cooperative",
+    "donna": "cheerful",
     "hal": "dutiful",
-    "rosa": "cheerful"
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4171,9 +4174,19 @@
       "text": "Gary Kowalski: File Architectural Review application for golf cart lights and sound system"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 227,
+      "time": "Tuesday, October 27, 12:17 PM",
+      "story": "At 12:17 on a sunny Tuesday in Sumter Oaks, Gary heads off to Town Hall with a hopeful step while the rest of the crew wraps up their sketching on Magnolia Loop. Donna, cheerful as ever with her iced tea in hand, promises Rosa she'll follow right behind and bring a few golf cart ideas that won't give the review board a headache. Hal, dutifully counting nine flamingos from the street in his notebook, plans to trim the list to three by afternoon and check it again before supper. Rosa, content as can be, heads home to her porch to wait for the others.",
+      "dialogue": [
+        "Donna said to Rosa: “Rosa, you're a doll, I'm right behind you with my iced tea. Hal, the flamingos get sorted the minute we're done sketching, and I'll bring a few cart ideas that won't give Review a headache.”",
+        "Hal said to Rosa: “Nine showing from the street, Rosa, by my notebook. Donna says she'll have it down to three by this afternoon, so I'll check it again before supper. I'll be along to your porch shortly.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 7.10905,
+    "total_usd": 7.14248,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4236,13 +4249,12 @@
         "usd": 0.50209
       },
       "2026-10-27": {
-        "ticks": 5,
-        "usd": 0.15948
+        "ticks": 6,
+        "usd": 0.19291
       }
     }
   },
   "recent_tick_costs": [
-    0.03535,
     0.03426,
     0.03286,
     0.03069,
@@ -4265,7 +4277,8 @@
     0.03059,
     0.03156,
     0.03236,
-    0.0333
+    0.0333,
+    0.03343
   ],
   "fund": {
     "gross_usd": 0.0,
