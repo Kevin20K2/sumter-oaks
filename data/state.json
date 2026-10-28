@@ -1,36 +1,26 @@
 {
-  "tick": 235,
-  "time": "2026-10-27T19:17",
+  "tick": 236,
+  "time": "2026-10-27T20:17",
   "positions": {
-    "gary": "magnolia_loop",
+    "gary": "garys_house",
     "donna": "rosas_house",
     "hal": "town_hall",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Gary's House."
+    ],
     "donna": [
-      "Rosa (rosa dining table): Sketch a pumpkin-patch theme with clip-on lights and a removable fabric banner for the cart"
+      "Rosa (rosa shift schedule): Check my per-diem shifts to find free evenings this week for building the parade cart"
     ],
-    "hal": [
-      "You arrived at Town Hall."
-    ],
+    "hal": [],
     "rosa": [
-      "Donna (rosa dining table): Sketch the first parade cart design with Rosa: removable pumpkin garland and a clip-on bat banner"
+      "Donna said to Rosa: “Rosa, I love the pumpkin patch! Let's do the clip-on lights and the fabric banner, and I'll add a little hay-bale skirt along the bottom that just tucks on, so nothing's permanent and Review can't say a word. Pencil that in and let's get it to Hal tomorrow.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 135,
-        "text": "You arrived at Town Square.",
-        "importance": 6
-      },
-      {
-        "tick": 136,
-        "text": "I (parade signup table): Look over the parade rules and sign up my cart",
-        "importance": 6
-      },
       {
         "tick": 137,
         "text": "I (parade signup table): Fill out the cart entry form and check the lighting and sound rules",
@@ -1020,19 +1010,19 @@
         "tick": 234,
         "text": "I (street bulletin board): Read the board for any Review committee meeting date or parade updates",
         "importance": 4
+      },
+      {
+        "tick": 235,
+        "text": "I headed to Gary's House.",
+        "importance": 4
+      },
+      {
+        "tick": 235,
+        "text": "You arrived at Gary's House.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 150,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 150,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 150,
         "text": "Gary just arrived.",
@@ -2022,14 +2012,19 @@
         "tick": 234,
         "text": "Rosa (rosa dining table): Sketch a pumpkin-patch theme with clip-on lights and a removable fabric banner for the cart",
         "importance": 5
+      },
+      {
+        "tick": 235,
+        "text": "I said to Rosa: “Rosa, I love the pumpkin patch! Let's do the clip-on lights and the fabric banner, and I'll add a little hay-bale skirt along the bottom that just tucks on, so nothing's permanent and Review can't say a word. Pencil that in and let's get it to Hal tomorrow.”",
+        "importance": 4
+      },
+      {
+        "tick": 235,
+        "text": "Rosa (rosa shift schedule): Check my per-diem shifts to find free evenings this week for building the parade cart",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 148,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 3
-      },
       {
         "tick": 149,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street to confirm there are only three",
@@ -3024,19 +3019,14 @@
         "tick": 234,
         "text": "You arrived at Town Hall.",
         "importance": 6
+      },
+      {
+        "tick": 235,
+        "text": "I (architectural review desk): File written notices on Gary's cart modifications (L-01) and Donna's flamingo count (L-02) ahead of tomorrow's 9 AM committee meeting",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 150,
-        "text": "Gary just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 150,
-        "text": "Donna just arrived.",
-        "importance": 4
-      },
       {
         "tick": 151,
         "text": "I said to Hal: “Hal, good, you're here with the whole crew. Saturday at six at my place, you're on the list. Anything you can't eat, or any dish you want to bring?”",
@@ -4026,6 +4016,16 @@
         "tick": 234,
         "text": "Donna (rosa dining table): Sketch the first parade cart design with Rosa: removable pumpkin garland and a clip-on bat banner",
         "importance": 5
+      },
+      {
+        "tick": 235,
+        "text": "I (rosa shift schedule): Check my per-diem shifts to find free evenings this week for building the parade cart",
+        "importance": 4
+      },
+      {
+        "tick": 235,
+        "text": "Donna said to Rosa: “Rosa, I love the pumpkin patch! Let's do the clip-on lights and the fabric banner, and I'll add a little hay-bale skirt along the bottom that just tucks on, so nothing's permanent and Review can't say a word. Pencil that in and let's get it to Hal tomorrow.”",
+        "importance": 4
       }
     ]
   },
@@ -4072,7 +4072,7 @@
     ]
   },
   "emotions": {
-    "gary": "hopeful",
+    "gary": "patient",
     "donna": "enthusiastic",
     "hal": "determined",
     "rosa": "content"
@@ -4174,6 +4174,10 @@
     {
       "by": "gary",
       "text": "Gary Kowalski: Leave a copy of my wiring sketches and clamp list for the review committee"
+    },
+    {
+      "by": "hal",
+      "text": "Hal Weems: File written notices on Gary's cart modifications (L-01) and Donna's flamingo count (L-02) ahead of tomorrow's 9 AM committee meeting"
     }
   ],
   "recap_pending": [
@@ -4188,10 +4192,18 @@
       "time": "Tuesday, October 27, 7:17 PM",
       "story": "At 7:17 on a sunny Tuesday evening in Sumter Oaks, Gary is reading the bulletin board on Magnolia Loop for any news about the Review committee or the parade. Over at Rosa's house, Donna and Rosa are bent over the dining table sketching a golf cart design for the Halloween parade, with removable pumpkin garland, a clip-on bat banner, and a pumpkin-patch theme with little lights. Hal is heading to Town Hall with a determined stride, and everyone in town seems to agree that the cart will be the best-dressed thing on the road.",
       "dialogue": []
+    },
+    {
+      "tick": 235,
+      "time": "Tuesday, October 27, 8:17 PM",
+      "story": "At 8:17 on a sunny Tuesday evening in Sumter Oaks, Gary heads down Magnolia Loop toward his own house, moving at an easy, patient pace. Over at Rosa's House, Donna is brimming with enthusiasm as she pitches Rosa a pumpkin patch plan built around clip-on lights, a fabric banner, and a hay-bale skirt that tucks on so nothing counts as permanent, and she wants it ready for Hal tomorrow. Hal, back at Town Hall, is determined to get written notices filed on Gary's cart modifications and Donna's flamingo count before the 9 AM committee meeting, while Rosa, content as ever, is checking her per-diem shifts to find free evenings for building the parade cart.",
+      "dialogue": [
+        "Donna said to Rosa: “Rosa, I love the pumpkin patch! Let's do the clip-on lights and the fabric banner, and I'll add a little hay-bale skirt along the bottom that just tucks on, so nothing's permanent and Review can't say a word. Pencil that in and let's get it to Hal tomorrow.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 7.36541,
+    "total_usd": 7.39803,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4254,13 +4266,12 @@
         "usd": 0.50209
       },
       "2026-10-27": {
-        "ticks": 13,
-        "usd": 0.41584
+        "ticks": 14,
+        "usd": 0.44846
       }
     }
   },
   "recent_tick_costs": [
-    0.03229,
     0.03488,
     0.03624,
     0.037,
@@ -4283,7 +4294,8 @@
     0.03264,
     0.0335,
     0.03119,
-    0.03124
+    0.03124,
+    0.03262
   ],
   "fund": {
     "gross_usd": 0.0,
