@@ -1,0 +1,119 @@
+{
+  "tick": 238,
+  "simulation_time": "Wednesday, October 28, 8:17 AM",
+  "weather": "Partly cloudy, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on a partly cloudy Wednesday morning in Sumter Oaks, Gary heads out along Magnolia Loop with his mind set on practice. Donna is packing paddles, extra balls, and spare grip tape into her pickleball bag so she can join him, while Hal keeps a vigilant eye on the street, jotting down flamingo sightings and cart habits for tomorrow's committee. Rosa, equally determined, sits at home going over her per-diem shifts so she can lock in Thursday evening for building the parade cart.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Donna (donna pickleball bag): Pack paddles, extra balls, and the spare grip tape for Gary's practice session",
+    "Hal (hal violation notebook): Log the morning's flamingo count and cart observations for tomorrow's committee",
+    "Rosa (rosa shift schedule): Read through my per-diem shifts and lock in Thursday evening for building the parade cart"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've already benchtested and labeled everything, and the sketches are tidied into a packet. Nothing more to do at the bench. The Review application is filed, but I haven't heard back, and Rosa offered to walk the sketches over with me. The Architectural Review desk is the next step, not more fiddling. I'll head out to Magnolia Loop with the packet and see Rosa or the committee. The sound stays at low volume until approval, per L-01 and L-03.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with my labeled wiring packet to get it in front of the Review committee, and maybe catch Rosa on the way."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just checked the club calendar last tick and no one else is around, so there's nobody to talk to. My goal is to get Gary ready for the ladder match and lock in a court slot. Rosa's shifts and the Thursday cart evening can wait until I see her. Best use of this hour is to grab my pickleball bag so I'm ready to meet Gary for practice and keep the ladder climb moving.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Pack paddles, extra balls, and the spare grip tape for Gary's practice session"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Notices are filed and logged at Town Hall, and the committee meets at nine tomorrow. I'm home on the porch with the binoculars and notebook within reach. I can't count what I can't see, so a fresh scan of Gary's cart and Donna's flamingos from the porch is the next sensible step. I'll note the count in my notebook before the committee meeting. Fair is fair, and the evidence should be current and accurate.",
+      "emotional_state": "vigilant",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Log the morning's flamingo count and cart observations for tomorrow's committee"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've been trying to check my shift schedule for a free Thursday evening for two ticks now, and Donna offered to bring hay bales and sweet tea whenever I pin it down. I'm alone at home on Wednesday morning, so there's nobody to talk to. The schedule is right here; I should actually read it and settle the evening so I can tell Donna and Hal, then get the sketch to Hal today.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Read through my per-diem shifts and lock in Thursday evening for building the parade cart"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03111,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9987,
+        "output_tokens": 1042,
+        "usd": 0.03039
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3411,
+        "output_tokens": 756,
+        "usd": 0.00072
+      }
+    }
+  },
+  "season": "halloween"
+}

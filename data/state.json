@@ -1,30 +1,22 @@
 {
-  "tick": 238,
-  "time": "2026-10-28T07:17",
+  "tick": 239,
+  "time": "2026-10-28T08:17",
   "positions": {
-    "gary": "garys_house",
+    "gary": "magnolia_loop",
     "donna": "donnas_house",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "donna": [],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 138,
-        "text": "You arrived at Town Hall.",
-        "importance": 6
-      },
-      {
-        "tick": 139,
-        "text": "I (architectural review desk): Submit cart modification request for parade lights and sound system",
-        "importance": 6
-      },
       {
         "tick": 140,
         "text": "I (architectural review desk): Check status of my cart modification request and ask about approval steps",
@@ -1014,14 +1006,19 @@
         "tick": 237,
         "text": "I (gary workbench): Label every wire and clamp, then tidy the sketches into a neat packet for the committee",
         "importance": 5
+      },
+      {
+        "tick": 238,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 238,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 151,
-        "text": "Gary (street bulletin board): Check for Architectural Review submission info for my cart mods",
-        "importance": 5
-      },
       {
         "tick": 151,
         "text": "Hal said to Gary: “Morning, Gary. That paperwork for the cart lights go in to Architectural Review yet? Get it filed and I'll drop the matter, and we'll walk Saturday with a clean slate.”",
@@ -2016,14 +2013,14 @@
         "tick": 237,
         "text": "I (donna club calendar): Check the calendar for the ladder match date, a court slot for Gary's practice, and Thursday's cart-building evening",
         "importance": 5
+      },
+      {
+        "tick": 238,
+        "text": "I (donna pickleball bag): Pack paddles, extra balls, and the spare grip tape for Gary's practice session",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 150,
-        "text": "Gary just arrived.",
-        "importance": 4
-      },
       {
         "tick": 150,
         "text": "Donna just arrived.",
@@ -3018,14 +3015,14 @@
         "tick": 237,
         "text": "I (hal binoculars): Scan Gary's cart and Donna's flamingos from the porch and note the count",
         "importance": 4
+      },
+      {
+        "tick": 238,
+        "text": "I (hal violation notebook): Log the morning's flamingo count and cart observations for tomorrow's committee",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 151,
-        "text": "Hal said to Gary: “Morning, Gary. That paperwork for the cart lights go in to Architectural Review yet? Get it filed and I'll drop the matter, and we'll walk Saturday with a clean slate.”",
-        "importance": 6
-      },
       {
         "tick": 152,
         "text": "I said to Hal: “Hal, I still need your answer for Saturday at six. Gary and Donna are both in, so tell me yes, tell me what you can't eat, and I'll plan around it.”",
@@ -4020,6 +4017,11 @@
         "tick": 237,
         "text": "I (rosa shift schedule): Look over my per-diem shifts for a free evening, ideally Thursday, to build the parade cart",
         "importance": 5
+      },
+      {
+        "tick": 238,
+        "text": "I (rosa shift schedule): Read through my per-diem shifts and lock in Thursday evening for building the parade cart",
+        "importance": 5
       }
     ]
   },
@@ -4068,7 +4070,7 @@
   "emotions": {
     "gary": "determined",
     "donna": "determined",
-    "hal": "dutiful",
+    "hal": "vigilant",
     "rosa": "determined"
   },
   "laws": [
@@ -4178,44 +4180,9 @@
       "text": "Hal Weems: Submit and log the written notices on Gary's cart and Donna's flamingos for tomorrow's 9 AM committee meeting"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 233,
-      "time": "Tuesday, October 27, 6:17 PM",
-      "story": "At 6:17 on a sunny Tuesday evening in Sumter Oaks, Donna and Rosa sit together at Rosa's dining table, sketching removable Halloween decorations for the parade cart with an eye toward keeping everything tidy and approved. Gary is making his way down Magnolia Loop, while Hal, resolute as ever, heads for the Town Square. The October warmth still hangs over the community at 81 degrees, and the golf carts are quietly parked along the curbs.",
-      "dialogue": []
-    },
-    {
-      "tick": 234,
-      "time": "Tuesday, October 27, 7:17 PM",
-      "story": "At 7:17 on a sunny Tuesday evening in Sumter Oaks, Gary is reading the bulletin board on Magnolia Loop for any news about the Review committee or the parade. Over at Rosa's house, Donna and Rosa are bent over the dining table sketching a golf cart design for the Halloween parade, with removable pumpkin garland, a clip-on bat banner, and a pumpkin-patch theme with little lights. Hal is heading to Town Hall with a determined stride, and everyone in town seems to agree that the cart will be the best-dressed thing on the road.",
-      "dialogue": []
-    },
-    {
-      "tick": 235,
-      "time": "Tuesday, October 27, 8:17 PM",
-      "story": "At 8:17 on a sunny Tuesday evening in Sumter Oaks, Gary heads down Magnolia Loop toward his own house, moving at an easy, patient pace. Over at Rosa's House, Donna is brimming with enthusiasm as she pitches Rosa a pumpkin patch plan built around clip-on lights, a fabric banner, and a hay-bale skirt that tucks on so nothing counts as permanent, and she wants it ready for Hal tomorrow. Hal, back at Town Hall, is determined to get written notices filed on Gary's cart modifications and Donna's flamingo count before the 9 AM committee meeting, while Rosa, content as ever, is checking her per-diem shifts to find free evenings for building the parade cart.",
-      "dialogue": [
-        "Donna said to Rosa: “Rosa, I love the pumpkin patch! Let's do the clip-on lights and the fabric banner, and I'll add a little hay-bale skirt along the bottom that just tucks on, so nothing's permanent and Review can't say a word. Pencil that in and let's get it to Hal tomorrow.”"
-      ]
-    },
-    {
-      "tick": 236,
-      "time": "Tuesday, October 27, 9:17 PM",
-      "story": "At 9:17 on a sunny Tuesday night in Sumter Oaks, Gary is bench-testing the sound system and light wiring in his workshop, labeling each piece for the review. Over at Rosa's house, Donna offers to bring hay bales and sweet tea whenever Rosa's shifts leave an evening open, with Thursday suggested ahead of the parade. Hal is logging the written notices for Gary's golf cart and Donna's flamingos so they're ready for the 9 AM committee meeting, while Rosa sketches clip-on lights, a fabric banner, and a hay-bale skirt at her dining table.",
-      "dialogue": [
-        "Donna said to Rosa: “Whichever evening your shifts leave open, Rosa, just say the word and I'll bring the hay bales and a pitcher of sweet tea. Thursday would give us plenty of time before the parade.”"
-      ]
-    },
-    {
-      "tick": 237,
-      "time": "Wednesday, October 28, 7:17 AM",
-      "story": "At 7:17 on a mild Wednesday morning in Sumter Oaks, Gary is at his workbench labeling every wire and clamp on his parade cart while tidying his sketches into a neat packet for the committee. Donna is in her kitchen checking the club calendar for the ladder match date, a court slot for Gary's practice, and Thursday's cart-building evening. Across the way, Hal sits on his porch with binoculars, scanning Gary's cart and Donna's flamingos and quietly keeping count, while Rosa looks over her per-diem shifts for a free evening, hoping for Thursday to help build the parade cart.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 7.46046,
+    "total_usd": 7.49157,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4282,13 +4249,12 @@
         "usd": 0.48039
       },
       "2026-10-28": {
-        "ticks": 1,
-        "usd": 0.0305
+        "ticks": 2,
+        "usd": 0.06161
       }
     }
   },
   "recent_tick_costs": [
-    0.037,
     0.03393,
     0.03392,
     0.03356,
@@ -4311,7 +4277,8 @@
     0.03124,
     0.03262,
     0.03193,
-    0.0305
+    0.0305,
+    0.03111
   ],
   "fund": {
     "gross_usd": 0.0,
