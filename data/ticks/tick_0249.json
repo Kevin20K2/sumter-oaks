@@ -1,0 +1,117 @@
+{
+  "tick": 249,
+  "simulation_time": "Wednesday, October 28, 7:17 PM",
+  "weather": "Partly cloudy, 79°F",
+  "positions": {
+    "gary": "rosas_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a mild Wednesday evening in Sumter Oaks, Gary sits at Rosa's dining table sketching string-light layouts and a speaker mount for her golf cart, content with the project. Down on Magnolia Loop, cheerful Donna tells Hal she has booked a court for Gary's practice, while resolute Hal, who has counted her flamingos twice, says he will take his tally to the committee at nine tomorrow. Rosa, determined as ever, is checking her per-diem shifts to find a free hour Thursday for walking Gary's sketches to the review desk.",
+  "events": [
+    "Gary (rosa dining table): Sketch out string-light layout and a simple speaker mount for Rosa's cart",
+    "Rosa (rosa shift schedule): Look over my per-diem shifts and pencil in a free hour Thursday to walk Gary's sketches to the review desk"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa's in the kitchen checking her shift schedule for a free hour to walk my sketches to the review desk. I already spread out my clamp list at the dining table last tick and said I'd bring ideas Thursday. I shouldn't pester her again about the review desk, since she's already on it. Best use of this hour is to finish jotting lighting ideas for her cart so I'm useful and have something real to show when Donna and Hal come over tomorrow.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Sketch out string-light layout and a simple speaker mount for Rosa's cart"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just got back to Magnolia Loop after reserving a court slot for Gary's practice. Hal is nearby, and my memories say I was meant to sketch the cart at Rosa's with him this afternoon. It's 7 PM on a Wednesday, so Hal might have been wandering the street. Since I haven't said anything to him yet this tick, a friendly greeting plus a nudge toward Rosa's for the cart sketch moves things forward. I can also gently mention the three-ornament limit since he's been counting flamingos, and tell him I've booked the court for Gary.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Evening, Hal! I just booked a court for Gary's practice, so the ladder climb is officially underway. Are you headed over to Rosa's to help us sketch that parade cart?"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna just walked up while I'm standing by her flamingo flock with my tally in the notebook. I've counted twice and I'm still planning to take the facts to the committee at nine tomorrow. She ought to hear it from me face to face rather than find a notice in her mailbox. Be straight, keep it civil, give her the chance to sort it out herself. The law says three ornaments visible from the street, and I count more than that.",
+      "emotional_state": "resolute",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Evening, Donna. I've counted your flamingos twice now, and the code allows three visible from the street. I'm taking my tally to the committee at nine tomorrow, so I'd sooner you hear it from me than from a notice."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary is at my dining table with his clamp list and lighting ideas, and he's already set on Thursday for the review desk walk. I just keep checking my shift schedule without settling it. Time to actually look at the schedule so I can give him a real answer. Also, I want to be honest with Review about what we're building, so I should lock down a free hour before Saturday's parade.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Look over my per-diem shifts and pencil in a free hour Thursday to walk Gary's sketches to the review desk"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03185,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10126,
+        "output_tokens": 1145,
+        "usd": 0.0317
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 528,
+        "output_tokens": 197,
+        "usd": 0.00015
+      }
+    }
+  },
+  "season": "halloween"
+}

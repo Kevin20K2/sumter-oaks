@@ -1,6 +1,6 @@
 {
-  "tick": 249,
-  "time": "2026-10-28T18:17",
+  "tick": 250,
+  "time": "2026-10-28T19:17",
   "positions": {
     "gary": "rosas_house",
     "donna": "magnolia_loop",
@@ -9,30 +9,20 @@
   },
   "perceptions": {
     "gary": [
-      "Rosa (rosa shift schedule): Check my per-diem shifts for a free hour to walk Gary's sketches to the review desk"
+      "Rosa (rosa shift schedule): Look over my per-diem shifts and pencil in a free hour Thursday to walk Gary's sketches to the review desk"
     ],
     "donna": [
-      "You arrived at Magnolia Loop (the street)."
+      "Hal said to Donna: “Evening, Donna. I've counted your flamingos twice now, and the code allows three visible from the street. I'm taking my tally to the committee at nine tomorrow, so I'd sooner you hear it from me than from a notice.”"
     ],
     "hal": [
-      "Donna just arrived."
+      "Donna said to Hal: “Evening, Hal! I just booked a court for Gary's practice, so the ladder climb is officially underway. Are you headed over to Rosa's to help us sketch that parade cart?”"
     ],
     "rosa": [
-      "Gary (rosa dining table): Spread out my clamp list and jot lighting ideas for Rosa's parade cart"
+      "Gary (rosa dining table): Sketch out string-light layout and a simple speaker mount for Rosa's cart"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 153,
-        "text": "Hal said to Rosa: “Yes, Rosa, I'll be there Saturday at six. Nothing I can't eat, and I'm bringing the cornbread and my good chair, so don't go buying a seat for me.”",
-        "importance": 5
-      },
-      {
-        "tick": 153,
-        "text": "Rosa said to Gary: “Gary, Hal's in with cornbread and Donna's got lemon bars, so you're the last one. Bring ice and a six-pack of whatever you like, and I'll handle the rest. Go win your match.”",
-        "importance": 5
-      },
       {
         "tick": 154,
         "text": "I headed to Town Square.",
@@ -1022,19 +1012,19 @@
         "tick": 248,
         "text": "Rosa (rosa shift schedule): Check my per-diem shifts for a free hour to walk Gary's sketches to the review desk",
         "importance": 4
+      },
+      {
+        "tick": 249,
+        "text": "I (rosa dining table): Sketch out string-light layout and a simple speaker mount for Rosa's cart",
+        "importance": 4
+      },
+      {
+        "tick": 249,
+        "text": "Rosa (rosa shift schedule): Look over my per-diem shifts and pencil in a free hour Thursday to walk Gary's sketches to the review desk",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 161,
-        "text": "Gary said to Donna: “Alright, Donna, lead the way. I'll hit a few drops with you, but we're done by ten or Hal'll have my hide. Hal, Saturday's a date, save me a plate of that cornbread.”",
-        "importance": 5
-      },
-      {
-        "tick": 161,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
-        "importance": 5
-      },
       {
         "tick": 161,
         "text": "You arrived at Rec Center.",
@@ -2024,19 +2014,19 @@
         "tick": 248,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
-      }
-    ],
-    "hal": [
+      },
       {
-        "tick": 157,
-        "text": "You arrived at Magnolia Loop (the street).",
+        "tick": 249,
+        "text": "I said to Hal: “Evening, Hal! I just booked a court for Gary's practice, so the ladder climb is officially underway. Are you headed over to Rosa's to help us sketch that parade cart?”",
         "importance": 4
       },
       {
-        "tick": 158,
-        "text": "I (street bulletin board): Review my posted notice and update it to reflect Gary's filed paperwork",
-        "importance": 3
-      },
+        "tick": 249,
+        "text": "Hal said to Donna: “Evening, Donna. I've counted your flamingos twice now, and the code allows three visible from the street. I'm taking my tally to the committee at nine tomorrow, so I'd sooner you hear it from me than from a notice.”",
+        "importance": 4
+      }
+    ],
+    "hal": [
       {
         "tick": 159,
         "text": "I (donna flamingo flock): Count the visible flamingos from the street to make sure my L-02 notice is accurate",
@@ -3026,19 +3016,19 @@
         "tick": 248,
         "text": "Donna just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 249,
+        "text": "I said to Donna: “Evening, Donna. I've counted your flamingos twice now, and the code allows three visible from the street. I'm taking my tally to the committee at nine tomorrow, so I'd sooner you hear it from me than from a notice.”",
+        "importance": 6
+      },
+      {
+        "tick": 249,
+        "text": "Donna said to Hal: “Evening, Hal! I just booked a court for Gary's practice, so the ladder climb is officially underway. Are you headed over to Rosa's to help us sketch that parade cart?”",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 157,
-        "text": "I (rosa dining table): Lay out place settings and sketch the seating chart so Hal, Gary and Donna are mixed together",
-        "importance": 5
-      },
-      {
-        "tick": 158,
-        "text": "I (rosa shift schedule): Check the schedule to confirm Saturday evening is clear of per-diem shifts",
-        "importance": 5
-      },
       {
         "tick": 159,
         "text": "I (rosa kitchen): Plan the Saturday menu around Hal's cornbread and Donna's lemon bars, and make the grocery list",
@@ -4028,6 +4018,16 @@
         "tick": 248,
         "text": "Gary (rosa dining table): Spread out my clamp list and jot lighting ideas for Rosa's parade cart",
         "importance": 4
+      },
+      {
+        "tick": 249,
+        "text": "I (rosa shift schedule): Look over my per-diem shifts and pencil in a free hour Thursday to walk Gary's sketches to the review desk",
+        "importance": 5
+      },
+      {
+        "tick": 249,
+        "text": "Gary (rosa dining table): Sketch out string-light layout and a simple speaker mount for Rosa's cart",
+        "importance": 5
       }
     ]
   },
@@ -4075,9 +4075,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "determined",
-    "hal": "determined",
-    "rosa": "focused"
+    "donna": "cheerful",
+    "hal": "resolute",
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -4215,10 +4215,19 @@
       "time": "Wednesday, October 28, 6:17 PM",
       "story": "At 6:17 on a Wednesday evening in Sumter Oaks, Gary is content at Rosa's dining table, spreading out his clamp list and jotting lighting ideas for her parade cart. Rosa, focused, is checking her per-diem shifts to find a free hour for walking his sketches over to the review desk. Meanwhile Donna is heading to the Rec Center with quiet determination, while Hal putters around Magnolia Loop, equally determined to get something done.",
       "dialogue": []
+    },
+    {
+      "tick": 249,
+      "time": "Wednesday, October 28, 7:17 PM",
+      "story": "At 7:17 on a mild Wednesday evening in Sumter Oaks, Gary sits at Rosa's dining table sketching string-light layouts and a speaker mount for her golf cart, content with the project. Down on Magnolia Loop, cheerful Donna tells Hal she has booked a court for Gary's practice, while resolute Hal, who has counted her flamingos twice, says he will take his tally to the committee at nine tomorrow. Rosa, determined as ever, is checking her per-diem shifts to find a free hour Thursday for walking Gary's sketches to the review desk.",
+      "dialogue": [
+        "Donna said to Hal: “Evening, Hal! I just booked a court for Gary's practice, so the ladder climb is officially underway. Are you headed over to Rosa's to help us sketch that parade cart?”",
+        "Hal said to Donna: “Evening, Donna. I've counted your flamingos twice now, and the code allows three visible from the street. I'm taking my tally to the committee at nine tomorrow, so I'd sooner you hear it from me than from a notice.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 7.81072,
+    "total_usd": 7.84257,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4285,13 +4294,12 @@
         "usd": 0.48039
       },
       "2026-10-28": {
-        "ticks": 12,
-        "usd": 0.38076
+        "ticks": 13,
+        "usd": 0.41261
       }
     }
   },
   "recent_tick_costs": [
-    0.03236,
     0.0333,
     0.03343,
     0.03212,
@@ -4314,7 +4322,8 @@
     0.03109,
     0.03051,
     0.03157,
-    0.03176
+    0.03176,
+    0.03185
   ],
   "fund": {
     "gross_usd": 0.0,
