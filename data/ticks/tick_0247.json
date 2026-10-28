@@ -1,0 +1,118 @@
+{
+  "tick": 247,
+  "simulation_time": "Wednesday, October 28, 5:17 PM",
+  "weather": "Partly cloudy, 80°F",
+  "positions": {
+    "gary": "rosas_house",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 5:17 on a mild Wednesday evening in Sumter Oaks, Gary is at Rosa's house, warmly making plans with her to bring his clamp list and lighting ideas for her golf cart on Thursday. Rosa, focused and warm, is checking her per-diem shifts for a free window to walk his sketches over to the review desk. Across the way, Donna at the Rec Center is determined to book a two-hour court slot for Gary's practice session. Meanwhile Hal, equally determined, is out on Magnolia Loop recounting the flamingos and checking his tally against his notebook.",
+  "events": [
+    "Donna (court reservation kiosk): Reserve a two-hour court slot for Gary's practice session",
+    "Hal (donna flamingo flock): Recount flamingos visible from the street and check the tally against my notebook",
+    "Rosa (rosa shift schedule): Check my per-diem shifts to find a free window for walking Gary's sketches to the review desk"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa just invited me to Thursday's sketching session and mentioned beans on the stove. I asked about the walk to the review desk last tick, but she answered about the invite instead, so I shouldn't ask again. Best move is to accept the Thursday invite warmly and offer to bring my clamp list and a few wiring ideas for the parade cart. It keeps me useful, keeps me with friends, and lets her set the timing for the review desk walk without me nagging.",
+      "emotional_state": "warm",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Thursday's a date, Rosa. I'll bring my clamp list and some lighting ideas for your cart, and you just say the word when you've got a free hour for the review desk."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at the rec center alone, and I've already studied the ladder standings twice. No point staring at the board a third time. Gary is somewhere nearby and said he'd meet me, but he's not in sight. The real work now is getting Gary ready, since he's never played, so a court reservation lets me lock in a practice slot under the 2-hour limit. Let me use the kiosk and book time for tomorrow's third-shot drops so we can climb past Pruitt-Kowalski.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Reserve a two-hour court slot for Gary's practice session"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop with nobody around, and the flamingo flock is right here. My last two ticks I counted them, but a tally in my notebook isn't evidence until I've got a number I can put in front of the committee. A second pass from the street, careful and by the book, will settle whether it's over L-02's limit of three before tomorrow's nine o'clock meeting. No sense accusing anyone on a sloppy count.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Recount flamingos visible from the street and check the tally against my notebook"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary just reminded me about walking his wiring sketches to the review desk, and I already invited him to Thursday's supper, so I shouldn't repeat that. Beans are simmering and Thursday's mostly prepped. Nothing's on fire here, and he asked for my schedule, so I should answer him plainly. Checking my per-diem shift schedule first will let me give him a real day instead of a vague promise. Any exterior wiring on the cart is exactly what L-01 covers, so the review desk visit matters for the parade cart anyway.",
+      "emotional_state": "focused, warm",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts to find a free window for walking Gary's sketches to the review desk"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03157,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10100,
+        "output_tokens": 1122,
+        "usd": 0.03142
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 457,
+        "output_tokens": 199,
+        "usd": 0.00015
+      }
+    }
+  },
+  "season": "halloween"
+}

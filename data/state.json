@@ -1,6 +1,6 @@
 {
-  "tick": 247,
-  "time": "2026-10-28T16:17",
+  "tick": 248,
+  "time": "2026-10-28T17:17",
   "positions": {
     "gary": "rosas_house",
     "donna": "rec_center",
@@ -9,26 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Rosa said to Gary: “Gary, perfect timing. Beans are simmering and the whole kitchen smells like home. Thursday I'm having Donna and Hal over to sketch our parade cart, and there's a seat at the table for you too if you're free.”"
+      "Rosa (rosa shift schedule): Check my per-diem shifts to find a free window for walking Gary's sketches to the review desk"
     ],
     "donna": [],
     "hal": [],
     "rosa": [
-      "Gary said to Rosa: “Afternoon, Rosa. I've got the wiring sketches labeled and ready, so whenever your schedule allows, I'd be mighty grateful for that walk over to the review desk.”"
+      "Gary said to Rosa: “Thursday's a date, Rosa. I'll bring my clamp list and some lighting ideas for your cart, and you just say the word when you've got a free hour for the review desk.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 152,
-        "text": "Hal said to Rosa: “Nothing I can't eat, Rosa, I'm not fussy. I'll bring a pan of cornbread and that sturdy chair of mine, since your porch is short a good seat.”",
-        "importance": 5
-      },
-      {
-        "tick": 152,
-        "text": "Rosa said to Hal: “Hal, I still need your answer for Saturday at six. Gary and Donna are both in, so tell me yes, tell me what you can't eat, and I'll plan around it.”",
-        "importance": 5
-      },
       {
         "tick": 153,
         "text": "I waited: thinking about where to head next",
@@ -1018,14 +1008,19 @@
         "tick": 246,
         "text": "Rosa said to Gary: “Gary, perfect timing. Beans are simmering and the whole kitchen smells like home. Thursday I'm having Donna and Hal over to sketch our parade cart, and there's a seat at the table for you too if you're free.”",
         "importance": 6
+      },
+      {
+        "tick": 247,
+        "text": "I said to Rosa: “Thursday's a date, Rosa. I'll bring my clamp list and some lighting ideas for your cart, and you just say the word when you've got a free hour for the review desk.”",
+        "importance": 5
+      },
+      {
+        "tick": 247,
+        "text": "Rosa (rosa shift schedule): Check my per-diem shifts to find a free window for walking Gary's sketches to the review desk",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 160,
-        "text": "Gary said to Hal: “Hal, good timing. I filed the Architectural Review application for the cart lights and sound system today, so you can quit worrying about me. I'll hold off on the wiring until it's approved.”",
-        "importance": 5
-      },
       {
         "tick": 160,
         "text": "Hal said to Gary: “Evening, Gary. Saw your paperwork got filed, so we're square. Saturday at Rosa's still on, and I'm bringing cornbread and the good chair.”",
@@ -2020,14 +2015,14 @@
         "tick": 246,
         "text": "I (ladder standings board): Study the ladder standings to plan our climb past Pruitt-Kowalski",
         "importance": 5
+      },
+      {
+        "tick": 247,
+        "text": "I (court reservation kiosk): Reserve a two-hour court slot for Gary's practice session",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 155,
-        "text": "I (hal porch chair): Check the chair is sturdy and wipe it down to carry over to Rosa's",
-        "importance": 4
-      },
       {
         "tick": 156,
         "text": "I (hal porch chair): Give the chair a last sturdiness check, tighten the loose bolt, and set it by the door to carry over",
@@ -3022,19 +3017,14 @@
         "tick": 246,
         "text": "I (donna flamingo flock): Count every flamingo visible from the street and write the tally in my notebook",
         "importance": 6
+      },
+      {
+        "tick": 247,
+        "text": "I (donna flamingo flock): Recount flamingos visible from the street and check the tally against my notebook",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 154,
-        "text": "Hal headed to Hal's House.",
-        "importance": 4
-      },
-      {
-        "tick": 155,
-        "text": "I (street bulletin board): Pin up a note: welcome dinner at Rosa's, Saturday at 6, Gary, Hal and Donna confirmed.",
-        "importance": 4
-      },
       {
         "tick": 156,
         "text": "I headed to Rosa's House.",
@@ -4024,6 +4014,16 @@
         "tick": 246,
         "text": "Gary said to Rosa: “Afternoon, Rosa. I've got the wiring sketches labeled and ready, so whenever your schedule allows, I'd be mighty grateful for that walk over to the review desk.”",
         "importance": 5
+      },
+      {
+        "tick": 247,
+        "text": "I (rosa shift schedule): Check my per-diem shifts to find a free window for walking Gary's sketches to the review desk",
+        "importance": 4
+      },
+      {
+        "tick": 247,
+        "text": "Gary said to Rosa: “Thursday's a date, Rosa. I'll bring my clamp list and some lighting ideas for your cart, and you just say the word when you've got a free hour for the review desk.”",
+        "importance": 4
       }
     ]
   },
@@ -4070,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "hopeful",
+    "gary": "warm",
     "donna": "determined",
     "hal": "determined",
-    "rosa": "warm"
+    "rosa": "focused, warm"
   },
   "laws": [
     {
@@ -4197,10 +4197,18 @@
         "Gary said to Rosa: “Afternoon, Rosa. I've got the wiring sketches labeled and ready, so whenever your schedule allows, I'd be mighty grateful for that walk over to the review desk.”",
         "Rosa said to Gary: “Gary, perfect timing. Beans are simmering and the whole kitchen smells like home. Thursday I'm having Donna and Hal over to sketch our parade cart, and there's a seat at the table for you too if you're free.”"
       ]
+    },
+    {
+      "tick": 247,
+      "time": "Wednesday, October 28, 5:17 PM",
+      "story": "At 5:17 on a mild Wednesday evening in Sumter Oaks, Gary is at Rosa's house, warmly making plans with her to bring his clamp list and lighting ideas for her golf cart on Thursday. Rosa, focused and warm, is checking her per-diem shifts for a free window to walk his sketches over to the review desk. Across the way, Donna at the Rec Center is determined to book a two-hour court slot for Gary's practice session. Meanwhile Hal, equally determined, is out on Magnolia Loop recounting the flamingos and checking his tally against his notebook.",
+      "dialogue": [
+        "Gary said to Rosa: “Thursday's a date, Rosa. I'll bring my clamp list and some lighting ideas for your cart, and you just say the word when you've got a free hour for the review desk.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 7.74739,
+    "total_usd": 7.77896,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4267,13 +4275,12 @@
         "usd": 0.48039
       },
       "2026-10-28": {
-        "ticks": 10,
-        "usd": 0.31743
+        "ticks": 11,
+        "usd": 0.349
       }
     }
   },
   "recent_tick_costs": [
-    0.03059,
     0.03156,
     0.03236,
     0.0333,
@@ -4296,7 +4303,8 @@
     0.033,
     0.03328,
     0.03109,
-    0.03051
+    0.03051,
+    0.03157
   ],
   "fund": {
     "gross_usd": 0.0,
