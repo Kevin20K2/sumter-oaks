@@ -1,0 +1,119 @@
+{
+  "tick": 237,
+  "simulation_time": "Wednesday, October 28, 7:17 AM",
+  "weather": "Partly cloudy, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a mild Wednesday morning in Sumter Oaks, Gary is at his workbench labeling every wire and clamp on his parade cart while tidying his sketches into a neat packet for the committee. Donna is in her kitchen checking the club calendar for the ladder match date, a court slot for Gary's practice, and Thursday's cart-building evening. Across the way, Hal sits on his porch with binoculars, scanning Gary's cart and Donna's flamingos and quietly keeping count, while Rosa looks over her per-diem shifts for a free evening, hoping for Thursday to help build the parade cart.",
+  "events": [
+    "Gary (gary workbench): Label every wire and clamp, then tidy the sketches into a neat packet for the committee",
+    "Donna (donna club calendar): Check the calendar for the ladder match date, a court slot for Gary's practice, and Thursday's cart-building evening",
+    "Hal (hal binoculars): Scan Gary's cart and Donna's flamingos from the porch and note the count",
+    "Rosa (rosa shift schedule): Look over my per-diem shifts for a free evening, ideally Thursday, to build the parade cart"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I bench-tested the sound and light wiring last tick, so the next job is to make sure everything is labeled and ready to show the Review committee. I'm home with my workbench right here. Nobody's around, and I can't mount anything visible from the street until the Architectural Review signs off (L-01), so I'll keep prep work on the bench and in the garage. Labeling the wiring and sorting the clamp list now means I can hand it over cleanly when Rosa and I walk the sketches over.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Label every wire and clamp, then tidy the sketches into a neat packet for the committee"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's early Wednesday morning and I'm home alone. The ladder match against Pruitt-Kowalski is coming up and Gary has never played, so I should prep. I also have the club calendar to check for Thursday cart-building evening and ladder match timing. Checking the calendar lets me lock in the plan with Rosa and Hal and find a practice slot with Gary, keeping court reservations within the 2-hour limit.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check the calendar for the ladder match date, a court slot for Gary's practice, and Thursday's cart-building evening"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Notices are filed and logged for the 9 AM committee. Nobody's around at home. I've got an hour and a notebook that needs tending. Best use of the morning is a sweep with the binoculars to verify what I filed, so I can swear to the cart modifications and the flamingo count at the meeting. Evidence first, grumbling second.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Gary's cart and Donna's flamingos from the porch and note the count"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 7:17 AM Wednesday and I'm home alone. Donna suggested Thursday for the cart build, so I need to check my per-diem shifts for a free evening before I promise anything. The schedule is right here in the zone. The welcome dinner is done and the sketch is penciled, so the next real step toward the parade cart is locking in a date. Once I know, I can tell Donna and get everything in front of Hal.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Look over my per-diem shifts for a free evening, ideally Thursday, to build the parade cart"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0305,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9995,
+        "output_tokens": 1036,
+        "usd": 0.03035
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 438,
+        "output_tokens": 209,
+        "usd": 0.00015
+      }
+    }
+  },
+  "season": "halloween"
+}

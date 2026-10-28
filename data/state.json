@@ -1,29 +1,20 @@
 {
-  "tick": 237,
-  "time": "2026-10-27T21:17",
+  "tick": 238,
+  "time": "2026-10-28T07:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "rosas_house",
-    "hal": "town_hall",
+    "donna": "donnas_house",
+    "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
-    "donna": [
-      "Rosa (rosa dining table): Pencil the clip-on lights, fabric banner, and tuck-on hay-bale skirt into the sketch for Hal"
-    ],
+    "donna": [],
     "hal": [],
-    "rosa": [
-      "Donna said to Rosa: “Whichever evening your shifts leave open, Rosa, just say the word and I'll bring the hay bales and a pitcher of sweet tea. Thursday would give us plenty of time before the parade.”"
-    ]
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 138,
-        "text": "I headed to Town Hall.",
-        "importance": 6
-      },
       {
         "tick": 138,
         "text": "You arrived at Town Hall.",
@@ -1018,14 +1009,14 @@
         "tick": 236,
         "text": "I (gary workbench): Bench-test the sound system and light wiring at low volume, then label everything for the review",
         "importance": 4
+      },
+      {
+        "tick": 237,
+        "text": "I (gary workbench): Label every wire and clamp, then tidy the sketches into a neat packet for the committee",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 151,
-        "text": "I said to Gary: “There's my partner! Bag's packed, so grab your paddle and let's walk over to the rec center. I want to work on those dinks before the ladder match.”",
-        "importance": 5
-      },
       {
         "tick": 151,
         "text": "Gary (street bulletin board): Check for Architectural Review submission info for my cart mods",
@@ -2020,14 +2011,14 @@
         "tick": 236,
         "text": "Rosa (rosa dining table): Pencil the clip-on lights, fabric banner, and tuck-on hay-bale skirt into the sketch for Hal",
         "importance": 4
+      },
+      {
+        "tick": 237,
+        "text": "I (donna club calendar): Check the calendar for the ladder match date, a court slot for Gary's practice, and Thursday's cart-building evening",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 150,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street to confirm L-02 compliance",
-        "importance": 4
-      },
       {
         "tick": 150,
         "text": "Gary just arrived.",
@@ -3022,14 +3013,14 @@
         "tick": 236,
         "text": "I (architectural review desk): Submit and log the written notices on Gary's cart and Donna's flamingos for tomorrow's 9 AM committee meeting",
         "importance": 6
+      },
+      {
+        "tick": 237,
+        "text": "I (hal binoculars): Scan Gary's cart and Donna's flamingos from the porch and note the count",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 151,
-        "text": "Donna said to Gary: “There's my partner! Bag's packed, so grab your paddle and let's walk over to the rec center. I want to work on those dinks before the ladder match.”",
-        "importance": 6
-      },
       {
         "tick": 151,
         "text": "Hal said to Gary: “Morning, Gary. That paperwork for the cart lights go in to Architectural Review yet? Get it filed and I'll drop the matter, and we'll walk Saturday with a clean slate.”",
@@ -4024,6 +4015,11 @@
         "tick": 236,
         "text": "Donna said to Rosa: “Whichever evening your shifts leave open, Rosa, just say the word and I'll bring the hay bales and a pitcher of sweet tea. Thursday would give us plenty of time before the parade.”",
         "importance": 5
+      },
+      {
+        "tick": 237,
+        "text": "I (rosa shift schedule): Look over my per-diem shifts for a free evening, ideally Thursday, to build the parade cart",
+        "importance": 5
       }
     ]
   },
@@ -4071,9 +4067,9 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "optimistic",
+    "donna": "determined",
     "hal": "dutiful",
-    "rosa": "content"
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -4210,10 +4206,16 @@
       "dialogue": [
         "Donna said to Rosa: “Whichever evening your shifts leave open, Rosa, just say the word and I'll bring the hay bales and a pitcher of sweet tea. Thursday would give us plenty of time before the parade.”"
       ]
+    },
+    {
+      "tick": 237,
+      "time": "Wednesday, October 28, 7:17 AM",
+      "story": "At 7:17 on a mild Wednesday morning in Sumter Oaks, Gary is at his workbench labeling every wire and clamp on his parade cart while tidying his sketches into a neat packet for the committee. Donna is in her kitchen checking the club calendar for the ladder match date, a court slot for Gary's practice, and Thursday's cart-building evening. Across the way, Hal sits on his porch with binoculars, scanning Gary's cart and Donna's flamingos and quietly keeping count, while Rosa looks over her per-diem shifts for a free evening, hoping for Thursday to help build the parade cart.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 7.42996,
+    "total_usd": 7.46046,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4278,11 +4280,14 @@
       "2026-10-27": {
         "ticks": 15,
         "usd": 0.48039
+      },
+      "2026-10-28": {
+        "ticks": 1,
+        "usd": 0.0305
       }
     }
   },
   "recent_tick_costs": [
-    0.03624,
     0.037,
     0.03393,
     0.03392,
@@ -4305,7 +4310,8 @@
     0.03119,
     0.03124,
     0.03262,
-    0.03193
+    0.03193,
+    0.0305
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4353,7 +4359,7 @@
     "test_mode": false,
     "level": "bright"
   },
-  "last_tick_date": "2026-10-27",
+  "last_tick_date": "2026-10-28",
   "calendar_fired": [
     "halloween-flyer"
   ]
