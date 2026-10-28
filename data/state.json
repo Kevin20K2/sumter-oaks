@@ -1,6 +1,6 @@
 {
-  "tick": 236,
-  "time": "2026-10-27T20:17",
+  "tick": 237,
+  "time": "2026-10-27T21:17",
   "positions": {
     "gary": "garys_house",
     "donna": "rosas_house",
@@ -8,24 +8,17 @@
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "You arrived at Gary's House."
-    ],
+    "gary": [],
     "donna": [
-      "Rosa (rosa shift schedule): Check my per-diem shifts to find free evenings this week for building the parade cart"
+      "Rosa (rosa dining table): Pencil the clip-on lights, fabric banner, and tuck-on hay-bale skirt into the sketch for Hal"
     ],
     "hal": [],
     "rosa": [
-      "Donna said to Rosa: “Rosa, I love the pumpkin patch! Let's do the clip-on lights and the fabric banner, and I'll add a little hay-bale skirt along the bottom that just tucks on, so nothing's permanent and Review can't say a word. Pencil that in and let's get it to Hal tomorrow.”"
+      "Donna said to Rosa: “Whichever evening your shifts leave open, Rosa, just say the word and I'll bring the hay bales and a pitcher of sweet tea. Thursday would give us plenty of time before the parade.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 137,
-        "text": "I (parade signup table): Fill out the cart entry form and check the lighting and sound rules",
-        "importance": 6
-      },
       {
         "tick": 138,
         "text": "I headed to Town Hall.",
@@ -1020,19 +1013,14 @@
         "tick": 235,
         "text": "You arrived at Gary's House.",
         "importance": 4
+      },
+      {
+        "tick": 236,
+        "text": "I (gary workbench): Bench-test the sound system and light wiring at low volume, then label everything for the review",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 150,
-        "text": "Gary just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 150,
-        "text": "Rosa just arrived.",
-        "importance": 5
-      },
       {
         "tick": 151,
         "text": "I said to Gary: “There's my partner! Bag's packed, so grab your paddle and let's walk over to the rec center. I want to work on those dinks before the ladder match.”",
@@ -2022,14 +2010,19 @@
         "tick": 235,
         "text": "Rosa (rosa shift schedule): Check my per-diem shifts to find free evenings this week for building the parade cart",
         "importance": 4
+      },
+      {
+        "tick": 236,
+        "text": "I said to Rosa: “Whichever evening your shifts leave open, Rosa, just say the word and I'll bring the hay bales and a pitcher of sweet tea. Thursday would give us plenty of time before the parade.”",
+        "importance": 4
+      },
+      {
+        "tick": 236,
+        "text": "Rosa (rosa dining table): Pencil the clip-on lights, fabric banner, and tuck-on hay-bale skirt into the sketch for Hal",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 149,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street to confirm there are only three",
-        "importance": 3
-      },
       {
         "tick": 150,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street to confirm L-02 compliance",
@@ -3024,19 +3017,14 @@
         "tick": 235,
         "text": "I (architectural review desk): File written notices on Gary's cart modifications (L-01) and Donna's flamingo count (L-02) ahead of tomorrow's 9 AM committee meeting",
         "importance": 6
+      },
+      {
+        "tick": 236,
+        "text": "I (architectural review desk): Submit and log the written notices on Gary's cart and Donna's flamingos for tomorrow's 9 AM committee meeting",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 151,
-        "text": "I said to Hal: “Hal, good, you're here with the whole crew. Saturday at six at my place, you're on the list. Anything you can't eat, or any dish you want to bring?”",
-        "importance": 6
-      },
-      {
-        "tick": 151,
-        "text": "Gary (street bulletin board): Check for Architectural Review submission info for my cart mods",
-        "importance": 6
-      },
       {
         "tick": 151,
         "text": "Donna said to Gary: “There's my partner! Bag's packed, so grab your paddle and let's walk over to the rec center. I want to work on those dinks before the ladder match.”",
@@ -4026,6 +4014,16 @@
         "tick": 235,
         "text": "Donna said to Rosa: “Rosa, I love the pumpkin patch! Let's do the clip-on lights and the fabric banner, and I'll add a little hay-bale skirt along the bottom that just tucks on, so nothing's permanent and Review can't say a word. Pencil that in and let's get it to Hal tomorrow.”",
         "importance": 4
+      },
+      {
+        "tick": 236,
+        "text": "I (rosa dining table): Pencil the clip-on lights, fabric banner, and tuck-on hay-bale skirt into the sketch for Hal",
+        "importance": 5
+      },
+      {
+        "tick": 236,
+        "text": "Donna said to Rosa: “Whichever evening your shifts leave open, Rosa, just say the word and I'll bring the hay bales and a pitcher of sweet tea. Thursday would give us plenty of time before the parade.”",
+        "importance": 5
       }
     ]
   },
@@ -4072,9 +4070,9 @@
     ]
   },
   "emotions": {
-    "gary": "patient",
-    "donna": "enthusiastic",
-    "hal": "determined",
+    "gary": "determined",
+    "donna": "optimistic",
+    "hal": "dutiful",
     "rosa": "content"
   },
   "laws": [
@@ -4178,6 +4176,10 @@
     {
       "by": "hal",
       "text": "Hal Weems: File written notices on Gary's cart modifications (L-01) and Donna's flamingo count (L-02) ahead of tomorrow's 9 AM committee meeting"
+    },
+    {
+      "by": "hal",
+      "text": "Hal Weems: Submit and log the written notices on Gary's cart and Donna's flamingos for tomorrow's 9 AM committee meeting"
     }
   ],
   "recap_pending": [
@@ -4200,10 +4202,18 @@
       "dialogue": [
         "Donna said to Rosa: “Rosa, I love the pumpkin patch! Let's do the clip-on lights and the fabric banner, and I'll add a little hay-bale skirt along the bottom that just tucks on, so nothing's permanent and Review can't say a word. Pencil that in and let's get it to Hal tomorrow.”"
       ]
+    },
+    {
+      "tick": 236,
+      "time": "Tuesday, October 27, 9:17 PM",
+      "story": "At 9:17 on a sunny Tuesday night in Sumter Oaks, Gary is bench-testing the sound system and light wiring in his workshop, labeling each piece for the review. Over at Rosa's house, Donna offers to bring hay bales and sweet tea whenever Rosa's shifts leave an evening open, with Thursday suggested ahead of the parade. Hal is logging the written notices for Gary's golf cart and Donna's flamingos so they're ready for the 9 AM committee meeting, while Rosa sketches clip-on lights, a fabric banner, and a hay-bale skirt at her dining table.",
+      "dialogue": [
+        "Donna said to Rosa: “Whichever evening your shifts leave open, Rosa, just say the word and I'll bring the hay bales and a pitcher of sweet tea. Thursday would give us plenty of time before the parade.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 7.39803,
+    "total_usd": 7.42996,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4266,13 +4276,12 @@
         "usd": 0.50209
       },
       "2026-10-27": {
-        "ticks": 14,
-        "usd": 0.44846
+        "ticks": 15,
+        "usd": 0.48039
       }
     }
   },
   "recent_tick_costs": [
-    0.03488,
     0.03624,
     0.037,
     0.03393,
@@ -4295,7 +4304,8 @@
     0.0335,
     0.03119,
     0.03124,
-    0.03262
+    0.03262,
+    0.03193
   ],
   "fund": {
     "gross_usd": 0.0,
