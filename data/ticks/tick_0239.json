@@ -1,0 +1,119 @@
+{
+  "tick": 239,
+  "simulation_time": "Wednesday, October 28, 9:17 AM",
+  "weather": "Partly cloudy, 78°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a bright Wednesday morning in Sumter Oaks, Gary is checking the bulletin board on Magnolia Loop for news about Architectural Review meeting times and the parade details, while Donna heads out to join him with a determined look. Hal, watching from his porch chair with binoculars, is carefully recounting Donna's flamingos and Gary's golf cart, and Rosa, content in her kitchen, is checking her pantry to plan a simple Thursday supper for the cart-building crew.",
+  "events": [
+    "Gary (street bulletin board): Check for notices on Architectural Review meeting times and parade details",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (hal binoculars): Settle into the porch chair and do a second, careful count of Donna's flamingos and Gary's cart",
+    "Rosa (rosa kitchen): Check pantry and plan a simple Thursday supper for the cart-building crew"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm on Magnolia Loop with my wire-labeled packet ready, and nobody's around. Rosa offered to walk the sketches over to the Architectural Review desk with me, and that's where the application actually moves forward. The bulletin board here might have news on review meetings or the parade, and it costs me one tick, so I'll check it first. Then I'll find Rosa and get this packet in front of the committee. I won't bolt anything visible onto the cart until they sign off, since L-01 requires approval and I don't want to lose Rosa and Hal's trust.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Check for notices on Architectural Review meeting times and parade details"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already checked the calendar and packed the pickleball bag, so the prep is done. Gary is nowhere in line-of-sight, and the court won't hold itself. I'll head out to Magnolia Loop to track him down and get him on the court before the ladder match. Then I can sort out Thursday's cart evening with Rosa and Hal.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Bag's packed and calendar's checked, so I'm heading out to find Gary and get him on the court for practice before the ladder match."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've already filed the notices at Town Hall and logged the morning's observations in the notebook. Nobody's around to talk to, and the committee meets at nine tomorrow. A man in my position sits on the porch with his binoculars and does a second count so the record is airtight. If the numbers match, I can't be accused of exaggerating. If they've changed, that goes in the book too. By the book, always.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Settle into the porch chair and do a second, careful count of Donna's flamingos and Gary's cart"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Wednesday morning, I'm alone at home, and I've already locked in Thursday evening on my shift schedule for building the parade cart. The dinner went well and Donna's sketch plan is pencilled in. The next useful step is to settle the Thursday plan and get ready, but nobody is within line-of-sight to tell. Checking the kitchen to sort out what to feed Donna and Hal on Thursday keeps me moving toward my community goal without repeating myself.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check pantry and plan a simple Thursday supper for the cart-building crew"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0307,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9981,
+        "output_tokens": 1061,
+        "usd": 0.03057
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 404,
+        "output_tokens": 170,
+        "usd": 0.00013
+      }
+    }
+  },
+  "season": "halloween"
+}
