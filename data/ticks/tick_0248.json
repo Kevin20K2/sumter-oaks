@@ -1,0 +1,120 @@
+{
+  "tick": 248,
+  "simulation_time": "Wednesday, October 28, 6:17 PM",
+  "weather": "Partly cloudy, 80°F",
+  "positions": {
+    "gary": "rosas_house",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 6:17 on a Wednesday evening in Sumter Oaks, Gary is content at Rosa's dining table, spreading out his clamp list and jotting lighting ideas for her parade cart. Rosa, focused, is checking her per-diem shifts to find a free hour for walking his sketches over to the review desk. Meanwhile Donna is heading to the Rec Center with quiet determination, while Hal putters around Magnolia Loop, equally determined to get something done.",
+  "events": [
+    "Gary (rosa dining table): Spread out my clamp list and jot lighting ideas for Rosa's parade cart",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal waited: puttering around Magnolia Loop (the street)",
+    "Rosa (rosa shift schedule): Check my per-diem shifts for a free hour to walk Gary's sketches to the review desk"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa is checking her shift schedule for a free window to walk my sketches to the review desk, so I already asked and she's working on it. Thursday's plan is set too. Asking again would just be nagging. Better to use the downtime on something useful: the dining table is right here and I can lay out my clamp list and lighting ideas for Thursday's cart-sketching session, which keeps me busy and helps Rosa's parade cart too.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Spread out my clamp list and jot lighting ideas for Rosa's parade cart"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at the Rec Center, nobody's around, and I've already studied the ladder board and reserved a court slot for Gary's practice, so I shouldn't repeat that. Practice with Gary is the whole point of climbing past Pruitt-Kowalski, but Gary has never played and the court is booked. I'm also meant to be at Rosa's porch sketching the parade cart with Hal this afternoon, and it's getting on toward evening. The reservation is done, so the useful move now is to head back out to Magnolia Loop, find Gary, tell him the court is booked, and get the cart sketching sorted without anyone feeling rushed.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Court's reserved for Gary's practice, so I'm heading back to the Loop to find him and catch up with Rosa and Hal on the parade cart."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've counted Donna's flamingos twice already and the numbers are in my notebook. The committee meets tomorrow at nine, and I want the facts to speak for themselves. Nobody's around to talk to, so no sense standing here repeating myself. Best use of the hour is to get the actual count from the street one more time, as the ordinance defines it, so the report holds up if anyone challenges it.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "puttering around Magnolia Loop (the street)"
+        }
+      },
+      "engine_note": "tried to use None, which isn't in magnolia_loop"
+    },
+    "rosa": {
+      "thought_process": "Gary's already confirmed Thursday and said to ping him when I have a free hour for the review desk. I invited him to the table and he accepted, so I shouldn't ask again. The one open thread is my shift schedule, which I flagged last tick but haven't actually looked at. I need to find that free hour before I promise Gary anything, and I want Thursday's dinner and sketching to go smoothly. Time to check the schedule.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts for a free hour to walk Gary's sketches to the review desk"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03176,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10072,
+        "output_tokens": 1085,
+        "usd": 0.03099
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4546,
+        "output_tokens": 633,
+        "usd": 0.00077
+      }
+    }
+  },
+  "season": "halloween"
+}
