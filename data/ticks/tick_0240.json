@@ -1,0 +1,117 @@
+{
+  "tick": 240,
+  "simulation_time": "Wednesday, October 28, 10:17 AM",
+  "weather": "Partly cloudy, 78°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is out on Magnolia Loop hoping to learn when the Architectural Review committee meets, his wiring sketches neatly labeled and ready to go. Donna, eager and holding a packed bag of paddles and balls, wants to whisk him off to the rec center for a first pickleball rally before the ladder match. Hal, resolute, has just stepped out of his house and onto the street, while Rosa, optimistic, is in her kitchen drafting a Thursday supper menu and shopping list for the cart-building crew.",
+  "events": [
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa kitchen): Write up a Thursday supper menu and shopping list for the cart-building crew"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm on Magnolia Loop with my labeled packet ready, and my last move was checking the bulletin board for Review meeting times and parade details. Donna just showed up and she's the street's flamingo lady, always chatty. I'm lonely and like being useful, and she might know when the committee meets. Don't push the cart before approval; ask a friendly question that moves my application forward.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Morning, Donna. You happen to know when the Architectural Review committee meets next? I've got my wiring sketches all labeled and ready for them."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just arrived on Magnolia Loop and Gary is right here in line-of-sight. I already nudged him about the ladder match back at tick 197, and he agreed to third-shot drops tomorrow, so I shouldn't repeat myself. My bag is packed with paddles, balls, and grip tape, and I checked the calendar, so now it's time to lock in an actual practice session for him. Better to propose a concrete time and keep it light so he doesn't get cold feet about never having played.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, there you are! I've got my bag packed with paddles and balls, so how about we head to the rec center and get you a first real rally in before the ladder match? I booked the court inside the two-hour limit, so no one can complain."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've already scanned and counted twice from the porch and logged the notebook. Sitting here recounting won't change the number. The committee meets at nine tomorrow, and my written notices are filed. The only thing left is to go out onto Magnolia Loop and verify the flamingo count and Gary's cart from the street, the way a proper inspector would. Nobody's in sight, so I'll walk the Loop myself.",
+      "emotional_state": "resolute",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Walking the Loop to verify the flamingo count and Gary's cart from the street, notebook in hand."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've already locked in Thursday evening on the shift schedule and checked the pantry for a simple supper. Nobody's nearby right now, and Donna and Hal haven't been told the Thursday plan is settled. The parade cart needs hay bales, clip-on lights, and the banner, so I should get the plan out of my head and onto paper. I'll turn the kitchen planning into an actual supper menu and shopping list so Thursday runs smoothly and I'm not scrambling after a shift.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Write up a Thursday supper menu and shopping list for the cart-building crew"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03162,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9906,
+        "output_tokens": 1110,
+        "usd": 0.03091
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4224,
+        "output_tokens": 574,
+        "usd": 0.00071
+      }
+    }
+  },
+  "season": "halloween"
+}
