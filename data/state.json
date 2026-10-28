@@ -1,44 +1,30 @@
 {
-  "tick": 244,
-  "time": "2026-10-28T13:17",
+  "tick": 245,
+  "time": "2026-10-28T14:17",
   "positions": {
     "gary": "magnolia_loop",
-    "donna": "magnolia_loop",
+    "donna": "rec_center",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, sketches in hand? Let's march over to the rec center and get those third-shot drops going. Hal can finish his count and meet us at Rosa's afterward for the cart sketching.”",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and record the tally in my notebook"
+      "Donna headed to Rec Center.",
+      "Hal (donna flamingo flock): Count the flamingos visible from the street and write the tally in my notebook"
     ],
     "donna": [
-      "Gary (street bulletin board): Read the board for the Architectural Review meeting notice",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and record the tally in my notebook"
+      "Gary said to Donna: “Sketches are right here, Donna, labeled and everything. Lead the way to the rec center, and I'll swing by Rosa's with you two after so we can catch the committee about the cart.”",
+      "Hal (donna flamingo flock): Count the flamingos visible from the street and write the tally in my notebook",
+      "You arrived at Rec Center."
     ],
     "hal": [
-      "Gary (street bulletin board): Read the board for the Architectural Review meeting notice",
-      "Donna said to Gary: “Gary, sketches in hand? Let's march over to the rec center and get those third-shot drops going. Hal can finish his count and meet us at Rosa's afterward for the cart sketching.”"
+      "Gary said to Donna: “Sketches are right here, Donna, labeled and everything. Lead the way to the rec center, and I'll swing by Rosa's with you two after so we can catch the committee about the cart.”",
+      "Donna headed to Rec Center."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 150,
-        "text": "Donna just arrived.",
-        "importance": 6
-      },
-      {
-        "tick": 150,
-        "text": "Rosa just arrived.",
-        "importance": 6
-      },
-      {
-        "tick": 151,
-        "text": "I (street bulletin board): Check for Architectural Review submission info for my cart mods",
-        "importance": 6
-      },
       {
         "tick": 151,
         "text": "Donna said to Gary: “There's my partner! Bag's packed, so grab your paddle and let's walk over to the rec center. I want to work on those dinks before the ladder match.”",
@@ -1023,29 +1009,24 @@
         "tick": 243,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and record the tally in my notebook",
         "importance": 5
+      },
+      {
+        "tick": 244,
+        "text": "I said to Donna: “Sketches are right here, Donna, labeled and everything. Lead the way to the rec center, and I'll swing by Rosa's with you two after so we can catch the committee about the cart.”",
+        "importance": 4
+      },
+      {
+        "tick": 244,
+        "text": "Donna headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 244,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and write the tally in my notebook",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 157,
-        "text": "I waited: puttering around Rec Center",
-        "importance": 4
-      },
-      {
-        "tick": 158,
-        "text": "I (pickleball court 1): Practice third-shot drops and dinks while I wait for Gary",
-        "importance": 4
-      },
-      {
-        "tick": 159,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 159,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 159,
         "text": "Gary just arrived.",
@@ -2025,24 +2006,29 @@
         "tick": 243,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and record the tally in my notebook",
         "importance": 5
+      },
+      {
+        "tick": 244,
+        "text": "I headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 244,
+        "text": "Gary said to Donna: “Sketches are right here, Donna, labeled and everything. Lead the way to the rec center, and I'll swing by Rosa's with you two after so we can catch the committee about the cart.”",
+        "importance": 5
+      },
+      {
+        "tick": 244,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and write the tally in my notebook",
+        "importance": 5
+      },
+      {
+        "tick": 244,
+        "text": "You arrived at Rec Center.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 153,
-        "text": "Donna headed to Rec Center.",
-        "importance": 5
-      },
-      {
-        "tick": 153,
-        "text": "Rosa said to Gary: “Gary, Hal's in with cornbread and Donna's got lemon bars, so you're the last one. Bring ice and a six-pack of whatever you like, and I'll handle the rest. Go win your match.”",
-        "importance": 5
-      },
-      {
-        "tick": 154,
-        "text": "I headed to Hal's House.",
-        "importance": 4
-      },
       {
         "tick": 154,
         "text": "Gary headed to Town Square.",
@@ -3027,14 +3013,24 @@
         "tick": 243,
         "text": "Donna said to Gary: “Gary, sketches in hand? Let's march over to the rec center and get those third-shot drops going. Hal can finish his count and meet us at Rosa's afterward for the cart sketching.”",
         "importance": 6
+      },
+      {
+        "tick": 244,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and write the tally in my notebook",
+        "importance": 6
+      },
+      {
+        "tick": 244,
+        "text": "Gary said to Donna: “Sketches are right here, Donna, labeled and everything. Lead the way to the rec center, and I'll swing by Rosa's with you two after so we can catch the committee about the cart.”",
+        "importance": 6
+      },
+      {
+        "tick": 244,
+        "text": "Donna headed to Rec Center.",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 153,
-        "text": "Gary waited: thinking about where to head next",
-        "importance": 6
-      },
       {
         "tick": 153,
         "text": "Donna headed to Rec Center.",
@@ -4029,6 +4025,11 @@
         "tick": 243,
         "text": "I (rosa kitchen): Check the pantry against my shopping list and set aside ingredients for Thursday's supper",
         "importance": 4
+      },
+      {
+        "tick": 244,
+        "text": "I (rosa kitchen): Start a pot of black beans and prep the sofrito so Thursday's supper is mostly done ahead",
+        "importance": 4
       }
     ]
   },
@@ -4075,10 +4076,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "upbeat",
+    "gary": "cheerful",
+    "donna": "determined",
     "hal": "dutiful",
-    "rosa": "content"
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4187,51 +4188,9 @@
       "text": "Hal Weems: Submit and log the written notices on Gary's cart and Donna's flamingos for tomorrow's 9 AM committee meeting"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 239,
-      "time": "Wednesday, October 28, 9:17 AM",
-      "story": "At 9:17 on a bright Wednesday morning in Sumter Oaks, Gary is checking the bulletin board on Magnolia Loop for news about Architectural Review meeting times and the parade details, while Donna heads out to join him with a determined look. Hal, watching from his porch chair with binoculars, is carefully recounting Donna's flamingos and Gary's golf cart, and Rosa, content in her kitchen, is checking her pantry to plan a simple Thursday supper for the cart-building crew.",
-      "dialogue": []
-    },
-    {
-      "tick": 240,
-      "time": "Wednesday, October 28, 10:17 AM",
-      "story": "Gary is out on Magnolia Loop hoping to learn when the Architectural Review committee meets, his wiring sketches neatly labeled and ready to go. Donna, eager and holding a packed bag of paddles and balls, wants to whisk him off to the rec center for a first pickleball rally before the ladder match. Hal, resolute, has just stepped out of his house and onto the street, while Rosa, optimistic, is in her kitchen drafting a Thursday supper menu and shopping list for the cart-building crew.",
-      "dialogue": [
-        "Gary said to Donna: “Morning, Donna. You happen to know when the Architectural Review committee meets next? I've got my wiring sketches all labeled and ready for them.”",
-        "Donna said to Gary: “Gary, there you are! I've got my bag packed with paddles and balls, so how about we head to the rec center and get you a first real rally in before the ladder match? I booked the court inside the two-hour limit, so no one can complain.”"
-      ]
-    },
-    {
-      "tick": 241,
-      "time": "Wednesday, October 28, 11:17 AM",
-      "story": "Gary is gathering his sketches off his golf cart on Magnolia Loop while Donna, bright and eager, reminds him they need to head to the rec center for some court time before the ladder match. Hal stands among the pink plastic flamingos in Donna's yard with a notebook, determined to count every one he can see from the street. Over at her house, Rosa clears her dining table and lays out paper, pencils, and a rules checklist, hopeful that Thursday's cart sketching session will go smoothly.",
-      "dialogue": [
-        "Gary said to Donna: “Alright, Donna, you've worn me down. Let me grab my sketches off the cart so they're not sitting out, then I'm all yours at the rec center. Just go easy on a rusty old HVAC man.”",
-        "Donna said to Gary: “Good question, Gary. I don't have the date, but they meet at Town Hall and the notice should post on the bulletin board any day now. Hal's here, so ask him too, and then let's get that court time in, the ladder match won't wait!”"
-      ]
-    },
-    {
-      "tick": 242,
-      "time": "Wednesday, October 28, 12:17 PM",
-      "story": "On this bright, partly cloudy Wednesday just past noon, Gary, Donna, and Hal are gathered on Magnolia Loop, where Gary is eager to show his wiring sketches for a parade cart before Saturday. Donna is cheerfully pointing Hal toward her trimmed flamingo flock, which she has kept under the three-ornament limit, while Hal sets about tallying them in his notebook with quiet determination. Meanwhile, Rosa is at her house checking that her Thursday evening stays free so she won't get called into a shift, and she's hoping the afternoon sketching session goes well.",
-      "dialogue": [
-        "Gary said to Hal: “Afternoon, Hal. You know when the Architectural Review committee meets next? I've got wiring sketches for my parade cart ready to go and I'd like to get them in front of them before Saturday.”",
-        "Donna said to Hal: “Hal, welcome! Count away, I trimmed the flamingos down to stay under the three-ornament limit. Rosa's expecting us to sketch the parade cart this afternoon, and Gary wants to know when Architectural Review meets next, if you've heard.”"
-      ]
-    },
-    {
-      "tick": 243,
-      "time": "Wednesday, October 28, 1:17 PM",
-      "story": "Gary is reading the Architectural Review notice on the bulletin board at the Magnolia Loop, looking determined with his sketches tucked under his arm. Donna, upbeat as ever, is urging him toward the rec center so they can get their third-shot drops going, while Hal stays behind to tally the flamingos in his notebook and plans to meet them at Rosa's later. Rosa, content in her kitchen, is checking her pantry against her shopping list and setting aside ingredients for Thursday's supper.",
-      "dialogue": [
-        "Donna said to Gary: “Gary, sketches in hand? Let's march over to the rec center and get those third-shot drops going. Hal can finish his count and meet us at Rosa's afterward for the cart sketching.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 7.65251,
+    "total_usd": 7.68579,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4298,13 +4257,12 @@
         "usd": 0.48039
       },
       "2026-10-28": {
-        "ticks": 7,
-        "usd": 0.22255
+        "ticks": 8,
+        "usd": 0.25583
       }
     }
   },
   "recent_tick_costs": [
-    0.03305,
     0.03177,
     0.03167,
     0.03059,
@@ -4327,7 +4285,8 @@
     0.03162,
     0.03252,
     0.0331,
-    0.033
+    0.033,
+    0.03328
   ],
   "fund": {
     "gross_usd": 0.0,
