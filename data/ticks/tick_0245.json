@@ -1,0 +1,119 @@
+{
+  "tick": 245,
+  "simulation_time": "Wednesday, October 28, 3:17 PM",
+  "weather": "Partly cloudy, 82°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On a partly cloudy Wednesday afternoon in Sumter Oaks, Gary is walking toward Rosa's House, where Rosa is content in her kitchen stirring a pot of black beans and easing the heat down to a low simmer. Over at the Rec Center, Donna is studying the ladder standings board with real determination, plotting how to climb past Pruitt-Kowalski. Meanwhile, Hal is out on Magnolia Loop with his notebook, counting every pink flamingo in Donna's flock and tallying them up, equally determined to get the count right.",
+  "events": [
+    "Gary headed to Rosa's House.",
+    "Donna (ladder standings board): Study the ladder standings to plan our climb past Pruitt-Kowalski",
+    "Hal (donna flamingo flock): Count every flamingo visible from the street and write the tally in my notebook",
+    "Rosa (rosa kitchen): Stir the black beans, taste for salt, and turn the heat down to a low simmer"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just headed off to the rec center and I said I'd swing by Rosa's with them afterward. Hal's still busy counting flamingos, so no need to pester him. My wiring and clamp sketches are labeled and ready, and the cart lights and sound system still need Architectural Review approval (L-01) before parade Saturday. Rosa offered to walk them over with me, so the sensible move is to head to her house now and get that going rather than stand around chatting.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's with my labeled sketches so we can walk them over for the cart review before Saturday's parade."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at the Rec Center with nobody around, and my goal is to get Gary ready to be my doubles partner. The courts are open, and the ladder standings board will remind me exactly who we need to climb past. Gary said he'd meet us later, so I shouldn't pester anyone. I'll use the time productively and check the standings before he shows up for practice.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Study the ladder standings to plan our climb past Pruitt-Kowalski"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna and Gary have both headed off toward the rec center, and I was in the middle of counting flamingos. My last logged action was to interact with the flock and tally what's visible from the street. The L-02 limit is three ornaments, so I need an actual number in my notebook before the committee meets at nine tomorrow. A proper count from the street is the fair, by-the-book way to do this. No hearsay, just facts.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count every flamingo visible from the street and write the tally in my notebook"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Wednesday afternoon and Thursday's supper is mostly prepped: beans going, sofrito done, table cleared and laid out with paper, pencils, and the rules checklist, shift schedule confirmed. Nobody's nearby, so there's no one to talk to. The one loose end is the pantry list, which I've already checked. Rather than fuss with things I've already done, I'll tend the pot of black beans so they don't scorch and stay on track for tomorrow. Then Thursday should go smoothly for Donna, Hal, and me.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Stir the black beans, taste for salt, and turn the heat down to a low simmer"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03109,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10208,
+        "output_tokens": 1054,
+        "usd": 0.03096
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 404,
+        "output_tokens": 189,
+        "usd": 0.00013
+      }
+    }
+  },
+  "season": "halloween"
+}

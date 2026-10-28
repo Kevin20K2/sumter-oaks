@@ -1,45 +1,27 @@
 {
-  "tick": 245,
-  "time": "2026-10-28T14:17",
+  "tick": 246,
+  "time": "2026-10-28T15:17",
   "positions": {
-    "gary": "magnolia_loop",
+    "gary": "rosas_house",
     "donna": "rec_center",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna headed to Rec Center.",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and write the tally in my notebook"
+      "Hal (donna flamingo flock): Count every flamingo visible from the street and write the tally in my notebook",
+      "You arrived at Rosa's House."
     ],
-    "donna": [
-      "Gary said to Donna: “Sketches are right here, Donna, labeled and everything. Lead the way to the rec center, and I'll swing by Rosa's with you two after so we can catch the committee about the cart.”",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and write the tally in my notebook",
-      "You arrived at Rec Center."
-    ],
+    "donna": [],
     "hal": [
-      "Gary said to Donna: “Sketches are right here, Donna, labeled and everything. Lead the way to the rec center, and I'll swing by Rosa's with you two after so we can catch the committee about the cart.”",
-      "Donna headed to Rec Center."
+      "Gary headed to Rosa's House."
     ],
-    "rosa": []
+    "rosa": [
+      "Gary just arrived."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 151,
-        "text": "Donna said to Gary: “There's my partner! Bag's packed, so grab your paddle and let's walk over to the rec center. I want to work on those dinks before the ladder match.”",
-        "importance": 6
-      },
-      {
-        "tick": 151,
-        "text": "Hal said to Gary: “Morning, Gary. That paperwork for the cart lights go in to Architectural Review yet? Get it filed and I'll drop the matter, and we'll walk Saturday with a clean slate.”",
-        "importance": 6
-      },
-      {
-        "tick": 151,
-        "text": "Rosa said to Hal: “Hal, good, you're here with the whole crew. Saturday at six at my place, you're on the list. Anything you can't eat, or any dish you want to bring?”",
-        "importance": 6
-      },
       {
         "tick": 152,
         "text": "I said to Hal: “Morning, Hal. You're right, I'm filing the Architectural Review paperwork today, no more stalling. Let me get Donna's dinks sorted first and then I'll walk it in.”",
@@ -1024,14 +1006,24 @@
         "tick": 244,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and write the tally in my notebook",
         "importance": 4
+      },
+      {
+        "tick": 245,
+        "text": "I headed to Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 245,
+        "text": "Hal (donna flamingo flock): Count every flamingo visible from the street and write the tally in my notebook",
+        "importance": 6
+      },
+      {
+        "tick": 245,
+        "text": "You arrived at Rosa's House.",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 159,
-        "text": "Gary just arrived.",
-        "importance": 4
-      },
       {
         "tick": 160,
         "text": "I said to Gary: “There you are, Gary! Let's get over to the rec center and shake out a few more third-shot drops before the ladder match. I'm bringing the competitive Donna tonight, so be ready!”",
@@ -2026,19 +2018,14 @@
         "tick": 244,
         "text": "You arrived at Rec Center.",
         "importance": 5
+      },
+      {
+        "tick": 245,
+        "text": "I (ladder standings board): Study the ladder standings to plan our climb past Pruitt-Kowalski",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 154,
-        "text": "Gary headed to Town Square.",
-        "importance": 4
-      },
-      {
-        "tick": 154,
-        "text": "Rosa said to Hal: “Hal, you're a lifesaver, and I'll take that chair gladly. If you can come by around five-thirty, I could use a second pair of hands setting up the long table.”",
-        "importance": 4
-      },
       {
         "tick": 154,
         "text": "You arrived at Hal's House.",
@@ -3028,19 +3015,19 @@
         "tick": 244,
         "text": "Donna headed to Rec Center.",
         "importance": 6
+      },
+      {
+        "tick": 245,
+        "text": "I (donna flamingo flock): Count every flamingo visible from the street and write the tally in my notebook",
+        "importance": 6
+      },
+      {
+        "tick": 245,
+        "text": "Gary headed to Rosa's House.",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 153,
-        "text": "Donna headed to Rec Center.",
-        "importance": 6
-      },
-      {
-        "tick": 153,
-        "text": "Hal said to Rosa: “Yes, Rosa, I'll be there Saturday at six. Nothing I can't eat, and I'm bringing the cornbread and my good chair, so don't go buying a seat for me.”",
-        "importance": 6
-      },
       {
         "tick": 154,
         "text": "I said to Hal: “Hal, you're a lifesaver, and I'll take that chair gladly. If you can come by around five-thirty, I could use a second pair of hands setting up the long table.”",
@@ -4030,6 +4017,16 @@
         "tick": 244,
         "text": "I (rosa kitchen): Start a pot of black beans and prep the sofrito so Thursday's supper is mostly done ahead",
         "importance": 4
+      },
+      {
+        "tick": 245,
+        "text": "I (rosa kitchen): Stir the black beans, taste for salt, and turn the heat down to a low simmer",
+        "importance": 3
+      },
+      {
+        "tick": 245,
+        "text": "Gary just arrived.",
+        "importance": 3
       }
     ]
   },
@@ -4076,10 +4073,10 @@
     ]
   },
   "emotions": {
-    "gary": "cheerful",
+    "gary": "determined",
     "donna": "determined",
-    "hal": "dutiful",
-    "rosa": "hopeful"
+    "hal": "determined",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4188,9 +4185,16 @@
       "text": "Hal Weems: Submit and log the written notices on Gary's cart and Donna's flamingos for tomorrow's 9 AM committee meeting"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 245,
+      "time": "Wednesday, October 28, 3:17 PM",
+      "story": "On a partly cloudy Wednesday afternoon in Sumter Oaks, Gary is walking toward Rosa's House, where Rosa is content in her kitchen stirring a pot of black beans and easing the heat down to a low simmer. Over at the Rec Center, Donna is studying the ladder standings board with real determination, plotting how to climb past Pruitt-Kowalski. Meanwhile, Hal is out on Magnolia Loop with his notebook, counting every pink flamingo in Donna's flock and tallying them up, equally determined to get the count right.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 7.68579,
+    "total_usd": 7.71688,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4257,13 +4261,12 @@
         "usd": 0.48039
       },
       "2026-10-28": {
-        "ticks": 8,
-        "usd": 0.25583
+        "ticks": 9,
+        "usd": 0.28692
       }
     }
   },
   "recent_tick_costs": [
-    0.03177,
     0.03167,
     0.03059,
     0.03156,
@@ -4286,7 +4289,8 @@
     0.03252,
     0.0331,
     0.033,
-    0.03328
+    0.03328,
+    0.03109
   ],
   "fund": {
     "gross_usd": 0.0,
