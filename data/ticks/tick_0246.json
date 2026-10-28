@@ -1,0 +1,117 @@
+{
+  "tick": 246,
+  "simulation_time": "Wednesday, October 28, 4:17 PM",
+  "weather": "Partly cloudy, 81°F",
+  "positions": {
+    "gary": "rosas_house",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 4:17 on a warm Wednesday afternoon in Sumter Oaks, Gary is hopeful as he hands Rosa his labeled wiring sketches, and she warmly invites him to dinner Thursday to help sketch the parade cart with Donna and Hal. Donna is at the Rec Center studying the ladder standings with determination, plotting her climb past Pruitt-Kowalski. Meanwhile Hal, equally determined, is out on Magnolia Loop counting every flamingo in Donna's flock and recording the tally in his notebook.",
+  "events": [
+    "Donna (ladder standings board): Study the ladder standings to plan our climb past Pruitt-Kowalski",
+    "Hal (donna flamingo flock): Count every flamingo visible from the street and write the tally in my notebook"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I just got to Rosa's, and my memories say she offered to walk the sketches over to the committee with me. Her shift schedule is on the table, so I should check she has a window before I ask. Nobody has heard a word from me yet this tick, so I'll open the conversation by confirming the plan. The sketches are labeled, the application is filed, and a friend beside me will make the committee take my wiring plans more seriously. No need to re-pitch the parade; just lock down when we go.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Afternoon, Rosa. I've got the wiring sketches labeled and ready, so whenever your schedule allows, I'd be mighty grateful for that walk over to the review desk."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at the rec center with nobody around. Gary's the whole point of my pickleball plan, and the ladder board is right here. Studying the standings will help me map the climb past Pruitt-Kowalski and give me something concrete to show Gary before our practice. Court reservations are capped at 2 hours under L-05, so I should plan around that too. Better to use the quiet hour productively than stand around waiting.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Study the ladder standings to plan our climb past Pruitt-Kowalski"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop with no one around. Donna's flamingo flock is right here, and my notebook tally is the only evidence the committee will trust. The meeting is tomorrow at nine, so I want an accurate count from the street before I file anything. By the book: count first, then report.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count every flamingo visible from the street and write the tally in my notebook"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary just walked in while the black beans are simmering and Thursday's supper is mostly prepped. He was already at the drinks at the last dinner, so he's a friendly face and part of building this community. I shouldn't ask again about the schedule or fuss with the pot; the beans are on low. Best move is to greet him warmly, tell him about Thursday's plan, and gently float the idea that he'll be around when Donna and Hal come to sketch the parade cart. Keep it short and natural.",
+      "emotional_state": "warm",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, perfect timing. Beans are simmering and the whole kitchen smells like home. Thursday I'm having Donna and Hal over to sketch our parade cart, and there's a seat at the table for you too if you're free."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03051,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9789,
+        "output_tokens": 1079,
+        "usd": 0.03037
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 505,
+        "output_tokens": 187,
+        "usd": 0.00014
+      }
+    }
+  },
+  "season": "halloween"
+}
