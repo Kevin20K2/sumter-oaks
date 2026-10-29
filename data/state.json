@@ -1,30 +1,22 @@
 {
-  "tick": 254,
-  "time": "2026-10-29T08:17",
+  "tick": 255,
+  "time": "2026-10-29T09:17",
   "positions": {
-    "gary": "garys_house",
+    "gary": "magnolia_loop",
     "donna": "donnas_house",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "donna": [],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 157,
-        "text": "I headed to Town Square.",
-        "importance": 5
-      },
-      {
-        "tick": 157,
-        "text": "You arrived at Town Square.",
-        "importance": 5
-      },
       {
         "tick": 158,
         "text": "I (parade signup table): Sign up my golf cart for the Holiday Golf Cart Parade",
@@ -1014,14 +1006,19 @@
         "tick": 253,
         "text": "I (gary workbench): Go over the wiring sketches and clamp list one last time and square up the folder",
         "importance": 5
+      },
+      {
+        "tick": 254,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 254,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 167,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 167,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -2016,14 +2013,14 @@
         "tick": 253,
         "text": "I (donna club calendar): Check court times and club commitments so Gary's practice and the cart sketch both fit",
         "importance": 4
+      },
+      {
+        "tick": 254,
+        "text": "I (donna pickleball bag): Grab my paddles and balls so I'm ready for Gary's practice session",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 161,
-        "text": "Gary said to Donna: “Alright, Donna, lead the way. I'll hit a few drops with you, but we're done by ten or Hal'll have my hide. Hal, Saturday's a date, save me a plate of that cornbread.”",
-        "importance": 4
-      },
       {
         "tick": 161,
         "text": "Donna headed to Rec Center.",
@@ -3018,14 +3015,14 @@
         "tick": 253,
         "text": "I (hal binoculars): Glass the street and recount the flamingos and Gary's cart",
         "importance": 4
+      },
+      {
+        "tick": 254,
+        "text": "I (hal binoculars): Glass Magnolia Loop from the porch and recount the flamingos and Gary's cart",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 165,
-        "text": "I headed to Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 165,
         "text": "You arrived at Rosa's House.",
@@ -4020,6 +4017,11 @@
         "tick": 253,
         "text": "I (rosa shift schedule): Confirm my free hour today is still clear before heading to the review desk",
         "importance": 6
+      },
+      {
+        "tick": 254,
+        "text": "I (rosa shift schedule): Check my free hour today and block it off for the review desk walk",
+        "importance": 6
       }
     ]
   },
@@ -4066,10 +4068,10 @@
     ]
   },
   "emotions": {
-    "gary": "hopeful",
-    "donna": "organized",
-    "hal": "dutiful",
-    "rosa": "focused"
+    "gary": "determined",
+    "donna": "energized",
+    "hal": "determined",
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -4196,10 +4198,16 @@
       "time": "Thursday, October 29, 8:17 AM",
       "story": "On a humid, hazy Thursday morning in Sumter Oaks, Gary is at his workbench squaring up his wiring sketches and clamp list, hoping his golf cart project comes together. Across the way, Donna is checking the club calendar so Gary's practice time and the cart plans can both fit, while Hal keeps watch from his house with binoculars, dutifully recounting the flamingos and Gary's cart. Rosa, focused as ever, is confirming her free hour before heading to the review desk.",
       "dialogue": []
+    },
+    {
+      "tick": 254,
+      "time": "Thursday, October 29, 9:17 AM",
+      "story": "At 9:17 on this humid, hazy Thursday morning in Sumter Oaks, Gary is cruising down Magnolia Loop with a determined look on his face, while Donna is gathering her paddles and balls at her house in preparation for his practice session. Over at his porch, Hal has his binoculars trained on Magnolia Loop, ready to count the flamingos and keep tabs on Gary's golf cart. Meanwhile, Rosa is at home checking her schedule and blocking off her free hour for a walk to the review desk.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 7.97115,
+    "total_usd": 8.00159,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4270,13 +4278,12 @@
         "usd": 0.47882
       },
       "2026-10-29": {
-        "ticks": 2,
-        "usd": 0.06237
+        "ticks": 3,
+        "usd": 0.09281
       }
     }
   },
   "recent_tick_costs": [
-    0.03154,
     0.03264,
     0.0335,
     0.03119,
@@ -4299,7 +4306,8 @@
     0.03418,
     0.03203,
     0.03173,
-    0.03064
+    0.03064,
+    0.03044
   ],
   "fund": {
     "gross_usd": 0.0,
