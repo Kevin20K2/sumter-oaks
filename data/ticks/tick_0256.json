@@ -1,0 +1,117 @@
+{
+  "tick": 256,
+  "simulation_time": "Thursday, October 29, 11:17 AM",
+  "weather": "Humid and hazy, 79°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On Thursday morning at 11:17, under humid, hazy skies at 79°F, Magnolia Loop is busy with neighbors preparing for the weekend parade. Gary is hopeful as he checks the street bulletin board for the Architectural Review notice on his cart application, while Donna, energized and carrying paddles and balls, invites him to an hour of pickleball at the rec center courts. Rosa, determined, asks Donna to join her at the review desk to explain exactly what they plan to add to the cart, and Hal, settled on his porch with his notebook, is confident his paperwork is in order for tomorrow's committee meeting.",
+  "events": [
+    "Gary (street bulletin board): Look for the Architectural Review notice on my cart application",
+    "Hal waited: Settling into the porch chair with the notebook, satisfied the evidence is in order for tomorrow's committee meeting."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm on Magnolia Loop to see if the Architectural Review notice has been posted. Donna and Rosa just showed up, but they haven't said anything yet. The bulletin board is the thing I came for, and I've been hoping for that notice. I filed the application, and the parade is Saturday, so I'll check the board first and chat after.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Look for the Architectural Review notice on my cart application"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just got to Magnolia Loop with my paddles and bag, and Gary is right here in line-of-sight along with Rosa. I already invited Gary to practice back at tick 197 and he said he's still on for third-shot drops, so I shouldn't re-ask. Time to move things forward: tell him I've got my paddles, mention I'm squeezing practice around the cart sketch at Rosa's, and propose heading to the rec center. I'll keep the court booking under the 2-hour limit.",
+      "emotional_state": "energized",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, there you are! I've got paddles and balls in the bag. Let's grab an hour at the rec center courts, then we'll swing by Rosa's for the cart sketch with plenty of time before the parade."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've counted, logged, and compiled everything. The summary is ready for tomorrow's nine o'clock meeting. Nobody is in sight, and re-glassing the street a fourth time would just be fussing. The Halloween parade is coming and decorations are welcome all week, so I should keep an eye on what actually counts as a violation, but the legwork is done. A man should know when a job is finished. I'll rest on the porch, keep the notebook handy, and let the street carry on.",
+      "emotional_state": "settled",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Settling into the porch chair with the notebook, satisfied the evidence is in order for tomorrow's committee meeting."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm on Magnolia Loop at 11:17 with Gary and Donna right here. The welcome dinner is behind us and the cart plan is moving. My notes say I was heading to the review desk, so I should be going soon, but Donna just arrived and I want us aligned on the cart before I go. Donna's tuck-on, temporary decoration idea is clever, but L-01 says exterior cart modifications visible from the street need Architectural Review approval, and I want us honest with Review about what we're building. I'll get Donna on board with describing the cart as it really is, then take the walk with her or get her blessing.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna, good timing. I'm walking over to the review desk this hour, and I want us to tell them exactly what we're putting on the cart, tuck-on pieces and all. Better they hear it from us than spot it on parade day. Want to come along?"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03271,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9856,
+        "output_tokens": 1174,
+        "usd": 0.03145
+      },
+      "claude-haiku-5-5": {
+        "calls": 6,
+        "input_tokens": 7153,
+        "output_tokens": 1097,
+        "usd": 0.00126
+      }
+    }
+  },
+  "season": "halloween"
+}
