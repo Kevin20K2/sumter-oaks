@@ -1,6 +1,6 @@
 {
-  "tick": 263,
-  "time": "2026-10-29T17:17",
+  "tick": 264,
+  "time": "2026-10-29T18:17",
   "positions": {
     "gary": "garys_house",
     "donna": "rec_center",
@@ -8,25 +8,13 @@
     "rosa": "town_square"
   },
   "perceptions": {
-    "gary": [
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total",
-      "You arrived at Gary's House."
-    ],
+    "gary": [],
     "donna": [],
-    "hal": [
-      "Gary headed to Gary's House."
-    ],
-    "rosa": [
-      "You arrived at Town Square."
-    ]
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 173,
-        "text": "I said to Rosa: “Well, evening, Rosa! Come on in. I'm just fitting a speaker bracket on the parade cart, lights off, paperwork's already filed. What can I do for you?”",
-        "importance": 3
-      },
       {
         "tick": 173,
         "text": "Rosa said to Gary: “Gary, Hal's bringing cornbread and Donna's got the cobbler, so you're my last seat at the table. Saturday at five, and if you bring a bag of ice and your folding chairs, you're all set.”",
@@ -1021,14 +1009,14 @@
         "tick": 262,
         "text": "You arrived at Gary's House.",
         "importance": 4
+      },
+      {
+        "tick": 263,
+        "text": "I (gary workbench): Bench-build and test the cart's light strip wiring and speaker module, parked cart untouched until approval",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 174,
-        "text": "I headed to Gary's House.",
-        "importance": 4
-      },
       {
         "tick": 174,
         "text": "Hal headed to Hal's House.",
@@ -2023,14 +2011,14 @@
         "tick": 262,
         "text": "I (pickleball court 1): Practice third-shot drops so I can coach Gary when he arrives",
         "importance": 5
+      },
+      {
+        "tick": 263,
+        "text": "I (pickleball court 1): Practice serve returns and deep dinks so I can coach Gary when he shows up",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 169,
-        "text": "Rosa just arrived.",
-        "importance": 4
-      },
       {
         "tick": 170,
         "text": "I said to Rosa: “Afternoon, Rosa. I'll be at your place Saturday at six with the cornbread, and I'm bringing my own chair. Don't take it personal, my back's particular.”",
@@ -3025,14 +3013,14 @@
         "tick": 262,
         "text": "Gary headed to Gary's House.",
         "importance": 6
+      },
+      {
+        "tick": 263,
+        "text": "I (donna flamingo flock): Count each flamingo visible from the street and record the total",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 174,
-        "text": "Gary said to Rosa: “Count me in, Rosa. I'll bring two bags of ice and my good folding chairs, and I'll be there at five sharp. Thanks for saving me a seat.”",
-        "importance": 5
-      },
       {
         "tick": 174,
         "text": "Donna just arrived.",
@@ -4027,6 +4015,11 @@
         "tick": 262,
         "text": "You arrived at Town Square.",
         "importance": 4
+      },
+      {
+        "tick": 263,
+        "text": "I (parade signup table): Sign our parade cart up for Saturday's 6 PM parade",
+        "importance": 5
       }
     ]
   },
@@ -4073,10 +4066,10 @@
     ]
   },
   "emotions": {
-    "gary": "patient",
+    "gary": "determined",
     "donna": "determined",
     "hal": "dutiful",
-    "rosa": "relieved"
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4193,9 +4186,16 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 263,
+      "time": "Thursday, October 29, 6:17 PM",
+      "story": "At 6:17 on this humid, hazy Thursday in Sumter Oaks, Gary is bench-testing light strip wiring and a speaker module at his workbench, leaving his golf cart untouched until he gets approval. Donna is out on pickleball court one, drilling serve returns and deep dinks so she'll be ready to coach Gary when he shows up. Hal is walking Magnolia Loop, dutifully counting each pink flamingo in the Donna flock he can see from the street. Meanwhile, Rosa is at the town square parade signup table, hopefully putting her cart's name down for Saturday's 6 PM parade.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 8.25544,
+    "total_usd": 8.28677,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4266,13 +4266,12 @@
         "usd": 0.47882
       },
       "2026-10-29": {
-        "ticks": 11,
-        "usd": 0.34666
+        "ticks": 12,
+        "usd": 0.37799
       }
     }
   },
   "recent_tick_costs": [
-    0.0307,
     0.03162,
     0.03252,
     0.0331,
@@ -4295,7 +4294,8 @@
     0.03156,
     0.03154,
     0.03091,
-    0.03065
+    0.03065,
+    0.03133
   ],
   "fund": {
     "gross_usd": 0.0,
