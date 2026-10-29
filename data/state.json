@@ -1,43 +1,31 @@
 {
-  "tick": 251,
-  "time": "2026-10-28T20:17",
+  "tick": 252,
+  "time": "2026-10-28T21:17",
   "positions": {
     "gary": "rosas_house",
     "donna": "magnolia_loop",
-    "hal": "magnolia_loop",
+    "hal": "rosas_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Rosa said to Gary: “Those sketches look great, Gary. Let's put the speaker mount and lights on the review form exactly as you drew them, tuck-on and removable, and I'll keep the music off before 10 PM so we're clean on quiet hours.”"
+      "Rosa (rosa shift schedule): Confirm my free hour Thursday and block it off for the review desk walk",
+      "Hal just arrived."
     ],
     "donna": [
-      "Hal said to Donna: “I'll come along, Donna. Somebody ought to keep the sketch within the code, and I'd like to see this cart before the committee does. Lead the way.”"
+      "Hal headed to Rosa's House."
     ],
     "hal": [
-      "Donna said to Hal: “Well, I appreciate you telling me to my face, Hal, that's what a good neighbor does. I'll go through the flock tonight and tuck any extras around back so we're at three before nine tomorrow.”"
+      "Donna (donna flamingo flock): Move the extra flamingos around back so only three are visible from the street",
+      "You arrived at Rosa's House."
     ],
     "rosa": [
-      "Gary said to Rosa: “Thursday works fine by me, Rosa, and I appreciate you carrying those sketches over. Everything's labeled, and I'll tuck the clamp list and your light layout in the folder tonight so you can just grab it and go.”"
+      "Gary (rosa dining table): Slip the wiring sketches, clamp list, and Rosa's light layout into the folder for Thursday",
+      "Hal just arrived."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 154,
-        "text": "Rosa said to Hal: “Hal, you're a lifesaver, and I'll take that chair gladly. If you can come by around five-thirty, I could use a second pair of hands setting up the long table.”",
-        "importance": 6
-      },
-      {
-        "tick": 154,
-        "text": "You arrived at Town Square.",
-        "importance": 6
-      },
-      {
-        "tick": 155,
-        "text": "I headed to Town Hall.",
-        "importance": 6
-      },
       {
         "tick": 155,
         "text": "You arrived at Town Hall.",
@@ -1022,19 +1010,24 @@
         "tick": 250,
         "text": "Rosa said to Gary: “Those sketches look great, Gary. Let's put the speaker mount and lights on the review form exactly as you drew them, tuck-on and removable, and I'll keep the music off before 10 PM so we're clean on quiet hours.”",
         "importance": 5
+      },
+      {
+        "tick": 251,
+        "text": "I (rosa dining table): Slip the wiring sketches, clamp list, and Rosa's light layout into the folder for Thursday",
+        "importance": 6
+      },
+      {
+        "tick": 251,
+        "text": "Rosa (rosa shift schedule): Confirm my free hour Thursday and block it off for the review desk walk",
+        "importance": 6
+      },
+      {
+        "tick": 251,
+        "text": "Hal just arrived.",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 163,
-        "text": "I (donna club calendar): Check the club schedule and pencil in a two-hour practice court slot for me and Gary",
-        "importance": 5
-      },
-      {
-        "tick": 164,
-        "text": "I (donna pickleball bag): Pack paddles, balls, and water for practice with Gary",
-        "importance": 4
-      },
       {
         "tick": 165,
         "text": "I (donna phone): Text Gary the court time and ask him to meet me for practice",
@@ -2024,24 +2017,19 @@
         "tick": 250,
         "text": "Hal said to Donna: “I'll come along, Donna. Somebody ought to keep the sketch within the code, and I'd like to see this cart before the committee does. Lead the way.”",
         "importance": 6
+      },
+      {
+        "tick": 251,
+        "text": "I (donna flamingo flock): Move the extra flamingos around back so only three are visible from the street",
+        "importance": 6
+      },
+      {
+        "tick": 251,
+        "text": "Hal headed to Rosa's House.",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 159,
-        "text": "Donna just arrived.",
-        "importance": 3
-      },
-      {
-        "tick": 160,
-        "text": "I said to Gary: “Evening, Gary. Saw your paperwork got filed, so we're square. Saturday at Rosa's still on, and I'm bringing cornbread and the good chair.”",
-        "importance": 5
-      },
-      {
-        "tick": 160,
-        "text": "Gary said to Hal: “Hal, good timing. I filed the Architectural Review application for the cart lights and sound system today, so you can quit worrying about me. I'll hold off on the wiring until it's approved.”",
-        "importance": 5
-      },
       {
         "tick": 160,
         "text": "Donna said to Gary: “There you are, Gary! Let's get over to the rec center and shake out a few more third-shot drops before the ladder match. I'm bringing the competitive Donna tonight, so be ready!”",
@@ -3026,24 +3014,24 @@
         "tick": 250,
         "text": "Donna said to Hal: “Well, I appreciate you telling me to my face, Hal, that's what a good neighbor does. I'll go through the flock tonight and tuck any extras around back so we're at three before nine tomorrow.”",
         "importance": 4
-      }
-    ],
-    "rosa": [
+      },
       {
-        "tick": 161,
-        "text": "I (rosa kitchen): Prep what I can tonight: marinate the pork and sort the grocery list by Friday errands",
+        "tick": 251,
+        "text": "I headed to Rosa's House.",
         "importance": 4
       },
       {
-        "tick": 162,
-        "text": "I (rosa kitchen): Check the marinating pork and finalize the Friday grocery list: sides, drinks, backup dessert",
-        "importance": 5
+        "tick": 251,
+        "text": "Donna (donna flamingo flock): Move the extra flamingos around back so only three are visible from the street",
+        "importance": 4
       },
       {
-        "tick": 163,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
+        "tick": 251,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
+      }
+    ],
+    "rosa": [
       {
         "tick": 163,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -4028,6 +4016,21 @@
         "tick": 250,
         "text": "Gary said to Rosa: “Thursday works fine by me, Rosa, and I appreciate you carrying those sketches over. Everything's labeled, and I'll tuck the clamp list and your light layout in the folder tonight so you can just grab it and go.”",
         "importance": 5
+      },
+      {
+        "tick": 251,
+        "text": "I (rosa shift schedule): Confirm my free hour Thursday and block it off for the review desk walk",
+        "importance": 4
+      },
+      {
+        "tick": 251,
+        "text": "Gary (rosa dining table): Slip the wiring sketches, clamp list, and Rosa's light layout into the folder for Thursday",
+        "importance": 4
+      },
+      {
+        "tick": 251,
+        "text": "Hal just arrived.",
+        "importance": 4
       }
     ]
   },
@@ -4074,10 +4077,10 @@
     ]
   },
   "emotions": {
-    "gary": "grateful",
-    "donna": "gracious but a little flustered",
-    "hal": "gruff but warm",
-    "rosa": "content"
+    "gary": "content",
+    "donna": "determined",
+    "hal": "dutiful",
+    "rosa": "content, organized"
   },
   "laws": [
     {
@@ -4186,9 +4189,16 @@
       "text": "Hal Weems: Submit and log the written notices on Gary's cart and Donna's flamingos for tomorrow's 9 AM committee meeting"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 251,
+      "time": "Wednesday, October 28, 9:17 PM",
+      "story": "At 9:17 on a mild Wednesday night in Sumter Oaks, Gary sits content at Rosa's dining table, sliding wiring sketches and a clamp list into a folder for Thursday, while Rosa confirms her free hour for the review desk walk. Across the street on Magnolia Loop, a determined Donna is rearranging her flamingo flock so that only three show from the road, and Hal, dutifully, is on his way over to Rosa's House.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 7.87675,
+    "total_usd": 7.90878,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4255,13 +4265,12 @@
         "usd": 0.48039
       },
       "2026-10-28": {
-        "ticks": 14,
-        "usd": 0.44679
+        "ticks": 15,
+        "usd": 0.47882
       }
     }
   },
   "recent_tick_costs": [
-    0.03343,
     0.03212,
     0.0307,
     0.03154,
@@ -4284,7 +4293,8 @@
     0.03157,
     0.03176,
     0.03185,
-    0.03418
+    0.03418,
+    0.03203
   ],
   "fund": {
     "gross_usd": 0.0,

@@ -1,0 +1,119 @@
+{
+  "tick": 251,
+  "simulation_time": "Wednesday, October 28, 9:17 PM",
+  "weather": "Partly cloudy, 77°F",
+  "positions": {
+    "gary": "rosas_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a mild Wednesday night in Sumter Oaks, Gary sits content at Rosa's dining table, sliding wiring sketches and a clamp list into a folder for Thursday, while Rosa confirms her free hour for the review desk walk. Across the street on Magnolia Loop, a determined Donna is rearranging her flamingo flock so that only three show from the road, and Hal, dutifully, is on his way over to Rosa's House.",
+  "events": [
+    "Gary (rosa dining table): Slip the wiring sketches, clamp list, and Rosa's light layout into the folder for Thursday",
+    "Donna (donna flamingo flock): Move the extra flamingos around back so only three are visible from the street",
+    "Hal headed to Rosa's House.",
+    "Rosa (rosa shift schedule): Confirm my free hour Thursday and block it off for the review desk walk"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa and I already settled everything: Thursday handoff, folder, quiet hours. She said her piece and I've nothing new to add, so repeating myself would just be noise. What I promised was to tuck the clamp list and her light layout into the folder tonight so she can grab it and go. The dining table is where the sketches are. It's past nine, so I should get the folder packed now and let her get to bed.",
+      "emotional_state": "content",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Slip the wiring sketches, clamp list, and Rosa's light layout into the folder for Thursday"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I told Hal I'd tuck the extra flamingos around back tonight so we're at three visible before the committee meets at nine tomorrow. It's past 9 PM and the flock is right here on the street with Hal watching. He said he'll tag along to Rosa's, but I'd rather fix the code problem first. Handling it now, in front of him, shows good faith and takes the sting out of his tally. The cart sketch can wait a few minutes, and Rosa's will still feel like home when we arrive.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Move the extra flamingos around back so only three are visible from the street"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna and I just agreed to head to Rosa's to look at the parade cart sketch. It's past nine in the evening, and I've already said my piece about the flamingos. No sense standing around repeating myself. Rosa's house connects from Magnolia Loop, so I'll move there. Somebody has to keep that sketch within the code, and I'd like to see Gary's cart plans before the committee does.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's to see the parade cart sketch and keep it within code, as I told Donna."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary and I have settled Thursday: sketches go on the review form exactly as drawn, tuck-on and removable, music off before 10 PM. He's already filing the folder tonight. Dinner is over and it's past 9 PM, so there's no point repeating myself. The useful thing is to check my shift schedule and make sure the free hour Thursday is actually penciled in, so I can carry the sketches to the review desk without getting called away.",
+      "emotional_state": "content, organized",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Confirm my free hour Thursday and block it off for the review desk walk"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03203,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10741,
+        "output_tokens": 1043,
+        "usd": 0.03191
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 412,
+        "output_tokens": 153,
+        "usd": 0.00012
+      }
+    }
+  },
+  "season": "halloween"
+}
