@@ -1,6 +1,6 @@
 {
-  "tick": 261,
-  "time": "2026-10-29T15:17",
+  "tick": 262,
+  "time": "2026-10-29T16:17",
   "positions": {
     "gary": "magnolia_loop",
     "donna": "rec_center",
@@ -13,22 +13,12 @@
     ],
     "donna": [],
     "hal": [
-      "Gary said to Hal: “That's exactly the route I'm taking, Hal. Good to know the committee sits tomorrow. Rosa's got my sketches and clamp list at the desk, and nothing goes on the cart where the street can see it until they sign off. I'll be in the garage bench-testing the wiring in the meantime.”"
+      "Gary (street bulletin board): Check for a posted Architectural Review decision on my cart application"
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 169,
-        "text": "I (gary fridge): Grab a cold drink and a sandwich, take a break after the cart work",
-        "importance": 3
-      },
-      {
-        "tick": 170,
-        "text": "I (gary workbench): Tinker on a small speaker mount bracket for the parade cart, indoors and quiet",
-        "importance": 3
-      },
       {
         "tick": 171,
         "text": "I (gary workbench): Finish up the speaker mount bracket, file down the rough edges and test-fit it",
@@ -1018,14 +1008,19 @@
         "tick": 260,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street",
         "importance": 4
+      },
+      {
+        "tick": 261,
+        "text": "I (street bulletin board): Check for a posted Architectural Review decision on my cart application",
+        "importance": 5
+      },
+      {
+        "tick": 261,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 173,
-        "text": "I said to Hal: “Thanks for clearing that notice off the board, Hal, I appreciate it. Now go enjoy your evening, and I'll see you Saturday with the ice cream!”",
-        "importance": 4
-      },
       {
         "tick": 173,
         "text": "Hal said to Donna: “Noted, Donna. Three showing from the street is what the code says, and I appreciate you seeing to it. I'll bring the cornbread tomorrow, and you save me a scoop of that ice cream.”",
@@ -2020,19 +2015,14 @@
         "tick": 260,
         "text": "I (court reservation kiosk): Reserve a court for a two-hour practice session with Gary",
         "importance": 5
+      },
+      {
+        "tick": 261,
+        "text": "I (pickleball court 1): Warm up with some dinking drills while waiting for Gary",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 168,
-        "text": "I said to Donna: “Afternoon, Donna. I'll be straight with you: I'm counting the flamingos for the review committee. L-02 says three visible from the street, so you might want to tuck a few behind the hedge before they come around.”",
-        "importance": 5
-      },
-      {
-        "tick": 168,
-        "text": "Donna said to Hal: “Afternoon, Hal! Gary and I are headed to the rec center for ladder practice. Let's keep the cart paperwork friendly before Saturday, I want everyone relaxed for Rosa's dinner.”",
-        "importance": 5
-      },
       {
         "tick": 169,
         "text": "I (street bulletin board): Check my posted L-02 and L-01 notice and update it with today's flamingo tally",
@@ -3022,14 +3012,19 @@
         "tick": 260,
         "text": "Gary said to Hal: “That's exactly the route I'm taking, Hal. Good to know the committee sits tomorrow. Rosa's got my sketches and clamp list at the desk, and nothing goes on the cart where the street can see it until they sign off. I'll be in the garage bench-testing the wiring in the meantime.”",
         "importance": 5
+      },
+      {
+        "tick": 261,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street",
+        "importance": 5
+      },
+      {
+        "tick": 261,
+        "text": "Gary (street bulletin board): Check for a posted Architectural Review decision on my cart application",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 173,
-        "text": "I said to Gary: “Gary, Hal's bringing cornbread and Donna's got the cobbler, so you're my last seat at the table. Saturday at five, and if you bring a bag of ice and your folding chairs, you're all set.”",
-        "importance": 6
-      },
       {
         "tick": 173,
         "text": "Gary said to Rosa: “Well, evening, Rosa! Come on in. I'm just fitting a speaker bracket on the parade cart, lights off, paperwork's already filed. What can I do for you?”",
@@ -4024,6 +4019,11 @@
         "tick": 260,
         "text": "I (architectural review desk): Submit the parade cart folder with Gary's clamp list and light layout",
         "importance": 6
+      },
+      {
+        "tick": 261,
+        "text": "I (architectural review desk): Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations",
+        "importance": 6
       }
     ]
   },
@@ -4070,7 +4070,7 @@
     ]
   },
   "emotions": {
-    "gary": "patient",
+    "gary": "hopeful",
     "donna": "determined",
     "hal": "dutiful",
     "rosa": "determined"
@@ -4184,6 +4184,10 @@
     {
       "by": "rosa",
       "text": "Rosa Delgado: Submit the parade cart folder with Gary's clamp list and light layout"
+    },
+    {
+      "by": "rosa",
+      "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
   "recap_pending": [
@@ -4218,10 +4222,16 @@
       "dialogue": [
         "Gary said to Hal: “That's exactly the route I'm taking, Hal. Good to know the committee sits tomorrow. Rosa's got my sketches and clamp list at the desk, and nothing goes on the cart where the street can see it until they sign off. I'll be in the garage bench-testing the wiring in the meantime.”"
       ]
+    },
+    {
+      "tick": 261,
+      "time": "Thursday, October 29, 4:17 PM",
+      "story": "On Magnolia Loop, Gary squints at the bulletin board in the humid afternoon haze, hoping to find his Architectural Review decision on his golf cart application. Over at the Rec Center, Donna is warming up with dinking drills on pickleball court one while she waits for him to report back. Hal is out on the street counting the flamingos in the Donna flock, dutifully keeping track of every pink bird. Meanwhile, Rosa stands at the Architectural Review desk in Town Hall, determinedly handing in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 8.19388,
+    "total_usd": 8.22479,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4292,13 +4302,12 @@
         "usd": 0.47882
       },
       "2026-10-29": {
-        "ticks": 9,
-        "usd": 0.2851
+        "ticks": 10,
+        "usd": 0.31601
       }
     }
   },
   "recent_tick_costs": [
-    0.0305,
     0.03111,
     0.0307,
     0.03162,
@@ -4321,7 +4330,8 @@
     0.03316,
     0.03304,
     0.03156,
-    0.03154
+    0.03154,
+    0.03091
   ],
   "fund": {
     "gross_usd": 0.0,
