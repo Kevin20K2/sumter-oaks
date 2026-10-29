@@ -1,0 +1,119 @@
+{
+  "tick": 253,
+  "simulation_time": "Thursday, October 29, 8:17 AM",
+  "weather": "Humid and hazy, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On a humid, hazy Thursday morning in Sumter Oaks, Gary is at his workbench squaring up his wiring sketches and clamp list, hoping his golf cart project comes together. Across the way, Donna is checking the club calendar so Gary's practice time and the cart plans can both fit, while Hal keeps watch from his house with binoculars, dutifully recounting the flamingos and Gary's cart. Rosa, focused as ever, is confirming her free hour before heading to the review desk.",
+  "events": [
+    "Gary (gary workbench): Go over the wiring sketches and clamp list one last time and square up the folder",
+    "Donna (donna club calendar): Check court times and club commitments so Gary's practice and the cart sketch both fit",
+    "Hal (hal binoculars): Glass the street and recount the flamingos and Gary's cart",
+    "Rosa (rosa shift schedule): Confirm my free hour today is still clear before heading to the review desk"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's Thursday morning, the day of Rosa's table and the review desk walk. My folder is packed with the wiring sketches, clamp list, and Rosa's light layout. I'm alone at the house with the golf cart and workbench in reach. Rather than pace around, I'll use the workbench to double-check the folder and tidy the sketches so everything is clean for the review desk. Then I can head out toward Rosa's later.",
+      "emotional_state": "hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Go over the wiring sketches and clamp list one last time and square up the folder"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 8:17 AM and I promised Hal the flamingos would be down to three visible from the street before nine, and I already told the flock to move around back. Now I need to fit Gary's third-shot-drop practice and the cart sketch at Rosa's into the day without double-booking the courts or running past the two-hour limit. The club calendar is right here, so checking it first is the smart move before I head out.",
+      "emotional_state": "organized",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check court times and club commitments so Gary's practice and the cart sketch both fit"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Morning at the house, nobody around. Tomorrow's meeting is at nine and I want the facts in order. I already logged the flamingo count and Gary's cart in the notebook last tick. The binoculars are right here, and a by-the-book man verifies before he files. Donna said she'd tuck the extras around back tonight, so a fresh count from the porch will tell me whether things changed, and whether I can honestly say so in my report.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Glass the street and recount the flamingos and Gary's cart"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday morning and the review walk is today. My last action was checking the folder, and everything's inside: Gary's wiring sketches, the clamp list, and my light layout. I have a free hour blocked off on my shift schedule. Nobody's nearby to talk to, so there's nothing to say right now. The most useful thing is to double-check the schedule so I don't double-book myself (I'm overcommitted, after all), then grab the folder and head out for the review desk. Being honest with Review about what we're building matters to me, and I want Thursday to go smoothly for Donna, Hal, and Gary.",
+      "emotional_state": "focused",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Confirm my free hour today is still clear before heading to the review desk"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03064,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9940,
+        "output_tokens": 1064,
+        "usd": 0.03052
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 406,
+        "output_tokens": 166,
+        "usd": 0.00012
+      }
+    }
+  },
+  "season": "halloween"
+}
