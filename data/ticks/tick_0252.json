@@ -1,0 +1,120 @@
+{
+  "tick": 252,
+  "simulation_time": "Thursday, October 29, 7:17 AM",
+  "weather": "Humid and hazy, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a humid, hazy Thursday morning in Sumter Oaks, Gary is puttering around his house, hopeful about the day ahead. Donna is checking her club calendar to find court times that fit both his practice and a cart sketch, while Hal logs the morning's flamingo count and Gary's cart modifications in his violation notebook. Over at her dining table, Rosa is gathering up her folder of wiring sketches, clamp list, and light layout so she can carry them along on the review walk.",
+  "events": [
+    "Gary waited: puttering around Gary's House",
+    "Donna (donna club calendar): Check the calendar for court times and today's club commitments so Gary's practice and the cart sketch both fit",
+    "Hal (hal violation notebook): Log today's flamingo count and Gary's cart modifications with date and time",
+    "Rosa (rosa dining table): Check the folder: wiring sketches, clamp list, and my light layout are all inside, then pick it up for the review walk"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Thursday morning, 7:17, and I'm alone at home. The parade is Saturday and the review application still hasn't been approved. Rosa is taking the folder with the sketches and clamp list to the review desk today, and I already slipped everything in last tick. Under L-01, any visible modifications need approval, so I shouldn't permanently mount anything yet. But I can get the cart ready for a quick tuck-on, removable install: check the clamps against my list and test the light strings on the workbench so everything is solid once approval comes. It's a useful, quiet hour at home, and being useful is what I like best.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "puttering around Gary's House"
+        }
+      },
+      "engine_note": "tried to use None, which isn't in garys_house"
+    },
+    "donna": {
+      "thought_process": "It's early morning, I'm home alone, and Hal takes his flamingo tally to the committee at nine. I already told the flock to move behind the house last night, but I should double-check my calendar to line up the day: Gary's practice, the parade planning, and the cart sketch at Rosa's. Checking the club calendar is the best way to make sure everything fits without anyone feeling rushed, and I need a plan for getting Gary on the court.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check the calendar for court times and today's club commitments so Gary's practice and the cart sketch both fit"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Thursday morning, committee meets tomorrow... actually memory says nine tomorrow, and it's Thursday the 29th. I'm at home with no one around. I haven't documented Gary's cart yet, and I want the facts in my notebook before the meeting. Donna promised to tuck the flamingos around back, so I should verify the count from the porch with the binoculars, then log the cart. Facts first, then I file.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Log today's flamingo count and Gary's cart modifications with date and time"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday morning, 7:17 AM, and I'm home alone. Last tick Gary was slipping the wiring sketches, clamp list, and my light layout into the folder, and I already confirmed my free hour at the shift schedule. Before I walk over to the review desk, I should check the dining table where the folder is and make sure everything is in it: the sketches, clamp list, light layout. Once I've got the folder, I can head out to Magnolia Loop. Better to double-check now than discover something missing at the desk.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Check the folder: wiring sketches, clamp list, and my light layout are all inside, then pick it up for the review walk"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03173,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10161,
+        "output_tokens": 1129,
+        "usd": 0.03161
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 411,
+        "output_tokens": 167,
+        "usd": 0.00012
+      }
+    }
+  },
+  "season": "halloween"
+}
