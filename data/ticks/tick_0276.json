@@ -1,0 +1,119 @@
+{
+  "tick": 276,
+  "simulation_time": "Friday, October 30, 4:17 PM",
+  "weather": "Breezy and clear, 77°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 4:17 on a breezy, clear Friday afternoon in Sumter Oaks, Gary and Donna are out on pickleball court one, with Donna determined to drill Gary on third-shot drops. Hal is strolling down Magnolia Loop toward the Rec Center, lost in thought in the mild October air. Rosa is at home, enjoying a fresh cup of coffee at her kitchen counter and a quiet breather before the Halloween weekend picks up.",
+  "events": [
+    "Gary (pickleball court 1): Grab a paddle and start third-shot drop practice with Donna",
+    "Donna (pickleball court 1): Step onto court one with a paddle and start feeding Gary third-shot drop drills",
+    "Hal headed to Rec Center.",
+    "Rosa waited: Pour a cup of fresh coffee, sit at the kitchen counter, and take a quiet breather before the Halloween weekend gets going."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna and I have court one reserved for two hours and she already kicked things off by telling me to grab a paddle. I asked her to play last tick and she answered, so no need to ask again. Time is ticking on the two-hour window, so the right move is to actually step onto the court and start practicing with her. I'll use court one and keep my word about the limit. The cart wiring stays in the garage until the committee signs off.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Grab a paddle and start third-shot drop practice with Donna"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary and I just logged court one at the kiosk for two hours, so there's no need to ask or confirm anything again. Time to actually get on the court and drill those third-shot drops before the ladder match. The ladder standings board is right here too, but practice comes first. I'll head to the court and put him to work.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Step onto court one with a paddle and start feeding Gary third-shot drop drills"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Street's empty, tick 275 I already read the bulletin board and counted the flamingos, so no sense repeating either. Donna's within the three-ornament limit and Gary's moved his work into the garage. My immediate goal of reporting them is moot; I'd be filing a complaint with nothing behind it. Halloween parade is tomorrow, and I'm the one who keeps an eye on this neighborhood fairly. Best use of the hour is to check on the rec center where Donna headed, and maybe be neighborly instead of just a watchdog.",
+      "emotional_state": "reflective",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Flamingo count is clean, the bulletin board's read. Heading to the rec center to see how the parade prep is going and have a word with Donna."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The counters are wiped, the baking supplies are put away, and the coffee is on. The treat basket is by the door for tomorrow night, and I've already checked Saturday's shift schedule twice and it's clear. The parade cart folder is filed, so there's nothing left to chase today. Nobody's nearby, and I've done every chore I set out to do. The sensible thing is to pour a cup of coffee, sit for a minute, and enjoy a quiet hour before the Halloween weekend starts. I don't need to pick another task just to look busy.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Pour a cup of fresh coffee, sit at the kitchen counter, and take a quiet breather before the Halloween weekend gets going."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0304,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9770,
+        "output_tokens": 1074,
+        "usd": 0.03028
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 406,
+        "output_tokens": 157,
+        "usd": 0.00012
+      }
+    }
+  },
+  "season": "halloween"
+}

@@ -1,39 +1,28 @@
 {
-  "tick": 276,
-  "time": "2026-10-30T15:17",
+  "tick": 277,
+  "time": "2026-10-30T16:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
-    "hal": "magnolia_loop",
+    "hal": "rec_center",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna (court reservation kiosk): Reserve pickleball court 1 for a two-hour doubles practice session with Gary"
+      "Donna (pickleball court 1): Step onto court one with a paddle and start feeding Gary third-shot drop drills",
+      "Hal just arrived."
     ],
     "donna": [
-      "Gary (court reservation kiosk): Log court one for Donna and me, two hours exactly"
+      "Gary (pickleball court 1): Grab a paddle and start third-shot drop practice with Donna",
+      "Hal just arrived."
     ],
-    "hal": [],
+    "hal": [
+      "You arrived at Rec Center."
+    ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 188,
-        "text": "Donna just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 189,
-        "text": "I headed to Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 189,
-        "text": "Donna said to Gary: “Gary, there you are! I've got the peach cobbler warming, so let's walk over to Rosa's together. And tomorrow morning you and I are hitting dinks at the rec center, no excuses.”",
-        "importance": 4
-      },
       {
         "tick": 189,
         "text": "Rosa said to Donna: “Donna, there you are! Bring that cobbler straight through to the kitchen, Hal's already headed in and your seat is waiting. Gary, grab the ice and follow us, the table's set.”",
@@ -1018,24 +1007,24 @@
         "tick": 275,
         "text": "Donna (court reservation kiosk): Reserve pickleball court 1 for a two-hour doubles practice session with Gary",
         "importance": 4
+      },
+      {
+        "tick": 276,
+        "text": "I (pickleball court 1): Grab a paddle and start third-shot drop practice with Donna",
+        "importance": 4
+      },
+      {
+        "tick": 276,
+        "text": "Donna (pickleball court 1): Step onto court one with a paddle and start feeding Gary third-shot drop drills",
+        "importance": 4
+      },
+      {
+        "tick": 276,
+        "text": "Hal just arrived.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 190,
-        "text": "I headed to Rosa's House.",
-        "importance": 5
-      },
-      {
-        "tick": 190,
-        "text": "Rosa headed to Rosa's House.",
-        "importance": 5
-      },
-      {
-        "tick": 190,
-        "text": "You arrived at Rosa's House.",
-        "importance": 5
-      },
       {
         "tick": 190,
         "text": "Rosa just arrived.",
@@ -2020,19 +2009,24 @@
         "tick": 275,
         "text": "Gary (court reservation kiosk): Log court one for Donna and me, two hours exactly",
         "importance": 5
+      },
+      {
+        "tick": 276,
+        "text": "I (pickleball court 1): Step onto court one with a paddle and start feeding Gary third-shot drop drills",
+        "importance": 6
+      },
+      {
+        "tick": 276,
+        "text": "Gary (pickleball court 1): Grab a paddle and start third-shot drop practice with Donna",
+        "importance": 6
+      },
+      {
+        "tick": 276,
+        "text": "Hal just arrived.",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 186,
-        "text": "Rosa said to Hal: “Hal, good timing. Is that cornbread on track for tonight? Doors open at six, and I could use an extra hand with the chairs if you're free around five.”",
-        "importance": 4
-      },
-      {
-        "tick": 187,
-        "text": "I said to Rosa: “Cornbread's in hand and on schedule, Rosa. I'm walking over now, so point me at the chairs and I'll have them set before six.”",
-        "importance": 5
-      },
       {
         "tick": 187,
         "text": "Rosa said to Hal: “Thanks, Hal. Put the table along the back wall of the living room and keep the kitchen doorway clear. Come by around five-thirty and I'll have a spot ready for the cornbread.”",
@@ -3022,14 +3016,19 @@
         "tick": 275,
         "text": "I (street bulletin board): Read the posted notices for any committee rulings or parade rules before tomorrow",
         "importance": 3
+      },
+      {
+        "tick": 276,
+        "text": "I headed to Rec Center.",
+        "importance": 3
+      },
+      {
+        "tick": 276,
+        "text": "You arrived at Rec Center.",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 183,
-        "text": "I (rosa kitchen): Check the main dish and tidy up so the kitchen is ready for tonight",
-        "importance": 6
-      },
       {
         "tick": 184,
         "text": "I headed to Magnolia Loop (the street).",
@@ -4024,6 +4023,11 @@
         "tick": 275,
         "text": "I (rosa kitchen): Wipe down the counters, put away the baking supplies, and put on a pot of coffee",
         "importance": 3
+      },
+      {
+        "tick": 276,
+        "text": "I waited: Pour a cup of fresh coffee, sit at the kitchen counter, and take a quiet breather before the Halloween weekend gets going.",
+        "importance": 2
       }
     ]
   },
@@ -4070,7 +4074,7 @@
     ]
   },
   "emotions": {
-    "gary": "cheerful",
+    "gary": "content",
     "donna": "determined",
     "hal": "reflective",
     "rosa": "content"
@@ -4196,10 +4200,16 @@
       "time": "Friday, October 30, 3:17 PM",
       "story": "At 3:17 on this breezy, clear Friday afternoon in Sumter Oaks, Gary and Donna are at the Rec Center kiosk, both eager to lock in court one for a two-hour pickleball practice together. Hal is out on Magnolia Loop, reading the bulletin board notices for any committee rulings or parade rules before tomorrow, lost in thought. Back at home, Rosa is wiping down her counters, putting away the baking supplies, and starting a pot of coffee, feeling perfectly content.",
       "dialogue": []
+    },
+    {
+      "tick": 276,
+      "time": "Friday, October 30, 4:17 PM",
+      "story": "At 4:17 on a breezy, clear Friday afternoon in Sumter Oaks, Gary and Donna are out on pickleball court one, with Donna determined to drill Gary on third-shot drops. Hal is strolling down Magnolia Loop toward the Rec Center, lost in thought in the mild October air. Rosa is at home, enjoying a fresh cup of coffee at her kitchen counter and a quiet breather before the Halloween weekend picks up.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 8.66807,
+    "total_usd": 8.69847,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4274,13 +4284,12 @@
         "usd": 0.47234
       },
       "2026-10-30": {
-        "ticks": 9,
-        "usd": 0.28695
+        "ticks": 10,
+        "usd": 0.31735
       }
     }
   },
   "recent_tick_costs": [
-    0.03173,
     0.03064,
     0.03044,
     0.03028,
@@ -4303,7 +4312,8 @@
     0.03321,
     0.03082,
     0.03101,
-    0.03054
+    0.03054,
+    0.0304
   ],
   "fund": {
     "gross_usd": 0.0,
