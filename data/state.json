@@ -1,40 +1,27 @@
 {
-  "tick": 273,
-  "time": "2026-10-30T12:17",
+  "tick": 274,
+  "time": "2026-10-30T13:17",
   "positions": {
     "gary": "rec_center",
-    "donna": "magnolia_loop",
+    "donna": "rec_center",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Hal: “Count away, Hal! Three visible from the street, and not one flamingo more. I know the rule, and I'd rather pass your inspection than argue with it.”",
-      "Hal said to Gary: “Gary, I heard you're holding off on the cart until the committee signs off. That's how it's done, and I appreciate it. Keep to your two hours on the courts and we'll get along fine.”",
-      "You arrived at Rec Center."
+      "Donna just arrived."
     ],
     "donna": [
-      "Gary headed to Rec Center.",
-      "Hal said to Gary: “Gary, I heard you're holding off on the cart until the committee signs off. That's how it's done, and I appreciate it. Keep to your two hours on the courts and we'll get along fine.”"
+      "Hal (donna flamingo flock): Count the flamingos visible from the street, one by one, and note the total for my log",
+      "You arrived at Rec Center."
     ],
     "hal": [
-      "Gary headed to Rec Center.",
-      "Donna said to Hal: “Count away, Hal! Three visible from the street, and not one flamingo more. I know the rule, and I'd rather pass your inspection than argue with it.”"
+      "Donna headed to Rec Center."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 186,
-        "text": "I (gary fridge): Pull out the cold drinks and a bag of ice to bring to Rosa's tonight",
-        "importance": 3
-      },
-      {
-        "tick": 187,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 187,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -1024,24 +1011,19 @@
         "tick": 272,
         "text": "You arrived at Rec Center.",
         "importance": 4
+      },
+      {
+        "tick": 273,
+        "text": "I (ladder standings board): Check the standings to see where Donna and I rank",
+        "importance": 3
+      },
+      {
+        "tick": 273,
+        "text": "Donna just arrived.",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 186,
-        "text": "I (ladder standings board): Study the ladder standings to see who our next opponents are and how far we need to climb",
-        "importance": 4
-      },
-      {
-        "tick": 187,
-        "text": "I (pickleball court 1): Keep drilling third-shot drops and dinks until Gary shows up",
-        "importance": 4
-      },
-      {
-        "tick": 188,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 188,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -2026,19 +2008,24 @@
         "tick": 272,
         "text": "Hal said to Gary: “Gary, I heard you're holding off on the cart until the committee signs off. That's how it's done, and I appreciate it. Keep to your two hours on the courts and we'll get along fine.”",
         "importance": 4
+      },
+      {
+        "tick": 273,
+        "text": "I headed to Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 273,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street, one by one, and note the total for my log",
+        "importance": 6
+      },
+      {
+        "tick": 273,
+        "text": "You arrived at Rec Center.",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 184,
-        "text": "I waited: Sitting on the porch watching the quiet loop, keeping track of the time so I leave for Rosa's with the cornbread and table well ahead of schedule.",
-        "importance": 3
-      },
-      {
-        "tick": 185,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 185,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -3028,14 +3015,19 @@
         "tick": 272,
         "text": "Donna said to Hal: “Count away, Hal! Three visible from the street, and not one flamingo more. I know the rule, and I'd rather pass your inspection than argue with it.”",
         "importance": 5
+      },
+      {
+        "tick": 273,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street, one by one, and note the total for my log",
+        "importance": 4
+      },
+      {
+        "tick": 273,
+        "text": "Donna headed to Rec Center.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 180,
-        "text": "I (rosa kitchen): Finish the main dish and get it ready to hold warm for tonight's dinner",
-        "importance": 6
-      },
       {
         "tick": 181,
         "text": "I (rosa shift schedule): Check my per-diem shift schedule to make sure nothing conflicts with tonight's dinner",
@@ -4030,6 +4022,11 @@
         "tick": 272,
         "text": "I (rosa shift schedule): Check that Saturday evening is clear of per-diem shifts",
         "importance": 4
+      },
+      {
+        "tick": 273,
+        "text": "I (rosa dining table): Sort the bagged treats into a basket and set it by the front door for tomorrow night",
+        "importance": 3
       }
     ]
   },
@@ -4077,8 +4074,8 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "cheerful",
-    "hal": "mellowing",
+    "donna": "determined",
+    "hal": "dutiful",
     "rosa": "content"
   },
   "laws": [
@@ -4233,10 +4230,16 @@
         "Donna said to Hal: “Count away, Hal! Three visible from the street, and not one flamingo more. I know the rule, and I'd rather pass your inspection than argue with it.”",
         "Hal said to Gary: “Gary, I heard you're holding off on the cart until the committee signs off. That's how it's done, and I appreciate it. Keep to your two hours on the courts and we'll get along fine.”"
       ]
+    },
+    {
+      "tick": 273,
+      "time": "Friday, October 30, 1:17 PM",
+      "story": "Gary is at the Rec Center, checking the standings board to see where he and Donna rank in the ladder league, feeling content in the breezy 77-degree afternoon. Donna is on her way there, determined as ever, while Hal walks Magnolia Loop counting the pink plastic flamingos one by one for his log. Back at her house, Rosa is sorting bagged treats into a basket by the front door for tomorrow night, quietly content with her plans.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 8.5757,
+    "total_usd": 8.60652,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4311,13 +4314,12 @@
         "usd": 0.47234
       },
       "2026-10-30": {
-        "ticks": 6,
-        "usd": 0.19458
+        "ticks": 7,
+        "usd": 0.2254
       }
     }
   },
   "recent_tick_costs": [
-    0.03185,
     0.03418,
     0.03203,
     0.03173,
@@ -4340,7 +4342,8 @@
     0.03051,
     0.03296,
     0.03379,
-    0.03321
+    0.03321,
+    0.03082
   ],
   "fund": {
     "gross_usd": 0.0,

@@ -1,0 +1,119 @@
+{
+  "tick": 273,
+  "simulation_time": "Friday, October 30, 1:17 PM",
+  "weather": "Breezy and clear, 77°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is at the Rec Center, checking the standings board to see where he and Donna rank in the ladder league, feeling content in the breezy 77-degree afternoon. Donna is on her way there, determined as ever, while Hal walks Magnolia Loop counting the pink plastic flamingos one by one for his log. Back at her house, Rosa is sorting bagged treats into a basket by the front door for tomorrow night, quietly content with her plans.",
+  "events": [
+    "Gary (ladder standings board): Check the standings to see where Donna and I rank",
+    "Donna headed to Rec Center.",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street, one by one, and note the total for my log",
+    "Rosa (rosa dining table): Sort the bagged treats into a basket and set it by the front door for tomorrow night"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at the Rec Center with nobody around. My application is still with Architectural Review, and I told Hal the cart stays parked until the committee signs off. Rather than hover, I can check the ladder standings and see where Donna and I stand. It keeps me close to the part of my week I like most, and I can do it without breaking the two-hour rule or the cart rule.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Check the standings to see where Donna and I rank"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 1:17 and Gary just headed to the Rec Center for our one o'clock court date. I'm already late and Hal just wrapped up his chat with Gary. No point lingering on the Loop trading flamingo barbs again. I said my piece to Hal already. Time to get to the courts so Gary can work on his third-shot drops and we can climb the ladder. I'll keep it under the two-hour limit.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the Rec Center to meet Gary for our court time and drill those third-shot drops."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna just told me she's at three and knows the rule, and her word has been good so far. I'm standing right here at the flock, so the honest thing is to actually count the ornaments from the street instead of taking anyone's word for it. If it's three, I can close that file and stop watching the street. I've been more invested in being right than neighborly lately, so I'll count fairly and give credit where it's due.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street, one by one, and note the total for my log"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The treats are baked and bagged and sitting on the dining table, and I've just confirmed Saturday evening is clear of per-diem shifts. The dinner went well and the parade folder is in. What's left is getting everything staged for tomorrow's 5 to 7 trick-or-treating, and a few quiet hours alone in the house is a good time to do it. I already planned the handout earlier, so I shouldn't repeat that. Better to actually move the bagged treats to a spot near the door so tomorrow runs smoothly and I can enjoy the neighbors and kids instead of scrambling.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Sort the bagged treats into a basket and set it by the front door for tomorrow night"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03082,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10205,
+        "output_tokens": 1030,
+        "usd": 0.03071
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 392,
+        "output_tokens": 148,
+        "usd": 0.00011
+      }
+    }
+  },
+  "season": "halloween"
+}
