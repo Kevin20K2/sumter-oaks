@@ -1,0 +1,117 @@
+{
+  "tick": 274,
+  "simulation_time": "Friday, October 30, 2:17 PM",
+  "weather": "Breezy and clear, 77°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary and Donna meet at the Rec Center on this breezy, clear Friday afternoon, with Gary cheerfully suggesting a game of pickleball and Donna determinedly grabbing a paddle to get straight to work on her third-shot drops. Over on Magnolia Loop, Hal dutifully counts the pink plastic flamingos along the street one by one for his log, while Rosa, content at home, checks that no per-diem calls are pending for Saturday evening. Court one is theirs for the next two hours, and Gary is already promising to keep the game inside that window.",
+  "events": [
+    "Hal (donna flamingo flock): Count the flamingos visible from the street, one by one, and note the total in my log",
+    "Rosa (rosa shift schedule): Confirm no per-diem call-ins are pending for Saturday evening"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just walked in and I checked the ladder standings last tick, so there's no need to hover over the board. Paddle with Donna is the best part of my week, and we're both here at the rec center. I haven't asked her to play yet, so I'll do that now and promise to keep us inside the two-hour limit. The cart wiring stays in the garage until the committee signs off.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Afternoon, Donna. Courts look open, so how about a game? I'll keep us inside our two hours, Hal would never let me hear the end of it."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just arrived at the Rec Center and Gary is right here, which is perfect since we have a one o'clock court date and it's already past two. Hal's flamingo counting can wait. Gary said he was holding off on the cart until the committee signs off, so I won't nag about that. Better to get him on the court and working on those third-shot drops before the ladder match. I should be mindful of the two hour court limit, so let's use our time well.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, there you are! Grab a paddle, we're running late and those third-shot drops aren't going to practice themselves. Court one's ours for the next two hours, so let's make it count."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna's already agreed to the count of three, and I've noted that in my log. Gary's keeping his word on the cart. Standing here in the street watching an empty lane is not duty, it's habit. The flock is right here in front of me, so I'll do the count properly and log the total myself, by the book, before the Halloween parade tomorrow. If it comes to three, I can close that file with a clear conscience and stop playing watchdog for a day.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street, one by one, and note the total in my log"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The treat basket is already by the front door, and my shift schedule check last tick confirmed Saturday evening is clear. It's mid-afternoon the day before Halloween, and nobody is around to talk to. I've been moving through tasks quickly. Rather than repeating something I've already done, I should use this quiet hour to double-check the shift schedule one more time, since the parade is at 6 on Saturday and I don't want a surprise call-in. Then I can rest up before the Loop gets busy tomorrow.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Confirm no per-diem call-ins are pending for Saturday evening"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03101,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9724,
+        "output_tokens": 1077,
+        "usd": 0.03022
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 4072,
+        "output_tokens": 757,
+        "usd": 0.00079
+      }
+    }
+  },
+  "season": "halloween"
+}
