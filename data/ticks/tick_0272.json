@@ -1,0 +1,117 @@
+{
+  "tick": 272,
+  "simulation_time": "Friday, October 30, 12:17 PM",
+  "weather": "Breezy and clear, 76°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On a breezy, clear Friday just after noon in Sumter Oaks, Gary is heading off toward the Rec Center while Donna and Hal stand together on Magnolia Loop. Donna cheerfully asks Hal to count the flamingos in her yard, insisting she'd rather pass his inspection than argue about the rule. Hal, mellowing in the sunshine, tells Gary he respects his patience in waiting on the golf cart committee and reminds him to keep to two hours on the courts. Meanwhile, Rosa, content at home, is making sure her Saturday evening stays free of per-diem shifts.",
+  "events": [
+    "Gary headed to Rec Center.",
+    "Rosa (rosa shift schedule): Check that Saturday evening is clear of per-diem shifts"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna already confirmed courts at 1 and I already said I'm in, so no need to ask again. Hal's up to something at the flamingo flock, counting them for the record, probably an L-02 thing (max 3 ornaments visible from the street). I haven't eaten and it's 12:17, so I should head to the rec center now to get there before 1 with my water. Nothing to gain from repeating myself. My cart plans stay on hold in the garage until the committee signs off, which is the honest route.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center to meet Donna for pickleball at 1, water bottle in hand."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal is counting my flamingos from the street again, and I know the limit is three. I'd rather be straight with him than get defensive, since I'd rather meet the code than fight it. Gary and I already settled the 1 PM courts plan and he's heading off to help Hal after, so I shouldn't re-invite him. Best move is to answer Hal's count cheerfully, show I'm compliant, and keep the neighborly peace before heading to the courts.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Count away, Hal! Three visible from the street, and not one flamingo more. I know the rule, and I'd rather pass your inspection than argue with it."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary and Donna are both standing right here, and they've settled their court plans without any help from me. Gary is clearly keeping his word about the cart, and my last reflection says I should stop surveilling and start talking. I did mean to count the flamingos for the record, but I don't want to be seen tallying Donna's lawn in front of her. Better to acknowledge Gary's cooperation openly and be neighborly, then deal with the committee paperwork on my own terms. The courts deal is within the two-hour limit, so no complaint there.",
+      "emotional_state": "mellowing",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, I heard you're holding off on the cart until the committee signs off. That's how it's done, and I appreciate it. Keep to your two hours on the courts and we'll get along fine."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The treats are baked and bagged and set out on the dining table, so tomorrow's handout is basically ready. It's Friday midday, no neighbors nearby, and I've done the kitchen and table work already. I should check my shift schedule so I don't double-book myself with the per-diem job on parade day. As an overcommitted person, confirming Saturday evening is clear matters more than fussing with the candy again.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check that Saturday evening is clear of per-diem shifts"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03321,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10619,
+        "output_tokens": 1119,
+        "usd": 0.03243
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4695,
+        "output_tokens": 625,
+        "usd": 0.00078
+      }
+    }
+  },
+  "season": "halloween"
+}
