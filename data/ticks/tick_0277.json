@@ -1,0 +1,116 @@
+{
+  "tick": 277,
+  "simulation_time": "Friday, October 30, 5:17 PM",
+  "weather": "Breezy and clear, 76°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "rec_center",
+    "rosa": "rosas_house"
+  },
+  "story": "At 5:17 on this breezy, clear Friday evening in Sumter Oaks, Gary and Donna are at the Rec Center preparing for a two-hour pickleball session on court one, while Hal, mellow and clipboard-ready, stops by to remind everyone about tomorrow's six o'clock parade. Gary offers Hal a game on court two afterward, and Donna cheerfully pulls him toward her own ladder challenge, which Hal seems happy to join. Back at her house, Rosa finishes her coffee at the kitchen counter and reviews the plan for tomorrow: treats by the door, the parade cart waiting at the Loop, and Gary and Donna meeting her there.",
+  "events": [
+    "Rosa waited: Finish my coffee at the kitchen counter and run through tomorrow's plan: treats by the door, parade cart at the Loop, Gary and Donna meeting me there."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna's already on court one feeding me third-shot drop drills, and the reservation is logged for exactly two hours, so I should keep my word and not drift off. Hal just walked in. He's been decent about me waiting on the committee, and the cart's still in my garage until Review signs off, so there's nothing to hide. Best thing is to say hello and make him feel welcome, then get back to the drills. I'm not going to talk wiring or the parade rig here.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Evening, Hal. Donna and I have court one for two hours, but there's a court two open if you want a game after."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary and I are already on court one running third-shot drops, and Hal just walked in. He's been counting my flamingos for weeks, but he's a good neighbor and a good audience for the social scene. We have a two-hour reservation and plenty of time, so I should keep the practice moving rather than chat too long. A quick friendly greeting to Hal keeps me at the center of things, and I can show off Gary's progress while he watches. Halloween parade is tomorrow, so I can hint at that too, but the main thing is keeping drills going.",
+      "emotional_state": "energized",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal! Perfect timing, come watch Gary's third-shot drops. Two hours on court one, and the ladder won't climb itself!"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I came to the Rec Center and both Gary and Donna are here, which is convenient. My reflections say I've been more invested in being right than being neighborly, and Gary has done what I asked with the cart. Halloween on the Loop is tomorrow, with the parade at 6. Rather than pull out my log, I'll talk to Gary about the parade and the porch lights. Keep it civil, dry, and short, and the committee paperwork can wait.",
+      "emotional_state": "mellow",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Evening, Gary. Cart still in the garage for the committee? Fine. Parade's tomorrow at six, so keep the lights legal and I'll keep my clipboard in the drawer."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 5:17 PM Friday and I'm alone in my kitchen. Coffee is poured, the treat basket is set by the door, and I've already confirmed Saturday evening is clear of shifts. The parade cart folder is in and the dinner went well. Nobody is nearby to talk to, and there's nothing urgent left. I've been going nonstop, so one more quiet minute with my coffee is fine, and I can use it to think through tomorrow night's handout and parade so nothing gets missed.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Finish my coffee at the kitchen counter and run through tomorrow's plan: treats by the door, parade cart at the Loop, Gary and Donna meeting me there."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03107,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9636,
+        "output_tokens": 1164,
+        "usd": 0.03091
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 500,
+        "output_tokens": 230,
+        "usd": 0.00016
+      }
+    }
+  },
+  "season": "halloween"
+}
