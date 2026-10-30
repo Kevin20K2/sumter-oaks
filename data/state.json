@@ -1,44 +1,33 @@
 {
-  "tick": 269,
-  "time": "2026-10-30T08:17",
+  "tick": 270,
+  "time": "2026-10-30T09:17",
   "positions": {
     "gary": "magnolia_loop",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "You arrived at Magnolia Loop (the street)."
+      "Hal said to Gary: “Morning, Gary. Heard you moved the cart work into the garage. Appreciate that. Bring those sketches to the committee and I'll hold my fire till they rule.”",
+      "Donna just arrived.",
+      "Town news: Reminder on the bulletin board: Halloween on the Loop is tomorrow. Trick-or-treating 5 to 7 PM, the golf cart parade at 6, and the costume contest at the Town Square bandstand at 7."
     ],
-    "donna": [],
+    "donna": [
+      "You arrived at Magnolia Loop (the street).",
+      "Town news: Reminder on the bulletin board: Halloween on the Loop is tomorrow. Trick-or-treating 5 to 7 PM, the golf cart parade at 6, and the costume contest at the Town Square bandstand at 7."
+    ],
     "hal": [
-      "Gary just arrived."
+      "Gary said to Hal: “Morning, Hal. Kit's all packed and ready for when Architectural Review signs off, so I'm just out stretching my legs. You got anything around the house you need a hand with before the parade tomorrow?”",
+      "Donna just arrived.",
+      "Town news: Reminder on the bulletin board: Halloween on the Loop is tomorrow. Trick-or-treating 5 to 7 PM, the golf cart parade at 6, and the costume contest at the Town Square bandstand at 7."
     ],
-    "rosa": []
+    "rosa": [
+      "Town news: Reminder on the bulletin board: Halloween on the Loop is tomorrow. Trick-or-treating 5 to 7 PM, the golf cart parade at 6, and the costume contest at the Town Square bandstand at 7."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 175,
-        "text": "Rosa said to Donna: “Donna, perfect timing. Gary just signed on for Saturday at five, so that's all three of you at my table. And thank you for bringing the cobbler, I'm already looking forward to it.”",
-        "importance": 5
-      },
-      {
-        "tick": 176,
-        "text": "I (gary workbench): Bench-fit the light bracket for the cart, indoors only, nothing amplified",
-        "importance": 3
-      },
-      {
-        "tick": 176,
-        "text": "Donna headed to Magnolia Loop (the street).",
-        "importance": 3
-      },
-      {
-        "tick": 176,
-        "text": "Rosa said to Donna: “Perfect, Donna. Court one in the afternoon, then walk over together with the ice cream. I'll head home now and get the long table ready. See you both Saturday at five.”",
-        "importance": 3
-      },
       {
         "tick": 177,
         "text": "I (gary workbench): Wire and bench-test the light strip circuit indoors, nothing mounted to the cart until approval",
@@ -1018,24 +1007,29 @@
         "tick": 268,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 269,
+        "text": "I said to Hal: “Morning, Hal. Kit's all packed and ready for when Architectural Review signs off, so I'm just out stretching my legs. You got anything around the house you need a hand with before the parade tomorrow?”",
+        "importance": 3
+      },
+      {
+        "tick": 269,
+        "text": "Hal said to Gary: “Morning, Gary. Heard you moved the cart work into the garage. Appreciate that. Bring those sketches to the committee and I'll hold my fire till they rule.”",
+        "importance": 3
+      },
+      {
+        "tick": 269,
+        "text": "Donna just arrived.",
+        "importance": 3
+      },
+      {
+        "tick": 269,
+        "text": "Town news: Reminder on the bulletin board: Halloween on the Loop is tomorrow. Trick-or-treating 5 to 7 PM, the golf cart parade at 6, and the costume contest at the Town Square bandstand at 7.",
+        "importance": 7
       }
     ],
     "donna": [
-      {
-        "tick": 177,
-        "text": "I (donna club calendar): Check today's schedule: court one with Gary this afternoon, cobbler and ice cream for Rosa's at five",
-        "importance": 4
-      },
-      {
-        "tick": 178,
-        "text": "I (donna club calendar): Check today's schedule: court one with Gary, cobbler for Rosa's at five",
-        "importance": 4
-      },
-      {
-        "tick": 179,
-        "text": "I (donna pickleball bag): Pack paddles, balls, and water bottles for court one with Gary",
-        "importance": 4
-      },
       {
         "tick": 179,
         "text": "Town news: A flyer went up on the Magnolia Loop bulletin board: Halloween on the Loop, Saturday, October 31. Trick-or-treating from 5 to 7 PM, a golf cart parade around the Loop at 6, then a costume contest at the Town Square bandstand at 7, with prizes for best costume and best-decorated golf cart. Decorations welcome all week.",
@@ -2020,29 +2014,24 @@
         "tick": 268,
         "text": "I (donna pickleball bag): Pack extra paddles and balls for Gary's third-shot drop drills",
         "importance": 5
+      },
+      {
+        "tick": 269,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 269,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 269,
+        "text": "Town news: Reminder on the bulletin board: Halloween on the Loop is tomorrow. Trick-or-treating 5 to 7 PM, the golf cart parade at 6, and the costume contest at the Town Square bandstand at 7.",
+        "importance": 7
       }
     ],
     "hal": [
-      {
-        "tick": 174,
-        "text": "I headed to Hal's House.",
-        "importance": 3
-      },
-      {
-        "tick": 174,
-        "text": "Donna headed to Gary's House.",
-        "importance": 3
-      },
-      {
-        "tick": 174,
-        "text": "You arrived at Hal's House.",
-        "importance": 3
-      },
-      {
-        "tick": 175,
-        "text": "I (hal violation notebook): Log today's notes and mark Gary's cart and Donna's flamingos resolved",
-        "importance": 3
-      },
       {
         "tick": 176,
         "text": "I (hal porch chair): Sit on the porch and watch the quiet street before turning in",
@@ -3022,19 +3011,29 @@
         "tick": 268,
         "text": "Gary just arrived.",
         "importance": 3
-      }
-    ],
-    "rosa": [
+      },
       {
-        "tick": 176,
-        "text": "Donna headed to Magnolia Loop (the street).",
+        "tick": 269,
+        "text": "I said to Gary: “Morning, Gary. Heard you moved the cart work into the garage. Appreciate that. Bring those sketches to the committee and I'll hold my fire till they rule.”",
         "importance": 5
       },
       {
-        "tick": 177,
-        "text": "I (rosa dining table): Set out the long table, lay the cloth, and plan the seating so the neighbors sit together",
-        "importance": 6
+        "tick": 269,
+        "text": "Gary said to Hal: “Morning, Hal. Kit's all packed and ready for when Architectural Review signs off, so I'm just out stretching my legs. You got anything around the house you need a hand with before the parade tomorrow?”",
+        "importance": 5
       },
+      {
+        "tick": 269,
+        "text": "Donna just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 269,
+        "text": "Town news: Reminder on the bulletin board: Halloween on the Loop is tomorrow. Trick-or-treating 5 to 7 PM, the golf cart parade at 6, and the costume contest at the Town Square bandstand at 7.",
+        "importance": 7
+      }
+    ],
+    "rosa": [
       {
         "tick": 178,
         "text": "I (rosa kitchen): Start prepping the main dish for tonight's welcome dinner",
@@ -4024,6 +4023,16 @@
         "tick": 268,
         "text": "I (rosa kitchen): Bake a batch of treats for Saturday's trick-or-treaters and parade crowd",
         "importance": 3
+      },
+      {
+        "tick": 269,
+        "text": "I (rosa kitchen): Bake a big batch of treats for Saturday's trick-or-treaters and parade crowd",
+        "importance": 4
+      },
+      {
+        "tick": 269,
+        "text": "Town news: Reminder on the bulletin board: Halloween on the Loop is tomorrow. Trick-or-treating 5 to 7 PM, the golf cart parade at 6, and the costume contest at the Town Square bandstand at 7.",
+        "importance": 7
       }
     ]
   },
@@ -4070,10 +4079,10 @@
     ]
   },
   "emotions": {
-    "gary": "restless",
+    "gary": "cheerful",
     "donna": "determined",
-    "hal": "reflective",
-    "rosa": "content"
+    "hal": "mellow",
+    "rosa": "focused, upbeat"
   },
   "laws": [
     {
@@ -4190,9 +4199,19 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 269,
+      "time": "Friday, October 30, 9:17 AM",
+      "story": "On a breezy, clear Friday morning in Sumter Oaks, Gary is out on Magnolia Loop stretching his legs while his golf cart kit waits in the garage for Architectural Review's sign-off, and he chats with Hal about the sketches heading to committee. Donna, looking determined, walks over to join them on the street, while Rosa bakes a big batch of treats in her kitchen for tomorrow's trick-or-treaters and parade crowd. Everyone's buzzing about Halloween on the Loop, with trick-or-treating from 5 to 7, the golf cart parade at 6, and the costume contest at the bandstand at 7.",
+      "dialogue": [
+        "Gary said to Hal: “Morning, Hal. Kit's all packed and ready for when Architectural Review signs off, so I'm just out stretching my legs. You got anything around the house you need a hand with before the parade tomorrow?”",
+        "Hal said to Gary: “Morning, Gary. Heard you moved the cart work into the garage. Appreciate that. Bring those sketches to the committee and I'll hold my fire till they rule.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 8.44523,
+    "total_usd": 8.47574,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4267,13 +4286,12 @@
         "usd": 0.47234
       },
       "2026-10-30": {
-        "ticks": 2,
-        "usd": 0.06411
+        "ticks": 3,
+        "usd": 0.09462
       }
     }
   },
   "recent_tick_costs": [
-    0.03109,
     0.03051,
     0.03157,
     0.03176,
@@ -4296,7 +4314,8 @@
     0.03146,
     0.03222,
     0.0317,
-    0.03241
+    0.03241,
+    0.03051
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4346,6 +4365,7 @@
   },
   "last_tick_date": "2026-10-30",
   "calendar_fired": [
-    "halloween-flyer"
+    "halloween-flyer",
+    "halloween-reminder"
   ]
 }
