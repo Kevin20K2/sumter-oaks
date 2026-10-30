@@ -1,0 +1,119 @@
+{
+  "tick": 267,
+  "simulation_time": "Friday, October 30, 7:17 AM",
+  "weather": "Breezy and clear, 72°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a breezy, clear Friday morning in Sumter Oaks, Gary is at home sorting clamps, zip ties, and tape into a ready-to-go install kit, patient as ever while he waits for approval. Donna, determined as always, is checking the club calendar for court times and what the Halloween weekend holds. Hal is mellowly strolling out toward Magnolia Loop, while Rosa, focused, is reviewing her per-diem shifts to make sure Saturday evening stays clear for the parade.",
+  "events": [
+    "Gary (gary toolbox): Sort and pack the clamps, zip ties, and tape so the install kit is ready the moment approval comes",
+    "Donna (donna club calendar): Check the calendar for court times and Halloween weekend commitments",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa shift schedule): Check my per-diem shifts to make sure Saturday evening is clear for the parade"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's Friday morning, parade is tomorrow, and the application still isn't signed off. I've already bench-tested and rechecked the harness a few times, so doing it again would just be fidgeting. Nobody's here to talk to. L-01 says exterior mods visible from the street need Architectural Review approval, so the cart stays untouched. Best use of the hour is to grab a fresh coffee and tidy the toolbox so everything's ready to go the moment approval comes through. That keeps me useful without breaking any rules.",
+      "emotional_state": "patient",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_toolbox",
+          "content": "Sort and pack the clamps, zip ties, and tape so the install kit is ready the moment approval comes"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's early Friday and I'm home alone. Gary stood me up yesterday, and Halloween is tomorrow, so I need to keep my ladder plans on track. The club calendar is right here, so I can check what's on the books, see whether a court is reserved for practice, and plan around the parade and costume contest. Then I'll text Gary about third-shot drops.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check the calendar for court times and Halloween weekend commitments"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's early Friday and I'm home with no one around. Halloween is tomorrow, Donna's flamingos are holding at three, and Gary appears to have moved his cart work into the garage like I asked. My reflections tell me I've been more invested in being right than being neighborly. Rather than reach for the binoculars or the violation notebook, I should get out onto Magnolia Loop, stretch my legs, and see if Gary is around so I can talk to him face to face and look at those sketches myself.",
+      "emotional_state": "mellow",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to the Loop to stretch my legs and see if Gary's about. I'd rather talk to the man than watch his driveway."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Friday morning, 7:17 AM, and I'm at home. My last memory was heading to Magnolia Loop, but the surroundings say I'm at my house, so I'll just work with where I am. Parade is tomorrow at 6 PM, the cart is signed up, and the review desk plan with Gary and Donna is all set. The one open item on my plate is my per-diem shift schedule, which I need to check so I don't double-book myself with Saturday's parade and the trick-or-treating window. Nobody is around to talk to, so checking the schedule is the most useful thing I can do right now.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts to make sure Saturday evening is clear for the parade"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0317,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10134,
+        "output_tokens": 1130,
+        "usd": 0.03157
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 400,
+        "output_tokens": 174,
+        "usd": 0.00013
+      }
+    }
+  },
+  "season": "halloween"
+}
