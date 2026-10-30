@@ -1,6 +1,6 @@
 {
-  "tick": 275,
-  "time": "2026-10-30T14:17",
+  "tick": 276,
+  "time": "2026-10-30T15:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,26 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, there you are! Grab a paddle, we're running late and those third-shot drops aren't going to practice themselves. Court one's ours for the next two hours, so let's make it count.”"
+      "Donna (court reservation kiosk): Reserve pickleball court 1 for a two-hour doubles practice session with Gary"
     ],
     "donna": [
-      "Gary said to Donna: “Afternoon, Donna. Courts look open, so how about a game? I'll keep us inside our two hours, Hal would never let me hear the end of it.”"
+      "Gary (court reservation kiosk): Log court one for Donna and me, two hours exactly"
     ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 188,
-        "text": "Hal headed to Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 188,
-        "text": "Rosa said to Gary: “Gary, there you are! Come on in, doors are open. Chairs and ice go through the kitchen, and I'll have Donna's seat waiting when she gets here.”",
-        "importance": 4
-      },
       {
         "tick": 188,
         "text": "Donna just arrived.",
@@ -1018,19 +1008,19 @@
         "tick": 274,
         "text": "Donna said to Gary: “Gary, there you are! Grab a paddle, we're running late and those third-shot drops aren't going to practice themselves. Court one's ours for the next two hours, so let's make it count.”",
         "importance": 4
+      },
+      {
+        "tick": 275,
+        "text": "I (court reservation kiosk): Log court one for Donna and me, two hours exactly",
+        "importance": 4
+      },
+      {
+        "tick": 275,
+        "text": "Donna (court reservation kiosk): Reserve pickleball court 1 for a two-hour doubles practice session with Gary",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 189,
-        "text": "Gary headed to Rosa's House.",
-        "importance": 5
-      },
-      {
-        "tick": 189,
-        "text": "Rosa said to Donna: “Donna, there you are! Bring that cobbler straight through to the kitchen, Hal's already headed in and your seat is waiting. Gary, grab the ice and follow us, the table's set.”",
-        "importance": 5
-      },
       {
         "tick": 190,
         "text": "I headed to Rosa's House.",
@@ -2020,14 +2010,19 @@
         "tick": 274,
         "text": "Gary said to Donna: “Afternoon, Donna. Courts look open, so how about a game? I'll keep us inside our two hours, Hal would never let me hear the end of it.”",
         "importance": 6
+      },
+      {
+        "tick": 275,
+        "text": "I (court reservation kiosk): Reserve pickleball court 1 for a two-hour doubles practice session with Gary",
+        "importance": 5
+      },
+      {
+        "tick": 275,
+        "text": "Gary (court reservation kiosk): Log court one for Donna and me, two hours exactly",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 186,
-        "text": "I said to Rosa: “Afternoon, Rosa. I've got the cornbread and the folding table ready, so I'll be at your door early. Tell me where you want the table and I'll carry it in without any fuss.”",
-        "importance": 4
-      },
       {
         "tick": 186,
         "text": "Rosa said to Hal: “Hal, good timing. Is that cornbread on track for tonight? Doors open at six, and I could use an extra hand with the chairs if you're free around five.”",
@@ -3022,14 +3017,14 @@
         "tick": 274,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street, one by one, and note the total in my log",
         "importance": 4
+      },
+      {
+        "tick": 275,
+        "text": "I (street bulletin board): Read the posted notices for any committee rulings or parade rules before tomorrow",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 182,
-        "text": "I (rosa dining table): Set the long table with plates and cutlery, putting Hal, Gary and Donna's seats side by side",
-        "importance": 6
-      },
       {
         "tick": 183,
         "text": "I (rosa kitchen): Check the main dish and tidy up so the kitchen is ready for tonight",
@@ -4024,6 +4019,11 @@
         "tick": 274,
         "text": "I (rosa shift schedule): Confirm no per-diem call-ins are pending for Saturday evening",
         "importance": 3
+      },
+      {
+        "tick": 275,
+        "text": "I (rosa kitchen): Wipe down the counters, put away the baking supplies, and put on a pot of coffee",
+        "importance": 3
       }
     ]
   },
@@ -4072,7 +4072,7 @@
   "emotions": {
     "gary": "cheerful",
     "donna": "determined",
-    "hal": "dutiful",
+    "hal": "reflective",
     "rosa": "content"
   },
   "laws": [
@@ -4190,9 +4190,16 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 275,
+      "time": "Friday, October 30, 3:17 PM",
+      "story": "At 3:17 on this breezy, clear Friday afternoon in Sumter Oaks, Gary and Donna are at the Rec Center kiosk, both eager to lock in court one for a two-hour pickleball practice together. Hal is out on Magnolia Loop, reading the bulletin board notices for any committee rulings or parade rules before tomorrow, lost in thought. Back at home, Rosa is wiping down her counters, putting away the baking supplies, and starting a pot of coffee, feeling perfectly content.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 8.63753,
+    "total_usd": 8.66807,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4267,13 +4274,12 @@
         "usd": 0.47234
       },
       "2026-10-30": {
-        "ticks": 8,
-        "usd": 0.25641
+        "ticks": 9,
+        "usd": 0.28695
       }
     }
   },
   "recent_tick_costs": [
-    0.03203,
     0.03173,
     0.03064,
     0.03044,
@@ -4296,7 +4302,8 @@
     0.03379,
     0.03321,
     0.03082,
-    0.03101
+    0.03101,
+    0.03054
   ],
   "fund": {
     "gross_usd": 0.0,

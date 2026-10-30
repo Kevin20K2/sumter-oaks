@@ -1,0 +1,119 @@
+{
+  "tick": 275,
+  "simulation_time": "Friday, October 30, 3:17 PM",
+  "weather": "Breezy and clear, 78°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 3:17 on this breezy, clear Friday afternoon in Sumter Oaks, Gary and Donna are at the Rec Center kiosk, both eager to lock in court one for a two-hour pickleball practice together. Hal is out on Magnolia Loop, reading the bulletin board notices for any committee rulings or parade rules before tomorrow, lost in thought. Back at home, Rosa is wiping down her counters, putting away the baking supplies, and starting a pot of coffee, feeling perfectly content.",
+  "events": [
+    "Gary (court reservation kiosk): Log court one for Donna and me, two hours exactly",
+    "Donna (court reservation kiosk): Reserve pickleball court 1 for a two-hour doubles practice session with Gary",
+    "Hal (street bulletin board): Read the posted notices for any committee rulings or parade rules before tomorrow",
+    "Rosa (rosa kitchen): Wipe down the counters, put away the baking supplies, and put on a pot of coffee"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just told me to grab a paddle and that court one is ours for two hours. I already asked her to play, so no need to ask again. The kiosk is right here, and I told myself I'd keep to the two-hour limit (L-05). Quickest way to keep my word is to check the reservation kiosk and make sure our slot is logged at two hours, nothing more. Then we play. It's the best part of my week, and the cart wiring can wait on the committee.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Log court one for Donna and me, two hours exactly"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just said the courts look open and offered a game, and he's promised to keep us inside our two hours. I already told him court one is ours, so there's no need to repeat that or keep chatting. Time to act: the kiosk is right here and reservations cap at 2 hours per party (L-05), so I should book court one properly in my name and make it official. Then we can finally get his third-shot drops down before the ladder match and Halloween parade tomorrow.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Reserve pickleball court 1 for a two-hour doubles practice session with Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm alone on Magnolia Loop at 3:17 PM, and the flock is right here. Donna already told me three visible from the street and she's been straight with me, so I don't need to log the count again. I've tallied this twice already and a third time is just fussing. Honestly my reflections say I'm more invested in being right than being neighborly. Halloween on the Loop is tomorrow, the parade included, and the bulletin board is the place to check for any last committee notices or rulings before the crowds arrive. A supply sergeant checks the posted orders. Better use of the hour than staring at plastic birds.",
+      "emotional_state": "reflective",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the posted notices for any committee rulings or parade rules before tomorrow"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Treats are bagged, basket is by the door, and I've already confirmed twice that Saturday evening is clear of shifts. No need to check again. Nobody's around to talk to. The parade cart folder is in and Halloween is tomorrow, so the one thing left worth doing is a final practical check of the kitchen for leftover supplies and the dinner-table setup, then I can rest up and get ready for tomorrow night.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Wipe down the counters, put away the baking supplies, and put on a pot of coffee"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03054,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9751,
+        "output_tokens": 1091,
+        "usd": 0.03041
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 421,
+        "output_tokens": 174,
+        "usd": 0.00013
+      }
+    }
+  },
+  "season": "halloween"
+}
