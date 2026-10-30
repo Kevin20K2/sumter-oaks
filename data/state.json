@@ -1,44 +1,31 @@
 {
-  "tick": 278,
-  "time": "2026-10-30T17:17",
+  "tick": 279,
+  "time": "2026-10-30T18:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
     "hal": "rec_center",
-    "rosa": "rosas_house"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Hal: “Hal! Perfect timing, come watch Gary's third-shot drops. Two hours on court one, and the ladder won't climb itself!”",
-      "Hal said to Gary: “Evening, Gary. Cart still in the garage for the committee? Fine. Parade's tomorrow at six, so keep the lights legal and I'll keep my clipboard in the drawer.”"
+      "Donna said to Gary: “Okay, Gary, enough chatting, grab your paddle and get to the kitchen line. Soft hands on the third shot, ten drops in a row, and I'm counting out loud.”",
+      "Hal said to Donna: “I'll watch a few points, Donna. Two hours on court one, I see the board says so, and I'll hold Gary to the clock. Court two after, maybe, if my knee cooperates.”"
     ],
     "donna": [
-      "Gary said to Hal: “Evening, Hal. Donna and I have court one for two hours, but there's a court two open if you want a game after.”",
-      "Hal said to Gary: “Evening, Gary. Cart still in the garage for the committee? Fine. Parade's tomorrow at six, so keep the lights legal and I'll keep my clipboard in the drawer.”"
+      "Gary (pickleball court 1): Pick up my paddle and work on third-shot drop drills with Donna",
+      "Hal said to Donna: “I'll watch a few points, Donna. Two hours on court one, I see the board says so, and I'll hold Gary to the clock. Court two after, maybe, if my knee cooperates.”"
     ],
     "hal": [
-      "Gary said to Hal: “Evening, Hal. Donna and I have court one for two hours, but there's a court two open if you want a game after.”",
-      "Donna said to Hal: “Hal! Perfect timing, come watch Gary's third-shot drops. Two hours on court one, and the ladder won't climb itself!”"
+      "Gary (pickleball court 1): Pick up my paddle and work on third-shot drop drills with Donna",
+      "Donna said to Gary: “Okay, Gary, enough chatting, grab your paddle and get to the kitchen line. Soft hands on the third shot, ten drops in a row, and I'm counting out loud.”"
     ],
-    "rosa": []
+    "rosa": [
+      "You arrived at Magnolia Loop (the street)."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 190,
-        "text": "Hal said to Gary: “Evening, Gary. Heard you kept the cart parked till the board signs off. That's how it's done. Now point me at whatever needs carrying.”",
-        "importance": 4
-      },
-      {
-        "tick": 190,
-        "text": "Donna just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 190,
-        "text": "Rosa just arrived.",
-        "importance": 4
-      },
       {
         "tick": 191,
         "text": "I said to Hal: “Evening, Hal, and thanks. Cart's staying put till the board signs off, no sense risking a notice. The ice is already in the kitchen, so check with Rosa on what else she needs hauled to the table.”",
@@ -1023,24 +1010,24 @@
         "tick": 277,
         "text": "Hal said to Gary: “Evening, Gary. Cart still in the garage for the committee? Fine. Parade's tomorrow at six, so keep the lights legal and I'll keep my clipboard in the drawer.”",
         "importance": 3
+      },
+      {
+        "tick": 278,
+        "text": "I (pickleball court 1): Pick up my paddle and work on third-shot drop drills with Donna",
+        "importance": 4
+      },
+      {
+        "tick": 278,
+        "text": "Donna said to Gary: “Okay, Gary, enough chatting, grab your paddle and get to the kitchen line. Soft hands on the third shot, ten drops in a row, and I'm counting out loud.”",
+        "importance": 4
+      },
+      {
+        "tick": 278,
+        "text": "Hal said to Donna: “I'll watch a few points, Donna. Two hours on court one, I see the board says so, and I'll hold Gary to the clock. Court two after, maybe, if my knee cooperates.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 191,
-        "text": "Hal said to Rosa: “Evening, Rosa. Cornbread's in hand and I'll carry the table wherever you want it. Just point and I'll have it squared away.”",
-        "importance": 4
-      },
-      {
-        "tick": 191,
-        "text": "Rosa said to Donna: “Donna, that cobbler is the reason I'm not getting up from this table. Thank you for pulling everyone together tonight, this is exactly the neighborhood I hoped the Loop would be.”",
-        "importance": 4
-      },
-      {
-        "tick": 192,
-        "text": "I (donna pickleball bag): Check the bag and pack the spare paddle and extra balls for Gary",
-        "importance": 5
-      },
       {
         "tick": 193,
         "text": "I (donna club calendar): Pencil in a two-hour practice slot with Gary and note the upcoming ladder match",
@@ -2025,24 +2012,24 @@
         "tick": 277,
         "text": "Hal said to Gary: “Evening, Gary. Cart still in the garage for the committee? Fine. Parade's tomorrow at six, so keep the lights legal and I'll keep my clipboard in the drawer.”",
         "importance": 4
+      },
+      {
+        "tick": 278,
+        "text": "I said to Gary: “Okay, Gary, enough chatting, grab your paddle and get to the kitchen line. Soft hands on the third shot, ten drops in a row, and I'm counting out loud.”",
+        "importance": 6
+      },
+      {
+        "tick": 278,
+        "text": "Gary (pickleball court 1): Pick up my paddle and work on third-shot drop drills with Donna",
+        "importance": 6
+      },
+      {
+        "tick": 278,
+        "text": "Hal said to Donna: “I'll watch a few points, Donna. Two hours on court one, I see the board says so, and I'll hold Gary to the clock. Court two after, maybe, if my knee cooperates.”",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 188,
-        "text": "Gary said to Rosa: “Evening, Rosa! Got the ice and cold drinks right here, and the cart's staying in the garage till the review board signs off. Want me to carry anything over?”",
-        "importance": 5
-      },
-      {
-        "tick": 188,
-        "text": "Rosa said to Gary: “Gary, there you are! Come on in, doors are open. Chairs and ice go through the kitchen, and I'll have Donna's seat waiting when she gets here.”",
-        "importance": 5
-      },
-      {
-        "tick": 188,
-        "text": "You arrived at Rosa's House.",
-        "importance": 5
-      },
       {
         "tick": 189,
         "text": "I (rosa dining table): Square the table up and set the cornbread on it, ready for dinner",
@@ -3027,19 +3014,24 @@
         "tick": 277,
         "text": "Donna said to Hal: “Hal! Perfect timing, come watch Gary's third-shot drops. Two hours on court one, and the ladder won't climb itself!”",
         "importance": 5
-      }
-    ],
-    "rosa": [
+      },
       {
-        "tick": 184,
-        "text": "You arrived at Magnolia Loop (the street).",
+        "tick": 278,
+        "text": "I said to Donna: “I'll watch a few points, Donna. Two hours on court one, I see the board says so, and I'll hold Gary to the clock. Court two after, maybe, if my knee cooperates.”",
         "importance": 4
       },
       {
-        "tick": 185,
-        "text": "I (street bulletin board): Read the bulletin board for any new notices before heading back to finish dinner prep",
-        "importance": 3
+        "tick": 278,
+        "text": "Gary (pickleball court 1): Pick up my paddle and work on third-shot drop drills with Donna",
+        "importance": 4
       },
+      {
+        "tick": 278,
+        "text": "Donna said to Gary: “Okay, Gary, enough chatting, grab your paddle and get to the kitchen line. Soft hands on the third shot, ten drops in a row, and I'm counting out loud.”",
+        "importance": 4
+      }
+    ],
+    "rosa": [
       {
         "tick": 185,
         "text": "Hal just arrived.",
@@ -4029,6 +4021,16 @@
         "tick": 277,
         "text": "I waited: Finish my coffee at the kitchen counter and run through tomorrow's plan: treats by the door, parade cart at the Loop, Gary and Donna meeting me there.",
         "importance": 3
+      },
+      {
+        "tick": 278,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 278,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ]
   },
@@ -4076,9 +4078,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "energized",
+    "donna": "determined",
     "hal": "mellow",
-    "rosa": "content"
+    "rosa": "content, eager"
   },
   "laws": [
     {
@@ -4217,10 +4219,19 @@
         "Donna said to Hal: “Hal! Perfect timing, come watch Gary's third-shot drops. Two hours on court one, and the ladder won't climb itself!”",
         "Hal said to Gary: “Evening, Gary. Cart still in the garage for the committee? Fine. Parade's tomorrow at six, so keep the lights legal and I'll keep my clipboard in the drawer.”"
       ]
+    },
+    {
+      "tick": 278,
+      "time": "Friday, October 30, 6:17 PM",
+      "story": "Friday evening at Sumter Oaks has Gary and Donna at pickleball court one in the Rec Center, where Donna is counting out loud as Gary works through ten third-shot drops at the kitchen line. Hal has settled in nearby to watch a few points and keep an eye on the clock, with a possible turn on court two if his knee cooperates. Meanwhile, Rosa has left her house and is heading out along Magnolia Loop in the breezy, 76-degree October air.",
+      "dialogue": [
+        "Donna said to Gary: “Okay, Gary, enough chatting, grab your paddle and get to the kitchen line. Soft hands on the third shot, ten drops in a row, and I'm counting out loud.”",
+        "Hal said to Donna: “I'll watch a few points, Donna. Two hours on court one, I see the board says so, and I'll hold Gary to the clock. Court two after, maybe, if my knee cooperates.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 8.72954,
+    "total_usd": 8.76121,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4295,13 +4306,12 @@
         "usd": 0.47234
       },
       "2026-10-30": {
-        "ticks": 11,
-        "usd": 0.34842
+        "ticks": 12,
+        "usd": 0.38009
       }
     }
   },
   "recent_tick_costs": [
-    0.03044,
     0.03028,
     0.03271,
     0.03316,
@@ -4324,7 +4334,8 @@
     0.03101,
     0.03054,
     0.0304,
-    0.03107
+    0.03107,
+    0.03167
   ],
   "fund": {
     "gross_usd": 0.0,
