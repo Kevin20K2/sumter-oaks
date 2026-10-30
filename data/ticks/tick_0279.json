@@ -1,0 +1,117 @@
+{
+  "tick": 279,
+  "simulation_time": "Friday, October 30, 7:17 PM",
+  "weather": "Breezy and clear, 75°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "rec_center",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 7:17 on this breezy, clear Friday evening, Gary is working through third-shot drops on the pickleball court at the Rec Center while Donna counts each clean one and Hal keeps an eye on the clock. Donna is determined to see her husband's drops land just right, and Gary seems perfectly content to take the kitchen line and let her cheer him on. Meanwhile over on Magnolia Loop, Rosa is reading the bulletin board for parade and Halloween notices and pinning up a trick-or-treat reminder, feeling hopeful about the weekend ahead.",
+  "events": [
+    "Gary (pickleball court 1): Grab my paddle, take the kitchen line, and work ten third-shot drops while Donna counts",
+    "Rosa (street bulletin board): Read the board for parade and Halloween notices, and pin up a trick-or-treat reminder"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna told me to grab my paddle and get to the kitchen line for third-shot drops, and Hal is watching and holding me to the two-hour clock on court 1. I've already chatted enough, so I should do what she asked. This is the best part of my week, and it's good to keep my word about the time limit. The cart stays in the garage until Architectural Review signs off, nothing to do about that tonight.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Grab my paddle, take the kitchen line, and work ten third-shot drops while Donna counts"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 7:17 PM and Gary and I have been drilling third-shot drops on court one. Hal is watching and holding us to the two-hour reservation limit, which is fine under L-05. I already told Gary to do ten drops in a row and that I'd count out loud, so now I should actually follow through and coach him, not chat more. Keep it short and push him forward so we climb the ladder.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "That's it, Gary, drop it soft over the net and let it die in the kitchen. Count with me: that's three clean ones, seven to go, and Hal's watching, so make them pretty!"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna and Gary are in the middle of drop drills on court one, and they've got their two hours posted, which is exactly what L-05 allows. I told Donna I'd watch a few points and hold Gary to the clock, so I'll keep my word. My reflections say I've been more invested in being right than being neighborly, and the flamingo report can wait until after the parade. A little encouragement costs me nothing, and the kiosk can keep time better than I can.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Keep your wrist loose on those drops, Gary. Clock's running on your two hours, so don't waste it talking to me."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm on Magnolia Loop at 7:17 PM the night before Halloween weekend, and nobody's in sight. The parade cart folder is in, the dinner went well, and I've already finished my coffee and run through tomorrow's plan. The street bulletin board is right here, and it's the natural place to check for parade notices, review desk news, or trick-or-treat info before tomorrow. Better than standing around or repeating plans I've already made.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the board for parade and Halloween notices, and pin up a trick-or-treat reminder"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03155,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10402,
+        "output_tokens": 1061,
+        "usd": 0.03141
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 478,
+        "output_tokens": 192,
+        "usd": 0.00014
+      }
+    }
+  },
+  "season": "halloween"
+}
