@@ -1,0 +1,121 @@
+{
+  "tick": 293,
+  "simulation_time": "Saturday, October 31, 6:17 PM",
+  "weather": "Sunny, 83°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "rec_center",
+    "rosa": "rosas_house"
+  },
+  "story": "As the sun sits warm over Sumter Oaks at 6:17 on Halloween evening, Gary is eager to squeeze in a few third-shot drops with Donna on the rec center pickleball courts before the parade starts. Hal, dutiful as ever, presses Donna about the flamingo flock she promised to thin, while she cheerfully promises it'll be handled before the street judging. Rosa is already heading down Magnolia Loop, where the golf cart parade is rolling past neighbors waving from the curb under strings of orange lights, cobwebs, and jack-o'-lanterns.",
+  "events": [
+    "Town news: The Halloween golf cart parade is rolling around Magnolia Loop: carts trimmed in orange lights, cobwebs and jack-o'-lanterns, horns tooting, with neighbors waving from the curb.",
+    "Gary (pickleball court 1): Grab a paddle and hit a few quick third-shot drops with Donna before the parade",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 6:17 and the parade starts at 6. Donna and Hal are here at the rec center, and I've already told Donna about Rosa's cider, so no need to repeat that. Donna wants a few quick third-shot drops before we head out. Court one time is nearly up, and my cart needs to be on Magnolia Loop. I'll use the time on court one for a couple of drops, then go. Better to act than keep chatting.",
+      "emotional_state": "eager",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Grab a paddle and hit a few quick third-shot drops with Donna before the parade"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 6:17 and the parade started at 6, so Gary and I are already late. Gary just told me he has to wrap up and mentioned cider at Rosa's. Hal just arrived and I promised him I'd pull the extra flamingos behind the hedge, so I should acknowledge him. I already did drills with Gary and invited him; no need to repeat. Best move now is to greet Hal, mention the flamingo promise and the parade, and rally us all out the door toward Magnolia Loop.",
+      "emotional_state": "cheerful, hurried",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, you made it! The flamingos are on my list, I'll have them behind the hedge before the street judging. Right now Gary and I have a parade to catch, so ride along and we'll all do cider at Rosa's after."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at the Rec Center with Gary and Donna right in front of me, and it's 6:17 on parade eve, er, parade night. My notebook says Gary's cart mods and Donna's flamingos both need reporting, but Town Hall is the place for filing, not the pickleball courts. Still, Donna promised to thin the flock before parade day, and parade day is today. Best to hold her to it right now, dry and civil, with a nod to the fact that I can be counted on. I'll leave Gary's cart for the committee filing.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Evening, Donna. Parade's today, and you gave me your word on thinning the flock. I counted my binoculars' worth this morning, and L-02 says three. Where do we stand?"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 6:17 PM on Halloween, trick-or-treaters are already out on Magnolia Loop, and I'm home alone with the bagged treats I set by the door last tick. Gary and Donna aren't in sight. The treats are ready, my evening is clear, and I want to be part of the neighborhood tonight. Time to head out to the Loop to hand out candy and catch up with Gary and Donna instead of standing around the kitchen.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to the Loop with the treat bags to hand out candy and find Gary and Donna."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03216,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10148,
+        "output_tokens": 1171,
+        "usd": 0.03201
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 560,
+        "output_tokens": 196,
+        "usd": 0.00015
+      }
+    }
+  },
+  "season": "halloween",
+  "scenes": [
+    "parade"
+  ]
+}
