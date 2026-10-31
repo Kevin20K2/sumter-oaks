@@ -1,0 +1,118 @@
+{
+  "tick": 294,
+  "simulation_time": "Saturday, October 31, 7:17 PM",
+  "weather": "Sunny, 82°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "rec_center",
+    "rosa": "magnolia_loop"
+  },
+  "story": "Gary and Donna are wrapping up their two hours at the Rec Center, with Gary's third-shot drops finally behaving and Donna promising Hal a careful count of her remaining pieces, cider at Rosa's included. Hal is heading out to Magnolia Loop, where Rosa is pinning a thank-you note to the street bulletin board and inviting everyone to coffee on her porch. Over at the Town Square bandstand, the costume contest is getting underway, and a judge with a clipboard is calling for entries in both best costume and best-decorated golf cart. It's a sunny Halloween evening at 82 degrees, and the whole town seems to be drifting toward the Loop and the bandstand.",
+  "events": [
+    "Town news: The costume contest is starting at the Town Square bandstand. A judge with a clipboard is calling for entries: best costume and best-decorated golf cart.",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (street bulletin board): Pin up a note thanking neighbors for the parade and dinner, inviting everyone to coffee at my porch"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 7:17 PM on Halloween and the parade is already rolling around Magnolia Loop. I've been drilling third-shot drops with Donna for a good while, and the two-hour limit on court one (L-05) must be about up. Donna just said we have a parade to catch, and Rosa's offering cider and a warm porch after. My cart rig is why I'm doing this at all, so I should wrap up here, thank Donna, and head out to the street before I miss the whole thing. I'll say it short and then go.",
+      "emotional_state": "eager",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "That's our two hours, Donna, and my third-shot drops are finally behaving. Let's hand the court back and get out to the Loop before the parade passes us by."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal just asked me point-blank about the flamingos and L-02 says three max. I promised him, and I can't dodge him twice. Gary is waiting with a paddle for third-shot drops, and it's already 7:17, so the parade and costume contest are happening right now. I'll give Hal a straight answer with a firm commitment so that conversation ends, then get Gary onto the court. Keeping my word keeps my standing in the social scene.",
+      "emotional_state": "cheerful, slightly guilty",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, you've caught me fair and square. I'm down to three by street view, and the rest go behind the hedge the minute Gary and I finish these drills, cross my heart. Come count them yourself after, and cider at Rosa's is on me."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna already gave her word on the flamingos and invited me to ride along and have cider at Rosa's. Asking again would just be nagging, and she's already answered. The parade's rolling and Gary's cart mods are surely on display out there, which keeps my notebook busy. I'm an old sergeant who respects a promise made, so I'll take her at her word and head to Magnolia Loop. I can eyeball the lawn ornament count on the way and still enjoy the parade, whatever I tell myself about it being official business.",
+      "emotional_state": "grudgingly content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to Magnolia Loop to see the parade and check Donna's flamingo count, notebook in pocket."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm on Magnolia Loop with the parade rolling and nobody in line-of-sight. My treats are bagged and I've done the big dinner already. The street bulletin board is right here, and since I'm trying to build real community, it's a good moment to post a friendly thank-you and an open invitation for the neighbors rather than chase people down. Low effort, keeps the momentum going.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Pin up a note thanking neighbors for the parade and dinner, inviting everyone to coffee at my porch"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03337,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10881,
+        "output_tokens": 1144,
+        "usd": 0.0332
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 550,
+        "output_tokens": 232,
+        "usd": 0.00017
+      }
+    }
+  },
+  "season": "halloween"
+}
