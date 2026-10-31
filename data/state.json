@@ -1,6 +1,6 @@
 {
-  "tick": 290,
-  "time": "2026-10-31T14:17",
+  "tick": 291,
+  "time": "2026-10-31T15:17",
   "positions": {
     "gary": "rec_center",
     "donna": "magnolia_loop",
@@ -8,35 +8,22 @@
     "rosa": "magnolia_loop"
   },
   "perceptions": {
-    "gary": [
-      "Donna (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving only three visible from the street",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and record the tally in my notebook",
-      "Rosa said to Gary: “Thanks, Gary, I'll take you up on that porch help later. Go win your pickleball, and tell Donna and Hal there's hot cider on my porch after the parade.”",
-      "You arrived at Rec Center."
-    ],
+    "gary": [],
     "donna": [
-      "Gary headed to Rec Center.",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and record the tally in my notebook",
-      "Rosa said to Gary: “Thanks, Gary, I'll take you up on that porch help later. Go win your pickleball, and tell Donna and Hal there's hot cider on my porch after the parade.”"
+      "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02 in my notebook",
+      "Rosa said to Donna: “Looks like three and legal to me, Donna. Hal can put his notebook away and come get a cider on my porch once the parade wraps up.”"
     ],
     "hal": [
-      "Gary headed to Rec Center.",
-      "Donna (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving only three visible from the street",
-      "Rosa said to Gary: “Thanks, Gary, I'll take you up on that porch help later. Go win your pickleball, and tell Donna and Hal there's hot cider on my porch after the parade.”"
+      "Donna said to Hal: “Hal, I tucked the extras behind the hedge like I promised. What's your count from the street, three? I'm heading to the Rec Center to catch Gary before the parade.”",
+      "Rosa said to Donna: “Looks like three and legal to me, Donna. Hal can put his notebook away and come get a cider on my porch once the parade wraps up.”"
     ],
     "rosa": [
-      "Gary headed to Rec Center.",
-      "Donna (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving only three visible from the street",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and record the tally in my notebook"
+      "Donna said to Hal: “Hal, I tucked the extras behind the hedge like I promised. What's your count from the street, three? I'm heading to the Rec Center to catch Gary before the parade.”",
+      "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02 in my notebook"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 202,
-        "text": "I headed to Gary's House.",
-        "importance": 6
-      },
       {
         "tick": 202,
         "text": "Donna (street bulletin board): Pin up a tally sheet for parade theme ideas and note that cart plans go to Architectural Review first",
@@ -1031,24 +1018,14 @@
         "tick": 289,
         "text": "You arrived at Rec Center.",
         "importance": 4
+      },
+      {
+        "tick": 290,
+        "text": "I (pickleball court 1): Practice third-shot drops and footwork on court one",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 203,
-        "text": "I said to Hal: “Hal, I love the hospital theme and I'm keeping my flamingos to three, bandages and all. If I swing by with my cart plans tomorrow, will you look them over before I send them to Architectural Review?”",
-        "importance": 5
-      },
-      {
-        "tick": 203,
-        "text": "Hal said to Rosa: “Saw your notice, Rosa. Sound rules, and I'll hold Gary to every one of them. What time is dinner, and what can I haul over? I'll bring the folding table, and I know where the extra chairs are.”",
-        "importance": 5
-      },
-      {
-        "tick": 203,
-        "text": "Rosa said to Hal: “Hal, I appreciate the rundown, and I'll keep every cart inside the rules. But right now there's a plate with your name on it at my table, and Donna's casserole is going cold. Leave the notebook on the porch and come eat with us.”",
-        "importance": 5
-      },
       {
         "tick": 204,
         "text": "I said to Rosa: “Rosa, you're a doll for holding dinner. Hal, grab that folding table and let's go before my casserole turns into a doorstop. I'll walk over with you both.”",
@@ -2033,24 +2010,24 @@
         "tick": 289,
         "text": "Rosa said to Gary: “Thanks, Gary, I'll take you up on that porch help later. Go win your pickleball, and tell Donna and Hal there's hot cider on my porch after the parade.”",
         "importance": 5
+      },
+      {
+        "tick": 290,
+        "text": "I said to Hal: “Hal, I tucked the extras behind the hedge like I promised. What's your count from the street, three? I'm heading to the Rec Center to catch Gary before the parade.”",
+        "importance": 4
+      },
+      {
+        "tick": 290,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02 in my notebook",
+        "importance": 4
+      },
+      {
+        "tick": 290,
+        "text": "Rosa said to Donna: “Looks like three and legal to me, Donna. Hal can put his notebook away and come get a cider on my porch once the parade wraps up.”",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 200,
-        "text": "Donna (street bulletin board): Pin up a Halloween parade committee sign-up sheet with Hal listed as official decoration inspector",
-        "importance": 4
-      },
-      {
-        "tick": 200,
-        "text": "Rosa (street bulletin board): Pin up a note naming our parade committee and asking neighbors to bring theme ideas and sign up for the Halloween golf cart parade",
-        "importance": 4
-      },
-      {
-        "tick": 201,
-        "text": "I said to Rosa: “Saw the sign-up, Rosa. I'll inspect, but I go by the book: three ornaments from the street, no cart changes without review, and holiday lights aren't legal until Thanksgiving. Keep the parade inside that and I'll have nothing to write.”",
-        "importance": 5
-      },
       {
         "tick": 201,
         "text": "Gary said to Hal: “Good to have an inspector, Hal. I'll have my wiring sketches done by tomorrow, and you can go over every line against the rules before a single bulb goes on a cart.”",
@@ -3035,24 +3012,24 @@
         "tick": 289,
         "text": "Rosa said to Gary: “Thanks, Gary, I'll take you up on that porch help later. Go win your pickleball, and tell Donna and Hal there's hot cider on my porch after the parade.”",
         "importance": 5
+      },
+      {
+        "tick": 290,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02 in my notebook",
+        "importance": 5
+      },
+      {
+        "tick": 290,
+        "text": "Donna said to Hal: “Hal, I tucked the extras behind the hedge like I promised. What's your count from the street, three? I'm heading to the Rec Center to catch Gary before the parade.”",
+        "importance": 5
+      },
+      {
+        "tick": 290,
+        "text": "Rosa said to Donna: “Looks like three and legal to me, Donna. Hal can put his notebook away and come get a cider on my porch once the parade wraps up.”",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 191,
-        "text": "Hal said to Rosa: “Evening, Rosa. Cornbread's in hand and I'll carry the table wherever you want it. Just point and I'll have it squared away.”",
-        "importance": 7
-      },
-      {
-        "tick": 192,
-        "text": "I (rosa dining table): Clear off the leftover dishes and wipe down the long table",
-        "importance": 3
-      },
-      {
-        "tick": 193,
-        "text": "I (rosa dining table): Finish clearing the last dishes and wipe down the long table",
-        "importance": 3
-      },
       {
         "tick": 194,
         "text": "I (rosa shift schedule): Check my per-diem shifts for the week so I don't overbook myself",
@@ -4037,6 +4014,21 @@
         "tick": 289,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and record the tally in my notebook",
         "importance": 5
+      },
+      {
+        "tick": 290,
+        "text": "I said to Donna: “Looks like three and legal to me, Donna. Hal can put his notebook away and come get a cider on my porch once the parade wraps up.”",
+        "importance": 4
+      },
+      {
+        "tick": 290,
+        "text": "Donna said to Hal: “Hal, I tucked the extras behind the hedge like I promised. What's your count from the street, three? I'm heading to the Rec Center to catch Gary before the parade.”",
+        "importance": 4
+      },
+      {
+        "tick": 290,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02 in my notebook",
+        "importance": 4
       }
     ]
   },
@@ -4083,10 +4075,10 @@
     ]
   },
   "emotions": {
-    "gary": "warm, eager",
-    "donna": "determined",
-    "hal": "stern",
-    "rosa": "cheerful"
+    "gary": "determined",
+    "donna": "cheerful",
+    "hal": "watchful",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4229,10 +4221,19 @@
       "dialogue": [
         "Rosa said to Gary: “Thanks, Gary, I'll take you up on that porch help later. Go win your pickleball, and tell Donna and Hal there's hot cider on my porch after the parade.”"
       ]
+    },
+    {
+      "tick": 290,
+      "time": "Saturday, October 31, 3:17 PM",
+      "story": "On Saturday afternoon in Sumter Oaks, Gary is practicing third-shot drops and footwork on pickleball court one at the Rec Center, determined to sharpen his game before the parade. Donna, cheerful as ever, has tucked the extra plastic flamingos behind the hedge on Magnolia Loop and is heading over to find him, while Hal stays watchful on the street, tallying the flock against his notebook. Rosa, content on her porch, assures Donna that three flamingos look legal to her and invites Hal to put his notebook away and join her for a cider once the parade wraps up.",
+      "dialogue": [
+        "Donna said to Hal: “Hal, I tucked the extras behind the hedge like I promised. What's your count from the street, three? I'm heading to the Rec Center to catch Gary before the parade.”",
+        "Rosa said to Donna: “Looks like three and legal to me, Donna. Hal can put his notebook away and come get a cider on my porch once the parade wraps up.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 9.11063,
+    "total_usd": 9.1425,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4311,13 +4312,12 @@
         "usd": 0.4771
       },
       "2026-10-31": {
-        "ticks": 8,
-        "usd": 0.25241
+        "ticks": 9,
+        "usd": 0.28428
       }
     }
   },
   "recent_tick_costs": [
-    0.03222,
     0.0317,
     0.03241,
     0.03051,
@@ -4340,7 +4340,8 @@
     0.03095,
     0.03235,
     0.03337,
-    0.03338
+    0.03338,
+    0.03187
   ],
   "fund": {
     "gross_usd": 0.0,
