@@ -1,49 +1,34 @@
 {
-  "tick": 287,
-  "time": "2026-10-31T11:17",
+  "tick": 288,
+  "time": "2026-10-31T12:17",
   "positions": {
     "gary": "magnolia_loop",
     "donna": "magnolia_loop",
     "hal": "magnolia_loop",
-    "rosa": "rosas_house"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “There he is! One o'clock at the court, Gary, bring water and your nerve. We'll work on soft third-shot drops, then you can go wire your parade cart after.”",
-      "Hal said to Donna: “Morning, Donna. I make it more than three flamingos visible from the street, and L-02 says three. Care to thin the flock before parade day, or shall I put it in front of the committee?”"
+      "Donna said to Hal: “Hal, you've got hawk eyes and I love you for it. I'll pull the extras behind the hedge before the parade, three visible from the street, scout's honor. No need to bother the committee.”",
+      "Hal (donna flamingo flock): Count the flamingos visible from the street and note the tally in my notebook",
+      "Rosa just arrived."
     ],
     "donna": [
-      "Gary said to Donna: “Morning, Donna. Good day for the parade. Those flamingos of yours counting up to three yet, or are we flirting with the ornament limit?”",
-      "Hal said to Donna: “Morning, Donna. I make it more than three flamingos visible from the street, and L-02 says three. Care to thin the flock before parade day, or shall I put it in front of the committee?”"
+      "Gary (street bulletin board): Read the parade notices and see if there's any word on the cart committee",
+      "Hal (donna flamingo flock): Count the flamingos visible from the street and note the tally in my notebook",
+      "Rosa just arrived."
     ],
     "hal": [
-      "Gary said to Donna: “Morning, Donna. Good day for the parade. Those flamingos of yours counting up to three yet, or are we flirting with the ornament limit?”",
-      "Donna said to Gary: “There he is! One o'clock at the court, Gary, bring water and your nerve. We'll work on soft third-shot drops, then you can go wire your parade cart after.”"
+      "Gary (street bulletin board): Read the parade notices and see if there's any word on the cart committee",
+      "Donna said to Hal: “Hal, you've got hawk eyes and I love you for it. I'll pull the extras behind the hedge before the parade, three visible from the street, scout's honor. No need to bother the committee.”",
+      "Rosa just arrived."
     ],
-    "rosa": []
+    "rosa": [
+      "You arrived at Magnolia Loop (the street)."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 198,
-        "text": "Rosa said to Hal: “Hal, Gary and I already talked about the cart. It's staying put until the review board signs off. Now put the notebook away and help me plan the Halloween parade, I want all four of us on the Loop with decorated carts.”",
-        "importance": 6
-      },
-      {
-        "tick": 199,
-        "text": "I said to Rosa: “Count me in for the parade, Rosa. I'll draw up the wiring plan and lights for all four carts on paper while we wait on the board, so we can bolt it all on the minute they sign off.”",
-        "importance": 5
-      },
-      {
-        "tick": 199,
-        "text": "Donna said to Rosa: “Rosa, committee's official! You pick the theme and I'll make a sign-up sheet for the bulletin board. Hal can be our compliance officer, he's already counting, so everything we hang stays within the rules and Gary's cart rides only once it's approved.”",
-        "importance": 5
-      },
-      {
-        "tick": 199,
-        "text": "Hal said to Rosa: “Fine, notebook's going in my pocket. Three flamingos and a garaged cart suit me. I'll help with the parade, but somebody has to keep the decorations legal, and I volunteer.”",
-        "importance": 5
-      },
       {
         "tick": 199,
         "text": "Rosa said to Donna: “Madam chair, first job: Hal's already counting your flamingos, so let's make him the committee's official decoration inspector. Keep every porch at three or fewer ornaments from the street, and we'll never give him a line to write.”",
@@ -1023,29 +1008,29 @@
         "tick": 286,
         "text": "Hal said to Donna: “Morning, Donna. I make it more than three flamingos visible from the street, and L-02 says three. Care to thin the flock before parade day, or shall I put it in front of the committee?”",
         "importance": 3
+      },
+      {
+        "tick": 287,
+        "text": "I (street bulletin board): Read the parade notices and see if there's any word on the cart committee",
+        "importance": 4
+      },
+      {
+        "tick": 287,
+        "text": "Donna said to Hal: “Hal, you've got hawk eyes and I love you for it. I'll pull the extras behind the hedge before the parade, three visible from the street, scout's honor. No need to bother the committee.”",
+        "importance": 4
+      },
+      {
+        "tick": 287,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the tally in my notebook",
+        "importance": 4
+      },
+      {
+        "tick": 287,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 200,
-        "text": "I (street bulletin board): Pin up a Halloween parade committee sign-up sheet with Hal listed as official decoration inspector",
-        "importance": 5
-      },
-      {
-        "tick": 200,
-        "text": "Gary said to Rosa: “Pick your theme, Rosa, and I'll sketch lights and wiring for all four carts tonight. Everything stays on paper until the board signs off, and Hal can check my drawings for the rules.”",
-        "importance": 5
-      },
-      {
-        "tick": 200,
-        "text": "Hal said to Donna: “Inspector reporting, Donna. I count three flamingos from the street, and that's the limit. Add one more for Halloween and it's a violation, parade or no parade.”",
-        "importance": 5
-      },
-      {
-        "tick": 200,
-        "text": "Rosa (street bulletin board): Pin up a note naming our parade committee and asking neighbors to bring theme ideas and sign up for the Halloween golf cart parade",
-        "importance": 5
-      },
       {
         "tick": 201,
         "text": "I said to Rosa: “Love the note, Rosa. Hal, my flock stays at three, I promise. Let's all bring theme ideas to the bulletin board by tomorrow, and I'll tally them up so Gary can start sketching the carts.”",
@@ -2025,29 +2010,29 @@
         "tick": 286,
         "text": "Hal said to Donna: “Morning, Donna. I make it more than three flamingos visible from the street, and L-02 says three. Care to thin the flock before parade day, or shall I put it in front of the committee?”",
         "importance": 5
+      },
+      {
+        "tick": 287,
+        "text": "I said to Hal: “Hal, you've got hawk eyes and I love you for it. I'll pull the extras behind the hedge before the parade, three visible from the street, scout's honor. No need to bother the committee.”",
+        "importance": 4
+      },
+      {
+        "tick": 287,
+        "text": "Gary (street bulletin board): Read the parade notices and see if there's any word on the cart committee",
+        "importance": 4
+      },
+      {
+        "tick": 287,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the tally in my notebook",
+        "importance": 4
+      },
+      {
+        "tick": 287,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 197,
-        "text": "Donna said to Gary: “Gary, perfect timing! Let's get in a practice session before the ladder match so we can climb past Pruitt-Kowalski. And since you're the cart whisperer, think about decorating for the Halloween parade, but keep it Architectural Review friendly!”",
-        "importance": 4
-      },
-      {
-        "tick": 197,
-        "text": "Rosa said to Donna: “Morning, Donna! Thank you for that casserole last night, I'm still thinking about it. Have you all seen the Halloween flyer on the board? I'm thinking we should enter the cart parade together.”",
-        "importance": 4
-      },
-      {
-        "tick": 198,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note it in my notebook",
-        "importance": 4
-      },
-      {
-        "tick": 198,
-        "text": "Gary said to Hal: “Fair question, Hal. Application's filed with Architectural Review, but it's not signed off yet, so the cart stays parked in the garage until it is. No notebook entries on my account.”",
-        "importance": 4
-      },
       {
         "tick": 198,
         "text": "Donna said to Rosa: “Rosa, I'm in, and I'll chair the whole parade committee! Gary can handle the cart, and we'll keep the decorations under review limits. Gary, flamingos are at three, I counted, and yes, third-shot drops tomorrow at nine.”",
@@ -3027,19 +3012,29 @@
         "tick": 286,
         "text": "Donna said to Gary: “There he is! One o'clock at the court, Gary, bring water and your nerve. We'll work on soft third-shot drops, then you can go wire your parade cart after.”",
         "importance": 5
+      },
+      {
+        "tick": 287,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the tally in my notebook",
+        "importance": 5
+      },
+      {
+        "tick": 287,
+        "text": "Gary (street bulletin board): Read the parade notices and see if there's any word on the cart committee",
+        "importance": 5
+      },
+      {
+        "tick": 287,
+        "text": "Donna said to Hal: “Hal, you've got hawk eyes and I love you for it. I'll pull the extras behind the hedge before the parade, three visible from the street, scout's honor. No need to bother the committee.”",
+        "importance": 5
+      },
+      {
+        "tick": 287,
+        "text": "Rosa just arrived.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 189,
-        "text": "I said to Donna: “Donna, there you are! Bring that cobbler straight through to the kitchen, Hal's already headed in and your seat is waiting. Gary, grab the ice and follow us, the table's set.”",
-        "importance": 7
-      },
-      {
-        "tick": 189,
-        "text": "Gary headed to Rosa's House.",
-        "importance": 7
-      },
       {
         "tick": 189,
         "text": "Donna said to Gary: “Gary, there you are! I've got the peach cobbler warming, so let's walk over to Rosa's together. And tomorrow morning you and I are hitting dinks at the rec center, no excuses.”",
@@ -4029,6 +4024,16 @@
         "tick": 286,
         "text": "I (rosa shift schedule): Check my per-diem shifts to make sure tonight is clear for trick-or-treaters",
         "importance": 3
+      },
+      {
+        "tick": 287,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 287,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 3
       }
     ]
   },
@@ -4076,7 +4081,7 @@
   },
   "emotions": {
     "gary": "cheerful",
-    "donna": "cheerful",
+    "donna": "cheerful, mildly sheepish",
     "hal": "dutiful",
     "rosa": "content"
   },
@@ -4195,9 +4200,18 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 287,
+      "time": "Saturday, October 31, 12:17 PM",
+      "story": "On Magnolia Loop in Sumter Oaks, this sunny Halloween afternoon at 83 degrees, Gary stops at the street bulletin board to scan the parade notices for any word from the cart committee. Donna leans toward Hal with a sheepish grin, promising to tuck the extra decorations behind the hedge before the parade so only three remain visible, and Hal, dutifully counting the pink flamingo flock in his notebook, takes note of the tally. Meanwhile, Rosa, content as ever, strolls out from her house to join the neighbors on the street.",
+      "dialogue": [
+        "Donna said to Hal: “Hal, you've got hawk eyes and I love you for it. I'll pull the extras behind the hedge before the parade, three visible from the street, scout's honor. No need to bother the committee.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 9.01153,
+    "total_usd": 9.04388,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4276,13 +4290,12 @@
         "usd": 0.4771
       },
       "2026-10-31": {
-        "ticks": 5,
-        "usd": 0.15331
+        "ticks": 6,
+        "usd": 0.18566
       }
     }
   },
   "recent_tick_costs": [
-    0.03133,
     0.03067,
     0.03146,
     0.03222,
@@ -4305,7 +4318,8 @@
     0.03024,
     0.03108,
     0.03045,
-    0.03095
+    0.03095,
+    0.03235
   ],
   "fund": {
     "gross_usd": 0.0,
