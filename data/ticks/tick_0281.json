@@ -1,0 +1,118 @@
+{
+  "tick": 281,
+  "simulation_time": "Friday, October 30, 9:17 PM",
+  "weather": "Breezy and clear, 73°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "rec_center",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a breezy, clear Friday night in Sumter Oaks, Gary is working on his third-shot drops at the Rec Center pickleball courts, aiming for three clean ones in a row. Donna is cheering him on with soft-hands tips and proudly suggesting they call it a night to save their legs for the parade at one o'clock tomorrow. Hal has wandered off down Magnolia Loop with a dutiful air, while Rosa, back home, is checking her schedule to make sure Saturday evening stays clear for Halloween.",
+  "events": [
+    "Gary (pickleball court 1): Keep hitting third-shot drops from the kitchen line, soft hands, going for the last three clean ones",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa shift schedule): Check the schedule to confirm Saturday evening is clear for Halloween"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna's counting my clean drops and I'm at seven. Three more and I'm ladder-ready. Hal's keeping quiet at the rail, and I've already said plenty to him earlier. The two-hour limit on court one is what I promised to respect, so I shouldn't waste it talking. Best move is to keep working the drills, soft hands, and get those last three clean ones.",
+      "emotional_state": "focused, content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Keep hitting third-shot drops from the kitchen line, soft hands, going for the last three clean ones"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary's at seven clean drops and I told him three more and he's ladder-ready. It's past nine at night, though, and Halloween on the Loop is tomorrow, so I don't want him worn out or tripping over quiet hours. L-03 only covers amplified sound, but I'm not going to be the one counting out loud at the crack of midnight. I've already given him the count, so no need to repeat myself. Best move is to close out the drill on a high note, cheer the progress, and lock in the next step: tomorrow's one o'clock court date, then costume and parade talk. Hal's watching quietly, which is fine by me.",
+      "emotional_state": "proud",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "That's the wrist, Gary, soft hands all the way! Let's call it a night on a good one, save those legs for our one o'clock tomorrow before the parade."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's past nine at night, the parade is tomorrow, and I've spent enough hours leaning on this rail watching drills. Gary and Donna are mid-drill and don't need me barking at them. My stated goal is to get the cart and flamingo matters in front of the architectural review committee, but my own reflections say Gary's been straight with me and Donna keeps her word, so I'd rather see the rules handled fairly than snitch in a huff. Nothing gets done standing here. Best move is to head out to Magnolia Loop, look over the street-facing situation myself so I know exactly what's visible and what's not, and make sure everything is squared away before the parade. Quiet hours start at 10 anyway.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Leaving the drills to them. Heading out to walk Magnolia Loop and check what's actually visible from the street before the parade tomorrow."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm home at 9:17 PM on Friday, the night before Halloween. Nobody's around. The treats are baked, the parade folder is turned in, and the trick-or-treat reminder is pinned on the board. The one thing I haven't looked at tonight is my per-diem shift schedule, and I need to make sure Saturday evening is actually clear before I promise the kids and the neighbors I'll be at the Loop handing out treats. A quick check now beats a surprise call-in tomorrow.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check the schedule to confirm Saturday evening is clear for Halloween"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03267,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10104,
+        "output_tokens": 1233,
+        "usd": 0.03254
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 432,
+        "output_tokens": 182,
+        "usd": 0.00013
+      }
+    }
+  },
+  "season": "halloween"
+}

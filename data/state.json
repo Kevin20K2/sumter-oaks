@@ -1,46 +1,30 @@
 {
-  "tick": 281,
-  "time": "2026-10-30T20:17",
+  "tick": 282,
+  "time": "2026-10-30T21:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
-    "hal": "rec_center",
+    "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Seven now, Gary, that one barely cleared the tape and died right in the kitchen. Three more like that and you're ladder-ready, honey.”",
-      "Hal waited: Lean on the rail and watch Gary's drops, keeping quiet for once and letting the two of them finish their drills."
+      "Donna said to Gary: “That's the wrist, Gary, soft hands all the way! Let's call it a night on a good one, save those legs for our one o'clock tomorrow before the parade.”",
+      "Hal headed to Magnolia Loop (the street)."
     ],
     "donna": [
-      "Gary (pickleball court 1): Keep working third-shot drops from the kitchen line, soft hands, aiming for the next seven clean ones",
-      "Hal waited: Lean on the rail and watch Gary's drops, keeping quiet for once and letting the two of them finish their drills."
+      "Gary (pickleball court 1): Keep hitting third-shot drops from the kitchen line, soft hands, going for the last three clean ones",
+      "Hal headed to Magnolia Loop (the street)."
     ],
     "hal": [
-      "Gary (pickleball court 1): Keep working third-shot drops from the kitchen line, soft hands, aiming for the next seven clean ones",
-      "Donna said to Gary: “Seven now, Gary, that one barely cleared the tape and died right in the kitchen. Three more like that and you're ladder-ready, honey.”"
+      "Gary (pickleball court 1): Keep hitting third-shot drops from the kitchen line, soft hands, going for the last three clean ones",
+      "Donna said to Gary: “That's the wrist, Gary, soft hands all the way! Let's call it a night on a good one, save those legs for our one o'clock tomorrow before the parade.”",
+      "You arrived at Magnolia Loop (the street)."
     ],
-    "rosa": [
-      "You arrived at Rosa's House."
-    ]
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 194,
-        "text": "I (gary workbench): Label the wiring and pre-assemble the light strip mounts indoors so install is quick once approved",
-        "importance": 4
-      },
-      {
-        "tick": 195,
-        "text": "I (gary golf cart): Check mounting points and dry-fit parts indoors, nothing visible from the street",
-        "importance": 4
-      },
-      {
-        "tick": 196,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 196,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -1025,24 +1009,24 @@
         "tick": 280,
         "text": "Hal waited: Lean on the rail and watch Gary's drops, keeping quiet for once and letting the two of them finish their drills.",
         "importance": 4
-      }
-    ],
-    "donna": [
+      },
       {
-        "tick": 196,
-        "text": "Rosa just arrived.",
+        "tick": 281,
+        "text": "I (pickleball court 1): Keep hitting third-shot drops from the kitchen line, soft hands, going for the last three clean ones",
         "importance": 4
       },
       {
-        "tick": 197,
-        "text": "I said to Gary: “Gary, perfect timing! Let's get in a practice session before the ladder match so we can climb past Pruitt-Kowalski. And since you're the cart whisperer, think about decorating for the Halloween parade, but keep it Architectural Review friendly!”",
-        "importance": 6
+        "tick": 281,
+        "text": "Donna said to Gary: “That's the wrist, Gary, soft hands all the way! Let's call it a night on a good one, save those legs for our one o'clock tomorrow before the parade.”",
+        "importance": 4
       },
       {
-        "tick": 197,
-        "text": "Gary said to Donna: “Afternoon, Donna. Flamingos are looking sharp, count's still under three visible from the street, right? Still on for those third-shot drops tomorrow?”",
-        "importance": 6
-      },
+        "tick": 281,
+        "text": "Hal headed to Magnolia Loop (the street).",
+        "importance": 4
+      }
+    ],
+    "donna": [
       {
         "tick": 197,
         "text": "Hal said to Gary: “Afternoon, Gary. That cart of yours has some new hardware on it. Did it go through Architectural Review, or am I about to read about it in my notebook?”",
@@ -2027,29 +2011,24 @@
         "tick": 280,
         "text": "Hal waited: Lean on the rail and watch Gary's drops, keeping quiet for once and letting the two of them finish their drills.",
         "importance": 6
+      },
+      {
+        "tick": 281,
+        "text": "I said to Gary: “That's the wrist, Gary, soft hands all the way! Let's call it a night on a good one, save those legs for our one o'clock tomorrow before the parade.”",
+        "importance": 6
+      },
+      {
+        "tick": 281,
+        "text": "Gary (pickleball court 1): Keep hitting third-shot drops from the kitchen line, soft hands, going for the last three clean ones",
+        "importance": 6
+      },
+      {
+        "tick": 281,
+        "text": "Hal headed to Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 191,
-        "text": "I said to Rosa: “Evening, Rosa. Cornbread's in hand and I'll carry the table wherever you want it. Just point and I'll have it squared away.”",
-        "importance": 4
-      },
-      {
-        "tick": 191,
-        "text": "Gary said to Hal: “Evening, Hal, and thanks. Cart's staying put till the board signs off, no sense risking a notice. The ice is already in the kitchen, so check with Rosa on what else she needs hauled to the table.”",
-        "importance": 4
-      },
-      {
-        "tick": 191,
-        "text": "Donna (rosa kitchen): Carry the peach cobbler in and set it out with the ice cream",
-        "importance": 4
-      },
-      {
-        "tick": 191,
-        "text": "Rosa said to Donna: “Donna, that cobbler is the reason I'm not getting up from this table. Thank you for pulling everyone together tonight, this is exactly the neighborhood I hoped the Loop would be.”",
-        "importance": 4
-      },
       {
         "tick": 192,
         "text": "I (hal binoculars): Scan Magnolia Loop from the porch for Halloween decorations going up",
@@ -3029,14 +3008,29 @@
         "tick": 280,
         "text": "Donna said to Gary: “Seven now, Gary, that one barely cleared the tape and died right in the kitchen. Three more like that and you're ladder-ready, honey.”",
         "importance": 3
+      },
+      {
+        "tick": 281,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 281,
+        "text": "Gary (pickleball court 1): Keep hitting third-shot drops from the kitchen line, soft hands, going for the last three clean ones",
+        "importance": 4
+      },
+      {
+        "tick": 281,
+        "text": "Donna said to Gary: “That's the wrist, Gary, soft hands all the way! Let's call it a night on a good one, save those legs for our one o'clock tomorrow before the parade.”",
+        "importance": 4
+      },
+      {
+        "tick": 281,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 187,
-        "text": "I said to Hal: “Thanks, Hal. Put the table along the back wall of the living room and keep the kitchen doorway clear. Come by around five-thirty and I'll have a spot ready for the cornbread.”",
-        "importance": 4
-      },
       {
         "tick": 187,
         "text": "Hal said to Rosa: “Cornbread's in hand and on schedule, Rosa. I'm walking over now, so point me at the chairs and I'll have them set before six.”",
@@ -4031,6 +4025,11 @@
         "tick": 280,
         "text": "You arrived at Rosa's House.",
         "importance": 3
+      },
+      {
+        "tick": 281,
+        "text": "I (rosa shift schedule): Check the schedule to confirm Saturday evening is clear for Halloween",
+        "importance": 4
       }
     ]
   },
@@ -4077,9 +4076,9 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "determined",
-    "hal": "mellow",
+    "gary": "focused, content",
+    "donna": "proud",
+    "hal": "dutiful",
     "rosa": "content"
   },
   "laws": [
@@ -4197,9 +4196,18 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 281,
+      "time": "Friday, October 30, 9:17 PM",
+      "story": "At 9:17 on a breezy, clear Friday night in Sumter Oaks, Gary is working on his third-shot drops at the Rec Center pickleball courts, aiming for three clean ones in a row. Donna is cheering him on with soft-hands tips and proudly suggesting they call it a night to save their legs for the parade at one o'clock tomorrow. Hal has wandered off down Magnolia Loop with a dutiful air, while Rosa, back home, is checking her schedule to make sure Saturday evening stays clear for Halloween.",
+      "dialogue": [
+        "Donna said to Gary: “That's the wrist, Gary, soft hands all the way! Let's call it a night on a good one, save those legs for our one o'clock tomorrow before the parade.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 8.82555,
+    "total_usd": 8.85822,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4274,13 +4282,12 @@
         "usd": 0.47234
       },
       "2026-10-30": {
-        "ticks": 14,
-        "usd": 0.44443
+        "ticks": 15,
+        "usd": 0.4771
       }
     }
   },
   "recent_tick_costs": [
-    0.03316,
     0.03304,
     0.03156,
     0.03154,
@@ -4303,7 +4310,8 @@
     0.03107,
     0.03167,
     0.03155,
-    0.03279
+    0.03279,
+    0.03267
   ],
   "fund": {
     "gross_usd": 0.0,
