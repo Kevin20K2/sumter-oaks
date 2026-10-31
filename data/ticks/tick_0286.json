@@ -1,0 +1,116 @@
+{
+  "tick": 286,
+  "simulation_time": "Saturday, October 31, 11:17 AM",
+  "weather": "Sunny, 82°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On a sunny Saturday morning in Sumter Oaks, Gary cheerfully teases Donna about her flamingo flock while she bounces back with an invitation to a one o'clock golf lesson at the court. Hal, looking dutiful, points out that more than three flamingos are visible on Magnolia Loop and asks whether she'd like to thin the flock before the committee gets involved. Meanwhile, Rosa is content at home, checking her shift schedule to make sure tonight stays free for trick-or-treaters.",
+  "events": [
+    "Rosa (rosa shift schedule): Check my per-diem shifts to make sure tonight is clear for trick-or-treaters"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I just got to Magnolia Loop and Donna and Hal are both here. My cart is still parked until Architectural Review signs off, so there's nothing to rig today. Parade is at 6 and I'm itching for news, but I already checked on my application at tick 228 and I don't want to pester anyone. The easy, friendly thing is to greet Donna, since the courts with her are the best part of my week, and her flamingo flock is right there. Keep it light, no repeating old lines.",
+      "emotional_state": "cheerful",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Morning, Donna. Good day for the parade. Those flamingos of yours counting up to three yet, or are we flirting with the ornament limit?"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just walked up on Magnolia Loop and Hal is nearby. I already asked Gary about the court and texted him to confirm one o'clock, so I shouldn't ask again. Better to keep things moving: point him toward the court time, tie in the parade at 6, and keep the goal of getting him ready as my doubles partner. Short, warm, and a little bossy.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "There he is! One o'clock at the court, Gary, bring water and your nerve. We'll work on soft third-shot drops, then you can go wire your parade cart after."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna and Gary just walked up, and the flamingo flock is right here. My notebook is open and the committee rule says no more than three ornaments visible from the street. I've been fair with both of them, and my reflections say I want to keep the rules straight before the parade tomorrow. Best move is to speak to Donna directly about the count rather than go behind her back to the committee. Courtesy first, paperwork second.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Morning, Donna. I make it more than three flamingos visible from the street, and L-02 says three. Care to thin the flock before parade day, or shall I put it in front of the committee?"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The treats are baked, bagged, and stacked by the door, and the kitchen is spotless. It's late morning on Halloween with nobody nearby. I picked up per-diem ER shifts, so I should check my shift schedule to make sure nothing conflicts with tonight's trick-or-treating on Magnolia Loop. I want to be home and ready to hand out treats and see Gary and Donna.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts to make sure tonight is clear for trick-or-treaters"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03095,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9715,
+        "output_tokens": 1082,
+        "usd": 0.03025
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3615,
+        "output_tokens": 676,
+        "usd": 0.0007
+      }
+    }
+  },
+  "season": "halloween"
+}
