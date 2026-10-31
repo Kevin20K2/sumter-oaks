@@ -1,0 +1,118 @@
+{
+  "tick": 280,
+  "simulation_time": "Friday, October 30, 8:17 PM",
+  "weather": "Breezy and clear, 74°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "rec_center",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 8:17 on a breezy, clear Friday evening, Gary is drilling third-shot drops on pickleball court one at the Rec Center while Donna keeps score with a blend of encouragement and teasing. Hal leans on the rail watching them, mellow and unusually quiet, content to let the two of them finish their practice. Over on Magnolia Loop, Rosa is making her way home to Rosa's House, the night still warm enough for a leisurely walk.",
+  "events": [
+    "Gary (pickleball court 1): Keep working third-shot drops from the kitchen line, soft hands, aiming for the next seven clean ones",
+    "Hal waited: Lean on the rail and watch Gary's drops, keeping quiet for once and letting the two of them finish their drills.",
+    "Rosa headed to Rosa's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at court one with Donna counting my drops and Hal watching the clock. Ten third-shot drops, three clean so far, so the best thing is to keep working the drill instead of yakking. The two-hour limit is mine to honor, and the cart wiring waits for the committee's sign-off anyway. Hal told me not to waste time talking, so I'll let the paddle do the work.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Keep working third-shot drops from the kitchen line, soft hands, aiming for the next seven clean ones"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary's been grinding third-shot drops under my count, and Hal is watching the clock on our two hours. I've already counted three clean ones and Gary's going for ten, so I shouldn't repeat myself. Best move is to keep the drill moving with a fresh, specific encouragement, point out the progress so he stays motivated, and remind him that the ladder is the real prize. Keeping him confident means I keep my doubles partner.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Seven now, Gary, that one barely cleared the tape and died right in the kitchen. Three more like that and you're ladder-ready, honey."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's past eight at night and Gary and Donna are still at the drills. I already told Gary to mind his two hours, and my reflections say I should stop policing and start talking. Nothing here needs enforcing, so I'll stay put, watch the drills, and let them work. The deed-restriction reports can wait until I'm at Town Hall with a clear head, and maybe not at all for the cart if he keeps his word.",
+      "emotional_state": "mellow",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Lean on the rail and watch Gary's drops, keeping quiet for once and letting the two of them finish their drills."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I just pinned the trick-or-treat reminder on the bulletin board last tick, and nobody else is around. The welcome dinner went well, the parade cart folder is filed, and tomorrow is a big day: treats at my door, the cart on the Loop with Gary and Donna. I've done what I came out here to do. Rather than stand around, I should head home, set out the candy bowls and treats, and get a decent night's sleep before the weekend. Checking the mailbox kiosk is tempting, but the review desk answer isn't likely to arrive tonight.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading home to set out the treat bowls and get a good night's rest before the Halloween parade tomorrow."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03279,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10345,
+        "output_tokens": 1080,
+        "usd": 0.03149
+      },
+      "claude-haiku-5-5": {
+        "calls": 6,
+        "input_tokens": 7687,
+        "output_tokens": 1067,
+        "usd": 0.0013
+      }
+    }
+  },
+  "season": "halloween"
+}
