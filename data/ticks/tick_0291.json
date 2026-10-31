@@ -1,0 +1,118 @@
+{
+  "tick": 291,
+  "simulation_time": "Saturday, October 31, 4:17 PM",
+  "weather": "Sunny, 84°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "It is a sunny Saturday afternoon in Sumter Oaks, and Gary is out on pickleball court one, determined to drill his third-shot drops and footwork until they feel right. Over on Magnolia Loop, Donna is heading to the Rec Center in good spirits, while Hal, feeling satisfied, tells her he counted three flamingos from the street and has closed his notebook on the matter. Rosa, content as ever, is making her way home to Rosa's House.",
+  "events": [
+    "Gary (pickleball court 1): Run a few more third-shot drops and footwork drills",
+    "Donna headed to Rec Center.",
+    "Rosa headed to Rosa's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at the Rec Center, nobody in sight, and the last tick I practiced third-shot drops on court one. Donna and Hal aren't here right now, so the clock isn't pressing, but the parade is at 6 and my cart still needs lights and the sound system rigged. Per L-01 the exterior mods need Architectural Review approval, and I've already offered my wiring sketches there. Since I'm alone, a bit more footwork practice is a good use of this hour before heading out to Magnolia Loop to get the cart ready. One more round of drops keeps my promise to Donna to be patient with my feet.",
+      "emotional_state": "determined",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Run a few more third-shot drops and footwork drills"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've settled the flamingo count with Hal and Rosa, so that's done. My real goal is Gary as my doubles partner, and I told Hal I'd catch him at the Rec Center before the 6 PM parade. It's 4:17, so there's plenty of time for a few third-shot drops. No more chatting here, so I'm heading over.",
+      "emotional_state": "upbeat",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the Rec Center to catch Gary for a few drills before the parade."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna kept her word and Rosa says the count looks like three. My notebook has no violation to log on the flamingos. Gary's cart is still on my list, but with the parade tomorrow... actually tonight at six, and Rosa's cider waiting, I'd rather confirm the count myself, close the matter, and give Donna her due. A man who enforces the rules should also acknowledge compliance. Then I'll put the notebook away.",
+      "emotional_state": "satisfied",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Counted three from the street, Donna. L-02 is satisfied, and I'll note that you kept your word. Notebook's closed on the flamingos."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Donna is heading to the Rec Center to catch Gary, and Hal is counting flamingos for his notebook. I already invited Hal for cider on my porch at the end of my last line, so I shouldn't repeat myself. The parade is later, and I've got Halloween treats bagged and an evening clear. My goal is getting neighbors around one table. The most useful thing now is to head home and set up the porch with cider and treats so everyone has somewhere warm to land after the parade. Gary and Donna will be at the Rec Center, and I can see them at the parade.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading home to set out the cider and treat bags on the porch before the parade starts."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03175,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10300,
+        "output_tokens": 1103,
+        "usd": 0.03163
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 398,
+        "output_tokens": 156,
+        "usd": 0.00012
+      }
+    }
+  },
+  "season": "halloween"
+}

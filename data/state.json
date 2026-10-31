@@ -1,39 +1,33 @@
 {
-  "tick": 291,
-  "time": "2026-10-31T15:17",
+  "tick": 292,
+  "time": "2026-10-31T16:17",
   "positions": {
     "gary": "rec_center",
-    "donna": "magnolia_loop",
+    "donna": "rec_center",
     "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "Donna just arrived."
+    ],
     "donna": [
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02 in my notebook",
-      "Rosa said to Donna: “Looks like three and legal to me, Donna. Hal can put his notebook away and come get a cider on my porch once the parade wraps up.”"
+      "Hal said to Donna: “Counted three from the street, Donna. L-02 is satisfied, and I'll note that you kept your word. Notebook's closed on the flamingos.”",
+      "Rosa headed to Rosa's House.",
+      "You arrived at Rec Center."
     ],
     "hal": [
-      "Donna said to Hal: “Hal, I tucked the extras behind the hedge like I promised. What's your count from the street, three? I'm heading to the Rec Center to catch Gary before the parade.”",
-      "Rosa said to Donna: “Looks like three and legal to me, Donna. Hal can put his notebook away and come get a cider on my porch once the parade wraps up.”"
+      "Donna headed to Rec Center.",
+      "Rosa headed to Rosa's House."
     ],
     "rosa": [
-      "Donna said to Hal: “Hal, I tucked the extras behind the hedge like I promised. What's your count from the street, three? I'm heading to the Rec Center to catch Gary before the parade.”",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02 in my notebook"
+      "Donna headed to Rec Center.",
+      "Hal said to Donna: “Counted three from the street, Donna. L-02 is satisfied, and I'll note that you kept your word. Notebook's closed on the flamingos.”",
+      "You arrived at Rosa's House."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 202,
-        "text": "Donna (street bulletin board): Pin up a tally sheet for parade theme ideas and note that cart plans go to Architectural Review first",
-        "importance": 6
-      },
-      {
-        "tick": 202,
-        "text": "Hal said to Gary: “Gary, red and blue lights on four carts is an exterior modification, so L-01 says file it with Architectural Review before you wire anything. Do that, keep the flamingos at three, and I'll sign off on your sketches myself.”",
-        "importance": 6
-      },
       {
         "tick": 202,
         "text": "Rosa (street bulletin board): Pin up my 'Magnolia Loop Memorial Hospital' theme sketch with a note: all cart plans go to Architectural Review first, ornaments stay at three, and everyone's invited to dinner.",
@@ -1023,29 +1017,19 @@
         "tick": 290,
         "text": "I (pickleball court 1): Practice third-shot drops and footwork on court one",
         "importance": 3
+      },
+      {
+        "tick": 291,
+        "text": "I (pickleball court 1): Run a few more third-shot drops and footwork drills",
+        "importance": 3
+      },
+      {
+        "tick": 291,
+        "text": "Donna just arrived.",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 204,
-        "text": "I said to Rosa: “Rosa, you're a doll for holding dinner. Hal, grab that folding table and let's go before my casserole turns into a doorstop. I'll walk over with you both.”",
-        "importance": 4
-      },
-      {
-        "tick": 204,
-        "text": "Hal headed to Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 204,
-        "text": "Rosa said to Hal: “Hal, dinner's right now. Gary's already at my place and Donna's casserole is waiting. Bring that folding table and the extra chairs and walk over with us, I'll save you a plate.”",
-        "importance": 4
-      },
-      {
-        "tick": 205,
-        "text": "I headed to Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 205,
         "text": "Rosa headed to Rosa's House.",
@@ -2025,24 +2009,29 @@
         "tick": 290,
         "text": "Rosa said to Donna: “Looks like three and legal to me, Donna. Hal can put his notebook away and come get a cider on my porch once the parade wraps up.”",
         "importance": 4
+      },
+      {
+        "tick": 291,
+        "text": "I headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 291,
+        "text": "Hal said to Donna: “Counted three from the street, Donna. L-02 is satisfied, and I'll note that you kept your word. Notebook's closed on the flamingos.”",
+        "importance": 5
+      },
+      {
+        "tick": 291,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 291,
+        "text": "You arrived at Rec Center.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 201,
-        "text": "Gary said to Hal: “Good to have an inspector, Hal. I'll have my wiring sketches done by tomorrow, and you can go over every line against the rules before a single bulb goes on a cart.”",
-        "importance": 5
-      },
-      {
-        "tick": 201,
-        "text": "Donna said to Rosa: “Love the note, Rosa. Hal, my flock stays at three, I promise. Let's all bring theme ideas to the bulletin board by tomorrow, and I'll tally them up so Gary can start sketching the carts.”",
-        "importance": 5
-      },
-      {
-        "tick": 201,
-        "text": "Rosa said to Gary: “Theme's 'Magnolia Loop Memorial Hospital,' Gary. Four carts as ambulances with red and blue lights, and Donna's flamingos get bandages. Sketch it on paper, and Hal can sign off on the rules.”",
-        "importance": 5
-      },
       {
         "tick": 202,
         "text": "I said to Gary: “Gary, red and blue lights on four carts is an exterior modification, so L-01 says file it with Architectural Review before you wire anything. Do that, keep the flamingos at three, and I'll sign off on your sketches myself.”",
@@ -3027,29 +3016,24 @@
         "tick": 290,
         "text": "Rosa said to Donna: “Looks like three and legal to me, Donna. Hal can put his notebook away and come get a cider on my porch once the parade wraps up.”",
         "importance": 5
+      },
+      {
+        "tick": 291,
+        "text": "I said to Donna: “Counted three from the street, Donna. L-02 is satisfied, and I'll note that you kept your word. Notebook's closed on the flamingos.”",
+        "importance": 4
+      },
+      {
+        "tick": 291,
+        "text": "Donna headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 291,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 194,
-        "text": "I (rosa shift schedule): Check my per-diem shifts for the week so I don't overbook myself",
-        "importance": 3
-      },
-      {
-        "tick": 195,
-        "text": "I (rosa shift schedule): Check my per-diem shifts for the week so I don't overbook myself",
-        "importance": 3
-      },
-      {
-        "tick": 196,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 3
-      },
-      {
-        "tick": 196,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 3
-      },
       {
         "tick": 196,
         "text": "Gary just arrived.",
@@ -4029,6 +4013,26 @@
         "tick": 290,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02 in my notebook",
         "importance": 4
+      },
+      {
+        "tick": 291,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 291,
+        "text": "Donna headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 291,
+        "text": "Hal said to Donna: “Counted three from the street, Donna. L-02 is satisfied, and I'll note that you kept your word. Notebook's closed on the flamingos.”",
+        "importance": 4
+      },
+      {
+        "tick": 291,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
       }
     ]
   },
@@ -4076,8 +4080,8 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "cheerful",
-    "hal": "watchful",
+    "donna": "upbeat",
+    "hal": "satisfied",
     "rosa": "content"
   },
   "laws": [
@@ -4230,10 +4234,18 @@
         "Donna said to Hal: “Hal, I tucked the extras behind the hedge like I promised. What's your count from the street, three? I'm heading to the Rec Center to catch Gary before the parade.”",
         "Rosa said to Donna: “Looks like three and legal to me, Donna. Hal can put his notebook away and come get a cider on my porch once the parade wraps up.”"
       ]
+    },
+    {
+      "tick": 291,
+      "time": "Saturday, October 31, 4:17 PM",
+      "story": "It is a sunny Saturday afternoon in Sumter Oaks, and Gary is out on pickleball court one, determined to drill his third-shot drops and footwork until they feel right. Over on Magnolia Loop, Donna is heading to the Rec Center in good spirits, while Hal, feeling satisfied, tells her he counted three flamingos from the street and has closed his notebook on the matter. Rosa, content as ever, is making her way home to Rosa's House.",
+      "dialogue": [
+        "Hal said to Donna: “Counted three from the street, Donna. L-02 is satisfied, and I'll note that you kept your word. Notebook's closed on the flamingos.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 9.1425,
+    "total_usd": 9.17425,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4312,13 +4324,12 @@
         "usd": 0.4771
       },
       "2026-10-31": {
-        "ticks": 9,
-        "usd": 0.28428
+        "ticks": 10,
+        "usd": 0.31603
       }
     }
   },
   "recent_tick_costs": [
-    0.0317,
     0.03241,
     0.03051,
     0.03296,
@@ -4341,7 +4352,8 @@
     0.03235,
     0.03337,
     0.03338,
-    0.03187
+    0.03187,
+    0.03175
   ],
   "fund": {
     "gross_usd": 0.0,
