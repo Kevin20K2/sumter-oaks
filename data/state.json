@@ -1,53 +1,33 @@
 {
-  "tick": 292,
-  "time": "2026-10-31T16:17",
+  "tick": 293,
+  "time": "2026-10-31T17:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
-    "hal": "magnolia_loop",
+    "hal": "rec_center",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna just arrived."
+      "Donna said to Gary: “There's my partner! We've got maybe half an hour before the parade, so grab a paddle and let's get a few of those third-shot drops in. Then we'll go roll that cart out in style.”",
+      "Hal just arrived.",
+      "Town news: Trick-or-treaters are out on Magnolia Loop: visiting grandkids in costumes, golf carts trimmed in orange, and doorbells ringing up and down the street."
     ],
     "donna": [
-      "Hal said to Donna: “Counted three from the street, Donna. L-02 is satisfied, and I'll note that you kept your word. Notebook's closed on the flamingos.”",
-      "Rosa headed to Rosa's House.",
-      "You arrived at Rec Center."
+      "Gary said to Donna: “Donna, good timing. Those third-shot drops are finally landing soft, thanks to you. I've got to wrap up soon for the 6 o'clock parade, but Rosa says there's hot cider on her porch afterward for you and Hal.”",
+      "Hal just arrived.",
+      "Town news: Trick-or-treaters are out on Magnolia Loop: visiting grandkids in costumes, golf carts trimmed in orange, and doorbells ringing up and down the street."
     ],
     "hal": [
-      "Donna headed to Rec Center.",
-      "Rosa headed to Rosa's House."
+      "You arrived at Rec Center.",
+      "Town news: Trick-or-treaters are out on Magnolia Loop: visiting grandkids in costumes, golf carts trimmed in orange, and doorbells ringing up and down the street."
     ],
     "rosa": [
-      "Donna headed to Rec Center.",
-      "Hal said to Donna: “Counted three from the street, Donna. L-02 is satisfied, and I'll note that you kept your word. Notebook's closed on the flamingos.”",
-      "You arrived at Rosa's House."
+      "Town news: Trick-or-treaters are out on Magnolia Loop: visiting grandkids in costumes, golf carts trimmed in orange, and doorbells ringing up and down the street."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 202,
-        "text": "Rosa (street bulletin board): Pin up my 'Magnolia Loop Memorial Hospital' theme sketch with a note: all cart plans go to Architectural Review first, ornaments stay at three, and everyone's invited to dinner.",
-        "importance": 6
-      },
-      {
-        "tick": 202,
-        "text": "You arrived at Gary's House.",
-        "importance": 6
-      },
-      {
-        "tick": 203,
-        "text": "I (gary workbench): Draw up a careful wiring and speaker layout sketch for the cart lights and sound system to show Hal and the board",
-        "importance": 5
-      },
-      {
-        "tick": 204,
-        "text": "I (gary workbench): Bench-test the light strings and speaker, refine the wiring sketch for Hal",
-        "importance": 4
-      },
       {
         "tick": 205,
         "text": "I headed to Magnolia Loop (the street).",
@@ -1027,29 +1007,29 @@
         "tick": 291,
         "text": "Donna just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 292,
+        "text": "I said to Donna: “Donna, good timing. Those third-shot drops are finally landing soft, thanks to you. I've got to wrap up soon for the 6 o'clock parade, but Rosa says there's hot cider on her porch afterward for you and Hal.”",
+        "importance": 4
+      },
+      {
+        "tick": 292,
+        "text": "Donna said to Gary: “There's my partner! We've got maybe half an hour before the parade, so grab a paddle and let's get a few of those third-shot drops in. Then we'll go roll that cart out in style.”",
+        "importance": 4
+      },
+      {
+        "tick": 292,
+        "text": "Hal just arrived.",
+        "importance": 4
+      },
+      {
+        "tick": 292,
+        "text": "Town news: Trick-or-treaters are out on Magnolia Loop: visiting grandkids in costumes, golf carts trimmed in orange, and doorbells ringing up and down the street.",
+        "importance": 8
       }
     ],
     "donna": [
-      {
-        "tick": 205,
-        "text": "Rosa headed to Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 205,
-        "text": "You arrived at Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 205,
-        "text": "Rosa just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 206,
-        "text": "I said to Rosa: “Rosa, thank you for hosting! Casserole's in the oven-safe dish, and Hal, grab a plate. Once we've eaten, let's talk Halloween carts. I want it fun and fully within the rules.”",
-        "importance": 5
-      },
       {
         "tick": 206,
         "text": "Hal said to Donna: “Evening, Donna. Casserole smells legal, and I'll note your flamingo count is holding at three, so the notebook stays in my pocket tonight.”",
@@ -2029,24 +2009,29 @@
         "tick": 291,
         "text": "You arrived at Rec Center.",
         "importance": 5
+      },
+      {
+        "tick": 292,
+        "text": "I said to Gary: “There's my partner! We've got maybe half an hour before the parade, so grab a paddle and let's get a few of those third-shot drops in. Then we'll go roll that cart out in style.”",
+        "importance": 5
+      },
+      {
+        "tick": 292,
+        "text": "Gary said to Donna: “Donna, good timing. Those third-shot drops are finally landing soft, thanks to you. I've got to wrap up soon for the 6 o'clock parade, but Rosa says there's hot cider on her porch afterward for you and Hal.”",
+        "importance": 5
+      },
+      {
+        "tick": 292,
+        "text": "Hal just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 292,
+        "text": "Town news: Trick-or-treaters are out on Magnolia Loop: visiting grandkids in costumes, golf carts trimmed in orange, and doorbells ringing up and down the street.",
+        "importance": 8
       }
     ],
     "hal": [
-      {
-        "tick": 202,
-        "text": "I said to Gary: “Gary, red and blue lights on four carts is an exterior modification, so L-01 says file it with Architectural Review before you wire anything. Do that, keep the flamingos at three, and I'll sign off on your sketches myself.”",
-        "importance": 5
-      },
-      {
-        "tick": 202,
-        "text": "Gary headed to Gary's House.",
-        "importance": 5
-      },
-      {
-        "tick": 202,
-        "text": "Donna (street bulletin board): Pin up a tally sheet for parade theme ideas and note that cart plans go to Architectural Review first",
-        "importance": 5
-      },
       {
         "tick": 202,
         "text": "Rosa (street bulletin board): Pin up my 'Magnolia Loop Memorial Hospital' theme sketch with a note: all cart plans go to Architectural Review first, ornaments stay at three, and everyone's invited to dinner.",
@@ -3031,19 +3016,24 @@
         "tick": 291,
         "text": "Rosa headed to Rosa's House.",
         "importance": 4
+      },
+      {
+        "tick": 292,
+        "text": "I headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 292,
+        "text": "You arrived at Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 292,
+        "text": "Town news: Trick-or-treaters are out on Magnolia Loop: visiting grandkids in costumes, golf carts trimmed in orange, and doorbells ringing up and down the street.",
+        "importance": 8
       }
     ],
     "rosa": [
-      {
-        "tick": 196,
-        "text": "Gary just arrived.",
-        "importance": 3
-      },
-      {
-        "tick": 196,
-        "text": "Donna just arrived.",
-        "importance": 3
-      },
       {
         "tick": 197,
         "text": "I said to Donna: “Morning, Donna! Thank you for that casserole last night, I'm still thinking about it. Have you all seen the Halloween flyer on the board? I'm thinking we should enter the cart parade together.”",
@@ -4033,6 +4023,16 @@
         "tick": 291,
         "text": "You arrived at Rosa's House.",
         "importance": 4
+      },
+      {
+        "tick": 292,
+        "text": "I (rosa kitchen): Grab the bagged Halloween treats and set them by the door for the parade",
+        "importance": 4
+      },
+      {
+        "tick": 292,
+        "text": "Town news: Trick-or-treaters are out on Magnolia Loop: visiting grandkids in costumes, golf carts trimmed in orange, and doorbells ringing up and down the street.",
+        "importance": 8
       }
     ]
   },
@@ -4079,9 +4079,9 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "upbeat",
-    "hal": "satisfied",
+    "gary": "cheerful",
+    "donna": "cheerful",
+    "hal": "resolute",
     "rosa": "content"
   },
   "laws": [
@@ -4199,53 +4199,9 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 287,
-      "time": "Saturday, October 31, 12:17 PM",
-      "story": "On Magnolia Loop in Sumter Oaks, this sunny Halloween afternoon at 83 degrees, Gary stops at the street bulletin board to scan the parade notices for any word from the cart committee. Donna leans toward Hal with a sheepish grin, promising to tuck the extra decorations behind the hedge before the parade so only three remain visible, and Hal, dutifully counting the pink flamingo flock in his notebook, takes note of the tally. Meanwhile, Rosa, content as ever, strolls out from her house to join the neighbors on the street.",
-      "dialogue": [
-        "Donna said to Hal: “Hal, you've got hawk eyes and I love you for it. I'll pull the extras behind the hedge before the parade, three visible from the street, scout's honor. No need to bother the committee.”"
-      ]
-    },
-    {
-      "tick": 288,
-      "time": "Saturday, October 31, 1:17 PM",
-      "story": "On Magnolia Loop on a sunny Saturday afternoon, Gary greets Rosa and offers to tune up her golf cart before the Halloween parade, while Donna hurries him along toward the pickleball court she's eager to get to. Rosa invites everyone to her porch for treats once the trick-or-treaters arrive. Meanwhile Hal, dutifully keeping his notebook, tallies the pink flamingos in Donna's flock visible from the street.",
-      "dialogue": [
-        "Gary said to Rosa: “Afternoon, Rosa! Good to see you out on the Loop. If anything at your place needs a tune-up before tonight's parade, you just holler, I've got my toolbox right in the cart.”",
-        "Donna said to Gary: “Gary, there you are! We're already past one o'clock and the court's got our names on it. Come on, we'll get in a few drills and talk Halloween cart plans after.”",
-        "Rosa said to Gary: “Afternoon, all! Treats are bagged and my evening's clear, so come by my porch tonight when the kids start showing up. I'll have extra for the cart parade crowd too.”"
-      ]
-    },
-    {
-      "tick": 289,
-      "time": "Saturday, October 31, 2:17 PM",
-      "story": "Gary heads off toward the Rec Center on Magnolia Loop, eager to get to his pickleball game on this sunny Halloween afternoon. Donna is busy hiding all but three of the pink plastic flamingos behind the hedge, while Hal stands nearby with his notebook, sternly tallying each one that's still visible from the street. Rosa, cheerful as ever, thanks Gary for his offer to help with her porch later and asks him to pass along word that hot cider is waiting on her porch after the parade.",
-      "dialogue": [
-        "Rosa said to Gary: “Thanks, Gary, I'll take you up on that porch help later. Go win your pickleball, and tell Donna and Hal there's hot cider on my porch after the parade.”"
-      ]
-    },
-    {
-      "tick": 290,
-      "time": "Saturday, October 31, 3:17 PM",
-      "story": "On Saturday afternoon in Sumter Oaks, Gary is practicing third-shot drops and footwork on pickleball court one at the Rec Center, determined to sharpen his game before the parade. Donna, cheerful as ever, has tucked the extra plastic flamingos behind the hedge on Magnolia Loop and is heading over to find him, while Hal stays watchful on the street, tallying the flock against his notebook. Rosa, content on her porch, assures Donna that three flamingos look legal to her and invites Hal to put his notebook away and join her for a cider once the parade wraps up.",
-      "dialogue": [
-        "Donna said to Hal: “Hal, I tucked the extras behind the hedge like I promised. What's your count from the street, three? I'm heading to the Rec Center to catch Gary before the parade.”",
-        "Rosa said to Donna: “Looks like three and legal to me, Donna. Hal can put his notebook away and come get a cider on my porch once the parade wraps up.”"
-      ]
-    },
-    {
-      "tick": 291,
-      "time": "Saturday, October 31, 4:17 PM",
-      "story": "It is a sunny Saturday afternoon in Sumter Oaks, and Gary is out on pickleball court one, determined to drill his third-shot drops and footwork until they feel right. Over on Magnolia Loop, Donna is heading to the Rec Center in good spirits, while Hal, feeling satisfied, tells her he counted three flamingos from the street and has closed his notebook on the matter. Rosa, content as ever, is making her way home to Rosa's House.",
-      "dialogue": [
-        "Hal said to Donna: “Counted three from the street, Donna. L-02 is satisfied, and I'll note that you kept your word. Notebook's closed on the flamingos.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 9.17425,
+    "total_usd": 9.20619,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4324,13 +4280,12 @@
         "usd": 0.4771
       },
       "2026-10-31": {
-        "ticks": 10,
-        "usd": 0.31603
+        "ticks": 11,
+        "usd": 0.34797
       }
     }
   },
   "recent_tick_costs": [
-    0.03241,
     0.03051,
     0.03296,
     0.03379,
@@ -4353,7 +4308,8 @@
     0.03337,
     0.03338,
     0.03187,
-    0.03175
+    0.03175,
+    0.03194
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4405,6 +4361,7 @@
   "calendar_fired": [
     "halloween-flyer",
     "halloween-reminder",
-    "halloween-morning"
+    "halloween-morning",
+    "halloween-trick-or-treat"
   ]
 }
