@@ -1,0 +1,117 @@
+{
+  "tick": 306,
+  "simulation_time": "Sunday, November 1, 4:17 PM",
+  "weather": "Sunny, 84°F",
+  "positions": {
+    "gary": "rosas_house",
+    "donna": "rosas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At Rosa's House on Sunday afternoon, Gary sits content at the dining table, measuring a run for a heavy-duty extension cord to test the porch light plug, while Donna cheerfully sets down a casserole and praises his third-shot drops, suggesting they book the court for Tuesday morning. Rosa, feeling warm and hopeful, asks Donna to put the casserole on the kitchen counter and enlists Gary to fetch chairs while they wait. Out on Magnolia Loop, a wary Hal raises his binoculars to count the flamingos visible from the street, keeping an eye on the neighborhood flock as the sunny 84-degree afternoon drifts toward evening.",
+  "events": [
+    "Gary (rosa dining table): Test the porch light plug and measure the run for the heavy-duty extension cord",
+    "Hal (donna flamingo flock): Raise binoculars and count the flamingos visible from the street"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at Rosa's with my tools and the extension cord already laid out on the dining table, and Rosa and Donna just walked in. I came here to fix her porch lights, and I'm happiest when I'm being useful. Rosa already asked me for this and I've got the cord out, so no need to ask again or chat in circles. Best move is to get my hands on the job and start sorting that plug. L-04 says holiday lighting is fine from Thanksgiving on, but the string lights are already up and this is just a plug fix, nothing visible from the street changing. Get to work.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Test the porch light plug and measure the run for the heavy-duty extension cord"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at Rosa's with Gary and Rosa, and the porch coffee is exactly what I wanted after hauling flamingos all afternoon. The pickleball partnership with Gary is going well, so I want to keep that momentum going without nagging him. I should be warm to Rosa, since she's hosting, and give Gary a compliment on those third-shot drops. Courts are limited to two hours per party, so I can mention booking a slot for the ladder match and keep things moving forward.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, those third-shot drops today were gorgeous, you're a natural. Let's book the court for Tuesday morning, two hours sharp, and I'll sign us up on the ladder."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's 4:17 PM, I'm alone on Magnolia Loop, and Donna and Rosa both just headed to Rosa's house. Donna agreed to keep three flamingos visible, but I trust my own binoculars over her word. The flock is right here in this zone. I'll inspect it myself and count from the street before I go sit down to coffee, so I know whether L-02 is actually satisfied and whether any report to the review committee is warranted.",
+      "emotional_state": "wary",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Raise binoculars and count the flamingos visible from the street"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm home at Rosa's House with Gary and Donna here, and Hal's about to arrive. My goal is to get all three neighbors at one table, and I've said my welcome line before, so I shouldn't repeat it. Donna just walked in carrying her casserole, so the practical thing is to point her toward the kitchen and the dining table so we can get the food set out and everyone seated before it cools.",
+      "emotional_state": "warm, hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna, you can set that casserole right on the kitchen counter, I'll get the table laid out. Gary, would you mind grabbing the chairs while we wait on Hal?"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03085,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9641,
+        "output_tokens": 1141,
+        "usd": 0.03069
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 485,
+        "output_tokens": 230,
+        "usd": 0.00016
+      }
+    }
+  },
+  "season": "halloween"
+}
