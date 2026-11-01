@@ -1,6 +1,6 @@
 {
-  "tick": 299,
-  "time": "2026-11-01T08:17",
+  "tick": 300,
+  "time": "2026-11-01T09:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
@@ -8,26 +8,13 @@
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "Town news: The morning after Halloween: candy wrappers on the sidewalks, a slumping inflatable ghost, and a note at Town Hall asking that Halloween decorations come down by November 7."
-    ],
-    "donna": [
-      "Town news: The morning after Halloween: candy wrappers on the sidewalks, a slumping inflatable ghost, and a note at Town Hall asking that Halloween decorations come down by November 7."
-    ],
-    "hal": [
-      "Town news: The morning after Halloween: candy wrappers on the sidewalks, a slumping inflatable ghost, and a note at Town Hall asking that Halloween decorations come down by November 7."
-    ],
-    "rosa": [
-      "Town news: The morning after Halloween: candy wrappers on the sidewalks, a slumping inflatable ghost, and a note at Town Hall asking that Halloween decorations come down by November 7."
-    ]
+    "gary": [],
+    "donna": [],
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 213,
-        "text": "I said to Rosa: “Soft red cross and a slow heartbeat blink is easy, Rosa. A small battery controller with a fade setting will do it, and everything clips on and comes off so nothing's permanent until Review says go. I'll have the sketch ready Tuesday, and Hal's welcome to look it over.”",
-        "importance": 5
-      },
       {
         "tick": 213,
         "text": "Donna said to Hal: “Afternoon, Hal! Go ahead and count the flamingos, I'm holding at three, and every cart idea for the Halloween parade goes through Architectural Review before a single bulb gets clipped on. Come join us Tuesday at six on Rosa's porch if you'd like to see the plans first.”",
@@ -1022,14 +1009,14 @@
         "tick": 298,
         "text": "Town news: The morning after Halloween: candy wrappers on the sidewalks, a slumping inflatable ghost, and a note at Town Hall asking that Halloween decorations come down by November 7.",
         "importance": 6
+      },
+      {
+        "tick": 299,
+        "text": "I (gary workbench): Solder and wire up the light strip harness and speaker leads for the cart, bench-testing everything indoors",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 213,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against my notebook",
-        "importance": 5
-      },
       {
         "tick": 213,
         "text": "Rosa said to Hal: “Hal, good timing. We're doing cart planning on my porch Tuesday at six, wiring sketches and everything cleared through Architectural Review first. Come bring your notebook and tell us where the lines are before we build, not after.”",
@@ -2024,14 +2011,14 @@
         "tick": 298,
         "text": "Town news: The morning after Halloween: candy wrappers on the sidewalks, a slumping inflatable ghost, and a note at Town Hall asking that Halloween decorations come down by November 7.",
         "importance": 6
+      },
+      {
+        "tick": 299,
+        "text": "I (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving just three visible from the street",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 211,
-        "text": "I (hal porch chair): Settle into the porch chair and keep an eye on the Loop",
-        "importance": 3
-      },
       {
         "tick": 212,
         "text": "I headed to Magnolia Loop (the street).",
@@ -3026,14 +3013,14 @@
         "tick": 298,
         "text": "Town news: The morning after Halloween: candy wrappers on the sidewalks, a slumping inflatable ghost, and a note at Town Hall asking that Halloween decorations come down by November 7.",
         "importance": 6
+      },
+      {
+        "tick": 299,
+        "text": "I (hal binoculars): Scan Magnolia Loop for Donna's flamingo count and Gary's cart modifications",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 200,
-        "text": "Donna (street bulletin board): Pin up a Halloween parade committee sign-up sheet with Hal listed as official decoration inspector",
-        "importance": 5
-      },
       {
         "tick": 200,
         "text": "Hal said to Donna: “Inspector reporting, Donna. I count three flamingos from the street, and that's the limit. Add one more for Halloween and it's a violation, parade or no parade.”",
@@ -4028,6 +4015,11 @@
         "tick": 298,
         "text": "Town news: The morning after Halloween: candy wrappers on the sidewalks, a slumping inflatable ghost, and a note at Town Hall asking that Halloween decorations come down by November 7.",
         "importance": 6
+      },
+      {
+        "tick": 299,
+        "text": "I (rosa kitchen): Brew a fresh pot and set out two mugs and some pastries for Hal's porch visit",
+        "importance": 4
       }
     ]
   },
@@ -4074,9 +4066,9 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
+    "gary": "determined",
     "donna": "determined",
-    "hal": "methodical",
+    "hal": "watchful",
     "rosa": "content"
   },
   "laws": [
@@ -4194,9 +4186,16 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 299,
+      "time": "Sunday, November 1, 9:17 AM",
+      "story": "It is a sunny Sunday morning in Sumter Oaks, and Gary is hunched over his workbench at home, soldering the wiring for a light strip and speaker leads he plans to bolt onto his golf cart. Down on Magnolia Loop, Donna is quietly hauling extra plastic flamingos behind a hedge, leaving only three in plain view while she eyes the street with a determined look. Across the way, Hal sits at his window with binoculars, watchfully counting flamingos and sizing up whatever Gary might be cooking up for his cart. Meanwhile, Rosa is content in her kitchen, brewing a fresh pot of coffee and arranging pastries on a plate for two mugs, clearly anticipating a friendly porch visit from Hal.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 9.39904,
+    "total_usd": 9.43061,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4279,13 +4278,12 @@
         "usd": 0.47867
       },
       "2026-11-01": {
-        "ticks": 2,
-        "usd": 0.06215
+        "ticks": 3,
+        "usd": 0.09372
       }
     }
   },
   "recent_tick_costs": [
-    0.03054,
     0.0304,
     0.03107,
     0.03167,
@@ -4308,7 +4306,8 @@
     0.03298,
     0.03219,
     0.03106,
-    0.03109
+    0.03109,
+    0.03157
   ],
   "fund": {
     "gross_usd": 0.0,
