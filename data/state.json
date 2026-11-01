@@ -1,52 +1,36 @@
 {
-  "tick": 305,
-  "time": "2026-11-01T14:17",
+  "tick": 306,
+  "time": "2026-11-01T15:17",
   "positions": {
     "gary": "rosas_house",
-    "donna": "magnolia_loop",
+    "donna": "rosas_house",
     "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving exactly three visible from the street",
-      "Hal said to Rosa: “Coffee's fine, Rosa, I'll bring my own mug. Count's three flamingos from the street, so Donna and I are square for today. Gary and I will have a word about that cart's paperwork over the pot.”",
-      "Rosa said to Gary: “Gary, I'll take you up on that. My porch string lights need a plug that actually reaches, so come have coffee and bring your tools. Donna and Hal, once the flamingos are sorted, you're both welcome too.”",
-      "You arrived at Rosa's House."
+      "Donna just arrived.",
+      "Rosa just arrived."
     ],
     "donna": [
-      "Gary headed to Rosa's House.",
-      "Hal said to Rosa: “Coffee's fine, Rosa, I'll bring my own mug. Count's three flamingos from the street, so Donna and I are square for today. Gary and I will have a word about that cart's paperwork over the pot.”",
-      "Rosa said to Gary: “Gary, I'll take you up on that. My porch string lights need a plug that actually reaches, so come have coffee and bring your tools. Donna and Hal, once the flamingos are sorted, you're both welcome too.”"
+      "Hal (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
+      "Rosa headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Rosa just arrived."
     ],
     "hal": [
-      "Gary headed to Rosa's House.",
-      "Donna (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving exactly three visible from the street",
-      "Rosa said to Gary: “Gary, I'll take you up on that. My porch string lights need a plug that actually reaches, so come have coffee and bring your tools. Donna and Hal, once the flamingos are sorted, you're both welcome too.”"
+      "Donna headed to Rosa's House.",
+      "Rosa headed to Rosa's House."
     ],
     "rosa": [
-      "Gary headed to Rosa's House.",
-      "Donna (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving exactly three visible from the street",
-      "Hal said to Rosa: “Coffee's fine, Rosa, I'll bring my own mug. Count's three flamingos from the street, so Donna and I are square for today. Gary and I will have a word about that cart's paperwork over the pot.”"
+      "Donna headed to Rosa's House.",
+      "Hal (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
+      "You arrived at Rosa's House.",
+      "Donna just arrived."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 217,
-        "text": "I said to Rosa: “Nothing up on the board yet, Rosa. I filed mine back at the desk but haven't heard a peep. Tell you what, I'll finish my wiring sketches tonight and you can carry both sets to the committee together. Nothing gets bolted on till they sign off, Hal's got my word on that.”",
-        "importance": 5
-      },
-      {
-        "tick": 217,
-        "text": "Hal (street bulletin board): Read the board for any Architectural Review notice on cart modifications",
-        "importance": 5
-      },
-      {
-        "tick": 217,
-        "text": "Rosa said to Hal: “Here you go, Hal. Everything's strap-on and removable, nothing touches the cart's frame until Review says yes. If the board's still empty, I'll walk these over to the committee tomorrow morning, and you're welcome to come along.”",
-        "importance": 5
-      },
       {
         "tick": 218,
         "text": "I headed to Gary's House.",
@@ -1031,34 +1015,24 @@
         "tick": 304,
         "text": "You arrived at Rosa's House.",
         "importance": 4
+      },
+      {
+        "tick": 305,
+        "text": "I (rosa dining table): Lay out my tools and a heavy-duty extension cord to sort Rosa's porch light plug",
+        "importance": 4
+      },
+      {
+        "tick": 305,
+        "text": "Donna just arrived.",
+        "importance": 4
+      },
+      {
+        "tick": 305,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 221,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 221,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 222,
-        "text": "I (donna club calendar): Check today's schedule and pencil in practice with Gary, the ladder match, and Rosa's porch planning",
-        "importance": 4
-      },
-      {
-        "tick": 223,
-        "text": "I (donna pickleball bag): Pack paddles, balls, and visor for practice with Gary",
-        "importance": 4
-      },
-      {
-        "tick": 224,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 224,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -2033,24 +2007,34 @@
         "tick": 304,
         "text": "Rosa said to Gary: “Gary, I'll take you up on that. My porch string lights need a plug that actually reaches, so come have coffee and bring your tools. Donna and Hal, once the flamingos are sorted, you're both welcome too.”",
         "importance": 6
+      },
+      {
+        "tick": 305,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 305,
+        "text": "Hal (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
+        "importance": 4
+      },
+      {
+        "tick": 305,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 305,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 305,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 216,
-        "text": "Gary (street bulletin board): Scan for an Architectural Review approval notice on my cart lights and sound system",
-        "importance": 5
-      },
-      {
-        "tick": 216,
-        "text": "Rosa said to Gary: “Gary, did you spot a Review approval on the board? I didn't see one earlier. If it's not up yet, I'll walk the sketches over to the committee myself so we're ready by Saturday.”",
-        "importance": 5
-      },
-      {
-        "tick": 217,
-        "text": "I (street bulletin board): Read the board for any Architectural Review notice on cart modifications",
-        "importance": 5
-      },
       {
         "tick": 217,
         "text": "Gary said to Rosa: “Nothing up on the board yet, Rosa. I filed mine back at the desk but haven't heard a peep. Tell you what, I'll finish my wiring sketches tonight and you can carry both sets to the committee together. Nothing gets bolted on till they sign off, Hal's got my word on that.”",
@@ -3035,34 +3019,24 @@
         "tick": 304,
         "text": "Rosa said to Gary: “Gary, I'll take you up on that. My porch string lights need a plug that actually reaches, so come have coffee and bring your tools. Donna and Hal, once the flamingos are sorted, you're both welcome too.”",
         "importance": 5
+      },
+      {
+        "tick": 305,
+        "text": "I (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
+        "importance": 5
+      },
+      {
+        "tick": 305,
+        "text": "Donna headed to Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 305,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 204,
-        "text": "Donna said to Rosa: “Rosa, you're a doll for holding dinner. Hal, grab that folding table and let's go before my casserole turns into a doorstop. I'll walk over with you both.”",
-        "importance": 6
-      },
-      {
-        "tick": 204,
-        "text": "Hal headed to Rosa's House.",
-        "importance": 6
-      },
-      {
-        "tick": 205,
-        "text": "I headed to Rosa's House.",
-        "importance": 7
-      },
-      {
-        "tick": 205,
-        "text": "Donna headed to Rosa's House.",
-        "importance": 7
-      },
-      {
-        "tick": 205,
-        "text": "You arrived at Rosa's House.",
-        "importance": 7
-      },
       {
         "tick": 205,
         "text": "Donna just arrived.",
@@ -4037,6 +4011,31 @@
         "tick": 304,
         "text": "Hal said to Rosa: “Coffee's fine, Rosa, I'll bring my own mug. Count's three flamingos from the street, so Donna and I are square for today. Gary and I will have a word about that cart's paperwork over the pot.”",
         "importance": 5
+      },
+      {
+        "tick": 305,
+        "text": "I headed to Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 305,
+        "text": "Donna headed to Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 305,
+        "text": "Hal (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
+        "importance": 5
+      },
+      {
+        "tick": 305,
+        "text": "You arrived at Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 305,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ]
   },
@@ -4084,9 +4083,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "determined",
-    "hal": "grudgingly cordial",
-    "rosa": "warm, hopeful"
+    "donna": "cheerful",
+    "hal": "watchful",
+    "rosa": "cheerful"
   },
   "laws": [
     {
@@ -4203,9 +4202,16 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 305,
+      "time": "Sunday, November 1, 3:17 PM",
+      "story": "On this sunny Sunday afternoon in Sumter Oaks, Gary sits content at Rosa's dining table, laying out his tools and a heavy-duty extension cord to fix her porch light plug. Donna and Rosa are both cheerful as they head over to Rosa's House, while Hal stands watchful on Magnolia Loop, binoculars raised to count the flamingos in Donna's flock. The warm 85-degree air hangs over the street as the neighbors gather for what promises to be an eventful afternoon.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 9.59323,
+    "total_usd": 9.62641,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4288,13 +4294,12 @@
         "usd": 0.47867
       },
       "2026-11-01": {
-        "ticks": 8,
-        "usd": 0.25634
+        "ticks": 9,
+        "usd": 0.28952
       }
     }
   },
   "recent_tick_costs": [
-    0.03267,
     0.03059,
     0.03024,
     0.03108,
@@ -4317,7 +4322,8 @@
     0.032,
     0.03178,
     0.03209,
-    0.03523
+    0.03523,
+    0.03318
   ],
   "fund": {
     "gross_usd": 0.0,

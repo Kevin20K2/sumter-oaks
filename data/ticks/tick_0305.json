@@ -1,0 +1,119 @@
+{
+  "tick": 305,
+  "simulation_time": "Sunday, November 1, 3:17 PM",
+  "weather": "Sunny, 85°F",
+  "positions": {
+    "gary": "rosas_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On this sunny Sunday afternoon in Sumter Oaks, Gary sits content at Rosa's dining table, laying out his tools and a heavy-duty extension cord to fix her porch light plug. Donna and Rosa are both cheerful as they head over to Rosa's House, while Hal stands watchful on Magnolia Loop, binoculars raised to count the flamingos in Donna's flock. The warm 85-degree air hangs over the street as the neighbors gather for what promises to be an eventful afternoon.",
+  "events": [
+    "Gary (rosa dining table): Lay out my tools and a heavy-duty extension cord to sort Rosa's porch light plug",
+    "Donna headed to Rosa's House.",
+    "Hal (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
+    "Rosa headed to Rosa's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at Rosa's with nobody in sight. She asked me to bring tools and fix her porch string lights, so I should get to it. The kitchen is where the coffee is, and her porch plug is the real job, but the only objects here are the kitchen, the dining table, and the shift schedule. I'll use the dining table as my workbench and lay out my tools and extension cord, figuring out a plug that reaches. Holiday lighting isn't allowed until Thanksgiving, but fixing the plug is just prep work, so no law is broken. Helping Rosa makes me feel needed, and I'll be ready when she and the others come in.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Lay out my tools and a heavy-duty extension cord to sort Rosa's porch light plug"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal and Rosa are right here on Magnolia Loop, and Gary has already headed to Rosa's porch. I did the flamingo thinning last tick, so exactly three should be visible and Hal is satisfied. Rosa invited me for coffee once the flamingos were sorted, and Hal said we're square. I shouldn't ask again about something already settled; I should respond to the invitation, confirm I'm done, and head over so I stay at the center of the porch conversation with Gary, and maybe work the pickleball partnership in. Walking over is the natural next step.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Flamingos are sorted, three on the lawn and the rest behind the hedge, so I'm taking Rosa up on that porch coffee."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna just announced she's pulling the extra flamingos behind the hedge, leaving three visible. I've got my binoculars and a standing habit of verifying. A sergeant checks the count himself before signing off. Rosa's coffee is waiting and Gary's headed there, so once I confirm the count I'll wrap this up and go. No need to repeat my earlier lines; I'll check the flock now and let the result speak for itself.",
+      "emotional_state": "watchful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Raise binoculars and count the flamingos visible from the street"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal said he'll bring his own mug, and I already invited Donna and Hal to coffee once the flamingos are sorted. Hal confirmed the count is three, so Donna is cleared. Gary's already heading to my place with his tools. I shouldn't re-invite anyone; I should get home and put the pot on so the porch coffee actually happens and everyone ends up at my table again. I'll walk to my house.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading home to get the coffee brewing before Gary shows up with his tools."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03318,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10772,
+        "output_tokens": 1151,
+        "usd": 0.03305
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 388,
+        "output_tokens": 173,
+        "usd": 0.00013
+      }
+    }
+  },
+  "season": "halloween"
+}
