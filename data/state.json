@@ -1,6 +1,6 @@
 {
-  "tick": 308,
-  "time": "2026-11-01T17:17",
+  "tick": 309,
+  "time": "2026-11-01T18:17",
   "positions": {
     "gary": "rosas_house",
     "donna": "rosas_house",
@@ -9,36 +9,21 @@
   },
   "perceptions": {
     "gary": [
-      "Donna (rosa kitchen): Set the casserole on the kitchen counter and peel back the foil",
-      "Rosa (rosa dining table): Set out plates, napkins and four chairs, saving a spot for Hal"
+      "Donna (rosa kitchen): Peel the foil off the casserole and set out serving spoons",
+      "Rosa said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”"
     ],
     "donna": [
-      "Gary said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”",
-      "Rosa (rosa dining table): Set out plates, napkins and four chairs, saving a spot for Hal"
+      "Gary (rosa dining table): Straighten the chairs and make sure Hal's spot is ready",
+      "Rosa said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”"
     ],
     "hal": [],
     "rosa": [
-      "Gary said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”",
-      "Donna (rosa kitchen): Set the casserole on the kitchen counter and peel back the foil"
+      "Gary (rosa dining table): Straighten the chairs and make sure Hal's spot is ready",
+      "Donna (rosa kitchen): Peel the foil off the casserole and set out serving spoons"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 221,
-        "text": "I waited: Settling in for the evening, sketches stacked by the door, resting up for the nine o'clock walk to the committee.",
-        "importance": 2
-      },
-      {
-        "tick": 222,
-        "text": "I (gary golf cart): Test-fit the strap-on light mounts and check each clamp releases cleanly, so every sketch matches what's on the cart",
-        "importance": 5
-      },
-      {
-        "tick": 223,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 6
-      },
       {
         "tick": 223,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -1023,24 +1008,24 @@
         "tick": 307,
         "text": "Rosa (rosa dining table): Set out plates, napkins and four chairs, saving a spot for Hal",
         "importance": 4
+      },
+      {
+        "tick": 308,
+        "text": "I (rosa dining table): Straighten the chairs and make sure Hal's spot is ready",
+        "importance": 3
+      },
+      {
+        "tick": 308,
+        "text": "Donna (rosa kitchen): Peel the foil off the casserole and set out serving spoons",
+        "importance": 3
+      },
+      {
+        "tick": 308,
+        "text": "Rosa said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 226,
-        "text": "Hal said to Rosa: “Morning, Rosa. I'll be on your porch with the cornbread and my own chair. Anything that changes how a cart looks from the street goes to Architectural Review first, and I'll hold you to that.”",
-        "importance": 5
-      },
-      {
-        "tick": 226,
-        "text": "Rosa said to Hal: “Hal, Donna, there you are. Coffee's brewed and the paper and pens are set out at my place, so come on over and let's sketch that cart. And Hal, how many flamingos is that now?”",
-        "importance": 5
-      },
-      {
-        "tick": 227,
-        "text": "I said to Rosa: “Rosa, you're a doll, I'm right behind you with my iced tea. Hal, the flamingos get sorted the minute we're done sketching, and I'll bring a few cart ideas that won't give Review a headache.”",
-        "importance": 4
-      },
       {
         "tick": 227,
         "text": "Hal said to Rosa: “Nine showing from the street, Rosa, by my notebook. Donna says she'll have it down to three by this afternoon, so I'll check it again before supper. I'll be along to your porch shortly.”",
@@ -2025,14 +2010,24 @@
         "tick": 307,
         "text": "Rosa (rosa dining table): Set out plates, napkins and four chairs, saving a spot for Hal",
         "importance": 3
+      },
+      {
+        "tick": 308,
+        "text": "I (rosa kitchen): Peel the foil off the casserole and set out serving spoons",
+        "importance": 3
+      },
+      {
+        "tick": 308,
+        "text": "Gary (rosa dining table): Straighten the chairs and make sure Hal's spot is ready",
+        "importance": 3
+      },
+      {
+        "tick": 308,
+        "text": "Rosa said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”",
+        "importance": 3
       }
     ],
     "hal": [
-      {
-        "tick": 218,
-        "text": "I said to Rosa: “Sketches look orderly, Rosa. I'll walk over with you tomorrow morning, nine sharp, and I'll hold you both to it: nothing gets bolted on until the committee stamps it.”",
-        "importance": 5
-      },
       {
         "tick": 218,
         "text": "Gary headed to Gary's House.",
@@ -3027,24 +3022,14 @@
         "tick": 307,
         "text": "I (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
         "importance": 5
+      },
+      {
+        "tick": 308,
+        "text": "I (donna flamingo flock): Raise binoculars and carefully count the flamingos visible from the street, noting the total in my log",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 209,
-        "text": "I (rosa shift schedule): Pencil in Tuesday and Thursday evenings for parade planning around my shifts",
-        "importance": 4
-      },
-      {
-        "tick": 210,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 210,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 210,
         "text": "Gary just arrived.",
@@ -4029,6 +4014,21 @@
         "tick": 307,
         "text": "Donna (rosa kitchen): Set the casserole on the kitchen counter and peel back the foil",
         "importance": 6
+      },
+      {
+        "tick": 308,
+        "text": "I said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”",
+        "importance": 6
+      },
+      {
+        "tick": 308,
+        "text": "Gary (rosa dining table): Straighten the chairs and make sure Hal's spot is ready",
+        "importance": 6
+      },
+      {
+        "tick": 308,
+        "text": "Donna (rosa kitchen): Peel the foil off the casserole and set out serving spoons",
+        "importance": 6
       }
     ]
   },
@@ -4077,8 +4077,8 @@
   "emotions": {
     "gary": "content",
     "donna": "cheerful",
-    "hal": "watchful",
-    "rosa": "hopeful"
+    "hal": "vigilant",
+    "rosa": "warm, excited"
   },
   "laws": [
     {
@@ -4218,10 +4218,18 @@
       "dialogue": [
         "Gary said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”"
       ]
+    },
+    {
+      "tick": 308,
+      "time": "Sunday, November 1, 6:17 PM",
+      "story": "At 6:17 on a sunny Sunday evening in Sumter Oaks, Rosa is warmly bustling about her house, eager for everyone to sit down together. Gary is straightening the chairs at the dining table while Donna peels the foil off a casserole in the kitchen. Out on Magnolia Loop, Hal stands watch with his binoculars, carefully counting the flamingos in his log before he heads up to join the gathering.",
+      "dialogue": [
+        "Rosa said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 9.68762,
+    "total_usd": 9.71897,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4304,13 +4312,12 @@
         "usd": 0.47867
       },
       "2026-11-01": {
-        "ticks": 11,
-        "usd": 0.35073
+        "ticks": 12,
+        "usd": 0.38208
       }
     }
   },
   "recent_tick_costs": [
-    0.03108,
     0.03045,
     0.03095,
     0.03235,
@@ -4333,7 +4340,8 @@
     0.03523,
     0.03318,
     0.03085,
-    0.03036
+    0.03036,
+    0.03135
   ],
   "fund": {
     "gross_usd": 0.0,

@@ -1,0 +1,118 @@
+{
+  "tick": 308,
+  "simulation_time": "Sunday, November 1, 6:17 PM",
+  "weather": "Sunny, 83°F",
+  "positions": {
+    "gary": "rosas_house",
+    "donna": "rosas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 6:17 on a sunny Sunday evening in Sumter Oaks, Rosa is warmly bustling about her house, eager for everyone to sit down together. Gary is straightening the chairs at the dining table while Donna peels the foil off a casserole in the kitchen. Out on Magnolia Loop, Hal stands watch with his binoculars, carefully counting the flamingos in his log before he heads up to join the gathering.",
+  "events": [
+    "Gary (rosa dining table): Straighten the chairs and make sure Hal's spot is ready",
+    "Donna (rosa kitchen): Peel the foil off the casserole and set out serving spoons",
+    "Hal (donna flamingo flock): Raise binoculars and carefully count the flamingos visible from the street, noting the total in my log"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa asked me to grab the chairs and I told Donna I'd get them set out. The table already has four chairs and a spot saved for Hal, so the chairs are handled. Still, Rosa's porch string lights need a plug that reaches, and that's exactly the kind of thing I can fix. The shift schedule on the wall is a Rosa matter, not mine to poke at. Best move is to be useful in the house: check the table setup and make sure everything is ready before Hal gets here.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Straighten the chairs and make sure Hal's spot is ready"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary's confirmed Tuesday morning, two hours sharp, which is the max under L-05, so that's settled. Casserole is on the counter, Rosa's got the table set, and we're waiting on Hal. I shouldn't ask Gary again. Best move is to be useful and keep the social ball rolling: help Rosa by getting the casserole out and the foil peeled so dinner is ready when Hal walks in.",
+      "emotional_state": "cheerful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Peel the foil off the casserole and set out serving spoons"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop with no one around, and the flamingo flock is right here. Donna agreed to keep only three visible from the street, but I've learned not to take a promise on faith. I've counted three ticks running with no one to confront, and the count is the evidence I'd need for the committee. Rosa's coffee tomorrow can sort out the cart paperwork with Gary. For now, a proper count with the binoculars, then decide whether there's anything to file.",
+      "emotional_state": "vigilant",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Raise binoculars and carefully count the flamingos visible from the street, noting the total in my log"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The dinner is coming together: plates and chairs are out, Gary's setting up seats, and Donna just put her casserole on my kitchen counter. Hal's spot is saved. Donna is in my kitchen peeling back foil, so she's the one to talk to right now. I shouldn't repeat earlier chatter about Tuesday's court. Best move is to thank her for the casserole and put her to work so the table is ready when Hal arrives, which gets all three neighbors seated together.",
+      "emotional_state": "warm, excited",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03135,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10088,
+        "output_tokens": 1105,
+        "usd": 0.03123
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 457,
+        "output_tokens": 144,
+        "usd": 0.00012
+      }
+    }
+  },
+  "season": "halloween"
+}
