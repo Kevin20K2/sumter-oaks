@@ -1,6 +1,6 @@
 {
-  "tick": 307,
-  "time": "2026-11-01T16:17",
+  "tick": 308,
+  "time": "2026-11-01T17:17",
   "positions": {
     "gary": "rosas_house",
     "donna": "rosas_house",
@@ -9,36 +9,21 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, those third-shot drops today were gorgeous, you're a natural. Let's book the court for Tuesday morning, two hours sharp, and I'll sign us up on the ladder.”",
-      "Rosa said to Donna: “Donna, you can set that casserole right on the kitchen counter, I'll get the table laid out. Gary, would you mind grabbing the chairs while we wait on Hal?”"
+      "Donna (rosa kitchen): Set the casserole on the kitchen counter and peel back the foil",
+      "Rosa (rosa dining table): Set out plates, napkins and four chairs, saving a spot for Hal"
     ],
     "donna": [
-      "Gary (rosa dining table): Test the porch light plug and measure the run for the heavy-duty extension cord",
-      "Rosa said to Donna: “Donna, you can set that casserole right on the kitchen counter, I'll get the table laid out. Gary, would you mind grabbing the chairs while we wait on Hal?”"
+      "Gary said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”",
+      "Rosa (rosa dining table): Set out plates, napkins and four chairs, saving a spot for Hal"
     ],
     "hal": [],
     "rosa": [
-      "Gary (rosa dining table): Test the porch light plug and measure the run for the heavy-duty extension cord",
-      "Donna said to Gary: “Gary, those third-shot drops today were gorgeous, you're a natural. Let's book the court for Tuesday morning, two hours sharp, and I'll sign us up on the ladder.”"
+      "Gary said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”",
+      "Donna (rosa kitchen): Set the casserole on the kitchen counter and peel back the foil"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 218,
-        "text": "You arrived at Gary's House.",
-        "importance": 5
-      },
-      {
-        "tick": 219,
-        "text": "I (gary workbench): Finalize and label the wiring sketches, marking everything strap-on and removable, ready for tomorrow's walk to the committee",
-        "importance": 5
-      },
-      {
-        "tick": 220,
-        "text": "I (gary workbench): Give the labeled wiring sketches one last check and stack them by the door for the morning walk",
-        "importance": 4
-      },
       {
         "tick": 221,
         "text": "I waited: Settling in for the evening, sketches stacked by the door, resting up for the nine o'clock walk to the committee.",
@@ -1023,24 +1008,24 @@
         "tick": 306,
         "text": "Rosa said to Donna: “Donna, you can set that casserole right on the kitchen counter, I'll get the table laid out. Gary, would you mind grabbing the chairs while we wait on Hal?”",
         "importance": 5
+      },
+      {
+        "tick": 307,
+        "text": "I said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”",
+        "importance": 4
+      },
+      {
+        "tick": 307,
+        "text": "Donna (rosa kitchen): Set the casserole on the kitchen counter and peel back the foil",
+        "importance": 4
+      },
+      {
+        "tick": 307,
+        "text": "Rosa (rosa dining table): Set out plates, napkins and four chairs, saving a spot for Hal",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 225,
-        "text": "Hal said to Donna: “Morning, Donna. I counted your flamingos again, and L-02 caps street-visible ornaments at three. Can we sort that out between us before I have to take it to the committee?”",
-        "importance": 4
-      },
-      {
-        "tick": 225,
-        "text": "Rosa just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 226,
-        "text": "I said to Hal: “Fair enough, Hal. I'll move the extras behind the hedge this afternoon so only three show from the street. Hold off on the committee and I'll have it squared away before Rosa's porch meeting.”",
-        "importance": 5
-      },
       {
         "tick": 226,
         "text": "Hal said to Rosa: “Morning, Rosa. I'll be on your porch with the cornbread and my own chair. Anything that changes how a cart looks from the street goes to Architectural Review first, and I'll hold you to that.”",
@@ -2025,14 +2010,24 @@
         "tick": 306,
         "text": "Rosa said to Donna: “Donna, you can set that casserole right on the kitchen counter, I'll get the table laid out. Gary, would you mind grabbing the chairs while we wait on Hal?”",
         "importance": 5
+      },
+      {
+        "tick": 307,
+        "text": "I (rosa kitchen): Set the casserole on the kitchen counter and peel back the foil",
+        "importance": 3
+      },
+      {
+        "tick": 307,
+        "text": "Gary said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”",
+        "importance": 3
+      },
+      {
+        "tick": 307,
+        "text": "Rosa (rosa dining table): Set out plates, napkins and four chairs, saving a spot for Hal",
+        "importance": 3
       }
     ],
     "hal": [
-      {
-        "tick": 217,
-        "text": "Rosa said to Hal: “Here you go, Hal. Everything's strap-on and removable, nothing touches the cart's frame until Review says yes. If the board's still empty, I'll walk these over to the committee tomorrow morning, and you're welcome to come along.”",
-        "importance": 5
-      },
       {
         "tick": 218,
         "text": "I said to Rosa: “Sketches look orderly, Rosa. I'll walk over with you tomorrow morning, nine sharp, and I'll hold you both to it: nothing gets bolted on until the committee stamps it.”",
@@ -3027,24 +3022,14 @@
         "tick": 306,
         "text": "I (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
         "importance": 5
+      },
+      {
+        "tick": 307,
+        "text": "I (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 206,
-        "text": "Hal said to Donna: “Evening, Donna. Casserole smells legal, and I'll note your flamingo count is holding at three, so the notebook stays in my pocket tonight.”",
-        "importance": 8
-      },
-      {
-        "tick": 207,
-        "text": "I (rosa shift schedule): Check my per-diem shifts for the week and pencil in time for Halloween parade planning",
-        "importance": 4
-      },
-      {
-        "tick": 208,
-        "text": "I (rosa shift schedule): Check this week's per-diem shifts and block off evenings for Halloween parade planning",
-        "importance": 4
-      },
       {
         "tick": 209,
         "text": "I (rosa shift schedule): Pencil in Tuesday and Thursday evenings for parade planning around my shifts",
@@ -4029,6 +4014,21 @@
         "tick": 306,
         "text": "Donna said to Gary: “Gary, those third-shot drops today were gorgeous, you're a natural. Let's book the court for Tuesday morning, two hours sharp, and I'll sign us up on the ladder.”",
         "importance": 6
+      },
+      {
+        "tick": 307,
+        "text": "I (rosa dining table): Set out plates, napkins and four chairs, saving a spot for Hal",
+        "importance": 6
+      },
+      {
+        "tick": 307,
+        "text": "Gary said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”",
+        "importance": 6
+      },
+      {
+        "tick": 307,
+        "text": "Donna (rosa kitchen): Set the casserole on the kitchen counter and peel back the foil",
+        "importance": 6
       }
     ]
   },
@@ -4077,8 +4077,8 @@
   "emotions": {
     "gary": "content",
     "donna": "cheerful",
-    "hal": "wary",
-    "rosa": "warm, hopeful"
+    "hal": "watchful",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4210,10 +4210,18 @@
         "Donna said to Gary: “Gary, those third-shot drops today were gorgeous, you're a natural. Let's book the court for Tuesday morning, two hours sharp, and I'll sign us up on the ladder.”",
         "Rosa said to Donna: “Donna, you can set that casserole right on the kitchen counter, I'll get the table laid out. Gary, would you mind grabbing the chairs while we wait on Hal?”"
       ]
+    },
+    {
+      "tick": 307,
+      "time": "Sunday, November 1, 5:17 PM",
+      "story": "At 5:17 on a sunny Sunday afternoon in Sumter Oaks, Rosa is setting out plates, napkins, and four chairs at her dining table, saving a spot for Hal, who is out on Magnolia Loop watching the street with binoculars and counting flamingos. Inside Rosa's house, Gary is promising Donna that he'll be there Tuesday morning at two hours sharp, after he finishes setting out chairs and they sort out the ladder sign-up. Donna, in good spirits, is in the kitchen peeling back the foil on a casserole and setting it on the counter.",
+      "dialogue": [
+        "Gary said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 9.65726,
+    "total_usd": 9.68762,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4296,13 +4304,12 @@
         "usd": 0.47867
       },
       "2026-11-01": {
-        "ticks": 10,
-        "usd": 0.32037
+        "ticks": 11,
+        "usd": 0.35073
       }
     }
   },
   "recent_tick_costs": [
-    0.03024,
     0.03108,
     0.03045,
     0.03095,
@@ -4325,7 +4332,8 @@
     0.03209,
     0.03523,
     0.03318,
-    0.03085
+    0.03085,
+    0.03036
   ],
   "fund": {
     "gross_usd": 0.0,
