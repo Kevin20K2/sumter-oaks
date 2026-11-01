@@ -1,0 +1,116 @@
+{
+  "tick": 295,
+  "simulation_time": "Saturday, October 31, 8:17 PM",
+  "weather": "Sunny, 81°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "It is Saturday evening on Halloween in Sumter Oaks, and the sun is still warm at 81 degrees. Gary has wrapped up his two hours at the Rec Center and is heading out to Magnolia Loop with Donna, who is cheerfully plotting to hide her flamingo flock and sign them up for the costume contest. Hal is out on the street with his notebook, counting the flamingos he can spot while watching things carefully, and Rosa has caught him to invite him to the Town Square contest and to coffee on her porch tomorrow.",
+  "events": [
+    "Hal (donna flamingo flock): Count the flamingos visible from the street, notebook in hand"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Our two hours on court one are up and my third-shot drops are finally behaving. The parade and the costume contest are already underway, and my cart rig is what I've been working toward all this time. Donna said she'd get her ornaments behind the hedge once we finish. L-05 says two hours max, so I should hand the court back, thank Donna, and head out to Magnolia Loop. No point asking her again about anything, I'll just wrap up and go.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "That's a wrap on our two hours, Donna. Thanks for sticking with me on those drops. I'm heading out to the Loop to catch what's left of the parade, and I'll see you at Rosa's for that cider."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just called time on our two hours, which also keeps me inside L-05. My drills with him are done, the parade is rolling and the costume contest is starting at the bandstand, and I promised Hal the extra flamingos go behind the hedge. I shouldn't repeat my promise to Hal, I should act on it. Gary is right here, so I'll agree, hand the court back, and get us moving toward the Loop. That keeps the partnership going and puts me where the social scene is.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "You've earned that drop shot, Gary. Court's all theirs, let's head out to the Loop. I've got flamingos to hide, and then I'm buying you cider and signing us up for the costume contest."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop with the flamingo flock right here. Donna gave me her word she'd thin them behind the hedge, and I told myself I'd hold her to it. A quick count with my own eyes costs nothing, and L-02 caps street-visible ornaments at three. Rosa's watching, but this is just an inspection, not a scene. Gary's cart can wait for the committee; the flamingos are in front of me now.",
+      "emotional_state": "watchful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street, notebook in hand"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal just arrived on the Loop, and I'm still glowing from the dinner and the parade. I already pinned my coffee invitation to the bulletin board last tick, so I shouldn't repeat that. Hal is the one neighbor I most wanted at the table, and he came through. The costume contest is starting at the Town Square, so a quick, warm word to Hal that points him toward the contest and mentions the porch coffee feels like the natural next step.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, glad I caught you! Thank you for coming to dinner. The costume contest is starting at the Town Square if you want to see the carts, and there's coffee on my porch tomorrow if you're up for it."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03298,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10636,
+        "output_tokens": 1156,
+        "usd": 0.03283
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 545,
+        "output_tokens": 181,
+        "usd": 0.00015
+      }
+    }
+  },
+  "season": "halloween"
+}
