@@ -1,0 +1,119 @@
+{
+  "tick": 297,
+  "simulation_time": "Sunday, November 1, 7:17 AM",
+  "weather": "Sunny, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a sunny Sunday morning in Sumter Oaks, Gary is inspecting his golf cart's battery and roof frame, already sketching where the light strips and speakers will go. Donna is heading down Magnolia Loop with a determined stride, while Hal, the dutiful neighborhood enforcer, updates his violation notebook with notes on Gary's cart modifications and Donna's ever-growing flamingo count. Rosa, content with her coffee, is checking her per-diem shifts for the week so she'll know she's free for Hal's porch visit.",
+  "events": [
+    "Gary (gary golf cart): Inspect the cart's battery and roof frame, then sketch out where the light strips and speakers will mount",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (hal violation notebook): Review and update my entries on Gary's cart modifications and Donna's flamingo count",
+    "Rosa (rosa shift schedule): Check my per-diem shifts this week with coffee in hand, so I know I'm free for Hal's porch visit"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's a quiet Sunday morning and I'm home at last, with the Halloween parade behind me. My goal is still the Holiday Golf Cart Parade, and lights are legal from Thanksgiving on, so I've got a few weeks to plan. The cart is sitting right here. L-01 says exterior mods visible from the street need Architectural Review approval, so I should sketch the wiring and speaker layout and keep everything bench-tested inside the garage until I get that approval. No one's around to talk to, so the best use of this hour is to dig into the cart and see what I'm working with. Being useful is what gets me up in the morning.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Inspect the cart's battery and roof frame, then sketch out where the light strips and speakers will mount"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's a fresh Sunday morning and I'm home. The parade and costume contest are behind us, and Gary headed off to catch the tail end of it. I promised Hal I'd thin the flamingo flock to three and hide the rest behind the hedge so Magnolia Loop stays tidy under L-02. That's a promise I want to keep, and the street is where the flamingos are. Nobody's around to chat with, so the sensible move is to head out to Magnolia Loop and get the lawn sorted. Afterward I can check the club calendar and line up another court session with Gary.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to the front to pull the extra flamingos behind the hedge like I promised Hal."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Sunday morning, 7:17 AM, and nobody's in sight. The parade and the costume contest are over, and I made a promise to myself to keep tabs on Magnolia Loop. My notebook has Gary's cart modifications and Donna's flamingo count waiting, and the committee won't act on hearsay. I'll log what I've seen before heading out to Rosa's coffee later. Facts first, then feelings.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Review and update my entries on Gary's cart modifications and Donna's flamingo count"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's early Sunday morning and I'm home alone. Dinner went well, Hal's coming for coffee on the porch tomorrow, and the parade is behind me. My goal of getting all three neighbors at one table is done. Nobody's nearby to talk to, so I should handle my own business. My per-diem shift schedule is sitting right here in the house, and as an overcommitted nurse I should check it before I promise anyone another thing this week.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts this week with coffee in hand, so I know I'm free for Hal's porch visit"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03106,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9606,
+        "output_tokens": 1171,
+        "usd": 0.03092
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 416,
+        "output_tokens": 190,
+        "usd": 0.00014
+      }
+    }
+  },
+  "season": "halloween"
+}
