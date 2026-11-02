@@ -1,34 +1,28 @@
 {
-  "tick": 317,
-  "time": "2026-11-02T11:17",
+  "tick": 318,
+  "time": "2026-11-02T12:17",
   "positions": {
-    "gary": "garys_house",
+    "gary": "magnolia_loop",
     "donna": "magnolia_loop",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
-    "donna": [
+    "gary": [
       "You arrived at Magnolia Loop (the street)."
     ],
+    "donna": [
+      "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02",
+      "Gary just arrived."
+    ],
     "hal": [
-      "Donna just arrived."
+      "Donna said to Hal: “Afternoon, Hal! Count 'em yourself, exactly three flamingos out front, the rest are tucked behind the hedge. Are you heading over to Rosa's porch for coffee?”",
+      "Gary just arrived."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 233,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 234,
-        "text": "I (street bulletin board): Read the board for any Review committee meeting date or parade updates",
-        "importance": 4
-      },
       {
         "tick": 235,
         "text": "I headed to Gary's House.",
@@ -1018,24 +1012,19 @@
         "tick": 316,
         "text": "I (gary golf cart): Zip-tie the wiring harness and check each light strip and speaker connection with the multimeter",
         "importance": 5
+      },
+      {
+        "tick": 317,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 317,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 234,
-        "text": "I (rosa dining table): Sketch the first parade cart design with Rosa: removable pumpkin garland and a clip-on bat banner",
-        "importance": 5
-      },
-      {
-        "tick": 234,
-        "text": "Rosa (rosa dining table): Sketch a pumpkin-patch theme with clip-on lights and a removable fabric banner for the cart",
-        "importance": 5
-      },
-      {
-        "tick": 235,
-        "text": "I said to Rosa: “Rosa, I love the pumpkin patch! Let's do the clip-on lights and the fabric banner, and I'll add a little hay-bale skirt along the bottom that just tucks on, so nothing's permanent and Review can't say a word. Pencil that in and let's get it to Hal tomorrow.”",
-        "importance": 4
-      },
       {
         "tick": 235,
         "text": "Rosa (rosa shift schedule): Check my per-diem shifts to find free evenings this week for building the parade cart",
@@ -2020,24 +2009,24 @@
         "tick": 316,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 317,
+        "text": "I said to Hal: “Afternoon, Hal! Count 'em yourself, exactly three flamingos out front, the rest are tucked behind the hedge. Are you heading over to Rosa's porch for coffee?”",
+        "importance": 3
+      },
+      {
+        "tick": 317,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02",
+        "importance": 3
+      },
+      {
+        "tick": 317,
+        "text": "Gary just arrived.",
+        "importance": 3
       }
     ],
     "hal": [
-      {
-        "tick": 224,
-        "text": "Donna just arrived.",
-        "importance": 6
-      },
-      {
-        "tick": 225,
-        "text": "I said to Donna: “Morning, Donna. I counted your flamingos again, and L-02 caps street-visible ornaments at three. Can we sort that out between us before I have to take it to the committee?”",
-        "importance": 5
-      },
-      {
-        "tick": 225,
-        "text": "Donna said to Hal: “Morning, Hal! You're still coming to Rosa's porch for the parade planning, right? We'll need you to keep us honest on Architectural Review, and I'm heading to the Rec Center to practice with Gary.”",
-        "importance": 5
-      },
       {
         "tick": 225,
         "text": "Rosa just arrived.",
@@ -3022,14 +3011,24 @@
         "tick": 316,
         "text": "Donna just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 317,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02",
+        "importance": 5
+      },
+      {
+        "tick": 317,
+        "text": "Donna said to Hal: “Afternoon, Hal! Count 'em yourself, exactly three flamingos out front, the rest are tucked behind the hedge. Are you heading over to Rosa's porch for coffee?”",
+        "importance": 5
+      },
+      {
+        "tick": 317,
+        "text": "Gary just arrived.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 214,
-        "text": "Gary (street bulletin board): Check for an Architectural Review approval notice and any parade updates",
-        "importance": 5
-      },
       {
         "tick": 214,
         "text": "Donna said to Gary: “Gary, let's lock in practice. Rec center at four today, and I'll bring the balls and a thermos of iced tea. We keep it under our two-hour court limit, and you can show me those cart sketches on the way over.”",
@@ -4024,6 +4023,11 @@
         "tick": 316,
         "text": "I (rosa shift schedule): Pick one open morning this week, write 'Coffee with Hal' in ink, and save the chair for him",
         "importance": 4
+      },
+      {
+        "tick": 317,
+        "text": "I (rosa shift schedule): Pick an open morning, write 'Coffee with Hal' in ink, and be done with it",
+        "importance": 5
       }
     ]
   },
@@ -4070,9 +4074,9 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
-    "donna": "optimistic",
-    "hal": "determined",
+    "gary": "determined",
+    "donna": "cheerful",
+    "hal": "watchful",
     "rosa": "determined"
   },
   "laws": [
@@ -4190,9 +4194,18 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 317,
+      "time": "Monday, November 2, 12:17 PM",
+      "story": "On Monday, November 2 at 12:17 PM, the breeze is light and the Florida sun holds steady at 80 degrees over Sumter Oaks. Gary has set out determinedly for Magnolia Loop, where Donna greets Hal cheerfully and points out the three flamingos in front while the rest hide behind the hedge. Hal watches on with his usual caution, double-checking the flamingo count against his list, while Rosa, equally determined, is at home penciling a coffee date with Hal into her schedule.",
+      "dialogue": [
+        "Donna said to Hal: “Afternoon, Hal! Count 'em yourself, exactly three flamingos out front, the rest are tucked behind the hedge. Are you heading over to Rosa's porch for coffee?”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 9.96356,
+    "total_usd": 9.99411,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4279,13 +4292,12 @@
         "usd": 0.47399
       },
       "2026-11-02": {
-        "ticks": 5,
-        "usd": 0.15268
+        "ticks": 6,
+        "usd": 0.18323
       }
     }
   },
   "recent_tick_costs": [
-    0.03216,
     0.03337,
     0.03298,
     0.03219,
@@ -4308,7 +4320,8 @@
     0.03057,
     0.02998,
     0.03034,
-    0.03041
+    0.03041,
+    0.03055
   ],
   "fund": {
     "gross_usd": 0.0,
