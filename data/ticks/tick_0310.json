@@ -1,0 +1,118 @@
+{
+  "tick": 310,
+  "simulation_time": "Sunday, November 1, 8:17 PM",
+  "weather": "Sunny, 81°F",
+  "positions": {
+    "gary": "rosas_house",
+    "donna": "rosas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on a sunny Sunday evening in Sumter Oaks, Gary, Donna, and Rosa are gathered at Rosa's house, where the dining table is getting set with spoons, plates, and a steaming casserole. Rosa has promised Gary they'll turn on the porch lights after dessert, and she's holding Hal's chair while he makes his way over. Hal, meanwhile, is out on Magnolia Loop, dutifully heading toward Town Square and expected to catch up with the others soon.",
+  "events": [
+    "Gary (rosa dining table): Help set out spoons and plates, then take a seat",
+    "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
+    "Hal headed to Town Square."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "The table's nearly set: Donna's got the casserole down, Rosa's pulling rolls and setting out water. I already told Rosa I'd fix her porch lights after we eat, so no need to repeat that. Best thing I can do right now is pitch in so I'm useful. The dining table is where the action is, so I'll help set it and take a seat with the ladies until Hal shows up.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Help set out spoons and plates, then take a seat"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa wants everybody seated together, and I just carried the casserole in. Gary's chairs are straightened, Hal should be arriving any minute, and my own memory says I should slide the casserole onto the table and take a seat. Nobody's waiting on an answer from me, so the useful move is to put the dish down and get settled, then I can chat about pickleball and flamingos once Hal sits down.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Slide the casserole onto the table and take a seat"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've counted Donna's flamingos three ticks running and posted the L-01 notice on the bulletin board. Nobody's around, and my own surroundings are quiet. The numbers are logged, Donna agreed to three, and the cart paperwork can be sorted over Rosa's coffee tomorrow like a civilized man. No sense standing on the street counting the same birds again. I'll head to the Town Square, where the review committee business and Halloween deadline get handled, and see whether the contest crowd has left anything out of order.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_square",
+          "content": "Flamingos are counted and the notice is posted. Time to see what the committee business looks like at the Town Square."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The table's set, the rolls are out, the casserole is down, and Gary and Donna are both here. Hal isn't mentioned as arriving yet, and I wanted all three neighbors at this table. Gary already said what he'll do after dinner, so I shouldn't keep thanking him. The best move now is to sit and get the meal going, warmly and bluntly, and keep Hal's seat ready.",
+      "emotional_state": "content",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Deal, Gary, porch lights after dessert. Sit, sit, before the rolls go cold. We'll save Hal's chair and he can catch up when he gets here."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03094,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9963,
+        "output_tokens": 1029,
+        "usd": 0.03022
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3564,
+        "output_tokens": 734,
+        "usd": 0.00072
+      }
+    }
+  },
+  "season": "halloween"
+}

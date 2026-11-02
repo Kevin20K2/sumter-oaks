@@ -1,44 +1,31 @@
 {
-  "tick": 310,
-  "time": "2026-11-01T19:17",
+  "tick": 311,
+  "time": "2026-11-01T20:17",
   "positions": {
     "gary": "rosas_house",
     "donna": "rosas_house",
-    "hal": "magnolia_loop",
+    "hal": "town_square",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
       "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
-      "Rosa (rosa kitchen): Pull the rolls from the oven and set out the water pitcher"
+      "Rosa said to Gary: “Deal, Gary, porch lights after dessert. Sit, sit, before the rolls go cold. We'll save Hal's chair and he can catch up when he gets here.”"
     ],
     "donna": [
-      "Gary said to Rosa: “Table looks great, Rosa. After we eat, I'll grab my tools and get that porch string light plug sorted so it actually reaches.”",
-      "Rosa (rosa kitchen): Pull the rolls from the oven and set out the water pitcher"
+      "Gary (rosa dining table): Help set out spoons and plates, then take a seat",
+      "Rosa said to Gary: “Deal, Gary, porch lights after dessert. Sit, sit, before the rolls go cold. We'll save Hal's chair and he can catch up when he gets here.”"
     ],
-    "hal": [],
+    "hal": [
+      "You arrived at Town Square."
+    ],
     "rosa": [
-      "Gary said to Rosa: “Table looks great, Rosa. After we eat, I'll grab my tools and get that porch string light plug sorted so it actually reaches.”",
+      "Gary (rosa dining table): Help set out spoons and plates, then take a seat",
       "Donna (rosa dining table): Slide the casserole onto the table and take a seat"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 225,
-        "text": "I (parade signup table): Sign up my golf cart for the parade, noting lights and sound are pending Architectural Review approval",
-        "importance": 5
-      },
-      {
-        "tick": 226,
-        "text": "I waited: Sitting on a square bench, going over my wiring sketches and clamp list once more while I wait on the Architectural Review answer.",
-        "importance": 4
-      },
-      {
-        "tick": 227,
-        "text": "I headed to Town Hall.",
-        "importance": 5
-      },
       {
         "tick": 227,
         "text": "You arrived at Town Hall.",
@@ -1023,24 +1010,24 @@
         "tick": 309,
         "text": "Rosa (rosa kitchen): Pull the rolls from the oven and set out the water pitcher",
         "importance": 4
+      },
+      {
+        "tick": 310,
+        "text": "I (rosa dining table): Help set out spoons and plates, then take a seat",
+        "importance": 3
+      },
+      {
+        "tick": 310,
+        "text": "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
+        "importance": 3
+      },
+      {
+        "tick": 310,
+        "text": "Rosa said to Gary: “Deal, Gary, porch lights after dessert. Sit, sit, before the rolls go cold. We'll save Hal's chair and he can catch up when he gets here.”",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 228,
-        "text": "Hal (donna flamingo flock): Count the flamingos showing from the street and log it in my notebook",
-        "importance": 5
-      },
-      {
-        "tick": 229,
-        "text": "I headed to Rosa's House.",
-        "importance": 5
-      },
-      {
-        "tick": 229,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and log the number in my notebook",
-        "importance": 5
-      },
       {
         "tick": 229,
         "text": "You arrived at Rosa's House.",
@@ -2025,19 +2012,24 @@
         "tick": 309,
         "text": "Rosa (rosa kitchen): Pull the rolls from the oven and set out the water pitcher",
         "importance": 3
+      },
+      {
+        "tick": 310,
+        "text": "I (rosa dining table): Slide the casserole onto the table and take a seat",
+        "importance": 3
+      },
+      {
+        "tick": 310,
+        "text": "Gary (rosa dining table): Help set out spoons and plates, then take a seat",
+        "importance": 3
+      },
+      {
+        "tick": 310,
+        "text": "Rosa said to Gary: “Deal, Gary, porch lights after dessert. Sit, sit, before the rolls go cold. We'll save Hal's chair and he can catch up when he gets here.”",
+        "importance": 3
       }
     ],
     "hal": [
-      {
-        "tick": 218,
-        "text": "Rosa said to Gary: “Sounds good, Gary. Bring your sketches by my place tomorrow around nine and we'll walk both sets over to the committee together. Hal, the offer's open if you want to come along.”",
-        "importance": 5
-      },
-      {
-        "tick": 219,
-        "text": "I (donna flamingo flock): Count the flamingos from the street and log the tally in my notebook",
-        "importance": 5
-      },
       {
         "tick": 219,
         "text": "Rosa said to Hal: “Nine sharp it is, Hal. Thanks for coming tonight and for hearing us out. I'm heading in to put my feet up, I've earned it.”",
@@ -3027,24 +3019,19 @@
         "tick": 309,
         "text": "I (street bulletin board): Pin a notice reminding residents that cart modifications visible from the street need Architectural Review approval (L-01)",
         "importance": 4
+      },
+      {
+        "tick": 310,
+        "text": "I headed to Town Square.",
+        "importance": 4
+      },
+      {
+        "tick": 310,
+        "text": "You arrived at Town Square.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 211,
-        "text": "Gary said to Rosa: “Morning, Rosa, Donna. I got my wiring sketches cleaned up for the parade cart, and I filed with Architectural Review, so she's staying in the garage till they say go. Rosa, I'd love to hear what your hospital theme needs from the lights, so I build it right.”",
-        "importance": 6
-      },
-      {
-        "tick": 211,
-        "text": "Donna said to Gary: “Gary, perfect timing! I've got a court for two hours this week. Don't worry, you'll pick up pickleball in no time. When are you free? Then we can sketch out our Halloween cart plans after.”",
-        "importance": 6
-      },
-      {
-        "tick": 212,
-        "text": "I said to Gary: “Gary, thanks for filing first, that's how we keep Hal off our backs. For the hospital cart I'd love a soft red cross glow and a slow heartbeat blink, battery LEDs I can clip on and take off so nothing counts as a permanent mod until Review says go.”",
-        "importance": 5
-      },
       {
         "tick": 212,
         "text": "Gary said to Rosa: “Tuesday at six on your porch works for me, Rosa. I'll bring the wiring sketches, nothing that'd bother Architectural Review. Donna, I'm free Wednesday for that court, and I'll try not to embarrass myself.”",
@@ -4029,6 +4016,21 @@
         "tick": 309,
         "text": "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
         "importance": 6
+      },
+      {
+        "tick": 310,
+        "text": "I said to Gary: “Deal, Gary, porch lights after dessert. Sit, sit, before the rolls go cold. We'll save Hal's chair and he can catch up when he gets here.”",
+        "importance": 6
+      },
+      {
+        "tick": 310,
+        "text": "Gary (rosa dining table): Help set out spoons and plates, then take a seat",
+        "importance": 6
+      },
+      {
+        "tick": 310,
+        "text": "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
+        "importance": 6
       }
     ]
   },
@@ -4076,9 +4078,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "cheerful",
+    "donna": "content",
     "hal": "dutiful",
-    "rosa": "hopeful"
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4195,49 +4197,9 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 305,
-      "time": "Sunday, November 1, 3:17 PM",
-      "story": "On this sunny Sunday afternoon in Sumter Oaks, Gary sits content at Rosa's dining table, laying out his tools and a heavy-duty extension cord to fix her porch light plug. Donna and Rosa are both cheerful as they head over to Rosa's House, while Hal stands watchful on Magnolia Loop, binoculars raised to count the flamingos in Donna's flock. The warm 85-degree air hangs over the street as the neighbors gather for what promises to be an eventful afternoon.",
-      "dialogue": []
-    },
-    {
-      "tick": 306,
-      "time": "Sunday, November 1, 4:17 PM",
-      "story": "At Rosa's House on Sunday afternoon, Gary sits content at the dining table, measuring a run for a heavy-duty extension cord to test the porch light plug, while Donna cheerfully sets down a casserole and praises his third-shot drops, suggesting they book the court for Tuesday morning. Rosa, feeling warm and hopeful, asks Donna to put the casserole on the kitchen counter and enlists Gary to fetch chairs while they wait. Out on Magnolia Loop, a wary Hal raises his binoculars to count the flamingos visible from the street, keeping an eye on the neighborhood flock as the sunny 84-degree afternoon drifts toward evening.",
-      "dialogue": [
-        "Donna said to Gary: “Gary, those third-shot drops today were gorgeous, you're a natural. Let's book the court for Tuesday morning, two hours sharp, and I'll sign us up on the ladder.”",
-        "Rosa said to Donna: “Donna, you can set that casserole right on the kitchen counter, I'll get the table laid out. Gary, would you mind grabbing the chairs while we wait on Hal?”"
-      ]
-    },
-    {
-      "tick": 307,
-      "time": "Sunday, November 1, 5:17 PM",
-      "story": "At 5:17 on a sunny Sunday afternoon in Sumter Oaks, Rosa is setting out plates, napkins, and four chairs at her dining table, saving a spot for Hal, who is out on Magnolia Loop watching the street with binoculars and counting flamingos. Inside Rosa's house, Gary is promising Donna that he'll be there Tuesday morning at two hours sharp, after he finishes setting out chairs and they sort out the ladder sign-up. Donna, in good spirits, is in the kitchen peeling back the foil on a casserole and setting it on the counter.",
-      "dialogue": [
-        "Gary said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”"
-      ]
-    },
-    {
-      "tick": 308,
-      "time": "Sunday, November 1, 6:17 PM",
-      "story": "At 6:17 on a sunny Sunday evening in Sumter Oaks, Rosa is warmly bustling about her house, eager for everyone to sit down together. Gary is straightening the chairs at the dining table while Donna peels the foil off a casserole in the kitchen. Out on Magnolia Loop, Hal stands watch with his binoculars, carefully counting the flamingos in his log before he heads up to join the gathering.",
-      "dialogue": [
-        "Rosa said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”"
-      ]
-    },
-    {
-      "tick": 309,
-      "time": "Sunday, November 1, 7:17 PM",
-      "story": "At Rosa's House on this sunny Sunday evening, Rosa pulls the rolls from the oven while Donna slides the casserole onto the dining table and takes a seat, and Gary says he'll sort out the porch string light plug once dinner is over. Out on Magnolia Loop, Hal pins a reminder to the bulletin board that cart modifications visible from the street need Architectural Review approval, a notice the neighbors will likely read over their evening walks. The mood is easy and hopeful, with Rosa looking forward to a relaxed meal among friends.",
-      "dialogue": [
-        "Gary said to Rosa: “Table looks great, Rosa. After we eat, I'll grab my tools and get that porch string light plug sorted so it actually reaches.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 9.74916,
+    "total_usd": 9.7801,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4320,13 +4282,12 @@
         "usd": 0.47867
       },
       "2026-11-01": {
-        "ticks": 13,
-        "usd": 0.41227
+        "ticks": 14,
+        "usd": 0.44321
       }
     }
   },
   "recent_tick_costs": [
-    0.03095,
     0.03235,
     0.03337,
     0.03338,
@@ -4349,7 +4310,8 @@
     0.03085,
     0.03036,
     0.03135,
-    0.03019
+    0.03019,
+    0.03094
   ],
   "fund": {
     "gross_usd": 0.0,
