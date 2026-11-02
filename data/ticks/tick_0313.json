@@ -1,0 +1,118 @@
+{
+  "tick": 313,
+  "simulation_time": "Monday, November 2, 8:17 AM",
+  "weather": "Breezy and clear, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on this breezy, clear Monday morning in Sumter Oaks, Gary is focused on running wiring and hooking up a speaker amp in his golf cart at his house. Across the way, Donna is determined to lock in a two-hour Tuesday pickleball court slot with Gary and mark it in ink on her club calendar, while Hal, also determined, is peering through his binoculars at Donna's lawn and Gary's driveway to count flamingos and log cart modifications for his report. Meanwhile, Rosa, feeling optimistic, is sorting through her per-diem shifts for the week so she can pick a coffee slot with Hal.",
+  "events": [
+    "Gary (gary golf cart): Run the wiring harness and hook up the speaker amp",
+    "Donna (donna club calendar): Confirm the two-hour Tuesday pickleball court slot with Gary and mark it in ink",
+    "Hal (hal binoculars): Scan Donna's lawn and Gary's driveway; count flamingos and note cart modifications for the report",
+    "Rosa (rosa shift schedule): Look over this week's per-diem shifts and pick a coffee slot with Hal"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's a quiet Monday morning and I'm home alone. Last tick I sketched the wiring plan and bench-tested the amp and light strips, so the next step is putting that plan onto the cart itself. L-01 says visible exterior mods need Architectural Review approval, so I'll keep this to the wiring and the sound system hookup in the driveway for now and sort out the paperwork before anything goes on display. Holiday lighting doesn't start until Thanksgiving anyway, so there's no rush to mount lights. Getting the wiring done makes me feel useful and gets me closer to the parade.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Run the wiring harness and hook up the speaker amp"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Monday morning, I'm home, and I have no one nearby. Yesterday I penciled in a two-hour practice with Gary, and the calendar is right here. Courts max out at 2 hours per party under L-05, so I should make sure the booking is firm and stays within the limit before someone else grabs the slot and I lose ground on the ladder. Gary's drops were gorgeous, so I'll lock in the Tuesday session properly.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Confirm the two-hour Tuesday pickleball court slot with Gary and mark it in ink"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm home at Hal's House, and I'm only a tick or two removed from being at Town Hall. My last action was glassing Donna's lawn and Gary's driveway with the binoculars, but I don't have a result recorded. The binoculars are right here, and I can't file a proper report on the flamingo count or the cart modifications without verified numbers. Verify first, then file by the book. Gary's wiring is a Law L-01 matter, and Donna's count falls under L-02. Facts before paperwork.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Donna's lawn and Gary's driveway; count flamingos and note cart modifications for the report"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Monday morning and nobody is nearby. My last action was pulling up my shift schedule so coffee with Hal doesn't collide with a per-diem shift. The schedule object is right here, so I should actually look at it and pin down a time that works, then I can offer Hal a concrete window instead of a vague 'sometime.' No need to repeat the dinner stuff; that's done. Time to move the coffee plan forward.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Look over this week's per-diem shifts and pick a coffee slot with Hal"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03057,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9600,
+        "output_tokens": 1122,
+        "usd": 0.03042
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 423,
+        "output_tokens": 216,
+        "usd": 0.00015
+      }
+    }
+  }
+}

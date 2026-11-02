@@ -1,6 +1,6 @@
 {
-  "tick": 313,
-  "time": "2026-11-02T07:17",
+  "tick": 314,
+  "time": "2026-11-02T08:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -15,11 +15,6 @@
   },
   "memories": {
     "gary": [
-      {
-        "tick": 231,
-        "text": "I headed to Town Square.",
-        "importance": 4
-      },
       {
         "tick": 231,
         "text": "You arrived at Town Square.",
@@ -1014,14 +1009,14 @@
         "tick": 312,
         "text": "I (gary workbench): Sketch the cart wiring plan and bench-test the speaker amp and light strips",
         "importance": 4
+      },
+      {
+        "tick": 313,
+        "text": "I (gary golf cart): Run the wiring harness and hook up the speaker amp",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 231,
-        "text": "Rosa said to Donna: “Nothing to hear yet, hon, we haven't filed anything. Let's get the sketches done at the dining table while this rain lasts, and Hal can pitch in when he gets here. Then I'll submit the whole thing to Architectural Review.”",
-        "importance": 4
-      },
       {
         "tick": 232,
         "text": "I (rosa dining table): Spread out the cart sketches and start drawing up the Halloween parade design, Review-friendly",
@@ -2016,14 +2011,14 @@
         "tick": 312,
         "text": "I (donna club calendar): Check open pickleball court slots and pencil in a two-hour practice with Gary",
         "importance": 5
+      },
+      {
+        "tick": 313,
+        "text": "I (donna club calendar): Confirm the two-hour Tuesday pickleball court slot with Gary and mark it in ink",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 221,
-        "text": "I (donna flamingo flock): Count the flamingos from the street and log the tally in my notebook",
-        "importance": 4
-      },
       {
         "tick": 221,
         "text": "Donna just arrived.",
@@ -3018,14 +3013,14 @@
         "tick": 312,
         "text": "I (hal binoculars): Scan Donna's lawn and Gary's cart driveway to verify the flamingo count and cart modifications",
         "importance": 4
+      },
+      {
+        "tick": 313,
+        "text": "I (hal binoculars): Scan Donna's lawn and Gary's driveway; count flamingos and note cart modifications for the report",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 213,
-        "text": "Gary said to Rosa: “Soft red cross and a slow heartbeat blink is easy, Rosa. A small battery controller with a fade setting will do it, and everything clips on and comes off so nothing's permanent until Review says go. I'll have the sketch ready Tuesday, and Hal's welcome to look it over.”",
-        "importance": 6
-      },
       {
         "tick": 213,
         "text": "Donna said to Hal: “Afternoon, Hal! Go ahead and count the flamingos, I'm holding at three, and every cart idea for the Halloween parade goes through Architectural Review before a single bulb gets clipped on. Come join us Tuesday at six on Rosa's porch if you'd like to see the plans first.”",
@@ -4020,6 +4015,11 @@
         "tick": 312,
         "text": "I (rosa shift schedule): Check my per-diem shifts this week so nothing collides with coffee with Hal",
         "importance": 4
+      },
+      {
+        "tick": 313,
+        "text": "I (rosa shift schedule): Look over this week's per-diem shifts and pick a coffee slot with Hal",
+        "importance": 4
       }
     ]
   },
@@ -4066,10 +4066,10 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "optimistic",
-    "hal": "vigilant",
-    "rosa": "content"
+    "gary": "focused",
+    "donna": "determined",
+    "hal": "determined",
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -4200,10 +4200,16 @@
       "time": "Monday, November 2, 7:17 AM",
       "story": "Gary is at his workbench at 7:17 on this breezy, clear Monday morning, sketching a wiring plan for his golf cart and bench-testing a speaker amp and light strips while feeling content. Donna, optimistic as ever, is penciling a two-hour pickleball practice with Gary into the club calendar, hoping a court opens up. Across the street, Hal is at his window with binoculars, vigilantly counting flamingos on Donna's lawn and checking Gary's driveway for cart modifications. Meanwhile Rosa, content with her week, is checking her per-diem shifts so nothing collides with her coffee plans with Hal.",
       "dialogue": []
+    },
+    {
+      "tick": 313,
+      "time": "Monday, November 2, 8:17 AM",
+      "story": "At 8:17 on this breezy, clear Monday morning in Sumter Oaks, Gary is focused on running wiring and hooking up a speaker amp in his golf cart at his house. Across the way, Donna is determined to lock in a two-hour Tuesday pickleball court slot with Gary and mark it in ink on her club calendar, while Hal, also determined, is peering through his binoculars at Donna's lawn and Gary's driveway to count flamingos and log cart modifications for his report. Meanwhile, Rosa, feeling optimistic, is sorting through her per-diem shifts for the week so she can pick a coffee slot with Hal.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 9.84226,
+    "total_usd": 9.87283,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4290,13 +4296,12 @@
         "usd": 0.47399
       },
       "2026-11-02": {
-        "ticks": 1,
-        "usd": 0.03138
+        "ticks": 2,
+        "usd": 0.06195
       }
     }
   },
   "recent_tick_costs": [
-    0.03338,
     0.03187,
     0.03175,
     0.03194,
@@ -4319,7 +4324,8 @@
     0.03019,
     0.03094,
     0.03078,
-    0.03138
+    0.03138,
+    0.03057
   ],
   "fund": {
     "gross_usd": 0.0,
