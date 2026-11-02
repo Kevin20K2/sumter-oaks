@@ -1,59 +1,42 @@
 {
-  "tick": 320,
-  "time": "2026-11-02T14:17",
+  "tick": 321,
+  "time": "2026-11-02T15:17",
   "positions": {
-    "gary": "magnolia_loop",
-    "donna": "magnolia_loop",
-    "hal": "magnolia_loop",
+    "gary": "rosas_house",
+    "donna": "rosas_house",
+    "hal": "rosas_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, hon, anything bolted on your cart that shows from the street needs Architectural Review, so file it before you cruise around with those lights. Plug-in decorations you can take off are a safer bet, and I'll happily help with the form over coffee at Rosa's.”",
-      "Hal said to Gary: “You heard right, Gary. L-01 says anything visible from the street needs Architectural Review approval before it goes on the cart. Put your lights and speaker in a written request and I'll walk it over with you. Rosa's porch is a fine place to start the paperwork.”"
+      "Donna headed to Rosa's House.",
+      "Hal headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Donna just arrived.",
+      "Hal just arrived."
     ],
     "donna": [
-      "Gary said to Donna: “Coffee at Rosa's sounds great, Donna, lead the way. I'll grab my tool bag too, her porch lights need a longer plug. And you can tell me how this Architectural Review business works for my cart.”",
-      "Hal said to Gary: “You heard right, Gary. L-01 says anything visible from the street needs Architectural Review approval before it goes on the cart. Put your lights and speaker in a written request and I'll walk it over with you. Rosa's porch is a fine place to start the paperwork.”"
+      "Gary headed to Rosa's House.",
+      "Hal headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Gary just arrived.",
+      "Hal just arrived."
     ],
     "hal": [
-      "Gary said to Donna: “Coffee at Rosa's sounds great, Donna, lead the way. I'll grab my tool bag too, her porch lights need a longer plug. And you can tell me how this Architectural Review business works for my cart.”",
-      "Donna said to Gary: “Gary, hon, anything bolted on your cart that shows from the street needs Architectural Review, so file it before you cruise around with those lights. Plug-in decorations you can take off are a safer bet, and I'll happily help with the form over coffee at Rosa's.”"
+      "Gary headed to Rosa's House.",
+      "Donna headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Gary just arrived.",
+      "Donna just arrived."
     ],
-    "rosa": []
+    "rosa": [
+      "Gary just arrived.",
+      "Donna just arrived.",
+      "Hal just arrived."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 239,
-        "text": "I (street bulletin board): Check for notices on Architectural Review meeting times and parade details",
-        "importance": 4
-      },
-      {
-        "tick": 239,
-        "text": "Donna just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 240,
-        "text": "I said to Donna: “Morning, Donna. You happen to know when the Architectural Review committee meets next? I've got my wiring sketches all labeled and ready for them.”",
-        "importance": 4
-      },
-      {
-        "tick": 240,
-        "text": "Donna said to Gary: “Gary, there you are! I've got my bag packed with paddles and balls, so how about we head to the rec center and get you a first real rally in before the ladder match? I booked the court inside the two-hour limit, so no one can complain.”",
-        "importance": 4
-      },
-      {
-        "tick": 240,
-        "text": "Hal just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 241,
-        "text": "I said to Donna: “Alright, Donna, you've worn me down. Let me grab my sketches off the cart so they're not sitting out, then I'm all yours at the rec center. Just go easy on a rusty old HVAC man.”",
-        "importance": 4
-      },
       {
         "tick": 241,
         "text": "Donna said to Gary: “Good question, Gary. I don't have the date, but they meet at Town Hall and the notice should post on the bulletin board any day now. Hal's here, so ask him too, and then let's get that court time in, the ladder match won't wait!”",
@@ -1023,39 +1006,39 @@
         "tick": 319,
         "text": "Hal said to Gary: “You heard right, Gary. L-01 says anything visible from the street needs Architectural Review approval before it goes on the cart. Put your lights and speaker in a written request and I'll walk it over with you. Rosa's porch is a fine place to start the paperwork.”",
         "importance": 4
-      }
-    ],
-    "donna": [
+      },
       {
-        "tick": 239,
-        "text": "You arrived at Magnolia Loop (the street).",
+        "tick": 320,
+        "text": "I headed to Rosa's House.",
         "importance": 5
       },
       {
-        "tick": 240,
-        "text": "I said to Gary: “Gary, there you are! I've got my bag packed with paddles and balls, so how about we head to the rec center and get you a first real rally in before the ladder match? I booked the court inside the two-hour limit, so no one can complain.”",
-        "importance": 6
+        "tick": 320,
+        "text": "Donna headed to Rosa's House.",
+        "importance": 5
       },
       {
-        "tick": 240,
-        "text": "Gary said to Donna: “Morning, Donna. You happen to know when the Architectural Review committee meets next? I've got my wiring sketches all labeled and ready for them.”",
-        "importance": 6
+        "tick": 320,
+        "text": "Hal headed to Rosa's House.",
+        "importance": 5
       },
       {
-        "tick": 240,
+        "tick": 320,
+        "text": "You arrived at Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 320,
+        "text": "Donna just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 320,
         "text": "Hal just arrived.",
-        "importance": 6
-      },
-      {
-        "tick": 241,
-        "text": "I said to Gary: “Good question, Gary. I don't have the date, but they meet at Town Hall and the notice should post on the bulletin board any day now. Hal's here, so ask him too, and then let's get that court time in, the ladder match won't wait!”",
-        "importance": 4
-      },
-      {
-        "tick": 241,
-        "text": "Gary said to Donna: “Alright, Donna, you've worn me down. Let me grab my sketches off the cart so they're not sitting out, then I'm all yours at the rec center. Just go easy on a rusty old HVAC man.”",
-        "importance": 4
-      },
+        "importance": 5
+      }
+    ],
+    "donna": [
       {
         "tick": 241,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street, notebook in hand",
@@ -2025,39 +2008,39 @@
         "tick": 319,
         "text": "Hal said to Gary: “You heard right, Gary. L-01 says anything visible from the street needs Architectural Review approval before it goes on the cart. Put your lights and speaker in a written request and I'll walk it over with you. Rosa's porch is a fine place to start the paperwork.”",
         "importance": 4
+      },
+      {
+        "tick": 320,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 320,
+        "text": "Gary headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 320,
+        "text": "Hal headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 320,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 320,
+        "text": "Gary just arrived.",
+        "importance": 4
+      },
+      {
+        "tick": 320,
+        "text": "Hal just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 227,
-        "text": "Rosa headed to Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 228,
-        "text": "I (donna flamingo flock): Count the flamingos showing from the street and log it in my notebook",
-        "importance": 4
-      },
-      {
-        "tick": 228,
-        "text": "Donna (donna flamingo flock): Pull six flamingos off the front lawn and carry them into the house, leaving three visible from the street",
-        "importance": 4
-      },
-      {
-        "tick": 229,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and log the number in my notebook",
-        "importance": 5
-      },
-      {
-        "tick": 229,
-        "text": "Donna headed to Rosa's House.",
-        "importance": 5
-      },
-      {
-        "tick": 230,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note it in my notebook",
-        "importance": 4
-      },
       {
         "tick": 231,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street and log the number in my notebook",
@@ -3027,29 +3010,39 @@
         "tick": 319,
         "text": "Donna said to Gary: “Gary, hon, anything bolted on your cart that shows from the street needs Architectural Review, so file it before you cruise around with those lights. Plug-in decorations you can take off are a safer bet, and I'll happily help with the form over coffee at Rosa's.”",
         "importance": 5
+      },
+      {
+        "tick": 320,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 320,
+        "text": "Gary headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 320,
+        "text": "Donna headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 320,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 320,
+        "text": "Gary just arrived.",
+        "importance": 4
+      },
+      {
+        "tick": 320,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 215,
-        "text": "I (street bulletin board): Read the parade flyer and look for an Architectural Review notice on cart decorations",
-        "importance": 5
-      },
-      {
-        "tick": 215,
-        "text": "Gary (street bulletin board): Check for an Architectural Review approval notice and any new parade updates",
-        "importance": 5
-      },
-      {
-        "tick": 215,
-        "text": "Donna headed to Rec Center.",
-        "importance": 5
-      },
-      {
-        "tick": 215,
-        "text": "Hal said to Rosa: “I'll look at your sketches, Rosa, once I've finished my flamingo count. Nothing gets built until Review signs off, but I'll take the leftovers. Don't tell the committee I can be bribed.”",
-        "importance": 5
-      },
       {
         "tick": 216,
         "text": "I said to Gary: “Gary, did you spot a Review approval on the board? I didn't see one earlier. If it's not up yet, I'll walk the sketches over to the committee myself so we're ready by Saturday.”",
@@ -4029,54 +4022,74 @@
         "tick": 319,
         "text": "I (rosa shift schedule): Write 'Coffee with Hal' in ink on an open morning this week",
         "importance": 4
+      },
+      {
+        "tick": 320,
+        "text": "I (rosa shift schedule): Write 'Coffee with Hal' in ink on an open morning this week",
+        "importance": 5
+      },
+      {
+        "tick": 320,
+        "text": "Gary just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 320,
+        "text": "Donna just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 320,
+        "text": "Hal just arrived.",
+        "importance": 5
       }
     ]
   },
   "reflections": {
     "gary": [
-      "Donna keeps pushing me to be patient with my footwork, and I'm starting to appreciate that she sees my potential even when I don't.",
-      "Rosa's offer of treats and a warm porch tonight makes me feel more at home on Magnolia Loop, and I want to help her and the neighbors enjoy the parade.",
       "Donna's a good partner, and those third-shot drops finally feel like they belong to us, so I want to keep sharing the court with her.",
       "I'm going to enjoy the parade and the cider with Donna and Hal, and make sure this Halloween night ends up a good memory for all of us.",
       "Rosa's porch string lights need a plug that reaches, and I'm glad to bring my tools over and help her with it.",
       "Donna and Hal keep their flamingo count honest, and I respect neighbors who look out for the street together.",
       "Donna's enthusiasm about my third-shot drops made me feel like a real part of this group, and I'm looking forward to Tuesday morning on the court with her.",
-      "Rosa's welcoming table and her plan to wait for Hal show me how much this household values sitting down together, and I want to finish my porch light work so I can keep contributing to that."
+      "Rosa's welcoming table and her plan to wait for Hal show me how much this household values sitting down together, and I want to finish my porch light work so I can keep contributing to that.",
+      "Donna and Hal both steered me toward filing with Architectural Review, and honestly, they're right to hold me to the rules, even if it's a hassle with my parade lights. I'd rather get the paperwork done than end up in trouble over a cart nobody approved.",
+      "Donna's always been my doubles partner and a good friend, and I'm glad we're still planning Tuesday over coffee at Rosa's. Having Hal and Donna both willing to help me through the form makes this feel a lot less like a fight."
     ],
     "donna": [
-      "I want to keep my promise to Hal by pulling the extra flamingos behind the hedge so the street stays tidy for parade day.",
-      "Gary's easy humor and steady energy make me look forward to our court sessions, and I want him to feel ready for the cart parade with me.",
       "Gary and I had a great two hours on the pickleball court, and his third-shot drops finally landing soft feels like a real win for our partnership.",
       "I promised Hal I'd thin the flock to three flamingos before the parade, and I intend to keep that promise and hide the rest behind the hedge.",
       "I've been hauling flamingos behind the hedge all afternoon, and Hal's watching the count like a hawk, so I'd better make sure exactly three stay visible.",
       "Rosa's porch coffee sounds like exactly the kind of neighborly company I need after a day of flamingo wrangling, and I'm glad Hal and Gary will both be there.",
       "Gary's third-shot drops were gorgeous today, and booking that Tuesday pickleball session with him feels like the start of something fun.",
-      "Rosa's dinner table is so warm, and I'm glad to be sitting down with friends while we wait for Hal to arrive."
+      "Rosa's dinner table is so warm, and I'm glad to be sitting down with friends while we wait for Hal to arrive.",
+      "Gary is my reliable doubles partner, and I'm glad we're still set for Tuesday pickleball.",
+      "Hal keeps the street honest with his flamingo counts and Architectural Review reminders, and I appreciate having him around for coffee at Rosa's."
     ],
     "hal": [
-      "Donna promised to thin the flock before parade day, and I'm going to hold her to it while keeping my binoculars trained on Magnolia Loop.",
-      "Gary's cart modifications keep drawing my notebook's attention, but his easy friendship with Donna and Rosa makes it hard to see him as just a violation.",
       "I've been counting Donna's flamingos for days, and her promises about thinning the flock don't add up until I see them with my own binoculars.",
       "Rosa's coffee invitation tomorrow sounds like a good chance to clear the air with her, and I'd like to trust people more, even if I'm bringing my own mug.",
       "I'm glad Donna finally agreed to keep only three flamingos visible from the street, though I'll keep my binoculars handy to be sure.",
       "Rosa's coffee invitation is a welcome chance to sort out the cart paperwork with Gary, and I want the Halloween deadline handled fairly for everyone.",
       "Donna's flamingo count is never quite what she claims, so I keep my binoculars handy and check for myself.",
-      "Gary's wiring for the parade cart is ambitious, and I want to make sure the paperwork is in order before the lights come on."
+      "Gary's wiring for the parade cart is ambitious, and I want to make sure the paperwork is in order before the lights come on.",
+      "I need to keep my flamingo tally accurate and cross-check it against L-02, because the committee is counting on my report.",
+      "Donna and Gary are good neighbors who keep this street lively, even when their cart plans make my job harder."
     ],
     "rosa": [
-      "Gary's offer to help with my porch made me feel lucky to have such easygoing neighbors on Magnolia Loop, and I hope tonight's treats bring everyone together.",
-      "Getting the Halloween treats bagged and my evening clear means I can finally enjoy the parade and spend time with Gary and Donna instead of rushing around.",
       "Hal's teasing about his notebook and his own measurements made me smile, and I'm glad he's coming to coffee on my porch tomorrow.",
       "Donna keeps her promises, even the small ones like hiding the extra flamingos, and I respect that about her.",
       "Hal and I are finally getting our coffee together, and I'm glad he's bringing his own mug, since it feels like we're building a friendly routine.",
       "Gary's offer to help with my porch lights made me feel like the neighbors really look out for each other, and I want to keep that spirit going.",
       "Having everyone seated together at my table feels like the kind of evening I've been hoping for, and I'm glad Donna and Gary made themselves at home.",
-      "I want Hal to feel welcome when he arrives, so I'm holding his chair and checking my shifts so I can make time for coffee with him."
+      "I want Hal to feel welcome when he arrives, so I'm holding his chair and checking my shifts so I can make time for coffee with him.",
+      "Gary and Donna showing up for supper made the table feel full again, and I'm glad I kept Hal's chair saved for him.",
+      "Penciling in coffee with Hal kept slipping, so writing it in ink this week feels like a promise I actually intend to keep."
     ]
   },
   "emotions": {
-    "gary": "warm, hopeful",
-    "donna": "chipper",
+    "gary": "optimistic",
+    "donna": "cheerful",
     "hal": "dutiful",
     "rosa": "determined"
   },
@@ -4222,10 +4235,16 @@
         "Donna said to Gary: “Gary, hon, anything bolted on your cart that shows from the street needs Architectural Review, so file it before you cruise around with those lights. Plug-in decorations you can take off are a safer bet, and I'll happily help with the form over coffee at Rosa's.”",
         "Hal said to Gary: “You heard right, Gary. L-01 says anything visible from the street needs Architectural Review approval before it goes on the cart. Put your lights and speaker in a written request and I'll walk it over with you. Rosa's porch is a fine place to start the paperwork.”"
       ]
+    },
+    {
+      "tick": 320,
+      "time": "Monday, November 2, 3:17 PM",
+      "story": "On a breezy, clear Monday afternoon in Sumter Oaks, Gary, Donna, and Hal are all making their way toward Rosa's House along Magnolia Loop, each with a bit of spring in their step. Rosa, waiting at home with her mind set, has her shift schedule open and is determined to pin down a morning this week for coffee with Hal in ink.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 10.05863,
+    "total_usd": 10.09194,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4312,13 +4331,12 @@
         "usd": 0.47399
       },
       "2026-11-02": {
-        "ticks": 8,
-        "usd": 0.24775
+        "ticks": 9,
+        "usd": 0.28106
       }
     }
   },
   "recent_tick_costs": [
-    0.03219,
     0.03106,
     0.03109,
     0.03157,
@@ -4341,7 +4359,8 @@
     0.03041,
     0.03055,
     0.03108,
-    0.03344
+    0.03344,
+    0.03331
   ],
   "fund": {
     "gross_usd": 0.0,

@@ -1,0 +1,118 @@
+{
+  "tick": 320,
+  "simulation_time": "Monday, November 2, 3:17 PM",
+  "weather": "Breezy and clear, 82°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On a breezy, clear Monday afternoon in Sumter Oaks, Gary, Donna, and Hal are all making their way toward Rosa's House along Magnolia Loop, each with a bit of spring in their step. Rosa, waiting at home with her mind set, has her shift schedule open and is determined to pin down a morning this week for coffee with Hal in ink.",
+  "events": [
+    "Gary headed to Rosa's House.",
+    "Donna headed to Rosa's House.",
+    "Hal headed to Rosa's House.",
+    "Rosa (rosa shift schedule): Write 'Coffee with Hal' in ink on an open morning this week"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna and Hal both told me the rule: anything bolted on the cart and visible from the street needs Architectural Review under L-01. They've offered to help with the form at Rosa's porch, and I already said I'd go. I've asked my question and got my answer, so no need to keep chatting here. Time to act: grab my tool bag and head to Rosa's, where I can fix her porch light plug and sit down with Donna and Hal to start the paperwork for my lights and sound system. Being useful there feels good.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's with my tool bag to fix her porch light plug and start the Architectural Review request for my cart."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Everyone's agreed on coffee at Rosa's, and I've already invited Gary and told him how L-01 works, so no sense repeating myself. Hal's still here watching the flamingo count, and I've got three visible and the rest hidden behind the hedge, so I'm in the clear on L-02. Time to stop standing around on Magnolia Loop and lead the way to Rosa's porch. I can get Gary talking over coffee about the Tuesday pickleball session and help him with that Architectural Review form while I'm at it.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading over to Rosa's porch for coffee, with Gary and Hal to follow, and we'll sort out his cart paperwork and Tuesday pickleball there."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary and Donna are heading to Rosa's for coffee, and Gary has an open question about his cart. I already told him to put it in writing and offered to walk it over. No need to repeat myself. Best move is to go to Rosa's, have coffee, and get the paperwork sorted fairly before Halloween. I'll keep my binoculars handy for Donna's flamingos later.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's porch to sit down with Gary and sort out the cart paperwork over coffee."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've reminded myself five ticks in a row to write 'Coffee with Hal' in ink, and I keep not doing it. Nobody is around, and the schedule is right here in my house. Time to actually commit to an open morning this week and stop circling it. Once it's written down, the chair is saved and I can get on with my day.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Write 'Coffee with Hal' in ink on an open morning this week"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03331,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10940,
+        "output_tokens": 1077,
+        "usd": 0.03265
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 3865,
+        "output_tokens": 546,
+        "usd": 0.00066
+      }
+    }
+  }
+}
