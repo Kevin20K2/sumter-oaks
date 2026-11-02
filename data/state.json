@@ -1,6 +1,6 @@
 {
-  "tick": 309,
-  "time": "2026-11-01T18:17",
+  "tick": 310,
+  "time": "2026-11-01T19:17",
   "positions": {
     "gary": "rosas_house",
     "donna": "rosas_house",
@@ -9,36 +9,21 @@
   },
   "perceptions": {
     "gary": [
-      "Donna (rosa kitchen): Peel the foil off the casserole and set out serving spoons",
-      "Rosa said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”"
+      "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
+      "Rosa (rosa kitchen): Pull the rolls from the oven and set out the water pitcher"
     ],
     "donna": [
-      "Gary (rosa dining table): Straighten the chairs and make sure Hal's spot is ready",
-      "Rosa said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”"
+      "Gary said to Rosa: “Table looks great, Rosa. After we eat, I'll grab my tools and get that porch string light plug sorted so it actually reaches.”",
+      "Rosa (rosa kitchen): Pull the rolls from the oven and set out the water pitcher"
     ],
     "hal": [],
     "rosa": [
-      "Gary (rosa dining table): Straighten the chairs and make sure Hal's spot is ready",
-      "Donna (rosa kitchen): Peel the foil off the casserole and set out serving spoons"
+      "Gary said to Rosa: “Table looks great, Rosa. After we eat, I'll grab my tools and get that porch string light plug sorted so it actually reaches.”",
+      "Donna (rosa dining table): Slide the casserole onto the table and take a seat"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 223,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 224,
-        "text": "I headed to Town Square.",
-        "importance": 6
-      },
-      {
-        "tick": 224,
-        "text": "You arrived at Town Square.",
-        "importance": 6
-      },
       {
         "tick": 225,
         "text": "I (parade signup table): Sign up my golf cart for the parade, noting lights and sound are pending Architectural Review approval",
@@ -1023,24 +1008,24 @@
         "tick": 308,
         "text": "Rosa said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”",
         "importance": 3
+      },
+      {
+        "tick": 309,
+        "text": "I said to Rosa: “Table looks great, Rosa. After we eat, I'll grab my tools and get that porch string light plug sorted so it actually reaches.”",
+        "importance": 4
+      },
+      {
+        "tick": 309,
+        "text": "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
+        "importance": 4
+      },
+      {
+        "tick": 309,
+        "text": "Rosa (rosa kitchen): Pull the rolls from the oven and set out the water pitcher",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 227,
-        "text": "Hal said to Rosa: “Nine showing from the street, Rosa, by my notebook. Donna says she'll have it down to three by this afternoon, so I'll check it again before supper. I'll be along to your porch shortly.”",
-        "importance": 4
-      },
-      {
-        "tick": 227,
-        "text": "Rosa headed to Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 228,
-        "text": "I (donna flamingo flock): Pull six flamingos off the front lawn and carry them into the house, leaving three visible from the street",
-        "importance": 5
-      },
       {
         "tick": 228,
         "text": "Hal (donna flamingo flock): Count the flamingos showing from the street and log it in my notebook",
@@ -2025,14 +2010,24 @@
         "tick": 308,
         "text": "Rosa said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”",
         "importance": 3
+      },
+      {
+        "tick": 309,
+        "text": "I (rosa dining table): Slide the casserole onto the table and take a seat",
+        "importance": 3
+      },
+      {
+        "tick": 309,
+        "text": "Gary said to Rosa: “Table looks great, Rosa. After we eat, I'll grab my tools and get that porch string light plug sorted so it actually reaches.”",
+        "importance": 3
+      },
+      {
+        "tick": 309,
+        "text": "Rosa (rosa kitchen): Pull the rolls from the oven and set out the water pitcher",
+        "importance": 3
       }
     ],
     "hal": [
-      {
-        "tick": 218,
-        "text": "Gary headed to Gary's House.",
-        "importance": 5
-      },
       {
         "tick": 218,
         "text": "Rosa said to Gary: “Sounds good, Gary. Bring your sketches by my place tomorrow around nine and we'll walk both sets over to the committee together. Hal, the offer's open if you want to come along.”",
@@ -3027,24 +3022,14 @@
         "tick": 308,
         "text": "I (donna flamingo flock): Raise binoculars and carefully count the flamingos visible from the street, noting the total in my log",
         "importance": 4
+      },
+      {
+        "tick": 309,
+        "text": "I (street bulletin board): Pin a notice reminding residents that cart modifications visible from the street need Architectural Review approval (L-01)",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 210,
-        "text": "Gary just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 210,
-        "text": "Donna just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 211,
-        "text": "I said to Donna: “Donna, Gary, perfect timing. I can do parade planning Tuesday and Thursday evenings around my shifts. Can we do my porch at six, and bring cart ideas that pass review?”",
-        "importance": 6
-      },
       {
         "tick": 211,
         "text": "Gary said to Rosa: “Morning, Rosa, Donna. I got my wiring sketches cleaned up for the parade cart, and I filed with Architectural Review, so she's staying in the garage till they say go. Rosa, I'd love to hear what your hospital theme needs from the lights, so I build it right.”",
@@ -4029,6 +4014,21 @@
         "tick": 308,
         "text": "Donna (rosa kitchen): Peel the foil off the casserole and set out serving spoons",
         "importance": 6
+      },
+      {
+        "tick": 309,
+        "text": "I (rosa kitchen): Pull the rolls from the oven and set out the water pitcher",
+        "importance": 6
+      },
+      {
+        "tick": 309,
+        "text": "Gary said to Rosa: “Table looks great, Rosa. After we eat, I'll grab my tools and get that porch string light plug sorted so it actually reaches.”",
+        "importance": 6
+      },
+      {
+        "tick": 309,
+        "text": "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
+        "importance": 6
       }
     ]
   },
@@ -4077,8 +4077,8 @@
   "emotions": {
     "gary": "content",
     "donna": "cheerful",
-    "hal": "vigilant",
-    "rosa": "warm, excited"
+    "hal": "dutiful",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4226,10 +4226,18 @@
       "dialogue": [
         "Rosa said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”"
       ]
+    },
+    {
+      "tick": 309,
+      "time": "Sunday, November 1, 7:17 PM",
+      "story": "At Rosa's House on this sunny Sunday evening, Rosa pulls the rolls from the oven while Donna slides the casserole onto the dining table and takes a seat, and Gary says he'll sort out the porch string light plug once dinner is over. Out on Magnolia Loop, Hal pins a reminder to the bulletin board that cart modifications visible from the street need Architectural Review approval, a notice the neighbors will likely read over their evening walks. The mood is easy and hopeful, with Rosa looking forward to a relaxed meal among friends.",
+      "dialogue": [
+        "Gary said to Rosa: “Table looks great, Rosa. After we eat, I'll grab my tools and get that porch string light plug sorted so it actually reaches.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 9.71897,
+    "total_usd": 9.74916,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4312,13 +4320,12 @@
         "usd": 0.47867
       },
       "2026-11-01": {
-        "ticks": 12,
-        "usd": 0.38208
+        "ticks": 13,
+        "usd": 0.41227
       }
     }
   },
   "recent_tick_costs": [
-    0.03045,
     0.03095,
     0.03235,
     0.03337,
@@ -4341,7 +4348,8 @@
     0.03318,
     0.03085,
     0.03036,
-    0.03135
+    0.03135,
+    0.03019
   ],
   "fund": {
     "gross_usd": 0.0,
