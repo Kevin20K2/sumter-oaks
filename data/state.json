@@ -1,46 +1,31 @@
 {
-  "tick": 311,
-  "time": "2026-11-01T20:17",
+  "tick": 312,
+  "time": "2026-11-01T21:17",
   "positions": {
     "gary": "rosas_house",
     "donna": "rosas_house",
-    "hal": "town_square",
+    "hal": "town_hall",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
-      "Rosa said to Gary: “Deal, Gary, porch lights after dessert. Sit, sit, before the rolls go cold. We'll save Hal's chair and he can catch up when he gets here.”"
+      "Donna said to Rosa: “Rosa, honey, this spread looks gorgeous, and I'm starving after all that flamingo hauling. Gary, don't let me forget to brag about your third-shot drops while we eat!”",
+      "Rosa (rosa dining table): Sit down and serve everyone the first plates"
     ],
     "donna": [
-      "Gary (rosa dining table): Help set out spoons and plates, then take a seat",
-      "Rosa said to Gary: “Deal, Gary, porch lights after dessert. Sit, sit, before the rolls go cold. We'll save Hal's chair and he can catch up when he gets here.”"
+      "Gary (rosa dining table): Take a seat, pass the rolls, and dig into supper",
+      "Rosa (rosa dining table): Sit down and serve everyone the first plates"
     ],
     "hal": [
-      "You arrived at Town Square."
+      "You arrived at Town Hall."
     ],
     "rosa": [
-      "Gary (rosa dining table): Help set out spoons and plates, then take a seat",
-      "Donna (rosa dining table): Slide the casserole onto the table and take a seat"
+      "Gary (rosa dining table): Take a seat, pass the rolls, and dig into supper",
+      "Donna said to Rosa: “Rosa, honey, this spread looks gorgeous, and I'm starving after all that flamingo hauling. Gary, don't let me forget to brag about your third-shot drops while we eat!”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 227,
-        "text": "You arrived at Town Hall.",
-        "importance": 5
-      },
-      {
-        "tick": 228,
-        "text": "I (architectural review desk): Check on my golf cart lights and sound system application and offer the wiring sketches and clamp list",
-        "importance": 7
-      },
-      {
-        "tick": 229,
-        "text": "I (proposal drop box): Leave a copy of my wiring sketches and clamp list for the review committee",
-        "importance": 5
-      },
       {
         "tick": 230,
         "text": "I waited: thinking about where to head next",
@@ -1025,24 +1010,24 @@
         "tick": 310,
         "text": "Rosa said to Gary: “Deal, Gary, porch lights after dessert. Sit, sit, before the rolls go cold. We'll save Hal's chair and he can catch up when he gets here.”",
         "importance": 3
+      },
+      {
+        "tick": 311,
+        "text": "I (rosa dining table): Take a seat, pass the rolls, and dig into supper",
+        "importance": 4
+      },
+      {
+        "tick": 311,
+        "text": "Donna said to Rosa: “Rosa, honey, this spread looks gorgeous, and I'm starving after all that flamingo hauling. Gary, don't let me forget to brag about your third-shot drops while we eat!”",
+        "importance": 4
+      },
+      {
+        "tick": 311,
+        "text": "Rosa (rosa dining table): Sit down and serve everyone the first plates",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 229,
-        "text": "You arrived at Rosa's House.",
-        "importance": 5
-      },
-      {
-        "tick": 230,
-        "text": "I said to Rosa: “Rosa, hon, there you are! Any word from Architectural Review on the parade cart sketches? I've got my flamingos down to three out front, so I'm squeaky clean and ready to help.”",
-        "importance": 5
-      },
-      {
-        "tick": 230,
-        "text": "Rosa said to Donna: “Donna, good, you're here. Did you get the ornaments down to three yet? Hal's coming by soon and I'd like to sit down with both of you and sketch the cart before the rain picks up.”",
-        "importance": 5
-      },
       {
         "tick": 231,
         "text": "I said to Rosa: “Three flamingos, hon, I counted twice, and Hal logged it in his notebook too. Let's spread those sketches out on the dining table and get the cart drawn up while we wait for him.”",
@@ -2027,19 +2012,24 @@
         "tick": 310,
         "text": "Rosa said to Gary: “Deal, Gary, porch lights after dessert. Sit, sit, before the rolls go cold. We'll save Hal's chair and he can catch up when he gets here.”",
         "importance": 3
+      },
+      {
+        "tick": 311,
+        "text": "I said to Rosa: “Rosa, honey, this spread looks gorgeous, and I'm starving after all that flamingo hauling. Gary, don't let me forget to brag about your third-shot drops while we eat!”",
+        "importance": 4
+      },
+      {
+        "tick": 311,
+        "text": "Gary (rosa dining table): Take a seat, pass the rolls, and dig into supper",
+        "importance": 4
+      },
+      {
+        "tick": 311,
+        "text": "Rosa (rosa dining table): Sit down and serve everyone the first plates",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 219,
-        "text": "Rosa said to Hal: “Nine sharp it is, Hal. Thanks for coming tonight and for hearing us out. I'm heading in to put my feet up, I've earned it.”",
-        "importance": 5
-      },
-      {
-        "tick": 220,
-        "text": "I (donna flamingo flock): Count the flamingos from the street and log the tally in my notebook",
-        "importance": 5
-      },
       {
         "tick": 220,
         "text": "Rosa headed to Rosa's House.",
@@ -3029,24 +3019,19 @@
         "tick": 310,
         "text": "You arrived at Town Square.",
         "importance": 4
+      },
+      {
+        "tick": 311,
+        "text": "I headed to Town Hall.",
+        "importance": 5
+      },
+      {
+        "tick": 311,
+        "text": "You arrived at Town Hall.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 212,
-        "text": "Gary said to Rosa: “Tuesday at six on your porch works for me, Rosa. I'll bring the wiring sketches, nothing that'd bother Architectural Review. Donna, I'm free Wednesday for that court, and I'll try not to embarrass myself.”",
-        "importance": 5
-      },
-      {
-        "tick": 212,
-        "text": "Donna said to Rosa: “Tuesday at six on your porch, Rosa, you're a doll. I'll bring cart ideas that go through Architectural Review first, and Gary, bring those wiring sketches. And Gary, pick a day this week for the court, I booked two hours, and that's all L-05 lets us have!”",
-        "importance": 5
-      },
-      {
-        "tick": 212,
-        "text": "Hal just arrived.",
-        "importance": 5
-      },
       {
         "tick": 213,
         "text": "I said to Hal: “Hal, good timing. We're doing cart planning on my porch Tuesday at six, wiring sketches and everything cleared through Architectural Review first. Come bring your notebook and tell us where the lines are before we build, not after.”",
@@ -4031,6 +4016,21 @@
         "tick": 310,
         "text": "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
         "importance": 6
+      },
+      {
+        "tick": 311,
+        "text": "I (rosa dining table): Sit down and serve everyone the first plates",
+        "importance": 6
+      },
+      {
+        "tick": 311,
+        "text": "Gary (rosa dining table): Take a seat, pass the rolls, and dig into supper",
+        "importance": 6
+      },
+      {
+        "tick": 311,
+        "text": "Donna said to Rosa: “Rosa, honey, this spread looks gorgeous, and I'm starving after all that flamingo hauling. Gary, don't let me forget to brag about your third-shot drops while we eat!”",
+        "importance": 6
       }
     ]
   },
@@ -4078,8 +4078,8 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "content",
-    "hal": "dutiful",
+    "donna": "cheerful",
+    "hal": "determined",
     "rosa": "content"
   },
   "laws": [
@@ -4197,9 +4197,18 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 311,
+      "time": "Sunday, November 1, 9:17 PM",
+      "story": "At 9:17 on a sunny Sunday evening in Sumter Oaks, Rosa's house is warm and lively, with Gary, Donna, and Rosa gathered at the dining table, where Rosa is serving the first plates. Donna is cheerful and eager to eat after a long afternoon hauling plastic flamingos, and she has asked Gary to brag about his third-shot drops once supper starts. Meanwhile, Hal, looking determined, has headed off to Town Hall on his own errand.",
+      "dialogue": [
+        "Donna said to Rosa: “Rosa, honey, this spread looks gorgeous, and I'm starving after all that flamingo hauling. Gary, don't let me forget to brag about your third-shot drops while we eat!”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 9.7801,
+    "total_usd": 9.81088,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4282,13 +4291,12 @@
         "usd": 0.47867
       },
       "2026-11-01": {
-        "ticks": 14,
-        "usd": 0.44321
+        "ticks": 15,
+        "usd": 0.47399
       }
     }
   },
   "recent_tick_costs": [
-    0.03235,
     0.03337,
     0.03338,
     0.03187,
@@ -4311,7 +4319,8 @@
     0.03036,
     0.03135,
     0.03019,
-    0.03094
+    0.03094,
+    0.03078
   ],
   "fund": {
     "gross_usd": 0.0,

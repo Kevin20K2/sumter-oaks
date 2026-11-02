@@ -1,0 +1,118 @@
+{
+  "tick": 311,
+  "simulation_time": "Sunday, November 1, 9:17 PM",
+  "weather": "Sunny, 80°F",
+  "positions": {
+    "gary": "rosas_house",
+    "donna": "rosas_house",
+    "hal": "town_square",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a sunny Sunday evening in Sumter Oaks, Rosa's house is warm and lively, with Gary, Donna, and Rosa gathered at the dining table, where Rosa is serving the first plates. Donna is cheerful and eager to eat after a long afternoon hauling plastic flamingos, and she has asked Gary to brag about his third-shot drops once supper starts. Meanwhile, Hal, looking determined, has headed off to Town Hall on his own errand.",
+  "events": [
+    "Gary (rosa dining table): Take a seat, pass the rolls, and dig into supper",
+    "Hal headed to Town Hall.",
+    "Rosa (rosa dining table): Sit down and serve everyone the first plates"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa said sit before the rolls go cold, and I've got a deal for porch lights after dessert. I already helped set out plates, so the best thing now is to actually sit at the table and enjoy supper with Donna and Rosa. Nothing left to ask or announce. Save Hal's chair, and let the tools wait until after dessert. Being at a full table feels good after two quiet years.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Take a seat, pass the rolls, and dig into supper"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa's got the table set and Gary just sat down. I'm here at the dining table with the casserole already on it, and Rosa said to save Hal's chair, so Hal's still on his way. After a day of hauling flamingos and a great two hours on the court with Gary, I'm in a good mood. I should say something warm to Rosa, since she's hosting, and give Gary a little credit for those third-shot drops. That keeps me at the center of the table without repeating anything already said, and it nudges him toward staying on as my doubles partner.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, honey, this spread looks gorgeous, and I'm starving after all that flamingo hauling. Gary, don't let me forget to brag about your third-shot drops while we eat!"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's 9 PM in the Town Square and nobody is around. I came here to file my grievances, but the architectural review committee works out of Town Hall, not the bandstand. I've already pinned the L-01 notice and counted Donna's flamingos, and she agreed to three. The cart paperwork can be sorted at Rosa's coffee tomorrow. Still, a supply sergeant documents things properly, and a written record at Town Hall beats a verbal promise. Moving there is the logical next step.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_hall",
+          "content": "Heading to Town Hall to get my cart and flamingo observations on the record for the review committee."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary and Donna are at the table, the rolls are out, and I've already told them to sit and that Hal's chair is saved. Hal hasn't shown up yet, but I don't want to keep asking about him. My goal tonight is getting all three neighbors at one table, so the best move now is to sit down with them and get the meal started. Gary already has the porch lights plan after dessert, and I can keep this simple and warm.",
+      "emotional_state": "content",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Sit down and serve everyone the first plates"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03078,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9891,
+        "output_tokens": 1088,
+        "usd": 0.03066
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 405,
+        "output_tokens": 167,
+        "usd": 0.00012
+      }
+    }
+  },
+  "season": "halloween"
+}
