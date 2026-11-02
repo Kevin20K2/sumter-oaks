@@ -1,0 +1,115 @@
+{
+  "tick": 322,
+  "simulation_time": "Monday, November 2, 5:17 PM",
+  "weather": "Breezy and clear, 80°F",
+  "positions": {
+    "gary": "rosas_house",
+    "donna": "rosas_house",
+    "hal": "rosas_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 5:17 on this breezy, clear Monday in Sumter Oaks, Gary is walking down Magnolia Loop with determination on his face, bound for a dispute over lights and speakers. Donna, cheerful as ever, has the Architectural Review form ready and plans to help him finish it before Tuesday, while Hal, gruff but pleased, lays out exactly what the committee will want to see. Rosa, content, has called a halt to the paperwork at her house so everyone can sit down and eat first.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna and Hal both told me the same thing, and they're right: the parade lights need Architectural Review approval under L-01. Hal is about to sit down with Rosa, and Donna and I already have Tuesday set, so there's nothing left to ask or settle here. Standing around chatting won't get the cart wired legally. The form gets filed at Town Hall, so I should head out now and get the paperwork started, which also keeps me from putting the lights back on before approval.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to get my Architectural Review paperwork started for the cart lights, and leaving these folks to their supper."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary's third-shot drops have me dreaming of the ladder, and I already told him Tuesday at the courts. Now Hal is here, Rosa's got coffee going, and Gary is getting his Architectural Review lecture. I shouldn't re-ask Gary about Tuesday. Better to be generous and social: help smooth things over for Gary with the paperwork, since I've chaired plenty of committees and know how to get forms moving. It keeps me at the center of things and keeps my doubles partner happy and out of trouble before Tuesday. I can speak to Gary and mention the form, and tease Hal gently.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, honey, I've filled out that Architectural Review form for half the street, so I'll sit with you and get it done before Tuesday. I can't have my partner's cart in trouble when we've got a ladder to climb."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary asked me for pointers on the Architectural Review form, and he hasn't had an answer yet. That's exactly what I wanted, a neighbor filing the paperwork properly instead of me having to report him. Rosa's saved me the head chair and she's pouring coffee, so I'll answer Gary briefly and then sit. The form wants a description of the modification, where it's visible from the street, and the wiring and sound details, and the committee will ask about quiet hours under L-03 too. Donna's flamingos can wait until I've had my coffee and my binoculars.",
+      "emotional_state": "gruff but pleased",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Good, you're filing. Describe the lights and speaker wiring in plain detail, attach a photo from the street side, and state your sound won't run past 10 PM, because quiet hours are L-03. Do that and the committee can't fault you."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Everyone is here: Gary, Donna, and Hal all in my house, which was my whole goal. Gary and Hal have drifted into the cart-wiring talk and Donna's on pickleball, so the table is sitting empty while they chat. I already told Hal about his chair and the coffee, so I shouldn't repeat that. Best move now is to get dinner going and pull them to the table as one group. I'll nudge them toward sitting down, and tell Gary and Hal to save the paperwork talk for after supper.",
+      "emotional_state": "content",
+      "importance_rating": 7,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Alright, you three, the cart forms and the pickleball ladder can wait until after we eat. Everybody sit, and Hal, pour yourself some water at your head-of-the-table seat while I bring out the food."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03573,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10928,
+        "output_tokens": 1305,
+        "usd": 0.03491
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 4358,
+        "output_tokens": 769,
+        "usd": 0.00082
+      }
+    }
+  }
+}
