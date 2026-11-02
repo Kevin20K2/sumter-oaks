@@ -1,27 +1,24 @@
 {
-  "tick": 316,
-  "time": "2026-11-02T10:17",
+  "tick": 317,
+  "time": "2026-11-02T11:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
-    "donna": [],
-    "hal": [
+    "donna": [
       "You arrived at Magnolia Loop (the street)."
+    ],
+    "hal": [
+      "Donna just arrived."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 233,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 233,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -1016,19 +1013,14 @@
         "tick": 315,
         "text": "I (gary toolbox): Grab zip ties and a multimeter to secure the wiring and check every light and speaker connection",
         "importance": 5
+      },
+      {
+        "tick": 316,
+        "text": "I (gary golf cart): Zip-tie the wiring harness and check each light strip and speaker connection with the multimeter",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 233,
-        "text": "I (rosa dining table): Sit down with Rosa and start sketching the removable Halloween parade cart decorations, keeping everything Review-friendly",
-        "importance": 5
-      },
-      {
-        "tick": 233,
-        "text": "Rosa (rosa dining table): Sit down beside Donna and sketch removable Halloween decorations for the parade cart",
-        "importance": 5
-      },
       {
         "tick": 234,
         "text": "I (rosa dining table): Sketch the first parade cart design with Rosa: removable pumpkin garland and a clip-on bat banner",
@@ -2018,19 +2010,19 @@
         "tick": 315,
         "text": "I (donna phone): Text Gary the Tuesday court time and remind him to bring sneakers",
         "importance": 5
+      },
+      {
+        "tick": 316,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 316,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 224,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 224,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
       {
         "tick": 224,
         "text": "Donna just arrived.",
@@ -3020,14 +3012,19 @@
         "tick": 315,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 316,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02",
+        "importance": 5
+      },
+      {
+        "tick": 316,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 214,
-        "text": "I said to Hal: “Hal, when you're done with the count, I'd love your eyes on the cart sketches before Review sees them. I'll make you a plate of leftovers either way.”",
-        "importance": 5
-      },
       {
         "tick": 214,
         "text": "Gary (street bulletin board): Check for an Architectural Review approval notice and any parade updates",
@@ -4022,6 +4019,11 @@
         "tick": 315,
         "text": "I (rosa shift schedule): Commit to an open morning this week and write in coffee with Hal",
         "importance": 4
+      },
+      {
+        "tick": 316,
+        "text": "I (rosa shift schedule): Pick one open morning this week, write 'Coffee with Hal' in ink, and save the chair for him",
+        "importance": 4
       }
     ]
   },
@@ -4069,7 +4071,7 @@
   },
   "emotions": {
     "gary": "focused",
-    "donna": "eager",
+    "donna": "optimistic",
     "hal": "determined",
     "rosa": "determined"
   },
@@ -4188,42 +4190,9 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 311,
-      "time": "Sunday, November 1, 9:17 PM",
-      "story": "At 9:17 on a sunny Sunday evening in Sumter Oaks, Rosa's house is warm and lively, with Gary, Donna, and Rosa gathered at the dining table, where Rosa is serving the first plates. Donna is cheerful and eager to eat after a long afternoon hauling plastic flamingos, and she has asked Gary to brag about his third-shot drops once supper starts. Meanwhile, Hal, looking determined, has headed off to Town Hall on his own errand.",
-      "dialogue": [
-        "Donna said to Rosa: “Rosa, honey, this spread looks gorgeous, and I'm starving after all that flamingo hauling. Gary, don't let me forget to brag about your third-shot drops while we eat!”"
-      ]
-    },
-    {
-      "tick": 312,
-      "time": "Monday, November 2, 7:17 AM",
-      "story": "Gary is at his workbench at 7:17 on this breezy, clear Monday morning, sketching a wiring plan for his golf cart and bench-testing a speaker amp and light strips while feeling content. Donna, optimistic as ever, is penciling a two-hour pickleball practice with Gary into the club calendar, hoping a court opens up. Across the street, Hal is at his window with binoculars, vigilantly counting flamingos on Donna's lawn and checking Gary's driveway for cart modifications. Meanwhile Rosa, content with her week, is checking her per-diem shifts so nothing collides with her coffee plans with Hal.",
-      "dialogue": []
-    },
-    {
-      "tick": 313,
-      "time": "Monday, November 2, 8:17 AM",
-      "story": "At 8:17 on this breezy, clear Monday morning in Sumter Oaks, Gary is focused on running wiring and hooking up a speaker amp in his golf cart at his house. Across the way, Donna is determined to lock in a two-hour Tuesday pickleball court slot with Gary and mark it in ink on her club calendar, while Hal, also determined, is peering through his binoculars at Donna's lawn and Gary's driveway to count flamingos and log cart modifications for his report. Meanwhile, Rosa, feeling optimistic, is sorting through her per-diem shifts for the week so she can pick a coffee slot with Hal.",
-      "dialogue": []
-    },
-    {
-      "tick": 314,
-      "time": "Monday, November 2, 9:17 AM",
-      "story": "At 9:17 on a breezy, clear Monday morning in Sumter Oaks, Gary is busy mounting light strips and testing a speaker amp on his golf cart at low volume. Across the way, Donna is packing her pickleball bag with paddles, balls, and a spare grip for Gary's Tuesday session, while Hal jots down the flamingo count and Gary's cart modifications for the committee report. Meanwhile, Rosa is scanning the week for an open morning and penciling in coffee with Hal.",
-      "dialogue": []
-    },
-    {
-      "tick": 315,
-      "time": "Monday, November 2, 10:17 AM",
-      "story": "At 10:17 on a breezy, clear Monday morning in Sumter Oaks, Gary is focused on his toolbox, gathering zip ties and a multimeter to tidy up the wiring and test every light and speaker. Over at her house, Donna is eagerly texting Gary the Tuesday court time and reminding him to bring his sneakers. Hal is out the door and heading down Magnolia Loop with a determined stride, while Rosa, equally determined, is blocking off an open morning on her shift schedule so she can pencil in coffee with Hal.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 9.93315,
+    "total_usd": 9.96356,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4310,13 +4279,12 @@
         "usd": 0.47399
       },
       "2026-11-02": {
-        "ticks": 4,
-        "usd": 0.12227
+        "ticks": 5,
+        "usd": 0.15268
       }
     }
   },
   "recent_tick_costs": [
-    0.03194,
     0.03216,
     0.03337,
     0.03298,
@@ -4339,7 +4307,8 @@
     0.03138,
     0.03057,
     0.02998,
-    0.03034
+    0.03034,
+    0.03041
   ],
   "fund": {
     "gross_usd": 0.0,
