@@ -1,0 +1,116 @@
+{
+  "tick": 323,
+  "simulation_time": "Monday, November 2, 6:17 PM",
+  "weather": "Breezy and clear, 80°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "rosas_house",
+    "hal": "rosas_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 6:17 on this breezy, clear Monday evening in Sumter Oaks, Gary stands on Magnolia Loop reading the bulletin board for Architectural Review filing details and parade information, his mood set on determined. Over at Rosa's House, Rosa has plated up supper, while Donna insists on carrying the dishes out so Rosa can sit tight, and Hal grudgingly agrees to sit down and hold his flamingo count until after pie. Everyone is content in the warm kitchen, with the smell of dinner hanging in the air.",
+  "events": [
+    "Gary (street bulletin board): Read the board for Architectural Review filing info and parade details",
+    "Rosa (rosa kitchen): Plate up the supper and carry it out to the table"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm alone on Magnolia Loop, and everyone's heading to Rosa's table to eat. Donna and Hal both told me exactly how to handle the Architectural Review form: plain description of the lights and speaker wiring, a photo from the street side, and a promise that sound stops at 10 PM. Nobody's around to talk to, and I shouldn't repeat myself. The street bulletin board is right here and is the most likely place to find the filing details or deadlines for the parade, so I'll check it before heading to dinner. That gets me moving on the paperwork, not just talking about it.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the board for Architectural Review filing info and parade details"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa is bringing out the food and told everyone to sit, so the cart forms and the pickleball ladder can wait. Gary already headed out to Magnolia Loop, so no point chasing him with partner talk. I should be a good guest, thank Rosa, and keep the evening warm. Hal's coffee date is already in ink, and I can nudge Rosa about her shift schedule later. For now, offer to help and settle in at the table.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa told me to sit and pour water at the head of the table, and she's bringing out food. The paperwork can wait until after supper, as she said. Donna is right here, and I can fold in a bit of business: her flamingos are over the L-02 limit of three, and I still owe the committee an accurate tally. But I'm in Rosa's house, so I'll keep it dry and friendly, not an ambush. Being at this table is also a small gesture of respect I'd rather not waste. I'll take the seat, and nudge Donna about the flamingo count in a way that's more teasing than formal.",
+      "emotional_state": "grudgingly content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary has gone out to the street to deal with his cart form, and Donna and Hal are here with me at the table. I've already told everyone to sit and said I'd bring the food out, and I don't want to repeat myself. The dinner is the whole point, so the useful thing is to get into the kitchen and actually serve, rather than keep talking about forms and ladders. Hal's chair is saved and the table is full, and I can pencil in coffee with Hal once everyone's eating.",
+      "emotional_state": "content",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Plate up the supper and carry it out to the table"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03404,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 11079,
+        "output_tokens": 1174,
+        "usd": 0.0339
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 462,
+        "output_tokens": 183,
+        "usd": 0.00014
+      }
+    }
+  }
+}

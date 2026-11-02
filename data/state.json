@@ -1,6 +1,6 @@
 {
-  "tick": 323,
-  "time": "2026-11-02T17:17",
+  "tick": 324,
+  "time": "2026-11-02T18:17",
   "positions": {
     "gary": "magnolia_loop",
     "donna": "rosas_house",
@@ -8,35 +8,22 @@
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "Donna said to Gary: “Gary, honey, I've filled out that Architectural Review form for half the street, so I'll sit with you and get it done before Tuesday. I can't have my partner's cart in trouble when we've got a ladder to climb.”",
-      "Hal said to Gary: “Good, you're filing. Describe the lights and speaker wiring in plain detail, attach a photo from the street side, and state your sound won't run past 10 PM, because quiet hours are L-03. Do that and the committee can't fault you.”",
-      "Rosa said to Hal: “Alright, you three, the cart forms and the pickleball ladder can wait until after we eat. Everybody sit, and Hal, pour yourself some water at your head-of-the-table seat while I bring out the food.”",
-      "You arrived at Magnolia Loop (the street)."
-    ],
+    "gary": [],
     "donna": [
-      "Gary headed to Magnolia Loop (the street).",
-      "Hal said to Gary: “Good, you're filing. Describe the lights and speaker wiring in plain detail, attach a photo from the street side, and state your sound won't run past 10 PM, because quiet hours are L-03. Do that and the committee can't fault you.”",
-      "Rosa said to Hal: “Alright, you three, the cart forms and the pickleball ladder can wait until after we eat. Everybody sit, and Hal, pour yourself some water at your head-of-the-table seat while I bring out the food.”"
+      "Hal said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”",
+      "Rosa (rosa kitchen): Plate up the supper and carry it out to the table"
     ],
     "hal": [
-      "Gary headed to Magnolia Loop (the street).",
-      "Donna said to Gary: “Gary, honey, I've filled out that Architectural Review form for half the street, so I'll sit with you and get it done before Tuesday. I can't have my partner's cart in trouble when we've got a ladder to climb.”",
-      "Rosa said to Hal: “Alright, you three, the cart forms and the pickleball ladder can wait until after we eat. Everybody sit, and Hal, pour yourself some water at your head-of-the-table seat while I bring out the food.”"
+      "Donna said to Rosa: “Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here.”",
+      "Rosa (rosa kitchen): Plate up the supper and carry it out to the table"
     ],
     "rosa": [
-      "Gary headed to Magnolia Loop (the street).",
-      "Donna said to Gary: “Gary, honey, I've filled out that Architectural Review form for half the street, so I'll sit with you and get it done before Tuesday. I can't have my partner's cart in trouble when we've got a ladder to climb.”",
-      "Hal said to Gary: “Good, you're filing. Describe the lights and speaker wiring in plain detail, attach a photo from the street side, and state your sound won't run past 10 PM, because quiet hours are L-03. Do that and the committee can't fault you.”"
+      "Donna said to Rosa: “Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here.”",
+      "Hal said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 244,
-        "text": "Donna headed to Rec Center.",
-        "importance": 4
-      },
       {
         "tick": 244,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and write the tally in my notebook",
@@ -1031,24 +1018,14 @@
         "tick": 322,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 323,
+        "text": "I (street bulletin board): Read the board for Architectural Review filing info and parade details",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 244,
-        "text": "Gary said to Donna: “Sketches are right here, Donna, labeled and everything. Lead the way to the rec center, and I'll swing by Rosa's with you two after so we can catch the committee about the cart.”",
-        "importance": 5
-      },
-      {
-        "tick": 244,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and write the tally in my notebook",
-        "importance": 5
-      },
-      {
-        "tick": 244,
-        "text": "You arrived at Rec Center.",
-        "importance": 5
-      },
       {
         "tick": 245,
         "text": "I (ladder standings board): Study the ladder standings to plan our climb past Pruitt-Kowalski",
@@ -2033,24 +2010,24 @@
         "tick": 322,
         "text": "Rosa said to Hal: “Alright, you three, the cart forms and the pickleball ladder can wait until after we eat. Everybody sit, and Hal, pour yourself some water at your head-of-the-table seat while I bring out the food.”",
         "importance": 4
+      },
+      {
+        "tick": 323,
+        "text": "I said to Rosa: “Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here.”",
+        "importance": 3
+      },
+      {
+        "tick": 323,
+        "text": "Hal said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”",
+        "importance": 3
+      },
+      {
+        "tick": 323,
+        "text": "Rosa (rosa kitchen): Plate up the supper and carry it out to the table",
+        "importance": 3
       }
     ],
     "hal": [
-      {
-        "tick": 237,
-        "text": "I (hal binoculars): Scan Gary's cart and Donna's flamingos from the porch and note the count",
-        "importance": 4
-      },
-      {
-        "tick": 238,
-        "text": "I (hal violation notebook): Log the morning's flamingo count and cart observations for tomorrow's committee",
-        "importance": 4
-      },
-      {
-        "tick": 239,
-        "text": "I (hal binoculars): Settle into the porch chair and do a second, careful count of Donna's flamingos and Gary's cart",
-        "importance": 4
-      },
       {
         "tick": 240,
         "text": "I headed to Magnolia Loop (the street).",
@@ -3035,24 +3012,24 @@
         "tick": 322,
         "text": "Rosa said to Hal: “Alright, you three, the cart forms and the pickleball ladder can wait until after we eat. Everybody sit, and Hal, pour yourself some water at your head-of-the-table seat while I bring out the food.”",
         "importance": 5
+      },
+      {
+        "tick": 323,
+        "text": "I said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”",
+        "importance": 4
+      },
+      {
+        "tick": 323,
+        "text": "Donna said to Rosa: “Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here.”",
+        "importance": 4
+      },
+      {
+        "tick": 323,
+        "text": "Rosa (rosa kitchen): Plate up the supper and carry it out to the table",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 218,
-        "text": "Hal said to Rosa: “Sketches look orderly, Rosa. I'll walk over with you tomorrow morning, nine sharp, and I'll hold you both to it: nothing gets bolted on until the committee stamps it.”",
-        "importance": 5
-      },
-      {
-        "tick": 219,
-        "text": "I said to Hal: “Nine sharp it is, Hal. Thanks for coming tonight and for hearing us out. I'm heading in to put my feet up, I've earned it.”",
-        "importance": 4
-      },
-      {
-        "tick": 219,
-        "text": "Hal (donna flamingo flock): Count the flamingos from the street and log the tally in my notebook",
-        "importance": 4
-      },
       {
         "tick": 220,
         "text": "I headed to Rosa's House.",
@@ -4037,6 +4014,21 @@
         "tick": 322,
         "text": "Hal said to Gary: “Good, you're filing. Describe the lights and speaker wiring in plain detail, attach a photo from the street side, and state your sound won't run past 10 PM, because quiet hours are L-03. Do that and the committee can't fault you.”",
         "importance": 7
+      },
+      {
+        "tick": 323,
+        "text": "I (rosa kitchen): Plate up the supper and carry it out to the table",
+        "importance": 6
+      },
+      {
+        "tick": 323,
+        "text": "Donna said to Rosa: “Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here.”",
+        "importance": 6
+      },
+      {
+        "tick": 323,
+        "text": "Hal said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”",
+        "importance": 6
       }
     ]
   },
@@ -4084,8 +4076,8 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "cheerful",
-    "hal": "gruff but pleased",
+    "donna": "content",
+    "hal": "grudgingly content",
     "rosa": "content"
   },
   "laws": [
@@ -4203,9 +4195,19 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 323,
+      "time": "Monday, November 2, 6:17 PM",
+      "story": "At 6:17 on this breezy, clear Monday evening in Sumter Oaks, Gary stands on Magnolia Loop reading the bulletin board for Architectural Review filing details and parade information, his mood set on determined. Over at Rosa's House, Rosa has plated up supper, while Donna insists on carrying the dishes out so Rosa can sit tight, and Hal grudgingly agrees to sit down and hold his flamingo count until after pie. Everyone is content in the warm kitchen, with the smell of dinner hanging in the air.",
+      "dialogue": [
+        "Donna said to Rosa: “Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here.”",
+        "Hal said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 10.15754,
+    "total_usd": 10.19158,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4292,13 +4294,12 @@
         "usd": 0.47399
       },
       "2026-11-02": {
-        "ticks": 11,
-        "usd": 0.34666
+        "ticks": 12,
+        "usd": 0.3807
       }
     }
   },
   "recent_tick_costs": [
-    0.03157,
     0.03152,
     0.032,
     0.03178,
@@ -4321,7 +4322,8 @@
     0.03344,
     0.03331,
     0.02987,
-    0.03573
+    0.03573,
+    0.03404
   ],
   "fund": {
     "gross_usd": 0.0,
