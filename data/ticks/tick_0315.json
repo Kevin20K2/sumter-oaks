@@ -1,0 +1,118 @@
+{
+  "tick": 315,
+  "simulation_time": "Monday, November 2, 10:17 AM",
+  "weather": "Breezy and clear, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 10:17 on a breezy, clear Monday morning in Sumter Oaks, Gary is focused on his toolbox, gathering zip ties and a multimeter to tidy up the wiring and test every light and speaker. Over at her house, Donna is eagerly texting Gary the Tuesday court time and reminding him to bring his sneakers. Hal is out the door and heading down Magnolia Loop with a determined stride, while Rosa, equally determined, is blocking off an open morning on her shift schedule so she can pencil in coffee with Hal.",
+  "events": [
+    "Gary (gary toolbox): Grab zip ties and a multimeter to secure the wiring and check every light and speaker connection",
+    "Donna (donna phone): Text Gary the Tuesday court time and remind him to bring sneakers",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa shift schedule): Commit to an open morning this week and write in coffee with Hal"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've got the wiring harness run, the amp hooked up, and the light strips mounted along the roof, and I tested the speaker at low volume last tick. It's a Monday morning, well within quiet hours' safe window, and nobody's around. Now I should run the full light test and check connections. One thing nags at me though: L-01 says exterior cart modifications visible from the street need Architectural Review approval, and those roof light strips are definitely visible. I should finish the testing so the build is solid, then head to Town Hall to file for approval before the parade. Better to be sure it works first so I only have to present it once. Using the toolbox to tighten connections and double-check the wiring is the sensible next step.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_toolbox",
+          "content": "Grab zip ties and a multimeter to secure the wiring and check every light and speaker connection"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "The Tuesday court slot is confirmed and my bag is packed with paddles, balls, and a spare grip. Nobody's around to talk to, and it's a breezy, clear Monday morning. The phone is the natural next step: a quick text to Gary with the time and a gentle nudge to bring sneakers, since he's never played and I don't want him bailing. That keeps my ladder-climbing plan moving without repeating anything I've already done.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_phone",
+          "content": "Text Gary the Tuesday court time and remind him to bring sneakers"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've scanned the lawns and logged the flamingo count and Gary's cart modifications in my notebook. The Halloween deadline is passed and Rosa's coffee invitation is a chance to settle the cart paperwork fairly. No one is around to speak to, and the report only means something if it reaches the architectural review committee. Time to take my notes to Town Hall and file properly, by the book.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with my notebook to file the cart and flamingo report at Town Hall."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've been standing at the shift schedule for three ticks now, and I keep telling myself I'll pick a slot but haven't actually committed. Nobody's around, the dinner is behind me, and Hal's coffee is the next thing on my list. It's Monday morning, so I should stop dithering, look at what's open this week, and just pencil in a morning that doesn't collide with a per-diem shift. Once it's written down I can tell Hal when I see him.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Commit to an open morning this week and write in coffee with Hal"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03034,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9586,
+        "output_tokens": 1104,
+        "usd": 0.03021
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 390,
+        "output_tokens": 184,
+        "usd": 0.00013
+      }
+    }
+  }
+}
