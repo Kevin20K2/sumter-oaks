@@ -1,0 +1,115 @@
+{
+  "tick": 319,
+  "simulation_time": "Monday, November 2, 2:17 PM",
+  "weather": "Breezy and clear, 81°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary, Donna, and Hal are gathered on Magnolia Loop on this breezy, sunny Monday afternoon, with Gary eager to add lights and a speaker to his golf cart. Donna and Hal both steer him toward filing an Architectural Review request first, since anything visible from the street needs approval, and the three of them head toward Rosa's for coffee and paperwork. Rosa, meanwhile, is determined to pencil a coffee date with Hal into her schedule this week.",
+  "events": [
+    "Rosa (rosa shift schedule): Write 'Coffee with Hal' in ink on an open morning this week"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna invited me over to Rosa's porch for coffee and doubles strategy, and I've already asked Hal about the Architectural Review sign-off on my cart lights without a clear answer yet. I shouldn't repeat myself. Hal's busy with the flamingo count, and the street bulletin board might list how to file for review. Rosa's porch lights need fixing anyway, so I'm useful there, and Donna is already heading that way. Best move: accept Donna's invite by answering her directly, and ask her about the review process on the walk since she's been here longer.",
+      "emotional_state": "warm, hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Coffee at Rosa's sounds great, Donna, lead the way. I'll grab my tool bag too, her porch lights need a longer plug. And you can tell me how this Architectural Review business works for my cart."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just asked Hal about Architectural Review for his cart lights and speaker, and Hal is busy counting my flamingos. I've already invited Gary to Rosa's porch for coffee and he didn't answer that, so I shouldn't repeat it. Better to help him with his actual question: a cart mod visible from the street needs approval under L-01, so I can tell him to file before the parade lights stay on. That keeps him close as my future doubles partner, and I look like the neighborhood fixer. Hal's count also reminds me to keep exactly three flamingos out front.",
+      "emotional_state": "chipper",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, hon, anything bolted on your cart that shows from the street needs Architectural Review, so file it before you cruise around with those lights. Plug-in decorations you can take off are a safer bet, and I'll happily help with the form over coffee at Rosa's."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary just asked me straight out how Architectural Review works, and he's honest about not knowing the rule. L-01 says anything visible from the street needs sign-off before the lights and speaker go on. I'd rather steer him to the paperwork than write him up. Donna says three flamingos are out front, and I can eyeball that myself after I answer Gary. Rosa's coffee is a good place to settle the Halloween deadline fairly.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "You heard right, Gary. L-01 says anything visible from the street needs Architectural Review approval before it goes on the cart. Put your lights and speaker in a written request and I'll walk it over with you. Rosa's porch is a fine place to start the paperwork."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've written 'Coffee with Hal' on my shift schedule in my head about five times now, and the repeated planning hasn't turned into ink. Nobody's around, it's a quiet Monday afternoon, and the schedule is right here in my house. Stop deliberating: open the schedule, pick an open morning this week, write it in ink, and keep that chair saved for Hal. Then the welcome dinner planning can move forward.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Write 'Coffee with Hal' in ink on an open morning this week"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03344,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10321,
+        "output_tokens": 1266,
+        "usd": 0.0333
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 601,
+        "output_tokens": 162,
+        "usd": 0.00014
+      }
+    }
+  }
+}
