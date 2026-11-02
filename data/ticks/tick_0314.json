@@ -1,0 +1,118 @@
+{
+  "tick": 314,
+  "simulation_time": "Monday, November 2, 9:17 AM",
+  "weather": "Breezy and clear, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a breezy, clear Monday morning in Sumter Oaks, Gary is busy mounting light strips and testing a speaker amp on his golf cart at low volume. Across the way, Donna is packing her pickleball bag with paddles, balls, and a spare grip for Gary's Tuesday session, while Hal jots down the flamingo count and Gary's cart modifications for the committee report. Meanwhile, Rosa is scanning the week for an open morning and penciling in coffee with Hal.",
+  "events": [
+    "Gary (gary golf cart): Mount the light strips along the roof and test the speaker amp at low volume",
+    "Donna (donna pickleball bag): Pack the bag with paddles, balls, and a spare grip for Gary's Tuesday session",
+    "Hal (hal violation notebook): Record the flamingo count and Gary's cart modifications for the committee report",
+    "Rosa (rosa shift schedule): Pick an open morning slot this week and pencil in coffee with Hal"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've got the wiring harness run and the amp hooked up from last tick. Next step is mounting the light strips and testing the system on the cart. Nobody's around, so I'll keep working. L-01 says exterior cart mods visible from the street need Architectural Review approval, so I should file at Town Hall before the parade. L-03 means I only test the sound system after 7 AM, and it's 9:17, so a quiet test is fine. Time to get the lights on the cart.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Mount the light strips along the roof and test the speaker amp at low volume"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Monday morning and I'm home alone. The Tuesday two-hour court slot with Gary is already penciled in and confirmed on the calendar, so no point rechecking it. My pickleball bag is sitting right here, and if I'm going to make Gary a real doubles partner by tomorrow, I should be ready. A quick bag check keeps me productive without bothering anyone, and then I can head out and show off my ladder-climbing plan around town.",
+      "emotional_state": "energized",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Pack the bag with paddles, balls, and a spare grip for Gary's Tuesday session"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at the house with my binoculars, notebook and porch chair in reach, and no one's around. My last two ticks went to scanning Donna's lawn and Gary's driveway, so I'm not going to repeat the same scan with nothing new to see. The notebook is where my verified findings go. Logging the flamingo count and the cart modifications (L-02, L-01) now means the report to the architectural review committee will be accurate and fair, especially with the Halloween deadline in mind. Order and respect, in writing.",
+      "emotional_state": "methodical",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Record the flamingo count and Gary's cart modifications for the committee report"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Monday morning and I'm alone in the house. The dinner went well, and I've already looked at the shift schedule twice without actually settling on a coffee slot with Hal. I keep circling instead of committing. I should interact with the schedule once more and pick a specific time, then go tell him. My per-diem shifts are the only thing that could collide, so let me lock in a slot and stop dithering.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Pick an open morning slot this week and pencil in coffee with Hal"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02998,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9578,
+        "output_tokens": 1069,
+        "usd": 0.02985
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 417,
+        "output_tokens": 171,
+        "usd": 0.00013
+      }
+    }
+  }
+}
