@@ -1,30 +1,22 @@
 {
-  "tick": 329,
-  "time": "2026-11-03T08:17",
+  "tick": 330,
+  "time": "2026-11-03T09:17",
   "positions": {
-    "gary": "garys_house",
+    "gary": "magnolia_loop",
     "donna": "donnas_house",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "donna": [],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 247,
-        "text": "I said to Rosa: “Thursday's a date, Rosa. I'll bring my clamp list and some lighting ideas for your cart, and you just say the word when you've got a free hour for the review desk.”",
-        "importance": 5
-      },
-      {
-        "tick": 247,
-        "text": "Rosa (rosa shift schedule): Check my per-diem shifts to find a free window for walking Gary's sketches to the review desk",
-        "importance": 5
-      },
       {
         "tick": 248,
         "text": "I (rosa dining table): Spread out my clamp list and jot lighting ideas for Rosa's parade cart",
@@ -1014,14 +1006,19 @@
         "tick": 328,
         "text": "I (gary workbench): Double-check the finished review form and mount measurements before submitting",
         "importance": 4
+      },
+      {
+        "tick": 329,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 329,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 252,
-        "text": "I (donna club calendar): Check the calendar for court times and today's club commitments so Gary's practice and the cart sketch both fit",
-        "importance": 4
-      },
       {
         "tick": 253,
         "text": "I (donna club calendar): Check court times and club commitments so Gary's practice and the cart sketch both fit",
@@ -2016,14 +2013,14 @@
         "tick": 328,
         "text": "I (donna phone): Text Gary to confirm Tuesday pickleball and reserve a two-hour court slot",
         "importance": 6
+      },
+      {
+        "tick": 329,
+        "text": "I (donna pickleball bag): Check my paddles, balls and water bottle, and pack a spare beginner paddle for Gary",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 244,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and write the tally in my notebook",
-        "importance": 6
-      },
       {
         "tick": 244,
         "text": "Gary said to Donna: “Sketches are right here, Donna, labeled and everything. Lead the way to the rec center, and I'll swing by Rosa's with you two after so we can catch the committee about the cart.”",
@@ -3018,14 +3015,14 @@
         "tick": 328,
         "text": "I (hal binoculars): Count Donna's flamingos from the porch and compare against the three-ornament limit",
         "importance": 6
+      },
+      {
+        "tick": 329,
+        "text": "I (hal violation notebook): Log flamingo tally against the three-ornament limit and note Gary's cart modifications",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 226,
-        "text": "Hal said to Rosa: “Morning, Rosa. I'll be on your porch with the cornbread and my own chair. Anything that changes how a cart looks from the street goes to Architectural Review first, and I'll hold you to that.”",
-        "importance": 5
-      },
       {
         "tick": 227,
         "text": "I headed to Rosa's House.",
@@ -4020,6 +4017,11 @@
         "tick": 328,
         "text": "I (rosa shift schedule): Check this week's per-diem shifts and make sure Thursday 8 AM stays clear for coffee with Hal",
         "importance": 5
+      },
+      {
+        "tick": 329,
+        "text": "I (rosa shift schedule): Write in ink: Thursday 8 AM blocked for coffee with Hal, and turn down any per-diem shift that overlaps.",
+        "importance": 4
       }
     ]
   },
@@ -4067,9 +4069,9 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "excited",
+    "donna": "eager",
     "hal": "dutiful",
-    "rosa": "content"
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -4186,9 +4188,16 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 329,
+      "time": "Tuesday, November 3, 9:17 AM",
+      "story": "Gary strides down Magnolia Loop in the breezy 77-degree morning, determined to get to the courts. Donna is at home packing her pickleball bag, double-checking paddles and balls and tucking in a spare beginner paddle for Gary, while Hal is at his house logging flamingo counts and noting Gary's golf cart modifications in his violation notebook. Meanwhile Rosa, also determined, writes Thursday's 8 AM coffee with Hal in ink on her shift schedule and resolves to turn down any per-diem shift that conflicts with it.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 10.34917,
+    "total_usd": 10.3799,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4279,13 +4288,12 @@
         "usd": 0.47443
       },
       "2026-11-03": {
-        "ticks": 2,
-        "usd": 0.06386
+        "ticks": 3,
+        "usd": 0.09459
       }
     }
   },
   "recent_tick_costs": [
-    0.03318,
     0.03085,
     0.03036,
     0.03135,
@@ -4308,7 +4316,8 @@
     0.03057,
     0.03208,
     0.03144,
-    0.03242
+    0.03242,
+    0.03073
   ],
   "fund": {
     "gross_usd": 0.0,

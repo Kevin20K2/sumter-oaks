@@ -1,0 +1,118 @@
+{
+  "tick": 329,
+  "simulation_time": "Tuesday, November 3, 9:17 AM",
+  "weather": "Breezy and clear, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary strides down Magnolia Loop in the breezy 77-degree morning, determined to get to the courts. Donna is at home packing her pickleball bag, double-checking paddles and balls and tucking in a spare beginner paddle for Gary, while Hal is at his house logging flamingo counts and noting Gary's golf cart modifications in his violation notebook. Meanwhile Rosa, also determined, writes Thursday's 8 AM coffee with Hal in ink on her shift schedule and resolves to turn down any per-diem shift that conflicts with it.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Donna (donna pickleball bag): Check my paddles, balls and water bottle, and pack a spare beginner paddle for Gary",
+    "Hal (hal violation notebook): Log flamingo tally against the three-ornament limit and note Gary's cart modifications",
+    "Rosa (rosa shift schedule): Write in ink: Thursday 8 AM blocked for coffee with Hal, and turn down any per-diem shift that overlaps."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I filled out the Architectural Review form and double-checked it against my mount measurements last tick, so the paperwork is done. Nobody's around to talk to, and the form is the next step toward getting the lights and speakers approved before Tuesday's pickleball. I'm at my house, though, and the only connection is magnolia_loop. The form needs to get filed, so I'll head out and carry it to wherever it gets submitted. Sitting here fiddling with it again would just be stalling.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to get my finished Architectural Review form filed so the parade lights and speakers can be approved."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Tuesday morning, game day. I've texted Gary twice already about confirming the game and the two-hour court slot, and no one's replied, so texting a third time would just be nagging. My pickleball bag is right here in the house, so the sensible move is to grab it and get ready, then head out to the courts. Gary has never played, so I'll need patience and a few quick tips for him. Checking the bag now keeps my own prep moving without repeating myself.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Check my paddles, balls and water bottle, and pack a spare beginner paddle for Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Two ticks of binocular counting and I still have nothing written down. A report to the committee needs a number, not a feeling, and my notebook is sitting right there with an empty page. Count's done, so now I log it and check it against L-02 and L-01 before I head to Town Hall. Donna and Gary may be good neighbors, but a deed restriction is a deed restriction.",
+      "emotional_state": "dutiful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Log flamingo tally against the three-ornament limit and note Gary's cart modifications"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Tuesday morning and nobody is around. Over the last two ticks I checked the shift schedule to keep Thursday 8 AM clear for coffee with Hal, and I haven't actually settled it. The ink promise matters to me, and this is the quiet moment to make it official. I'll mark Thursday 8 AM as blocked and decline any per-diem shift that lands on it. Then I can go find Hal or the neighbors.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Write in ink: Thursday 8 AM blocked for coffee with Hal, and turn down any per-diem shift that overlaps."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03073,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9939,
+        "output_tokens": 1071,
+        "usd": 0.03059
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 427,
+        "output_tokens": 188,
+        "usd": 0.00014
+      }
+    }
+  }
+}
