@@ -1,35 +1,29 @@
 {
-  "tick": 331,
-  "time": "2026-11-03T10:17",
+  "tick": 332,
+  "time": "2026-11-03T11:17",
   "positions": {
     "gary": "magnolia_loop",
-    "donna": "donnas_house",
-    "hal": "hals_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
-    "donna": [],
-    "hal": [],
+    "gary": [
+      "Donna just arrived.",
+      "Hal just arrived."
+    ],
+    "donna": [
+      "You arrived at Magnolia Loop (the street).",
+      "Hal just arrived."
+    ],
+    "hal": [
+      "You arrived at Magnolia Loop (the street).",
+      "Donna just arrived."
+    ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 248,
-        "text": "Rosa (rosa shift schedule): Check my per-diem shifts for a free hour to walk Gary's sketches to the review desk",
-        "importance": 4
-      },
-      {
-        "tick": 249,
-        "text": "I (rosa dining table): Sketch out string-light layout and a simple speaker mount for Rosa's cart",
-        "importance": 4
-      },
-      {
-        "tick": 249,
-        "text": "Rosa (rosa shift schedule): Look over my per-diem shifts and pencil in a free hour Thursday to walk Gary's sketches to the review desk",
-        "importance": 4
-      },
       {
         "tick": 250,
         "text": "I said to Rosa: “Thursday works fine by me, Rosa, and I appreciate you carrying those sketches over. Everything's labeled, and I'll tuck the clamp list and your light layout in the folder tonight so you can just grab it and go.”",
@@ -1014,24 +1008,24 @@
         "tick": 330,
         "text": "I (street bulletin board): Check the board for Architectural Review submission details and meeting dates",
         "importance": 5
+      },
+      {
+        "tick": 331,
+        "text": "I (street bulletin board): Read the Architectural Review notice for where to submit and the next meeting date",
+        "importance": 5
+      },
+      {
+        "tick": 331,
+        "text": "Donna just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 331,
+        "text": "Hal just arrived.",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 254,
-        "text": "I (donna pickleball bag): Grab my paddles and balls so I'm ready for Gary's practice session",
-        "importance": 4
-      },
-      {
-        "tick": 255,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 255,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 255,
         "text": "Rosa just arrived.",
@@ -2016,24 +2010,24 @@
         "tick": 330,
         "text": "I (donna club calendar): Check today's court reservation is logged at two hours max and review the pickleball ladder standings",
         "importance": 5
+      },
+      {
+        "tick": 331,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 331,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 331,
+        "text": "Hal just arrived.",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 244,
-        "text": "Donna headed to Rec Center.",
-        "importance": 6
-      },
-      {
-        "tick": 245,
-        "text": "I (donna flamingo flock): Count every flamingo visible from the street and write the tally in my notebook",
-        "importance": 6
-      },
-      {
-        "tick": 245,
-        "text": "Gary headed to Rosa's House.",
-        "importance": 6
-      },
       {
         "tick": 246,
         "text": "I (donna flamingo flock): Count every flamingo visible from the street and write the tally in my notebook",
@@ -3018,14 +3012,24 @@
         "tick": 330,
         "text": "I (hal violation notebook): Write up the finalized flamingo tally and Gary's cart modifications, citing L-01 and L-02, for the review committee",
         "importance": 5
+      },
+      {
+        "tick": 331,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 331,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 331,
+        "text": "Donna just arrived.",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 227,
-        "text": "Donna said to Rosa: “Rosa, you're a doll, I'm right behind you with my iced tea. Hal, the flamingos get sorted the minute we're done sketching, and I'll bring a few cart ideas that won't give Review a headache.”",
-        "importance": 5
-      },
       {
         "tick": 227,
         "text": "Hal said to Rosa: “Nine showing from the street, Rosa, by my notebook. Donna says she'll have it down to three by this afternoon, so I'll check it again before supper. I'll be along to your porch shortly.”",
@@ -4020,6 +4024,11 @@
         "tick": 330,
         "text": "I (rosa kitchen): Plan the next dinner menu and make a grocery list for hosting all three neighbors",
         "importance": 4
+      },
+      {
+        "tick": 331,
+        "text": "I (rosa kitchen): Finish the dinner menu and write out the grocery list for all three neighbors",
+        "importance": 4
       }
     ]
   },
@@ -4067,9 +4076,9 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "determined",
-    "hal": "dutiful",
-    "rosa": "content, purposeful"
+    "donna": "eager",
+    "hal": "resolute",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4198,10 +4207,16 @@
       "time": "Tuesday, November 3, 10:17 AM",
       "story": "On a breezy, clear Tuesday morning in Sumter Oaks, Gary stands on Magnolia Loop studying the bulletin board for details on the Architectural Review submission and upcoming meeting dates. Across the street, Donna is logging her court reservation in the club calendar, keeping it to the two-hour limit, while she checks the pickleball ladder standings. Hal sits at his kitchen table writing up the finalized flamingo tally and Gary's cart modifications for the review committee, citing L-01 and L-02 with dutiful care. Meanwhile, Rosa, content in her kitchen, is planning the next dinner menu and drafting a grocery list big enough to host all three neighbors.",
       "dialogue": []
+    },
+    {
+      "tick": 331,
+      "time": "Tuesday, November 3, 11:17 AM",
+      "story": "Gary is standing at the bulletin board on Magnolia Loop, reading the Architectural Review notice with a determined squint, while the breeze tugs at the paper and the November sun warms the golf carts parked along the curb. Donna is hurrying down the street from her house, eager to see what Gary has found, and Hal is coming along right behind her with the resolute stride of a man who has already made up his mind. Back in her kitchen, Rosa is content to stay put, finishing tonight's dinner menu and writing out a grocery list for all three neighbors.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 10.41142,
+    "total_usd": 10.44182,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4292,13 +4307,12 @@
         "usd": 0.47443
       },
       "2026-11-03": {
-        "ticks": 4,
-        "usd": 0.12611
+        "ticks": 5,
+        "usd": 0.15651
       }
     }
   },
   "recent_tick_costs": [
-    0.03036,
     0.03135,
     0.03019,
     0.03094,
@@ -4321,7 +4335,8 @@
     0.03144,
     0.03242,
     0.03073,
-    0.03152
+    0.03152,
+    0.0304
   ],
   "fund": {
     "gross_usd": 0.0,
