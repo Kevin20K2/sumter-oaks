@@ -1,39 +1,31 @@
 {
-  "tick": 326,
-  "time": "2026-11-02T20:17",
+  "tick": 327,
+  "time": "2026-11-02T21:17",
   "positions": {
-    "gary": "magnolia_loop",
+    "gary": "town_square",
     "donna": "rosas_house",
     "hal": "rosas_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Town Square."
+    ],
     "donna": [
-      "Hal said to Rosa: “Smells like proper rations in here, Rosa. Coffee in ink, I see. Now I'm obligated to show up.”",
-      "Rosa (rosa shift schedule): Write coffee with Hal into the schedule in ink"
+      "Hal said to Donna: “Evening, Donna. Pass the gravy, and while you're at it, tell me honestly how many flamingos are on that lawn tonight. I'd hate to count them myself in the morning.”",
+      "Rosa said to Hal: “Obligated is the right word, Hal. I wrote Thursday morning, eight o'clock, my porch, and I don't erase ink. Now sit and eat before Donna finishes the pot roast.”"
     ],
     "hal": [
-      "Donna (rosa dining table): Take my seat, pass the serving dishes, and tuck into supper",
-      "Rosa (rosa shift schedule): Write coffee with Hal into the schedule in ink"
+      "Donna said to Hal: “Hal, you're just in time, and don't think I missed that you got roped into coffee with Rosa. Tuesday morning Gary and I are hitting the pickleball courts if you want to come keep score and heckle us.”",
+      "Rosa said to Hal: “Obligated is the right word, Hal. I wrote Thursday morning, eight o'clock, my porch, and I don't erase ink. Now sit and eat before Donna finishes the pot roast.”"
     ],
     "rosa": [
-      "Donna (rosa dining table): Take my seat, pass the serving dishes, and tuck into supper",
-      "Hal said to Rosa: “Smells like proper rations in here, Rosa. Coffee in ink, I see. Now I'm obligated to show up.”"
+      "Donna said to Hal: “Hal, you're just in time, and don't think I missed that you got roped into coffee with Rosa. Tuesday morning Gary and I are hitting the pickleball courts if you want to come keep score and heckle us.”",
+      "Hal said to Donna: “Evening, Donna. Pass the gravy, and while you're at it, tell me honestly how many flamingos are on that lawn tonight. I'd hate to count them myself in the morning.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 245,
-        "text": "Hal (donna flamingo flock): Count every flamingo visible from the street and write the tally in my notebook",
-        "importance": 6
-      },
-      {
-        "tick": 245,
-        "text": "You arrived at Rosa's House.",
-        "importance": 6
-      },
       {
         "tick": 246,
         "text": "I said to Rosa: “Afternoon, Rosa. I've got the wiring sketches labeled and ready, so whenever your schedule allows, I'd be mighty grateful for that walk over to the review desk.”",
@@ -1023,24 +1015,19 @@
         "tick": 325,
         "text": "I (mailbox kiosk): Take the Architectural Review cart modification form from the kiosk",
         "importance": 6
+      },
+      {
+        "tick": 326,
+        "text": "I headed to Town Square.",
+        "importance": 6
+      },
+      {
+        "tick": 326,
+        "text": "You arrived at Town Square.",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 249,
-        "text": "Hal said to Donna: “Evening, Donna. I've counted your flamingos twice now, and the code allows three visible from the street. I'm taking my tally to the committee at nine tomorrow, so I'd sooner you hear it from me than from a notice.”",
-        "importance": 4
-      },
-      {
-        "tick": 250,
-        "text": "I said to Hal: “Well, I appreciate you telling me to my face, Hal, that's what a good neighbor does. I'll go through the flock tonight and tuck any extras around back so we're at three before nine tomorrow.”",
-        "importance": 6
-      },
-      {
-        "tick": 250,
-        "text": "Hal said to Donna: “I'll come along, Donna. Somebody ought to keep the sketch within the code, and I'd like to see this cart before the committee does. Lead the way.”",
-        "importance": 6
-      },
       {
         "tick": 251,
         "text": "I (donna flamingo flock): Move the extra flamingos around back so only three are visible from the street",
@@ -2025,24 +2012,24 @@
         "tick": 325,
         "text": "Rosa (rosa shift schedule): Write coffee with Hal into the schedule in ink",
         "importance": 3
+      },
+      {
+        "tick": 326,
+        "text": "I said to Hal: “Hal, you're just in time, and don't think I missed that you got roped into coffee with Rosa. Tuesday morning Gary and I are hitting the pickleball courts if you want to come keep score and heckle us.”",
+        "importance": 4
+      },
+      {
+        "tick": 326,
+        "text": "Hal said to Donna: “Evening, Donna. Pass the gravy, and while you're at it, tell me honestly how many flamingos are on that lawn tonight. I'd hate to count them myself in the morning.”",
+        "importance": 4
+      },
+      {
+        "tick": 326,
+        "text": "Rosa said to Hal: “Obligated is the right word, Hal. I wrote Thursday morning, eight o'clock, my porch, and I don't erase ink. Now sit and eat before Donna finishes the pot roast.”",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 242,
-        "text": "Gary said to Hal: “Afternoon, Hal. You know when the Architectural Review committee meets next? I've got wiring sketches for my parade cart ready to go and I'd like to get them in front of them before Saturday.”",
-        "importance": 6
-      },
-      {
-        "tick": 242,
-        "text": "Donna said to Hal: “Hal, welcome! Count away, I trimmed the flamingos down to stay under the three-ornament limit. Rosa's expecting us to sketch the parade cart this afternoon, and Gary wants to know when Architectural Review meets next, if you've heard.”",
-        "importance": 6
-      },
-      {
-        "tick": 243,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and record the tally in my notebook",
-        "importance": 6
-      },
       {
         "tick": 243,
         "text": "Gary (street bulletin board): Read the board for the Architectural Review meeting notice",
@@ -3027,24 +3014,24 @@
         "tick": 325,
         "text": "Rosa (rosa shift schedule): Write coffee with Hal into the schedule in ink",
         "importance": 3
+      },
+      {
+        "tick": 326,
+        "text": "I said to Donna: “Evening, Donna. Pass the gravy, and while you're at it, tell me honestly how many flamingos are on that lawn tonight. I'd hate to count them myself in the morning.”",
+        "importance": 4
+      },
+      {
+        "tick": 326,
+        "text": "Donna said to Hal: “Hal, you're just in time, and don't think I missed that you got roped into coffee with Rosa. Tuesday morning Gary and I are hitting the pickleball courts if you want to come keep score and heckle us.”",
+        "importance": 4
+      },
+      {
+        "tick": 326,
+        "text": "Rosa said to Hal: “Obligated is the right word, Hal. I wrote Thursday morning, eight o'clock, my porch, and I don't erase ink. Now sit and eat before Donna finishes the pot roast.”",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 224,
-        "text": "I (rosa kitchen): Brew a pot of coffee and set out cups for the cart planning crew",
-        "importance": 4
-      },
-      {
-        "tick": 225,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 225,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 226,
         "text": "I said to Hal: “Hal, Donna, there you are. Coffee's brewed and the paper and pens are set out at my place, so come on over and let's sketch that cart. And Hal, how many flamingos is that now?”",
@@ -4029,6 +4016,21 @@
         "tick": 325,
         "text": "Hal said to Rosa: “Smells like proper rations in here, Rosa. Coffee in ink, I see. Now I'm obligated to show up.”",
         "importance": 6
+      },
+      {
+        "tick": 326,
+        "text": "I said to Hal: “Obligated is the right word, Hal. I wrote Thursday morning, eight o'clock, my porch, and I don't erase ink. Now sit and eat before Donna finishes the pot roast.”",
+        "importance": 6
+      },
+      {
+        "tick": 326,
+        "text": "Donna said to Hal: “Hal, you're just in time, and don't think I missed that you got roped into coffee with Rosa. Tuesday morning Gary and I are hitting the pickleball courts if you want to come keep score and heckle us.”",
+        "importance": 6
+      },
+      {
+        "tick": 326,
+        "text": "Hal said to Donna: “Evening, Donna. Pass the gravy, and while you're at it, tell me honestly how many flamingos are on that lawn tonight. I'd hate to count them myself in the morning.”",
+        "importance": 6
       }
     ]
   },
@@ -4076,8 +4078,8 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "content",
-    "hal": "content",
+    "donna": "cheerful",
+    "hal": "wry",
     "rosa": "content"
   },
   "laws": [
@@ -4218,10 +4220,20 @@
       "dialogue": [
         "Hal said to Rosa: “Smells like proper rations in here, Rosa. Coffee in ink, I see. Now I'm obligated to show up.”"
       ]
+    },
+    {
+      "tick": 326,
+      "time": "Monday, November 2, 9:17 PM",
+      "story": "On a breezy, clear Monday night in Sumter Oaks, Gary is marching determinedly down Magnolia Loop toward Town Square while the rest of the neighborhood settles in. At Rosa's House, Donna is cheerfully recruiting Hal for a Tuesday pickleball match she and Gary are planning, and Hal responds with his usual dry wit, asking for the gravy and wondering aloud how many flamingos are on the lawn. Rosa, content as ever, reminds Hal that his Thursday morning coffee date on her porch is set in ink and urges him to sit down and eat before the pot roast disappears.",
+      "dialogue": [
+        "Donna said to Hal: “Hal, you're just in time, and don't think I missed that you got roped into coffee with Rosa. Tuesday morning Gary and I are hitting the pickleball courts if you want to come keep score and heckle us.”",
+        "Hal said to Donna: “Evening, Donna. Pass the gravy, and while you're at it, tell me honestly how many flamingos are on that lawn tonight. I'd hate to count them myself in the morning.”",
+        "Rosa said to Hal: “Obligated is the right word, Hal. I wrote Thursday morning, eight o'clock, my porch, and I don't erase ink. Now sit and eat before Donna finishes the pot roast.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 10.25323,
+    "total_usd": 10.28531,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4308,13 +4320,12 @@
         "usd": 0.47399
       },
       "2026-11-02": {
-        "ticks": 14,
-        "usd": 0.44235
+        "ticks": 15,
+        "usd": 0.47443
       }
     }
   },
   "recent_tick_costs": [
-    0.03178,
     0.03209,
     0.03523,
     0.03318,
@@ -4337,7 +4348,8 @@
     0.03573,
     0.03404,
     0.03108,
-    0.03057
+    0.03057,
+    0.03208
   ],
   "fund": {
     "gross_usd": 0.0,
