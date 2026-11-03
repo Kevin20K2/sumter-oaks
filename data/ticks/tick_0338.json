@@ -1,0 +1,116 @@
+{
+  "tick": 338,
+  "simulation_time": "Tuesday, November 3, 6:17 PM",
+  "weather": "Breezy and clear, 79°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary and Donna are at the Rec Center, where Donna has handed Gary a spare paddle and the two of them are heading toward court one for a gentle first rally, Gary reminding himself to keep his knees bent and stay out of the kitchen. Over on Magnolia Loop, Hal is dutifully checking his mailbox kiosk for any committee correspondence or word on Gary's golf cart paperwork. At Rosa's House, Rosa is going through her pantry with a determined eye, matching shelves against her grocery list so she knows exactly what still needs buying for Friday's dinner.",
+  "events": [
+    "Hal (mailbox kiosk): Check my mail for any committee correspondence or word on Gary's cart paperwork",
+    "Rosa (rosa kitchen): Check the pantry against my grocery list and mark what I still need for Friday's dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Court's booked, Donna handed me a paddle, and she said we'd do my cart form after the first rally. Time's ticking on the two-hour slot, and I've been stewing over paperwork enough. I'll tell her I'm ready, get on the court, and keep my knees bent. The form with Hal can wait until after the game.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Thanks for the spare paddle, Donna. Knees bent, out of the kitchen, got it. Let's get that first rally going before I talk myself out of it."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary and I have the court booked for two hours and I already handed him the spare paddle. He just booked it again at the kiosk, so no need to ask about that. Time to stop talking and get him playing. I'll coach him through his first rally, which is how I climb the ladder with a doubles partner.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Okay, hon, we're all set, so grab your paddle and head to court one. I'll serve nice and easy, you just keep those knees bent and stay out of the kitchen."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I already counted the flamingos and pinned the notice on the bulletin board last tick. Nobody's around to talk to. The notice mentions Gary's cart modifications awaiting formal filing, but I promised to check his paperwork line by line, so I shouldn't go filing anything behind his back. The mailbox kiosk is right here and my dinner hour is near. I'll check my mail, a sergeant's habit, and then call it a day.",
+      "emotional_state": "dutiful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "mailbox_kiosk",
+          "content": "Check my mail for any committee correspondence or word on Gary's cart paperwork"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've already picked Friday evening in ink, cleared of Thursday's coffee with Hal, and I wrote out the menu and grocery list last tick. Nobody's nearby, so no one to invite right now. The next useful step is to settle the cooking details at the kitchen: check what I have against the list, so Friday's dinner for all three neighbors goes smoothly. I'll stay in the house and keep the prep moving.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check the pantry against my grocery list and mark what I still need for Friday's dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03027,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10066,
+        "output_tokens": 999,
+        "usd": 0.03012
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 486,
+        "output_tokens": 196,
+        "usd": 0.00015
+      }
+    }
+  }
+}
