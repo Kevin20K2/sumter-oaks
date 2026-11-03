@@ -1,0 +1,118 @@
+{
+  "tick": 328,
+  "simulation_time": "Tuesday, November 3, 8:17 AM",
+  "weather": "Breezy and clear, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On a breezy, clear Tuesday morning in Sumter Oaks, Gary is at his workbench double-checking a finished review form and its mount measurements, determined to get it right before he submits it. Across the way, Donna is excited on her phone, texting Gary to confirm pickleball and reserving a two-hour court slot. Hal is on his porch with his binoculars, dutifully counting Donna's flamingos against the community's three-ornament limit, while Rosa, content, looks over her per-diem shifts and guards her Thursday 8 AM coffee date with Hal.",
+  "events": [
+    "Gary (gary workbench): Double-check the finished review form and mount measurements before submitting",
+    "Donna (donna phone): Text Gary to confirm Tuesday pickleball and reserve a two-hour court slot",
+    "Hal (hal binoculars): Count Donna's flamingos from the porch and compare against the three-ornament limit",
+    "Rosa (rosa shift schedule): Check this week's per-diem shifts and make sure Thursday 8 AM stays clear for coffee with Hal"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm home at my workbench at 8:17 AM, nobody around. I filled out the Architectural Review form last tick, listing the parade lights and speaker mounts. Per L-01, any exterior modification visible from the street needs approval, so I won't touch the cart until that's cleared. The form is done, so the next step is turning it in, but that means a trip out, and I'm supposed to meet Donna at Rosa's for coffee and Tuesday pickleball planning. For now, the useful thing is to check my work on the form and make sure the speaker mount specs are accurate before I submit, so nobody can bounce it for missing details. I'll look it over at the bench, then head out.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Double-check the finished review form and mount measurements before submitting"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Tuesday morning, pickleball day. At tick 327 I only intended to text Gary to confirm and book a two-hour court slot, and I haven't actually done it yet. Nobody's around, my phone is right here, and L-05 caps reservations at 2 hours, so I'll book exactly that. Getting Gary locked in is the whole ladder plan, so no dawdling.",
+      "emotional_state": "excited",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_phone",
+          "content": "Text Gary to confirm Tuesday pickleball and reserve a two-hour court slot"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Last tick I told myself to count Donna's flamingos from the porch, and there's a notebook and binoculars right here. Nobody's around, so no sense chatting. L-02 caps ornaments at three visible from the street, and I'd rather have my own tally than take Donna's word for it. Then it goes in the violation notebook, in ink, and the committee gets accurate paperwork. Orderly. Though I'll admit I'd hate to see her fined over a bird or two.",
+      "emotional_state": "dutiful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Count Donna's flamingos from the porch and compare against the three-ornament limit"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Tuesday morning, quiet, and nobody is around. The dinner is done and everyone sat at my table, so the big goal landed. The loose end is my promise to Hal: coffee Thursday at eight, written in ink. The shift schedule is right here, and my last memory says to make sure Thursday 8 AM stays clear. I shouldn't let a per-diem call slip in and bump it. I'll check it now and keep it protected.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check this week's per-diem shifts and make sure Thursday 8 AM stays clear for coffee with Hal"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03242,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9904,
+        "output_tokens": 1121,
+        "usd": 0.03102
+      },
+      "claude-haiku-5-5": {
+        "calls": 6,
+        "input_tokens": 8165,
+        "output_tokens": 1165,
+        "usd": 0.0014
+      }
+    }
+  }
+}
