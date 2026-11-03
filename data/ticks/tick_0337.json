@@ -1,0 +1,117 @@
+{
+  "tick": 337,
+  "simulation_time": "Tuesday, November 3, 5:17 PM",
+  "weather": "Breezy and clear, 79°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 5:17 on this breezy, clear Tuesday, Gary is booking a pickleball court at the Rec Center, where Donna is already excited and handing him a spare paddle she packed just for him. Over on Magnolia Loop, Hal is dutifully pinning a courteous notice on the bulletin board about the flamingo tally against L-02 and Gary's cart modifications awaiting filing under L-01. Meanwhile, Rosa is at home in her kitchen, optimistic as ever, sketching out Friday's welcome dinner menu and writing her grocery list.",
+  "events": [
+    "Gary (court reservation kiosk): Book a pickleball court for Donna and me, two hours, right at the limit",
+    "Hal (street bulletin board): Pin a courteous notice for the architectural review committee: flamingo tally logged against L-02, and Gary's cart modifications awaiting formal filing under L-01",
+    "Rosa (rosa kitchen): Plan Friday's welcome dinner menu and write out the grocery list"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I told Donna I'd book the court at the kiosk, and I already queued up the reservation last tick: two hours, right at the L-05 limit. She's gone for paddles and said we'd do my cart form after the first rally. No need to ask her anything again. Best move is to actually use the kiosk and lock in the court, then play. Quiet little win on a Tuesday, and the Architectural Review form can wait an hour.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Book a pickleball court for Donna and me, two hours, right at the limit"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just reserved the court for two hours, which fits the limit. I said I'd grab paddles, and I've got that spare one packed for him. Time to stop chatting and get him started: check the ladder board so he sees what we're climbing toward, or just tell him I've got the paddles. Better to move things forward with a short line about first rally, then his cart form after.",
+      "emotional_state": "excited",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Court's booked, so here's your paddle, hon, I packed a spare just for you. Keep your knees bent, stay out of the kitchen, and let's get that first rally going."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Magnolia Loop at 5:17 PM, nobody around. My memory shows I've already counted the flamingos at least three times over the last few ticks, and doing it again is just spinning my wheels. A tally on paper is worthless unless it reaches the committee, so the bulletin board is the proper place to make this official. I'll post a notice to keep Donna's count honest, and I'll note Gary's cart paperwork is pending his filing so the posting is fair to both. Order and respect, by the book. Donna trusted me to be fair, so the notice states facts only, nothing snide.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Pin a courteous notice for the architectural review committee: flamingo tally logged against L-02, and Gary's cart modifications awaiting formal filing under L-01"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I wrote Friday evening in ink as the welcome dinner night, so Thursday's coffee with Hal is protected. I'm alone at home at 5 PM on a Tuesday, and the dinner is three days out. The next useful step is the menu and grocery list. I don't need to re-check the schedule, it's done. Let me use the kitchen to plan the dishes and see what I need to buy before Friday.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Plan Friday's welcome dinner menu and write out the grocery list"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03111,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10015,
+        "output_tokens": 1094,
+        "usd": 0.03097
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 480,
+        "output_tokens": 191,
+        "usd": 0.00014
+      }
+    }
+  }
+}
