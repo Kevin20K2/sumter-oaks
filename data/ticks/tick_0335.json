@@ -1,0 +1,116 @@
+{
+  "tick": 335,
+  "simulation_time": "Tuesday, November 3, 3:17 PM",
+  "weather": "Breezy and clear, 81°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 3:17 on a breezy, clear Tuesday afternoon in Sumter Oaks, Gary and Donna meet at the Rec Center, where Gary is content and Donna is bubbling over with enthusiasm. Gary plans to book a two-hour court at the kiosk and then run his golf cart paperwork past Donna before it goes to Architectural Review. Over on Magnolia Loop, Hal is dutifully counting the flamingos along the street to log against L-02. Meanwhile Rosa, determined as ever, is at home checking her open days and picking a dinner night that stays clear of Thursday mornings.",
+  "events": [
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and log the tally against L-02",
+    "Rosa (rosa shift schedule): Check my open days, pick a dinner night away from Thursday morning, and write it in ink"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at the Rec Center with Donna, and it's Tuesday, which is our pickleball day. My reflections say we planned coffee at Rosa's and she's been helping me with the Architectural Review form for the cart lights and speakers. No need to re-ask anything; just be a good partner and settle our court time. The reservation kiosk is right here, and L-05 caps us at 2 hours, so booking a court is the practical move. I'll speak to Donna first, keep it short, and tie in the form so we stay on the right side of the rules.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Afternoon, Donna. Good timing, it's Tuesday. I'll book us a court for two hours at the kiosk, and then I want to run my cart form past you once more so Architectural Review gets it clean."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just arrived at the Rec Center right behind me. My goal is to lock him in as my doubles partner for Tuesday pickleball and climb the ladder. He's never played, so I should be warm and encouraging, not scary. It's Tuesday afternoon, we're at the courts, the kiosk is right here. Nothing in my memories shows I've actually confirmed anything with him yet today, so I should greet him and pitch the game directly, then book the court (max 2 hours per L-05) next tick.",
+      "emotional_state": "enthusiastic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, right on time! Today's the day, hon. I'll book us a court and show you the ropes, and before you know it we'll be climbing that ladder together."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop with no one around, and the flamingo flock is right here. My memory says I logged an intention to count them against L-02, and Donna told me to count them myself and said it's three. I'm a supply sergeant: trust, but verify. An accurate tally is the foundation of any honest report to the committee. Gary and Donna are off to the Rec Center for pickleball, so now's the time to count without anyone hovering. I'll count and log it, then decide whether paperwork is warranted. If it's three, I'll admit it and be fair about it.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and log the tally against L-02"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've been circling this for a few ticks: menu done, grocery list done, chairs counted with Hal's included. The only thing left is picking the dinner night and writing it in ink. Thursday 8 AM is already spoken for with Hal's coffee, so dinner shouldn't crowd it. Time to stop dithering and commit to the shift schedule.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my open days, pick a dinner night away from Thursday morning, and write it in ink"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03121,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9697,
+        "output_tokens": 1167,
+        "usd": 0.03106
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 494,
+        "output_tokens": 207,
+        "usd": 0.00015
+      }
+    }
+  }
+}

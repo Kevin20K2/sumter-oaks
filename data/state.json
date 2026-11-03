@@ -1,6 +1,6 @@
 {
-  "tick": 335,
-  "time": "2026-11-03T14:17",
+  "tick": 336,
+  "time": "2026-11-03T15:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,35 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna headed to Rec Center.",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and log the tally against L-02",
-      "You arrived at Rec Center.",
-      "Donna just arrived."
+      "Donna said to Gary: “Gary, right on time! Today's the day, hon. I'll book us a court and show you the ropes, and before you know it we'll be climbing that ladder together.”"
     ],
     "donna": [
-      "Gary headed to Rec Center.",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and log the tally against L-02",
-      "You arrived at Rec Center.",
-      "Gary just arrived."
+      "Gary said to Donna: “Afternoon, Donna. Good timing, it's Tuesday. I'll book us a court for two hours at the kiosk, and then I want to run my cart form past you once more so Architectural Review gets it clean.”"
     ],
-    "hal": [
-      "Gary headed to Rec Center.",
-      "Donna headed to Rec Center."
-    ],
+    "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 255,
-        "text": "Rosa just arrived.",
-        "importance": 6
-      },
-      {
-        "tick": 256,
-        "text": "I (street bulletin board): Look for the Architectural Review notice on my cart application",
-        "importance": 6
-      },
       {
         "tick": 256,
         "text": "Donna said to Gary: “Gary, there you are! I've got paddles and balls in the bag. Let's grab an hour at the rec center courts, then we'll swing by Rosa's for the cart sketch with plenty of time before the parade.”",
@@ -1027,19 +1008,19 @@
         "tick": 334,
         "text": "Donna just arrived.",
         "importance": 4
-      }
-    ],
-    "donna": [
+      },
       {
-        "tick": 259,
-        "text": "I (ladder standings board): Study the ladder standings to see who we need to beat",
+        "tick": 335,
+        "text": "I said to Donna: “Afternoon, Donna. Good timing, it's Tuesday. I'll book us a court for two hours at the kiosk, and then I want to run my cart form past you once more so Architectural Review gets it clean.”",
         "importance": 4
       },
       {
-        "tick": 260,
-        "text": "I (court reservation kiosk): Reserve a court for a two-hour practice session with Gary",
-        "importance": 5
-      },
+        "tick": 335,
+        "text": "Donna said to Gary: “Gary, right on time! Today's the day, hon. I'll book us a court and show you the ropes, and before you know it we'll be climbing that ladder together.”",
+        "importance": 4
+      }
+    ],
+    "donna": [
       {
         "tick": 261,
         "text": "I (pickleball court 1): Warm up with some dinking drills while waiting for Gary",
@@ -2029,14 +2010,19 @@
         "tick": 334,
         "text": "Gary just arrived.",
         "importance": 6
+      },
+      {
+        "tick": 335,
+        "text": "I said to Gary: “Gary, right on time! Today's the day, hon. I'll book us a court and show you the ropes, and before you know it we'll be climbing that ladder together.”",
+        "importance": 6
+      },
+      {
+        "tick": 335,
+        "text": "Gary said to Donna: “Afternoon, Donna. Good timing, it's Tuesday. I'll book us a court for two hours at the kiosk, and then I want to run my cart form past you once more so Architectural Review gets it clean.”",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 251,
-        "text": "Donna (donna flamingo flock): Move the extra flamingos around back so only three are visible from the street",
-        "importance": 4
-      },
       {
         "tick": 251,
         "text": "You arrived at Rosa's House.",
@@ -3031,14 +3017,14 @@
         "tick": 334,
         "text": "Donna headed to Rec Center.",
         "importance": 5
+      },
+      {
+        "tick": 335,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and log the tally against L-02",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 229,
-        "text": "I (rosa shift schedule): check my per-diem shifts for open afternoons this week",
-        "importance": 4
-      },
       {
         "tick": 229,
         "text": "Donna just arrived.",
@@ -4033,6 +4019,11 @@
         "tick": 334,
         "text": "I (rosa shift schedule): Pick a dinner night that avoids Thursday morning and write it in ink",
         "importance": 6
+      },
+      {
+        "tick": 335,
+        "text": "I (rosa shift schedule): Check my open days, pick a dinner night away from Thursday morning, and write it in ink",
+        "importance": 6
       }
     ]
   },
@@ -4079,8 +4070,8 @@
     ]
   },
   "emotions": {
-    "gary": "cheerful",
-    "donna": "eager",
+    "gary": "content",
+    "donna": "enthusiastic",
     "hal": "dutiful",
     "rosa": "determined"
   },
@@ -4199,9 +4190,19 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 335,
+      "time": "Tuesday, November 3, 3:17 PM",
+      "story": "At 3:17 on a breezy, clear Tuesday afternoon in Sumter Oaks, Gary and Donna meet at the Rec Center, where Gary is content and Donna is bubbling over with enthusiasm. Gary plans to book a two-hour court at the kiosk and then run his golf cart paperwork past Donna before it goes to Architectural Review. Over on Magnolia Loop, Hal is dutifully counting the flamingos along the street to log against L-02. Meanwhile Rosa, determined as ever, is at home checking her open days and picking a dinner night that stays clear of Thursday mornings.",
+      "dialogue": [
+        "Gary said to Donna: “Afternoon, Donna. Good timing, it's Tuesday. I'll book us a court for two hours at the kiosk, and then I want to run my cart form past you once more so Architectural Review gets it clean.”",
+        "Donna said to Gary: “Gary, right on time! Today's the day, hon. I'll book us a court and show you the ropes, and before you know it we'll be climbing that ladder together.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 10.53694,
+    "total_usd": 10.56815,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4292,13 +4293,12 @@
         "usd": 0.47443
       },
       "2026-11-03": {
-        "ticks": 8,
-        "usd": 0.25163
+        "ticks": 9,
+        "usd": 0.28284
       }
     }
   },
   "recent_tick_costs": [
-    0.03078,
     0.03138,
     0.03057,
     0.02998,
@@ -4321,7 +4321,8 @@
     0.0304,
     0.03121,
     0.03229,
-    0.03162
+    0.03162,
+    0.03121
   ],
   "fund": {
     "gross_usd": 0.0,
