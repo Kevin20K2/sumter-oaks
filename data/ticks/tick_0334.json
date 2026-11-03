@@ -1,0 +1,118 @@
+{
+  "tick": 334,
+  "simulation_time": "Tuesday, November 3, 2:17 PM",
+  "weather": "Breezy and clear, 80°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On a breezy, clear Tuesday afternoon in Sumter Oaks, Gary and Donna are both heading toward the Rec Center along Magnolia Loop, with Gary in good spirits and Donna eager to get there. Hal is out on the street too, dutifully counting the pink flamingos in Donna's flock so he can log the tally against L-02. Meanwhile, Rosa is at home, determined to choose a dinner night that avoids Thursday morning and to write it in ink.",
+  "events": [
+    "Gary headed to Rec Center.",
+    "Donna headed to Rec Center.",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and log the tally against L-02",
+    "Rosa (rosa shift schedule): Pick a dinner night that avoids Thursday morning and write it in ink"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna's got the court booked for two hours and Hal told me to go play first and bring the form after. I already said I'd walk over with her, and nobody needs more talk from me right now. Time to quit chatting and head to the rec center. The cart lights and the Architectural Review form can wait until after the game, and I'll keep that speaker rule in mind.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Walking over to the rec center for pickleball with Donna, then I'll bring the form to Hal after."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just agreed to walk over with me for pickleball, and Hal is staying behind to look over the form later. I don't need to ask or invite again. It's 2:17 and the court time is ticking, so I should keep the momentum, head to the rec center, and get Gary on that court. Walking there together keeps my doubles partner plan moving and the ladder climb on schedule.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center for our Tuesday pickleball game. Gary's walking over with me."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna says it's three and told me to count for myself. The flock is right here on Magnolia Loop, so I can do my own count and cross-check it against L-02 before any report goes to the committee. Gary and Donna are headed off to pickleball and Gary left his form with me, so no need to chat. Fair is fair: tally first, paperwork after.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and log the tally against L-02"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've been circling this for a few ticks: menu done, grocery list done, Hal's chair counted. The last piece is picking a dinner night and writing it in ink, and it has to stay clear of Thursday 8 AM. I'm at the shift schedule's zone now, so I should stop planning in my head and actually commit a night to paper. Then I can invite everyone for real.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Pick a dinner night that avoids Thursday morning and write it in ink"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03162,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10749,
+        "output_tokens": 939,
+        "usd": 0.03089
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3722,
+        "output_tokens": 723,
+        "usd": 0.00073
+      }
+    }
+  }
+}
