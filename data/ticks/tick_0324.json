@@ -1,0 +1,118 @@
+{
+  "tick": 324,
+  "simulation_time": "Monday, November 2, 7:17 PM",
+  "weather": "Breezy and clear, 79°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "rosas_house",
+    "hal": "rosas_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On Monday evening at 7:17, breezy and clear at 79 degrees, Gary is out on Magnolia Loop, determined to track down the Architectural Review cart modification form at the mailbox kiosk. Inside Rosa's house, Donna is setting out plates and serving dishes with a cheerful air, while Hal pours water at the head of the table and Rosa pens coffee with Hal into her schedule in ink before settling in for supper.",
+  "events": [
+    "Gary (mailbox kiosk): Look for the Architectural Review cart modification form to pick up",
+    "Donna (rosa dining table): Help set out the plates and serving dishes, then take my seat",
+    "Hal (rosa dining table): Take my seat at the head of the table and pour a glass of water",
+    "Rosa (rosa shift schedule): Write coffee with Hal into the schedule in ink, then take my seat for supper"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Tick 323 I read the bulletin board, so I already have the general filing and parade info. Nobody's around to talk to, and it's evening on a Monday. My goal is getting the cart lights and sound system approved, and Hal told me to describe the wiring plainly and attach a street-side photo. The mailbox kiosk is the closest thing here to a place where forms might get picked up or submitted. Rather than stand around, I'll check the kiosk for the Architectural Review form so I'm ready to fill it out with Donna before Tuesday.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "mailbox_kiosk",
+          "content": "Look for the Architectural Review cart modification form to pick up"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa is carrying out supper and Hal is settled at the table. I already offered to carry dishes last tick, and Rosa is plating in the kitchen, so the helpful thing is to actually do it rather than chatter. Pickleball ladder talk can wait until after pie, and Gary is already set for Tuesday. Pitching in keeps me at the warm center of the table.",
+      "emotional_state": "cheerful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Help set out the plates and serving dishes, then take my seat"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa is carrying supper out and Donna is already helping. I said I'd hold my flamingo tally until after the pie, and I meant it. A man who writes up his neighbors at the committee can at least be useful at the table. The deed restrictions will keep till dessert. Best thing to do is take my seat and let the food come out.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Take my seat at the head of the table and pour a glass of water"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Donna's offered to carry dishes and Hal says he's sitting, so the table is filling up exactly the way I wanted. I already plated supper last tick, and my goal is to get everyone at one table. Hal's on his way to the chair I saved. The coffee-with-Hal promise keeps slipping, and the shift schedule is right here in the room, so this is a good moment to pencil it in ink while supper gets set out. Better than talking over Donna again.",
+      "emotional_state": "content",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Write coffee with Hal into the schedule in ink, then take my seat for supper"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03108,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10554,
+        "output_tokens": 986,
+        "usd": 0.03097
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 405,
+        "output_tokens": 147,
+        "usd": 0.00011
+      }
+    }
+  }
+}

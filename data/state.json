@@ -1,6 +1,6 @@
 {
-  "tick": 324,
-  "time": "2026-11-02T18:17",
+  "tick": 325,
+  "time": "2026-11-02T19:17",
   "positions": {
     "gary": "magnolia_loop",
     "donna": "rosas_house",
@@ -10,25 +10,20 @@
   "perceptions": {
     "gary": [],
     "donna": [
-      "Hal said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”",
-      "Rosa (rosa kitchen): Plate up the supper and carry it out to the table"
+      "Hal (rosa dining table): Take my seat at the head of the table and pour a glass of water",
+      "Rosa (rosa shift schedule): Write coffee with Hal into the schedule in ink, then take my seat for supper"
     ],
     "hal": [
-      "Donna said to Rosa: “Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here.”",
-      "Rosa (rosa kitchen): Plate up the supper and carry it out to the table"
+      "Donna (rosa dining table): Help set out the plates and serving dishes, then take my seat",
+      "Rosa (rosa shift schedule): Write coffee with Hal into the schedule in ink, then take my seat for supper"
     ],
     "rosa": [
-      "Donna said to Rosa: “Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here.”",
-      "Hal said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”"
+      "Donna (rosa dining table): Help set out the plates and serving dishes, then take my seat",
+      "Hal (rosa dining table): Take my seat at the head of the table and pour a glass of water"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 244,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and write the tally in my notebook",
-        "importance": 4
-      },
       {
         "tick": 245,
         "text": "I headed to Rosa's House.",
@@ -1023,24 +1018,14 @@
         "tick": 323,
         "text": "I (street bulletin board): Read the board for Architectural Review filing info and parade details",
         "importance": 5
+      },
+      {
+        "tick": 324,
+        "text": "I (mailbox kiosk): Look for the Architectural Review cart modification form to pick up",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 245,
-        "text": "I (ladder standings board): Study the ladder standings to plan our climb past Pruitt-Kowalski",
-        "importance": 5
-      },
-      {
-        "tick": 246,
-        "text": "I (ladder standings board): Study the ladder standings to plan our climb past Pruitt-Kowalski",
-        "importance": 5
-      },
-      {
-        "tick": 247,
-        "text": "I (court reservation kiosk): Reserve a two-hour court slot for Gary's practice session",
-        "importance": 6
-      },
       {
         "tick": 248,
         "text": "I headed to Magnolia Loop (the street).",
@@ -2025,24 +2010,24 @@
         "tick": 323,
         "text": "Rosa (rosa kitchen): Plate up the supper and carry it out to the table",
         "importance": 3
+      },
+      {
+        "tick": 324,
+        "text": "I (rosa dining table): Help set out the plates and serving dishes, then take my seat",
+        "importance": 3
+      },
+      {
+        "tick": 324,
+        "text": "Hal (rosa dining table): Take my seat at the head of the table and pour a glass of water",
+        "importance": 3
+      },
+      {
+        "tick": 324,
+        "text": "Rosa (rosa shift schedule): Write coffee with Hal into the schedule in ink, then take my seat for supper",
+        "importance": 3
       }
     ],
     "hal": [
-      {
-        "tick": 240,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 240,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 241,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street, notebook in hand",
-        "importance": 6
-      },
       {
         "tick": 241,
         "text": "Gary said to Donna: “Alright, Donna, you've worn me down. Let me grab my sketches off the cart so they're not sitting out, then I'm all yours at the rec center. Just go easy on a rusty old HVAC man.”",
@@ -3027,24 +3012,24 @@
         "tick": 323,
         "text": "Rosa (rosa kitchen): Plate up the supper and carry it out to the table",
         "importance": 4
+      },
+      {
+        "tick": 324,
+        "text": "I (rosa dining table): Take my seat at the head of the table and pour a glass of water",
+        "importance": 3
+      },
+      {
+        "tick": 324,
+        "text": "Donna (rosa dining table): Help set out the plates and serving dishes, then take my seat",
+        "importance": 3
+      },
+      {
+        "tick": 324,
+        "text": "Rosa (rosa shift schedule): Write coffee with Hal into the schedule in ink, then take my seat for supper",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 220,
-        "text": "I headed to Rosa's House.",
-        "importance": 3
-      },
-      {
-        "tick": 220,
-        "text": "Hal (donna flamingo flock): Count the flamingos from the street and log the tally in my notebook",
-        "importance": 3
-      },
-      {
-        "tick": 220,
-        "text": "You arrived at Rosa's House.",
-        "importance": 3
-      },
       {
         "tick": 221,
         "text": "I (rosa shift schedule): Check my upcoming per-diem shifts so tomorrow's 9 AM cart planning doesn't clash",
@@ -4029,6 +4014,21 @@
         "tick": 323,
         "text": "Hal said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”",
         "importance": 6
+      },
+      {
+        "tick": 324,
+        "text": "I (rosa shift schedule): Write coffee with Hal into the schedule in ink, then take my seat for supper",
+        "importance": 6
+      },
+      {
+        "tick": 324,
+        "text": "Donna (rosa dining table): Help set out the plates and serving dishes, then take my seat",
+        "importance": 6
+      },
+      {
+        "tick": 324,
+        "text": "Hal (rosa dining table): Take my seat at the head of the table and pour a glass of water",
+        "importance": 6
       }
     ]
   },
@@ -4076,8 +4076,8 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "content",
-    "hal": "grudgingly content",
+    "donna": "cheerful",
+    "hal": "content",
     "rosa": "content"
   },
   "laws": [
@@ -4204,10 +4204,16 @@
         "Donna said to Rosa: “Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here.”",
         "Hal said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”"
       ]
+    },
+    {
+      "tick": 324,
+      "time": "Monday, November 2, 7:17 PM",
+      "story": "On Monday evening at 7:17, breezy and clear at 79 degrees, Gary is out on Magnolia Loop, determined to track down the Architectural Review cart modification form at the mailbox kiosk. Inside Rosa's house, Donna is setting out plates and serving dishes with a cheerful air, while Hal pours water at the head of the table and Rosa pens coffee with Hal into her schedule in ink before settling in for supper.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 10.19158,
+    "total_usd": 10.22266,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4294,13 +4300,12 @@
         "usd": 0.47399
       },
       "2026-11-02": {
-        "ticks": 12,
-        "usd": 0.3807
+        "ticks": 13,
+        "usd": 0.41178
       }
     }
   },
   "recent_tick_costs": [
-    0.03152,
     0.032,
     0.03178,
     0.03209,
@@ -4323,7 +4328,8 @@
     0.03331,
     0.02987,
     0.03573,
-    0.03404
+    0.03404,
+    0.03108
   ],
   "fund": {
     "gross_usd": 0.0,
