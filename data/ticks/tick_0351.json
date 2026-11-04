@@ -1,0 +1,113 @@
+{
+  "tick": 351,
+  "simulation_time": "Wednesday, November 4, 5:17 PM",
+  "weather": "Partly cloudy, 80°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 5:17 on a mild Wednesday evening, Gary, Donna, Hal, and Rosa are all gathered on Magnolia Loop in Sumter Oaks, with the air a comfortable 80 degrees under partly cloudy skies. Gary, warm and content, is lining up some pickleball practice with Donna, who cheerfully promises to bring the balls and her ladder notes for Tuesday. Rosa is hopeful as she invites everyone to her roast pork dinner on Friday, with Gary bringing cornbread and Hal, dutifully, reminding Donna she's expected. Hal also gets in a friendly challenge to count the flamingos together, and Rosa, teasing a little, promises to leave her flamingo jokes at the door.",
+  "events": [],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa asked for cornbread and I already told Hal I'd redo the sketch tonight, so no point repeating either. Donna just showed up, and she's the one Rosa is working on for Friday. She's been patient with me on the court, and I'd like to ask when we can get another session in before the dinner. That keeps things moving and gives Rosa a nudge in Donna's direction without me asking twice.",
+      "emotional_state": "warm, content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Evening, Donna. Rosa's got a welcome dinner Friday, and I'm bringing cornbread. Any chance you're free for a little pickleball before then? I want to keep working on that third-shot drop."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just got to Magnolia Loop with my bag packed and Gary is right here in line-of-sight. I haven't spoken to him yet this tick, and the spare paddle is ready for Tuesday. Best move toward my goal is to lock in the plan and keep him excited. Hal and Rosa are around too, so a little visibility doesn't hurt my standing as the one who keeps things fair.",
+      "emotional_state": "cheerful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, there you are! I've got your spare paddle packed and my ladder notes ready, so Tuesday we climb a rung or two together. Don't you worry about a thing, I'll bring the balls."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna just arrived. Rosa wants all three of us at the table Friday and she's worried about getting Donna there. I already told Rosa I'm in, and Gary's cart sketch is handled. My immediate goal is the flamingo count, and the flock is right here in the zone. I'll be fair about it: count them in front of her, say it plainly, no ambush. Maybe the count goes better with a little welcome-dinner goodwill on the table.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Evening, Donna. Rosa's dinner is Friday and I'm told you're expected. Also, I'd like to count your flamingos with you, fair and square, so there's no argument later."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary is bringing cornbread and Hal says he'll be there on time and asked what to bring. Donna just arrived, and she's the last one I need at the table for Friday. Hal asked a direct question, but Donna is the missing piece and a warm, specific invitation now, with the whole group standing here, is the best moment. I'll answer Hal after. Keep it warm and blunt, not pushy, and make it easy for her to say yes.",
+      "emotional_state": "hopeful",
+      "importance_rating": 7,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna, perfect timing. I'm making roast pork Friday evening, Gary's bringing cornbread and Hal's coming, and I've got a seat with your name on it. Say yes and I'll even leave the flamingo jokes at the door."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03295,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10546,
+        "output_tokens": 1167,
+        "usd": 0.03276
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 619,
+        "output_tokens": 252,
+        "usd": 0.00019
+      }
+    }
+  }
+}
