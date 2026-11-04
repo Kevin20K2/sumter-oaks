@@ -1,0 +1,116 @@
+{
+  "tick": 347,
+  "simulation_time": "Wednesday, November 4, 1:17 PM",
+  "weather": "Partly cloudy, 81°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On a partly cloudy Wednesday afternoon in Sumter Oaks, Gary hopes Hal will look over his golf cart modification paperwork before it goes to Architectural Review, and Hal agrees to review every line so it comes back approved. Back at her house, Donna cheerfully flips through her club calendar to plan around Tuesday's court time. Rosa, content as ever, is heading out onto Magnolia Loop, where the street is already filling with neighbors in the warm 81-degree air.",
+  "events": [
+    "Donna (donna club calendar): Flip ahead through the week and note which club meetings and events I need to plan around Tuesday's court time",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I just finished the review form with my measurements and sketch at the workbench, and I walked out to the street. Hal is right here, and he said he'd check my cart form line by line before it goes to Architectural Review. The form is filled out, so now's the time to ask. L-01 says exterior mods visible from the street need approval, and I'd rather have Hal's sharp eye on it than get bounced for a missing line. Keep it short, then go file it.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Afternoon, Hal. I finished the cart form, measurements and a sketch of the lights and speaker mounts. Got a minute to look it over before I send it in for review?"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already penciled in Tuesday's 2-hour court slot, packed Gary's spare paddle, and texted him the time. Last tick I checked for his reply, and nothing new has happened since, so there's no point asking again. The sensible thing is to use my calendar to see what my three clubs have coming up, since I'm social chair and need to keep everything organized. Gary will answer when he answers.",
+      "emotional_state": "cheerful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Flip ahead through the week and note which club meetings and events I need to plan around Tuesday's court time"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary just arrived on Magnolia Loop. My goal is to report his cart mods and Donna's flamingos, but I've been stuck on the flamingo tally for three ticks, and I promised to check his paperwork line by line. Talking to Gary moves things forward. I'll ask whether his Architectural Review filing is done, since L-01 requires approval for street-visible modifications. Fair and by the book, no ambush.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Afternoon, Gary. That cart paperwork for Architectural Review, is it filed yet? Bring it by and I'll go over every line before it goes in, so it comes back approved."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Wednesday afternoon. I've set the table, made the sofrito, marinated the pork, checked my shifts, and written the shopping list. Nobody is nearby, so there's no one to talk to. The one thing I haven't done is act on that shopping list, since the fresh ingredients for Friday won't buy themselves, and I'd rather not rush Thursday morning, which I'm saving for coffee with Hal. Everything that keeps is prepped, so the next useful step is to get out and shop. Magnolia Loop is the only way out of the house.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with my shopping list to pick up the fresh ingredients for Friday's dinner, so Thursday stays free for coffee with Hal."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03094,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9707,
+        "output_tokens": 1140,
+        "usd": 0.03081
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 483,
+        "output_tokens": 166,
+        "usd": 0.00013
+      }
+    }
+  }
+}

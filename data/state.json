@@ -1,39 +1,28 @@
 {
-  "tick": 347,
-  "time": "2026-11-04T12:17",
+  "tick": 348,
+  "time": "2026-11-04T13:17",
   "positions": {
     "gary": "magnolia_loop",
     "donna": "donnas_house",
     "hal": "magnolia_loop",
-    "rosa": "rosas_house"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "You arrived at Magnolia Loop (the street)."
+      "Hal said to Gary: “Afternoon, Gary. That cart paperwork for Architectural Review, is it filed yet? Bring it by and I'll go over every line before it goes in, so it comes back approved.”",
+      "Rosa just arrived."
     ],
     "donna": [],
     "hal": [
-      "Gary just arrived."
+      "Gary said to Hal: “Afternoon, Hal. I finished the cart form, measurements and a sketch of the lights and speaker mounts. Got a minute to look it over before I send it in for review?”",
+      "Rosa just arrived."
     ],
-    "rosa": []
+    "rosa": [
+      "You arrived at Magnolia Loop (the street)."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 263,
-        "text": "I (gary workbench): Bench-build and test the cart's light strip wiring and speaker module, parked cart untouched until approval",
-        "importance": 5
-      },
-      {
-        "tick": 264,
-        "text": "I (gary workbench): Double-check solder joints and label the wiring harness for the light strip and speaker module",
-        "importance": 4
-      },
-      {
-        "tick": 265,
-        "text": "I (gary workbench): Quietly test the labeled speaker module at low volume, cart left untouched",
-        "importance": 4
-      },
       {
         "tick": 266,
         "text": "I (gary workbench): Silently recheck the labeled harness connections and tidy the wiring, no sound, cart untouched",
@@ -1018,14 +1007,24 @@
         "tick": 346,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 347,
+        "text": "I said to Hal: “Afternoon, Hal. I finished the cart form, measurements and a sketch of the lights and speaker mounts. Got a minute to look it over before I send it in for review?”",
+        "importance": 6
+      },
+      {
+        "tick": 347,
+        "text": "Hal said to Gary: “Afternoon, Gary. That cart paperwork for Architectural Review, is it filed yet? Bring it by and I'll go over every line before it goes in, so it comes back approved.”",
+        "importance": 6
+      },
+      {
+        "tick": 347,
+        "text": "Rosa just arrived.",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 270,
-        "text": "Hal said to Gary: “Matter of fact, Gary, I've got a box of porch lights in the garage that need hauling to the curb for the parade. Stop by after lunch and I'll stand over you and supervise.”",
-        "importance": 6
-      },
       {
         "tick": 271,
         "text": "I said to Gary: “Still good, Gary! Courts at 1 sharp, third-shot drops, and we'll be done in plenty of time for Hal's porch lights. Leave the cart alone until the committee says so, and bring water.”",
@@ -2020,24 +2019,14 @@
         "tick": 346,
         "text": "I (donna phone): Check whether Gary texted back to confirm Tuesday's court time",
         "importance": 4
+      },
+      {
+        "tick": 347,
+        "text": "I (donna club calendar): Flip ahead through the week and note which club meetings and events I need to plan around Tuesday's court time",
+        "importance": 3
       }
     ],
     "hal": [
-      {
-        "tick": 261,
-        "text": "Gary (street bulletin board): Check for a posted Architectural Review decision on my cart application",
-        "importance": 5
-      },
-      {
-        "tick": 262,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the total",
-        "importance": 6
-      },
-      {
-        "tick": 262,
-        "text": "Gary headed to Gary's House.",
-        "importance": 6
-      },
       {
         "tick": 263,
         "text": "I (donna flamingo flock): Count each flamingo visible from the street and record the total",
@@ -3022,19 +3011,24 @@
         "tick": 346,
         "text": "Gary just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 347,
+        "text": "I said to Gary: “Afternoon, Gary. That cart paperwork for Architectural Review, is it filed yet? Bring it by and I'll go over every line before it goes in, so it comes back approved.”",
+        "importance": 5
+      },
+      {
+        "tick": 347,
+        "text": "Gary said to Hal: “Afternoon, Hal. I finished the cart form, measurements and a sketch of the lights and speaker mounts. Got a minute to look it over before I send it in for review?”",
+        "importance": 5
+      },
+      {
+        "tick": 347,
+        "text": "Rosa just arrived.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 235,
-        "text": "I (rosa shift schedule): Check my per-diem shifts to find free evenings this week for building the parade cart",
-        "importance": 4
-      },
-      {
-        "tick": 235,
-        "text": "Donna said to Rosa: “Rosa, I love the pumpkin patch! Let's do the clip-on lights and the fabric banner, and I'll add a little hay-bale skirt along the bottom that just tucks on, so nothing's permanent and Review can't say a word. Pencil that in and let's get it to Hal tomorrow.”",
-        "importance": 4
-      },
       {
         "tick": 236,
         "text": "I (rosa dining table): Pencil the clip-on lights, fabric banner, and tuck-on hay-bale skirt into the sketch for Hal",
@@ -4024,6 +4018,16 @@
         "tick": 346,
         "text": "I (rosa kitchen): Check the pantry and fridge, label the sofrito and marinade, and jot a shopping list for Friday's dinner",
         "importance": 4
+      },
+      {
+        "tick": 347,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 347,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ]
   },
@@ -4070,10 +4074,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
+    "gary": "hopeful",
     "donna": "cheerful",
-    "hal": "focused",
-    "rosa": "hopeful"
+    "hal": "dutiful",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4190,9 +4194,19 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 347,
+      "time": "Wednesday, November 4, 1:17 PM",
+      "story": "On a partly cloudy Wednesday afternoon in Sumter Oaks, Gary hopes Hal will look over his golf cart modification paperwork before it goes to Architectural Review, and Hal agrees to review every line so it comes back approved. Back at her house, Donna cheerfully flips through her club calendar to plan around Tuesday's court time. Rosa, content as ever, is heading out onto Magnolia Loop, where the street is already filling with neighbors in the warm 81-degree air.",
+      "dialogue": [
+        "Gary said to Hal: “Afternoon, Hal. I finished the cart form, measurements and a sketch of the lights and speaker mounts. Got a minute to look it over before I send it in for review?”",
+        "Hal said to Gary: “Afternoon, Gary. That cart paperwork for Architectural Review, is it filed yet? Bring it by and I'll go over every line before it goes in, so it comes back approved.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 10.91104,
+    "total_usd": 10.94198,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4287,13 +4301,12 @@
         "usd": 0.46847
       },
       "2026-11-04": {
-        "ticks": 5,
-        "usd": 0.15726
+        "ticks": 6,
+        "usd": 0.1882
       }
     }
   },
   "recent_tick_costs": [
-    0.03404,
     0.03108,
     0.03057,
     0.03208,
@@ -4316,7 +4329,8 @@
     0.03133,
     0.03141,
     0.03064,
-    0.03155
+    0.03155,
+    0.03094
   ],
   "fund": {
     "gross_usd": 0.0,
