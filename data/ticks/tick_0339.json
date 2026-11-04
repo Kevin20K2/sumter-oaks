@@ -1,0 +1,117 @@
+{
+  "tick": 339,
+  "simulation_time": "Tuesday, November 3, 7:17 PM",
+  "weather": "Breezy and clear, 78°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a breezy, clear Tuesday evening in Sumter Oaks, Gary is set up on pickleball court one with his paddle, knees bent and ready for the first rally, while Donna cheerfully lines up an easy serve from the other side of the net at the Rec Center. Over on Magnolia Loop, Hal is content as he heads home to his house, and Rosa, determined as ever, is at her own place double-checking her shift schedule to keep Friday evening free and Thursday morning blocked off for Hal.",
+  "events": [
+    "Gary (pickleball court 1): Walk onto court one with my paddle, knees bent, ready for the first rally",
+    "Hal headed to Hal's House.",
+    "Rosa (rosa shift schedule): Double-check Friday evening is clear of shifts and Thursday 8 AM stays blocked for Hal"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna's already told me twice to head to court one, and I've said my piece about the paddle and the knees. No sense standing here talking it to death. The court is booked for two hours, which is right at the limit under L-05, so I should actually use it. The cart form can wait until after the first rally, like we agreed. Time to get out there and play instead of stewing over paperwork.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Walk onto court one with my paddle, knees bent, ready for the first rally"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just said he's ready for that first rally before he talks himself out of it, so he's waiting on me to move. Court's booked, paddle's handed over, and the kitchen speech is done. No more instructions needed, I just need to get him onto court one while his nerve holds and start feeding him easy serves. Every good partner I recruit climbs the ladder with me.",
+      "emotional_state": "enthusiastic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "That's the spirit, hon, no talking yourself out of anything. Court one's ours, so grab a spot at the baseline and I'll send you a nice easy serve. Just swing and have fun."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've logged the flamingo tally, pinned the courteous notice to the bulletin board, and checked the mail for committee word. Nobody's around to talk to, and the mailbox gave me nothing new. Gary trusted me to check his cart paperwork line by line before it's filed, and Donna's pot roast is waiting in the fridge for Thursday. The review committee won't hear a thing from me tonight. Procedure is done for the day. The sensible move is to head home, eat something, and be fresh for Rosa's Thursday coffee.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "hals_house",
+          "content": "Notice is pinned and the tally is logged. Heading home for supper and a look over Gary's cart paperwork."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've already picked Friday evening for the welcome dinner, written it in ink, planned the menu, and checked the pantry against my grocery list. Nobody is around to invite right now, so the useful thing is to finish the loop: the shift schedule is right here, and I should confirm Friday evening is truly clear (no per-diem shift sneaking in) and that Thursday 8 AM coffee with Hal stays protected. Once that's locked, I can go invite the three neighbors in person.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Double-check Friday evening is clear of shifts and Thursday 8 AM stays blocked for Hal"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03123,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10113,
+        "output_tokens": 1087,
+        "usd": 0.0311
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 449,
+        "output_tokens": 175,
+        "usd": 0.00013
+      }
+    }
+  }
+}

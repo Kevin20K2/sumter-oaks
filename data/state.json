@@ -1,34 +1,26 @@
 {
-  "tick": 339,
-  "time": "2026-11-03T18:17",
+  "tick": 340,
+  "time": "2026-11-03T19:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
-    "hal": "magnolia_loop",
+    "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Okay, hon, we're all set, so grab your paddle and head to court one. I'll serve nice and easy, you just keep those knees bent and stay out of the kitchen.”"
+      "Donna said to Gary: “That's the spirit, hon, no talking yourself out of anything. Court one's ours, so grab a spot at the baseline and I'll send you a nice easy serve. Just swing and have fun.”"
     ],
     "donna": [
-      "Gary said to Donna: “Thanks for the spare paddle, Donna. Knees bent, out of the kitchen, got it. Let's get that first rally going before I talk myself out of it.”"
+      "Gary (pickleball court 1): Walk onto court one with my paddle, knees bent, ready for the first rally"
     ],
-    "hal": [],
+    "hal": [
+      "You arrived at Hal's House."
+    ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 258,
-        "text": "Donna headed to Rec Center.",
-        "importance": 6
-      },
-      {
-        "tick": 258,
-        "text": "Rosa headed to Town Square.",
-        "importance": 6
-      },
       {
         "tick": 258,
         "text": "Hal just arrived.",
@@ -1018,19 +1010,19 @@
         "tick": 338,
         "text": "Donna said to Gary: “Okay, hon, we're all set, so grab your paddle and head to court one. I'll serve nice and easy, you just keep those knees bent and stay out of the kitchen.”",
         "importance": 4
+      },
+      {
+        "tick": 339,
+        "text": "I (pickleball court 1): Walk onto court one with my paddle, knees bent, ready for the first rally",
+        "importance": 4
+      },
+      {
+        "tick": 339,
+        "text": "Donna said to Gary: “That's the spirit, hon, no talking yourself out of anything. Court one's ours, so grab a spot at the baseline and I'll send you a nice easy serve. Just swing and have fun.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 265,
-        "text": "Hal said to Donna: “Evening, Donna. I'll admit I've been standing here counting your flamingos, which is a poor way for a grown man to spend a Thursday. Halloween's Saturday, so tell me what you've got planned for them before I decide whether the committee needs to hear about it.”",
-        "importance": 4
-      },
-      {
-        "tick": 266,
-        "text": "I said to Hal: “The same three flamingos, Hal, just in costume for Saturday: a witch hat, a little cape, maybe a pirate patch. No new ornaments out front, so you can put the clipboard down. And if you run into Gary before I do, tell him third-shot drops, first thing tomorrow, no excuses.”",
-        "importance": 4
-      },
       {
         "tick": 266,
         "text": "Hal said to Donna: “Haven't seen Gary since this afternoon, Donna, and I've been out here long enough to notice. Three it is, then. You keep the extras in the garage and we won't have any trouble. Happy Halloween to you and the flock.”",
@@ -2020,19 +2012,19 @@
         "tick": 338,
         "text": "Gary said to Donna: “Thanks for the spare paddle, Donna. Knees bent, out of the kitchen, got it. Let's get that first rally going before I talk myself out of it.”",
         "importance": 6
+      },
+      {
+        "tick": 339,
+        "text": "I said to Gary: “That's the spirit, hon, no talking yourself out of anything. Court one's ours, so grab a spot at the baseline and I'll send you a nice easy serve. Just swing and have fun.”",
+        "importance": 6
+      },
+      {
+        "tick": 339,
+        "text": "Gary (pickleball court 1): Walk onto court one with my paddle, knees bent, ready for the first rally",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 254,
-        "text": "I (hal binoculars): Glass Magnolia Loop from the porch and recount the flamingos and Gary's cart",
-        "importance": 5
-      },
-      {
-        "tick": 255,
-        "text": "I (hal violation notebook): Review my entries and compile a clean dated summary for tomorrow's committee meeting",
-        "importance": 6
-      },
       {
         "tick": 256,
         "text": "I waited: Settling into the porch chair with the notebook, satisfied the evidence is in order for tomorrow's committee meeting.",
@@ -3022,14 +3014,19 @@
         "tick": 338,
         "text": "I (mailbox kiosk): Check my mail for any committee correspondence or word on Gary's cart paperwork",
         "importance": 3
+      },
+      {
+        "tick": 339,
+        "text": "I headed to Hal's House.",
+        "importance": 3
+      },
+      {
+        "tick": 339,
+        "text": "You arrived at Hal's House.",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 231,
-        "text": "I said to Donna: “Nothing to hear yet, hon, we haven't filed anything. Let's get the sketches done at the dining table while this rain lasts, and Hal can pitch in when he gets here. Then I'll submit the whole thing to Architectural Review.”",
-        "importance": 5
-      },
       {
         "tick": 231,
         "text": "Donna said to Rosa: “Three flamingos, hon, I counted twice, and Hal logged it in his notebook too. Let's spread those sketches out on the dining table and get the cart drawn up while we wait for him.”",
@@ -4024,6 +4021,11 @@
         "tick": 338,
         "text": "I (rosa kitchen): Check the pantry against my grocery list and mark what I still need for Friday's dinner",
         "importance": 5
+      },
+      {
+        "tick": 339,
+        "text": "I (rosa shift schedule): Double-check Friday evening is clear of shifts and Thursday 8 AM stays blocked for Hal",
+        "importance": 5
       }
     ]
   },
@@ -4071,8 +4073,8 @@
   },
   "emotions": {
     "gary": "cheerful",
-    "donna": "eager",
-    "hal": "dutiful",
+    "donna": "enthusiastic",
+    "hal": "content",
     "rosa": "determined"
   },
   "laws": [
@@ -4224,10 +4226,18 @@
         "Gary said to Donna: “Thanks for the spare paddle, Donna. Knees bent, out of the kitchen, got it. Let's get that first rally going before I talk myself out of it.”",
         "Donna said to Gary: “Okay, hon, we're all set, so grab your paddle and head to court one. I'll serve nice and easy, you just keep those knees bent and stay out of the kitchen.”"
       ]
+    },
+    {
+      "tick": 339,
+      "time": "Tuesday, November 3, 7:17 PM",
+      "story": "At 7:17 on a breezy, clear Tuesday evening in Sumter Oaks, Gary is set up on pickleball court one with his paddle, knees bent and ready for the first rally, while Donna cheerfully lines up an easy serve from the other side of the net at the Rec Center. Over on Magnolia Loop, Hal is content as he heads home to his house, and Rosa, determined as ever, is at her own place double-checking her shift schedule to keep Friday evening free and Thursday morning blocked off for Hal.",
+      "dialogue": [
+        "Donna said to Gary: “That's the spirit, hon, no talking yourself out of anything. Court one's ours, so grab a spot at the baseline and I'll send you a nice easy serve. Just swing and have fun.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 10.66029,
+    "total_usd": 10.69152,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4318,13 +4328,12 @@
         "usd": 0.47443
       },
       "2026-11-03": {
-        "ticks": 12,
-        "usd": 0.37498
+        "ticks": 13,
+        "usd": 0.40621
       }
     }
   },
   "recent_tick_costs": [
-    0.03034,
     0.03041,
     0.03055,
     0.03108,
@@ -4347,7 +4356,8 @@
     0.03121,
     0.03076,
     0.03111,
-    0.03027
+    0.03027,
+    0.03123
   ],
   "fund": {
     "gross_usd": 0.0,
