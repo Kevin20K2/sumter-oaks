@@ -1,49 +1,34 @@
 {
-  "tick": 350,
-  "time": "2026-11-04T15:17",
+  "tick": 351,
+  "time": "2026-11-04T16:17",
   "positions": {
     "gary": "magnolia_loop",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
     "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Hal said to Gary: “Good, you held it back. Since the lights and speaker mounts show from the street, L-01 applies, so the sketch must show them from the street side with every measurement marked. Fix that and it's ready to file. And Rosa's pork Friday suits me fine, I'll be there.”",
-      "Rosa (street bulletin board): Pin up a note: Welcome dinner at Rosa's, Friday evening, pork and good plates. Gary, Hal, Donna, all three of you, come hungry."
+      "Hal said to Rosa: “Saw your note, Rosa. Friday evening, I'll be there on time, because I'm always on time. Tell me what to bring and I'll bring it.”",
+      "Rosa said to Gary: “Cornbread would be perfect, Gary, bring it. Hal says he's in too, so now I just need to get Donna to the table.”",
+      "Donna just arrived."
     ],
-    "donna": [],
+    "donna": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "hal": [
-      "Gary said to Rosa: “Rosa, I'd be honored. Friday evening, count me in, and I'll save the good chair from being argued over. Can I bring something? I make a decent cornbread.”",
-      "Rosa (street bulletin board): Pin up a note: Welcome dinner at Rosa's, Friday evening, pork and good plates. Gary, Hal, Donna, all three of you, come hungry."
+      "Gary said to Hal: “Understood, Hal. Street-side view, every measurement marked. I'll redo the sketch tonight and bring it by tomorrow. Thanks for the sharp eye.”",
+      "Rosa said to Gary: “Cornbread would be perfect, Gary, bring it. Hal says he's in too, so now I just need to get Donna to the table.”",
+      "Donna just arrived."
     ],
     "rosa": [
-      "Gary said to Rosa: “Rosa, I'd be honored. Friday evening, count me in, and I'll save the good chair from being argued over. Can I bring something? I make a decent cornbread.”",
-      "Hal said to Gary: “Good, you held it back. Since the lights and speaker mounts show from the street, L-01 applies, so the sketch must show them from the street side with every measurement marked. Fix that and it's ready to file. And Rosa's pork Friday suits me fine, I'll be there.”"
+      "Gary said to Hal: “Understood, Hal. Street-side view, every measurement marked. I'll redo the sketch tonight and bring it by tomorrow. Thanks for the sharp eye.”",
+      "Hal said to Rosa: “Saw your note, Rosa. Friday evening, I'll be there on time, because I'm always on time. Tell me what to bring and I'll bring it.”",
+      "Donna just arrived."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 269,
-        "text": "Donna just arrived.",
-        "importance": 3
-      },
-      {
-        "tick": 269,
-        "text": "Town news: Reminder on the bulletin board: Halloween on the Loop is tomorrow. Trick-or-treating 5 to 7 PM, the golf cart parade at 6, and the costume contest at the Town Square bandstand at 7.",
-        "importance": 7
-      },
-      {
-        "tick": 270,
-        "text": "I said to Donna: “Morning, Donna. Still waiting on the committee to sign off on the cart, so I'm keeping my hands to myself till then. Is that courts invitation still good for later, or are you tied up with the parade prep?”",
-        "importance": 4
-      },
-      {
-        "tick": 270,
-        "text": "Donna said to Gary: “Gary! Bag's packed with extra paddles. Let's hit the courts at 1 for third-shot drops, and we'll be done well before the parade tomorrow. You in?”",
-        "importance": 4
-      },
       {
         "tick": 270,
         "text": "Hal said to Gary: “Matter of fact, Gary, I've got a box of porch lights in the garage that need hauling to the curb for the parade. Stop by after lunch and I'll stand over you and supervise.”",
@@ -1023,19 +1008,29 @@
         "tick": 349,
         "text": "Rosa (street bulletin board): Pin up a note: Welcome dinner at Rosa's, Friday evening, pork and good plates. Gary, Hal, Donna, all three of you, come hungry.",
         "importance": 6
-      }
-    ],
-    "donna": [
+      },
       {
-        "tick": 271,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street, for the record",
+        "tick": 350,
+        "text": "I said to Hal: “Understood, Hal. Street-side view, every measurement marked. I'll redo the sketch tonight and bring it by tomorrow. Thanks for the sharp eye.”",
         "importance": 5
       },
       {
-        "tick": 272,
-        "text": "I said to Hal: “Count away, Hal! Three visible from the street, and not one flamingo more. I know the rule, and I'd rather pass your inspection than argue with it.”",
-        "importance": 4
+        "tick": 350,
+        "text": "Hal said to Rosa: “Saw your note, Rosa. Friday evening, I'll be there on time, because I'm always on time. Tell me what to bring and I'll bring it.”",
+        "importance": 5
       },
+      {
+        "tick": 350,
+        "text": "Rosa said to Gary: “Cornbread would be perfect, Gary, bring it. Hal says he's in too, so now I just need to get Donna to the table.”",
+        "importance": 5
+      },
+      {
+        "tick": 350,
+        "text": "Donna just arrived.",
+        "importance": 5
+      }
+    ],
+    "donna": [
       {
         "tick": 272,
         "text": "Gary headed to Rec Center.",
@@ -2025,29 +2020,19 @@
         "tick": 349,
         "text": "I (donna pickleball bag): Check the bag: spare paddle for Gary, balls, and my ladder notes all packed for Tuesday",
         "importance": 4
+      },
+      {
+        "tick": 350,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 350,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 3
       }
     ],
     "hal": [
-      {
-        "tick": 266,
-        "text": "Donna said to Hal: “The same three flamingos, Hal, just in costume for Saturday: a witch hat, a little cape, maybe a pirate patch. No new ornaments out front, so you can put the clipboard down. And if you run into Gary before I do, tell him third-shot drops, first thing tomorrow, no excuses.”",
-        "importance": 4
-      },
-      {
-        "tick": 266,
-        "text": "Rosa just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 267,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 267,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 268,
         "text": "I (street bulletin board): Read the Halloween flyer and any new notices posted on the board",
@@ -3027,29 +3012,29 @@
         "tick": 349,
         "text": "Rosa (street bulletin board): Pin up a note: Welcome dinner at Rosa's, Friday evening, pork and good plates. Gary, Hal, Donna, all three of you, come hungry.",
         "importance": 5
+      },
+      {
+        "tick": 350,
+        "text": "I said to Rosa: “Saw your note, Rosa. Friday evening, I'll be there on time, because I'm always on time. Tell me what to bring and I'll bring it.”",
+        "importance": 4
+      },
+      {
+        "tick": 350,
+        "text": "Gary said to Hal: “Understood, Hal. Street-side view, every measurement marked. I'll redo the sketch tonight and bring it by tomorrow. Thanks for the sharp eye.”",
+        "importance": 4
+      },
+      {
+        "tick": 350,
+        "text": "Rosa said to Gary: “Cornbread would be perfect, Gary, bring it. Hal says he's in too, so now I just need to get Donna to the table.”",
+        "importance": 4
+      },
+      {
+        "tick": 350,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 241,
-        "text": "I (rosa dining table): Clear the table and lay out paper, pencils, and a rules checklist for Thursday's cart sketching",
-        "importance": 5
-      },
-      {
-        "tick": 242,
-        "text": "I (rosa shift schedule): Double-check Thursday evening is clear so I can't be called in",
-        "importance": 4
-      },
-      {
-        "tick": 243,
-        "text": "I (rosa kitchen): Check the pantry against my shopping list and set aside ingredients for Thursday's supper",
-        "importance": 4
-      },
-      {
-        "tick": 244,
-        "text": "I (rosa kitchen): Start a pot of black beans and prep the sofrito so Thursday's supper is mostly done ahead",
-        "importance": 4
-      },
       {
         "tick": 245,
         "text": "I (rosa kitchen): Stir the black beans, taste for salt, and turn the heat down to a low simmer",
@@ -4029,6 +4014,26 @@
         "tick": 349,
         "text": "Hal said to Gary: “Good, you held it back. Since the lights and speaker mounts show from the street, L-01 applies, so the sketch must show them from the street side with every measurement marked. Fix that and it's ready to file. And Rosa's pork Friday suits me fine, I'll be there.”",
         "importance": 6
+      },
+      {
+        "tick": 350,
+        "text": "I said to Gary: “Cornbread would be perfect, Gary, bring it. Hal says he's in too, so now I just need to get Donna to the table.”",
+        "importance": 6
+      },
+      {
+        "tick": 350,
+        "text": "Gary said to Hal: “Understood, Hal. Street-side view, every measurement marked. I'll redo the sketch tonight and bring it by tomorrow. Thanks for the sharp eye.”",
+        "importance": 6
+      },
+      {
+        "tick": 350,
+        "text": "Hal said to Rosa: “Saw your note, Rosa. Friday evening, I'll be there on time, because I'm always on time. Tell me what to bring and I'll bring it.”",
+        "importance": 6
+      },
+      {
+        "tick": 350,
+        "text": "Donna just arrived.",
+        "importance": 6
       }
     ]
   },
@@ -4075,10 +4080,10 @@
     ]
   },
   "emotions": {
-    "gary": "warm",
-    "donna": "optimistic",
-    "hal": "dutiful",
-    "rosa": "hopeful"
+    "gary": "determined",
+    "donna": "upbeat",
+    "hal": "content",
+    "rosa": "warm, hopeful"
   },
   "laws": [
     {
@@ -4223,10 +4228,20 @@
         "Gary said to Rosa: “Rosa, I'd be honored. Friday evening, count me in, and I'll save the good chair from being argued over. Can I bring something? I make a decent cornbread.”",
         "Hal said to Gary: “Good, you held it back. Since the lights and speaker mounts show from the street, L-01 applies, so the sketch must show them from the street side with every measurement marked. Fix that and it's ready to file. And Rosa's pork Friday suits me fine, I'll be there.”"
       ]
+    },
+    {
+      "tick": 350,
+      "time": "Wednesday, November 4, 4:17 PM",
+      "story": "On Wednesday afternoon in Sumter Oaks, Gary is on Magnolia Loop with a determined look, promising Hal he'll redo his street-side sketch tonight and bring it by tomorrow. Hal, content as ever, has agreed to show up Friday evening on time and bring whatever Rosa asks for. Rosa, warm and hopeful, is counting on Gary's cornbread and Hal's attendance, and she just needs to coax Donna, who is upbeat and heading out onto the street, to join them at the table.",
+      "dialogue": [
+        "Gary said to Hal: “Understood, Hal. Street-side view, every measurement marked. I'll redo the sketch tonight and bring it by tomorrow. Thanks for the sharp eye.”",
+        "Hal said to Rosa: “Saw your note, Rosa. Friday evening, I'll be there on time, because I'm always on time. Tell me what to bring and I'll bring it.”",
+        "Rosa said to Gary: “Cornbread would be perfect, Gary, bring it. Hal says he's in too, so now I just need to get Donna to the table.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 11.00721,
+    "total_usd": 11.04022,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4321,13 +4336,12 @@
         "usd": 0.46847
       },
       "2026-11-04": {
-        "ticks": 8,
-        "usd": 0.25343
+        "ticks": 9,
+        "usd": 0.28644
       }
     }
   },
   "recent_tick_costs": [
-    0.03208,
     0.03144,
     0.03242,
     0.03073,
@@ -4350,7 +4364,8 @@
     0.03155,
     0.03094,
     0.03187,
-    0.03336
+    0.03336,
+    0.03301
   ],
   "fund": {
     "gross_usd": 0.0,
