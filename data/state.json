@@ -1,30 +1,24 @@
 {
-  "tick": 346,
-  "time": "2026-11-04T11:17",
+  "tick": 347,
+  "time": "2026-11-04T12:17",
   "positions": {
-    "gary": "garys_house",
+    "gary": "magnolia_loop",
     "donna": "donnas_house",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "donna": [],
-    "hal": [],
+    "hal": [
+      "Gary just arrived."
+    ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 262,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the total",
-        "importance": 4
-      },
-      {
-        "tick": 262,
-        "text": "You arrived at Gary's House.",
-        "importance": 4
-      },
       {
         "tick": 263,
         "text": "I (gary workbench): Bench-build and test the cart's light strip wiring and speaker module, parked cart untouched until approval",
@@ -1014,14 +1008,19 @@
         "tick": 345,
         "text": "I (gary workbench): Fill out the review form with my measurements and a sketch of the street-visible lights and speaker mounts",
         "importance": 5
+      },
+      {
+        "tick": 346,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 346,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 270,
-        "text": "Gary said to Donna: “Morning, Donna. Still waiting on the committee to sign off on the cart, so I'm keeping my hands to myself till then. Is that courts invitation still good for later, or are you tied up with the parade prep?”",
-        "importance": 6
-      },
       {
         "tick": 270,
         "text": "Hal said to Gary: “Matter of fact, Gary, I've got a box of porch lights in the garage that need hauling to the curb for the parade. Stop by after lunch and I'll stand over you and supervise.”",
@@ -2016,19 +2015,14 @@
         "tick": 345,
         "text": "I (donna club calendar): Confirm Tuesday's 2-hour court slot is penciled in and check what my clubs have coming up",
         "importance": 4
+      },
+      {
+        "tick": 346,
+        "text": "I (donna phone): Check whether Gary texted back to confirm Tuesday's court time",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 260,
-        "text": "Gary said to Hal: “That's exactly the route I'm taking, Hal. Good to know the committee sits tomorrow. Rosa's got my sketches and clamp list at the desk, and nothing goes on the cart where the street can see it until they sign off. I'll be in the garage bench-testing the wiring in the meantime.”",
-        "importance": 5
-      },
-      {
-        "tick": 261,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street",
-        "importance": 5
-      },
       {
         "tick": 261,
         "text": "Gary (street bulletin board): Check for a posted Architectural Review decision on my cart application",
@@ -3018,14 +3012,19 @@
         "tick": 345,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street, write the tally down, and compare it to L-02's limit of three",
         "importance": 5
+      },
+      {
+        "tick": 346,
+        "text": "I (donna flamingo flock): Count each flamingo visible from the street and write down an exact tally against L-02's limit of three",
+        "importance": 5
+      },
+      {
+        "tick": 346,
+        "text": "Gary just arrived.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 234,
-        "text": "Donna (rosa dining table): Sketch the first parade cart design with Rosa: removable pumpkin garland and a clip-on bat banner",
-        "importance": 5
-      },
       {
         "tick": 235,
         "text": "I (rosa shift schedule): Check my per-diem shifts to find free evenings this week for building the parade cart",
@@ -4020,6 +4019,11 @@
         "tick": 345,
         "text": "I (rosa shift schedule): Check my per-diem shifts to make sure nothing collides with Thursday coffee or Friday's dinner",
         "importance": 6
+      },
+      {
+        "tick": 346,
+        "text": "I (rosa kitchen): Check the pantry and fridge, label the sofrito and marinade, and jot a shopping list for Friday's dinner",
+        "importance": 4
       }
     ]
   },
@@ -4066,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
+    "gary": "determined",
     "donna": "cheerful",
-    "hal": "dutiful",
-    "rosa": "focused, hopeful"
+    "hal": "focused",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4186,42 +4190,9 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 341,
-      "time": "Tuesday, November 3, 9:17 PM",
-      "story": "At 9:17 on a breezy, clear Tuesday night in Sumter Oaks, Gary and Donna are finishing a friendly pickleball session at the Rec Center, where Donna is cheering him on and promising to add him to the ladder board. Up the street, Hal is watching Magnolia Loop through his binoculars for stray carts and noise before quiet hours begin. Meanwhile, Rosa is at her dining table counting chairs and setting aside the good plates for Friday.",
-      "dialogue": [
-        "Donna said to Gary: “Look at that swing, hon, you're a natural! Keep it coming and we'll work on a little dinking next. Keep this up and I'll be putting your name on that ladder board with mine.”"
-      ]
-    },
-    {
-      "tick": 342,
-      "time": "Wednesday, November 4, 7:17 AM",
-      "story": "At 7:17 on a partly cloudy Wednesday morning, 76 degrees and climbing, Gary is at his workbench bench-testing light strings and speaker wiring while sketching how his decorations will look from the street for the review form. Donna is checking her club calendar and penciling in next week's court slot with Gary, and Hal is scanning Magnolia Loop with his binoculars for carts on the grass and a fresh flamingo count. Over at her dining table, Rosa is laying out the good plates and place cards to test the seating for Friday.",
-      "dialogue": []
-    },
-    {
-      "tick": 343,
-      "time": "Wednesday, November 4, 8:17 AM",
-      "story": "At 8:17 on this partly cloudy Wednesday morning in Sumter Oaks, Gary is at home carefully test-fitting light strips and speaker mounts on his golf cart, jotting measurements for the review form. Across the way, Donna is restocking her pickleball bag and packing a spare paddle for Gary's game next Tuesday, all in good spirits. Hal has set off down Magnolia Loop on his dutiful rounds, while Rosa, determined as ever, is chopping aromatics and making a sofrito base in her kitchen to portion out for Friday.",
-      "dialogue": []
-    },
-    {
-      "tick": 344,
-      "time": "Wednesday, November 4, 9:17 AM",
-      "story": "At 9:17 on this partly cloudy Wednesday morning, Gary is at his house with his toolbox, determined to measure the lights and speaker mounts for the review form. Donna, upbeat as ever, is on the phone at her place booking a two-hour court slot for next Tuesday, and she'll text Gary the time once it's confirmed. Over on Magnolia Loop, Hal is focused on counting the flamingos he can see from the street so he can match the tally against L-02. Meanwhile, Rosa is content in her kitchen, mixing marinade for Friday's pork before washing up the prep bowls.",
-      "dialogue": []
-    },
-    {
-      "tick": 345,
-      "time": "Wednesday, November 4, 11:17 AM",
-      "story": "Gary is at his workbench sketching the street-visible lights and speaker mounts on his review form, carefully measuring each one so the HOA paperwork is spot on. Donna is at her club calendar penciling in Tuesday's two-hour court slot and checking what her clubs have coming up, humming as she goes. Out on Magnolia Loop, Hal is counting the pink flamingos he can see from the street, tallying them on his clipboard to compare against the three allowed at L-02. Rosa, at her kitchen table, is reviewing her per-diem shift schedule to make sure nothing collides with Thursday coffee or Friday dinner, hopeful that it all lines up.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 10.87949,
+    "total_usd": 10.91104,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4316,13 +4287,12 @@
         "usd": 0.46847
       },
       "2026-11-04": {
-        "ticks": 4,
-        "usd": 0.12571
+        "ticks": 5,
+        "usd": 0.15726
       }
     }
   },
   "recent_tick_costs": [
-    0.03573,
     0.03404,
     0.03108,
     0.03057,
@@ -4345,7 +4315,8 @@
     0.03233,
     0.03133,
     0.03141,
-    0.03064
+    0.03064,
+    0.03155
   ],
   "fund": {
     "gross_usd": 0.0,
