@@ -1,0 +1,117 @@
+{
+  "tick": 341,
+  "simulation_time": "Tuesday, November 3, 9:17 PM",
+  "weather": "Breezy and clear, 76°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a breezy, clear Tuesday night in Sumter Oaks, Gary and Donna are finishing a friendly pickleball session at the Rec Center, where Donna is cheering him on and promising to add him to the ladder board. Up the street, Hal is watching Magnolia Loop through his binoculars for stray carts and noise before quiet hours begin. Meanwhile, Rosa is at her dining table counting chairs and setting aside the good plates for Friday.",
+  "events": [
+    "Gary (pickleball court 1): Stay on the baseline, knees bent, and swing at Donna's easy serve",
+    "Hal (hal binoculars): Scan Magnolia Loop one last time before quiet hours, checking for carts on the grass and any stray noise",
+    "Rosa (rosa dining table): Count chairs, plan the seating, and set aside the good plates for Friday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm on court one at 9:17 PM with Donna, who just said she's sending a nice slow serve. She already told me not to overthink it, so the best move is to actually swing at it. Standing around talking won't help my knees or my nerves. The Architectural Review form can wait until after the game, and Hal is going to check it line by line anyway. For now I'll enjoy a Tuesday with someone who cares enough to drag me out of the house.",
+      "emotional_state": "cheerful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Stay on the baseline, knees bent, and swing at Donna's easy serve"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just sent Gary a nice easy serve and he's on the baseline about to swing. No need to ask or invite anything again. The best move now is to encourage him through the rally, keep it fun, and nudge him toward Tuesday as our regular game so my doubles-partner plan keeps moving. Court one is ours and we're well inside the two-hour limit.",
+      "emotional_state": "cheerful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Look at that swing, hon, you're a natural! Keep it coming and we'll work on a little dinking next. Keep this up and I'll be putting your name on that ladder board with mine."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's past nine at night, I'm home, and the notebook is already updated for the day. The bulletin board notice is pinned and the mail's been checked. Nobody's in sight, so no one to speak to. Quiet hours start at ten, and a good watchdog keeps an eye on the street one last time. The binoculars are right here, and a quick look down Magnolia Loop for anything left on the grass or amplified after hours is just due diligence. Gary's cart paperwork I'll check line by line when he brings it, and Thursday's coffee with Rosa is already on the calendar.",
+      "emotional_state": "watchful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Magnolia Loop one last time before quiet hours, checking for carts on the grass and any stray noise"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 9:17 PM, I'm alone at home, and the plan for Friday's dinner is basically done. Shifts are clear and Thursday 8 AM is protected for Hal. The last loose end is prepping ahead, so I'll use the dining table to sort out the table setup and a rough seating plan so all three neighbors end up at the same table. No need to wander out at this hour with quiet hours coming.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Count chairs, plan the seating, and set aside the good plates for Friday"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03094,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9975,
+        "output_tokens": 1086,
+        "usd": 0.03081
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 461,
+        "output_tokens": 161,
+        "usd": 0.00013
+      }
+    }
+  }
+}
