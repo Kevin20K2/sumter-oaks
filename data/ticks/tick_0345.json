@@ -1,0 +1,118 @@
+{
+  "tick": 345,
+  "simulation_time": "Wednesday, November 4, 11:17 AM",
+  "weather": "Partly cloudy, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is at his workbench sketching the street-visible lights and speaker mounts on his review form, carefully measuring each one so the HOA paperwork is spot on. Donna is at her club calendar penciling in Tuesday's two-hour court slot and checking what her clubs have coming up, humming as she goes. Out on Magnolia Loop, Hal is counting the pink flamingos he can see from the street, tallying them on his clipboard to compare against the three allowed at L-02. Rosa, at her kitchen table, is reviewing her per-diem shift schedule to make sure nothing collides with Thursday coffee or Friday dinner, hopeful that it all lines up.",
+  "events": [
+    "Gary (gary workbench): Fill out the review form with my measurements and a sketch of the street-visible lights and speaker mounts",
+    "Donna (donna club calendar): Confirm Tuesday's 2-hour court slot is penciled in and check what my clubs have coming up",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street, write the tally down, and compare it to L-02's limit of three",
+    "Rosa (rosa shift schedule): Check my per-diem shifts to make sure nothing collides with Thursday coffee or Friday's dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've bench-tested the lights and speakers, test-fit everything on the cart, and tallied the measurements in my toolbox notepad. Next step for the cart is getting it on paper for Architectural Review, since L-01 says anything visible from the street needs approval before I install for real. Nobody's around to talk to, so I'll sit at the workbench and finish the review form sketch and measurements so Hal can check it line by line. Parade's coming up and I'd rather not get a notice on my cart.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Fill out the review form with my measurements and a sketch of the street-visible lights and speaker mounts"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I already reserved the court and texted Gary last tick, and the spare paddle is packed. Nobody's around to talk to, and it's Wednesday morning. The calendar is the one thing I haven't looked at since pencilling in next week. I should double-check that the 2-hour slot (L-05 limit) is marked down and see which of my three clubs has something coming up, so I stay at the center of the social scene and keep Gary's ladder debut on track.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Confirm Tuesday's 2-hour court slot is penciled in and check what my clubs have coming up"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop at last, and no one's around to witness me doing my job. Donna's flamingo flock is right here, and my memory says I already ran a tally against L-02 last tick. But I promised myself I'd keep the count honest and fair, and a proper report needs a fresh, careful count, not a guess. Donna trusted me to be fair about her flamingos, so I'll count only what's visible from the street, note it down, and then decide what goes to the committee.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street, write the tally down, and compare it to L-02's limit of three"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The marinade is in the fridge and the sofrito base is portioned, so the big prep is done. It's Wednesday late morning and nobody's around. Friday's dinner is the whole point of this week, and I've been planning in pieces. Time to check my shift schedule and make sure no per-diem shift collides with Friday or Thursday's coffee with Hal. I won't let work eat the dinner.",
+      "emotional_state": "focused, hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts to make sure nothing collides with Thursday coffee or Friday's dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03064,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9739,
+        "output_tokens": 1100,
+        "usd": 0.03048
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 463,
+        "output_tokens": 222,
+        "usd": 0.00016
+      }
+    }
+  }
+}
