@@ -1,0 +1,118 @@
+{
+  "tick": 342,
+  "simulation_time": "Wednesday, November 4, 7:17 AM",
+  "weather": "Partly cloudy, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a partly cloudy Wednesday morning, 76 degrees and climbing, Gary is at his workbench bench-testing light strings and speaker wiring while sketching how his decorations will look from the street for the review form. Donna is checking her club calendar and penciling in next week's court slot with Gary, and Hal is scanning Magnolia Loop with his binoculars for carts on the grass and a fresh flamingo count. Over at her dining table, Rosa is laying out the good plates and place cards to test the seating for Friday.",
+  "events": [
+    "Gary (gary workbench): Bench-test the light strings and speaker wiring, and sketch what will show from the street for the review form",
+    "Donna (donna club calendar): Check the calendar and pencil in next week's court slot with Gary",
+    "Hal (hal binoculars): Scan Magnolia Loop for carts on the grass and a fresh flamingo count before heading out",
+    "Rosa (rosa dining table): Lay out the good plates and place cards to test the seating for Friday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's early morning at home, nobody around, and my goal is the cart for the Holiday Golf Cart Parade. Holiday lighting is allowed from Thanksgiving, so the lights can't go up on the street side yet, and L-01 says exterior mods visible from the street need Architectural Review approval, so I shouldn't bolt anything on until that's filed. What I can do is bench-work: wire up the sound system and test the lights on the workbench, keep it inside the garage, and note exactly what will be visible from the street so the form is accurate when Hal checks it. Keeps me useful and keeps me legal.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Bench-test the light strings and speaker wiring, and sketch what will show from the street for the review form"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's a quiet Wednesday morning and I'm home alone. Gary's taking to pickleball and our Tuesday game is a good start, but the ladder won't climb itself. The club calendar is right here, so I should check it and lock in the next court reservation (staying within the 2-hour limit) before anyone else grabs the good slots. Then I'll grab my bag and head over to find Gary.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check the calendar and pencil in next week's court slot with Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's 7:17 on a Wednesday morning and I'm home, no one in sight. I logged the flamingo tally and Gary's pending paperwork last night, but the filing itself still isn't done and my immediate goal is to get it to the architectural review committee. Town Hall is where that gets done, but Town Hall isn't connected to my house directly. I have to go out onto Magnolia Loop first. The binoculars were for last night's sweep, and it's a fresh morning, so a quick scan from the porch chair for carts on the grass and the flamingo count is the by-the-book move before I walk out. Keep it orderly: check the street, then head out with the notebook.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Magnolia Loop for carts on the grass and a fresh flamingo count before heading out"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Wednesday 7 AM and I'm alone at home. I've planned the menu, checked the pantry, confirmed Friday evening is clear, counted chairs, and set the good plates aside. The shopping list is finalized, so the next real step is getting groceries, but the stores aren't reachable from here and Hal's coffee Thursday at 8 is protected. What's left on my own side is the guest side of the dinner: I want all three neighbors at one table, and the seating chart matters. Rather than redo planning I've already done, I'll use the dining table to lay out place settings and do some prep-ahead work so Friday isn't a scramble. That keeps moving the goal forward without repeating earlier steps.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Lay out the good plates and place cards to test the seating for Friday"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03233,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9857,
+        "output_tokens": 1249,
+        "usd": 0.0322
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 421,
+        "output_tokens": 179,
+        "usd": 0.00013
+      }
+    }
+  }
+}
