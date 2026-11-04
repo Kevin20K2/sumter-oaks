@@ -1,0 +1,117 @@
+{
+  "tick": 340,
+  "simulation_time": "Tuesday, November 3, 8:17 PM",
+  "weather": "Breezy and clear, 77°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on a breezy, clear Tuesday evening in Sumter Oaks, Gary and Donna are finishing up a friendly pickleball session at the Rec Center, with Donna cheerfully coaching Gary through a slow serve. Over at his house, Hal is dutifully logging the day's flamingo tally in his violation notebook and noting Gary's pending cart paperwork under L-01. Meanwhile, Rosa, focused as ever, is finalizing her shopping list for Friday's dinner in her kitchen and setting aside what she can prep ahead.",
+  "events": [
+    "Gary (pickleball court 1): Take the baseline, knees bent, and swing at Donna's first easy serve",
+    "Hal (hal violation notebook): Log today's flamingo tally against L-02 and note Gary's cart paperwork as pending filing under L-01",
+    "Rosa (rosa kitchen): Finalize the shopping list for Friday's dinner and set aside what I can prep ahead"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just told me to grab a spot at the baseline and she'll send an easy serve. I'm already on court one with my paddle, so no more talking or second-guessing. Time to actually play. The cart form can wait until the game's done, and a little pickleball beats stewing over paperwork.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Take the baseline, knees bent, and swing at Donna's first easy serve"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary's on court one with his paddle, ready for the first rally, and I told him last tick I'd send him a nice easy serve. He hasn't heard anything new from me yet, so no repeating myself about the knees or the kitchen. Time to actually get the game going: I'll announce the serve so he knows it's coming and can just swing. Getting him comfortable is how he becomes my doubles partner and how I climb the ladder.",
+      "emotional_state": "cheerful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Here comes the first one, hon, nice and slow! Don't think, just swing, and we'll worry about the scoring later."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm home at last with the flamingo tally logged, the notice pinned, and the mail checked. Nobody's within sight, so there's no one to talk to. The proper thing is to put the day's observations into the violation notebook while they're fresh: flamingo count against L-02, Gary's cart mods under L-01. Gary trusted me with his paperwork, and Donna trusted me to be fair, so I'll record it accurately and note that Gary's filing is pending rather than a violation. Then I'll sit on the porch with Donna's pot roast and let the breeze do its work.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Log today's flamingo tally against L-02 and note Gary's cart paperwork as pending filing under L-01"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've blocked Friday evening for the welcome dinner and kept Thursday 8 AM clear for Hal. I already planned the menu and checked the pantry against my grocery list. The next useful step is to actually work through the kitchen: confirm what I'm short on so I can shop tomorrow. No one is nearby, so I'll use the time to get the dinner prep done rather than repeat schedule checks.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Finalize the shopping list for Friday's dinner and set aside what I can prep ahead"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03132,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10049,
+        "output_tokens": 1047,
+        "usd": 0.03057
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3859,
+        "output_tokens": 734,
+        "usd": 0.00075
+      }
+    }
+  }
+}
