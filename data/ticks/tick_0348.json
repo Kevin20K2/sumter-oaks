@@ -1,0 +1,115 @@
+{
+  "tick": 348,
+  "simulation_time": "Wednesday, November 4, 2:17 PM",
+  "weather": "Partly cloudy, 81°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On a warm Wednesday afternoon on Magnolia Loop, Gary hands Hal a form with measurements and a sketch of the light and speaker mounts, asking him to catch any problems before it goes in for review. Hal agrees to check every line and tells Rosa he'll be with her in a minute. Donna waits patiently at her house, sorting out which club events she needs to handle before Tuesday's pickleball, while Rosa, hopeful, invites Gary to dinner Friday evening with Hal and Donna and promises to save him the good chair.",
+  "events": [
+    "Donna waited: Letting Gary reply in his own time while I mentally sort which club events to handle before Tuesday's pickleball."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Hal asked if the cart form is filed and offered to go over every line first. I already told him I finished it, and he's standing right here, so I shouldn't ask again. Best move is to hand it over, let him check the measurements and the light and speaker mounts before it goes to Architectural Review. L-01 means this has to be approved before I touch the exterior. Nice to have someone who wants to help, and it makes me feel useful on both ends.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Not filed yet, Hal, I'd rather you go over it first. Here's the form, measurements and sketch of the light and speaker mounts. Tell me what to fix before it goes in."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already penciled in Tuesday's court slot, packed the plan for Gary's spare paddle, and flipped through the calendar. The only open question is whether Gary has confirmed the time, and I checked the phone last tick without noting a reply. No need to keep fiddling with the same objects. Nobody's around, it's a nice partly cloudy afternoon, and I should stop hovering and make good use of the day. I'll hold off on texting him again so I don't pester my new doubles partner, and instead let him respond when he's ready while I get on with my afternoon and think about which club business needs my attention.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Letting Gary reply in his own time while I mentally sort which club events to handle before Tuesday's pickleball."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary stands here with his finished cart form and asked me to look it over before it goes to Architectural Review. I said I'd check every line, and a supply sergeant keeps his word. He spoke last tick and I haven't answered him yet. Rosa just walked up too, but Gary's request comes first. Better to review the measurements and the light and speaker sketch now, so L-01 gets satisfied properly the first time and the thing comes back approved.",
+      "emotional_state": "dutiful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Sure, hand it over, Gary. I'll check the measurements and that sketch line by line, and we'll fix anything off before it goes to review. Rosa, give me a minute, then I'm all yours."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm out on Magnolia Loop with Gary and Hal both nearby, and Friday's dinner is the whole point of my week. The marinade is soaking and the shopping list is jotted, but I haven't locked in Gary yet. Hal already has Thursday coffee in ink with me, so I should use this moment to personally invite Gary to the table. Keep it short and warm, and give him an easy yes. No need to repeat anything to Hal.",
+      "emotional_state": "hopeful",
+      "importance_rating": 7,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, good timing. I'm cooking pork Friday evening and I want you at my table with Hal and Donna. Say yes and I'll save you the good chair."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03187,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9974,
+        "output_tokens": 1177,
+        "usd": 0.03172
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 545,
+        "output_tokens": 181,
+        "usd": 0.00015
+      }
+    }
+  }
+}
