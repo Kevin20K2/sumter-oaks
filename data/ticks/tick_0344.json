@@ -1,0 +1,118 @@
+{
+  "tick": 344,
+  "simulation_time": "Wednesday, November 4, 9:17 AM",
+  "weather": "Partly cloudy, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on this partly cloudy Wednesday morning, Gary is at his house with his toolbox, determined to measure the lights and speaker mounts for the review form. Donna, upbeat as ever, is on the phone at her place booking a two-hour court slot for next Tuesday, and she'll text Gary the time once it's confirmed. Over on Magnolia Loop, Hal is focused on counting the flamingos he can see from the street so he can match the tally against L-02. Meanwhile, Rosa is content in her kitchen, mixing marinade for Friday's pork before washing up the prep bowls.",
+  "events": [
+    "Gary (gary toolbox): Grab tape measure and notepad, tally measurements of the lights and speaker mounts for the review form",
+    "Donna (donna phone): Call the clubhouse to reserve a 2-hour court slot next Tuesday and text Gary the time",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and note the tally against L-02",
+    "Rosa (rosa kitchen): Mix the marinade for Friday's pork and set it in the fridge to soak, then wash up the prep bowls."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've bench-tested the wiring and test-fit the strips and speaker mounts, so now I need to finish the Architectural Review form. L-01 says exterior mods visible from the street need approval, and Hal offered to check my form line by line. I'm in the house, nobody's around, and the parade lights won't be installed until the form clears. The toolbox has my tape measure and notebook, so I'll pull my measurements together there and write up exactly what shows from the street before filing.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_toolbox",
+          "content": "Grab tape measure and notepad, tally measurements of the lights and speaker mounts for the review form"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Wednesday morning, I'm home, nobody around. I already packed Gary's spare paddle and penciled next week's slot on the calendar, so the Tuesday game is basically locked in. Courts max out at 2 hours per party (L-05), so I should make sure my booking is within that. The ladder climb needs momentum, and a quick call to confirm with Gary and maybe line up a practice before Tuesday is the next productive step. I'll use the phone to book and confirm the court rather than sit around.",
+      "emotional_state": "upbeat",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_phone",
+          "content": "Call the clubhouse to reserve a 2-hour court slot next Tuesday and text Gary the time"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop with nobody in sight, and my last two binocular sweeps were meant to produce a flamingo count. The flock is right here, so I'll count the ornaments properly instead of guessing. Donna trusted me to be fair about L-02, and fair means an honest tally. Gary's cart paperwork is still pending, but a count I can log accurately comes first.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and note the tally against L-02"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've already planned seating and laid out plates, and last tick I started on the sofrito. It's 9:17 AM Wednesday, nobody's around, so this is a good hour to keep prepping the things that keep. The sofrito base is chopped and portioned, so next I should get the marinade going for Friday's main so it can sit in the fridge. Thursday 8 AM stays protected for Hal, and Friday gets all three neighbors at my table. Working in the kitchen is the most useful thing I can do right now.",
+      "emotional_state": "focused, content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Mix the marinade for Friday's pork and set it in the fridge to soak, then wash up the prep bowls."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03141,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9827,
+        "output_tokens": 1102,
+        "usd": 0.03067
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4567,
+        "output_tokens": 560,
+        "usd": 0.00074
+      }
+    }
+  }
+}
