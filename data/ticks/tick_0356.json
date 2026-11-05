@@ -1,0 +1,118 @@
+{
+  "tick": 356,
+  "simulation_time": "Thursday, November 5, 7:17 AM",
+  "weather": "Sunny, 72°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a sunny Thursday morning in Sumter Oaks, Gary is fitting a light strip along his golf cart's roof rail and testing speakers under the rear seat, feeling upbeat about his weekend plans. Donna is energized as she digs through her pickleball bag to set out a beginner paddle for Gary's fitting, while Hal, dutifully keeping watch, scans her front yard and counts the flamingos visible from the street. Over at Rosa's house, she is cheerfully checking her per-diem shifts to make sure Friday night and Thursday coffee are free.",
+  "events": [
+    "Gary (gary golf cart): Clip the light strip along the roof rail and test-fit the speakers under the rear seat",
+    "Donna (donna pickleball bag): Go through the bag and set out a beginner paddle for Gary's fitting",
+    "Hal (hal binoculars): Scan Donna's front yard and count the flamingos visible from the street",
+    "Rosa (rosa shift schedule): Check my per-diem shifts to make sure Friday night and Thursday coffee are clear"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's early Thursday morning and I'm alone at home with my cart and workbench. The Architectural Review form for the cart mods is due to be finished with Hal, and I told him the lights go on the roof rail with no drilling and the speakers sit under the rear seat. Before I take the form over, I should actually get the hardware matching what I wrote down, so I'll work on the cart at the workbench. Plus Donna's paddle lesson is tomorrow morning and Rosa's dinner is Friday, so cornbread prep comes later. Right now, tinkering is what makes me feel useful.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Clip the light strip along the roof rail and test-fit the speakers under the rear seat"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's a quiet 7 AM at home and nobody's around to talk to. I told Gary to come by this morning so I can walk him through picking a paddle, and I don't want to just sit here and wait on him. His paddle and my ladder spot are the whole plan, so I'll use the time to get my own bag and the club calendar in order. I'll check the pickleball bag, make sure the spare paddle and a few beginner options are ready, and then check the calendar for court slots, keeping each reservation within the 2-hour limit.",
+      "emotional_state": "energized",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Go through the bag and set out a beginner paddle for Gary's fitting"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Quiet morning, nobody around. My notes say Gary's cart form is getting filed the right way and Donna's flamingos came in at eleven, still a recount is only fair. An honest tally means looking for myself, not taking anyone's word. Binoculars are right here, and Magnolia Loop is the beat. Better to count carefully than to report on hearsay.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Donna's front yard and count the flamingos visible from the street"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday morning, 7:17, and I'm home alone. Coffee with Hal is today, and Friday's dinner is the big goal, with everyone already saying yes. The table needs to be ready, and I've got the good plates to set out. I also should glance at my per-diem shift schedule so I'm not double-booked on dinner night. The shift schedule is right here, and checking it is the sensible first move before I commit to cooking plans and the coffee time with Hal.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts to make sure Friday night and Thursday coffee are clear"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03164,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10198,
+        "output_tokens": 1110,
+        "usd": 0.0315
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 420,
+        "output_tokens": 197,
+        "usd": 0.00014
+      }
+    }
+  }
+}
