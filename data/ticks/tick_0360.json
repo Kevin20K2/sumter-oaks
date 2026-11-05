@@ -1,0 +1,116 @@
+{
+  "tick": 360,
+  "simulation_time": "Thursday, November 5, 11:17 AM",
+  "weather": "Sunny, 75°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On this sunny Thursday morning in Sumter Oaks, Gary greets Donna on Magnolia Loop, grumbling cheerfully about the Architectural Review paperwork he needs before the parade, while promising to bring cornbread to Friday dinner. Donna, eager as ever, offers him a beginner paddle and pencils in his first pickleball practice for tomorrow at ten. Hal sets off down the same street with a resolute stride, and back in her kitchen Rosa, feeling optimistic, starts drafting Friday's menu and shopping list around a main dish that will pair well with Gary's cornbread.",
+  "events": [
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa kitchen): Write out Friday's menu and shopping list, with a main dish that pairs with Gary's cornbread"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I already read the board about Architectural Review for cart mods, and the L-01 rule applies to my lights and sound setup. Donna just arrived, and she's been patient with me on the court. I should say hello and fill her in on what I learned, and ask her to look over my paperwork with Hal before I file. Friday dinner is coming up too, so I can mention the cornbread. Keep it short and friendly.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Morning, Donna! Just read the board. Cart lights need Architectural Review sign-off, so I'm getting my paperwork in order before the parade. Still on for Friday dinner at Rosa's? I'm bringing cornbread."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary is right here on Magnolia Loop and I just texted him that his paddle is ready. He hasn't had a chance to answer yet, so I shouldn't pester him about it twice. Better to greet him in person, tell him the beginner paddle is set out, and pin down a time for his first practice so the ladder match can get on the calendar. Keep it warm and short, and note the courts only allow two hours per party so I'll mention a one-hour slot.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, there you are! I set out a beginner paddle with your name on it. How's tomorrow at ten for your first practice? I'll pencil us in at the courts."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've already counted the flamingos, logged the tally, and noted that Gary's paperwork looks in order. Nobody is in sight, and sitting on the porch has run its course. My immediate goal is the review committee, and an honest count and a complete log mean nothing if I don't act on them. The committee takes filings at Town Hall, but I can only get there by way of Magnolia Loop, so I'll head out, and on the way I can recheck the street for anything visible from the road.",
+      "emotional_state": "resolute",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out onto Magnolia Loop to walk my route and then see about getting my notes in front of the review committee. Fair count, fair report."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday morning and I'm alone at home. I've already checked my shift schedule twice and set out the good plates. The menu planning is the next real step, and Gary is bringing cornbread, so I need to figure out the main dish and sides and what to buy. I shouldn't repeat the schedule check. Working through the kitchen now keeps Friday's dinner on track so I can get to the store and still make Hal's coffee today.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Write out Friday's menu and shopping list, with a main dish that pairs with Gary's cornbread"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03127,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9556,
+        "output_tokens": 1130,
+        "usd": 0.03041
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 5613,
+        "output_tokens": 602,
+        "usd": 0.00086
+      }
+    }
+  }
+}
