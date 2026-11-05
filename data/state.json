@@ -1,32 +1,24 @@
 {
-  "tick": 359,
-  "time": "2026-11-05T09:17",
+  "tick": 360,
+  "time": "2026-11-05T10:17",
   "positions": {
     "gary": "magnolia_loop",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
+      "Donna just arrived."
+    ],
+    "donna": [
       "You arrived at Magnolia Loop (the street)."
     ],
-    "donna": [],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 279,
-        "text": "Donna said to Gary: “That's it, Gary, drop it soft over the net and let it die in the kitchen. Count with me: that's three clean ones, seven to go, and Hal's watching, so make them pretty!”",
-        "importance": 4
-      },
-      {
-        "tick": 279,
-        "text": "Hal said to Gary: “Keep your wrist loose on those drops, Gary. Clock's running on your two hours, so don't waste it talking to me.”",
-        "importance": 4
-      },
       {
         "tick": 280,
         "text": "I (pickleball court 1): Keep working third-shot drops from the kitchen line, soft hands, aiming for the next seven clean ones",
@@ -1016,19 +1008,19 @@
         "tick": 358,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 359,
+        "text": "I (street bulletin board): Read the board for Architectural Review filing info and deadlines for cart modifications",
+        "importance": 6
+      },
+      {
+        "tick": 359,
+        "text": "Donna just arrived.",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 280,
-        "text": "Hal waited: Lean on the rail and watch Gary's drops, keeping quiet for once and letting the two of them finish their drills.",
-        "importance": 6
-      },
-      {
-        "tick": 281,
-        "text": "I said to Gary: “That's the wrist, Gary, soft hands all the way! Let's call it a night on a good one, save those legs for our one o'clock tomorrow before the parade.”",
-        "importance": 6
-      },
       {
         "tick": 281,
         "text": "Gary (pickleball court 1): Keep hitting third-shot drops from the kitchen line, soft hands, going for the last three clean ones",
@@ -2018,14 +2010,19 @@
         "tick": 358,
         "text": "I (donna phone): Text Gary that his paddle is ready and pin down a time for his first practice",
         "importance": 6
+      },
+      {
+        "tick": 359,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 359,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 277,
-        "text": "Donna said to Hal: “Hal! Perfect timing, come watch Gary's third-shot drops. Two hours on court one, and the ladder won't climb itself!”",
-        "importance": 5
-      },
       {
         "tick": 278,
         "text": "I said to Donna: “I'll watch a few points, Donna. Two hours on court one, I see the board says so, and I'll hold Gary to the clock. Court two after, maybe, if my knee cooperates.”",
@@ -3020,14 +3017,14 @@
         "tick": 358,
         "text": "I (hal porch chair): Settle into the porch chair with my coffee and watch Magnolia Loop",
         "importance": 2
+      },
+      {
+        "tick": 359,
+        "text": "I waited: Sipping coffee on the porch, keeping a steady eye on Magnolia Loop and thinking about Friday's dinner at Rosa's.",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 256,
-        "text": "Donna said to Gary: “Gary, there you are! I've got paddles and balls in the bag. Let's grab an hour at the rec center courts, then we'll swing by Rosa's for the cart sketch with plenty of time before the parade.”",
-        "importance": 6
-      },
       {
         "tick": 257,
         "text": "I (street bulletin board): Read the Architectural Review notice on Gary's cart application",
@@ -4022,6 +4019,11 @@
         "tick": 358,
         "text": "I (rosa dining table): Set out the good plates and count chairs for Friday's dinner",
         "importance": 6
+      },
+      {
+        "tick": 359,
+        "text": "I (rosa kitchen): Plan Friday's menu and check what I need to buy for the main dish and sides",
+        "importance": 6
       }
     ]
   },
@@ -4069,9 +4071,9 @@
   },
   "emotions": {
     "gary": "determined",
-    "donna": "determined",
+    "donna": "upbeat",
     "hal": "content",
-    "rosa": "hopeful"
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -4188,9 +4190,16 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 359,
+      "time": "Thursday, November 5, 10:17 AM",
+      "story": "On a sunny Thursday morning in Sumter Oaks, Gary is reading the bulletin board on Magnolia Loop to find out the Architectural Review filing deadlines for golf cart modifications, while Donna heads over to join him there. Hal sits on his porch with a cup of coffee, keeping an eye on the street and thinking ahead to Friday's dinner at Rosa's. Back in her kitchen, Rosa is planning the menu and making a list of what she needs to buy for the main dish and sides.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 11.31133,
+    "total_usd": 11.34235,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4289,13 +4298,12 @@
         "usd": 0.46296
       },
       "2026-11-05": {
-        "ticks": 3,
-        "usd": 0.09459
+        "ticks": 4,
+        "usd": 0.12561
       }
     }
   },
   "recent_tick_costs": [
-    0.03121,
     0.03076,
     0.03111,
     0.03027,
@@ -4318,7 +4326,8 @@
     0.03558,
     0.03164,
     0.03081,
-    0.03214
+    0.03214,
+    0.03102
   ],
   "fund": {
     "gross_usd": 0.0,
