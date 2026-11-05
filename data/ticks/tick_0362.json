@@ -1,0 +1,115 @@
+{
+  "tick": 362,
+  "simulation_time": "Thursday, November 5, 1:17 PM",
+  "weather": "Sunny, 77°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary, hopeful, is out on Magnolia Loop with his cart paperwork, asking Hal to give the lights, sound system, and ten o'clock cutoff a once-over before it goes to review. Donna, looking a little sheepish, has offered to tuck the extra flamingos around back so only three are visible from the street, and Hal, dutiful as ever, insists on seeing every modification listed under L-01 before anything is filed. Rosa, determined, is heading over from her house to see how it all shakes out.",
+  "events": [
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna and Hal are both here. Hal's talking flamingos with Donna, and that's between neighbors, so I should stay out of it. I already told Donna ten tomorrow works and asked Hal about my paperwork, so I shouldn't repeat that. Hal's here now, so this is the moment to hand over the cart paperwork. I wrote the ten o'clock cutoff down for him, and I'd like him to look it over line by line before it goes to Architectural Review under L-01. Being useful to Hal and getting my parade cart done properly both matter to me.",
+      "emotional_state": "hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, when you two have the flamingos sorted, I've got the cart paperwork right here. Lights and the sound system, with the ten o'clock cutoff written in. Would you give it a once-over before I file it for review?"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal raised the flamingo count and wants it settled neighbor to neighbor before Friday dinner. Gary already confirmed ten tomorrow at the courts, so I don't need to push him again. The ordinance says three from the street, and I'd rather not have this go to the committee or sour Friday at Rosa's. Best move is to be gracious with Hal, own it, and fix it right now with a plan so we can move on.",
+      "emotional_state": "sheepish",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, you've got a good eye, and I'd rather settle it with you than the committee. I'll tuck the extras around back this afternoon so just three show from the street. Then you can tell your flamingo story at Rosa's with a clear conscience."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary just said he has his cart paperwork ready and wants me to look it over. Donna has called me their witness for the ten o'clock pickleball game tomorrow. My flamingo concern is already on the table with Donna, and she's put it off, so I won't nag her twice. Best move is to take Gary up on his offer now, since he's standing right here and I'd rather help him get the form right before it ever reaches the committee. Courts are capped at two hours under L-05, so I'll note that too as a courtesy.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Let's see that paperwork now, Gary. Anything visible from the street needs approval under L-01, so I want every modification listed before it goes to the committee. And I'll witness the match tomorrow, but the courts are two hours max."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday afternoon and Friday's dinner is almost ready. I've written the menu and checked the pantry against my list in the last two ticks, so the next step is to actually act on it. The shopping list is circled, but nothing here is going to cook itself. I should go shop for the main dish and sides. The only connection from the house is Magnolia Loop, so I'll head out that way. No one is nearby to talk to, so no need to speak.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to buy what I circled on the list for Friday's dinner."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03358,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10614,
+        "output_tokens": 1221,
+        "usd": 0.03344
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 562,
+        "output_tokens": 168,
+        "usd": 0.00014
+      }
+    }
+  }
+}
