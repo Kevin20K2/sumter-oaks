@@ -1,30 +1,22 @@
 {
-  "tick": 358,
-  "time": "2026-11-05T08:17",
+  "tick": 359,
+  "time": "2026-11-05T09:17",
   "positions": {
-    "gary": "garys_house",
+    "gary": "magnolia_loop",
     "donna": "donnas_house",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "donna": [],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 278,
-        "text": "Hal said to Donna: “I'll watch a few points, Donna. Two hours on court one, I see the board says so, and I'll hold Gary to the clock. Court two after, maybe, if my knee cooperates.”",
-        "importance": 4
-      },
-      {
-        "tick": 279,
-        "text": "I (pickleball court 1): Grab my paddle, take the kitchen line, and work ten third-shot drops while Donna counts",
-        "importance": 4
-      },
       {
         "tick": 279,
         "text": "Donna said to Gary: “That's it, Gary, drop it soft over the net and let it die in the kitchen. Count with me: that's three clean ones, seven to go, and Hal's watching, so make them pretty!”",
@@ -1014,14 +1006,19 @@
         "tick": 357,
         "text": "I (gary workbench): Solder and wire the speaker leads and amp with a ten o'clock cutoff timer",
         "importance": 5
+      },
+      {
+        "tick": 358,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 358,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "donna": [
-      {
-        "tick": 280,
-        "text": "Gary (pickleball court 1): Keep working third-shot drops from the kitchen line, soft hands, aiming for the next seven clean ones",
-        "importance": 6
-      },
       {
         "tick": 280,
         "text": "Hal waited: Lean on the rail and watch Gary's drops, keeping quiet for once and letting the two of them finish their drills.",
@@ -2016,14 +2013,14 @@
         "tick": 357,
         "text": "I (donna club calendar): Check court openings and pencil in Gary's first practice and the ladder match",
         "importance": 5
+      },
+      {
+        "tick": 358,
+        "text": "I (donna phone): Text Gary that his paddle is ready and pin down a time for his first practice",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 277,
-        "text": "Gary said to Hal: “Evening, Hal. Donna and I have court one for two hours, but there's a court two open if you want a game after.”",
-        "importance": 5
-      },
       {
         "tick": 277,
         "text": "Donna said to Hal: “Hal! Perfect timing, come watch Gary's third-shot drops. Two hours on court one, and the ladder won't climb itself!”",
@@ -3018,14 +3015,14 @@
         "tick": 357,
         "text": "I (hal violation notebook): Log my flamingo count and the date, noting Gary's paperwork looks in order",
         "importance": 5
+      },
+      {
+        "tick": 358,
+        "text": "I (hal porch chair): Settle into the porch chair with my coffee and watch Magnolia Loop",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 256,
-        "text": "Gary (street bulletin board): Look for the Architectural Review notice on my cart application",
-        "importance": 6
-      },
       {
         "tick": 256,
         "text": "Donna said to Gary: “Gary, there you are! I've got paddles and balls in the bag. Let's grab an hour at the rec center courts, then we'll swing by Rosa's for the cart sketch with plenty of time before the parade.”",
@@ -4020,6 +4017,11 @@
         "tick": 357,
         "text": "I (rosa shift schedule): Check my per-diem shifts to make sure Thursday coffee and Friday night are clear",
         "importance": 5
+      },
+      {
+        "tick": 358,
+        "text": "I (rosa dining table): Set out the good plates and count chairs for Friday's dinner",
+        "importance": 6
       }
     ]
   },
@@ -4066,10 +4068,10 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
-    "donna": "eager",
-    "hal": "dutiful",
-    "rosa": "optimistic"
+    "gary": "determined",
+    "donna": "determined",
+    "hal": "content",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4186,53 +4188,9 @@
       "text": "Rosa Delgado: Hand in the parade cart folder with Gary's clamp list, light layout, and a plain description of the tuck-on decorations"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 353,
-      "time": "Wednesday, November 4, 7:17 PM",
-      "story": "On Magnolia Loop this Wednesday evening, Gary is hopeful as he holds up his cart form and asks Hal to file it with Architectural Review before the parade, since he needs approval before touching his lights and speakers. Hal, gruff but willing, agrees to go through it line by line once the flamingos are finished. Donna, full of enthusiasm, offers to meet Gary at the rec center at eight tomorrow to help him pick out a paddle, promising to cover the grip tape herself. Meanwhile Rosa, content as ever, putters along the street and takes in the cool, partly cloudy evening.",
-      "dialogue": [
-        "Gary said to Hal: “Hal, when you finish with the flamingos, I've got the cart form in my jacket pocket whenever you're ready. I'd like it filed for Architectural Review before the parade, since L-01 says I can't touch the lights or speakers without it.”",
-        "Donna said to Gary: “Gary, before Thursday we need to get you a paddle of your own. Meet me at the rec center at eight tomorrow and I'll walk you through the good ones, my treat on the grip tape.”",
-        "Hal said to Gary: “Bring the form here, Gary, I'll go through it line by line. Describe the lights and speakers exactly as mounted, and put your ten o'clock cutoff in writing. Committee likes it all spelled out.”"
-      ]
-    },
-    {
-      "tick": 354,
-      "time": "Wednesday, November 4, 8:17 PM",
-      "story": "On Magnolia Loop on a mild, partly cloudy Wednesday evening, Gary hands Hal a modification form for his golf cart's LED lights and rear-seat speakers, promising a ten o'clock quiet-hours cutoff in writing. Donna, cheerful as ever, tells Rosa she'll bring dessert to Friday's dinner at six and that her eleven pink flamingos are all within the rules. Hal, focused on getting the paperwork right so the committee has nothing to grumble about, asks Gary to explain exactly how everything is mounted, while Rosa warmly welcomes the three of them and reminds Gary to handle the cornbread.",
-      "dialogue": [
-        "Gary said to Hal: “Here you go, Hal, form's right out of my pocket. Lights are the LED strip along the roof rail, speakers go under the rear seat, and I'm putting the ten o'clock cutoff in writing, just like you said.”",
-        "Donna said to Rosa: “Rosa, I'll be there Friday at six, and I'll bring dessert whether you want it or not. Tell Hal my flamingo count is eleven, and every one of them is within the law.”",
-        "Hal said to Gary: “Alright, Gary, let's see that form. Hand it over and tell me exactly how those lights and speakers are mounted, and we'll write your ten o'clock cutoff right on the page. Do it right and the committee won't have a thing to grumble about.”",
-        "Rosa said to Gary: “Good to see all three of you out here together. Friday at six, my place, good plates are already out. Gary, you just handle the cornbread, and finish that form with Hal so you can relax and eat.”"
-      ]
-    },
-    {
-      "tick": 355,
-      "time": "Wednesday, November 4, 9:17 PM",
-      "story": "On Magnolia Loop at 9:17 on a mild, partly cloudy Wednesday night, Gary is walking Hal through a portable speaker setup he's clipped to a golf cart roof rail, explaining that sound has to cut off at ten under the community rules. Donna, cheerful and clearly scheming, invites Gary to her place tomorrow morning to learn paddleball and claim a spot on the ladder, while Rosa, content as ever, promises to make room for her dessert. Hal, dutifully counting the flamingos in Donna's yard, is set to log eleven in his notebook, and Rosa suspects he'll want a recount.",
-      "dialogue": [
-        "Gary said to Hal: “Strip's clipped along the roof rail with no drilling, and the speakers sit under the rear seat, so nothing sticks out past the body. Sound cuts at ten sharp, per L-03, and it's written in the margin for you.”",
-        "Donna said to Gary: “Gary, once Hal's got your form squared away, come by my place tomorrow morning and I'll walk you through picking out a paddle. The ladder won't climb itself, and I've already got us a spot on the board.”",
-        "Rosa said to Donna: “Dessert is welcome, Donna, I'll find the room. And eleven flamingos, all within the law? Hal's going to want a recount.”"
-      ]
-    },
-    {
-      "tick": 356,
-      "time": "Thursday, November 5, 7:17 AM",
-      "story": "At 7:17 on a sunny Thursday morning in Sumter Oaks, Gary is fitting a light strip along his golf cart's roof rail and testing speakers under the rear seat, feeling upbeat about his weekend plans. Donna is energized as she digs through her pickleball bag to set out a beginner paddle for Gary's fitting, while Hal, dutifully keeping watch, scans her front yard and counts the flamingos visible from the street. Over at Rosa's house, she is cheerfully checking her per-diem shifts to make sure Friday night and Thursday coffee are free.",
-      "dialogue": []
-    },
-    {
-      "tick": 357,
-      "time": "Thursday, November 5, 8:17 AM",
-      "story": "At 8:17 on a sunny Thursday morning in Sumter Oaks, Gary is at his workbench at home, focused on soldering speaker leads and wiring an amp with a ten o'clock cutoff timer. Across the way, Donna is eagerly checking the club calendar and penciling in Gary's first practice and a ladder match once she sees which courts are open. Hal, dutiful as ever, is logging his flamingo count in his violation notebook and noting that Gary's paperwork looks in order, while Rosa, optimistic about her week, is checking her per-diem shifts to make sure Thursday coffee and Friday night are clear.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 11.27919,
+    "total_usd": 11.31133,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4331,13 +4289,12 @@
         "usd": 0.46296
       },
       "2026-11-05": {
-        "ticks": 2,
-        "usd": 0.06245
+        "ticks": 3,
+        "usd": 0.09459
       }
     }
   },
   "recent_tick_costs": [
-    0.03162,
     0.03121,
     0.03076,
     0.03111,
@@ -4360,7 +4317,8 @@
     0.03568,
     0.03558,
     0.03164,
-    0.03081
+    0.03081,
+    0.03214
   ],
   "fund": {
     "gross_usd": 0.0,
