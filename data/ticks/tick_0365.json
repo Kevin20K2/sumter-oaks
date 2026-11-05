@@ -1,0 +1,116 @@
+{
+  "tick": 365,
+  "simulation_time": "Thursday, November 5, 4:17 PM",
+  "weather": "Sunny, 77°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On Thursday afternoon at 4:17, in the sunny 77-degree warmth of Sumter Oaks, Gary, Donna, Hal, and Rosa are all gathered on Magnolia Loop, though Gary and Rosa are already heading toward Town Square. Donna, eager as ever, has just signed Gary up for two hours on the courts at ten tomorrow morning, asking him to bring a paddle and sneakers he doesn't mind scuffing. Meanwhile Hal, content and unbothered, has assured Rosa that he'll eat anything, teasing that she shouldn't mention the flamingo centerpiece to Donna.",
+  "events": [
+    "Gary headed to Town Square.",
+    "Rosa headed to Town Square."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Hal says the paperwork is clean and to file it as written. Donna's got the court booked tomorrow, Rosa's heading to the store and everyone's cleared the menu. Nothing left to ask or confirm out here on the street, and I shouldn't keep chattering. L-01 says visible cart mods need Architectural Review approval, so the next real step toward the parade is getting this filed, and Town Square is where I'd do that. I'll head over now, then still have time to get the cornbread together before Friday.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_square",
+          "content": "Hal says my cart paperwork is clean, so I'm heading to Town Square to file it for review. Then I can start rigging the lights and sound."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa's heading to the store and Hal is buried in Gary's paperwork, so Friday's dinner is handled. I already told Gary I'd book two hours of court time (the L-05 limit) for tomorrow, but I haven't pinned down a time, and Gary has the cornbread to fit in before six. No need to repeat the invitation, just lock in a time so he's actually on the court. Tomorrow morning gives him a good stretch before dinner, and I'll keep the practice to basics so his first day stays fun.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, I'll put us down for the courts at ten tomorrow morning, two hours, plenty of time for basics and still home to bake that cornbread before six. Bring the paddle and wear sneakers you don't mind scuffing."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa asked about food and Gary and Donna are standing right here. I already told them I eat whatever's put in front of me, but she asked me directly just now, and my line was spoken in the same instant, so she may not have heard it. A short, plain answer settles it so she can shop. After that I should head to Town Hall with Gary's form, since it's clean and L-01 compliance is what I've been after. The flamingos can wait for Friday, when I'll count them over dinner.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Nothing I can't eat, Rosa. Army cooked for me for thirty years, so I'm not picky. Just don't tell Donna there's room on the table for a flamingo centerpiece."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Everyone has answered my question: Gary and Hal have no restrictions, Donna said yes earlier, and the cornbread is coming. I said I was leaving for the store a minute ago, and the dinner is tomorrow, so there's nothing left to ask. The next useful step is to go get groceries. Magnolia Loop connects to the town square, which is the closest place I can head toward for shopping, and I shouldn't keep chatting once I have what I need.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "town_square",
+          "content": "Heading to the store for Friday's dinner groceries now that everyone's told me what they can eat."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03503,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 11471,
+        "output_tokens": 1193,
+        "usd": 0.03487
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 475,
+        "output_tokens": 216,
+        "usd": 0.00016
+      }
+    }
+  }
+}
