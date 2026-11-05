@@ -1,0 +1,118 @@
+{
+  "tick": 357,
+  "simulation_time": "Thursday, November 5, 8:17 AM",
+  "weather": "Sunny, 73°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on a sunny Thursday morning in Sumter Oaks, Gary is at his workbench at home, focused on soldering speaker leads and wiring an amp with a ten o'clock cutoff timer. Across the way, Donna is eagerly checking the club calendar and penciling in Gary's first practice and a ladder match once she sees which courts are open. Hal, dutiful as ever, is logging his flamingo count in his violation notebook and noting that Gary's paperwork looks in order, while Rosa, optimistic about her week, is checking her per-diem shifts to make sure Thursday coffee and Friday night are clear.",
+  "events": [
+    "Gary (gary workbench): Solder and wire the speaker leads and amp with a ten o'clock cutoff timer",
+    "Donna (donna club calendar): Check court openings and pencil in Gary's first practice and the ladder match",
+    "Hal (hal violation notebook): Log my flamingo count and the date, noting Gary's paperwork looks in order",
+    "Rosa (rosa shift schedule): Check my per-diem shifts to make sure Thursday coffee and Friday night are clear"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm alone at home on a sunny Thursday morning, and last tick I clipped the light strip and test-fit the speakers. The next step is wiring the sound system, which is exactly what I'm good at. I'll work at the workbench and keep L-03 in mind. Everything stays tucked under the body so it's visible-mod friendly, but Hal still needs to look over the form before it goes to Architectural Review (L-01). Later I'll swing by Donna's for the paddle talk once the paperwork is squared away.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Solder and wire the speaker leads and amp with a ten o'clock cutoff timer"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm home alone Thursday morning, and I told Gary to come by this morning for a paddle fitting. Last tick I set out a beginner paddle from the bag. The ladder spot is already on the board, so Gary needs to be ready to play. Nobody's here yet, so I should keep prepping rather than repeat myself. The club calendar will let me pencil in a Tuesday practice slot and check court availability, which keeps the ladder plan moving and keeps me at the center of things.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check court openings and pencil in Gary's first practice and the ladder match"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Last tick I scanned Donna's yard with the binoculars and nobody's around to talk to. Gary's paperwork looks clean, and Donna's yard was at eleven, which is well over the three-ornament limit under L-02. Rules are rules, but I want my own tally in writing, honest and fair, before I take anything to the review committee. Time to log the count and note the date in the violation notebook.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Log my flamingo count and the date, noting Gary's paperwork looks in order"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday morning, coffee with Hal is today and Friday's dinner is coming together. My last tick I said I'd check my shift schedule, and the interactive object is right here. Nobody's around to talk to, so the practical move is to confirm Thursday coffee and Friday night are clear of per-diem shifts before I lock in anything else. Then I can start planning the menu and the good plates in the kitchen.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts to make sure Thursday coffee and Friday night are clear"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03081,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9986,
+        "output_tokens": 1069,
+        "usd": 0.03066
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 420,
+        "output_tokens": 212,
+        "usd": 0.00015
+      }
+    }
+  }
+}

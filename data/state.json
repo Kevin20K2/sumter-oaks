@@ -1,6 +1,6 @@
 {
-  "tick": 357,
-  "time": "2026-11-05T07:17",
+  "tick": 358,
+  "time": "2026-11-05T08:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -15,11 +15,6 @@
   },
   "memories": {
     "gary": [
-      {
-        "tick": 278,
-        "text": "Donna said to Gary: “Okay, Gary, enough chatting, grab your paddle and get to the kitchen line. Soft hands on the third shot, ten drops in a row, and I'm counting out loud.”",
-        "importance": 4
-      },
       {
         "tick": 278,
         "text": "Hal said to Donna: “I'll watch a few points, Donna. Two hours on court one, I see the board says so, and I'll hold Gary to the clock. Court two after, maybe, if my knee cooperates.”",
@@ -1014,14 +1009,14 @@
         "tick": 356,
         "text": "I (gary golf cart): Clip the light strip along the roof rail and test-fit the speakers under the rear seat",
         "importance": 5
+      },
+      {
+        "tick": 357,
+        "text": "I (gary workbench): Solder and wire the speaker leads and amp with a ten o'clock cutoff timer",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 280,
-        "text": "I said to Gary: “Seven now, Gary, that one barely cleared the tape and died right in the kitchen. Three more like that and you're ladder-ready, honey.”",
-        "importance": 6
-      },
       {
         "tick": 280,
         "text": "Gary (pickleball court 1): Keep working third-shot drops from the kitchen line, soft hands, aiming for the next seven clean ones",
@@ -2016,14 +2011,14 @@
         "tick": 356,
         "text": "I (donna pickleball bag): Go through the bag and set out a beginner paddle for Gary's fitting",
         "importance": 5
+      },
+      {
+        "tick": 357,
+        "text": "I (donna club calendar): Check court openings and pencil in Gary's first practice and the ladder match",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 277,
-        "text": "I said to Gary: “Evening, Gary. Cart still in the garage for the committee? Fine. Parade's tomorrow at six, so keep the lights legal and I'll keep my clipboard in the drawer.”",
-        "importance": 5
-      },
       {
         "tick": 277,
         "text": "Gary said to Hal: “Evening, Hal. Donna and I have court one for two hours, but there's a court two open if you want a game after.”",
@@ -3018,14 +3013,14 @@
         "tick": 356,
         "text": "I (hal binoculars): Scan Donna's front yard and count the flamingos visible from the street",
         "importance": 4
+      },
+      {
+        "tick": 357,
+        "text": "I (hal violation notebook): Log my flamingo count and the date, noting Gary's paperwork looks in order",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 256,
-        "text": "I said to Donna: “Donna, good timing. I'm walking over to the review desk this hour, and I want us to tell them exactly what we're putting on the cart, tuck-on pieces and all. Better they hear it from us than spot it on parade day. Want to come along?”",
-        "importance": 6
-      },
       {
         "tick": 256,
         "text": "Gary (street bulletin board): Look for the Architectural Review notice on my cart application",
@@ -4020,6 +4015,11 @@
         "tick": 356,
         "text": "I (rosa shift schedule): Check my per-diem shifts to make sure Friday night and Thursday coffee are clear",
         "importance": 6
+      },
+      {
+        "tick": 357,
+        "text": "I (rosa shift schedule): Check my per-diem shifts to make sure Thursday coffee and Friday night are clear",
+        "importance": 5
       }
     ]
   },
@@ -4066,8 +4066,8 @@
     ]
   },
   "emotions": {
-    "gary": "optimistic",
-    "donna": "energized",
+    "gary": "focused",
+    "donna": "eager",
     "hal": "dutiful",
     "rosa": "optimistic"
   },
@@ -4223,10 +4223,16 @@
       "time": "Thursday, November 5, 7:17 AM",
       "story": "At 7:17 on a sunny Thursday morning in Sumter Oaks, Gary is fitting a light strip along his golf cart's roof rail and testing speakers under the rear seat, feeling upbeat about his weekend plans. Donna is energized as she digs through her pickleball bag to set out a beginner paddle for Gary's fitting, while Hal, dutifully keeping watch, scans her front yard and counts the flamingos visible from the street. Over at Rosa's house, she is cheerfully checking her per-diem shifts to make sure Friday night and Thursday coffee are free.",
       "dialogue": []
+    },
+    {
+      "tick": 357,
+      "time": "Thursday, November 5, 8:17 AM",
+      "story": "At 8:17 on a sunny Thursday morning in Sumter Oaks, Gary is at his workbench at home, focused on soldering speaker leads and wiring an amp with a ten o'clock cutoff timer. Across the way, Donna is eagerly checking the club calendar and penciling in Gary's first practice and a ladder match once she sees which courts are open. Hal, dutiful as ever, is logging his flamingo count in his violation notebook and noting that Gary's paperwork looks in order, while Rosa, optimistic about her week, is checking her per-diem shifts to make sure Thursday coffee and Friday night are clear.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 11.24838,
+    "total_usd": 11.27919,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4325,13 +4331,12 @@
         "usd": 0.46296
       },
       "2026-11-05": {
-        "ticks": 1,
-        "usd": 0.03164
+        "ticks": 2,
+        "usd": 0.06245
       }
     }
   },
   "recent_tick_costs": [
-    0.03229,
     0.03162,
     0.03121,
     0.03076,
@@ -4354,7 +4359,8 @@
     0.03544,
     0.03568,
     0.03558,
-    0.03164
+    0.03164,
+    0.03081
   ],
   "fund": {
     "gross_usd": 0.0,
