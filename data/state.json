@@ -1,34 +1,20 @@
 {
-  "tick": 371,
-  "time": "2026-11-05T21:17",
+  "tick": 372,
+  "time": "2026-11-06T07:17",
   "positions": {
-    "gary": "town_hall",
-    "donna": "magnolia_loop",
-    "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
-    "donna": [
-      "Hal (street bulletin board): Read the postings for any cart-modification approval or other notices before heading home",
-      "Rosa (street bulletin board): Pin a note: Friday dinner at Rosa's, 6 PM sharp. Donna's deviled eggs have mayo and mustard."
-    ],
-    "hal": [
-      "Donna (donna flamingo flock): Pull up the extra flamingos and carry them around back, leaving just three out front",
-      "Rosa (street bulletin board): Pin a note: Friday dinner at Rosa's, 6 PM sharp. Donna's deviled eggs have mayo and mustard."
-    ],
-    "rosa": [
-      "Donna (donna flamingo flock): Pull up the extra flamingos and carry them around back, leaving just three out front",
-      "Hal (street bulletin board): Read the postings for any cart-modification approval or other notices before heading home"
-    ]
+    "donna": [],
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 292,
-        "text": "I said to Donna: “Donna, good timing. Those third-shot drops are finally landing soft, thanks to you. I've got to wrap up soon for the 6 o'clock parade, but Rosa says there's hot cider on her porch afterward for you and Hal.”",
-        "importance": 4
-      },
       {
         "tick": 292,
         "text": "Donna said to Gary: “There's my partner! We've got maybe half an hour before the parade, so grab a paddle and let's get a few of those third-shot drops in. Then we'll go roll that cart out in style.”",
@@ -1023,14 +1009,14 @@
         "tick": 370,
         "text": "I (architectural review desk): Check that my cart modification request is on file with the 10 PM sound cutoff noted",
         "importance": 5
+      },
+      {
+        "tick": 371,
+        "text": "I (gary workbench): Lay out the light strings and speaker wiring for the cart",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 293,
-        "text": "Gary (pickleball court 1): Grab a paddle and hit a few quick third-shot drops with Donna before the parade",
-        "importance": 4
-      },
       {
         "tick": 293,
         "text": "Hal said to Donna: “Evening, Donna. Parade's today, and you gave me your word on thinning the flock. I counted my binoculars' worth this morning, and L-02 says three. Where do we stand?”",
@@ -2025,14 +2011,14 @@
         "tick": 370,
         "text": "Rosa (street bulletin board): Pin a note: Friday dinner at Rosa's, 6 PM sharp. Donna's deviled eggs have mayo and mustard.",
         "importance": 3
+      },
+      {
+        "tick": 371,
+        "text": "I (donna pickleball bag): Pack the bag with the spare paddle, balls, and a water bottle for Gary's practice",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 289,
-        "text": "Rosa said to Gary: “Thanks, Gary, I'll take you up on that porch help later. Go win your pickleball, and tell Donna and Hal there's hot cider on my porch after the parade.”",
-        "importance": 5
-      },
       {
         "tick": 290,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02 in my notebook",
@@ -3027,14 +3013,14 @@
         "tick": 370,
         "text": "Rosa (street bulletin board): Pin a note: Friday dinner at Rosa's, 6 PM sharp. Donna's deviled eggs have mayo and mustard.",
         "importance": 3
+      },
+      {
+        "tick": 371,
+        "text": "I (hal violation notebook): Review and update notes on Gary's cart paperwork and Donna's flamingo count",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 279,
-        "text": "I (street bulletin board): Read the board for parade and Halloween notices, and pin up a trick-or-treat reminder",
-        "importance": 4
-      },
       {
         "tick": 280,
         "text": "I headed to Rosa's House.",
@@ -4029,6 +4015,11 @@
         "tick": 370,
         "text": "Hal (street bulletin board): Read the postings for any cart-modification approval or other notices before heading home",
         "importance": 5
+      },
+      {
+        "tick": 371,
+        "text": "I (rosa kitchen): Start prepping for tonight's dinner: check the pantry and get the main dish going",
+        "importance": 6
       }
     ]
   },
@@ -4075,10 +4066,10 @@
     ]
   },
   "emotions": {
-    "gary": "hopeful",
-    "donna": "content",
-    "hal": "content",
-    "rosa": "cheerful"
+    "gary": "content",
+    "donna": "excited",
+    "hal": "dutiful",
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -4203,9 +4194,16 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 371,
+      "time": "Friday, November 6, 7:17 AM",
+      "story": "At 7:17 on a sunny Friday morning in Sumter Oaks, Gary is laying out light strings and speaker wiring at his workbench, content with the project ahead of him. Donna is packing her pickleball bag with a spare paddle, balls, and a water bottle for Gary's practice, clearly excited about the day. Over at his house, Hal is dutifully reviewing his violation notebook, updating notes on Gary's cart paperwork and Donna's flamingo count. Rosa, feeling optimistic, is checking her pantry and getting the main dish started for tonight's dinner in her kitchen.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 11.70865,
+    "total_usd": 11.74028,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4306,11 +4304,14 @@
       "2026-11-05": {
         "ticks": 15,
         "usd": 0.49191
+      },
+      "2026-11-06": {
+        "ticks": 1,
+        "usd": 0.03163
       }
     }
   },
   "recent_tick_costs": [
-    0.03094,
     0.03187,
     0.03336,
     0.03301,
@@ -4333,7 +4334,8 @@
     0.03118,
     0.03341,
     0.03272,
-    0.03352
+    0.03352,
+    0.03163
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4381,7 +4383,7 @@
     "test_mode": false,
     "level": "bright"
   },
-  "last_tick_date": "2026-11-05",
+  "last_tick_date": "2026-11-06",
   "calendar_fired": [
     "halloween-flyer",
     "halloween-reminder",

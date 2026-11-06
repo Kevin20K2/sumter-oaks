@@ -1,0 +1,118 @@
+{
+  "tick": 371,
+  "simulation_time": "Friday, November 6, 7:17 AM",
+  "weather": "Sunny, 74°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a sunny Friday morning in Sumter Oaks, Gary is laying out light strings and speaker wiring at his workbench, content with the project ahead of him. Donna is packing her pickleball bag with a spare paddle, balls, and a water bottle for Gary's practice, clearly excited about the day. Over at his house, Hal is dutifully reviewing his violation notebook, updating notes on Gary's cart paperwork and Donna's flamingo count. Rosa, feeling optimistic, is checking her pantry and getting the main dish started for tonight's dinner in her kitchen.",
+  "events": [
+    "Gary (gary workbench): Lay out the light strings and speaker wiring for the cart",
+    "Donna (donna pickleball bag): Pack the bag with the spare paddle, balls, and a water bottle for Gary's practice",
+    "Hal (hal violation notebook): Review and update notes on Gary's cart paperwork and Donna's flamingo count",
+    "Rosa (rosa kitchen): Start prepping for tonight's dinner: check the pantry and get the main dish going"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Seems like I already filed the cart modification request at Town Hall with the 10 PM cutoff noted, and I even checked it was on file. No need to go back and bug Hal again. It's Friday morning, I'm home alone, and the parade is coming. The lights and sound system need to actually get built, and I have to keep it all visible-from-the-street legal until Architectural Review approves it. Best use of this hour is to get at the workbench and start wiring the lights for the cart. Also, I promised cornbread for tonight's dinner with Donna and Rosa, so I should keep that in mind later today.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Lay out the light strings and speaker wiring for the cart"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 7:17 AM Friday and I'm home alone. Gary's first practice is at ten, Rosa is bringing coffee, and dinner at her place is at six with my deviled eggs. I should get organized for the day. The pickleball bag is right here, so I should check that my paddles and balls are packed and ready before I head to the courts. A well-prepped bag keeps my plan to recruit Gary on track.",
+      "emotional_state": "excited",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Pack the bag with the spare paddle, balls, and a water bottle for Gary's practice"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Friday morning, 7:17, sunny, and I'm home alone with my gear. I read the bulletin board yesterday and Donna's pulling the flamingos back to three, which is within L-02, so I can't write her up on that count. Gary's cart paperwork is still worth a fair review. Dinner at Rosa's is at six, so I have a day to get through. Best use of this hour is to make sure my notebook is current, with the flamingo count and Gary's cart modifications written down accurately and fairly, before I go anywhere. A man who keeps good records doesn't have to rely on his memory.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Review and update notes on Gary's cart paperwork and Donna's flamingo count"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Friday morning, dinner is tonight at 6 and everyone is confirmed. I'm home alone with the kitchen and dining table right here. I've already pinned the note on the bulletin board and gotten allergy answers from Donna and Hal. The best use of this hour is to start prepping: set the table, plan the menu, and check my shift schedule so nothing conflicts with the evening. Setting the table and getting the kitchen going moves the goal forward, and I'm too overcommitted to leave it all for the last minute.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Start prepping for tonight's dinner: check the pantry and get the main dish going"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03163,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9915,
+        "output_tokens": 1166,
+        "usd": 0.03149
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 414,
+        "output_tokens": 202,
+        "usd": 0.00014
+      }
+    }
+  }
+}
