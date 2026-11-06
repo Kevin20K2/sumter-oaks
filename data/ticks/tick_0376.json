@@ -1,0 +1,118 @@
+{
+  "tick": 376,
+  "simulation_time": "Friday, November 6, 12:17 PM",
+  "weather": "Sunny, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 12:17 on a sunny, 78-degree Friday in Sumter Oaks, Gary is content in his driveway, tidying the wiring and light connections on his golf cart. Down on Magnolia Loop, Donna is confidently straightening the three street-facing flamingos, while Hal dutifully counts every flamingo visible from the street so the tally stays within the L-02 limit. Meanwhile, Rosa, also content, is turning her marinating dish in her kitchen and getting dessert ready for tonight.",
+  "events": [
+    "Gary (gary golf cart): Double-check the wiring and light connections, tidy loose cables",
+    "Donna (donna flamingo flock): Straighten the three street-facing flamingos and double-check nothing extra pokes out past the hedge",
+    "Hal (donna flamingo flock): Count each flamingo visible from the street and record the tally against the L-02 limit",
+    "Rosa (rosa kitchen): Turn the marinating dish, check the sides, and get dessert finished for tonight"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "The lights and speakers are mounted and tested at low volume, and the 10 PM cutoff is noted in my filing. It's Friday midday, so there's plenty of time before dinner with Donna and Rosa. The only thing left is a quick final check on the cart, so I'll go over the wiring and connections once more to make sure nothing's loose before the parade. Then maybe cornbread prep this afternoon. The review is out of my hands until Hal gets to it, and I shouldn't run the sound system loud before it's approved.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Double-check the wiring and light connections, tidy loose cables"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I already told Hal to count the flamingos and invited him to Rosa's at six, so I shouldn't repeat myself. He's counting now, and the flock is in my yard on Magnolia Loop. Best move is to make sure the street really shows exactly three, so I'll tidy the flock myself. Then I can head to the rec center and keep working on getting Gary ready for the ladder.",
+      "emotional_state": "confident",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Straighten the three street-facing flamingos and double-check nothing extra pokes out past the hedge"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna's here and told me to go ahead and count, and I've already logged the count twice in recent ticks. No point standing around repeating myself. By the book, the count is the evidence: I tally the flock from the street against the three-ornament limit in L-02. If it's three, it's three, and I'll say so plainly. Fair is fair. Dinner at Rosa's is at six, and I'd rather go in with the facts straight than a grudge.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count each flamingo visible from the street and record the tally against the L-02 limit"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 12:17 PM and the marinade has been going since morning, sides and dessert started last tick. Dinner is tonight, the table is already set for four, and nobody's nearby to talk to. The best use of this hour is to keep moving on the food: turn the main dish, check the sides, and make sure the dessert is on track so I'm not scrambling at six.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Turn the marinating dish, check the sides, and get dessert finished for tonight"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03089,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9662,
+        "output_tokens": 1027,
+        "usd": 0.02959
+      },
+      "claude-haiku-5-5": {
+        "calls": 6,
+        "input_tokens": 7472,
+        "output_tokens": 1105,
+        "usd": 0.0013
+      }
+    }
+  }
+}
