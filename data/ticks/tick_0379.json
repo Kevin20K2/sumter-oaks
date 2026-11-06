@@ -1,0 +1,117 @@
+{
+  "tick": 379,
+  "simulation_time": "Friday, November 6, 3:17 PM",
+  "weather": "Sunny, 80°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "It's a sunny Friday afternoon in Sumter Oaks, and the air is warm at 80 degrees. Gary is content at home, checking his fridge for buttermilk and eggs for the cornbread he promised Rosa, while Donna, cheerful as ever, reminds him about her light-hearted nudge to Hal about his golf cart lights and invites him to Rosa's Friday dinner with her deviled eggs. Over on Magnolia Loop, a watchful Hal is counting the flamingos in Donna's flock against the community's L-02 limit, and at Rosa's house, a hopeful Rosa is setting the table for four with the good plates and a little centerpiece.",
+  "events": [
+    "Gary (gary fridge): Check for buttermilk and eggs for the cornbread I promised Rosa",
+    "Hal (donna flamingo flock): Count each flamingo visible from the street and note the tally against the L-02 limit",
+    "Rosa (rosa dining table): Set the table for four with the good plates, napkins, and a little centerpiece"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna already said we're on for the courts tomorrow at ten, and I've already shown her the cart and told her it's staying parked until Architectural Review answers. No need to repeat myself. I filed the request at tick 369 and the cart work is done. L-01 says exterior mods need approval, so the cart stays put. Rather than hover, I'll spend the hour on something useful: the cornbread I promised Rosa for Friday dinner. The fridge is right here, so I'll check what I've got for it.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_fridge",
+          "content": "Check for buttermilk and eggs for the cornbread I promised Rosa"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at Gary's, he's shown me the cart and told me it's parked until Architectural Review answers, which suits L-01. I already confirmed the courts for tomorrow at ten last tick and promised a paddle, so no need to repeat myself. Best move is to respond to what he actually said: admire the cart, offer to put in a word with the committee, and gently tie it back to the Friday dinner and the ladder so the partnership feels sealed.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Oh Gary, those lights are a showstopper! Keep her parked till Architectural Review signs off, and I'll nudge Hal for you. Now, are you coming to Rosa's Friday dinner tonight? I'm bringing deviled eggs."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop with nobody around, and the flamingo flock is right here. My memories show I've been tallying these birds against L-02 for a few ticks. I respect Donna for bringing the count down, but a sergeant doesn't take anyone's word for it. I'll do my own count and get a clean tally on record before Friday dinner at Rosa's, so I can handle the flamingo business and Gary's cart paperwork with facts, not hearsay.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count each flamingo visible from the street and note the tally against the L-02 limit"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 3:17 PM on Friday and the dinner is tonight. I've been in the kitchen for hours, and my last note was to do a final check on the marinated dish and sides, cover everything, and wipe down the counters. The kitchen is mostly done. The table is the last thing to get right so Gary, Donna, and Hal feel welcome when they walk in. Nobody is nearby, so no one to talk to. Setting the dining table is the next useful step toward getting all three neighbors seated together tonight.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Set the table for four with the good plates, napkins, and a little centerpiece"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03131,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9843,
+        "output_tokens": 1146,
+        "usd": 0.03115
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 475,
+        "output_tokens": 225,
+        "usd": 0.00016
+      }
+    }
+  }
+}
