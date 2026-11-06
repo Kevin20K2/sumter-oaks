@@ -1,34 +1,27 @@
 {
-  "tick": 377,
-  "time": "2026-11-06T12:17",
+  "tick": 378,
+  "time": "2026-11-06T13:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
+    "donna": "garys_house",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "Donna just arrived."
+    ],
     "donna": [
-      "Hal (donna flamingo flock): Count each flamingo visible from the street and record the tally against the L-02 limit"
+      "Hal (donna flamingo flock): Count every flamingo visible from the street and tally it against the L-02 three-ornament limit",
+      "You arrived at Gary's House."
     ],
     "hal": [
-      "Donna (donna flamingo flock): Straighten the three street-facing flamingos and double-check nothing extra pokes out past the hedge"
+      "Donna headed to Gary's House."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 293,
-        "text": "Hal said to Donna: “Evening, Donna. Parade's today, and you gave me your word on thinning the flock. I counted my binoculars' worth this morning, and L-02 says three. Where do we stand?”",
-        "importance": 4
-      },
-      {
-        "tick": 293,
-        "text": "Town news: The Halloween golf cart parade is rolling around Magnolia Loop: carts trimmed in orange lights, cobwebs and jack-o'-lanterns, horns tooting, with neighbors waving from the curb.",
-        "importance": 8
-      },
       {
         "tick": 294,
         "text": "I said to Donna: “That's our two hours, Donna, and my third-shot drops are finally behaving. Let's hand the court back and get out to the Loop before the parade passes us by.”",
@@ -1018,24 +1011,19 @@
         "tick": 376,
         "text": "I (gary golf cart): Double-check the wiring and light connections, tidy loose cables",
         "importance": 4
+      },
+      {
+        "tick": 377,
+        "text": "I (gary golf cart): Give the light strings and speaker mounts a final once-over and wipe down the cart",
+        "importance": 5
+      },
+      {
+        "tick": 377,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 296,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 296,
-        "text": "Gary headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 296,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 296,
         "text": "Gary just arrived.",
@@ -2020,19 +2008,24 @@
         "tick": 376,
         "text": "Hal (donna flamingo flock): Count each flamingo visible from the street and record the tally against the L-02 limit",
         "importance": 4
+      },
+      {
+        "tick": 377,
+        "text": "I headed to Gary's House.",
+        "importance": 5
+      },
+      {
+        "tick": 377,
+        "text": "Hal (donna flamingo flock): Count every flamingo visible from the street and tally it against the L-02 three-ornament limit",
+        "importance": 5
+      },
+      {
+        "tick": 377,
+        "text": "You arrived at Gary's House.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 293,
-        "text": "I said to Donna: “Evening, Donna. Parade's today, and you gave me your word on thinning the flock. I counted my binoculars' worth this morning, and L-02 says three. Where do we stand?”",
-        "importance": 5
-      },
-      {
-        "tick": 293,
-        "text": "Gary (pickleball court 1): Grab a paddle and hit a few quick third-shot drops with Donna before the parade",
-        "importance": 5
-      },
       {
         "tick": 293,
         "text": "Donna said to Hal: “Hal, you made it! The flamingos are on my list, I'll have them behind the hedge before the street judging. Right now Gary and I have a parade to catch, so ride along and we'll all do cider at Rosa's after.”",
@@ -3022,14 +3015,19 @@
         "tick": 376,
         "text": "Donna (donna flamingo flock): Straighten the three street-facing flamingos and double-check nothing extra pokes out past the hedge",
         "importance": 5
+      },
+      {
+        "tick": 377,
+        "text": "I (donna flamingo flock): Count every flamingo visible from the street and tally it against the L-02 three-ornament limit",
+        "importance": 5
+      },
+      {
+        "tick": 377,
+        "text": "Donna headed to Gary's House.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 283,
-        "text": "Town news: It's Halloween. Pumpkins are appearing on porches along Magnolia Loop, and the parade sign-up table at Town Square has a clipboard for costume-contest entries.",
-        "importance": 7
-      },
       {
         "tick": 284,
         "text": "I (rosa kitchen): Pull the last tray out, finish bagging the Halloween treats, and stack them by the door",
@@ -4024,6 +4022,11 @@
         "tick": 376,
         "text": "I (rosa kitchen): Turn the marinating dish, check the sides, and get dessert finished for tonight",
         "importance": 5
+      },
+      {
+        "tick": 377,
+        "text": "I (rosa kitchen): Finish dessert, check the sides, and get everything staged for tonight's dinner",
+        "importance": 6
       }
     ]
   },
@@ -4071,9 +4074,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "confident",
-    "hal": "dutiful",
-    "rosa": "content"
+    "donna": "determined",
+    "hal": "wary, dutiful",
+    "rosa": "eager"
   },
   "laws": [
     {
@@ -4198,9 +4201,16 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 377,
+      "time": "Friday, November 6, 1:17 PM",
+      "story": "On a sunny Friday afternoon in Sumter Oaks, Gary is content as he gives his golf cart's light strings and speaker mounts one last check at home, while Donna, determined, makes her way over to his house. Out on Magnolia Loop, Hal keeps a wary eye on the flamingo flock, tallying each bird against the community's three-ornament limit. Meanwhile, Rosa is eager in her kitchen, putting the finishing touches on dessert and getting everything staged for tonight's dinner.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 11.89407,
+    "total_usd": 11.92457,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4303,13 +4313,12 @@
         "usd": 0.49191
       },
       "2026-11-06": {
-        "ticks": 6,
-        "usd": 0.18542
+        "ticks": 7,
+        "usd": 0.21592
       }
     }
   },
   "recent_tick_costs": [
-    0.03544,
     0.03568,
     0.03558,
     0.03164,
@@ -4332,7 +4341,8 @@
     0.03097,
     0.03038,
     0.03077,
-    0.03089
+    0.03089,
+    0.0305
   ],
   "fund": {
     "gross_usd": 0.0,

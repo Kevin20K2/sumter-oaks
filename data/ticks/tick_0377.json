@@ -1,0 +1,118 @@
+{
+  "tick": 377,
+  "simulation_time": "Friday, November 6, 1:17 PM",
+  "weather": "Sunny, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On a sunny Friday afternoon in Sumter Oaks, Gary is content as he gives his golf cart's light strings and speaker mounts one last check at home, while Donna, determined, makes her way over to his house. Out on Magnolia Loop, Hal keeps a wary eye on the flamingo flock, tallying each bird against the community's three-ornament limit. Meanwhile, Rosa is eager in her kitchen, putting the finishing touches on dessert and getting everything staged for tonight's dinner.",
+  "events": [
+    "Gary (gary golf cart): Give the light strings and speaker mounts a final once-over and wipe down the cart",
+    "Donna headed to Gary's House.",
+    "Hal (donna flamingo flock): Count every flamingo visible from the street and tally it against the L-02 three-ornament limit",
+    "Rosa (rosa kitchen): Finish dessert, check the sides, and get everything staged for tonight's dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Wiring is done and tested at low volume, and I double-checked the connections last tick. I filed the Architectural Review request back at tick 369, so I'm covered on L-01, and it's 1:17 PM so L-03 quiet hours aren't an issue. Nobody's around to talk to. Rather than fiddle with the same cables a third time, I'll take one more careful look at the whole rig on the cart: mounting, strain relief, nothing loose. Then it's ready for the parade, and maybe I'll make the cornbread for Rosa after.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Give the light strings and speaker mounts a final once-over and wipe down the cart"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal is counting flamingos right now, and I already told him exactly three, so there's no need to repeat myself. The extras are behind the hedge. My real goal is Gary and the pickleball ladder, and our court session is tomorrow at ten. Hal's a witness-in-waiting, so I should stay cooperative, but I've got a ladder to climb. Time to head to Gary's house, lock in tomorrow's session, and start coaching him since he's never played. I'll let Hal finish his tally in peace.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading to Gary's to confirm our ten o'clock court time tomorrow and go over a few doubles basics before we play."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna's out here straightening her flamingos and I told her to count them from the street. Better to do the job myself than take anyone's word for it. The flock is right here on Magnolia Loop. I'll inspect it, tally against L-02's limit of three, and note it for the review committee. If it's three, I'll say so honestly; a by-the-book man gives credit where it's due. Gary's cart paperwork is still on my list, but that's a separate errand.",
+      "emotional_state": "wary, dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count every flamingo visible from the street and tally it against the L-02 three-ornament limit"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 1:17 PM and dinner is tonight. I've been in the kitchen for hours: marinade turning, sides going, dessert in progress, and the table is already set for four. Nobody's around to talk to. The kitchen is where the work still is, so I'll finish dessert, give the sides a last check, and pull everything together so I can clean up and enjoy my guests when they arrive.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Finish dessert, check the sides, and get everything staged for tonight's dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0305,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9766,
+        "output_tokens": 1084,
+        "usd": 0.03037
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 409,
+        "output_tokens": 171,
+        "usd": 0.00013
+      }
+    }
+  }
+}
