@@ -1,27 +1,24 @@
 {
-  "tick": 374,
-  "time": "2026-11-06T09:17",
+  "tick": 375,
+  "time": "2026-11-06T10:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
-    "donna": [],
-    "hal": [
+    "donna": [
       "You arrived at Magnolia Loop (the street)."
+    ],
+    "hal": [
+      "Donna just arrived."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 292,
-        "text": "Town news: Trick-or-treaters are out on Magnolia Loop: visiting grandkids in costumes, golf carts trimmed in orange, and doorbells ringing up and down the street.",
-        "importance": 8
-      },
       {
         "tick": 293,
         "text": "I (pickleball court 1): Grab a paddle and hit a few quick third-shot drops with Donna before the parade",
@@ -1016,19 +1013,14 @@
         "tick": 373,
         "text": "I (gary golf cart): Keep mounting the light strings and run the speaker wiring",
         "importance": 5
+      },
+      {
+        "tick": 374,
+        "text": "I (gary golf cart): Finish securing the light strings and connect the speaker wiring to the battery",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 294,
-        "text": "I said to Hal: “Hal, you've caught me fair and square. I'm down to three by street view, and the rest go behind the hedge the minute Gary and I finish these drills, cross my heart. Come count them yourself after, and cider at Rosa's is on me.”",
-        "importance": 5
-      },
-      {
-        "tick": 294,
-        "text": "Gary said to Donna: “That's our two hours, Donna, and my third-shot drops are finally behaving. Let's hand the court back and get out to the Loop before the parade passes us by.”",
-        "importance": 5
-      },
       {
         "tick": 294,
         "text": "Hal headed to Magnolia Loop (the street).",
@@ -2018,19 +2010,19 @@
         "tick": 373,
         "text": "I (donna club calendar): Confirm Gary's ten o'clock court time and dinner at six",
         "importance": 4
+      },
+      {
+        "tick": 374,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 374,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 291,
-        "text": "I said to Donna: “Counted three from the street, Donna. L-02 is satisfied, and I'll note that you kept your word. Notebook's closed on the flamingos.”",
-        "importance": 4
-      },
-      {
-        "tick": 291,
-        "text": "Donna headed to Rec Center.",
-        "importance": 4
-      },
       {
         "tick": 291,
         "text": "Rosa headed to Rosa's House.",
@@ -3020,14 +3012,19 @@
         "tick": 373,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 374,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and log the number",
+        "importance": 5
+      },
+      {
+        "tick": 374,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 281,
-        "text": "I (rosa shift schedule): Check the schedule to confirm Saturday evening is clear for Halloween",
-        "importance": 4
-      },
       {
         "tick": 282,
         "text": "I (rosa kitchen): Start baking and bagging the Halloween treats for tonight's trick-or-treaters",
@@ -4022,6 +4019,11 @@
         "tick": 373,
         "text": "I (rosa dining table): Set the table for four with plates, glasses, and a spot for Donna's deviled eggs",
         "importance": 5
+      },
+      {
+        "tick": 374,
+        "text": "I (rosa kitchen): Check the marinade, then get the sides and dessert started for tonight's dinner",
+        "importance": 6
       }
     ]
   },
@@ -4068,9 +4070,9 @@
     ]
   },
   "emotions": {
-    "gary": "focused, content",
-    "donna": "excited",
-    "hal": "dutiful",
+    "gary": "focused",
+    "donna": "eager",
+    "hal": "focused",
     "rosa": "optimistic"
   },
   "laws": [
@@ -4214,10 +4216,16 @@
       "time": "Friday, November 6, 9:17 AM",
       "story": "On a sunny Friday morning at 9:17, Gary is at home focused on hanging light strings and running speaker wire, content with the work. Donna is excited at her house, confirming Gary's ten o'clock court time and dinner at six on her club calendar. Hal is heading out dutifully down Magnolia Loop, while Rosa, optimistic, is setting her dining table for four with a spot saved for Donna's deviled eggs.",
       "dialogue": []
+    },
+    {
+      "tick": 374,
+      "time": "Friday, November 6, 10:17 AM",
+      "story": "At 10:17 on this sunny Friday morning in Sumter Oaks, Gary is focused on finishing the light strings and wiring the speaker to his golf cart battery at home. Donna is eager and on her way to Magnolia Loop, while Hal, equally focused, is counting and logging the flamingos visible from the street. Meanwhile, Rosa is optimistic in her kitchen, checking the marinade and starting the sides and dessert for tonight's dinner.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 11.80203,
+    "total_usd": 11.83241,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4320,13 +4328,12 @@
         "usd": 0.49191
       },
       "2026-11-06": {
-        "ticks": 3,
-        "usd": 0.09338
+        "ticks": 4,
+        "usd": 0.12376
       }
     }
   },
   "recent_tick_costs": [
-    0.03301,
     0.03295,
     0.03687,
     0.03544,
@@ -4349,7 +4356,8 @@
     0.03352,
     0.03163,
     0.03078,
-    0.03097
+    0.03097,
+    0.03038
   ],
   "fund": {
     "gross_usd": 0.0,
