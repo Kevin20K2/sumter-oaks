@@ -1,0 +1,116 @@
+{
+  "tick": 378,
+  "simulation_time": "Friday, November 6, 2:17 PM",
+  "weather": "Sunny, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 2:17 on a sunny Friday afternoon in Sumter Oaks, Gary is at home showing off his newly finished golf cart lights and speakers to Donna, who is cheerfully promising to teach him pickleball on the courts tomorrow at ten. Gary's cart will stay parked until Architectural Review gives its approval, a small wait he's taking in stride. Out on Magnolia Loop, Hal is dutifully counting the flamingos visible from the street so he can log the tally against the L-02 limit, while Rosa, excited about her guests, gives her marinated dish and sides one last check and wipes down her counters before the doorbell rings.",
+  "events": [
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and record the tally against the L-02 limit",
+    "Rosa (rosa kitchen): Do a last check on the marinated dish and sides, cover everything, and wipe down the counters before guests arrive"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "The cart is done: lights strung, speakers wired, and I tested them at low volume. I filed the review request back at tick 369 with the 10 PM cutoff noted, but I haven't heard back yet, and L-01 says exterior mods visible from the street need Architectural Review approval, so I'm not driving it out until I know. Donna just walked up and she trusts me with the courts at ten, and I promised Rosa cornbread for Friday dinner. She's right here, so the friendly thing is to say hello and show her the cart. Nothing's been said to her yet this tick, so this isn't repeating myself.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Afternoon, Donna! Come take a look at the cart, I just finished the lights and speakers. Haven't heard back from Architectural Review yet, so she's staying parked till I do."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at Gary's with my eyes on the prize: getting him as my doubles partner. My memory says we're set for the court tomorrow at ten, so I should confirm and keep him excited, since he's never played. Note it's pickleball, not tennis, so a gentle clarification with a sweet hook. The flamingos are handled and Hal is tallying, so no need to fuss about that. I'll keep it short and warm, and mention the deviled eggs for Rosa's Friday dinner to keep the social thread going.",
+      "emotional_state": "enthusiastic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, hon, we're still on for the courts tomorrow at ten, and I'll bring you a paddle. Don't you worry about never having played, I'll have you ready for the ladder in no time."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Nobody around, and Donna just left for Gary's house. I'm standing at the flamingo flock in the sunshine, so it's the perfect moment to do the actual count from the street, as I've been meaning to. Three is the L-02 limit. If it's three, I give her credit and drop the complaint on that front; if it's more, I note it for the committee. Either way I do it by the book and keep it civil before Rosa's dinner at six. Gary's cart paperwork is still the real loose end.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and record the tally against the L-02 limit"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 2:17 PM and tonight's dinner is close. Table is already set for four. My last few ticks were all kitchen work: marinade, sides, dessert. Last tick I was finishing dessert and staging everything. Nobody's around to talk to, and Gary, Donna, and Hal already know about Friday, so there's no need to chase them. The best use of this hour is a last pass on the kitchen to confirm everything is done and staged, then I can clean up and get myself ready before they arrive.",
+      "emotional_state": "excited",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Do a last check on the marinated dish and sides, cover everything, and wipe down the counters before guests arrive"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0318,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9654,
+        "output_tokens": 1233,
+        "usd": 0.03164
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 507,
+        "output_tokens": 217,
+        "usd": 0.00016
+      }
+    }
+  }
+}
