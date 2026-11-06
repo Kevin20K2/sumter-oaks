@@ -1,0 +1,118 @@
+{
+  "tick": 373,
+  "simulation_time": "Friday, November 6, 9:17 AM",
+  "weather": "Sunny, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On a sunny Friday morning at 9:17, Gary is at home focused on hanging light strings and running speaker wire, content with the work. Donna is excited at her house, confirming Gary's ten o'clock court time and dinner at six on her club calendar. Hal is heading out dutifully down Magnolia Loop, while Rosa, optimistic, is setting her dining table for four with a spot saved for Donna's deviled eggs.",
+  "events": [
+    "Gary (gary golf cart): Keep mounting the light strings and run the speaker wiring",
+    "Donna (donna club calendar): Confirm Gary's ten o'clock court time and dinner at six",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa dining table): Set the table for four with plates, glasses, and a spot for Donna's deviled eggs"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I filed the modification request at Town Hall with the 10 PM cutoff noted, and I've already laid out the light strings and speaker wiring. Last tick I started mounting them on the cart. It's a sunny Friday morning and nobody's around, so this is a good stretch to keep working. Staying useful with my hands feels good, and the parade won't rig itself. One caution: the Architectural Review approval is still pending, so I'll keep the work to the wiring and mounting and not go driving it down the street until Hal signs off. Next step is the golf cart itself, to keep mounting the lights and speaker wiring.",
+      "emotional_state": "focused, content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Keep mounting the light strings and run the speaker wiring"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Friday morning, sunny and 76. Practice with Gary was set for ten at the court, and dinner at Rosa's is at six. I already packed the pickleball bag and penciled everything into the calendar last tick. Nobody's around to talk to. The best use of this hour is a quick last check of the club calendar to confirm the court slot is within the 2-hour limit and that nothing conflicts with tonight, then I head out to meet Gary.",
+      "emotional_state": "excited",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Confirm Gary's ten o'clock court time and dinner at six"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've already scanned the street with the binoculars and updated the notebook. Nobody is in sight and it's a sunny Friday morning. My goal is to report Gary's cart mods and Donna's flamingos to the committee, and Donna already pulled the extras around back, so the count is legal for now. The cart paperwork is the open question. Sitting on the porch won't settle that. Time to walk out to Magnolia Loop, check the bulletin board and the street myself, and do this the right way, with facts instead of guesses. Dinner at Rosa's tonight, so I should keep things civil.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to check the street and the postings firsthand, since the binoculars only show so much."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 9:17 AM and dinner is at 6 sharp. The main dish is already marinating from the last two ticks, and the bulletin note is pinned. Nobody's around, so no one to talk to. The one thing I haven't touched is the dining table, and a table set for four plus Donna's deviled eggs and the extra chairs is the visible part of getting everyone around it. Set the table now so the rest of the day stays free for my shift schedule check and last-minute errands.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Set the table for four with plates, glasses, and a spot for Donna's deviled eggs"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03097,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9635,
+        "output_tokens": 1159,
+        "usd": 0.03086
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 389,
+        "output_tokens": 143,
+        "usd": 0.00011
+      }
+    }
+  }
+}
