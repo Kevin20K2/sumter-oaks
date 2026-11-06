@@ -1,6 +1,6 @@
 {
-  "tick": 382,
-  "time": "2026-11-06T17:17",
+  "tick": 383,
+  "time": "2026-11-06T18:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
@@ -8,22 +8,23 @@
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "The cloud over Sumter Oaks looks ordinary today. Nothing to write home about."
+    ],
     "donna": [
-      "Hal said to Donna: “Donna. I make it more than three birds visible from the street, and L-02 says three. Get it down by Saturday and I'll hold off on the committee.”"
+      "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
+      "The cloud over Sumter Oaks looks ordinary today. Nothing to write home about."
     ],
     "hal": [
-      "Donna (donna flamingo flock): Straighten the flock and make sure only three show from the street"
+      "Donna said to Hal: “Hal, honey, I just moved the extras behind the hedge, so you should be seeing exactly three from here. Count again and tell me if I'm off, I'd hate for the committee to get involved right before Rosa's dinner.”",
+      "The cloud over Sumter Oaks looks ordinary today. Nothing to write home about."
     ],
-    "rosa": []
+    "rosa": [
+      "The cloud over Sumter Oaks looks ordinary today. Nothing to write home about."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 296,
-        "text": "Donna headed to Magnolia Loop (the street).",
-        "importance": 3
-      },
       {
         "tick": 296,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -1018,19 +1019,14 @@
         "tick": 381,
         "text": "I (gary fridge): Pull out buttermilk and eggs and start the cornbread for Rosa's dinner",
         "importance": 5
+      },
+      {
+        "tick": 382,
+        "text": "I (gary fridge): Mix the batter and get the cornbread pan ready for the oven",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 302,
-        "text": "I said to Hal: “Hal, good timing! I'm moving the extra flamingos behind the hedge right now, exactly three stay out front, just like I promised you.”",
-        "importance": 5
-      },
-      {
-        "tick": 302,
-        "text": "Hal said to Donna: “Afternoon, Donna. Parade's over, so about that thinning you promised. Section L-02 says three ornaments visible from the street, and I'd like to see that number on the lawn.”",
-        "importance": 5
-      },
       {
         "tick": 302,
         "text": "Gary just arrived.",
@@ -2020,19 +2016,19 @@
         "tick": 381,
         "text": "Hal said to Donna: “Donna. I make it more than three birds visible from the street, and L-02 says three. Get it down by Saturday and I'll hold off on the committee.”",
         "importance": 5
+      },
+      {
+        "tick": 382,
+        "text": "I said to Hal: “Hal, honey, I just moved the extras behind the hedge, so you should be seeing exactly three from here. Count again and tell me if I'm off, I'd hate for the committee to get involved right before Rosa's dinner.”",
+        "importance": 5
+      },
+      {
+        "tick": 382,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 294,
-        "text": "Town news: The costume contest is starting at the Town Square bandstand. A judge with a clipboard is calling for entries: best costume and best-decorated golf cart.",
-        "importance": 8
-      },
-      {
-        "tick": 295,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street, notebook in hand",
-        "importance": 5
-      },
       {
         "tick": 295,
         "text": "Rosa said to Hal: “Hal, glad I caught you! Thank you for coming to dinner. The costume contest is starting at the Town Square if you want to see the carts, and there's coffee on my porch tomorrow if you're up for it.”",
@@ -3022,14 +3018,19 @@
         "tick": 381,
         "text": "Donna (donna flamingo flock): Straighten the flock and make sure only three show from the street",
         "importance": 5
+      },
+      {
+        "tick": 382,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
+        "importance": 4
+      },
+      {
+        "tick": 382,
+        "text": "Donna said to Hal: “Hal, honey, I just moved the extras behind the hedge, so you should be seeing exactly three from here. Count again and tell me if I'm off, I'd hate for the committee to get involved right before Rosa's dinner.”",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 287,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 3
-      },
       {
         "tick": 288,
         "text": "I said to Gary: “Afternoon, all! Treats are bagged and my evening's clear, so come by my porch tonight when the kids start showing up. I'll have extra for the cart parade crowd too.”",
@@ -4024,6 +4025,11 @@
         "tick": 381,
         "text": "I (rosa kitchen): Taste for seasoning, cover the sides to keep them warm, and do a final check before guests arrive",
         "importance": 7
+      },
+      {
+        "tick": 382,
+        "text": "I (rosa kitchen): Give the sides a last stir, wipe the counter, and get the dinner ready to serve as guests arrive",
+        "importance": 6
       }
     ]
   },
@@ -4071,9 +4077,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "cheerful, conscientious",
-    "hal": "dutiful",
-    "rosa": "excited"
+    "donna": "gracious",
+    "hal": "watchful",
+    "rosa": "eager"
   },
   "laws": [
     {
@@ -4198,49 +4204,9 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 377,
-      "time": "Friday, November 6, 1:17 PM",
-      "story": "On a sunny Friday afternoon in Sumter Oaks, Gary is content as he gives his golf cart's light strings and speaker mounts one last check at home, while Donna, determined, makes her way over to his house. Out on Magnolia Loop, Hal keeps a wary eye on the flamingo flock, tallying each bird against the community's three-ornament limit. Meanwhile, Rosa is eager in her kitchen, putting the finishing touches on dessert and getting everything staged for tonight's dinner.",
-      "dialogue": []
-    },
-    {
-      "tick": 378,
-      "time": "Friday, November 6, 2:17 PM",
-      "story": "At 2:17 on a sunny Friday afternoon in Sumter Oaks, Gary is at home showing off his newly finished golf cart lights and speakers to Donna, who is cheerfully promising to teach him pickleball on the courts tomorrow at ten. Gary's cart will stay parked until Architectural Review gives its approval, a small wait he's taking in stride. Out on Magnolia Loop, Hal is dutifully counting the flamingos visible from the street so he can log the tally against the L-02 limit, while Rosa, excited about her guests, gives her marinated dish and sides one last check and wipes down her counters before the doorbell rings.",
-      "dialogue": [
-        "Gary said to Donna: “Afternoon, Donna! Come take a look at the cart, I just finished the lights and speakers. Haven't heard back from Architectural Review yet, so she's staying parked till I do.”",
-        "Donna said to Gary: “Gary, hon, we're still on for the courts tomorrow at ten, and I'll bring you a paddle. Don't you worry about never having played, I'll have you ready for the ladder in no time.”"
-      ]
-    },
-    {
-      "tick": 379,
-      "time": "Friday, November 6, 3:17 PM",
-      "story": "It's a sunny Friday afternoon in Sumter Oaks, and the air is warm at 80 degrees. Gary is content at home, checking his fridge for buttermilk and eggs for the cornbread he promised Rosa, while Donna, cheerful as ever, reminds him about her light-hearted nudge to Hal about his golf cart lights and invites him to Rosa's Friday dinner with her deviled eggs. Over on Magnolia Loop, a watchful Hal is counting the flamingos in Donna's flock against the community's L-02 limit, and at Rosa's house, a hopeful Rosa is setting the table for four with the good plates and a little centerpiece.",
-      "dialogue": [
-        "Donna said to Gary: “Oh Gary, those lights are a showstopper! Keep her parked till Architectural Review signs off, and I'll nudge Hal for you. Now, are you coming to Rosa's Friday dinner tonight? I'm bringing deviled eggs.”"
-      ]
-    },
-    {
-      "tick": 380,
-      "time": "Friday, November 6, 4:17 PM",
-      "story": "On this sunny Friday afternoon in Sumter Oaks, Gary is at home baking a pan of cornbread for Rosa's dinner, cheerfully reminding Donna to gently nudge Hal about the golf cart. Donna is heading out to Magnolia Loop, where Hal is dutifully checking the street bulletin board for any Architectural Review notices or the Halloween decoration takedown deadline. Meanwhile, Rosa is excitedly reviewing her shift schedule to make sure nothing gets in the way of tonight's dinner.",
-      "dialogue": [
-        "Gary said to Donna: “Wouldn't miss it, Donna. I've got a pan of cornbread to bake for Rosa, so I'll see you there. And thanks for nudging Hal, the cart stays put till he signs off.”"
-      ]
-    },
-    {
-      "tick": 381,
-      "time": "Friday, November 6, 5:17 PM",
-      "story": "At 5:17 on this sunny Friday, Gary is pulling buttermilk and eggs from his fridge to start the cornbread for Rosa's dinner, feeling content about the evening ahead. Over on Magnolia Loop, Donna is busy straightening her flamingo flock so that only three show from the street, while Hal reminds her, dutifully, that the committee will hold off if she gets it down to three by Saturday. Meanwhile Rosa, excited, is in her kitchen tasting for seasoning, covering the sides to keep them warm, and doing one last check before the guests arrive.",
-      "dialogue": [
-        "Hal said to Donna: “Donna. I make it more than three birds visible from the street, and L-02 says three. Get it down by Saturday and I'll hold off on the committee.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 12.04932,
+    "total_usd": 12.08002,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4343,13 +4309,12 @@
         "usd": 0.49191
       },
       "2026-11-06": {
-        "ticks": 11,
-        "usd": 0.34067
+        "ticks": 12,
+        "usd": 0.37137
       }
     }
   },
   "recent_tick_costs": [
-    0.03214,
     0.03102,
     0.03127,
     0.03256,
@@ -4372,7 +4337,8 @@
     0.0318,
     0.03131,
     0.03065,
-    0.03099
+    0.03099,
+    0.0307
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4418,7 +4384,7 @@
       }
     ],
     "test_mode": false,
-    "level": "bright"
+    "level": "fair"
   },
   "last_tick_date": "2026-11-06",
   "calendar_fired": [
