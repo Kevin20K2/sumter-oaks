@@ -1,0 +1,117 @@
+{
+  "tick": 380,
+  "simulation_time": "Friday, November 6, 4:17 PM",
+  "weather": "Sunny, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On this sunny Friday afternoon in Sumter Oaks, Gary is at home baking a pan of cornbread for Rosa's dinner, cheerfully reminding Donna to gently nudge Hal about the golf cart. Donna is heading out to Magnolia Loop, where Hal is dutifully checking the street bulletin board for any Architectural Review notices or the Halloween decoration takedown deadline. Meanwhile, Rosa is excitedly reviewing her shift schedule to make sure nothing gets in the way of tonight's dinner.",
+  "events": [
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (street bulletin board): Read the postings for any Architectural Review notices or the Halloween takedown deadline",
+    "Rosa (rosa shift schedule): Check the schedule to make sure no per-diem shift conflicts with tonight's dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just asked if I'm coming to Rosa's Friday dinner tonight. I promised Rosa cornbread, and it's 4:17 PM, so I need to get cooking soon. I checked the fridge last tick, so I should confirm the plan with Donna, keep the cart parked until Architectural Review signs off per L-01, and head to the kitchen work. A quick, warm answer closes the loop and lets me move on to baking.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Wouldn't miss it, Donna. I've got a pan of cornbread to bake for Rosa, so I'll see you there. And thanks for nudging Hal, the cart stays put till he signs off."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I already invited Gary to Rosa's dinner and reminded him about the courts at ten tomorrow, so no need to ask again. He's checking the fridge for buttermilk and eggs for his cornbread, which is sweet and tells me he's coming. Dinner is tonight, I've got deviled eggs to deviled, and I've been here an hour. Time to wrap up and head home to get my eggs ready, and let him know I'll see him there.",
+      "emotional_state": "cheerful",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading home to boil the eggs for Rosa's dinner; I'll see Gary there."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Four ticks of counting flamingos is plenty. I've tallied them against L-02 and Donna has been bringing the count down. Gary's cart paperwork is the real open item, and nobody is around to talk to right now. The street bulletin board may carry the Halloween decoration deadline or an Architectural Review notice I should be tracking. Check it before dinner at Rosa's tonight.",
+      "emotional_state": "dutiful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the postings for any Architectural Review notices or the Halloween takedown deadline"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 4:17 PM on Friday and the dinner prep is basically done: sides, dessert, marinated dish, and the table set for four with the good plates. Nobody's in sight, and I've already staged everything over the last few ticks. The only thing left is the shift schedule, which I should check to make sure no per-diem shift is going to pull me away tonight. Then I can finish getting myself ready before Gary, Donna, and Hal show up.",
+      "emotional_state": "excited",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check the schedule to make sure no per-diem shift conflicts with tonight's dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03065,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9866,
+        "output_tokens": 1078,
+        "usd": 0.03051
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 450,
+        "output_tokens": 185,
+        "usd": 0.00014
+      }
+    }
+  }
+}
