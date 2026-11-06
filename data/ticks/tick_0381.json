@@ -1,0 +1,117 @@
+{
+  "tick": 381,
+  "simulation_time": "Friday, November 6, 5:17 PM",
+  "weather": "Sunny, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 5:17 on this sunny Friday, Gary is pulling buttermilk and eggs from his fridge to start the cornbread for Rosa's dinner, feeling content about the evening ahead. Over on Magnolia Loop, Donna is busy straightening her flamingo flock so that only three show from the street, while Hal reminds her, dutifully, that the committee will hold off if she gets it down to three by Saturday. Meanwhile Rosa, excited, is in her kitchen tasting for seasoning, covering the sides to keep them warm, and doing one last check before the guests arrive.",
+  "events": [
+    "Gary (gary fridge): Pull out buttermilk and eggs and start the cornbread for Rosa's dinner",
+    "Donna (donna flamingo flock): Straighten the flock and make sure only three show from the street",
+    "Rosa (rosa kitchen): Taste for seasoning, cover the sides to keep them warm, and do a final check before guests arrive"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 5:17 PM Friday and I'm home alone. Rosa's dinner is tonight and I promised her cornbread. I checked the fridge last tick for buttermilk and eggs, so now I should actually get to baking. The cart stays parked until Architectural Review signs off, so no tinkering with the lights out front today. Time to get the cornbread going so I'm not late.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_fridge",
+          "content": "Pull out buttermilk and eggs and start the cornbread for Rosa's dinner"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm on Magnolia Loop with Hal watching. My memories say I moved the extra flamingos out back, but the flock object is right here and Hal has binoculars out, so I should confirm only three are visible and keep my word. It's nearly 5:20 and I'm bringing deviled eggs to Rosa's Friday dinner, so I'll tidy the flock first, then head home for the eggs. I don't need to talk to Hal again since I'm already on good terms with him, and Gary has confirmed he's coming.",
+      "emotional_state": "cheerful, conscientious",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Straighten the flock and make sure only three show from the street"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've already counted the flamingos twice and read the bulletin board. Donna's standing right here and she's been working on bringing the count down. Rather than repeat myself or file anything yet, I'll speak to her plainly about the L-02 limit and the Halloween takedown deadline, and settle where she stands. Friday dinner at Rosa's is coming up, so I'd rather keep this civil. Order and respect, but no need to be a bear about it.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna. I make it more than three birds visible from the street, and L-02 says three. Get it down by Saturday and I'll hold off on the committee."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 5:17 PM and the dinner is nearly ready. I've already set the table for four with the good plates, napkins, and centerpiece, and I checked the shift schedule last tick, so nothing should conflict. Nobody's around yet, so there's no one to talk to. I haven't actually looked at the food in the kitchen this tick, and with guests arriving soon, one last check on the marinated dish and sides, a taste for seasoning, and a cover to keep everything warm is the most useful thing I can do. Then I can breathe and wait for Gary, Donna, and Hal to knock.",
+      "emotional_state": "excited",
+      "importance_rating": 7,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Taste for seasoning, cover the sides to keep them warm, and do a final check before guests arrive"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03099,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9793,
+        "output_tokens": 1126,
+        "usd": 0.03085
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 455,
+        "output_tokens": 196,
+        "usd": 0.00014
+      }
+    }
+  }
+}
