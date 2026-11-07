@@ -1,6 +1,6 @@
 {
-  "tick": 383,
-  "time": "2026-11-06T18:17",
+  "tick": 384,
+  "time": "2026-11-06T19:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
@@ -8,28 +8,17 @@
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "The cloud over Sumter Oaks looks ordinary today. Nothing to write home about."
-    ],
+    "gary": [],
     "donna": [
-      "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
-      "The cloud over Sumter Oaks looks ordinary today. Nothing to write home about."
+      "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit of three"
     ],
     "hal": [
-      "Donna said to Hal: “Hal, honey, I just moved the extras behind the hedge, so you should be seeing exactly three from here. Count again and tell me if I'm off, I'd hate for the committee to get involved right before Rosa's dinner.”",
-      "The cloud over Sumter Oaks looks ordinary today. Nothing to write home about."
+      "Donna waited: puttering around Magnolia Loop (the street)"
     ],
-    "rosa": [
-      "The cloud over Sumter Oaks looks ordinary today. Nothing to write home about."
-    ]
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 296,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 3
-      },
       {
         "tick": 296,
         "text": "Donna just arrived.",
@@ -1024,19 +1013,14 @@
         "tick": 382,
         "text": "I (gary fridge): Mix the batter and get the cornbread pan ready for the oven",
         "importance": 5
+      },
+      {
+        "tick": 383,
+        "text": "I (gary fridge): Pour the batter into the pan and slide the cornbread in to bake",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 302,
-        "text": "Gary just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 302,
-        "text": "Rosa just arrived.",
-        "importance": 5
-      },
       {
         "tick": 303,
         "text": "I (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving exactly three visible from the street",
@@ -2026,19 +2010,19 @@
         "tick": 382,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
         "importance": 5
+      },
+      {
+        "tick": 383,
+        "text": "I waited: puttering around Magnolia Loop (the street)",
+        "importance": 4
+      },
+      {
+        "tick": 383,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit of three",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 295,
-        "text": "Rosa said to Hal: “Hal, glad I caught you! Thank you for coming to dinner. The costume contest is starting at the Town Square if you want to see the carts, and there's coffee on my porch tomorrow if you're up for it.”",
-        "importance": 5
-      },
-      {
-        "tick": 296,
-        "text": "I said to Rosa: “Dinner was good, Rosa, and I'll say so out loud once. I'll take you up on that coffee tomorrow, and I'll bring my own mug, since I don't trust anyone's measurements but my own.”",
-        "importance": 3
-      },
       {
         "tick": 296,
         "text": "Rosa headed to Town Square.",
@@ -3028,14 +3012,19 @@
         "tick": 382,
         "text": "Donna said to Hal: “Hal, honey, I just moved the extras behind the hedge, so you should be seeing exactly three from here. Count again and tell me if I'm off, I'd hate for the committee to get involved right before Rosa's dinner.”",
         "importance": 4
+      },
+      {
+        "tick": 383,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit of three",
+        "importance": 4
+      },
+      {
+        "tick": 383,
+        "text": "Donna waited: puttering around Magnolia Loop (the street)",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 288,
-        "text": "I said to Gary: “Afternoon, all! Treats are bagged and my evening's clear, so come by my porch tonight when the kids start showing up. I'll have extra for the cart parade crowd too.”",
-        "importance": 5
-      },
       {
         "tick": 288,
         "text": "Gary said to Rosa: “Afternoon, Rosa! Good to see you out on the Loop. If anything at your place needs a tune-up before tonight's parade, you just holler, I've got my toolbox right in the cart.”",
@@ -4030,6 +4019,11 @@
         "tick": 382,
         "text": "I (rosa kitchen): Give the sides a last stir, wipe the counter, and get the dinner ready to serve as guests arrive",
         "importance": 6
+      },
+      {
+        "tick": 383,
+        "text": "I (rosa dining table): Straighten the napkins, fix the centerpiece, and make sure all four seats look welcoming",
+        "importance": 5
       }
     ]
   },
@@ -4077,9 +4071,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "gracious",
-    "hal": "watchful",
-    "rosa": "eager"
+    "donna": "determined",
+    "hal": "dutiful",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4204,9 +4198,16 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 383,
+      "time": "Friday, November 6, 7:17 PM",
+      "story": "At 7:17 on a sunny Friday evening in Sumter Oaks, Gary is at home pouring cornbread batter into a pan for the oven, content with his quiet kitchen work. Over on Magnolia Loop, Donna is puttering about with determination while Hal dutifully counts the pink flamingos in view against the town's limit of three. Meanwhile Rosa is at her dining table smoothing napkins and fussing over the centerpiece, hopeful that all four seats will look welcoming for her guests.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 12.08002,
+    "total_usd": 12.11068,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4309,13 +4310,12 @@
         "usd": 0.49191
       },
       "2026-11-06": {
-        "ticks": 12,
-        "usd": 0.37137
+        "ticks": 13,
+        "usd": 0.40203
       }
     }
   },
   "recent_tick_costs": [
-    0.03102,
     0.03127,
     0.03256,
     0.03358,
@@ -4338,7 +4338,8 @@
     0.03131,
     0.03065,
     0.03099,
-    0.0307
+    0.0307,
+    0.03066
   ],
   "fund": {
     "gross_usd": 0.0,
