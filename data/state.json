@@ -1,6 +1,6 @@
 {
-  "tick": 396,
-  "time": "2026-11-07T16:17",
+  "tick": 397,
+  "time": "2026-11-07T17:17",
   "positions": {
     "gary": "garys_house",
     "donna": "rec_center",
@@ -9,26 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Rosa said to Gary: “Gary, good, I caught you home. I'm hosting a welcome dinner Friday night and I want you at my table with Donna and Hal. Can I count on you? I'll even let you talk about the parade lights.”"
+      "Rosa (gary golf cart): Walk around the cart admiring it while the cornbread bakes"
     ],
     "donna": [],
     "hal": [],
     "rosa": [
-      "Gary said to Rosa: “Rosa! Come on in, the cornbread batter's mixed and the oven's heating up. Want to see the cart while it bakes? Lights and speakers are still waiting on Architectural Review, but she's looking good.”"
+      "Gary said to Rosa: “Count me in, Rosa, wouldn't miss it. I'll bring a skillet of cornbread, and I'll try to keep the parade lights talk to one course.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 304,
-        "text": "Donna (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving exactly three visible from the street",
-        "importance": 4
-      },
-      {
-        "tick": 304,
-        "text": "Hal said to Rosa: “Coffee's fine, Rosa, I'll bring my own mug. Count's three flamingos from the street, so Donna and I are square for today. Gary and I will have a word about that cart's paperwork over the pot.”",
-        "importance": 4
-      },
       {
         "tick": 304,
         "text": "Rosa said to Gary: “Gary, I'll take you up on that. My porch string lights need a plug that actually reaches, so come have coffee and bring your tools. Donna and Hal, once the flamingos are sorted, you're both welcome too.”",
@@ -1018,14 +1008,19 @@
         "tick": 395,
         "text": "Rosa said to Gary: “Gary, good, I caught you home. I'm hosting a welcome dinner Friday night and I want you at my table with Donna and Hal. Can I count on you? I'll even let you talk about the parade lights.”",
         "importance": 4
+      },
+      {
+        "tick": 396,
+        "text": "I said to Rosa: “Count me in, Rosa, wouldn't miss it. I'll bring a skillet of cornbread, and I'll try to keep the parade lights talk to one course.”",
+        "importance": 5
+      },
+      {
+        "tick": 396,
+        "text": "Rosa (gary golf cart): Walk around the cart admiring it while the cornbread bakes",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 309,
-        "text": "Gary said to Rosa: “Table looks great, Rosa. After we eat, I'll grab my tools and get that porch string light plug sorted so it actually reaches.”",
-        "importance": 3
-      },
       {
         "tick": 309,
         "text": "Rosa (rosa kitchen): Pull the rolls from the oven and set out the water pitcher",
@@ -2020,14 +2015,14 @@
         "tick": 395,
         "text": "I (ladder standings board): Study the ladder standings to see who Gary and I need to beat first",
         "importance": 4
+      },
+      {
+        "tick": 396,
+        "text": "I (ladder standings board): Study the ladder standings to see which teams Gary and I need to beat first",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 308,
-        "text": "I (donna flamingo flock): Raise binoculars and carefully count the flamingos visible from the street, noting the total in my log",
-        "importance": 4
-      },
       {
         "tick": 309,
         "text": "I (street bulletin board): Pin a notice reminding residents that cart modifications visible from the street need Architectural Review approval (L-01)",
@@ -3022,19 +3017,14 @@
         "tick": 395,
         "text": "I (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge screens the rest",
         "importance": 5
+      },
+      {
+        "tick": 396,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note whether the hedge screens the rest",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 296,
-        "text": "You arrived at Town Square.",
-        "importance": 4
-      },
-      {
-        "tick": 297,
-        "text": "I (rosa shift schedule): Check my per-diem shifts this week with coffee in hand, so I know I'm free for Hal's porch visit",
-        "importance": 3
-      },
       {
         "tick": 298,
         "text": "I (rosa kitchen): Wash up from last night's dinner and set out coffee things for Hal's porch visit",
@@ -4024,6 +4014,16 @@
         "tick": 395,
         "text": "Gary said to Rosa: “Rosa! Come on in, the cornbread batter's mixed and the oven's heating up. Want to see the cart while it bakes? Lights and speakers are still waiting on Architectural Review, but she's looking good.”",
         "importance": 6
+      },
+      {
+        "tick": 396,
+        "text": "I (gary golf cart): Walk around the cart admiring it while the cornbread bakes",
+        "importance": 4
+      },
+      {
+        "tick": 396,
+        "text": "Gary said to Rosa: “Count me in, Rosa, wouldn't miss it. I'll bring a skillet of cornbread, and I'll try to keep the parade lights talk to one course.”",
+        "importance": 4
       }
     ]
   },
@@ -4070,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "cheerful",
+    "gary": "warm",
     "donna": "determined",
     "hal": "dutiful",
-    "rosa": "hopeful"
+    "rosa": "warm, hopeful"
   },
   "laws": [
     {
@@ -4207,10 +4207,18 @@
         "Gary said to Rosa: “Rosa! Come on in, the cornbread batter's mixed and the oven's heating up. Want to see the cart while it bakes? Lights and speakers are still waiting on Architectural Review, but she's looking good.”",
         "Rosa said to Gary: “Gary, good, I caught you home. I'm hosting a welcome dinner Friday night and I want you at my table with Donna and Hal. Can I count on you? I'll even let you talk about the parade lights.”"
       ]
+    },
+    {
+      "tick": 396,
+      "time": "Saturday, November 7, 5:17 PM",
+      "story": "At 5:17 on a breezy, clear Saturday in Sumter Oaks, Gary is warmly promising Rosa he'll bring a skillet of cornbread to the evening gathering while keeping his parade-lights talk to one course. Donna is at the Rec Center studying the ladder standings, determined to figure out which teams she and Gary need to beat first. Out on Magnolia Loop, Hal is dutifully counting the flamingos in Donna's flock and checking whether the hedge hides the rest. Rosa, hopeful, is circling Gary's golf cart at his house while the cornbread bakes.",
+      "dialogue": [
+        "Gary said to Rosa: “Count me in, Rosa, wouldn't miss it. I'll bring a skillet of cornbread, and I'll try to keep the parade lights talk to one course.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 12.48367,
+    "total_usd": 12.51367,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4317,13 +4325,12 @@
         "usd": 0.46322
       },
       "2026-11-07": {
-        "ticks": 10,
-        "usd": 0.3118
+        "ticks": 11,
+        "usd": 0.3418
       }
     }
   },
   "recent_tick_costs": [
-    0.03078,
     0.03097,
     0.03038,
     0.03077,
@@ -4346,7 +4353,8 @@
     0.03288,
     0.03244,
     0.0314,
-    0.03002
+    0.03002,
+    0.03
   ],
   "fund": {
     "gross_usd": 0.0,
