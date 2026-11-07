@@ -1,0 +1,118 @@
+{
+  "tick": 386,
+  "simulation_time": "Saturday, November 7, 7:17 AM",
+  "weather": "Breezy and clear, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a breezy, clear Saturday morning in Sumter Oaks, Gary is wiring up and bench-testing lights and a speaker for his golf cart at his workbench while he waits on approval. Across the way, Donna is hunting her club calendar for an open pickleball court slot she plans to pitch to Gary, and Hal is scanning Magnolia Loop with his binoculars for any sign of Gary's cart or stray flamingos. Meanwhile, Rosa is checking her per-diem shift schedule to see what her day and weekend hold.",
+  "events": [
+    "Gary (gary workbench): Wire up and bench-test the cart's lights and speaker setup while waiting on approval",
+    "Donna (donna club calendar): Check the calendar for an open pickleball court slot to pitch to Gary",
+    "Hal (hal binoculars): Scan Magnolia Loop for Gary's cart and any stray flamingos",
+    "Rosa (rosa shift schedule): Check the per-diem shift schedule to see what my day and weekend look like"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 7:17 AM Saturday, and I'm standing at home with the golf cart and workbench right here. My memories say I filed the modification request at the architectural review desk back at tick 369, so I've done my part for L-01 and shouldn't go adding exterior lights or speakers visible from the street until approval comes through. The cornbread for Rosa is already baked and wrapped, so that's handled. Quiet hours ended at 7 AM, so I can make a little noise now. The sensible move is to work on the interior side of the project at the workbench, wiring the lights and sound system and testing it, so everything is ready the moment Hal and the review folks sign off. Keeps me busy and useful.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Wire up and bench-test the cart's lights and speaker setup while waiting on approval"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's early Saturday morning, I'm home alone, and Gary is over at Rosa's with his cart paperwork. My real goal is getting Gary on the pickleball ladder as my doubles partner, even though he's never played. I should work the club calendar to find a good court slot, keeping in mind the two-hour reservation limit, so I'm ready to pitch him when he's free. The flamingos are sorted, Hal is satisfied, and now it's time to organize.",
+      "emotional_state": "scheming",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check the calendar for an open pickleball court slot to pitch to Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's early Saturday morning and I'm home with nobody around. Donna's flamingos are at the legal limit and I gave her my word, so no report there. Gary's cart still has no Architectural Review paperwork that I can find, and I want that squared away before I let anyone off the hook. The binoculars on the porch let me check the street the proper way, from my own property, and see whether anything is out of order before the neighborhood wakes up. Rules are rules, and an honest watchman checks his post.",
+      "emotional_state": "vigilant",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan Magnolia Loop for Gary's cart and any stray flamingos"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 7:17 AM Saturday, and my memories keep treating the dinner as tonight or imminent, but the time says it's a fresh morning. The Halloween events are over, and my last memories were all about waiting for guests who either came and went or the clock has simply rolled forward. Nobody is nearby. I have a per-diem shift schedule sitting in the house that I'm probably overcommitted on, so checking it is the practical thing to do. It'll tell me whether I have a shift today and how much time I really have to plan the next gathering, instead of standing around stirring sides that no one is here to eat.",
+      "emotional_state": "practical",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check the per-diem shift schedule to see what my day and weekend look like"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03137,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9620,
+        "output_tokens": 1199,
+        "usd": 0.03123
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 417,
+        "output_tokens": 188,
+        "usd": 0.00014
+      }
+    }
+  }
+}
