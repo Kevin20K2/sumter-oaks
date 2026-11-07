@@ -1,0 +1,117 @@
+{
+  "tick": 393,
+  "simulation_time": "Saturday, November 7, 2:17 PM",
+  "weather": "Breezy and clear, 83°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On Saturday afternoon in Sumter Oaks, Gary is at home checking his fridge for buttermilk and eggs so he can start cornbread batter for Rosa's dinner. Donna is cheerfully on her way to the Rec Center, while Hal stands on Magnolia Loop counting the pink flamingos Donna has arranged along the street and grumbling a little about whether the hedge hides the rest. Rosa, warm as the breeze, tells Hal to put his clipboard down, promising him the head of the table on Friday if he saves his appetite.",
+  "events": [
+    "Gary (gary fridge): Check for buttermilk and eggs, then set out cornmeal and start the cornbread batter for Rosa's dinner",
+    "Donna headed to Rec Center.",
+    "Hal (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge actually screens the rest"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 2:17 PM and I'm alone at the house. The request is filed with Architectural Review, and I've already tested the lights and speakers and sorted my fuses and connectors. Rosa's dinner is tonight and I promised cornbread. I checked the fridge last tick but never confirmed the cornmeal and buttermilk, and I don't want to find out I'm short at 5 PM. Law L-01 means I can't mount anything visible from the street until approval comes, so the cornbread is the useful thing to do right now.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_fridge",
+          "content": "Check for buttermilk and eggs, then set out cornmeal and start the cornbread batter for Rosa's dinner"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal is counting my flamingos again. I've already told him they're behind the hedge, and Rosa has Friday handled, so there's no point repeating myself. I should act on my goal instead: Gary's Tuesday court slot is the thing that actually matters, and I have it penciled in. Better to stop hovering here and head to the rec center to confirm the two-hour reservation (L-05) and see if Gary is around. Hal can count all he wants; the street-visible count is three.",
+      "emotional_state": "upbeat",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center to lock in our two-hour Tuesday court slot and see if Gary's around for some practice."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna just said the extra flamingos are behind the hedge and told me to stop counting. Rosa's got Friday dinner settled and I gave my word to behave there. I've already counted from the porch; asking again would be repeating myself. The proper move is to inspect the flock itself and see what's actually visible from the street, since L-02 says visible from the street, and a hedge screen is technically compliant. That's fair, by the book, and I can log it without picking a fight before supper.",
+      "emotional_state": "grudgingly amused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count only the flamingos visible from the street and note whether the hedge actually screens the rest"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Donna confirmed the deviled eggs and Hal is counting flamingos. I've already invited everyone and asked what to bring, so asking again would just be nagging. Gary is the last one I haven't confirmed, and the dinner isn't until Friday at six anyway. The useful move is to steer Hal and Donna off the flamingo squabble before it sours the table. I'll tell Hal the count is Donna's to sort and that he's off duty until Friday.",
+      "emotional_state": "warm, optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, Donna says the extras are behind the hedge, so you can put the clipboard down. Save that appetite for Friday, and I'll save the head of the table for you."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03244,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10390,
+        "output_tokens": 1152,
+        "usd": 0.0323
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 464,
+        "output_tokens": 185,
+        "usd": 0.00014
+      }
+    }
+  }
+}

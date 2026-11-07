@@ -1,34 +1,30 @@
 {
-  "tick": 393,
-  "time": "2026-11-07T13:17",
+  "tick": 394,
+  "time": "2026-11-07T14:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
+    "donna": "rec_center",
     "hal": "magnolia_loop",
     "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [],
     "donna": [
-      "Hal (donna flamingo flock): Count the street-visible flamingos against the three-ornament limit",
-      "Rosa said to Donna: “Deviled eggs, Donna, that's all I need. Just you and those eggs at my table Friday at six, I've got the rest. And don't let Hal rattle you about the flamingos, we'll sort that out over supper.”"
+      "Hal (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge actually screens the rest",
+      "Rosa said to Hal: “Hal, Donna says the extras are behind the hedge, so you can put the clipboard down. Save that appetite for Friday, and I'll save the head of the table for you.”",
+      "You arrived at Rec Center."
     ],
     "hal": [
-      "Donna said to Rosa: “Yes, Rosa, wild horses couldn't keep me away, and the deviled eggs are a done deal. And Hal, dear, the extra flamingos are behind the hedge as we speak, so you can stop counting and just bring your appetite.”",
-      "Rosa said to Donna: “Deviled eggs, Donna, that's all I need. Just you and those eggs at my table Friday at six, I've got the rest. And don't let Hal rattle you about the flamingos, we'll sort that out over supper.”"
+      "Donna headed to Rec Center.",
+      "Rosa said to Hal: “Hal, Donna says the extras are behind the hedge, so you can put the clipboard down. Save that appetite for Friday, and I'll save the head of the table for you.”"
     ],
     "rosa": [
-      "Donna said to Rosa: “Yes, Rosa, wild horses couldn't keep me away, and the deviled eggs are a done deal. And Hal, dear, the extra flamingos are behind the hedge as we speak, so you can stop counting and just bring your appetite.”",
-      "Hal (donna flamingo flock): Count the street-visible flamingos against the three-ornament limit"
+      "Donna headed to Rec Center.",
+      "Hal (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge actually screens the rest"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 303,
-        "text": "I said to Rosa: “Afternoon, Rosa! Cart's all rigged up with lights and speakers, finally. If you've got anything that needs fixing or wiring for the parade, you just say the word.”",
-        "importance": 4
-      },
       {
         "tick": 303,
         "text": "Donna (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving exactly three visible from the street",
@@ -1023,29 +1019,14 @@
         "tick": 392,
         "text": "I waited: puttering around Gary's House",
         "importance": 3
+      },
+      {
+        "tick": 393,
+        "text": "I (gary fridge): Check for buttermilk and eggs, then set out cornmeal and start the cornbread batter for Rosa's dinner",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 307,
-        "text": "Gary said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”",
-        "importance": 3
-      },
-      {
-        "tick": 307,
-        "text": "Rosa (rosa dining table): Set out plates, napkins and four chairs, saving a spot for Hal",
-        "importance": 3
-      },
-      {
-        "tick": 308,
-        "text": "I (rosa kitchen): Peel the foil off the casserole and set out serving spoons",
-        "importance": 3
-      },
-      {
-        "tick": 308,
-        "text": "Gary (rosa dining table): Straighten the chairs and make sure Hal's spot is ready",
-        "importance": 3
-      },
       {
         "tick": 308,
         "text": "Rosa said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”",
@@ -2025,24 +2006,29 @@
         "tick": 392,
         "text": "Rosa said to Donna: “Deviled eggs, Donna, that's all I need. Just you and those eggs at my table Friday at six, I've got the rest. And don't let Hal rattle you about the flamingos, we'll sort that out over supper.”",
         "importance": 5
+      },
+      {
+        "tick": 393,
+        "text": "I headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 393,
+        "text": "Hal (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge actually screens the rest",
+        "importance": 5
+      },
+      {
+        "tick": 393,
+        "text": "Rosa said to Hal: “Hal, Donna says the extras are behind the hedge, so you can put the clipboard down. Save that appetite for Friday, and I'll save the head of the table for you.”",
+        "importance": 5
+      },
+      {
+        "tick": 393,
+        "text": "You arrived at Rec Center.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 304,
-        "text": "Rosa said to Gary: “Gary, I'll take you up on that. My porch string lights need a plug that actually reaches, so come have coffee and bring your tools. Donna and Hal, once the flamingos are sorted, you're both welcome too.”",
-        "importance": 5
-      },
-      {
-        "tick": 305,
-        "text": "I (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
-        "importance": 5
-      },
-      {
-        "tick": 305,
-        "text": "Donna headed to Rosa's House.",
-        "importance": 5
-      },
       {
         "tick": 305,
         "text": "Rosa headed to Rosa's House.",
@@ -3027,24 +3013,24 @@
         "tick": 392,
         "text": "Rosa said to Donna: “Deviled eggs, Donna, that's all I need. Just you and those eggs at my table Friday at six, I've got the rest. And don't let Hal rattle you about the flamingos, we'll sort that out over supper.”",
         "importance": 4
+      },
+      {
+        "tick": 393,
+        "text": "I (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge actually screens the rest",
+        "importance": 4
+      },
+      {
+        "tick": 393,
+        "text": "Donna headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 393,
+        "text": "Rosa said to Hal: “Hal, Donna says the extras are behind the hedge, so you can put the clipboard down. Save that appetite for Friday, and I'll save the head of the table for you.”",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 293,
-        "text": "Town news: The Halloween golf cart parade is rolling around Magnolia Loop: carts trimmed in orange lights, cobwebs and jack-o'-lanterns, horns tooting, with neighbors waving from the curb.",
-        "importance": 8
-      },
-      {
-        "tick": 294,
-        "text": "I (street bulletin board): Pin up a note thanking neighbors for the parade and dinner, inviting everyone to coffee at my porch",
-        "importance": 4
-      },
-      {
-        "tick": 294,
-        "text": "Hal just arrived.",
-        "importance": 4
-      },
       {
         "tick": 294,
         "text": "Town news: The costume contest is starting at the Town Square bandstand. A judge with a clipboard is calling for entries: best costume and best-decorated golf cart.",
@@ -4029,6 +4015,21 @@
         "tick": 392,
         "text": "Hal (donna flamingo flock): Count the street-visible flamingos against the three-ornament limit",
         "importance": 6
+      },
+      {
+        "tick": 393,
+        "text": "I said to Hal: “Hal, Donna says the extras are behind the hedge, so you can put the clipboard down. Save that appetite for Friday, and I'll save the head of the table for you.”",
+        "importance": 5
+      },
+      {
+        "tick": 393,
+        "text": "Donna headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 393,
+        "text": "Hal (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge actually screens the rest",
+        "importance": 5
       }
     ]
   },
@@ -4076,9 +4077,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "cheerful",
-    "hal": "dutiful",
-    "rosa": "warm, amused"
+    "donna": "upbeat",
+    "hal": "grudgingly amused",
+    "rosa": "warm, optimistic"
   },
   "laws": [
     {
@@ -4240,10 +4241,18 @@
         "Donna said to Rosa: “Yes, Rosa, wild horses couldn't keep me away, and the deviled eggs are a done deal. And Hal, dear, the extra flamingos are behind the hedge as we speak, so you can stop counting and just bring your appetite.”",
         "Rosa said to Donna: “Deviled eggs, Donna, that's all I need. Just you and those eggs at my table Friday at six, I've got the rest. And don't let Hal rattle you about the flamingos, we'll sort that out over supper.”"
       ]
+    },
+    {
+      "tick": 393,
+      "time": "Saturday, November 7, 2:17 PM",
+      "story": "On Saturday afternoon in Sumter Oaks, Gary is at home checking his fridge for buttermilk and eggs so he can start cornbread batter for Rosa's dinner. Donna is cheerfully on her way to the Rec Center, while Hal stands on Magnolia Loop counting the pink flamingos Donna has arranged along the street and grumbling a little about whether the hedge hides the rest. Rosa, warm as the breeze, tells Hal to put his clipboard down, promising him the head of the table on Friday if he saves his appetite.",
+      "dialogue": [
+        "Rosa said to Hal: “Hal, Donna says the extras are behind the hedge, so you can put the clipboard down. Save that appetite for Friday, and I'll save the head of the table for you.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 12.38981,
+    "total_usd": 12.42225,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4350,13 +4359,12 @@
         "usd": 0.46322
       },
       "2026-11-07": {
-        "ticks": 7,
-        "usd": 0.21794
+        "ticks": 8,
+        "usd": 0.25038
       }
     }
   },
   "recent_tick_costs": [
-    0.03272,
     0.03352,
     0.03163,
     0.03078,
@@ -4379,7 +4387,8 @@
     0.0303,
     0.03014,
     0.03145,
-    0.03288
+    0.03288,
+    0.03244
   ],
   "fund": {
     "gross_usd": 0.0,
