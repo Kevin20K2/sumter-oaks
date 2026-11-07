@@ -1,29 +1,28 @@
 {
-  "tick": 390,
-  "time": "2026-11-07T10:17",
+  "tick": 391,
+  "time": "2026-11-07T11:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
     "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [],
-    "donna": [],
+    "donna": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "hal": [
-      "Rosa said to Hal: “Morning, Hal. I'm still working on getting you, Gary and Donna all at my table at once. Is there a night coming up that suits you?”"
+      "Rosa said to Hal: “Friday it is, Hal. Six o'clock at my place, and I'm making enough for an army. Now I'm off to pin Gary and Donna down so nobody weasels out.”",
+      "Donna just arrived."
     ],
     "rosa": [
-      "Hal said to Rosa: “Morning, Rosa. Just doing my rounds, counting birds and checking carts. Fair is fair, but the rules are the rules. Still on for Friday dinner?”"
+      "Hal said to Rosa: “Friday suits me fine, Rosa. I'll show up on time, and I'll behave if the others do. Leave the bird-counting and cart paperwork outside the door.”",
+      "Donna just arrived."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 302,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 6
-      },
       {
         "tick": 302,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -1018,19 +1017,14 @@
         "tick": 389,
         "text": "I waited: puttering around Gary's House",
         "importance": 5
+      },
+      {
+        "tick": 390,
+        "text": "I (gary toolbox): Sort spare fuses and connectors, prep mounting hardware for approval day",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 305,
-        "text": "Hal (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
-        "importance": 4
-      },
-      {
-        "tick": 305,
-        "text": "Rosa headed to Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 305,
         "text": "You arrived at Rosa's House.",
@@ -2020,24 +2014,19 @@
         "tick": 389,
         "text": "I (donna phone): Text Gary to offer a loaner paddle and a casual practice hit before Tuesday",
         "importance": 5
+      },
+      {
+        "tick": 390,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 390,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 302,
-        "text": "Gary just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 302,
-        "text": "Rosa just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 303,
-        "text": "I (donna flamingo flock): Raise binoculars and count how many flamingos are visible from the street",
-        "importance": 5
-      },
       {
         "tick": 303,
         "text": "Gary said to Rosa: “Afternoon, Rosa! Cart's all rigged up with lights and speakers, finally. If you've got anything that needs fixing or wiring for the parade, you just say the word.”",
@@ -3022,24 +3011,24 @@
         "tick": 389,
         "text": "Rosa said to Hal: “Morning, Hal. I'm still working on getting you, Gary and Donna all at my table at once. Is there a night coming up that suits you?”",
         "importance": 4
+      },
+      {
+        "tick": 390,
+        "text": "I said to Rosa: “Friday suits me fine, Rosa. I'll show up on time, and I'll behave if the others do. Leave the bird-counting and cart paperwork outside the door.”",
+        "importance": 4
+      },
+      {
+        "tick": 390,
+        "text": "Rosa said to Hal: “Friday it is, Hal. Six o'clock at my place, and I'm making enough for an army. Now I'm off to pin Gary and Donna down so nobody weasels out.”",
+        "importance": 4
+      },
+      {
+        "tick": 390,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 290,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02 in my notebook",
-        "importance": 4
-      },
-      {
-        "tick": 291,
-        "text": "I headed to Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 291,
-        "text": "Donna headed to Rec Center.",
-        "importance": 4
-      },
       {
         "tick": 291,
         "text": "Hal said to Donna: “Counted three from the street, Donna. L-02 is satisfied, and I'll note that you kept your word. Notebook's closed on the flamingos.”",
@@ -4024,6 +4013,21 @@
         "tick": 389,
         "text": "Hal said to Rosa: “Morning, Rosa. Just doing my rounds, counting birds and checking carts. Fair is fair, but the rules are the rules. Still on for Friday dinner?”",
         "importance": 5
+      },
+      {
+        "tick": 390,
+        "text": "I said to Hal: “Friday it is, Hal. Six o'clock at my place, and I'm making enough for an army. Now I'm off to pin Gary and Donna down so nobody weasels out.”",
+        "importance": 6
+      },
+      {
+        "tick": 390,
+        "text": "Hal said to Rosa: “Friday suits me fine, Rosa. I'll show up on time, and I'll behave if the others do. Leave the bird-counting and cart paperwork outside the door.”",
+        "importance": 6
+      },
+      {
+        "tick": 390,
+        "text": "Donna just arrived.",
+        "importance": 6
       }
     ]
   },
@@ -4070,10 +4074,10 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
-    "donna": "eager",
-    "hal": "gruff but warm",
-    "rosa": "warm, hopeful"
+    "gary": "restless",
+    "donna": "determined",
+    "hal": "content",
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -4207,10 +4211,19 @@
         "Hal said to Rosa: “Morning, Rosa. Just doing my rounds, counting birds and checking carts. Fair is fair, but the rules are the rules. Still on for Friday dinner?”",
         "Rosa said to Hal: “Morning, Hal. I'm still working on getting you, Gary and Donna all at my table at once. Is there a night coming up that suits you?”"
       ]
+    },
+    {
+      "tick": 390,
+      "time": "Saturday, November 7, 11:17 AM",
+      "story": "Saturday morning in Sumter Oaks is breezy and clear at 81 degrees, and Gary is at home sorting spare fuses and connectors in his toolbox, getting the mounting hardware ready for approval day while he frets a little about being ready. Donna, looking determined, is heading out onto Magnolia Loop. Hal is content out on the street, having just agreed with Rosa to come to her place Friday at six and promising to behave if the others do. Rosa, full of optimism, is off to pin Gary and Donna down so nobody backs out of the Friday plans.",
+      "dialogue": [
+        "Hal said to Rosa: “Friday suits me fine, Rosa. I'll show up on time, and I'll behave if the others do. Leave the bird-counting and cart paperwork outside the door.”",
+        "Rosa said to Hal: “Friday it is, Hal. Six o'clock at my place, and I'm making enough for an army. Now I'm off to pin Gary and Donna down so nobody weasels out.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 12.29534,
+    "total_usd": 12.32548,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4317,13 +4330,12 @@
         "usd": 0.46322
       },
       "2026-11-07": {
-        "ticks": 4,
-        "usd": 0.12347
+        "ticks": 5,
+        "usd": 0.15361
       }
     }
   },
   "recent_tick_costs": [
-    0.0337,
     0.03118,
     0.03341,
     0.03272,
@@ -4346,7 +4358,8 @@
     0.03137,
     0.03065,
     0.03115,
-    0.0303
+    0.0303,
+    0.03014
   ],
   "fund": {
     "gross_usd": 0.0,
