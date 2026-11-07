@@ -1,0 +1,118 @@
+{
+  "tick": 388,
+  "simulation_time": "Saturday, November 7, 9:17 AM",
+  "weather": "Breezy and clear, 80°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On a breezy, clear Saturday morning in Sumter Oaks, Gary is content as he powers up his golf cart's lights and speakers at his house and tests the full setup at low volume. Across the way, Donna is determined to lock in the Tuesday two-hour court slot in ink and note the ladder standings on her club calendar. Meanwhile, Hal and Rosa are both heading out onto Magnolia Loop, Hal with a dutiful air and Rosa in good spirits.",
+  "events": [
+    "Gary (gary golf cart): Power up the lights and speakers and test the full setup at low volume",
+    "Donna (donna club calendar): Check the Tuesday two-hour court slot is booked in ink and note the ladder standings",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm at home with the cart in the garage, lights wired and speakers mounted out of view of the street, which keeps me clear of L-01 until Architectural Review approves my request. The cornbread for Rosa is already wrapped and in the fridge, so that's handled. Nothing left to do with the wiring but test the full setup, so I'll run the lights and the sound system on the workbench, low volume, since it's morning and well outside the 10 PM cutoff. It keeps me useful and the parade is coming.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Power up the lights and speakers and test the full setup at low volume"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm home on a breezy Saturday morning with nobody around. I already packed the spare paddle and balls last tick, and the Tuesday court slot is penciled in for Gary. Rosa's dinner is tonight and the flamingos are hidden, so that's handled. The next useful step is the pickleball ladder. I should check the club calendar to make sure the Tuesday slot is in ink and see where we stand before I round up Gary for some practice so he's not a total novice by Tuesday.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check the Tuesday two-hour court slot is booked in ink and note the ladder standings"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've counted the flamingos, read the bulletin board, and logged it all in the notebook. Standing here alone on the porch accomplishes nothing. The architectural review committee meets at Town Hall, and my formal reports go there. Gary's cart mods and the flamingo count both need filing properly. But Magnolia Loop is the only connection from here, so I head out to the street first, check on Gary's cart in person, and then continue on to Town Hall. Donna was cooperative, so I'll give her a fair shake, but the paperwork on that cart needs squaring away.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to the street to inspect Gary's cart in person before I take my notes to Town Hall."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Saturday morning, the house is quiet, and the dinner is behind me. Last tick I packed up the leftovers and reset the kitchen. No neighbors are in sight, so there's no one to talk to right now. I haven't looked at the weekend with the schedule in the last hour beyond a quick check, but I've already done that at tick 386. The most useful thing is to go out onto Magnolia Loop and see who's around, since my real goal is building community, and a breezy clear morning is a good time to catch Gary, Donna, or Hal and thank them for coming.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out into the fresh morning to see who's about and thank the neighbors for last night."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03115,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9430,
+        "output_tokens": 1163,
+        "usd": 0.03049
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3281,
+        "output_tokens": 660,
+        "usd": 0.00066
+      }
+    }
+  }
+}
