@@ -1,6 +1,6 @@
 {
-  "tick": 395,
-  "time": "2026-11-07T15:17",
+  "tick": 396,
+  "time": "2026-11-07T16:17",
   "positions": {
     "gary": "garys_house",
     "donna": "rec_center",
@@ -9,29 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Rosa just arrived."
+      "Rosa said to Gary: “Gary, good, I caught you home. I'm hosting a welcome dinner Friday night and I want you at my table with Donna and Hal. Can I count on you? I'll even let you talk about the parade lights.”"
     ],
     "donna": [],
-    "hal": [
-      "Rosa headed to Gary's House."
-    ],
+    "hal": [],
     "rosa": [
-      "Hal (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge screens the rest",
-      "You arrived at Gary's House."
+      "Gary said to Rosa: “Rosa! Come on in, the cornbread batter's mixed and the oven's heating up. Want to see the cart while it bakes? Lights and speakers are still waiting on Architectural Review, but she's looking good.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 303,
-        "text": "Rosa said to Hal: “Hal, there you are! Coffee's hot on my porch, and Gary and Donna are welcome too. I want to talk through the Halloween decor deadline together before anybody's flamingos get dressed up.”",
-        "importance": 4
-      },
-      {
-        "tick": 304,
-        "text": "I headed to Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 304,
         "text": "Donna (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving exactly three visible from the street",
@@ -1021,14 +1008,19 @@
         "tick": 394,
         "text": "Rosa just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 395,
+        "text": "I said to Rosa: “Rosa! Come on in, the cornbread batter's mixed and the oven's heating up. Want to see the cart while it bakes? Lights and speakers are still waiting on Architectural Review, but she's looking good.”",
+        "importance": 4
+      },
+      {
+        "tick": 395,
+        "text": "Rosa said to Gary: “Gary, good, I caught you home. I'm hosting a welcome dinner Friday night and I want you at my table with Donna and Hal. Can I count on you? I'll even let you talk about the parade lights.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 309,
-        "text": "I (rosa dining table): Slide the casserole onto the table and take a seat",
-        "importance": 3
-      },
       {
         "tick": 309,
         "text": "Gary said to Rosa: “Table looks great, Rosa. After we eat, I'll grab my tools and get that porch string light plug sorted so it actually reaches.”",
@@ -2023,14 +2015,14 @@
         "tick": 394,
         "text": "I (court reservation kiosk): Reserve a two-hour Tuesday slot on a pickleball court for Gary and me",
         "importance": 6
+      },
+      {
+        "tick": 395,
+        "text": "I (ladder standings board): Study the ladder standings to see who Gary and I need to beat first",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 307,
-        "text": "I (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
-        "importance": 5
-      },
       {
         "tick": 308,
         "text": "I (donna flamingo flock): Raise binoculars and carefully count the flamingos visible from the street, noting the total in my log",
@@ -3025,19 +3017,14 @@
         "tick": 394,
         "text": "Rosa headed to Gary's House.",
         "importance": 4
+      },
+      {
+        "tick": 395,
+        "text": "I (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge screens the rest",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 296,
-        "text": "I headed to Town Square.",
-        "importance": 4
-      },
-      {
-        "tick": 296,
-        "text": "Hal said to Rosa: “Dinner was good, Rosa, and I'll say so out loud once. I'll take you up on that coffee tomorrow, and I'll bring my own mug, since I don't trust anyone's measurements but my own.”",
-        "importance": 4
-      },
       {
         "tick": 296,
         "text": "You arrived at Town Square.",
@@ -4027,6 +4014,16 @@
         "tick": 394,
         "text": "You arrived at Gary's House.",
         "importance": 6
+      },
+      {
+        "tick": 395,
+        "text": "I said to Gary: “Gary, good, I caught you home. I'm hosting a welcome dinner Friday night and I want you at my table with Donna and Hal. Can I count on you? I'll even let you talk about the parade lights.”",
+        "importance": 6
+      },
+      {
+        "tick": 395,
+        "text": "Gary said to Rosa: “Rosa! Come on in, the cornbread batter's mixed and the oven's heating up. Want to see the cart while it bakes? Lights and speakers are still waiting on Architectural Review, but she's looking good.”",
+        "importance": 6
       }
     ]
   },
@@ -4073,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "content",
+    "gary": "cheerful",
     "donna": "determined",
-    "hal": "grudgingly content",
-    "rosa": "determined"
+    "hal": "dutiful",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4201,9 +4198,19 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 395,
+      "time": "Saturday, November 7, 4:17 PM",
+      "story": "At 4:17 on a breezy Saturday afternoon in Sumter Oaks, Gary welcomes Rosa into his kitchen, where the cornbread is heading into the oven and his golf cart waits in the driveway with its lights and speakers still pending Architectural Review. Rosa, hopeful, asks him to join her welcome dinner Friday night with Donna and Hal, promising him a chance to talk about parade lights. Across town at the Rec Center, the determined Donna studies the ladder standings to plan which rivals she and Gary must beat first, while Hal, dutifully counting pink flamingos on Magnolia Loop, notes which ones the hedge hides from view.",
+      "dialogue": [
+        "Gary said to Rosa: “Rosa! Come on in, the cornbread batter's mixed and the oven's heating up. Want to see the cart while it bakes? Lights and speakers are still waiting on Architectural Review, but she's looking good.”",
+        "Rosa said to Gary: “Gary, good, I caught you home. I'm hosting a welcome dinner Friday night and I want you at my table with Donna and Hal. Can I count on you? I'll even let you talk about the parade lights.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 12.45365,
+    "total_usd": 12.48367,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4310,13 +4317,12 @@
         "usd": 0.46322
       },
       "2026-11-07": {
-        "ticks": 9,
-        "usd": 0.28178
+        "ticks": 10,
+        "usd": 0.3118
       }
     }
   },
   "recent_tick_costs": [
-    0.03163,
     0.03078,
     0.03097,
     0.03038,
@@ -4339,7 +4345,8 @@
     0.03145,
     0.03288,
     0.03244,
-    0.0314
+    0.0314,
+    0.03002
   ],
   "fund": {
     "gross_usd": 0.0,
