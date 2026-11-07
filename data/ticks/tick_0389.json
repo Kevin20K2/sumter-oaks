@@ -1,0 +1,117 @@
+{
+  "tick": 389,
+  "simulation_time": "Saturday, November 7, 10:17 AM",
+  "weather": "Breezy and clear, 80°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On a breezy, clear Saturday morning in Sumter Oaks, Gary putters around his house, focused on whatever he has in mind, while Donna sends him a text from her phone offering a loaner paddle and a casual practice hit before Tuesday. Out on Magnolia Loop, Hal makes his rounds counting birds and checking carts, and he and Rosa trade friendly words about Friday dinner. Rosa is hopeful about getting Hal, Gary, and Donna all seated at her table together, and Hal, gruff but warm, says the rules are the rules even as he asks if he's still on the invite.",
+  "events": [
+    "Gary waited: puttering around Gary's House",
+    "Donna (donna phone): Text Gary to offer a loaner paddle and a casual practice hit before Tuesday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "The lights and speakers tested fine at low volume last tick. The rig is all inside the garage, out of sight of the street, so I'm within L-01 while I wait on Architectural Review approval. It's 10 AM, nowhere near quiet hours. Before I call it done, I should give the wiring one more pass at the workbench and add a fuse and strain relief. A cart with lights and sound that nearly burns down the parade would be an embarrassment, and I've seen too many shoddy installs in my HVAC days.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "puttering around Gary's House"
+        }
+      },
+      "engine_note": "tried to use None, which isn't in garys_house"
+    },
+    "donna": {
+      "thought_process": "Nobody's around and it's a clear Saturday morning. I already confirmed the Tuesday two-hour court slot in ink and packed a spare paddle and balls for Gary, so those are done. Tuesday's coming up fast and Gary has never played, so rather than check the calendar again, I should get him on the court early. Maybe a quick Saturday practice hit so he's not a total beginner on ladder day. Easiest next step is to text him from my phone and offer a loaner paddle and a casual warm-up. It also keeps me at the center of the scene.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_phone",
+          "content": "Text Gary to offer a loaner paddle and a casual practice hit before Tuesday"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa just rolled up on Magnolia Loop, and I'm already on the street with my notebook and binoculars in my memory. I've been counting birds and watching for Gary's cart all morning, and I'm tired of being the neighborhood referee. Friday dinner at Rosa's is something I'm looking forward to, so a civil word with her is worth more than another count. I'll be straight with her that I'm keeping the books fair on the flamingos and the cart paperwork, and keep it friendly.",
+      "emotional_state": "gruff but warm",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Morning, Rosa. Just doing my rounds, counting birds and checking carts. Fair is fair, but the rules are the rules. Still on for Friday dinner?"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm on Magnolia Loop and Hal just walked up. My goal is a dinner with all three neighbors. My memories say Friday dinner, but it's Saturday now, so I shouldn't assume anything. Hal is steady and easy to talk to, and he's right here, so I'll greet him warmly and check in about the dinner plans, keeping it short and not pushing. I haven't said anything to him yet this tick.",
+      "emotional_state": "warm, hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Morning, Hal. I'm still working on getting you, Gary and Donna all at my table at once. Is there a night coming up that suits you?"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0303,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9339,
+        "output_tokens": 1147,
+        "usd": 0.03015
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 464,
+        "output_tokens": 202,
+        "usd": 0.00015
+      }
+    }
+  }
+}

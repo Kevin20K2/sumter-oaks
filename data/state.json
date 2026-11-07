@@ -1,6 +1,6 @@
 {
-  "tick": 389,
-  "time": "2026-11-07T09:17",
+  "tick": 390,
+  "time": "2026-11-07T10:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -11,21 +11,14 @@
     "gary": [],
     "donna": [],
     "hal": [
-      "You arrived at Magnolia Loop (the street).",
-      "Rosa just arrived."
+      "Rosa said to Hal: “Morning, Hal. I'm still working on getting you, Gary and Donna all at my table at once. Is there a night coming up that suits you?”"
     ],
     "rosa": [
-      "You arrived at Magnolia Loop (the street).",
-      "Hal just arrived."
+      "Hal said to Rosa: “Morning, Rosa. Just doing my rounds, counting birds and checking carts. Fair is fair, but the rules are the rules. Still on for Friday dinner?”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 301,
-        "text": "I (gary golf cart): Power up the lights and speakers off the cart battery, check every connection and mount, keep it all inside the garage",
-        "importance": 5
-      },
       {
         "tick": 302,
         "text": "I headed to Magnolia Loop (the street).",
@@ -1020,14 +1013,14 @@
         "tick": 388,
         "text": "I (gary golf cart): Power up the lights and speakers and test the full setup at low volume",
         "importance": 4
+      },
+      {
+        "tick": 389,
+        "text": "I waited: puttering around Gary's House",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 305,
-        "text": "I headed to Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 305,
         "text": "Hal (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
@@ -2022,19 +2015,14 @@
         "tick": 388,
         "text": "I (donna club calendar): Check the Tuesday two-hour court slot is booked in ink and note the ladder standings",
         "importance": 5
+      },
+      {
+        "tick": 389,
+        "text": "I (donna phone): Text Gary to offer a loaner paddle and a casual practice hit before Tuesday",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 302,
-        "text": "I said to Donna: “Afternoon, Donna. Parade's over, so about that thinning you promised. Section L-02 says three ornaments visible from the street, and I'd like to see that number on the lawn.”",
-        "importance": 5
-      },
-      {
-        "tick": 302,
-        "text": "Donna said to Hal: “Hal, good timing! I'm moving the extra flamingos behind the hedge right now, exactly three stay out front, just like I promised you.”",
-        "importance": 5
-      },
       {
         "tick": 302,
         "text": "Gary just arrived.",
@@ -3024,19 +3012,19 @@
         "tick": 388,
         "text": "Rosa just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 389,
+        "text": "I said to Rosa: “Morning, Rosa. Just doing my rounds, counting birds and checking carts. Fair is fair, but the rules are the rules. Still on for Friday dinner?”",
+        "importance": 4
+      },
+      {
+        "tick": 389,
+        "text": "Rosa said to Hal: “Morning, Hal. I'm still working on getting you, Gary and Donna all at my table at once. Is there a night coming up that suits you?”",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 290,
-        "text": "I said to Donna: “Looks like three and legal to me, Donna. Hal can put his notebook away and come get a cider on my porch once the parade wraps up.”",
-        "importance": 4
-      },
-      {
-        "tick": 290,
-        "text": "Donna said to Hal: “Hal, I tucked the extras behind the hedge like I promised. What's your count from the street, three? I'm heading to the Rec Center to catch Gary before the parade.”",
-        "importance": 4
-      },
       {
         "tick": 290,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02 in my notebook",
@@ -4026,6 +4014,16 @@
         "tick": 388,
         "text": "Hal just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 389,
+        "text": "I said to Hal: “Morning, Hal. I'm still working on getting you, Gary and Donna all at my table at once. Is there a night coming up that suits you?”",
+        "importance": 5
+      },
+      {
+        "tick": 389,
+        "text": "Hal said to Rosa: “Morning, Rosa. Just doing my rounds, counting birds and checking carts. Fair is fair, but the rules are the rules. Still on for Friday dinner?”",
+        "importance": 5
       }
     ]
   },
@@ -4072,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "determined",
-    "hal": "dutiful",
-    "rosa": "content"
+    "gary": "focused",
+    "donna": "eager",
+    "hal": "gruff but warm",
+    "rosa": "warm, hopeful"
   },
   "laws": [
     {
@@ -4200,9 +4198,19 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 389,
+      "time": "Saturday, November 7, 10:17 AM",
+      "story": "On a breezy, clear Saturday morning in Sumter Oaks, Gary putters around his house, focused on whatever he has in mind, while Donna sends him a text from her phone offering a loaner paddle and a casual practice hit before Tuesday. Out on Magnolia Loop, Hal makes his rounds counting birds and checking carts, and he and Rosa trade friendly words about Friday dinner. Rosa is hopeful about getting Hal, Gary, and Donna all seated at her table together, and Hal, gruff but warm, says the rules are the rules even as he asks if he's still on the invite.",
+      "dialogue": [
+        "Hal said to Rosa: “Morning, Rosa. Just doing my rounds, counting birds and checking carts. Fair is fair, but the rules are the rules. Still on for Friday dinner?”",
+        "Rosa said to Hal: “Morning, Hal. I'm still working on getting you, Gary and Donna all at my table at once. Is there a night coming up that suits you?”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 12.26504,
+    "total_usd": 12.29534,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4309,13 +4317,12 @@
         "usd": 0.46322
       },
       "2026-11-07": {
-        "ticks": 3,
-        "usd": 0.09317
+        "ticks": 4,
+        "usd": 0.12347
       }
     }
   },
   "recent_tick_costs": [
-    0.03503,
     0.0337,
     0.03118,
     0.03341,
@@ -4338,7 +4345,8 @@
     0.03043,
     0.03137,
     0.03065,
-    0.03115
+    0.03115,
+    0.0303
   ],
   "fund": {
     "gross_usd": 0.0,
