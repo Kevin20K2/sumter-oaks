@@ -1,0 +1,118 @@
+{
+  "tick": 387,
+  "simulation_time": "Saturday, November 7, 8:17 AM",
+  "weather": "Breezy and clear, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on a breezy, clear Saturday morning in Sumter Oaks, Gary is quietly wiring lights and speaker mounts into his golf cart inside his garage, out of the street's view. Across the way, Donna is packing a spare paddle and a few balls to lend him for a pickleball game, while Hal jots down the morning's flamingo count and notes on Gary's cart in his violation notebook. Back in her kitchen, Rosa is wrapping up leftovers and washing dishes, a little wistful as she resets the room for the day.",
+  "events": [
+    "Gary (gary golf cart): Run the light wiring and secure the speaker mounts inside the garage, out of view of the street",
+    "Donna (donna pickleball bag): Pack a spare paddle and a few balls so I can hand Gary a loaner",
+    "Hal (hal violation notebook): Log this morning's flamingo count and Gary's cart observations, with date and time",
+    "Rosa (rosa kitchen): Pack up the leftovers, wash the dishes, and reset the kitchen for the day"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's Saturday morning and I'm back home at the workbench. The request for the lights and speakers is filed, but I haven't heard back from Hal yet. Last tick I bench-tested the setup. Rather than park the cart out front and risk breaking L-01 before approval, I'll keep working in the garage, out of view of the street. Time to run the light wiring through the cart's frame and secure the speaker mounts so everything's ready the second approval lands. The cornbread's already wrapped for Rosa's dinner, so the afternoon is free for tinkering.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Run the light wiring and secure the speaker mounts inside the garage, out of view of the street"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm alone at home, and Gary just showed up in the neighborhood last tick. I already checked the calendar once, so rather than stare at it again I should grab my pickleball bag and be ready to give Gary a quick intro lesson on the courts. Nobody's around to talk to, so prep it is. Tuesday's two-hour slot is already inked in, and a spare paddle in hand is the best pitch I've got.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Pack a spare paddle and a few balls so I can hand Gary a loaner"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Nobody's around and it's a clear Saturday morning. I already scanned Magnolia Loop last tick and the street's quiet. Gary arrived at the street a couple ticks back, so his cart may be parked out front. The notebook is where my facts live, so before I say anything to anyone or file anything, I log what I've actually observed. Dinner at Rosa's with Donna is tonight; I want the paperwork squared away and the flamingo count settled, so everything stays fair and civil.",
+      "emotional_state": "watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Log this morning's flamingo count and Gary's cart observations, with date and time"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Saturday 8:17 AM, and my memories keep treating the dinner as tonight or imminent, but the dinner was Friday and I've been waiting for guests who clearly aren't coming this morning. Nobody is in line-of-sight. I just checked the shift schedule last tick, so no need to check it again. The practical thing is to deal with the kitchen: the sides I kept warm are leftovers by now, and I should clean up, pack away food, and get the house reset. After that I can think about reaching out to Gary, Donna, and Hal and planning a proper table with all three of them.",
+      "emotional_state": "pragmatic, a little wistful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Pack up the leftovers, wash the dishes, and reset the kitchen for the day"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03065,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9486,
+        "output_tokens": 1155,
+        "usd": 0.03052
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 431,
+        "output_tokens": 183,
+        "usd": 0.00013
+      }
+    }
+  }
+}
