@@ -1,6 +1,6 @@
 {
-  "tick": 391,
-  "time": "2026-11-07T11:17",
+  "tick": 392,
+  "time": "2026-11-07T12:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
@@ -10,24 +10,20 @@
   "perceptions": {
     "gary": [],
     "donna": [
-      "You arrived at Magnolia Loop (the street)."
+      "Hal said to Donna: “Afternoon, Donna. Rosa's got us all down for Friday at six, so I'd like to be able to eat in peace. Get the street-facing flamingos down to three and I'll call it settled.”",
+      "Rosa said to Donna: “Donna, just the woman I wanted. Hal's already in for Friday at six at my place, so I need you at that table too. Say yes and bring your deviled eggs, no excuses.”"
     ],
     "hal": [
-      "Rosa said to Hal: “Friday it is, Hal. Six o'clock at my place, and I'm making enough for an army. Now I'm off to pin Gary and Donna down so nobody weasels out.”",
-      "Donna just arrived."
+      "Donna said to Rosa: “Rosa, there you are! I'm counting the hours till your dinner tonight. What can I bring, a salad, dessert, an extra pair of hands?”",
+      "Rosa said to Donna: “Donna, just the woman I wanted. Hal's already in for Friday at six at my place, so I need you at that table too. Say yes and bring your deviled eggs, no excuses.”"
     ],
     "rosa": [
-      "Hal said to Rosa: “Friday suits me fine, Rosa. I'll show up on time, and I'll behave if the others do. Leave the bird-counting and cart paperwork outside the door.”",
-      "Donna just arrived."
+      "Donna said to Rosa: “Rosa, there you are! I'm counting the hours till your dinner tonight. What can I bring, a salad, dessert, an extra pair of hands?”",
+      "Hal said to Donna: “Afternoon, Donna. Rosa's got us all down for Friday at six, so I'd like to be able to eat in peace. Get the street-facing flamingos down to three and I'll call it settled.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 302,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
       {
         "tick": 302,
         "text": "Rosa just arrived.",
@@ -1022,24 +1018,14 @@
         "tick": 390,
         "text": "I (gary toolbox): Sort spare fuses and connectors, prep mounting hardware for approval day",
         "importance": 4
+      },
+      {
+        "tick": 391,
+        "text": "I (gary fridge): Make a quick lunch and check if I have cornmeal and buttermilk for the cornbread",
+        "importance": 2
       }
     ],
     "donna": [
-      {
-        "tick": 305,
-        "text": "You arrived at Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 305,
-        "text": "Rosa just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 306,
-        "text": "I said to Gary: “Gary, those third-shot drops today were gorgeous, you're a natural. Let's book the court for Tuesday morning, two hours sharp, and I'll sign us up on the ladder.”",
-        "importance": 5
-      },
       {
         "tick": 306,
         "text": "Gary (rosa dining table): Test the porch light plug and measure the run for the heavy-duty extension cord",
@@ -2024,24 +2010,24 @@
         "tick": 390,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 391,
+        "text": "I said to Rosa: “Rosa, there you are! I'm counting the hours till your dinner tonight. What can I bring, a salad, dessert, an extra pair of hands?”",
+        "importance": 4
+      },
+      {
+        "tick": 391,
+        "text": "Hal said to Donna: “Afternoon, Donna. Rosa's got us all down for Friday at six, so I'd like to be able to eat in peace. Get the street-facing flamingos down to three and I'll call it settled.”",
+        "importance": 4
+      },
+      {
+        "tick": 391,
+        "text": "Rosa said to Donna: “Donna, just the woman I wanted. Hal's already in for Friday at six at my place, so I need you at that table too. Say yes and bring your deviled eggs, no excuses.”",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 303,
-        "text": "Gary said to Rosa: “Afternoon, Rosa! Cart's all rigged up with lights and speakers, finally. If you've got anything that needs fixing or wiring for the parade, you just say the word.”",
-        "importance": 5
-      },
-      {
-        "tick": 303,
-        "text": "Donna (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving exactly three visible from the street",
-        "importance": 5
-      },
-      {
-        "tick": 303,
-        "text": "Rosa said to Hal: “Hal, there you are! Coffee's hot on my porch, and Gary and Donna are welcome too. I want to talk through the Halloween decor deadline together before anybody's flamingos get dressed up.”",
-        "importance": 5
-      },
       {
         "tick": 304,
         "text": "I said to Rosa: “Coffee's fine, Rosa, I'll bring my own mug. Count's three flamingos from the street, so Donna and I are square for today. Gary and I will have a word about that cart's paperwork over the pot.”",
@@ -3026,24 +3012,24 @@
         "tick": 390,
         "text": "Donna just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 391,
+        "text": "I said to Donna: “Afternoon, Donna. Rosa's got us all down for Friday at six, so I'd like to be able to eat in peace. Get the street-facing flamingos down to three and I'll call it settled.”",
+        "importance": 6
+      },
+      {
+        "tick": 391,
+        "text": "Donna said to Rosa: “Rosa, there you are! I'm counting the hours till your dinner tonight. What can I bring, a salad, dessert, an extra pair of hands?”",
+        "importance": 6
+      },
+      {
+        "tick": 391,
+        "text": "Rosa said to Donna: “Donna, just the woman I wanted. Hal's already in for Friday at six at my place, so I need you at that table too. Say yes and bring your deviled eggs, no excuses.”",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 291,
-        "text": "Hal said to Donna: “Counted three from the street, Donna. L-02 is satisfied, and I'll note that you kept your word. Notebook's closed on the flamingos.”",
-        "importance": 4
-      },
-      {
-        "tick": 291,
-        "text": "You arrived at Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 292,
-        "text": "I (rosa kitchen): Grab the bagged Halloween treats and set them by the door for the parade",
-        "importance": 4
-      },
       {
         "tick": 292,
         "text": "Town news: Trick-or-treaters are out on Magnolia Loop: visiting grandkids in costumes, golf carts trimmed in orange, and doorbells ringing up and down the street.",
@@ -4028,6 +4014,21 @@
         "tick": 390,
         "text": "Donna just arrived.",
         "importance": 6
+      },
+      {
+        "tick": 391,
+        "text": "I said to Donna: “Donna, just the woman I wanted. Hal's already in for Friday at six at my place, so I need you at that table too. Say yes and bring your deviled eggs, no excuses.”",
+        "importance": 6
+      },
+      {
+        "tick": 391,
+        "text": "Donna said to Rosa: “Rosa, there you are! I'm counting the hours till your dinner tonight. What can I bring, a salad, dessert, an extra pair of hands?”",
+        "importance": 6
+      },
+      {
+        "tick": 391,
+        "text": "Hal said to Donna: “Afternoon, Donna. Rosa's got us all down for Friday at six, so I'd like to be able to eat in peace. Get the street-facing flamingos down to three and I'll call it settled.”",
+        "importance": 6
       }
     ]
   },
@@ -4074,10 +4075,10 @@
     ]
   },
   "emotions": {
-    "gary": "restless",
-    "donna": "determined",
-    "hal": "content",
-    "rosa": "optimistic"
+    "gary": "patient",
+    "donna": "cheerful",
+    "hal": "wary but fair",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4220,10 +4221,20 @@
         "Hal said to Rosa: “Friday suits me fine, Rosa. I'll show up on time, and I'll behave if the others do. Leave the bird-counting and cart paperwork outside the door.”",
         "Rosa said to Hal: “Friday it is, Hal. Six o'clock at my place, and I'm making enough for an army. Now I'm off to pin Gary and Donna down so nobody weasels out.”"
       ]
+    },
+    {
+      "tick": 391,
+      "time": "Saturday, November 7, 12:17 PM",
+      "story": "At twelve seventeen on a breezy, clear Saturday in Sumter Oaks, Gary is in his kitchen checking his fridge for cornmeal and buttermilk while he puts together a quick lunch. Out on Magnolia Loop, Donna is cheerfully offering Rosa a salad, dessert, or an extra pair of hands for Friday's dinner, but Hal, wary yet fair, has a condition: he wants the street-facing flamingos cut down to three before he'll call it settled. Rosa, hopeful as ever, pushes back by inviting Donna to the table along with her deviled eggs, leaving the neighbors to sort out the flamingo question over the weekend.",
+      "dialogue": [
+        "Donna said to Rosa: “Rosa, there you are! I'm counting the hours till your dinner tonight. What can I bring, a salad, dessert, an extra pair of hands?”",
+        "Hal said to Donna: “Afternoon, Donna. Rosa's got us all down for Friday at six, so I'd like to be able to eat in peace. Get the street-facing flamingos down to three and I'll call it settled.”",
+        "Rosa said to Donna: “Donna, just the woman I wanted. Hal's already in for Friday at six at my place, so I need you at that table too. Say yes and bring your deviled eggs, no excuses.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 12.32548,
+    "total_usd": 12.35693,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4330,13 +4341,12 @@
         "usd": 0.46322
       },
       "2026-11-07": {
-        "ticks": 5,
-        "usd": 0.15361
+        "ticks": 6,
+        "usd": 0.18506
       }
     }
   },
   "recent_tick_costs": [
-    0.03118,
     0.03341,
     0.03272,
     0.03352,
@@ -4359,7 +4369,8 @@
     0.03065,
     0.03115,
     0.0303,
-    0.03014
+    0.03014,
+    0.03145
   ],
   "fund": {
     "gross_usd": 0.0,

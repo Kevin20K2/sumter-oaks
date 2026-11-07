@@ -1,0 +1,115 @@
+{
+  "tick": 391,
+  "simulation_time": "Saturday, November 7, 12:17 PM",
+  "weather": "Breezy and clear, 82°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At twelve seventeen on a breezy, clear Saturday in Sumter Oaks, Gary is in his kitchen checking his fridge for cornmeal and buttermilk while he puts together a quick lunch. Out on Magnolia Loop, Donna is cheerfully offering Rosa a salad, dessert, or an extra pair of hands for Friday's dinner, but Hal, wary yet fair, has a condition: he wants the street-facing flamingos cut down to three before he'll call it settled. Rosa, hopeful as ever, pushes back by inviting Donna to the table along with her deviled eggs, leaving the neighbors to sort out the flamingo question over the weekend.",
+  "events": [
+    "Gary (gary fridge): Make a quick lunch and check if I have cornmeal and buttermilk for the cornbread"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've already wired, tested, and mounted everything inside the garage, and the approval request is filed with the Architectural Review desk. Nothing more I can do on the cart without approval, and nobody's around to talk to. I've been puttering for a few ticks, and Rosa's dinner is Friday, not today. The fridge is right here, and it's lunchtime. A sandwich keeps me fed, and I can think about the cornbread ingredients while I'm at it. Then I'll check on the approval status later.",
+      "emotional_state": "patient",
+      "importance_rating": 2,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_fridge",
+          "content": "Make a quick lunch and check if I have cornmeal and buttermilk for the cornbread"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just got to Magnolia Loop and Hal and Rosa are both here, with my flamingo flock right behind me. Hal has been counting those flamingos, and I already hid the extras behind the hedge. Rosa's dinner is tonight, so a warm word to her builds goodwill and keeps me at the center of things. I haven't talked to either of them this tick and I'm not repeating anything from my memories, so I'll greet Rosa about Friday dinner and offer to bring something. Gary can wait until I've got the loaner paddle sorted.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, there you are! I'm counting the hours till your dinner tonight. What can I bring, a salad, dessert, an extra pair of hands?"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa just left to wrangle Gary and Donna, and Donna's arrived right on cue. Friday's settled, so I don't need to ask again. I've spent a lot of ticks counting birds; the flock is right here and the L-02 limit is three. Donna's been trying to bring the count down and I told myself I'd be fair. A civil, direct word about the count, with a nod to Friday dinner, keeps the friendship and my sense of order intact. No ambush, no paperwork waved in her face.",
+      "emotional_state": "wary but fair",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Afternoon, Donna. Rosa's got us all down for Friday at six, so I'd like to be able to eat in peace. Get the street-facing flamingos down to three and I'll call it settled."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal is already locked in for Friday at six. Donna just walked up, so this is my chance to pin her down while Hal is standing right here and can't weasel out either. I shouldn't re-ask Hal. Keep it short, warm, and specific: Friday, six, my place, and make it easy for her to say yes.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna, just the woman I wanted. Hal's already in for Friday at six at my place, so I need you at that table too. Say yes and bring your deviled eggs, no excuses."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03145,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9832,
+        "output_tokens": 1162,
+        "usd": 0.03128
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 538,
+        "output_tokens": 229,
+        "usd": 0.00017
+      }
+    }
+  }
+}
