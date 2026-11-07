@@ -1,40 +1,27 @@
 {
-  "tick": 394,
-  "time": "2026-11-07T14:17",
+  "tick": 395,
+  "time": "2026-11-07T15:17",
   "positions": {
     "gary": "garys_house",
     "donna": "rec_center",
     "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "rosa": "garys_house"
   },
   "perceptions": {
-    "gary": [],
-    "donna": [
-      "Hal (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge actually screens the rest",
-      "Rosa said to Hal: “Hal, Donna says the extras are behind the hedge, so you can put the clipboard down. Save that appetite for Friday, and I'll save the head of the table for you.”",
-      "You arrived at Rec Center."
+    "gary": [
+      "Rosa just arrived."
     ],
+    "donna": [],
     "hal": [
-      "Donna headed to Rec Center.",
-      "Rosa said to Hal: “Hal, Donna says the extras are behind the hedge, so you can put the clipboard down. Save that appetite for Friday, and I'll save the head of the table for you.”"
+      "Rosa headed to Gary's House."
     ],
     "rosa": [
-      "Donna headed to Rec Center.",
-      "Hal (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge actually screens the rest"
+      "Hal (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge screens the rest",
+      "You arrived at Gary's House."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 303,
-        "text": "Donna (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving exactly three visible from the street",
-        "importance": 4
-      },
-      {
-        "tick": 303,
-        "text": "Hal (donna flamingo flock): Raise binoculars and count how many flamingos are visible from the street",
-        "importance": 4
-      },
       {
         "tick": 303,
         "text": "Rosa said to Hal: “Hal, there you are! Coffee's hot on my porch, and Gary and Donna are welcome too. I want to talk through the Halloween decor deadline together before anybody's flamingos get dressed up.”",
@@ -1024,14 +1011,19 @@
         "tick": 393,
         "text": "I (gary fridge): Check for buttermilk and eggs, then set out cornmeal and start the cornbread batter for Rosa's dinner",
         "importance": 4
+      },
+      {
+        "tick": 394,
+        "text": "I waited: puttering around Gary's House",
+        "importance": 4
+      },
+      {
+        "tick": 394,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 308,
-        "text": "Rosa said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”",
-        "importance": 3
-      },
       {
         "tick": 309,
         "text": "I (rosa dining table): Slide the casserole onto the table and take a seat",
@@ -2026,19 +2018,14 @@
         "tick": 393,
         "text": "You arrived at Rec Center.",
         "importance": 5
+      },
+      {
+        "tick": 394,
+        "text": "I (court reservation kiosk): Reserve a two-hour Tuesday slot on a pickleball court for Gary and me",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 305,
-        "text": "Rosa headed to Rosa's House.",
-        "importance": 5
-      },
-      {
-        "tick": 306,
-        "text": "I (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
-        "importance": 5
-      },
       {
         "tick": 307,
         "text": "I (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
@@ -3028,24 +3015,19 @@
         "tick": 393,
         "text": "Rosa said to Hal: “Hal, Donna says the extras are behind the hedge, so you can put the clipboard down. Save that appetite for Friday, and I'll save the head of the table for you.”",
         "importance": 4
+      },
+      {
+        "tick": 394,
+        "text": "I (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge screens the rest",
+        "importance": 4
+      },
+      {
+        "tick": 394,
+        "text": "Rosa headed to Gary's House.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 294,
-        "text": "Town news: The costume contest is starting at the Town Square bandstand. A judge with a clipboard is calling for entries: best costume and best-decorated golf cart.",
-        "importance": 8
-      },
-      {
-        "tick": 295,
-        "text": "I said to Hal: “Hal, glad I caught you! Thank you for coming to dinner. The costume contest is starting at the Town Square if you want to see the carts, and there's coffee on my porch tomorrow if you're up for it.”",
-        "importance": 5
-      },
-      {
-        "tick": 295,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street, notebook in hand",
-        "importance": 5
-      },
       {
         "tick": 296,
         "text": "I headed to Town Square.",
@@ -4030,6 +4012,21 @@
         "tick": 393,
         "text": "Hal (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge actually screens the rest",
         "importance": 5
+      },
+      {
+        "tick": 394,
+        "text": "I headed to Gary's House.",
+        "importance": 6
+      },
+      {
+        "tick": 394,
+        "text": "Hal (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge screens the rest",
+        "importance": 6
+      },
+      {
+        "tick": 394,
+        "text": "You arrived at Gary's House.",
+        "importance": 6
       }
     ]
   },
@@ -4077,9 +4074,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "upbeat",
-    "hal": "grudgingly amused",
-    "rosa": "warm, optimistic"
+    "donna": "determined",
+    "hal": "grudgingly content",
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -4204,55 +4201,9 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 389,
-      "time": "Saturday, November 7, 10:17 AM",
-      "story": "On a breezy, clear Saturday morning in Sumter Oaks, Gary putters around his house, focused on whatever he has in mind, while Donna sends him a text from her phone offering a loaner paddle and a casual practice hit before Tuesday. Out on Magnolia Loop, Hal makes his rounds counting birds and checking carts, and he and Rosa trade friendly words about Friday dinner. Rosa is hopeful about getting Hal, Gary, and Donna all seated at her table together, and Hal, gruff but warm, says the rules are the rules even as he asks if he's still on the invite.",
-      "dialogue": [
-        "Hal said to Rosa: “Morning, Rosa. Just doing my rounds, counting birds and checking carts. Fair is fair, but the rules are the rules. Still on for Friday dinner?”",
-        "Rosa said to Hal: “Morning, Hal. I'm still working on getting you, Gary and Donna all at my table at once. Is there a night coming up that suits you?”"
-      ]
-    },
-    {
-      "tick": 390,
-      "time": "Saturday, November 7, 11:17 AM",
-      "story": "Saturday morning in Sumter Oaks is breezy and clear at 81 degrees, and Gary is at home sorting spare fuses and connectors in his toolbox, getting the mounting hardware ready for approval day while he frets a little about being ready. Donna, looking determined, is heading out onto Magnolia Loop. Hal is content out on the street, having just agreed with Rosa to come to her place Friday at six and promising to behave if the others do. Rosa, full of optimism, is off to pin Gary and Donna down so nobody backs out of the Friday plans.",
-      "dialogue": [
-        "Hal said to Rosa: “Friday suits me fine, Rosa. I'll show up on time, and I'll behave if the others do. Leave the bird-counting and cart paperwork outside the door.”",
-        "Rosa said to Hal: “Friday it is, Hal. Six o'clock at my place, and I'm making enough for an army. Now I'm off to pin Gary and Donna down so nobody weasels out.”"
-      ]
-    },
-    {
-      "tick": 391,
-      "time": "Saturday, November 7, 12:17 PM",
-      "story": "At twelve seventeen on a breezy, clear Saturday in Sumter Oaks, Gary is in his kitchen checking his fridge for cornmeal and buttermilk while he puts together a quick lunch. Out on Magnolia Loop, Donna is cheerfully offering Rosa a salad, dessert, or an extra pair of hands for Friday's dinner, but Hal, wary yet fair, has a condition: he wants the street-facing flamingos cut down to three before he'll call it settled. Rosa, hopeful as ever, pushes back by inviting Donna to the table along with her deviled eggs, leaving the neighbors to sort out the flamingo question over the weekend.",
-      "dialogue": [
-        "Donna said to Rosa: “Rosa, there you are! I'm counting the hours till your dinner tonight. What can I bring, a salad, dessert, an extra pair of hands?”",
-        "Hal said to Donna: “Afternoon, Donna. Rosa's got us all down for Friday at six, so I'd like to be able to eat in peace. Get the street-facing flamingos down to three and I'll call it settled.”",
-        "Rosa said to Donna: “Donna, just the woman I wanted. Hal's already in for Friday at six at my place, so I need you at that table too. Say yes and bring your deviled eggs, no excuses.”"
-      ]
-    },
-    {
-      "tick": 392,
-      "time": "Saturday, November 7, 1:17 PM",
-      "story": "On a breezy, clear Saturday afternoon in Sumter Oaks, Gary putters around his house while content as ever, not far from the street. Over on Magnolia Loop, Donna is cheerful as she promises Rosa her deviled eggs for Friday's supper at six, teasing that the extra flamingos are already hidden behind the hedge. Hal, dutifully counting the pink birds against the community's three-ornament limit, looks less amused, while warm and amused Rosa tells Donna not to let Hal rattle her and that they'll sort out the flamingo problem over supper.",
-      "dialogue": [
-        "Donna said to Rosa: “Yes, Rosa, wild horses couldn't keep me away, and the deviled eggs are a done deal. And Hal, dear, the extra flamingos are behind the hedge as we speak, so you can stop counting and just bring your appetite.”",
-        "Rosa said to Donna: “Deviled eggs, Donna, that's all I need. Just you and those eggs at my table Friday at six, I've got the rest. And don't let Hal rattle you about the flamingos, we'll sort that out over supper.”"
-      ]
-    },
-    {
-      "tick": 393,
-      "time": "Saturday, November 7, 2:17 PM",
-      "story": "On Saturday afternoon in Sumter Oaks, Gary is at home checking his fridge for buttermilk and eggs so he can start cornbread batter for Rosa's dinner. Donna is cheerfully on her way to the Rec Center, while Hal stands on Magnolia Loop counting the pink flamingos Donna has arranged along the street and grumbling a little about whether the hedge hides the rest. Rosa, warm as the breeze, tells Hal to put his clipboard down, promising him the head of the table on Friday if he saves his appetite.",
-      "dialogue": [
-        "Rosa said to Hal: “Hal, Donna says the extras are behind the hedge, so you can put the clipboard down. Save that appetite for Friday, and I'll save the head of the table for you.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 12.42225,
+    "total_usd": 12.45365,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4359,13 +4310,12 @@
         "usd": 0.46322
       },
       "2026-11-07": {
-        "ticks": 8,
-        "usd": 0.25038
+        "ticks": 9,
+        "usd": 0.28178
       }
     }
   },
   "recent_tick_costs": [
-    0.03352,
     0.03163,
     0.03078,
     0.03097,
@@ -4388,7 +4338,8 @@
     0.03014,
     0.03145,
     0.03288,
-    0.03244
+    0.03244,
+    0.0314
   ],
   "fund": {
     "gross_usd": 0.0,
