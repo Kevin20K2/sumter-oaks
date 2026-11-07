@@ -1,0 +1,117 @@
+{
+  "tick": 385,
+  "simulation_time": "Friday, November 6, 9:17 PM",
+  "weather": "Sunny, 75°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On Friday night at 9:17 in Sumter Oaks, the sun is still warm at 75 degrees as Gary heads out toward Magnolia Loop in his cheerful mood. Donna, relieved and upbeat, thanks Hal for keeping his word and teases that she's already spreading word of Gary's pickleball skills. Hal, dutiful as ever, checks the street bulletin board for any Architectural Review notice about Gary's golf cart, while Rosa, hopeful, turns her kitchen burners low and keeps dinner warm for the guests on the way.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Hal (street bulletin board): Read the postings for any Architectural Review notice on Gary's cart",
+    "Rosa (rosa kitchen): Turn the burners down low, cover the sides, and keep dinner warm until the guests arrive"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "The cornbread is wrapped and ready for Rosa's dinner, and it's 9:17 PM. Dinner is tonight, so I should head out now. The cart mods are filed and awaiting review, so I won't touch the exterior or fire up the sound system with quiet hours coming at 10. Time to take the cornbread to Rosa's, starting by heading out to Magnolia Loop.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with the wrapped cornbread to get to Rosa's dinner."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal just confirmed three flamingos and no report, so that worry is settled. He's standing right there, which is a perfect moment to be gracious and keep the goodwill going. Rosa's dinner is tonight, so I should keep things friendly. And my real goal is the pickleball ladder, so I can plant a seed that Hal's a regular at the courts and might help me talk up Gary as a partner. Keep it short, thank him, and nudge toward the social stuff rather than repeating anything I've already said.",
+      "emotional_state": "relieved, upbeat",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Bless you, Hal, I knew you were a man of your word. See you at Rosa's tonight, and if you hear anyone say Gary's a natural on the pickleball court, that's me starting the rumor early."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna's flock is at three, I already counted and told her so at Tick 384. No sense repeating myself. It's past nine on a Friday night and Rosa's dinner is the plan. Gary's cart paperwork is still the loose end on my list, and the street bulletin board is where I can check for any Architectural Review notices or postings about his cart before I take it up with the committee. A supply sergeant verifies the records first.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the postings for any Architectural Review notice on Gary's cart"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 9:17 PM on Friday and nobody has shown up yet. I've fussed with the sides, the napkins, and the centerpiece for the last few ticks, and everything is ready. The food needs to stay warm and I can't do much more, so I'll keep tending the kitchen and listen for the doorbell. Quiet hours don't matter indoors, and I'd rather stay put than wander off and miss them when they arrive.",
+      "emotional_state": "hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Turn the burners down low, cover the sides, and keep dinner warm until the guests arrive"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03043,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9731,
+        "output_tokens": 1083,
+        "usd": 0.03029
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 459,
+        "output_tokens": 190,
+        "usd": 0.00014
+      }
+    }
+  }
+}
