@@ -1,0 +1,118 @@
+{
+  "tick": 405,
+  "simulation_time": "Sunday, November 8, 11:17 AM",
+  "weather": "Humid and hazy, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary has set out for Magnolia Loop, restless but hopeful, under a hazy, humid sky at 76 degrees on a quiet Sunday morning. Donna is out on the street counting and straightening her pink flamingo flock with a cheerful eye, determined that no one will have a complaint. Hal is resting on his porch with his notebook shut, content to let the day pass and keep his word until Monday. Rosa, equally determined, is looking over her shift schedule to find the first open morning so she can finally sit down for coffee with Hal, written in ink this time.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Donna (donna flamingo flock): Count the flamingos visible from the street and straighten the flock so no one can complain",
+    "Hal waited: Resting on the porch with the notebook closed, letting a quiet Sunday go by and keeping my word until Monday.",
+    "Rosa (rosa shift schedule): Pick the first morning with no per-diem shift and write in coffee with Hal, in ink this time"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've been tinkering in the garage for hours, and the harness is labeled, installed, and tested at low volume. Nothing left to fiddle with until Architectural Review answers, and law L-01 says I can't put it on the street until they approve. Nobody's around to talk to, and I keep re-checking the same connections. Time to leave the cart alone and get out on Magnolia Loop. Maybe I'll run into Rosa, Donna, or Hal, and I'm not much good to anyone sitting in the garage staring at wires.",
+      "emotional_state": "restless, hopeful",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Wiring's done and tested. Going to stretch my legs on the street and see if any neighbors are out."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm on Magnolia Loop with no one nearby. I've already penciled in the Tuesday court, packed Gary's spare paddle, and texted him, so I shouldn't repeat that. The flamingos are finally under the L-02 limit and I want to make sure it stays that way, especially with Hal eyeing them. Checking the flock gives me a quick bit of upkeep, and Gary's reply or Hal's teasing might come along while I'm out here.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and straighten the flock so no one can complain"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I gave my word about the notebook until Monday, and a sergeant keeps his word. It's Sunday midday, the street's quiet, nobody around to talk to. I've watched enough for one morning. Rosa's Friday dinner is already behind us and the squabbling can wait. Best thing to do is sit tight on the porch, enjoy the haze, and let the neighborhood be for a day. Monday the committee gets its report, fair and square.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Resting on the porch with the notebook closed, letting a quiet Sunday go by and keeping my word until Monday."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've looked at the shift schedule three or four times now and kept saying I'd pencil in coffee with Hal, but I never actually wrote anything down. I'm done circling. It's Sunday late morning and nobody's around, so this is the quiet moment to commit: check which mornings are free of per-diem shifts and put Hal in ink. Then I can turn my attention to Friday's table setup, since dinner is the real goal and all three neighbors are coming.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Pick the first morning with no per-diem shift and write in coffee with Hal, in ink this time"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03015,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9469,
+        "output_tokens": 1108,
+        "usd": 0.03002
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 423,
+        "output_tokens": 185,
+        "usd": 0.00013
+      }
+    }
+  }
+}

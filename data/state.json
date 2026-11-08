@@ -1,32 +1,24 @@
 {
-  "tick": 405,
-  "time": "2026-11-08T10:17",
+  "tick": 406,
+  "time": "2026-11-08T11:17",
   "positions": {
-    "gary": "garys_house",
+    "gary": "magnolia_loop",
     "donna": "magnolia_loop",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
-    "donna": [
+    "gary": [
       "You arrived at Magnolia Loop (the street)."
+    ],
+    "donna": [
+      "Gary just arrived."
     ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 307,
-        "text": "Rosa (rosa dining table): Set out plates, napkins and four chairs, saving a spot for Hal",
-        "importance": 4
-      },
-      {
-        "tick": 308,
-        "text": "I (rosa dining table): Straighten the chairs and make sure Hal's spot is ready",
-        "importance": 3
-      },
       {
         "tick": 308,
         "text": "Donna (rosa kitchen): Peel the foil off the casserole and set out serving spoons",
@@ -1016,19 +1008,19 @@
         "tick": 404,
         "text": "I (gary golf cart): Do a final check of the light strips and speaker connections, keeping it low volume inside the garage",
         "importance": 4
+      },
+      {
+        "tick": 405,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 405,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 319,
-        "text": "Gary said to Donna: “Coffee at Rosa's sounds great, Donna, lead the way. I'll grab my tool bag too, her porch lights need a longer plug. And you can tell me how this Architectural Review business works for my cart.”",
-        "importance": 4
-      },
-      {
-        "tick": 319,
-        "text": "Hal said to Gary: “You heard right, Gary. L-01 says anything visible from the street needs Architectural Review approval before it goes on the cart. Put your lights and speaker in a written request and I'll walk it over with you. Rosa's porch is a fine place to start the paperwork.”",
-        "importance": 4
-      },
       {
         "tick": 320,
         "text": "I headed to Rosa's House.",
@@ -2018,14 +2010,19 @@
         "tick": 404,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 405,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and straighten the flock so no one can complain",
+        "importance": 4
+      },
+      {
+        "tick": 405,
+        "text": "Gary just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 319,
-        "text": "Gary said to Donna: “Coffee at Rosa's sounds great, Donna, lead the way. I'll grab my tool bag too, her porch lights need a longer plug. And you can tell me how this Architectural Review business works for my cart.”",
-        "importance": 5
-      },
       {
         "tick": 319,
         "text": "Donna said to Gary: “Gary, hon, anything bolted on your cart that shows from the street needs Architectural Review, so file it before you cruise around with those lights. Plug-in decorations you can take off are a safer bet, and I'll happily help with the form over coffee at Rosa's.”",
@@ -3020,14 +3017,14 @@
         "tick": 404,
         "text": "I waited: Finishing my coffee on the porch and keeping the notebook closed until Monday, as promised.",
         "importance": 2
+      },
+      {
+        "tick": 405,
+        "text": "I waited: Resting on the porch with the notebook closed, letting a quiet Sunday go by and keeping my word until Monday.",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 305,
-        "text": "Donna just arrived.",
-        "importance": 5
-      },
       {
         "tick": 306,
         "text": "I said to Donna: “Donna, you can set that casserole right on the kitchen counter, I'll get the table laid out. Gary, would you mind grabbing the chairs while we wait on Hal?”",
@@ -4022,6 +4019,11 @@
         "tick": 404,
         "text": "I (rosa shift schedule): Find a morning without a per-diem shift and write in coffee with Hal",
         "importance": 4
+      },
+      {
+        "tick": 405,
+        "text": "I (rosa shift schedule): Pick the first morning with no per-diem shift and write in coffee with Hal, in ink this time",
+        "importance": 5
       }
     ]
   },
@@ -4068,8 +4070,8 @@
     ]
   },
   "emotions": {
-    "gary": "hopeful",
-    "donna": "determined",
+    "gary": "restless, hopeful",
+    "donna": "cheerful",
     "hal": "content",
     "rosa": "determined"
   },
@@ -4220,10 +4222,16 @@
       "time": "Sunday, November 8, 10:17 AM",
       "story": "At 10:17 on this humid, hazy Sunday morning in Sumter Oaks, Gary is making a final check of his light strips and speakers in the garage, keeping the volume low so the neighbors stay happy. Donna is heading out along Magnolia Loop with a determined stride, while Hal sits on his porch finishing his coffee and keeping his notebook shut until Monday, as he promised. Rosa, also determined, is looking over her shift schedule for a morning free of per-diem work so she can join Hal for coffee.",
       "dialogue": []
+    },
+    {
+      "tick": 405,
+      "time": "Sunday, November 8, 11:17 AM",
+      "story": "Gary has set out for Magnolia Loop, restless but hopeful, under a hazy, humid sky at 76 degrees on a quiet Sunday morning. Donna is out on the street counting and straightening her pink flamingo flock with a cheerful eye, determined that no one will have a complaint. Hal is resting on his porch with his notebook shut, content to let the day pass and keep his word until Monday. Rosa, equally determined, is looking over her shift schedule to find the first open morning so she can finally sit down for coffee with Hal, written in ink this time.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 12.75831,
+    "total_usd": 12.78846,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4334,13 +4342,12 @@
         "usd": 0.4663
       },
       "2026-11-08": {
-        "ticks": 4,
-        "usd": 0.12014
+        "ticks": 5,
+        "usd": 0.15029
       }
     }
   },
   "recent_tick_costs": [
-    0.03099,
     0.0307,
     0.03066,
     0.03076,
@@ -4363,7 +4370,8 @@
     0.0303,
     0.03019,
     0.03024,
-    0.02941
+    0.02941,
+    0.03015
   ],
   "fund": {
     "gross_usd": 0.0,
