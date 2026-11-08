@@ -1,0 +1,115 @@
+{
+  "tick": 400,
+  "simulation_time": "Saturday, November 7, 9:17 PM",
+  "weather": "Breezy and clear, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "rosas_house",
+    "hal": "rosas_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a breezy, clear Saturday night in Sumter Oaks, Gary is heading down Magnolia Loop with hope in his step, while Rosa hosts Donna and Hal at her house, where dinner is nearly ready and the kitchen smells wonderful. Donna has arrived with her deviled eggs and is eager for the full story on supper, and Hal, content and a little wry, has promised to keep his notebook in his pocket for the evening. Rosa, warm and hopeful, is asking whether anyone has spotted Gary, since she wants all three of them at the table together.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's past 9 PM and I just tested the speakers and light strips at low volume, which went fine. Rosa's dinner is tonight and the cornbread should be done by now. Nobody's around, so no one to talk to here. Quiet hours start at 10 PM, so no more amplified sound anyway, and L-01 says the cart mods need Architectural Review approval before I put anything on the exterior. I've already filed that request. The best use of this hour is to head over to Rosa's with the cornbread and share my news with friends instead of puttering alone. I'll get out to Magnolia Loop now.",
+      "emotional_state": "hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to Rosa's dinner with the cornbread now that the wiring test checked out."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at Rosa's with Rosa and Hal for the Friday-supper crowd, and it's already past nine. The flamingos are down to three behind the hedge, so Hal has nothing to pin on me tonight. My deviled eggs are on the line, and the best thing I can do is get warm with Rosa as the host. Nothing has been said yet since we all just arrived, so I'll open with a compliment about the house and the dinner, and tuck in a little pickleball recruiting talk since Gary's partnership is my real goal.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, honey, the whole house smells wonderful. I brought my deviled eggs, and I want the full story on tonight's supper while Hal's still standing there."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's past nine at night and we've all landed at Rosa's for the Friday dinner I promised to behave at, even if the calendar says Saturday. I've got my notebook and my grievances, but I told myself I'd keep my word. Gary's cart and the flamingo count can wait for the committee; Donna and Rosa are right here. Best move is to be civil and give Donna a little dry ribbing so she knows I'm being fair, not hunting her. No need to repeat anything I've already said.",
+      "emotional_state": "wry, content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Evening, Donna. Notebook's staying in my pocket tonight, so your flamingos can rest easy. Count's off the clock till Monday."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Donna and Hal just walked in, and Gary isn't here yet. My goal is to get all three neighbors at one table, so I should welcome them warmly and not stand around. I already saved Hal the head chair earlier, so now I'll greet them both, get them settled, and ask about Gary so I know whether to hold dinner a few minutes or start pouring drinks.",
+      "emotional_state": "warm, hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna, Hal, come in, come in! Dinner's almost ready, grab a seat anywhere. Has either of you seen Gary on the way over? I want all three of you at this table."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03184,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9294,
+        "output_tokens": 1190,
+        "usd": 0.03049
+      },
+      "claude-haiku-5-5": {
+        "calls": 6,
+        "input_tokens": 7496,
+        "output_tokens": 1202,
+        "usd": 0.00135
+      }
+    }
+  }
+}

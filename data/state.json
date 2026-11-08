@@ -1,48 +1,31 @@
 {
-  "tick": 400,
-  "time": "2026-11-07T20:17",
+  "tick": 401,
+  "time": "2026-11-07T21:17",
   "positions": {
-    "gary": "garys_house",
+    "gary": "magnolia_loop",
     "donna": "rosas_house",
     "hal": "rosas_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "donna": [
-      "Hal headed to Rosa's House.",
-      "Rosa headed to Rosa's House.",
-      "You arrived at Rosa's House.",
-      "Hal just arrived.",
-      "Rosa just arrived."
+      "Hal said to Donna: “Evening, Donna. Notebook's staying in my pocket tonight, so your flamingos can rest easy. Count's off the clock till Monday.”",
+      "Rosa said to Donna: “Donna, Hal, come in, come in! Dinner's almost ready, grab a seat anywhere. Has either of you seen Gary on the way over? I want all three of you at this table.”"
     ],
     "hal": [
-      "Donna headed to Rosa's House.",
-      "Rosa headed to Rosa's House.",
-      "You arrived at Rosa's House.",
-      "Donna just arrived.",
-      "Rosa just arrived."
+      "Donna said to Rosa: “Rosa, honey, the whole house smells wonderful. I brought my deviled eggs, and I want the full story on tonight's supper while Hal's still standing there.”",
+      "Rosa said to Donna: “Donna, Hal, come in, come in! Dinner's almost ready, grab a seat anywhere. Has either of you seen Gary on the way over? I want all three of you at this table.”"
     ],
     "rosa": [
-      "Donna headed to Rosa's House.",
-      "Hal headed to Rosa's House.",
-      "You arrived at Rosa's House.",
-      "Donna just arrived.",
-      "Hal just arrived."
+      "Donna said to Rosa: “Rosa, honey, the whole house smells wonderful. I brought my deviled eggs, and I want the full story on tonight's supper while Hal's still standing there.”",
+      "Hal said to Donna: “Evening, Donna. Notebook's staying in my pocket tonight, so your flamingos can rest easy. Count's off the clock till Monday.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 305,
-        "text": "Rosa just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 306,
-        "text": "I (rosa dining table): Test the porch light plug and measure the run for the heavy-duty extension cord",
-        "importance": 5
-      },
       {
         "tick": 306,
         "text": "Donna said to Gary: “Gary, those third-shot drops today were gorgeous, you're a natural. Let's book the court for Tuesday morning, two hours sharp, and I'll sign us up on the ladder.”",
@@ -1032,24 +1015,19 @@
         "tick": 399,
         "text": "I (gary golf cart): Test the speaker wiring and light strips at low volume before dinner",
         "importance": 4
+      },
+      {
+        "tick": 400,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 400,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 316,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 317,
-        "text": "I said to Hal: “Afternoon, Hal! Count 'em yourself, exactly three flamingos out front, the rest are tucked behind the hedge. Are you heading over to Rosa's porch for coffee?”",
-        "importance": 3
-      },
-      {
-        "tick": 317,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02",
-        "importance": 3
-      },
       {
         "tick": 317,
         "text": "Gary just arrived.",
@@ -2034,24 +2012,24 @@
         "tick": 399,
         "text": "Rosa just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 400,
+        "text": "I said to Rosa: “Rosa, honey, the whole house smells wonderful. I brought my deviled eggs, and I want the full story on tonight's supper while Hal's still standing there.”",
+        "importance": 4
+      },
+      {
+        "tick": 400,
+        "text": "Hal said to Donna: “Evening, Donna. Notebook's staying in my pocket tonight, so your flamingos can rest easy. Count's off the clock till Monday.”",
+        "importance": 4
+      },
+      {
+        "tick": 400,
+        "text": "Rosa said to Donna: “Donna, Hal, come in, come in! Dinner's almost ready, grab a seat anywhere. Has either of you seen Gary on the way over? I want all three of you at this table.”",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 317,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02",
-        "importance": 5
-      },
-      {
-        "tick": 317,
-        "text": "Donna said to Hal: “Afternoon, Hal! Count 'em yourself, exactly three flamingos out front, the rest are tucked behind the hedge. Are you heading over to Rosa's porch for coffee?”",
-        "importance": 5
-      },
-      {
-        "tick": 317,
-        "text": "Gary just arrived.",
-        "importance": 5
-      },
       {
         "tick": 318,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02",
@@ -3036,24 +3014,24 @@
         "tick": 399,
         "text": "Rosa just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 400,
+        "text": "I said to Donna: “Evening, Donna. Notebook's staying in my pocket tonight, so your flamingos can rest easy. Count's off the clock till Monday.”",
+        "importance": 4
+      },
+      {
+        "tick": 400,
+        "text": "Donna said to Rosa: “Rosa, honey, the whole house smells wonderful. I brought my deviled eggs, and I want the full story on tonight's supper while Hal's still standing there.”",
+        "importance": 4
+      },
+      {
+        "tick": 400,
+        "text": "Rosa said to Donna: “Donna, Hal, come in, come in! Dinner's almost ready, grab a seat anywhere. Has either of you seen Gary on the way over? I want all three of you at this table.”",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 304,
-        "text": "Gary headed to Rosa's House.",
-        "importance": 5
-      },
-      {
-        "tick": 304,
-        "text": "Donna (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving exactly three visible from the street",
-        "importance": 5
-      },
-      {
-        "tick": 304,
-        "text": "Hal said to Rosa: “Coffee's fine, Rosa, I'll bring my own mug. Count's three flamingos from the street, so Donna and I are square for today. Gary and I will have a word about that cart's paperwork over the pot.”",
-        "importance": 5
-      },
       {
         "tick": 305,
         "text": "I headed to Rosa's House.",
@@ -4038,56 +4016,71 @@
         "tick": 399,
         "text": "Hal just arrived.",
         "importance": 6
+      },
+      {
+        "tick": 400,
+        "text": "I said to Donna: “Donna, Hal, come in, come in! Dinner's almost ready, grab a seat anywhere. Has either of you seen Gary on the way over? I want all three of you at this table.”",
+        "importance": 6
+      },
+      {
+        "tick": 400,
+        "text": "Donna said to Rosa: “Rosa, honey, the whole house smells wonderful. I brought my deviled eggs, and I want the full story on tonight's supper while Hal's still standing there.”",
+        "importance": 6
+      },
+      {
+        "tick": 400,
+        "text": "Hal said to Donna: “Evening, Donna. Notebook's staying in my pocket tonight, so your flamingos can rest easy. Count's off the clock till Monday.”",
+        "importance": 6
       }
     ]
   },
   "reflections": {
     "gary": [
-      "Hal has been a steady help with my paperwork, and I'm glad I can count on him to check every line before I file.",
-      "Rosa and Donna have both made me feel welcome this week, and I'm looking forward to Friday's dinner and the cornbread I promised.",
       "I'm looking forward to Friday dinner and the cornbread I promised Rosa, and I like that Donna trusts me with the courts at ten.",
       "I'm proud of how much I've gotten done on the cart, but I'll need to remember the 10 PM sound cutoff so my neighbors can enjoy their evenings.",
       "I'm glad Donna dropped by to see the cart, and I appreciate her nudging Hal along so I can get the lights and speakers approved.",
       "Rosa's dinner tonight is a chance to share my cornbread and catch up with friends, and I'm looking forward to it.",
       "I'm looking forward to Rosa's dinner tonight and to showing Donna the cart's lights and speakers, even if Architectural Review is holding things up.",
-      "I still feel a little nervous about the ladder at the courts with Donna, but she's made me feel like I can learn to play."
+      "I still feel a little nervous about the ladder at the courts with Donna, but she's made me feel like I can learn to play.",
+      "Rosa has always been the kind of neighbor who makes a place feel like home, and I'm glad she invited me to her welcome dinner with Donna and Hal on Friday.",
+      "I'm working toward getting the golf cart's lights and speakers approved, even though I've been doing the wiring quietly in the garage while I wait, and I'm hoping the Architectural Review will see it my way soon."
     ],
     "donna": [
-      "I'm moving the flamingos out back so the street only sees three, and I'm grateful Hal is keeping the committee honest about it.",
-      "Gary and I are finally getting our tennis session on the court tomorrow at ten, and I'm looking forward to partnering with him and bringing my deviled eggs to Rosa's table Friday.",
       "Donna keeps her promises to Hal and Rosa, even when it means pulling flamingos out of sight, because a neighborhood runs on trust and everyone's watching the count.",
       "I want Friday dinner to go smoothly, so I'm glad Rosa's organizing things and that Hal's coming, even if the flamingo tally has been a bit of a sore subject.",
       "Hal can stop counting my flamingos now that I've hidden the extras behind the hedge, and I hope that keeps the committee off my back before Rosa's dinner tonight.",
       "Gary's cart is a real showstopper, and I'm glad I can help him get Architectural Review's sign-off so we can all enjoy the courts and Friday dinners together.",
       "Hiding the extra flamingos behind the hedge was a sneaky way to keep Hal quiet, but I'm honestly relieved the flock is finally under the limit.",
-      "Rosa and Hal both want me at that Friday supper, and I'm looking forward to it more than I'd like to admit, even with my deviled eggs on the line."
+      "Rosa and Hal both want me at that Friday supper, and I'm looking forward to it more than I'd like to admit, even with my deviled eggs on the line.",
+      "Hal's been keeping an eye on my flamingos all week, but I think his teasing is his way of being a good neighbor, and I'm glad we're all sitting down together tonight.",
+      "Gary and I need to beat the top teams on that ladder before the season ends, so I'm going to reserve that Tuesday court and get serious about our game."
     ],
     "hal": [
-      "I think Hal is more stubborn than he lets on, but his careful reading of Gary's paperwork earned my respect, and I'm glad he's counting flamingos instead of letting the street fill up with pink.",
-      "I want Gary to feel welcome at Friday dinner, and I'm looking forward to watching him and Donna on the court tomorrow, because I think those two will end up good partners.",
       "I'm looking forward to Friday dinner at Rosa's, even if Donna's flamingos keep me on watch, and I trust Rosa to keep things civil.",
       "I respect Donna's effort to bring the flamingo count down, but I still want Gary's cart paperwork squared away before I give anyone a pass.",
       "Donna's flamingo games have made me the neighborhood's unpaid referee, and I'm tired of counting birds when I could be enjoying a dinner at Rosa's with her.",
       "I want Donna to trust that I'll be fair about the flamingos, so we can keep our friendship and our Saturday plans intact.",
       "Rosa's Friday dinner is shaping up to be a fine way to settle the flamingo and cart squabbles, and I intend to keep my word and behave while I'm there.",
-      "Donna's sly humor about the hidden flamingos keeps me on my toes, but I respect her spirit, and I hope we can smooth things over with a good meal."
+      "Donna's sly humor about the hidden flamingos keeps me on my toes, but I respect her spirit, and I hope we can smooth things over with a good meal.",
+      "Rosa's dinner invitation is generous, and I'm glad to sit down with Donna and everyone else instead of worrying about the flamingo count.",
+      "Donna and I have bickered over those flamingos, but she's a good neighbor and I'd rather share a meal with her than keep score."
     ],
     "rosa": [
-      "Dinner at my place on Friday is coming together nicely, and Gary, Donna, and Hal all seem excited to gather around my table.",
-      "I want to keep this little group close, because Gary's steady help and Donna's warmth make this neighborhood feel like home.",
       "I'm looking forward to Friday dinner with Gary, Donna, and Hal, and I want my kitchen and table ready to make everyone feel welcome.",
       "Between Gary's cornbread, Donna's deviled eggs, and Hal's steady presence, I feel lucky to have such good neighbors looking out for each other.",
       "Hosting Donna, Hal, and Gary tonight feels like the kind of evening that keeps our little circle close, and I'm glad I get to cook for the people I care about.",
       "I want this dinner to feel warm and unhurried, because Donna and Hal have been such steady friends and I'd like them to know how much their showing up means to me.",
       "Hal and Donna keep bickering over flamingos, but I'm glad they're both coming Friday so I can finally get my whole table together.",
-      "I want Gary, Donna, and Hal to feel welcome at my table, and seeing them all show up for dinner would mean the world to me."
+      "I want Gary, Donna, and Hal to feel welcome at my table, and seeing them all show up for dinner would mean the world to me.",
+      "Gary has been a good neighbor, even when he talks about parade lights longer than anyone wants, and I'm glad he's coming Friday.",
+      "Donna and Hal keep the street lively, and tonight at my table I want us to simply enjoy each other's company without the flamingo count."
     ]
   },
   "emotions": {
-    "gary": "content",
+    "gary": "hopeful",
     "donna": "cheerful",
-    "hal": "content",
-    "rosa": "warm"
+    "hal": "wry, content",
+    "rosa": "warm, hopeful"
   },
   "laws": [
     {
@@ -4212,49 +4205,9 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 395,
-      "time": "Saturday, November 7, 4:17 PM",
-      "story": "At 4:17 on a breezy Saturday afternoon in Sumter Oaks, Gary welcomes Rosa into his kitchen, where the cornbread is heading into the oven and his golf cart waits in the driveway with its lights and speakers still pending Architectural Review. Rosa, hopeful, asks him to join her welcome dinner Friday night with Donna and Hal, promising him a chance to talk about parade lights. Across town at the Rec Center, the determined Donna studies the ladder standings to plan which rivals she and Gary must beat first, while Hal, dutifully counting pink flamingos on Magnolia Loop, notes which ones the hedge hides from view.",
-      "dialogue": [
-        "Gary said to Rosa: “Rosa! Come on in, the cornbread batter's mixed and the oven's heating up. Want to see the cart while it bakes? Lights and speakers are still waiting on Architectural Review, but she's looking good.”",
-        "Rosa said to Gary: “Gary, good, I caught you home. I'm hosting a welcome dinner Friday night and I want you at my table with Donna and Hal. Can I count on you? I'll even let you talk about the parade lights.”"
-      ]
-    },
-    {
-      "tick": 396,
-      "time": "Saturday, November 7, 5:17 PM",
-      "story": "At 5:17 on a breezy, clear Saturday in Sumter Oaks, Gary is warmly promising Rosa he'll bring a skillet of cornbread to the evening gathering while keeping his parade-lights talk to one course. Donna is at the Rec Center studying the ladder standings, determined to figure out which teams she and Gary need to beat first. Out on Magnolia Loop, Hal is dutifully counting the flamingos in Donna's flock and checking whether the hedge hides the rest. Rosa, hopeful, is circling Gary's golf cart at his house while the cornbread bakes.",
-      "dialogue": [
-        "Gary said to Rosa: “Count me in, Rosa, wouldn't miss it. I'll bring a skillet of cornbread, and I'll try to keep the parade lights talk to one course.”"
-      ]
-    },
-    {
-      "tick": 397,
-      "time": "Saturday, November 7, 6:17 PM",
-      "story": "At 6:17 on a breezy, clear Saturday evening in Sumter Oaks, Gary is at his workbench at home, laying out speaker wiring and light strips for Rosa while cornbread bakes nearby. Donna and Rosa are both heading out to Magnolia Loop, while Hal is already there, dutifully counting the flamingos he can see from the street and checking whether the hedge hides the rest. Everyone seems in good spirits as the warm November air settles over the neighborhood.",
-      "dialogue": []
-    },
-    {
-      "tick": 398,
-      "time": "Saturday, November 7, 7:17 PM",
-      "story": "On a breezy, clear Saturday evening in Sumter Oaks, Donna and Hal stroll along Magnolia Loop toward Rosa's house, where Rosa is waiting with an invitation to dinner. Donna is cheerful, carrying her deviled eggs and the good paprika, while Hal grumbles affectionately about the flamingo count and insists the hedge is doing its job. Back at his workbench, Gary, content as ever, is soldering speaker wiring while his cornbread finishes, so he'll be joining the rest of them shortly.",
-      "dialogue": [
-        "Donna said to Rosa: “Rosa, there's our hostess! I've got my deviled eggs ready for tonight, and I'm bringing the good paprika. Hal, you're welcome to count the flamingos, I'm under the limit.”",
-        "Hal said to Donna: “Evening, Donna. I counted what's visible from the street and the hedge is doing its job, so I'm not filing anything. Just keep it to three out front and we'll both enjoy Rosa's dinner.”",
-        "Rosa said to Donna: “Donna, good, you made it. Dinner's about ready at my place and Gary's bringing cornbread, so walk over with Hal and let's all sit down together. Flamingo talk can wait till dessert.”"
-      ]
-    },
-    {
-      "tick": 399,
-      "time": "Saturday, November 7, 8:17 PM",
-      "story": "On a breezy, clear Saturday evening in Sumter Oaks, Gary is at home testing the speaker wiring and light strips on his golf cart at low volume before dinner. Meanwhile Donna, Hal, and Rosa are all strolling down Magnolia Loop, cheerful and content, with the warm glow of the evening settling in around them. Before long they all arrive at Rosa's house, where the neighborly gathering is about to begin.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 12.60633,
+    "total_usd": 12.63817,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4361,13 +4314,12 @@
         "usd": 0.46322
       },
       "2026-11-07": {
-        "ticks": 14,
-        "usd": 0.43446
+        "ticks": 15,
+        "usd": 0.4663
       }
     }
   },
   "recent_tick_costs": [
-    0.03089,
     0.0305,
     0.0318,
     0.03131,
@@ -4390,7 +4342,8 @@
     0.03,
     0.03017,
     0.03146,
-    0.03103
+    0.03103,
+    0.03184
   ],
   "fund": {
     "gross_usd": 0.0,
