@@ -1,0 +1,117 @@
+{
+  "tick": 412,
+  "simulation_time": "Sunday, November 8, 6:17 PM",
+  "weather": "Humid and hazy, 77°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At the Sumter Oaks Rec Center, Gary is working on his soft dinks on pickleball court one, with Donna cheering him on from behind the kitchen line and telling him Tuesday's game is going to be a breeze. Over at Hal's House, Hal sits on his porch with the notebook closed, watching the humid evening haze settle while he gets ready to walk over to Rosa's for supper. Rosa, back at her own table, is savoring the last of her tea and the quiet after a good dinner, pleased that everyone will be together.",
+  "events": [
+    "Gary (pickleball court 1): Keep rallying soft dinks with Donna behind the kitchen line",
+    "Hal waited: Sitting on the porch with the notebook closed, watching the evening haze settle and getting ready to walk over to Rosa's for supper.",
+    "Rosa waited: Finishing my tea at the table, savoring the quiet after a good dinner and thinking how nice it was to have everyone together."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm on court 1 with Donna, rallying soft in the kitchen like she told me. She's already said everything I need to know, so no point asking again. Best thing is to just play, tap it back easy and keep my wrist loose. Cart lights are filed and waiting on Architectural Review, so nothing more to do on that today. Might as well enjoy this and show Donna I can do it.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Keep rallying soft dinks with Donna behind the kitchen line"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary is on court 1 rallying soft in the kitchen. He's a total beginner, so encouragement keeps him hooked as my partner. I already told him the basics last tick, so now I should respond to the rally itself and nudge him forward, not repeat instructions. Praise him, add one small tip, and keep the mood fun so he agrees to Tuesday.",
+      "emotional_state": "encouraged",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "There you go, Gary, that's the touch! Bend those knees just a little and keep that paddle out in front, and Tuesday's court is going to be a breeze."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's a quarter past six on a hazy Sunday and nobody is in sight. I gave my word to keep the notebook closed until Monday, and I mean to hold to it. Supper at Rosa's is coming up, and Donna will be there with her flamingos, and tonight I'd rather pass the rolls than count ornaments. Sitting on the porch another hour with the street quiet, then I'll head over and be on time like a proper soldier.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Sitting on the porch with the notebook closed, watching the evening haze settle and getting ready to walk over to Rosa's for supper."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Dinner went well, the leftovers are packed, and I've been sitting here with my tea in the quiet. I've already checked the shift schedule and written coffee with Hal in pen, so that's done and I don't need to fuss with it again. No one is around, and nothing more needs doing tonight. I'll just stay put, finish my tea, and enjoy having finally built a table full of neighbors.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Finishing my tea at the table, savoring the quiet after a good dinner and thinking how nice it was to have everyone together."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03022,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9675,
+        "output_tokens": 1012,
+        "usd": 0.02947
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3659,
+        "output_tokens": 770,
+        "usd": 0.00075
+      }
+    }
+  }
+}
