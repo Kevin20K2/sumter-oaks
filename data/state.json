@@ -1,6 +1,6 @@
 {
-  "tick": 411,
-  "time": "2026-11-08T16:17",
+  "tick": 412,
+  "time": "2026-11-08T17:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,26 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Bless you, Gary, my lips are sealed, and Hal never hears a word from me. Grab a paddle and come stand on court one with me, we'll start nice and easy, just keeping it in the kitchen. You'll be climbing that ladder by Tuesday, I promise.”"
+      "Donna said to Gary: “Perfect, Gary, you look like a natural already. Stand right behind that line by the net, that's the kitchen, and just tap it back over soft to me. Don't swing big, we're only warming up.”"
     ],
     "donna": [
-      "Gary (pickleball court 1): Step onto court 1 with my paddle, ready to rally with Donna"
+      "Gary (pickleball court 1): Start rallying with Donna, keeping it soft in the kitchen"
     ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 312,
-        "text": "I (gary workbench): Sketch the cart wiring plan and bench-test the speaker amp and light strips",
-        "importance": 4
-      },
-      {
-        "tick": 313,
-        "text": "I (gary golf cart): Run the wiring harness and hook up the speaker amp",
-        "importance": 4
-      },
       {
         "tick": 314,
         "text": "I (gary golf cart): Mount the light strips along the roof and test the speaker amp at low volume",
@@ -1018,19 +1008,19 @@
         "tick": 410,
         "text": "Donna said to Gary: “Bless you, Gary, my lips are sealed, and Hal never hears a word from me. Grab a paddle and come stand on court one with me, we'll start nice and easy, just keeping it in the kitchen. You'll be climbing that ladder by Tuesday, I promise.”",
         "importance": 4
+      },
+      {
+        "tick": 411,
+        "text": "I (pickleball court 1): Start rallying with Donna, keeping it soft in the kitchen",
+        "importance": 4
+      },
+      {
+        "tick": 411,
+        "text": "Donna said to Gary: “Perfect, Gary, you look like a natural already. Stand right behind that line by the net, that's the kitchen, and just tap it back over soft to me. Don't swing big, we're only warming up.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 322,
-        "text": "I said to Gary: “Gary, honey, I've filled out that Architectural Review form for half the street, so I'll sit with you and get it done before Tuesday. I can't have my partner's cart in trouble when we've got a ladder to climb.”",
-        "importance": 4
-      },
-      {
-        "tick": 322,
-        "text": "Gary headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 322,
         "text": "Hal said to Gary: “Good, you're filing. Describe the lights and speaker wiring in plain detail, attach a photo from the street side, and state your sound won't run past 10 PM, because quiet hours are L-03. Do that and the committee can't fault you.”",
@@ -2020,14 +2010,19 @@
         "tick": 410,
         "text": "Gary (pickleball court 1): Step onto court 1 with my paddle, ready to rally with Donna",
         "importance": 6
+      },
+      {
+        "tick": 411,
+        "text": "I said to Gary: “Perfect, Gary, you look like a natural already. Stand right behind that line by the net, that's the kitchen, and just tap it back over soft to me. Don't swing big, we're only warming up.”",
+        "importance": 6
+      },
+      {
+        "tick": 411,
+        "text": "Gary (pickleball court 1): Start rallying with Donna, keeping it soft in the kitchen",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 320,
-        "text": "Gary just arrived.",
-        "importance": 4
-      },
       {
         "tick": 320,
         "text": "Donna just arrived.",
@@ -3022,14 +3017,14 @@
         "tick": 410,
         "text": "I waited: Resting in the porch chair with the notebook closed, keeping my word until Monday and looking forward to supper at Rosa's.",
         "importance": 2
+      },
+      {
+        "tick": 411,
+        "text": "I waited: Resting in the porch chair with the notebook closed, keeping my word until Monday and getting ready for supper at Rosa's.",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 307,
-        "text": "Donna (rosa kitchen): Set the casserole on the kitchen counter and peel back the foil",
-        "importance": 6
-      },
       {
         "tick": 308,
         "text": "I said to Donna: “Donna, that casserole smells wonderful, thank you. Slide it onto the table when you're ready and grab a seat. Hal should be walking up any minute and I want everybody sitting down together.”",
@@ -4024,6 +4019,11 @@
         "tick": 410,
         "text": "I (rosa shift schedule): Check the Tuesday 9 AM slot and write 'Coffee with Hal' in pen if it isn't already there",
         "importance": 4
+      },
+      {
+        "tick": 411,
+        "text": "I (rosa dining table): Sit down at the table with a cup of tea and enjoy the quiet after a good dinner",
+        "importance": 4
       }
     ]
   },
@@ -4070,8 +4070,8 @@
     ]
   },
   "emotions": {
-    "gary": "warm, a little sheepish",
-    "donna": "eager",
+    "gary": "good-humored",
+    "donna": "enthusiastic",
     "hal": "content",
     "rosa": "content"
   },
@@ -4228,10 +4228,18 @@
       "dialogue": [
         "Donna said to Gary: “Bless you, Gary, my lips are sealed, and Hal never hears a word from me. Grab a paddle and come stand on court one with me, we'll start nice and easy, just keeping it in the kitchen. You'll be climbing that ladder by Tuesday, I promise.”"
       ]
+    },
+    {
+      "tick": 411,
+      "time": "Sunday, November 8, 5:17 PM",
+      "story": "Gary and Donna are warming up on pickleball court one at the Rec Center, with Donna coaching him to keep his shots soft near the kitchen line while the humid, hazy Sunday evening settles in around them. Over at his house, Hal is resting in his porch chair with his notebook closed, content to wait until Monday before he picks it up again and getting ready for supper at Rosa's. Rosa has already finished a good dinner and is sitting at her dining table with a cup of tea, enjoying the quiet.",
+      "dialogue": [
+        "Donna said to Gary: “Perfect, Gary, you look like a natural already. Stand right behind that line by the net, that's the kitchen, and just tap it back over soft to me. Don't swing big, we're only warming up.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 12.94194,
+    "total_usd": 12.97117,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4342,13 +4350,12 @@
         "usd": 0.4663
       },
       "2026-11-08": {
-        "ticks": 10,
-        "usd": 0.30377
+        "ticks": 11,
+        "usd": 0.333
       }
     }
   },
   "recent_tick_costs": [
-    0.03065,
     0.03115,
     0.0303,
     0.03014,
@@ -4371,7 +4378,8 @@
     0.03097,
     0.03101,
     0.03,
-    0.03081
+    0.03081,
+    0.02923
   ],
   "fund": {
     "gross_usd": 0.0,

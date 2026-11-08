@@ -1,0 +1,117 @@
+{
+  "tick": 411,
+  "simulation_time": "Sunday, November 8, 5:17 PM",
+  "weather": "Humid and hazy, 77°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary and Donna are warming up on pickleball court one at the Rec Center, with Donna coaching him to keep his shots soft near the kitchen line while the humid, hazy Sunday evening settles in around them. Over at his house, Hal is resting in his porch chair with his notebook closed, content to wait until Monday before he picks it up again and getting ready for supper at Rosa's. Rosa has already finished a good dinner and is sitting at her dining table with a cup of tea, enjoying the quiet.",
+  "events": [
+    "Gary (pickleball court 1): Start rallying with Donna, keeping it soft in the kitchen",
+    "Hal waited: Resting in the porch chair with the notebook closed, keeping my word until Monday and getting ready for supper at Rosa's.",
+    "Rosa (rosa dining table): Sit down at the table with a cup of tea and enjoy the quiet after a good dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna already told me to grab a paddle and stand on court one, and I stepped onto court 1 last tick. No point asking her again or chatting more. I promised twenty minutes, so I should actually play and keep it easy on the knees. It's good to be dragged out, and the cart parade lights can wait until the review comes through.",
+      "emotional_state": "good-humored",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Start rallying with Donna, keeping it soft in the kitchen"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary's already on court 1 with his paddle, and I told him we'd start easy in the kitchen. No more asking or inviting needed, he's said yes. Time to actually coach him: show him the basics so we can climb that ladder. Keep it light and encouraging so he doesn't get discouraged, since he's never played. Also, I should keep my promise not to tell Hal.",
+      "emotional_state": "enthusiastic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Perfect, Gary, you look like a natural already. Stand right behind that line by the net, that's the kitchen, and just tap it back over soft to me. Don't swing big, we're only warming up."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's a quarter past five and supper at Rosa's is coming up. I've sat on this porch for hours with the notebook closed, keeping my word until Monday. Nobody's in sight, and there's nothing to log. Might as well keep resting and let the street be a while longer.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Resting in the porch chair with the notebook closed, keeping my word until Monday and getting ready for supper at Rosa's."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The dinner is over and the kitchen is tidied. I've checked or written the coffee-with-Hal slot over and over in recent ticks (406 through 410), and that's plenty. It's written in pen, and re-checking it again would only be spinning my wheels. It's Sunday evening, nobody is around, and I'm tired in the good way after hosting all three neighbors at one table. The most useful thing I can do now is sit down at the dining table I just hosted at, let the evening settle, and enjoy having pulled this off.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Sit down at the table with a cup of tea and enjoy the quiet after a good dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02923,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9574,
+        "output_tokens": 995,
+        "usd": 0.0291
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 465,
+        "output_tokens": 167,
+        "usd": 0.00013
+      }
+    }
+  }
+}
