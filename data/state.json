@@ -1,39 +1,25 @@
 {
-  "tick": 407,
-  "time": "2026-11-08T12:17",
+  "tick": 408,
+  "time": "2026-11-08T13:17",
   "positions": {
-    "gary": "magnolia_loop",
+    "gary": "rec_center",
     "donna": "magnolia_loop",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, perfect timing! I've got your spare paddle in the cart. Come to the rec center with me and let's get a little practice in before Tuesday, I'll teach you the kitchen line.”"
+      "Donna said to Gary: “Glad you're playing by the book on the cart, Gary, Hal will appreciate it. But the lights can wait, the ladder can't. Hop in with me, it's one o'clock on a Sunday and the rec center courts are wide open. Twenty minutes and I'll have you hitting dinks like a pro.”",
+      "You arrived at Rec Center."
     ],
     "donna": [
-      "Gary said to Donna: “Afternoon, Donna! I finally got the cart's wiring finished in the garage. Nothing's out on the street until Architectural Review signs off, but swing by sometime and I'll show you the lights.”"
+      "Gary headed to Rec Center."
     ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 309,
-        "text": "I said to Rosa: “Table looks great, Rosa. After we eat, I'll grab my tools and get that porch string light plug sorted so it actually reaches.”",
-        "importance": 4
-      },
-      {
-        "tick": 309,
-        "text": "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
-        "importance": 4
-      },
-      {
-        "tick": 309,
-        "text": "Rosa (rosa kitchen): Pull the rolls from the oven and set out the water pitcher",
-        "importance": 4
-      },
       {
         "tick": 310,
         "text": "I (rosa dining table): Help set out spoons and plates, then take a seat",
@@ -1018,19 +1004,24 @@
         "tick": 406,
         "text": "Donna said to Gary: “Gary, perfect timing! I've got your spare paddle in the cart. Come to the rec center with me and let's get a little practice in before Tuesday, I'll teach you the kitchen line.”",
         "importance": 5
+      },
+      {
+        "tick": 407,
+        "text": "I headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 407,
+        "text": "Donna said to Gary: “Glad you're playing by the book on the cart, Gary, Hal will appreciate it. But the lights can wait, the ladder can't. Hop in with me, it's one o'clock on a Sunday and the rec center courts are wide open. Twenty minutes and I'll have you hitting dinks like a pro.”",
+        "importance": 4
+      },
+      {
+        "tick": 407,
+        "text": "You arrived at Rec Center.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 320,
-        "text": "Hal headed to Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 320,
-        "text": "You arrived at Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 320,
         "text": "Gary just arrived.",
@@ -2020,14 +2011,19 @@
         "tick": 406,
         "text": "Gary said to Donna: “Afternoon, Donna! I finally got the cart's wiring finished in the garage. Nothing's out on the street until Architectural Review signs off, but swing by sometime and I'll show you the lights.”",
         "importance": 5
+      },
+      {
+        "tick": 407,
+        "text": "I said to Gary: “Glad you're playing by the book on the cart, Gary, Hal will appreciate it. But the lights can wait, the ladder can't. Hop in with me, it's one o'clock on a Sunday and the rec center courts are wide open. Twenty minutes and I'll have you hitting dinks like a pro.”",
+        "importance": 6
+      },
+      {
+        "tick": 407,
+        "text": "Gary headed to Rec Center.",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 320,
-        "text": "I headed to Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 320,
         "text": "Gary headed to Rosa's House.",
@@ -3022,14 +3018,14 @@
         "tick": 406,
         "text": "I waited: Sitting on the porch with the notebook closed, keeping my word until Monday and letting the street be.",
         "importance": 2
+      },
+      {
+        "tick": 407,
+        "text": "I waited: Settling into the porch chair with the notebook closed, keeping my word until Monday and watching the haze settle over the street.",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 306,
-        "text": "Gary (rosa dining table): Test the porch light plug and measure the run for the heavy-duty extension cord",
-        "importance": 6
-      },
       {
         "tick": 306,
         "text": "Donna said to Gary: “Gary, those third-shot drops today were gorgeous, you're a natural. Let's book the court for Tuesday morning, two hours sharp, and I'll sign us up on the ladder.”",
@@ -4024,6 +4020,11 @@
         "tick": 406,
         "text": "I (rosa shift schedule): Write coffee with Hal in ink on the first morning without a per-diem shift",
         "importance": 5
+      },
+      {
+        "tick": 407,
+        "text": "I (rosa shift schedule): Write coffee with Hal in ink on the first morning without a per-diem shift",
+        "importance": 5
       }
     ]
   },
@@ -4070,8 +4071,8 @@
     ]
   },
   "emotions": {
-    "gary": "cheerful",
-    "donna": "eager",
+    "gary": "hopeful",
+    "donna": "determined",
     "hal": "content",
     "rosa": "determined"
   },
@@ -4198,9 +4199,18 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 407,
+      "time": "Sunday, November 8, 1:17 PM",
+      "story": "Gary is heading toward the Rec Center on Magnolia Loop, where Donna is trying to coax him into a quick pickleball session before the lights can be tackled. Donna is determined and Gary is hopeful, and their hazy Sunday afternoon in the 78-degree humidity is about to turn into a lesson in dinks. Meanwhile, Hal is settling onto his porch with his notebook closed, content to wait out the haze until Monday. Rosa, also determined, is penciling in a reminder to have coffee with Hal on her first shift-free morning.",
+      "dialogue": [
+        "Donna said to Gary: “Glad you're playing by the book on the cart, Gary, Hal will appreciate it. But the lights can wait, the ladder can't. Hop in with me, it's one o'clock on a Sunday and the rec center courts are wide open. Twenty minutes and I'll have you hitting dinks like a pro.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 12.81915,
+    "total_usd": 12.85012,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4311,13 +4321,12 @@
         "usd": 0.4663
       },
       "2026-11-08": {
-        "ticks": 6,
-        "usd": 0.18098
+        "ticks": 7,
+        "usd": 0.21195
       }
     }
   },
   "recent_tick_costs": [
-    0.03066,
     0.03076,
     0.03043,
     0.03137,
@@ -4340,7 +4349,8 @@
     0.03024,
     0.02941,
     0.03015,
-    0.03069
+    0.03069,
+    0.03097
   ],
   "fund": {
     "gross_usd": 0.0,

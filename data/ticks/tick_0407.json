@@ -1,0 +1,117 @@
+{
+  "tick": 407,
+  "simulation_time": "Sunday, November 8, 1:17 PM",
+  "weather": "Humid and hazy, 78°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is heading toward the Rec Center on Magnolia Loop, where Donna is trying to coax him into a quick pickleball session before the lights can be tackled. Donna is determined and Gary is hopeful, and their hazy Sunday afternoon in the 78-degree humidity is about to turn into a lesson in dinks. Meanwhile, Hal is settling onto his porch with his notebook closed, content to wait out the haze until Monday. Rosa, also determined, is penciling in a reminder to have coffee with Hal on her first shift-free morning.",
+  "events": [
+    "Gary headed to Rec Center.",
+    "Hal waited: Settling into the porch chair with the notebook closed, keeping my word until Monday and watching the haze settle over the street.",
+    "Rosa (rosa shift schedule): Write coffee with Hal in ink on the first morning without a per-diem shift"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just invited me to the rec center to practice pickleball, and she has my spare paddle. I've been nervous about learning, but she makes it feel doable. The cart wiring is done and I'm waiting on Architectural Review, so there's nothing more to do on that today. No need to repeat myself, so I'll take her up on it and head over. Walking there beats standing around, and I'd rather feel useful and have company than sit alone in the garage.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Taking Donna up on her offer to practice pickleball before Tuesday and learn the kitchen line."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just told me his cart wiring is done and nothing goes out on the street until Architectural Review signs off, so he's staying on the right side of L-01. Good for him. I already invited him to the rec center last tick and he answered with cart talk instead, so I shouldn't ask the exact same thing again. But he's standing right here and I still need him on the court before Tuesday. Time to be specific and make it easy: today, now, spare paddle in the cart, and I'll even keep it simple since he's never played. The ladder won't climb itself.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Glad you're playing by the book on the cart, Gary, Hal will appreciate it. But the lights can wait, the ladder can't. Hop in with me, it's one o'clock on a Sunday and the rec center courts are wide open. Twenty minutes and I'll have you hitting dinks like a pro."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's Sunday afternoon, the street is quiet, and nobody is in sight. I gave my word the notebook stays closed until Monday, and a sergeant keeps his word. Rosa's dinner on Friday is a chance to settle things, so there's no sense stirring anything up. I'll keep sitting on the porch, easy and quiet, and let the day go by.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Settling into the porch chair with the notebook closed, keeping my word until Monday and watching the haze settle over the street."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Sunday afternoon and nobody is nearby. My memories show I've tried four or five times to find a free morning for coffee with Hal and each time I only looked or penciled it in, never actually wrote it in ink. The real step is to open the shift schedule, pick the first morning without a per-diem shift, and commit it in ink. Friday's dinner is the bigger goal, but the schedule is the one thing I can actually close out right now, and it keeps my word to Hal.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Write coffee with Hal in ink on the first morning without a per-diem shift"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03097,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9734,
+        "output_tokens": 1136,
+        "usd": 0.03083
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 486,
+        "output_tokens": 186,
+        "usd": 0.00014
+      }
+    }
+  }
+}
