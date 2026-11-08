@@ -1,34 +1,38 @@
 {
-  "tick": 399,
-  "time": "2026-11-07T19:17",
+  "tick": 400,
+  "time": "2026-11-07T20:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
-    "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "donna": "rosas_house",
+    "hal": "rosas_house",
+    "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
     "donna": [
-      "Hal said to Donna: “Evening, Donna. I counted what's visible from the street and the hedge is doing its job, so I'm not filing anything. Just keep it to three out front and we'll both enjoy Rosa's dinner.”",
-      "Rosa said to Donna: “Donna, good, you made it. Dinner's about ready at my place and Gary's bringing cornbread, so walk over with Hal and let's all sit down together. Flamingo talk can wait till dessert.”"
+      "Hal headed to Rosa's House.",
+      "Rosa headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Hal just arrived.",
+      "Rosa just arrived."
     ],
     "hal": [
-      "Donna said to Rosa: “Rosa, there's our hostess! I've got my deviled eggs ready for tonight, and I'm bringing the good paprika. Hal, you're welcome to count the flamingos, I'm under the limit.”",
-      "Rosa said to Donna: “Donna, good, you made it. Dinner's about ready at my place and Gary's bringing cornbread, so walk over with Hal and let's all sit down together. Flamingo talk can wait till dessert.”"
+      "Donna headed to Rosa's House.",
+      "Rosa headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Donna just arrived.",
+      "Rosa just arrived."
     ],
     "rosa": [
-      "Donna said to Rosa: “Rosa, there's our hostess! I've got my deviled eggs ready for tonight, and I'm bringing the good paprika. Hal, you're welcome to count the flamingos, I'm under the limit.”",
-      "Hal said to Donna: “Evening, Donna. I counted what's visible from the street and the hedge is doing its job, so I'm not filing anything. Just keep it to three out front and we'll both enjoy Rosa's dinner.”"
+      "Donna headed to Rosa's House.",
+      "Hal headed to Rosa's House.",
+      "You arrived at Rosa's House.",
+      "Donna just arrived.",
+      "Hal just arrived."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 305,
-        "text": "Donna just arrived.",
-        "importance": 4
-      },
       {
         "tick": 305,
         "text": "Rosa just arrived.",
@@ -1023,39 +1027,14 @@
         "tick": 398,
         "text": "I (gary workbench): Solder and tidy the speaker wiring while the cornbread finishes",
         "importance": 4
+      },
+      {
+        "tick": 399,
+        "text": "I (gary golf cart): Test the speaker wiring and light strips at low volume before dinner",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 311,
-        "text": "Rosa (rosa dining table): Sit down and serve everyone the first plates",
-        "importance": 4
-      },
-      {
-        "tick": 312,
-        "text": "I (donna club calendar): Check open pickleball court slots and pencil in a two-hour practice with Gary",
-        "importance": 5
-      },
-      {
-        "tick": 313,
-        "text": "I (donna club calendar): Confirm the two-hour Tuesday pickleball court slot with Gary and mark it in ink",
-        "importance": 6
-      },
-      {
-        "tick": 314,
-        "text": "I (donna pickleball bag): Pack the bag with paddles, balls, and a spare grip for Gary's Tuesday session",
-        "importance": 4
-      },
-      {
-        "tick": 315,
-        "text": "I (donna phone): Text Gary the Tuesday court time and remind him to bring sneakers",
-        "importance": 5
-      },
-      {
-        "tick": 316,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 316,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -2025,39 +2004,39 @@
         "tick": 398,
         "text": "Rosa said to Donna: “Donna, good, you made it. Dinner's about ready at my place and Gary's bringing cornbread, so walk over with Hal and let's all sit down together. Flamingo talk can wait till dessert.”",
         "importance": 4
+      },
+      {
+        "tick": 399,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 399,
+        "text": "Hal headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 399,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 399,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 399,
+        "text": "Hal just arrived.",
+        "importance": 4
+      },
+      {
+        "tick": 399,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 313,
-        "text": "I (hal binoculars): Scan Donna's lawn and Gary's driveway; count flamingos and note cart modifications for the report",
-        "importance": 5
-      },
-      {
-        "tick": 314,
-        "text": "I (hal violation notebook): Record the flamingo count and Gary's cart modifications for the committee report",
-        "importance": 5
-      },
-      {
-        "tick": 315,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 315,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 316,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02",
-        "importance": 5
-      },
-      {
-        "tick": 316,
-        "text": "Donna just arrived.",
-        "importance": 5
-      },
       {
         "tick": 317,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02",
@@ -3027,39 +3006,39 @@
         "tick": 398,
         "text": "Rosa said to Donna: “Donna, good, you made it. Dinner's about ready at my place and Gary's bringing cornbread, so walk over with Hal and let's all sit down together. Flamingo talk can wait till dessert.”",
         "importance": 6
-      }
-    ],
-    "rosa": [
+      },
       {
-        "tick": 302,
-        "text": "Gary just arrived.",
+        "tick": 399,
+        "text": "I headed to Rosa's House.",
         "importance": 4
       },
       {
-        "tick": 303,
-        "text": "I said to Hal: “Hal, there you are! Coffee's hot on my porch, and Gary and Donna are welcome too. I want to talk through the Halloween decor deadline together before anybody's flamingos get dressed up.”",
-        "importance": 5
+        "tick": 399,
+        "text": "Donna headed to Rosa's House.",
+        "importance": 4
       },
       {
-        "tick": 303,
-        "text": "Gary said to Rosa: “Afternoon, Rosa! Cart's all rigged up with lights and speakers, finally. If you've got anything that needs fixing or wiring for the parade, you just say the word.”",
-        "importance": 5
+        "tick": 399,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 4
       },
       {
-        "tick": 303,
-        "text": "Donna (donna flamingo flock): Pull the extra flamingos behind the hedge, leaving exactly three visible from the street",
-        "importance": 5
+        "tick": 399,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
       },
       {
-        "tick": 303,
-        "text": "Hal (donna flamingo flock): Raise binoculars and count how many flamingos are visible from the street",
-        "importance": 5
+        "tick": 399,
+        "text": "Donna just arrived.",
+        "importance": 4
       },
       {
-        "tick": 304,
-        "text": "I said to Gary: “Gary, I'll take you up on that. My porch string lights need a plug that actually reaches, so come have coffee and bring your tools. Donna and Hal, once the flamingos are sorted, you're both welcome too.”",
-        "importance": 5
-      },
+        "tick": 399,
+        "text": "Rosa just arrived.",
+        "importance": 4
+      }
+    ],
+    "rosa": [
       {
         "tick": 304,
         "text": "Gary headed to Rosa's House.",
@@ -4029,6 +4008,36 @@
         "tick": 398,
         "text": "Hal said to Donna: “Evening, Donna. I counted what's visible from the street and the hedge is doing its job, so I'm not filing anything. Just keep it to three out front and we'll both enjoy Rosa's dinner.”",
         "importance": 7
+      },
+      {
+        "tick": 399,
+        "text": "I headed to Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 399,
+        "text": "Donna headed to Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 399,
+        "text": "Hal headed to Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 399,
+        "text": "You arrived at Rosa's House.",
+        "importance": 6
+      },
+      {
+        "tick": 399,
+        "text": "Donna just arrived.",
+        "importance": 6
+      },
+      {
+        "tick": 399,
+        "text": "Hal just arrived.",
+        "importance": 6
       }
     ]
   },
@@ -4077,8 +4086,8 @@
   "emotions": {
     "gary": "content",
     "donna": "cheerful",
-    "hal": "gruff but warm",
-    "rosa": "hopeful"
+    "hal": "content",
+    "rosa": "warm"
   },
   "laws": [
     {
@@ -4236,10 +4245,16 @@
         "Hal said to Donna: “Evening, Donna. I counted what's visible from the street and the hedge is doing its job, so I'm not filing anything. Just keep it to three out front and we'll both enjoy Rosa's dinner.”",
         "Rosa said to Donna: “Donna, good, you made it. Dinner's about ready at my place and Gary's bringing cornbread, so walk over with Hal and let's all sit down together. Flamingo talk can wait till dessert.”"
       ]
+    },
+    {
+      "tick": 399,
+      "time": "Saturday, November 7, 8:17 PM",
+      "story": "On a breezy, clear Saturday evening in Sumter Oaks, Gary is at home testing the speaker wiring and light strips on his golf cart at low volume before dinner. Meanwhile Donna, Hal, and Rosa are all strolling down Magnolia Loop, cheerful and content, with the warm glow of the evening settling in around them. Before long they all arrive at Rosa's house, where the neighborly gathering is about to begin.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 12.5753,
+    "total_usd": 12.60633,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4346,13 +4361,12 @@
         "usd": 0.46322
       },
       "2026-11-07": {
-        "ticks": 13,
-        "usd": 0.40343
+        "ticks": 14,
+        "usd": 0.43446
       }
     }
   },
   "recent_tick_costs": [
-    0.03077,
     0.03089,
     0.0305,
     0.0318,
@@ -4375,7 +4389,8 @@
     0.03002,
     0.03,
     0.03017,
-    0.03146
+    0.03146,
+    0.03103
   ],
   "fund": {
     "gross_usd": 0.0,

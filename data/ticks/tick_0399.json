@@ -1,0 +1,118 @@
+{
+  "tick": 399,
+  "simulation_time": "Saturday, November 7, 8:17 PM",
+  "weather": "Breezy and clear, 80°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On a breezy, clear Saturday evening in Sumter Oaks, Gary is at home testing the speaker wiring and light strips on his golf cart at low volume before dinner. Meanwhile Donna, Hal, and Rosa are all strolling down Magnolia Loop, cheerful and content, with the warm glow of the evening settling in around them. Before long they all arrive at Rosa's house, where the neighborly gathering is about to begin.",
+  "events": [
+    "Gary (gary golf cart): Test the speaker wiring and light strips at low volume before dinner",
+    "Donna headed to Rosa's House.",
+    "Hal headed to Rosa's House.",
+    "Rosa headed to Rosa's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm home at the workbench, the cornbread should be about done, and Rosa's dinner is tonight. Nobody's around to talk to. The speaker wiring is soldered and tidy, so the next useful step is to test the sound system and light strips on the cart. It's 8:17 PM, before the 10 PM quiet cutoff, and I'll keep it low since the Architectural Review approval is still pending and I don't want to put the lights on the street before it comes through. I'll check the cart wiring while the cornbread finishes, then grab it and head to Rosa's.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Test the speaker wiring and light strips at low volume before dinner"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal's off my back, Rosa says dinner's ready, and nobody needs me to say anything more about flamingos. I already told them I'm bringing the eggs, so repeating myself would just stall things. Time to walk over to Rosa's with the paprika and deviled eggs, and keep my goal alive by working Tuesday's pickleball slot with Gary over cornbread.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's with my deviled eggs for Friday supper, and I'll catch Gary there about Tuesday's court time."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa and Donna just told me to walk over to dinner together. I already said my piece about the flamingos and the three-ornament limit, and repeating myself would be pointless. I've counted, the hedge is doing its job, nothing to file tonight. Gary's cart can wait for dessert like Rosa said. Time to stop refereeing and go eat. Rosa's place is connected from Magnolia Loop, so I'll head there with Donna.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's for dinner. Flamingo business can wait till dessert, and I intend to behave."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I already told Donna the dinner's ready, and Donna and Hal both answered in good spirits. Asking again would just be repeating myself. The flamingo business is settled for tonight and Gary is bringing cornbread to my place, so the next real step toward my goal is getting home and getting everyone at one table. I'll head to my house and the others will follow.",
+      "emotional_state": "warm",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading home to set the table and get the food out so everyone can sit down together."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03103,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10245,
+        "output_tokens": 1043,
+        "usd": 0.03092
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 356,
+        "output_tokens": 148,
+        "usd": 0.00011
+      }
+    }
+  }
+}
