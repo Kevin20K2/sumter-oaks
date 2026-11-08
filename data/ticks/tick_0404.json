@@ -1,0 +1,118 @@
+{
+  "tick": 404,
+  "simulation_time": "Sunday, November 8, 10:17 AM",
+  "weather": "Humid and hazy, 75°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 10:17 on this humid, hazy Sunday morning in Sumter Oaks, Gary is making a final check of his light strips and speakers in the garage, keeping the volume low so the neighbors stay happy. Donna is heading out along Magnolia Loop with a determined stride, while Hal sits on his porch finishing his coffee and keeping his notebook shut until Monday, as he promised. Rosa, also determined, is looking over her shift schedule for a morning free of per-diem work so she can join Hal for coffee.",
+  "events": [
+    "Gary (gary golf cart): Do a final check of the light strips and speaker connections, keeping it low volume inside the garage",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal waited: Finishing my coffee on the porch and keeping the notebook closed until Monday, as promised.",
+    "Rosa (rosa shift schedule): Find a morning without a per-diem shift and write in coffee with Hal"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've got the harness installed and tested at low volume in the garage, and everything checks out. Law L-01 says exterior mods visible from the street need Architectural Review approval, and I filed my request back at tick 369. It's a Sunday morning and nobody's around, so no one to show it to yet. Rather than sit idle, I should finish the job properly. A last full check of the light strips and speaker connections on the cart keeps me productive and ready for when approval comes through. I'll keep it all inside the garage and at low volume, well within quiet hours and the law, then just wait on the review.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Do a final check of the light strips and speaker connections, keeping it low volume inside the garage"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I already penciled in the Tuesday court, packed Gary's spare paddle, and texted him about the two-hour slot last tick. No need to repeat any of that. Nobody's nearby, so there's no one to talk to. It's Sunday morning and the supper at Rosa's was last night's business. The next productive step toward the ladder is getting Gary on a court before Tuesday, since he's never actually played. Walking out toward Magnolia Loop to find him and give him a quick practice run is better than sitting around waiting on a text reply.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to track down Gary with his spare paddle and get him some practice before Tuesday's court time."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's a quiet Sunday morning and nobody's in sight. I gave my word at Rosa's table that the notebook stays shut until Monday, and a man keeps his word. Nothing to report, nobody to speak to. I'll keep my coffee warm and let the street be.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Finishing my coffee on the porch and keeping the notebook closed until Monday, as promised."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The dinner went well last night, and nobody's around this morning. I've had three ticks of looking at the shift schedule without actually committing to anything, and I told Hal I'd put coffee in ink this week. Time to stop dithering and use the schedule: find a free morning and write it down.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Find a morning without a per-diem shift and write in coffee with Hal"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02941,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9559,
+        "output_tokens": 1016,
+        "usd": 0.02928
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 398,
+        "output_tokens": 174,
+        "usd": 0.00013
+      }
+    }
+  }
+}
