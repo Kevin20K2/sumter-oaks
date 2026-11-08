@@ -1,35 +1,24 @@
 {
-  "tick": 408,
-  "time": "2026-11-08T13:17",
+  "tick": 409,
+  "time": "2026-11-08T14:17",
   "positions": {
     "gary": "rec_center",
-    "donna": "magnolia_loop",
+    "donna": "rec_center",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Glad you're playing by the book on the cart, Gary, Hal will appreciate it. But the lights can wait, the ladder can't. Hop in with me, it's one o'clock on a Sunday and the rec center courts are wide open. Twenty minutes and I'll have you hitting dinks like a pro.”",
-      "You arrived at Rec Center."
+      "Donna just arrived."
     ],
     "donna": [
-      "Gary headed to Rec Center."
+      "You arrived at Rec Center."
     ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 310,
-        "text": "I (rosa dining table): Help set out spoons and plates, then take a seat",
-        "importance": 3
-      },
-      {
-        "tick": 310,
-        "text": "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
-        "importance": 3
-      },
       {
         "tick": 310,
         "text": "Rosa said to Gary: “Deal, Gary, porch lights after dessert. Sit, sit, before the rolls go cold. We'll save Hal's chair and he can catch up when he gets here.”",
@@ -1019,19 +1008,19 @@
         "tick": 407,
         "text": "You arrived at Rec Center.",
         "importance": 4
+      },
+      {
+        "tick": 408,
+        "text": "I (ladder standings board): Look over the ladder standings while waiting for Donna",
+        "importance": 3
+      },
+      {
+        "tick": 408,
+        "text": "Donna just arrived.",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 320,
-        "text": "Gary just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 320,
-        "text": "Hal just arrived.",
-        "importance": 4
-      },
       {
         "tick": 321,
         "text": "I said to Gary: “Gary, there's my partner! Those third-shot drops have me dreaming about the top of the ladder. Tuesday, courts, bring that wrist.”",
@@ -2021,14 +2010,19 @@
         "tick": 407,
         "text": "Gary headed to Rec Center.",
         "importance": 6
+      },
+      {
+        "tick": 408,
+        "text": "I headed to Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 408,
+        "text": "You arrived at Rec Center.",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 320,
-        "text": "Gary headed to Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 320,
         "text": "Donna headed to Rosa's House.",
@@ -3023,14 +3017,14 @@
         "tick": 407,
         "text": "I waited: Settling into the porch chair with the notebook closed, keeping my word until Monday and watching the haze settle over the street.",
         "importance": 2
+      },
+      {
+        "tick": 408,
+        "text": "I waited: Sitting out the hazy Sunday afternoon on the porch with the notebook closed, keeping my word until Monday.",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 306,
-        "text": "Donna said to Gary: “Gary, those third-shot drops today were gorgeous, you're a natural. Let's book the court for Tuesday morning, two hours sharp, and I'll sign us up on the ladder.”",
-        "importance": 6
-      },
       {
         "tick": 307,
         "text": "I (rosa dining table): Set out plates, napkins and four chairs, saving a spot for Hal",
@@ -4025,55 +4019,60 @@
         "tick": 407,
         "text": "I (rosa shift schedule): Write coffee with Hal in ink on the first morning without a per-diem shift",
         "importance": 5
+      },
+      {
+        "tick": 408,
+        "text": "I (rosa shift schedule): Write 'Coffee with Hal, Tuesday 9 AM' in pen on the open morning and finally close this out",
+        "importance": 4
       }
     ]
   },
   "reflections": {
     "gary": [
-      "I'm looking forward to Friday dinner and the cornbread I promised Rosa, and I like that Donna trusts me with the courts at ten.",
-      "I'm proud of how much I've gotten done on the cart, but I'll need to remember the 10 PM sound cutoff so my neighbors can enjoy their evenings.",
       "I'm glad Donna dropped by to see the cart, and I appreciate her nudging Hal along so I can get the lights and speakers approved.",
       "Rosa's dinner tonight is a chance to share my cornbread and catch up with friends, and I'm looking forward to it.",
       "I'm looking forward to Rosa's dinner tonight and to showing Donna the cart's lights and speakers, even if Architectural Review is holding things up.",
       "I still feel a little nervous about the ladder at the courts with Donna, but she's made me feel like I can learn to play.",
       "Rosa has always been the kind of neighbor who makes a place feel like home, and I'm glad she invited me to her welcome dinner with Donna and Hal on Friday.",
-      "I'm working toward getting the golf cart's lights and speakers approved, even though I've been doing the wiring quietly in the garage while I wait, and I'm hoping the Architectural Review will see it my way soon."
+      "I'm working toward getting the golf cart's lights and speakers approved, even though I've been doing the wiring quietly in the garage while I wait, and I'm hoping the Architectural Review will see it my way soon.",
+      "Donna keeps pushing me toward the courts, and I'm glad she cares enough to drag me out, even if my cart project is what I'd rather be finishing.",
+      "I've kept the cart's wiring tidy and safe in the garage like Architectural Review asked, and I want to show Donna the lights once they're officially approved."
     ],
     "donna": [
-      "Donna keeps her promises to Hal and Rosa, even when it means pulling flamingos out of sight, because a neighborhood runs on trust and everyone's watching the count.",
-      "I want Friday dinner to go smoothly, so I'm glad Rosa's organizing things and that Hal's coming, even if the flamingo tally has been a bit of a sore subject.",
       "Hal can stop counting my flamingos now that I've hidden the extras behind the hedge, and I hope that keeps the committee off my back before Rosa's dinner tonight.",
       "Gary's cart is a real showstopper, and I'm glad I can help him get Architectural Review's sign-off so we can all enjoy the courts and Friday dinners together.",
       "Hiding the extra flamingos behind the hedge was a sneaky way to keep Hal quiet, but I'm honestly relieved the flock is finally under the limit.",
       "Rosa and Hal both want me at that Friday supper, and I'm looking forward to it more than I'd like to admit, even with my deviled eggs on the line.",
       "Hal's been keeping an eye on my flamingos all week, but I think his teasing is his way of being a good neighbor, and I'm glad we're all sitting down together tonight.",
-      "Gary and I need to beat the top teams on that ladder before the season ends, so I'm going to reserve that Tuesday court and get serious about our game."
+      "Gary and I need to beat the top teams on that ladder before the season ends, so I'm going to reserve that Tuesday court and get serious about our game.",
+      "Gary and I are finally on the same page about Tuesday's court time, and it feels good to have a partner who shows up ready to play.",
+      "Hal's rule about keeping the notebook in his pocket tonight tells me he trusts this neighborhood more than he lets on, and I want to keep earning that trust."
     ],
     "hal": [
-      "I'm looking forward to Friday dinner at Rosa's, even if Donna's flamingos keep me on watch, and I trust Rosa to keep things civil.",
-      "I respect Donna's effort to bring the flamingo count down, but I still want Gary's cart paperwork squared away before I give anyone a pass.",
       "Donna's flamingo games have made me the neighborhood's unpaid referee, and I'm tired of counting birds when I could be enjoying a dinner at Rosa's with her.",
       "I want Donna to trust that I'll be fair about the flamingos, so we can keep our friendship and our Saturday plans intact.",
       "Rosa's Friday dinner is shaping up to be a fine way to settle the flamingo and cart squabbles, and I intend to keep my word and behave while I'm there.",
       "Donna's sly humor about the hidden flamingos keeps me on my toes, but I respect her spirit, and I hope we can smooth things over with a good meal.",
       "Rosa's dinner invitation is generous, and I'm glad to sit down with Donna and everyone else instead of worrying about the flamingo count.",
-      "Donna and I have bickered over those flamingos, but she's a good neighbor and I'd rather share a meal with her than keep score."
+      "Donna and I have bickered over those flamingos, but she's a good neighbor and I'd rather share a meal with her than keep score.",
+      "I'm keeping my notebook closed until Monday, and it feels good to let the street be for once.",
+      "Donna and Rosa have always looked out for each other, and I'm glad I still get a seat at their table tonight."
     ],
     "rosa": [
-      "I'm looking forward to Friday dinner with Gary, Donna, and Hal, and I want my kitchen and table ready to make everyone feel welcome.",
-      "Between Gary's cornbread, Donna's deviled eggs, and Hal's steady presence, I feel lucky to have such good neighbors looking out for each other.",
       "Hosting Donna, Hal, and Gary tonight feels like the kind of evening that keeps our little circle close, and I'm glad I get to cook for the people I care about.",
       "I want this dinner to feel warm and unhurried, because Donna and Hal have been such steady friends and I'd like them to know how much their showing up means to me.",
       "Hal and Donna keep bickering over flamingos, but I'm glad they're both coming Friday so I can finally get my whole table together.",
       "I want Gary, Donna, and Hal to feel welcome at my table, and seeing them all show up for dinner would mean the world to me.",
       "Gary has been a good neighbor, even when he talks about parade lights longer than anyone wants, and I'm glad he's coming Friday.",
-      "Donna and Hal keep the street lively, and tonight at my table I want us to simply enjoy each other's company without the flamingo count."
+      "Donna and Hal keep the street lively, and tonight at my table I want us to simply enjoy each other's company without the flamingo count.",
+      "Donna and Hal are finally here at my table, and I want tonight to be about dinner and good company rather than flamingos.",
+      "I've been wanting to settle on a morning for coffee with Hal, and writing it in ink on my shift schedule finally makes it feel real."
     ]
   },
   "emotions": {
-    "gary": "hopeful",
+    "gary": "nervous but game",
     "donna": "determined",
-    "hal": "content",
+    "hal": "patient",
     "rosa": "determined"
   },
   "laws": [
@@ -4207,10 +4206,16 @@
       "dialogue": [
         "Donna said to Gary: “Glad you're playing by the book on the cart, Gary, Hal will appreciate it. But the lights can wait, the ladder can't. Hop in with me, it's one o'clock on a Sunday and the rec center courts are wide open. Twenty minutes and I'll have you hitting dinks like a pro.”"
       ]
+    },
+    {
+      "tick": 408,
+      "time": "Sunday, November 8, 2:17 PM",
+      "story": "At 2:17 on a hazy, humid Sunday in Sumter Oaks, Gary waits at the Rec Center, nervously but game, scanning the ladder standings while he watches for Donna. Donna is walking down Magnolia Loop with a look of pure determination, heading toward him. Back at Hal's House, Hal sits patiently on the porch with his notebook closed, keeping his word to wait until Monday. Over at Rosa's House, Rosa, equally determined, pens \"Coffee with Hal, Tuesday 9 AM\" onto her open morning on the shift schedule.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 12.85012,
+    "total_usd": 12.88113,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4321,13 +4326,12 @@
         "usd": 0.4663
       },
       "2026-11-08": {
-        "ticks": 7,
-        "usd": 0.21195
+        "ticks": 8,
+        "usd": 0.24296
       }
     }
   },
   "recent_tick_costs": [
-    0.03076,
     0.03043,
     0.03137,
     0.03065,
@@ -4350,7 +4354,8 @@
     0.02941,
     0.03015,
     0.03069,
-    0.03097
+    0.03097,
+    0.03101
   ],
   "fund": {
     "gross_usd": 0.0,

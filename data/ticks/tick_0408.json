@@ -1,0 +1,118 @@
+{
+  "tick": 408,
+  "simulation_time": "Sunday, November 8, 2:17 PM",
+  "weather": "Humid and hazy, 78°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 2:17 on a hazy, humid Sunday in Sumter Oaks, Gary waits at the Rec Center, nervously but game, scanning the ladder standings while he watches for Donna. Donna is walking down Magnolia Loop with a look of pure determination, heading toward him. Back at Hal's House, Hal sits patiently on the porch with his notebook closed, keeping his word to wait until Monday. Over at Rosa's House, Rosa, equally determined, pens \"Coffee with Hal, Tuesday 9 AM\" onto her open morning on the shift schedule.",
+  "events": [
+    "Gary (ladder standings board): Look over the ladder standings while waiting for Donna",
+    "Donna headed to Rec Center.",
+    "Hal waited: Sitting out the hazy Sunday afternoon on the porch with the notebook closed, keeping my word until Monday.",
+    "Rosa (rosa shift schedule): Write 'Coffee with Hal, Tuesday 9 AM' in pen on the open morning and finally close this out"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna told me to hop in with her and she'd teach me the kitchen line, but nobody's in sight at the rec center now. She may be parking the cart or grabbing paddles. The courts are open, and I told her I'd practice. The ladder still makes me nervous, but she made me feel like I could learn. I shouldn't wander off or repeat myself with no one to talk to. I'll check the ladder standings board while I wait and get a feel for what I'm stepping into. The cart lights can wait on Architectural Review anyway, so no sense fretting over that.",
+      "emotional_state": "nervous but game",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Look over the ladder standings while waiting for Donna"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just headed to the rec center, and I'm standing alone on Magnolia Loop with my flamingo flock and my paddle bag in the cart. The courts are wide open on a Sunday afternoon, and I told him twenty minutes would have him dinking like a pro. Nothing left to say on the street, so I'll follow him and get him on the court before he talks himself out of it. Staying under the two-hour reservation limit, of course. Tuesday is coming and the ladder won't climb itself.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Following Gary to the rec center to get him on the court and teach him the kitchen line before Tuesday."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's Sunday afternoon, nobody's around, and I gave my word the notebook stays closed until Monday. Rosa's Friday dinner is coming and I'd rather go in with a clear conscience than a tally sheet. Best thing is to sit tight on the porch, keep my promise, and let Monday bring the paperwork.",
+      "emotional_state": "patient",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Sitting out the hazy Sunday afternoon on the porch with the notebook closed, keeping my word until Monday."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've written 'coffee with Hal in ink' over and over at the shift schedule for five ticks now, and it's clearly stuck in a loop. Time to actually do it: open the schedule, pick a specific morning (Tuesday, since I have no per-diem shift then), and commit the entry. Then I can turn to the dinner prep. Hal's already coming Friday, so this is just the coffee I promised him.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Write 'Coffee with Hal, Tuesday 9 AM' in pen on the open morning and finally close this out"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03101,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9816,
+        "output_tokens": 1071,
+        "usd": 0.03034
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 3910,
+        "output_tokens": 565,
+        "usd": 0.00067
+      }
+    }
+  }
+}
