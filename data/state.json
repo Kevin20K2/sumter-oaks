@@ -1,36 +1,20 @@
 {
-  "tick": 401,
-  "time": "2026-11-07T21:17",
+  "tick": 402,
+  "time": "2026-11-08T07:17",
   "positions": {
-    "gary": "magnolia_loop",
-    "donna": "rosas_house",
-    "hal": "rosas_house",
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "You arrived at Magnolia Loop (the street)."
-    ],
-    "donna": [
-      "Hal said to Donna: “Evening, Donna. Notebook's staying in my pocket tonight, so your flamingos can rest easy. Count's off the clock till Monday.”",
-      "Rosa said to Donna: “Donna, Hal, come in, come in! Dinner's almost ready, grab a seat anywhere. Has either of you seen Gary on the way over? I want all three of you at this table.”"
-    ],
-    "hal": [
-      "Donna said to Rosa: “Rosa, honey, the whole house smells wonderful. I brought my deviled eggs, and I want the full story on tonight's supper while Hal's still standing there.”",
-      "Rosa said to Donna: “Donna, Hal, come in, come in! Dinner's almost ready, grab a seat anywhere. Has either of you seen Gary on the way over? I want all three of you at this table.”"
-    ],
-    "rosa": [
-      "Donna said to Rosa: “Rosa, honey, the whole house smells wonderful. I brought my deviled eggs, and I want the full story on tonight's supper while Hal's still standing there.”",
-      "Hal said to Donna: “Evening, Donna. Notebook's staying in my pocket tonight, so your flamingos can rest easy. Count's off the clock till Monday.”"
-    ]
+    "gary": [],
+    "donna": [],
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 306,
-        "text": "Donna said to Gary: “Gary, those third-shot drops today were gorgeous, you're a natural. Let's book the court for Tuesday morning, two hours sharp, and I'll sign us up on the ladder.”",
-        "importance": 5
-      },
       {
         "tick": 306,
         "text": "Rosa said to Donna: “Donna, you can set that casserole right on the kitchen counter, I'll get the table laid out. Gary, would you mind grabbing the chairs while we wait on Hal?”",
@@ -1025,14 +1009,14 @@
         "tick": 400,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 401,
+        "text": "I (gary workbench): Finish tidying and labeling the speaker wiring harness",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 317,
-        "text": "Gary just arrived.",
-        "importance": 3
-      },
       {
         "tick": 318,
         "text": "I said to Gary: “Gary, there's my doubles partner! Those third-shot drops of yours were gorgeous, and we're still on for Tuesday. Walk over to Rosa's porch with me for coffee and we'll plan our strategy?”",
@@ -2027,14 +2011,14 @@
         "tick": 400,
         "text": "Rosa said to Donna: “Donna, Hal, come in, come in! Dinner's almost ready, grab a seat anywhere. Has either of you seen Gary on the way over? I want all three of you at this table.”",
         "importance": 4
+      },
+      {
+        "tick": 401,
+        "text": "I (donna club calendar): Pencil in a two-hour Tuesday court reservation for Gary and me and flag the ladder matches",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 318,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02",
-        "importance": 5
-      },
       {
         "tick": 318,
         "text": "Gary said to Hal: “Afternoon, Hal, Donna. I've got the parade lights and speaker on my cart, but I'm hearing I need Architectural Review sign-off for anything visible from the street. You know how that works?”",
@@ -3029,14 +3013,14 @@
         "tick": 400,
         "text": "Rosa said to Donna: “Donna, Hal, come in, come in! Dinner's almost ready, grab a seat anywhere. Has either of you seen Gary on the way over? I want all three of you at this table.”",
         "importance": 4
+      },
+      {
+        "tick": 401,
+        "text": "I (hal porch chair): Sit down with my coffee and watch the street wake up",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 305,
-        "text": "I headed to Rosa's House.",
-        "importance": 5
-      },
       {
         "tick": 305,
         "text": "Donna headed to Rosa's House.",
@@ -4031,6 +4015,11 @@
         "tick": 400,
         "text": "Hal said to Donna: “Evening, Donna. Notebook's staying in my pocket tonight, so your flamingos can rest easy. Count's off the clock till Monday.”",
         "importance": 6
+      },
+      {
+        "tick": 401,
+        "text": "I (rosa shift schedule): Check this week's per-diem shifts before I commit to coffee with Hal",
+        "importance": 4
       }
     ]
   },
@@ -4077,10 +4066,10 @@
     ]
   },
   "emotions": {
-    "gary": "hopeful",
-    "donna": "cheerful",
-    "hal": "wry, content",
-    "rosa": "warm, hopeful"
+    "gary": "optimistic",
+    "donna": "determined",
+    "hal": "content",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4205,9 +4194,16 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 401,
+      "time": "Sunday, November 8, 7:17 AM",
+      "story": "At 7:17 on a humid, hazy Sunday morning in Sumter Oaks, Gary is tidying and labeling a speaker wiring harness at his workbench, sounding optimistic about the project. Across the way, Donna is penciling in a two-hour Tuesday court reservation for herself and Gary, determined to flag the ladder matches on the club calendar. Hal is settling into his porch chair with his coffee, content to watch the street wake up, while Rosa checks her per-diem shifts for the week before deciding whether to join him for coffee.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 12.63817,
+    "total_usd": 12.66847,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4316,11 +4312,14 @@
       "2026-11-07": {
         "ticks": 15,
         "usd": 0.4663
+      },
+      "2026-11-08": {
+        "ticks": 1,
+        "usd": 0.0303
       }
     }
   },
   "recent_tick_costs": [
-    0.0305,
     0.0318,
     0.03131,
     0.03065,
@@ -4343,7 +4342,8 @@
     0.03017,
     0.03146,
     0.03103,
-    0.03184
+    0.03184,
+    0.0303
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4391,7 +4391,7 @@
     "test_mode": false,
     "level": "fair"
   },
-  "last_tick_date": "2026-11-07",
+  "last_tick_date": "2026-11-08",
   "calendar_fired": [
     "halloween-flyer",
     "halloween-reminder",

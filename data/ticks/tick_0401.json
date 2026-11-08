@@ -1,0 +1,118 @@
+{
+  "tick": 401,
+  "simulation_time": "Sunday, November 8, 7:17 AM",
+  "weather": "Humid and hazy, 73°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a humid, hazy Sunday morning in Sumter Oaks, Gary is tidying and labeling a speaker wiring harness at his workbench, sounding optimistic about the project. Across the way, Donna is penciling in a two-hour Tuesday court reservation for herself and Gary, determined to flag the ladder matches on the club calendar. Hal is settling into his porch chair with his coffee, content to watch the street wake up, while Rosa checks her per-diem shifts for the week before deciding whether to join him for coffee.",
+  "events": [
+    "Gary (gary workbench): Finish tidying and labeling the speaker wiring harness",
+    "Donna (donna club calendar): Pencil in a two-hour Tuesday court reservation for Gary and me and flag the ladder matches",
+    "Hal (hal porch chair): Sit down with my coffee and watch the street wake up",
+    "Rosa (rosa shift schedule): Check this week's per-diem shifts before I commit to coffee with Hal"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's early Sunday morning and I'm home at the workbench. The memories say I filed my request with Architectural Review and I've been wiring quietly in the garage while I wait. L-01 only bites on exterior mods visible from the street, and I haven't mounted anything yet, so bench work is fine. I tested the speakers and lights at low volume last night, and Rosa's dinner is Friday, so there's time. Best use of this hour is to finish tidying the speaker wiring so everything is ready to bolt on the minute approval comes through. Keeping my hands busy beats sitting around the quiet house.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Finish tidying and labeling the speaker wiring harness"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's early Sunday morning and I'm home alone. Last night's supper at Rosa's went well, and my big goal is still climbing the pickleball ladder with Gary as my partner. I told him Tuesday courts, so I should get the reservation sorted, and the club calendar is right here. Courts max out at 2 hours per party under L-05, so I'll block exactly two hours, then check my pickleball bag and phone to rope Gary in for practice.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Pencil in a two-hour Tuesday court reservation for Gary and me and flag the ladder matches"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Sunday morning, 7:17 AM, and I'm home alone with nobody in sight. I gave my word at Rosa's dinner that the notebook stays in my pocket until Monday, and I intend to honor it. Still, my porch habit is a hard one to break. A man can sit with his coffee and look over his street without writing anyone up. Quiet hours just ended, the humidity is already settling in, and I'd rather ease into the day than go hunting for violations. I'll take the porch chair and see who stirs on Magnolia Loop.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_porch_chair",
+          "content": "Sit down with my coffee and watch the street wake up"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Sunday morning, the day after the big dinner. I'm home alone, and the memories say the whole table finally came together, which feels like a real win after the move. I have per-diem shifts to juggle and I've been overcommitted, so the sensible thing is to check my shift schedule before I promise anyone else coffee or Tuesday plans. Nobody's around to talk to, so I'll handle that practical bit first.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check this week's per-diem shifts before I commit to coffee with Hal"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0303,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9509,
+        "output_tokens": 1115,
+        "usd": 0.03017
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 405,
+        "output_tokens": 182,
+        "usd": 0.00013
+      }
+    }
+  }
+}
