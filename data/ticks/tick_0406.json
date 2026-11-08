@@ -1,0 +1,116 @@
+{
+  "tick": 406,
+  "simulation_time": "Sunday, November 8, 12:17 PM",
+  "weather": "Humid and hazy, 77°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On Magnolia Loop this humid, hazy Sunday afternoon at 12:17, Gary is out on the street with a cheerful word for Donna, promising to show her the cart lights he finished wiring in the garage once Architectural Review gives its blessing. Donna, eager as ever, is already pitching a rec center paddle session before Tuesday, with a spare paddle riding in her cart. Over at his porch, Hal sits content with his notebook closed, keeping his word to let the street be until Monday. Across the way, Rosa is determined to pencil in coffee with Hal on the first morning she has no per-diem shift.",
+  "events": [
+    "Hal waited: Sitting on the porch with the notebook closed, keeping my word until Monday and letting the street be.",
+    "Rosa (rosa shift schedule): Write coffee with Hal in ink on the first morning without a per-diem shift"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I just got out to Magnolia Loop after finishing the low-volume wiring check in the garage. Donna's right here, and I've been looking forward to showing her the cart lights and speakers. I filed with Architectural Review at tick 369 and haven't heard back, so nothing exterior is going on until approval (L-01). Everything's been inside the garage, which keeps me on the right side of the law. I haven't spoken to her yet this tick, so a friendly greeting that moves things forward makes sense: tell her the wiring's done, offer her a peek in the garage, and mention I'm waiting on the review.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Afternoon, Donna! I finally got the cart's wiring finished in the garage. Nothing's out on the street until Architectural Review signs off, but swing by sometime and I'll show you the lights."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just arrived on Magnolia Loop. I already texted him about Tuesday's two-hour court time and the spare paddle, and I said my piece last tick, so no need to re-ask about the court. The flamingos are counted and straightened. Best move now is to greet him and get him moving toward actual practice, since he's never played and the ladder won't climb itself. I'll offer a quick hit at the rec center today, keeping the reservation inside the 2-hour limit.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, perfect timing! I've got your spare paddle in the cart. Come to the rec center with me and let's get a little practice in before Tuesday, I'll teach you the kitchen line."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Sunday noon, nobody about, and I gave my word the notebook stays shut until Monday. Rosa's Friday dinner is a better use of my patience than counting flamingos. A sergeant keeps his word, so I'll sit tight on the porch, keep the binoculars down, and let the day pass quietly.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Sitting on the porch with the notebook closed, keeping my word until Monday and letting the street be."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've been standing at this schedule for five ticks asking myself the same question, and it's just a calendar. I need to stop circling and actually write the coffee date with Hal in ink, like I promised. It's Sunday midday with no one around, so this is the perfect quiet moment. Once it's penciled in, I can turn my attention to getting the kitchen and table ready for Friday's dinner.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Write coffee with Hal in ink on the first morning without a per-diem shift"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03069,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9435,
+        "output_tokens": 1110,
+        "usd": 0.02997
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3481,
+        "output_tokens": 753,
+        "usd": 0.00072
+      }
+    }
+  }
+}
