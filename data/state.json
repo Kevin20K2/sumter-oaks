@@ -1,6 +1,6 @@
 {
-  "tick": 410,
-  "time": "2026-11-08T15:17",
+  "tick": 411,
+  "time": "2026-11-08T16:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,26 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna waited: looking around for someone to talk to"
+      "Donna said to Gary: “Bless you, Gary, my lips are sealed, and Hal never hears a word from me. Grab a paddle and come stand on court one with me, we'll start nice and easy, just keeping it in the kitchen. You'll be climbing that ladder by Tuesday, I promise.”"
     ],
     "donna": [
-      "Gary said to Donna: “Well, you made it, Donna. Alright, I'm all yours for twenty minutes. Just go easy on my knees and don't tell Hal how bad I am.”"
+      "Gary (pickleball court 1): Step onto court 1 with my paddle, ready to rally with Donna"
     ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 311,
-        "text": "Donna said to Rosa: “Rosa, honey, this spread looks gorgeous, and I'm starving after all that flamingo hauling. Gary, don't let me forget to brag about your third-shot drops while we eat!”",
-        "importance": 4
-      },
-      {
-        "tick": 311,
-        "text": "Rosa (rosa dining table): Sit down and serve everyone the first plates",
-        "importance": 4
-      },
       {
         "tick": 312,
         "text": "I (gary workbench): Sketch the cart wiring plan and bench-test the speaker amp and light strips",
@@ -1018,19 +1008,19 @@
         "tick": 409,
         "text": "Donna waited: looking around for someone to talk to",
         "importance": 4
+      },
+      {
+        "tick": 410,
+        "text": "I (pickleball court 1): Step onto court 1 with my paddle, ready to rally with Donna",
+        "importance": 4
+      },
+      {
+        "tick": 410,
+        "text": "Donna said to Gary: “Bless you, Gary, my lips are sealed, and Hal never hears a word from me. Grab a paddle and come stand on court one with me, we'll start nice and easy, just keeping it in the kitchen. You'll be climbing that ladder by Tuesday, I promise.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 321,
-        "text": "Hal said to Gary: “Gary. That parade wiring on your cart is visible from the street, so it needs Architectural Review approval under L-01. File the paperwork before those lights go on again, or I'll have to.”",
-        "importance": 6
-      },
-      {
-        "tick": 321,
-        "text": "Rosa said to Hal: “Hal, there you are! I saved you the chair at the head of the table, so come sit. And I'm putting coffee with you in ink this week, no more excuses from me.”",
-        "importance": 6
-      },
       {
         "tick": 322,
         "text": "I said to Gary: “Gary, honey, I've filled out that Architectural Review form for half the street, so I'll sit with you and get it done before Tuesday. I can't have my partner's cart in trouble when we've got a ladder to climb.”",
@@ -2020,14 +2010,19 @@
         "tick": 409,
         "text": "Gary said to Donna: “Well, you made it, Donna. Alright, I'm all yours for twenty minutes. Just go easy on my knees and don't tell Hal how bad I am.”",
         "importance": 6
+      },
+      {
+        "tick": 410,
+        "text": "I said to Gary: “Bless you, Gary, my lips are sealed, and Hal never hears a word from me. Grab a paddle and come stand on court one with me, we'll start nice and easy, just keeping it in the kitchen. You'll be climbing that ladder by Tuesday, I promise.”",
+        "importance": 6
+      },
+      {
+        "tick": 410,
+        "text": "Gary (pickleball court 1): Step onto court 1 with my paddle, ready to rally with Donna",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 320,
-        "text": "You arrived at Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 320,
         "text": "Gary just arrived.",
@@ -3022,14 +3017,14 @@
         "tick": 409,
         "text": "I waited: Resting in the porch chair with the notebook closed, keeping my word until Monday and looking forward to Rosa's table tonight.",
         "importance": 2
+      },
+      {
+        "tick": 410,
+        "text": "I waited: Resting in the porch chair with the notebook closed, keeping my word until Monday and looking forward to supper at Rosa's.",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 307,
-        "text": "Gary said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”",
-        "importance": 6
-      },
       {
         "tick": 307,
         "text": "Donna (rosa kitchen): Set the casserole on the kitchen counter and peel back the foil",
@@ -4024,6 +4019,11 @@
         "tick": 409,
         "text": "I (rosa kitchen): Pack up dinner leftovers and tidy the kitchen",
         "importance": 3
+      },
+      {
+        "tick": 410,
+        "text": "I (rosa shift schedule): Check the Tuesday 9 AM slot and write 'Coffee with Hal' in pen if it isn't already there",
+        "importance": 4
       }
     ]
   },
@@ -4070,7 +4070,7 @@
     ]
   },
   "emotions": {
-    "gary": "warm, game",
+    "gary": "warm, a little sheepish",
     "donna": "eager",
     "hal": "content",
     "rosa": "content"
@@ -4220,10 +4220,18 @@
       "dialogue": [
         "Gary said to Donna: “Well, you made it, Donna. Alright, I'm all yours for twenty minutes. Just go easy on my knees and don't tell Hal how bad I am.”"
       ]
+    },
+    {
+      "tick": 410,
+      "time": "Sunday, November 8, 4:17 PM",
+      "story": "At 4:17 on this hazy, humid Sunday afternoon in Sumter Oaks, Gary steps onto pickleball court one with his paddle, ready to rally with Donna, who has promised to keep his secret and start him off gently at the kitchen line. Over at his porch, Hal sits content in his chair with the notebook shut, looking forward to supper at Rosa's, while Rosa, equally content, checks the Tuesday 9 AM slot and considers penciling in coffee with Hal.",
+      "dialogue": [
+        "Donna said to Gary: “Bless you, Gary, my lips are sealed, and Hal never hears a word from me. Grab a paddle and come stand on court one with me, we'll start nice and easy, just keeping it in the kitchen. You'll be climbing that ladder by Tuesday, I promise.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 12.91113,
+    "total_usd": 12.94194,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4334,13 +4342,12 @@
         "usd": 0.4663
       },
       "2026-11-08": {
-        "ticks": 9,
-        "usd": 0.27296
+        "ticks": 10,
+        "usd": 0.30377
       }
     }
   },
   "recent_tick_costs": [
-    0.03137,
     0.03065,
     0.03115,
     0.0303,
@@ -4363,7 +4370,8 @@
     0.03069,
     0.03097,
     0.03101,
-    0.03
+    0.03,
+    0.03081
   ],
   "fund": {
     "gross_usd": 0.0,

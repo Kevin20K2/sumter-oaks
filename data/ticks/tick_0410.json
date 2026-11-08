@@ -1,0 +1,117 @@
+{
+  "tick": 410,
+  "simulation_time": "Sunday, November 8, 4:17 PM",
+  "weather": "Humid and hazy, 78°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 4:17 on this hazy, humid Sunday afternoon in Sumter Oaks, Gary steps onto pickleball court one with his paddle, ready to rally with Donna, who has promised to keep his secret and start him off gently at the kitchen line. Over at his porch, Hal sits content in his chair with the notebook shut, looking forward to supper at Rosa's, while Rosa, equally content, checks the Tuesday 9 AM slot and considers penciling in coffee with Hal.",
+  "events": [
+    "Gary (pickleball court 1): Step onto court 1 with my paddle, ready to rally with Donna",
+    "Hal waited: Resting in the porch chair with the notebook closed, keeping my word until Monday and looking forward to supper at Rosa's.",
+    "Rosa (rosa shift schedule): Check the Tuesday 9 AM slot and write 'Coffee with Hal' in pen if it isn't already there"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I told Donna at tick 409 that I'm all hers for twenty minutes, and she's just standing there looking around for someone to talk to. She hasn't answered yet, and I shouldn't repeat my last line. The ladder board and kiosk are right here, and the courts are open. Pickleball is Donna's way of looking out for me, and I like being the one she bothers with. Best move is to follow through, take her to court 1 and get on with it. The cart can wait; I filed the Architectural Review request and the wiring is tidy in the garage. Might even mention the parade lights after, since she'll get a kick out of them.",
+      "emotional_state": "warm, a little sheepish",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Step onto court 1 with my paddle, ready to rally with Donna"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary finally showed up at the Rec Center and said he's all mine for twenty minutes. He has never played, so I shouldn't talk his ear off. Time to get him moving. Get him on a court, show him the basics, and make him feel like a natural so he stays on as my doubles partner. The ladder isn't going to climb itself. He's worried about his knees, so I'll keep it gentle and promise not to spill his secret to Hal.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Bless you, Gary, my lips are sealed, and Hal never hears a word from me. Grab a paddle and come stand on court one with me, we'll start nice and easy, just keeping it in the kitchen. You'll be climbing that ladder by Tuesday, I promise."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's a hazy Sunday afternoon, nobody is in sight, and I gave my word to keep the notebook closed until Monday. Rosa's table tonight is something to look forward to, so there's no sense stirring up the street. I'll sit tight in the porch chair and let the afternoon pass.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Resting in the porch chair with the notebook closed, keeping my word until Monday and looking forward to supper at Rosa's."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The dinner is over and the leftovers are packed away. For the last four ticks I've been circling the same task: writing coffee with Hal in ink on my shift schedule. Tick 408 had me writing 'Coffee with Hal, Tuesday 9 AM' in pen, and I'm not sure it actually got done, since I moved on to the kitchen afterward. The schedule is right here in the room with me, and nobody's around to talk to. Just pick the open morning, write it in pen, and finish it so I can stop thinking about it. It's a quiet Sunday afternoon, and I could also use a rest before my next shift.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check the Tuesday 9 AM slot and write 'Coffee with Hal' in pen if it isn't already there"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03081,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9379,
+        "output_tokens": 1192,
+        "usd": 0.03068
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 505,
+        "output_tokens": 166,
+        "usd": 0.00013
+      }
+    }
+  }
+}
