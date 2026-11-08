@@ -1,6 +1,6 @@
 {
-  "tick": 409,
-  "time": "2026-11-08T14:17",
+  "tick": 410,
+  "time": "2026-11-08T15:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,26 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna just arrived."
+      "Donna waited: looking around for someone to talk to"
     ],
     "donna": [
-      "You arrived at Rec Center."
+      "Gary said to Donna: “Well, you made it, Donna. Alright, I'm all yours for twenty minutes. Just go easy on my knees and don't tell Hal how bad I am.”"
     ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 310,
-        "text": "Rosa said to Gary: “Deal, Gary, porch lights after dessert. Sit, sit, before the rolls go cold. We'll save Hal's chair and he can catch up when he gets here.”",
-        "importance": 3
-      },
-      {
-        "tick": 311,
-        "text": "I (rosa dining table): Take a seat, pass the rolls, and dig into supper",
-        "importance": 4
-      },
       {
         "tick": 311,
         "text": "Donna said to Rosa: “Rosa, honey, this spread looks gorgeous, and I'm starving after all that flamingo hauling. Gary, don't let me forget to brag about your third-shot drops while we eat!”",
@@ -1018,19 +1008,19 @@
         "tick": 408,
         "text": "Donna just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 409,
+        "text": "I said to Donna: “Well, you made it, Donna. Alright, I'm all yours for twenty minutes. Just go easy on my knees and don't tell Hal how bad I am.”",
+        "importance": 4
+      },
+      {
+        "tick": 409,
+        "text": "Donna waited: looking around for someone to talk to",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 321,
-        "text": "I said to Gary: “Gary, there's my partner! Those third-shot drops have me dreaming about the top of the ladder. Tuesday, courts, bring that wrist.”",
-        "importance": 6
-      },
-      {
-        "tick": 321,
-        "text": "Gary said to Hal: “Hal, good timing. You've been through the Architectural Review form before, haven't you? I'd like to file for the parade lights and sound system on my cart, and I'd take any pointers on what they look for.”",
-        "importance": 6
-      },
       {
         "tick": 321,
         "text": "Hal said to Gary: “Gary. That parade wiring on your cart is visible from the street, so it needs Architectural Review approval under L-01. File the paperwork before those lights go on again, or I'll have to.”",
@@ -2020,14 +2010,19 @@
         "tick": 408,
         "text": "You arrived at Rec Center.",
         "importance": 6
+      },
+      {
+        "tick": 409,
+        "text": "I waited: looking around for someone to talk to",
+        "importance": 6
+      },
+      {
+        "tick": 409,
+        "text": "Gary said to Donna: “Well, you made it, Donna. Alright, I'm all yours for twenty minutes. Just go easy on my knees and don't tell Hal how bad I am.”",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 320,
-        "text": "Donna headed to Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 320,
         "text": "You arrived at Rosa's House.",
@@ -3022,14 +3017,14 @@
         "tick": 408,
         "text": "I waited: Sitting out the hazy Sunday afternoon on the porch with the notebook closed, keeping my word until Monday.",
         "importance": 2
+      },
+      {
+        "tick": 409,
+        "text": "I waited: Resting in the porch chair with the notebook closed, keeping my word until Monday and looking forward to Rosa's table tonight.",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 307,
-        "text": "I (rosa dining table): Set out plates, napkins and four chairs, saving a spot for Hal",
-        "importance": 6
-      },
       {
         "tick": 307,
         "text": "Gary said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”",
@@ -4024,6 +4019,11 @@
         "tick": 408,
         "text": "I (rosa shift schedule): Write 'Coffee with Hal, Tuesday 9 AM' in pen on the open morning and finally close this out",
         "importance": 4
+      },
+      {
+        "tick": 409,
+        "text": "I (rosa kitchen): Pack up dinner leftovers and tidy the kitchen",
+        "importance": 3
       }
     ]
   },
@@ -4070,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "nervous but game",
-    "donna": "determined",
-    "hal": "patient",
-    "rosa": "determined"
+    "gary": "warm, game",
+    "donna": "eager",
+    "hal": "content",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4212,10 +4212,18 @@
       "time": "Sunday, November 8, 2:17 PM",
       "story": "At 2:17 on a hazy, humid Sunday in Sumter Oaks, Gary waits at the Rec Center, nervously but game, scanning the ladder standings while he watches for Donna. Donna is walking down Magnolia Loop with a look of pure determination, heading toward him. Back at Hal's House, Hal sits patiently on the porch with his notebook closed, keeping his word to wait until Monday. Over at Rosa's House, Rosa, equally determined, pens \"Coffee with Hal, Tuesday 9 AM\" onto her open morning on the shift schedule.",
       "dialogue": []
+    },
+    {
+      "tick": 409,
+      "time": "Sunday, November 8, 3:17 PM",
+      "story": "At 3:17 on this humid, hazy Sunday afternoon in Sumter Oaks, Gary is at the Rec Center telling Donna he'll give her twenty minutes of his time and asking her to go easy on his knees. Donna, eager for company, is looking around for someone to talk to while she waits for him. Back at his porch, Hal sits content in his chair with his notebook closed, keeping his word to stay off it until Monday and looking forward to Rosa's table tonight. Rosa, also content, is in her kitchen packing up dinner leftovers and tidying up.",
+      "dialogue": [
+        "Gary said to Donna: “Well, you made it, Donna. Alright, I'm all yours for twenty minutes. Just go easy on my knees and don't tell Hal how bad I am.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 12.88113,
+    "total_usd": 12.91113,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4326,13 +4334,12 @@
         "usd": 0.4663
       },
       "2026-11-08": {
-        "ticks": 8,
-        "usd": 0.24296
+        "ticks": 9,
+        "usd": 0.27296
       }
     }
   },
   "recent_tick_costs": [
-    0.03043,
     0.03137,
     0.03065,
     0.03115,
@@ -4355,7 +4362,8 @@
     0.03015,
     0.03069,
     0.03097,
-    0.03101
+    0.03101,
+    0.03
   ],
   "fund": {
     "gross_usd": 0.0,
