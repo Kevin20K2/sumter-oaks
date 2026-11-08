@@ -1,6 +1,6 @@
 {
-  "tick": 402,
-  "time": "2026-11-08T07:17",
+  "tick": 403,
+  "time": "2026-11-08T08:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -15,11 +15,6 @@
   },
   "memories": {
     "gary": [
-      {
-        "tick": 306,
-        "text": "Rosa said to Donna: “Donna, you can set that casserole right on the kitchen counter, I'll get the table laid out. Gary, would you mind grabbing the chairs while we wait on Hal?”",
-        "importance": 5
-      },
       {
         "tick": 307,
         "text": "I said to Donna: “Tuesday morning, two hours sharp, count me in, Donna. Let me get these chairs set out for Rosa and then we'll sort the ladder sign-up.”",
@@ -1014,14 +1009,14 @@
         "tick": 401,
         "text": "I (gary workbench): Finish tidying and labeling the speaker wiring harness",
         "importance": 4
+      },
+      {
+        "tick": 402,
+        "text": "I (gary golf cart): Install the labeled wiring harness and run a low-volume test of the light strips and speakers",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 318,
-        "text": "I said to Gary: “Gary, there's my doubles partner! Those third-shot drops of yours were gorgeous, and we're still on for Tuesday. Walk over to Rosa's porch with me for coffee and we'll plan our strategy?”",
-        "importance": 5
-      },
       {
         "tick": 318,
         "text": "Gary said to Hal: “Afternoon, Hal, Donna. I've got the parade lights and speaker on my cart, but I'm hearing I need Architectural Review sign-off for anything visible from the street. You know how that works?”",
@@ -2016,14 +2011,14 @@
         "tick": 401,
         "text": "I (donna club calendar): Pencil in a two-hour Tuesday court reservation for Gary and me and flag the ladder matches",
         "importance": 5
+      },
+      {
+        "tick": 402,
+        "text": "I (donna pickleball bag): Check the paddles and balls and pack a spare paddle for Gary",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 318,
-        "text": "Gary said to Hal: “Afternoon, Hal, Donna. I've got the parade lights and speaker on my cart, but I'm hearing I need Architectural Review sign-off for anything visible from the street. You know how that works?”",
-        "importance": 5
-      },
       {
         "tick": 318,
         "text": "Donna said to Gary: “Gary, there's my doubles partner! Those third-shot drops of yours were gorgeous, and we're still on for Tuesday. Walk over to Rosa's porch with me for coffee and we'll plan our strategy?”",
@@ -3018,14 +3013,14 @@
         "tick": 401,
         "text": "I (hal porch chair): Sit down with my coffee and watch the street wake up",
         "importance": 2
+      },
+      {
+        "tick": 402,
+        "text": "I (hal binoculars): Scan the street from the porch, just looking, nothing written down",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 305,
-        "text": "Donna headed to Rosa's House.",
-        "importance": 5
-      },
       {
         "tick": 305,
         "text": "Hal (donna flamingo flock): Raise binoculars and count the flamingos visible from the street",
@@ -4020,6 +4015,11 @@
         "tick": 401,
         "text": "I (rosa shift schedule): Check this week's per-diem shifts before I commit to coffee with Hal",
         "importance": 4
+      },
+      {
+        "tick": 402,
+        "text": "I (rosa shift schedule): Look over this week's per-diem shifts to find a free morning for coffee with Hal",
+        "importance": 4
       }
     ]
   },
@@ -4066,8 +4066,8 @@
     ]
   },
   "emotions": {
-    "gary": "optimistic",
-    "donna": "determined",
+    "gary": "focused",
+    "donna": "optimistic",
     "hal": "content",
     "rosa": "content"
   },
@@ -4200,10 +4200,16 @@
       "time": "Sunday, November 8, 7:17 AM",
       "story": "At 7:17 on a humid, hazy Sunday morning in Sumter Oaks, Gary is tidying and labeling a speaker wiring harness at his workbench, sounding optimistic about the project. Across the way, Donna is penciling in a two-hour Tuesday court reservation for herself and Gary, determined to flag the ladder matches on the club calendar. Hal is settling into his porch chair with his coffee, content to watch the street wake up, while Rosa checks her per-diem shifts for the week before deciding whether to join him for coffee.",
       "dialogue": []
+    },
+    {
+      "tick": 402,
+      "time": "Sunday, November 8, 8:17 AM",
+      "story": "At 8:17 on a humid, hazy Sunday morning in Sumter Oaks, Gary is at his house focused on wiring a labeled harness and running a quiet test of his golf cart's light strips and speakers. Across the street, Donna is optimistic as she checks her paddles and balls and packs a spare paddle for Gary, probably with a grin about his eventual rematch. Hal sits content on his porch with binoculars, simply taking in the street without writing anything down, while Rosa, also content, looks over her per-diem shifts to find a free morning for coffee with him.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 12.66847,
+    "total_usd": 12.69866,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4314,13 +4320,12 @@
         "usd": 0.4663
       },
       "2026-11-08": {
-        "ticks": 1,
-        "usd": 0.0303
+        "ticks": 2,
+        "usd": 0.06049
       }
     }
   },
   "recent_tick_costs": [
-    0.0318,
     0.03131,
     0.03065,
     0.03099,
@@ -4343,7 +4348,8 @@
     0.03146,
     0.03103,
     0.03184,
-    0.0303
+    0.0303,
+    0.03019
   ],
   "fund": {
     "gross_usd": 0.0,

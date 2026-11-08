@@ -1,0 +1,118 @@
+{
+  "tick": 402,
+  "simulation_time": "Sunday, November 8, 8:17 AM",
+  "weather": "Humid and hazy, 74°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on a humid, hazy Sunday morning in Sumter Oaks, Gary is at his house focused on wiring a labeled harness and running a quiet test of his golf cart's light strips and speakers. Across the street, Donna is optimistic as she checks her paddles and balls and packs a spare paddle for Gary, probably with a grin about his eventual rematch. Hal sits content on his porch with binoculars, simply taking in the street without writing anything down, while Rosa, also content, looks over her per-diem shifts to find a free morning for coffee with him.",
+  "events": [
+    "Gary (gary golf cart): Install the labeled wiring harness and run a low-volume test of the light strips and speakers",
+    "Donna (donna pickleball bag): Check the paddles and balls and pack a spare paddle for Gary",
+    "Hal (hal binoculars): Scan the street from the porch, just looking, nothing written down",
+    "Rosa (rosa shift schedule): Look over this week's per-diem shifts to find a free morning for coffee with Hal"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's Sunday morning and I'm at home with nobody around. I finished the speaker wiring harness last tick and I've already tested things at low volume, so the next step is making sure the cart actually works end to end before dinner at Rosa's and before I show Donna. The cart is in the garage, so the wiring and light strips are out of sight from the street, which keeps me clear of L-01 until Architectural Review signs off. I filed the request already, so now it's just a matter of being patient and having everything ready. I'll mount the finished harness in the cart and run the light strips at low volume so the sound stays well within quiet hours.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Install the labeled wiring harness and run a low-volume test of the light strips and speakers"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Sunday morning, I'm home alone, and my last move was penciling in the Tuesday court on the club calendar. Gary still hasn't played a single point, and the ladder won't climb itself. I should get my pickleball bag in order so I'm ready to drag him onto the court Tuesday. Last night's supper was lovely, so I'm in a good mood. Checking the bag is a small, concrete step toward the goal.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Check the paddles and balls and pack a spare paddle for Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Sunday morning, quiet, and nobody's within sight. Last night's dinner went well and I promised to keep the notebook in my pocket till Monday, so I'm holding to my word. No point heading to Town Hall to file anything today. I'll use the binoculars from the porch, purely out of habit and for the sake of keeping order, and see how the street looks. Counting isn't reporting. I'll note what's there and decide Monday whether it's worth bringing up at all, or whether I'd rather just wave at Donna over the fence.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Scan the street from the porch, just looking, nothing written down"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Sunday morning, the dinner is behind me, and my last memory was checking this week's per-diem shifts before I commit to coffee with Hal. I told him it would be in ink this week, so I should look at the schedule now and find a day that actually works instead of making another promise I can't keep. I'm alone in the house, so the shift schedule is the next useful thing.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Look over this week's per-diem shifts to find a free morning for coffee with Hal"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03019,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9549,
+        "output_tokens": 1095,
+        "usd": 0.03005
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 410,
+        "output_tokens": 189,
+        "usd": 0.00014
+      }
+    }
+  }
+}
