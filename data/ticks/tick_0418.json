@@ -1,0 +1,118 @@
+{
+  "tick": 418,
+  "simulation_time": "Monday, November 9, 9:17 AM",
+  "weather": "Sunny, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is out of sight in his garage, fitting a light strip to his golf cart where the street can't see it. Donna is heading down Magnolia Loop in good spirits, unaware of the notebook that will soon hold her flamingo count. Hal sits at his desk writing up the cart modifications and flamingo tally for the review committee, as fair and factual as he can make them. Meanwhile, Rosa is at her kitchen sink washing the dinner dishes, and she plans to wrap the leftover flan for the neighbors.",
+  "events": [
+    "Gary (gary golf cart): Mount and test the light strip on the cart inside the garage, out of view of the street",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (hal violation notebook): Write up Donna's flamingo count under L-02 and Gary's cart modifications under L-01, factual and fair, for the review committee",
+    "Rosa (rosa kitchen): Wash up the dinner dishes and wrap the leftover flan for the neighbors"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's a sunny Monday morning and I'm home with nobody around. I've already bench-tested and soldered the speaker wiring, and I filed with Architectural Review back at tick 369 but have no approval yet. Everything stays inside the garage until then, per L-01. Best use of this hour is the light strip itself: wire it up and test it on the cart indoors, all out of view of the street. Holiday lighting won't be legal until Thanksgiving anyway, so I'm in no rush to hang anything outside. Tuesday's court time with Donna is tomorrow, so I should keep my wrist rested but this is just fine detail work.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Mount and test the light strip on the cart inside the garage, out of view of the street"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Court is booked, bag is packed, calendar is checked, and Gary is confirmed for Tuesday. Nobody's in sight and I've already done all the prep, so repeating any of it would be pointless. Magnolia Loop is where I'll likely run into Gary or other neighbors, and Gary could use a little warm-up practice before the big day. Time to go find him and keep the momentum going.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to the street to find Gary and see if he wants a little practice before Tuesday."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's Monday morning, and I swore the notebook stayed shut until today. My log from last night is already written, and I'm back at my own house. Time to do the job properly, plainly and fairly: tally Donna's flamingos and note Gary's cart modifications against L-02 and L-01, so the committee gets accurate facts. Then maybe the day goes easier, since Rosa's table last night softened me a bit.",
+      "emotional_state": "dutiful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Write up Donna's flamingo count under L-02 and Gary's cart modifications under L-01, factual and fair, for the review committee"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Monday morning, the house is quiet, and nobody is around. I already penciled Wednesday coffee with Hal into my shift schedule last tick, and I've waited once since. The dinner worked, so my immediate goal is done. The sensible thing now is to tidy up after hosting. The kitchen is probably still full of last night's dishes and leftover flan, so I'll deal with that and think about what comes next for building this community.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Wash up the dinner dishes and wrap the leftover flan for the neighbors"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03036,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9335,
+        "output_tokens": 1100,
+        "usd": 0.02967
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3446,
+        "output_tokens": 690,
+        "usd": 0.00069
+      }
+    }
+  }
+}

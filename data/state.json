@@ -1,25 +1,22 @@
 {
-  "tick": 418,
-  "time": "2026-11-09T08:17",
+  "tick": 419,
+  "time": "2026-11-09T09:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
-    "donna": [],
+    "donna": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 319,
-        "text": "Hal said to Gary: “You heard right, Gary. L-01 says anything visible from the street needs Architectural Review approval before it goes on the cart. Put your lights and speaker in a written request and I'll walk it over with you. Rosa's porch is a fine place to start the paperwork.”",
-        "importance": 4
-      },
       {
         "tick": 320,
         "text": "I headed to Rosa's House.",
@@ -1014,19 +1011,14 @@
         "tick": 417,
         "text": "I (gary workbench): Solder and label the speaker wiring, keep everything inside the garage until approval",
         "importance": 4
+      },
+      {
+        "tick": 418,
+        "text": "I (gary golf cart): Mount and test the light strip on the cart inside the garage, out of view of the street",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 325,
-        "text": "Hal said to Rosa: “Smells like proper rations in here, Rosa. Coffee in ink, I see. Now I'm obligated to show up.”",
-        "importance": 3
-      },
-      {
-        "tick": 325,
-        "text": "Rosa (rosa shift schedule): Write coffee with Hal into the schedule in ink",
-        "importance": 3
-      },
       {
         "tick": 326,
         "text": "I said to Hal: “Hal, you're just in time, and don't think I missed that you got roped into coffee with Rosa. Tuesday morning Gary and I are hitting the pickleball courts if you want to come keep score and heckle us.”",
@@ -2016,14 +2008,19 @@
         "tick": 417,
         "text": "I (donna pickleball bag): Pack my paddles, a spare for Gary, balls, and water for Tuesday",
         "importance": 4
+      },
+      {
+        "tick": 418,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 418,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 323,
-        "text": "I said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”",
-        "importance": 4
-      },
       {
         "tick": 323,
         "text": "Donna said to Rosa: “Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here.”",
@@ -3018,14 +3015,14 @@
         "tick": 417,
         "text": "I (hal violation notebook): Open the notebook and log Monday's flamingo tally and Gary's cart modifications, plainly and fairly",
         "importance": 5
+      },
+      {
+        "tick": 418,
+        "text": "I (hal violation notebook): Write up Donna's flamingo count under L-02 and Gary's cart modifications under L-01, factual and fair, for the review committee",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 310,
-        "text": "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
-        "importance": 6
-      },
       {
         "tick": 311,
         "text": "I (rosa dining table): Sit down and serve everyone the first plates",
@@ -4020,6 +4017,11 @@
         "tick": 417,
         "text": "I waited: puttering around Rosa's House",
         "importance": 3
+      },
+      {
+        "tick": 418,
+        "text": "I (rosa kitchen): Wash up the dinner dishes and wrap the leftover flan for the neighbors",
+        "importance": 3
       }
     ]
   },
@@ -4068,7 +4070,7 @@
   "emotions": {
     "gary": "focused",
     "donna": "optimistic",
-    "hal": "resolved",
+    "hal": "dutiful",
     "rosa": "content"
   },
   "laws": [
@@ -4194,46 +4196,9 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 413,
-      "time": "Sunday, November 8, 7:17 PM",
-      "story": "At 7:17 on a humid, hazy Sunday evening in Sumter Oaks, Gary and Donna wrap up a pickleball lesson at the Rec Center, with Gary deciding his knees have earned a rest and promising to return Tuesday for another go. Donna, still full of optimism, cheerfully plans a few gentle serves for their next session. Hal heads out along Magnolia Loop, while Rosa stays home at her house and checks her week's schedule to make sure her shifts won't clash with coffee plans with Hal.",
-      "dialogue": [
-        "Gary said to Donna: “Thanks for the lesson, Donna, my knees say that's plenty for one evening. I'll be back Tuesday, and I'm heading home to get back to my cart wiring.”",
-        "Donna said to Gary: “Gary, honey, you're a natural at the kitchen! Let's try a few serves next, underhand and nice and easy, and by Tuesday we'll be climbing that ladder board together.”"
-      ]
-    },
-    {
-      "tick": 414,
-      "time": "Sunday, November 8, 8:17 PM",
-      "story": "On Sunday evening in Sumter Oaks, humid haze hangs over the golf cart paths at 75 degrees as the town settles in for the night. Donna has just confirmed her Tuesday two-hour court slot at the Rec Center kiosk and feels pleased with the week ahead. Gary is strolling down Magnolia Loop while Hal makes his way to Rosa's House, where Rosa is finishing the last of her tea and savoring a full table before bed.",
-      "dialogue": []
-    },
-    {
-      "tick": 415,
-      "time": "Sunday, November 8, 9:17 PM",
-      "story": "Gary is reading the bulletin board on Magnolia Loop for any notices about the parade or the Architectural Review, while Donna studies the ladder standings at the Rec Center to see which teams she and Gary need to beat. Over at Rosa's House, Hal has arrived a little late, apologizing for lingering on his porch and asking whether a plate still has his name on it. Rosa, warm as ever, teases him about returning so soon and confirms that Wednesday morning is open for their coffee.",
-      "dialogue": [
-        "Hal said to Rosa: “Evening, Rosa. Sorry I'm late, the porch kept me longer than it should have. Thank you for the invitation. Is there still a plate with my name on it?”",
-        "Rosa said to Hal: “Hal, back already? Did you leave something behind, or did you come for the last of the flan? And good news, I checked my schedule and Wednesday morning is clear for that coffee.”"
-      ]
-    },
-    {
-      "tick": 416,
-      "time": "Monday, November 9, 7:17 AM",
-      "story": "Gary is bench-testing light strip and speaker wiring in his garage at Gary's House, determined to keep the whole project contained indoors. Donna sits at her club calendar at Donna's House, energized and checking that nothing collides with Tuesday's pickleball. Hal, mellow and watchful, scans Magnolia Loop from his porch through binoculars before deciding whether anything is worth writing up. Rosa, content, reviews her per-diem shifts at Rosa's House and pencils in Wednesday morning coffee with Hal.",
-      "dialogue": []
-    },
-    {
-      "tick": 417,
-      "time": "Monday, November 9, 8:17 AM",
-      "story": "On this sunny Monday morning at 8:17, Gary stays focused in his garage, soldering and labeling speaker wiring while keeping everything indoors until it gets approval. Across the street, Donna optimistically packs her pickleball paddles, a spare for Gary, balls, and water for Tuesday's game. Hal, resolved as ever, opens his violation notebook to record the flamingo tally and Gary's cart modifications as fairly as he can, while Rosa, content, putters around her house.",
-      "dialogue": []
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 13.15194,
+    "total_usd": 13.1823,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4348,13 +4313,12 @@
         "usd": 0.45266
       },
       "2026-11-09": {
-        "ticks": 2,
-        "usd": 0.06111
+        "ticks": 3,
+        "usd": 0.09147
       }
     }
   },
   "recent_tick_costs": [
-    0.0314,
     0.03002,
     0.03,
     0.03017,
@@ -4377,7 +4341,8 @@
     0.02983,
     0.02905,
     0.03118,
-    0.02993
+    0.02993,
+    0.03036
   ],
   "fund": {
     "gross_usd": 0.0,
