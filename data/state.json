@@ -1,27 +1,24 @@
 {
-  "tick": 419,
-  "time": "2026-11-09T09:17",
+  "tick": 420,
+  "time": "2026-11-09T10:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
-    "hal": "hals_house",
+    "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
     "donna": [
+      "Hal just arrived."
+    ],
+    "hal": [
       "You arrived at Magnolia Loop (the street)."
     ],
-    "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 320,
-        "text": "I headed to Rosa's House.",
-        "importance": 5
-      },
       {
         "tick": 320,
         "text": "Donna headed to Rosa's House.",
@@ -1016,19 +1013,14 @@
         "tick": 418,
         "text": "I (gary golf cart): Mount and test the light strip on the cart inside the garage, out of view of the street",
         "importance": 4
+      },
+      {
+        "tick": 419,
+        "text": "I (gary golf cart): Mount the speaker and run a low-volume sound test inside the garage",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 326,
-        "text": "I said to Hal: “Hal, you're just in time, and don't think I missed that you got roped into coffee with Rosa. Tuesday morning Gary and I are hitting the pickleball courts if you want to come keep score and heckle us.”",
-        "importance": 4
-      },
-      {
-        "tick": 326,
-        "text": "Hal said to Donna: “Evening, Donna. Pass the gravy, and while you're at it, tell me honestly how many flamingos are on that lawn tonight. I'd hate to count them myself in the morning.”",
-        "importance": 4
-      },
       {
         "tick": 326,
         "text": "Rosa said to Hal: “Obligated is the right word, Hal. I wrote Thursday morning, eight o'clock, my porch, and I don't erase ink. Now sit and eat before Donna finishes the pot roast.”",
@@ -2018,19 +2010,19 @@
         "tick": 418,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 419,
+        "text": "I (street bulletin board): Read the latest notices and pin up a pickleball ladder announcement",
+        "importance": 4
+      },
+      {
+        "tick": 419,
+        "text": "Hal just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 323,
-        "text": "Donna said to Rosa: “Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here.”",
-        "importance": 4
-      },
-      {
-        "tick": 323,
-        "text": "Rosa (rosa kitchen): Plate up the supper and carry it out to the table",
-        "importance": 4
-      },
       {
         "tick": 324,
         "text": "I (rosa dining table): Take my seat at the head of the table and pour a glass of water",
@@ -3020,14 +3012,19 @@
         "tick": 418,
         "text": "I (hal violation notebook): Write up Donna's flamingo count under L-02 and Gary's cart modifications under L-01, factual and fair, for the review committee",
         "importance": 6
+      },
+      {
+        "tick": 419,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 419,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 311,
-        "text": "I (rosa dining table): Sit down and serve everyone the first plates",
-        "importance": 6
-      },
       {
         "tick": 311,
         "text": "Gary (rosa dining table): Take a seat, pass the rolls, and dig into supper",
@@ -4022,6 +4019,11 @@
         "tick": 418,
         "text": "I (rosa kitchen): Wash up the dinner dishes and wrap the leftover flan for the neighbors",
         "importance": 3
+      },
+      {
+        "tick": 419,
+        "text": "I (rosa shift schedule): Double-check that Wednesday morning stays clear of per-diem shifts and mark it off for coffee with Hal",
+        "importance": 4
       }
     ]
   },
@@ -4069,8 +4071,8 @@
   },
   "emotions": {
     "gary": "focused",
-    "donna": "optimistic",
-    "hal": "dutiful",
+    "donna": "upbeat",
+    "hal": "resolute",
     "rosa": "content"
   },
   "laws": [
@@ -4196,9 +4198,16 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 419,
+      "time": "Monday, November 9, 10:17 AM",
+      "story": "At 10:17 on a sunny Monday morning in Sumter Oaks, Gary is focused in his garage, testing a speaker at low volume while the golf cart hums nearby. Donna is upbeat as she reads the notices on the Magnolia Loop bulletin board and pins up a new pickleball ladder announcement. Hal is resolute as he heads down the street toward Donna, and Rosa, content at home, is marking Wednesday morning clear on her shift schedule so she can have coffee with Hal.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 13.1823,
+    "total_usd": 13.21262,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4313,13 +4322,12 @@
         "usd": 0.45266
       },
       "2026-11-09": {
-        "ticks": 3,
-        "usd": 0.09147
+        "ticks": 4,
+        "usd": 0.12179
       }
     }
   },
   "recent_tick_costs": [
-    0.03002,
     0.03,
     0.03017,
     0.03146,
@@ -4342,7 +4350,8 @@
     0.02905,
     0.03118,
     0.02993,
-    0.03036
+    0.03036,
+    0.03032
   ],
   "fund": {
     "gross_usd": 0.0,
