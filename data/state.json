@@ -1,6 +1,6 @@
 {
-  "tick": 417,
-  "time": "2026-11-09T07:17",
+  "tick": 418,
+  "time": "2026-11-09T08:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -15,11 +15,6 @@
   },
   "memories": {
     "gary": [
-      {
-        "tick": 319,
-        "text": "Donna said to Gary: “Gary, hon, anything bolted on your cart that shows from the street needs Architectural Review, so file it before you cruise around with those lights. Plug-in decorations you can take off are a safer bet, and I'll happily help with the form over coffee at Rosa's.”",
-        "importance": 4
-      },
       {
         "tick": 319,
         "text": "Hal said to Gary: “You heard right, Gary. L-01 says anything visible from the street needs Architectural Review approval before it goes on the cart. Put your lights and speaker in a written request and I'll walk it over with you. Rosa's porch is a fine place to start the paperwork.”",
@@ -1014,14 +1009,14 @@
         "tick": 416,
         "text": "I (gary workbench): Bench-test the light strip and speaker wiring, keep it all inside the garage",
         "importance": 4
+      },
+      {
+        "tick": 417,
+        "text": "I (gary workbench): Solder and label the speaker wiring, keep everything inside the garage until approval",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 325,
-        "text": "I (rosa dining table): Take my seat, pass the serving dishes, and tuck into supper",
-        "importance": 3
-      },
       {
         "tick": 325,
         "text": "Hal said to Rosa: “Smells like proper rations in here, Rosa. Coffee in ink, I see. Now I'm obligated to show up.”",
@@ -2016,14 +2011,14 @@
         "tick": 416,
         "text": "I (donna club calendar): Review this week's club events and make sure nothing conflicts with Tuesday's pickleball",
         "importance": 4
+      },
+      {
+        "tick": 417,
+        "text": "I (donna pickleball bag): Pack my paddles, a spare for Gary, balls, and water for Tuesday",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 322,
-        "text": "Rosa said to Hal: “Alright, you three, the cart forms and the pickleball ladder can wait until after we eat. Everybody sit, and Hal, pour yourself some water at your head-of-the-table seat while I bring out the food.”",
-        "importance": 5
-      },
       {
         "tick": 323,
         "text": "I said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”",
@@ -3018,14 +3013,14 @@
         "tick": 416,
         "text": "I (hal binoculars): Take a measured look down Magnolia Loop from the porch before deciding whether anything needs writing up",
         "importance": 4
+      },
+      {
+        "tick": 417,
+        "text": "I (hal violation notebook): Open the notebook and log Monday's flamingo tally and Gary's cart modifications, plainly and fairly",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 310,
-        "text": "Gary (rosa dining table): Help set out spoons and plates, then take a seat",
-        "importance": 6
-      },
       {
         "tick": 310,
         "text": "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
@@ -4020,6 +4015,11 @@
         "tick": 416,
         "text": "I (rosa shift schedule): Check this week's per-diem shifts and pencil in Wednesday morning coffee with Hal",
         "importance": 4
+      },
+      {
+        "tick": 417,
+        "text": "I waited: puttering around Rosa's House",
+        "importance": 3
       }
     ]
   },
@@ -4066,9 +4066,9 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
-    "donna": "energized",
-    "hal": "mellow, watchful",
+    "gary": "focused",
+    "donna": "optimistic",
+    "hal": "resolved",
     "rosa": "content"
   },
   "laws": [
@@ -4224,10 +4224,16 @@
       "time": "Monday, November 9, 7:17 AM",
       "story": "Gary is bench-testing light strip and speaker wiring in his garage at Gary's House, determined to keep the whole project contained indoors. Donna sits at her club calendar at Donna's House, energized and checking that nothing collides with Tuesday's pickleball. Hal, mellow and watchful, scans Magnolia Loop from his porch through binoculars before deciding whether anything is worth writing up. Rosa, content, reviews her per-diem shifts at Rosa's House and pencils in Wednesday morning coffee with Hal.",
       "dialogue": []
+    },
+    {
+      "tick": 417,
+      "time": "Monday, November 9, 8:17 AM",
+      "story": "On this sunny Monday morning at 8:17, Gary stays focused in his garage, soldering and labeling speaker wiring while keeping everything indoors until it gets approval. Across the street, Donna optimistically packs her pickleball paddles, a spare for Gary, balls, and water for Tuesday's game. Hal, resolved as ever, opens his violation notebook to record the flamingo tally and Gary's cart modifications as fairly as he can, while Rosa, content, putters around her house.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 13.12201,
+    "total_usd": 13.15194,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4342,13 +4348,12 @@
         "usd": 0.45266
       },
       "2026-11-09": {
-        "ticks": 1,
-        "usd": 0.03118
+        "ticks": 2,
+        "usd": 0.06111
       }
     }
   },
   "recent_tick_costs": [
-    0.03244,
     0.0314,
     0.03002,
     0.03,
@@ -4371,7 +4376,8 @@
     0.03056,
     0.02983,
     0.02905,
-    0.03118
+    0.03118,
+    0.02993
   ],
   "fund": {
     "gross_usd": 0.0,

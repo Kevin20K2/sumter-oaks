@@ -1,0 +1,119 @@
+{
+  "tick": 417,
+  "simulation_time": "Monday, November 9, 8:17 AM",
+  "weather": "Sunny, 75°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "On this sunny Monday morning at 8:17, Gary stays focused in his garage, soldering and labeling speaker wiring while keeping everything indoors until it gets approval. Across the street, Donna optimistically packs her pickleball paddles, a spare for Gary, balls, and water for Tuesday's game. Hal, resolved as ever, opens his violation notebook to record the flamingo tally and Gary's cart modifications as fairly as he can, while Rosa, content, putters around her house.",
+  "events": [
+    "Gary (gary workbench): Solder and label the speaker wiring, keep everything inside the garage until approval",
+    "Donna (donna pickleball bag): Pack my paddles, a spare for Gary, balls, and water for Tuesday",
+    "Hal (hal violation notebook): Open the notebook and log Monday's flamingo tally and Gary's cart modifications, plainly and fairly",
+    "Rosa waited: puttering around Rosa's House"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm in the garage on a sunny Monday morning, nobody around. My filing is in with Architectural Review, and I've been keeping the wiring inside the garage like they asked. The smart move is to keep making progress on the cart without breaking L-01 by installing anything visible from the street before approval. Bench-testing and tidying the speaker wiring at the workbench is useful, keeps me busy, and gets the sound system ready, with the 10 PM cutoff in mind. Then I can show Donna once it's approved.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Solder and label the speaker wiring, keep everything inside the garage until approval"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Monday morning, and Tuesday's court time is already booked and the ladder studied. I'm alone at home with my pickleball bag, calendar, and phone. Gary showed up and kept his promise, but his knees creaked, so I want him ready by tomorrow. Rather than pestering him again (he said he's heading home to work on his cart wiring), I'll make sure my gear is packed with a spare paddle and gear for him so nothing slows us down Tuesday.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Pack my paddles, a spare for Gary, balls, and water for Tuesday"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's Monday morning, the day I said the notebook could open again. I'm on my own porch, nobody's out, and the sun's up. I've been itching to log that flamingo tally against the three-ornament limit and Gary's cart mods, and the notebook is right here. I did keep my word through the weekend, and last night at Rosa's was a good one, so I'll write it up properly and without any malice. Facts, dates, by the book. Order and respect. If I have to cite a statute, I'll do it fairly.",
+      "emotional_state": "resolved",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Open the notebook and log Monday's flamingo tally and Gary's cart modifications, plainly and fairly"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's a quiet Monday morning, the house is empty, and last night's dinner went better than I hoped. Wednesday coffee with Hal is already in ink on my schedule, so I don't need to chase that. I haven't touched the shift schedule yet this morning, and since I still pick up per-diem shifts, I should confirm nothing else collides with Wednesday. Then I can tidy up after the dinner and decide what to do with the leftover flan.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "puttering around Rosa's House"
+        }
+      },
+      "engine_note": "tried to use None, which isn't in rosas_house"
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02993,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9333,
+        "output_tokens": 1114,
+        "usd": 0.02981
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 403,
+        "output_tokens": 164,
+        "usd": 0.00012
+      }
+    }
+  }
+}
