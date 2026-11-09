@@ -1,0 +1,116 @@
+{
+  "tick": 422,
+  "simulation_time": "Monday, November 9, 1:17 PM",
+  "weather": "Sunny, 79°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On a sunny Monday afternoon at 1:17 on Magnolia Loop, Gary is heading home to his place while the other three linger in the street. Donna is cheerfully trimming her flamingo flock down to three and tucking the extras into the garage, and Rosa is thanking her for being so gracious about it. Hal, content in the warm 79-degree weather, has settled a Wednesday dinner date with Rosa at nine, promising to arrive on time and to save room for her flan.",
+  "events": [
+    "Gary headed to Gary's House.",
+    "Donna (donna flamingo flock): Pull the flock down to three flamingos, tucking the extras into the garage"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I told Donna I'd be at the courts Tuesday and said the light show comes once Architectural Review clears my cart. I already filed the request at tick 369, and Hal reminded me about L-01 earlier. Donna, Hal and Rosa are all mid-conversation and nobody's waiting on me, so I shouldn't repeat myself. The best use of my afternoon is finishing the cart work in my garage, keeping the wiring tidy and hidden from the street, and testing the sound system low so I don't run afoul of anything. Heading home to tinker feels right.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading back to the garage to keep working on the cart wiring and sound system while the review is pending."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just confirmed Tuesday at the courts, Hal is going to look at the ladder sheet, and Hal already got my promise on the flamingos. I've said my piece to everyone here, so asking again would be nagging. Hal is counting ornaments for the record, so the smart move is to actually pull the flock down to three now, as promised, rather than leave it for the afternoon. That keeps me in good standing and keeps the gossip about me flattering.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Pull the flock down to three flamingos, tucking the extras into the garage"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna's promised to bring the flock down to three on her own, so I've no cause to hover over her lawn. Rosa's got coffee set for Wednesday at nine and flan waiting, and I haven't actually answered her. Everyone acts at once, so she hasn't heard my reply yet. I've kept the notebook shut all week; accept the invitation like a civilized man, and let Donna and Gary be.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Nine o'clock Wednesday suits me, Rosa. I'll be there on time, and I won't say no to that flan."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Everyone's here on the Loop and the dinner already happened. Hal has the coffee invite on the table and I'm not going to ask again. Donna just promised to trim the flock and Gary is waiting on his cart review. The most useful thing I can do is keep it light and warm, support Donna for following through without making it about flamingos, and nudge Gary toward Hal's Architectural Review pointers. Hal has been pulled into everyone's business, so I can give him a break by making room for his knees and his notebook. A short word to Donna feels right.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Donna, thank you for being so gracious about the flock. That's the kind of neighbor I was hoping to have at my table. Tell me Tuesday goes well, and if you two need a post-pickleball dinner, my kitchen's open."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03366,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10963,
+        "output_tokens": 1160,
+        "usd": 0.03353
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 476,
+        "output_tokens": 159,
+        "usd": 0.00013
+      }
+    }
+  }
+}
