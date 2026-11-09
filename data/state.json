@@ -1,6 +1,6 @@
 {
-  "tick": 425,
-  "time": "2026-11-09T15:17",
+  "tick": 426,
+  "time": "2026-11-09T16:17",
   "positions": {
     "gary": "garys_house",
     "donna": "rec_center",
@@ -9,28 +9,12 @@
   },
   "perceptions": {
     "gary": [],
-    "donna": [
-      "Hal (street bulletin board): Read the Architectural Review notice and check the filing deadline for Gary's cart modifications",
-      "Rosa headed to Rosa's House.",
-      "You arrived at Rec Center."
-    ],
-    "hal": [
-      "Donna headed to Rec Center.",
-      "Rosa headed to Rosa's House."
-    ],
-    "rosa": [
-      "Donna headed to Rec Center.",
-      "Hal (street bulletin board): Read the Architectural Review notice and check the filing deadline for Gary's cart modifications",
-      "You arrived at Rosa's House."
-    ]
+    "donna": [],
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 323,
-        "text": "I (street bulletin board): Read the board for Architectural Review filing info and parade details",
-        "importance": 5
-      },
       {
         "tick": 324,
         "text": "I (mailbox kiosk): Look for the Architectural Review cart modification form to pick up",
@@ -1025,14 +1009,14 @@
         "tick": 424,
         "text": "I (gary golf cart): Mount the light harness and speaker wiring on the cart and test it inside the garage, out of view of the street",
         "importance": 4
+      },
+      {
+        "tick": 425,
+        "text": "I (gary workbench): Tidy the cart wiring, add inline fuses and strain relief, keep it garage-only until approved",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 335,
-        "text": "I said to Gary: “Gary, right on time! Today's the day, hon. I'll book us a court and show you the ropes, and before you know it we'll be climbing that ladder together.”",
-        "importance": 6
-      },
       {
         "tick": 335,
         "text": "Gary said to Donna: “Afternoon, Donna. Good timing, it's Tuesday. I'll book us a court for two hours at the kiosk, and then I want to run my cart form past you once more so Architectural Review gets it clean.”",
@@ -2027,14 +2011,14 @@
         "tick": 424,
         "text": "You arrived at Rec Center.",
         "importance": 5
+      },
+      {
+        "tick": 425,
+        "text": "I (ladder standings board): Study the ladder standings to see where Gary and I would start and which teams to chase",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 332,
-        "text": "Donna said to Gary: “Gary, there you are! It's Tuesday, I've got the court booked for two hours and a spare paddle in my bag with your name on it. Walk over to the rec center with me and I'll show you the basics.”",
-        "importance": 6
-      },
       {
         "tick": 333,
         "text": "I said to Gary: “Glad to see you filing it right, Gary. Go play your pickleball, then bring the form to me after and I'll check it line by line. Lights and speakers both need to be listed, and keep the speakers off after ten.”",
@@ -3029,14 +3013,14 @@
         "tick": 424,
         "text": "Rosa headed to Rosa's House.",
         "importance": 4
+      },
+      {
+        "tick": 425,
+        "text": "I (street bulletin board): Read the Architectural Review notice and note the filing deadline for Gary's cart modifications",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 322,
-        "text": "I said to Hal: “Alright, you three, the cart forms and the pickleball ladder can wait until after we eat. Everybody sit, and Hal, pour yourself some water at your head-of-the-table seat while I bring out the food.”",
-        "importance": 7
-      },
       {
         "tick": 322,
         "text": "Gary headed to Magnolia Loop (the street).",
@@ -4031,6 +4015,11 @@
         "tick": 424,
         "text": "You arrived at Rosa's House.",
         "importance": 4
+      },
+      {
+        "tick": 425,
+        "text": "I (rosa shift schedule): Check my per-diem shifts and make sure Wednesday morning stays clear for coffee with Hal",
+        "importance": 4
       }
     ]
   },
@@ -4077,9 +4066,9 @@
     ]
   },
   "emotions": {
-    "gary": "content",
+    "gary": "focused",
     "donna": "optimistic",
-    "hal": "content",
+    "hal": "patient",
     "rosa": "content"
   },
   "laws": [
@@ -4205,9 +4194,16 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 425,
+      "time": "Monday, November 9, 4:17 PM",
+      "story": "At 4:17 on a damp Monday afternoon in Sumter Oaks, with the shower just passing and the air at a mild 79 degrees, Gary is at his workbench tidying up the wiring on his golf cart, adding inline fuses and strain relief while keeping the cart in the garage until it's approved. Across town, Donna is at the Rec Center studying the ladder standings board, sizing up where she and Gary might start and which teams to chase, her optimism clearly intact. Hal is out on Magnolia Loop reading the Architectural Review notice on the bulletin board and jotting down the filing deadline for Gary's cart modifications, while Rosa, back at home, checks her per-diem shifts and makes sure Wednesday morning stays free for coffee with Hal.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 13.37382,
+    "total_usd": 13.40464,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4322,13 +4318,12 @@
         "usd": 0.45266
       },
       "2026-11-09": {
-        "ticks": 9,
-        "usd": 0.28299
+        "ticks": 10,
+        "usd": 0.31381
       }
     }
   },
   "recent_tick_costs": [
-    0.0303,
     0.03019,
     0.03024,
     0.02941,
@@ -4351,7 +4346,8 @@
     0.03234,
     0.03366,
     0.03214,
-    0.03244
+    0.03244,
+    0.03082
   ],
   "fund": {
     "gross_usd": 0.0,

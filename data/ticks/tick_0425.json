@@ -1,0 +1,118 @@
+{
+  "tick": 425,
+  "simulation_time": "Monday, November 9, 4:17 PM",
+  "weather": "Afternoon shower, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 4:17 on a damp Monday afternoon in Sumter Oaks, with the shower just passing and the air at a mild 79 degrees, Gary is at his workbench tidying up the wiring on his golf cart, adding inline fuses and strain relief while keeping the cart in the garage until it's approved. Across town, Donna is at the Rec Center studying the ladder standings board, sizing up where she and Gary might start and which teams to chase, her optimism clearly intact. Hal is out on Magnolia Loop reading the Architectural Review notice on the bulletin board and jotting down the filing deadline for Gary's cart modifications, while Rosa, back at home, checks her per-diem shifts and makes sure Wednesday morning stays free for coffee with Hal.",
+  "events": [
+    "Gary (gary workbench): Tidy the cart wiring, add inline fuses and strain relief, keep it garage-only until approved",
+    "Donna (ladder standings board): Study the ladder standings to see where Gary and I would start and which teams to chase",
+    "Hal (street bulletin board): Read the Architectural Review notice and note the filing deadline for Gary's cart modifications",
+    "Rosa (rosa shift schedule): Check my per-diem shifts and make sure Wednesday morning stays clear for coffee with Hal"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've already filed the Architectural Review request and tested the harness and speaker wiring inside the garage last tick. Nobody's around, it's an afternoon shower, and the cart is parked out of view of the street, so I'm not breaking L-01. Rather than go bother anyone or put the mods on display before approval, the useful thing is to keep refining the setup. I'll stay at the workbench and tidy the wiring, add strain relief and fuse protection so it's solid and safe by the time approval comes through, and keep the speaker volume low so L-03 isn't an issue either. It keeps me busy and feeling useful.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Tidy the cart wiring, add inline fuses and strain relief, keep it garage-only until approved"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at the Rec Center on a drizzly Monday afternoon, and nobody else is around. Tuesday is the big day with Gary, and Gary said he'd book the court at the kiosk. Rather than wait around, I can check the ladder standings board to see exactly where we'd start, so I can pep-talk him with real numbers tomorrow. Keeps me at the center of things and moves my goal forward without crowding Gary.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Study the ladder standings to see where Gary and I would start and which teams to chase"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm alone on Magnolia Loop in a drizzle, and my last move was to read the review notice on the bulletin board. Flamingos are down to three visible per Rosa, and I told Donna to her face, so no need to file on her. I promised to hold the notebook until Monday, and it's Monday. The board will tell me the filing deadline for Gary's cart so I can help him fix the sketch properly before review. Then I can head to Rosa's table tonight relaxed.",
+      "emotional_state": "patient",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the Architectural Review notice and note the filing deadline for Gary's cart modifications"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm back home after a long dinner and no one's nearby. The welcome dinner worked, and Hal's coffee on Wednesday is set. I have per-diem shifts to juggle, so checking my shift schedule makes sense so I don't double-book myself against Wednesday morning. Nobody to talk to right now, and checking the calendar is a useful thing to do with a quiet afternoon shower outside.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts and make sure Wednesday morning stays clear for coffee with Hal"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03082,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9741,
+        "output_tokens": 1117,
+        "usd": 0.03065
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 438,
+        "output_tokens": 256,
+        "usd": 0.00017
+      }
+    }
+  }
+}
