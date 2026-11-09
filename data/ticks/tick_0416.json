@@ -1,0 +1,118 @@
+{
+  "tick": 416,
+  "simulation_time": "Monday, November 9, 7:17 AM",
+  "weather": "Sunny, 74°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is bench-testing light strip and speaker wiring in his garage at Gary's House, determined to keep the whole project contained indoors. Donna sits at her club calendar at Donna's House, energized and checking that nothing collides with Tuesday's pickleball. Hal, mellow and watchful, scans Magnolia Loop from his porch through binoculars before deciding whether anything is worth writing up. Rosa, content, reviews her per-diem shifts at Rosa's House and pencils in Wednesday morning coffee with Hal.",
+  "events": [
+    "Gary (gary workbench): Bench-test the light strip and speaker wiring, keep it all inside the garage",
+    "Donna (donna club calendar): Review this week's club events and make sure nothing conflicts with Tuesday's pickleball",
+    "Hal (hal binoculars): Take a measured look down Magnolia Loop from the porch before deciding whether anything needs writing up",
+    "Rosa (rosa shift schedule): Check this week's per-diem shifts and pencil in Wednesday morning coffee with Hal"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's a sunny Monday morning and I'm home with no one around. I filed the Architectural Review request and read the bulletin board, so nothing to do there until they answer. L-01 says exterior cart mods visible from the street need approval, and mine isn't approved yet, so I'll keep the wiring work in the garage like I promised. A good use of this hour is bench-testing the lights and speaker wiring at the workbench, keeping everything tidy and safe, so the cart is ready the moment approval comes through. Tuesday is pickleball with Donna, so I should wrap up early enough to practice my wrist.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Bench-test the light strip and speaker wiring, keep it all inside the garage"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Monday morning and I'm home alone. Tuesday's court slot is booked and Gary confirmed he's coming back, so the logistics are done. What's left is to keep my social calendar organized and make sure I'm ready for tomorrow. The club calendar is right here, and as social chair of three clubs I should check what's on this week and make sure nothing conflicts with Tuesday's pickleball.",
+      "emotional_state": "energized",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Review this week's club events and make sure nothing conflicts with Tuesday's pickleball"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's Monday morning and I'm home, and I told myself the notebook stays closed until Monday. Well, it's Monday. But last night at Rosa's table I came away feeling better about Donna and the flamingos than I have in months, and I'm in no hurry to turn that around before my coffee has settled. The binoculars and the notebook are right here, though, and old habits die hard. A sergeant checks his inventory and reports what's actually there, not what he feels like griping about. I'll step out on the porch, look at what's really on the street in the morning light, and decide with a clear head whether anything is worth writing down.",
+      "emotional_state": "mellow, watchful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Take a measured look down Magnolia Loop from the porch before deciding whether anything needs writing up"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Monday morning, the dinner went well, and I'm home alone. Hal said last night he'd take the coffee, and I told him Wednesday morning is clear. I haven't looked at my shift schedule since that conversation, and with my overcommitting streak I should confirm nothing has crept in this week before I lock Wednesday in. Nobody is nearby, so a quiet check of the schedule is the most useful thing I can do right now.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check this week's per-diem shifts and pencil in Wednesday morning coffee with Hal"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03118,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9454,
+        "output_tokens": 1154,
+        "usd": 0.03045
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4381,
+        "output_tokens": 579,
+        "usd": 0.00073
+      }
+    }
+  }
+}
