@@ -1,0 +1,118 @@
+{
+  "tick": 414,
+  "simulation_time": "Sunday, November 8, 8:17 PM",
+  "weather": "Humid and hazy, 75°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On Sunday evening in Sumter Oaks, humid haze hangs over the golf cart paths at 75 degrees as the town settles in for the night. Donna has just confirmed her Tuesday two-hour court slot at the Rec Center kiosk and feels pleased with the week ahead. Gary is strolling down Magnolia Loop while Hal makes his way to Rosa's House, where Rosa is finishing the last of her tea and savoring a full table before bed.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Donna (court reservation kiosk): Confirm our Tuesday two-hour court slot is booked",
+    "Hal headed to Rosa's House.",
+    "Rosa waited: Finishing the last of my tea and letting the satisfaction of a full table sink in before bed."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I already told Donna I'm done for the evening and heading home to the cart wiring, and she answered with more lesson plans. Repeating myself won't help. My knees are done, it's after 8 PM on a Sunday, and the cart project is what I actually want to be doing. The wiring is quiet garage work, nothing visible from the street, so it's fine under L-01 while the Architectural Review request is pending. Time to actually leave: head out to Magnolia Loop and go home.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading home to get back to the cart wiring in the garage."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just wrapped up the lesson and is heading home to his cart wiring. He said he'll be back Tuesday, so the partner is secured and there's no need to keep pushing or repeat myself. The court for Tuesday was already booked in my earlier texts, but I can't be sure the kiosk has it locked in, and L-05 caps us at two hours. Best use of this tick is to check the kiosk and the ladder board so I know our slot is solid and where we stand, rather than chatting Gary's ear off while his knees complain.",
+      "emotional_state": "satisfied",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Confirm our Tuesday two-hour court slot is booked"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've just stepped onto Magnolia Loop and the street is empty. My notebook is closed until Monday, and I gave my word. Rosa's supper is waiting, and Donna and the others will be there. The flamingos and Gary's cart can keep till morning. The sensible thing is to head straight to Rosa's house rather than loiter and be tempted to count.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's for supper, notebook stays closed."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Dinner went well, everyone's gone home, and I'm alone at the table with my tea. Coffee with Hal is already set in ink and I just checked my schedule, so there's nothing left to do on that front. No one is nearby, and I've done enough fussing. It's a quiet Sunday night after a long day, so I'll finish my tea and let myself enjoy having finally gotten everyone at one table.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Finishing the last of my tea and letting the satisfaction of a full table sink in before bed."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02983,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9770,
+        "output_tokens": 1018,
+        "usd": 0.02972
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 371,
+        "output_tokens": 155,
+        "usd": 0.00011
+      }
+    }
+  }
+}
