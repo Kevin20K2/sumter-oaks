@@ -1,0 +1,118 @@
+{
+  "tick": 426,
+  "simulation_time": "Monday, November 9, 5:17 PM",
+  "weather": "Afternoon shower, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 5:17 on a Monday afternoon in Sumter Oaks, a brief shower has just passed over the 78-degree streets, and Gary is testing his golf cart's lights and speaker in the closed garage at low volume. Donna is at the Rec Center, determined to book a two-hour pickleball court for herself and Gary tomorrow, staying within the community limit. Over on Magnolia Loop, Hal is strolling toward Rosa's House, where Rosa is content to cook a big pot of arroz con pollo to share with the neighbors.",
+  "events": [
+    "Gary (gary golf cart): Run a full garage-only test of the lights and speaker at low volume, door closed",
+    "Donna (court reservation kiosk): Reserve a court for Gary and me tomorrow, two hours, within the limit",
+    "Hal headed to Rosa's House.",
+    "Rosa (rosa kitchen): Cook a big pot of arroz con pollo to share with the neighbors"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's a rainy Monday evening and I'm alone in the garage. I've already filed the Architectural Review request and finished tidying the wiring with fuses and strain relief. Nothing left to bench-build. The remaining step is to run a full test of the lights and speaker. Since it's inside the garage and before 10 PM, the sound is fine under L-03, and it stays out of street view so L-01 isn't an issue until approval comes through. A quiet test at low volume lets me confirm everything works before the parade.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Run a full garage-only test of the lights and speaker at low volume, door closed"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I already studied the ladder standings last tick, so no need to stare at the board again. Nobody's nearby, it's raining, and Gary and I have the Tuesday match tomorrow. The smart move is to book our court at the kiosk now so we're locked in before anyone else grabs a slot. Two hours is the max under the court rule, so I'll keep it exactly within the limit. Then I can go home and plan how to recruit a few more allies for the ladder.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Reserve a court for Gary and me tomorrow, two hours, within the limit"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've been reading that bulletin board for two ticks running and the deadline hasn't changed. I told Rosa I'd keep my word on the notebook until Monday, and it's Monday evening, so the deadline's close. Nobody's around to talk to. Rosa's table tonight is the real plan, and Donna already took my flamingo note like a good neighbor. No sense standing in the rain staring at a notice. I'll head to Rosa's house, show up on time, and relaxed like I promised myself.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's for supper. Been on this street long enough, and I'd rather be early than late."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I just got home and already checked my shift schedule last tick, so Wednesday morning is clear for coffee with Hal. No one's around to talk to. The welcome dinner got all three neighbors at my table, and I want to keep that goodwill going. The kitchen is the next useful thing: the afternoon shower has everyone indoors, so it's a good time to prep a make-ahead dish for the next gathering and make my kitchen the welcoming place I want it to be.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Cook a big pot of arroz con pollo to share with the neighbors"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03005,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9489,
+        "output_tokens": 1094,
+        "usd": 0.02992
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 392,
+        "output_tokens": 182,
+        "usd": 0.00013
+      }
+    }
+  }
+}

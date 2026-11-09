@@ -1,25 +1,24 @@
 {
-  "tick": 426,
-  "time": "2026-11-09T16:17",
+  "tick": 427,
+  "time": "2026-11-09T17:17",
   "positions": {
     "gary": "garys_house",
     "donna": "rec_center",
-    "hal": "magnolia_loop",
+    "hal": "rosas_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
     "donna": [],
-    "hal": [],
-    "rosa": []
+    "hal": [
+      "You arrived at Rosa's House."
+    ],
+    "rosa": [
+      "Hal just arrived."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 324,
-        "text": "I (mailbox kiosk): Look for the Architectural Review cart modification form to pick up",
-        "importance": 5
-      },
       {
         "tick": 325,
         "text": "I (mailbox kiosk): Take the Architectural Review cart modification form from the kiosk",
@@ -1014,14 +1013,14 @@
         "tick": 425,
         "text": "I (gary workbench): Tidy the cart wiring, add inline fuses and strain relief, keep it garage-only until approved",
         "importance": 4
+      },
+      {
+        "tick": 426,
+        "text": "I (gary golf cart): Run a full garage-only test of the lights and speaker at low volume, door closed",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 335,
-        "text": "Gary said to Donna: “Afternoon, Donna. Good timing, it's Tuesday. I'll book us a court for two hours at the kiosk, and then I want to run my cart form past you once more so Architectural Review gets it clean.”",
-        "importance": 6
-      },
       {
         "tick": 336,
         "text": "I said to Gary: “Perfect, hon, two hours is exactly the limit, so we won't hear a peep from the rules committee. You book it, I'll grab paddles, and we'll do your cart form after your first rally. Deal?”",
@@ -2016,19 +2015,14 @@
         "tick": 425,
         "text": "I (ladder standings board): Study the ladder standings to see where Gary and I would start and which teams to chase",
         "importance": 5
+      },
+      {
+        "tick": 426,
+        "text": "I (court reservation kiosk): Reserve a court for Gary and me tomorrow, two hours, within the limit",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 333,
-        "text": "I said to Gary: “Glad to see you filing it right, Gary. Go play your pickleball, then bring the form to me after and I'll check it line by line. Lights and speakers both need to be listed, and keep the speakers off after ten.”",
-        "importance": 4
-      },
-      {
-        "tick": 333,
-        "text": "Gary said to Donna: “You're on, Donna, I'll walk over with you. Hal, hold onto that form for me, and we'll go over the cart lights after the game.”",
-        "importance": 4
-      },
       {
         "tick": 333,
         "text": "Donna said to Hal: “Hal, honey, count them yourself, I trust you to be fair. It's three, and anything past that is just the wind rearranging them. Now don't you go filing paperwork before I've had my pickleball.”",
@@ -3018,19 +3012,19 @@
         "tick": 425,
         "text": "I (street bulletin board): Read the Architectural Review notice and note the filing deadline for Gary's cart modifications",
         "importance": 4
+      },
+      {
+        "tick": 426,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 426,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 322,
-        "text": "Gary headed to Magnolia Loop (the street).",
-        "importance": 7
-      },
-      {
-        "tick": 322,
-        "text": "Donna said to Gary: “Gary, honey, I've filled out that Architectural Review form for half the street, so I'll sit with you and get it done before Tuesday. I can't have my partner's cart in trouble when we've got a ladder to climb.”",
-        "importance": 7
-      },
       {
         "tick": 322,
         "text": "Hal said to Gary: “Good, you're filing. Describe the lights and speaker wiring in plain detail, attach a photo from the street side, and state your sound won't run past 10 PM, because quiet hours are L-03. Do that and the committee can't fault you.”",
@@ -4020,6 +4014,16 @@
         "tick": 425,
         "text": "I (rosa shift schedule): Check my per-diem shifts and make sure Wednesday morning stays clear for coffee with Hal",
         "importance": 4
+      },
+      {
+        "tick": 426,
+        "text": "I (rosa kitchen): Cook a big pot of arroz con pollo to share with the neighbors",
+        "importance": 4
+      },
+      {
+        "tick": 426,
+        "text": "Hal just arrived.",
+        "importance": 4
       }
     ]
   },
@@ -4066,9 +4070,9 @@
     ]
   },
   "emotions": {
-    "gary": "focused",
-    "donna": "optimistic",
-    "hal": "patient",
+    "gary": "content",
+    "donna": "determined",
+    "hal": "content",
     "rosa": "content"
   },
   "laws": [
@@ -4200,10 +4204,16 @@
       "time": "Monday, November 9, 4:17 PM",
       "story": "At 4:17 on a damp Monday afternoon in Sumter Oaks, with the shower just passing and the air at a mild 79 degrees, Gary is at his workbench tidying up the wiring on his golf cart, adding inline fuses and strain relief while keeping the cart in the garage until it's approved. Across town, Donna is at the Rec Center studying the ladder standings board, sizing up where she and Gary might start and which teams to chase, her optimism clearly intact. Hal is out on Magnolia Loop reading the Architectural Review notice on the bulletin board and jotting down the filing deadline for Gary's cart modifications, while Rosa, back at home, checks her per-diem shifts and makes sure Wednesday morning stays free for coffee with Hal.",
       "dialogue": []
+    },
+    {
+      "tick": 426,
+      "time": "Monday, November 9, 5:17 PM",
+      "story": "At 5:17 on a Monday afternoon in Sumter Oaks, a brief shower has just passed over the 78-degree streets, and Gary is testing his golf cart's lights and speaker in the closed garage at low volume. Donna is at the Rec Center, determined to book a two-hour pickleball court for herself and Gary tomorrow, staying within the community limit. Over on Magnolia Loop, Hal is strolling toward Rosa's House, where Rosa is content to cook a big pot of arroz con pollo to share with the neighbors.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 13.40464,
+    "total_usd": 13.43469,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4318,13 +4328,12 @@
         "usd": 0.45266
       },
       "2026-11-09": {
-        "ticks": 10,
-        "usd": 0.31381
+        "ticks": 11,
+        "usd": 0.34386
       }
     }
   },
   "recent_tick_costs": [
-    0.03019,
     0.03024,
     0.02941,
     0.03015,
@@ -4347,7 +4356,8 @@
     0.03366,
     0.03214,
     0.03244,
-    0.03082
+    0.03082,
+    0.03005
   ],
   "fund": {
     "gross_usd": 0.0,
