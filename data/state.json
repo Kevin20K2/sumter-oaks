@@ -1,6 +1,6 @@
 {
-  "tick": 415,
-  "time": "2026-11-08T20:17",
+  "tick": 416,
+  "time": "2026-11-08T21:17",
   "positions": {
     "gary": "magnolia_loop",
     "donna": "rec_center",
@@ -8,27 +8,17 @@
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "Donna (court reservation kiosk): Confirm our Tuesday two-hour court slot is booked",
-      "You arrived at Magnolia Loop (the street)."
-    ],
-    "donna": [
-      "Gary headed to Magnolia Loop (the street)."
-    ],
+    "gary": [],
+    "donna": [],
     "hal": [
-      "You arrived at Rosa's House."
+      "Rosa said to Hal: “Hal, back already? Did you leave something behind, or did you come for the last of the flan? And good news, I checked my schedule and Wednesday morning is clear for that coffee.”"
     ],
     "rosa": [
-      "Hal just arrived."
+      "Hal said to Rosa: “Evening, Rosa. Sorry I'm late, the porch kept me longer than it should have. Thank you for the invitation. Is there still a plate with my name on it?”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 318,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and check the tally against L-02",
-        "importance": 5
-      },
       {
         "tick": 319,
         "text": "I said to Donna: “Coffee at Rosa's sounds great, Donna, lead the way. I'll grab my tool bag too, her porch lights need a longer plug. And you can tell me how this Architectural Review business works for my cart.”",
@@ -1023,14 +1013,14 @@
         "tick": 414,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 3
+      },
+      {
+        "tick": 415,
+        "text": "I (street bulletin board): Read the board for parade or Architectural Review notices",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 324,
-        "text": "Hal (rosa dining table): Take my seat at the head of the table and pour a glass of water",
-        "importance": 3
-      },
       {
         "tick": 324,
         "text": "Rosa (rosa shift schedule): Write coffee with Hal into the schedule in ink, then take my seat for supper",
@@ -2025,19 +2015,14 @@
         "tick": 414,
         "text": "Gary headed to Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 415,
+        "text": "I (ladder standings board): Study the ladder standings to see which teams Gary and I need to beat",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 322,
-        "text": "I said to Gary: “Good, you're filing. Describe the lights and speaker wiring in plain detail, attach a photo from the street side, and state your sound won't run past 10 PM, because quiet hours are L-03. Do that and the committee can't fault you.”",
-        "importance": 5
-      },
-      {
-        "tick": 322,
-        "text": "Gary headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 322,
         "text": "Donna said to Gary: “Gary, honey, I've filled out that Architectural Review form for half the street, so I'll sit with you and get it done before Tuesday. I can't have my partner's cart in trouble when we've got a ladder to climb.”",
@@ -3027,19 +3012,19 @@
         "tick": 414,
         "text": "You arrived at Rosa's House.",
         "importance": 3
+      },
+      {
+        "tick": 415,
+        "text": "I said to Rosa: “Evening, Rosa. Sorry I'm late, the porch kept me longer than it should have. Thank you for the invitation. Is there still a plate with my name on it?”",
+        "importance": 4
+      },
+      {
+        "tick": 415,
+        "text": "Rosa said to Hal: “Hal, back already? Did you leave something behind, or did you come for the last of the flan? And good news, I checked my schedule and Wednesday morning is clear for that coffee.”",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 309,
-        "text": "Gary said to Rosa: “Table looks great, Rosa. After we eat, I'll grab my tools and get that porch string light plug sorted so it actually reaches.”",
-        "importance": 6
-      },
-      {
-        "tick": 309,
-        "text": "Donna (rosa dining table): Slide the casserole onto the table and take a seat",
-        "importance": 6
-      },
       {
         "tick": 310,
         "text": "I said to Gary: “Deal, Gary, porch lights after dessert. Sit, sit, before the rolls go cold. We'll save Hal's chair and he can catch up when he gets here.”",
@@ -4029,6 +4014,16 @@
         "tick": 414,
         "text": "Hal just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 415,
+        "text": "I said to Hal: “Hal, back already? Did you leave something behind, or did you come for the last of the flan? And good news, I checked my schedule and Wednesday morning is clear for that coffee.”",
+        "importance": 5
+      },
+      {
+        "tick": 415,
+        "text": "Hal said to Rosa: “Evening, Rosa. Sorry I'm late, the porch kept me longer than it should have. Thank you for the invitation. Is there still a plate with my name on it?”",
+        "importance": 5
       }
     ]
   },
@@ -4076,9 +4071,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "satisfied",
+    "donna": "determined",
     "hal": "content",
-    "rosa": "content"
+    "rosa": "warm"
   },
   "laws": [
     {
@@ -4218,10 +4213,19 @@
       "time": "Sunday, November 8, 8:17 PM",
       "story": "On Sunday evening in Sumter Oaks, humid haze hangs over the golf cart paths at 75 degrees as the town settles in for the night. Donna has just confirmed her Tuesday two-hour court slot at the Rec Center kiosk and feels pleased with the week ahead. Gary is strolling down Magnolia Loop while Hal makes his way to Rosa's House, where Rosa is finishing the last of her tea and savoring a full table before bed.",
       "dialogue": []
+    },
+    {
+      "tick": 415,
+      "time": "Sunday, November 8, 9:17 PM",
+      "story": "Gary is reading the bulletin board on Magnolia Loop for any notices about the parade or the Architectural Review, while Donna studies the ladder standings at the Rec Center to see which teams she and Gary need to beat. Over at Rosa's House, Hal has arrived a little late, apologizing for lingering on his porch and asking whether a plate still has his name on it. Rosa, warm as ever, teases him about returning so soon and confirms that Wednesday morning is open for their coffee.",
+      "dialogue": [
+        "Hal said to Rosa: “Evening, Rosa. Sorry I'm late, the porch kept me longer than it should have. Thank you for the invitation. Is there still a plate with my name on it?”",
+        "Rosa said to Hal: “Hal, back already? Did you leave something behind, or did you come for the last of the flan? And good news, I checked my schedule and Wednesday morning is clear for that coffee.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 13.06178,
+    "total_usd": 13.09083,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4332,13 +4336,12 @@
         "usd": 0.4663
       },
       "2026-11-08": {
-        "ticks": 14,
-        "usd": 0.42361
+        "ticks": 15,
+        "usd": 0.45266
       }
     }
   },
   "recent_tick_costs": [
-    0.03145,
     0.03288,
     0.03244,
     0.0314,
@@ -4361,7 +4364,8 @@
     0.02923,
     0.03022,
     0.03056,
-    0.02983
+    0.02983,
+    0.02905
   ],
   "fund": {
     "gross_usd": 0.0,

@@ -1,0 +1,116 @@
+{
+  "tick": 415,
+  "simulation_time": "Sunday, November 8, 9:17 PM",
+  "weather": "Humid and hazy, 74°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "rec_center",
+    "hal": "rosas_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is reading the bulletin board on Magnolia Loop for any notices about the parade or the Architectural Review, while Donna studies the ladder standings at the Rec Center to see which teams she and Gary need to beat. Over at Rosa's House, Hal has arrived a little late, apologizing for lingering on his porch and asking whether a plate still has his name on it. Rosa, warm as ever, teases him about returning so soon and confirms that Wednesday morning is open for their coffee.",
+  "events": [
+    "Gary (street bulletin board): Read the board for parade or Architectural Review notices",
+    "Donna (ladder standings board): Study the ladder standings to see which teams Gary and I need to beat"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's past 9 PM on Magnolia Loop and nobody's around. Donna's flamingos are right here, which is a quiet reminder of the three-ornament rule, but that's her business. My filing for the cart is in, and I don't want to start wiring until Architectural Review approves anything visible from the street. The street bulletin board might have news on the review or the parade, so I'll check it before heading home for the evening.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the board for parade or Architectural Review notices"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's past nine on a Sunday night, Gary's gone home to his cart wiring, and the Tuesday two-hour slot is already booked at the kiosk. The courts are empty. The ladder standings board is right here, and I want to see exactly which teams Gary and I have to beat before the season ends. Studying the standings now gives me a real plan for Tuesday without any more chatter.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Study the ladder standings to see which teams Gary and I need to beat"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I just walked in on Rosa's dinner invite. It's after nine, so I'm late and ought to say so. The notebook stays shut until Monday, and my memories say I'd rather share a meal than keep score. Greet Rosa, thank her, and see about that plate.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Evening, Rosa. Sorry I'm late, the porch kept me longer than it should have. Thank you for the invitation. Is there still a plate with my name on it?"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The dinner is done and the table is quiet, but Hal just walked back in at 9:17 PM, probably because he left something or wants a word. I've been wanting to pin down a morning for coffee, and I already put it in ink on my shift schedule. I just checked that it doesn't collide with my shifts, so I can offer him a concrete day instead of repeating the vague promise. I'll greet him warmly, ask what brings him back, and keep it short and natural.",
+      "emotional_state": "warm",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, back already? Did you leave something behind, or did you come for the last of the flan? And good news, I checked my schedule and Wednesday morning is clear for that coffee."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02905,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9481,
+        "output_tokens": 996,
+        "usd": 0.02892
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 465,
+        "output_tokens": 162,
+        "usd": 0.00013
+      }
+    }
+  }
+}
