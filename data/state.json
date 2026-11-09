@@ -1,34 +1,31 @@
 {
-  "tick": 424,
-  "time": "2026-11-09T14:17",
+  "tick": 425,
+  "time": "2026-11-09T15:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
+    "donna": "rec_center",
     "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
     "donna": [
-      "Hal said to Donna: “Three flamingos. That's a number I can count on one hand and not file a thing about. Obliged, Donna.”",
-      "Rosa said to Donna: “Three flamingos looks lovely from here, Donna, and the garage ones get a well-earned rest. Go enjoy your afternoon, and I'll be rooting for you and Gary on Tuesday.”"
+      "Hal (street bulletin board): Read the Architectural Review notice and check the filing deadline for Gary's cart modifications",
+      "Rosa headed to Rosa's House.",
+      "You arrived at Rec Center."
     ],
     "hal": [
-      "Donna said to Rosa: “Rosa, you're a doll, and I'm holding you to that dinner offer. If Gary survives Tuesday without pulling anything, we'll all celebrate at your table.”",
-      "Rosa said to Donna: “Three flamingos looks lovely from here, Donna, and the garage ones get a well-earned rest. Go enjoy your afternoon, and I'll be rooting for you and Gary on Tuesday.”"
+      "Donna headed to Rec Center.",
+      "Rosa headed to Rosa's House."
     ],
     "rosa": [
-      "Donna said to Rosa: “Rosa, you're a doll, and I'm holding you to that dinner offer. If Gary survives Tuesday without pulling anything, we'll all celebrate at your table.”",
-      "Hal said to Donna: “Three flamingos. That's a number I can count on one hand and not file a thing about. Obliged, Donna.”"
+      "Donna headed to Rec Center.",
+      "Hal (street bulletin board): Read the Architectural Review notice and check the filing deadline for Gary's cart modifications",
+      "You arrived at Rosa's House."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 322,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
       {
         "tick": 323,
         "text": "I (street bulletin board): Read the board for Architectural Review filing info and parade details",
@@ -1023,29 +1020,14 @@
         "tick": 423,
         "text": "I (gary workbench): Bench-build and test the cart's light harness and speaker wiring, keeping it off the street until approved",
         "importance": 4
+      },
+      {
+        "tick": 424,
+        "text": "I (gary golf cart): Mount the light harness and speaker wiring on the cart and test it inside the garage, out of view of the street",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 334,
-        "text": "Gary headed to Rec Center.",
-        "importance": 6
-      },
-      {
-        "tick": 334,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and log the tally against L-02",
-        "importance": 6
-      },
-      {
-        "tick": 334,
-        "text": "You arrived at Rec Center.",
-        "importance": 6
-      },
-      {
-        "tick": 334,
-        "text": "Gary just arrived.",
-        "importance": 6
-      },
       {
         "tick": 335,
         "text": "I said to Gary: “Gary, right on time! Today's the day, hon. I'll book us a court and show you the ropes, and before you know it we'll be climbing that ladder together.”",
@@ -2025,24 +2007,29 @@
         "tick": 423,
         "text": "Rosa said to Donna: “Three flamingos looks lovely from here, Donna, and the garage ones get a well-earned rest. Go enjoy your afternoon, and I'll be rooting for you and Gary on Tuesday.”",
         "importance": 4
+      },
+      {
+        "tick": 424,
+        "text": "I headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 424,
+        "text": "Hal (street bulletin board): Read the Architectural Review notice and check the filing deadline for Gary's cart modifications",
+        "importance": 5
+      },
+      {
+        "tick": 424,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 5
+      },
+      {
+        "tick": 424,
+        "text": "You arrived at Rec Center.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 331,
-        "text": "Donna just arrived.",
-        "importance": 6
-      },
-      {
-        "tick": 332,
-        "text": "I said to Donna: “Afternoon, Donna. I'm counting your flamingos for the record, and L-02 says three. How many are standing in that flock today?”",
-        "importance": 6
-      },
-      {
-        "tick": 332,
-        "text": "Gary said to Hal: “Hal, good timing. I just read the Architectural Review notice on the board, and I want to file for the cart lights and speakers the right way. You mind looking over my form before I turn it in?”",
-        "importance": 6
-      },
       {
         "tick": 332,
         "text": "Donna said to Gary: “Gary, there you are! It's Tuesday, I've got the court booked for two hours and a spare paddle in my bag with your name on it. Walk over to the rec center with me and I'll show you the basics.”",
@@ -3027,29 +3014,24 @@
         "tick": 423,
         "text": "Rosa said to Donna: “Three flamingos looks lovely from here, Donna, and the garage ones get a well-earned rest. Go enjoy your afternoon, and I'll be rooting for you and Gary on Tuesday.”",
         "importance": 4
+      },
+      {
+        "tick": 424,
+        "text": "I (street bulletin board): Read the Architectural Review notice and check the filing deadline for Gary's cart modifications",
+        "importance": 4
+      },
+      {
+        "tick": 424,
+        "text": "Donna headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 424,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 321,
-        "text": "I said to Hal: “Hal, there you are! I saved you the chair at the head of the table, so come sit. And I'm putting coffee with you in ink this week, no more excuses from me.”",
-        "importance": 7
-      },
-      {
-        "tick": 321,
-        "text": "Gary said to Hal: “Hal, good timing. You've been through the Architectural Review form before, haven't you? I'd like to file for the parade lights and sound system on my cart, and I'd take any pointers on what they look for.”",
-        "importance": 7
-      },
-      {
-        "tick": 321,
-        "text": "Donna said to Gary: “Gary, there's my partner! Those third-shot drops have me dreaming about the top of the ladder. Tuesday, courts, bring that wrist.”",
-        "importance": 7
-      },
-      {
-        "tick": 321,
-        "text": "Hal said to Gary: “Gary. That parade wiring on your cart is visible from the street, so it needs Architectural Review approval under L-01. File the paperwork before those lights go on again, or I'll have to.”",
-        "importance": 7
-      },
       {
         "tick": 322,
         "text": "I said to Hal: “Alright, you three, the cart forms and the pickleball ladder can wait until after we eat. Everybody sit, and Hal, pour yourself some water at your head-of-the-table seat while I bring out the food.”",
@@ -4029,54 +4011,74 @@
         "tick": 423,
         "text": "Hal said to Donna: “Three flamingos. That's a number I can count on one hand and not file a thing about. Obliged, Donna.”",
         "importance": 4
+      },
+      {
+        "tick": 424,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 424,
+        "text": "Donna headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 424,
+        "text": "Hal (street bulletin board): Read the Architectural Review notice and check the filing deadline for Gary's cart modifications",
+        "importance": 4
+      },
+      {
+        "tick": 424,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
       }
     ]
   },
   "reflections": {
     "gary": [
-      "I'm looking forward to Rosa's dinner tonight and to showing Donna the cart's lights and speakers, even if Architectural Review is holding things up.",
-      "I still feel a little nervous about the ladder at the courts with Donna, but she's made me feel like I can learn to play.",
       "Rosa has always been the kind of neighbor who makes a place feel like home, and I'm glad she invited me to her welcome dinner with Donna and Hal on Friday.",
       "I'm working toward getting the golf cart's lights and speakers approved, even though I've been doing the wiring quietly in the garage while I wait, and I'm hoping the Architectural Review will see it my way soon.",
       "Donna keeps pushing me toward the courts, and I'm glad she cares enough to drag me out, even if my cart project is what I'd rather be finishing.",
       "I've kept the cart's wiring tidy and safe in the garage like Architectural Review asked, and I want to show Donna the lights once they're officially approved.",
       "Donna is a generous coach who's been patient with my rusty knees, and I'm grateful she's pushing me to get back on the ladder.",
-      "Part of me still wants to keep my cart wiring and quiet garage projects to myself, but I'm starting to think a little pickleball with Donna might be the better way to spend my Sundays."
+      "Part of me still wants to keep my cart wiring and quiet garage projects to myself, but I'm starting to think a little pickleball with Donna might be the better way to spend my Sundays.",
+      "Donna's been on my mind since she agreed to pull the flamingos down, and I want to keep things pleasant with her, even if I'm still keeping my cart modifications out of sight until Architectural Review clears them.",
+      "I'm looking forward to Wednesday morning coffee with Rosa and Hal, and I hope the flan lives up to the hype, but my real goal right now is to finish testing the cart's lights and speaker quietly in the garage and get approval."
     ],
     "donna": [
-      "Hiding the extra flamingos behind the hedge was a sneaky way to keep Hal quiet, but I'm honestly relieved the flock is finally under the limit.",
-      "Rosa and Hal both want me at that Friday supper, and I'm looking forward to it more than I'd like to admit, even with my deviled eggs on the line.",
       "Hal's been keeping an eye on my flamingos all week, but I think his teasing is his way of being a good neighbor, and I'm glad we're all sitting down together tonight.",
       "Gary and I need to beat the top teams on that ladder before the season ends, so I'm going to reserve that Tuesday court and get serious about our game.",
       "Gary and I are finally on the same page about Tuesday's court time, and it feels good to have a partner who shows up ready to play.",
       "Hal's rule about keeping the notebook in his pocket tonight tells me he trusts this neighborhood more than he lets on, and I want to keep earning that trust.",
       "Gary's knees were creaking, but he still kept his promise and showed up, which tells me he's a good friend worth investing in.",
-      "Getting Gary onto the pickleball court was a small win, and I'm hopeful that by Tuesday he'll be ready to climb the ladder with me."
+      "Getting Gary onto the pickleball court was a small win, and I'm hopeful that by Tuesday he'll be ready to climb the ladder with me.",
+      "Hal and I settled the flamingo dispute without a committee, and it feels good to have a neighbor who says things to my face.",
+      "Rosa's dinner invitation and Gary's Tuesday pickleball match make me feel like this Loop is finally becoming the close-knit community I hoped for."
     ],
     "hal": [
-      "Rosa's Friday dinner is shaping up to be a fine way to settle the flamingo and cart squabbles, and I intend to keep my word and behave while I'm there.",
       "Donna's sly humor about the hidden flamingos keeps me on my toes, but I respect her spirit, and I hope we can smooth things over with a good meal.",
       "Rosa's dinner invitation is generous, and I'm glad to sit down with Donna and everyone else instead of worrying about the flamingo count.",
       "Donna and I have bickered over those flamingos, but she's a good neighbor and I'd rather share a meal with her than keep score.",
       "I'm keeping my notebook closed until Monday, and it feels good to let the street be for once.",
       "Donna and Rosa have always looked out for each other, and I'm glad I still get a seat at their table tonight.",
       "Keeping my word about the notebook until Monday has been harder than I expected, but Rosa's table tonight feels like a good reward for my patience.",
-      "I still wonder whether Gary will show up, and I'm glad Rosa wants us all together, because I'd rather be with friends than keep watching the street alone."
+      "I still wonder whether Gary will show up, and I'm glad Rosa wants us all together, because I'd rather be with friends than keep watching the street alone.",
+      "Donna took my note about the flamingos gracefully, which makes me glad I said it to her face instead of filing it, and I want to keep things easy between us. I'm looking forward to Wednesday coffee with Rosa and the flan, and I want to show up relaxed and on time."
     ],
     "rosa": [
-      "Hal and Donna keep bickering over flamingos, but I'm glad they're both coming Friday so I can finally get my whole table together.",
-      "I want Gary, Donna, and Hal to feel welcome at my table, and seeing them all show up for dinner would mean the world to me.",
       "Gary has been a good neighbor, even when he talks about parade lights longer than anyone wants, and I'm glad he's coming Friday.",
       "Donna and Hal keep the street lively, and tonight at my table I want us to simply enjoy each other's company without the flamingo count.",
       "Donna and Hal are finally here at my table, and I want tonight to be about dinner and good company rather than flamingos.",
       "I've been wanting to settle on a morning for coffee with Hal, and writing it in ink on my shift schedule finally makes it feel real.",
       "I'm glad the whole table came together tonight, and I want to keep Hal in my life as more than just a neighbor I see at supper.",
-      "Coffee with Hal on Wednesday morning feels like a small, hopeful step, and I'm allowing myself to look forward to it."
+      "Coffee with Hal on Wednesday morning feels like a small, hopeful step, and I'm allowing myself to look forward to it.",
+      "Coffee with Hal on Wednesday morning is officially on the calendar, and I'm glad I kept that slot clear.",
+      "Donna took the neighborhood tensions with grace, and I want my kitchen to be a place where people like her feel welcome."
     ]
   },
   "emotions": {
     "gary": "content",
-    "donna": "cheerful",
+    "donna": "optimistic",
     "hal": "content",
     "rosa": "content"
   },
@@ -4203,55 +4205,9 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 419,
-      "time": "Monday, November 9, 10:17 AM",
-      "story": "At 10:17 on a sunny Monday morning in Sumter Oaks, Gary is focused in his garage, testing a speaker at low volume while the golf cart hums nearby. Donna is upbeat as she reads the notices on the Magnolia Loop bulletin board and pins up a new pickleball ladder announcement. Hal is resolute as he heads down the street toward Donna, and Rosa, content at home, is marking Wednesday morning clear on her shift schedule so she can have coffee with Hal.",
-      "dialogue": []
-    },
-    {
-      "tick": 420,
-      "time": "Monday, November 9, 11:17 AM",
-      "story": "On a sunny Monday morning in Sumter Oaks, Donna is cheerfully pinning a pickleball sign-up sheet to the board on Magnolia Loop while Hal, looking resolute, politely points out that her flock of lawn ornaments has crept past the community's three-ornament limit. Gary, hopeful as ever, is heading out to join them, and Rosa is wandering over too, content to see where the morning leads. Hal would rather settle things with Donna face to face than file a formal complaint, so the flamingos may yet get a little trimming.",
-      "dialogue": [
-        "Donna said to Hal: “Morning, Hal! I just pinned up the pickleball ladder sheet on the board. You should sign up, we need new blood. What's the word around the Loop today?”",
-        "Hal said to Donna: “Morning, Donna. I'll say it to your face rather than leave a notice: the flock's past the three-ornament limit, L-02. I've written it up, but I'd sooner see you trim it down than take it to the committee.”"
-      ]
-    },
-    {
-      "tick": 421,
-      "time": "Monday, November 9, 12:17 PM",
-      "story": "On this sunny Monday just past noon in Sumter Oaks, Gary, Donna, Hal, and Rosa are gathered on Magnolia Loop, where Gary cheerfully promises Donna a light show once his cart gets Architectural Review approval, and Donna sheepishly agrees to thin her lawn-flamingo flock down to three. Hal grumbles warmly that he's kept his notebook shut all week, though he'll look over the ladder sheet after his knees have their say. Meanwhile Rosa, feeling hopeful, lands a Wednesday nine o'clock coffee date with Hal, complete with leftover flan.",
-      "dialogue": [
-        "Gary said to Donna: “Afternoon, Donna. I'll be at the courts Tuesday, wrist taped and everything. Soon as Architectural Review clears my cart, you're getting a private light show.”",
-        "Donna said to Hal: “Fair enough, Hal, and thank you for saying it to my face. I'll pull the flock down to three by this afternoon, no committee needed. Let me know if you spot anything else on the Loop.”",
-        "Hal said to Donna: “Word is I've kept the notebook shut all week, Donna, and it's near killed me. I'll look at that ladder sheet, but my knees will want a word first.”",
-        "Rosa said to Hal: “Hal, good news: I cleared Wednesday morning on my schedule, so coffee's officially on. Nine o'clock at my place work for you? And there's leftover flan with your name on it.”"
-      ]
-    },
-    {
-      "tick": 422,
-      "time": "Monday, November 9, 1:17 PM",
-      "story": "On a sunny Monday afternoon at 1:17 on Magnolia Loop, Gary is heading home to his place while the other three linger in the street. Donna is cheerfully trimming her flamingo flock down to three and tucking the extras into the garage, and Rosa is thanking her for being so gracious about it. Hal, content in the warm 79-degree weather, has settled a Wednesday dinner date with Rosa at nine, promising to arrive on time and to save room for her flan.",
-      "dialogue": [
-        "Hal said to Rosa: “Nine o'clock Wednesday suits me, Rosa. I'll be there on time, and I won't say no to that flan.”",
-        "Rosa said to Donna: “Donna, thank you for being so gracious about the flock. That's the kind of neighbor I was hoping to have at my table. Tell me Tuesday goes well, and if you two need a post-pickleball dinner, my kitchen's open.”"
-      ]
-    },
-    {
-      "tick": 423,
-      "time": "Monday, November 9, 2:17 PM",
-      "story": "At 2:17 on this rainy Monday afternoon in Sumter Oaks, Gary is bench-testing his golf cart's light harness and speaker wiring in his garage, keeping everything off the street until it's approved. Out on Magnolia Loop, Donna, Hal, and Rosa are gathered under the lifting shower, and Donna is cheerfully taking Rosa up on a dinner offer, pledging to celebrate at her table if Gary gets through Tuesday without trouble. Hal is pleased that the three flamingos in the yard are a tidy number he can keep track of without any paperwork, and Rosa is happy to see the garage flamingos get a well-earned rest. Everyone seems content, and they're all rooting for Gary.",
-      "dialogue": [
-        "Donna said to Rosa: “Rosa, you're a doll, and I'm holding you to that dinner offer. If Gary survives Tuesday without pulling anything, we'll all celebrate at your table.”",
-        "Hal said to Donna: “Three flamingos. That's a number I can count on one hand and not file a thing about. Obliged, Donna.”",
-        "Rosa said to Donna: “Three flamingos looks lovely from here, Donna, and the garage ones get a well-earned rest. Go enjoy your afternoon, and I'll be rooting for you and Gary on Tuesday.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 13.34138,
+    "total_usd": 13.37382,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4366,13 +4322,12 @@
         "usd": 0.45266
       },
       "2026-11-09": {
-        "ticks": 8,
-        "usd": 0.25055
+        "ticks": 9,
+        "usd": 0.28299
       }
     }
   },
   "recent_tick_costs": [
-    0.03184,
     0.0303,
     0.03019,
     0.03024,
@@ -4395,7 +4350,8 @@
     0.03062,
     0.03234,
     0.03366,
-    0.03214
+    0.03214,
+    0.03244
   ],
   "fund": {
     "gross_usd": 0.0,

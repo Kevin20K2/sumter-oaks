@@ -1,0 +1,118 @@
+{
+  "tick": 424,
+  "simulation_time": "Monday, November 9, 3:17 PM",
+  "weather": "Afternoon shower, 80°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 3:17 on a damp Monday afternoon in Sumter Oaks, a brief shower has the streets glistening at 80 degrees. Gary is tucked inside his garage, quietly fitting a light harness and speaker wiring to his golf cart out of sight of the street. Meanwhile Donna is off to the Rec Center in good spirits, while Rosa heads home and Hal stops at the bulletin board on Magnolia Loop to read an Architectural Review notice about Gary's cart modifications and check the filing deadline.",
+  "events": [
+    "Gary (gary golf cart): Mount the light harness and speaker wiring on the cart and test it inside the garage, out of view of the street",
+    "Donna headed to Rec Center.",
+    "Hal (street bulletin board): Read the Architectural Review notice and check the filing deadline for Gary's cart modifications",
+    "Rosa headed to Rosa's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm home at 3:17 PM with a rain shower outside, nobody around, and my modification request already filed with Architectural Review. Last tick I bench-built the harness and speaker wiring. The smart move is to keep working indoors: mount the harness on the cart and test it right here in the garage, keeping everything off the street until approval comes through (L-01). Rainy afternoon, tinkering is exactly what I want to do. Maybe later I'll text Donna about Sunday pickleball.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Mount the light harness and speaker wiring on the cart and test it inside the garage, out of view of the street"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "The flamingo business with Hal is settled at three, and Rosa has already been gracious about the dinner. Everyone has said their piece, so another round of chatter would just be repeating myself. My real goal is getting Gary ready for Tuesday's pickleball court time, and he headed to the Rec Center earlier. Time to go find my partner and make sure he's stretching, not sulking.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the Rec Center to check on Gary and get him warmed up for Tuesday's doubles."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna got her flock down to three, and I thanked her already. My notebook stays closed until Monday, which is today, but Gary's form is the only thing left on my list and the board is right here. Rosa's invitation is on the table, and I don't need to repeat myself to either of them. The conversation has run its course. Best use of the hour is to look over the bulletin board and see whether Gary's Architectural Review notice is posted correctly, since he asked me to check his form and I'd rather do this by the book.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Read the Architectural Review notice and check the filing deadline for Gary's cart modifications"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "The flamingo business is settled, Hal has confirmed Wednesday at nine, and Donna is holding me to the dinner. Nothing is left to negotiate with either of them, and I shouldn't repeat myself. I've got shift planning and dinner prep to do, and a shower is coming down, so I'll thank them briefly, point them toward the day ahead, and head home to start planning the menu.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading home out of the rain to start planning the menu for the dinner and set up Wednesday's coffee."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03244,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10242,
+        "output_tokens": 1059,
+        "usd": 0.03107
+      },
+      "claude-haiku-5-5": {
+        "calls": 6,
+        "input_tokens": 7954,
+        "output_tokens": 1153,
+        "usd": 0.00137
+      }
+    }
+  }
+}
