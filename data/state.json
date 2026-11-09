@@ -1,34 +1,26 @@
 {
-  "tick": 413,
-  "time": "2026-11-08T18:17",
+  "tick": 414,
+  "time": "2026-11-08T19:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
-    "hal": "hals_house",
+    "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “There you go, Gary, that's the touch! Bend those knees just a little and keep that paddle out in front, and Tuesday's court is going to be a breeze.”"
+      "Donna said to Gary: “Gary, honey, you're a natural at the kitchen! Let's try a few serves next, underhand and nice and easy, and by Tuesday we'll be climbing that ladder board together.”"
     ],
     "donna": [
-      "Gary (pickleball court 1): Keep rallying soft dinks with Donna behind the kitchen line"
+      "Gary said to Donna: “Thanks for the lesson, Donna, my knees say that's plenty for one evening. I'll be back Tuesday, and I'm heading home to get back to my cart wiring.”"
     ],
-    "hal": [],
+    "hal": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 316,
-        "text": "I (gary golf cart): Zip-tie the wiring harness and check each light strip and speaker connection with the multimeter",
-        "importance": 5
-      },
-      {
-        "tick": 317,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 6
-      },
       {
         "tick": 317,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -1018,19 +1010,19 @@
         "tick": 412,
         "text": "Donna said to Gary: “There you go, Gary, that's the touch! Bend those knees just a little and keep that paddle out in front, and Tuesday's court is going to be a breeze.”",
         "importance": 4
+      },
+      {
+        "tick": 413,
+        "text": "I said to Donna: “Thanks for the lesson, Donna, my knees say that's plenty for one evening. I'll be back Tuesday, and I'm heading home to get back to my cart wiring.”",
+        "importance": 4
+      },
+      {
+        "tick": 413,
+        "text": "Donna said to Gary: “Gary, honey, you're a natural at the kitchen! Let's try a few serves next, underhand and nice and easy, and by Tuesday we'll be climbing that ladder board together.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 323,
-        "text": "I said to Rosa: “Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here.”",
-        "importance": 3
-      },
-      {
-        "tick": 323,
-        "text": "Hal said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”",
-        "importance": 3
-      },
       {
         "tick": 323,
         "text": "Rosa (rosa kitchen): Plate up the supper and carry it out to the table",
@@ -2020,19 +2012,19 @@
         "tick": 412,
         "text": "Gary (pickleball court 1): Keep rallying soft dinks with Donna behind the kitchen line",
         "importance": 6
+      },
+      {
+        "tick": 413,
+        "text": "I said to Gary: “Gary, honey, you're a natural at the kitchen! Let's try a few serves next, underhand and nice and easy, and by Tuesday we'll be climbing that ladder board together.”",
+        "importance": 6
+      },
+      {
+        "tick": 413,
+        "text": "Gary said to Donna: “Thanks for the lesson, Donna, my knees say that's plenty for one evening. I'll be back Tuesday, and I'm heading home to get back to my cart wiring.”",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 321,
-        "text": "I said to Gary: “Gary. That parade wiring on your cart is visible from the street, so it needs Architectural Review approval under L-01. File the paperwork before those lights go on again, or I'll have to.”",
-        "importance": 5
-      },
-      {
-        "tick": 321,
-        "text": "Gary said to Hal: “Hal, good timing. You've been through the Architectural Review form before, haven't you? I'd like to file for the parade lights and sound system on my cart, and I'd take any pointers on what they look for.”",
-        "importance": 5
-      },
       {
         "tick": 321,
         "text": "Donna said to Gary: “Gary, there's my partner! Those third-shot drops have me dreaming about the top of the ladder. Tuesday, courts, bring that wrist.”",
@@ -3022,14 +3014,19 @@
         "tick": 412,
         "text": "I waited: Sitting on the porch with the notebook closed, watching the evening haze settle and getting ready to walk over to Rosa's for supper.",
         "importance": 2
+      },
+      {
+        "tick": 413,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 413,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 308,
-        "text": "Gary (rosa dining table): Straighten the chairs and make sure Hal's spot is ready",
-        "importance": 6
-      },
       {
         "tick": 308,
         "text": "Donna (rosa kitchen): Peel the foil off the casserole and set out serving spoons",
@@ -4024,6 +4021,11 @@
         "tick": 412,
         "text": "I waited: Finishing my tea at the table, savoring the quiet after a good dinner and thinking how nice it was to have everyone together.",
         "importance": 3
+      },
+      {
+        "tick": 413,
+        "text": "I (rosa shift schedule): Look over the week's schedule to make sure coffee with Hal and my shifts don't collide",
+        "importance": 3
       }
     ]
   },
@@ -4071,7 +4073,7 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "encouraged",
+    "donna": "optimistic",
     "hal": "content",
     "rosa": "content"
   },
@@ -4198,9 +4200,19 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 413,
+      "time": "Sunday, November 8, 7:17 PM",
+      "story": "At 7:17 on a humid, hazy Sunday evening in Sumter Oaks, Gary and Donna wrap up a pickleball lesson at the Rec Center, with Gary deciding his knees have earned a rest and promising to return Tuesday for another go. Donna, still full of optimism, cheerfully plans a few gentle serves for their next session. Hal heads out along Magnolia Loop, while Rosa stays home at her house and checks her week's schedule to make sure her shifts won't clash with coffee plans with Hal.",
+      "dialogue": [
+        "Gary said to Donna: “Thanks for the lesson, Donna, my knees say that's plenty for one evening. I'll be back Tuesday, and I'm heading home to get back to my cart wiring.”",
+        "Donna said to Gary: “Gary, honey, you're a natural at the kitchen! Let's try a few serves next, underhand and nice and easy, and by Tuesday we'll be climbing that ladder board together.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 13.00139,
+    "total_usd": 13.03195,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4311,13 +4323,12 @@
         "usd": 0.4663
       },
       "2026-11-08": {
-        "ticks": 12,
-        "usd": 0.36322
+        "ticks": 13,
+        "usd": 0.39378
       }
     }
   },
   "recent_tick_costs": [
-    0.0303,
     0.03014,
     0.03145,
     0.03288,
@@ -4340,7 +4351,8 @@
     0.03,
     0.03081,
     0.02923,
-    0.03022
+    0.03022,
+    0.03056
   ],
   "fund": {
     "gross_usd": 0.0,

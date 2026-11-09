@@ -1,0 +1,116 @@
+{
+  "tick": 413,
+  "simulation_time": "Sunday, November 8, 7:17 PM",
+  "weather": "Humid and hazy, 76°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a humid, hazy Sunday evening in Sumter Oaks, Gary and Donna wrap up a pickleball lesson at the Rec Center, with Gary deciding his knees have earned a rest and promising to return Tuesday for another go. Donna, still full of optimism, cheerfully plans a few gentle serves for their next session. Hal heads out along Magnolia Loop, while Rosa stays home at her house and checks her week's schedule to make sure her shifts won't clash with coffee plans with Hal.",
+  "events": [
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa shift schedule): Look over the week's schedule to make sure coffee with Hal and my shifts don't collide"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've been dinking with Donna for a couple ticks now and it's actually kind of fun, even if my knees are complaining. Her line about Tuesday's court being a breeze sounds like a natural wind-down point, and I shouldn't just keep repeating soft dinks. I filed the cart request back at the review desk, and what I really want is to get back to the garage and finish the wiring and see if Architectural Review has an answer. Best move is to thank Donna warmly, tell her I'll be back for Tuesday, and head out toward Magnolia Loop. Keeps her feeling appreciated and keeps my project moving.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Thanks for the lesson, Donna, my knees say that's plenty for one evening. I'll be back Tuesday, and I'm heading home to get back to my cart wiring."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "We've been rallying soft dinks for a couple of ticks and Gary's picking it up nicely. I already told him the kitchen rule and the knees tip, so no need to repeat myself. Time to move the lesson forward: he's got the touch, now I should plant the idea of an actual ladder match and lock in Tuesday. I'll tell him the dinks are working and that we should stretch into serving next, so he feels ready for the ladder.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, honey, you're a natural at the kitchen! Let's try a few serves next, underhand and nice and easy, and by Tuesday we'll be climbing that ladder board together."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's past seven and the evening has settled in. I've been sitting here for hours with the notebook closed, just like I promised, and Rosa's table is waiting. No one is around to talk to, and I won't touch the binoculars or notebook until Monday. Time to get up out of this chair and walk over to Magnolia Loop on my way to supper. A sergeant doesn't show up late to a meal he was invited to.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to Rosa's for supper, notebook staying home until Monday."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Dinner went well, everyone's gone home, and the house is quiet. The coffee with Hal is already written in pen on my schedule, so there's nothing left to chase on that front. I've got a per-diem shift to think about and the kitchen is mostly tidied. A quick look at the schedule will confirm the week is squared away before I call it a night.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Look over the week's schedule to make sure coffee with Hal and my shifts don't collide"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03056,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9657,
+        "output_tokens": 1111,
+        "usd": 0.03042
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 464,
+        "output_tokens": 178,
+        "usd": 0.00014
+      }
+    }
+  }
+}
