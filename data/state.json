@@ -1,33 +1,20 @@
 {
-  "tick": 431,
-  "time": "2026-11-09T21:17",
+  "tick": 432,
+  "time": "2026-11-10T07:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "garys_house",
-    "hal": "rosas_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "Donna said to Gary: “Guilty, hon, but I come bearing ice packs for those knees, not more pressure. Nothing to fix tonight, I just wanted to make sure my partner's in one piece before Tuesday.”"
-    ],
-    "donna": [
-      "Gary said to Donna: “Two full hours, huh? You drive a hard bargain, Donna, but I'll be there with my knees taped up. Thanks for setting it up, I mean that.”"
-    ],
-    "hal": [
-      "Rosa (rosa kitchen): Fluff the rice, taste the arroz con pollo, and keep it warm for serving"
-    ],
-    "rosa": [
-      "Hal said to Rosa: “Table's set, Rosa, plates and forks squared away. Point me at the pot or the serving spoon and I'll carry it over myself.”"
-    ]
+    "gary": [],
+    "donna": [],
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 330,
-        "text": "I (street bulletin board): Check the board for Architectural Review submission details and meeting dates",
-        "importance": 5
-      },
       {
         "tick": 331,
         "text": "I (street bulletin board): Read the Architectural Review notice for where to submit and the next meeting date",
@@ -1022,14 +1009,14 @@
         "tick": 430,
         "text": "Donna said to Gary: “Guilty, hon, but I come bearing ice packs for those knees, not more pressure. Nothing to fix tonight, I just wanted to make sure my partner's in one piece before Tuesday.”",
         "importance": 4
+      },
+      {
+        "tick": 431,
+        "text": "I (gary workbench): Test the cart's light strip and speaker wiring quietly at the bench",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 340,
-        "text": "I said to Gary: “Here comes the first one, hon, nice and slow! Don't think, just swing, and we'll worry about the scoring later.”",
-        "importance": 6
-      },
       {
         "tick": 340,
         "text": "Gary (pickleball court 1): Take the baseline, knees bent, and swing at Donna's first easy serve",
@@ -2024,14 +2011,14 @@
         "tick": 430,
         "text": "Gary said to Donna: “Two full hours, huh? You drive a hard bargain, Donna, but I'll be there with my knees taped up. Thanks for setting it up, I mean that.”",
         "importance": 5
+      },
+      {
+        "tick": 431,
+        "text": "I (donna pickleball bag): Pack paddles, balls, ice packs, and a spare visor for Gary",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 339,
-        "text": "I headed to Hal's House.",
-        "importance": 3
-      },
       {
         "tick": 339,
         "text": "You arrived at Hal's House.",
@@ -3026,14 +3013,14 @@
         "tick": 430,
         "text": "Rosa (rosa kitchen): Fluff the rice, taste the arroz con pollo, and keep it warm for serving",
         "importance": 3
+      },
+      {
+        "tick": 431,
+        "text": "I (hal porch chair): Sit on the porch with coffee and watch the street wake up",
+        "importance": 2
       }
     ],
     "rosa": [
-      {
-        "tick": 325,
-        "text": "Donna (rosa dining table): Take my seat, pass the serving dishes, and tuck into supper",
-        "importance": 6
-      },
       {
         "tick": 325,
         "text": "Hal said to Rosa: “Smells like proper rations in here, Rosa. Coffee in ink, I see. Now I'm obligated to show up.”",
@@ -4028,6 +4015,11 @@
         "tick": 430,
         "text": "Hal said to Rosa: “Table's set, Rosa, plates and forks squared away. Point me at the pot or the serving spoon and I'll carry it over myself.”",
         "importance": 6
+      },
+      {
+        "tick": 431,
+        "text": "I (rosa shift schedule): Look over the per-diem schedule and make sure Wednesday morning stays clear for coffee with Hal",
+        "importance": 4
       }
     ]
   },
@@ -4074,10 +4066,10 @@
     ]
   },
   "emotions": {
-    "gary": "warm, a little nervous",
-    "donna": "cheerful",
-    "hal": "content",
-    "rosa": "warm, busy"
+    "gary": "focused",
+    "donna": "eager",
+    "hal": "calm",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4202,9 +4194,16 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 431,
+      "time": "Tuesday, November 10, 7:17 AM",
+      "story": "At 7:17 on a mild Tuesday morning in Sumter Oaks, Gary is quietly testing the light strip and speaker wiring on his golf cart at his workbench. Across the way, Donna is packing paddles, balls, ice packs, and a spare visor for Gary, clearly eager for their pickleball game. Hal sits calmly on his porch with his coffee, watching the street slowly wake up, while Rosa checks her per-diem schedule to keep Wednesday morning free for coffee with Hal.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 13.55699,
+    "total_usd": 13.58674,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4321,11 +4320,14 @@
       "2026-11-09": {
         "ticks": 15,
         "usd": 0.46616
+      },
+      "2026-11-10": {
+        "ticks": 1,
+        "usd": 0.02975
       }
     }
   },
   "recent_tick_costs": [
-    0.03097,
     0.03101,
     0.03,
     0.03081,
@@ -4348,7 +4350,8 @@
     0.02989,
     0.03092,
     0.03055,
-    0.03094
+    0.03094,
+    0.02975
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4396,7 +4399,7 @@
     "test_mode": false,
     "level": "fair"
   },
-  "last_tick_date": "2026-11-09",
+  "last_tick_date": "2026-11-10",
   "calendar_fired": [
     "halloween-flyer",
     "halloween-reminder",
