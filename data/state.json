@@ -1,47 +1,31 @@
 {
-  "tick": 439,
-  "time": "2026-11-10T14:17",
+  "tick": 440,
+  "time": "2026-11-10T15:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
     "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "rosa": "rec_center"
   },
   "perceptions": {
     "gary": [
-      "Hal said to Rosa: “You have my word, Rosa. Friday at six, I'll be at your table, and I'll be on time. Go keep that pork from burning.”",
-      "Rosa said to Hal: “Hal, Gary's in and he's bringing dessert, so you're the last chair. Finish your form, then give me one word on Friday, and I'll leave you in peace.”",
-      "You arrived at Rec Center."
+      "Donna said to Gary: “There's my partner! Let's stretch those knees out first, Gary, then I'll walk you through the kitchen line and we'll hit a few easy ones on court one. Thursday's ladder match won't win itself.”",
+      "Rosa just arrived."
     ],
     "donna": [
-      "Gary just arrived."
+      "Gary said to Donna: “Afternoon, Donna. Thanks for all the ice packs this week, my knees are almost behaving. You still good for a game today, and are you coming to Rosa's Friday? I'm on dessert duty.”",
+      "Rosa just arrived."
     ],
     "hal": [
-      "Gary headed to Rec Center.",
-      "Rosa said to Hal: “Hal, Gary's in and he's bringing dessert, so you're the last chair. Finish your form, then give me one word on Friday, and I'll leave you in peace.”"
+      "Rosa headed to Rec Center."
     ],
     "rosa": [
-      "Gary headed to Rec Center.",
-      "Hal said to Rosa: “You have my word, Rosa. Friday at six, I'll be at your table, and I'll be on time. Go keep that pork from burning.”"
+      "Hal said to Rosa: “Already gave you my word, Rosa, and I don't give it twice. Friday, six sharp, my chair's as good as filled. Now go tend your pork.”",
+      "You arrived at Rec Center."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 336,
-        "text": "Donna said to Gary: “Perfect, hon, two hours is exactly the limit, so we won't hear a peep from the rules committee. You book it, I'll grab paddles, and we'll do your cart form after your first rally. Deal?”",
-        "importance": 4
-      },
-      {
-        "tick": 337,
-        "text": "I (court reservation kiosk): Book a pickleball court for Donna and me, two hours, right at the limit",
-        "importance": 4
-      },
-      {
-        "tick": 337,
-        "text": "Donna said to Gary: “Court's booked, so here's your paddle, hon, I packed a spare just for you. Keep your knees bent, stay out of the kitchen, and let's get that first rally going.”",
-        "importance": 4
-      },
       {
         "tick": 338,
         "text": "I said to Donna: “Thanks for the spare paddle, Donna. Knees bent, out of the kitchen, got it. Let's get that first rally going before I talk myself out of it.”",
@@ -1026,24 +1010,24 @@
         "tick": 438,
         "text": "You arrived at Rec Center.",
         "importance": 4
+      },
+      {
+        "tick": 439,
+        "text": "I said to Donna: “Afternoon, Donna. Thanks for all the ice packs this week, my knees are almost behaving. You still good for a game today, and are you coming to Rosa's Friday? I'm on dessert duty.”",
+        "importance": 4
+      },
+      {
+        "tick": 439,
+        "text": "Donna said to Gary: “There's my partner! Let's stretch those knees out first, Gary, then I'll walk you through the kitchen line and we'll hit a few easy ones on court one. Thursday's ladder match won't win itself.”",
+        "importance": 4
+      },
+      {
+        "tick": 439,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 353,
-        "text": "Gary said to Hal: “Hal, when you finish with the flamingos, I've got the cart form in my jacket pocket whenever you're ready. I'd like it filed for Architectural Review before the parade, since L-01 says I can't touch the lights or speakers without it.”",
-        "importance": 6
-      },
-      {
-        "tick": 353,
-        "text": "Hal said to Gary: “Bring the form here, Gary, I'll go through it line by line. Describe the lights and speakers exactly as mounted, and put your ten o'clock cutoff in writing. Committee likes it all spelled out.”",
-        "importance": 6
-      },
-      {
-        "tick": 353,
-        "text": "Rosa waited: puttering around Magnolia Loop (the street)",
-        "importance": 6
-      },
       {
         "tick": 354,
         "text": "I said to Rosa: “Rosa, I'll be there Friday at six, and I'll bring dessert whether you want it or not. Tell Hal my flamingo count is eleven, and every one of them is within the law.”",
@@ -2028,19 +2012,24 @@
         "tick": 438,
         "text": "Gary just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 439,
+        "text": "I said to Gary: “There's my partner! Let's stretch those knees out first, Gary, then I'll walk you through the kitchen line and we'll hit a few easy ones on court one. Thursday's ladder match won't win itself.”",
+        "importance": 6
+      },
+      {
+        "tick": 439,
+        "text": "Gary said to Donna: “Afternoon, Donna. Thanks for all the ice packs this week, my knees are almost behaving. You still good for a game today, and are you coming to Rosa's Friday? I'm on dessert duty.”",
+        "importance": 6
+      },
+      {
+        "tick": 439,
+        "text": "Rosa just arrived.",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 350,
-        "text": "Donna just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 351,
-        "text": "I said to Donna: “Evening, Donna. Rosa's dinner is Friday and I'm told you're expected. Also, I'd like to count your flamingos with you, fair and square, so there's no argument later.”",
-        "importance": 5
-      },
       {
         "tick": 351,
         "text": "Gary said to Donna: “Evening, Donna. Rosa's got a welcome dinner Friday, and I'm bringing cornbread. Any chance you're free for a little pickleball before then? I want to keep working on that third-shot drop.”",
@@ -3030,24 +3019,19 @@
         "tick": 438,
         "text": "Rosa said to Hal: “Hal, Gary's in and he's bringing dessert, so you're the last chair. Finish your form, then give me one word on Friday, and I'll leave you in peace.”",
         "importance": 4
+      },
+      {
+        "tick": 439,
+        "text": "I said to Rosa: “Already gave you my word, Rosa, and I don't give it twice. Friday, six sharp, my chair's as good as filled. Now go tend your pork.”",
+        "importance": 4
+      },
+      {
+        "tick": 439,
+        "text": "Rosa headed to Rec Center.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 342,
-        "text": "I (rosa dining table): Lay out the good plates and place cards to test the seating for Friday",
-        "importance": 4
-      },
-      {
-        "tick": 343,
-        "text": "I (rosa kitchen): Start prepping what keeps: chop aromatics, make the sofrito base, and portion it for Friday",
-        "importance": 5
-      },
-      {
-        "tick": 344,
-        "text": "I (rosa kitchen): Mix the marinade for Friday's pork and set it in the fridge to soak, then wash up the prep bowls.",
-        "importance": 4
-      },
       {
         "tick": 345,
         "text": "I (rosa shift schedule): Check my per-diem shifts to make sure nothing collides with Thursday coffee or Friday's dinner",
@@ -4032,6 +4016,21 @@
         "tick": 438,
         "text": "Hal said to Rosa: “You have my word, Rosa. Friday at six, I'll be at your table, and I'll be on time. Go keep that pork from burning.”",
         "importance": 6
+      },
+      {
+        "tick": 439,
+        "text": "I headed to Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 439,
+        "text": "Hal said to Rosa: “Already gave you my word, Rosa, and I don't give it twice. Friday, six sharp, my chair's as good as filled. Now go tend your pork.”",
+        "importance": 6
+      },
+      {
+        "tick": 439,
+        "text": "You arrived at Rec Center.",
+        "importance": 6
       }
     ]
   },
@@ -4078,10 +4077,10 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "determined",
+    "gary": "warm",
+    "donna": "eager",
     "hal": "content",
-    "rosa": "hopeful"
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -4225,10 +4224,20 @@
         "Hal said to Rosa: “You have my word, Rosa. Friday at six, I'll be at your table, and I'll be on time. Go keep that pork from burning.”",
         "Rosa said to Hal: “Hal, Gary's in and he's bringing dessert, so you're the last chair. Finish your form, then give me one word on Friday, and I'll leave you in peace.”"
       ]
+    },
+    {
+      "tick": 439,
+      "time": "Tuesday, November 10, 3:17 PM",
+      "story": "At 3:17 on a mild Tuesday afternoon in Sumter Oaks, Gary and Donna are at the Rec Center, where Donna is eager to stretch out Gary's knees before a game on court one and to talk through the kitchen line for Friday's dessert duty. Out on Magnolia Loop, Hal is content to have promised Rosa he'll be at her place Friday at six sharp, and Rosa, optimistic as ever, is heading over to the Rec Center now.",
+      "dialogue": [
+        "Gary said to Donna: “Afternoon, Donna. Thanks for all the ice packs this week, my knees are almost behaving. You still good for a game today, and are you coming to Rosa's Friday? I'm on dessert duty.”",
+        "Donna said to Gary: “There's my partner! Let's stretch those knees out first, Gary, then I'll walk you through the kitchen line and we'll hit a few easy ones on court one. Thursday's ladder match won't win itself.”",
+        "Hal said to Rosa: “Already gave you my word, Rosa, and I don't give it twice. Friday, six sharp, my chair's as good as filled. Now go tend your pork.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 13.81255,
+    "total_usd": 13.84382,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4347,13 +4356,12 @@
         "usd": 0.46616
       },
       "2026-11-10": {
-        "ticks": 8,
-        "usd": 0.25556
+        "ticks": 9,
+        "usd": 0.28683
       }
     }
   },
   "recent_tick_costs": [
-    0.02905,
     0.03118,
     0.02993,
     0.03036,
@@ -4376,7 +4384,8 @@
     0.03108,
     0.03289,
     0.03476,
-    0.032
+    0.032,
+    0.03127
   ],
   "fund": {
     "gross_usd": 0.0,
