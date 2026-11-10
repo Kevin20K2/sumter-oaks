@@ -1,0 +1,115 @@
+{
+  "tick": 430,
+  "simulation_time": "Monday, November 9, 9:17 PM",
+  "weather": "Sunny, 75°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "rosas_house",
+    "rosa": "rosas_house"
+  },
+  "story": "It is Monday night at 9:17 in Sumter Oaks, and the air is a comfortable 75 degrees under clear skies. Gary, warm but a little nervous, is at his house while Donna, in good spirits, has come over with ice packs for his knees ahead of Tuesday's round. Across the way at Rosa's house, Rosa is busy fluffing rice and tasting her arroz con pollo while Hal, content, squares away the plates and offers to carry the dinner over.",
+  "events": [
+    "Rosa (rosa kitchen): Fluff the rice, taste the arroz con pollo, and keep it warm for serving"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just told me she booked a two-hour court for tomorrow, which is within the L-05 limit, so nothing to argue with there. I already greeted her last tick, and she's answered, so I shouldn't ask her anything again. It's 9:17 PM and quiet hours start at 10, so I shouldn't run the speaker anyway. Best thing is to thank her, agree to be ready, and keep it short. Then I can get back to the wiring check quietly.",
+      "emotional_state": "warm, a little nervous",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Two full hours, huh? You drive a hard bargain, Donna, but I'll be there with my knees taped up. Thanks for setting it up, I mean that."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just invited me in and asked if I'm here to talk him into more pickleball. I already told him at tick 429 about the court booking, so I shouldn't repeat that. Better to answer his question warmly, admit I'm here to scout his readiness, and ask about his knees so he feels cared for and not pressured. It keeps things friendly and nudges him toward Tuesday.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Guilty, hon, but I come bearing ice packs for those knees, not more pressure. Nothing to fix tonight, I just wanted to make sure my partner's in one piece before Tuesday."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I already set the table, squared up proper. Rosa's finishing the arroz con pollo and she asked what I made of Gary's form, and I answered that last tick, so no sense repeating myself. Better to be useful: tell her the table's ready and offer to carry the pot or fetch anything else. Keep it short and move things along toward dinner.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Table's set, Rosa, plates and forks squared away. Point me at the pot or the serving spoon and I'll carry it over myself."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal is setting the table and the rice is nearly done. I asked him about Gary's form last tick and he answered, so I won't ask again. The best move now is to finish the arroz con pollo so dinner is actually ready when Gary and Donna arrive. The welcome dinner is my main goal tonight.",
+      "emotional_state": "warm, busy",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Fluff the rice, taste the arroz con pollo, and keep it warm for serving"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03094,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9966,
+        "output_tokens": 1028,
+        "usd": 0.03021
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3897,
+        "output_tokens": 686,
+        "usd": 0.00073
+      }
+    }
+  }
+}
