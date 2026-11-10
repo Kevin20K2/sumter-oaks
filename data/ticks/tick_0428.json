@@ -1,0 +1,116 @@
+{
+  "tick": 428,
+  "simulation_time": "Monday, November 9, 7:17 PM",
+  "weather": "Sunny, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "rosas_house",
+    "rosa": "rosas_house"
+  },
+  "story": "As Monday evening settles over Sumter Oaks in mild 77-degree sunshine, Gary is at his garage workbench labeling wiring runs and checking inline fuses, content in his focused work. Donna is headed down Magnolia Loop toward his house, full of optimism. Over at Rosa's place, Hal is setting the table and reviewing Gary's paperwork while Rosa keeps an eye on the arroz con pollo.",
+  "events": [
+    "Gary (gary workbench): Label the wiring runs and double-check the inline fuses, garage only",
+    "Donna headed to Gary's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've already filed the Architectural Review request and tested the cart in the garage several times. The harness and speaker mounts have been re-checked, and the cart stays out of view of the street until approval, which keeps me within L-01. It's evening, no one's around, and the quiet hours don't start until 10 PM, but I'll keep the volume low anyway. One more pass at the workbench is worthwhile: label the wiring, double-check the fuses, and make sure everything's neat enough to pass a review inspection. Keeping my hands busy beats sitting in an empty house.",
+      "emotional_state": "focused, content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Label the wiring runs and double-check the inline fuses, garage only"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've reserved a court for tomorrow and studied the ladder, so the legwork is done. Nobody's around on the Loop right now, and Gary doesn't know about the reservation yet. Better to walk over to his house and tell him in person, since Tuesday's match is the whole point. Hold on to the flamingos for later, since Hal and I already settled that.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading to Gary's to tell him I booked us a court for tomorrow and get him ready for his first ladder match."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa asked how Gary's filing is looking. Gary handed me the form and sketch earlier so I could check it line by line, and I told him I'd go over it. Honest answer: I reviewed it and it's in decent shape, he just needs to file it before the committee deadline. The flamingo matter I already said to Donna's face, no need to belabor that tonight. Answer Rosa briefly, accept the plate, and keep things easy at her table.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Gary's paperwork is in decent shape, Rosa. I went over his measurements and sketch, and he just needs to get it filed before the review deadline. Arroz con pollo, you say? Then I'll sit, and I'm not arguing about the plate."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal just offered to carry something to the table, and I already told him to sit and tell me about Gary's filing while the arroz con pollo finishes. He's waiting on me, so I should give him a real job rather than repeat myself. Setting the table keeps his hands busy and moves the dinner along. Friday's pork dinner with Gary and Donna is still the bigger goal, so a warm, practical line fits, and it keeps Hal comfortable here, which matters since I want him in my life beyond supper.",
+      "emotional_state": "warm",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Yes, Hal, grab the plates and forks from the cabinet and set the table while the rice finishes. And tell me what you made of Gary's form while you work."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03092,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9664,
+        "output_tokens": 1147,
+        "usd": 0.0308
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 473,
+        "output_tokens": 145,
+        "usd": 0.00012
+      }
+    }
+  }
+}

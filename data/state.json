@@ -1,36 +1,28 @@
 {
-  "tick": 428,
-  "time": "2026-11-09T18:17",
+  "tick": 429,
+  "time": "2026-11-09T19:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
+    "donna": "garys_house",
     "hal": "rosas_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "Donna just arrived."
+    ],
     "donna": [
-      "You arrived at Magnolia Loop (the street)."
+      "You arrived at Gary's House."
     ],
     "hal": [
-      "Rosa said to Hal: “Hal, perfect timing, there's a big pot of arroz con pollo on and I'm not letting you leave without a plate. Sit, tell me how Gary's filing is looking while it finishes.”"
+      "Rosa said to Hal: “Yes, Hal, grab the plates and forks from the cabinet and set the table while the rice finishes. And tell me what you made of Gary's form while you work.”"
     ],
     "rosa": [
-      "Hal said to Rosa: “Evening, Rosa. I'm right on time. Anything I can carry to the table before the others show up?”"
+      "Hal said to Rosa: “Gary's paperwork is in decent shape, Rosa. I went over his measurements and sketch, and he just needs to get it filed before the review deadline. Arroz con pollo, you say? Then I'll sit, and I'm not arguing about the plate.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 326,
-        "text": "I headed to Town Square.",
-        "importance": 6
-      },
-      {
-        "tick": 326,
-        "text": "You arrived at Town Square.",
-        "importance": 6
-      },
       {
         "tick": 327,
         "text": "I (gary workbench): Fill out the Architectural Review form, listing the parade lights and speaker mounts",
@@ -1020,19 +1012,19 @@
         "tick": 427,
         "text": "I (gary golf cart): Re-check the light harness connections and speaker mounts, garage only",
         "importance": 4
+      },
+      {
+        "tick": 428,
+        "text": "I (gary workbench): Label the wiring runs and double-check the inline fuses, garage only",
+        "importance": 4
+      },
+      {
+        "tick": 428,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 337,
-        "text": "I said to Gary: “Court's booked, so here's your paddle, hon, I packed a spare just for you. Keep your knees bent, stay out of the kitchen, and let's get that first rally going.”",
-        "importance": 5
-      },
-      {
-        "tick": 337,
-        "text": "Gary (court reservation kiosk): Book a pickleball court for Donna and me, two hours, right at the limit",
-        "importance": 5
-      },
       {
         "tick": 338,
         "text": "I said to Gary: “Okay, hon, we're all set, so grab your paddle and head to court one. I'll serve nice and easy, you just keep those knees bent and stay out of the kitchen.”",
@@ -2022,19 +2014,19 @@
         "tick": 427,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 428,
+        "text": "I headed to Gary's House.",
+        "importance": 6
+      },
+      {
+        "tick": 428,
+        "text": "You arrived at Gary's House.",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 334,
-        "text": "Gary headed to Rec Center.",
-        "importance": 5
-      },
-      {
-        "tick": 334,
-        "text": "Donna headed to Rec Center.",
-        "importance": 5
-      },
       {
         "tick": 335,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street and log the tally against L-02",
@@ -3024,19 +3016,19 @@
         "tick": 427,
         "text": "Rosa said to Hal: “Hal, perfect timing, there's a big pot of arroz con pollo on and I'm not letting you leave without a plate. Sit, tell me how Gary's filing is looking while it finishes.”",
         "importance": 4
+      },
+      {
+        "tick": 428,
+        "text": "I said to Rosa: “Gary's paperwork is in decent shape, Rosa. I went over his measurements and sketch, and he just needs to get it filed before the review deadline. Arroz con pollo, you say? Then I'll sit, and I'm not arguing about the plate.”",
+        "importance": 4
+      },
+      {
+        "tick": 428,
+        "text": "Rosa said to Hal: “Yes, Hal, grab the plates and forks from the cabinet and set the table while the rice finishes. And tell me what you made of Gary's form while you work.”",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 323,
-        "text": "Donna said to Rosa: “Rosa, honey, you sit tight and let me carry the dishes out. The ladder can wait, I'm starving and it smells wonderful in here.”",
-        "importance": 6
-      },
-      {
-        "tick": 323,
-        "text": "Hal said to Donna: “Sitting, Rosa, sitting. Donna, I'll hold my flamingo tally till after the pie, but it's three at the curb by law, and I expect to be counting honestly.”",
-        "importance": 6
-      },
       {
         "tick": 324,
         "text": "I (rosa shift schedule): Write coffee with Hal into the schedule in ink, then take my seat for supper",
@@ -4026,6 +4018,16 @@
         "tick": 427,
         "text": "Hal said to Rosa: “Evening, Rosa. I'm right on time. Anything I can carry to the table before the others show up?”",
         "importance": 5
+      },
+      {
+        "tick": 428,
+        "text": "I said to Hal: “Yes, Hal, grab the plates and forks from the cabinet and set the table while the rice finishes. And tell me what you made of Gary's form while you work.”",
+        "importance": 4
+      },
+      {
+        "tick": 428,
+        "text": "Hal said to Rosa: “Gary's paperwork is in decent shape, Rosa. I went over his measurements and sketch, and he just needs to get it filed before the review deadline. Arroz con pollo, you say? Then I'll sit, and I'm not arguing about the plate.”",
+        "importance": 4
       }
     ]
   },
@@ -4072,7 +4074,7 @@
     ]
   },
   "emotions": {
-    "gary": "patient",
+    "gary": "focused, content",
     "donna": "optimistic",
     "hal": "content",
     "rosa": "warm"
@@ -4221,10 +4223,19 @@
         "Hal said to Rosa: “Evening, Rosa. I'm right on time. Anything I can carry to the table before the others show up?”",
         "Rosa said to Hal: “Hal, perfect timing, there's a big pot of arroz con pollo on and I'm not letting you leave without a plate. Sit, tell me how Gary's filing is looking while it finishes.”"
       ]
+    },
+    {
+      "tick": 428,
+      "time": "Monday, November 9, 7:17 PM",
+      "story": "As Monday evening settles over Sumter Oaks in mild 77-degree sunshine, Gary is at his garage workbench labeling wiring runs and checking inline fuses, content in his focused work. Donna is headed down Magnolia Loop toward his house, full of optimism. Over at Rosa's place, Hal is setting the table and reviewing Gary's paperwork while Rosa keeps an eye on the arroz con pollo.",
+      "dialogue": [
+        "Hal said to Rosa: “Gary's paperwork is in decent shape, Rosa. I went over his measurements and sketch, and he just needs to get it filed before the review deadline. Arroz con pollo, you say? Then I'll sit, and I'm not arguing about the plate.”",
+        "Rosa said to Hal: “Yes, Hal, grab the plates and forks from the cabinet and set the table while the rice finishes. And tell me what you made of Gary's form while you work.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 13.46458,
+    "total_usd": 13.4955,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4339,13 +4350,12 @@
         "usd": 0.45266
       },
       "2026-11-09": {
-        "ticks": 12,
-        "usd": 0.37375
+        "ticks": 13,
+        "usd": 0.40467
       }
     }
   },
   "recent_tick_costs": [
-    0.02941,
     0.03015,
     0.03069,
     0.03097,
@@ -4368,7 +4378,8 @@
     0.03244,
     0.03082,
     0.03005,
-    0.02989
+    0.02989,
+    0.03092
   ],
   "fund": {
     "gross_usd": 0.0,
