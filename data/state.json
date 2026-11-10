@@ -1,31 +1,28 @@
 {
-  "tick": 434,
-  "time": "2026-11-10T09:17",
+  "tick": 435,
+  "time": "2026-11-10T10:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
     "hal": "magnolia_loop",
-    "rosa": "rosas_house"
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [],
     "donna": [
-      "You arrived at Magnolia Loop (the street).",
-      "Hal just arrived."
+      "Hal said to Donna: “Morning, Donna. Good day for it. You coming to Rosa's Friday, and are you in for coffee and flan tomorrow?”",
+      "Rosa just arrived."
     ],
     "hal": [
-      "You arrived at Magnolia Loop (the street).",
-      "Donna just arrived."
+      "Donna said to Hal: “Morning, Hal! You wanted a fair count of my flamingos, so count away, I've got nothing to hide. Then I'm off to collect Gary for our match.”",
+      "Rosa just arrived."
     ],
-    "rosa": []
+    "rosa": [
+      "You arrived at Magnolia Loop (the street)."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 331,
-        "text": "Hal just arrived.",
-        "importance": 5
-      },
       {
         "tick": 332,
         "text": "I said to Hal: “Hal, good timing. I just read the Architectural Review notice on the board, and I want to file for the cart lights and speakers the right way. You mind looking over my form before I turn it in?”",
@@ -1020,24 +1017,14 @@
         "tick": 433,
         "text": "I (gary golf cart): Mount the light strip and secure the speaker wiring inside the garage, power off and out of sight",
         "importance": 4
+      },
+      {
+        "tick": 434,
+        "text": "I (gary toolbox): Dig out the athletic tape and get my gear ready for pickleball",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 343,
-        "text": "I (donna pickleball bag): Restock the bag and pack Gary's spare paddle for next Tuesday",
-        "importance": 4
-      },
-      {
-        "tick": 344,
-        "text": "I (donna phone): Call the clubhouse to reserve a 2-hour court slot next Tuesday and text Gary the time",
-        "importance": 5
-      },
-      {
-        "tick": 345,
-        "text": "I (donna club calendar): Confirm Tuesday's 2-hour court slot is penciled in and check what my clubs have coming up",
-        "importance": 4
-      },
       {
         "tick": 346,
         "text": "I (donna phone): Check whether Gary texted back to confirm Tuesday's court time",
@@ -2022,24 +2009,24 @@
         "tick": 433,
         "text": "Hal just arrived.",
         "importance": 6
+      },
+      {
+        "tick": 434,
+        "text": "I said to Hal: “Morning, Hal! You wanted a fair count of my flamingos, so count away, I've got nothing to hide. Then I'm off to collect Gary for our match.”",
+        "importance": 4
+      },
+      {
+        "tick": 434,
+        "text": "Hal said to Donna: “Morning, Donna. Good day for it. You coming to Rosa's Friday, and are you in for coffee and flan tomorrow?”",
+        "importance": 4
+      },
+      {
+        "tick": 434,
+        "text": "Rosa just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 343,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 343,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 344,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and note the tally against L-02",
-        "importance": 4
-      },
       {
         "tick": 345,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street, write the tally down, and compare it to L-02's limit of three",
@@ -3024,19 +3011,24 @@
         "tick": 433,
         "text": "Donna just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 434,
+        "text": "I said to Donna: “Morning, Donna. Good day for it. You coming to Rosa's Friday, and are you in for coffee and flan tomorrow?”",
+        "importance": 3
+      },
+      {
+        "tick": 434,
+        "text": "Donna said to Hal: “Morning, Hal! You wanted a fair count of my flamingos, so count away, I've got nothing to hide. Then I'm off to collect Gary for our match.”",
+        "importance": 3
+      },
+      {
+        "tick": 434,
+        "text": "Rosa just arrived.",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 326,
-        "text": "Donna said to Hal: “Hal, you're just in time, and don't think I missed that you got roped into coffee with Rosa. Tuesday morning Gary and I are hitting the pickleball courts if you want to come keep score and heckle us.”",
-        "importance": 6
-      },
-      {
-        "tick": 326,
-        "text": "Hal said to Donna: “Evening, Donna. Pass the gravy, and while you're at it, tell me honestly how many flamingos are on that lawn tonight. I'd hate to count them myself in the morning.”",
-        "importance": 6
-      },
       {
         "tick": 327,
         "text": "I (rosa shift schedule): Check this week's per-diem shifts and make sure Thursday 8 AM stays clear for coffee with Hal",
@@ -4026,6 +4018,16 @@
         "tick": 433,
         "text": "I (rosa shift schedule): Check the per-diem schedule to confirm Wednesday morning and Friday evening are both clear",
         "importance": 5
+      },
+      {
+        "tick": 434,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 434,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       }
     ]
   },
@@ -4073,9 +4075,9 @@
   },
   "emotions": {
     "gary": "optimistic",
-    "donna": "excited",
-    "hal": "content",
-    "rosa": "determined"
+    "donna": "cheerful",
+    "hal": "easygoing",
+    "rosa": "warm, purposeful"
   },
   "laws": [
     {
@@ -4218,10 +4220,19 @@
       "time": "Tuesday, November 10, 9:17 AM",
       "story": "At 9:17 on a bright Tuesday morning in Sumter Oaks, Gary is out in his garage with the light strip and speaker wiring, making sure everything is powered off and tucked neatly out of sight. Donna and Hal are both heading down Magnolia Loop, Donna buzzing with excitement and Hal taking it easy as usual. Over at her house, Rosa is checking her per-diem schedule with a determined look, making sure Wednesday morning and Friday evening are both open.",
       "dialogue": []
+    },
+    {
+      "tick": 434,
+      "time": "Tuesday, November 10, 10:17 AM",
+      "story": "At 10:17 on a mild Tuesday morning in Sumter Oaks, Gary digs out his athletic tape at home, getting ready for pickleball with an optimistic grin. Over on Magnolia Loop, Donna cheerfully invites Hal to count her pink flamingos, while Hal takes it all in stride and asks about coffee and flan plans. Rosa, purposeful as ever, heads out to join them on the street.",
+      "dialogue": [
+        "Donna said to Hal: “Morning, Hal! You wanted a fair count of my flamingos, so count away, I've got nothing to hide. Then I'm off to collect Gary for our match.”",
+        "Hal said to Donna: “Morning, Donna. Good day for it. You coming to Rosa's Friday, and are you in for coffee and flan tomorrow?”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 13.65015,
+    "total_usd": 13.68182,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4340,13 +4351,12 @@
         "usd": 0.46616
       },
       "2026-11-10": {
-        "ticks": 3,
-        "usd": 0.09316
+        "ticks": 4,
+        "usd": 0.12483
       }
     }
   },
   "recent_tick_costs": [
-    0.03081,
     0.02923,
     0.03022,
     0.03056,
@@ -4369,7 +4379,8 @@
     0.03094,
     0.02975,
     0.03112,
-    0.03229
+    0.03229,
+    0.03167
   ],
   "fund": {
     "gross_usd": 0.0,

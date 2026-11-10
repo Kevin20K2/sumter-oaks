@@ -1,0 +1,116 @@
+{
+  "tick": 434,
+  "simulation_time": "Tuesday, November 10, 10:17 AM",
+  "weather": "Partly cloudy, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 10:17 on a mild Tuesday morning in Sumter Oaks, Gary digs out his athletic tape at home, getting ready for pickleball with an optimistic grin. Over on Magnolia Loop, Donna cheerfully invites Hal to count her pink flamingos, while Hal takes it all in stride and asks about coffee and flan plans. Rosa, purposeful as ever, heads out to join them on the street.",
+  "events": [
+    "Gary (gary toolbox): Dig out the athletic tape and get my gear ready for pickleball",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "The light strip is mounted and the wiring is tucked away, powered off and out of sight in the garage, which keeps me inside L-01 until Architectural Review clears it. It's 10:17 on Tuesday, and Donna has that two-hour court booked, so I need to get ready. My knees need taping and I should dig out my paddle and a water bottle. The toolbox is right here, and I can rummage through it for the athletic tape and a spare roll of electrical tape for the cart later. Nobody's around to talk to, so I'll take care of this quietly and then head out.",
+      "emotional_state": "optimistic",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_toolbox",
+          "content": "Dig out the athletic tape and get my gear ready for pickleball"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm on Magnolia Loop with my pickleball bag packed and the schedule checked, and Hal just walked up. He offered last time to count my flamingos fair and square, and L-02 caps visible ornaments at three, so a friendly count face to face is better than any committee. I've said plenty to Gary already, so I shouldn't repeat myself. Hal is right here, so I'll greet him and take him up on the count, which keeps things neighborly. Then I'll collect Gary for Tuesday's match.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Morning, Hal! You wanted a fair count of my flamingos, so count away, I've got nothing to hide. Then I'm off to collect Gary for our match."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna just arrived on Magnolia Loop. I said I wanted to keep things easy between us after the flamingo note, and she took it well. No need to rehash the ornament rule or file anything against her. Wednesday coffee with Rosa and Friday's dinner are coming up, so a friendly greeting is the right move. Gary's paperwork is still on my mind, but that's for later. Keep it short and light.",
+      "emotional_state": "easygoing",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Morning, Donna. Good day for it. You coming to Rosa's Friday, and are you in for coffee and flan tomorrow?"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Tuesday morning and nobody is around. My memories say I already packed up the leftover arroz con pollo and checked the schedule twice, so Wednesday coffee with Hal and Friday's pork dinner are both clear. No point checking again. The leftovers are packed and waiting, and the neighbors live down Magnolia Loop. Gary, Hal, and Donna all need to be at my table Friday, and Donna in particular I want to feel welcome. Walking out to share the food and say hello in person is how I build this community, rather than sitting in my kitchen re-checking things I've already confirmed.",
+      "emotional_state": "warm, purposeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Taking the leftover arroz con pollo out to the neighbors and locking in Friday's dinner in person."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03167,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9790,
+        "output_tokens": 1197,
+        "usd": 0.03155
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 462,
+        "output_tokens": 144,
+        "usd": 0.00012
+      }
+    }
+  }
+}
