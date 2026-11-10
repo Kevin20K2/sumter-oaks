@@ -1,0 +1,118 @@
+{
+  "tick": 432,
+  "simulation_time": "Tuesday, November 10, 8:17 AM",
+  "weather": "Partly cloudy, 75°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on a mild Tuesday morning in Sumter Oaks, Gary is bent over his workbench at home, testing the light strip and speaker wiring at a low volume. Donna is checking the club calendar for today's court reservation and ladder schedule before she heads out the door. Across the street, Hal sits on his porch sipping coffee and daydreaming about Wednesday's flan, while Rosa clears her kitchen dishes and packs up leftover arroz con pollo to share with the neighbors.",
+  "events": [
+    "Gary (gary workbench): Finish testing the light strip and speaker wiring at low volume",
+    "Donna (donna club calendar): Check today's court reservation and ladder schedule before heading out",
+    "Hal waited: Sipping coffee on the porch, watching the street wake up and thinking about Wednesday's flan.",
+    "Rosa (rosa kitchen): Clear the dishes, pack up the leftover arroz con pollo to share with the neighbors"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's Tuesday morning and Donna has our court booked, but the day is young. I'm alone in the garage with the cart and my workbench. My last action was testing the light strip and speaker wiring quietly at the bench, and I want to finish that. The Architectural Review request is already filed, so I'm keeping the work indoors in the garage and out of sight from the street, and it's well before any amplified-sound concerns, but I'll keep the volume low anyway. Better to get the wiring verified now so I can show up for pickleball with a clear head and knees taped.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Finish testing the light strip and speaker wiring at low volume"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Tuesday morning, match day. I booked the two-hour court slot last night and packed the bag at tick 431 with paddles, balls, ice packs, and a spare visor for Gary. Nobody's around and I can't talk to Gary from here anyway. Before I head out, I should check the club calendar to confirm the court time and make sure nothing double-booked us, since I'm the one who organizes everything and it would be embarrassing to stumble on the ladder debut. Then I'll grab the bag and go.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check today's court reservation and ladder schedule before heading out"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Quiet morning, nobody in sight. I just sat down on the porch last tick, so there's no sense moving yet. The notebook stays shut until Monday, I gave my word, and Donna took the flamingo note well. Binoculars would only be me keeping watch alone again, which I'd rather not do. Best use of the hour is to enjoy the coffee and let the street wake up.",
+      "emotional_state": "content",
+      "importance_rating": 2,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Sipping coffee on the porch, watching the street wake up and thinking about Wednesday's flan."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Tuesday morning, nobody's around, and the dinner is behind me. I already checked the schedule last tick and Wednesday is clear for coffee with Hal. Since I'm alone, I should use the hour to tidy up the kitchen after last night's table and think about who I want to host next, so the community-building keeps moving. I'll interact with the kitchen rather than re-checking the schedule.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Clear the dishes, pack up the leftover arroz con pollo to share with the neighbors"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03112,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9924,
+        "output_tokens": 1056,
+        "usd": 0.03041
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4404,
+        "output_tokens": 537,
+        "usd": 0.00071
+      }
+    }
+  }
+}
