@@ -1,0 +1,115 @@
+{
+  "tick": 437,
+  "simulation_time": "Tuesday, November 10, 1:17 PM",
+  "weather": "Partly cloudy, 79°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On Magnolia Loop this Tuesday afternoon, Gary, warm and cheerful in the partly cloudy 79-degree heat, has just promised Rosa he'll bring dessert to her Friday dinner. Hal, patient as ever, reminds Gary to hand over his golf cart form by tonight while Rosa, hopeful, keeps pressing Hal for a yes on her pork supper. Donna, eager as always, has already headed off toward the Rec Center, leaving the three of them to sort out the weekend plans on the street.",
+  "events": [
+    "Donna headed to Rec Center."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Three people are all waiting on me. Rosa needs a yes for Friday's pork dinner, Hal wants to review my cart form measurements, and Donna has the court booked for our Tuesday session. Rosa's question is the simplest to answer, and a quick yes makes me feel wanted, which is what I need these days. I'll say yes to her first, then handle Hal's review and head to the court with Donna. The cart stays quiet in the garage until Architectural Review clears it, so no mention of lights or sound out here.",
+      "emotional_state": "warm",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, you've got your yes. Friday evening, your table, and I'll bring dessert so nobody can say I showed up empty-handed."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Tuesday afternoon and Gary has shown up with taped knees and his paddle. Hal and Rosa are both working on him too, Hal about the cart form and Rosa about Friday's dinner. I've already said I'd grab the paddles and a two-hour reservation, and I shouldn't repeat myself. The best move is to stop chatting and get him to the court. The rec center is connected to Magnolia Loop, so I'll head there and let Hal and Rosa finish their business. Gary can say yes to Rosa on the way or after, and I'll nudge him to follow.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center to grab paddles and book our two-hour court time so Gary can start learning the third-shot drop."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary, Donna, and Rosa are all gathered here. Donna and Gary are about to head off to the pickleball court, and Rosa is waiting on Gary's yes for Friday. I already asked Gary at tick 436 about the cart form and haven't heard his answer, so I shouldn't repeat myself word for word. Still, the form is the only way Tuesday goes smoothly. I'll keep it short, follow up on what he's actually carrying, and point him to a deadline so he can play without me nagging him afterward.",
+      "emotional_state": "patient",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Go play your pickleball, Gary, but I'll have that cart form from you by tonight so I can check the measurements. And say yes to Rosa before she burns that pork out of sheer waiting."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've already asked Gary twice about Friday and he hasn't answered me. Donna and Hal are both in and heading into their own business: Donna to the courts, Hal to review Gary's cart form. The three of them are right here, so rather than repeat the invite, I should lock it in and make it easy to say yes. Hal is the one I haven't gotten a firm answer from for Friday, and I know he's got the cart form to look over, so I'll keep it short, confirm him for Friday evening, and let the rest of them get on with their afternoon.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, finish that cart form first, I can wait. But I need your word on Friday evening at my table, pork, and Donna and Gary are both in. Just nod yes and I'll stop chasing you."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03476,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 11022,
+        "output_tokens": 1258,
+        "usd": 0.03462
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 514,
+        "output_tokens": 179,
+        "usd": 0.00014
+      }
+    }
+  }
+}

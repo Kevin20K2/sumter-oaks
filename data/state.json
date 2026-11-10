@@ -1,56 +1,37 @@
 {
-  "tick": 437,
-  "time": "2026-11-10T12:17",
+  "tick": 438,
+  "time": "2026-11-10T13:17",
   "positions": {
     "gary": "magnolia_loop",
-    "donna": "magnolia_loop",
+    "donna": "rec_center",
     "hal": "magnolia_loop",
     "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Gary, it's Tuesday, honey, so let's get you on that court. I'll grab the paddles and a two-hour reservation, and we'll work on that third-shot drop before Rosa's Friday dinner.”",
-      "Hal said to Gary: “Afternoon, Gary. Got that cart form on you? I'll go over the measurements and the sketch now, so we can fix anything before the review committee sees it.”",
-      "Rosa said to Gary: “Gary, you walked up right on time. Friday evening, my table, pork and plenty of it. Donna's in and Hal's coming, so I just need your yes.”"
+      "Donna headed to Rec Center.",
+      "Hal said to Gary: “Go play your pickleball, Gary, but I'll have that cart form from you by tonight so I can check the measurements. And say yes to Rosa before she burns that pork out of sheer waiting.”",
+      "Rosa said to Hal: “Hal, finish that cart form first, I can wait. But I need your word on Friday evening at my table, pork, and Donna and Gary are both in. Just nod yes and I'll stop chasing you.”"
     ],
     "donna": [
-      "Gary said to Donna: “Afternoon, Donna. Knees are taped and I've got my paddle, so thanks again for the ice packs. Ready when you are.”",
-      "Hal said to Gary: “Afternoon, Gary. Got that cart form on you? I'll go over the measurements and the sketch now, so we can fix anything before the review committee sees it.”",
-      "Rosa said to Gary: “Gary, you walked up right on time. Friday evening, my table, pork and plenty of it. Donna's in and Hal's coming, so I just need your yes.”"
+      "Gary said to Rosa: “Rosa, you've got your yes. Friday evening, your table, and I'll bring dessert so nobody can say I showed up empty-handed.”",
+      "Hal said to Gary: “Go play your pickleball, Gary, but I'll have that cart form from you by tonight so I can check the measurements. And say yes to Rosa before she burns that pork out of sheer waiting.”",
+      "Rosa said to Hal: “Hal, finish that cart form first, I can wait. But I need your word on Friday evening at my table, pork, and Donna and Gary are both in. Just nod yes and I'll stop chasing you.”",
+      "You arrived at Rec Center."
     ],
     "hal": [
-      "Gary said to Donna: “Afternoon, Donna. Knees are taped and I've got my paddle, so thanks again for the ice packs. Ready when you are.”",
-      "Donna said to Gary: “Gary, it's Tuesday, honey, so let's get you on that court. I'll grab the paddles and a two-hour reservation, and we'll work on that third-shot drop before Rosa's Friday dinner.”",
-      "Rosa said to Gary: “Gary, you walked up right on time. Friday evening, my table, pork and plenty of it. Donna's in and Hal's coming, so I just need your yes.”"
+      "Gary said to Rosa: “Rosa, you've got your yes. Friday evening, your table, and I'll bring dessert so nobody can say I showed up empty-handed.”",
+      "Donna headed to Rec Center.",
+      "Rosa said to Hal: “Hal, finish that cart form first, I can wait. But I need your word on Friday evening at my table, pork, and Donna and Gary are both in. Just nod yes and I'll stop chasing you.”"
     ],
     "rosa": [
-      "Gary said to Donna: “Afternoon, Donna. Knees are taped and I've got my paddle, so thanks again for the ice packs. Ready when you are.”",
-      "Donna said to Gary: “Gary, it's Tuesday, honey, so let's get you on that court. I'll grab the paddles and a two-hour reservation, and we'll work on that third-shot drop before Rosa's Friday dinner.”",
-      "Hal said to Gary: “Afternoon, Gary. Got that cart form on you? I'll go over the measurements and the sketch now, so we can fix anything before the review committee sees it.”"
+      "Gary said to Rosa: “Rosa, you've got your yes. Friday evening, your table, and I'll bring dessert so nobody can say I showed up empty-handed.”",
+      "Donna headed to Rec Center.",
+      "Hal said to Gary: “Go play your pickleball, Gary, but I'll have that cart form from you by tonight so I can check the measurements. And say yes to Rosa before she burns that pork out of sheer waiting.”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 334,
-        "text": "I headed to Rec Center.",
-        "importance": 4
-      },
-      {
-        "tick": 334,
-        "text": "Donna headed to Rec Center.",
-        "importance": 4
-      },
-      {
-        "tick": 334,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and log the tally against L-02",
-        "importance": 4
-      },
-      {
-        "tick": 334,
-        "text": "You arrived at Rec Center.",
-        "importance": 4
-      },
       {
         "tick": 334,
         "text": "Donna just arrived.",
@@ -1030,34 +1011,29 @@
         "tick": 436,
         "text": "Rosa said to Gary: “Gary, you walked up right on time. Friday evening, my table, pork and plenty of it. Donna's in and Hal's coming, so I just need your yes.”",
         "importance": 4
+      },
+      {
+        "tick": 437,
+        "text": "I said to Rosa: “Rosa, you've got your yes. Friday evening, your table, and I'll bring dessert so nobody can say I showed up empty-handed.”",
+        "importance": 5
+      },
+      {
+        "tick": 437,
+        "text": "Donna headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 437,
+        "text": "Hal said to Gary: “Go play your pickleball, Gary, but I'll have that cart form from you by tonight so I can check the measurements. And say yes to Rosa before she burns that pork out of sheer waiting.”",
+        "importance": 5
+      },
+      {
+        "tick": 437,
+        "text": "Rosa said to Hal: “Hal, finish that cart form first, I can wait. But I need your word on Friday evening at my table, pork, and Donna and Gary are both in. Just nod yes and I'll stop chasing you.”",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 351,
-        "text": "Hal said to Donna: “Evening, Donna. Rosa's dinner is Friday and I'm told you're expected. Also, I'd like to count your flamingos with you, fair and square, so there's no argument later.”",
-        "importance": 6
-      },
-      {
-        "tick": 351,
-        "text": "Rosa said to Donna: “Donna, perfect timing. I'm making roast pork Friday evening, Gary's bringing cornbread and Hal's coming, and I've got a seat with your name on it. Say yes and I'll even leave the flamingo jokes at the door.”",
-        "importance": 6
-      },
-      {
-        "tick": 352,
-        "text": "I said to Rosa: “Rosa, yes, put me down for Friday, and I'll bring a dessert so you don't have to lift a finger. Gary, Thursday morning for third-shot drops, and Hal, we'll count my flamingos right after, fair and square.”",
-        "importance": 5
-      },
-      {
-        "tick": 352,
-        "text": "Gary said to Hal: “Hal, got a minute to look over my cart modification form before I file it? Lights and a sound system for the parade, and I want it right the first time. I'll keep the speakers off after ten, you have my word.”",
-        "importance": 5
-      },
-      {
-        "tick": 352,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street, one by one, and note the tally in my notebook",
-        "importance": 5
-      },
       {
         "tick": 352,
         "text": "Rosa said to Donna: “Donna, dinner is Friday at six at my place, roast pork, and all you need to bring is yourself. Bring your flamingo count too, Hal's already sharpening his pencil.”",
@@ -2032,29 +2008,34 @@
         "tick": 436,
         "text": "Rosa said to Gary: “Gary, you walked up right on time. Friday evening, my table, pork and plenty of it. Donna's in and Hal's coming, so I just need your yes.”",
         "importance": 6
-      }
-    ],
-    "hal": [
+      },
       {
-        "tick": 348,
-        "text": "Rosa said to Gary: “Gary, good timing. I'm cooking pork Friday evening and I want you at my table with Hal and Donna. Say yes and I'll save you the good chair.”",
+        "tick": 437,
+        "text": "I headed to Rec Center.",
         "importance": 6
       },
       {
-        "tick": 349,
-        "text": "I said to Gary: “Good, you held it back. Since the lights and speaker mounts show from the street, L-01 applies, so the sketch must show them from the street side with every measurement marked. Fix that and it's ready to file. And Rosa's pork Friday suits me fine, I'll be there.”",
-        "importance": 5
+        "tick": 437,
+        "text": "Gary said to Rosa: “Rosa, you've got your yes. Friday evening, your table, and I'll bring dessert so nobody can say I showed up empty-handed.”",
+        "importance": 6
       },
       {
-        "tick": 349,
-        "text": "Gary said to Rosa: “Rosa, I'd be honored. Friday evening, count me in, and I'll save the good chair from being argued over. Can I bring something? I make a decent cornbread.”",
-        "importance": 5
+        "tick": 437,
+        "text": "Hal said to Gary: “Go play your pickleball, Gary, but I'll have that cart form from you by tonight so I can check the measurements. And say yes to Rosa before she burns that pork out of sheer waiting.”",
+        "importance": 6
       },
       {
-        "tick": 349,
-        "text": "Rosa (street bulletin board): Pin up a note: Welcome dinner at Rosa's, Friday evening, pork and good plates. Gary, Hal, Donna, all three of you, come hungry.",
-        "importance": 5
+        "tick": 437,
+        "text": "Rosa said to Hal: “Hal, finish that cart form first, I can wait. But I need your word on Friday evening at my table, pork, and Donna and Gary are both in. Just nod yes and I'll stop chasing you.”",
+        "importance": 6
       },
+      {
+        "tick": 437,
+        "text": "You arrived at Rec Center.",
+        "importance": 6
+      }
+    ],
+    "hal": [
       {
         "tick": 350,
         "text": "I said to Rosa: “Saw your note, Rosa. Friday evening, I'll be there on time, because I'm always on time. Tell me what to bring and I'll bring it.”",
@@ -3034,29 +3015,29 @@
         "tick": 436,
         "text": "Rosa said to Gary: “Gary, you walked up right on time. Friday evening, my table, pork and plenty of it. Donna's in and Hal's coming, so I just need your yes.”",
         "importance": 5
+      },
+      {
+        "tick": 437,
+        "text": "I said to Gary: “Go play your pickleball, Gary, but I'll have that cart form from you by tonight so I can check the measurements. And say yes to Rosa before she burns that pork out of sheer waiting.”",
+        "importance": 5
+      },
+      {
+        "tick": 437,
+        "text": "Gary said to Rosa: “Rosa, you've got your yes. Friday evening, your table, and I'll bring dessert so nobody can say I showed up empty-handed.”",
+        "importance": 5
+      },
+      {
+        "tick": 437,
+        "text": "Donna headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 437,
+        "text": "Rosa said to Hal: “Hal, finish that cart form first, I can wait. But I need your word on Friday evening at my table, pork, and Donna and Gary are both in. Just nod yes and I'll stop chasing you.”",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 335,
-        "text": "I (rosa shift schedule): Check my open days, pick a dinner night away from Thursday morning, and write it in ink",
-        "importance": 6
-      },
-      {
-        "tick": 336,
-        "text": "I (rosa shift schedule): Write Friday evening in ink as welcome dinner night, clear of Thursday's coffee with Hal",
-        "importance": 6
-      },
-      {
-        "tick": 337,
-        "text": "I (rosa kitchen): Plan Friday's welcome dinner menu and write out the grocery list",
-        "importance": 5
-      },
-      {
-        "tick": 338,
-        "text": "I (rosa kitchen): Check the pantry against my grocery list and mark what I still need for Friday's dinner",
-        "importance": 5
-      },
       {
         "tick": 339,
         "text": "I (rosa shift schedule): Double-check Friday evening is clear of shifts and Thursday 8 AM stays blocked for Hal",
@@ -4036,6 +4017,26 @@
         "tick": 436,
         "text": "Hal said to Gary: “Afternoon, Gary. Got that cart form on you? I'll go over the measurements and the sketch now, so we can fix anything before the review committee sees it.”",
         "importance": 6
+      },
+      {
+        "tick": 437,
+        "text": "I said to Hal: “Hal, finish that cart form first, I can wait. But I need your word on Friday evening at my table, pork, and Donna and Gary are both in. Just nod yes and I'll stop chasing you.”",
+        "importance": 6
+      },
+      {
+        "tick": 437,
+        "text": "Gary said to Rosa: “Rosa, you've got your yes. Friday evening, your table, and I'll bring dessert so nobody can say I showed up empty-handed.”",
+        "importance": 6
+      },
+      {
+        "tick": 437,
+        "text": "Donna headed to Rec Center.",
+        "importance": 6
+      },
+      {
+        "tick": 437,
+        "text": "Hal said to Gary: “Go play your pickleball, Gary, but I'll have that cart form from you by tonight so I can check the measurements. And say yes to Rosa before she burns that pork out of sheer waiting.”",
+        "importance": 6
       }
     ]
   },
@@ -4082,9 +4083,9 @@
     ]
   },
   "emotions": {
-    "gary": "cheerful",
-    "donna": "upbeat",
-    "hal": "content",
+    "gary": "warm",
+    "donna": "eager",
+    "hal": "patient",
     "rosa": "hopeful"
   },
   "laws": [
@@ -4210,9 +4211,20 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 437,
+      "time": "Tuesday, November 10, 1:17 PM",
+      "story": "On Magnolia Loop this Tuesday afternoon, Gary, warm and cheerful in the partly cloudy 79-degree heat, has just promised Rosa he'll bring dessert to her Friday dinner. Hal, patient as ever, reminds Gary to hand over his golf cart form by tonight while Rosa, hopeful, keeps pressing Hal for a yes on her pork supper. Donna, eager as always, has already headed off toward the Rec Center, leaving the three of them to sort out the weekend plans on the street.",
+      "dialogue": [
+        "Gary said to Rosa: “Rosa, you've got your yes. Friday evening, your table, and I'll bring dessert so nobody can say I showed up empty-handed.”",
+        "Hal said to Gary: “Go play your pickleball, Gary, but I'll have that cart form from you by tonight so I can check the measurements. And say yes to Rosa before she burns that pork out of sheer waiting.”",
+        "Rosa said to Hal: “Hal, finish that cart form first, I can wait. But I need your word on Friday evening at my table, pork, and Donna and Gary are both in. Just nod yes and I'll stop chasing you.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 13.74579,
+    "total_usd": 13.78055,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4331,13 +4343,12 @@
         "usd": 0.46616
       },
       "2026-11-10": {
-        "ticks": 6,
-        "usd": 0.1888
+        "ticks": 7,
+        "usd": 0.22356
       }
     }
   },
   "recent_tick_costs": [
-    0.03056,
     0.02983,
     0.02905,
     0.03118,
@@ -4360,7 +4371,8 @@
     0.03229,
     0.03167,
     0.03108,
-    0.03289
+    0.03289,
+    0.03476
   ],
   "fund": {
     "gross_usd": 0.0,
