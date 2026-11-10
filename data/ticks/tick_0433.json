@@ -1,0 +1,118 @@
+{
+  "tick": 433,
+  "simulation_time": "Tuesday, November 10, 9:17 AM",
+  "weather": "Partly cloudy, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a bright Tuesday morning in Sumter Oaks, Gary is out in his garage with the light strip and speaker wiring, making sure everything is powered off and tucked neatly out of sight. Donna and Hal are both heading down Magnolia Loop, Donna buzzing with excitement and Hal taking it easy as usual. Over at her house, Rosa is checking her per-diem schedule with a determined look, making sure Wednesday morning and Friday evening are both open.",
+  "events": [
+    "Gary (gary golf cart): Mount the light strip and secure the speaker wiring inside the garage, power off and out of sight",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa shift schedule): Check the per-diem schedule to confirm Wednesday morning and Friday evening are both clear"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's Tuesday morning and Donna's court is booked, so I shouldn't stay holed up in the garage all day. I finished testing the light strip and speaker wiring at low volume last tick, and everything checked out. Before I step out, I want to do a final quiet check of the cart itself. Mounting the lights while it's still tucked in the garage keeps me inside L-01, since nothing is visible from the street, and the speaker stays silent, which keeps me clear of L-03. Approval is still pending at Architectural Review, so no street driving yet. A little more work on the cart gets me closer to the parade and keeps me feeling useful before I head out to meet Donna for pickleball.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Mount the light strip and secure the speaker wiring inside the garage, power off and out of sight"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's Tuesday morning, match day. I already checked the court reservation and ladder schedule last tick and packed the bag with paddles, balls, ice packs, and a spare visor for Gary. Nobody's around to talk to, and I've said everything to Gary that needs saying. Time to stop fussing and head out. The courts are the only place I can walk to from Magnolia Loop, and I want to be there early, claim the court, and have Gary's knees warmed up before our two hours start.",
+      "emotional_state": "excited",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with my packed bag to get to the pickleball courts early and meet Gary for our Tuesday match"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Tuesday morning, coffee's done and nobody's in sight. My reflections say Gary's cart paperwork is nearly ready and I want it filed on time so today goes smoothly. I've gone soft on the flamingo complaint since Donna took it well, and Gary's been cooperative about the form. Sitting here alone watching the street won't get anything done. Best move is to head out onto Magnolia Loop, see whether Gary is up and about, and nudge that paperwork along in person instead of filing grievances.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to the street to find Gary and make sure his cart paperwork gets filed on time today."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Tuesday morning and nobody's around. The Friday dinner is mostly lined up and I'm still a bit torn about whether the tick 432 plan to pack up leftovers means last night's was a trial run. Either way, the kitchen is the place to be. The Wednesday coffee with Hal is already confirmed in my memory, but I also have per-diem shifts, and a double-booking would be exactly my kind of overcommitment. Checking the shift schedule is the practical move: confirm Wednesday morning is clear and make sure Friday evening isn't claimed by a hospital shift before the neighbors count on me.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check the per-diem schedule to confirm Wednesday morning and Friday evening are both clear"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03229,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9882,
+        "output_tokens": 1241,
+        "usd": 0.03217
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 389,
+        "output_tokens": 164,
+        "usd": 0.00012
+      }
+    }
+  }
+}
