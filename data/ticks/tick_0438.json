@@ -1,0 +1,116 @@
+{
+  "tick": 438,
+  "simulation_time": "Tuesday, November 10, 2:17 PM",
+  "weather": "Partly cloudy, 79°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On a bright Tuesday afternoon in Sumter Oaks, Gary heads off toward the Rec Center while the sun warms the Magnolia Loop. Donna is already at the ladder standings board, studying which teams she and her partners must beat before Thursday. Hal and Rosa stand together on the street, where Hal promises to be at her table Friday at six and Rosa reminds him that Gary is bringing dessert.",
+  "events": [
+    "Gary headed to Rec Center.",
+    "Donna (ladder standings board): Study the ladder standings to see which teams we need to beat before Thursday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Hal wants the cart form by tonight, and I already filed the request at the Architectural Review desk, so I owe him the measurements. Rosa's still waiting on Hal's yes for Friday, and I already gave mine, so I shouldn't repeat it. Donna's headed to the Rec Center for pickleball, and I told Hal I'd go play. Time to quit chatting on the street and head over, then get the form measurements to Hal this evening.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the Rec Center to meet Donna for pickleball, then I'll get Hal that cart form tonight."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm at the rec center, nobody's in line-of-sight, and I told Gary to meet me here at eight tomorrow for paddle shopping. Today is Tuesday, match day. The ladder standings board is right here, so I should check where we stand and size up the competition. That keeps my pickleball ladder goal moving without needing anyone else around.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Study the ladder standings to see which teams we need to beat before Thursday"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa asked for my word on Friday at six and I've already said I'd be there, so answering plainly closes it out without repeating myself. Gary is standing right here and still owes me the cart form for the measurements. Rosa gets a short yes and a nudge to go cook, and then I can get on with filing the paperwork.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "You have my word, Rosa. Friday at six, I'll be at your table, and I'll be on time. Go keep that pork from burning."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Gary gave me his yes with a dessert promise, Donna is already in from earlier plans, and Hal has been dodging my question for a while. Last tick Hal told Gary to say yes to me, but he never said it himself. I already asked him once and he's busy with Gary's cart form, so I shouldn't badger him again. Instead I'll thank Gary, lock in the dessert, and give Hal a way to just nod so I can stop worrying about the headcount for Friday.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, Gary's in and he's bringing dessert, so you're the last chair. Finish your form, then give me one word on Friday, and I'll leave you in peace."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.032,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10824,
+        "output_tokens": 1023,
+        "usd": 0.03188
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 453,
+        "output_tokens": 140,
+        "usd": 0.00012
+      }
+    }
+  }
+}
