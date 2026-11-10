@@ -1,0 +1,113 @@
+{
+  "tick": 436,
+  "simulation_time": "Tuesday, November 10, 12:17 PM",
+  "weather": "Partly cloudy, 78°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "magnolia_loop"
+  },
+  "story": "On a sunny Tuesday around noon, Gary stands on Magnolia Loop with his taped knees and paddle, cheerfully ready for pickleball. Donna is eager to head to the courts and work on his third-shot drop before Friday, while Hal, content, wants to review a golf cart form and sketch with Gary before the committee sees them. Rosa, hopeful, is hoping Gary will say yes to her Friday pork dinner, which Donna and Hal have already agreed to attend.",
+  "events": [],
+  "results": {
+    "gary": {
+      "thought_process": "I just got out to Magnolia Loop with my gear for pickleball, and Donna, Hal and Rosa are all standing right here. The cart's finished and tucked away in the garage with the lights off, so I'm not breaking L-01 by talking about it. Donna's been looking after my knees all week, so a friendly greeting is the natural thing. No need to bring up the cart yet. Keep it light, thank her for the ice packs, and let her know I'm ready to play.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Afternoon, Donna. Knees are taped and I've got my paddle, so thanks again for the ice packs. Ready when you are."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa just invited me again and I already said yes to Hal and Rosa last tick, so I shouldn't repeat the same answer. Hal is counting my flamingos and Gary just walked up. My real goal is the pickleball ladder and Gary as my partner. He has a Tuesday match, it's Tuesday at noon, and I should lock in a time instead of chatting in circles. Rosa already has her answer, so I'll turn to Gary and get the court plan moving.",
+      "emotional_state": "upbeat",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, it's Tuesday, honey, so let's get you on that court. I'll grab the paddles and a two-hour reservation, and we'll work on that third-shot drop before Rosa's Friday dinner."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna and Rosa have settled Friday dinner and tomorrow's coffee between them, so I don't need to ask again. Gary just arrived, and his cart paperwork is the one loose end before Tuesday's review. He said he'd rather I check it over first. Better to ask him for it plainly and fix any errors now than file anything against him. Keep it brief and friendly; the flamingos can stay in the friendly column.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Afternoon, Gary. Got that cart form on you? I'll go over the measurements and the sketch now, so we can fix anything before the review committee sees it."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Donna already said yes and is bringing dessert. Gary just walked up, and I invited him back at tick 348 but he never gave me a clear answer. Hal is busy on the cart form with Gary and said he'd get to me. Gary is the missing yes for the Friday table, so I'll ask him directly, short and warm. I won't re-ask Donna, and Hal knows about the dinner already.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, you walked up right on time. Friday evening, my table, pork and plenty of it. Donna's in and Hal's coming, so I just need your yes."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03289,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10424,
+        "output_tokens": 1134,
+        "usd": 0.03219
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3845,
+        "output_tokens": 635,
+        "usd": 0.0007
+      }
+    }
+  }
+}
