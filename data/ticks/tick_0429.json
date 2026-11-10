@@ -1,0 +1,116 @@
+{
+  "tick": 429,
+  "simulation_time": "Monday, November 9, 8:17 PM",
+  "weather": "Sunny, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "rosas_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on a sunny Monday evening in Sumter Oaks, Gary welcomes Donna into his house, teasing her about pickleball and warning her to mind the extension cord. Donna is buzzing with excitement because she has booked a two-hour court for tomorrow and is eager to get Gary ready to play. Across the way at Rosa's house, Hal is squaring up plates and forks on the dining table while Rosa checks on her arroz con pollo and fluffs the rice, both of them content as dinner nears.",
+  "events": [
+    "Hal (rosa dining table): Set the table with plates and forks from the cabinet, squared up properly",
+    "Rosa (rosa kitchen): Check the arroz con pollo, fluff the rice, and get it ready to serve"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just walked in while I'm in the garage with the cart wiring labeled and fused. The cart modifications are supposed to stay garage-only until Architectural Review clears them, and the speaker test is quiet and well before 10 PM anyway. She's been patient with my knees and agreed to pull the flamingos, so I want to keep things friendly. She's the first person I've had a real chat with today, and I like being useful. I'll greet her warmly and ask what brings her by rather than launching into the cart project right away.",
+      "emotional_state": "welcoming",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Evening, Donna! Come on in, mind the extension cord. What brings you by, something need fixing, or are you here to talk me into more pickleball?"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just reserved a court for tomorrow, two hours, well within the L-05 limit, and walked over to Gary's to tell him. It's already past eight in the evening, so I shouldn't keep him long, but I want him to know the plan and get him excited about Tuesday. I haven't told him about the reservation yet, so this moves things forward without repeating anything from earlier.",
+      "emotional_state": "excited",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Good news, hon, I booked us a court for tomorrow, a full two hours, all legal and everything. Get a good night's sleep and be ready to swing, because we're climbing that ladder."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Rosa asked me to set the table and tell her what I made of Gary's form. I already gave her the short version last tick, so no sense repeating it. The plates and forks are in the cabinet by the kitchen, and a sergeant doesn't stand around while there's a table to set properly. I'll do the job right, forks left, and let her finish the rice. Gary's filing can wait till Monday, and I'd rather enjoy the meal.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Set the table with plates and forks from the cabinet, squared up properly"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal is here and said he'll sit, but I just asked him to set the table, so he's probably already on it. I shouldn't repeat my question about Gary's form; he answered it. The rice is the thing that needs me right now, and the dinner is my immediate goal. I'll tend the arroz con pollo so it's ready when Hal sits and the others arrive. Quiet moment with Hal, and I'm enjoying it.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check the arroz con pollo, fluff the rice, and get it ready to serve"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03055,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9834,
+        "output_tokens": 1075,
+        "usd": 0.03042
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 465,
+        "output_tokens": 173,
+        "usd": 0.00013
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "tick": 429,
-  "time": "2026-11-09T19:17",
+  "tick": 430,
+  "time": "2026-11-09T20:17",
   "positions": {
     "gary": "garys_house",
     "donna": "garys_house",
@@ -9,30 +9,20 @@
   },
   "perceptions": {
     "gary": [
-      "Donna just arrived."
+      "Donna said to Gary: “Good news, hon, I booked us a court for tomorrow, a full two hours, all legal and everything. Get a good night's sleep and be ready to swing, because we're climbing that ladder.”"
     ],
     "donna": [
-      "You arrived at Gary's House."
+      "Gary said to Donna: “Evening, Donna! Come on in, mind the extension cord. What brings you by, something need fixing, or are you here to talk me into more pickleball?”"
     ],
     "hal": [
-      "Rosa said to Hal: “Yes, Hal, grab the plates and forks from the cabinet and set the table while the rice finishes. And tell me what you made of Gary's form while you work.”"
+      "Rosa (rosa kitchen): Check the arroz con pollo, fluff the rice, and get it ready to serve"
     ],
     "rosa": [
-      "Hal said to Rosa: “Gary's paperwork is in decent shape, Rosa. I went over his measurements and sketch, and he just needs to get it filed before the review deadline. Arroz con pollo, you say? Then I'll sit, and I'm not arguing about the plate.”"
+      "Hal (rosa dining table): Set the table with plates and forks from the cabinet, squared up properly"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 327,
-        "text": "I (gary workbench): Fill out the Architectural Review form, listing the parade lights and speaker mounts",
-        "importance": 6
-      },
-      {
-        "tick": 328,
-        "text": "I (gary workbench): Double-check the finished review form and mount measurements before submitting",
-        "importance": 4
-      },
       {
         "tick": 329,
         "text": "I headed to Magnolia Loop (the street).",
@@ -1022,19 +1012,19 @@
         "tick": 428,
         "text": "Donna just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 429,
+        "text": "I said to Donna: “Evening, Donna! Come on in, mind the extension cord. What brings you by, something need fixing, or are you here to talk me into more pickleball?”",
+        "importance": 4
+      },
+      {
+        "tick": 429,
+        "text": "Donna said to Gary: “Good news, hon, I booked us a court for tomorrow, a full two hours, all legal and everything. Get a good night's sleep and be ready to swing, because we're climbing that ladder.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 338,
-        "text": "I said to Gary: “Okay, hon, we're all set, so grab your paddle and head to court one. I'll serve nice and easy, you just keep those knees bent and stay out of the kitchen.”",
-        "importance": 6
-      },
-      {
-        "tick": 338,
-        "text": "Gary said to Donna: “Thanks for the spare paddle, Donna. Knees bent, out of the kitchen, got it. Let's get that first rally going before I talk myself out of it.”",
-        "importance": 6
-      },
       {
         "tick": 339,
         "text": "I said to Gary: “That's the spirit, hon, no talking yourself out of anything. Court one's ours, so grab a spot at the baseline and I'll send you a nice easy serve. Just swing and have fun.”",
@@ -2024,19 +2014,19 @@
         "tick": 428,
         "text": "You arrived at Gary's House.",
         "importance": 6
+      },
+      {
+        "tick": 429,
+        "text": "I said to Gary: “Good news, hon, I booked us a court for tomorrow, a full two hours, all legal and everything. Get a good night's sleep and be ready to swing, because we're climbing that ladder.”",
+        "importance": 6
+      },
+      {
+        "tick": 429,
+        "text": "Gary said to Donna: “Evening, Donna! Come on in, mind the extension cord. What brings you by, something need fixing, or are you here to talk me into more pickleball?”",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 335,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and log the tally against L-02",
-        "importance": 5
-      },
-      {
-        "tick": 336,
-        "text": "I (donna flamingo flock): Count every flamingo visible from the street and write the tally down against L-02",
-        "importance": 6
-      },
       {
         "tick": 337,
         "text": "I (street bulletin board): Pin a courteous notice for the architectural review committee: flamingo tally logged against L-02, and Gary's cart modifications awaiting formal filing under L-01",
@@ -3026,19 +3016,19 @@
         "tick": 428,
         "text": "Rosa said to Hal: “Yes, Hal, grab the plates and forks from the cabinet and set the table while the rice finishes. And tell me what you made of Gary's form while you work.”",
         "importance": 4
+      },
+      {
+        "tick": 429,
+        "text": "I (rosa dining table): Set the table with plates and forks from the cabinet, squared up properly",
+        "importance": 3
+      },
+      {
+        "tick": 429,
+        "text": "Rosa (rosa kitchen): Check the arroz con pollo, fluff the rice, and get it ready to serve",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 324,
-        "text": "I (rosa shift schedule): Write coffee with Hal into the schedule in ink, then take my seat for supper",
-        "importance": 6
-      },
-      {
-        "tick": 324,
-        "text": "Donna (rosa dining table): Help set out the plates and serving dishes, then take my seat",
-        "importance": 6
-      },
       {
         "tick": 324,
         "text": "Hal (rosa dining table): Take my seat at the head of the table and pour a glass of water",
@@ -4028,6 +4018,16 @@
         "tick": 428,
         "text": "Hal said to Rosa: “Gary's paperwork is in decent shape, Rosa. I went over his measurements and sketch, and he just needs to get it filed before the review deadline. Arroz con pollo, you say? Then I'll sit, and I'm not arguing about the plate.”",
         "importance": 4
+      },
+      {
+        "tick": 429,
+        "text": "I (rosa kitchen): Check the arroz con pollo, fluff the rice, and get it ready to serve",
+        "importance": 4
+      },
+      {
+        "tick": 429,
+        "text": "Hal (rosa dining table): Set the table with plates and forks from the cabinet, squared up properly",
+        "importance": 4
       }
     ]
   },
@@ -4074,10 +4074,10 @@
     ]
   },
   "emotions": {
-    "gary": "focused, content",
-    "donna": "optimistic",
+    "gary": "welcoming",
+    "donna": "excited",
     "hal": "content",
-    "rosa": "warm"
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4232,10 +4232,19 @@
         "Hal said to Rosa: “Gary's paperwork is in decent shape, Rosa. I went over his measurements and sketch, and he just needs to get it filed before the review deadline. Arroz con pollo, you say? Then I'll sit, and I'm not arguing about the plate.”",
         "Rosa said to Hal: “Yes, Hal, grab the plates and forks from the cabinet and set the table while the rice finishes. And tell me what you made of Gary's form while you work.”"
       ]
+    },
+    {
+      "tick": 429,
+      "time": "Monday, November 9, 8:17 PM",
+      "story": "At 8:17 on a sunny Monday evening in Sumter Oaks, Gary welcomes Donna into his house, teasing her about pickleball and warning her to mind the extension cord. Donna is buzzing with excitement because she has booked a two-hour court for tomorrow and is eager to get Gary ready to play. Across the way at Rosa's house, Hal is squaring up plates and forks on the dining table while Rosa checks on her arroz con pollo and fluffs the rice, both of them content as dinner nears.",
+      "dialogue": [
+        "Gary said to Donna: “Evening, Donna! Come on in, mind the extension cord. What brings you by, something need fixing, or are you here to talk me into more pickleball?”",
+        "Donna said to Gary: “Good news, hon, I booked us a court for tomorrow, a full two hours, all legal and everything. Get a good night's sleep and be ready to swing, because we're climbing that ladder.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 13.4955,
+    "total_usd": 13.52605,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4350,13 +4359,12 @@
         "usd": 0.45266
       },
       "2026-11-09": {
-        "ticks": 13,
-        "usd": 0.40467
+        "ticks": 14,
+        "usd": 0.43522
       }
     }
   },
   "recent_tick_costs": [
-    0.03015,
     0.03069,
     0.03097,
     0.03101,
@@ -4379,7 +4387,8 @@
     0.03082,
     0.03005,
     0.02989,
-    0.03092
+    0.03092,
+    0.03055
   ],
   "fund": {
     "gross_usd": 0.0,
