@@ -1,0 +1,117 @@
+{
+  "tick": 442,
+  "simulation_time": "Tuesday, November 10, 6:17 PM",
+  "weather": "Partly cloudy, 78°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rec_center"
+  },
+  "story": "At 6:17 on this mild Tuesday evening in Sumter Oaks, Gary and Donna are warming up at the Rec Center, where Donna has promised to take things easy on Gary's knees with some gentle dinking drills on court one. Hal is making his way over to Gary's House, while Rosa is heading out along Magnolia Loop, the street where the golf carts seem to move a little slower on purpose. Gary, content as ever, has already offered to haul a folding chair over to Rosa's on Friday so her card table doesn't get crowded.",
+  "events": [
+    "Donna (pickleball court 1): Start Gary on slow kitchen-line dinking drills, keeping the pace gentle for his knees",
+    "Hal headed to Gary's House.",
+    "Rosa headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Rosa said she'd take a spare folding chair, and I've got a few in the garage, so that's a chance to be useful. Donna's waiting on court one for our lesson, and I already agreed to bring the flan, so no need to circle back to that with Rosa. Time to quit chatting and get on the court. A quick word to Donna that I'm ready, and I'll mention the chair so I don't forget it for Friday.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Lead the way, partner, I'm ready for court one. Knees are warmed up, and I'll haul a folding chair over to Rosa's Friday so her table doesn't squeeze."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Rosa already answered my Friday yes, so no need to circle back on that. Gary is standing next to me at the rec center and the whole point of tonight is getting him court-ready. His knees worry me, so I should start him slow at the kitchen line, not rush the ladder. Best move is to use court one and run an easy drill session, then check the ladder board after.",
+      "emotional_state": "enthusiastic",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Start Gary on slow kitchen-line dinking drills, keeping the pace gentle for his knees"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I checked the flamingos last tick and the bulletin board the tick before, and nobody's around to argue with. Gary's cart form is the loose end. Nobody's in sight, so the next step is going to his house to check those measurements before the committee sees the paperwork. I'll do it by the book, and I'll be at Rosa's Friday at six either way.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading over to Gary's to check his cart form measurements before the review committee sees them."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Donna said yes, Gary said yes, and Hal's already confirmed. All three neighbors are locked in for Friday, and Gary and Donna are heading onto court one for their lesson. I've already invited everyone and answered Gary about the chair, so asking again would just be nagging. My goal is met, and the pork needs to be marinating. Best move is to leave them to their drills and head home down Magnolia Loop to start prep.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading home to start marinating the pork and sort out chairs for Friday's dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03164,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10425,
+        "output_tokens": 1006,
+        "usd": 0.03091
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 4126,
+        "output_tokens": 631,
+        "usd": 0.00073
+      }
+    }
+  }
+}

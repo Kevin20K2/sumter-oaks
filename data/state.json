@@ -1,44 +1,32 @@
 {
-  "tick": 442,
-  "time": "2026-11-10T17:17",
+  "tick": 443,
+  "time": "2026-11-10T18:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
-    "hal": "magnolia_loop",
-    "rosa": "rec_center"
+    "hal": "garys_house",
+    "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Rosa: “Rosa, yes, a hundred times yes! Friday at six, and I'll bring a bottle of something nice for the table. Gary and I are about to hit court one, so save us a seat and a plate.”",
-      "Rosa said to Gary: “Flan's plenty, Gary, just bring yourself. If you've got a spare folding chair, I'll take it, my table's a squeeze with four. Now go enjoy your lesson, I've got pork to marinate.”"
+      "Donna (pickleball court 1): Start Gary on slow kitchen-line dinking drills, keeping the pace gentle for his knees",
+      "Rosa headed to Magnolia Loop (the street)."
     ],
     "donna": [
-      "Gary (pickleball court 1): Step onto court one with Donna and start slow kitchen-line drills",
-      "Rosa said to Gary: “Flan's plenty, Gary, just bring yourself. If you've got a spare folding chair, I'll take it, my table's a squeeze with four. Now go enjoy your lesson, I've got pork to marinate.”"
+      "Gary said to Donna: “Lead the way, partner, I'm ready for court one. Knees are warmed up, and I'll haul a folding chair over to Rosa's Friday so her table doesn't squeeze.”",
+      "Rosa headed to Magnolia Loop (the street)."
     ],
-    "hal": [],
+    "hal": [
+      "You arrived at Gary's House."
+    ],
     "rosa": [
-      "Gary (pickleball court 1): Step onto court one with Donna and start slow kitchen-line drills",
-      "Donna said to Rosa: “Rosa, yes, a hundred times yes! Friday at six, and I'll bring a bottle of something nice for the table. Gary and I are about to hit court one, so save us a seat and a plate.”"
+      "Gary said to Donna: “Lead the way, partner, I'm ready for court one. Knees are warmed up, and I'll haul a folding chair over to Rosa's Friday so her table doesn't squeeze.”",
+      "Donna (pickleball court 1): Start Gary on slow kitchen-line dinking drills, keeping the pace gentle for his knees",
+      "You arrived at Magnolia Loop (the street)."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 341,
-        "text": "I (pickleball court 1): Stay on the baseline, knees bent, and swing at Donna's easy serve",
-        "importance": 3
-      },
-      {
-        "tick": 341,
-        "text": "Donna said to Gary: “Look at that swing, hon, you're a natural! Keep it coming and we'll work on a little dinking next. Keep this up and I'll be putting your name on that ladder board with mine.”",
-        "importance": 3
-      },
-      {
-        "tick": 342,
-        "text": "I (gary workbench): Bench-test the light strings and speaker wiring, and sketch what will show from the street for the review form",
-        "importance": 5
-      },
       {
         "tick": 343,
         "text": "I (gary golf cart): Test-fit the light strips and speaker mounts on the cart, measuring and noting each for the review form",
@@ -1023,24 +1011,24 @@
         "tick": 441,
         "text": "Rosa said to Gary: “Flan's plenty, Gary, just bring yourself. If you've got a spare folding chair, I'll take it, my table's a squeeze with four. Now go enjoy your lesson, I've got pork to marinate.”",
         "importance": 4
+      },
+      {
+        "tick": 442,
+        "text": "I said to Donna: “Lead the way, partner, I'm ready for court one. Knees are warmed up, and I'll haul a folding chair over to Rosa's Friday so her table doesn't squeeze.”",
+        "importance": 4
+      },
+      {
+        "tick": 442,
+        "text": "Donna (pickleball court 1): Start Gary on slow kitchen-line dinking drills, keeping the pace gentle for his knees",
+        "importance": 4
+      },
+      {
+        "tick": 442,
+        "text": "Rosa headed to Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 355,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street myself and jot the tally in my notebook",
-        "importance": 5
-      },
-      {
-        "tick": 355,
-        "text": "Rosa said to Donna: “Dessert is welcome, Donna, I'll find the room. And eleven flamingos, all within the law? Hal's going to want a recount.”",
-        "importance": 5
-      },
-      {
-        "tick": 356,
-        "text": "I (donna pickleball bag): Go through the bag and set out a beginner paddle for Gary's fitting",
-        "importance": 5
-      },
       {
         "tick": 357,
         "text": "I (donna club calendar): Check court openings and pencil in Gary's first practice and the ladder match",
@@ -2025,19 +2013,24 @@
         "tick": 441,
         "text": "Rosa said to Gary: “Flan's plenty, Gary, just bring yourself. If you've got a spare folding chair, I'll take it, my table's a squeeze with four. Now go enjoy your lesson, I've got pork to marinate.”",
         "importance": 5
+      },
+      {
+        "tick": 442,
+        "text": "I (pickleball court 1): Start Gary on slow kitchen-line dinking drills, keeping the pace gentle for his knees",
+        "importance": 6
+      },
+      {
+        "tick": 442,
+        "text": "Gary said to Donna: “Lead the way, partner, I'm ready for court one. Knees are warmed up, and I'll haul a folding chair over to Rosa's Friday so her table doesn't squeeze.”",
+        "importance": 6
+      },
+      {
+        "tick": 442,
+        "text": "Rosa headed to Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 351,
-        "text": "Rosa said to Donna: “Donna, perfect timing. I'm making roast pork Friday evening, Gary's bringing cornbread and Hal's coming, and I've got a seat with your name on it. Say yes and I'll even leave the flamingo jokes at the door.”",
-        "importance": 5
-      },
-      {
-        "tick": 352,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street, one by one, and note the tally in my notebook",
-        "importance": 5
-      },
       {
         "tick": 352,
         "text": "Gary said to Hal: “Hal, got a minute to look over my cart modification form before I file it? Lights and a sound system for the parade, and I want it right the first time. I'll keep the speakers off after ten, you have my word.”",
@@ -3027,29 +3020,19 @@
         "tick": 441,
         "text": "I (street bulletin board): Check for architectural review notices and the filing deadline",
         "importance": 4
+      },
+      {
+        "tick": 442,
+        "text": "I headed to Gary's House.",
+        "importance": 5
+      },
+      {
+        "tick": 442,
+        "text": "You arrived at Gary's House.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 348,
-        "text": "Hal said to Gary: “Sure, hand it over, Gary. I'll check the measurements and that sketch line by line, and we'll fix anything off before it goes to review. Rosa, give me a minute, then I'm all yours.”",
-        "importance": 7
-      },
-      {
-        "tick": 349,
-        "text": "I (street bulletin board): Pin up a note: Welcome dinner at Rosa's, Friday evening, pork and good plates. Gary, Hal, Donna, all three of you, come hungry.",
-        "importance": 6
-      },
-      {
-        "tick": 349,
-        "text": "Gary said to Rosa: “Rosa, I'd be honored. Friday evening, count me in, and I'll save the good chair from being argued over. Can I bring something? I make a decent cornbread.”",
-        "importance": 6
-      },
-      {
-        "tick": 349,
-        "text": "Hal said to Gary: “Good, you held it back. Since the lights and speaker mounts show from the street, L-01 applies, so the sketch must show them from the street side with every measurement marked. Fix that and it's ready to file. And Rosa's pork Friday suits me fine, I'll be there.”",
-        "importance": 6
-      },
       {
         "tick": 350,
         "text": "I said to Gary: “Cornbread would be perfect, Gary, bring it. Hal says he's in too, so now I just need to get Donna to the table.”",
@@ -4029,6 +4012,26 @@
         "tick": 441,
         "text": "Donna said to Rosa: “Rosa, yes, a hundred times yes! Friday at six, and I'll bring a bottle of something nice for the table. Gary and I are about to hit court one, so save us a seat and a plate.”",
         "importance": 5
+      },
+      {
+        "tick": 442,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 442,
+        "text": "Gary said to Donna: “Lead the way, partner, I'm ready for court one. Knees are warmed up, and I'll haul a folding chair over to Rosa's Friday so her table doesn't squeeze.”",
+        "importance": 4
+      },
+      {
+        "tick": 442,
+        "text": "Donna (pickleball court 1): Start Gary on slow kitchen-line dinking drills, keeping the pace gentle for his knees",
+        "importance": 4
+      },
+      {
+        "tick": 442,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ]
   },
@@ -4076,8 +4079,8 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "delighted",
-    "hal": "watchful",
+    "donna": "enthusiastic",
+    "hal": "dutiful",
     "rosa": "content"
   },
   "laws": [
@@ -4203,58 +4206,9 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 437,
-      "time": "Tuesday, November 10, 1:17 PM",
-      "story": "On Magnolia Loop this Tuesday afternoon, Gary, warm and cheerful in the partly cloudy 79-degree heat, has just promised Rosa he'll bring dessert to her Friday dinner. Hal, patient as ever, reminds Gary to hand over his golf cart form by tonight while Rosa, hopeful, keeps pressing Hal for a yes on her pork supper. Donna, eager as always, has already headed off toward the Rec Center, leaving the three of them to sort out the weekend plans on the street.",
-      "dialogue": [
-        "Gary said to Rosa: “Rosa, you've got your yes. Friday evening, your table, and I'll bring dessert so nobody can say I showed up empty-handed.”",
-        "Hal said to Gary: “Go play your pickleball, Gary, but I'll have that cart form from you by tonight so I can check the measurements. And say yes to Rosa before she burns that pork out of sheer waiting.”",
-        "Rosa said to Hal: “Hal, finish that cart form first, I can wait. But I need your word on Friday evening at my table, pork, and Donna and Gary are both in. Just nod yes and I'll stop chasing you.”"
-      ]
-    },
-    {
-      "tick": 438,
-      "time": "Tuesday, November 10, 2:17 PM",
-      "story": "On a bright Tuesday afternoon in Sumter Oaks, Gary heads off toward the Rec Center while the sun warms the Magnolia Loop. Donna is already at the ladder standings board, studying which teams she and her partners must beat before Thursday. Hal and Rosa stand together on the street, where Hal promises to be at her table Friday at six and Rosa reminds him that Gary is bringing dessert.",
-      "dialogue": [
-        "Hal said to Rosa: “You have my word, Rosa. Friday at six, I'll be at your table, and I'll be on time. Go keep that pork from burning.”",
-        "Rosa said to Hal: “Hal, Gary's in and he's bringing dessert, so you're the last chair. Finish your form, then give me one word on Friday, and I'll leave you in peace.”"
-      ]
-    },
-    {
-      "tick": 439,
-      "time": "Tuesday, November 10, 3:17 PM",
-      "story": "At 3:17 on a mild Tuesday afternoon in Sumter Oaks, Gary and Donna are at the Rec Center, where Donna is eager to stretch out Gary's knees before a game on court one and to talk through the kitchen line for Friday's dessert duty. Out on Magnolia Loop, Hal is content to have promised Rosa he'll be at her place Friday at six sharp, and Rosa, optimistic as ever, is heading over to the Rec Center now.",
-      "dialogue": [
-        "Gary said to Donna: “Afternoon, Donna. Thanks for all the ice packs this week, my knees are almost behaving. You still good for a game today, and are you coming to Rosa's Friday? I'm on dessert duty.”",
-        "Donna said to Gary: “There's my partner! Let's stretch those knees out first, Gary, then I'll walk you through the kitchen line and we'll hit a few easy ones on court one. Thursday's ladder match won't win itself.”",
-        "Hal said to Rosa: “Already gave you my word, Rosa, and I don't give it twice. Friday, six sharp, my chair's as good as filled. Now go tend your pork.”"
-      ]
-    },
-    {
-      "tick": 440,
-      "time": "Tuesday, November 10, 4:17 PM",
-      "story": "At the Rec Center on Tuesday afternoon, Gary and Donna are cheerfully lining up their plans, with Gary offering flan and extra chairs for Rosa's Friday dinner while Donna promises to hold him to it. Rosa, feeling hopeful, invites Donna to her pork dinner at six, and Donna is already warming to the idea of a good seat at the table. Out on Magnolia Loop, Hal is content, idly counting the flamingos in a neighbor's yard, just as he likes to on a mild November afternoon.",
-      "dialogue": [
-        "Gary said to Rosa: “Hey, Rosa. Count me in for Friday, flan's on me. Anything you need me to bring besides dessert, chairs or an extension cord or such?”",
-        "Donna said to Gary: “Wouldn't miss Rosa's Friday, and I'll hold you to that dessert! Come on, partner, court one is ours. Slow and easy first, kitchen line basics, and we'll baby those knees.”",
-        "Rosa said to Donna: “Donna, perfect timing. I'm making pork Friday at six and I want you at my table with Hal and Gary. Say yes and I'll save you a good seat.”"
-      ]
-    },
-    {
-      "tick": 441,
-      "time": "Tuesday, November 10, 5:17 PM",
-      "story": "At 5:17 on this partly cloudy Tuesday in Sumter Oaks, Gary and Donna are stepping onto pickleball court one to start slow kitchen-line drills, while Donna is delighted to have just accepted Rosa's Friday dinner invitation and promised a bottle of something nice. Rosa, still at the Rec Center, is cheerfully marinating pork and asking Gary to bring a folding chair. Meanwhile Hal, watchful as ever, is checking the bulletin board on Magnolia Loop for architectural review notices and the filing deadline.",
-      "dialogue": [
-        "Donna said to Rosa: “Rosa, yes, a hundred times yes! Friday at six, and I'll bring a bottle of something nice for the table. Gary and I are about to hit court one, so save us a seat and a plate.”",
-        "Rosa said to Gary: “Flan's plenty, Gary, just bring yourself. If you've got a spare folding chair, I'll take it, my table's a squeeze with four. Now go enjoy your lesson, I've got pork to marinate.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 13.90671,
+    "total_usd": 13.93835,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4373,13 +4327,12 @@
         "usd": 0.46616
       },
       "2026-11-10": {
-        "ticks": 11,
-        "usd": 0.34972
+        "ticks": 12,
+        "usd": 0.38136
       }
     }
   },
   "recent_tick_costs": [
-    0.03036,
     0.03032,
     0.03062,
     0.03234,
@@ -4402,7 +4355,8 @@
     0.032,
     0.03127,
     0.03135,
-    0.03154
+    0.03154,
+    0.03164
   ],
   "fund": {
     "gross_usd": 0.0,
