@@ -1,0 +1,118 @@
+{
+  "tick": 449,
+  "simulation_time": "Wednesday, November 11, 10:17 AM",
+  "weather": "Breezy and clear, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 10:17 on a breezy, clear Wednesday morning in Sumter Oaks, Gary sits at his workbench in his house, carefully testing the finished LED strip and speaker wiring at low volume and checking every connection. Donna is heading out onto Magnolia Loop with fierce determination, while Hal stands at his window with binoculars, methodically counting flamingos and measuring golf carts one last time. Meanwhile, Rosa cheerfully pins a friendly note to the street bulletin board inviting neighbors to Friday dinner, with roast pork and flan on the menu.",
+  "events": [
+    "Gary (gary workbench): Test the finished LED strip and speaker wiring at low volume, check each connection",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (hal binoculars): Glass the street one last time to confirm the flamingo count and cart measurements",
+    "Rosa (street bulletin board): Pin up a friendly note: Friday dinner at Rosa's, roast pork and flan, neighbors welcome"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm in the garage at the workbench, and I've been soldering the LED strip and speaker connections for a few ticks now. Last tick's plan was to test them at low volume, which keeps me clear of L-03 and the whole thing stays inside the house, so no street visibility issues until the review desk signs off. It's 10:17 AM, so no quiet hours problem anyway. Nobody's around to talk to, and the parade goal needs the wiring done. Time to finish the testing at the workbench.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Test the finished LED strip and speaker wiring at low volume, check each connection"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've checked the calendar, packed the bag, and called the clubhouse to confirm our ten o'clock two-hour slot. It's 10:17 now and Gary headed out to Magnolia Loop earlier, so he's probably on his way or waiting. Nobody's in line-of-sight, and I've done everything I can do in the house. Time to carry the bag out and go find Gary so we actually get on the court before Thursday's match. Heading to Magnolia Loop is the next step forward.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with the pickleball bag to meet Gary for our court session"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've logged the measurements, reviewed them, and even glassed the street with the binoculars. The report is as accurate as I can make it, and nobody's around to talk to. Gary's cart form measurements need checking before the committee sees it, and Town Hall is where such things get filed. But Magnolia Loop is where I'd have to go first, and the notebook is right here. Best use of this tick: one last look through the binoculars to confirm the flamingo count from the porch before I walk anything to the committee. Be fair, be accurate, and then go file it. Friday dinner stays on my calendar.",
+      "emotional_state": "methodical",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_binoculars",
+          "content": "Glass the street one last time to confirm the flamingo count and cart measurements"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm out on Magnolia Loop with nobody around. Everyone already said yes to Friday, so I shouldn't chase them. I've checked the table and the pantry, and I've written my shopping list. A dinner invitation posted on the street bulletin board would be a warm touch and would remind everyone of the time without me pestering anyone individually. It also helps build the wider community feeling I'm after.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Pin up a friendly note: Friday dinner at Rosa's, roast pork and flan, neighbors welcome"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02998,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9477,
+        "output_tokens": 1089,
+        "usd": 0.02984
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 413,
+        "output_tokens": 196,
+        "usd": 0.00014
+      }
+    }
+  }
+}

@@ -1,27 +1,24 @@
 {
-  "tick": 449,
-  "time": "2026-11-11T09:17",
+  "tick": 450,
+  "time": "2026-11-11T10:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "donnas_house",
+    "donna": "magnolia_loop",
     "hal": "hals_house",
     "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [],
-    "donna": [],
+    "donna": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "hal": [],
     "rosa": [
-      "You arrived at Magnolia Loop (the street)."
+      "Donna just arrived."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 349,
-        "text": "I said to Rosa: “Rosa, I'd be honored. Friday evening, count me in, and I'll save the good chair from being argued over. Can I bring something? I make a decent cornbread.”",
-        "importance": 6
-      },
       {
         "tick": 349,
         "text": "Hal said to Gary: “Good, you held it back. Since the lights and speaker mounts show from the street, L-01 applies, so the sketch must show them from the street side with every measurement marked. Fix that and it's ready to file. And Rosa's pork Friday suits me fine, I'll be there.”",
@@ -1016,19 +1013,14 @@
         "tick": 448,
         "text": "I (gary workbench): Finish soldering the LED strip and speaker connections, then test them at low volume",
         "importance": 5
+      },
+      {
+        "tick": 449,
+        "text": "I (gary workbench): Test the finished LED strip and speaker wiring at low volume, check each connection",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 361,
-        "text": "Hal said to Donna: “Afternoon, Donna. I count more flamingos than the ordinance allows. Three is the limit from the street, and I'd rather settle it neighbor to neighbor than send it to the committee. Can we sort that out before Friday dinner?”",
-        "importance": 6
-      },
-      {
-        "tick": 362,
-        "text": "I said to Hal: “Hal, you've got a good eye, and I'd rather settle it with you than the committee. I'll tuck the extras around back this afternoon so just three show from the street. Then you can tell your flamingo story at Rosa's with a clear conscience.”",
-        "importance": 5
-      },
       {
         "tick": 362,
         "text": "Gary said to Hal: “Hal, when you two have the flamingos sorted, I've got the cart paperwork right here. Lights and the sound system, with the ten o'clock cutoff written in. Would you give it a once-over before I file it for review?”",
@@ -2018,14 +2010,19 @@
         "tick": 448,
         "text": "I (donna phone): Call the clubhouse to confirm our two-hour court reservation for ten o'clock",
         "importance": 5
+      },
+      {
+        "tick": 449,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 449,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 354,
-        "text": "Gary said to Hal: “Here you go, Hal, form's right out of my pocket. Lights are the LED strip along the roof rail, speakers go under the rear seat, and I'm putting the ten o'clock cutoff in writing, just like you said.”",
-        "importance": 5
-      },
       {
         "tick": 354,
         "text": "Donna said to Rosa: “Rosa, I'll be there Friday at six, and I'll bring dessert whether you want it or not. Tell Hal my flamingo count is eleven, and every one of them is within the law.”",
@@ -3020,19 +3017,14 @@
         "tick": 448,
         "text": "I (hal binoculars): Glass down Magnolia Loop to double-check the street-visible flamingo count and Gary's cart before finalizing the report",
         "importance": 4
+      },
+      {
+        "tick": 449,
+        "text": "I (hal binoculars): Glass the street one last time to confirm the flamingo count and cart measurements",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 352,
-        "text": "I said to Donna: “Donna, dinner is Friday at six at my place, roast pork, and all you need to bring is yourself. Bring your flamingo count too, Hal's already sharpening his pencil.”",
-        "importance": 6
-      },
-      {
-        "tick": 352,
-        "text": "Gary said to Hal: “Hal, got a minute to look over my cart modification form before I file it? Lights and a sound system for the parade, and I want it right the first time. I'll keep the speakers off after ten, you have my word.”",
-        "importance": 6
-      },
       {
         "tick": 352,
         "text": "Donna said to Rosa: “Rosa, yes, put me down for Friday, and I'll bring a dessert so you don't have to lift a finger. Gary, Thursday morning for third-shot drops, and Hal, we'll count my flamingos right after, fair and square.”",
@@ -4022,6 +4014,16 @@
         "tick": 448,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 449,
+        "text": "I (street bulletin board): Pin up a friendly note: Friday dinner at Rosa's, roast pork and flan, neighbors welcome",
+        "importance": 4
+      },
+      {
+        "tick": 449,
+        "text": "Donna just arrived.",
+        "importance": 4
       }
     ]
   },
@@ -4068,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "focused, content",
+    "gary": "focused",
     "donna": "determined",
-    "hal": "dutiful",
-    "rosa": "optimistic"
+    "hal": "methodical",
+    "rosa": "cheerful"
   },
   "laws": [
     {
@@ -4196,9 +4198,16 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 449,
+      "time": "Wednesday, November 11, 10:17 AM",
+      "story": "At 10:17 on a breezy, clear Wednesday morning in Sumter Oaks, Gary sits at his workbench in his house, carefully testing the finished LED strip and speaker wiring at low volume and checking every connection. Donna is heading out onto Magnolia Loop with fierce determination, while Hal stands at his window with binoculars, methodically counting flamingos and measuring golf carts one last time. Meanwhile, Rosa cheerfully pins a friendly note to the street bulletin board inviting neighbors to Friday dinner, with roast pork and flan on the menu.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 14.12095,
+    "total_usd": 14.15093,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4321,13 +4330,12 @@
         "usd": 0.47173
       },
       "2026-11-11": {
-        "ticks": 3,
-        "usd": 0.09223
+        "ticks": 4,
+        "usd": 0.12221
       }
     }
   },
   "recent_tick_costs": [
-    0.03082,
     0.03005,
     0.02989,
     0.03092,
@@ -4350,7 +4358,8 @@
     0.02962,
     0.03084,
     0.03035,
-    0.03104
+    0.03104,
+    0.02998
   ],
   "fund": {
     "gross_usd": 0.0,
