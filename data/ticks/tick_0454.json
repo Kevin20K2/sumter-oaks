@@ -1,0 +1,118 @@
+{
+  "tick": 454,
+  "simulation_time": "Wednesday, November 11, 3:17 PM",
+  "weather": "Breezy and clear, 83°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On Magnolia Loop, Donna and Hal are both determined and walking briskly toward Gary's House in the breezy 83-degree afternoon, though neither has said quite why. Inside the garage, Gary is content as he powers up the LED strip and speaker on his golf cart, checking that the zip-tied wiring held. Over at Rosa's House, Rosa is optimistic as she reviews her per-diem shift schedule, making sure Friday evening stays open so she can block out prep time.",
+  "events": [
+    "Gary (gary golf cart): Power up the LED strip and speaker at low volume in the garage, make sure the zip-tied wiring held",
+    "Donna headed to Gary's House.",
+    "Hal headed to Gary's House.",
+    "Rosa (rosa shift schedule): Check per-diem shifts to confirm Friday evening is clear and block prep time"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "The wiring is zip-tied neatly under the seat, so the build is basically done. I filed the Architectural Review request at tick 369, so I'm waiting on approval before the cart goes on the street, and L-01 says I can't show those mods outside without it. Last step is to power it up one more time at low volume inside the garage to make sure the zip-tying didn't pull a connection loose. Nobody's around to talk to, and it's a good, quiet job for a fix-it guy.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Power up the LED strip and speaker at low volume in the garage, make sure the zip-tied wiring held"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal is right here on Magnolia Loop, and I just told him last tick to measure Gary's cart and file the paperwork. I shouldn't repeat that or the flamingo banter. What I need is Gary himself: the court is booked for ten tomorrow, and his knees need to be ready. His house is on this street, so I should walk over, check he's got sneakers, and make sure he's actually coming. Hal can count flamingos all he likes; the ladder matters more.",
+      "emotional_state": "determined",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading to Gary's to make sure he's got sneakers and a paddle ready for tomorrow's court time"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna dodged my flamingo count and told me to go measure Gary's cart. Fair enough, one more word with her won't get me a number, and I already said my piece about three flamingos. The paperwork on Gary's cart needs measurements before anything goes to the review committee, and Gary's place is right off Magnolia Loop. Friday dinner at Rosa's is settled, so no sense stirring things up. Time to quit standing in the street and go do the measuring properly, by the book.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "garys_house",
+          "content": "Heading to Gary's to measure that cart before anything gets filed. Facts first, then forms."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm home at Rosa's House, nobody else around, 3:17 PM Wednesday. My shift schedule check at tick 453 was the plan, and I haven't done it yet, so that's the natural next step. Everyone has already said yes to Friday, so no need to chase anyone. I just need to confirm my per-diem shifts leave Friday evening clear and block out prep time for the pork and flan.",
+      "emotional_state": "optimistic",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check per-diem shifts to confirm Friday evening is clear and block prep time"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03132,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9896,
+        "output_tokens": 1080,
+        "usd": 0.03059
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3678,
+        "output_tokens": 734,
+        "usd": 0.00073
+      }
+    }
+  }
+}

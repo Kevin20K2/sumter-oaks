@@ -1,39 +1,31 @@
 {
-  "tick": 454,
-  "time": "2026-11-11T14:17",
+  "tick": 455,
+  "time": "2026-11-11T15:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
-    "hal": "magnolia_loop",
+    "donna": "garys_house",
+    "hal": "garys_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
+    "gary": [
+      "Donna just arrived.",
+      "Hal just arrived."
+    ],
     "donna": [
-      "Hal (donna flamingo flock): Count the flamingos visible from the street, one by one, and note the total"
+      "Hal headed to Gary's House.",
+      "You arrived at Gary's House.",
+      "Hal just arrived."
     ],
     "hal": [
-      "Donna said to Hal: “Hal Weems, a lady never tells, and a flock that size is a festive installation, not a count. Now go measure Gary's cart so that paperwork gets filed, and I'll bake you a cornbread for your trouble.”"
+      "Donna headed to Gary's House.",
+      "You arrived at Gary's House.",
+      "Donna just arrived."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 350,
-        "text": "Rosa said to Gary: “Cornbread would be perfect, Gary, bring it. Hal says he's in too, so now I just need to get Donna to the table.”",
-        "importance": 5
-      },
-      {
-        "tick": 350,
-        "text": "Donna just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 351,
-        "text": "I said to Donna: “Evening, Donna. Rosa's got a welcome dinner Friday, and I'm bringing cornbread. Any chance you're free for a little pickleball before then? I want to keep working on that third-shot drop.”",
-        "importance": 4
-      },
       {
         "tick": 351,
         "text": "Donna said to Gary: “Gary, there you are! I've got your spare paddle packed and my ladder notes ready, so Tuesday we climb a rung or two together. Don't you worry about a thing, I'll bring the balls.”",
@@ -1018,29 +1010,24 @@
         "tick": 453,
         "text": "I (gary golf cart): Zip-tie the LED and speaker wiring neatly under the seat",
         "importance": 4
+      },
+      {
+        "tick": 454,
+        "text": "I (gary golf cart): Power up the LED strip and speaker at low volume in the garage, make sure the zip-tied wiring held",
+        "importance": 4
+      },
+      {
+        "tick": 454,
+        "text": "Donna just arrived.",
+        "importance": 4
+      },
+      {
+        "tick": 454,
+        "text": "Hal just arrived.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 365,
-        "text": "I said to Gary: “Gary, I'll put us down for the courts at ten tomorrow morning, two hours, plenty of time for basics and still home to bake that cornbread before six. Bring the paddle and wear sneakers you don't mind scuffing.”",
-        "importance": 6
-      },
-      {
-        "tick": 365,
-        "text": "Gary headed to Town Square.",
-        "importance": 6
-      },
-      {
-        "tick": 365,
-        "text": "Hal said to Rosa: “Nothing I can't eat, Rosa. Army cooked for me for thirty years, so I'm not picky. Just don't tell Donna there's room on the table for a flamingo centerpiece.”",
-        "importance": 6
-      },
-      {
-        "tick": 365,
-        "text": "Rosa headed to Town Square.",
-        "importance": 6
-      },
       {
         "tick": 366,
         "text": "I said to Hal: “I heard that, Hal Weems. The flamingos are staying outside where they belong, but you're welcome to come cheer at the courts tomorrow at ten. Gary's first practice, and I'd like a witness.”",
@@ -2020,29 +2007,29 @@
         "tick": 453,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street, one by one, and note the total",
         "importance": 4
+      },
+      {
+        "tick": 454,
+        "text": "I headed to Gary's House.",
+        "importance": 6
+      },
+      {
+        "tick": 454,
+        "text": "Hal headed to Gary's House.",
+        "importance": 6
+      },
+      {
+        "tick": 454,
+        "text": "You arrived at Gary's House.",
+        "importance": 6
+      },
+      {
+        "tick": 454,
+        "text": "Hal just arrived.",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 360,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 360,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 361,
-        "text": "I said to Donna: “Afternoon, Donna. I count more flamingos than the ordinance allows. Three is the limit from the street, and I'd rather settle it neighbor to neighbor than send it to the committee. Can we sort that out before Friday dinner?”",
-        "importance": 5
-      },
-      {
-        "tick": 361,
-        "text": "Gary said to Donna: “Ten tomorrow works, Donna. Fair warning, I'll be the one apologizing to the ball. And Hal, good timing, I've got my cart paperwork to run past you when you've got a minute.”",
-        "importance": 5
-      },
       {
         "tick": 361,
         "text": "Donna said to Gary: “Cornbread, bless you, Rosa will love it. Now don't dodge me, Gary: ten o'clock tomorrow at the courts, paperwork can wait an hour. Hal, you're our witness.”",
@@ -3022,14 +3009,29 @@
         "tick": 453,
         "text": "Donna said to Hal: “Hal Weems, a lady never tells, and a flock that size is a festive installation, not a count. Now go measure Gary's cart so that paperwork gets filed, and I'll bake you a cornbread for your trouble.”",
         "importance": 4
+      },
+      {
+        "tick": 454,
+        "text": "I headed to Gary's House.",
+        "importance": 5
+      },
+      {
+        "tick": 454,
+        "text": "Donna headed to Gary's House.",
+        "importance": 5
+      },
+      {
+        "tick": 454,
+        "text": "You arrived at Gary's House.",
+        "importance": 5
+      },
+      {
+        "tick": 454,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 355,
-        "text": "Gary said to Hal: “Strip's clipped along the roof rail with no drilling, and the speakers sit under the rear seat, so nothing sticks out past the body. Sound cuts at ten sharp, per L-03, and it's written in the margin for you.”",
-        "importance": 4
-      },
       {
         "tick": 355,
         "text": "Donna said to Gary: “Gary, once Hal's got your form squared away, come by my place tomorrow morning and I'll walk you through picking out a paddle. The ladder won't climb itself, and I've already got us a spot on the board.”",
@@ -4024,6 +4026,11 @@
         "tick": 453,
         "text": "I (rosa shift schedule): Check my per-diem shifts to make sure Friday evening is clear and plan my prep time",
         "importance": 5
+      },
+      {
+        "tick": 454,
+        "text": "I (rosa shift schedule): Check per-diem shifts to confirm Friday evening is clear and block prep time",
+        "importance": 5
       }
     ]
   },
@@ -4071,9 +4078,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "playful",
-    "hal": "dutiful",
-    "rosa": "determined"
+    "donna": "determined",
+    "hal": "determined",
+    "rosa": "optimistic"
   },
   "laws": [
     {
@@ -4198,51 +4205,9 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 449,
-      "time": "Wednesday, November 11, 10:17 AM",
-      "story": "At 10:17 on a breezy, clear Wednesday morning in Sumter Oaks, Gary sits at his workbench in his house, carefully testing the finished LED strip and speaker wiring at low volume and checking every connection. Donna is heading out onto Magnolia Loop with fierce determination, while Hal stands at his window with binoculars, methodically counting flamingos and measuring golf carts one last time. Meanwhile, Rosa cheerfully pins a friendly note to the street bulletin board inviting neighbors to Friday dinner, with roast pork and flan on the menu.",
-      "dialogue": []
-    },
-    {
-      "tick": 450,
-      "time": "Wednesday, November 11, 11:17 AM",
-      "story": "At 11:17 on a breezy, clear Wednesday, Gary is in his garage fitting an LED strip and speaker onto his golf cart, making sure it sits right before anything goes near the street. Out on Magnolia Loop, Donna has caught up with Rosa to confirm the Friday pork dinner, and Rosa has just pinned the note to the community board, with dinner set for six and deviled eggs requested. Hal is heading out to Magnolia Loop himself, resolute about whatever he has in mind.",
-      "dialogue": [
-        "Donna said to Rosa: “Rosa, there you are! I'm counting on that Friday pork dinner, and I'll drag Gary along once I've got him moving on the court. Anything I can bring besides my appetite?”",
-        "Rosa said to Donna: “Morning, Donna! I just pinned the Friday dinner note on the board, so now it's official. Bring those deviled eggs and come hungry, we'll eat at six.”"
-      ]
-    },
-    {
-      "tick": 451,
-      "time": "Wednesday, November 11, 12:17 PM",
-      "story": "At 12:17 on a breezy, clear Wednesday, Gary is testing the LED strip and speaker in his garage while his neighbors go about their day on Magnolia Loop. Donna, upbeat as ever, is asking Hal whether Gary's paperwork has been filed so she can book pickleball court time for tomorrow before Rosa's Friday dinner. Hal, watchful as always, is counting the flamingos on the street and recording the tally in his notebook. Rosa, warm and cheerful, reminds Hal that her roast pork and flan dinner is pinned on the board for six o'clock Friday.",
-      "dialogue": [
-        "Donna said to Hal: “Hal, good timing. Is Gary's paperwork filed yet? I want him on the court tomorrow before Rosa's dinner, and I've got my two hours ready to book.”",
-        "Rosa said to Hal: “Hal, good timing. Friday dinner's pinned on the board now, six o'clock at my place, roast pork and flan. Just bring yourself and that appetite.”"
-      ]
-    },
-    {
-      "tick": 452,
-      "time": "Wednesday, November 11, 1:17 PM",
-      "story": "Gary is back at his house, setting aside the soldering iron to tidy the wiring under his golf cart seat with a handful of zip ties. Out on Magnolia Loop, Donna is in good spirits, teasing Hal about his clipboard and insisting that her flamingo flock is festive rather than excessive, while Hal, gruff but fair, wants Gary's measurements checked before any paperwork gets filed. Rosa, content as ever, heads home to her own house as the breezy, clear afternoon rolls on.",
-      "dialogue": [
-        "Donna said to Hal: “Counting my flamingos, Hal? Don't you dare write them up under L-02, that flock is festive, not excessive. Now when you're done there, let me know about Gary's paperwork, I've got a court to book.”",
-        "Hal said to Donna: “Not filed yet, Donna. I want his measurements checked first so nobody gets a surprise. And I saw you counting flamingos. What number did you land on?”"
-      ]
-    },
-    {
-      "tick": 453,
-      "time": "Wednesday, November 11, 2:17 PM",
-      "story": "At 2:17 on a breezy, clear Wednesday afternoon in Sumter Oaks, Gary is content at home, tidying the LED and speaker wiring under his golf cart seat. Donna, feeling playful, has teased Hal into going to measure that cart instead of counting her flamingo flock, promising him cornbread for his trouble. Hal, dutiful as ever, is out on Magnolia Loop tallying the flamingos he can see, while Rosa, determined, sits at home checking her shift schedule to keep Friday evening clear for her prep time.",
-      "dialogue": [
-        "Donna said to Hal: “Hal Weems, a lady never tells, and a flock that size is a festive installation, not a count. Now go measure Gary's cart so that paperwork gets filed, and I'll bake you a cornbread for your trouble.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 14.27706,
+    "total_usd": 14.30838,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4365,13 +4330,12 @@
         "usd": 0.47173
       },
       "2026-11-11": {
-        "ticks": 8,
-        "usd": 0.24834
+        "ticks": 9,
+        "usd": 0.27966
       }
     }
   },
   "recent_tick_costs": [
-    0.03094,
     0.02975,
     0.03112,
     0.03229,
@@ -4394,7 +4358,8 @@
     0.03089,
     0.03135,
     0.03211,
-    0.03178
+    0.03178,
+    0.03132
   ],
   "fund": {
     "gross_usd": 0.0,
