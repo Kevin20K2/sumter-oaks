@@ -1,0 +1,116 @@
+{
+  "tick": 455,
+  "simulation_time": "Wednesday, November 11, 4:17 PM",
+  "weather": "Breezy and clear, 82°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "garys_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 4:17 on a breezy, clear Wednesday, Gary is at his house showing Hal the lights and speaker he's just tested, with the review form already filed for the ten o'clock cutoff. Donna is there too, reminding Gary to stretch his knees with his paddle so he's light on his feet for tomorrow's kitchen work. Hal, dutifully, is measuring Gary's golf cart modifications with his tape for the review form. Over at her house, Rosa is content, marinating the pork and setting the flan to bake so Friday's dinner is ahead of schedule.",
+  "events": [
+    "Hal (gary golf cart): Measure the exterior modifications with my tape for the review form",
+    "Rosa (rosa kitchen): Start marinating the pork and set the flan to bake so Friday's dinner is ahead of schedule"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna and Hal both just walked in while I was testing the LED strip and speaker in the garage. The wiring held, the form is already filed with the 10 PM cutoff noted, and I'm pleased with how it's coming together. Hal's the one who handles the review stuff, so he's probably here to look at the cart. I should say something short and welcoming, show him the work, and tell him the form is in so I'm not repeating myself from earlier.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, glad you stopped by. The review form's already filed with the ten o'clock cutoff written in, and I just tested the lights and speaker at low volume. Wiring's zip-tied tidy, come have a look."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just arrived at Gary's with Hal right behind me. I told Gary I'd bring him a paddle and that we're on for the courts tomorrow at ten, so I shouldn't repeat that invitation. Now's the time to get him moving: his knees are fragile and Thursday's ladder match is close. I'll nudge him to start warming up and stretching tonight so he's ready, and keep it light and bossy-friendly. Hal being here is a nice audience, too.",
+      "emotional_state": "upbeat",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, hon, I've got your paddle right here. Tonight I want you stretching those knees, nice and easy, so you're light on your feet at the kitchen line tomorrow. Hal, you tell him, a little prep never hurt anybody."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Gary's house with Gary and Donna both here, and Donna sent me to measure his cart before the paperwork goes in. The cart is right here in the zone. Measuring it myself is the by-the-book way, and I get the facts before anyone argues. No sense chatting when I've got a job to do. I just hope the numbers come out clean for Gary's sake.",
+      "emotional_state": "dutiful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Measure the exterior modifications with my tape for the review form"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm home at Rosa's House with nobody around. Donna, Gary, and Hal have all said yes to Friday, so I shouldn't chase them again. I've already checked my shift schedule twice, so that's settled. The useful thing now is to plan what the table needs, so I'll start on the pork and flan prep and seating in the kitchen while I have a quiet hour.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Start marinating the pork and set the flan to bake so Friday's dinner is ahead of schedule"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02992,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9417,
+        "output_tokens": 1094,
+        "usd": 0.02977
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 516,
+        "output_tokens": 191,
+        "usd": 0.00015
+      }
+    }
+  }
+}
