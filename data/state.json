@@ -1,6 +1,6 @@
 {
-  "tick": 443,
-  "time": "2026-11-10T18:17",
+  "tick": 444,
+  "time": "2026-11-10T19:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,34 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna (pickleball court 1): Start Gary on slow kitchen-line dinking drills, keeping the pace gentle for his knees",
-      "Rosa headed to Magnolia Loop (the street)."
+      "Donna (pickleball court 1): Step onto court one with Gary and start slow, gentle kitchen-line dinking drills"
     ],
     "donna": [
-      "Gary said to Donna: “Lead the way, partner, I'm ready for court one. Knees are warmed up, and I'll haul a folding chair over to Rosa's Friday so her table doesn't squeeze.”",
-      "Rosa headed to Magnolia Loop (the street)."
+      "Gary (pickleball court 1): Work through slow kitchen-line dinking drills with Donna, easy on the knees"
     ],
-    "hal": [
-      "You arrived at Gary's House."
-    ],
-    "rosa": [
-      "Gary said to Donna: “Lead the way, partner, I'm ready for court one. Knees are warmed up, and I'll haul a folding chair over to Rosa's Friday so her table doesn't squeeze.”",
-      "Donna (pickleball court 1): Start Gary on slow kitchen-line dinking drills, keeping the pace gentle for his knees",
-      "You arrived at Magnolia Loop (the street)."
-    ]
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 343,
-        "text": "I (gary golf cart): Test-fit the light strips and speaker mounts on the cart, measuring and noting each for the review form",
-        "importance": 5
-      },
-      {
-        "tick": 344,
-        "text": "I (gary toolbox): Grab tape measure and notepad, tally measurements of the lights and speaker mounts for the review form",
-        "importance": 6
-      },
       {
         "tick": 345,
         "text": "I (gary workbench): Fill out the review form with my measurements and a sketch of the street-visible lights and speaker mounts",
@@ -1026,19 +1008,19 @@
         "tick": 442,
         "text": "Rosa headed to Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 443,
+        "text": "I (pickleball court 1): Work through slow kitchen-line dinking drills with Donna, easy on the knees",
+        "importance": 3
+      },
+      {
+        "tick": 443,
+        "text": "Donna (pickleball court 1): Step onto court one with Gary and start slow, gentle kitchen-line dinking drills",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 357,
-        "text": "I (donna club calendar): Check court openings and pencil in Gary's first practice and the ladder match",
-        "importance": 5
-      },
-      {
-        "tick": 358,
-        "text": "I (donna phone): Text Gary that his paddle is ready and pin down a time for his first practice",
-        "importance": 6
-      },
       {
         "tick": 359,
         "text": "I headed to Magnolia Loop (the street).",
@@ -2028,14 +2010,19 @@
         "tick": 442,
         "text": "Rosa headed to Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 443,
+        "text": "I (pickleball court 1): Step onto court one with Gary and start slow, gentle kitchen-line dinking drills",
+        "importance": 6
+      },
+      {
+        "tick": 443,
+        "text": "Gary (pickleball court 1): Work through slow kitchen-line dinking drills with Donna, easy on the knees",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 352,
-        "text": "Gary said to Hal: “Hal, got a minute to look over my cart modification form before I file it? Lights and a sound system for the parade, and I want it right the first time. I'll keep the speakers off after ten, you have my word.”",
-        "importance": 5
-      },
       {
         "tick": 352,
         "text": "Donna said to Rosa: “Rosa, yes, put me down for Friday, and I'll bring a dessert so you don't have to lift a finger. Gary, Thursday morning for third-shot drops, and Hal, we'll count my flamingos right after, fair and square.”",
@@ -3030,14 +3017,14 @@
         "tick": 442,
         "text": "You arrived at Gary's House.",
         "importance": 5
+      },
+      {
+        "tick": 443,
+        "text": "I (gary golf cart): Measure the exterior modifications and check them against the review form",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 350,
-        "text": "I said to Gary: “Cornbread would be perfect, Gary, bring it. Hal says he's in too, so now I just need to get Donna to the table.”",
-        "importance": 6
-      },
       {
         "tick": 350,
         "text": "Gary said to Hal: “Understood, Hal. Street-side view, every measurement marked. I'll redo the sketch tonight and bring it by tomorrow. Thanks for the sharp eye.”",
@@ -4032,6 +4019,11 @@
         "tick": 442,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 443,
+        "text": "I (street bulletin board): Pin up a note: Welcome dinner at Rosa's, Friday at 6, roast pork and flan, all neighbors welcome",
+        "importance": 4
       }
     ]
   },
@@ -4079,7 +4071,7 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "enthusiastic",
+    "donna": "excited",
     "hal": "dutiful",
     "rosa": "content"
   },
@@ -4206,9 +4198,16 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 443,
+      "time": "Tuesday, November 10, 7:17 PM",
+      "story": "At 7:17 on a mild Tuesday evening in Sumter Oaks, Gary and Donna are working through slow, knee-friendly dinking drills on court one at the Rec Center, with Donna clearly enjoying herself. Over at Gary's house, Hal is measuring the exterior modifications on Gary's golf cart and checking them against the community review form, doing his duty with a steady hand. Meanwhile, Rosa is pinning a cheerful note to the bulletin board on Magnolia Loop, inviting all the neighbors to a welcome dinner Friday at six, with roast pork and flan on the menu.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 13.93835,
+    "total_usd": 13.96874,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4327,13 +4326,12 @@
         "usd": 0.46616
       },
       "2026-11-10": {
-        "ticks": 12,
-        "usd": 0.38136
+        "ticks": 13,
+        "usd": 0.41175
       }
     }
   },
   "recent_tick_costs": [
-    0.03032,
     0.03062,
     0.03234,
     0.03366,
@@ -4356,7 +4354,8 @@
     0.03127,
     0.03135,
     0.03154,
-    0.03164
+    0.03164,
+    0.03039
   ],
   "fund": {
     "gross_usd": 0.0,
