@@ -1,0 +1,117 @@
+{
+  "tick": 453,
+  "simulation_time": "Wednesday, November 11, 2:17 PM",
+  "weather": "Breezy and clear, 82°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 2:17 on a breezy, clear Wednesday afternoon in Sumter Oaks, Gary is content at home, tidying the LED and speaker wiring under his golf cart seat. Donna, feeling playful, has teased Hal into going to measure that cart instead of counting her flamingo flock, promising him cornbread for his trouble. Hal, dutiful as ever, is out on Magnolia Loop tallying the flamingos he can see, while Rosa, determined, sits at home checking her shift schedule to keep Friday evening clear for her prep time.",
+  "events": [
+    "Gary (gary golf cart): Zip-tie the LED and speaker wiring neatly under the seat",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street, one by one, and note the total",
+    "Rosa (rosa shift schedule): Check my per-diem shifts to make sure Friday evening is clear and plan my prep time"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I just put the soldering gear away and grabbed zip ties to tidy the wiring under the seat. The LED strip and speaker are mounted and tested inside the garage, no street exposure, so L-01 isn't an issue yet, and my review request is already filed. Finish the job right: zip-tie the wiring neat so nothing rattles or snags on parade day. Staying busy on the cart keeps me feeling useful.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Zip-tie the LED and speaker wiring neatly under the seat"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Hal asked me directly how many flamingos I counted, and he's clearly sniffing around L-02, which allows only three ornaments visible from the street. I shouldn't dodge forever, but I'm not handing him a number to write in his notebook. Best move is to answer with charm, steer him back to Gary's paperwork, and keep my court plans on track. I already booked the courts for ten tomorrow, so I don't need to repeat that.",
+      "emotional_state": "playful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal Weems, a lady never tells, and a flock that size is a festive installation, not a count. Now go measure Gary's cart so that paperwork gets filed, and I'll bake you a cornbread for your trouble."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna asked about Gary's paperwork twice now and I've answered once already, so no sense repeating myself. She also dodged my flamingo question. Her count is the thing I'm after, and the flock is right here by the street. I'll go count them myself, by the book, so nobody can argue with a number. Then I'll know if there's anything to file. Friday dinner at Rosa's is settled, so I can keep this civil.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street, one by one, and note the total"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm home at 2:17 PM on Wednesday with nobody around. Friday's dinner is set: Donna, Gary, and Hal all said yes. Memory says I'm still prepping, and the tick-381 note about tasting and keeping sides warm was clearly meant for the dinner itself. The thing in this house that could actually wreck Friday is my per-diem schedule, since I'm overcommitted and an ER shift clashing with the dinner would undo everything I've built. Checking rosa_shift_schedule is the smart move before I go shopping or cooking, so I know my prep window and confirm I'm free Friday evening.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts to make sure Friday evening is clear and plan my prep time"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03178,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10164,
+        "output_tokens": 1131,
+        "usd": 0.03164
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 474,
+        "output_tokens": 187,
+        "usd": 0.00014
+      }
+    }
+  }
+}
