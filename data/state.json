@@ -1,34 +1,30 @@
 {
-  "tick": 452,
-  "time": "2026-11-11T12:17",
+  "tick": 453,
+  "time": "2026-11-11T13:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
     "hal": "magnolia_loop",
-    "rosa": "magnolia_loop"
+    "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [],
     "donna": [
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and note the number in my notebook",
-      "Rosa said to Hal: “Hal, good timing. Friday dinner's pinned on the board now, six o'clock at my place, roast pork and flan. Just bring yourself and that appetite.”"
+      "Hal said to Donna: “Not filed yet, Donna. I want his measurements checked first so nobody gets a surprise. And I saw you counting flamingos. What number did you land on?”",
+      "Rosa headed to Rosa's House."
     ],
     "hal": [
-      "Donna said to Hal: “Hal, good timing. Is Gary's paperwork filed yet? I want him on the court tomorrow before Rosa's dinner, and I've got my two hours ready to book.”",
-      "Rosa said to Hal: “Hal, good timing. Friday dinner's pinned on the board now, six o'clock at my place, roast pork and flan. Just bring yourself and that appetite.”"
+      "Donna said to Hal: “Counting my flamingos, Hal? Don't you dare write them up under L-02, that flock is festive, not excessive. Now when you're done there, let me know about Gary's paperwork, I've got a court to book.”",
+      "Rosa headed to Rosa's House."
     ],
     "rosa": [
-      "Donna said to Hal: “Hal, good timing. Is Gary's paperwork filed yet? I want him on the court tomorrow before Rosa's dinner, and I've got my two hours ready to book.”",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and note the number in my notebook"
+      "Donna said to Hal: “Counting my flamingos, Hal? Don't you dare write them up under L-02, that flock is festive, not excessive. Now when you're done there, let me know about Gary's paperwork, I've got a court to book.”",
+      "Hal said to Donna: “Not filed yet, Donna. I want his measurements checked first so nobody gets a surprise. And I saw you counting flamingos. What number did you land on?”",
+      "You arrived at Rosa's House."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 350,
-        "text": "I said to Hal: “Understood, Hal. Street-side view, every measurement marked. I'll redo the sketch tonight and bring it by tomorrow. Thanks for the sharp eye.”",
-        "importance": 5
-      },
       {
         "tick": 350,
         "text": "Hal said to Rosa: “Saw your note, Rosa. Friday evening, I'll be there on time, because I'm always on time. Tell me what to bring and I'll bring it.”",
@@ -1023,24 +1019,14 @@
         "tick": 451,
         "text": "I (gary golf cart): Power up the mounted LED strip and speaker at low volume, inside the garage, and check everything holds",
         "importance": 5
+      },
+      {
+        "tick": 452,
+        "text": "I (gary toolbox): Put the soldering gear away and grab zip ties to tidy the wiring under the cart seat",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 363,
-        "text": "Rosa said to Gary: “Well, look at this, all three of you on one street! I'm off to the store for Friday's dinner, so tell me now if anybody can't eat something. Gary, your cornbread's got a spot at my table, and I'm building the main dish around it.”",
-        "importance": 4
-      },
-      {
-        "tick": 364,
-        "text": "I said to Gary: “Gary, once Hal's done with your paperwork, let's get you on the court tomorrow before Rosa's dinner. I'll book two hours, that's the limit, and we'll start with the basics so you can partner with me for the ladder.”",
-        "importance": 6
-      },
-      {
-        "tick": 364,
-        "text": "Gary said to Rosa: “Nothing I can't eat, Rosa, so shop however you like. I'll have the cornbread there Friday, still warm if I time it right.”",
-        "importance": 6
-      },
       {
         "tick": 364,
         "text": "Hal said to Gary: “I've read it against L-01, Gary, and it's clean: lights, sound, cutoff, all in order. File it as written. And Rosa, no allergies here, I'll eat whatever's put in front of me.”",
@@ -2025,24 +2011,24 @@
         "tick": 451,
         "text": "Rosa said to Hal: “Hal, good timing. Friday dinner's pinned on the board now, six o'clock at my place, roast pork and flan. Just bring yourself and that appetite.”",
         "importance": 5
-      }
-    ],
-    "hal": [
-      {
-        "tick": 355,
-        "text": "Rosa said to Donna: “Dessert is welcome, Donna, I'll find the room. And eleven flamingos, all within the law? Hal's going to want a recount.”",
-        "importance": 5
       },
       {
-        "tick": 356,
-        "text": "I (hal binoculars): Scan Donna's front yard and count the flamingos visible from the street",
+        "tick": 452,
+        "text": "I said to Hal: “Counting my flamingos, Hal? Don't you dare write them up under L-02, that flock is festive, not excessive. Now when you're done there, let me know about Gary's paperwork, I've got a court to book.”",
         "importance": 4
       },
       {
-        "tick": 357,
-        "text": "I (hal violation notebook): Log my flamingo count and the date, noting Gary's paperwork looks in order",
-        "importance": 5
+        "tick": 452,
+        "text": "Hal said to Donna: “Not filed yet, Donna. I want his measurements checked first so nobody gets a surprise. And I saw you counting flamingos. What number did you land on?”",
+        "importance": 4
       },
+      {
+        "tick": 452,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 4
+      }
+    ],
+    "hal": [
       {
         "tick": 358,
         "text": "I (hal porch chair): Settle into the porch chair with my coffee and watch Magnolia Loop",
@@ -3027,29 +3013,24 @@
         "tick": 451,
         "text": "Rosa said to Hal: “Hal, good timing. Friday dinner's pinned on the board now, six o'clock at my place, roast pork and flan. Just bring yourself and that appetite.”",
         "importance": 5
+      },
+      {
+        "tick": 452,
+        "text": "I said to Donna: “Not filed yet, Donna. I want his measurements checked first so nobody gets a surprise. And I saw you counting flamingos. What number did you land on?”",
+        "importance": 5
+      },
+      {
+        "tick": 452,
+        "text": "Donna said to Hal: “Counting my flamingos, Hal? Don't you dare write them up under L-02, that flock is festive, not excessive. Now when you're done there, let me know about Gary's paperwork, I've got a court to book.”",
+        "importance": 5
+      },
+      {
+        "tick": 452,
+        "text": "Rosa headed to Rosa's House.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 354,
-        "text": "I said to Gary: “Good to see all three of you out here together. Friday at six, my place, good plates are already out. Gary, you just handle the cornbread, and finish that form with Hal so you can relax and eat.”",
-        "importance": 5
-      },
-      {
-        "tick": 354,
-        "text": "Gary said to Hal: “Here you go, Hal, form's right out of my pocket. Lights are the LED strip along the roof rail, speakers go under the rear seat, and I'm putting the ten o'clock cutoff in writing, just like you said.”",
-        "importance": 5
-      },
-      {
-        "tick": 354,
-        "text": "Donna said to Rosa: “Rosa, I'll be there Friday at six, and I'll bring dessert whether you want it or not. Tell Hal my flamingo count is eleven, and every one of them is within the law.”",
-        "importance": 5
-      },
-      {
-        "tick": 354,
-        "text": "Hal said to Gary: “Alright, Gary, let's see that form. Hand it over and tell me exactly how those lights and speakers are mounted, and we'll write your ten o'clock cutoff right on the page. Do it right and the committee won't have a thing to grumble about.”",
-        "importance": 5
-      },
       {
         "tick": 355,
         "text": "I said to Donna: “Dessert is welcome, Donna, I'll find the room. And eleven flamingos, all within the law? Hal's going to want a recount.”",
@@ -4029,6 +4010,26 @@
         "tick": 451,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and note the number in my notebook",
         "importance": 5
+      },
+      {
+        "tick": 452,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 452,
+        "text": "Donna said to Hal: “Counting my flamingos, Hal? Don't you dare write them up under L-02, that flock is festive, not excessive. Now when you're done there, let me know about Gary's paperwork, I've got a court to book.”",
+        "importance": 4
+      },
+      {
+        "tick": 452,
+        "text": "Hal said to Donna: “Not filed yet, Donna. I want his measurements checked first so nobody gets a surprise. And I saw you counting flamingos. What number did you land on?”",
+        "importance": 4
+      },
+      {
+        "tick": 452,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
       }
     ]
   },
@@ -4076,9 +4077,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "upbeat",
-    "hal": "watchful",
-    "rosa": "warm"
+    "donna": "chipper",
+    "hal": "gruff but fair",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4227,10 +4228,19 @@
         "Donna said to Hal: “Hal, good timing. Is Gary's paperwork filed yet? I want him on the court tomorrow before Rosa's dinner, and I've got my two hours ready to book.”",
         "Rosa said to Hal: “Hal, good timing. Friday dinner's pinned on the board now, six o'clock at my place, roast pork and flan. Just bring yourself and that appetite.”"
       ]
+    },
+    {
+      "tick": 452,
+      "time": "Wednesday, November 11, 1:17 PM",
+      "story": "Gary is back at his house, setting aside the soldering iron to tidy the wiring under his golf cart seat with a handful of zip ties. Out on Magnolia Loop, Donna is in good spirits, teasing Hal about his clipboard and insisting that her flamingo flock is festive rather than excessive, while Hal, gruff but fair, wants Gary's measurements checked before any paperwork gets filed. Rosa, content as ever, heads home to her own house as the breezy, clear afternoon rolls on.",
+      "dialogue": [
+        "Donna said to Hal: “Counting my flamingos, Hal? Don't you dare write them up under L-02, that flock is festive, not excessive. Now when you're done there, let me know about Gary's paperwork, I've got a court to book.”",
+        "Hal said to Donna: “Not filed yet, Donna. I want his measurements checked first so nobody gets a surprise. And I saw you counting flamingos. What number did you land on?”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 14.21317,
+    "total_usd": 14.24528,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4353,13 +4363,12 @@
         "usd": 0.47173
       },
       "2026-11-11": {
-        "ticks": 6,
-        "usd": 0.18445
+        "ticks": 7,
+        "usd": 0.21656
       }
     }
   },
   "recent_tick_costs": [
-    0.03092,
     0.03055,
     0.03094,
     0.02975,
@@ -4382,7 +4391,8 @@
     0.03104,
     0.02998,
     0.03089,
-    0.03135
+    0.03135,
+    0.03211
   ],
   "fund": {
     "gross_usd": 0.0,
