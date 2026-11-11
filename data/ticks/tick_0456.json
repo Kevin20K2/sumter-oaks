@@ -1,0 +1,117 @@
+{
+  "tick": 456,
+  "simulation_time": "Wednesday, November 11, 5:17 PM",
+  "weather": "Breezy and clear, 81°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "garys_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 5:17 on a breezy, clear Wednesday in Sumter Oaks, Gary is at home, content, promising Donna he'll stretch his knees tonight while Hal measures his golf cart against the review form. Donna is determined to get a cold water bottle into Gary's hands before tomorrow's court time. Meanwhile, Rosa, also content, is over at her house tending the marinating pork and getting the flan custard ready to bake and chill before Friday.",
+  "events": [
+    "Donna (gary fridge): Grab a cold water bottle for Gary to set him up for tomorrow's court time",
+    "Hal (gary golf cart): Check the exterior modifications against his review form, tape measure in hand",
+    "Rosa (rosa kitchen): Check the marinating pork, then start the flan custard so it can bake and chill before Friday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna's got my paddle and wants me stretching tonight; Hal is measuring the cart for the review form. The form's already filed with the ten o'clock cutoff, so there's nothing more to chase at Town Hall. Best move is to answer Donna's nudge, thank Hal for measuring, and keep it short. Then I can get back to the cart wiring and feel useful.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Alright, alright, Donna, I'll stretch the knees tonight, promise. Hal, measure away, the form's already filed so you're just double-checking my work."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I already told Gary about the paddle and the knee stretches last tick, and he and Hal are busy measuring the cart for the review form, so I shouldn't repeat myself or pester him. The match is tomorrow at ten and I want him actually ready. Better to give him something concrete to do with his body. The fridge is right here, so I can grab him a cold water to keep him hydrated for tomorrow, and it's a generous little gesture that keeps me at the center of things.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_fridge",
+          "content": "Grab a cold water bottle for Gary to set him up for tomorrow's court time"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm standing in Gary's garage with his cart right in front of me. He's filed the review form and tested the speaker at low volume, and I'm here to check the measurements by the book before the committee does. My own memory says to get the numbers checked and hope nothing turns up wrong, and I'm already going to Rosa's for dinner with these two on Friday. A tape measure beats an accusation. Gary's been square with me so far, so I'll inspect it properly and let the numbers do the talking. The flamingos can wait for the Donna conversation.",
+      "emotional_state": "dutiful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Check the exterior modifications against his review form, tape measure in hand"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm home, alone, with the schedule already checked and the pork marinade started last tick. Friday is two days out, so there's no need to chase anyone; all three have said yes. The flan needs time to bake and cool, so I'll tend the kitchen and keep my prep ahead of schedule instead of fussing over my guests.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check the marinating pork, then start the flan custard so it can bake and chill before Friday"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03114,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10016,
+        "output_tokens": 1039,
+        "usd": 0.03042
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4214,
+        "output_tokens": 605,
+        "usd": 0.00072
+      }
+    }
+  }
+}
