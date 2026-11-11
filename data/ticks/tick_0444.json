@@ -1,0 +1,116 @@
+{
+  "tick": 444,
+  "simulation_time": "Tuesday, November 10, 8:17 PM",
+  "weather": "Partly cloudy, 76°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "garys_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 8:17 on a mild Tuesday evening in Sumter Oaks, Gary and Donna wrap up a pleasant session at the Rec Center, with Gary bowing out early to spare his knees and Donna cheerfully promising a longer game before Thursday's match. Gary heads home to tinker with his golf cart ahead of the parade, where Hal is dutifully at the workbench comparing Gary's cart measurements against his own. Over on Magnolia Loop, Rosa is making her way home, content as the evening settles in.",
+  "events": [
+    "Hal (gary workbench): Look over Gary's review form and compare his listed cart measurements to mine",
+    "Rosa headed to Rosa's House."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna and I are on court one doing slow dinking drills, and it's going fine. My knees are holding up. My real goal is the golf cart parade build, and I filed that request back at tick 369, so I should check on it. It's getting late too, and I promised to haul a chair to Rosa's Friday. Let me wrap up the drill with a thank-you, keep it short, and head out to do something with the cart.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "That's plenty for these knees tonight, partner. Thanks for going easy on me. I'm heading home to tinker with the cart before the parade."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's past 8 PM and Gary and I have been dinking on court one for a couple of ticks. His knees are holding up, and the pace is gentle, which is exactly what I wanted. I've already put in the drills, so now I should give him some encouragement, check on those knees, and lock in tomorrow's practice before Thursday's match. No need to repeat the invitation since he already said yes. Keep it short and warm, then let him rest.",
+      "emotional_state": "optimistic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Gary, look at that, you're a natural at the kitchen line! How're the knees holding up? Let's call it a night after a few more, and we'll do a longer session tomorrow before Thursday's match."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm standing in Gary's house with his cart on hand. At tick 443 I measured the cart's exterior modifications against the review form, so the thing left is the paperwork itself. My original plan was to report him, but I've since decided I want him to file on time so Tuesday goes smoothly, and Rosa's table Friday will be a lot easier with no bad blood. The workbench is the likeliest place for his form, so I'll check it for the filing and see whether the measurements match before the committee does. It's after 8 PM and nobody is around, so I'll do it quietly and then decide what's left to do.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Look over Gary's review form and compare his listed cart measurements to mine"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's past 8 PM, I'm alone on Magnolia Loop, and I already pinned the dinner note at the bulletin board last tick. All three neighbors have said yes, so I don't need to chase anyone or repeat invitations. The sensible thing is to head home and start prepping for Friday: marinating the pork, checking the flan, counting chairs. That's what actually moves my goal forward.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading home to start prepping for Friday's dinner: marinade for the pork, flan, and counting chairs."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03036,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9565,
+        "output_tokens": 1110,
+        "usd": 0.03023
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 452,
+        "output_tokens": 177,
+        "usd": 0.00013
+      }
+    }
+  }
+}
