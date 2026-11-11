@@ -1,29 +1,28 @@
 {
-  "tick": 450,
-  "time": "2026-11-11T10:17",
+  "tick": 451,
+  "time": "2026-11-11T11:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
-    "hal": "hals_house",
+    "hal": "magnolia_loop",
     "rosa": "magnolia_loop"
   },
   "perceptions": {
     "gary": [],
     "donna": [
+      "Rosa said to Donna: “Morning, Donna! I just pinned the Friday dinner note on the board, so now it's official. Bring those deviled eggs and come hungry, we'll eat at six.”",
+      "Hal just arrived."
+    ],
+    "hal": [
       "You arrived at Magnolia Loop (the street)."
     ],
-    "hal": [],
     "rosa": [
-      "Donna just arrived."
+      "Donna said to Rosa: “Rosa, there you are! I'm counting on that Friday pork dinner, and I'll drag Gary along once I've got him moving on the court. Anything I can bring besides my appetite?”",
+      "Hal just arrived."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 349,
-        "text": "Hal said to Gary: “Good, you held it back. Since the lights and speaker mounts show from the street, L-01 applies, so the sketch must show them from the street side with every measurement marked. Fix that and it's ready to file. And Rosa's pork Friday suits me fine, I'll be there.”",
-        "importance": 6
-      },
       {
         "tick": 349,
         "text": "Rosa (street bulletin board): Pin up a note: Welcome dinner at Rosa's, Friday evening, pork and good plates. Gary, Hal, Donna, all three of you, come hungry.",
@@ -1018,24 +1017,14 @@
         "tick": 449,
         "text": "I (gary workbench): Test the finished LED strip and speaker wiring at low volume, check each connection",
         "importance": 5
+      },
+      {
+        "tick": 450,
+        "text": "I (gary golf cart): Mount the tested LED strip and speaker on the cart in the garage and check the fit, no street exposure",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 362,
-        "text": "Gary said to Hal: “Hal, when you two have the flamingos sorted, I've got the cart paperwork right here. Lights and the sound system, with the ten o'clock cutoff written in. Would you give it a once-over before I file it for review?”",
-        "importance": 5
-      },
-      {
-        "tick": 362,
-        "text": "Hal said to Gary: “Let's see that paperwork now, Gary. Anything visible from the street needs approval under L-01, so I want every modification listed before it goes to the committee. And I'll witness the match tomorrow, but the courts are two hours max.”",
-        "importance": 5
-      },
-      {
-        "tick": 362,
-        "text": "Rosa just arrived.",
-        "importance": 5
-      },
       {
         "tick": 363,
         "text": "I (donna flamingo flock): Move the extra flamingos around back so only three show from the street",
@@ -2020,19 +2009,24 @@
         "tick": 449,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 450,
+        "text": "I said to Rosa: “Rosa, there you are! I'm counting on that Friday pork dinner, and I'll drag Gary along once I've got him moving on the court. Anything I can bring besides my appetite?”",
+        "importance": 4
+      },
+      {
+        "tick": 450,
+        "text": "Rosa said to Donna: “Morning, Donna! I just pinned the Friday dinner note on the board, so now it's official. Bring those deviled eggs and come hungry, we'll eat at six.”",
+        "importance": 4
+      },
+      {
+        "tick": 450,
+        "text": "Hal just arrived.",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 354,
-        "text": "Donna said to Rosa: “Rosa, I'll be there Friday at six, and I'll bring dessert whether you want it or not. Tell Hal my flamingo count is eleven, and every one of them is within the law.”",
-        "importance": 5
-      },
-      {
-        "tick": 354,
-        "text": "Rosa said to Gary: “Good to see all three of you out here together. Friday at six, my place, good plates are already out. Gary, you just handle the cornbread, and finish that form with Hal so you can relax and eat.”",
-        "importance": 5
-      },
       {
         "tick": 355,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street myself and jot the tally in my notebook",
@@ -3022,24 +3016,19 @@
         "tick": 449,
         "text": "I (hal binoculars): Glass the street one last time to confirm the flamingo count and cart measurements",
         "importance": 4
+      },
+      {
+        "tick": 450,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 450,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 352,
-        "text": "Donna said to Rosa: “Rosa, yes, put me down for Friday, and I'll bring a dessert so you don't have to lift a finger. Gary, Thursday morning for third-shot drops, and Hal, we'll count my flamingos right after, fair and square.”",
-        "importance": 6
-      },
-      {
-        "tick": 352,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street, one by one, and note the tally in my notebook",
-        "importance": 6
-      },
-      {
-        "tick": 353,
-        "text": "I waited: puttering around Magnolia Loop (the street)",
-        "importance": 4
-      },
       {
         "tick": 353,
         "text": "Gary said to Hal: “Hal, when you finish with the flamingos, I've got the cart form in my jacket pocket whenever you're ready. I'd like it filed for Architectural Review before the parade, since L-01 says I can't touch the lights or speakers without it.”",
@@ -4024,6 +4013,21 @@
         "tick": 449,
         "text": "Donna just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 450,
+        "text": "I said to Donna: “Morning, Donna! I just pinned the Friday dinner note on the board, so now it's official. Bring those deviled eggs and come hungry, we'll eat at six.”",
+        "importance": 4
+      },
+      {
+        "tick": 450,
+        "text": "Donna said to Rosa: “Rosa, there you are! I'm counting on that Friday pork dinner, and I'll drag Gary along once I've got him moving on the court. Anything I can bring besides my appetite?”",
+        "importance": 4
+      },
+      {
+        "tick": 450,
+        "text": "Hal just arrived.",
+        "importance": 4
       }
     ]
   },
@@ -4071,9 +4075,9 @@
   },
   "emotions": {
     "gary": "focused",
-    "donna": "determined",
-    "hal": "methodical",
-    "rosa": "cheerful"
+    "donna": "upbeat",
+    "hal": "resolute",
+    "rosa": "warm"
   },
   "laws": [
     {
@@ -4204,10 +4208,19 @@
       "time": "Wednesday, November 11, 10:17 AM",
       "story": "At 10:17 on a breezy, clear Wednesday morning in Sumter Oaks, Gary sits at his workbench in his house, carefully testing the finished LED strip and speaker wiring at low volume and checking every connection. Donna is heading out onto Magnolia Loop with fierce determination, while Hal stands at his window with binoculars, methodically counting flamingos and measuring golf carts one last time. Meanwhile, Rosa cheerfully pins a friendly note to the street bulletin board inviting neighbors to Friday dinner, with roast pork and flan on the menu.",
       "dialogue": []
+    },
+    {
+      "tick": 450,
+      "time": "Wednesday, November 11, 11:17 AM",
+      "story": "At 11:17 on a breezy, clear Wednesday, Gary is in his garage fitting an LED strip and speaker onto his golf cart, making sure it sits right before anything goes near the street. Out on Magnolia Loop, Donna has caught up with Rosa to confirm the Friday pork dinner, and Rosa has just pinned the note to the community board, with dinner set for six and deviled eggs requested. Hal is heading out to Magnolia Loop himself, resolute about whatever he has in mind.",
+      "dialogue": [
+        "Donna said to Rosa: “Rosa, there you are! I'm counting on that Friday pork dinner, and I'll drag Gary along once I've got him moving on the court. Anything I can bring besides my appetite?”",
+        "Rosa said to Donna: “Morning, Donna! I just pinned the Friday dinner note on the board, so now it's official. Bring those deviled eggs and come hungry, we'll eat at six.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 14.15093,
+    "total_usd": 14.18182,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4330,13 +4343,12 @@
         "usd": 0.47173
       },
       "2026-11-11": {
-        "ticks": 4,
-        "usd": 0.12221
+        "ticks": 5,
+        "usd": 0.1531
       }
     }
   },
   "recent_tick_costs": [
-    0.03005,
     0.02989,
     0.03092,
     0.03055,
@@ -4359,7 +4371,8 @@
     0.03084,
     0.03035,
     0.03104,
-    0.02998
+    0.02998,
+    0.03089
   ],
   "fund": {
     "gross_usd": 0.0,

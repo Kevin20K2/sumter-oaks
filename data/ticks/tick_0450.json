@@ -1,0 +1,116 @@
+{
+  "tick": 450,
+  "simulation_time": "Wednesday, November 11, 11:17 AM",
+  "weather": "Breezy and clear, 80°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
+    "rosa": "magnolia_loop"
+  },
+  "story": "At 11:17 on a breezy, clear Wednesday, Gary is in his garage fitting an LED strip and speaker onto his golf cart, making sure it sits right before anything goes near the street. Out on Magnolia Loop, Donna has caught up with Rosa to confirm the Friday pork dinner, and Rosa has just pinned the note to the community board, with dinner set for six and deviled eggs requested. Hal is heading out to Magnolia Loop himself, resolute about whatever he has in mind.",
+  "events": [
+    "Gary (gary golf cart): Mount the tested LED strip and speaker on the cart in the garage and check the fit, no street exposure",
+    "Hal headed to Magnolia Loop (the street)."
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I've been testing the LED strip and speaker connections at low volume for a few ticks now. It's 11 AM Wednesday, nothing amplified is a problem under L-03 and I'm indoors anyway. The wiring is done and I did a first low-volume test last tick, so next I should do a proper power-up on the cart itself to check the mounts and make sure nothing shorts. I filed the review request at tick 369, so I need to keep the visible mods off the street until approval comes through. Keeping it all in the garage is the right call. Friday's dinner at Rosa's is coming up too, but that's two days off.",
+      "emotional_state": "focused",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Mount the tested LED strip and speaker on the cart in the garage and check the fit, no street exposure"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just arrived on Magnolia Loop with the ten o'clock session apparently behind or around me, and Rosa is right here in line-of-sight. Rosa keeps inviting me to her Friday dinner, so a quick friendly word is natural and keeps me at the center of things. I haven't spoken to her this tick, and I can fold in a little ladder gossip and mention I'm rounding up Gary for the Thursday match. Short, warm, forward-moving.",
+      "emotional_state": "upbeat",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Rosa, there you are! I'm counting on that Friday pork dinner, and I'll drag Gary along once I've got him moving on the court. Anything I can bring besides my appetite?"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've glassed that street twice now and the count hasn't changed. Notebook's logged, measurements reviewed. Nobody's around, and sitting here peering through binoculars a third time is just stalling. The report goes to the architectural review committee at Town Hall, and I've got a Friday dinner at Rosa's to be civil for. Time to stop gathering evidence and file it properly. I'll head out to Magnolia Loop, the only route from here.",
+      "emotional_state": "resolute",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with my notebook; enough watching from the porch, time to take this report where it can be filed."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Donna just walked up while I'm on Magnolia Loop after pinning the dinner note. She already told me at tick 398 she's bringing deviled eggs, so I don't need to ask again. I'll greet her warmly, point to the note, and confirm Friday timing so I'm not chasing answers. A small tease about the flamingos keeps it neighborly and in line with the L-02 joke between us. Then I can go on with my day.",
+      "emotional_state": "warm",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Morning, Donna! I just pinned the Friday dinner note on the board, so now it's official. Bring those deviled eggs and come hungry, we'll eat at six."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03089,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9525,
+        "output_tokens": 1171,
+        "usd": 0.03076
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 483,
+        "output_tokens": 170,
+        "usd": 0.00013
+      }
+    }
+  }
+}
