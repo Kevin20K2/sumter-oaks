@@ -1,0 +1,118 @@
+{
+  "tick": 446,
+  "simulation_time": "Wednesday, November 11, 7:17 AM",
+  "weather": "Breezy and clear, 77°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a breezy, clear Wednesday morning in Sumter Oaks, Gary is wiring LED lights and a speaker mount in his garage while Donna checks the club calendar for a two-hour court slot to practice with him before Thursday's match. Across the way, Hal is dutifully logging Gary's cart modifications and the flamingo count in Donna's yard into his violation notebook, careful to get every number right. Meanwhile, Rosa is scanning her per-diem shifts to keep Friday afternoon free for cooking, hopeful the day will stay open.",
+  "events": [
+    "Gary (gary workbench): Wire up the LED light strip and speaker mount for the cart, keeping it all in the garage",
+    "Donna (donna club calendar): Check the club calendar for a two-hour court slot today to practice with Gary before Thursday's match",
+    "Hal (hal violation notebook): Log Gary's measured cart modifications and Donna's street-visible flamingo count, accurately",
+    "Rosa (rosa shift schedule): Check my per-diem shifts to make sure Friday afternoon is clear for cooking"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's early morning and I'm at home with the workbench and golf cart right here. I filed the modification request at the architectural review desk back at tick 369, so the paperwork's in motion. Meanwhile, I can keep building. L-04 says holiday lighting is allowed from Thanksgiving on, and it's only November 11th, so I shouldn't run the lights out on the street yet, and it's well before 10 PM so the speaker isn't a quiet-hours issue, but I'll keep everything inside the garage anyway. Best use of this hour is working at the bench, wiring the light strip and speaker mount so the cart is ready to roll the moment approval comes through. Donna should see the finished build once it's done.",
+      "emotional_state": "focused, content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Wire up the LED light strip and speaker mount for the cart, keeping it all in the garage"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's early Wednesday morning, I'm home alone, and Thursday's match is the whole point of this week. Gary's knees were tired last night, so a longer session today needs planning. My club calendar is right here, so I should check what's on my plate and find a court slot that fits within the two-hour reservation limit before the day gets away from me.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check the club calendar for a two-hour court slot today to practice with Gary before Thursday's match"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Morning at home, nobody in sight. My memories say I already measured Gary's cart and compared his form to mine, and Gary is out on Magnolia Loop right now. My stated goal is to report the cart and Donna's flamingos, but I've promised Rosa a peaceful Friday dinner, and Gary's paperwork is nearly ready. The by-the-book thing is to log what I observe properly, not go off half-cocked. The violation notebook is right here. I'll record the measurements and the street-visible flamingo count so whatever goes to the review committee is accurate and fair, then head out to the Loop.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Log Gary's measured cart modifications and Donna's street-visible flamingo count, accurately"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I'm home at 7:17 AM on Wednesday with the shopping list already written and the dinner Friday at 6. Everyone has said yes, the note is pinned on the bulletin board, and nobody is nearby to talk to. The fridge check is done, so the sensible next step is to deal with the one thing that could trip me up: my per-diem shift schedule. If I'm on the floor Friday afternoon, the roast pork and flan have to be planned around it. Better to look now than get surprised on Thursday.",
+      "emotional_state": "focused, hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts to make sure Friday afternoon is clear for cooking"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03084,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9465,
+        "output_tokens": 1177,
+        "usd": 0.0307
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 442,
+        "output_tokens": 192,
+        "usd": 0.00014
+      }
+    }
+  }
+}

@@ -1,34 +1,20 @@
 {
-  "tick": 446,
-  "time": "2026-11-10T21:17",
+  "tick": 447,
+  "time": "2026-11-11T07:17",
   "positions": {
-    "gary": "magnolia_loop",
-    "donna": "rec_center",
-    "hal": "magnolia_loop",
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "Donna (ladder standings board): Study the ladder rankings and note which teams we need to beat before Thursday",
-      "You arrived at Magnolia Loop (the street).",
-      "Hal just arrived."
-    ],
-    "donna": [
-      "Gary headed to Magnolia Loop (the street)."
-    ],
-    "hal": [
-      "You arrived at Magnolia Loop (the street).",
-      "Gary just arrived."
-    ],
+    "gary": [],
+    "donna": [],
+    "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 348,
-        "text": "I said to Hal: “Not filed yet, Hal, I'd rather you go over it first. Here's the form, measurements and sketch of the light and speaker mounts. Tell me what to fix before it goes in.”",
-        "importance": 6
-      },
       {
         "tick": 348,
         "text": "Hal said to Gary: “Sure, hand it over, Gary. I'll check the measurements and that sketch line by line, and we'll fix anything off before it goes to review. Rosa, give me a minute, then I'm all yours.”",
@@ -1023,14 +1009,14 @@
         "tick": 445,
         "text": "Hal just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 446,
+        "text": "I (gary workbench): Wire up the LED light strip and speaker mount for the cart, keeping it all in the garage",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 360,
-        "text": "Hal just arrived.",
-        "importance": 6
-      },
       {
         "tick": 361,
         "text": "I said to Gary: “Cornbread, bless you, Rosa will love it. Now don't dodge me, Gary: ten o'clock tomorrow at the courts, paperwork can wait an hour. Hal, you're our witness.”",
@@ -2025,14 +2011,14 @@
         "tick": 445,
         "text": "Gary headed to Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 446,
+        "text": "I (donna club calendar): Check the club calendar for a two-hour court slot today to practice with Gary before Thursday's match",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 353,
-        "text": "Donna said to Gary: “Gary, before Thursday we need to get you a paddle of your own. Meet me at the rec center at eight tomorrow and I'll walk you through the good ones, my treat on the grip tape.”",
-        "importance": 5
-      },
       {
         "tick": 353,
         "text": "Rosa waited: puttering around Magnolia Loop (the street)",
@@ -3027,14 +3013,14 @@
         "tick": 445,
         "text": "Gary just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 446,
+        "text": "I (hal violation notebook): Log Gary's measured cart modifications and Donna's street-visible flamingo count, accurately",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 351,
-        "text": "I said to Donna: “Donna, perfect timing. I'm making roast pork Friday evening, Gary's bringing cornbread and Hal's coming, and I've got a seat with your name on it. Say yes and I'll even leave the flamingo jokes at the door.”",
-        "importance": 7
-      },
       {
         "tick": 351,
         "text": "Gary said to Donna: “Evening, Donna. Rosa's got a welcome dinner Friday, and I'm bringing cornbread. Any chance you're free for a little pickleball before then? I want to keep working on that third-shot drop.”",
@@ -4029,6 +4015,11 @@
         "tick": 445,
         "text": "I (rosa kitchen): Check pantry and fridge, then write the shopping list for roast pork and flan",
         "importance": 4
+      },
+      {
+        "tick": 446,
+        "text": "I (rosa shift schedule): Check my per-diem shifts to make sure Friday afternoon is clear for cooking",
+        "importance": 6
       }
     ]
   },
@@ -4075,10 +4066,10 @@
     ]
   },
   "emotions": {
-    "gary": "content",
+    "gary": "focused, content",
     "donna": "determined",
-    "hal": "resolute",
-    "rosa": "content"
+    "hal": "dutiful",
+    "rosa": "focused, hopeful"
   },
   "laws": [
     {
@@ -4224,10 +4215,16 @@
       "time": "Tuesday, November 10, 9:17 PM",
       "story": "At 9:17 on a mild Tuesday night in Sumter Oaks, Gary and Hal have both wandered out onto Magnolia Loop, the quiet street curving past the golf cart paths, while Gary remains content and Hal stays resolute about whatever he's set out to do. Over at the Rec Center, Donna is studying the ladder standings board with real determination, sizing up which teams stand between her and a win before Thursday. Meanwhile, Rosa is in her kitchen checking the pantry and fridge, preparing to write a shopping list for roast pork and flan.",
       "dialogue": []
+    },
+    {
+      "tick": 446,
+      "time": "Wednesday, November 11, 7:17 AM",
+      "story": "At 7:17 on a breezy, clear Wednesday morning in Sumter Oaks, Gary is wiring LED lights and a speaker mount in his garage while Donna checks the club calendar for a two-hour court slot to practice with him before Thursday's match. Across the way, Hal is dutifully logging Gary's cart modifications and the flamingo count in Donna's yard into his violation notebook, careful to get every number right. Meanwhile, Rosa is scanning her per-diem shifts to keep Friday afternoon free for cooking, hopeful the day will stay open.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 14.02872,
+    "total_usd": 14.05956,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4348,11 +4345,14 @@
       "2026-11-10": {
         "ticks": 15,
         "usd": 0.47173
+      },
+      "2026-11-11": {
+        "ticks": 1,
+        "usd": 0.03084
       }
     }
   },
   "recent_tick_costs": [
-    0.03366,
     0.03214,
     0.03244,
     0.03082,
@@ -4375,7 +4375,8 @@
     0.03164,
     0.03039,
     0.03036,
-    0.02962
+    0.02962,
+    0.03084
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4423,7 +4424,7 @@
     "test_mode": false,
     "level": "fair"
   },
-  "last_tick_date": "2026-11-10",
+  "last_tick_date": "2026-11-11",
   "calendar_fired": [
     "halloween-flyer",
     "halloween-reminder",
