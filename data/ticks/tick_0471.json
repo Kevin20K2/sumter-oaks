@@ -1,0 +1,117 @@
+{
+  "tick": 471,
+  "simulation_time": "Thursday, November 12, 5:17 PM",
+  "weather": "Partly cloudy, 78°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 5:17 on this mild Thursday in Sumter Oaks, Gary is content on pickleball court one at the Rec Center, tapping soft dinks over the net while Donna cheers him on with the hope of landing ten in a row and getting their names on the ladder board. Across Magnolia Loop, Hal is resolute as he pins a carefully dated notice to the street bulletin board for the architectural review committee about the flamingo count and Gary's cart modifications. Meanwhile, Rosa, feeling hopeful, is at home checking her shift schedule to make sure Friday evening stays free of per-diem work.",
+  "events": [
+    "Gary (pickleball court 1): Keep tapping soft dinks back over the net, staying behind the kitchen line",
+    "Hal (street bulletin board): Post a dated, factual notice for the architectural review committee on the flamingo count and Gary's cart modifications",
+    "Rosa (rosa shift schedule): Check that Friday evening is clear of per-diem shifts"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm on court one with Donna, tapping soft dinks like she told me to. She just started the rally, so the best thing is to keep it going rather than ask her anything new. My knees feel okay, and it's good to be needed for something besides fixing carts. The review form is filed, so my cart can wait while I get this paddle thing down.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Keep tapping soft dinks back over the net, staying behind the kitchen line"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary is on court one tapping soft shots back to me, so the lesson is going well. I've already coached him on the basics and he's doing exactly what I asked. Time to build on it, keep him encouraged, and nudge him toward committing to the ladder with me. A quick compliment plus a next step (a short rally count, then the doubles pitch) moves things forward without repeating my earlier advice.",
+      "emotional_state": "encouraged",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Look at that, Gary, you're a natural! Let's see if we can string ten dinks in a row, and when you hit it, we're putting our names on that ladder board together."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've counted Donna's flamingos three ticks running and logged it each time. Repeating that won't get me anywhere. Nobody's around to talk to, and my goal is to get the cart mods and flamingo count in front of the architectural review committee. The street bulletin board is where notices go, and the committee should see a dated, factual note. I'll keep it fair and on the record, no theatrics. Dinner at Rosa's is tomorrow, so I'd rather it be filed properly than argued over a casserole.",
+      "emotional_state": "resolute",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Post a dated, factual notice for the architectural review committee on the flamingo count and Gary's cart modifications"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday evening and Friday's dinner is the whole point of my week. The table is set, the plates are out, and the sides are prepped and in the fridge, so the big prep is done. The one thing I haven't confirmed is my per-diem shift schedule for Friday evening. Nothing would be worse than getting called in right when everyone is supposed to be at my table. I'll check it now so I can sleep easy.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check that Friday evening is clear of per-diem shifts"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0299,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9718,
+        "output_tokens": 1031,
+        "usd": 0.02975
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 457,
+        "output_tokens": 204,
+        "usd": 0.00015
+      }
+    }
+  }
+}

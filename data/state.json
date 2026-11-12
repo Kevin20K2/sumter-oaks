@@ -1,6 +1,6 @@
 {
-  "tick": 471,
-  "time": "2026-11-12T16:17",
+  "tick": 472,
+  "time": "2026-11-12T17:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,26 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna (pickleball court 1): Step onto court one and start a slow dinking rally with Gary"
+      "Donna said to Gary: “Look at that, Gary, you're a natural! Let's see if we can string ten dinks in a row, and when you hit it, we're putting our names on that ladder board together.”"
     ],
     "donna": [
-      "Gary (pickleball court 1): Stand behind the line and tap soft rally shots over the net to Donna"
+      "Gary (pickleball court 1): Keep tapping soft dinks back over the net, staying behind the kitchen line"
     ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 363,
-        "text": "Rosa said to Gary: “Well, look at this, all three of you on one street! I'm off to the store for Friday's dinner, so tell me now if anybody can't eat something. Gary, your cornbread's got a spot at my table, and I'm building the main dish around it.”",
-        "importance": 6
-      },
-      {
-        "tick": 364,
-        "text": "I said to Rosa: “Nothing I can't eat, Rosa, so shop however you like. I'll have the cornbread there Friday, still warm if I time it right.”",
-        "importance": 4
-      },
       {
         "tick": 364,
         "text": "Donna said to Gary: “Gary, once Hal's done with your paperwork, let's get you on the court tomorrow before Rosa's dinner. I'll book two hours, that's the limit, and we'll start with the basics so you can partner with me for the ladder.”",
@@ -1018,19 +1008,19 @@
         "tick": 470,
         "text": "Donna (pickleball court 1): Step onto court one and start a slow dinking rally with Gary",
         "importance": 3
+      },
+      {
+        "tick": 471,
+        "text": "I (pickleball court 1): Keep tapping soft dinks back over the net, staying behind the kitchen line",
+        "importance": 3
+      },
+      {
+        "tick": 471,
+        "text": "Donna said to Gary: “Look at that, Gary, you're a natural! Let's see if we can string ten dinks in a row, and when you hit it, we're putting our names on that ladder board together.”",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 384,
-        "text": "Hal said to Donna: “Counted three from the street, Donna. That's the limit and you're on it, so no report from me. Keep it that way and we'll get along fine at Rosa's tonight.”",
-        "importance": 4
-      },
-      {
-        "tick": 385,
-        "text": "I said to Hal: “Bless you, Hal, I knew you were a man of your word. See you at Rosa's tonight, and if you hear anyone say Gary's a natural on the pickleball court, that's me starting the rumor early.”",
-        "importance": 4
-      },
       {
         "tick": 385,
         "text": "Hal (street bulletin board): Read the postings for any Architectural Review notice on Gary's cart",
@@ -2020,14 +2010,19 @@
         "tick": 470,
         "text": "Gary (pickleball court 1): Stand behind the line and tap soft rally shots over the net to Donna",
         "importance": 6
+      },
+      {
+        "tick": 471,
+        "text": "I said to Gary: “Look at that, Gary, you're a natural! Let's see if we can string ten dinks in a row, and when you hit it, we're putting our names on that ladder board together.”",
+        "importance": 6
+      },
+      {
+        "tick": 471,
+        "text": "Gary (pickleball court 1): Keep tapping soft dinks back over the net, staying behind the kitchen line",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 371,
-        "text": "I (hal violation notebook): Review and update notes on Gary's cart paperwork and Donna's flamingo count",
-        "importance": 4
-      },
       {
         "tick": 372,
         "text": "I (hal binoculars): Scan Magnolia Loop for Gary's cart mods and count Donna's flamingos",
@@ -3022,14 +3017,14 @@
         "tick": 470,
         "text": "I (donna flamingo flock): Recount the flamingos visible from the street and log the exact number and time",
         "importance": 5
+      },
+      {
+        "tick": 471,
+        "text": "I (street bulletin board): Post a dated, factual notice for the architectural review committee on the flamingo count and Gary's cart modifications",
+        "importance": 6
       }
     ],
     "rosa": [
-      {
-        "tick": 364,
-        "text": "Donna said to Gary: “Gary, once Hal's done with your paperwork, let's get you on the court tomorrow before Rosa's dinner. I'll book two hours, that's the limit, and we'll start with the basics so you can partner with me for the ladder.”",
-        "importance": 5
-      },
       {
         "tick": 364,
         "text": "Hal said to Gary: “I've read it against L-01, Gary, and it's clean: lights, sound, cutoff, all in order. File it as written. And Rosa, no allergies here, I'll eat whatever's put in front of me.”",
@@ -4024,6 +4019,11 @@
         "tick": 470,
         "text": "I (rosa kitchen): Prep the sides and sauces a day ahead, then pack them in the fridge",
         "importance": 5
+      },
+      {
+        "tick": 471,
+        "text": "I (rosa shift schedule): Check that Friday evening is clear of per-diem shifts",
+        "importance": 6
       }
     ]
   },
@@ -4070,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "cheerful",
-    "donna": "enthusiastic",
-    "hal": "methodical",
-    "rosa": "content"
+    "gary": "content",
+    "donna": "encouraged",
+    "hal": "resolute",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4229,10 +4229,18 @@
       "time": "Thursday, November 12, 4:17 PM",
       "story": "At 4:17 on a warm, partly cloudy Thursday afternoon in Sumter Oaks, Gary and Donna are trading soft dinks across the net on Court One at the Rec Center, with Gary cheerfully tapping shots over and Donna enthusiastically stepping in to match him. Over on Magnolia Loop, Hal is methodically counting the pink flamingos in Donna's flock and jotting down the exact number and time in his notebook. Meanwhile, Rosa is at home in her kitchen, content as ever, prepping sides and sauces a day ahead and packing them neatly into the fridge.",
       "dialogue": []
+    },
+    {
+      "tick": 471,
+      "time": "Thursday, November 12, 5:17 PM",
+      "story": "At 5:17 on this mild Thursday in Sumter Oaks, Gary is content on pickleball court one at the Rec Center, tapping soft dinks over the net while Donna cheers him on with the hope of landing ten in a row and getting their names on the ladder board. Across Magnolia Loop, Hal is resolute as he pins a carefully dated notice to the street bulletin board for the architectural review committee about the flamingo count and Gary's cart modifications. Meanwhile, Rosa, feeling hopeful, is at home checking her shift schedule to make sure Friday evening stays free of per-diem work.",
+      "dialogue": [
+        "Donna said to Gary: “Look at that, Gary, you're a natural! Let's see if we can string ten dinks in a row, and when you hit it, we're putting our names on that ladder board together.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 14.8026,
+    "total_usd": 14.8325,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4359,13 +4367,12 @@
         "usd": 0.46517
       },
       "2026-11-12": {
-        "ticks": 10,
-        "usd": 0.30871
+        "ticks": 11,
+        "usd": 0.33861
       }
     }
   },
   "recent_tick_costs": [
-    0.03035,
     0.03104,
     0.02998,
     0.03089,
@@ -4388,7 +4395,8 @@
     0.03118,
     0.02981,
     0.03075,
-    0.03034
+    0.03034,
+    0.0299
   ],
   "fund": {
     "gross_usd": 0.0,
