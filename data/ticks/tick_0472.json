@@ -1,0 +1,116 @@
+{
+  "tick": 472,
+  "simulation_time": "Thursday, November 12, 6:17 PM",
+  "weather": "Partly cloudy, 78°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At the Sumter Oaks Rec Center, Gary is coaching Donna through a pickleball drill, and she's counting every shot out loud so he can't sneak in a cheat, while she beams with triumph over his steady dinking. Over on Magnolia Loop, Hal stands by with his log, dutifully letting the posted dinner notice do its work before Friday. Meanwhile at her house, Rosa is fussing over the dining table, straightening place settings, adding a small centerpiece, and double-checking the chair count, content as the Thursday evening settles in at 78 degrees.",
+  "events": [
+    "Hal waited: Standing by on Magnolia Loop with my log in hand, letting the posted notice do its work before Friday's dinner.",
+    "Rosa (rosa dining table): Straighten the place settings, add a small centerpiece, and check the chair count one last time"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just said I'm a natural and wants ten dinks in a row so we can put our names on the ladder board. I've been tapping soft shots behind the kitchen line, and it's working. It's 6:17 PM and the parade lights are filed and waiting on Hal's review, so nothing more to do there tonight. Best move is to keep the rally going, say something short, and not repeat what I've already said. Feeling useful and having someone to play with beats an empty house.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Alright, Donna, count 'em out loud so I can't cheat. Soft hands, soft hands, here comes number one."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary's been dinking beautifully for a while and I asked about ten in a row last tick. It's evening now and he's still going, so I shouldn't repeat myself. Better to move this forward: the ladder board is right here, and he's clearly game. Praise him, and nudge him toward the ladder so we actually sign up as partners before the lesson gets away from us.",
+      "emotional_state": "triumphant",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "That's the steadiest dinking I've seen from a first-timer, Gary. Let's swing by the ladder board and pencil in Pruitt and Kowalski before somebody else grabs the spot."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've counted the flamingos three times now and posted a dated notice on the bulletin board. The log is solid and nobody's around to talk to. Friday dinner at Rosa's is tomorrow at six, and I'd rather settle this with Donna face to face than through a committee. Best move now is to take a position near the mailbox kiosk and verify nothing has changed before dinner. Actually, the notice is posted and the facts are recorded, so I'll wait and let things play out rather than keep fiddling with paperwork.",
+      "emotional_state": "dutiful",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Standing by on Magnolia Loop with my log in hand, letting the posted notice do its work before Friday's dinner."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday evening and I've already checked my shift schedule twice in recent ticks, so Friday is clear and there's no reason to keep going back to it. The sides and sauces are prepped, the table is set, and my list is mostly crossed off. What's left is a final look at the dining table to make sure every plate and seat is ready for Donna, Hal, and Gary before the dinner. No one is around, so I'll use the quiet hour to finish up and then get a decent night's rest.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Straighten the place settings, add a small centerpiece, and check the chair count one last time"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03187,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9749,
+        "output_tokens": 1109,
+        "usd": 0.03059
+      },
+      "claude-haiku-5-5": {
+        "calls": 6,
+        "input_tokens": 7256,
+        "output_tokens": 1108,
+        "usd": 0.00128
+      }
+    }
+  }
+}
