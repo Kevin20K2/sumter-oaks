@@ -1,34 +1,26 @@
 {
-  "tick": 463,
-  "time": "2026-11-12T08:17",
+  "tick": 464,
+  "time": "2026-11-12T09:17",
   "positions": {
     "gary": "garys_house",
     "donna": "garys_house",
-    "hal": "hals_house",
+    "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna just arrived."
+      "Donna said to Gary: “Morning, hon! Court's booked for ten, two hours on the dot, and I've got a paddle with your name on it. Grab some water and your good sneakers, and we'll ease those knees into it.”"
     ],
     "donna": [
-      "You arrived at Gary's House."
+      "Gary said to Donna: “Morning, Donna! Coffee's fresh if you want a cup. I'm ready for that paddle lesson whenever you are, my knees are stretched and everything.”"
     ],
-    "hal": [],
+    "hal": [
+      "You arrived at Magnolia Loop (the street)."
+    ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 355,
-        "text": "Donna said to Gary: “Gary, once Hal's got your form squared away, come by my place tomorrow morning and I'll walk you through picking out a paddle. The ladder won't climb itself, and I've already got us a spot on the board.”",
-        "importance": 6
-      },
-      {
-        "tick": 355,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street myself and jot the tally in my notebook",
-        "importance": 6
-      },
       {
         "tick": 355,
         "text": "Rosa said to Donna: “Dessert is welcome, Donna, I'll find the room. And eleven flamingos, all within the law? Hal's going to want a recount.”",
@@ -1018,19 +1010,19 @@
         "tick": 462,
         "text": "Donna just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 463,
+        "text": "I said to Donna: “Morning, Donna! Coffee's fresh if you want a cup. I'm ready for that paddle lesson whenever you are, my knees are stretched and everything.”",
+        "importance": 4
+      },
+      {
+        "tick": 463,
+        "text": "Donna said to Gary: “Morning, hon! Court's booked for ten, two hours on the dot, and I've got a paddle with your name on it. Grab some water and your good sneakers, and we'll ease those knees into it.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 374,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 375,
-        "text": "I said to Hal: “Morning, Hal! Go ahead and count the flamingos from the street. Exactly three, I promise. See you at Rosa's at six, and I'm bringing my deviled eggs.”",
-        "importance": 4
-      },
       {
         "tick": 375,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street against the three-ornament limit",
@@ -2020,19 +2012,19 @@
         "tick": 462,
         "text": "You arrived at Gary's House.",
         "importance": 6
+      },
+      {
+        "tick": 463,
+        "text": "I said to Gary: “Morning, hon! Court's booked for ten, two hours on the dot, and I've got a paddle with your name on it. Grab some water and your good sneakers, and we'll ease those knees into it.”",
+        "importance": 6
+      },
+      {
+        "tick": 463,
+        "text": "Gary said to Donna: “Morning, Donna! Coffee's fresh if you want a cup. I'm ready for that paddle lesson whenever you are, my knees are stretched and everything.”",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 365,
-        "text": "Rosa headed to Town Square.",
-        "importance": 4
-      },
-      {
-        "tick": 366,
-        "text": "I said to Donna: “Evening, Donna. Quick count of that flock for you: the deed restrictions say three visible from the street, and I'm seeing more than three. Trim it down before Friday and I'll leave the clipboard in the drawer.”",
-        "importance": 4
-      },
       {
         "tick": 366,
         "text": "Donna said to Hal: “I heard that, Hal Weems. The flamingos are staying outside where they belong, but you're welcome to come cheer at the courts tomorrow at ten. Gary's first practice, and I'd like a witness.”",
@@ -3022,14 +3014,19 @@
         "tick": 462,
         "text": "I (hal binoculars): Scan Donna's lawn and Gary's cart to verify the street-facing flamingo count and the cart mods",
         "importance": 4
+      },
+      {
+        "tick": 463,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 463,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 362,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 362,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -4024,6 +4021,11 @@
         "tick": 462,
         "text": "I (rosa dining table): Set out plates, napkins, and place settings for four, leaving room for Gary's extra chairs",
         "importance": 4
+      },
+      {
+        "tick": 463,
+        "text": "I (rosa kitchen): Cover the cooled flan, put the prepped rice in the fridge, and jot a quick list of anything left to do before Friday",
+        "importance": 4
       }
     ]
   },
@@ -4070,10 +4072,10 @@
     ]
   },
   "emotions": {
-    "gary": "patient, hopeful",
+    "gary": "cheerful",
     "donna": "eager",
-    "hal": "dutiful",
-    "rosa": "content"
+    "hal": "determined",
+    "rosa": "content, eager"
   },
   "laws": [
     {
@@ -4210,10 +4212,19 @@
       "time": "Thursday, November 12, 8:17 AM",
       "story": "Gary is stretching his knees by the workbench with a fresh cup of coffee, content to let a review settle before he goes to check on it. Donna, eager as ever, is heading down Magnolia Loop toward Gary's House. Across the street, Hal is scanning Donna's lawn and Gary's golf cart through his binoculars, dutifully counting the street-facing flamingos and checking for cart mods. Meanwhile, Rosa is setting out plates, napkins, and place settings for four at her dining table, leaving room for Gary's extra chairs.",
       "dialogue": []
+    },
+    {
+      "tick": 463,
+      "time": "Thursday, November 12, 9:17 AM",
+      "story": "At 9:17 on a partly cloudy Thursday morning in Sumter Oaks, Gary is cheerfully inviting Donna in for coffee at his house, and she's eager to get to their pickleball court booking at ten. Hal is off on Magnolia Loop with a determined stride, while Rosa, content and eager, is tidying her kitchen by covering the cooled flan, refrigerating the prepped rice, and jotting a quick list for Friday.",
+      "dialogue": [
+        "Gary said to Donna: “Morning, Donna! Coffee's fresh if you want a cup. I'm ready for that paddle lesson whenever you are, my knees are stretched and everything.”",
+        "Donna said to Gary: “Morning, hon! Court's booked for ten, two hours on the dot, and I've got a paddle with your name on it. Grab some water and your good sneakers, and we'll ease those knees into it.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 14.55619,
+    "total_usd": 14.58831,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4340,13 +4351,12 @@
         "usd": 0.46517
       },
       "2026-11-12": {
-        "ticks": 2,
-        "usd": 0.0623
+        "ticks": 3,
+        "usd": 0.09442
       }
     }
   },
   "recent_tick_costs": [
-    0.03127,
     0.03135,
     0.03154,
     0.03164,
@@ -4369,7 +4379,8 @@
     0.02978,
     0.03134,
     0.03069,
-    0.03161
+    0.03161,
+    0.03212
   ],
   "fund": {
     "gross_usd": 0.0,

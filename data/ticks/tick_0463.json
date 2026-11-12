@@ -1,0 +1,116 @@
+{
+  "tick": 463,
+  "simulation_time": "Thursday, November 12, 9:17 AM",
+  "weather": "Partly cloudy, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 9:17 on a partly cloudy Thursday morning in Sumter Oaks, Gary is cheerfully inviting Donna in for coffee at his house, and she's eager to get to their pickleball court booking at ten. Hal is off on Magnolia Loop with a determined stride, while Rosa, content and eager, is tidying her kitchen by covering the cooled flan, refrigerating the prepped rice, and jotting a quick list for Friday.",
+  "events": [
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa kitchen): Cover the cooled flan, put the prepped rice in the fridge, and jot a quick list of anything left to do before Friday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just walked in at 9:17 AM and I'm standing by my workbench with my coffee. She offered to walk me through picking out a paddle this morning, so she's probably here for that. The cart's wiring is tidy but the Architectural Review hasn't cleared my request yet, so I'm not going to fire up the lights or the speaker, which means I shouldn't show off the cart's lights until Hal signs off. Best thing is to greet her warmly, take her up on the paddle offer, and keep the cart modifications quiet until they're approved. Being useful and company on a quiet morning suits me fine.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Morning, Donna! Coffee's fresh if you want a cup. I'm ready for that paddle lesson whenever you are, my knees are stretched and everything."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just walked into Gary's house and he's right here. Yesterday I promised him a paddle and a ten o'clock court time, and my calendar check says the court is booked. It's 9:17 now, so we need to get moving soon. I shouldn't re-ask whether we're on; I should tell him the booking is confirmed, that I have a paddle for him, and that we should head out. Keep it warm and bossy, and make sure he thinks about his knees.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Morning, hon! Court's booked for ten, two hours on the dot, and I've got a paddle with your name on it. Grab some water and your good sneakers, and we'll ease those knees into it."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm home on the porch at 9:17 AM, and I've already logged the cart mods and flamingo count and scanned with the binoculars. Nobody's in sight, so there's nothing left to observe from here. My goal is to get this in front of the architectural review committee, and the notebook entries are facts only, so they're ready. Time to stop watching and go act. I'll head out to Magnolia Loop to verify the street-facing count in person and see Gary's cart up close, so the report is airtight. I still mean to be at Rosa's Friday at six, and I'd rather settle this fairly before then than ambush anyone.",
+      "emotional_state": "determined",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out to the street to verify the cart mods and flamingo count firsthand before I file anything."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday morning, the dinner is Friday, and the pork, flan, and beans are already handled. I've checked the shift schedule and set the table for four with room for Gary's chairs. Nobody is nearby to talk to, and I don't want to repeat tasks I've already finished. The one loose end I keep circling back to is that my per-diem schedule is the only thing that could wreck Friday. I checked it last tick, but the table is set, so the next most useful thing is a final look at the kitchen: rice prepped, flan covered, and a quick list of what still needs buying or doing. Staying put and tidying the kitchen keeps me productive until neighbors show up.",
+      "emotional_state": "content, eager",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Cover the cooled flan, put the prepped rice in the fridge, and jot a quick list of anything left to do before Friday"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03212,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9497,
+        "output_tokens": 1301,
+        "usd": 0.032
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 478,
+        "output_tokens": 152,
+        "usd": 0.00012
+      }
+    }
+  }
+}
