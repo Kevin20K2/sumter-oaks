@@ -1,0 +1,116 @@
+{
+  "tick": 466,
+  "simulation_time": "Thursday, November 12, 12:17 PM",
+  "weather": "Partly cloudy, 78°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On Magnolia Loop this Thursday just after noon, the November sun is warm at 78 degrees under scattered clouds, and Gary pauses to ask Hal whether his golf cart request has cleared, since he hopes to get new lights mounted soon. Donna, full of enthusiasm, is steering him toward the rec center for pickleball lessons, promising he'll be dinking like a pro by lunch. Hal, dutifully keeping his log, is counting the flamingos along the street for the entry against L-02, while Rosa, content in her kitchen at home, works through the last preparations for Friday and crosses items off her list.",
+  "events": [
+    "Hal (donna flamingo flock): Count the street-facing flamingos and write the tally in my log against L-02",
+    "Rosa (rosa kitchen): Finish the last prep for Friday, then cross everything off my list"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna and I just got to the street on our way to the courts, and Hal is standing right here. My review form is filed and Hal is the one checking it, so this is a natural moment to ask if he's had a chance to look. Donna's already told me to grab my sneakers and our two hours are ticking, so I'll keep it quick and not hold things up. Hal's answer is the thing standing between me and getting that LED strip and speaker on the cart legally.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Afternoon, Hal. Quick one before Donna marches me off to the courts: any word on my cart request? I'd like to get those lights mounted once it clears."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary and I just arrived on Magnolia Loop, and he said we were already a few minutes into our two hours at the courts. I want him on the court with a paddle, not standing around chatting with Hal. The courts are at the rec center, which connects from here, so the best thing is to say a quick word and lead the way. No sense re-asking about the lesson, he already said he's ready.",
+      "emotional_state": "enthusiastic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Right this way, hon, the rec center's just down the Loop. Stick with me and you'll be dinking like a pro by lunch."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Donna and Gary both just walked up, and I'm standing near the flamingo flock with my tally in progress. I already told Donna at tick 391 to get the street-facing count down to three, and I've counted twice now without a result logged. No point nagging her again with the same line. Best move is to do the job properly: actually count the flock and note it against L-02 so my report holds up under review. Friday's dinner at Rosa's means I'd rather settle this with facts than a fight.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the street-facing flamingos and write the tally in my log against L-02"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday midday and I'm alone at home. The table is set for four, the flan is cooled and covered, and the beans and pork are seasoned. I've checked the shift schedule already, so there's no conflict. The last thing on my list was to see what's left for Friday, and I keep circling the same checks. I should finish the remaining prep, like getting the rice and sides organized so tomorrow isn't a scramble, and then stop fussing. Hal and Donna and Gary are all coming, and I just want the evening to go smoothly.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Finish the last prep for Friday, then cross everything off my list"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03088,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9647,
+        "output_tokens": 1087,
+        "usd": 0.03016
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3658,
+        "output_tokens": 711,
+        "usd": 0.00072
+      }
+    }
+  }
+}
