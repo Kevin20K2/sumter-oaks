@@ -1,6 +1,6 @@
 {
-  "tick": 470,
-  "time": "2026-11-12T15:17",
+  "tick": 471,
+  "time": "2026-11-12T16:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,26 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Perfect, Gary, nobody's slaughtering anybody today. Stand right behind that line, keep the paddle out front, and just tap it softly over the net to me. Soft hands win this game, not strong knees.”"
+      "Donna (pickleball court 1): Step onto court one and start a slow dinking rally with Gary"
     ],
     "donna": [
-      "Gary (pickleball court 1): Grab a paddle and step onto court one to warm up with Donna"
+      "Gary (pickleball court 1): Stand behind the line and tap soft rally shots over the net to Donna"
     ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 363,
-        "text": "Donna (donna flamingo flock): Move the extra flamingos around back so only three show from the street",
-        "importance": 6
-      },
-      {
-        "tick": 363,
-        "text": "Hal said to Gary: “Hand it over, Gary. I'll read every line against L-01 before you file. Donna, I'll hold you to three flamingos from the street, and I'll count on my way home.”",
-        "importance": 6
-      },
       {
         "tick": 363,
         "text": "Rosa said to Gary: “Well, look at this, all three of you on one street! I'm off to the store for Friday's dinner, so tell me now if anybody can't eat something. Gary, your cornbread's got a spot at my table, and I'm building the main dish around it.”",
@@ -1018,19 +1008,19 @@
         "tick": 469,
         "text": "Donna said to Gary: “Perfect, Gary, nobody's slaughtering anybody today. Stand right behind that line, keep the paddle out front, and just tap it softly over the net to me. Soft hands win this game, not strong knees.”",
         "importance": 3
+      },
+      {
+        "tick": 470,
+        "text": "I (pickleball court 1): Stand behind the line and tap soft rally shots over the net to Donna",
+        "importance": 3
+      },
+      {
+        "tick": 470,
+        "text": "Donna (pickleball court 1): Step onto court one and start a slow dinking rally with Gary",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 383,
-        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit of three",
-        "importance": 4
-      },
-      {
-        "tick": 384,
-        "text": "I (donna flamingo flock): Check the flock from the curb and tuck any stray bird behind the hedge so exactly three show",
-        "importance": 4
-      },
       {
         "tick": 384,
         "text": "Hal said to Donna: “Counted three from the street, Donna. That's the limit and you're on it, so no report from me. Keep it that way and we'll get along fine at Rosa's tonight.”",
@@ -2020,14 +2010,19 @@
         "tick": 469,
         "text": "Gary (pickleball court 1): Grab a paddle and step onto court one to warm up with Donna",
         "importance": 6
+      },
+      {
+        "tick": 470,
+        "text": "I (pickleball court 1): Step onto court one and start a slow dinking rally with Gary",
+        "importance": 6
+      },
+      {
+        "tick": 470,
+        "text": "Gary (pickleball court 1): Stand behind the line and tap soft rally shots over the net to Donna",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 370,
-        "text": "Rosa (street bulletin board): Pin a note: Friday dinner at Rosa's, 6 PM sharp. Donna's deviled eggs have mayo and mustard.",
-        "importance": 3
-      },
       {
         "tick": 371,
         "text": "I (hal violation notebook): Review and update notes on Gary's cart paperwork and Donna's flamingo count",
@@ -3022,14 +3017,14 @@
         "tick": 469,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street and write the number in my log",
         "importance": 5
+      },
+      {
+        "tick": 470,
+        "text": "I (donna flamingo flock): Recount the flamingos visible from the street and log the exact number and time",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 364,
-        "text": "Gary said to Rosa: “Nothing I can't eat, Rosa, so shop however you like. I'll have the cornbread there Friday, still warm if I time it right.”",
-        "importance": 5
-      },
       {
         "tick": 364,
         "text": "Donna said to Gary: “Gary, once Hal's done with your paperwork, let's get you on the court tomorrow before Rosa's dinner. I'll book two hours, that's the limit, and we'll start with the basics so you can partner with me for the ladder.”",
@@ -4024,6 +4019,11 @@
         "tick": 469,
         "text": "I (rosa kitchen): Review my list, cross off finished items, and note any last-minute shopping",
         "importance": 4
+      },
+      {
+        "tick": 470,
+        "text": "I (rosa kitchen): Prep the sides and sauces a day ahead, then pack them in the fridge",
+        "importance": 5
       }
     ]
   },
@@ -4071,7 +4071,7 @@
   },
   "emotions": {
     "gary": "cheerful",
-    "donna": "excited",
+    "donna": "enthusiastic",
     "hal": "methodical",
     "rosa": "content"
   },
@@ -4223,10 +4223,16 @@
       "dialogue": [
         "Donna said to Gary: “Perfect, Gary, nobody's slaughtering anybody today. Stand right behind that line, keep the paddle out front, and just tap it softly over the net to me. Soft hands win this game, not strong knees.”"
       ]
+    },
+    {
+      "tick": 470,
+      "time": "Thursday, November 12, 4:17 PM",
+      "story": "At 4:17 on a warm, partly cloudy Thursday afternoon in Sumter Oaks, Gary and Donna are trading soft dinks across the net on Court One at the Rec Center, with Gary cheerfully tapping shots over and Donna enthusiastically stepping in to match him. Over on Magnolia Loop, Hal is methodically counting the pink flamingos in Donna's flock and jotting down the exact number and time in his notebook. Meanwhile, Rosa is at home in her kitchen, content as ever, prepping sides and sauces a day ahead and packing them neatly into the fridge.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 14.77226,
+    "total_usd": 14.8026,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4353,13 +4359,12 @@
         "usd": 0.46517
       },
       "2026-11-12": {
-        "ticks": 9,
-        "usd": 0.27837
+        "ticks": 10,
+        "usd": 0.30871
       }
     }
   },
   "recent_tick_costs": [
-    0.03084,
     0.03035,
     0.03104,
     0.02998,
@@ -4382,7 +4387,8 @@
     0.03088,
     0.03118,
     0.02981,
-    0.03075
+    0.03075,
+    0.03034
   ],
   "fund": {
     "gross_usd": 0.0,

@@ -1,0 +1,118 @@
+{
+  "tick": 470,
+  "simulation_time": "Thursday, November 12, 4:17 PM",
+  "weather": "Partly cloudy, 79°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 4:17 on a warm, partly cloudy Thursday afternoon in Sumter Oaks, Gary and Donna are trading soft dinks across the net on Court One at the Rec Center, with Gary cheerfully tapping shots over and Donna enthusiastically stepping in to match him. Over on Magnolia Loop, Hal is methodically counting the pink flamingos in Donna's flock and jotting down the exact number and time in his notebook. Meanwhile, Rosa is at home in her kitchen, content as ever, prepping sides and sauces a day ahead and packing them neatly into the fridge.",
+  "events": [
+    "Gary (pickleball court 1): Stand behind the line and tap soft rally shots over the net to Donna",
+    "Donna (pickleball court 1): Step onto court one and start a slow dinking rally with Gary",
+    "Hal (donna flamingo flock): Recount the flamingos visible from the street and log the exact number and time",
+    "Rosa (rosa kitchen): Prep the sides and sauces a day ahead, then pack them in the fridge"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna told me to stand behind the line and tap it softly over the net. I'm already on court one with a paddle, so the next thing is to actually play, not talk. I'll interact with the court, tap a few soft shots like she said, and keep my knees loose. The ladder standings can wait; right now I just want to get the hang of the kitchen rule and have some company. Being useful to a neighbor and not embarrassing myself is plenty for this hour.",
+      "emotional_state": "cheerful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Stand behind the line and tap soft rally shots over the net to Donna"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary's on court one with a paddle, warmed up, and I've already given him the basics. Talking more won't help, he needs reps. Time to actually play and get him used to the rhythm. The ladder won't climb itself, and I want him ready for a real doubles match soon.",
+      "emotional_state": "enthusiastic",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Step onto court one and start a slow dinking rally with Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm alone on Magnolia Loop with Donna's flamingo flock right here. I've been logging counts, but my memory shows I already wrote the number down last tick, and I haven't recorded anything about the street bulletin board or the committee filing. Gary and Donna headed to the Rec Center earlier, so no one's around to talk to. Facts need to hold up under review, so I'll do a fresh, careful count of the flamingos visible from the street and log it, then decide whether to file at Town Hall. Keeping it fair and factual keeps the peace for Rosa's dinner.",
+      "emotional_state": "methodical",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Recount the flamingos visible from the street and log the exact number and time"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday afternoon and the dinner is Friday. My memories show I've already set out plates, counted seats, reviewed my list, and checked my shift schedule once this morning. Repeating those would just be spinning my wheels. The one thing I can still use is the kitchen: I'm alone, I have time, and the sides can be prepped a day ahead so Friday isn't a scramble. Last list note said 'note any last-minute shopping', so I'll do a real prep task rather than another check, and keep my evening open for neighbors.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Prep the sides and sauces a day ahead, then pack them in the fridge"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03034,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9804,
+        "output_tokens": 1059,
+        "usd": 0.0302
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 417,
+        "output_tokens": 205,
+        "usd": 0.00014
+      }
+    }
+  }
+}
