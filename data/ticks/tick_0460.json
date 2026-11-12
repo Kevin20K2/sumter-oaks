@@ -1,0 +1,118 @@
+{
+  "tick": 460,
+  "simulation_time": "Wednesday, November 11, 9:17 PM",
+  "weather": "Breezy and clear, 78°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Under a clear, breezy sky at 9:17 on Wednesday night, Gary is tidying his toolbox and putting away the zip ties and wire cutters at home. Donna, at her house, is eager to lock in tomorrow's ten o'clock court booking for two hours and pencil in Gary's lesson. Hal, dutifully walking Magnolia Loop, is counting the street-facing flamingos and noting the tally against L-02. Meanwhile, Rosa is turning her pork one last time, covering her cooled flan, and prepping rice for Friday in her kitchen.",
+  "events": [
+    "Gary (gary toolbox): Put away the zip ties and wire cutters, tidy up the toolbox before bed",
+    "Donna (donna club calendar): Check that the court is booked for tomorrow at ten, two hours max, and pencil in Gary's lesson",
+    "Hal (donna flamingo flock): Count the street-facing flamingos and note the tally against L-02",
+    "Rosa (rosa kitchen): Turn the pork one last time, cover the cooled flan, and prep the rice for Friday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 9:17 PM, and quiet hours start at ten. Hal checked my measurements and said the wiring looks tidy, and my own memories say the rig is tested quietly in the garage. I zip-tied the speaker wiring last tick, so the mount is secure and I don't need to fiddle with it more. The review is still pending, so I'm keeping everything quiet and inside the garage, no street-visible changes and no amplified sound until it clears. What's left is the dull part: a last look at the tools and a tidy bench so nothing's left loose before the review decision. The toolbox is the natural thing to straighten, and then I can stretch my knees like Donna would nag me to.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_toolbox",
+          "content": "Put away the zip ties and wire cutters, tidy up the toolbox before bed"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's past nine on a Wednesday night and I'm home alone. I already packed the spare paddle and balls for Gary's first lesson, and I told him we're on for ten tomorrow. The club calendar is right here, and I should double-check that my two-hour court block is actually reserved so we aren't scrambling, and stay within the L-05 limit. Then I can get to bed early and be fresh for teaching Gary.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Check that the court is booked for tomorrow at ten, two hours max, and pencil in Gary's lesson"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Nine in the evening, nobody around, and the flamingo flock is right here. Donna's been counting too, and I told her three by Friday. I'll tally the street-facing birds myself against L-02 so whatever I do or don't report rests on fact, not hearsay. I'm not looking to blindside anybody before Rosa's dinner, but facts are facts.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the street-facing flamingos and note the tally against L-02"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 9:17 PM on Wednesday and nobody's around. The flan is cooling, the pork is marinating, and the beans are simmering, so most of Friday's dinner is already handled. The rice prep and one last turn of the pork are what's left tonight. I want everything ahead so I'm not scrambling when Hal, Gary, and Donna all sit down at my table. I also should glance at my shift schedule at some point so a per-diem shift doesn't collide with Friday, but the kitchen comes first while things are in motion. Quiet hours aren't an issue since I'm just cooking.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Turn the pork one last time, cover the cooled flan, and prep the rice for Friday"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03134,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9509,
+        "output_tokens": 1160,
+        "usd": 0.03062
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3603,
+        "output_tokens": 721,
+        "usd": 0.00072
+      }
+    }
+  }
+}
