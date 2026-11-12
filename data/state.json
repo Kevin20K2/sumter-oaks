@@ -1,39 +1,24 @@
 {
-  "tick": 462,
-  "time": "2026-11-12T07:17",
+  "tick": 463,
+  "time": "2026-11-12T08:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
+    "donna": "garys_house",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "The cloud over Sumter Oaks has gone thin and grey. It looks worn out."
+      "Donna just arrived."
     ],
     "donna": [
-      "You arrived at Magnolia Loop (the street).",
-      "The cloud over Sumter Oaks has gone thin and grey. It looks worn out."
+      "You arrived at Gary's House."
     ],
-    "hal": [
-      "The cloud over Sumter Oaks has gone thin and grey. It looks worn out."
-    ],
-    "rosa": [
-      "The cloud over Sumter Oaks has gone thin and grey. It looks worn out."
-    ]
+    "hal": [],
+    "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 354,
-        "text": "Rosa said to Gary: “Good to see all three of you out here together. Friday at six, my place, good plates are already out. Gary, you just handle the cornbread, and finish that form with Hal so you can relax and eat.”",
-        "importance": 6
-      },
-      {
-        "tick": 355,
-        "text": "I said to Hal: “Strip's clipped along the roof rail with no drilling, and the speakers sit under the rear seat, so nothing sticks out past the body. Sound cuts at ten sharp, per L-03, and it's written in the margin for you.”",
-        "importance": 6
-      },
       {
         "tick": 355,
         "text": "Donna said to Gary: “Gary, once Hal's got your form squared away, come by my place tomorrow morning and I'll walk you through picking out a paddle. The ladder won't climb itself, and I've already got us a spot on the board.”",
@@ -1023,19 +1008,19 @@
         "tick": 461,
         "text": "I (gary golf cart): Give the LED strip and speaker mount a last once-over, no sound",
         "importance": 4
+      },
+      {
+        "tick": 462,
+        "text": "I waited: Stretching out my knees by the workbench, pouring a coffee, and giving the review a little time before I go check on it.",
+        "importance": 3
+      },
+      {
+        "tick": 462,
+        "text": "Donna just arrived.",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 373,
-        "text": "I (donna club calendar): Confirm Gary's ten o'clock court time and dinner at six",
-        "importance": 4
-      },
-      {
-        "tick": 374,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 6
-      },
       {
         "tick": 374,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -2025,14 +2010,19 @@
         "tick": 461,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 6
+      },
+      {
+        "tick": 462,
+        "text": "I headed to Gary's House.",
+        "importance": 6
+      },
+      {
+        "tick": 462,
+        "text": "You arrived at Gary's House.",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 365,
-        "text": "Donna said to Gary: “Gary, I'll put us down for the courts at ten tomorrow morning, two hours, plenty of time for basics and still home to bake that cornbread before six. Bring the paddle and wear sneakers you don't mind scuffing.”",
-        "importance": 4
-      },
       {
         "tick": 365,
         "text": "Rosa headed to Town Square.",
@@ -3027,14 +3017,14 @@
         "tick": 461,
         "text": "I (hal violation notebook): Log Gary's cart mods under L-01 and the flamingo count under L-02, facts only",
         "importance": 5
+      },
+      {
+        "tick": 462,
+        "text": "I (hal binoculars): Scan Donna's lawn and Gary's cart to verify the street-facing flamingo count and the cart mods",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 361,
-        "text": "I (rosa kitchen): Check the pantry and fridge against my shopping list, then circle what I need to buy today",
-        "importance": 4
-      },
       {
         "tick": 362,
         "text": "I headed to Magnolia Loop (the street).",
@@ -4029,6 +4019,11 @@
         "tick": 461,
         "text": "I (rosa shift schedule): Check the schedule to make sure no per-diem shift conflicts with Friday's dinner",
         "importance": 5
+      },
+      {
+        "tick": 462,
+        "text": "I (rosa dining table): Set out plates, napkins, and place settings for four, leaving room for Gary's extra chairs",
+        "importance": 4
       }
     ]
   },
@@ -4075,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "optimistic",
+    "gary": "patient, hopeful",
     "donna": "eager",
-    "hal": "diligent",
-    "rosa": "determined"
+    "hal": "dutiful",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4209,10 +4204,16 @@
       "time": "Thursday, November 12, 7:17 AM",
       "story": "At 7:17 on a mild Thursday morning in Sumter Oaks, Gary is giving the LED strip and speaker mount on his golf cart one last check, careful to keep the sound off. Down the street on Magnolia Loop, Donna is heading out eagerly for her morning walk, while Hal sits with his violation notebook, logging Gary's cart modifications under L-01 and counting the flamingos under L-02, facts only. Rosa, meanwhile, is determinedly checking her shift schedule to make sure nothing conflicts with Friday's dinner.",
       "dialogue": []
+    },
+    {
+      "tick": 462,
+      "time": "Thursday, November 12, 8:17 AM",
+      "story": "Gary is stretching his knees by the workbench with a fresh cup of coffee, content to let a review settle before he goes to check on it. Donna, eager as ever, is heading down Magnolia Loop toward Gary's House. Across the street, Hal is scanning Donna's lawn and Gary's golf cart through his binoculars, dutifully counting the street-facing flamingos and checking for cart mods. Meanwhile, Rosa is setting out plates, napkins, and place settings for four at her dining table, leaving room for Gary's extra chairs.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 14.52458,
+    "total_usd": 14.55619,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4339,13 +4340,12 @@
         "usd": 0.46517
       },
       "2026-11-12": {
-        "ticks": 1,
-        "usd": 0.03069
+        "ticks": 2,
+        "usd": 0.0623
       }
     }
   },
   "recent_tick_costs": [
-    0.032,
     0.03127,
     0.03135,
     0.03154,
@@ -4368,7 +4368,8 @@
     0.03154,
     0.02978,
     0.03134,
-    0.03069
+    0.03069,
+    0.03161
   ],
   "fund": {
     "gross_usd": 0.0,
