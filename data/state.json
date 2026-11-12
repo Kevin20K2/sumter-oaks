@@ -1,6 +1,6 @@
 {
-  "tick": 468,
-  "time": "2026-11-12T13:17",
+  "tick": 469,
+  "time": "2026-11-12T14:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,35 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna headed to Rec Center.",
-      "Hal said to Gary: “Nothing's cleared yet, Gary. Don't mount a single light until you've got approval in writing, and bring your measurements to the committee so nobody's surprised.”",
-      "You arrived at Rec Center.",
-      "Donna just arrived."
+      "Donna said to Gary: “Well, here we are, Gary! Grab a paddle and meet me at court one. Rule number one is stay out of the kitchen, and I'll explain that part while we warm up.”"
     ],
     "donna": [
-      "Gary headed to Rec Center.",
-      "Hal said to Gary: “Nothing's cleared yet, Gary. Don't mount a single light until you've got approval in writing, and bring your measurements to the committee so nobody's surprised.”",
-      "You arrived at Rec Center.",
-      "Gary just arrived."
+      "Gary said to Donna: “Afternoon, Donna. Knees are stretched and I'm ready to get slaughtered on the court, so go easy on an old HVAC man.”"
     ],
-    "hal": [
-      "Gary headed to Rec Center.",
-      "Donna headed to Rec Center."
-    ],
+    "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 362,
-        "text": "Donna said to Hal: “Hal, you've got a good eye, and I'd rather settle it with you than the committee. I'll tuck the extras around back this afternoon so just three show from the street. Then you can tell your flamingo story at Rosa's with a clear conscience.”",
-        "importance": 5
-      },
-      {
-        "tick": 362,
-        "text": "Hal said to Gary: “Let's see that paperwork now, Gary. Anything visible from the street needs approval under L-01, so I want every modification listed before it goes to the committee. And I'll witness the match tomorrow, but the courts are two hours max.”",
-        "importance": 5
-      },
       {
         "tick": 362,
         "text": "Rosa just arrived.",
@@ -1027,19 +1008,19 @@
         "tick": 467,
         "text": "Donna just arrived.",
         "importance": 3
+      },
+      {
+        "tick": 468,
+        "text": "I said to Donna: “Afternoon, Donna. Knees are stretched and I'm ready to get slaughtered on the court, so go easy on an old HVAC man.”",
+        "importance": 3
+      },
+      {
+        "tick": 468,
+        "text": "Donna said to Gary: “Well, here we are, Gary! Grab a paddle and meet me at court one. Rule number one is stay out of the kitchen, and I'll explain that part while we warm up.”",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 381,
-        "text": "Hal said to Donna: “Donna. I make it more than three birds visible from the street, and L-02 says three. Get it down by Saturday and I'll hold off on the committee.”",
-        "importance": 5
-      },
-      {
-        "tick": 382,
-        "text": "I said to Hal: “Hal, honey, I just moved the extras behind the hedge, so you should be seeing exactly three from here. Count again and tell me if I'm off, I'd hate for the committee to get involved right before Rosa's dinner.”",
-        "importance": 5
-      },
       {
         "tick": 382,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street against the L-02 limit",
@@ -2029,14 +2010,19 @@
         "tick": 467,
         "text": "Gary just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 468,
+        "text": "I said to Gary: “Well, here we are, Gary! Grab a paddle and meet me at court one. Rule number one is stay out of the kitchen, and I'll explain that part while we warm up.”",
+        "importance": 6
+      },
+      {
+        "tick": 468,
+        "text": "Gary said to Donna: “Afternoon, Donna. Knees are stretched and I'm ready to get slaughtered on the court, so go easy on an old HVAC man.”",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 370,
-        "text": "I (street bulletin board): Read the postings for any cart-modification approval or other notices before heading home",
-        "importance": 3
-      },
       {
         "tick": 370,
         "text": "Donna (donna flamingo flock): Pull up the extra flamingos and carry them around back, leaving just three out front",
@@ -3031,14 +3017,14 @@
         "tick": 467,
         "text": "Donna headed to Rec Center.",
         "importance": 5
+      },
+      {
+        "tick": 468,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and log the number",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 363,
-        "text": "Hal said to Gary: “Hand it over, Gary. I'll read every line against L-01 before you file. Donna, I'll hold you to three flamingos from the street, and I'll count on my way home.”",
-        "importance": 6
-      },
       {
         "tick": 364,
         "text": "I said to Hal: “Hal, before you bury yourself in that form, anything you can't or won't eat on Friday? I'm leaving for the store in a minute and I'd rather know now than at the stove.”",
@@ -4033,6 +4019,11 @@
         "tick": 467,
         "text": "I (rosa shift schedule): Check my per-diem shifts to confirm Friday evening is clear",
         "importance": 4
+      },
+      {
+        "tick": 468,
+        "text": "I (rosa dining table): Set out plates and silverware, count seats for everyone",
+        "importance": 5
       }
     ]
   },
@@ -4079,8 +4070,8 @@
     ]
   },
   "emotions": {
-    "gary": "good-natured",
-    "donna": "determined",
+    "gary": "cheerful",
+    "donna": "eager",
     "hal": "dutiful",
     "rosa": "content"
   },
@@ -4215,10 +4206,19 @@
       "dialogue": [
         "Hal said to Gary: “Nothing's cleared yet, Gary. Don't mount a single light until you've got approval in writing, and bring your measurements to the committee so nobody's surprised.”"
       ]
+    },
+    {
+      "tick": 468,
+      "time": "Thursday, November 12, 2:17 PM",
+      "story": "At 2:17 on a warm, partly cloudy Thursday in Sumter Oaks, Gary and Donna are meeting at the Rec Center, where Gary is stretching his knees and Donna is eager to get their pickleball game started at court one. Hal is out on Magnolia Loop, dutifully counting the pink plastic flamingos in Donna's flock so he can log the number. Meanwhile, Rosa is at home setting out plates and silverware on her dining table and counting chairs so everyone has a seat.",
+      "dialogue": [
+        "Gary said to Donna: “Afternoon, Donna. Knees are stretched and I'm ready to get slaughtered on the court, so go easy on an old HVAC man.”",
+        "Donna said to Gary: “Well, here we are, Gary! Grab a paddle and meet me at court one. Rule number one is stay out of the kitchen, and I'll explain that part while we warm up.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 14.7117,
+    "total_usd": 14.74151,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4345,13 +4345,12 @@
         "usd": 0.46517
       },
       "2026-11-12": {
-        "ticks": 7,
-        "usd": 0.21781
+        "ticks": 8,
+        "usd": 0.24762
       }
     }
   },
   "recent_tick_costs": [
-    0.03036,
     0.02962,
     0.03084,
     0.03035,
@@ -4374,7 +4373,8 @@
     0.03142,
     0.02991,
     0.03088,
-    0.03118
+    0.03118,
+    0.02981
   ],
   "fund": {
     "gross_usd": 0.0,
