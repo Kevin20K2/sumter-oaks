@@ -1,25 +1,29 @@
 {
-  "tick": 461,
-  "time": "2026-11-11T21:17",
+  "tick": 462,
+  "time": "2026-11-12T07:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "donnas_house",
-    "hal": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [],
-    "donna": [],
-    "hal": [],
-    "rosa": []
+    "gary": [
+      "The cloud over Sumter Oaks has gone thin and grey. It looks worn out."
+    ],
+    "donna": [
+      "You arrived at Magnolia Loop (the street).",
+      "The cloud over Sumter Oaks has gone thin and grey. It looks worn out."
+    ],
+    "hal": [
+      "The cloud over Sumter Oaks has gone thin and grey. It looks worn out."
+    ],
+    "rosa": [
+      "The cloud over Sumter Oaks has gone thin and grey. It looks worn out."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 354,
-        "text": "Hal said to Gary: “Alright, Gary, let's see that form. Hand it over and tell me exactly how those lights and speakers are mounted, and we'll write your ten o'clock cutoff right on the page. Do it right and the committee won't have a thing to grumble about.”",
-        "importance": 6
-      },
       {
         "tick": 354,
         "text": "Rosa said to Gary: “Good to see all three of you out here together. Friday at six, my place, good plates are already out. Gary, you just handle the cornbread, and finish that form with Hal so you can relax and eat.”",
@@ -1014,19 +1018,14 @@
         "tick": 460,
         "text": "I (gary toolbox): Put away the zip ties and wire cutters, tidy up the toolbox before bed",
         "importance": 3
+      },
+      {
+        "tick": 461,
+        "text": "I (gary golf cart): Give the LED strip and speaker mount a last once-over, no sound",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 371,
-        "text": "I (donna pickleball bag): Pack the bag with the spare paddle, balls, and a water bottle for Gary's practice",
-        "importance": 4
-      },
-      {
-        "tick": 372,
-        "text": "I (donna club calendar): Check the calendar and pencil in Gary's practice, court time, and tonight's dinner at Rosa's",
-        "importance": 4
-      },
       {
         "tick": 373,
         "text": "I (donna club calendar): Confirm Gary's ten o'clock court time and dinner at six",
@@ -2016,14 +2015,19 @@
         "tick": 460,
         "text": "I (donna club calendar): Check that the court is booked for tomorrow at ten, two hours max, and pencil in Gary's lesson",
         "importance": 5
+      },
+      {
+        "tick": 461,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 6
+      },
+      {
+        "tick": 461,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 365,
-        "text": "Gary headed to Town Square.",
-        "importance": 4
-      },
       {
         "tick": 365,
         "text": "Donna said to Gary: “Gary, I'll put us down for the courts at ten tomorrow morning, two hours, plenty of time for basics and still home to bake that cornbread before six. Bring the paddle and wear sneakers you don't mind scuffing.”",
@@ -3018,14 +3022,14 @@
         "tick": 460,
         "text": "I (donna flamingo flock): Count the street-facing flamingos and note the tally against L-02",
         "importance": 4
+      },
+      {
+        "tick": 461,
+        "text": "I (hal violation notebook): Log Gary's cart mods under L-01 and the flamingo count under L-02, facts only",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 360,
-        "text": "I (rosa kitchen): Write out Friday's menu and shopping list, with a main dish that pairs with Gary's cornbread",
-        "importance": 6
-      },
       {
         "tick": 361,
         "text": "I (rosa kitchen): Check the pantry and fridge against my shopping list, then circle what I need to buy today",
@@ -4020,6 +4024,11 @@
         "tick": 460,
         "text": "I (rosa kitchen): Turn the pork one last time, cover the cooled flan, and prep the rice for Friday",
         "importance": 4
+      },
+      {
+        "tick": 461,
+        "text": "I (rosa shift schedule): Check the schedule to make sure no per-diem shift conflicts with Friday's dinner",
+        "importance": 5
       }
     ]
   },
@@ -4066,10 +4075,10 @@
     ]
   },
   "emotions": {
-    "gary": "content",
+    "gary": "optimistic",
     "donna": "eager",
-    "hal": "dutiful",
-    "rosa": "content"
+    "hal": "diligent",
+    "rosa": "determined"
   },
   "laws": [
     {
@@ -4194,9 +4203,16 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 461,
+      "time": "Thursday, November 12, 7:17 AM",
+      "story": "At 7:17 on a mild Thursday morning in Sumter Oaks, Gary is giving the LED strip and speaker mount on his golf cart one last check, careful to keep the sound off. Down the street on Magnolia Loop, Donna is heading out eagerly for her morning walk, while Hal sits with his violation notebook, logging Gary's cart modifications under L-01 and counting the flamingos under L-02, facts only. Rosa, meanwhile, is determinedly checking her shift schedule to make sure nothing conflicts with Friday's dinner.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 14.49389,
+    "total_usd": 14.52458,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4321,11 +4337,14 @@
       "2026-11-11": {
         "ticks": 15,
         "usd": 0.46517
+      },
+      "2026-11-12": {
+        "ticks": 1,
+        "usd": 0.03069
       }
     }
   },
   "recent_tick_costs": [
-    0.03476,
     0.032,
     0.03127,
     0.03135,
@@ -4348,7 +4367,8 @@
     0.03179,
     0.03154,
     0.02978,
-    0.03134
+    0.03134,
+    0.03069
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4394,9 +4414,9 @@
       }
     ],
     "test_mode": false,
-    "level": "fair"
+    "level": "low"
   },
-  "last_tick_date": "2026-11-11",
+  "last_tick_date": "2026-11-12",
   "calendar_fired": [
     "halloween-flyer",
     "halloween-reminder",

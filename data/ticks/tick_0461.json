@@ -1,0 +1,118 @@
+{
+  "tick": 461,
+  "simulation_time": "Thursday, November 12, 7:17 AM",
+  "weather": "Partly cloudy, 74°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a mild Thursday morning in Sumter Oaks, Gary is giving the LED strip and speaker mount on his golf cart one last check, careful to keep the sound off. Down the street on Magnolia Loop, Donna is heading out eagerly for her morning walk, while Hal sits with his violation notebook, logging Gary's cart modifications under L-01 and counting the flamingos under L-02, facts only. Rosa, meanwhile, is determinedly checking her shift schedule to make sure nothing conflicts with Friday's dinner.",
+  "events": [
+    "Gary (gary golf cart): Give the LED strip and speaker mount a last once-over, no sound",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal (hal violation notebook): Log Gary's cart mods under L-01 and the flamingo count under L-02, facts only",
+    "Rosa (rosa shift schedule): Check the schedule to make sure no per-diem shift conflicts with Friday's dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 7:17 AM Thursday and I'm home alone. Hal already measured the cart and said the wiring is tidy, and I finished the zip-tying last night. The only thing left is a quick check of the mount before the review clears. I've been testing quietly in the garage, so I'll keep the speaker off and just make sure everything is solid. L-03 is over at 7 AM so I technically could make noise, but there's no need. Best use of the hour is a final look at the cart so I'm ready for the parade.",
+      "emotional_state": "optimistic",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Give the LED strip and speaker mount a last once-over, no sound"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 7:17 AM Thursday and I've already packed the spare paddle and balls and checked the club calendar, so the prep is done. Gary is meeting me at the courts at ten, and I told him I'd bring a paddle. Nobody's here to talk to, and I shouldn't repeat what I've already done. The sensible next step is to get out of the house and head toward Gary, so I can swing by, remind him about ten o'clock, and make sure his fragile knees and first-timer nerves don't talk him out of it. Magnolia Loop is the only way out.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with the paddle bag to catch Gary and make sure he's ready for our ten o'clock court time."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's a quiet morning and I'm home with no one in sight. My goal is to build a solid case on Gary's cart mods and Donna's flamingos, and I've been out on Magnolia Loop watching both. The binoculars are right here, and the violation notebook is where the tally belongs. Friday dinner at Rosa's is settled, so I'll keep this strictly factual and by the book: record what I saw, note it against L-01 and L-02, and let the review committee decide. No sense stirring things up before supper.",
+      "emotional_state": "diligent",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Log Gary's cart mods under L-01 and the flamingo count under L-02, facts only"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday morning and the pork, flan, and beans are all coming along, so the cooking is mostly done ahead. The one thing I haven't done is check my shift schedule to make sure no per-diem shift crashes into Friday night. I'm overcommitted by nature, and I don't want to find out at 4 PM Friday that I'm on call. Nobody's around to talk to, so this is a good quiet hour to check it before I finish prepping the rice.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check the schedule to make sure no per-diem shift conflicts with Friday's dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03069,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9530,
+        "output_tokens": 1150,
+        "usd": 0.03056
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 404,
+        "output_tokens": 188,
+        "usd": 0.00013
+      }
+    }
+  }
+}
