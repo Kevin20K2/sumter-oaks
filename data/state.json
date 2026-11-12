@@ -1,54 +1,33 @@
 {
-  "tick": 467,
-  "time": "2026-11-12T12:17",
+  "tick": 468,
+  "time": "2026-11-12T13:17",
   "positions": {
-    "gary": "magnolia_loop",
-    "donna": "magnolia_loop",
+    "gary": "rec_center",
+    "donna": "rec_center",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Right this way, hon, the rec center's just down the Loop. Stick with me and you'll be dinking like a pro by lunch.”",
-      "Hal (donna flamingo flock): Count the street-facing flamingos and write the tally in my log against L-02"
+      "Donna headed to Rec Center.",
+      "Hal said to Gary: “Nothing's cleared yet, Gary. Don't mount a single light until you've got approval in writing, and bring your measurements to the committee so nobody's surprised.”",
+      "You arrived at Rec Center.",
+      "Donna just arrived."
     ],
     "donna": [
-      "Gary said to Hal: “Afternoon, Hal. Quick one before Donna marches me off to the courts: any word on my cart request? I'd like to get those lights mounted once it clears.”",
-      "Hal (donna flamingo flock): Count the street-facing flamingos and write the tally in my log against L-02"
+      "Gary headed to Rec Center.",
+      "Hal said to Gary: “Nothing's cleared yet, Gary. Don't mount a single light until you've got approval in writing, and bring your measurements to the committee so nobody's surprised.”",
+      "You arrived at Rec Center.",
+      "Gary just arrived."
     ],
     "hal": [
-      "Gary said to Hal: “Afternoon, Hal. Quick one before Donna marches me off to the courts: any word on my cart request? I'd like to get those lights mounted once it clears.”",
-      "Donna said to Gary: “Right this way, hon, the rec center's just down the Loop. Stick with me and you'll be dinking like a pro by lunch.”"
+      "Gary headed to Rec Center.",
+      "Donna headed to Rec Center."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 360,
-        "text": "Hal just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 361,
-        "text": "I said to Donna: “Ten tomorrow works, Donna. Fair warning, I'll be the one apologizing to the ball. And Hal, good timing, I've got my cart paperwork to run past you when you've got a minute.”",
-        "importance": 5
-      },
-      {
-        "tick": 361,
-        "text": "Donna said to Gary: “Cornbread, bless you, Rosa will love it. Now don't dodge me, Gary: ten o'clock tomorrow at the courts, paperwork can wait an hour. Hal, you're our witness.”",
-        "importance": 5
-      },
-      {
-        "tick": 361,
-        "text": "Hal said to Donna: “Afternoon, Donna. I count more flamingos than the ordinance allows. Three is the limit from the street, and I'd rather settle it neighbor to neighbor than send it to the committee. Can we sort that out before Friday dinner?”",
-        "importance": 5
-      },
-      {
-        "tick": 362,
-        "text": "I said to Hal: “Hal, when you two have the flamingos sorted, I've got the cart paperwork right here. Lights and the sound system, with the ten o'clock cutoff written in. Would you give it a once-over before I file it for review?”",
-        "importance": 5
-      },
       {
         "tick": 362,
         "text": "Donna said to Hal: “Hal, you've got a good eye, and I'd rather settle it with you than the committee. I'll tuck the extras around back this afternoon so just three show from the street. Then you can tell your flamingo story at Rosa's with a clear conscience.”",
@@ -1023,34 +1002,34 @@
         "tick": 466,
         "text": "Hal (donna flamingo flock): Count the street-facing flamingos and write the tally in my log against L-02",
         "importance": 6
+      },
+      {
+        "tick": 467,
+        "text": "I headed to Rec Center.",
+        "importance": 3
+      },
+      {
+        "tick": 467,
+        "text": "Donna headed to Rec Center.",
+        "importance": 3
+      },
+      {
+        "tick": 467,
+        "text": "Hal said to Gary: “Nothing's cleared yet, Gary. Don't mount a single light until you've got approval in writing, and bring your measurements to the committee so nobody's surprised.”",
+        "importance": 3
+      },
+      {
+        "tick": 467,
+        "text": "You arrived at Rec Center.",
+        "importance": 3
+      },
+      {
+        "tick": 467,
+        "text": "Donna just arrived.",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 379,
-        "text": "Gary (gary fridge): Check for buttermilk and eggs for the cornbread I promised Rosa",
-        "importance": 4
-      },
-      {
-        "tick": 380,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 3
-      },
-      {
-        "tick": 380,
-        "text": "Gary said to Donna: “Wouldn't miss it, Donna. I've got a pan of cornbread to bake for Rosa, so I'll see you there. And thanks for nudging Hal, the cart stays put till he signs off.”",
-        "importance": 3
-      },
-      {
-        "tick": 380,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 3
-      },
-      {
-        "tick": 381,
-        "text": "I (donna flamingo flock): Straighten the flock and make sure only three show from the street",
-        "importance": 5
-      },
       {
         "tick": 381,
         "text": "Hal said to Donna: “Donna. I make it more than three birds visible from the street, and L-02 says three. Get it down by Saturday and I'll hold off on the committee.”",
@@ -2025,24 +2004,34 @@
         "tick": 466,
         "text": "Hal (donna flamingo flock): Count the street-facing flamingos and write the tally in my log against L-02",
         "importance": 6
+      },
+      {
+        "tick": 467,
+        "text": "I headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 467,
+        "text": "Gary headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 467,
+        "text": "Hal said to Gary: “Nothing's cleared yet, Gary. Don't mount a single light until you've got approval in writing, and bring your measurements to the committee so nobody's surprised.”",
+        "importance": 5
+      },
+      {
+        "tick": 467,
+        "text": "You arrived at Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 467,
+        "text": "Gary just arrived.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 369,
-        "text": "I said to Rosa: “No allergies here, Rosa. Army cooked for me for thirty years, so my stomach's survived worse. I'll bring a folding chair in case anyone needs a spare.”",
-        "importance": 4
-      },
-      {
-        "tick": 369,
-        "text": "Donna said to Rosa: “No allergies on my end, sweetheart, but my deviled eggs have mayo and mustard in them, so tell anybody who needs to know. I'll bring two dozen, and I'm done with these flamingos tonight, three out front and the rest going out back.”",
-        "importance": 4
-      },
-      {
-        "tick": 369,
-        "text": "Rosa said to Donna: “Wouldn't miss Gary's practice, Donna, I'll be there at ten with coffee. Hal, yes, dinner's on, six sharp, so just bring yourself. Now I'm heading home to start prepping.”",
-        "importance": 4
-      },
       {
         "tick": 370,
         "text": "I (street bulletin board): Read the postings for any cart-modification approval or other notices before heading home",
@@ -3027,14 +3016,24 @@
         "tick": 466,
         "text": "Donna said to Gary: “Right this way, hon, the rec center's just down the Loop. Stick with me and you'll be dinking like a pro by lunch.”",
         "importance": 5
+      },
+      {
+        "tick": 467,
+        "text": "I said to Gary: “Nothing's cleared yet, Gary. Don't mount a single light until you've got approval in writing, and bring your measurements to the committee so nobody's surprised.”",
+        "importance": 5
+      },
+      {
+        "tick": 467,
+        "text": "Gary headed to Rec Center.",
+        "importance": 5
+      },
+      {
+        "tick": 467,
+        "text": "Donna headed to Rec Center.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 363,
-        "text": "Donna (donna flamingo flock): Move the extra flamingos around back so only three show from the street",
-        "importance": 6
-      },
       {
         "tick": 363,
         "text": "Hal said to Gary: “Hand it over, Gary. I'll read every line against L-01 before you file. Donna, I'll hold you to three flamingos from the street, and I'll count on my way home.”",
@@ -4029,6 +4028,11 @@
         "tick": 466,
         "text": "I (rosa kitchen): Finish the last prep for Friday, then cross everything off my list",
         "importance": 4
+      },
+      {
+        "tick": 467,
+        "text": "I (rosa shift schedule): Check my per-diem shifts to confirm Friday evening is clear",
+        "importance": 4
       }
     ]
   },
@@ -4075,8 +4079,8 @@
     ]
   },
   "emotions": {
-    "gary": "hopeful",
-    "donna": "enthusiastic",
+    "gary": "good-natured",
+    "donna": "determined",
     "hal": "dutiful",
     "rosa": "content"
   },
@@ -4203,9 +4207,18 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 467,
+      "time": "Thursday, November 12, 1:17 PM",
+      "story": "On Thursday afternoon in Sumter Oaks, Gary and Donna are both making their way toward the Rec Center along Magnolia Loop under a partly cloudy sky at 79°F. Hal catches up to Gary with a friendly reminder that no holiday lights go up until the committee signs off in writing, and to bring measurements so nobody gets caught off guard. Meanwhile, Rosa is at home checking her shift schedule to make sure Friday evening is free.",
+      "dialogue": [
+        "Hal said to Gary: “Nothing's cleared yet, Gary. Don't mount a single light until you've got approval in writing, and bring your measurements to the committee so nobody's surprised.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 14.68052,
+    "total_usd": 14.7117,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4332,13 +4345,12 @@
         "usd": 0.46517
       },
       "2026-11-12": {
-        "ticks": 6,
-        "usd": 0.18663
+        "ticks": 7,
+        "usd": 0.21781
       }
     }
   },
   "recent_tick_costs": [
-    0.03039,
     0.03036,
     0.02962,
     0.03084,
@@ -4361,7 +4373,8 @@
     0.03212,
     0.03142,
     0.02991,
-    0.03088
+    0.03088,
+    0.03118
   ],
   "fund": {
     "gross_usd": 0.0,

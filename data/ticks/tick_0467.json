@@ -1,0 +1,117 @@
+{
+  "tick": 467,
+  "simulation_time": "Thursday, November 12, 1:17 PM",
+  "weather": "Partly cloudy, 79°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On Thursday afternoon in Sumter Oaks, Gary and Donna are both making their way toward the Rec Center along Magnolia Loop under a partly cloudy sky at 79°F. Hal catches up to Gary with a friendly reminder that no holiday lights go up until the committee signs off in writing, and to bring measurements so nobody gets caught off guard. Meanwhile, Rosa is at home checking her shift schedule to make sure Friday evening is free.",
+  "events": [
+    "Gary headed to Rec Center.",
+    "Donna headed to Rec Center.",
+    "Rosa (rosa shift schedule): Check my per-diem shifts to confirm Friday evening is clear"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna already said she's walking me to the rec center, and I asked Hal about my cart request last tick. Hal's busy counting flamingos for his L-02 log, so he hasn't answered yet, and asking again would just be nagging. The cart lights stay in the garage until the review clears anyway, and I'm not going to mount anything visible from the street before then. Best thing to do is follow Donna down the Loop to the rec center like I said I would. She means well, and my knees could use the stretching.",
+      "emotional_state": "good-natured",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Following Donna down the Loop to the rec center for my paddle lesson, leaving Hal to his flamingo count."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I've already told Gary to follow me to the rec center, and he stopped to ask Hal about his cart request. Hal is busy counting my flamingos again, which is mildly irritating but not worth a fight. I shouldn't repeat my invitation. The ladder is the point, so I should just start walking toward the rec center and Gary will fall in behind me. Moving there also gets me to the courts and the reservation kiosk.",
+      "emotional_state": "determined",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center courts to get Gary started on dinking before the afternoon crowd shows up."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary asked about his cart request, and Donna is steering him off to the courts. I've been fair with him so far. The honest answer is that nothing has cleared yet and the Architectural Review Committee hasn't signed off. I won't have him mounting lights before approval, since that's a L-01 violation. I'll keep it short and even, tell him to wait for the written approval and to have the measurements ready for the committee. That keeps the peace for Rosa's dinner and keeps my log clean. The flamingo count can wait until Donna's back from the courts.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Nothing's cleared yet, Gary. Don't mount a single light until you've got approval in writing, and bring your measurements to the committee so nobody's surprised."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday afternoon and the dinner is Friday. I've been circling the kitchen and dining table for several ticks, finishing prep and checking my list. Plates are set, flan is covered, rice is prepped, and the beans and pork are seasoned. I should check my per-diem shift schedule to make sure no hospital shift collides with Friday night, since I can't host if I'm called in.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Check my per-diem shifts to confirm Friday evening is clear"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03118,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 10036,
+        "output_tokens": 1099,
+        "usd": 0.03106
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 413,
+        "output_tokens": 157,
+        "usd": 0.00012
+      }
+    }
+  }
+}
