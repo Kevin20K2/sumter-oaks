@@ -1,44 +1,31 @@
 {
-  "tick": 465,
-  "time": "2026-11-12T10:17",
+  "tick": 466,
+  "time": "2026-11-12T11:17",
   "positions": {
-    "gary": "garys_house",
-    "donna": "garys_house",
+    "gary": "magnolia_loop",
+    "donna": "magnolia_loop",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Perfect, hon, no coffee for me, we're already a few minutes into our two hours. Grab your sneakers and let's walk over to the courts, I'll show you the kitchen line on the way.”"
+      "Donna headed to Magnolia Loop (the street).",
+      "You arrived at Magnolia Loop (the street).",
+      "Donna just arrived."
     ],
     "donna": [
-      "Gary said to Donna: “Water bottle's in my hand and the good sneakers are on, Donna. Lead the way, we're already a few minutes into our two hours!”"
+      "Gary headed to Magnolia Loop (the street).",
+      "You arrived at Magnolia Loop (the street).",
+      "Gary just arrived."
     ],
-    "hal": [],
+    "hal": [
+      "Gary just arrived.",
+      "Donna just arrived."
+    ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 357,
-        "text": "I (gary workbench): Solder and wire the speaker leads and amp with a ten o'clock cutoff timer",
-        "importance": 5
-      },
-      {
-        "tick": 358,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 358,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 6
-      },
-      {
-        "tick": 359,
-        "text": "I (street bulletin board): Read the board for Architectural Review filing info and deadlines for cart modifications",
-        "importance": 6
-      },
       {
         "tick": 359,
         "text": "Donna just arrived.",
@@ -1018,29 +1005,29 @@
         "tick": 464,
         "text": "Donna said to Gary: “Perfect, hon, no coffee for me, we're already a few minutes into our two hours. Grab your sneakers and let's walk over to the courts, I'll show you the kitchen line on the way.”",
         "importance": 3
+      },
+      {
+        "tick": 465,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 465,
+        "text": "Donna headed to Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 465,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 465,
+        "text": "Donna just arrived.",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 376,
-        "text": "Hal (donna flamingo flock): Count each flamingo visible from the street and record the tally against the L-02 limit",
-        "importance": 4
-      },
-      {
-        "tick": 377,
-        "text": "I headed to Gary's House.",
-        "importance": 5
-      },
-      {
-        "tick": 377,
-        "text": "Hal (donna flamingo flock): Count every flamingo visible from the street and tally it against the L-02 three-ornament limit",
-        "importance": 5
-      },
-      {
-        "tick": 377,
-        "text": "You arrived at Gary's House.",
-        "importance": 5
-      },
       {
         "tick": 378,
         "text": "I said to Gary: “Gary, hon, we're still on for the courts tomorrow at ten, and I'll bring you a paddle. Don't you worry about never having played, I'll have you ready for the ladder in no time.”",
@@ -2020,24 +2007,29 @@
         "tick": 464,
         "text": "Gary said to Donna: “Water bottle's in my hand and the good sneakers are on, Donna. Lead the way, we're already a few minutes into our two hours!”",
         "importance": 6
+      },
+      {
+        "tick": 465,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 465,
+        "text": "Gary headed to Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 465,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 5
+      },
+      {
+        "tick": 465,
+        "text": "Gary just arrived.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 367,
-        "text": "I (donna flamingo flock): Count the flamingos from the curb and note the tally for the committee file",
-        "importance": 4
-      },
-      {
-        "tick": 367,
-        "text": "Donna said to Hal: “Alright, alright, you got me, Hal. I'll have it down to three before Friday dinner, so keep that clipboard in the drawer and save your appetite and your cheering voice for tomorrow.”",
-        "importance": 4
-      },
-      {
-        "tick": 367,
-        "text": "Rosa just arrived.",
-        "importance": 4
-      },
       {
         "tick": 368,
         "text": "I said to Rosa: “Evening, Rosa. Friday dinner still on? I'll be there on time, and I'll leave the flamingo count at the door.”",
@@ -3022,14 +3014,24 @@
         "tick": 464,
         "text": "I (donna flamingo flock): Count the street-facing flamingos and note the tally against L-02",
         "importance": 5
+      },
+      {
+        "tick": 465,
+        "text": "I (donna flamingo flock): Count the street-facing flamingos and note the tally against L-02",
+        "importance": 5
+      },
+      {
+        "tick": 465,
+        "text": "Gary just arrived.",
+        "importance": 5
+      },
+      {
+        "tick": 465,
+        "text": "Donna just arrived.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 363,
-        "text": "I said to Gary: “Well, look at this, all three of you on one street! I'm off to the store for Friday's dinner, so tell me now if anybody can't eat something. Gary, your cornbread's got a spot at my table, and I'm building the main dish around it.”",
-        "importance": 6
-      },
       {
         "tick": 363,
         "text": "Gary said to Hal: “Here you go, Hal. Lights and sound system are both listed, with the ten o'clock cutoff written in, and the lights won't go up before Thanksgiving. Tell me if I've missed anything that shows from the street.”",
@@ -4024,6 +4026,11 @@
         "tick": 464,
         "text": "I (rosa kitchen): Go through my to-do list, check what's left for Friday, and taste the beans and pork seasoning one more time",
         "importance": 4
+      },
+      {
+        "tick": 465,
+        "text": "I (rosa dining table): Add a small centerpiece, check the spacing, and make room for Gary's extra chairs",
+        "importance": 4
       }
     ]
   },
@@ -4070,10 +4077,10 @@
     ]
   },
   "emotions": {
-    "gary": "cheerful",
+    "gary": "eager",
     "donna": "eager",
-    "hal": "focused",
-    "rosa": "hopeful"
+    "hal": "methodical",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4228,10 +4235,16 @@
         "Gary said to Donna: “Water bottle's in my hand and the good sneakers are on, Donna. Lead the way, we're already a few minutes into our two hours!”",
         "Donna said to Gary: “Perfect, hon, no coffee for me, we're already a few minutes into our two hours. Grab your sneakers and let's walk over to the courts, I'll show you the kitchen line on the way.”"
       ]
+    },
+    {
+      "tick": 465,
+      "time": "Thursday, November 12, 11:17 AM",
+      "story": "At 11:17 on a mild, partly cloudy Thursday in Sumter Oaks, Gary and Donna are both heading out to Magnolia Loop with an eager spring in their step. Hal, meanwhile, is on the street methodically counting the flamingos in Donna's flock and noting the tally against L-02. Back at Rosa's house, she is content, adding a small centerpiece to her dining table and making room for Gary's extra chairs.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 14.61973,
+    "total_usd": 14.64964,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4358,13 +4371,12 @@
         "usd": 0.46517
       },
       "2026-11-12": {
-        "ticks": 4,
-        "usd": 0.12584
+        "ticks": 5,
+        "usd": 0.15575
       }
     }
   },
   "recent_tick_costs": [
-    0.03154,
     0.03164,
     0.03039,
     0.03036,
@@ -4387,7 +4399,8 @@
     0.03069,
     0.03161,
     0.03212,
-    0.03142
+    0.03142,
+    0.02991
   ],
   "fund": {
     "gross_usd": 0.0,
