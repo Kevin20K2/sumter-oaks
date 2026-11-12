@@ -1,0 +1,116 @@
+{
+  "tick": 464,
+  "simulation_time": "Thursday, November 12, 10:17 AM",
+  "weather": "Partly cloudy, 76°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "garys_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 10:17 on this partly cloudy Thursday in Sumter Oaks, Gary has his water bottle and good sneakers on at his house, and Donna is waiting to walk him over toward the courts while she points out the kitchen line along the way. Hal is out on Magnolia Loop counting the street-facing flamingos and checking his tally against L-02, while Rosa is at home working through her Friday to-do list and tasting the beans and pork seasoning once more. Everyone is moving on their own errands this morning, with a few minutes already gone from Gary and Donna's two-hour outing.",
+  "events": [
+    "Hal (donna flamingo flock): Count the street-facing flamingos and note the tally against L-02",
+    "Rosa (rosa kitchen): Go through my to-do list, check what's left for Friday, and taste the beans and pork seasoning one more time"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna already said the court is booked for ten, two hours on the dot, and it's 10:17 now, so we're running late. I already told her my knees are stretched, so no need to repeat myself. Time to grab water and head out to the court. The cart review is sitting at the desk and the parade is still a while off, so I can check on it after the lesson. Time to get moving and enjoy some company.",
+      "emotional_state": "cheerful",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Water bottle's in my hand and the good sneakers are on, Donna. Lead the way, we're already a few minutes into our two hours!"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just said he's stretched and ready for the paddle lesson, and I already told him the court is booked for ten, two hours, with a paddle for him. It's 10:17 now, so we're already a bit late and the reservation clock is ticking. No need to repeat the invitation or chat more over coffee. I should move us along: head to the pickleball courts. I'll keep it short, tell him to grab his sneakers and water, and lead the way. Gary can follow.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Perfect, hon, no coffee for me, we're already a few minutes into our two hours. Grab your sneakers and let's walk over to the courts, I'll show you the kitchen line on the way."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop at last, and the flamingo flock is right here. My notebook entry from last tick says to count street-facing birds against L-02, and I'm not filing a thing on a guess. Nobody's within earshot, so no arguing and no speeches. Facts first. If it's over three I report it plain. If it's three or under, I let it lie and keep the peace for Friday at Rosa's.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the street-facing flamingos and note the tally against L-02"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday morning and the flan is cooled and covered, the rice is prepped, the table is set for four with room for Gary's chairs, and I already checked the shift schedule. The memory timeline is a little muddled since Donna said tonight earlier, but my current task list says Friday, so I'll treat the dinner as tomorrow. The one thing I jotted down but haven't done is look over that list of what's left. I have the whole day, nobody's around, so I'll go back through the kitchen, check what still needs doing, and make sure nothing sneaks up on me before the neighbors arrive.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Go through my to-do list, check what's left for Friday, and taste the beans and pork seasoning one more time"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03142,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9760,
+        "output_tokens": 1120,
+        "usd": 0.03072
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4215,
+        "output_tokens": 553,
+        "usd": 0.0007
+      }
+    }
+  }
+}
