@@ -1,40 +1,27 @@
 {
-  "tick": 458,
-  "time": "2026-11-11T18:17",
+  "tick": 459,
+  "time": "2026-11-11T19:17",
   "positions": {
     "gary": "garys_house",
-    "donna": "magnolia_loop",
-    "hal": "garys_house",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna headed to Magnolia Loop (the street).",
-      "Hal said to Gary: “Measurements match your form, Gary. Wiring's tidy, I'll give you that. Keep that speaker off past ten and we won't have a problem.”"
+      "Hal headed to Magnolia Loop (the street)."
     ],
     "donna": [
-      "Gary (gary golf cart): Hold the tape end for Hal and tidy the speaker wiring under the rear seat",
-      "Hal said to Gary: “Measurements match your form, Gary. Wiring's tidy, I'll give you that. Keep that speaker off past ten and we won't have a problem.”",
-      "You arrived at Magnolia Loop (the street)."
+      "You arrived at Donna's House."
     ],
     "hal": [
-      "Gary (gary golf cart): Hold the tape end for Hal and tidy the speaker wiring under the rear seat",
-      "Donna headed to Magnolia Loop (the street)."
+      "Gary (gary golf cart): Double-check the speaker mount under the rear seat and secure the wiring with zip ties",
+      "You arrived at Magnolia Loop (the street)."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 353,
-        "text": "Hal said to Gary: “Bring the form here, Gary, I'll go through it line by line. Describe the lights and speakers exactly as mounted, and put your ten o'clock cutoff in writing. Committee likes it all spelled out.”",
-        "importance": 5
-      },
-      {
-        "tick": 353,
-        "text": "Rosa waited: puttering around Magnolia Loop (the street)",
-        "importance": 5
-      },
       {
         "tick": 354,
         "text": "I said to Hal: “Here you go, Hal, form's right out of my pocket. Lights are the LED strip along the roof rail, speakers go under the rear seat, and I'm putting the ten o'clock cutoff in writing, just like you said.”",
@@ -1024,19 +1011,19 @@
         "tick": 457,
         "text": "Hal said to Gary: “Measurements match your form, Gary. Wiring's tidy, I'll give you that. Keep that speaker off past ten and we won't have a problem.”",
         "importance": 4
-      }
-    ],
-    "donna": [
+      },
       {
-        "tick": 369,
-        "text": "Rosa said to Donna: “Wouldn't miss Gary's practice, Donna, I'll be there at ten with coffee. Hal, yes, dinner's on, six sharp, so just bring yourself. Now I'm heading home to start prepping.”",
+        "tick": 458,
+        "text": "I (gary golf cart): Double-check the speaker mount under the rear seat and secure the wiring with zip ties",
         "importance": 4
       },
       {
-        "tick": 370,
-        "text": "I (donna flamingo flock): Pull up the extra flamingos and carry them around back, leaving just three out front",
-        "importance": 3
-      },
+        "tick": 458,
+        "text": "Hal headed to Magnolia Loop (the street).",
+        "importance": 4
+      }
+    ],
+    "donna": [
       {
         "tick": 370,
         "text": "Hal (street bulletin board): Read the postings for any cart-modification approval or other notices before heading home",
@@ -2026,24 +2013,19 @@
         "tick": 457,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 458,
+        "text": "I headed to Donna's House.",
+        "importance": 5
+      },
+      {
+        "tick": 458,
+        "text": "You arrived at Donna's House.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 364,
-        "text": "I said to Gary: “I've read it against L-01, Gary, and it's clean: lights, sound, cutoff, all in order. File it as written. And Rosa, no allergies here, I'll eat whatever's put in front of me.”",
-        "importance": 5
-      },
-      {
-        "tick": 364,
-        "text": "Gary said to Rosa: “Nothing I can't eat, Rosa, so shop however you like. I'll have the cornbread there Friday, still warm if I time it right.”",
-        "importance": 5
-      },
-      {
-        "tick": 364,
-        "text": "Donna said to Gary: “Gary, once Hal's done with your paperwork, let's get you on the court tomorrow before Rosa's dinner. I'll book two hours, that's the limit, and we'll start with the basics so you can partner with me for the ladder.”",
-        "importance": 5
-      },
       {
         "tick": 364,
         "text": "Rosa said to Hal: “Hal, before you bury yourself in that form, anything you can't or won't eat on Friday? I'm leaving for the store in a minute and I'd rather know now than at the stove.”",
@@ -3028,14 +3010,24 @@
         "tick": 457,
         "text": "Donna headed to Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 458,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 4
+      },
+      {
+        "tick": 458,
+        "text": "Gary (gary golf cart): Double-check the speaker mount under the rear seat and secure the wiring with zip ties",
+        "importance": 4
+      },
+      {
+        "tick": 458,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 357,
-        "text": "I (rosa shift schedule): Check my per-diem shifts to make sure Thursday coffee and Friday night are clear",
-        "importance": 5
-      },
       {
         "tick": 358,
         "text": "I (rosa dining table): Set out the good plates and count chairs for Friday's dinner",
@@ -4030,6 +4022,11 @@
         "tick": 457,
         "text": "I (rosa kitchen): Turn the marinating pork, check the flan, and start prepping the rice and black beans for Friday",
         "importance": 4
+      },
+      {
+        "tick": 458,
+        "text": "I (rosa kitchen): Turn the pork, check the flan, and get the black beans simmering so Friday's rice and beans are mostly done ahead of time",
+        "importance": 5
       }
     ]
   },
@@ -4078,7 +4075,7 @@
   "emotions": {
     "gary": "content",
     "donna": "optimistic",
-    "hal": "satisfied",
+    "hal": "dutiful",
     "rosa": "content"
   },
   "laws": [
@@ -4229,10 +4226,16 @@
       "dialogue": [
         "Hal said to Gary: “Measurements match your form, Gary. Wiring's tidy, I'll give you that. Keep that speaker off past ten and we won't have a problem.”"
       ]
+    },
+    {
+      "tick": 458,
+      "time": "Wednesday, November 11, 7:17 PM",
+      "story": "At 7:17 on this breezy Wednesday evening in Sumter Oaks, Gary is at home double-checking the speaker mount under his golf cart's rear seat and zip-tying the wiring neatly in place. Across the way, Rosa is in her kitchen turning the pork, checking her flan, and simmering black beans so that Friday's rice and beans will be mostly ready ahead of time. Donna, feeling optimistic, has headed off to her own house, while Hal has set out along Magnolia Loop on his dutiful evening stroll.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 14.40123,
+    "total_usd": 14.43277,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4355,13 +4358,12 @@
         "usd": 0.47173
       },
       "2026-11-11": {
-        "ticks": 12,
-        "usd": 0.37251
+        "ticks": 13,
+        "usd": 0.40405
       }
     }
   },
   "recent_tick_costs": [
-    0.03167,
     0.03108,
     0.03289,
     0.03476,
@@ -4384,7 +4386,8 @@
     0.03132,
     0.02992,
     0.03114,
-    0.03179
+    0.03179,
+    0.03154
   ],
   "fund": {
     "gross_usd": 0.0,
