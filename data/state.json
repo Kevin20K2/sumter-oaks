@@ -1,6 +1,6 @@
 {
-  "tick": 459,
-  "time": "2026-11-11T19:17",
+  "tick": 460,
+  "time": "2026-11-11T20:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -8,25 +8,13 @@
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "Hal headed to Magnolia Loop (the street)."
-    ],
-    "donna": [
-      "You arrived at Donna's House."
-    ],
-    "hal": [
-      "Gary (gary golf cart): Double-check the speaker mount under the rear seat and secure the wiring with zip ties",
-      "You arrived at Magnolia Loop (the street)."
-    ],
+    "gary": [],
+    "donna": [],
+    "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 354,
-        "text": "I said to Hal: “Here you go, Hal, form's right out of my pocket. Lights are the LED strip along the roof rail, speakers go under the rear seat, and I'm putting the ten o'clock cutoff in writing, just like you said.”",
-        "importance": 6
-      },
       {
         "tick": 354,
         "text": "Donna said to Rosa: “Rosa, I'll be there Friday at six, and I'll bring dessert whether you want it or not. Tell Hal my flamingo count is eleven, and every one of them is within the law.”",
@@ -1021,14 +1009,14 @@
         "tick": 458,
         "text": "Hal headed to Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 459,
+        "text": "I (gary golf cart): Finish zip-tying the speaker wiring under the rear seat and test the mount",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 370,
-        "text": "Hal (street bulletin board): Read the postings for any cart-modification approval or other notices before heading home",
-        "importance": 3
-      },
       {
         "tick": 370,
         "text": "Rosa (street bulletin board): Pin a note: Friday dinner at Rosa's, 6 PM sharp. Donna's deviled eggs have mayo and mustard.",
@@ -2023,14 +2011,14 @@
         "tick": 458,
         "text": "You arrived at Donna's House.",
         "importance": 5
+      },
+      {
+        "tick": 459,
+        "text": "I (donna pickleball bag): Pack the spare paddle and balls for Gary's first lesson tomorrow",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 364,
-        "text": "Rosa said to Hal: “Hal, before you bury yourself in that form, anything you can't or won't eat on Friday? I'm leaving for the store in a minute and I'd rather know now than at the stove.”",
-        "importance": 5
-      },
       {
         "tick": 365,
         "text": "I said to Rosa: “Nothing I can't eat, Rosa. Army cooked for me for thirty years, so I'm not picky. Just don't tell Donna there's room on the table for a flamingo centerpiece.”",
@@ -3025,14 +3013,14 @@
         "tick": 458,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 4
+      },
+      {
+        "tick": 459,
+        "text": "I (donna flamingo flock): Count the street-facing flamingos and note the tally against L-02",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 358,
-        "text": "I (rosa dining table): Set out the good plates and count chairs for Friday's dinner",
-        "importance": 6
-      },
       {
         "tick": 359,
         "text": "I (rosa kitchen): Plan Friday's menu and check what I need to buy for the main dish and sides",
@@ -4027,6 +4015,11 @@
         "tick": 458,
         "text": "I (rosa kitchen): Turn the pork, check the flan, and get the black beans simmering so Friday's rice and beans are mostly done ahead of time",
         "importance": 5
+      },
+      {
+        "tick": 459,
+        "text": "I (rosa kitchen): Pull the flan to cool, turn the pork, stir the beans, and prep the rice for Friday",
+        "importance": 4
       }
     ]
   },
@@ -4074,7 +4067,7 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "optimistic",
+    "donna": "eager",
     "hal": "dutiful",
     "rosa": "content"
   },
@@ -4232,10 +4225,16 @@
       "time": "Wednesday, November 11, 7:17 PM",
       "story": "At 7:17 on this breezy Wednesday evening in Sumter Oaks, Gary is at home double-checking the speaker mount under his golf cart's rear seat and zip-tying the wiring neatly in place. Across the way, Rosa is in her kitchen turning the pork, checking her flan, and simmering black beans so that Friday's rice and beans will be mostly ready ahead of time. Donna, feeling optimistic, has headed off to her own house, while Hal has set out along Magnolia Loop on his dutiful evening stroll.",
       "dialogue": []
+    },
+    {
+      "tick": 459,
+      "time": "Wednesday, November 11, 8:17 PM",
+      "story": "Gary is out in his driveway at Gary's House, finishing the speaker wiring under the rear seat of his golf cart and testing the mount before the night air gets any cooler. Donna, over at Donna's House, is packing a spare paddle and a sack of balls so she's ready for Gary's first pickleball lesson tomorrow, and she's clearly eager about it. Hal, dutifully walking the length of Magnolia Loop, is counting the street-facing flamingos and checking the tally against L-02. Meanwhile Rosa, at Rosa's House, is busy in her kitchen pulling the flan to cool, turning the pork, stirring the beans, and getting the rice ready for Friday.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 14.43277,
+    "total_usd": 14.46255,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4358,13 +4357,12 @@
         "usd": 0.47173
       },
       "2026-11-11": {
-        "ticks": 13,
-        "usd": 0.40405
+        "ticks": 14,
+        "usd": 0.43383
       }
     }
   },
   "recent_tick_costs": [
-    0.03108,
     0.03289,
     0.03476,
     0.032,
@@ -4387,7 +4385,8 @@
     0.02992,
     0.03114,
     0.03179,
-    0.03154
+    0.03154,
+    0.02978
   ],
   "fund": {
     "gross_usd": 0.0,

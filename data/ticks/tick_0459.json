@@ -1,0 +1,118 @@
+{
+  "tick": 459,
+  "simulation_time": "Wednesday, November 11, 8:17 PM",
+  "weather": "Breezy and clear, 79°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "Gary is out in his driveway at Gary's House, finishing the speaker wiring under the rear seat of his golf cart and testing the mount before the night air gets any cooler. Donna, over at Donna's House, is packing a spare paddle and a sack of balls so she's ready for Gary's first pickleball lesson tomorrow, and she's clearly eager about it. Hal, dutifully walking the length of Magnolia Loop, is counting the street-facing flamingos and checking the tally against L-02. Meanwhile Rosa, at Rosa's House, is busy in her kitchen pulling the flan to cool, turning the pork, stirring the beans, and getting the rice ready for Friday.",
+  "events": [
+    "Gary (gary golf cart): Finish zip-tying the speaker wiring under the rear seat and test the mount",
+    "Donna (donna pickleball bag): Pack the spare paddle and balls for Gary's first lesson tomorrow",
+    "Hal (donna flamingo flock): Count the street-facing flamingos and note the tally against L-02",
+    "Rosa (rosa kitchen): Pull the flan to cool, turn the pork, stir the beans, and prep the rice for Friday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's past eight on a Wednesday night and I'm alone in the house. Hal measured the cart, said the wiring is tidy, and told me to keep the speaker off past ten, and my review request is already filed. Last tick I was securing the speaker wiring under the rear seat, so the job isn't quite finished. Nobody's around to talk to, and the cart is right here. I'll finish zip-tying the wiring while it's still quiet. The parade is coming, I like feeling useful, and I want the work to hold up when the review clears.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Finish zip-tying the speaker wiring under the rear seat and test the mount"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I'm home at last, 8:17 PM, nobody around. Gary and I are on for the courts tomorrow at ten, and I promised him a paddle. The pickleball bag is right here, so I should check that my spare paddle is in it and ready for a beginner. Then I can look at the club calendar to confirm the two-hour reservation fits the court rule. Getting the bag sorted tonight means no scrambling in the morning.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Pack the spare paddle and balls for Gary's first lesson tomorrow"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm on Magnolia Loop at 8:17 PM and nobody's around. The flamingo flock is right here, so I can finally do a proper count for the L-02 limit of three visible from the street. Friday dinner at Rosa's is settled, so I'll keep my report factual and fair, not petty. Count first, then decide whether it goes to the committee.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the street-facing flamingos and note the tally against L-02"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Wednesday evening and nobody's around. The pork has been marinating, the flan is baking, and the black beans have been simmering since last tick. Friday's dinner for Hal, Gary, and Donna is coming together ahead of schedule. Best use of this hour is to check the flan, turn the pork one more time, and start on the rice base so Friday is mostly assembly. Then I can rest and enjoy knowing the table will be full.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Pull the flan to cool, turn the pork, stir the beans, and prep the rice for Friday"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02978,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9573,
+        "output_tokens": 1047,
+        "usd": 0.02962
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 427,
+        "output_tokens": 230,
+        "usd": 0.00016
+      }
+    }
+  }
+}
