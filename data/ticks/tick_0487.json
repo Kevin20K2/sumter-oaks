@@ -1,0 +1,117 @@
+{
+  "tick": 487,
+  "simulation_time": "Friday, November 13, 6:17 PM",
+  "weather": "Sunny, 76°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 6:17 on this sunny, 76-degree Friday in Sumter Oaks, Gary and Donna are at the Rec Center, where Gary has just booked court one for two hours and Donna is cheerfully lining up the first easy serves before the ladder crowd notices. Hal is dutifully checking the mailbox kiosk on Magnolia Loop for any Architectural Review notices before heading over to Rosa's. Rosa, hopeful, is giving her shift schedule one last look to make sure no call-in cuts into dinner.",
+  "events": [
+    "Gary (court reservation kiosk): Reserve pickleball court one for Donna and me, 2 hours max",
+    "Hal (mailbox kiosk): Check the kiosk once more for Architectural Review notices before heading to Rosa's",
+    "Rosa (rosa shift schedule): One last look to make sure no per-diem shift or call-in cuts into dinner"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna already picked court one at the kiosk last tick, and I said I'd reserve it for the two of us within the 2-hour limit. I don't want to ask her again, and standing around talking won't get us on the court. The kiosk reservation is the practical step, and it keeps my name beside hers on the ladder. Cart wiring can wait until after the game, since I'm up here to be useful to Donna and keep building this partnership.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Reserve pickleball court one for Donna and me, 2 hours max"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just reserved court one for us, so the logistics are handled. It's a lovely evening, the courts are open, and the ladder board is right there with our names in pencil. No need to repeat the dink reminder I already gave him. Time to stop chatting and get him moving: hand him a paddle line, get him to the baseline, and start the practice game so we can climb the ladder before someone bumps us.",
+      "emotional_state": "enthusiastic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Perfect, court one is ours, Gary! Take the left side, I'll serve the first few nice and easy, and we'll play to eleven before anyone eyes our spot on that ladder."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's 6:17 on Friday and Rosa's dinner is at six, so I'm already late and nobody is around to see it. I've got the flamingo count in my log and the board notice already pinned up, so the record is in order. Last tick I was checking the kiosk for any Architectural Review notices before heading to dinner, so I'll take one last look at what's posted and then go. Facts on paper, not tempers at the table.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "mailbox_kiosk",
+          "content": "Check the kiosk once more for Architectural Review notices before heading to Rosa's"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 6:17 PM on Friday and the kitchen is basically done. My recent memories show I keep re-tasting the main dish, covering the sides, and checking the oven timing, so doing that again would just be fidgeting. The dining table is set with napkins, water glasses and room for Gary's chairs. I told Donna at tick 398 to walk over with Hal, and Gary is bringing cornbread, so everyone has already been invited and I shouldn't ask again. The one loose end is the shift schedule. I've already checked it at tick 482 and it was clear, but a last look to be certain no per-diem call-in can pull me away is a cheap way to protect the evening. After that I wait for the neighbors to show up.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "One last look to make sure no per-diem shift or call-in cuts into dinner"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0311,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9767,
+        "output_tokens": 1143,
+        "usd": 0.03096
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 464,
+        "output_tokens": 179,
+        "usd": 0.00014
+      }
+    }
+  }
+}

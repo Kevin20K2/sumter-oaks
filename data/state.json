@@ -1,6 +1,6 @@
 {
-  "tick": 487,
-  "time": "2026-11-13T17:17",
+  "tick": 488,
+  "time": "2026-11-13T18:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,26 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Court one, Gary, it's got the best light this time of day. Don't worry about the dinks, just keep the ball low and I'll count them out loud.”"
+      "Donna said to Gary: “Perfect, court one is ours, Gary! Take the left side, I'll serve the first few nice and easy, and we'll play to eleven before anyone eyes our spot on that ladder.”"
     ],
     "donna": [
-      "Gary (court reservation kiosk): Reserve pickleball court one for Donna and me, within the 2-hour limit"
+      "Gary (court reservation kiosk): Reserve pickleball court one for Donna and me, 2 hours max"
     ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 381,
-        "text": "I (gary fridge): Pull out buttermilk and eggs and start the cornbread for Rosa's dinner",
-        "importance": 5
-      },
-      {
-        "tick": 382,
-        "text": "I (gary fridge): Mix the batter and get the cornbread pan ready for the oven",
-        "importance": 5
-      },
       {
         "tick": 383,
         "text": "I (gary fridge): Pour the batter into the pan and slide the cornbread in to bake",
@@ -1018,19 +1008,19 @@
         "tick": 486,
         "text": "Donna said to Gary: “Court one, Gary, it's got the best light this time of day. Don't worry about the dinks, just keep the ball low and I'll count them out loud.”",
         "importance": 4
+      },
+      {
+        "tick": 487,
+        "text": "I (court reservation kiosk): Reserve pickleball court one for Donna and me, 2 hours max",
+        "importance": 4
+      },
+      {
+        "tick": 487,
+        "text": "Donna said to Gary: “Perfect, court one is ours, Gary! Take the left side, I'll serve the first few nice and easy, and we'll play to eleven before anyone eyes our spot on that ladder.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 400,
-        "text": "Hal said to Donna: “Evening, Donna. Notebook's staying in my pocket tonight, so your flamingos can rest easy. Count's off the clock till Monday.”",
-        "importance": 4
-      },
-      {
-        "tick": 400,
-        "text": "Rosa said to Donna: “Donna, Hal, come in, come in! Dinner's almost ready, grab a seat anywhere. Has either of you seen Gary on the way over? I want all three of you at this table.”",
-        "importance": 4
-      },
       {
         "tick": 401,
         "text": "I (donna club calendar): Pencil in a two-hour Tuesday court reservation for Gary and me and flag the ladder matches",
@@ -2020,14 +2010,19 @@
         "tick": 486,
         "text": "Gary (court reservation kiosk): Reserve pickleball court one for Donna and me, within the 2-hour limit",
         "importance": 6
+      },
+      {
+        "tick": 487,
+        "text": "I said to Gary: “Perfect, court one is ours, Gary! Take the left side, I'll serve the first few nice and easy, and we'll play to eleven before anyone eyes our spot on that ladder.”",
+        "importance": 6
+      },
+      {
+        "tick": 487,
+        "text": "Gary (court reservation kiosk): Reserve pickleball court one for Donna and me, 2 hours max",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 388,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 388,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -3022,14 +3017,14 @@
         "tick": 486,
         "text": "I (mailbox kiosk): Check the kiosk for any Architectural Review notices or filings before heading to dinner",
         "importance": 3
+      },
+      {
+        "tick": 487,
+        "text": "I (mailbox kiosk): Check the kiosk once more for Architectural Review notices before heading to Rosa's",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 369,
-        "text": "I said to Donna: “Wouldn't miss Gary's practice, Donna, I'll be there at ten with coffee. Hal, yes, dinner's on, six sharp, so just bring yourself. Now I'm heading home to start prepping.”",
-        "importance": 5
-      },
       {
         "tick": 369,
         "text": "Donna said to Rosa: “No allergies on my end, sweetheart, but my deviled eggs have mayo and mustard in them, so tell anybody who needs to know. I'll bring two dozen, and I'm done with these flamingos tonight, three out front and the rest going out back.”",
@@ -4024,6 +4019,11 @@
         "tick": 486,
         "text": "I (rosa kitchen): Check the oven timing, keep the sides covered, and set out the cornbread plate for Gary",
         "importance": 6
+      },
+      {
+        "tick": 487,
+        "text": "I (rosa shift schedule): One last look to make sure no per-diem shift or call-in cuts into dinner",
+        "importance": 6
       }
     ]
   },
@@ -4073,7 +4073,7 @@
     "gary": "cheerful",
     "donna": "enthusiastic",
     "hal": "dutiful",
-    "rosa": "eager"
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4215,10 +4215,18 @@
       "dialogue": [
         "Donna said to Gary: “Court one, Gary, it's got the best light this time of day. Don't worry about the dinks, just keep the ball low and I'll count them out loud.”"
       ]
+    },
+    {
+      "tick": 487,
+      "time": "Friday, November 13, 6:17 PM",
+      "story": "At 6:17 on this sunny, 76-degree Friday in Sumter Oaks, Gary and Donna are at the Rec Center, where Gary has just booked court one for two hours and Donna is cheerfully lining up the first easy serves before the ladder crowd notices. Hal is dutifully checking the mailbox kiosk on Magnolia Loop for any Architectural Review notices before heading over to Rosa's. Rosa, hopeful, is giving her shift schedule one last look to make sure no call-in cuts into dinner.",
+      "dialogue": [
+        "Donna said to Gary: “Perfect, court one is ours, Gary! Take the left side, I'll serve the first few nice and easy, and we'll play to eleven before anyone eyes our spot on that ladder.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 15.29115,
+    "total_usd": 15.32225,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4349,13 +4357,12 @@
         "usd": 0.46189
       },
       "2026-11-13": {
-        "ticks": 11,
-        "usd": 0.33537
+        "ticks": 12,
+        "usd": 0.36647
       }
     }
   },
   "recent_tick_costs": [
-    0.03212,
     0.03142,
     0.02991,
     0.03088,
@@ -4378,7 +4385,8 @@
     0.03231,
     0.03113,
     0.02969,
-    0.02981
+    0.02981,
+    0.0311
   ],
   "fund": {
     "gross_usd": 0.0,
