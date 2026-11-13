@@ -1,6 +1,6 @@
 {
-  "tick": 479,
-  "time": "2026-11-13T09:17",
+  "tick": 480,
+  "time": "2026-11-13T10:17",
   "positions": {
     "gary": "garys_house",
     "donna": "magnolia_loop",
@@ -10,22 +10,15 @@
   "perceptions": {
     "gary": [],
     "donna": [
-      "You arrived at Magnolia Loop (the street).",
-      "Hal just arrived."
+      "Hal (donna flamingo flock): Count the street-facing flamingos and note the number in my log"
     ],
     "hal": [
-      "You arrived at Magnolia Loop (the street).",
-      "Donna just arrived."
+      "Donna said to Hal: “Morning, Hal! Have you seen Gary this morning? We've got a ten o'clock practice game and I'm hoping he hasn't gotten lost in his cart wiring.”"
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 367,
-        "text": "Rosa headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 368,
         "text": "I headed to Town Hall.",
@@ -1020,19 +1013,14 @@
         "tick": 478,
         "text": "I (gary toolbox): Sort out mounting clips, zip ties, and connectors so the lights go up fast once approved",
         "importance": 3
+      },
+      {
+        "tick": 479,
+        "text": "I waited: thinking about where to head next",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 392,
-        "text": "Rosa said to Donna: “Deviled eggs, Donna, that's all I need. Just you and those eggs at my table Friday at six, I've got the rest. And don't let Hal rattle you about the flamingos, we'll sort that out over supper.”",
-        "importance": 5
-      },
-      {
-        "tick": 393,
-        "text": "I headed to Rec Center.",
-        "importance": 5
-      },
       {
         "tick": 393,
         "text": "Hal (donna flamingo flock): Count only the flamingos visible from the street and note whether the hedge actually screens the rest",
@@ -2022,19 +2010,19 @@
         "tick": 478,
         "text": "Hal just arrived.",
         "importance": 5
+      },
+      {
+        "tick": 479,
+        "text": "I said to Hal: “Morning, Hal! Have you seen Gary this morning? We've got a ten o'clock practice game and I'm hoping he hasn't gotten lost in his cart wiring.”",
+        "importance": 4
+      },
+      {
+        "tick": 479,
+        "text": "Hal (donna flamingo flock): Count the street-facing flamingos and note the number in my log",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 377,
-        "text": "Donna headed to Gary's House.",
-        "importance": 5
-      },
-      {
-        "tick": 378,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and record the tally against the L-02 limit",
-        "importance": 5
-      },
       {
         "tick": 379,
         "text": "I (donna flamingo flock): Count each flamingo visible from the street and note the tally against the L-02 limit",
@@ -3024,14 +3012,19 @@
         "tick": 478,
         "text": "Donna just arrived.",
         "importance": 4
+      },
+      {
+        "tick": 479,
+        "text": "I (donna flamingo flock): Count the street-facing flamingos and note the number in my log",
+        "importance": 5
+      },
+      {
+        "tick": 479,
+        "text": "Donna said to Hal: “Morning, Hal! Have you seen Gary this morning? We've got a ten o'clock practice game and I'm hoping he hasn't gotten lost in his cart wiring.”",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 366,
-        "text": "I said to Gary: “Gary, good timing. Dinner's Friday at six at my place, so Donna's got you on the courts at ten and you're still home to bake that cornbread. Anything you need from my kitchen, just say so.”",
-        "importance": 6
-      },
       {
         "tick": 366,
         "text": "Gary said to Rosa: “Evening, Rosa! I'll have cornbread for Friday, and if your table or anything in the kitchen needs fixing beforehand, just say the word. Toolbox is always ready.”",
@@ -4026,6 +4019,11 @@
         "tick": 478,
         "text": "I (rosa kitchen): Check on the main dish and get the sides prepped and staged for tonight",
         "importance": 6
+      },
+      {
+        "tick": 479,
+        "text": "I (rosa kitchen): Check the main dish, taste for seasoning, and jot down anything still missing for tonight",
+        "importance": 6
       }
     ]
   },
@@ -4072,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "patient",
-    "donna": "eager",
-    "hal": "resolute",
-    "rosa": "eager"
+    "gary": "hopeful",
+    "donna": "bubbly",
+    "hal": "methodical",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4200,9 +4198,18 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 479,
+      "time": "Friday, November 13, 10:17 AM",
+      "story": "At 10:17 on a sunny Friday in Sumter Oaks, Gary is at home, weighing where to go next while hoping the morning goes his way. Donna is out on Magnolia Loop, bubbly as ever, asking Hal whether he's seen Gary, since they have a ten o'clock practice game and she suspects he may still be tangled up in his golf cart wiring. Hal, methodical as always, is counting the flamingos along the street for his log, while Rosa, also hopeful, is in her kitchen tasting tonight's main dish and noting what else she needs.",
+      "dialogue": [
+        "Donna said to Hal: “Morning, Hal! Have you seen Gary this morning? We've got a ten o'clock practice game and I'm hoping he hasn't gotten lost in his cart wiring.”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 15.04543,
+    "total_usd": 15.07492,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4333,13 +4340,12 @@
         "usd": 0.46189
       },
       "2026-11-13": {
-        "ticks": 3,
-        "usd": 0.08965
+        "ticks": 4,
+        "usd": 0.11914
       }
     }
   },
   "recent_tick_costs": [
-    0.02992,
     0.03114,
     0.03179,
     0.03154,
@@ -4362,7 +4368,8 @@
     0.03134,
     0.03032,
     0.02929,
-    0.03004
+    0.03004,
+    0.02949
   ],
   "fund": {
     "gross_usd": 0.0,
