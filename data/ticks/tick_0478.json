@@ -1,0 +1,118 @@
+{
+  "tick": 478,
+  "simulation_time": "Friday, November 13, 9:17 AM",
+  "weather": "Sunny, 74°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Friday morning in Sumter Oaks is sunny and a comfortable 74 degrees, and Gary is at home sorting out mounting clips, zip ties, and connectors so the holiday lights can go up quickly once they get the nod. Rosa is in her kitchen checking on the main dish and getting the sides prepped and staged for tonight. Meanwhile, Donna and Hal are both heading out onto Magnolia Loop, with Donna eager to see what's happening and Hal looking resolute about whatever he has in mind.",
+  "events": [
+    "Gary (gary toolbox): Sort out mounting clips, zip ties, and connectors so the lights go up fast once approved",
+    "Donna headed to Magnolia Loop (the street).",
+    "Hal headed to Magnolia Loop (the street).",
+    "Rosa (rosa kitchen): Check on the main dish and get the sides prepped and staged for tonight"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "The speaker wiring and fuse are done, and the lights stay off until Architectural Review approves them. I already bench-tested the strands and filed the form, so there's little left to do on the cart that doesn't break L-01. The pickleball reservation is for tomorrow at 10 AM, so nothing's pressing there. I could finish the workbench side by tidying the toolbox and labeling the connectors so mounting goes quick the minute approval comes through. Useful work, keeps my hands busy, and stays on the right side of the rules.",
+      "emotional_state": "patient",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_toolbox",
+          "content": "Sort out mounting clips, zip ties, and connectors so the lights go up fast once approved"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 9:17 and the practice game with Gary is at 10 sharp. I've already reserved the court and packed the bag with the extra paddle, balls, and water, and penciled it in on the calendar. Nobody's here to talk to, so the only sensible move is to head to the rec center courts and get there early to warm up and claim our spot before Gary shows. No need to redo anything I've already done.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading out with my pickleball bag so I'm at the courts early for our 10 AM practice game with Gary."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've written the notebook entry three ticks running now. Another pass at the same page won't make it any more accurate. The log is current, the facts are down, and nobody is around to talk to. The committee can't act on anything I leave sitting in my own house. Best thing is to get out to Magnolia Loop, put eyes on the flamingo count and Gary's cart in person, and verify against the log before I take it anywhere official.",
+      "emotional_state": "resolute",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Log's written up. Going out to Magnolia Loop to check the flamingo count and Gary's cart against my notes."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Friday morning, dinner day, and I already started the main dish last tick. Shift schedule is confirmed clear. Nobody's around, so the best use of this hour is back in the kitchen: get the sides going, check the main, and keep my timeline so everything is ready when Hal, Donna, and Gary walk in tonight. I'll also keep the table spacing for Gary's chairs in mind.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check on the main dish and get the sides prepped and staged for tonight"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03004,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9398,
+        "output_tokens": 1052,
+        "usd": 0.02932
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3488,
+        "output_tokens": 742,
+        "usd": 0.00072
+      }
+    }
+  }
+}
