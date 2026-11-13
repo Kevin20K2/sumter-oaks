@@ -1,34 +1,26 @@
 {
-  "tick": 474,
-  "time": "2026-11-12T19:17",
+  "tick": 475,
+  "time": "2026-11-12T20:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
-    "hal": "magnolia_loop",
+    "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “One! Two! Three! Soft hands, Gary, that's it, keep it low over the net. Seven, eight... don't you dare rush it now, we're nearly at ten!”"
+      "Donna said to Gary: “Pruitt and Kowalski, in pencil and on the ladder, Gary! You've earned a good night's sleep, so let's call it here and I'll meet you back on the court tomorrow morning for a real practice game.”"
     ],
     "donna": [
-      "Gary (ladder standings board): Pencil in Pruitt and Kowalski as a doubles team"
+      "Gary said to Donna: “Thanks for the lesson, Donna, I haven't had this much fun in a while. I'm heading home to tinker with the cart wiring, so I'll see you at the courts at ten sharp.”"
     ],
-    "hal": [],
+    "hal": [
+      "You arrived at Hal's House."
+    ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 365,
-        "text": "Donna said to Gary: “Gary, I'll put us down for the courts at ten tomorrow morning, two hours, plenty of time for basics and still home to bake that cornbread before six. Bring the paddle and wear sneakers you don't mind scuffing.”",
-        "importance": 6
-      },
-      {
-        "tick": 365,
-        "text": "Hal said to Rosa: “Nothing I can't eat, Rosa. Army cooked for me for thirty years, so I'm not picky. Just don't tell Donna there's room on the table for a flamingo centerpiece.”",
-        "importance": 6
-      },
       {
         "tick": 365,
         "text": "Rosa headed to Town Square.",
@@ -1018,19 +1010,19 @@
         "tick": 473,
         "text": "Donna said to Gary: “One! Two! Three! Soft hands, Gary, that's it, keep it low over the net. Seven, eight... don't you dare rush it now, we're nearly at ten!”",
         "importance": 4
+      },
+      {
+        "tick": 474,
+        "text": "I said to Donna: “Thanks for the lesson, Donna, I haven't had this much fun in a while. I'm heading home to tinker with the cart wiring, so I'll see you at the courts at ten sharp.”",
+        "importance": 4
+      },
+      {
+        "tick": 474,
+        "text": "Donna said to Gary: “Pruitt and Kowalski, in pencil and on the ladder, Gary! You've earned a good night's sleep, so let's call it here and I'll meet you back on the court tomorrow morning for a real practice game.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 388,
-        "text": "I (donna club calendar): Check the Tuesday two-hour court slot is booked in ink and note the ladder standings",
-        "importance": 5
-      },
-      {
-        "tick": 389,
-        "text": "I (donna phone): Text Gary to offer a loaner paddle and a casual practice hit before Tuesday",
-        "importance": 5
-      },
       {
         "tick": 390,
         "text": "I headed to Magnolia Loop (the street).",
@@ -2020,19 +2012,19 @@
         "tick": 473,
         "text": "Gary (ladder standings board): Pencil in Pruitt and Kowalski as a doubles team",
         "importance": 6
+      },
+      {
+        "tick": 474,
+        "text": "I said to Gary: “Pruitt and Kowalski, in pencil and on the ladder, Gary! You've earned a good night's sleep, so let's call it here and I'll meet you back on the court tomorrow morning for a real practice game.”",
+        "importance": 7
+      },
+      {
+        "tick": 474,
+        "text": "Gary said to Donna: “Thanks for the lesson, Donna, I haven't had this much fun in a while. I'm heading home to tinker with the cart wiring, so I'll see you at the courts at ten sharp.”",
+        "importance": 7
       }
     ],
     "hal": [
-      {
-        "tick": 373,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 374,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street and log the number",
-        "importance": 5
-      },
       {
         "tick": 374,
         "text": "Donna just arrived.",
@@ -3022,14 +3014,19 @@
         "tick": 473,
         "text": "I waited: Standing on Magnolia Loop with my log, letting the posted notice sit and saving my appetite for Rosa's Friday dinner.",
         "importance": 3
+      },
+      {
+        "tick": 474,
+        "text": "I headed to Hal's House.",
+        "importance": 3
+      },
+      {
+        "tick": 474,
+        "text": "You arrived at Hal's House.",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 365,
-        "text": "Gary headed to Town Square.",
-        "importance": 5
-      },
       {
         "tick": 365,
         "text": "Donna said to Gary: “Gary, I'll put us down for the courts at ten tomorrow morning, two hours, plenty of time for basics and still home to bake that cornbread before six. Bring the paddle and wear sneakers you don't mind scuffing.”",
@@ -4024,6 +4021,11 @@
         "tick": 473,
         "text": "I (rosa kitchen): Check the pantry and fridge against my list and make a note of anything still missing for Friday",
         "importance": 4
+      },
+      {
+        "tick": 474,
+        "text": "I (rosa kitchen): Pull the sides prepped ahead, check the fridge once more, and jot down anything still missing",
+        "importance": 5
       }
     ]
   },
@@ -4070,9 +4072,9 @@
     ]
   },
   "emotions": {
-    "gary": "pleased",
-    "donna": "delighted",
-    "hal": "patient",
+    "gary": "content",
+    "donna": "triumphant",
+    "hal": "content",
     "rosa": "hopeful"
   },
   "laws": [
@@ -4206,10 +4208,19 @@
       "dialogue": [
         "Donna said to Gary: “One! Two! Three! Soft hands, Gary, that's it, keep it low over the net. Seven, eight... don't you dare rush it now, we're nearly at ten!”"
       ]
+    },
+    {
+      "tick": 474,
+      "time": "Thursday, November 12, 8:17 PM",
+      "story": "On Thursday evening in Sumter Oaks, Donna is still glowing from her pencil-and-ladder victory over Gary at the Rec Center, and the two of them are wrapping things up with plans to meet at the courts at ten sharp. Gary is heading home to tinker with his golf cart wiring, while Hal is making his way down Magnolia Loop toward his own front door. Over at her kitchen, Rosa is quietly prepping side dishes ahead of tomorrow, checking the fridge one more time and jotting down anything she still needs.",
+      "dialogue": [
+        "Gary said to Donna: “Thanks for the lesson, Donna, I haven't had this much fun in a while. I'm heading home to tinker with the cart wiring, so I'll see you at the courts at ten sharp.”",
+        "Donna said to Gary: “Pruitt and Kowalski, in pencil and on the ladder, Gary! You've earned a good night's sleep, so let's call it here and I'll meet you back on the court tomorrow morning for a real practice game.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 14.89414,
+    "total_usd": 14.92444,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4336,13 +4347,12 @@
         "usd": 0.46517
       },
       "2026-11-12": {
-        "ticks": 13,
-        "usd": 0.40025
+        "ticks": 14,
+        "usd": 0.43055
       }
     }
   },
   "recent_tick_costs": [
-    0.03089,
     0.03135,
     0.03211,
     0.03178,
@@ -4365,7 +4375,8 @@
     0.03034,
     0.0299,
     0.03187,
-    0.02977
+    0.02977,
+    0.0303
   ],
   "fund": {
     "gross_usd": 0.0,

@@ -1,0 +1,116 @@
+{
+  "tick": 474,
+  "simulation_time": "Thursday, November 12, 8:17 PM",
+  "weather": "Partly cloudy, 76°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On Thursday evening in Sumter Oaks, Donna is still glowing from her pencil-and-ladder victory over Gary at the Rec Center, and the two of them are wrapping things up with plans to meet at the courts at ten sharp. Gary is heading home to tinker with his golf cart wiring, while Hal is making his way down Magnolia Loop toward his own front door. Over at her kitchen, Rosa is quietly prepping side dishes ahead of tomorrow, checking the fridge one more time and jotting down anything she still needs.",
+  "events": [
+    "Hal headed to Hal's House.",
+    "Rosa (rosa kitchen): Pull the sides prepped ahead, check the fridge once more, and jot down anything still missing"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just cheered me through the dinking count and we penciled our names on the ladder board. It's past 8 PM and I've been out here a good while, so it's time to wrap up. I filed the review form already, so my cart lights are waiting on Hal and the Architectural Review. I should thank Donna for the lesson and head home to keep working on the wiring while I wait, since that's what makes me feel useful.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Thanks for the lesson, Donna, I haven't had this much fun in a while. I'm heading home to tinker with the cart wiring, so I'll see you at the courts at ten sharp."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just penciled us in on the ladder board, which was my whole goal. It's 8:17 PM and I've been on this court all day, so it's time to wrap up. Praise him, tell him we're on the ladder, and set up the next practice so the momentum keeps going without me repeating myself.",
+      "emotional_state": "triumphant",
+      "importance_rating": 7,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Pruitt and Kowalski, in pencil and on the ladder, Gary! You've earned a good night's sleep, so let's call it here and I'll meet you back on the court tomorrow morning for a real practice game."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's past eight on a Thursday night and nobody is around. I've counted the flamingos twice, logged the numbers, and posted a factual notice for the committee. There's nothing more to document and no one to talk to, and pestering the street won't improve the record. Better to let the notice do its job and save my appetite for Rosa's Friday dinner. I'll head home, put the log away where it's safe, and call it a day.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "hals_house",
+          "content": "Heading home to file my log and rest up for Rosa's dinner tomorrow."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "I've already checked the shift schedule, the pantry list, and the chair count over the last few ticks. Friday's dinner is the whole point of this week, and the only loose end I keep circling is whatever's still missing from my list. Nobody's around to talk to, so the useful thing is to look at the kitchen one more time, note any gap, and then stop fussing and let it be ready. A last-minute shopping note now beats a scramble tomorrow.",
+      "emotional_state": "hopeful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Pull the sides prepped ahead, check the fridge once more, and jot down anything still missing"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0303,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9880,
+        "output_tokens": 1040,
+        "usd": 0.03016
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 483,
+        "output_tokens": 181,
+        "usd": 0.00014
+      }
+    }
+  }
+}
