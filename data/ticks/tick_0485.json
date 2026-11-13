@@ -1,0 +1,116 @@
+{
+  "tick": 485,
+  "simulation_time": "Friday, November 13, 4:17 PM",
+  "weather": "Sunny, 77°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 4:17 on a sunny Friday afternoon in Sumter Oaks, Gary and Donna are at the Rec Center, where Donna is eager to claim court one before anyone else bumps them off the ladder, and Gary cheerfully asks her to go easy on his soft dinks. Over on Magnolia Loop, Hal is dutifully checking the street bulletin board for the Architectural Review filing notice and pinning up the committee submission schedule. Meanwhile, Rosa is in her kitchen tasting the main dish one more time, covering the sides to keep them warm, and keeping a careful eye on the oven timing, eager for her guests to arrive.",
+  "events": [
+    "Hal (street bulletin board): Check the board for the Architectural Review filing notice and pin up the committee submission schedule",
+    "Rosa (rosa kitchen): Taste the main dish one more time, cover the sides to keep them warm, and check the oven timing"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna and I are both at the Rec Center now, and she walked me down here to get me playing. I'm standing by the courts and the ladder board with her right here. No need to chew on the cart request again, I already asked Hal. Best move is to keep the day easy and start the game, so I'll ask her which court she wants and keep it simple. I'll keep my dinks soft like she showed me.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Well, here we are, Donna. Court one or court two? Go easy on me, I'm still working on that soft dink of yours."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just walked in and it's the afternoon, but we planned a ten o'clock practice and I've already checked the ladder board while waiting. Mentioning that Pruitt and Kowalski are on the board will keep the momentum up. I should greet him warmly, tease him a bit about being late, and get him onto court 1 right away. No need to ask anything twice, just move us forward into the game.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "There he is! Our names are still penciled on the ladder, Gary, so grab a paddle and let's take court one before anyone bumps us. Remember, soft dinks, and I'll keep count."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've counted Donna's flamingos twice already and the number's in my log. Gary and Donna have both headed to the Rec Center, and Rosa's dinner is tonight at six, so I want this settled on paper before I'm at her table. No one is around, which is fine; the bulletin board is the proper place to note the L-01 and L-02 matters for the committee. I'll stick to facts, keep my temper out of it, and let the record speak for itself.",
+      "emotional_state": "dutiful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "street_bulletin_board",
+          "content": "Check the board for the Architectural Review filing notice and pin up the committee submission schedule"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 4:17 PM on Friday and the dinner is close. I've already done the kitchen, the table, and the schedule check over several ticks, and my last action was adding napkins and glasses with a final look at Gary's chair space. Nobody's in sight, and I can't hurry the guests. The one loose end is my own prep: the main dish needs a last taste and the sides need covering and staging so everything stays warm. I'll go back to the kitchen rather than fuss with the table again.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Taste the main dish one more time, cover the sides to keep them warm, and check the oven timing"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02969,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9527,
+        "output_tokens": 1048,
+        "usd": 0.02953
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 478,
+        "output_tokens": 220,
+        "usd": 0.00016
+      }
+    }
+  }
+}
