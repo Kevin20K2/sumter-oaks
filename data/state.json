@@ -1,30 +1,20 @@
 {
-  "tick": 476,
-  "time": "2026-11-12T21:17",
+  "tick": 477,
+  "time": "2026-11-13T07:17",
   "positions": {
-    "gary": "magnolia_loop",
-    "donna": "rec_center",
+    "gary": "garys_house",
+    "donna": "donnas_house",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
-    "gary": [
-      "Donna (court reservation kiosk): Reserve a two-hour slot on a pickleball court for tomorrow at 10 AM for Gary and me",
-      "You arrived at Magnolia Loop (the street)."
-    ],
-    "donna": [
-      "Gary headed to Magnolia Loop (the street)."
-    ],
+    "gary": [],
+    "donna": [],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 366,
-        "text": "I said to Rosa: “Evening, Rosa! I'll have cornbread for Friday, and if your table or anything in the kitchen needs fixing beforehand, just say the word. Toolbox is always ready.”",
-        "importance": 4
-      },
       {
         "tick": 366,
         "text": "Rosa said to Gary: “Gary, good timing. Dinner's Friday at six at my place, so Donna's got you on the courts at ten and you're still home to bake that cornbread. Anything you need from my kitchen, just say so.”",
@@ -1019,14 +1009,14 @@
         "tick": 475,
         "text": "You arrived at Magnolia Loop (the street).",
         "importance": 3
+      },
+      {
+        "tick": 476,
+        "text": "I (gary workbench): Bench-test the light strand and speaker wiring before mounting",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 391,
-        "text": "I said to Rosa: “Rosa, there you are! I'm counting the hours till your dinner tonight. What can I bring, a salad, dessert, an extra pair of hands?”",
-        "importance": 4
-      },
       {
         "tick": 391,
         "text": "Hal said to Donna: “Afternoon, Donna. Rosa's got us all down for Friday at six, so I'd like to be able to eat in peace. Get the street-facing flamingos down to three and I'll call it settled.”",
@@ -2021,14 +2011,14 @@
         "tick": 475,
         "text": "Gary headed to Magnolia Loop (the street).",
         "importance": 5
+      },
+      {
+        "tick": 476,
+        "text": "I (donna pickleball bag): Pack extra paddle, balls, and water for Gary's practice game",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 375,
-        "text": "I (donna flamingo flock): Count the flamingos visible from the street against the three-ornament limit",
-        "importance": 5
-      },
       {
         "tick": 375,
         "text": "Donna said to Hal: “Morning, Hal! Go ahead and count the flamingos from the street. Exactly three, I promise. See you at Rosa's at six, and I'm bringing my deviled eggs.”",
@@ -3023,14 +3013,14 @@
         "tick": 475,
         "text": "I (hal violation notebook): Enter today's dated facts on the flamingo count and Gary's cart mods, then close the log",
         "importance": 4
+      },
+      {
+        "tick": 476,
+        "text": "I (hal violation notebook): Write up the morning entry: date, flamingo count, and Gary's cart mods, facts only",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 365,
-        "text": "Hal said to Rosa: “Nothing I can't eat, Rosa. Army cooked for me for thirty years, so I'm not picky. Just don't tell Donna there's room on the table for a flamingo centerpiece.”",
-        "importance": 5
-      },
       {
         "tick": 365,
         "text": "You arrived at Town Square.",
@@ -4025,6 +4015,11 @@
         "tick": 475,
         "text": "I (rosa dining table): Slide the table out a bit so Gary's extra chairs fit, then call it done for the night",
         "importance": 4
+      },
+      {
+        "tick": 476,
+        "text": "I (rosa shift schedule): Confirm tonight is clear of any per-diem shift before starting the day's cooking",
+        "importance": 6
       }
     ]
   },
@@ -4072,9 +4067,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "cheerful",
+    "donna": "excited",
     "hal": "methodical",
-    "rosa": "content"
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4222,10 +4217,16 @@
       "time": "Thursday, November 12, 9:17 PM",
       "story": "Thursday night in Sumter Oaks is mild and partly cloudy at 75 degrees, and Gary is strolling down Magnolia Loop while the Rec Center hums along. Donna, cheerful as ever, has just booked a two-hour pickleball court for herself and Gary at 10 tomorrow morning. Back at his house, Hal is methodically logging the day's flamingo count and the details of Gary's golf cart modifications before closing his notebook for the night. Over at her house, Rosa nudges her dining table out a bit so Gary's extra chairs will fit, then calls it a night.",
       "dialogue": []
+    },
+    {
+      "tick": 476,
+      "time": "Friday, November 13, 7:17 AM",
+      "story": "At 7:17 on a sunny Friday morning in Sumter Oaks, Gary is bench-testing the light strand and speaker wiring at his workbench before mounting them on his golf cart. Across the way, Donna is excited as she packs an extra paddle, balls, and water for Gary's practice game, while Hal methodically writes up the morning entry in his violation notebook, noting the date, the flamingo count, and Gary's cart modifications. Rosa, feeling hopeful, is checking her shift schedule to confirm tonight is free before she starts cooking for the day.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 14.95578,
+    "total_usd": 14.9861,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4354,11 +4355,14 @@
       "2026-11-12": {
         "ticks": 15,
         "usd": 0.46189
+      },
+      "2026-11-13": {
+        "ticks": 1,
+        "usd": 0.03032
       }
     }
   },
   "recent_tick_costs": [
-    0.03211,
     0.03178,
     0.03132,
     0.02992,
@@ -4381,7 +4385,8 @@
     0.03187,
     0.02977,
     0.0303,
-    0.03134
+    0.03134,
+    0.03032
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4429,7 +4434,7 @@
     "test_mode": false,
     "level": "low"
   },
-  "last_tick_date": "2026-11-12",
+  "last_tick_date": "2026-11-13",
   "calendar_fired": [
     "halloween-flyer",
     "halloween-reminder",

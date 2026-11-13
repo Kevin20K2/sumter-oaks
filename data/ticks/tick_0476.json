@@ -1,0 +1,118 @@
+{
+  "tick": 476,
+  "simulation_time": "Friday, November 13, 7:17 AM",
+  "weather": "Sunny, 72°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a sunny Friday morning in Sumter Oaks, Gary is bench-testing the light strand and speaker wiring at his workbench before mounting them on his golf cart. Across the way, Donna is excited as she packs an extra paddle, balls, and water for Gary's practice game, while Hal methodically writes up the morning entry in his violation notebook, noting the date, the flamingo count, and Gary's cart modifications. Rosa, feeling hopeful, is checking her shift schedule to confirm tonight is free before she starts cooking for the day.",
+  "events": [
+    "Gary (gary workbench): Bench-test the light strand and speaker wiring before mounting",
+    "Donna (donna pickleball bag): Pack extra paddle, balls, and water for Gary's practice game",
+    "Hal (hal violation notebook): Write up the morning entry: date, flamingo count, and Gary's cart mods, facts only",
+    "Rosa (rosa shift schedule): Confirm tonight is clear of any per-diem shift before starting the day's cooking"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's 7:17 AM, I'm home, and nobody's around. The review form is filed and I'm waiting on Hal, so the lights can't go on the cart's exterior yet. But the wiring itself is interior work, and the sound system won't be played before the 7 AM cutoff matters anyway. I'm meeting Donna at the courts at ten, so I've got a couple of hours to get the wiring bench-tested and ready on the workbench. That keeps me useful and moves the parade goal forward without breaking L-01 by mounting anything visible before approval.",
+      "emotional_state": "content",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_workbench",
+          "content": "Bench-test the light strand and speaker wiring before mounting"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 7:17 AM Friday and I'm home. Gary and I agreed to meet at the courts at ten sharp, and my last action was reserving a two-hour slot for tomorrow at 10 AM (the max under L-05). Gary's off tinkering with the cart wiring, so no one's here to talk to. Best use of this hour is to get ready: pack my pickleball bag with the extra paddle, balls, and water so Gary's second lesson goes smoothly and I can keep building our ladder run.",
+      "emotional_state": "excited",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_pickleball_bag",
+          "content": "Pack extra paddle, balls, and water for Gary's practice game"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's 7:17 AM Friday and I'm home with my log closed from yesterday. Nobody's around to talk to. My notebook is right here, and a fresh morning means fresh dated facts on the flamingo count and Gary's cart mods. Better to put it on the record in my own hand now, so everything holds up when it goes to the architectural review committee. Then I can head out and see what the street looks like, with Rosa's dinner at six tonight waiting at the end of the day.",
+      "emotional_state": "methodical",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Write up the morning entry: date, flamingo count, and Gary's cart mods, facts only"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Friday morning, dinner night. The table is set, chairs arranged for Gary, sides prepped, and the pantry has been checked twice. The one thing I haven't confirmed since the last check is my shift schedule. I'm a per-diem nurse and the hospital sometimes calls with a gap to fill. Before I commit the whole day to cooking, I'll look at the schedule once more so nothing pulls me away tonight.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_shift_schedule",
+          "content": "Confirm tonight is clear of any per-diem shift before starting the day's cooking"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03032,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9514,
+        "output_tokens": 1115,
+        "usd": 0.03018
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 411,
+        "output_tokens": 189,
+        "usd": 0.00014
+      }
+    }
+  }
+}
