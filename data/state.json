@@ -1,6 +1,6 @@
 {
-  "tick": 486,
-  "time": "2026-11-13T16:17",
+  "tick": 487,
+  "time": "2026-11-13T17:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,26 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “There he is! Our names are still penciled on the ladder, Gary, so grab a paddle and let's take court one before anyone bumps us. Remember, soft dinks, and I'll keep count.”"
+      "Donna said to Gary: “Court one, Gary, it's got the best light this time of day. Don't worry about the dinks, just keep the ball low and I'll count them out loud.”"
     ],
     "donna": [
-      "Gary said to Donna: “Well, here we are, Donna. Court one or court two? Go easy on me, I'm still working on that soft dink of yours.”"
+      "Gary (court reservation kiosk): Reserve pickleball court one for Donna and me, within the 2-hour limit"
     ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 380,
-        "text": "I said to Donna: “Wouldn't miss it, Donna. I've got a pan of cornbread to bake for Rosa, so I'll see you there. And thanks for nudging Hal, the cart stays put till he signs off.”",
-        "importance": 5
-      },
-      {
-        "tick": 380,
-        "text": "Donna headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 381,
         "text": "I (gary fridge): Pull out buttermilk and eggs and start the cornbread for Rosa's dinner",
@@ -1018,19 +1008,19 @@
         "tick": 485,
         "text": "Donna said to Gary: “There he is! Our names are still penciled on the ladder, Gary, so grab a paddle and let's take court one before anyone bumps us. Remember, soft dinks, and I'll keep count.”",
         "importance": 5
+      },
+      {
+        "tick": 486,
+        "text": "I (court reservation kiosk): Reserve pickleball court one for Donna and me, within the 2-hour limit",
+        "importance": 4
+      },
+      {
+        "tick": 486,
+        "text": "Donna said to Gary: “Court one, Gary, it's got the best light this time of day. Don't worry about the dinks, just keep the ball low and I'll count them out loud.”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 399,
-        "text": "Rosa just arrived.",
-        "importance": 4
-      },
-      {
-        "tick": 400,
-        "text": "I said to Rosa: “Rosa, honey, the whole house smells wonderful. I brought my deviled eggs, and I want the full story on tonight's supper while Hal's still standing there.”",
-        "importance": 4
-      },
       {
         "tick": 400,
         "text": "Hal said to Donna: “Evening, Donna. Notebook's staying in my pocket tonight, so your flamingos can rest easy. Count's off the clock till Monday.”",
@@ -2020,14 +2010,19 @@
         "tick": 485,
         "text": "Gary said to Donna: “Well, here we are, Donna. Court one or court two? Go easy on me, I'm still working on that soft dink of yours.”",
         "importance": 6
+      },
+      {
+        "tick": 486,
+        "text": "I said to Gary: “Court one, Gary, it's got the best light this time of day. Don't worry about the dinks, just keep the ball low and I'll count them out loud.”",
+        "importance": 6
+      },
+      {
+        "tick": 486,
+        "text": "Gary (court reservation kiosk): Reserve pickleball court one for Donna and me, within the 2-hour limit",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 387,
-        "text": "I (hal violation notebook): Log this morning's flamingo count and Gary's cart observations, with date and time",
-        "importance": 4
-      },
       {
         "tick": 388,
         "text": "I headed to Magnolia Loop (the street).",
@@ -3022,14 +3017,14 @@
         "tick": 485,
         "text": "I (street bulletin board): Check the board for the Architectural Review filing notice and pin up the committee submission schedule",
         "importance": 5
+      },
+      {
+        "tick": 486,
+        "text": "I (mailbox kiosk): Check the kiosk for any Architectural Review notices or filings before heading to dinner",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 368,
-        "text": "Hal said to Rosa: “Evening, Rosa. Friday dinner still on? I'll be there on time, and I'll leave the flamingo count at the door.”",
-        "importance": 6
-      },
       {
         "tick": 369,
         "text": "I said to Donna: “Wouldn't miss Gary's practice, Donna, I'll be there at ten with coffee. Hal, yes, dinner's on, six sharp, so just bring yourself. Now I'm heading home to start prepping.”",
@@ -4024,6 +4019,11 @@
         "tick": 485,
         "text": "I (rosa kitchen): Taste the main dish one more time, cover the sides to keep them warm, and check the oven timing",
         "importance": 6
+      },
+      {
+        "tick": 486,
+        "text": "I (rosa kitchen): Check the oven timing, keep the sides covered, and set out the cornbread plate for Gary",
+        "importance": 6
       }
     ]
   },
@@ -4071,7 +4071,7 @@
   },
   "emotions": {
     "gary": "cheerful",
-    "donna": "eager",
+    "donna": "enthusiastic",
     "hal": "dutiful",
     "rosa": "eager"
   },
@@ -4207,10 +4207,18 @@
         "Gary said to Donna: “Well, here we are, Donna. Court one or court two? Go easy on me, I'm still working on that soft dink of yours.”",
         "Donna said to Gary: “There he is! Our names are still penciled on the ladder, Gary, so grab a paddle and let's take court one before anyone bumps us. Remember, soft dinks, and I'll keep count.”"
       ]
+    },
+    {
+      "tick": 486,
+      "time": "Friday, November 13, 5:17 PM",
+      "story": "At 5:17 on a sunny Friday in Sumter Oaks, Gary is booking pickleball court one at the Rec Center kiosk while Donna cheers him on, promising to count out the dinks. Hal is checking the mailbox kiosk on Magnolia Loop for any Architectural Review notices before dinner, dutiful as ever. Over at her house, Rosa is eagerly tending the oven, keeping the sides covered, and setting out a cornbread plate for Gary.",
+      "dialogue": [
+        "Donna said to Gary: “Court one, Gary, it's got the best light this time of day. Don't worry about the dinks, just keep the ball low and I'll count them out loud.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 15.26134,
+    "total_usd": 15.29115,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4341,13 +4349,12 @@
         "usd": 0.46189
       },
       "2026-11-13": {
-        "ticks": 10,
-        "usd": 0.30556
+        "ticks": 11,
+        "usd": 0.33537
       }
     }
   },
   "recent_tick_costs": [
-    0.03161,
     0.03212,
     0.03142,
     0.02991,
@@ -4370,7 +4377,8 @@
     0.03185,
     0.03231,
     0.03113,
-    0.02969
+    0.02969,
+    0.02981
   ],
   "fund": {
     "gross_usd": 0.0,

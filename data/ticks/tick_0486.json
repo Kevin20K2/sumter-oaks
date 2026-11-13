@@ -1,0 +1,117 @@
+{
+  "tick": 486,
+  "simulation_time": "Friday, November 13, 5:17 PM",
+  "weather": "Sunny, 76°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 5:17 on a sunny Friday in Sumter Oaks, Gary is booking pickleball court one at the Rec Center kiosk while Donna cheers him on, promising to count out the dinks. Hal is checking the mailbox kiosk on Magnolia Loop for any Architectural Review notices before dinner, dutiful as ever. Over at her house, Rosa is eagerly tending the oven, keeping the sides covered, and setting out a cornbread plate for Gary.",
+  "events": [
+    "Gary (court reservation kiosk): Reserve pickleball court one for Donna and me, within the 2-hour limit",
+    "Hal (mailbox kiosk): Check the kiosk for any Architectural Review notices or filings before heading to dinner",
+    "Rosa (rosa kitchen): Check the oven timing, keep the sides covered, and set out the cornbread plate for Gary"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "We're at the Rec Center, Donna's ready, and our names are still on the ladder. I already asked 'court one or court two' last tick, and she answered: court one. No point re-asking. The court's open and nobody's competing for it, so I should just take it. Reserving is easy through the kiosk. L-05 caps us at 2 hours, which is plenty. Then I can play, keep the soft dink going, and get the cart wiring done later tonight so I'm sharp for ten tomorrow.",
+      "emotional_state": "cheerful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Reserve pickleball court one for Donna and me, within the 2-hour limit"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just asked court one or two. He's here, paddles ready, and the ladder spot is waiting. No need to chat more, just pick a court and get him playing. Court one, the better court, and keep it encouraging since he's still nervous about the dinks. Keep it short and get going.",
+      "emotional_state": "enthusiastic",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "Court one, Gary, it's got the best light this time of day. Don't worry about the dinks, just keep the ball low and I'll count them out loud."
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm alone on Magnolia Loop at 5:17 PM with dinner at Rosa's at six. I already logged the flamingo count and checked the bulletin board. Rather than stir up more trouble before supper, I'll go through the mailbox kiosk and see if any Architectural Review paperwork has come through. Facts on paper beat temper every time.",
+      "emotional_state": "dutiful",
+      "importance_rating": 3,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "mailbox_kiosk",
+          "content": "Check the kiosk for any Architectural Review notices or filings before heading to dinner"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 5:17 PM Friday and guests are due soon. I've already set the table and left room for Gary's chairs, and I've tasted the main dish over and over. The last thing on my list is the oven timing and keeping the sides covered so everything is warm when the neighbors walk in. My shift schedule is already confirmed clear, so no need to check it again. No one's here to talk to, so the best use of this hour is a final kitchen check and then I'll be ready to welcome everyone.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check the oven timing, keep the sides covered, and set out the cornbread plate for Gary"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02981,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9709,
+        "output_tokens": 1026,
+        "usd": 0.02968
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 456,
+        "output_tokens": 162,
+        "usd": 0.00013
+      }
+    }
+  }
+}
