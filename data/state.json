@@ -1,6 +1,6 @@
 {
-  "tick": 477,
-  "time": "2026-11-13T07:17",
+  "tick": 478,
+  "time": "2026-11-13T08:17",
   "positions": {
     "gary": "garys_house",
     "donna": "donnas_house",
@@ -15,11 +15,6 @@
   },
   "memories": {
     "gary": [
-      {
-        "tick": 366,
-        "text": "Rosa said to Gary: “Gary, good timing. Dinner's Friday at six at my place, so Donna's got you on the courts at ten and you're still home to bake that cornbread. Anything you need from my kitchen, just say so.”",
-        "importance": 4
-      },
       {
         "tick": 367,
         "text": "I (parade signup table): Look over the sign-up sheet and entry rules for the parade",
@@ -1014,14 +1009,14 @@
         "tick": 476,
         "text": "I (gary workbench): Bench-test the light strand and speaker wiring before mounting",
         "importance": 5
+      },
+      {
+        "tick": 477,
+        "text": "I (gary golf cart): Run the speaker wiring and a fuse under the seat, interior work only, lights stay off until approved",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 391,
-        "text": "Hal said to Donna: “Afternoon, Donna. Rosa's got us all down for Friday at six, so I'd like to be able to eat in peace. Get the street-facing flamingos down to three and I'll call it settled.”",
-        "importance": 4
-      },
       {
         "tick": 391,
         "text": "Rosa said to Donna: “Donna, just the woman I wanted. Hal's already in for Friday at six at my place, so I need you at that table too. Say yes and bring your deviled eggs, no excuses.”",
@@ -2016,14 +2011,14 @@
         "tick": 476,
         "text": "I (donna pickleball bag): Pack extra paddle, balls, and water for Gary's practice game",
         "importance": 5
+      },
+      {
+        "tick": 477,
+        "text": "I (donna club calendar): Pencil in the 10 AM Pruitt-Kowalski practice game and check the ladder match dates",
+        "importance": 4
       }
     ],
     "hal": [
-      {
-        "tick": 375,
-        "text": "Donna said to Hal: “Morning, Hal! Go ahead and count the flamingos from the street. Exactly three, I promise. See you at Rosa's at six, and I'm bringing my deviled eggs.”",
-        "importance": 5
-      },
       {
         "tick": 376,
         "text": "I (donna flamingo flock): Count each flamingo visible from the street and record the tally against the L-02 limit",
@@ -3018,14 +3013,14 @@
         "tick": 476,
         "text": "I (hal violation notebook): Write up the morning entry: date, flamingo count, and Gary's cart mods, facts only",
         "importance": 4
+      },
+      {
+        "tick": 477,
+        "text": "I (hal violation notebook): Write today's dated entry: flamingo count and Gary's cart mods, facts only",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 365,
-        "text": "You arrived at Town Square.",
-        "importance": 5
-      },
       {
         "tick": 365,
         "text": "Gary just arrived.",
@@ -4020,6 +4015,11 @@
         "tick": 476,
         "text": "I (rosa shift schedule): Confirm tonight is clear of any per-diem shift before starting the day's cooking",
         "importance": 6
+      },
+      {
+        "tick": 477,
+        "text": "I (rosa kitchen): Start the main dish and set out ingredients for the sides",
+        "importance": 6
       }
     ]
   },
@@ -4066,9 +4066,9 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "excited",
-    "hal": "methodical",
+    "gary": "focused",
+    "donna": "eager",
+    "hal": "focused",
     "rosa": "hopeful"
   },
   "laws": [
@@ -4223,10 +4223,16 @@
       "time": "Friday, November 13, 7:17 AM",
       "story": "At 7:17 on a sunny Friday morning in Sumter Oaks, Gary is bench-testing the light strand and speaker wiring at his workbench before mounting them on his golf cart. Across the way, Donna is excited as she packs an extra paddle, balls, and water for Gary's practice game, while Hal methodically writes up the morning entry in his violation notebook, noting the date, the flamingo count, and Gary's cart modifications. Rosa, feeling hopeful, is checking her shift schedule to confirm tonight is free before she starts cooking for the day.",
       "dialogue": []
+    },
+    {
+      "tick": 477,
+      "time": "Friday, November 13, 8:17 AM",
+      "story": "At 8:17 on a sunny Friday morning in Sumter Oaks, the air is a comfortable 73 degrees as the neighbors go about their routines. Gary is focused in his garage, running speaker wiring and a fuse under the seat of his golf cart while keeping the lights off until he gets approval. Donna is eager at her kitchen table, penciling in the 10 AM Pruitt-Kowalski practice game and checking the dates for the ladder match, while Hal, equally focused, jots a dated entry in his violation notebook recording the flamingo count and Gary's cart modifications. Meanwhile Rosa, feeling hopeful, has started the main dish in her kitchen and is laying out ingredients for the sides.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 14.9861,
+    "total_usd": 15.01539,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4357,13 +4363,12 @@
         "usd": 0.46189
       },
       "2026-11-13": {
-        "ticks": 1,
-        "usd": 0.03032
+        "ticks": 2,
+        "usd": 0.05961
       }
     }
   },
   "recent_tick_costs": [
-    0.03178,
     0.03132,
     0.02992,
     0.03114,
@@ -4386,7 +4391,8 @@
     0.02977,
     0.0303,
     0.03134,
-    0.03032
+    0.03032,
+    0.02929
   ],
   "fund": {
     "gross_usd": 0.0,

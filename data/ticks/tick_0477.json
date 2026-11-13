@@ -1,0 +1,118 @@
+{
+  "tick": 477,
+  "simulation_time": "Friday, November 13, 8:17 AM",
+  "weather": "Sunny, 73°F",
+  "positions": {
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on a sunny Friday morning in Sumter Oaks, the air is a comfortable 73 degrees as the neighbors go about their routines. Gary is focused in his garage, running speaker wiring and a fuse under the seat of his golf cart while keeping the lights off until he gets approval. Donna is eager at her kitchen table, penciling in the 10 AM Pruitt-Kowalski practice game and checking the dates for the ladder match, while Hal, equally focused, jots a dated entry in his violation notebook recording the flamingo count and Gary's cart modifications. Meanwhile Rosa, feeling hopeful, has started the main dish in her kitchen and is laying out ingredients for the sides.",
+  "events": [
+    "Gary (gary golf cart): Run the speaker wiring and a fuse under the seat, interior work only, lights stay off until approved",
+    "Donna (donna club calendar): Pencil in the 10 AM Pruitt-Kowalski practice game and check the ladder match dates",
+    "Hal (hal violation notebook): Write today's dated entry: flamingo count and Gary's cart mods, facts only",
+    "Rosa (rosa kitchen): Start the main dish and set out ingredients for the sides"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I'm home at the workbench and the wiring is tidied. Last tick I bench-tested the light strand and speaker, so the next step is mounting everything on the cart. But the review form is only filed, not approved, and L-01 says exterior mods visible from the street need Architectural Review approval. Mounting the lights on the outside now would be jumping the gun, so I'll do the interior and wiring prep on the cart, the part that stays out of the street's view, and wait on Hal. Staying useful, staying legal.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "gary_golf_cart",
+          "content": "Run the speaker wiring and a fuse under the seat, interior work only, lights stay off until approved"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 8:17 AM and the court is booked for ten sharp with Gary. I already packed the extra paddle, balls, and water last tick. Nobody's around to talk to, so I shouldn't repeat myself. I can use the club calendar to pencil in our practice game and check the ladder schedule, which keeps my social-captain machinery humming while I wait for Gary to show.",
+      "emotional_state": "eager",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_club_calendar",
+          "content": "Pencil in the 10 AM Pruitt-Kowalski practice game and check the ladder match dates"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm back at my house with the violation notebook right here. My last two ticks were spent planning the entry, so I should stop dithering and actually write it. Facts only: the date, the flamingo count visible from the street, and Gary's cart modifications. Nobody's around, the morning is quiet, and a clean written record is what the committee will respect. Once it's logged I can decide whether to file it.",
+      "emotional_state": "focused",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Write today's dated entry: flamingo count and Gary's cart mods, facts only"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Friday morning, dinner day, and I'm home alone. My last tick I confirmed tonight is clear of per-diem shifts, so I can start the day's cooking. The table's set and Gary's extra chairs fit. Nobody's around to talk to, so the useful thing is to get into the kitchen, start the main dish, and pull together the sides so everything's ready well before guests arrive tonight.",
+      "emotional_state": "hopeful",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Start the main dish and set out ingredients for the sides"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02929,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9428,
+        "output_tokens": 1027,
+        "usd": 0.02913
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 420,
+        "output_tokens": 241,
+        "usd": 0.00016
+      }
+    }
+  }
+}
