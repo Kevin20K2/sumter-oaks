@@ -1,41 +1,25 @@
 {
-  "tick": 475,
-  "time": "2026-11-12T20:17",
+  "tick": 476,
+  "time": "2026-11-12T21:17",
   "positions": {
-    "gary": "rec_center",
+    "gary": "magnolia_loop",
     "donna": "rec_center",
     "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Pruitt and Kowalski, in pencil and on the ladder, Gary! You've earned a good night's sleep, so let's call it here and I'll meet you back on the court tomorrow morning for a real practice game.”"
+      "Donna (court reservation kiosk): Reserve a two-hour slot on a pickleball court for tomorrow at 10 AM for Gary and me",
+      "You arrived at Magnolia Loop (the street)."
     ],
     "donna": [
-      "Gary said to Donna: “Thanks for the lesson, Donna, I haven't had this much fun in a while. I'm heading home to tinker with the cart wiring, so I'll see you at the courts at ten sharp.”"
+      "Gary headed to Magnolia Loop (the street)."
     ],
-    "hal": [
-      "You arrived at Hal's House."
-    ],
+    "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 365,
-        "text": "Rosa headed to Town Square.",
-        "importance": 6
-      },
-      {
-        "tick": 365,
-        "text": "You arrived at Town Square.",
-        "importance": 6
-      },
-      {
-        "tick": 365,
-        "text": "Rosa just arrived.",
-        "importance": 6
-      },
       {
         "tick": 366,
         "text": "I said to Rosa: “Evening, Rosa! I'll have cornbread for Friday, and if your table or anything in the kitchen needs fixing beforehand, just say the word. Toolbox is always ready.”",
@@ -1020,19 +1004,24 @@
         "tick": 474,
         "text": "Donna said to Gary: “Pruitt and Kowalski, in pencil and on the ladder, Gary! You've earned a good night's sleep, so let's call it here and I'll meet you back on the court tomorrow morning for a real practice game.”",
         "importance": 4
+      },
+      {
+        "tick": 475,
+        "text": "I headed to Magnolia Loop (the street).",
+        "importance": 3
+      },
+      {
+        "tick": 475,
+        "text": "Donna (court reservation kiosk): Reserve a two-hour slot on a pickleball court for tomorrow at 10 AM for Gary and me",
+        "importance": 3
+      },
+      {
+        "tick": 475,
+        "text": "You arrived at Magnolia Loop (the street).",
+        "importance": 3
       }
     ],
     "donna": [
-      {
-        "tick": 390,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 390,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 391,
         "text": "I said to Rosa: “Rosa, there you are! I'm counting the hours till your dinner tonight. What can I bring, a salad, dessert, an extra pair of hands?”",
@@ -2022,14 +2011,19 @@
         "tick": 474,
         "text": "Gary said to Donna: “Thanks for the lesson, Donna, I haven't had this much fun in a while. I'm heading home to tinker with the cart wiring, so I'll see you at the courts at ten sharp.”",
         "importance": 7
+      },
+      {
+        "tick": 475,
+        "text": "I (court reservation kiosk): Reserve a two-hour slot on a pickleball court for tomorrow at 10 AM for Gary and me",
+        "importance": 5
+      },
+      {
+        "tick": 475,
+        "text": "Gary headed to Magnolia Loop (the street).",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 374,
-        "text": "Donna just arrived.",
-        "importance": 5
-      },
       {
         "tick": 375,
         "text": "I (donna flamingo flock): Count the flamingos visible from the street against the three-ornament limit",
@@ -3024,14 +3018,14 @@
         "tick": 474,
         "text": "You arrived at Hal's House.",
         "importance": 3
+      },
+      {
+        "tick": 475,
+        "text": "I (hal violation notebook): Enter today's dated facts on the flamingo count and Gary's cart mods, then close the log",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 365,
-        "text": "Donna said to Gary: “Gary, I'll put us down for the courts at ten tomorrow morning, two hours, plenty of time for basics and still home to bake that cornbread before six. Bring the paddle and wear sneakers you don't mind scuffing.”",
-        "importance": 5
-      },
       {
         "tick": 365,
         "text": "Hal said to Rosa: “Nothing I can't eat, Rosa. Army cooked for me for thirty years, so I'm not picky. Just don't tell Donna there's room on the table for a flamingo centerpiece.”",
@@ -4026,6 +4020,11 @@
         "tick": 474,
         "text": "I (rosa kitchen): Pull the sides prepped ahead, check the fridge once more, and jot down anything still missing",
         "importance": 5
+      },
+      {
+        "tick": 475,
+        "text": "I (rosa dining table): Slide the table out a bit so Gary's extra chairs fit, then call it done for the night",
+        "importance": 4
       }
     ]
   },
@@ -4073,9 +4072,9 @@
   },
   "emotions": {
     "gary": "content",
-    "donna": "triumphant",
-    "hal": "content",
-    "rosa": "hopeful"
+    "donna": "cheerful",
+    "hal": "methodical",
+    "rosa": "content"
   },
   "laws": [
     {
@@ -4217,10 +4216,16 @@
         "Gary said to Donna: “Thanks for the lesson, Donna, I haven't had this much fun in a while. I'm heading home to tinker with the cart wiring, so I'll see you at the courts at ten sharp.”",
         "Donna said to Gary: “Pruitt and Kowalski, in pencil and on the ladder, Gary! You've earned a good night's sleep, so let's call it here and I'll meet you back on the court tomorrow morning for a real practice game.”"
       ]
+    },
+    {
+      "tick": 475,
+      "time": "Thursday, November 12, 9:17 PM",
+      "story": "Thursday night in Sumter Oaks is mild and partly cloudy at 75 degrees, and Gary is strolling down Magnolia Loop while the Rec Center hums along. Donna, cheerful as ever, has just booked a two-hour pickleball court for herself and Gary at 10 tomorrow morning. Back at his house, Hal is methodically logging the day's flamingo count and the details of Gary's golf cart modifications before closing his notebook for the night. Over at her house, Rosa nudges her dining table out a bit so Gary's extra chairs will fit, then calls it a night.",
+      "dialogue": []
     }
   ],
   "spend": {
-    "total_usd": 14.92444,
+    "total_usd": 14.95578,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4347,13 +4352,12 @@
         "usd": 0.46517
       },
       "2026-11-12": {
-        "ticks": 14,
-        "usd": 0.43055
+        "ticks": 15,
+        "usd": 0.46189
       }
     }
   },
   "recent_tick_costs": [
-    0.03135,
     0.03211,
     0.03178,
     0.03132,
@@ -4376,7 +4380,8 @@
     0.0299,
     0.03187,
     0.02977,
-    0.0303
+    0.0303,
+    0.03134
   ],
   "fund": {
     "gross_usd": 0.0,

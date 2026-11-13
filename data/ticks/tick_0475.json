@@ -1,0 +1,118 @@
+{
+  "tick": 475,
+  "simulation_time": "Thursday, November 12, 9:17 PM",
+  "weather": "Partly cloudy, 75°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "hals_house",
+    "rosa": "rosas_house"
+  },
+  "story": "Thursday night in Sumter Oaks is mild and partly cloudy at 75 degrees, and Gary is strolling down Magnolia Loop while the Rec Center hums along. Donna, cheerful as ever, has just booked a two-hour pickleball court for herself and Gary at 10 tomorrow morning. Back at his house, Hal is methodically logging the day's flamingo count and the details of Gary's golf cart modifications before closing his notebook for the night. Over at her house, Rosa nudges her dining table out a bit so Gary's extra chairs will fit, then calls it a night.",
+  "events": [
+    "Gary headed to Magnolia Loop (the street).",
+    "Donna (court reservation kiosk): Reserve a two-hour slot on a pickleball court for tomorrow at 10 AM for Gary and me",
+    "Hal (hal violation notebook): Enter today's dated facts on the flamingo count and Gary's cart mods, then close the log",
+    "Rosa (rosa dining table): Slide the table out a bit so Gary's extra chairs fit, then call it done for the night"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "It's past 9 PM and Donna just wrapped things up, saying we'll meet tomorrow morning. I already told her I'm heading home to tinker with the cart wiring, but I'm still standing here at the courts. No need to repeat the goodbyes. The only way I get the cart rigged for the parade is to head home to Magnolia Loop and get to work. Just keep any sound testing low and before 10 PM, and remember the lights still need Hal's approval before they're mounted on the street side.",
+      "emotional_state": "content",
+      "importance_rating": 3,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "magnolia_loop",
+          "content": "Heading home to tinker with the golf cart wiring before it gets any later."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "It's 9:17 PM and Gary just said goodnight, headed home to tinker with the cart wiring. The ladder is penciled in, the lesson went great, and we have a 10 AM date tomorrow. I already told him I'd meet him on the court, so there's no need to repeat myself. Before I leave, I should lock in tomorrow's court time since I'm a planner and the kiosk is right here. My earlier Tuesday reservation doesn't match tomorrow morning, so I'll book a proper two-hour slot (within the L-05 limit) so nobody grabs our court and my ladder climb stays on track.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "court_reservation_kiosk",
+          "content": "Reserve a two-hour slot on a pickleball court for tomorrow at 10 AM for Gary and me"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm home at 9:17 PM, nobody around, and the notice is already posted on the street board. My log should be up to date before Friday's dinner, so I'll make my final entry in the violation notebook while the day's observations are fresh. Facts only, dated, nothing the committee can poke holes in. Then it's lights out and rest up for Rosa's table.",
+      "emotional_state": "methodical",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "hal_violation_notebook",
+          "content": "Enter today's dated facts on the flamingo count and Gary's cart mods, then close the log"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 9:17 PM Thursday and the dinner is tomorrow. I've already checked the shift schedule, straightened the table, and gone over the pantry list in recent ticks, and the sides are prepped. The thing I haven't done in a while is actually take care of the last missing items from my list, but the only zone connection is Magnolia Loop and the shops aren't reachable from here. No one is around to talk to. The most useful thing left is a last look at the table so Gary's extra chairs have room, then get some rest before Friday. I'll do a final check of the dining table and call it done for the night.",
+      "emotional_state": "content",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Slide the table out a bit so Gary's extra chairs fit, then call it done for the night"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03134,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9810,
+        "output_tokens": 1158,
+        "usd": 0.0312
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 416,
+        "output_tokens": 198,
+        "usd": 0.00014
+      }
+    }
+  }
+}
