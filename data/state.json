@@ -1,6 +1,6 @@
 {
-  "tick": 473,
-  "time": "2026-11-12T18:17",
+  "tick": 474,
+  "time": "2026-11-12T19:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,26 +9,16 @@
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “That's the steadiest dinking I've seen from a first-timer, Gary. Let's swing by the ladder board and pencil in Pruitt and Kowalski before somebody else grabs the spot.”"
+      "Donna said to Gary: “One! Two! Three! Soft hands, Gary, that's it, keep it low over the net. Seven, eight... don't you dare rush it now, we're nearly at ten!”"
     ],
     "donna": [
-      "Gary said to Donna: “Alright, Donna, count 'em out loud so I can't cheat. Soft hands, soft hands, here comes number one.”"
+      "Gary (ladder standings board): Pencil in Pruitt and Kowalski as a doubles team"
     ],
     "hal": [],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 364,
-        "text": "Rosa said to Hal: “Hal, before you bury yourself in that form, anything you can't or won't eat on Friday? I'm leaving for the store in a minute and I'd rather know now than at the stove.”",
-        "importance": 4
-      },
-      {
-        "tick": 365,
-        "text": "I headed to Town Square.",
-        "importance": 6
-      },
       {
         "tick": 365,
         "text": "Donna said to Gary: “Gary, I'll put us down for the courts at ten tomorrow morning, two hours, plenty of time for basics and still home to bake that cornbread before six. Bring the paddle and wear sneakers you don't mind scuffing.”",
@@ -1018,19 +1008,19 @@
         "tick": 472,
         "text": "Donna said to Gary: “That's the steadiest dinking I've seen from a first-timer, Gary. Let's swing by the ladder board and pencil in Pruitt and Kowalski before somebody else grabs the spot.”",
         "importance": 4
+      },
+      {
+        "tick": 473,
+        "text": "I (ladder standings board): Pencil in Pruitt and Kowalski as a doubles team",
+        "importance": 4
+      },
+      {
+        "tick": 473,
+        "text": "Donna said to Gary: “One! Two! Three! Soft hands, Gary, that's it, keep it low over the net. Seven, eight... don't you dare rush it now, we're nearly at ten!”",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 386,
-        "text": "I (donna club calendar): Check the calendar for an open pickleball court slot to pitch to Gary",
-        "importance": 6
-      },
-      {
-        "tick": 387,
-        "text": "I (donna pickleball bag): Pack a spare paddle and a few balls so I can hand Gary a loaner",
-        "importance": 5
-      },
       {
         "tick": 388,
         "text": "I (donna club calendar): Check the Tuesday two-hour court slot is booked in ink and note the ladder standings",
@@ -2020,14 +2010,19 @@
         "tick": 472,
         "text": "Gary said to Donna: “Alright, Donna, count 'em out loud so I can't cheat. Soft hands, soft hands, here comes number one.”",
         "importance": 6
+      },
+      {
+        "tick": 473,
+        "text": "I said to Gary: “One! Two! Three! Soft hands, Gary, that's it, keep it low over the net. Seven, eight... don't you dare rush it now, we're nearly at ten!”",
+        "importance": 6
+      },
+      {
+        "tick": 473,
+        "text": "Gary (ladder standings board): Pencil in Pruitt and Kowalski as a doubles team",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 373,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 4
-      },
       {
         "tick": 373,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -3022,14 +3017,14 @@
         "tick": 472,
         "text": "I waited: Standing by on Magnolia Loop with my log in hand, letting the posted notice do its work before Friday's dinner.",
         "importance": 3
+      },
+      {
+        "tick": 473,
+        "text": "I waited: Standing on Magnolia Loop with my log, letting the posted notice sit and saving my appetite for Rosa's Friday dinner.",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 365,
-        "text": "I headed to Town Square.",
-        "importance": 5
-      },
       {
         "tick": 365,
         "text": "Gary headed to Town Square.",
@@ -4024,6 +4019,11 @@
         "tick": 472,
         "text": "I (rosa dining table): Straighten the place settings, add a small centerpiece, and check the chair count one last time",
         "importance": 4
+      },
+      {
+        "tick": 473,
+        "text": "I (rosa kitchen): Check the pantry and fridge against my list and make a note of anything still missing for Friday",
+        "importance": 4
       }
     ]
   },
@@ -4070,10 +4070,10 @@
     ]
   },
   "emotions": {
-    "gary": "cheerful",
-    "donna": "triumphant",
-    "hal": "dutiful",
-    "rosa": "content"
+    "gary": "pleased",
+    "donna": "delighted",
+    "hal": "patient",
+    "rosa": "hopeful"
   },
   "laws": [
     {
@@ -4198,9 +4198,18 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 473,
+      "time": "Thursday, November 12, 7:17 PM",
+      "story": "At 7:17 on a Thursday evening in Sumter Oaks, Gary is pleased to pencil Pruitt and Kowalski in as a doubles team on the ladder standings board at the Rec Center, while Donna, delighted, counts out his soft-hands drill over the net with him. Out on Magnolia Loop, Hal stands patiently with his log, letting the posted notice speak for itself and saving his appetite for Rosa's Friday dinner. Back in her kitchen, hopeful Rosa checks her pantry and fridge against her list, noting anything still missing before the big night.",
+      "dialogue": [
+        "Donna said to Gary: “One! Two! Three! Soft hands, Gary, that's it, keep it low over the net. Seven, eight... don't you dare rush it now, we're nearly at ten!”"
+      ]
+    }
+  ],
   "spend": {
-    "total_usd": 14.86437,
+    "total_usd": 14.89414,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4327,13 +4336,12 @@
         "usd": 0.46517
       },
       "2026-11-12": {
-        "ticks": 12,
-        "usd": 0.37048
+        "ticks": 13,
+        "usd": 0.40025
       }
     }
   },
   "recent_tick_costs": [
-    0.02998,
     0.03089,
     0.03135,
     0.03211,
@@ -4356,7 +4364,8 @@
     0.03075,
     0.03034,
     0.0299,
-    0.03187
+    0.03187,
+    0.02977
   ],
   "fund": {
     "gross_usd": 0.0,

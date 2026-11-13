@@ -1,0 +1,117 @@
+{
+  "tick": 473,
+  "simulation_time": "Thursday, November 12, 7:17 PM",
+  "weather": "Partly cloudy, 77°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on a Thursday evening in Sumter Oaks, Gary is pleased to pencil Pruitt and Kowalski in as a doubles team on the ladder standings board at the Rec Center, while Donna, delighted, counts out his soft-hands drill over the net with him. Out on Magnolia Loop, Hal stands patiently with his log, letting the posted notice speak for itself and saving his appetite for Rosa's Friday dinner. Back in her kitchen, hopeful Rosa checks her pantry and fridge against her list, noting anything still missing before the big night.",
+  "events": [
+    "Gary (ladder standings board): Pencil in Pruitt and Kowalski as a doubles team",
+    "Hal waited: Standing on Magnolia Loop with my log, letting the posted notice sit and saving my appetite for Rosa's Friday dinner.",
+    "Rosa (rosa kitchen): Check the pantry and fridge against my list and make a note of anything still missing for Friday"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna just suggested we pencil our names on the ladder board, and the board is right here in the rec center. Nothing's been said about it from my side yet, so the natural next step is to actually walk over and sign us up. It's a small thing, but it feels good to be somebody's partner again. My cart lights are filed and waiting on Hal, so I can enjoy this for now.",
+      "emotional_state": "pleased",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Pencil in Pruitt and Kowalski as a doubles team"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just asked me to count his dinks out loud so he can't cheat, so I should actually count and keep the rally going. The lesson is going great, and I'm the one who's supposed to be keeping score. Once he hits ten, we'll walk over to the ladder board and pencil in our names. Keep it short, encouraging, and fun.",
+      "emotional_state": "delighted",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "gary",
+          "content": "One! Two! Three! Soft hands, Gary, that's it, keep it low over the net. Seven, eight... don't you dare rush it now, we're nearly at ten!"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I've counted the flamingos three times, logged it, and posted the dated notice on the bulletin board. Nobody's around and it's past seven on a Thursday evening. The committee will read it when they read it, and badgering anyone before Friday's dinner at Rosa's would only turn a clean record into a squabble. Best thing I can do is keep my log in order and stand watch on the loop without making a fuss.",
+      "emotional_state": "patient",
+      "importance_rating": 3,
+      "action": {
+        "type": "WAIT",
+        "parameters": {
+          "target": "none",
+          "content": "Standing on Magnolia Loop with my log, letting the posted notice sit and saving my appetite for Rosa's Friday dinner."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's Thursday evening, the night before the dinner. I've already set the table, straightened the settings, counted chairs, and checked my shift schedule. Repeating those would just be fidgeting. The one loose end from my memory list is the 'last-minute shopping' note I made at tick 469, and there's still time to sort it out tonight. I'll go over my list once more so I know exactly what's left to do, rather than redoing the table again.",
+      "emotional_state": "hopeful",
+      "importance_rating": 4,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_kitchen",
+          "content": "Check the pantry and fridge against my list and make a note of anything still missing for Friday"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.02977,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9797,
+        "output_tokens": 1004,
+        "usd": 0.02963
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 467,
+        "output_tokens": 196,
+        "usd": 0.00014
+      }
+    }
+  }
+}
