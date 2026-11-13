@@ -1,45 +1,27 @@
 {
-  "tick": 484,
-  "time": "2026-11-13T14:17",
+  "tick": 485,
+  "time": "2026-11-13T15:17",
   "positions": {
-    "gary": "magnolia_loop",
+    "gary": "rec_center",
     "donna": "rec_center",
     "hal": "magnolia_loop",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna headed to Rec Center.",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and write the number in my log"
-    ],
-    "donna": [
-      "Gary said to Hal: “Understood, Hal. I'll get it filed properly before a single bulb goes on that cart. Right now I owe Donna a game, so I'll catch you after.”",
-      "Hal (donna flamingo flock): Count the flamingos visible from the street and write the number in my log",
+      "Hal (donna flamingo flock): Count the flamingos visible from the street and record the number in my log",
       "You arrived at Rec Center."
     ],
+    "donna": [
+      "Gary just arrived."
+    ],
     "hal": [
-      "Gary said to Hal: “Understood, Hal. I'll get it filed properly before a single bulb goes on that cart. Right now I owe Donna a game, so I'll catch you after.”",
-      "Donna headed to Rec Center."
+      "Gary headed to Rec Center."
     ],
     "rosa": []
   },
   "memories": {
     "gary": [
-      {
-        "tick": 377,
-        "text": "Donna just arrived.",
-        "importance": 5
-      },
-      {
-        "tick": 378,
-        "text": "I said to Donna: “Afternoon, Donna! Come take a look at the cart, I just finished the lights and speakers. Haven't heard back from Architectural Review yet, so she's staying parked till I do.”",
-        "importance": 4
-      },
-      {
-        "tick": 378,
-        "text": "Donna said to Gary: “Gary, hon, we're still on for the courts tomorrow at ten, and I'll bring you a paddle. Don't you worry about never having played, I'll have you ready for the ladder in no time.”",
-        "importance": 4
-      },
       {
         "tick": 379,
         "text": "I (gary fridge): Check for buttermilk and eggs for the cornbread I promised Rosa",
@@ -1024,19 +1006,24 @@
         "tick": 483,
         "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and write the number in my log",
         "importance": 4
+      },
+      {
+        "tick": 484,
+        "text": "I headed to Rec Center.",
+        "importance": 4
+      },
+      {
+        "tick": 484,
+        "text": "Hal (donna flamingo flock): Count the flamingos visible from the street and record the number in my log",
+        "importance": 4
+      },
+      {
+        "tick": 484,
+        "text": "You arrived at Rec Center.",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 399,
-        "text": "Hal headed to Rosa's House.",
-        "importance": 4
-      },
-      {
-        "tick": 399,
-        "text": "Rosa headed to Rosa's House.",
-        "importance": 4
-      },
       {
         "tick": 399,
         "text": "You arrived at Rosa's House.",
@@ -2026,19 +2013,19 @@
         "tick": 483,
         "text": "You arrived at Rec Center.",
         "importance": 6
+      },
+      {
+        "tick": 484,
+        "text": "I (ladder standings board): Check where Pruitt and Kowalski sit on the ladder while waiting for Gary",
+        "importance": 5
+      },
+      {
+        "tick": 484,
+        "text": "Gary just arrived.",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 385,
-        "text": "Donna said to Hal: “Bless you, Hal, I knew you were a man of your word. See you at Rosa's tonight, and if you hear anyone say Gary's a natural on the pickleball court, that's me starting the rumor early.”",
-        "importance": 4
-      },
-      {
-        "tick": 385,
-        "text": "Gary just arrived.",
-        "importance": 4
-      },
       {
         "tick": 386,
         "text": "I (hal binoculars): Scan Magnolia Loop for Gary's cart and any stray flamingos",
@@ -3028,14 +3015,19 @@
         "tick": 483,
         "text": "Donna headed to Rec Center.",
         "importance": 4
+      },
+      {
+        "tick": 484,
+        "text": "I (donna flamingo flock): Count the flamingos visible from the street and record the number in my log",
+        "importance": 5
+      },
+      {
+        "tick": 484,
+        "text": "Gary headed to Rec Center.",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 368,
-        "text": "I said to Donna: “Evening, Donna! Hal, you too. Just a reminder, Friday at six at my place. Gary's bringing cornbread, and I've got a chair saved for each of you. Anything you need me to know about, allergies or such?”",
-        "importance": 6
-      },
       {
         "tick": 368,
         "text": "Donna said to Rosa: “Rosa, honey, perfect timing! Hal's tallying my flamingos, so I'm pulling them down to three before Friday dinner, and I'm bringing my famous deviled eggs. You'll come cheer at Gary's first practice tomorrow at ten too, won't you?”",
@@ -4030,6 +4022,11 @@
         "tick": 483,
         "text": "I (rosa kitchen): Taste the main dish for seasoning, cover the sides, and jot down anything still missing",
         "importance": 6
+      },
+      {
+        "tick": 484,
+        "text": "I (rosa dining table): Add napkins and water glasses, then a final look to make sure there's room for Gary's chairs",
+        "importance": 6
       }
     ]
   },
@@ -4076,10 +4073,10 @@
     ]
   },
   "emotions": {
-    "gary": "determined",
+    "gary": "eager",
     "donna": "eager",
-    "hal": "dutiful",
-    "rosa": "eager"
+    "hal": "methodical",
+    "rosa": "excited"
   },
   "laws": [
     {
@@ -4204,54 +4201,9 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [
-    {
-      "tick": 479,
-      "time": "Friday, November 13, 10:17 AM",
-      "story": "At 10:17 on a sunny Friday in Sumter Oaks, Gary is at home, weighing where to go next while hoping the morning goes his way. Donna is out on Magnolia Loop, bubbly as ever, asking Hal whether he's seen Gary, since they have a ten o'clock practice game and she suspects he may still be tangled up in his golf cart wiring. Hal, methodical as always, is counting the flamingos along the street for his log, while Rosa, also hopeful, is in her kitchen tasting tonight's main dish and noting what else she needs.",
-      "dialogue": [
-        "Donna said to Hal: “Morning, Hal! Have you seen Gary this morning? We've got a ten o'clock practice game and I'm hoping he hasn't gotten lost in his cart wiring.”"
-      ]
-    },
-    {
-      "tick": 480,
-      "time": "Friday, November 13, 11:17 AM",
-      "story": "At 11:17 on a sunny Friday morning in Sumter Oaks, Gary heads out to Magnolia Loop, where Donna is wary but chipper as she confronts Hal about her flamingo lawn ornaments and the community's three-per-street limit. Hal, dry and watchful, doesn't know where Gary is and suggests Donna check his house, where he may be tinkering in the garage. Meanwhile, Rosa, hopeful as ever, is in her kitchen stirring the main dish, tasting for seasoning, and getting the sides staged and covered.",
-      "dialogue": [
-        "Donna said to Hal: “Counting my flamingos, Hal? Don't tell me, I know the limit's three from the street, so what's the damage? Be gentle, I've got a doubles partner to track down and no patience for paperwork today.”",
-        "Hal said to Donna: “Haven't seen him, Donna. Try his house. If he's out in the garage with that wiring, tell him I'll be by with my clipboard.”"
-      ]
-    },
-    {
-      "tick": 481,
-      "time": "Friday, November 13, 12:17 PM",
-      "story": "At 12:17 on a sunny Friday in Sumter Oaks, Gary is out on Magnolia Loop hoping his wiring is done and his lighting request is on Hal's desk, not stuck in the queue. Donna, playful as ever, is hurrying him toward the rec center for pickleball before the ladder fills up, though Hal reminds them both that the damage count from the street has to come down to three for the log to stay in his pocket. Over at her house, Rosa is setting the dining table and leaving room at the end for Gary's extra chairs, hopeful the whole gang will gather there.",
-      "dialogue": [
-        "Gary said to Hal: “Hal, good timing. Wiring's done and the lights are bagged up and ready. Is my request sitting on your desk or still in the queue?”",
-        "Donna said to Gary: “There he is! Ten sharp, you said, Gary, and it's past noon. Grab your paddle, we're heading to the rec center before somebody bumps us off the ladder.”",
-        "Hal said to Donna: “Damage is more than three from the street, Donna. L-02 says three, and I've got the count written down. Bring it to three and the log stays in my pocket. Otherwise it goes to the committee, nothing personal.”"
-      ]
-    },
-    {
-      "tick": 482,
-      "time": "Friday, November 13, 1:17 PM",
-      "story": "On a sunny Friday afternoon in Sumter Oaks, Gary stands on Magnolia Loop with a paddle in hand, sheepish but upbeat, after admitting he lost track of the wiring on his golf cart. Donna, flustered but determined, is thinning out the pink flamingo flock in her yard so that only three remain visible from the street, while Hal reminds Gary that the review committee has to approve the new lights before they go on the cart. Meanwhile, eager Rosa is at home checking her shift schedule to make sure nothing cuts into tonight's dinner.",
-      "dialogue": [
-        "Gary said to Donna: “You're right, Donna, I got tangled up in wiring and lost track. Paddle's in hand. Lead the way and I'll buy the lemonades after.”",
-        "Hal said to Gary: “Gary, I'm not the one who approves it, the review committee is. Make sure it's actually filed with them before those lights go on the cart, because L-01 doesn't care how neat the wiring is.”"
-      ]
-    },
-    {
-      "tick": 483,
-      "time": "Friday, November 13, 2:17 PM",
-      "story": "On a sunny Friday afternoon in Sumter Oaks, Gary tells Hal he'll get the golf cart paperwork filed before any bulbs go on, then heads off to play a game with Donna, who is already walking toward the Rec Center. Hal stays on Magnolia Loop, dutifully counting the flamingos in Donna's flock and writing the tally in his log. Meanwhile, Rosa, eager as ever, is at home in her kitchen tasting her main dish for seasoning, covering the sides, and noting what's still missing.",
-      "dialogue": [
-        "Gary said to Hal: “Understood, Hal. I'll get it filed properly before a single bulb goes on that cart. Right now I owe Donna a game, so I'll catch you after.”"
-      ]
-    }
-  ],
+  "recap_pending": [],
   "spend": {
-    "total_usd": 15.20052,
+    "total_usd": 15.23165,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4382,13 +4334,12 @@
         "usd": 0.46189
       },
       "2026-11-13": {
-        "ticks": 8,
-        "usd": 0.24474
+        "ticks": 9,
+        "usd": 0.27587
       }
     }
   },
   "recent_tick_costs": [
-    0.03134,
     0.03069,
     0.03161,
     0.03212,
@@ -4411,7 +4362,8 @@
     0.03074,
     0.0307,
     0.03185,
-    0.03231
+    0.03231,
+    0.03113
   ],
   "fund": {
     "gross_usd": 0.0,

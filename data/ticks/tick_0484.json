@@ -1,0 +1,118 @@
+{
+  "tick": 484,
+  "simulation_time": "Friday, November 13, 3:17 PM",
+  "weather": "Sunny, 78°F",
+  "positions": {
+    "gary": "magnolia_loop",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "On a sunny Friday afternoon in Sumter Oaks, Gary is making his way to the Rec Center, eager for whatever is waiting there. Donna is at the ladder standings board, checking where Pruitt and Kowalski sit while she waits for him. Out on Magnolia Loop, Hal is methodically counting the pink flamingos visible from the street and jotting the number in his log. Meanwhile, Rosa is setting out napkins and water glasses at her dining table, giving it one last look to make sure there's room for Gary's chairs.",
+  "events": [
+    "Gary headed to Rec Center.",
+    "Donna (ladder standings board): Check where Pruitt and Kowalski sit on the ladder while waiting for Gary",
+    "Hal (donna flamingo flock): Count the flamingos visible from the street and record the number in my log",
+    "Rosa (rosa dining table): Add napkins and water glasses, then a final look to make sure there's room for Gary's chairs"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "I told Hal I'd file the cart request properly and then head off to play with Donna. She's already gone to the rec center, and Hal is busy counting flamingos. No point repeating myself to Hal. L-01 says no lights on the cart until Architectural Review signs off, so the wiring can wait on paper. I promised Donna a game and want to show up on time to keep building this partnership, so I'll head to the rec center.",
+      "emotional_state": "eager",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rec_center",
+          "content": "Heading to the rec center to meet Donna for that game of pickleball."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "I just got to the Rec Center and Gary said he owed me a game, but he's not in sight yet. Courts are open, it's a sunny Friday afternoon, and our names are in pencil on the ladder. I should use the ladder board to check where we stand while I wait, and Gary will catch up. No need to keep nagging him; he already agreed to come.",
+      "emotional_state": "eager",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "ladder_standings_board",
+          "content": "Check where Pruitt and Kowalski sit on the ladder while waiting for Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "Gary has said he'll file the cart mods properly, so that's handled for now. Donna left for the Rec Center, but the flamingo flock is right here on Magnolia Loop. I've been logging counts, and the log should speak for itself. I'll tally what's visible from the street now and write the number down, facts only, no fuss, ready to bring to the committee if she doesn't comply with the L-02 limit of three.",
+      "emotional_state": "methodical",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "donna_flamingo_flock",
+          "content": "Count the flamingos visible from the street and record the number in my log"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 3:17 PM Friday and I've been fussing over the same things for hours: main dish tasted, sides covered, places set, schedule checked. Last tick I tasted and covered again, and the schedule is already confirmed clear. The one thing I keep jotting down as 'missing' is never actually resolved. Re-tasting again would be repetition. The dining table is set with room left for Gary's extra chairs. Guests aren't due for a bit, no one is nearby, so the useful move is a final walk-through of the table so everything looks welcoming when everyone arrives, adding a few finishing touches like napkins and water glasses.",
+      "emotional_state": "excited",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Add napkins and water glasses, then a final look to make sure there's room for Gary's chairs"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03113,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9930,
+        "output_tokens": 1054,
+        "usd": 0.0304
+      },
+      "claude-haiku-5-5": {
+        "calls": 2,
+        "input_tokens": 3869,
+        "output_tokens": 683,
+        "usd": 0.00073
+      }
+    }
+  }
+}
