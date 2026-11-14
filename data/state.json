@@ -1,6 +1,6 @@
 {
-  "tick": 489,
-  "time": "2026-11-13T19:17",
+  "tick": 490,
+  "time": "2026-11-13T20:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
@@ -9,30 +9,20 @@
   },
   "perceptions": {
     "gary": [
-      "Donna (pickleball court 1): Step onto court one, grab a ball, and start serving easy to Gary"
+      "Donna (pickleball court 1): Serve the first ball underhand and easy to Gary's side, calling the score 0-0-2"
     ],
     "donna": [
-      "Gary said to Donna: “Left side it is, Donna. Go easy on the first serve and I'll keep my dinks nice and low. Play to eleven, loser buys the lemonade.”"
+      "Gary (pickleball court 1): Take the left side and return Donna's easy serves with low dinks"
     ],
     "hal": [
-      "You arrived at Rosa's House."
+      "Rosa said to Hal: “Hal, there you are, come in, come in. Grab a seat anywhere at the table; Gary and Donna are right behind you, and the food's hot.”"
     ],
     "rosa": [
-      "Hal just arrived."
+      "Hal said to Rosa: “Evening, Rosa. Sorry if I'm running behind. Anything I can carry or set out before everybody sits down?”"
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 385,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
-      {
-        "tick": 385,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 386,
         "text": "I (gary workbench): Wire up and bench-test the cart's lights and speaker setup while waiting on approval",
@@ -1022,19 +1012,19 @@
         "tick": 488,
         "text": "Donna (pickleball court 1): Step onto court one, grab a ball, and start serving easy to Gary",
         "importance": 5
+      },
+      {
+        "tick": 489,
+        "text": "I (pickleball court 1): Take the left side and return Donna's easy serves with low dinks",
+        "importance": 5
+      },
+      {
+        "tick": 489,
+        "text": "Donna (pickleball court 1): Serve the first ball underhand and easy to Gary's side, calling the score 0-0-2",
+        "importance": 5
       }
     ],
     "donna": [
-      {
-        "tick": 403,
-        "text": "I (donna phone): Text Gary to confirm Tuesday's two-hour court time and tell him I packed him a spare paddle",
-        "importance": 5
-      },
-      {
-        "tick": 404,
-        "text": "I headed to Magnolia Loop (the street).",
-        "importance": 5
-      },
       {
         "tick": 404,
         "text": "You arrived at Magnolia Loop (the street).",
@@ -2024,19 +2014,19 @@
         "tick": 488,
         "text": "Gary said to Donna: “Left side it is, Donna. Go easy on the first serve and I'll keep my dinks nice and low. Play to eleven, loser buys the lemonade.”",
         "importance": 6
+      },
+      {
+        "tick": 489,
+        "text": "I (pickleball court 1): Serve the first ball underhand and easy to Gary's side, calling the score 0-0-2",
+        "importance": 6
+      },
+      {
+        "tick": 489,
+        "text": "Gary (pickleball court 1): Take the left side and return Donna's easy serves with low dinks",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 389,
-        "text": "I said to Rosa: “Morning, Rosa. Just doing my rounds, counting birds and checking carts. Fair is fair, but the rules are the rules. Still on for Friday dinner?”",
-        "importance": 4
-      },
-      {
-        "tick": 389,
-        "text": "Rosa said to Hal: “Morning, Hal. I'm still working on getting you, Gary and Donna all at my table at once. Is there a night coming up that suits you?”",
-        "importance": 4
-      },
       {
         "tick": 390,
         "text": "I said to Rosa: “Friday suits me fine, Rosa. I'll show up on time, and I'll behave if the others do. Leave the bird-counting and cart paperwork outside the door.”",
@@ -3026,19 +3016,19 @@
         "tick": 488,
         "text": "You arrived at Rosa's House.",
         "importance": 4
+      },
+      {
+        "tick": 489,
+        "text": "I said to Rosa: “Evening, Rosa. Sorry if I'm running behind. Anything I can carry or set out before everybody sits down?”",
+        "importance": 3
+      },
+      {
+        "tick": 489,
+        "text": "Rosa said to Hal: “Hal, there you are, come in, come in. Grab a seat anywhere at the table; Gary and Donna are right behind you, and the food's hot.”",
+        "importance": 3
       }
     ],
     "rosa": [
-      {
-        "tick": 370,
-        "text": "I (street bulletin board): Pin a note: Friday dinner at Rosa's, 6 PM sharp. Donna's deviled eggs have mayo and mustard.",
-        "importance": 5
-      },
-      {
-        "tick": 370,
-        "text": "Donna (donna flamingo flock): Pull up the extra flamingos and carry them around back, leaving just three out front",
-        "importance": 5
-      },
       {
         "tick": 370,
         "text": "Hal (street bulletin board): Read the postings for any cart-modification approval or other notices before heading home",
@@ -4028,6 +4018,16 @@
         "tick": 488,
         "text": "Hal just arrived.",
         "importance": 6
+      },
+      {
+        "tick": 489,
+        "text": "I said to Hal: “Hal, there you are, come in, come in. Grab a seat anywhere at the table; Gary and Donna are right behind you, and the food's hot.”",
+        "importance": 6
+      },
+      {
+        "tick": 489,
+        "text": "Hal said to Rosa: “Evening, Rosa. Sorry if I'm running behind. Anything I can carry or set out before everybody sits down?”",
+        "importance": 6
       }
     ]
   },
@@ -4075,9 +4075,9 @@
   },
   "emotions": {
     "gary": "cheerful",
-    "donna": "eager",
+    "donna": "excited",
     "hal": "dutiful",
-    "rosa": "eager"
+    "rosa": "warm, relieved"
   },
   "laws": [
     {
@@ -4235,10 +4235,19 @@
       "dialogue": [
         "Gary said to Donna: “Left side it is, Donna. Go easy on the first serve and I'll keep my dinks nice and low. Play to eleven, loser buys the lemonade.”"
       ]
+    },
+    {
+      "tick": 489,
+      "time": "Friday, November 13, 8:17 PM",
+      "story": "At 8:17 on a sunny Friday evening in Sumter Oaks, Gary and Donna are finishing a gentle pickleball rally on Court 1 at the Rec Center, with Donna calling out the score as she serves underhand. Over at Rosa's House, Hal has just arrived a little late, offering to carry something in, while Rosa waves him inside, relieved and warm, and reassures him that the food is hot and the rest of the group is on the way.",
+      "dialogue": [
+        "Hal said to Rosa: “Evening, Rosa. Sorry if I'm running behind. Anything I can carry or set out before everybody sits down?”",
+        "Rosa said to Hal: “Hal, there you are, come in, come in. Grab a seat anywhere at the table; Gary and Donna are right behind you, and the food's hot.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 15.35349,
+    "total_usd": 15.38319,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4369,13 +4378,12 @@
         "usd": 0.46189
       },
       "2026-11-13": {
-        "ticks": 13,
-        "usd": 0.39771
+        "ticks": 14,
+        "usd": 0.42741
       }
     }
   },
   "recent_tick_costs": [
-    0.02991,
     0.03088,
     0.03118,
     0.02981,
@@ -4398,7 +4406,8 @@
     0.02969,
     0.02981,
     0.0311,
-    0.03124
+    0.03124,
+    0.0297
   ],
   "fund": {
     "gross_usd": 0.0,

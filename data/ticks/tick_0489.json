@@ -1,0 +1,116 @@
+{
+  "tick": 489,
+  "simulation_time": "Friday, November 13, 8:17 PM",
+  "weather": "Sunny, 74°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "rosas_house",
+    "rosa": "rosas_house"
+  },
+  "story": "At 8:17 on a sunny Friday evening in Sumter Oaks, Gary and Donna are finishing a gentle pickleball rally on Court 1 at the Rec Center, with Donna calling out the score as she serves underhand. Over at Rosa's House, Hal has just arrived a little late, offering to carry something in, while Rosa waves him inside, relieved and warm, and reassures him that the food is hot and the rest of the group is on the way.",
+  "events": [
+    "Gary (pickleball court 1): Take the left side and return Donna's easy serves with low dinks",
+    "Donna (pickleball court 1): Serve the first ball underhand and easy to Gary's side, calling the score 0-0-2"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna is already on court one serving easy to me, and I'm supposed to be on the left side. I said I'd keep my dinks low and play to eleven, loser buys lemonade. Talking more won't help, so I should interact with the court and actually play. The cart wiring and Hal's filing can wait until after the game, and it's nice to feel like part of a team again.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Take the left side and return Donna's easy serves with low dinks"
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just accepted the terms: left side, easy serves, play to eleven, loser buys lemonade. I already reserved court one and stepped onto it last tick, so now it's time to actually play and get him hitting. No more talking needed. I'll serve nice and easy, show him the dink, and keep the pressure on that ladder spot.",
+      "emotional_state": "excited",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Serve the first ball underhand and easy to Gary's side, calling the score 0-0-2"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "I'm at Rosa's for the Friday dinner. It's 8:17 PM, so I'm well past the six o'clock mark, but Rosa is the only one in sight. Donna and Gary are nowhere to be seen, which is not like them. My filing business can wait until after the meal; I'm not going to pester a host about deed restrictions in her own kitchen. A sergeant who shows up late owes the host a straight word and a thank-you, so I'll greet Rosa and ask how I can help.",
+      "emotional_state": "dutiful",
+      "importance_rating": 3,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "rosa",
+          "content": "Evening, Rosa. Sorry if I'm running behind. Anything I can carry or set out before everybody sits down?"
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "Hal just walked in. I've been fussing in the kitchen and the table's set, so now's the time to actually greet him and get everyone seated. Gary and Donna were headed over, so I'll welcome Hal, get him inside, and let him know we'll sit as soon as the others arrive. No need to repeat anything I've already said to Donna.",
+      "emotional_state": "warm, relieved",
+      "importance_rating": 6,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "hal",
+          "content": "Hal, there you are, come in, come in. Grab a seat anywhere at the table; Gary and Donna are right behind you, and the food's hot."
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.0297,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9796,
+        "output_tokens": 999,
+        "usd": 0.02958
+      },
+      "claude-haiku-5-5": {
+        "calls": 1,
+        "input_tokens": 455,
+        "output_tokens": 151,
+        "usd": 0.00012
+      }
+    }
+  }
+}
