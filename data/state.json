@@ -1,33 +1,28 @@
 {
-  "tick": 491,
-  "time": "2026-11-13T21:17",
+  "tick": 492,
+  "time": "2026-11-14T07:17",
   "positions": {
-    "gary": "rec_center",
-    "donna": "rec_center",
-    "hal": "rosas_house",
+    "gary": "garys_house",
+    "donna": "donnas_house",
+    "hal": "hals_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Nice dink, Gary, that's the soft touch the ladder rewards! Keep it low and I'll start mixing in a little pace. Eleven to win, and that lemonade is as good as mine.”"
+      "The cloud over Sumter Oaks is down to a few grey wisps, drizzling on Magnolia Loop."
     ],
     "donna": [
-      "Gary (pickleball court 1): Return Donna's serve with a soft, low dink from the left side"
+      "The cloud over Sumter Oaks is down to a few grey wisps, drizzling on Magnolia Loop."
     ],
     "hal": [
-      "Rosa said to Hal: “You're not late, Hal, you're right on time. If you want to help, grab the bread basket off the kitchen counter and set it in the middle of the table. Then sit anywhere you like.”"
+      "The cloud over Sumter Oaks is down to a few grey wisps, drizzling on Magnolia Loop."
     ],
     "rosa": [
-      "Hal (rosa dining table): Pull out a chair and sit down at the table"
+      "The cloud over Sumter Oaks is down to a few grey wisps, drizzling on Magnolia Loop."
     ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 388,
-        "text": "I (gary golf cart): Power up the lights and speakers and test the full setup at low volume",
-        "importance": 4
-      },
       {
         "tick": 389,
         "text": "I waited: puttering around Gary's House",
@@ -1022,14 +1017,14 @@
         "tick": 490,
         "text": "Donna said to Gary: “Nice dink, Gary, that's the soft touch the ladder rewards! Keep it low and I'll start mixing in a little pace. Eleven to win, and that lemonade is as good as mine.”",
         "importance": 4
+      },
+      {
+        "tick": 491,
+        "text": "I (gary workbench): Lay out and splice the wiring harness for the cart's sound system and light controller",
+        "importance": 4
       }
     ],
     "donna": [
-      {
-        "tick": 405,
-        "text": "Gary just arrived.",
-        "importance": 4
-      },
       {
         "tick": 406,
         "text": "I said to Gary: “Gary, perfect timing! I've got your spare paddle in the cart. Come to the rec center with me and let's get a little practice in before Tuesday, I'll teach you the kitchen line.”",
@@ -2024,14 +2019,14 @@
         "tick": 490,
         "text": "Gary (pickleball court 1): Return Donna's serve with a soft, low dink from the left side",
         "importance": 6
+      },
+      {
+        "tick": 491,
+        "text": "I (donna club calendar): Check the calendar for court reservation conflicts and club commitments before our 10 AM game with Gary",
+        "importance": 5
       }
     ],
     "hal": [
-      {
-        "tick": 390,
-        "text": "Donna just arrived.",
-        "importance": 4
-      },
       {
         "tick": 391,
         "text": "I said to Donna: “Afternoon, Donna. Rosa's got us all down for Friday at six, so I'd like to be able to eat in peace. Get the street-facing flamingos down to three and I'll call it settled.”",
@@ -3026,14 +3021,14 @@
         "tick": 490,
         "text": "Rosa said to Hal: “You're not late, Hal, you're right on time. If you want to help, grab the bread basket off the kitchen counter and set it in the middle of the table. Then sit anywhere you like.”",
         "importance": 3
+      },
+      {
+        "tick": 491,
+        "text": "I (hal violation notebook): Review and tidy my notes on the flamingo count and Gary's cart modifications before filing",
+        "importance": 5
       }
     ],
     "rosa": [
-      {
-        "tick": 372,
-        "text": "I (rosa kitchen): Check the pantry list and get the main dish marinating for tonight's dinner",
-        "importance": 6
-      },
       {
         "tick": 373,
         "text": "I (rosa dining table): Set the table for four with plates, glasses, and a spot for Donna's deviled eggs",
@@ -4028,6 +4023,11 @@
         "tick": 490,
         "text": "Hal (rosa dining table): Pull out a chair and sit down at the table",
         "importance": 6
+      },
+      {
+        "tick": 491,
+        "text": "I (rosa shift schedule): Look over the upcoming per-diem shifts and see what the week looks like",
+        "importance": 3
       }
     ]
   },
@@ -4074,9 +4074,9 @@
     ]
   },
   "emotions": {
-    "gary": "content",
-    "donna": "excited",
-    "hal": "content",
+    "gary": "determined",
+    "donna": "determined",
+    "hal": "focused",
     "rosa": "content"
   },
   "laws": [
@@ -4202,9 +4202,16 @@
       "text": "Gary Kowalski: Check that my cart modification request is on file with the 10 PM sound cutoff noted"
     }
   ],
-  "recap_pending": [],
+  "recap_pending": [
+    {
+      "tick": 491,
+      "time": "Saturday, November 14, 7:17 AM",
+      "story": "On a sunny Saturday morning at 76 degrees, Gary is at his workbench in his garage, carefully splicing the wiring harness for his golf cart's sound system and light controller. Across the way, Donna is at her kitchen table checking the club calendar for court conflicts before her 10 AM game with Gary, while Hal sits in his own kitchen tidying up his violation notebook, including his notes on the flamingo count and Gary's cart modifications. Meanwhile, Rosa, content with her coffee, looks over her per-diem shift schedule to see what the week ahead holds.",
+      "dialogue": []
+    }
+  ],
   "spend": {
-    "total_usd": 15.41314,
+    "total_usd": 15.44438,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4337,11 +4344,14 @@
       "2026-11-13": {
         "ticks": 15,
         "usd": 0.45736
+      },
+      "2026-11-14": {
+        "ticks": 1,
+        "usd": 0.03124
       }
     }
   },
   "recent_tick_costs": [
-    0.03118,
     0.02981,
     0.03075,
     0.03034,
@@ -4364,7 +4374,8 @@
     0.0311,
     0.03124,
     0.0297,
-    0.02995
+    0.02995,
+    0.03124
   ],
   "fund": {
     "gross_usd": 0.0,
@@ -4410,9 +4421,9 @@
       }
     ],
     "test_mode": false,
-    "level": "low"
+    "level": "empty"
   },
-  "last_tick_date": "2026-11-13",
+  "last_tick_date": "2026-11-14",
   "calendar_fired": [
     "halloween-flyer",
     "halloween-reminder",
