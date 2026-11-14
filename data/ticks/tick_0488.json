@@ -1,0 +1,117 @@
+{
+  "tick": 488,
+  "simulation_time": "Friday, November 13, 7:17 PM",
+  "weather": "Sunny, 75°F",
+  "positions": {
+    "gary": "rec_center",
+    "donna": "rec_center",
+    "hal": "magnolia_loop",
+    "rosa": "rosas_house"
+  },
+  "story": "At 7:17 on this sunny Friday evening in Sumter Oaks, Gary and Donna are warming up on pickleball court one at the Rec Center, with Gary promising easy dinks in exchange for a lemonade wager. Over on Magnolia Loop, Hal is making his dutiful way toward Rosa's House, while Rosa, eager to host, is straightening the place settings and nudging her dining table so there's room for Gary's extra chairs.",
+  "events": [
+    "Donna (pickleball court 1): Step onto court one, grab a ball, and start serving easy to Gary",
+    "Hal headed to Rosa's House.",
+    "Rosa (rosa dining table): Straighten the place settings and nudge the table out so Gary's extra chairs fit"
+  ],
+  "results": {
+    "gary": {
+      "thought_process": "Donna has already said court one is ours and told me to take the left side. The kiosk reservation has been made, since I reserved it twice already, so there's no sense fussing with it again. I've been dithering and the sun's good. I should answer her, keep it short, and get playing instead of asking anything more. Cart wiring can wait until after the game; tomorrow's ten sharp is the real deadline anyway.",
+      "emotional_state": "cheerful",
+      "importance_rating": 5,
+      "action": {
+        "type": "SPEAK",
+        "parameters": {
+          "target": "donna",
+          "content": "Left side it is, Donna. Go easy on the first serve and I'll keep my dinks nice and low. Play to eleven, loser buys the lemonade."
+        }
+      }
+    },
+    "donna": {
+      "thought_process": "Gary just booked court one for two hours max, which fits L-05, and he's standing right next to me. I already picked the court and the left side, so there's nothing left to plan out loud. It's a nice sunny evening, the courts are open, and the practice game is what I've wanted all along. Time to stop talking and get him a paddle in hand and start counting dinks.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "pickleball_court_1",
+          "content": "Step onto court one, grab a ball, and start serving easy to Gary"
+        }
+      }
+    },
+    "hal": {
+      "thought_process": "It's past seven on Friday and I told Rosa six o'clock. I've checked the kiosk twice already and the bulletin board once, so there's nothing new to chase there. My flamingo count and cart notes are in the log, and the committee can read them without my temper attached. Dinner is waiting, and I'd rather be a man who shows up on time than one who stands on the street with a clipboard. Rosa's is a short walk off Magnolia Loop. Time to go, even if I'm late.",
+      "emotional_state": "dutiful",
+      "importance_rating": 4,
+      "action": {
+        "type": "MOVE",
+        "parameters": {
+          "target": "rosas_house",
+          "content": "Heading to Rosa's for dinner. The log can wait until Monday."
+        }
+      }
+    },
+    "rosa": {
+      "thought_process": "It's 7:17 PM Friday and nobody is in sight. I've been looping on the same kitchen checks for several ticks: tasted, covered, oven timing, napkins, chairs, shift schedule. Donna was told at tick 398 to walk over with Hal, and Gary is bringing cornbread, so they should be arriving soon. Fussing more won't help. The one concrete thing left is the dining table, where I can make a final adjustment so there's room for Gary's extra chairs and all the place settings are in order before the doorbell rings. Then I'll let the guests come to me.",
+      "emotional_state": "eager",
+      "importance_rating": 6,
+      "action": {
+        "type": "INTERACT",
+        "parameters": {
+          "target": "rosa_dining_table",
+          "content": "Straighten the place settings and nudge the table out so Gary's extra chairs fit"
+        }
+      }
+    }
+  },
+  "matters": [],
+  "laws": [
+    {
+      "id": "L-01",
+      "title": "Cart Modifications",
+      "text": "Exterior golf cart modifications visible from the street require Architectural Review approval."
+    },
+    {
+      "id": "L-02",
+      "title": "Lawn Ornaments",
+      "text": "No more than 3 decorative ornaments may be visible from the street."
+    },
+    {
+      "id": "L-03",
+      "title": "Quiet Hours",
+      "text": "No amplified sound from 10 PM to 7 AM."
+    },
+    {
+      "id": "L-04",
+      "title": "Holiday Decor",
+      "text": "Holiday lighting is permitted from Thanksgiving through January 15."
+    },
+    {
+      "id": "L-05",
+      "title": "Court Reservations",
+      "text": "Pickleball courts may be reserved for a maximum of 2 hours per party."
+    },
+    {
+      "id": "L-06",
+      "title": "Parking",
+      "text": "No parking on the grass. Carts and cars stay on driveways or the street."
+    }
+  ],
+  "cost": {
+    "usd": 0.03124,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 4,
+        "input_tokens": 9878,
+        "output_tokens": 1077,
+        "usd": 0.03053
+      },
+      "claude-haiku-5-5": {
+        "calls": 5,
+        "input_tokens": 4394,
+        "output_tokens": 533,
+        "usd": 0.00071
+      }
+    }
+  }
+}

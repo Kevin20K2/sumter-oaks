@@ -1,34 +1,28 @@
 {
-  "tick": 488,
-  "time": "2026-11-13T18:17",
+  "tick": 489,
+  "time": "2026-11-13T19:17",
   "positions": {
     "gary": "rec_center",
     "donna": "rec_center",
-    "hal": "magnolia_loop",
+    "hal": "rosas_house",
     "rosa": "rosas_house"
   },
   "perceptions": {
     "gary": [
-      "Donna said to Gary: “Perfect, court one is ours, Gary! Take the left side, I'll serve the first few nice and easy, and we'll play to eleven before anyone eyes our spot on that ladder.”"
+      "Donna (pickleball court 1): Step onto court one, grab a ball, and start serving easy to Gary"
     ],
     "donna": [
-      "Gary (court reservation kiosk): Reserve pickleball court one for Donna and me, 2 hours max"
+      "Gary said to Donna: “Left side it is, Donna. Go easy on the first serve and I'll keep my dinks nice and low. Play to eleven, loser buys the lemonade.”"
     ],
-    "hal": [],
-    "rosa": []
+    "hal": [
+      "You arrived at Rosa's House."
+    ],
+    "rosa": [
+      "Hal just arrived."
+    ]
   },
   "memories": {
     "gary": [
-      {
-        "tick": 383,
-        "text": "I (gary fridge): Pour the batter into the pan and slide the cornbread in to bake",
-        "importance": 4
-      },
-      {
-        "tick": 384,
-        "text": "I (gary fridge): Pull the finished cornbread out of the oven and wrap it up for Rosa's dinner",
-        "importance": 4
-      },
       {
         "tick": 385,
         "text": "I headed to Magnolia Loop (the street).",
@@ -1018,19 +1012,19 @@
         "tick": 487,
         "text": "Donna said to Gary: “Perfect, court one is ours, Gary! Take the left side, I'll serve the first few nice and easy, and we'll play to eleven before anyone eyes our spot on that ladder.”",
         "importance": 4
-      }
-    ],
-    "donna": [
+      },
       {
-        "tick": 401,
-        "text": "I (donna club calendar): Pencil in a two-hour Tuesday court reservation for Gary and me and flag the ladder matches",
+        "tick": 488,
+        "text": "I said to Donna: “Left side it is, Donna. Go easy on the first serve and I'll keep my dinks nice and low. Play to eleven, loser buys the lemonade.”",
         "importance": 5
       },
       {
-        "tick": 402,
-        "text": "I (donna pickleball bag): Check the paddles and balls and pack a spare paddle for Gary",
-        "importance": 4
-      },
+        "tick": 488,
+        "text": "Donna (pickleball court 1): Step onto court one, grab a ball, and start serving easy to Gary",
+        "importance": 5
+      }
+    ],
+    "donna": [
       {
         "tick": 403,
         "text": "I (donna phone): Text Gary to confirm Tuesday's two-hour court time and tell him I packed him a spare paddle",
@@ -2020,19 +2014,19 @@
         "tick": 487,
         "text": "Gary (court reservation kiosk): Reserve pickleball court one for Donna and me, 2 hours max",
         "importance": 6
+      },
+      {
+        "tick": 488,
+        "text": "I (pickleball court 1): Step onto court one, grab a ball, and start serving easy to Gary",
+        "importance": 6
+      },
+      {
+        "tick": 488,
+        "text": "Gary said to Donna: “Left side it is, Donna. Go easy on the first serve and I'll keep my dinks nice and low. Play to eleven, loser buys the lemonade.”",
+        "importance": 6
       }
     ],
     "hal": [
-      {
-        "tick": 388,
-        "text": "You arrived at Magnolia Loop (the street).",
-        "importance": 4
-      },
-      {
-        "tick": 388,
-        "text": "Rosa just arrived.",
-        "importance": 4
-      },
       {
         "tick": 389,
         "text": "I said to Rosa: “Morning, Rosa. Just doing my rounds, counting birds and checking carts. Fair is fair, but the rules are the rules. Still on for Friday dinner?”",
@@ -3022,19 +3016,19 @@
         "tick": 487,
         "text": "I (mailbox kiosk): Check the kiosk once more for Architectural Review notices before heading to Rosa's",
         "importance": 4
+      },
+      {
+        "tick": 488,
+        "text": "I headed to Rosa's House.",
+        "importance": 4
+      },
+      {
+        "tick": 488,
+        "text": "You arrived at Rosa's House.",
+        "importance": 4
       }
     ],
     "rosa": [
-      {
-        "tick": 369,
-        "text": "Donna said to Rosa: “No allergies on my end, sweetheart, but my deviled eggs have mayo and mustard in them, so tell anybody who needs to know. I'll bring two dozen, and I'm done with these flamingos tonight, three out front and the rest going out back.”",
-        "importance": 5
-      },
-      {
-        "tick": 369,
-        "text": "Hal said to Rosa: “No allergies here, Rosa. Army cooked for me for thirty years, so my stomach's survived worse. I'll bring a folding chair in case anyone needs a spare.”",
-        "importance": 5
-      },
       {
         "tick": 370,
         "text": "I (street bulletin board): Pin a note: Friday dinner at Rosa's, 6 PM sharp. Donna's deviled eggs have mayo and mustard.",
@@ -4024,56 +4018,66 @@
         "tick": 487,
         "text": "I (rosa shift schedule): One last look to make sure no per-diem shift or call-in cuts into dinner",
         "importance": 6
+      },
+      {
+        "tick": 488,
+        "text": "I (rosa dining table): Straighten the place settings and nudge the table out so Gary's extra chairs fit",
+        "importance": 6
+      },
+      {
+        "tick": 488,
+        "text": "Hal just arrived.",
+        "importance": 6
       }
     ]
   },
   "reflections": {
     "gary": [
-      "I'm glad Hal is checking my work, because the cart's LED strip and speaker are wired up tidy and tested quietly in the garage, and I want to keep it that way until the review clears.",
-      "Donna is looking out for me like always, so I'll stretch my knees tonight and keep my eye on the ladder standings, since beating the right teams before Thursday is what matters most.",
       "I've got the review form filed and the wiring tidied up, so I'm ready for whatever Hal and Donna have planned for me today.",
       "Donna's been looking out for me with the paddle lessons, and I'm glad to have a neighbor who cares enough to push me to stay limber.",
       "I'm hoping Hal gets the lights approved soon, because I want them mounted before the next long evening on Magnolia Loop.",
       "Donna is turning out to be a good partner, and I'm pleased that my soft dinking earned me a spot on the ladder board with her.",
       "Donna made the day feel easy, and I'm glad I finally got to play a real game with her and see my name penciled in beside hers on the ladder.",
-      "I need to finish the cart wiring soon so I can show up at the courts at ten sharp tomorrow and keep building on this new partnership."
+      "I need to finish the cart wiring soon so I can show up at the courts at ten sharp tomorrow and keep building on this new partnership.",
+      "I'm looking forward to a relaxed game of pickleball with Donna, even if my soft dinks still need work.",
+      "I owe Hal a proper filing for those lights, and I want to keep my word to him before the committee gets involved."
     ],
     "donna": [
-      "Hal keeps counting my flamingos and writing them down, but a festive flock deserves more appreciation than a tally sheet, and I'm glad Rosa's Friday dinner gives us all a reason to gather.",
-      "Gary's paperwork is nearly settled and I'm eager to get him onto the court tomorrow, because getting my two hours booked with him feels like the next good thing to look forward to.",
       "Donna's been so patient with me about the knees, and I'm grateful she's making time to teach me pickleball tomorrow morning.",
       "Gary seems eager and easygoing, and I'm glad we're starting this lesson together after everything with the golf cart and the review form.",
       "Gary is a good sport who makes me laugh, and I love how eager he is to learn the game with me.",
       "Getting Gary onto the court and teaching him soft dinks has made me feel like the community's welcoming captain again.",
       "Gary and I have a real partnership forming, from counting dinks to penciling our names on the ladder board together.",
-      "I'm determined to hold our 10 AM practice game with Gary and climb that ladder before anyone else takes our spot."
+      "I'm determined to hold our 10 AM practice game with Gary and climb that ladder before anyone else takes our spot.",
+      "I'm glad Gary finally kept his word and showed up on time, because I've been looking forward to our game all week.",
+      "Hal is being a stickler about those flamingos, but I'd rather he be fair and firm than let anything slide."
     ],
     "hal": [
-      "I'm glad Gary's been so upfront about his cart mods, and I want to make sure the measurements match his form so nobody feels blindsided tomorrow.",
-      "Donna's been pushing hard about Gary's paperwork and the court, but I think she means well, and I'd rather keep the peace at Rosa's Friday dinner.",
       "I'm keeping a careful log of Gary's cart modifications and the flamingo count, and I want every fact to hold up under review.",
       "Gary seems more willing to cooperate than I expected, so I'll stay fair with him while I check his work against the form.",
       "Gary's cart mods and Donna's flamingos are exactly the kind of thing I can document, so I'll stick to facts and let the committee decide what they mean.",
       "Standing here on Magnolia Loop with my log, I'd rather be seen as the neighbor who keeps good records than the one who starts fights.",
       "I've been keeping a careful written record of the flamingo count and Gary's cart modifications, and I want that record to speak for itself rather than my temper.",
-      "Donna's easy teasing about my clipboard tells me she knows I take these rules seriously, even if she wishes I'd relax a little."
+      "Donna's easy teasing about my clipboard tells me she knows I take these rules seriously, even if she wishes I'd relax a little.",
+      "I keep having to play the bad guy with Donna and Gary about the flamingos and the wiring, but the rules exist so the street stays fair for everyone, and I'd rather be honest than let a friendship slide.",
+      "Gary seems to be getting his cart project finished at last, and I hope the committee filing goes through so he can enjoy the doubles game without that paperwork hanging over him."
     ],
     "rosa": [
-      "I'm glad the Friday dinner is official now that the note is pinned, and I want the whole street to feel welcome at my table.",
-      "Donna and Hal keep pulling me into their plans, and I feel lucky to have neighbors who look out for each other.",
       "I've been preparing for Friday's dinner with care, and it feels good to have everything coming together at my place for Hal and the others.",
       "I'm glad Hal is coming, and I hope the evening brings us all closer, even with Donna and Gary's plans buzzing around us.",
       "I'm really looking forward to Friday, and I want everyone to feel welcome around my table, especially Gary, so I'm leaving room for his extra chairs.",
       "Cooking this dinner for the people I care about makes me feel close to them, and I hope they can tell how much effort I put into every detail.",
       "I keep double-checking Friday's schedule because I really want to be there for this dinner and for the people coming to my table.",
-      "Setting out the place settings and making room for Gary's extra chairs makes me feel like I'm getting ready to welcome everyone I care about."
+      "Setting out the place settings and making room for Gary's extra chairs makes me feel like I'm getting ready to welcome everyone I care about.",
+      "I want tonight's dinner for Gary and Hal to feel warm and unhurried, so I'm making sure every detail is ready and there's room for everyone at the table.",
+      "Gary's coming tonight and I'm glad to have him, and now that Hal has arrived I can finally let myself relax a little."
     ]
   },
   "emotions": {
     "gary": "cheerful",
-    "donna": "enthusiastic",
+    "donna": "eager",
     "hal": "dutiful",
-    "rosa": "hopeful"
+    "rosa": "eager"
   },
   "laws": [
     {
@@ -4223,10 +4227,18 @@
       "dialogue": [
         "Donna said to Gary: “Perfect, court one is ours, Gary! Take the left side, I'll serve the first few nice and easy, and we'll play to eleven before anyone eyes our spot on that ladder.”"
       ]
+    },
+    {
+      "tick": 488,
+      "time": "Friday, November 13, 7:17 PM",
+      "story": "At 7:17 on this sunny Friday evening in Sumter Oaks, Gary and Donna are warming up on pickleball court one at the Rec Center, with Gary promising easy dinks in exchange for a lemonade wager. Over on Magnolia Loop, Hal is making his dutiful way toward Rosa's House, while Rosa, eager to host, is straightening the place settings and nudging her dining table so there's room for Gary's extra chairs.",
+      "dialogue": [
+        "Gary said to Donna: “Left side it is, Donna. Go easy on the first serve and I'll keep my dinks nice and low. Play to eleven, loser buys the lemonade.”"
+      ]
     }
   ],
   "spend": {
-    "total_usd": 15.32225,
+    "total_usd": 15.35349,
     "by_day": {
       "2026-10-12": {
         "ticks": 7,
@@ -4357,13 +4369,12 @@
         "usd": 0.46189
       },
       "2026-11-13": {
-        "ticks": 12,
-        "usd": 0.36647
+        "ticks": 13,
+        "usd": 0.39771
       }
     }
   },
   "recent_tick_costs": [
-    0.03142,
     0.02991,
     0.03088,
     0.03118,
@@ -4386,7 +4397,8 @@
     0.03113,
     0.02969,
     0.02981,
-    0.0311
+    0.0311,
+    0.03124
   ],
   "fund": {
     "gross_usd": 0.0,
